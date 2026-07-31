@@ -640,7 +640,146 @@ black-box approximations.
 
 \section{Research Framework}
 
+The research framework of this dissertation is organized as a Theory of Change. In evaluation and intervention
+research, a Theory of Change makes explicit how a set of activities is expected to produce outputs, outcomes,
+and longer-term value under stated assumptions. \citet{Mayne2015} emphasizes that useful Theory of Change
+models clarify the causal logic of a program rather than merely listing its components. \citet{DeSilva2014}
+and \citet{Breuer2016} similarly show that Theory of Change reasoning can strengthen the design and evaluation
+of complex interventions by connecting context, mechanisms, evidence, and intended change. In this
+dissertation, the intervention is methodological rather than institutional. The intended change is a more
+credible way of using machine learning surrogates for activated sludge modeling, where computational speed is
+joined with component-level physical admissibility and interpretability.
+
+The starting condition is the tension identified in the review of related literature. Mechanistic activated
+sludge models encode the biological and chemical structure of wastewater treatment, but repeated simulation can
+be too costly for design exploration, screening, and optimization. Machine learning surrogates address the
+computational burden, but unconstrained predictions may violate conservation or nonnegativity even when ordinary
+error metrics are favorable. The Theory of Change therefore begins from the premise that wastewater surrogate
+modeling should be evaluated not only by closeness to simulated targets, but also by whether the returned
+component state remains physically meaningful under the adopted ASM boundary.
+
+The framework rests on the assumption that complete component-state prediction is more appropriate than direct
+aggregate-only prediction when the purpose is to preserve activated sludge process structure. It also assumes
+that physical admissibility must be checked after prediction because it is not guaranteed by low error alone,
+and that engineering usefulness is strengthened when the learned relationships among operating conditions,
+influent loads, and effluent components can be inspected. These assumptions shape the substantive chapters of
+the dissertation. The opening chapter establishes the surrogate prediction setting and compares statistical
+learners for complete activated sludge component states. The next chapter evaluates post prediction enforcement
+of mass conservation and nonnegativity across surrogate families and data regimes. The final substantive
+chapter develops an interpretable physically admissible surrogate that integrates structured regression with
+checked deployment.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+    node distance=0.9cm and 0.85cm,
+    box/.style={
+        draw,
+        rounded corners=2pt,
+        align=center,
+        minimum height=2.35cm,
+        text width=3.25cm,
+        inner sep=6pt,
+        font=\small
+    },
+    topbox/.style={
+        box,
+        fill=gray!8
+    },
+    workbox/.style={
+        box,
+        fill=RoyalBlue!8
+    },
+    outbox/.style={
+        box,
+        fill=ForestGreen!8
+    },
+    arrow/.style={
+        -{Latex[length=3mm]},
+        thick
+    }
+]
+\node[topbox] (context) {Context\\Mechanistic ASM simulation is informative but costly, while unconstrained surrogates can be physically inadmissible.};
+\node[topbox, right=of context] (assumptions) {Assumptions\\Component-state prediction, explicit feasibility checking, and interpretability are needed for engineering use.};
+\node[workbox, right=of assumptions] (activities) {Research Activities\\Compare surrogate learners, enforce physical constraints, and develop interpretable constrained regression.};
+\node[outbox, right=of activities] (outputs) {Outputs\\Accuracy profiles, feasibility diagnostics, projection workflow, and interpretable admissible surrogate.};
+\node[outbox, right=of outputs] (outcomes) {Intended Outcome\\A credible activated sludge surrogate framework for repeated wastewater treatment analysis.};
+
+\draw[arrow] (context) -- (assumptions);
+\draw[arrow] (assumptions) -- (activities);
+\draw[arrow] (activities) -- (outputs);
+\draw[arrow] (outputs) -- (outcomes);
+\end{tikzpicture}%
+}
+\caption{Theory of Change for the dissertation research framework.}
+\label{fig:theory-of-change-framework}
+\end{figure}
+
+The pathway in \cref{fig:theory-of-change-framework} makes the dissertation logic explicit. The context
+defines the practical and scientific need. The assumptions identify what must be true for the research program
+to matter in activated sludge modeling. The activities correspond to the dissertation chapters, and the outputs
+are the concrete products of those chapters. The intended outcome is not the replacement of mechanistic
+activated sludge models, but a surrogate modeling framework that can support repeated wastewater treatment
+analysis while preserving the physical meaning of predicted component states.
+
+The Theory of Change also clarifies how evidence is interpreted across the dissertation. If a surrogate gives
+low prediction error but violates conservation or nonnegativity, the framework treats that result as
+incomplete rather than successful. If projection restores physical admissibility but changes prediction error,
+the framework treats the change as an empirical tradeoff to be reported, not as an automatic failure or
+improvement. If an interpretable constrained surrogate sacrifices some fixed-split accuracy while improving
+physical reliability and structural transparency, the framework treats that result as part of a broader
+engineering decision space. The framework therefore supports a balanced interpretation of speed, accuracy,
+physical admissibility, and interpretability as connected outcomes of the dissertation rather than as isolated
+metrics.
+
 \section{Scope and Limitations}
+
+This dissertation is scoped to machine learning surrogates of the activated sludge process under an
+ASM2d-based component representation. The mechanistic foundation is the ASM family and its extension to
+biological phosphorus removal and two-step nitrogen conversion \citep{Henze1999,Henze2006,Guerrero2011}. The
+surrogate task is defined at the level of activated sludge component states rather than only at the level of
+reported effluent composites. Chemical oxygen demand, total nitrogen, total phosphorus, and total suspended
+solids remain important for interpretation, but they are treated as derived reporting quantities rather than as
+the only prediction targets.
+
+The empirical scope is limited to simulated steady-state reactor data. The dissertation does not claim direct
+field validation on full-scale wastewater treatment plant measurements, and it does not attempt to represent
+every operational disturbance, sensor error, seasonal shift, or unmodeled biological pathway that may occur in
+practice. The simulated setting is nevertheless appropriate for the present purpose because the dissertation
+asks how surrogate predictions behave when the mechanistic reference state, component basis, and physical
+constraint structure are known. This allows prediction error, mass conservation, nonnegativity, and correction
+behavior to be examined without confounding them with measurement noise or uncertain plant instrumentation.
+
+The modeling scope includes a comparative set of statistical surrogates and an interpretable constrained
+surrogate developed for this dissertation. The comparison is intended to represent major surrogate families
+used for structured process data, including linear latent-variable methods, neighbor and kernel methods, tree
+ensembles, boosting methods, and neural networks. It is not an exhaustive survey of every possible machine
+learning architecture, every hyperparameter strategy, or every hybrid mechanistic data driven formulation. The
+findings should therefore be interpreted as evidence within the evaluated surrogate set and benchmark protocol,
+not as a universal ranking of all possible wastewater treatment predictors.
+
+The physical guarantees considered in the dissertation are deliberately specific. Conservation refers to the
+stoichiometric invariant structure implied by the adopted activated sludge model and system boundary, while
+nonnegativity refers to the component concentrations returned by the surrogate. These guarantees do not imply
+complete kinetic realism, thermodynamic validity, microbial ecological correctness, or plant-wide mass closure
+outside the declared boundary. A prediction can be physically admissible in the constrained component-space
+sense and still require further scrutiny before being used for detailed plant design, regulatory reporting, or
+closed-loop control.
+
+The evaluation also has a bounded generalization claim. The dissertation examines performance within the
+sampled operating and influent domain and under controlled excursions beyond that domain, but it does not prove
+reliability for arbitrary influent compositions, reactor configurations, treatment trains, climates, or
+operational policies. The beyond-domain evaluations are useful because they reveal how prediction error and
+physical enforcement behave when inputs move outside the training envelope. They should not be read as proof
+that the surrogates will remain accurate under every future plant condition.
+
+Finally, the interpretability claim is limited to the structure of the surrogate and the inspectability of its
+learned relationships. A transparent coefficient block or component coupling pattern can support engineering
+interpretation, but it should not be treated as a causal statement about the activated sludge process without
+additional experimental or mechanistic analysis. Within these boundaries, the dissertation contributes a
+framework for evaluating and constructing activated sludge surrogates whose predictions are fast, physically
+admissible under the stated constraints, and more interpretable than unconstrained black-box outputs.
 
 
 \chapter{Machine Learning Surrogates of the Activated Sludge Process}
