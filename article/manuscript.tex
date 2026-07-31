@@ -119,6 +119,8 @@
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
 \graphicspath{{./figures/}{./}}
 
 
@@ -377,9 +379,264 @@ physically and emotionally throughout his doctoral journey.
 
 \section{Review of Related Literature}
 
+\subsection{Water Pollution, Biological Treatment, and Activated Sludge Modeling}
+
+Water pollution is a public health and environmental problem whose consequences depend on pollutant sources,
+exposure pathways, and the vulnerability of affected populations. \citet{Lin2022} connect polluted water to
+heterogeneous disease burdens, while \citet{Madhav2019} organize water pollutants by origin and effect across
+industrial, agricultural, domestic, and natural pathways. These reviews establish the wider environmental
+motivation for engineered treatment systems. Wastewater treatment is not only a matter of meeting a numerical
+effluent target. It is part of the larger effort to interrupt pollutant movement from human activity into
+aquatic ecosystems and exposed communities.
+
+The activated sludge process remains a central biological route for municipal and industrial wastewater
+treatment because it brings microbial growth, organic carbon removal, nitrogen conversion, phosphorus behavior,
+oxygen transfer, and solids production into one engineered system. The process is complex because its treatment
+performance arises from interacting microbial and physicochemical pathways rather than from a single dominant
+reaction. \citet{Duan2022} show this clearly in their review of heterotrophic nitrifying bacteria, where
+nitrogen removal depends on microbial pathways whose importance changes with wastewater composition and
+operating conditions. \citet{Wentzel1992} likewise present nitrification, denitrification, and biological
+excess phosphorus removal as coupled activated sludge processes. Their review helps explain why carbon,
+nitrogen, phosphorus, biomass, and solids must be treated as interdependent states when the process is modeled.
+
+The Activated Sludge Model family gives this interdependence a mechanistic language. \citet{Henze1999}
+introduced ASM2d as a model for biological phosphorus removal with simultaneous nitrification and
+denitrification, and \citet{Henze2006} consolidated the wider ASM family as a standard framework for design,
+operation, teaching, and research. The relevance of ASM2d is especially strong for work that must represent
+carbon, nitrogen, phosphorus, alkalinity, and suspended solids together. Later developments also made explicit
+the need to represent nitrite-producing and nitrite-consuming steps when biological nutrient removal is studied
+in more detail. \citet{Guerrero2011} used an ASM2d-based formulation with two-step nitrification and
+denitrification to examine competition between phosphorus accumulating organisms and denitrifiers. This
+component-based tradition is the scientific setting of the dissertation. The object of prediction is therefore
+not merely an aggregate effluent quality index but a complete activated sludge state from which reported
+composites can be derived.
+
+\subsection{Mechanistic Simulation and the Need for Surrogates}
+
+Mechanistic activated sludge models are valuable because they preserve the biological and chemical structure of
+the process, but that same structure makes repeated simulation demanding. Nonlinear kinetics, interacting
+operating variables, uncertain influent conditions, and calibration decisions all affect the behavior of a
+simulated treatment system. \citet{Araujo2013} demonstrate this in their sensitivity analysis of optimal
+operation and controlled variable selection for an activated sludge process model. Their work shows that an
+operating decision depends on how model states respond across the process, not only on a single effluent
+quantity. \citet{Machado2014} add a complementary calibration perspective by showing that ASM2d parameter
+identifiability is entangled with influent and operational uncertainty in full-scale plant data.
+
+The burden becomes more visible when a model is embedded in design or optimization. \citet{Aboagye2021}
+formulate wastewater treatment network design as an optimization and sustainability assessment problem in
+which many configurations must be evaluated. \citet{PadronPaez2020} similarly place plant design within a
+multiobjective framework that balances treatment performance and sustainability criteria. These applications
+require a model to be queried many times while operating points, treatment alternatives, and tradeoffs are
+explored. A detailed simulator can then become the limiting element in a workflow whose value depends on broad
+search.
+
+Surrogate modeling addresses this pressure by replacing repeated high-cost simulations with faster statistical
+approximations over a defined operating domain. \citet{BhosekarIerapetritou2018} review surrogate modeling in
+process systems and emphasize that sampling, validation, feasibility analysis, and optimization must be treated
+as linked concerns. The wastewater literature shows the same practical motivation. \citet{Durkin2024} train
+surrogates on high-fidelity wastewater resource recovery simulations and use them inside process optimization.
+The significance of these studies is not simply that surrogate models run quickly. Their deeper importance is
+that they allow mechanistic knowledge to be used repeatedly in design, screening, and decision support where a
+full simulator would be inconvenient or too slow.
+
+\subsection{Machine Learning Surrogates for Wastewater Prediction}
+
+Data driven wastewater modeling has moved from plant monitoring toward operational prediction and decision
+support. \citet{Newhart2019} review performance analyses of wastewater treatment plants and note both the
+promise of process data and the difficulty of turning that data into reliable plant knowledge. More recent
+studies show the field moving toward actionable prediction. \citet{Mao2024} use artificial intelligence tools
+to balance effluent quality and aeration energy, \citet{Yang2025} use machine learning to predict waste
+activated sludge generation for operational efficiency, and \citet{Wang2025} compare interpretable machine
+learning models with a mechanistic model for effluent nitrogen prediction. \citet{Xiao2026} further illustrates
+the growing interest in frameworks that combine mechanistic dynamics with data driven surrogates for activated
+sludge management.
+
+The surrogate families used in this area differ in what they assume about the process. Partial least squares is
+a natural baseline because it creates a compact multivariate relationship among correlated variables.
+\citet{Wold2001} describe partial least squares regression as a basic chemometric tool, and \citet{Khatri2020}
+review its use in water quality analysis. Its appeal is interpretability, especially when influent and
+operating variables are strongly correlated. Its limitation is that strongly nonlinear microbial behavior may
+not be captured without richer features or nonlinear extensions. \citet{Woo2009} show the value of kernel
+partial least squares for online estimation in an industrial cokes wastewater treatment plant, and
+\citet{Yang2021} combine partial least squares with a relevance vector machine for adaptive effluent quality
+prediction. These studies show how linear interpretability and nonlinear predictive flexibility have both
+been pursued in wastewater modeling.
+
+Tree ensembles, boosting methods, and neural networks offer different ways of handling nonlinear tabular
+relationships. \citet{Breiman2001} introduced random forests as ensembles of randomized trees, while
+\citet{ChenGuestrin2016} developed XGBoost as a scalable boosted tree system for structured data. Neural
+approaches provide another form of flexibility. \citet{Hornik1989} established the approximation capacity of
+multilayer feedforward networks, and \citet{ArikPfister2021} introduced TabNet as a deep learning model for
+tabular data with attentive feature selection. In activated sludge surrogate modeling, these algorithm families
+are not interchangeable labels. They represent different compromises among interpretability, data efficiency,
+nonlinear response learning, computational cost, and stability outside the center of the training domain.
+
+\subsection{Physical Admissibility Beyond Predictive Accuracy}
+
+A central limitation of an unconstrained surrogate is that predictive accuracy does not by itself establish
+physical admissibility. A surrogate can be close to a mechanistic target under ordinary error metrics while
+still returning component concentrations that cannot be interpreted as a physically valid activated sludge
+state. The ASM tradition represents process transformations through stoichiometric relations among component
+states \citep{Henze1999,Henze2006}. Within a fixed control volume and model boundary, those relations imply
+material balances that the influent and effluent component states should respect. Concentrations must also
+remain nonnegative if they are to retain their physical meaning.
+
+This distinction matters because reported composites such as chemical oxygen demand, total nitrogen, total
+phosphorus, and total suspended solids are summaries of an underlying component state. An aggregate value can
+look plausible while the component vector behind it contains negative concentrations or violates a declared
+material balance. For wastewater decision support, that mismatch is not a harmless numerical detail. It can
+distort interpretation, affect downstream optimization, and make a prediction less credible even when the
+aggregate error appears small.
+
+The broader scientific machine learning literature reinforces this concern. \citet{Kashinath2021} review
+physics informed case studies in weather and climate modeling and show that scientific prediction must be
+judged against physical structure as well as empirical error. \citet{Hansen2024} focus on conservation laws
+and argue that learned physical models may need explicit mechanisms to respect conserved quantities.
+\citet{SturmWexler2020} and \citet{SturmWexler2022} demonstrate the issue in photochemical modeling, where
+machine learning speedups must preserve mass and atom balances to remain credible. \citet{KircherVotsmeier2025}
+make the paired requirement especially clear by showing that a conservative correction is incomplete when it
+creates negative species and that a positivity preserving adjustment is incomplete when it breaks atom balance.
+Although these studies arise outside activated sludge modeling, they identify the same conceptual problem that
+appears when a wastewater surrogate predicts a full component state.
+
+\subsection{Constraint Enforcement in Scientific Machine Learning}
+
+Scientific machine learning has developed several strategies for incorporating physical structure into
+data driven models. Physics informed approaches place governing relations, boundary conditions, or other
+physical penalties inside the training objective. \citet{Raissi2019} formalize physics informed neural
+networks for forward and inverse problems governed by differential equations, and \citet{Karniadakis2021}
+place such models within a broader physics informed learning program. These methods are important because they
+make physical knowledge visible during training. Their limitation for the present wastewater setting is that a
+penalty can encourage a physically reasonable prediction without guaranteeing that every deployed prediction
+satisfies the required balance and nonnegativity conditions.
+
+Hard enforcement methods respond by building the physical requirement into the architecture, output
+representation, or correction step. \citet{Beucler2021} show that analytic constraints can be enforced in
+neural networks that emulate physical systems. \citet{Hansen2024} develop approaches for learning physical
+models that can respect conservation laws. \citet{SturmWexler2020} and \citet{SturmWexler2022} use
+conservative formulations for photochemical surrogates, while \citet{SturmSilva2024} extend the conservation
+view through a species weighted correction for atmospheric composition. \citet{Valente2025} present output
+projection onto physical manifolds as a way to return model predictions to physically consistent sets. These
+works show that exact consistency can be imposed after, within, or around a learned model.
+
+The activated sludge problem requires joint attention to conservation and nonnegativity. A conservation-only
+method can still produce negative concentrations, while a positivity-only transformation can disturb the
+case-specific balance implied by the mechanistic model. \citet{KircherVotsmeier2025} address this combined
+requirement for mechanistic kinetics surrogates by embedding atom balance and positivity together. Their
+application domains differ from wastewater treatment, but the central physical demand is parallel. A corrected
+prediction must remain on the admissible balance relation while staying inside the domain of nonnegative
+concentrations.
+
+\subsection{Projection, Interpretability, and Dissertation Gap}
+
+Post prediction projection is attractive for activated sludge surrogates because it can be applied after a
+surrogate has already produced a component prediction. This makes the correction conceptually separate from the
+learning algorithm and allows the same physical check to be placed after linear, kernel, neighbor, ensemble,
+boosting, or neural predictors. The literature on conservation and output projection suggests that such a step
+can return predictions to a physically consistent set \citep{KircherVotsmeier2025,Valente2025}. At the same
+time, projection is not a substitute for model selection. It can make a prediction admissible while changing
+ordinary error metrics in ways that depend on the surrogate, the component, and the operating regime. A
+physically enforced wastewater surrogate therefore still requires paired evaluation of predictive accuracy and
+constraint compliance.
+
+Interpretability forms a second requirement for engineering usefulness. \citet{Rudin2019} argues that
+high-stakes decisions should prefer models that are interpretable by design when such models can achieve
+sufficient performance. Wastewater treatment modeling is not identical to the decision settings emphasized in
+that argument, but the engineering concern is similar. If a surrogate is used for environmental decision
+support, its learned relationships should be inspectable whenever the modeling task permits. This concern links
+the older appeal of partial least squares, the current interest in interpretable tabular learning, and the need
+for structured physically admissible surrogates.
+
+The resulting gap is specific. Activated sludge models provide the component-space structure needed to
+represent carbon, nitrogen, phosphorus, alkalinity, and solids transformations, but repeated mechanistic
+simulation can be too costly for broad exploration. Machine learning surrogates can accelerate prediction and
+have already shown value in wastewater treatment applications, but low error does not guarantee conservation,
+nonnegativity, or interpretability. The dissertation addresses this gap by integrating surrogate comparison,
+post prediction physical enforcement, and interpretable constrained regression into one activated sludge
+modeling program. The aim is a surrogate framework that is fast enough for repeated use, accurate enough for
+engineering analysis, physically admissible at the component level, and transparent enough to support
+engineering judgment.
+
 \section{Statement of the Problem}
 
+Activated sludge models provide a rigorous mechanistic basis for representing biological wastewater treatment,
+but their use becomes burdensome when many operating or influent conditions must be evaluated. At the same
+time, machine learning surrogates can accelerate prediction but may return component states that are accurate
+under conventional error metrics while remaining physically inadmissible. The central problem of this
+dissertation is therefore to determine how machine learning surrogates of the activated sludge process can be
+developed and evaluated so that their predictions remain useful not only as fast approximations, but also as
+physically meaningful component-space states.
+
+The problem begins with the predictive modeling setting itself. Wastewater treatment applications increasingly
+use data driven models for effluent quality prediction, operational support, and process optimization
+\citep{Newhart2019,Mao2024,Wang2025,Yang2025}. However, the activated sludge process is not a simple
+single-output regression problem. The state described by ASM2d-based models contains interacting carbon,
+nitrogen, phosphorus, alkalinity, and solids components \citep{Henze1999,Henze2006,Guerrero2011}. A surrogate
+that predicts only reported aggregate quantities may be useful for limited monitoring tasks, but it does not
+directly preserve the component-space information needed to examine conservation, nonnegativity, and
+downstream composition calculations. The dissertation must therefore establish how a range of statistical
+surrogates behave when they are asked to predict the complete activated sludge component state rather than only
+an aggregate water quality summary.
+
+The second part of the problem concerns physical admissibility. Conventional surrogate assessment emphasizes
+prediction error, but a low error value does not guarantee that an activated sludge prediction satisfies the
+material balance structure implied by the adopted mechanistic model. It also does not guarantee that every
+component concentration remains nonnegative. This creates a gap between numerical accuracy and engineering
+credibility. Studies in scientific machine learning show that conservation and positivity often require
+explicit treatment rather than passive expectation from data fitting alone
+\citep{Beucler2021,Hansen2024,KircherVotsmeier2025,SturmWexler2020,SturmWexler2022}. The dissertation must
+therefore determine whether post prediction enforcement can consistently return activated sludge surrogate
+outputs to the physically admissible component space, and whether that enforcement improves, worsens, or leaves
+unchanged the usual measures of predictive performance.
+
+The third part of the problem concerns interpretability. A physically corrected prediction can be useful for
+screening and computation, but correction alone does not necessarily make the learned relationship between
+operating conditions, influent composition, and effluent state understandable. For engineering decision support,
+the structure of the surrogate matters because the prediction may inform operating judgment, design
+exploration, or later optimization. The dissertation therefore examines whether an interpretable surrogate can
+be structured so that it retains transparent relationships among operating variables, influent loads, nonlinear
+effects, and component coupling while still returning physically admissible predictions. In this sense, the
+research problem is not merely to reduce prediction error. It is to integrate accuracy, computational speed,
+physical admissibility, and interpretability within one activated sludge surrogate modeling framework.
+
 \section{Significance of the Study}
+
+This study is significant because it addresses a practical weakness in the use of machine learning for
+biological wastewater treatment modeling. Wastewater treatment systems protect receiving waters and public
+health by reducing pollutant loads before discharge, and their operation depends on reliable understanding of
+process behavior \citep{Lin2022,Madhav2019}. As treatment modeling moves toward data driven prediction and
+optimization, the credibility of a surrogate model cannot rest only on speed or ordinary error metrics. A
+prediction that violates mass conservation or contains negative component concentrations may be numerically
+close to a target but still unsuitable for engineering interpretation. By placing physical admissibility at the
+same level of importance as accuracy, this dissertation strengthens the basis on which surrogate predictions
+can be used in wastewater treatment analysis.
+
+The study contributes to activated sludge modeling by keeping the complete component state at the center of the
+surrogate problem. The ASM family was developed to represent interacting biological and chemical processes,
+not only final aggregate effluent indicators \citep{Henze1999,Henze2006}. A component-space surrogate retains
+that mechanistic orientation while reducing the cost of repeated evaluation. This matters for sensitivity
+analysis, design screening, operating exploration, and optimization workflows where many simulations may be
+needed \citep{Araujo2013,Aboagye2021,PadronPaez2020,Durkin2024}. The dissertation therefore helps connect the
+mechanistic detail of activated sludge models with the computational convenience expected from modern
+surrogate modeling.
+
+The study also offers methodological value for wastewater applications of machine learning. It separates
+ordinary predictive accuracy from physical constraint compliance and treats both as necessary diagnostics for
+complete component predictions. This distinction is important because different surrogate families may show
+different error behavior, different tendencies toward negative values, and different responses to physical
+projection. The resulting evaluation logic can help future wastewater surrogate studies report not only
+whether a model predicts well, but also whether its predictions remain admissible under the declared process
+boundary and component basis.
+
+Finally, the study is significant for engineering decision support because it addresses interpretability
+alongside feasibility. Interpretable models can be preferable in high-consequence settings when their
+performance is sufficient, since they allow the structure of the learned relationship to be inspected rather
+than treated only as a black-box output \citep{Rudin2019}. In the activated sludge setting, interpretability
+supports the examination of how operating conditions and influent loads are associated with the predicted
+effluent state. A physically admissible and interpretable surrogate can therefore serve as a bridge between
+mechanistic simulation and practical decision workflows, providing predictions that are faster than repeated
+simulation, more physically defensible than unconstrained regression outputs, and more inspectable than purely
+black-box approximations.
 
 \section{Research Framework}
 
