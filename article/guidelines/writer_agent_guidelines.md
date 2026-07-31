@@ -22,9 +22,22 @@ These guidelines define the preferred writing style, scope discipline, and manus
 - Cite only published or otherwise verifiable scholarly works.
 - Verify new references through Crossref or another authoritative bibliographic source before adding them to `references.bib`.
 - Do not cite the local journal articles or local draft manuscripts.
+- Treat unsupported broad claims as defects. A writer agent should actively look for sweeping statements about wastewater treatment, activated sludge modeling, surrogate modeling, scientific machine learning, physical admissibility, interpretability, preprocessing, validation, or generalization and reinforce them with citations.
+- Prefer citations already used in the published-source bibliographies of the reference manuscripts under `references/icsor-manuscript` and `references/surrogates-manuscript`. These local manuscripts are not cited directly; their bibliographies are used as source pools for published references.
+- Maximize appropriate citation support without turning paragraphs into citation dumps. Most substantive claims, especially claims about trends, gaps, model capabilities, physical constraints, evaluation practice, or methodological choices, should either be cited or revised into a narrower claim that does not need outside support.
+- When adding a citation, integrate it into the discussion by explaining why the cited work matters. The preferred pattern is to name what the reference contributes, then connect it to the dissertation argument.
 - Use citations intentionally. Do not attach long strings of citations to broad claims without explaining the contribution of the cited works.
 - Prefer `\citet{...}` when authors are part of the sentence and `\citep{...}` when the citation supports the sentence parenthetically.
 - Foundational works should be cited when they anchor important concepts, methods, models, or evaluation choices.
+
+## Citation Reinforcement Workflow
+
+- Before finalizing a section, scan for sentences that make generalized claims such as "studies show," "the literature indicates," "machine learning can," "surrogates are useful," "accuracy does not guarantee," "physical constraints are needed," or "evaluation should."
+- For each broad claim, first search the two reference manuscripts for relevant published works and their DOI-bearing reference entries.
+- Add the published reference to `references.bib` only after checking that it exists and that the metadata are accurate.
+- Revise the sentence or surrounding paragraph so the citation is not ornamental. The discussion should make clear whether the citation supports a literature trend, a methodological choice, a scientific limitation, or a foundational concept.
+- Use multiple citations when a claim spans multiple ideas, but avoid unsupported bundling. If one sentence makes two claims, either cite both claims properly or split the sentence.
+- Keep citation support current with manuscript revisions. If a claim is broadened during rewriting, reassess whether it now needs additional citation support.
 
 ## Prose Style
 
@@ -34,6 +47,9 @@ These guidelines define the preferred writing style, scope discipline, and manus
 - Avoid equations and mathematical symbols in the Review of Related Literature. Keep the RRL conceptual and narrative.
 - Use equations only in method sections when they are necessary for clarity and when prose alone would be insufficient.
 - Avoid excessive abbreviation density. Define important abbreviations before use and do not rely on abbreviations when a readable phrase is better.
+- Abbreviations must be introduced chapter by chapter. Do not assume that an abbreviation introduced in the Introduction or in an earlier chapter remains available in a later chapter.
+- The first use of an abbreviation within each chapter must give the expanded form followed by the abbreviation in parentheses. After that point, the abbreviation may be used within the same chapter.
+- If an abbreviation appears only once or twice in a chapter, prefer the expanded form and avoid introducing the abbreviation.
 - Keep chapter rationales focused on the problem, gap, and motivation. Do not place detailed methodological decisions in the rationale.
 
 ## Required Terminology
@@ -48,6 +64,7 @@ These guidelines define the preferred writing style, scope discipline, and manus
 
 - The RRL must be a comprehensive, integrated discussion of the literature, not a list of article summaries.
 - Present references intently by explaining what each cited work contributes to the argument.
+- Minimize unsupported synthesis in the RRL. Claims about literature trends, research gaps, model behavior, or disciplinary needs should be anchored in published references whenever possible.
 - Build the flow from broad wastewater treatment concerns to activated sludge modeling, surrogate modeling, physical admissibility, constraint enforcement, interpretability, and the dissertation gap.
 - Do not include equations, symbolic derivations, or implementation details in the RRL.
 - Do not describe how the RRL is written or how it should be read.
@@ -64,6 +81,7 @@ These guidelines define the preferred writing style, scope discipline, and manus
 
 - Each substantive chapter should be readable as a self-contained journal-style study.
 - Do not assume the reader has read another chapter to understand the purpose, method, or interpretation of the current chapter.
+- Because each chapter must be self-contained, abbreviations, model names, metric names, and specialist shorthand must be expanded at first use within that chapter.
 - Do not write "the following chapter," "later chapters," or similar cross-chapter scaffolding inside a chapter body.
 - Rationale sections should explain the research problem and gap. They should not specify detailed sampling designs, model dimensions, hyperparameter protocols, or file provenance.
 - Method sections should provide the procedural detail needed to reproduce the analysis, but without mentioning codebase artifacts.
@@ -92,5 +110,6 @@ These guidelines define the preferred writing style, scope discipline, and manus
 - Search for and remove codebase artifact terms in visible prose, including `archive`, `manifest`, `repository`, `codebase`, `workspace`, `path`, `file`, and local manuscript references.
 - Search for placeholder terms such as `TODO`, `Obligatory`, dummy keywords, and section-writing instructions.
 - Search for self-referential roadmap language such as `this chapter`, `following chapter`, `the dissertation must`, and `will be explained later`.
+- Search for sweeping unsupported claims and reinforce them with citations from published works, prioritizing the published references already present in the two reference manuscripts.
 - Check that all citation keys in `manuscript.tex` exist in `references.bib`.
 - Build the PDF after substantive edits and report the generated PDF path.

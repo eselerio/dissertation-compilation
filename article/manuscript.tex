@@ -437,10 +437,11 @@ identifiability is entangled with influent and operational uncertainty in full-s
 The burden becomes more visible when a model is embedded in design or optimization. \citet{Aboagye2021}
 formulate wastewater treatment network design as an optimization and sustainability assessment problem in
 which many configurations must be evaluated. \citet{PadronPaez2020} similarly place plant design within a
-multiobjective framework that balances treatment performance and sustainability criteria. These applications
-require a model to be queried many times while operating points, treatment alternatives, and tradeoffs are
-explored. A detailed simulator can then become the limiting element in a workflow whose value depends on broad
-search.
+multiobjective framework that balances treatment performance and sustainability criteria. \citet{Fang2011}
+show the same need in biological nutrient removal, where a simulation-based approach is used to optimize a
+full-scale treatment process. These applications require a model to be queried many times while operating
+points, treatment alternatives, and tradeoffs are explored. A detailed simulator can then become the limiting
+element in a workflow whose value depends on broad search.
 
 Surrogate modeling addresses this pressure by replacing repeated high-cost simulations with faster statistical
 approximations over a defined operating domain. \citet{BhosekarIerapetritou2018} review surrogate modeling in
@@ -461,7 +462,9 @@ to balance effluent quality and aeration energy, \citet{Yang2025} use machine le
 activated sludge generation for operational efficiency, and \citet{Wang2025} compare interpretable machine
 learning models with a mechanistic model for effluent nitrogen prediction. \citet{Xiao2026} further illustrates
 the growing interest in frameworks that combine mechanistic dynamics with data driven surrogates for activated
-sludge management.
+sludge management. This movement also extends to process operation and control, as shown by data-mining work
+on aeration optimization, neural-network methods for setpoint and model predictive control, and reinforcement
+learning reviews for wastewater treatment process control \citep{Asadi2017,Sadeghassadi2018,Croll2023}.
 
 The surrogate families used in this area differ in what they assume about the process. Partial least squares is
 a natural baseline because it creates a compact multivariate relationship among correlated variables.
@@ -505,7 +508,9 @@ physics informed case studies in weather and climate modeling and show that scie
 judged against physical structure as well as empirical error. \citet{Hansen2024} focus on conservation laws
 and argue that learned physical models may need explicit mechanisms to respect conserved quantities.
 \citet{SturmWexler2020} and \citet{SturmWexler2022} demonstrate the issue in photochemical modeling, where
-machine learning speedups must preserve mass and atom balances to remain credible. \citet{KircherVotsmeier2025}
+machine learning speedups must preserve mass and atom balances to remain credible. \citet{Shen2023} further
+connect data driven prediction with physical modeling by presenting differentiable modeling as a route for
+combining learned components with process-based structure. \citet{KircherVotsmeier2025}
 make the paired requirement especially clear by showing that a conservative correction is incomplete when it
 creates negative species and that a positivity preserving adjustment is incomplete when it breaks atom balance.
 Although these studies arise outside activated sludge modeling, they identify the same conceptual problem that
@@ -517,10 +522,12 @@ Scientific machine learning has developed several strategies for incorporating p
 data driven models. Physics informed approaches place governing relations, boundary conditions, or other
 physical penalties inside the training objective. \citet{Raissi2019} formalize physics informed neural
 networks for forward and inverse problems governed by differential equations, and \citet{Karniadakis2021}
-place such models within a broader physics informed learning program. These methods are important because they
-make physical knowledge visible during training. Their limitation for the present wastewater setting is that a
-penalty can encourage a physically reasonable prediction without guaranteeing that every deployed prediction
-satisfies the required balance and nonnegativity conditions.
+place such models within a broader physics informed learning program. \citet{Shen2023} similarly emphasize
+the value of connecting machine learning with process-based structure rather than treating the two as
+separate paradigms. These methods are important because they make physical knowledge visible during training.
+Their limitation for the present wastewater setting is that a penalty can encourage a physically reasonable
+prediction without guaranteeing that every deployed prediction satisfies the required balance and
+nonnegativity conditions.
 
 Hard enforcement methods respond by building the physical requirement into the architecture, output
 representation, or correction step. \citet{Beucler2021} show that analytic constraints can be enforced in
@@ -617,11 +624,12 @@ This study is significant because it addresses a practical weakness in the use o
 biological wastewater treatment modeling. Wastewater treatment systems protect receiving waters and public
 health by reducing pollutant loads before discharge, and their operation depends on reliable understanding of
 process behavior \citep{Lin2022,Madhav2019}. As treatment modeling moves toward data driven prediction and
-optimization, the credibility of a surrogate model cannot rest only on speed or ordinary error metrics. A
-prediction that violates mass conservation or contains negative component concentrations may be numerically
-close to a target but still unsuitable for engineering interpretation. By placing physical admissibility at the
-same level of importance as accuracy, the study strengthens the basis on which surrogate predictions
-can be used in wastewater treatment analysis.
+optimization, the credibility of a surrogate model cannot rest only on speed or ordinary error metrics
+\citep{Asadi2017,Fang2011,Sadeghassadi2018,Croll2023}. A prediction that violates mass conservation or
+contains negative component concentrations may be numerically close to a target but still unsuitable for
+engineering interpretation \citep{Hansen2024,KircherVotsmeier2025,Shen2023}. By placing physical
+admissibility at the same level of importance as accuracy, the study strengthens the basis on which surrogate
+predictions can be used in wastewater treatment analysis.
 
 The study contributes to activated sludge modeling by keeping the complete component state at the center of the
 surrogate problem. The ASM family was developed to represent interacting biological and chemical processes,
@@ -666,9 +674,10 @@ The starting condition is the tension identified in the review of related litera
 sludge models encode the biological and chemical structure of wastewater treatment, but repeated simulation can
 be too costly for design exploration, screening, and optimization. Machine learning surrogates address the
 computational burden, but unconstrained predictions may violate conservation or nonnegativity even when ordinary
-error metrics are favorable. The Theory of Change therefore begins from the premise that wastewater surrogate
-modeling should be evaluated not only by closeness to simulated targets, but also by whether the returned
-component state remains physically meaningful under the adopted ASM boundary.
+error metrics are favorable \citep{Hansen2024,KircherVotsmeier2025,Shen2023}. The Theory of Change therefore
+begins from the premise that wastewater surrogate modeling should be evaluated not only by closeness to
+simulated targets, but also by whether the returned component state remains physically meaningful under the
+adopted ASM boundary.
 
 The framework rests on the assumption that complete component-state prediction is more appropriate than direct
 aggregate-only prediction when the purpose is to preserve activated sludge process structure. It also assumes
@@ -810,9 +819,9 @@ Machine learning surrogates are attractive for this purpose because they can lea
 from structured process data and return predictions at much lower computational cost than repeated mechanistic
 simulation. Wastewater treatment studies increasingly use data driven models for effluent prediction,
 operational decision support, energy assessment, and plant-performance analysis
-\citep{Newhart2019,Mao2024,Wang2025,Yang2025}. This growing literature shows that machine learning can be
-useful in wastewater applications, but it does not by itself establish which modern tabular learners are most
-effective as raw surrogates of an activated sludge simulator.
+\citep{Newhart2019,Asadi2017,Mao2024,Sadeghassadi2018,Croll2023,Wang2025,Yang2025}. This growing literature
+shows that machine learning can be useful in wastewater applications, but it does not by itself establish
+which modern tabular learners are most effective as raw surrogates of an activated sludge simulator.
 
 The gap is partly methodological and partly substantive. Many wastewater prediction studies emphasize plant
 monitoring data, selected effluent indicators, or a small number of model families. These studies are valuable,
@@ -820,7 +829,7 @@ but they make it difficult to separate the learnability of the activated sludge 
 noise, limited target definitions, or algorithm-specific choices. A controlled surrogate benchmark is needed
 to show whether a broad set of state of the art tabular models can learn the nonlinear response of an
 activated sludge process from paired inputs and outputs before any post-prediction correction or additional
-physical enforcement is considered.
+physical enforcement is considered \citep{Borisov2024,ShwartzZiv2022}.
 
 Such a baseline matters because raw predictive accuracy is the first requirement of a useful surrogate. If
 the unadjusted model output cannot recover the behavior of the mechanistic simulator, then later use in
@@ -917,7 +926,9 @@ Neural-network surrogates & Multilayer perceptron, TabNet & Joint 20-component r
 All transformations were fitted only on the relevant inner-training, outer-training, or full in-distribution
 training partition. The same fitted transformations were then applied to the corresponding validation or
 beyond-domain inputs. When a model was trained on target z-scores, its predictions were transformed back to
-physical component units before any score was computed. The workflow did not use missing-value
+physical component units before any score was computed. This training-partition scaling rule is important
+because feature scaling can materially affect regression behavior and model comparison \citep{Pinheiro2025}.
+The workflow did not use missing-value
 imputation, response-dependent outlier removal, or target filtering. Consequently, the reported raw-prediction
 results reflect each surrogate's learned mapping under a consistent and leakage-controlled preprocessing
 scheme.
@@ -978,7 +989,169 @@ predictions.
 
 \section{Results}
 
+The raw surrogate benchmark showed that the activated sludge response was learnable from paired simulated
+inputs and outputs, but the degree of learning depended strongly on the model family and the number of
+training cases. Table~\ref{tab:ch1_raw_summary} summarizes the main raw-prediction results. At the smallest
+training size, the strongest performers were boosted trees. XGBoost and LightGBM had nearly identical mean
+nRMSE values of 0.435 and 0.439, respectively, while CatBoost followed at 0.493. The MLP was competitive but
+not dominant at this low-data setting, with a mean nRMSE of 0.524. TabNet had the weakest small-sample
+performance, with a mean nRMSE of 0.938, showing that its deep tabular architecture required more data before
+it became competitive.
+
+\begin{table}[htbp]
+\centering
+\caption{Raw surrogate performance within and beyond the sampled domain. In-distribution values are five-fold means. Beyond-domain values are computed from the full in-distribution refit in each regime.}
+\label{tab:ch1_raw_summary}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.0cm}rrrrrr}
+\toprule
+Surrogate & Family & nRMSE at 500 & nRMSE at 10,000 & Macro \(\mathrm{R}^{2}\) at 10,000 & Mild nRMSE & Severe nRMSE & Raw latency ms/sample \\
+\midrule
+MLP & Neural networks & 0.524 & 0.150 & 0.977 & 0.255 & 0.531 & 0.005 \\
+CatBoost & Boosting & 0.493 & 0.230 & 0.947 & 0.393 & 0.836 & 0.068 \\
+LightGBM & Boosting & 0.439 & 0.249 & 0.938 & 0.419 & 0.848 & 0.097 \\
+XGBoost & Boosting & 0.435 & 0.254 & 0.935 & 0.424 & 0.861 & 0.060 \\
+TabNet & Neural networks & 0.938 & 0.272 & 0.926 & 0.336 & 0.563 & 0.023 \\
+SVR & Kernel & 0.511 & 0.364 & 0.868 & 0.555 & 0.989 & 1.874 \\
+AdaBoost & Boosting & 0.550 & 0.525 & 0.724 & 0.692 & 1.036 & 1.031 \\
+Multi-task Lasso & Interpretable models & 0.551 & 0.536 & 0.713 & 0.751 & 1.146 & 0.001 \\
+Multi-task Elastic Net & Interpretable models & 0.552 & 0.536 & 0.713 & 0.750 & 1.146 & 0.001 \\
+Extra Trees & Randomized tree ensembles & 0.711 & 0.563 & 0.683 & 0.717 & 1.084 & 0.146 \\
+k-NN & Instance based & 0.747 & 0.607 & 0.632 & 0.760 & 1.113 & 0.157 \\
+Random Forest & Randomized tree ensembles & 0.815 & 0.718 & 0.484 & 0.908 & 1.242 & 0.138 \\
+PLS & Interpretable models & 0.744 & 0.721 & 0.480 & 0.908 & 1.267 & 0.001 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Increasing the training set changed the ranking. The MLP improved from 0.524 at 500 cases to 0.150 at 10,000
+cases, corresponding to a 71.3\% reduction in mean nRMSE. TabNet showed a similarly large relative reduction,
+falling from 0.938 to 0.272, but its final error remained higher than the MLP and the leading boosted trees.
+CatBoost improved from 0.493 to 0.230, while LightGBM and XGBoost improved from 0.439 to 0.249 and from 0.435
+to 0.254, respectively. These results indicate that boosted trees were more data efficient at the smallest
+sample size, whereas the MLP used the larger training set most effectively. At the full in-distribution scale,
+the five best raw surrogates were the MLP, CatBoost, LightGBM, XGBoost, and TabNet. Their macro-average
+coefficients of determination ranged from 0.926 to 0.977, indicating that the best raw models captured most of
+the component-level variation in the simulator outputs.
+
+The remaining surrogate families learned the mapping less effectively. SVR reached a mean nRMSE of 0.364 at
+the largest sample size and remained clearly below the leading neural and boosted-tree models. AdaBoost,
+Multi-task Lasso, Multi-task Elastic Net, Extra Trees, k-NN, Random Forest, and PLS all retained full-size
+nRMSE values above 0.52. The multi-task linear models and PLS were fast and structurally simpler, but their
+raw errors were much higher than those of the most flexible nonlinear surrogates. Random Forest and Extra Trees
+also lagged behind the boosted trees, suggesting that averaging randomized trees without the same boosting
+mechanism was less effective for this multicomponent activated sludge response.
+
+The component-level results showed that prediction difficulty was not uniform across the effluent state.
+Table~\ref{tab:ch1_component_patterns} summarizes the components with the highest and lowest mean nRMSE at the
+largest in-distribution sample size, averaged across the 13 raw surrogates after first averaging over folds.
+Readily biodegradable substrate, nitrite nitrogen, nitrogen gas, metal hydroxide, and the
+polyhydroxyalkanoate storage component were the hardest components on this aggregate basis. Alkalinity, soluble inert organic
+matter, particulate inert organic matter, phosphate-accumulating organisms, and slowly biodegradable substrate
+were easier. The MLP reduced errors substantially across the component set, but even for the MLP the readily
+biodegradable substrate remained the hardest component, with a component nRMSE of 0.453.
+
+\begin{table}[htbp]
+\centering
+\caption{Component-level raw prediction difficulty at the largest in-distribution sample size, averaged across surrogate families.}
+\label{tab:ch1_component_patterns}
+\scriptsize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrlrr}
+\toprule
+Higher-error component & Mean nRMSE & Mean \(\mathrm{R}^{2}\) & Lower-error component & Mean nRMSE & Mean \(\mathrm{R}^{2}\) \\
+\midrule
+\(S_F\) & 0.734 & 0.422 & \(S_{ALK}\) & 0.157 & 0.942 \\
+\(S_{NO2}\) & 0.644 & 0.525 & \(S_I\) & 0.162 & 0.939 \\
+\(S_{N2}\) & 0.550 & 0.653 & \(X_I\) & 0.183 & 0.929 \\
+\(X_{MeOH}\) & 0.523 & 0.678 & \(X_{PAO}\) & 0.263 & 0.896 \\
+\(X_{PHA}\) & 0.493 & 0.722 & \(X_S\) & 0.329 & 0.847 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The derived water-quality composites confirmed that low component error translated into accurate aggregate
+reporting for the leading raw models. For the MLP at the largest in-distribution size, the mean composite
+RMSE values were 5.35 g COD/m\(^3\) for chemical oxygen demand, 1.17 g N/m\(^3\) for total nitrogen, 0.51 g
+P/m\(^3\) for total phosphorus, and 4.76 g TSS/m\(^3\) for total suspended solids. The corresponding
+coefficients of determination ranged from 0.991 to 0.995. CatBoost produced similarly strong aggregate
+results for chemical oxygen demand and total suspended solids, but its total nitrogen and total phosphorus
+errors were higher than those of the MLP. These composite results are consistent with the component-level
+ranking and show that the strongest raw surrogate did not merely fit isolated components; it also preserved
+the aggregate water-quality summaries derived from the component predictions.
+
+Beyond-domain evaluation produced the expected increase in error. Under the mild regime, the MLP remained the
+best raw surrogate with an nRMSE of 0.255 and a macro-average coefficient of determination of 0.964. TabNet
+ranked second with an nRMSE of 0.336, followed by CatBoost, LightGBM, and XGBoost. Under the severe regime,
+all models worsened, but the leading order remained stable. The MLP had an nRMSE of 0.531, TabNet had an
+nRMSE of 0.563, and the three boosted-tree models ranged from 0.836 to 0.861. The severe regime therefore
+remained predictable for the strongest neural surrogates but was substantially harder for boosted trees and
+much harder for the linear, neighbor, and randomized-ensemble baselines.
+
+Raw inference was fast for every surrogate relative to mechanistic simulation. The multi-task linear models
+and PLS returned predictions in about 0.001 ms per sample, but their accuracy was limited. The MLP combined the
+lowest full-size error with a mean raw inference latency of 0.005 ms per sample. TabNet, XGBoost, CatBoost,
+and LightGBM also remained below 0.1 ms per sample. SVR and AdaBoost were slower, at 1.874 and 1.031 ms per
+sample, respectively, while still producing higher errors than the leading neural and boosted-tree models.
+The timing results therefore reinforce the practical value of raw surrogates because the best-performing
+models were not only accurate, but also fast enough for repeated prediction over many candidate operating
+conditions.
+
 \section{Synthesis}
+
+The results support the central premise that modern tabular machine learning surrogates can learn a
+multicomponent activated sludge simulator response from paired input-output data. The strongest evidence is
+the performance of the MLP at the largest sample size. Its low nRMSE, high macro-average coefficient of
+determination, strong composite metrics, and very low raw inference latency show that the simulator response
+contains learnable nonlinear structure that can be captured by a flexible data driven model. This finding is
+consistent with the broad role of neural networks as nonlinear approximators and with their use in chemical
+and wastewater process modeling \citep{Hornik1989,Curteanu2011,Sadeghassadi2018}.
+
+The comparison also shows why a single surrogate family should not be assumed to dominate under every data
+condition. Boosted trees were the strongest low-data learners, with XGBoost and LightGBM leading at 500
+training cases. Their advantage at small sample size is consistent with the wider tabular-learning literature,
+where tree-based methods often remain strong baselines for structured datasets \citep{Borisov2024,ShwartzZiv2022}.
+As more simulated data became available, the MLP surpassed the boosted trees and retained the best
+beyond-domain accuracy. TabNet followed a related but less favorable trajectory, starting from poor small-data
+performance and improving sharply with more data. The learning curves therefore show that sample size changes
+the preferred surrogate family, which is why surrogate selection should be evaluated across more than one
+training-set size \citep{VieringLoog2023}.
+
+The weaker performance of PLS, the multi-task linear models, k-NN, Random Forest, and Extra Trees clarifies
+the character of the activated sludge prediction problem. Linear and latent-variable structure alone was not
+enough to recover the full component response with high accuracy, even though those models were fast and more
+inspectable. Neighbor averaging and randomized tree averaging also underperformed relative to boosted trees
+and neural networks. The response surface therefore appears to require flexible nonlinear representation, but
+not all nonlinear learners benefited equally from the available data. The strongest raw surrogates were those
+that combined nonlinear flexibility with effective use of the tabular training structure.
+
+The component-level findings add an important qualification. Aggregate accuracy did not mean that all
+effluent components were equally easy to predict. Several nitrogen-linked and substrate-related components
+remained more difficult across surrogate families, while alkalinity and inert components were comparatively
+easier. This pattern is chemically plausible because activated sludge nutrient and substrate transformations
+are coupled through nonlinear microbial pathways rather than through independent one-component responses
+\citep{Henze2006,Guerrero2011}. Consequently, model assessment should retain component-level diagnostics even
+when composite water-quality metrics are strong.
+
+The beyond-domain results show that raw surrogate learning remained useful outside the sampled operating
+envelope but became less reliable as the shift intensified. The MLP and TabNet retained the best severe-regime
+accuracy, whereas boosted trees experienced a larger increase in error and the weaker baselines degraded
+substantially. This behavior is consistent with the general expectation that data driven models are less
+secure when evaluated outside the support of their training data, even when they interpolate well within the
+sampled domain \citep{Karniadakis2021,Shen2023,Valente2025}. The raw surrogates are therefore appropriate for
+rapid screening within and near the simulated domain, but beyond-domain use should be interpreted as
+extrapolative prediction rather than as guaranteed process fidelity.
+
+Taken together, the results establish a raw-prediction baseline for activated sludge surrogates. Flexible
+tabular models, especially the MLP and the leading boosted trees, can approximate the mechanistic component
+response with useful accuracy and very low inference cost. The evidence also shows that raw accuracy depends
+on model family, training-set size, component identity, and degree of domain shift. The most defensible
+interpretation is therefore neither that any machine learning model is sufficient nor that mechanistic
+simulation can be casually replaced. Rather, the findings show that carefully validated raw surrogates can
+serve as fast approximations of activated sludge simulator behavior, provided that their component-level and
+beyond-domain limitations remain visible in the evaluation.
 
 
 \chapter{Mass Conservation and Nonnegativity Enforcement on Machine Learning Surrogates of the Activated Sludge Process}
