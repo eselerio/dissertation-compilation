@@ -1,127 +1,463 @@
-%% Elsevier single-column submission format (cas-sc)
-\documentclass[a4paper,fleqn]{cas-sc}
+% -------------------
+% Dissertation manuscript
+%
+% Structured in line with the FMPI Comenius University thesis template,
+% adapted into a single self-contained file and written in pure English.
+% -------------------
 
-\usepackage[authoryear,longnamesfirst]{natbib}
+% Printed in a double-sided format
+\documentclass[12pt, twoside]{book}
+
+
+% -------------------
+% Packages and configs
+% -------------------
+
+%%% General %%%
+\usepackage[
+    a4paper,
+    top=2.5cm,bottom=2.5cm,
+    left=3.5cm,right=2cm
+]{geometry}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[useregional]{datetime2}
+
+
+%%% Template utilities %%%
+\usepackage[dvipsnames]{xcolor}
+\usepackage{etoolbox}
+\usepackage{xifthen}
+
+% Placeholder for TODOs
+\newcommand{\todo}[1][]{%
+    \textcolor{red}{[TODO\ifthenelse{\isempty{#1}}{}{: #1}]}\xspace}
+
+% Placeholder for missing references
+\newcommand*{\tocite}{\textcolor{orange}{[reference needed]}\xspace}
+
+
+%%% Formatting %%%
+\usepackage{indentfirst}
+\usepackage[bottom]{footmisc}
+\usepackage[titles]{tocloft}
+\usepackage[toc,page]{appendix}
+
+\usepackage{enumitem}
+\setlist{itemsep=1pt}
+
+\usepackage{titlesec}
+\titlespacing*{\paragraph}{0pt}{2ex}{1em}
+
+\usepackage{xspace}
+
+\linespread{1.2}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Environment to enforce formatting in a single paragraph
+\makeatletter
+\newcommand{\@singlepar@cr}[1][]{\unskip\space\ignorespaces}
+\newenvironment{singlepar}{%
+    \def\par{\unskip\space\ignorespaces}%
+    \def\newline{\unskip\space\ignorespaces}%
+    \renewcommand{\\}{\@ifstar{\@singlepar@cr}{\@singlepar@cr}}%
+    \ignorespaces
+}{%
+  \endgraf
+}
+\makeatother
+
+
+%%% Math and algorithms %%%
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{capt-of}
-\usepackage{xcolor}
+\usepackage{bm}
+\usepackage{nicefrac}
+
+% Custom math notation
+\newcommand*{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand*{\NN}{\ensuremath{\mathbb{N}}}
+\newcommand*{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\mse}{MSE}
+\DeclareMathOperator{\mae}{MAE}
+
+\usepackage[
+    linesnumbered,
+    ruled,vlined,
+    resetcount,
+    algochapter
+]{algorithm2e}
+
+
+%%% Hyperlinking %%%
+\usepackage{xurl}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage[capitalise]{cleveref}
+
+
+%%% References %%%
+% Configure to approximate APA 7 referencing style
+\usepackage[natbibapa]{apacite}
+
+
+%%% Quotes %%%
+\usepackage[autostyle]{csquotes}
+\MakeOuterQuote{"}
+\SetCiteCommand{\citep}
+
+
+%%% Graphics and floats %%%
+\usepackage[labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
 \usepackage{float}
-\usepackage{needspace}
-\graphicspath{{./}}
+\graphicspath{{./figures/}{./}}
 
+
+%%% Tables %%%
+\usepackage{booktabs}
+\usepackage{multirow}
+
+
+%%% Additional lists %%%
+\usepackage[
+    acronym,
+    symbols,
+    nogroupskip,
+    toc=false,
+    nomain,
+    record=hybrid
+]{glossaries-extra}
+\usepackage{glossary-mcols}
+\makeglossaries
+
+
+% -------------------
+% Dissertation info
+% -------------------
+
+\newcommand{\thesisYear}{\the\year{}}
+\newcommand{\thesisTitle}{Physics Enforcement on Machine Learning Surrogates of the Activated Sludge Process}
+\newcommand{\thesisType}{Dissertation}
+\newcommand{\thesisAuthor}{Egberto F. Selerio Jr.}
+\newcommand{\thesisSupervisor}{Lorafe F. Lozano, D.Eng.}
+\newcommand{\thesisConsultant}{}
+\newcommand{\thesisUniversity}{University of San Carlos}
+\newcommand{\thesisFaculty}{School of Engineering}
+\newcommand{\thesisPlace}{Cebu City, Philippines}
+\newcommand{\thesisProgramme}{Doctor of Engineering (D.Eng.)}
+\newcommand{\thesisField}{Water Engineering}
+\newcommand{\thesisDepartment}{Department of Industrial Engineering}
+
+
+% -------------------
+% Acronyms
+% -------------------
+
+\newacronym{asp}{ASP}{activated sludge process}
+\newacronym{asm}{ASM}{activated sludge model}
+\newacronym{ml}{ML}{machine learning}
+\newacronym{mlp}{MLP}{multilayer perceptron}
+\newacronym{ode}{ODE}{ordinary differential equation}
+\newacronym{wwtp}{WWTP}{wastewater treatment plant}
+
+\newglossarystyle{customacronyms}{%
+  \setglossarystyle{mcolalttreegroup}%
+  \renewcommand{\glsgroupheading}[1]{}%
+  \renewcommand{\glossaryheader}{\raggedright}
+}
+
+
+% -------------------
+% Symbols
+% -------------------
+
+\glsxtrnewsymbol[description={real numbers}, group={gen}]{sym:RR}{$\RR$}
+\glsxtrnewsymbol[description={non-negative integers}, group={gen}]{sym:NN}{$\NN$}
+\glsxtrnewsymbol[description={$L^p$-norm of $\bm{u}$}, group={gen}]{sym:norm}{$\norm{\bm{u}}_p$}
+
+\glsxtrsetgrouptitle{gen}{General Notation}
+
+\makeatletter
+\newglossarystyle{customsymbols}{%
+    \setglossarystyle{mcolalttreegroup}%
+    \renewcommand{\glsgroupheading}[1]{%
+        \par\vspace{1em}
+        \glstreegroupheaderfmt{\bf\glsgetgrouptitle{##1}}\par
+        \nopagebreak\vspace{0.5em}
+    }%
+    \renewcommand{\glossaryheader}{\raggedright}
+}
+\makeatother
+
+
+% ============================================================
 \begin{document}
+\frontmatter
+\pagestyle{empty}
 
-%% ============================================================
-%% Front matter
-%% ============================================================
 
-\shorttitle{Physics Enforcement on ML Surrogates of the Activated Sludge Process}
-\shortauthors{}
+% -------------------
+% Cover and front page
+% -------------------
 
-%% ---- Title ----
-\title[mode=title]{Physics Enforcement on Machine Learning Surrogates of the Activated Sludge Process}
+\begin{center}
+    \sc\large
+    \thesisUniversity\\
+    \thesisFaculty
 
-\author{}
+    \vfill
 
-%% ---- Abstract ----
-\begin{abstract}
+    {\LARGE\thesisTitle}\\
+    \thesisType
+\end{center}
 
-\end{abstract}
+\vfill
 
-\begin{keywords}
+{
+    \sc\large
+    \noindent \thesisYear\\
+    \thesisAuthor
+}
+\cleardoublepage
 
-\end{keywords}
+\noindent
+\begin{center}
+    \includegraphics[height=3cm]{usc_logo.png}\hspace{1.5cm}%
+    \includegraphics[height=3cm]{usc_soe_symbol.png}
 
-\maketitle
+    \vspace{1.5em}
 
-%% ---- Preface ----
-\section*{Preface}
+    \sc\large
+    \thesisUniversity\\
+    \thesisFaculty
 
-%% ---- Table of Contents ----
+    \vfill
+
+    {\LARGE\thesisTitle}\\
+    \thesisType
+\end{center}
+
+\vfill
+
+\noindent
+\begin{tabular}{ll}
+    Study Programme: & \thesisProgramme  \\
+    Field of Study:  & \thesisField      \\
+    Department:      & \thesisDepartment \\
+    Supervisor:      & \thesisSupervisor \\
+    \ifdefempty{\thesisConsultant}{}{
+        Consultant:      & \thesisConsultant \\
+    }
+\end{tabular}
+
+\vfill
+
+\noindent \thesisPlace, \thesisYear \\
+\thesisAuthor
+\cleardoublepage
+
+
+% -------------------
+% Declaration
+% -------------------
+
+\newpage
+\pagestyle{plain}
+
+\null
+\vfill
+{\noindent\bf Declaration}
+
+\begin{singlepar}
+    I hereby declare that the work presented in the dissertation entitled \enquote{\thesisTitle} is original
+    and the result of my own research. Formulations and ideas taken from other sources are cited as such.
+\end{singlepar}
+
+\vspace{3em}
+
+\noindent\thesisPlace, \thesisYear \hfill \makebox[15em]{\hrulefill}
+\par\noindent\hfill\makebox[15em][c]{\thesisAuthor}
+
+
+% -------------------
+% Acknowledgments
+% -------------------
+
+\newpage
+\pagestyle{plain}
+
+\null
+\vfill
+{\noindent\bf Acknowledgments}
+
+The author gratefully acknowledges the Department of Science and Technology (DOST) of the Philippines for
+supporting his doctoral studies from 2022 to 2026 through the Engineering Research and Development for
+Technology (ERDT) scholarship. He is deeply grateful to his adviser, Dr.~Lorafe F. Lozano, for her guidance and
+unwavering support throughout this research. He also thanks Ms.~Alele Lagusan of the USC--ERDT office for her
+invaluable assistance with the administrative matters of his studies as an ERDT scholar at USC. The author is
+likewise indebted to Engr.~Luis Cabatingan, his closest batchmate in the D.Eng. program, whose stimulating
+intellectual conversations on chemical engineering helped inspire the topics explored in this dissertation.
+Finally, he thanks his boyfriend, Leomark, for the patience, love, and steadfast support that sustained him
+physically and emotionally throughout his doctoral journey.
+
+
+% -------------------
+% Abstract (English)
+% -------------------
+
+\newpage
+\section*{Abstract}
+
+\begin{singlepar}
+    Obligatory abstract: 100--500 words; keep it formatted in one paragraph.
+    Do not use abbreviations and other niche advanced terms here, which
+    will be explained in the dissertation later.
+\end{singlepar}
+
+\paragraph*{Keywords:} first, second, third, (fourth, fifth)
+
+
+% -------------------
+% Table of Contents
+% -------------------
+
+\cleardoublepage
 \tableofcontents
 
-%% ---- List of Figures ----
+
+% -------------------
+% Lists
+% -------------------
+
+\newpage
 \listoffigures
-
-%% ---- List of Tables ----
 \listoftables
+\listofalgorithms
 
-%% ---- Nomenclature ----
-\section*{Nomenclature}
+\glsfindwidesttoplevelname
+\printglossary[
+    type=acronym,
+    style=customacronyms,
+    title={List of Abbreviations},
+    nonumberlist
+]
 
-%% ============================================================
-%% Chapter 1. Introduction
-%% ============================================================
-\section{Introduction}
+\printunsrtglossary[
+    type=symbols,
+    style=customsymbols,
+    title={List of Symbols},
+    nonumberlist
+]
 
-\subsection{Review of Related Literature}
 
-\subsection{Statement of the Problem}
+% -------------------
+% Main content
+% -------------------
 
-\subsection{Significance of the Study}
+\mainmatter
+\pagestyle{headings}
 
-\subsection{Research Framework}
+% Show only "Chapter N" (or "Appendix X") in the running head, not the title
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter}{}}
 
-\subsection{Scope and Limitations}
+% Introduction (unnumbered, but preserved in the ToC)
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\markboth{Introduction}{Introduction}
+\label{ch:intro}
 
-%% ============================================================
-%% Chapter 2. Machine Learning Surrogates of the Activated Sludge Process
-%% ============================================================
-\section{Machine Learning Surrogates of the Activated Sludge Process}
+\section{Review of Related Literature}
 
-\subsection{Rationale}
+\section{Statement of the Problem}
 
-\subsection{Method}
+\section{Significance of the Study}
 
-\subsection{Results}
+\section{Research Framework}
 
-\subsection{Synthesis}
+\section{Scope and Limitations}
 
-%% ============================================================
-%% Chapter 3. Mass Conservation and Nonnegativity Enforcement on
-%% Machine Learning Surrogates of the Activated Sludge Process
-%% ============================================================
-\section{Mass Conservation and Nonnegativity Enforcement on Machine Learning Surrogates of the Activated Sludge Process}
 
-\subsection{Rationale}
+\chapter{Machine Learning Surrogates of the Activated Sludge Process}
+\label{ch:surrogates}
 
-\subsection{Method}
+\section{Rationale}
 
-\subsection{Results}
+\section{Method}
 
-\subsection{Synthesis}
+\section{Results}
 
-%% ============================================================
-%% Chapter 4. A Physically Admissible and Interpretable Machine
-%% Learning Surrogate of the Activated Sludge Process
-%% ============================================================
-\section{A Physically Admissible and Interpretable Machine Learning Surrogate of the Activated Sludge Process}
+\section{Synthesis}
 
-\subsection{Rationale}
 
-\subsection{Method}
+\chapter{Mass Conservation and Nonnegativity Enforcement on Machine Learning Surrogates of the Activated Sludge Process}
+\label{ch:conservation}
 
-\subsection{Results}
+\section{Rationale}
 
-\subsection{Synthesis}
+\section{Method}
 
-%% ============================================================
-%% Back matter
-%% ============================================================
+\section{Results}
 
-\section{Conclusions}
+\section{Synthesis}
 
-\section{Outlook}
 
-%% ---- References ----
-% \bibliographystyle{cas-model2-names}
-% \bibliography{references}
+\chapter{A Physically Admissible and Interpretable Machine Learning Surrogate of the Activated Sludge Process}
+\label{ch:admissible}
 
-\section*{Acknowledgments}
+\section{Rationale}
 
-\section*{About the Author}
+\section{Method}
 
-\section*{List of Publications and Presentations}
+\section{Results}
+
+\section{Synthesis}
+
+
+% Conclusion (unnumbered, but preserved in the ToC)
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+\markboth{Conclusion}{Conclusion}
+\label{ch:concl}
+
+\section*{Summary of Contributions}
+
+\section*{Outlook}
+
+
+% -------------------
+% References
+% -------------------
+
+\newpage
+\thispagestyle{empty}
+\clearpage
+
+\bibliographystyle{apacite}
+\bibliography{references}
+
+
+% -------------------
+% Appendices
+% -------------------
+
+\appendix
+
+\chapter{Appendix A}
+\label{ch:appendix.a}
+
+\chapter{Appendix B}
+\label{ch:appendix.b}
+
+\chapter{Appendix C}
+\label{ch:appendix.c}
 
 \end{document}

@@ -185,7 +185,7 @@ function Get-SourceRootPath {
         return $item.FullName
     }
 
-    $directories = $TexPaths | ForEach-Object { Split-Path -Parent $_ } | Sort-Object -Unique
+    $directories = @($TexPaths | ForEach-Object { Split-Path -Parent $_ } | Sort-Object -Unique)
     if ($directories.Count -ne 1) {
         throw "All TeX files must come from the same source directory unless -SourceRoot is provided."
     }
