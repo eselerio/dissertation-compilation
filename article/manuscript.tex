@@ -219,6 +219,11 @@
 % -------------------
 
 \begin{center}
+    \includegraphics[height=2.6cm]{usc_logo.png}\hspace{1.4cm}%
+    \includegraphics[height=2.6cm]{usc_soe_symbol.png}
+
+    \vspace{1.5em}
+
     \sc\large
     \thesisUniversity\\
     \thesisFaculty
@@ -2060,7 +2065,7 @@ sludge component space where conservation and nonnegativity are defined.
 \subsection{Stoichiometric Invariants and Feasible States}
 
 Let \(\nu\in\mathbb{R}^{28\times F}\) denote the ASM2d-TSN stoichiometric matrix. A full-row-rank invariant
-operator \(A\in\mathbb{R}^{q\times F}\) was formed from the left null space of \(\nu\), so that
+operator \(A\in\mathbb{R}^{q\times F}\) was formed from the right null space of \(\nu\), so that
 \(A\nu^\top=0\). The adopted stoichiometric matrix produced \(q=5\) independent invariant rows. For an
 admissible steady state within the declared reactor boundary, the component change from influent to effluent
 can be expressed through reaction progress variables \(\xi\), giving
@@ -2321,8 +2326,8 @@ raw component predictions.
 
 Learning behavior across sample sizes was summarized with final-size RMSE, normalized area under the RMSE
 learning curve, dense average rank across retained targets and metrics, and the train-validation RMSE gap at
-the largest retained size. The normalized area under the learning curve was computed by trapezoidal integration
-over the sampled dataset sizes:
+the largest retained size. The normalized area under the learning curve (nAUC) was computed by trapezoidal
+integration over the sampled dataset sizes:
 \begin{equation}
 \label{eq:ch3_nauc}
 \mathrm{nAUC}_{i,m}
@@ -2840,7 +2845,7 @@ kernel and neighbor methods, latent-variable and sparse multi-task regression, a
 flexible nonlinear learners could be compared with simpler or more inspectable alternatives under a fixed data
 and scoring protocol \citep{Breiman2001,ChenGuestrin2016,Wold2001,Hornik1989,ArikPfister2021,Borisov2024}. The
 interpretable Invariant-Constrained Second-Order Regression (ICSOR) surrogate developed in the third study was
-evaluated against these same comparators.
+evaluated against comparators drawn from this same set.
 
 \begin{table}[htbp]
 \centering
@@ -2923,5 +2928,40 @@ magnitude measures the total standardized negative mass in a prediction, so a co
 admissible in the sense used here only when both quantities lie within numerical tolerance. The normalized area
 under the learning curve condenses an entire error-versus-sample-size trajectory into a single value, which
 allows sample efficiency to be compared without ranking models at only one training size \citep{VieringLoog2023}.
+
+\cleardoublepage
+\backmatter
+
+\chapter*{About the Author}
+\addcontentsline{toc}{chapter}{About the Author}
+\markboth{About the Author}{About the Author}
+
+\begin{center}
+\includegraphics[width=0.32\textwidth]{eselerio_photo.jpg}
+\end{center}
+
+Egberto F. Selerio Jr. obtained his Bachelor of Science degree in Industrial Engineering from the University
+of San Jose-Recoletos, Philippines. He obtained his Master of Science degree in Industrial Engineering from
+the University of San Carlos--Talamban, Philippines. He has published 28 journal articles in applied
+operations research, data science, and environmental engineering, with an H-index of 18. He is presently a
+senior data scientist at Arch, an S\&P 500 insurance company, and a student in the Doctor of Engineering
+program at the University of San Carlos--Talamban, Philippines.
+
+\cleardoublepage
+\chapter*{List of Publications and Presentations}
+\addcontentsline{toc}{chapter}{List of Publications and Presentations}
+\markboth{List of Publications and Presentations}{List of Publications and Presentations}
+
+\section*{Publication}
+
+Selerio, E. F. (2026). An interpretable statistical surrogate of activated sludge systems that preserves mass
+conservation and component non-negativity. \textit{Digital Chemical Engineering, 20}, Article 100329.
+doi: 10.1016/j.dche.2026.100329
+
+\section*{Presentation}
+
+Selerio, E. F. (2023, April 21--22). \textit{Mass transport, biofilm accumulation, and biotransformation in
+recycling down-flow hanging sponge systems} [Poster presentation]. 4th International Conference on Sustainable
+Energy Ecosystems (SEECON 2023), University of San Carlos--Talamban Campus, Cebu City, Philippines.
 
 \end{document}
