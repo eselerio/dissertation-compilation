@@ -1620,7 +1620,299 @@ or random sampling.
 
 \section{Results}
 
+The results are organized around the paired question that motivated the analysis. First, the mechanistic
+reference states were checked to verify that the benchmark itself occupied the intended physical domain. The
+surrogate predictions were then evaluated in two forms: raw outputs returned directly by the trained learners
+and projected outputs obtained after enforcing the declared conservation and nonnegativity conditions.
+
+\subsection{Benchmark Verification}
+
+The completed benchmark contained 10,000 in-distribution steady states and 600 accepted states in each
+beyond-domain regime. Every mechanistic candidate in these three sets met the acceptance rule
+(Table~\ref{tab:ch2_dataset_validation}). The accepted effluent states were componentwise positive, and their
+invariant residuals were small relative to the steady-state acceptance tolerance of \(10^{-9}\). The largest
+observed invariant residual was \(4.90\times10^{-11}\) in-distribution, \(5.67\times10^{-11}\) in the mild
+beyond-domain regime, and \(2.91\times10^{-10}\) in the severe beyond-domain regime.
+
+These checks show that violations observed in raw surrogate outputs were not inherited from infeasible
+mechanistic targets. The reference states already satisfied the intended component domain before any surrogate
+was trained. Projection was therefore tested as a post prediction correction of learned outputs, not as a repair
+of the mechanistic data.
+
+\begin{table}[htbp]
+\centering
+\caption{Mechanistic dataset generation and invariant verification. The invariant residual is \(\|Ac_{out}-Ac_{in}\|_2\).}
+\label{tab:ch2_dataset_validation}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & Attempted & Retained & Acceptance \% & Maximum invariant residual & Minimum component \\
+\midrule
+In-distribution & 10,000 & 10,000 & 100.0 & \(4.90\times10^{-11}\) & \(8.75\times10^{-4}\) \\
+Mild beyond-domain & 600 & 600 & 100.0 & \(5.67\times10^{-11}\) & \(1.62\times10^{-3}\) \\
+Severe beyond-domain & 600 & 600 & 100.0 & \(2.91\times10^{-10}\) & \(1.01\times10^{-3}\) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{In-Distribution Accuracy After Projection}
+
+At the largest in-distribution sample size, the multilayer perceptron (MLP) retained the lowest raw and
+projected normalized root mean squared error (nRMSE), followed by CatBoost, LightGBM, XGBoost, and TabNet
+(Table~\ref{tab:ch2_full_size_accuracy}). Projection did not change this leading pattern. The best raw
+surrogates remained the best projected surrogates, which means that post prediction enforcement did not replace
+the need for a strong learned approximation of the activated sludge response.
+
+Projection reduced aggregate nRMSE for five surrogates and increased it for eight. The largest aggregate
+benefits occurred for Multi-task Elastic Net and Multi-task Lasso, each with a mean nRMSE change of \(-0.020\).
+The strongest aggregate cost occurred for Random Forest, whose mean nRMSE increased by \(+0.095\). The leading
+boosted-tree models changed only slightly at full size. CatBoost improved by \(0.001\), while XGBoost and
+LightGBM each worsened by about \(0.001\). The MLP improved by \(0.002\), indicating that the most accurate raw
+surrogate also remained accurate after the correction.
+
+\begin{table}[htbp]
+\centering
+\caption{In-distribution performance at \(N=10,000\). Values are five-fold mean \(\pm\) sample SD; \(\Delta\) nRMSE is projected minus raw.}
+\label{tab:ch2_full_size_accuracy}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Surrogate & Raw nRMSE & Projected nRMSE & \(\Delta\) nRMSE & Raw macro-\(R^2\) & Projected macro-\(R^2\) \\
+\midrule
+XGBoost & \(0.254\pm0.006\) & \(0.255\pm0.006\) & \(+0.001\) & \(0.935\pm0.003\) & \(0.935\pm0.003\) \\
+LightGBM & \(0.249\pm0.008\) & \(0.250\pm0.007\) & \(+0.001\) & \(0.938\pm0.004\) & \(0.937\pm0.004\) \\
+CatBoost & \(0.230\pm0.006\) & \(0.229\pm0.006\) & \(-0.001\) & \(0.947\pm0.002\) & \(0.947\pm0.002\) \\
+AdaBoost & \(0.525\pm0.004\) & \(0.581\pm0.028\) & \(+0.056\) & \(0.724\pm0.004\) & \(0.660\pm0.035\) \\
+Random Forest & \(0.718\pm0.005\) & \(0.813\pm0.020\) & \(+0.095\) & \(0.484\pm0.004\) & \(0.332\pm0.053\) \\
+Extra Trees & \(0.563\pm0.005\) & \(0.608\pm0.025\) & \(+0.044\) & \(0.683\pm0.002\) & \(0.627\pm0.037\) \\
+SVR & \(0.364\pm0.011\) & \(0.356\pm0.011\) & \(-0.008\) & \(0.868\pm0.002\) & \(0.874\pm0.002\) \\
+\(k\)-NN & \(0.607\pm0.007\) & \(0.621\pm0.021\) & \(+0.014\) & \(0.632\pm0.001\) & \(0.613\pm0.026\) \\
+PLS & \(0.721\pm0.006\) & \(0.745\pm0.031\) & \(+0.024\) & \(0.480\pm0.002\) & \(0.446\pm0.033\) \\
+Multi-task Elastic Net & \(0.536\pm0.008\) & \(0.516\pm0.008\) & \(-0.020\) & \(0.713\pm0.003\) & \(0.734\pm0.003\) \\
+Multi-task Lasso & \(0.536\pm0.008\) & \(0.516\pm0.008\) & \(-0.020\) & \(0.713\pm0.003\) & \(0.734\pm0.003\) \\
+MLP & \(0.150\pm0.012\) & \(0.149\pm0.012\) & \(-0.002\) & \(0.977\pm0.003\) & \(0.978\pm0.003\) \\
+TabNet & \(0.272\pm0.027\) & \(0.275\pm0.024\) & \(+0.003\) & \(0.926\pm0.013\) & \(0.923\pm0.014\) \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+The learning curves in Figure~\ref{fig:ch2_learning_curves} confirm that all raw surrogates benefited from
+additional mechanistic training states, but not at the same rate. XGBoost and LightGBM were strongest at the
+smallest sample size, whereas the MLP became the clear full-size leader. TabNet improved sharply from
+\(N=500\) to \(N=10,000\), but it required more data before becoming competitive with the leading neural and
+boosted-tree models. These patterns reinforce the importance of separating model learnability from physical
+enforcement: projection can correct admissibility, but the raw learner still determines the starting point from
+which the correction operates.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.96\textwidth]{ch2_learning_curves.pdf}
+\caption{In-distribution learning curves for raw predictions. Lines show five-fold mean nRMSE and shaded regions show \(\pm\) one sample SD across folds.}
+\label{fig:ch2_learning_curves}
+\end{figure}
+
+\subsection{Mass Conservation and Nonnegativity}
+
+Every raw surrogate prediction set violated the declared mass-conservation tolerance at every sample size. This
+included models whose raw predictions remained nonnegative at \(N=10,000\), such as AdaBoost, Random Forest,
+Extra Trees, and \(k\)-NN (Table~\ref{tab:ch2_projection_physics}). Their nonnegative raw outputs were still
+not guaranteed to satisfy the case-specific conservation relation \(Ac=b_i\). Conversely, the more flexible
+unconstrained regressors often violated both requirements: at full size, raw nonnegativity violation rates
+ranged from 39.0\% for LightGBM to 76.8\% for support vector regression (SVR) among the surrogates that crossed
+the zero boundary.
+
+Projection eliminated both violation types in all 750,750 in-distribution projected predictions. The largest
+observed projected conservation residual was \(2.06\times10^{-13}\), and no projected component was negative
+under the stated tolerance. This is the central physical-admissibility result: the same post prediction
+procedure returned every evaluated surrogate output to the declared invariant balance and the nonnegative
+component domain without retraining the underlying models.
+
+\begin{table}[htbp]
+\centering
+\caption{Physical-admissibility diagnostics at \(N=10,000\). Raw rates and displacement are five-fold means. Projected mass-conservation and nonnegativity violation rates were zero for every surrogate.}
+\label{tab:ch2_projection_physics}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Surrogate & Raw mass violation \% & Raw nonnegativity violation \% & Mean standardized displacement & Backtracking \% \\
+\midrule
+XGBoost & 100.0 & 39.7 & 0.300 & 0.00 \\
+LightGBM & 100.0 & 39.0 & 0.301 & 0.00 \\
+CatBoost & 100.0 & 59.1 & 0.242 & 0.00 \\
+AdaBoost & 100.0 & 0.0 & 0.901 & 0.30 \\
+Random Forest & 100.0 & 0.0 & 2.002 & 1.42 \\
+Extra Trees & 100.0 & 0.0 & 1.528 & 0.88 \\
+SVR & 100.0 & 76.8 & 0.363 & 0.01 \\
+\(k\)-NN & 100.0 & 0.0 & 1.192 & 0.25 \\
+PLS & 100.0 & 54.3 & 1.808 & 0.93 \\
+Multi-task Elastic Net & 100.0 & 71.1 & 0.482 & 0.00 \\
+Multi-task Lasso & 100.0 & 71.1 & 0.482 & 0.00 \\
+MLP & 100.0 & 58.6 & 0.189 & 0.00 \\
+TabNet & 100.0 & 60.5 & 0.545 & 0.04 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Backtracking was rare. It occurred in 2,489 of the 750,750 in-distribution projections, or 0.332\%. Random
+Forest, partial least squares (PLS), and Extra Trees accounted for most of these activations, with 904, 574,
+and 566 cases, respectively. The low activation rate indicates that the projection acted primarily as a
+conservative reconciliation step; positivity backtracking served as a safeguard for the smaller set of
+predictions whose conservation-preserving candidate would otherwise cross the nonnegative boundary.
+
+The effect of projection on nRMSE varied across models and sample sizes (Figure~\ref{fig:ch2_projection_change}).
+Multi-task Elastic Net and Multi-task Lasso benefited at all eleven sample sizes, suggesting that their joint
+linear fits left a repeatable residual component outside the feasible conservation subspace. SVR shifted from
+projection costs at smaller sizes to benefits from \(N=5,250\) onward. The leading boosted trees moved toward
+near neutrality as the sample size increased, whereas Random Forest retained a clear aggregate cost. This
+pattern shows why physical enforcement should be evaluated as a paired intervention rather than assumed to
+improve ordinary accuracy.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.94\textwidth]{ch2_projection_change.pdf}
+\caption{Change in in-distribution nRMSE after projection. Each cell is projected minus raw five-fold mean nRMSE; negative values indicate lower error after projection.}
+\label{fig:ch2_projection_change}
+\end{figure}
+
+Component-level behavior explained why aggregate nRMSE could worsen even when projection usually moved
+components in a useful direction. At \(N=10,000\), projection lowered mean component nRMSE in 188 of 260
+surrogate-component comparisons. Twelve of the 13 surrogates improved for a majority of components. Eight
+components improved for every surrogate: \(S_{ALK}\), \(S_I\), \(S_{N2}\), \(S_{NO2}\), \(S_{PO4}\),
+\(X_{MeOH}\), \(X_{MeP}\), and \(X_{NOB}\). The principal counterexample was \(X_H\), which worsened for every
+surrogate. Thus, the aggregate metric was sometimes dominated by a small number of adverse component movements,
+even though most component-level comparisons improved.
+
+\subsection{Beyond-Domain Prediction}
+
+Beyond-domain evaluation made the prediction problem harder for every raw and projected surrogate
+(Table~\ref{tab:ch2_beyond_domain_accuracy}). The MLP remained the lowest-error surrogate in both regimes,
+with projected nRMSE values of 0.251 under the mild shift and 0.521 under the severe shift. TabNet ranked
+second in both regimes, followed by the leading boosted-tree models. The shift from mild to severe conditions
+therefore preserved the broad ordering of the strongest models while increasing the absolute error level.
+
+Projection reduced aggregate nRMSE in 11 of 13 mild-regime comparisons and 9 of 13 severe-regime comparisons.
+The strongest beyond-domain benefits occurred for the multi-task linear models and PLS, while AdaBoost and
+Random Forest worsened in both regimes. Extra Trees and \(k\)-NN also worsened under severe extrapolation. The
+result is consistent with the in-distribution pattern: projection can remove infeasible residual directions,
+but when a raw prediction is far from the mechanistic target, enforcing feasibility can also move selected
+components farther from their true values.
+
+\begin{table}[htbp]
+\centering
+\caption{Beyond-domain nRMSE for full-data surrogate refits. Each value summarizes 600 separately simulated cases.}
+\label{tab:ch2_beyond_domain_accuracy}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrr}
+\toprule
+Surrogate & Mild raw & Mild projected & Severe raw & Severe projected \\
+\midrule
+XGBoost & 0.424 & 0.420 & 0.861 & 0.853 \\
+LightGBM & 0.419 & 0.413 & 0.848 & 0.842 \\
+CatBoost & 0.393 & 0.387 & 0.836 & 0.828 \\
+AdaBoost & 0.692 & 0.711 & 1.036 & 1.139 \\
+Random Forest & 0.908 & 0.996 & 1.242 & 1.489 \\
+Extra Trees & 0.717 & 0.679 & 1.084 & 1.222 \\
+SVR & 0.555 & 0.538 & 0.989 & 0.948 \\
+\(k\)-NN & 0.760 & 0.732 & 1.113 & 1.147 \\
+PLS & 0.908 & 0.841 & 1.267 & 1.190 \\
+Multi-task Elastic Net & 0.750 & 0.688 & 1.146 & 1.044 \\
+Multi-task Lasso & 0.751 & 0.688 & 1.146 & 1.044 \\
+MLP & 0.255 & 0.251 & 0.531 & 0.521 \\
+TabNet & 0.336 & 0.333 & 0.563 & 0.547 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{ch2_severe_extrapolation.pdf}
+\caption{Raw and projected nRMSE under the severe beyond-domain regime.}
+\label{fig:ch2_severe_extrapolation}
+\end{figure}
+
+The component-level beyond-domain pattern again favored projection more often than the aggregate scores alone
+suggested. Projection lowered component nRMSE in 192 of 260 mild-regime surrogate-component comparisons and
+193 of 260 severe-regime comparisons. Every surrogate improved for a majority of components in both regimes.
+At the same time, adverse movements recurred in a smaller subset of components, especially \(X_H\) and, for
+several tree and neighbor methods, \(S_F\). These repeated component patterns indicate that projection behavior
+was governed by the geometry of the invariant operator and the weighting of the correction, not only by the
+choice of surrogate family.
+
+Every raw beyond-domain prediction set violated mass conservation. Projection reduced both mass-conservation
+and nonnegativity violation rates to zero across all 15,600 beyond-domain projected predictions. The maximum
+projected conservation residual was \(1.72\times10^{-13}\), and backtracking was activated for 68 predictions
+(0.436\%). Across in-distribution and beyond-domain evaluation combined, all 766,350 projected predictions
+satisfied the enforced physical requirements.
+
+\subsection{Computational Cost}
+
+Projection added a small per-sample latency relative to the cost of the complete surrogate workflow
+(Figure~\ref{fig:ch2_inference_latency}). At \(N=10,000\), projection-only latency ranged from about 0.068 to
+0.144 ms per sample across the surrogate set. End-to-end projected inference remained below 0.315 ms per sample
+for all models except AdaBoost and SVR. The MLP combined the lowest in-distribution and beyond-domain errors
+with an end-to-end projected inference latency of 0.107 ms per sample. These timings indicate that enforcing
+the two physical requirements did not remove the computational advantage of surrogate prediction.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.90\textwidth]{ch2_inference_latency.pdf}
+\caption{Complete 20-component inference latency at \(N=10,000\). Bars show mean raw latency in milliseconds per sample, with fold-to-fold sample SD.}
+\label{fig:ch2_inference_latency}
+\end{figure}
+
 \section{Synthesis}
+
+The results show that physical admissibility is a separate requirement from predictive accuracy. The raw
+surrogates could learn the activated sludge simulator response with useful accuracy, especially when flexible
+models were trained on the full in-distribution dataset. Yet every raw prediction set violated the declared
+mass-conservation condition, and several accurate surrogates also produced negative values in low-concentration
+components. This decoupling is the main empirical reason for treating ordinary error metrics and physical
+diagnostics as complementary rather than interchangeable. A low nRMSE indicated closeness to the mechanistic
+target, but it did not prove that the returned vector could be interpreted as an admissible activated sludge
+state.
+
+The projection addressed that specific admissibility gap. Across 766,350 projected predictions, it enforced
+both conservation and nonnegativity with residuals at numerical precision and without changing the underlying
+surrogate architecture, training loss, or hyperparameter protocol. This matters because component-space
+predictions are not merely intermediate numerical outputs; they are the basis from which COD, TN, TP, and TSS
+summaries are derived. If the component state violates a declared balance or contains a negative concentration,
+then an apparently plausible composite value can hide a physically inconsistent prediction. The paired
+diagnostics make that problem visible and show that a model-agnostic post prediction step can prevent such
+outputs from entering downstream interpretation.
+
+The same results also caution against treating projection as a device for improving accuracy. Projection
+usually improved component-level scores, but aggregate nRMSE did not improve uniformly. Its effect depended on
+the position of the raw residual relative to the feasible affine space, the relative weighting in the
+correction, and the activation of positivity backtracking. The multi-task linear models benefited consistently
+because projection removed a repeatable inconsistency among components. Random Forest and several averaging
+models were already nonnegative but farther from the feasible balance relation; correcting them sometimes
+required larger movements that increased aggregate error. The useful conclusion is not that projection makes
+every surrogate better. It is that projection makes the physical consequences of each surrogate explicit.
+
+Beyond-domain evaluation reinforces this distinction. Severe shifts increased error for every surrogate,
+confirming that physical enforcement does not solve extrapolation by itself. Nevertheless, projection often
+helped under beyond-domain conditions, especially for surrogates whose extrapolation errors contained larger
+infeasible components. This behavior is consistent with the broader scientific machine learning view that
+physical structure can constrain learned predictions while still leaving empirical generalization as a
+separate problem \citep{Hansen2024,Shen2023,Valente2025}. For activated sludge surrogates, the practical
+lesson is that admissibility checks should travel with accuracy checks, particularly when predictions are used
+outside the center of the sampled operating domain.
+
+Taken together, the evidence supports post prediction projection as a transparent enforcement layer for
+activated sludge surrogate workflows when complete component states are required. Its strongest contribution is
+not universal error reduction, but reliable removal of two physically meaningful failure modes: broken
+stoichiometric invariants and negative concentrations. The limits are equally important. The guarantees apply
+to the stated steady-state component basis, invariant operator, and nonnegativity condition; they do not prove
+field validity, kinetic realism, or plant-wide conservation beyond the modeled boundary. Within that scope, the
+workflow strengthens surrogate credibility by requiring a prediction to be both numerically evaluated and
+physically interpretable before it is treated as a usable wastewater treatment state.
 
 
 \chapter{A Physically Admissible and Interpretable Machine Learning Surrogate of the Activated Sludge Process}
@@ -1628,11 +1920,710 @@ or random sampling.
 
 \section{Rationale}
 
+Activated sludge surrogate modeling becomes most useful when the predicted output remains meaningful as a
+complete process state, not only as a set of accurate numerical estimates. The Activated Sludge Model (ASM)
+family represents wastewater treatment through coupled component balances for organic matter, nutrients,
+alkalinity, biomass, and solids, so a predicted effluent vector should remain compatible with the component
+space in which those balances are defined \citep{Henze2006,Guerrero2011}. Conventional machine learning
+surrogates can approximate nonlinear simulator responses with low error, but low error alone does not ensure
+mass conservation, nonnegativity, or an interpretable relationship between operating conditions, influent
+composition, and effluent state \citep{Hansen2024,KircherVotsmeier2025,Shen2023}. The central motivation is
+therefore to move from fast prediction toward a surrogate whose returned state is also physically admissible
+and inspectable.
+
+Two partial solutions leave this need unresolved when they are considered separately. A raw-prediction
+benchmark can establish whether modern tabular learners recover the activated sludge response from paired
+inputs and outputs, but the resulting predictions may still be unconstrained component vectors. A post
+prediction enforcement layer can then return those vectors to the feasible set, but physical admissibility is
+introduced as a correction after the surrogate has already produced its estimate. That workflow is valuable
+for diagnosis and repair, yet it does not by itself create a surrogate whose learned structure is organized
+around the physical roles of influent loads, operating variables, nonlinear effects, and component coupling.
+For engineering use, the stronger target is an integrated surrogate design in which predictive accuracy,
+physical admissibility, and interpretability are treated as connected requirements rather than as separate
+afterthoughts.
+
+Scientific machine learning provides the broader reason for this integration. Loss functions that encode
+conservation, analytic constraints, conservative architectures, and projection based corrections show that
+physical structure can be imposed on learned models, but soft penalties do not necessarily eliminate deployment
+violations and corrections limited to equality constraints do not necessarily prevent negative states
+\citep{Raissi2019,Beucler2021,Hansen2024,SturmWexler2020,SturmWexler2022,KircherVotsmeier2025,Valente2025}.
+Activated sludge surrogates require these ideas to be adapted to a component-space prediction problem in which
+the same effluent vector must support material-balance interpretation, nonnegative concentrations, and derived
+water quality summaries. The motivating gap is not only the absence of a correction mechanism, but the absence
+of a transparent surrogate formulation that joins learned nonlinear response with guaranteed final-state
+admissibility under the declared ASM boundary.
+
+Interpretability makes the gap sharper. In environmental engineering applications, a surrogate may be used for
+screening operating conditions, comparing scenarios, or supporting optimization, so the model should provide
+more than a black-box mapping from inputs to outputs when a transparent alternative is feasible. The argument
+for interpretable models in high-consequence settings is that users should be able to inspect the basis of a
+prediction rather than rely entirely on post hoc explanation \citep{Rudin2019}. In the activated sludge
+setting, this means retaining visible roles for operating conditions, influent component loads, nonlinear
+curvature, and cross-component redistribution while still enforcing the physical requirements that make the
+returned vector credible as a process state.
+
+Invariant-Constrained Second-Order Regression (ICSOR) is motivated by this combined requirement. Its role is
+not simply to replace the most accurate unconstrained learner, nor simply to attach a correction step to an
+otherwise opaque regression head. The research question is whether a structured, invariant-aware surrogate can
+provide a practical balance among predictive accuracy, data efficiency, computational cost, interpretability,
+and exact deployment-time admissibility. Such a balance is important because an activated sludge surrogate that
+is slightly less flexible but physically dependable and structurally inspectable may be more useful for
+engineering analysis than a lower-error model whose component predictions require separate repair and remain
+difficult to interpret.
+
 \section{Method}
+
+The analysis used a steady-state activated sludge benchmark to evaluate whether Invariant-Constrained
+Second-Order Regression could return predictions that were accurate, physically admissible, and structurally
+inspectable. All models received the same operating and influent inputs and were trained against the same
+20-component effluent state. The methodological distinction was that the comparator regressors learned a
+direct unconstrained input-output map, whereas ICSOR learned a structured component-space regression head and
+then returned predictions through a checked deployment rule.
+
+\subsection{Simulated Process and Prediction Target}
+
+The benchmark represented a standalone continuous stirred tank reactor governed by Activated Sludge Model
+No.\ 2d with two-step nitrification (ASM2d-TSN). The process description retained 20 activated sludge
+components and 28 biological and chemical processes, including hydrolysis, heterotrophic growth and
+denitrification, phosphate-accumulating-organism storage and growth, two-step nitrification, lysis, and
+phosphorus precipitation-redissolution. The component basis followed the Activated Sludge Model family
+\citep{Henze2006}, and the two-step nitrification structure followed \citet{Guerrero2011}.
+
+Each sample contained two operating variables and the full influent component state. The operating vector
+\(u\in\mathbb{R}^{2}\) contained hydraulic retention time (HRT) and aeration level. The influent vector
+\(c_{in}\in\mathbb{R}^{F}\), with \(F=20\), contained dissolved oxygen, soluble carbon, nitrogen,
+phosphorus, inert, and alkalinity states together with particulate inert, biodegradable substrate, biomass,
+storage-polymer, and metal-precipitate states. The sampled symbols and ranges are given in
+Table~\ref{tab:ch3_simulation_domain}. The supervised target was the corresponding effluent component vector
+\(c_{out}\in\mathbb{R}^{F}\).
+
+\begin{table}[htbp]
+\centering
+\caption{Input ranges used to generate the steady-state ASM2d-TSN benchmark.}
+\label{tab:ch3_simulation_domain}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lll|lll}
+\toprule
+Variable & Range & Unit & Variable & Range & Unit \\
+\midrule
+HRT & \([6.0,36.0]\) & h & \(S_I\) & \([10.0,90.0]\) & g COD/m\(^3\) \\
+Aeration & \([0.5,2.5]\) & -- & \(S_{ALK}\) & \([80.0,260.0]\) & mol/m\(^3\) \\
+\(S_O\) & \([0.0,0.5]\) & g O\(_2\)/m\(^3\) & \(X_I\) & \([20.0,120.0]\) & g COD/m\(^3\) \\
+\(S_F\) & \([20.0,180.0]\) & g COD/m\(^3\) & \(X_S\) & \([60.0,280.0]\) & g COD/m\(^3\) \\
+\(S_A\) & \([5.0,80.0]\) & g COD/m\(^3\) & \(X_H\) & \([15.0,100.0]\) & g COD/m\(^3\) \\
+\(S_{NH4}\) & \([12.0,55.0]\) & g N/m\(^3\) & \(X_{PAO}\) & \([5.0,60.0]\) & g COD/m\(^3\) \\
+\(S_{NO2}\) & \([0.0,3.0]\) & g N/m\(^3\) & \(X_{PP}\) & \([2.0,20.0]\) & g P/m\(^3\) \\
+\(S_{NO3}\) & \([0.0,8.0]\) & g N/m\(^3\) & \(X_{PHA}\) & \([1.0,30.0]\) & g COD/m\(^3\) \\
+\(S_{N2}\) & \([0.0,2.0]\) & g N/m\(^3\) & \(X_{AOB}\) & \([0.5,8.0]\) & g COD/m\(^3\) \\
+\(S_{PO4}\) & \([2.0,18.0]\) & g P/m\(^3\) & \(X_{NOB}\) & \([0.5,8.0]\) & g COD/m\(^3\) \\
+ & & & \(X_{MeP}\) & \([0.0,12.0]\) & g TSS/m\(^3\) \\
+ & & & \(X_{MeOH}\) & \([0.0,12.0]\) & g TSS/m\(^3\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 22-dimensional input domain in Table~\ref{tab:ch3_simulation_domain} was sampled by a randomized Latin
+hypercube with seed 42 \citep{McKay1979}. Each sampled operating-influent point was solved as a steady-state
+ASM2d-TSN case by nonlinear least squares under componentwise bounds from \(10^{-8}\) to 1500 in the native
+unit of each component. The cost-change, step-size, and gradient tolerances were \(10^{-9}\), and each
+nonlinear solve was limited to 1200 function evaluations. Physically informed initial guesses were attempted
+before a dynamic-relaxation fallback was used. A candidate state was retained only when the maximum absolute
+steady-state balance residual was no greater than \(10^{-9}\). The final benchmark contained 10,000 accepted
+steady states.
+
+Chemical oxygen demand (COD), total nitrogen (TN), total phosphorus (TP), and total suspended solids (TSS)
+were computed after component prediction rather than used as direct training targets. For any component vector
+\(c\), the reported composite vector was
+\begin{equation}
+\label{eq:ch3_composite_map}
+y_{\mathrm{comp}}=I_{\mathrm{comp}}c,
+\end{equation}
+where \(I_{\mathrm{comp}}\in\mathbb{R}^{4\times F}\) is the fixed component-to-composite composition matrix.
+Keeping this map outside the learned model ensured that all methods were compared first in the activated
+sludge component space where conservation and nonnegativity are defined.
+
+\subsection{Stoichiometric Invariants and Feasible States}
+
+Let \(\nu\in\mathbb{R}^{28\times F}\) denote the ASM2d-TSN stoichiometric matrix. A full-row-rank invariant
+operator \(A\in\mathbb{R}^{q\times F}\) was formed from the left null space of \(\nu\), so that
+\(A\nu^\top=0\). The adopted stoichiometric matrix produced \(q=5\) independent invariant rows. For an
+admissible steady state within the declared reactor boundary, the component change from influent to effluent
+can be expressed through reaction progress variables \(\xi\), giving
+\begin{equation}
+\label{eq:ch3_stoichiometric_change}
+c_{out}-c_{in}=\nu^\top\xi .
+\end{equation}
+Premultiplication by \(A\) removes the reaction term and gives the conservation relation
+\begin{equation}
+\label{eq:ch3_invariant_relation}
+A(c_{out}-c_{in})=0,\qquad Ac_{out}=Ac_{in}.
+\end{equation}
+This null-space construction follows the same conservation logic used in physically structured surrogate
+models, where learned predictions are required to remain on a constraint manifold rather than only near the
+observed target values \citep{SturmWexler2020,SturmWexler2022}.
+
+For sample \(i\), the conservation target and feasible effluent set were
+\begin{equation}
+\label{eq:ch3_feasible_set}
+b_i=Ac_{in,i},\qquad
+\mathcal{F}_i=\{c\in\mathbb{R}^{F}:Ac=b_i,\ c\geq\mathbf{0}\}.
+\end{equation}
+The equality condition encodes the five modeled stoichiometric invariants, and the inequality condition
+requires componentwise nonnegativity. These constraints define physical admissibility for the returned
+component vector. They do not claim complete kinetic realism, thermodynamic feasibility, or plant-wide
+conservation outside the adopted system boundary.
+
+\subsection{Invariant-Constrained Second-Order Regression}
+
+ICSOR separates the operating variables from the influent inventory when constructing its regression head.
+For each sample, the feature vector was
+\begin{equation}
+\label{eq:ch3_feature_map}
+\phi(u,c_{in})=
+\begin{bmatrix}
+1\\
+u\\
+c_{in}\\
+u\otimes u\\
+c_{in}\otimes c_{in}\\
+u\otimes c_{in}
+\end{bmatrix}
+\in\mathbb{R}^{D},
+\qquad
+D=1+M_{op}+F+M_{op}^{2}+F^{2}+M_{op}F,
+\end{equation}
+with \(M_{op}=2\). This partition keeps the engineering roles of operating settings and influent loads
+explicit. Operating variables alter the reactor environment, whereas influent concentrations define the
+material inventory supplied to that environment \citep{Araujo2013,Machado2014}.
+
+The feature vector drives a latent component-space forcing vector rather than the final deployed prediction
+directly:
+\begin{equation}
+\label{eq:ch3_latent_driver}
+r(u,c_{in})=B\phi(u,c_{in}).
+\end{equation}
+Written by blocks, this driver is
+\begin{equation}
+\label{eq:ch3_block_driver}
+r=b+W_u u+W_{in}c_{in}
+\,+\,\Theta_{uu}(u\otimes u)
+\,+\,\Theta_{cc}(c_{in}\otimes c_{in})
+\,+\,\Theta_{uc}(u\otimes c_{in}).
+\end{equation}
+The blocks respectively represent baseline forcing, first-order operating effects, first-order influent-load
+effects, operating curvature, influent-state curvature, and operation-loading interactions. After each update
+of \(B\), the self-quadratic blocks were symmetrized so that duplicated ordered products such as \(x_i x_j\)
+and \(x_j x_i\) had the same fitted contribution. This step preserves fitted values while making the
+quadratic coefficient blocks easier to inspect.
+
+Cross-component dependence was represented through a learned coupling matrix
+\(\Gamma\in\mathbb{R}^{F\times F}\). With \(R=I_F-\Gamma\), the coupled regression relation was
+\begin{equation}
+\label{eq:ch3_coupled_relation}
+Rc=r(u,c_{in}).
+\end{equation}
+The diagonal of \(\Gamma\) was fixed to zero, its off-diagonal entries were bounded, and candidate updates
+were accepted only when \(R\) remained well conditioned. Thus, the regression head could represent
+redistribution among activated sludge components without allowing deployment to depend on a nearly singular
+coupling matrix.
+
+For a training set with feature matrix \(\Phi\), influent matrix \(C_{in}\), and effluent target matrix
+\(C_{out}\), ICSOR estimated \(B\), \(\Gamma\), and an auxiliary nonnegative fitted-state matrix
+\(\widehat{C}\) by minimizing
+\begin{equation}
+\label{eq:ch3_training_objective}
+\begin{aligned}
+(\widehat{B},\widehat{\Gamma},\widehat{C})
+=\argmin_{B,\,\Gamma\in\mathcal{G},\,\widehat{C}\in\mathbb{R}_{+}^{N\times F}}
+&\ \left\|C_{out}-\widehat{C}\right\|_{F}^{2}
++\lambda_{inv}\left\|(\widehat{C}-C_{in})A^\top\right\|_{F}^{2}\\
+&+\lambda_{sys}\left\|\widehat{C}(I_F-\Gamma)^\top-\Phi B^\top\right\|_{F}^{2}
++\lambda_B\|B\|_{F}^{2}
++\lambda_{\Gamma}\|\Gamma\|_{F}^{2}.
+\end{aligned}
+\end{equation}
+The first term fits the effluent components directly. The invariant term is a soft training penalty rather
+than a hard guarantee. The coupled-system term links the fitted states to the structured regression head, and
+the ridge penalties stabilize the driver and coupling estimates. Exact conservation and nonnegativity are
+therefore properties of the deployment rule described below, not of the soft training objective alone.
+
+The objective was minimized through deterministic block-coordinate updates. For fixed \(\Gamma\) and
+\(\widehat{C}\), the \(B\) update was a ridge-regularized least-squares problem. For fixed \(B\) and
+\(\widehat{C}\), the \(\Gamma\) update was a convex box-constrained quadratic program within the admissible
+coupling set \(\mathcal{G}\). For fixed \(B\) and \(\Gamma\), the \(\widehat{C}\) update was a nonnegative
+quadratic program. Each full cycle updated the three blocks and retained the best objective value reached
+under the selected stopping rules.
+
+\begin{table}[htbp]
+\centering
+\caption{Selected ICSOR settings used in the benchmark.}
+\label{tab:ch3_icsor_settings}
+\scriptsize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{ll}
+\toprule
+Setting & Selected value \\
+\midrule
+Bias term in \(\phi\) & Included \\
+\(\lambda_{inv}\) & \(8.68\times10^{-3}\) \\
+\(\lambda_{sys}\) & \(1.27\times10^{-3}\) \\
+\(\lambda_B\) & \(6.09\times10^{-5}\) \\
+\(\lambda_{\Gamma}\) & \(6.55\times10^{-4}\) \\
+Maximum absolute off-diagonal \(\Gamma\) entry & 0.368 \\
+Maximum outer iterations & 60 \\
+Restarts & 1 \\
+Objective-regression window & 12 iterations \\
+Objective-regression slope tolerance & \(2.85\times10^{-7}\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Checked Deployment}
+
+For a new input pair \((u_*,c_{in,*})\), the fitted driver and coupling matrix first define
+\begin{equation}
+\label{eq:ch3_deployment_definitions}
+\phi_*=\phi(u_*,c_{in,*}),\qquad
+d_*=\widehat{B}\phi_*,\qquad
+\widehat{R}=I_F-\widehat{\Gamma}.
+\end{equation}
+When \(\widehat{R}\) is nonsingular, the raw coupled state is
+\begin{equation}
+\label{eq:ch3_raw_coupled_state}
+c_{raw}=\widehat{R}^{-1}d_*.
+\end{equation}
+This state is the transparent regression-head prediction, but it is not automatically physically admissible.
+The deployment rule therefore checks the raw state and, when needed, applies a staged correction.
+
+The first correction stage is the nearest invariant-consistent affine projection:
+\begin{equation}
+\label{eq:ch3_affine_projection}
+c_{aff}
+=\argmin_{c\in\mathbb{R}^{F}}\|c-c_{raw}\|_2^2
+\quad\text{subject to}\quad
+Ac=Ac_{in,*}.
+\end{equation}
+Because \(A\) has full row rank, the closed-form solution is
+\begin{equation}
+\label{eq:ch3_affine_closed_form}
+c_{aff}=c_{raw}-A^\top(AA^\top)^{-1}A(c_{raw}-c_{in,*}).
+\end{equation}
+This stage restores the invariant relation but does not by itself guarantee nonnegative component
+concentrations.
+
+The final branch is activated only when the raw or affine state fails the feasibility checks. It solves
+\begin{equation}
+\label{eq:ch3_deployment_lp}
+\begin{aligned}
+\hat{c}
+=\argmin_{c\in\mathbb{R}^{F},\,\rho\in\mathbb{R}^{F}}
+&\quad w_c^\top\rho\\
+\text{subject to}\quad
+& Ac=Ac_{in,*},\\
+& c\geq\mathbf{0},\\
+& -\rho\leq c-c_{aff}\leq\rho,\\
+& \rho\geq\mathbf{0},
+\end{aligned}
+\end{equation}
+where \(w_c\in\mathbb{R}_{+}^{F}\) is a fixed vector of componentwise correction weights. The program keeps
+the final state close to the affine reference in a weighted \(L_1\) sense while imposing both conservation and
+nonnegativity. The feasible set is nonempty because the nonnegative influent state itself satisfies
+\(Ac=Ac_{in,*}\) when \(c=c_{in,*}\). This checked deployment logic follows the same practical lesson emphasized by
+\citet{KircherVotsmeier2025}: a conservative correction is physically useful only when positivity is
+preserved at the same time.
+
+Deployment followed a hierarchy. If \(c_{raw}\) satisfied \(Ac_{raw}=Ac_{in,*}\) and was nonnegative within
+the numerical tolerance, it was returned directly. If the raw state failed but \(c_{aff}\) was nonnegative,
+the affine state was returned. Otherwise, Equation~\eqref{eq:ch3_deployment_lp} returned the final deployed
+state \(\hat{c}\). Reported composites were then computed as \(I_{\mathrm{comp}}\hat{c}\).
+
+\subsection{Benchmark Models, Tuning, and Validation}
+
+ICSOR was compared with nine unconstrained regressors: XGBoost, LightGBM, CatBoost, AdaBoost, Random Forest,
+support vector regression (SVR), \(k\)-nearest neighbors (k-NN), partial least squares (PLS), and a fully
+connected multilayer perceptron (MLP). These comparators represented boosting, randomized trees, kernel
+regression, instance-based prediction, latent-variable regression, and neural-network regression
+\citep{Breiman2001,ChenGuestrin2016,Wold2001,Borisov2024}. The MLP used three hidden layers with widths 128,
+64, and 32 and mapped the 22-dimensional input vector to the 20-component effluent state.
+
+Hyperparameters for all retained models were selected by seeded Optuna studies with a tree-structured Parzen
+estimator sampler, no pruning, and 100 trials per model \citep{Akiba2019}. Selection minimized validation
+mean squared error in the shared 20-component effluent prediction space. The 8,000-row training pool from the
+fixed benchmark split was reduced to a 4,000-row tuning subset, and that subset was split into 3,200
+tuning-training rows and 800 tuning-validation rows. The selected settings were then fixed for the one-shot
+benchmark and the repeated dataset-size analysis.
+
+A row-wise 80--20 train-test split with seed 42 supplied the main benchmark, yielding 8,000 training rows and
+2,000 test rows. The unconstrained regressors used z-score transformations fitted on the training split only,
+separately for the 22-input matrix and 20-output component matrix, and their predictions were inverse
+transformed before any physical diagnostic or composite metric was computed. ICSOR was kept in physical
+coordinates so that the invariant operator, deployment rule, and composition map remained aligned with the
+component basis. This preprocessing rule avoided leakage from the held-out test set \citep{Pinheiro2025}.
+
+Sample efficiency and computational scaling were evaluated with a repeated size study. The retained totals
+were
+\begin{equation}
+\label{eq:ch3_sample_sizes}
+n\in\{500,1450,2400,3350,4300,5250,
+6200,7150,8100,9050,10000\}.
+\end{equation}
+At each size, ten independent subsamples were drawn without replacement from the 10,000 accepted states using
+seeds derived from root seed 42. Each subsample was split row-wise into 80\% training and 20\% held-out test
+rows. The selected hyperparameters were not retuned during this sweep, so the resulting learning curves
+isolated sample-size sensitivity rather than repeated tuning variability.
+
+\subsection{Evaluation Metrics and Interpretability Diagnostics}
+
+Predictive accuracy was reported after every model's 20-component prediction was converted to COD, TN, TP,
+and TSS through the common composition matrix. For a model \(m\), target composite \(k\), and held-out sample
+set \(\mathcal{I}\), the composite residual was
+\begin{equation}
+\label{eq:ch3_composite_residual}
+e_{ik}^{(m)}=y_{ik}^{(m)}-y_{ik}^{\mathrm{ref}}.
+\end{equation}
+The aggregate and per-target summaries included root mean squared error (RMSE), mean absolute error (MAE),
+mean absolute percentage error (MAPE), mean squared error (MSE), and the coefficient of determination
+\(R^2\). The fixed split used aggregate RMSE as the primary ordering metric because it measures error in the
+same reported-composite space used for engineering summaries.
+
+For the main accuracy comparison, ICSOR was evaluated at its final checked deployed output. The comparator
+regressors were evaluated after the benchmark's common equality-only affine alignment and the same external
+composition map. This alignment enforced the reporting invariants but did not impose componentwise
+nonnegativity and was not the ICSOR linear program. Physical-admissibility diagnostics were reported
+separately before composite collapse so that numerical alignment for accuracy would not be mistaken for a
+learned guarantee of feasibility.
+
+For a component prediction \(\tilde c_i\), mass-conservation and nonnegativity violations were quantified as
+\begin{equation}
+\label{eq:ch3_physical_diagnostics}
+v_{mc,i}=\|A(\tilde c_i-c_{in,i})\|_2,\qquad
+v_{nn,i}=\|\min(\tilde c_i,\mathbf{0})\|_1,
+\end{equation}
+where the minimum is componentwise. A sample was counted as violating mass conservation or nonnegativity when
+the corresponding quantity exceeded \(10^{-10}\). ICSOR diagnostics distinguished the raw coupled state,
+the affine projected state, and the final checked deployed state. Comparator diagnostics used their direct
+raw component predictions.
+
+Learning behavior across sample sizes was summarized with final-size RMSE, normalized area under the RMSE
+learning curve, dense average rank across retained targets and metrics, and the train-validation RMSE gap at
+the largest retained size. The normalized area under the learning curve was computed by trapezoidal integration
+over the sampled dataset sizes:
+\begin{equation}
+\label{eq:ch3_nauc}
+\mathrm{nAUC}_{i,m}
+=\frac{1}{n_{\max}-n_{\min}}
+\int_{n_{\min}}^{n_{\max}}\overline{M}_{i,m}(n)\,dn,
+\end{equation}
+where \(\overline{M}_{i,m}(n)\) is the mean held-out value of metric \(m\) for model \(i\) at dataset size
+\(n\). This summary makes the full learning curve visible rather than ranking models only at the largest
+sample size \citep{VieringLoog2023}. Wall-clock training time was recorded for every repeated fit.
+
+Interpretability was evaluated on the globally defined pre-deployment regression head rather than on the
+piecewise correction returned by checked deployment. For reported composites, the raw-head coefficient map was
+\begin{equation}
+\label{eq:ch3_raw_head_coefficients}
+B_{\mathrm{raw,comp}}=I_{\mathrm{comp}}\widehat{R}^{-1}\widehat{B}.
+\end{equation}
+The named blocks of this matrix were then inspected to identify operating effects, influent effects, curvature
+within each input group, and interactions between operation and loading. The coupling matrix
+\(\widehat{\Gamma}\) was inspected separately as the learned redistribution structure among activated sludge
+components. Coefficient interpretation was therefore limited to structural patterns in the raw head and
+coupling matrix; it was not treated as causal evidence about the biological process or as a local explanation
+of the final deployed correction \citep{Rudin2019,Shen2023}.
 
 \section{Results}
 
+\subsection{Fixed-Split Predictive Performance}
+
+Table~\ref{tab:ch3_fixed_split_performance} summarizes the fixed 80--20 test benchmark after each predicted
+component state was converted to COD, TN, TP, and TSS through the common composition matrix. The lowest
+aggregate test error was obtained by the MLP, with RMSE 4.38, MAE 2.55, \(R^2=0.9915\), and MAPE 0.0123.
+LightGBM followed with RMSE 5.30. SVR and ICSOR were nearly tied, with RMSE values of 5.97 and 5.98,
+respectively. XGBoost and CatBoost followed at 6.12 and 6.45. The remaining models formed a higher-error
+group, with aggregate RMSE values from 21.27 to 29.00.
+
+\begin{table}[htbp]
+\centering
+\caption[Fixed-split Chapter 3 test performance]{Fixed-split 80--20 test performance in the reported-composite space. ICSOR is evaluated after checked deployment; comparator predictions use the common equality-only affine alignment before composite calculation.}
+\label{tab:ch3_fixed_split_performance}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & RMSE & MAE & \(R^2\) & MAPE \\
+\midrule
+MLP & 4.38 & 2.55 & 0.9915 & 0.0123 \\
+LightGBM & 5.30 & 3.21 & 0.9806 & 0.0203 \\
+SVR & 5.97 & 3.49 & 0.9713 & 0.0244 \\
+ICSOR & 5.98 & 3.70 & 0.9700 & 0.0256 \\
+XGBoost & 6.12 & 3.81 & 0.9733 & 0.0244 \\
+CatBoost & 6.45 & 4.07 & 0.9727 & 0.0250 \\
+AdaBoost & 21.27 & 13.15 & 0.8643 & 0.0653 \\
+\(k\)-NN & 23.61 & 13.87 & 0.8535 & 0.0557 \\
+PLS & 28.24 & 17.05 & 0.7808 & 0.0681 \\
+Random Forest & 29.00 & 16.93 & 0.7934 & 0.0632 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The fixed-split comparison therefore shows a moderate accuracy cost for the physically checked ICSOR output.
+Its aggregate RMSE was 36.5\% higher than the MLP value and 12.8\% higher than the LightGBM value. At the same
+time, ICSOR remained in the leading group rather than in the high-error group. Its RMSE was essentially the
+same as SVR and lower than XGBoost and CatBoost under the stated reporting protocol.
+
+The per-target decomposition in Table~\ref{tab:ch3_per_target_rmse} indicates that the aggregate ordering was
+driven mainly by COD, TN, and TSS. The MLP had the lowest RMSE for COD, TN, and TSS, while LightGBM was the
+strongest non-neural model on those same composites. ICSOR was competitive on COD, with RMSE 7.77, which was
+0.18 higher than LightGBM and lower than XGBoost, CatBoost, SVR, and the remaining baselines. Its larger TN
+and TSS errors prevented that COD performance from producing a better aggregate rank. TP did not distinguish
+the retained models because all equality-aligned reported outputs had RMSE 0.0361 for that composite.
+
+\begin{table}[htbp]
+\centering
+\caption{Per-target fixed-split test RMSE in the reported-composite space.}
+\label{tab:ch3_per_target_rmse}
+\scriptsize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & COD & TN & TP & TSS \\
+\midrule
+MLP & 6.48 & 1.58 & 0.0361 & 5.66 \\
+LightGBM & 7.59 & 2.77 & 0.0361 & 6.85 \\
+SVR & 8.87 & 3.50 & 0.0361 & 7.20 \\
+ICSOR & 7.77 & 3.55 & 0.0361 & 8.36 \\
+XGBoost & 8.78 & 3.27 & 0.0361 & 7.88 \\
+CatBoost & 9.13 & 3.23 & 0.0361 & 8.53 \\
+AdaBoost & 38.30 & 5.58 & 0.0361 & 17.68 \\
+\(k\)-NN & 38.24 & 4.23 & 0.0361 & 27.37 \\
+PLS & 43.22 & 5.09 & 0.0361 & 36.00 \\
+Random Forest & 45.87 & 4.00 & 0.0361 & 35.26 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Sample Efficiency, Generalization, and Training Cost}
+
+The repeated size study changed the interpretation of the fixed-split ranking. At the smallest retained
+dataset size of 500 rows, ICSOR had the lowest mean held-out RMSE at 10.79. XGBoost and LightGBM followed at
+11.26 and 11.45, while the MLP ranked fifth at 13.26. At the largest retained size, the ordering shifted:
+the MLP had the lowest mean held-out RMSE at 4.62, followed by LightGBM at 5.27, SVR at 5.84, and ICSOR at
+5.94. This crossover is consistent with the broader learning-curve expectation that structurally restricted
+models can be sample efficient at small \(N\), while more flexible models may overtake them when enough data
+are available \citep{VieringLoog2023,Shen2023}.
+
+Table~\ref{tab:ch3_scaling_summary} condenses the repeated size sweep. ICSOR had the lowest RMSE nAUC at
+6.33, narrowly ahead of LightGBM at 6.35. This indicates that ICSOR's average RMSE profile across the retained
+sample-size range was favorable even though it did not have the lowest final-size RMSE. LightGBM had the best
+sample-average rank at 2.2, followed by the MLP at 2.5. ICSOR and XGBoost were tied at 4.3, showing that
+ICSOR's low-data advantage did not produce a dominant average rank across all retained metrics, targets, and
+sample sizes.
+
+\begin{table}[htbp]
+\centering
+\caption[Repeated size benchmark summary for Chapter 3]{Summary of the repeated size benchmark. Final RMSE and \(\Delta\)RMSE are evaluated at the largest retained size. Lower values are better for all columns.}
+\label{tab:ch3_scaling_summary}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Final RMSE & RMSE nAUC & Sample avg. rank & \(\Delta\)RMSE \\
+\midrule
+MLP & 4.62 & 6.75 & 2.5 & 0.65 \\
+LightGBM & 5.27 & 6.35 & 2.2 & 1.99 \\
+SVR & 5.84 & 6.90 & 4.0 & 1.19 \\
+ICSOR & 5.94 & 6.33 & 4.3 & 0.22 \\
+XGBoost & 6.10 & 7.01 & 4.3 & 1.44 \\
+CatBoost & 6.26 & 7.60 & 5.0 & 0.69 \\
+AdaBoost & 21.42 & 20.29 & 8.2 & 0.23 \\
+\(k\)-NN & 23.76 & 25.77 & 7.0 & 23.66 \\
+PLS & 27.96 & 30.17 & 9.4 & 0.38 \\
+Random Forest & 28.78 & 30.31 & 8.2 & 18.71 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The train-validation RMSE gap gives a separate view of generalization. At the largest retained size, ICSOR's
+gap was 0.22, lower than the gaps for LightGBM, XGBoost, SVR, and the MLP. PLS also had a small gap at 0.38,
+but its absolute errors were high. Thus, the small gap for ICSOR reflected relatively close train and held-out
+performance among the comparatively accurate models, whereas the small gap for PLS was consistent with
+underfitting.
+
+This generalization behavior came with additional fitting cost. At 500 rows, ICSOR required 21.5 seconds of
+mean training time, compared with 4.72 seconds for LightGBM, 3.16 seconds for XGBoost, and 4.99 seconds for the
+MLP. At 10,000 rows, ICSOR required 94.4 seconds. That was slower than the tree-based models, PLS, and
+\(k\)-NN, but faster than AdaBoost, SVR, and the MLP at the same size. The recursive coupled-QP estimator was
+therefore not the fastest option, but it remained within the range of practical offline surrogate fitting.
+
+\subsection{Physical Admissibility and Deployment Behavior}
+
+Physical-admissibility diagnostics were evaluated before the predicted component state was collapsed to COD,
+TN, TP, and TSS. Table~\ref{tab:ch3_physical_violations} reports the final checked ICSOR output alongside the
+direct raw-head outputs of the unconstrained comparators. ICSOR was the only retained pipeline with 0.0\% mass
+conservation violations and 0.0\% nonnegativity violations. Every unconstrained comparator violated the
+stoichiometric conservation relation on all test samples. Nonnegativity behavior varied: AdaBoost, Random
+Forest, and \(k\)-NN produced no negative component concentrations on the test set, while the remaining
+unconstrained models had nonnegativity violation rates from 46.00\% to 70.10\%.
+
+\begin{table}[htbp]
+\centering
+\caption[Physical-admissibility violations in Chapter 3]{Physical-admissibility violation frequencies on the fixed test split. Mass conservation and nonnegativity are assessed before external composite calculation.}
+\label{tab:ch3_physical_violations}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrr}
+\toprule
+Model & Mass conservation violations (\%) & Nonnegativity violations (\%) \\
+\midrule
+MLP & 100.0 & 58.20 \\
+LightGBM & 100.0 & 46.00 \\
+SVR & 100.0 & 68.65 \\
+ICSOR & 0.0 & 0.00 \\
+XGBoost & 100.0 & 64.95 \\
+CatBoost & 100.0 & 70.10 \\
+AdaBoost & 100.0 & 0.00 \\
+\(k\)-NN & 100.0 & 0.00 \\
+PLS & 100.0 & 48.70 \\
+Random Forest & 100.0 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The models with zero nonnegativity violations were not physically admissible in the full component-space
+sense. Their outputs remained in the nonnegative orthant because of their averaging or aggregation geometry,
+but they still broke the sample-specific conservation relation on every test case. Conversely, several of the
+most accurate models in Table~\ref{tab:ch3_fixed_split_performance}, including the MLP and LightGBM, violated
+both conditions. Accuracy in the reported-composite space therefore did not imply that the underlying
+component vector could be interpreted as an admissible activated sludge state. This pattern agrees with the
+scientific machine learning concern that physically meaningful constraints often need explicit enforcement
+rather than passive expectation from low prediction error \citep{Hansen2024,KircherVotsmeier2025,SturmSilva2024}.
+
+Table~\ref{tab:ch3_deployment_stages} separates the stages of the ICSOR deployment rule. None of the raw
+coupled predictions satisfied both conservation and nonnegativity. The raw head was nonnegative for 21.7\% of
+test samples, but raw conservation compliance was 0.0\%. The affine stage restored conservation for all test
+samples and was sufficient for 436 of the 2,000 test cases, or 21.8\%. The remaining 1,564 cases required the
+linear programming branch. The final returned output was feasible for all 2,000 test samples.
+
+\begin{table}[htbp]
+\centering
+\caption{ICSOR deployment-stage behavior on the fixed test split.}
+\label{tab:ch3_deployment_stages}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrr}
+\toprule
+Deployment stage & Conservation compliant (\%) & Nonnegative (\%) & Returned samples \\
+\midrule
+Raw coupled state & 0.0 & 21.7 & 0 \\
+Affine invariant projection & 100.0 & 21.8 & 436 \\
+Linear programming correction & 100.0 & 100.0 & 1,564 \\
+Final checked output & 100.0 & 100.0 & 2,000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The linear programming branch converged in a mean of 23.5 HiGHS iterations, with a maximum of 40 iterations.
+Thus, the hard feasibility guarantee came from checked deployment rather than from the soft invariant penalty
+in the training objective alone. The affine stage also had a practical role: it resolved the subset of samples
+whose invariant correction did not create negative components, reserving the general optimizer for cases in
+which nonnegativity constraints were active.
+
+\subsection{Interpretable Raw-Head Structure}
+
+The interpretability analysis was performed on the globally defined pre-deployment raw head. Since the final
+affine and linear-programming stages are active-set dependent, the checked deployed output does not have one
+global coefficient matrix. The raw-head coefficient map
+\(B_{\mathrm{raw,comp}}=I_{\mathrm{comp}}\widehat{R}^{-1}\widehat{B}\) was therefore used to inspect the
+reported-composite structure associated with the fitted ICSOR regression head.
+
+Table~\ref{tab:ch3_raw_head_coefficients} summarizes the retained coefficient counts for the COD raw-head
+structure. The reported-output blocks used a threshold equal to \(10^{-4}\) of the largest absolute COD
+raw-head coefficient, while the shared \(\Gamma\) block used \(10^{-4}\) of its own largest off-diagonal
+magnitude. The threshold was applied only for reporting; it did not affect fitting, model selection, or
+deployment.
+
+\begin{table}[htbp]
+\centering
+\caption[Retained COD raw-head coefficients]{Retained coefficients in the COD raw-head structure. Symmetric quadratic totals count unique upper-triangular terms.}
+\label{tab:ch3_raw_head_coefficients}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrr}
+\toprule
+Coefficient block & Total coefficients & Retained coefficients & Retained (\%) \\
+\midrule
+\(b\) & 1 & 1 & 100.0 \\
+\(W_u\) & 2 & 2 & 100.0 \\
+\(W_{in}\) & 20 & 19 & 95.0 \\
+\(\Theta_{uu}\) & 3 & 3 & 100.0 \\
+\(\Theta_{uc}\) & 40 & 29 & 72.5 \\
+\(\Theta_{cc}\) & 210 & 44 & 21.0 \\
+\(\Gamma\) & 380 & 371 & 97.6 \\
+Overall & 656 & 469 & 71.5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The COD raw-head structure retained all operating terms, nearly all first-order influent terms, and all
+operating-curvature terms. It retained 29 of 40 operation-loading interaction terms and 44 of 210 unique
+influent-curvature terms. This pattern suggests that the fitted COD raw head used broad first-order loading
+information and operating effects, but selected a smaller subset of nonlinear influent-state curvature terms.
+The coupling matrix was comparatively dense, with 371 of 380 off-diagonal entries retained under the reporting
+threshold. The resulting model was therefore not sparse in the simple sense. Its interpretability came from
+the named block structure and separable coupling representation rather than from a small number of nonzero
+coefficients.
+
+The largest COD influent-curvature terms involved dissolved oxygen and nitrogen or phosphorus-metal states.
+The strongest self-curvature was the \(S_O\)-\(S_O\) term at \(-5.8097\), followed by the mirrored
+\(S_O\)-\(S_{N2}\) pair at \(-1.7411\). Other prominent terms linked \(S_O\) with
+\(X_{MeP}\), \(X_{AOB}\), \(S_{PO4}\), \(X_{NOB}\), and \(S_{NO2}\). These associations are consistent with
+the coupled oxygen, nitrogen, and phosphorus behavior represented in activated sludge nutrient-removal models
+\citep{Henze2006,Wentzel1992,Araujo2013}. They should be interpreted as structural patterns in the fitted
+raw head, not as causal effects or as derivatives of the final deployed output.
+
 \section{Synthesis}
+
+The results show why an integrated surrogate is a distinct contribution rather than a repetition of raw
+prediction benchmarking or post prediction repair. The fixed-split accuracy results confirm that the most
+flexible unconstrained learner, the MLP, gave the lowest reported-composite error. LightGBM also outperformed
+ICSOR on aggregate RMSE. If the sole objective were minimum error in COD, TN, TP, and TSS, those models would
+be preferable within the evaluated benchmark. ICSOR instead occupied a different position: it remained close
+to the leading accuracy group while adding a deployment contract that the comparator regressors did not
+provide.
+
+The physical diagnostics are the strongest evidence for that distinction. Every unconstrained raw head
+violated the stoichiometric conservation relation on every test sample, even when its reported-composite error
+was low or its component predictions were nonnegative. This means that statistical accuracy and
+component-space admissibility were empirically separate properties. ICSOR closed that gap only after checked
+deployment: the raw regression head alone was not feasible, and the affine projection alone resolved only part
+of the test set. The final deployment branch was therefore not an incidental correction but the mechanism that
+converted a structured regression estimate into a usable activated sludge state.
+
+The repeated size analysis adds a second qualification to the accuracy tradeoff. ICSOR was strongest at the
+smallest retained dataset size and had the lowest RMSE nAUC across the full sample-size sweep. Its
+train-validation gap was also small among the comparatively accurate models. These findings suggest that the
+model's structural restrictions helped when data were limited and reduced train-test separation at the largest
+size. The same restrictions also limited final-size accuracy relative to the MLP and LightGBM. The most
+defensible interpretation is therefore a tradeoff among flexibility, sample efficiency, and physical
+dependability rather than a universal ranking of model families.
+
+The interpretability results further clarify the role of ICSOR. The model did not become interpretable because
+every coefficient was sparse or causal. Instead, its raw head exposed named blocks for operating effects,
+influent effects, within-group curvature, operation-loading interaction, and cross-component coupling. This
+structure is more inspectable than an opaque direct map, but it still requires caution: the coefficients belong
+to the pre-deployment head, and the final checked output is shaped by affine and linear-programming correction
+when feasibility constraints are active. Interpretation should therefore focus on recurring structural
+patterns rather than isolated coefficient magnitudes.
+
+Within the stated steady-state reactor boundary, ICSOR provides a practical balance of accuracy,
+data efficiency, physical admissibility, and structural inspection. Its evidence is limited to simulated
+ASM2d-TSN component states within the sampled operating and influent ranges, and its conservation guarantee is
+only as broad as the stoichiometric invariants used to define the feasible set. It does not establish field
+validity, kinetic realism, or plant-wide conservation beyond the modeled boundary. The contribution is more
+specific and more useful: it shows that an activated sludge surrogate can be designed so that the returned
+component vector is not merely numerically plausible, but also exactly conservative, nonnegative, and
+connected to an inspectable regression structure.
 
 
 % Conclusion (unnumbered, but preserved in the ToC)
