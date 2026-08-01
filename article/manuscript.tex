@@ -119,6 +119,7 @@
 %%% Tables %%%
 \usepackage{array}
 \usepackage{booktabs}
+\usepackage{longtable}
 \usepackage{multirow}
 
 
@@ -296,14 +297,21 @@
 
 \makeatletter
 \newglossarystyle{customsymbols}{%
-    \setglossarystyle{mcolalttreegroup}%
-    \glssetwidest{$\boldsymbol{\varepsilon}_c$}%
-    \renewcommand{\glsgroupheading}[1]{%
-        \par\vspace{1em}
-        \glstreegroupheaderfmt{\bf\glsgetgrouptitle{##1}}\par
-        \nopagebreak\vspace{0.5em}
+    \renewenvironment{theglossary}{%
+        \begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.24\textwidth}%
+                          >{\raggedright\arraybackslash}p{0.66\textwidth}@{}}
+    }{%
+        \end{longtable}
     }%
-    \renewcommand{\glossaryheader}{\raggedright}
+    \renewcommand*{\glossaryheader}{}%
+    \renewcommand*{\glsgroupheading}[1]{}%
+    \renewcommand*{\glossentry}[2]{%
+        \glstarget{##1}{\glossentryname{##1}} & \glossentrydesc{##1}\tabularnewline[0.35em]
+    }%
+    \renewcommand*{\subglossentry}[3]{%
+        \glstarget{##2}{\glossentryname{##2}} & \glossentrydesc{##2}\tabularnewline[0.35em]
+    }%
+    \renewcommand*{\glsgroupskip}{}%
 }
 \makeatother
 
