@@ -189,15 +189,115 @@
 % Symbols
 % -------------------
 
+%%% General notation %%%
 \glsxtrnewsymbol[description={real numbers}, group={gen}]{sym:RR}{$\RR$}
 \glsxtrnewsymbol[description={nonnegative integers}, group={gen}]{sym:NN}{$\NN$}
 \glsxtrnewsymbol[description={$L^p$-norm of $\bm{u}$}, group={gen}]{sym:norm}{$\norm{\bm{u}}_p$}
+\glsxtrnewsymbol[description={Euclidean norm}, group={gen}]{sym:norm2}{$\norm{\cdot}_2$}
+\glsxtrnewsymbol[description={$L^1$-norm (sum of absolute values)}, group={gen}]{sym:norm1}{$\norm{\cdot}_1$}
+\glsxtrnewsymbol[description={Frobenius norm of a matrix}, group={gen}]{sym:normF}{$\norm{\cdot}_F$}
+\glsxtrnewsymbol[description={transpose of a vector or matrix}, group={gen}]{sym:transpose}{$(\cdot)^\top$}
+\glsxtrnewsymbol[description={Kronecker product}, group={gen}]{sym:otimes}{$\otimes$}
+\glsxtrnewsymbol[description={componentwise (Hadamard) division}, group={gen}]{sym:oslash}{$\oslash$}
+\glsxtrnewsymbol[description={diagonal matrix formed from a vector}, group={gen}]{sym:diag}{$\operatorname{Diag}(\cdot)$}
+\glsxtrnewsymbol[description={identity matrix of order $F$}, group={gen}]{sym:identity}{$I_F$}
+\glsxtrnewsymbol[description={vector of ones}, group={gen}]{sym:ones}{$\mathbf{1}$}
+\glsxtrnewsymbol[description={zero vector or matrix}, group={gen}]{sym:zero}{$\mathbf{0}$}
+\glsxtrnewsymbol[description={indicator function}, group={gen}]{sym:indicator}{$\mathbb{1}[\cdot]$}
+
+%%% Dimensions and indices %%%
+\glsxtrnewsymbol[description={number of activated sludge components ($F=20$)}, group={idx}]{sym:F}{$F$}
+\glsxtrnewsymbol[description={number of biological and chemical processes ($P=28$)}, group={idx}]{sym:P}{$P$}
+\glsxtrnewsymbol[description={dimension of the stoichiometric null space ($K=5$)}, group={idx}]{sym:K}{$K$}
+\glsxtrnewsymbol[description={number of independent stoichiometric invariants}, group={idx}]{sym:q}{$q$}
+\glsxtrnewsymbol[description={training-set size}, group={idx}]{sym:N}{$N$}
+\glsxtrnewsymbol[description={number of validation samples in a scored fold}, group={idx}]{sym:n}{$n$}
+\glsxtrnewsymbol[description={number of operating variables ($M_{op}=2$)}, group={idx}]{sym:Mop}{$M_{op}$}
+\glsxtrnewsymbol[description={dimension of the second-order feature vector}, group={idx}]{sym:D}{$D$}
+\glsxtrnewsymbol[description={sample index}, group={idx}]{sym:i}{$i$}
+\glsxtrnewsymbol[description={component index}, group={idx}]{sym:j}{$j$}
+\glsxtrnewsymbol[description={outer cross-validation fold index}, group={idx}]{sym:g}{$g$}
+\glsxtrnewsymbol[description={surrogate model index}, group={idx}]{sym:m}{$m$}
+
+%%% Process model and stoichiometry %%%
+\glsxtrnewsymbol[description={stoichiometric (Petersen) matrix}, group={proc}]{sym:nu}{$\nu$}
+\glsxtrnewsymbol[description={stoichiometric invariant (conservation) operator}, group={proc}]{sym:A}{$A$}
+\glsxtrnewsymbol[description={orthonormal basis of the stoichiometric null space}, group={proc}]{sym:V0}{$V_0$}
+\glsxtrnewsymbol[description={orthonormal basis of $\operatorname{null}(A)$}, group={proc}]{sym:Z}{$Z$}
+\glsxtrnewsymbol[description={vector of biological and chemical process rates}, group={proc}]{sym:rho}{$\rho$}
+\glsxtrnewsymbol[description={hydraulic dilution rate of sample $i$}, group={proc}]{sym:Di}{$D_i$}
+\glsxtrnewsymbol[description={reaction progress variables}, group={proc}]{sym:xi}{$\xi$}
+\glsxtrnewsymbol[description={dissolved-oxygen transfer coefficient}, group={proc}]{sym:omega}{$\omega$}
+\glsxtrnewsymbol[description={dissolved-oxygen unit direction}, group={proc}]{sym:eSO}{$e_{S_O}$}
+
+%%% Component states and composites %%%
+\glsxtrnewsymbol[description={activated sludge component vector}, group={state}]{sym:c}{$c$}
+\glsxtrnewsymbol[description={influent component vector}, group={state}]{sym:cin}{$c_{in}$}
+\glsxtrnewsymbol[description={mechanistic effluent (target) component vector}, group={state}]{sym:cout}{$c_{out}$}
+\glsxtrnewsymbol[description={sample conservation target, $Ac_{in,i}$}, group={state}]{sym:bi}{$b_i$}
+\glsxtrnewsymbol[description={feasible effluent set of sample $i$}, group={state}]{sym:Fset}{$\mathcal{F}_i$}
+\glsxtrnewsymbol[description={component-to-composite composition matrix}, group={state}]{sym:Icomp}{$I_{\mathrm{comp}}$}
+\glsxtrnewsymbol[description={reported composite vector (COD, TN, TP, TSS)}, group={state}]{sym:y}{$y$}
+\glsxtrnewsymbol[description={standard deviation of component $j$}, group={state}]{sym:sigmaj}{$\sigma_j$}
+
+%%% Surrogate prediction and projection %%%
+\glsxtrnewsymbol[description={operating-variable vector (HRT, aeration)}, group={surr}]{sym:u}{$u$}
+\glsxtrnewsymbol[description={full surrogate input vector}, group={surr}]{sym:x}{$x$}
+\glsxtrnewsymbol[description={trained surrogate model $m$}, group={surr}]{sym:fm}{$f_m$}
+\glsxtrnewsymbol[description={raw surrogate component prediction}, group={surr}]{sym:craw}{$c_{raw}$}
+\glsxtrnewsymbol[description={conservative projection candidate}, group={surr}]{sym:ccand}{$c_{cand}$}
+\glsxtrnewsymbol[description={projected component prediction}, group={surr}]{sym:ctilde}{$\tilde{c}$}
+\glsxtrnewsymbol[description={componentwise positivity floor}, group={surr}]{sym:epsc}{$\boldsymbol{\varepsilon}_c$}
+\glsxtrnewsymbol[description={relative scaling vector}, group={surr}]{sym:s}{$s$}
+\glsxtrnewsymbol[description={diagonal relative-scaling matrix}, group={surr}]{sym:Ws}{$W_s$}
+\glsxtrnewsymbol[description={positivity backtracking factor}, group={surr}]{sym:alpha}{$\alpha$}
+\glsxtrnewsymbol[description={backtracking safety margin}, group={surr}]{sym:eta}{$\eta$}
+\glsxtrnewsymbol[description={conservative candidate displacement}, group={surr}]{sym:delta}{$\delta$}
+
+%%% Interpretable second-order regression (ICSOR) %%%
+\glsxtrnewsymbol[description={second-order feature vector}, group={icsor}]{sym:phi}{$\phi$}
+\glsxtrnewsymbol[description={training feature matrix}, group={icsor}]{sym:Phi}{$\Phi$}
+\glsxtrnewsymbol[description={latent component-space forcing vector}, group={icsor}]{sym:r}{$r$}
+\glsxtrnewsymbol[description={regression driver coefficient matrix}, group={icsor}]{sym:B}{$B$}
+\glsxtrnewsymbol[description={cross-component coupling matrix}, group={icsor}]{sym:Gamma}{$\Gamma$}
+\glsxtrnewsymbol[description={coupling residual matrix, $I_F-\Gamma$}, group={icsor}]{sym:R}{$R$}
+\glsxtrnewsymbol[description={first-order operating-effect block}, group={icsor}]{sym:Wu}{$W_u$}
+\glsxtrnewsymbol[description={first-order influent-load block}, group={icsor}]{sym:Win}{$W_{in}$}
+\glsxtrnewsymbol[description={operating-curvature block}, group={icsor}]{sym:Thetauu}{$\Theta_{uu}$}
+\glsxtrnewsymbol[description={influent-curvature block}, group={icsor}]{sym:Thetacc}{$\Theta_{cc}$}
+\glsxtrnewsymbol[description={operation-loading interaction block}, group={icsor}]{sym:Thetauc}{$\Theta_{uc}$}
+\glsxtrnewsymbol[description={invariant-penalty weight}, group={icsor}]{sym:lambdainv}{$\lambda_{inv}$}
+\glsxtrnewsymbol[description={coupled-system penalty weight}, group={icsor}]{sym:lambdasys}{$\lambda_{sys}$}
+\glsxtrnewsymbol[description={driver ridge weight}, group={icsor}]{sym:lambdaB}{$\lambda_B$}
+\glsxtrnewsymbol[description={coupling ridge weight}, group={icsor}]{sym:lambdaGamma}{$\lambda_{\Gamma}$}
+\glsxtrnewsymbol[description={auxiliary nonnegative fitted-state matrix}, group={icsor}]{sym:Chat}{$\widehat{C}$}
+\glsxtrnewsymbol[description={admissible coupling set}, group={icsor}]{sym:Gset}{$\mathcal{G}$}
+\glsxtrnewsymbol[description={affine invariant-projected state}, group={icsor}]{sym:caff}{$c_{aff}$}
+\glsxtrnewsymbol[description={final checked deployed state}, group={icsor}]{sym:chat}{$\hat{c}$}
+\glsxtrnewsymbol[description={componentwise correction weights}, group={icsor}]{sym:wc}{$w_c$}
+
+%%% Evaluation and diagnostics %%%
+\glsxtrnewsymbol[description={training partition at size $N$, fold $g$}, group={eval}]{sym:Tset}{$\mathcal{T}_{N,g}$}
+\glsxtrnewsymbol[description={standardized component residual}, group={eval}]{sym:xiij}{$\xi_{ij}$}
+\glsxtrnewsymbol[description={coefficient of determination}, group={eval}]{sym:R2}{$R^2$}
+\glsxtrnewsymbol[description={mass-conservation violation frequency}, group={eval}]{sym:pimc}{$\pi_{mc}$}
+\glsxtrnewsymbol[description={nonnegativity violation frequency}, group={eval}]{sym:pinn}{$\pi_{nn}$}
+\glsxtrnewsymbol[description={mass-conservation residual magnitude}, group={eval}]{sym:vmc}{$v_{mc}$}
+\glsxtrnewsymbol[description={standardized negative-component magnitude}, group={eval}]{sym:vnn}{$v_{nn}$}
+\glsxtrnewsymbol[description={standardized projection displacement}, group={eval}]{sym:dc}{$d_c$}
 
 \glsxtrsetgrouptitle{gen}{General Notation}
+\glsxtrsetgrouptitle{idx}{Dimensions and Indices}
+\glsxtrsetgrouptitle{proc}{Process Model and Stoichiometry}
+\glsxtrsetgrouptitle{state}{Component States and Composites}
+\glsxtrsetgrouptitle{surr}{Surrogate Prediction and Projection}
+\glsxtrsetgrouptitle{icsor}{Interpretable Second-Order Regression}
+\glsxtrsetgrouptitle{eval}{Evaluation and Diagnostics}
 
 \makeatletter
 \newglossarystyle{customsymbols}{%
     \setglossarystyle{mcolalttreegroup}%
+    \glssetwidest{$\boldsymbol{\varepsilon}_c$}%
     \renewcommand{\glsgroupheading}[1]{%
         \par\vspace{1em}
         \glstreegroupheaderfmt{\bf\glsgetgrouptitle{##1}}\par
