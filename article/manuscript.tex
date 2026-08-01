@@ -165,12 +165,13 @@
 % Acronyms
 % -------------------
 
-\newacronym{asp}{ASP}{activated sludge process}
 \newacronym{asm}{ASM}{activated sludge model}
-\newacronym{ml}{ML}{machine learning}
+\newacronym{asm2dtsn}{ASM2d-TSN}{Activated Sludge Model No.\ 2d with two-step nitrification}
+\newacronym{knn}{k-NN}{k-nearest neighbors}
 \newacronym{mlp}{MLP}{multilayer perceptron}
-\newacronym{ode}{ODE}{ordinary differential equation}
-\newacronym{wwtp}{WWTP}{wastewater treatment plant}
+\newacronym{nrmse}{nRMSE}{normalized root mean squared error}
+\newacronym{pls}{PLS}{partial least squares}
+\newacronym{svr}{SVR}{support vector regression}
 
 \newglossarystyle{customacronyms}{%
   \setglossarystyle{mcolalttreegroup}%
@@ -184,7 +185,7 @@
 % -------------------
 
 \glsxtrnewsymbol[description={real numbers}, group={gen}]{sym:RR}{$\RR$}
-\glsxtrnewsymbol[description={non-negative integers}, group={gen}]{sym:NN}{$\NN$}
+\glsxtrnewsymbol[description={nonnegative integers}, group={gen}]{sym:NN}{$\NN$}
 \glsxtrnewsymbol[description={$L^p$-norm of $\bm{u}$}, group={gen}]{sym:norm}{$\norm{\bm{u}}_p$}
 
 \glsxtrsetgrouptitle{gen}{General Notation}
@@ -357,7 +358,7 @@ admissibility; interpretable modeling
 \listofalgorithms
 
 \glsfindwidesttoplevelname
-\printglossary[
+\printunsrtglossary[
     type=acronym,
     style=customacronyms,
     title={List of Abbreviations},
@@ -410,7 +411,7 @@ operating conditions. \citet{Wentzel1992} likewise present nitrification, denitr
 excess phosphorus removal as coupled activated sludge processes. Their review helps explain why carbon,
 nitrogen, phosphorus, biomass, and solids must be treated as interdependent states when the process is modeled.
 
-The Activated Sludge Model family gives this interdependence a mechanistic language. \citet{Henze1999}
+The Activated Sludge Model (ASM) family gives this interdependence a mechanistic language. \citet{Henze1999}
 introduced ASM2d as a model for biological phosphorus removal with simultaneous nitrification and
 denitrification, and \citet{Henze2006} consolidated the wider ASM family as a standard framework for design,
 operation, teaching, and research. The relevance of ASM2d is especially strong for work that must represent
@@ -828,7 +829,7 @@ monitoring data, selected effluent indicators, or a small number of model famili
 but they make it difficult to separate the learnability of the activated sludge response from site-specific
 noise, limited target definitions, or algorithm-specific choices. A controlled surrogate benchmark is needed
 to show whether a broad set of state of the art tabular models can learn the nonlinear response of an
-activated sludge process from paired inputs and outputs before any post-prediction correction or additional
+activated sludge process from paired inputs and outputs before any post prediction correction or additional
 physical enforcement is considered \citep{Borisov2024,ShwartzZiv2022}.
 
 Such a baseline matters because raw predictive accuracy is the first requirement of a useful surrogate. If
@@ -841,7 +842,7 @@ correction procedures.
 
 \section{Method}
 
-The analysis used a fixed dataset generated from the ASM2d-TSN mechanistic simulator under the protocol
+The analysis used a fixed dataset generated from the mechanistic activated sludge simulator under the protocol
 described below. The same in-distribution samples, beyond-domain samples, train-validation splits, selected
 model configurations, preprocessing rules, and raw surrogate predictions were used throughout the evaluation.
 No additional simulator runs, fold reassignments, hyperparameter searches, or alternative preprocessing rules
@@ -849,11 +850,12 @@ were introduced after the dataset and model protocol were finalized.
 
 \subsection{Data Source and Prediction Scope}
 
-The data were generated from a standalone, steady-state continuous stirred tank reactor represented by
-Activated Sludge Model No.\ 2d with two-step nitrification. The process description retained the 20 activated
-sludge components and 28 biological and chemical processes associated with hydrolysis, heterotrophic and
-phosphate-accumulating-organism metabolism, two-step nitrification and denitrification, lysis, and
-precipitation-redissolution. The model basis followed the ASM family documentation of \citet{Henze2006}, while
+The data were generated from a standalone, steady-state continuous stirred tank reactor represented by the
+Activated Sludge Model No.\ 2d with two-step nitrification (ASM2d-TSN). The process description retained the 20
+activated sludge components and 28 biological and chemical processes associated with hydrolysis, heterotrophic
+and phosphate-accumulating-organism metabolism, two-step nitrification and denitrification, lysis, and
+precipitation-redissolution. The model basis followed the Activated Sludge Model family documentation of
+\citet{Henze2006}, while
 the two-step nitrification formulation, stoichiometry, and rate coefficients followed
 \citet{Guerrero2011}. This mechanistic simulator supplied the reference input-output pairs used to train and
 evaluate the statistical surrogates.
@@ -885,7 +887,7 @@ prediction using a fixed component-to-composite composition map. These composite
 interpretive summaries of the predicted component state rather than separately fitted response variables.
 
 Two beyond-domain validation sets were generated by the same simulator and acceptance rules. These sets
-evaluated raw surrogate behavior outside the original sampling envelope without introducing post-prediction
+evaluated raw surrogate behavior outside the original sampling envelope without introducing post prediction
 correction. Each beyond-domain regime contains 600 accepted steady states. The mild regime perturbed selected
 inputs 10\% to 25\% beyond their original upper bounds, while the severe regime perturbed them 35\% to 60\%
 beyond those bounds. The perturbed features were hydraulic retention time, aeration, influent ammonium
@@ -916,9 +918,9 @@ Surrogate group & Models & Output handling & Preprocessing before raw scoring \\
 \midrule
 Boosting & XGBoost, LightGBM, CatBoost, AdaBoost & One regressor per effluent component & XGBoost, LightGBM, and CatBoost used physical input and target units; AdaBoost used target z-scores only \\
 Randomized tree ensembles & Random Forest, Extra Trees & Native multi-output regression & Random Forest used physical input and target units; Extra Trees used target z-scores only \\
-Kernel and neighbor methods & Support vector regression, k-nearest neighbors & Support vector regression used one regressor per component; k-nearest neighbors returned all components jointly & Input and target z-scores fitted within the relevant training partition \\
-Latent-variable and sparse multi-task models & Partial least squares, Multi-task Elastic Net, Multi-task Lasso & Joint 20-component regression & Input and target z-scores fitted within the relevant training partition \\
-Neural-network surrogates & Multilayer perceptron, TabNet & Joint 20-component regression & Input and target z-scores fitted within the relevant training partition \\
+Kernel and neighbor methods & Support vector regression (SVR), k-nearest neighbors (k-NN) & SVR used one regressor per component; k-NN returned all components jointly & Input and target z-scores fitted within the relevant training partition \\
+Latent-variable and sparse multi-task models & Partial least squares (PLS), Multi-task Elastic Net, Multi-task Lasso & Joint 20-component regression & Input and target z-scores fitted within the relevant training partition \\
+Neural-network surrogates & Multilayer perceptron (MLP), TabNet & Joint 20-component regression & Input and target z-scores fitted within the relevant training partition \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -960,9 +962,9 @@ beyond-domain response was used for refitting, scaling, calibration, or hyperpar
 
 The primary outcome was accuracy of the 20-component effluent prediction. Component errors were scored in
 standardized form so that components expressed in different physical units could contribute to one aggregate
-assessment. The raw-prediction metrics were normalized mean squared error, normalized root mean squared error,
-normalized mean absolute error, and the macro-average coefficient of determination across effluent components. The
-training reference set associated with the scored fold supplied the component standard deviations used for
+assessment. The raw-prediction metrics were normalized mean squared error, normalized root mean squared error
+(nRMSE), normalized mean absolute error, and the macro-average coefficient of determination across effluent
+components. The training reference set associated with the scored fold supplied the component standard deviations used for
 normalization. Fold-level results were summarized descriptively as means and sample standard deviations across
 the five outer folds. No hypothesis tests were applied.
 
@@ -1159,7 +1161,462 @@ beyond-domain limitations remain visible in the evaluation.
 
 \section{Rationale}
 
+Once a surrogate has demonstrated that the activated sludge response is learnable from paired simulation data,
+a second credibility problem remains. The prediction is not only a numerical estimate of several effluent
+quantities; it is a component vector that should still be interpretable as an activated sludge state. The
+Activated Sludge Model family represents carbon, nitrogen, phosphorus, alkalinity, and solids through coupled
+stoichiometric relations, and those relations make conservation and nonnegativity part of the meaning of the
+predicted state \citep{Henze2006,Guerrero2011}. A surrogate that is close to the mechanistic target under
+ordinary error metrics can still return an output that violates those requirements, leaving a gap between
+statistical accuracy and physical admissibility \citep{Hansen2024,KircherVotsmeier2025}.
+
+This gap is important because complete component predictions are often the basis for downstream water-quality
+interpretation. Composite quantities such as chemical oxygen demand, total nitrogen, total phosphorus, and
+total suspended solids summarize the component state, but they do not by themselves prove that the underlying
+vector satisfies the process structure from which those summaries are derived. A component vector can therefore
+look useful at the aggregate level while containing a negative concentration or violating a declared
+conservation relation. In wastewater treatment analysis, such an output is difficult to treat as a credible
+process state, particularly when predictions may be used for screening, comparison, optimization, or decision
+support \citep{Araujo2013,BhosekarIerapetritou2018,Durkin2024,Mao2024}.
+
+The scientific machine learning literature offers several ways to connect learned predictions with physical
+structure. Physics informed training can place governing relations into the loss function, while hard
+enforcement approaches can use analytic constraints, specialized architectures, conservative formulations, or
+projection onto physically consistent sets \citep{Raissi2019,Beucler2021,Hansen2024,SturmWexler2020,SturmWexler2022,Valente2025}.
+For activated sludge surrogates, the relevant requirement is joint enforcement. A conservation-only correction
+can still leave negative concentrations, whereas a positivity-only transformation can disturb the
+sample-specific balance relation. The post prediction projection of \citet{KircherVotsmeier2025} is therefore
+especially relevant because it addresses conservation and nonnegativity together after the surrogate has
+already produced its component prediction.
+
+The remaining question is how that enforcement behaves in an activated sludge surrogate setting. A correction
+that guarantees admissibility is valuable only if its empirical consequences are visible: it may improve error
+when raw residuals point away from the feasible balance relation, but it may also redistribute error among
+components or composites. The motivating problem is therefore no longer whether machine learning can
+approximate the simulator at all, but whether outputs from accurate raw surrogates can be converted into
+physically admissible component states while preserving transparent evidence about predictive error, data
+scarcity, computational cost, and extrapolation. Paired raw and projected diagnostics are needed to determine
+whether post prediction enforcement strengthens activated sludge surrogate predictions without treating
+physical admissibility as a substitute for ordinary validation.
+
 \section{Method}
+
+The analysis evaluated predictive error and physical admissibility through paired raw and projected surrogate
+outputs. A steady-state activated sludge benchmark supplied complete influent and effluent component vectors.
+The stoichiometric structure of the mechanistic model was then used to define a sample-specific conservation
+target and a nonnegative feasible set. Each statistical surrogate first produced an uncorrected 20-component
+prediction, and the same post prediction projection was then applied to that prediction. This pairing made the
+effect of projection visible because the raw and projected outputs used the same training rows, validation
+rows, preprocessing rules, surrogate settings, and mechanistic reference targets.
+
+\subsection{Simulated Process and Prediction Target}
+
+The benchmark data were generated from a standalone, steady-state continuous stirred tank reactor represented
+by the Activated Sludge Model No.\ 2d with two-step nitrification (ASM2d-TSN). The process model retained 20
+activated sludge components and 28 biological and chemical processes associated with hydrolysis,
+heterotrophic and phosphate-accumulating-organism metabolism, two-step nitrification and denitrification,
+lysis, and precipitation-redissolution. The activated sludge model basis followed \citet{Henze2006}, while the
+two-step nitrification formulation, stoichiometry, and rate coefficients followed \citet{Guerrero2011}.
+
+Each simulated case used 22 continuous inputs: hydraulic retention time (HRT), aeration, and the 20 influent
+component concentrations. The effluent target was the corresponding 20-component steady-state vector. The
+dissolved components were dissolved oxygen \(S_O\), fermentable substrate \(S_F\), acetate \(S_A\), ammonium
+nitrogen \(S_{NH4}\), nitrite nitrogen \(S_{NO2}\), nitrate nitrogen \(S_{NO3}\), dinitrogen \(S_{N2}\),
+soluble phosphate \(S_{PO4}\), soluble inert organic matter \(S_I\), and alkalinity \(S_{ALK}\). The
+particulate components were particulate inert organic matter \(X_I\), slowly biodegradable substrate \(X_S\),
+heterotrophic biomass \(X_H\), phosphate-accumulating-organism biomass \(X_{PAO}\), stored polyphosphate
+\(X_{PP}\), stored polyhydroxyalkanoates \(X_{PHA}\), ammonia-oxidizing biomass \(X_{AOB}\),
+nitrite-oxidizing biomass \(X_{NOB}\), precipitated metal phosphate \(X_{MeP}\), and metal hydroxide
+\(X_{MeOH}\).
+
+Chemical oxygen demand (COD), total nitrogen (TN), total phosphorus (TP), and total suspended solids (TSS)
+were computed only after component prediction. For any component vector \(c\in\mathbb{R}^{F}\), with \(F=20\),
+the reported composite vector was
+\begin{equation}
+\label{eq:ch2_composite_map}
+y=(\mathrm{COD},\mathrm{TN},\mathrm{TP},\mathrm{TSS})^\top=I_{\mathrm{comp}}c,
+\end{equation}
+where \(I_{\mathrm{comp}}\in\mathbb{R}^{4\times F}\) is the fixed component-to-composite composition matrix.
+The same map was applied to raw and projected component predictions, so the surrogates were not trained
+directly on the four composites.
+
+The in-distribution design used a randomized, scrambled strength-one Latin hypercube with seed 42
+\citep{McKay1979}. The sampled variables and solver rules are summarized in
+Table~\ref{tab:ch2_simulation_protocol}. Each sampled input was solved as a steady-state mechanistic case
+using nonlinear least squares under componentwise state bounds from \(10^{-8}\) to 1500 in the native unit of
+each component. Solver cost-change, step-size, and gradient tolerances were \(10^{-9}\), and each nonlinear
+solve was limited to 1200 function evaluations. Two physically informed steady-state initializations were
+attempted first; if both failed, a 20-day stiff backward differentiation formula dynamic relaxation supplied a
+fallback initializer. Accepted states were required to have a maximum absolute steady-state balance residual no
+greater than \(10^{-9}\). The in-distribution dataset retained 10,000 accepted steady states.
+
+\begin{table}[htbp]
+\centering
+\caption{Simulation and acceptance protocol for the surrogate-projection benchmark.}
+\label{tab:ch2_simulation_protocol}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{4.0cm}p{8.8cm}}
+\toprule
+Protocol item & Rule used \\
+\midrule
+Process model & Standalone steady-state continuous stirred tank reactor represented by ASM2d-TSN \\
+Inputs & HRT, aeration, and 20 influent component concentrations \\
+Targets & 20 effluent component concentrations in the ASM2d-TSN component basis \\
+Reported composites & COD, TN, TP, and TSS computed from component predictions using \(I_{\mathrm{comp}}\) \\
+Sampling design & Seed-42 randomized Latin hypercube over the in-distribution operating and influent domain \\
+Accepted in-distribution states & 10,000 converged steady-state cases \\
+Steady-state solver & Nonlinear least squares under componentwise box constraints \\
+State bounds & \(10^{-8}\) to 1500 in each component's native unit \\
+Solver tolerances & Cost-change, step-size, and gradient tolerances of \(10^{-9}\) \\
+Function evaluations & Maximum of 1200 per nonlinear solve \\
+Fallback initialization & 20-day stiff backward differentiation formula dynamic relaxation \\
+Acceptance rule & Maximum absolute steady-state balance residual no greater than \(10^{-9}\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Conservation Invariants and Feasible Component Space}
+
+Let \(c_{in,i},c_{out,i}\in\mathbb{R}^{F}\) denote the influent and accepted mechanistic effluent component
+vectors for sample \(i\), and let \(\nu\in\mathbb{R}^{P\times F}\) be the ASM2d-TSN Petersen matrix with
+\(P=28\) processes and \(F=20\) components. The numerical rank of \(\nu\) was 15, giving a five-dimensional
+right null space. If the columns of \(V_0\in\mathbb{R}^{F\times K}\), with \(K=5\), form an orthonormal basis
+for this right null space, then the invariant operator was defined as \(A=V_0^\top\). Thus,
+\begin{equation}
+\label{eq:ch2_invariant_operator}
+A\nu^\top=V_0^\top\nu^\top=(\nu V_0)^\top=\mathbf{0}_{K\times P},
+\qquad
+AA^\top=V_0^\top V_0=I_K.
+\end{equation}
+Each row of \(A\) is therefore a linearly independent invariant of the biological and chemical reaction
+network.
+
+For the adopted steady-state system boundary, the component balance for sample \(i\) can be written as
+\begin{equation}
+\label{eq:ch2_steady_balance}
+D_i(c_{out,i}-c_{in,i})=\nu^\top\rho_i+\omega_i e_{S_O},
+\end{equation}
+where \(D_i>0\) is the hydraulic dilution rate, \(\rho_i\in\mathbb{R}^{P}\) is the vector of biological and
+chemical process rates evaluated at \(c_{out,i}\), and \(\omega_i e_{S_O}\) is the external dissolved-oxygen
+transfer term. Premultiplication by \(A\) eliminates the reaction contribution because \(A\nu^\top=\mathbf{0}\).
+The dissolved-oxygen transfer vector is also in the range of \(\nu^\top\), so \(Ae_{S_O}=\mathbf{0}\) to
+numerical precision. The balance therefore reduces to the sample-specific invariant relation
+\begin{equation}
+\label{eq:ch2_invariant_balance}
+Ac_{out,i}=Ac_{in,i}.
+\end{equation}
+
+The conservation target and feasible effluent set for sample \(i\) were defined as
+\begin{equation}
+\label{eq:ch2_feasible_set}
+b_i:=Ac_{in,i},\qquad
+\mathcal{F}_i=\{c\in\mathbb{R}^{F}:Ac=b_i,\ c\geq\mathbf{0}\}.
+\end{equation}
+The equality in Equation~\eqref{eq:ch2_feasible_set} defines the five stoichiometric conservation invariants
+for the stated steady-state boundary, while \(c\geq\mathbf{0}\) imposes componentwise nonnegativity. The
+sampled influent vectors were nonnegative, so each \(c_{in,i}\) provided a feasible anchor for projection. In
+this analysis, mass conservation means satisfaction of these five stoichiometric invariants; it does not claim
+every possible elemental, kinetic, or plant-wide balance.
+
+\subsection{Post Prediction Projection}
+
+The positivity-preserving conservative projection of \citet{KircherVotsmeier2025} was applied after surrogate
+prediction and did not alter the fitted surrogate. With \(u_i\in\mathbb{R}^{2}\) containing HRT and aeration,
+the complete input vector was \(x_i=[u_i^\top,c_{in,i}^\top]^\top\in\mathbb{R}^{22}\). A trained surrogate
+\(f_m:\mathbb{R}^{22}\rightarrow\mathbb{R}^{F}\) first produced the raw component prediction
+\begin{equation}
+\label{eq:ch2_raw_prediction}
+c_{raw,i}^{(m)}=f_m(x_i).
+\end{equation}
+The projection then formed a positive provisional target and a relative scaling matrix,
+\begin{equation}
+\label{eq:ch2_positive_scaling}
+c_{+,i}^{(m)}=\max\!\left(c_{raw,i}^{(m)},\boldsymbol{\varepsilon}_c\right),\qquad
+s_i^{(m)}=\mathbf{1}\oslash c_{+,i}^{(m)},\qquad
+W_{s,i}^{(m)}=\operatorname{Diag}\!\left(s_i^{(m)}\right),
+\end{equation}
+where the maximum and division are componentwise and each entry of \(\boldsymbol{\varepsilon}_c\) is
+\(10^{-8}\) in the native unit of its component. The lower-bounded vector \(c_{+,i}^{(m)}\) supplied the
+projection target and its weights; it was not reported as a clipped prediction.
+
+Let \(Z\in\mathbb{R}^{F\times(F-K)}\) have orthonormal columns spanning \(\operatorname{null}(A)\). Because
+\(Ac_{in,i}=b_i\), every vector satisfying the conservation equality can be represented as
+\begin{equation}
+\label{eq:ch2_conservative_parameterization}
+\{c:Ac=b_i\}=\{c_{in,i}+Zq:q\in\mathbb{R}^{F-K}\}.
+\end{equation}
+The projection selected the conservative change \(Zq\) closest to the provisional raw-prediction change under
+the relative scaling in Equation~\eqref{eq:ch2_positive_scaling}:
+\begin{equation}
+\label{eq:ch2_scaled_projection}
+q_i^{*,(m)}=\argmin_{q\in\mathbb{R}^{F-K}}
+\left\|W_{s,i}^{(m)}\left[Zq-\left(c_{+,i}^{(m)}-c_{in,i}\right)\right]\right\|_2.
+\end{equation}
+The resulting conservative candidate was
+\begin{equation}
+\label{eq:ch2_conservative_candidate}
+c_{cand,i}^{(m)}=c_{in,i}+Zq_i^{*,(m)}.
+\end{equation}
+This candidate satisfies \(Ac_{cand,i}^{(m)}=b_i\). The weighted least-squares system was solved by an
+orthogonal-triangular factorization, with singular-value decomposition used as a numerical fallback and no
+normal-equation inverse formed.
+
+The candidate was then shortened toward the feasible influent anchor only when needed to ensure
+nonnegativity. Let \(\delta_i^{(m)}=c_{cand,i}^{(m)}-c_{in,i}\). The backtracking factor and final projected
+prediction were
+\begin{equation}
+\label{eq:ch2_backtracking}
+\alpha_i^{(m)}=
+\begin{cases}
+1, & \min_j c_{cand,ij}^{(m)}\geq0,\\
+(1-\eta)\displaystyle\min_{j:\delta_{ij}^{(m)}<0}
+\frac{c_{in,ij}}{-\delta_{ij}^{(m)}}, & \text{otherwise},
+\end{cases}
+\qquad
+\tilde c_i^{(m)}=c_{in,i}+\alpha_i^{(m)}\delta_i^{(m)},
+\end{equation}
+with \(\eta=10^{-12}\). The construction preserves conservation because
+\(A\tilde c_i^{(m)}=Ac_{in,i}+\alpha_i^{(m)}AZq_i^{*,(m)}=b_i\), and it enforces componentwise
+nonnegativity by restricting the movement along any direction that would cross the nonnegative boundary. A
+projection was accepted when \(\|A\tilde c_i^{(m)}-b_i\|_2\leq10^{-10}\) and every component satisfied
+\(\tilde c_{ij}^{(m)}\geq-10^{-10}\) in its native unit. Backtracking activation and projection latency were
+retained as diagnostics.
+
+\subsection{Surrogates, Preprocessing, and Hyperparameter Selection}
+
+Thirteen statistical surrogates were evaluated. The model set matched the raw-prediction comparison and
+included XGBoost, LightGBM, CatBoost, AdaBoost, Random Forest, Extra Trees, support vector regression (SVR),
+\(k\)-nearest neighbors (k-NN), partial least squares (PLS), Multi-task Elastic Net, Multi-task Lasso,
+multilayer perceptron (MLP), and TabNet. The set represented boosting, randomized tree ensembles, kernel and
+neighbor methods, latent-variable regression, sparse multi-task regression, and neural-network surrogates. This
+selection allowed projection effects to be compared across flexible nonlinear learners, simpler baselines, and
+more inspectable joint-response models while holding the data and scoring protocol fixed
+\citep{Breiman2001,ChenGuestrin2016,Wold2001,ArikPfister2021,Borisov2024}.
+
+\begin{table}[htbp]
+\centering
+\caption{Surrogate groups, output handling, and preprocessing before projection.}
+\label{tab:ch2_surrogate_projection_protocol}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.8cm}>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{3.8cm}}
+\toprule
+Surrogate group & Models & Output handling & Preprocessing before projection and scoring \\
+\midrule
+Boosting & XGBoost, LightGBM, CatBoost, AdaBoost & One regressor per effluent component & XGBoost, LightGBM, and CatBoost used physical input and target units; AdaBoost used target z-scores only \\
+Randomized tree ensembles & Random Forest, Extra Trees & Native multi-output regression & Random Forest used physical input and target units; Extra Trees used target z-scores only \\
+Kernel and neighbor methods & SVR, k-NN & SVR used one regressor per component; k-NN returned all components jointly & Input and target z-scores fitted within the relevant training partition \\
+Latent-variable and sparse multi-task models & PLS, Multi-task Elastic Net, Multi-task Lasso & Joint 20-component regression & Input and target z-scores fitted within the relevant training partition \\
+Neural-network surrogates & MLP, TabNet & Joint 20-component regression & Input and target z-scores fitted within the relevant training partition \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All transformations were fitted only on the relevant inner-training, outer-training, or full in-distribution
+training partition. The fitted transformations were then applied unchanged to the matching validation or
+beyond-domain inputs. When a surrogate was trained on target z-scores, its predictions were inverse-transformed
+to physical component units before projection, conservation evaluation, nonnegativity evaluation, and composite
+calculation. No missing-value imputation, response-dependent outlier removal, or target filtering was used.
+
+Hyperparameters were selected without access to the scored outer fold. At the largest in-distribution scale,
+each outer training partition used a four-fold inner search to minimize component-standardized mean squared
+error. The selected setting for that outer fold was then held fixed when the same surrogate was refitted on the
+smaller nested training subsets. This made the learning curves a controlled sample-size analysis rather than a
+sequence of separately optimized small-data studies. Hyperparameter optimization used seeded Optuna studies
+with a tree-structured Parzen estimator, no pruning, and 100 trials per study \citep{Akiba2019}. A separate
+full in-distribution search selected the setting used for the final refit before beyond-domain evaluation.
+
+\subsection{Cross-Validation and Paired Projection Workflow}
+
+In-distribution evaluation used nested training-set sizes
+\begin{equation}
+\label{eq:ch2_sample_grid}
+N\in\{500,1450,2400,3350,4300,5250,6200,7150,8100,9050,10000\}.
+\end{equation}
+A seed-42 permutation established both the nested row order and persistent fold assignments before any subset
+was formed. At every sample size, five-fold cross-validation used the same validation folds for every
+surrogate. Each fold trained on four fifths of the selected subset and scored the remaining fifth. The common
+folds made raw-versus-projected comparisons paired by sample, model, and training context.
+
+\begin{table}[htbp]
+\centering
+\caption{Validation, leakage-control, and paired-projection protocol.}
+\label{tab:ch2_validation_protocol}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{2.7cm}p{3.3cm}p{3.1cm}p{3.7cm}}
+\toprule
+Protocol item & Rule used & Data involved & Role in the comparison \\
+\midrule
+Scarcity grid & Eleven nested totals from 500 to 10,000 & Seed-42 row permutation & Adds samples without replacing earlier subsets \\
+Outer evaluation & Five folds at every size & \(0.8N\) training and \(0.2N\) validation rows & Uses the same folds for every surrogate and prediction type \\
+Inner selection & Four folds within each outer training partition & Largest-scale outer training rows only & Keeps scored outer folds unseen during tuning \\
+Preprocessing & Surrogate-specific scaling & Training partitions only & Prevents validation-response leakage \\
+Inverse transform & Applied before projection & Raw component predictions & Restores physical units for conservation and nonnegativity checks \\
+Paired scoring & Raw and projected versions of one prediction & Identical validation samples & Isolates the effect of projection \\
+Fold summaries & Mean and sample SD across five folds & Fold-level metrics & Describes fold-to-fold variation without hypothesis testing \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For each validation row, the fitted surrogate first returned \(c_{raw,i}^{(m)}\). The projection then returned
+\(\tilde c_i^{(m)}\) using the same \(c_{in,i}\), \(A\), \(Z\), and projection tolerances. Raw and projected
+predictions were scored as paired outputs. The underlying surrogate, preprocessing parameters, training rows,
+and validation rows were otherwise identical.
+
+\subsection{Accuracy, Constraint, and Timing Metrics}
+
+Component-space accuracy was primary because the 20 effluent components were the supervised targets and because
+conservation and nonnegativity are defined before aggregation. Let \(g\in\{1,\ldots,5\}\) index the outer fold
+at dataset size \(N\), and let \(\mathcal{T}_{N,g}\) be its training partition. For prediction type
+\(t\in\{\mathrm{raw},\mathrm{proj}\}\), define \(c_i^{(m,\mathrm{raw})}=c_{raw,i}^{(m)}\) and
+\(c_i^{(m,\mathrm{proj})}=\tilde c_i^{(m)}\). The standardized component residual for validation sample \(i\)
+and component \(j\) was
+\begin{equation}
+\label{eq:ch2_standardized_residual}
+\xi_{ij}^{(m,t,N,g)}
+=\frac{c_{ij}^{(m,t)}-c_{out,ij}}
+{\sigma_j^{(\mathcal{T}_{N,g})}},
+\end{equation}
+where \(\sigma_j^{(\mathcal{T}_{N,g})}\) is the population standard deviation of component \(j\) in the
+applicable training partition. For the \(n=N/5\) observations in the scored fold, the normalized mean squared
+error (nMSE), normalized root mean squared error (nRMSE), and normalized mean absolute error (nMAE) were
+\begin{align}
+\mathrm{nMSE}_{m,t,N,g}
+&=\frac{1}{Fn}\sum_{i=1}^{n}\sum_{j=1}^{F}
+\left(\xi_{ij}^{(m,t,N,g)}\right)^2, \nonumber\\
+\mathrm{nRMSE}_{m,t,N,g}
+&=\sqrt{\mathrm{nMSE}_{m,t,N,g}}, \label{eq:ch2_normalized_metrics}\\
+\mathrm{nMAE}_{m,t,N,g}
+&=\frac{1}{Fn}\sum_{i=1}^{n}\sum_{j=1}^{F}
+\left|\xi_{ij}^{(m,t,N,g)}\right|. \nonumber
+\end{align}
+Component \(R^2\) values and their equal-weight macro-average were computed from residual and total
+sum-of-squares terms:
+\begin{equation}
+\label{eq:ch2_coefficient_determination}
+\begin{aligned}
+\mathrm{SSE}_{j,m,t,N,g}
+&=\sum_{i=1}^{n}\left(c_{ij}^{(m,t)}-c_{out,ij}\right)^2,\\
+\mathrm{SST}_{j,N,g}
+&=\sum_{i=1}^{n}\left(c_{out,ij}-\bar c_{out,j,N,g}\right)^2,\\
+R_{j,m,t,N,g}^{2}
+&=1-\frac{\mathrm{SSE}_{j,m,t,N,g}}{\mathrm{SST}_{j,N,g}},\\
+\bar R_{m,t,N,g}^{2}
+&=\frac{1}{F}\sum_{j=1}^{F}R_{j,m,t,N,g}^{2}.
+\end{aligned}
+\end{equation}
+Component-specific errors in physical units and composite errors for COD, TN, TP, and TSS were retained as
+secondary diagnostics. They were not mixed into the primary 20-component standardized score.
+
+Mass-conservation and nonnegativity compliance were assessed before component aggregation. With the unrounded
+orthonormal basis \(A\), the conservation residual and standardized negative magnitude were
+\begin{equation}
+\label{eq:ch2_physical_residuals}
+v_{mc,i}(c)=\left\|Ac-b_i\right\|_2,\qquad
+v_{nn,i}^{\mathrm{std}}\!\left(c;\mathcal{T}_{N,g}\right)
+=\left\|\min\!\left(c\oslash\boldsymbol{\sigma}^{(\mathcal{T}_{N,g})},
+\mathbf{0}\right)\right\|_1.
+\end{equation}
+The minimum is componentwise. Conservation and nonnegativity violation frequencies were
+\begin{equation}
+\label{eq:ch2_violation_frequencies}
+\begin{aligned}
+\pi_{mc}^{(m,t,N,g)}
+&=\frac{1}{n}\sum_{i=1}^{n}
+\mathbb{1}\!\left[v_{mc,i}\!\left(c_i^{(m,t)}\right)>10^{-10}\right],\\
+\pi_{nn}^{(m,t,N,g)}
+&=\frac{1}{n}\sum_{i=1}^{n}
+\mathbb{1}\!\left[\exists j:\ c_{ij}^{(m,t)}<-10^{-10}\right].
+\end{aligned}
+\end{equation}
+Mean, median, and maximum residual magnitudes were retained alongside these frequencies because rare large
+violations can be hidden by average residuals.
+
+The paired effect of projection on the primary accuracy score and the standardized component displacement were
+\begin{equation}
+\label{eq:ch2_projection_effects}
+\begin{aligned}
+\Delta\mathrm{nRMSE}_{m,N,g}
+&=\mathrm{nRMSE}_{m,\mathrm{proj},N,g}
+-\mathrm{nRMSE}_{m,\mathrm{raw},N,g},\\
+d_{c,i}^{\mathrm{std},(m)}\!\left(\mathcal{T}_{N,g}\right)
+&=\left\|\left(\tilde c_i^{(m)}-c_{raw,i}^{(m)}\right)
+\oslash\boldsymbol{\sigma}^{(\mathcal{T}_{N,g})}\right\|_2.
+\end{aligned}
+\end{equation}
+Negative \(\Delta\mathrm{nRMSE}\) denotes an accuracy benefit from projection, while positive values denote an
+accuracy cost. Fold summaries used the five paired fold differences rather than subtracting separately averaged
+raw and projected scores.
+
+Wall-clock timing was partitioned into preprocessing and surrogate fitting, raw batch inference, projection
+alone, and end-to-end projected inference. Hyperparameter-search duration was reported separately from fitting
+and inference. In-distribution timing used a deterministic 512-row validation batch, five warm-up calls, and 30
+timed repetitions. The median 512-row latency within a fold was divided by 512 and reported in milliseconds
+per sample. Projection timing included scaling, the weighted solve, conservation and nonnegativity checks, and
+positivity backtracking.
+
+\subsection{Beyond-Domain Evaluation}
+
+After cross-validation, one final setting per surrogate was selected using only the 10,000 in-distribution
+states. Each surrogate and its required preprocessing were then refitted on the complete in-distribution pool
+before any beyond-domain response was used for scoring. The beyond-domain validation sets were generated with
+new mechanistic simulations and the same solver, initialization sequence, and acceptance rule used for the
+in-distribution data. No beyond-domain response was used for refitting, scaling, calibration, or hyperparameter
+selection.
+
+Four input features were perturbed beyond their in-distribution upper bounds: HRT, aeration, influent ammonium
+nitrogen, and influent slowly biodegradable substrate. For a perturbed feature \(\ell\) with in-distribution
+bounds \([L_\ell,U_\ell]\), the normalized upper-bound exceedance was
+\((x_{i\ell}-U_\ell)/(U_\ell-L_\ell)\). Mild excursions placed this quantity between 0.10 and 0.25, while
+severe excursions placed it between 0.35 and 0.60. Candidate generation was dominated by one-feature
+excursions, with a smaller share of two-feature excursions, and all unperturbed inputs remained inside their
+in-distribution ranges. Each retained beyond-domain point was therefore outside the in-distribution
+hyperrectangle.
+
+\begin{table}[htbp]
+\centering
+\caption{Beyond-domain input intervals used for the full-data surrogate refits.}
+\label{tab:ch2_beyond_domain}
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{p{2.5cm}p{3.2cm}p{3.2cm}p{3.2cm}p{1.5cm}}
+\toprule
+Input & In-distribution interval & Mild interval & Severe interval & Unit \\
+\midrule
+HRT & \([6,36]\) & \([39,43.5]\) & \([46.5,54]\) & h \\
+\(u_{\mathrm{air}}\) & \([0.5,2.5]\) & \([2.7,3.0]\) & \([3.2,3.7]\) & -- \\
+\(S_{NH4}\) & \([12,55]\) & \([59.3,65.8]\) & \([70.1,80.8]\) & g N/m\(^3\) \\
+\(X_S\) & \([60,280]\) & \([302,335]\) & \([357,412]\) & g COD/m\(^3\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Each beyond-domain regime retained 600 accepted steady states. For regime
+\(\zeta\in\{\mathrm{mild},\mathrm{severe}\}\), standardized errors used the population component standard
+deviations estimated from all 10,000 in-distribution targets:
+\begin{equation}
+\label{eq:ch2_beyond_domain_residual}
+\xi_{ij}^{(m,t,\zeta)}
+=\frac{c_{ij}^{(m,t)}-c_{out,ij}}
+{\sigma_j^{(\mathcal{T}_{\mathrm{in}})}}.
+\end{equation}
+The nMSE, nRMSE, nMAE, macro-average \(R^2\), violation frequencies, and projection displacements were then
+computed with the in-distribution reference set replacing the fold-specific training reference. Beyond-domain
+results were descriptive over 600 cases from one full-data refit per surrogate rather than five-fold
+cross-validation estimates. Predictive extrapolation and physical admissibility were interpreted separately.
+
+\subsection{Reproducibility Controls}
+
+All pseudorandom streams were derived from root seed 42. The same row order, fold assignments, validation
+samples, and beyond-domain regimes were used across surrogate families. Seeded fitting was used for XGBoost,
+LightGBM, CatBoost, AdaBoost, Random Forest, Extra Trees, MLP, and TabNet; SVR, k-NN, PLS, and the multi-task
+linear models were deterministic for fixed data and selected parameters. Double precision was used for
+mechanistic states, invariant construction, preprocessing, returned predictions, projection, and metrics,
+except for the internal tensors of TabNet. These controls were intended to make differences between raw and
+projected outputs attributable to the post prediction projection rather than to changing folds, preprocessing,
+or random sampling.
 
 \section{Results}
 
