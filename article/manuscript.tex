@@ -29,14 +29,6 @@
 %%% Template utilities %%%
 \usepackage[dvipsnames]{xcolor}
 \usepackage{etoolbox}
-\usepackage{xifthen}
-
-% Draft marker command
-\newcommand{\todo}[1][]{%
-    \textcolor{red}{[TODO\ifthenelse{\isempty{#1}}{}{ -- #1}]}\xspace}
-
-% Missing reference marker
-\newcommand*{\tocite}{\textcolor{orange}{[reference needed]}\xspace}
 
 
 %%% Formatting %%%
@@ -167,11 +159,24 @@
 
 \newacronym{asm}{ASM}{activated sludge model}
 \newacronym{asm2dtsn}{ASM2d-TSN}{Activated Sludge Model No.\ 2d with two-step nitrification}
+\newacronym{cod}{COD}{chemical oxygen demand}
+\newacronym{hrt}{HRT}{hydraulic retention time}
+\newacronym{icsor}{ICSOR}{Invariant-Constrained Second-Order Regression}
 \newacronym{knn}{k-NN}{k-nearest neighbors}
+\newacronym{mae}{MAE}{mean absolute error}
+\newacronym{mape}{MAPE}{mean absolute percentage error}
 \newacronym{mlp}{MLP}{multilayer perceptron}
+\newacronym{msemetric}{MSE}{mean squared error}
+\newacronym{nauc}{nAUC}{normalized area under the learning curve}
+\newacronym{nmae}{nMAE}{normalized mean absolute error}
+\newacronym{nmse}{nMSE}{normalized mean squared error}
 \newacronym{nrmse}{nRMSE}{normalized root mean squared error}
 \newacronym{pls}{PLS}{partial least squares}
+\newacronym{rmse}{RMSE}{root mean squared error}
 \newacronym{svr}{SVR}{support vector regression}
+\newacronym{tn}{TN}{total nitrogen}
+\newacronym{tp}{TP}{total phosphorus}
+\newacronym{tss}{TSS}{total suspended solids}
 
 \newglossarystyle{customacronyms}{%
   \setglossarystyle{mcolalttreegroup}%
@@ -1036,7 +1041,16 @@ to 0.254, respectively. These results indicate that boosted trees were more data
 sample size, whereas the MLP used the larger training set most effectively. At the full in-distribution scale,
 the five best raw surrogates were the MLP, CatBoost, LightGBM, XGBoost, and TabNet. Their macro-average
 coefficients of determination ranged from 0.926 to 0.977, indicating that the best raw models captured most of
-the component-level variation in the simulator outputs.
+the component-level variation in the simulator outputs. Figure~\ref{fig:ch1_learning_curves} traces these
+trajectories across the full range of training-set sizes and shows the crossover in which the MLP overtook the
+boosted trees as more simulated data became available.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{ch1_learning_curves.pdf}
+\caption{In-distribution learning curves for raw predictions. Lines show five-fold mean nRMSE and shaded regions show \(\pm\) one sample SD across folds.}
+\label{fig:ch1_learning_curves}
+\end{figure}
 
 The remaining surrogate families learned the mapping less effectively. SVR reached a mean nRMSE of 0.364 at
 the largest sample size and remained clearly below the leading neural and boosted-tree models. AdaBoost,
@@ -2634,7 +2648,109 @@ connected to an inspectable regression structure.
 
 \section*{Summary of Contributions}
 
+This research examined how machine learning surrogates of the activated sludge process can be developed and
+evaluated so that their predictions are not only fast and accurate, but also physically admissible and
+interpretable. Mechanistic activated sludge models represent biological wastewater treatment through coupled
+component balances for organic carbon, nitrogen, phosphorus, alkalinity, biomass, and solids, yet repeated
+simulation of these models is costly when many operating and influent conditions must be explored
+\citep{Henze2006,Guerrero2011}. Data driven surrogates promise to relieve that cost, but low prediction error
+alone does not guarantee that a returned component vector can be read as a valid process state
+\citep{Hansen2024,KircherVotsmeier2025}. The work addressed this concern through three connected studies that
+treated predictive accuracy, mass conservation, nonnegativity, and structural transparency as joint
+requirements rather than as separate goals.
+
+The first study established a controlled surrogate benchmark for the complete effluent component state of a
+steady-state Activated Sludge Model No.\ 2d with two-step nitrification (ASM2d-TSN) simulator. By comparing
+thirteen tabular learners under shared sampling, folds, and scoring rules, it showed that the activated sludge
+response is learnable from paired inputs and outputs, but that raw accuracy depends on the model family, the
+amount of training data, the identity of the effluent component, and the degree of domain shift. Boosted trees
+were the most data efficient at the smallest sample size, whereas a multilayer perceptron (MLP) used the
+largest training set most effectively and achieved the lowest error and the highest component-level agreement.
+The contribution of this study is a reproducible, component-space baseline that separates the learnability of
+the mechanistic response from site-specific noise and narrow target definitions, and that documents which
+components and operating regimes remain difficult even for the strongest raw surrogates \citep{VieringLoog2023}.
+
+The second study showed that predictive accuracy and physical admissibility are empirically distinct
+properties, and it provided a model-agnostic way to reconcile them. Every raw surrogate violated the
+stoichiometric conservation relation implied by the adopted model boundary, and several otherwise accurate
+surrogates also returned negative concentrations in low-value components. A positivity-preserving conservative
+projection, applied after prediction and without retraining, returned every evaluated output to the declared
+invariant balance and the nonnegative component domain, removing both failure modes across all in-distribution
+and beyond-domain predictions with residuals at numerical precision \citep{KircherVotsmeier2025}. The study
+also established that projection is not a device for improving ordinary error, because its effect on aggregate
+accuracy was a measurable tradeoff that depended on the surrogate, the component, and the operating regime. The
+contribution is therefore twofold, combining a dependable enforcement layer with a paired evaluation logic in
+which admissibility diagnostics travel alongside accuracy metrics.
+
+The third study integrated these requirements into a single surrogate design, Invariant-Constrained
+Second-Order Regression (ICSOR). Rather than repairing an opaque prediction after the fact, ICSOR learns a
+structured second-order regression head that keeps the engineering roles of operating variables, influent
+loads, nonlinear curvature, and cross-component coupling explicit, and it returns predictions through a checked
+deployment rule that guarantees exact conservation and nonnegativity. In the benchmark, ICSOR was the only
+pipeline whose returned component states satisfied both physical conditions on every test case, while its
+reported-composite accuracy remained within the leading group and only moderately above the best unconstrained
+learners. It was additionally the most sample-efficient model at the smallest dataset size and had the most
+favorable error profile across the full sample-size range, at the cost of higher fitting time and a dense but
+block-structured coefficient map. The contribution is a demonstration that an activated sludge surrogate can be
+constructed so that its output is simultaneously accurate, exactly admissible, and organized around an
+inspectable structure, rather than achieving these properties only in isolation \citep{Rudin2019}.
+
+Taken together, the three studies reframe what it means for an activated sludge surrogate to be credible. Speed
+and low error are necessary but insufficient, because a usable surrogate should also return a component state
+that respects the conservation and nonnegativity structure of the underlying model and, where possible, expose
+the relationships it has learned \citep{Rudin2019,Shen2023}. The progression from raw benchmarking to post
+prediction enforcement to an integrated interpretable design provides both a set of concrete results and a
+transferable methodology. The same component-space evaluation, the same paired reporting of accuracy and
+admissibility, and the same constraint-aware model construction can be applied to other process systems whose
+surrogates must preserve conserved quantities, which positions the work as a contribution to physically
+grounded surrogate modeling as well as to activated sludge simulation \citep{Karniadakis2021,Valente2025}.
+
 \section*{Outlook}
+
+The clearest direction for further work is validation beyond simulated data. The present evidence was obtained
+under a known mechanistic reference, a fixed component basis, and a defined constraint structure, which made it
+possible to isolate prediction error, conservation, and nonnegativity without confounding them with measurement
+noise. Extending the framework to full-scale wastewater treatment records will require attention to sensor
+error, calibration uncertainty, and unmodeled biological pathways, all of which complicate both the reference
+state and the invariant structure used for enforcement \citep{Machado2014,Newhart2019}. A natural first step is
+to test whether the admissibility guarantees remain meaningful when the conservation relation is estimated from
+imperfect plant data rather than from an exact stoichiometric description.
+
+A second direction is the move from steady-state prediction toward transient and dynamic operation. Activated
+sludge plants experience diurnal and seasonal load variation, and many operational decisions depend on
+time-dependent behavior rather than on a single steady state. Adapting the surrogate benchmark, the projection
+step, and the checked deployment rule to dynamic trajectories would broaden their relevance to real-time
+monitoring, setpoint design, and advanced process control \citep{Sadeghassadi2018,Croll2023}. This extension
+raises open questions about how conservation and nonnegativity should be enforced along a trajectory rather than
+at a single operating point.
+
+A third direction concerns the scope of the physical guarantees themselves. The conservation used here reflects
+the stoichiometric invariants of the adopted model within a declared reactor boundary, and it does not claim
+elemental closure, thermodynamic feasibility, kinetic realism, or plant-wide balance. Later work could enrich
+the feasible set with additional physically motivated constraints, couple the data driven surrogate with
+differentiable mechanistic components, and quantify the uncertainty of both the prediction and the correction
+so that admissible outputs also carry calibrated confidence \citep{Shen2023,Valente2025}. Strengthening the
+guarantee in these ways would make admissible surrogates more defensible for detailed design and regulatory
+reporting.
+
+The methods can also be advanced on efficiency and scalability. The enforcement step and the ICSOR deployment
+optimizer added modest but nonzero cost, and the integrated model required more fitting time than the fastest
+baselines. Reducing simulation demand through active or sequential sampling, accelerating the constrained
+deployment for higher-dimensional component sets, and exploring richer coupling and curvature representations
+would improve the practicality of the approach for large screening and optimization workflows, where a
+surrogate is queried many times \citep{BhosekarIerapetritou2018,Durkin2024,PadronPaez2020,Aboagye2021}.
+Improvements of this kind would help the framework scale to plant-wide models with more components and
+processes.
+
+Finally, the results invite deeper integration with engineering decision-making. A surrogate that is fast,
+physically admissible, and structurally inspectable is well suited to serve inside optimization and control
+loops where each candidate solution must be both trustworthy and interpretable \citep{Rudin2019,Mao2024,Wang2025}.
+Later studies could examine how admissible and interpretable surrogates change the quality and acceptability of
+design and operating decisions relative to unconstrained black-box predictors, and how practitioners weigh a
+small, well-understood accuracy cost against exact physical dependability and structural transparency. Answering
+these questions would connect the methodological contributions of the research to the practical goal that
+motivates them, which is more reliable and more explainable support for the operation of biological wastewater
+treatment systems.
 
 
 % -------------------
@@ -2655,13 +2771,157 @@ connected to an inspectable regression structure.
 
 \appendix
 
-\chapter{Appendix A}
+\chapter{Activated Sludge Component Basis and Composite Definitions}
 \label{ch:appendix.a}
 
-\chapter{Appendix B}
+The three studies share a common representation of the activated sludge state defined by the Activated Sludge
+Model No.\ 2d with two-step nitrification (ASM2d-TSN), following the Activated Sludge Model family
+\citep{Henze2006} and the two-step nitrification formulation of \citet{Guerrero2011}. The effluent state is a
+vector of twenty components, comprising ten dissolved species and ten particulate species.
+Table~\ref{tab:appA_components} lists the symbol, description, and native reporting unit of each component. The
+same basis defines both the supervised prediction targets and the space in which mass conservation and
+nonnegativity are assessed.
+
+\begin{table}[htbp]
+\centering
+\caption{Activated sludge component basis of the ASM2d-TSN state used across the studies.}
+\label{tab:appA_components}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{l p{7.0cm} l}
+\toprule
+Symbol & Description & Unit \\
+\midrule
+\multicolumn{3}{l}{\textit{Dissolved components}}\\
+$S_O$ & Dissolved oxygen & g O$_2$/m$^3$ \\
+$S_F$ & Fermentable, readily biodegradable substrate & g COD/m$^3$ \\
+$S_A$ & Fermentation products (acetate) & g COD/m$^3$ \\
+$S_{NH4}$ & Ammonium nitrogen & g N/m$^3$ \\
+$S_{NO2}$ & Nitrite nitrogen & g N/m$^3$ \\
+$S_{NO3}$ & Nitrate nitrogen & g N/m$^3$ \\
+$S_{N2}$ & Dinitrogen & g N/m$^3$ \\
+$S_{PO4}$ & Inorganic soluble phosphorus (phosphate) & g P/m$^3$ \\
+$S_I$ & Inert soluble organic matter & g COD/m$^3$ \\
+$S_{ALK}$ & Alkalinity (bicarbonate) & mol/m$^3$ \\
+\midrule
+\multicolumn{3}{l}{\textit{Particulate components}}\\
+$X_I$ & Inert particulate organic matter & g COD/m$^3$ \\
+$X_S$ & Slowly biodegradable substrate & g COD/m$^3$ \\
+$X_H$ & Heterotrophic biomass & g COD/m$^3$ \\
+$X_{PAO}$ & Phosphate-accumulating-organism biomass & g COD/m$^3$ \\
+$X_{PP}$ & Stored polyphosphate & g P/m$^3$ \\
+$X_{PHA}$ & Stored polyhydroxyalkanoates & g COD/m$^3$ \\
+$X_{AOB}$ & Ammonia-oxidizing biomass & g COD/m$^3$ \\
+$X_{NOB}$ & Nitrite-oxidizing biomass & g COD/m$^3$ \\
+$X_{MeP}$ & Precipitated metal phosphate & g TSS/m$^3$ \\
+$X_{MeOH}$ & Metal hydroxide & g TSS/m$^3$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The reported water quality composites are not fitted directly. Chemical oxygen demand (COD), total nitrogen
+(TN), total phosphorus (TP), and total suspended solids (TSS) are computed from a predicted component vector
+through a fixed linear composition map, so that each composite is an interpretive summary of the underlying
+component state rather than an independent response. Chemical oxygen demand aggregates the oxygen-demand
+contributions of the soluble and particulate organic components, total nitrogen aggregates the inorganic and
+organically bound nitrogen contributions, total phosphorus aggregates the soluble, stored, precipitated, and
+biomass-bound phosphorus contributions, and total suspended solids aggregates the particulate components.
+Because each composite is a linear function of the component vector, any prediction that is admissible in the
+component space also yields internally consistent composite values \citep{Henze2006}.
+
+
+\chapter{Surrogate Models and Shared Experimental Protocol}
 \label{ch:appendix.b}
 
-\chapter{Appendix C}
+The comparative studies drew on a common set of statistical surrogates spanning the main families used for
+structured tabular regression. Table~\ref{tab:appB_models} lists each surrogate, its family, and how it
+produced the twenty-component effluent prediction. The set combines boosted trees, randomized tree ensembles,
+kernel and neighbor methods, latent-variable and sparse multi-task regression, and neural networks, so that
+flexible nonlinear learners could be compared with simpler or more inspectable alternatives under a fixed data
+and scoring protocol \citep{Breiman2001,ChenGuestrin2016,Wold2001,Hornik1989,ArikPfister2021,Borisov2024}. The
+interpretable Invariant-Constrained Second-Order Regression (ICSOR) surrogate developed in the third study was
+evaluated against these same comparators.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparator surrogates evaluated across the studies and their effluent output handling.}
+\label{tab:appB_models}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{l l p{5.4cm}}
+\toprule
+Surrogate & Family & Effluent output handling \\
+\midrule
+XGBoost & Boosting & One regressor per component \\
+LightGBM & Boosting & One regressor per component \\
+CatBoost & Boosting & One regressor per component \\
+AdaBoost & Boosting & One regressor per component \\
+Random Forest & Randomized tree ensemble & Native multi-output regression \\
+Extra Trees & Randomized tree ensemble & Native multi-output regression \\
+Support vector regression & Kernel method & One regressor per component \\
+$k$-nearest neighbors & Neighbor method & Joint multi-output prediction \\
+Partial least squares & Latent-variable regression & Joint twenty-component regression \\
+Multi-task Elastic Net & Sparse multi-task regression & Joint twenty-component regression \\
+Multi-task Lasso & Sparse multi-task regression & Joint twenty-component regression \\
+Multilayer perceptron & Neural network & Joint twenty-component regression \\
+TabNet & Neural network & Joint twenty-component regression \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A single mechanistic benchmark supported all comparisons. Steady-state cases were generated from the ASM2d-TSN
+simulator over a defined operating and influent domain using a seed-42 randomized Latin hypercube design
+\citep{McKay1979}, and each case was accepted only when its steady-state balance residual met a fixed numerical
+tolerance. Feature and target transformations were fitted on training partitions alone and inverted before
+scoring, which prevented leakage from held-out data \citep{Pinheiro2025}. Hyperparameters were selected by
+seeded Optuna studies with a tree-structured Parzen estimator \citep{Akiba2019}, and the selected settings were
+held fixed across the nested and repeated sample-size analyses so that learning behavior reflected data quantity
+rather than repeated retuning \citep{VieringLoog2023}. In-distribution performance was estimated by
+cross-validation with shared folds, and beyond-domain performance used separately simulated excursions outside
+the sampled envelope. This shared protocol makes the differences reported across the studies attributable to
+model family and physical enforcement rather than to inconsistent data handling.
+
+
+\chapter{Evaluation Metrics and Physical Diagnostics}
 \label{ch:appendix.c}
+
+Accuracy was reported in two spaces, and physical behavior was quantified through two diagnostics. Accuracy in
+the component space used standardized errors so that components with different physical units could be combined,
+whereas accuracy in the reported-composite space used errors on chemical oxygen demand, total nitrogen, total
+phosphorus, and total suspended solids. Physical behavior was assessed before composite calculation so that
+numerical accuracy would not conceal an inadmissible component vector. Table~\ref{tab:appC_metrics} summarizes
+each quantity, the space in which it is defined, and what it measures.
+
+\begin{table}[htbp]
+\centering
+\caption{Evaluation quantities used across the studies.}
+\label{tab:appC_metrics}
+\small
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{p{4.6cm} l p{5.6cm}}
+\toprule
+Quantity & Space & What it measures \\
+\midrule
+Normalized mean squared, root mean squared, and mean absolute error & Component (standardized) & Average standardized component prediction error \\
+Macro-average coefficient of determination & Component & Equal-weight variance explained across components \\
+Root mean squared, mean absolute, mean absolute percentage, and mean squared error & Reported composite & Error on the COD, TN, TP, and TSS summaries \\
+Coefficient of determination & Reported composite & Variance explained in the composite space \\
+Mass-conservation residual & Component & Deviation from the stoichiometric invariants \\
+Nonnegativity magnitude & Component & Total standardized negative component mass \\
+Normalized area under the learning curve & Sample-size sweep & Sample-averaged error across training sizes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Component-space errors were normalized by the component standard deviations of the applicable training
+partition, which prevents high-magnitude components from dominating an aggregate score and keeps the
+in-distribution and beyond-domain results on a comparable scale. The macro-average coefficient of determination
+weights every component equally rather than by variance, so that easily predicted components do not conceal
+weak performance on more difficult ones. The mass-conservation residual measures the deviation of a prediction
+from the sample-specific stoichiometric invariants of the adopted model boundary, and the nonnegativity
+magnitude measures the total standardized negative mass in a prediction, so a component vector is physically
+admissible in the sense used here only when both quantities lie within numerical tolerance. The normalized area
+under the learning curve condenses an entire error-versus-sample-size trajectory into a single value, which
+allows sample efficiency to be compared without ranking models at only one training size \citep{VieringLoog2023}.
 
 \end{document}
