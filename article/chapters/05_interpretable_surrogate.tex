@@ -17,6 +17,7 @@ The prediction target is the effluent component vector \(c_{out}\in\mathbb{R}^{F
 
 The link between a component balance and a regression constraint can first be seen in a hypothetical conversion of one component into another. Suppose that one unit of component 1 is converted into one unit of component 2. The two components are expressed in a common inventory unit for this illustration. Their changes satisfy
 \begin{equation}
+\equationname{Illustrative component changes for a two-component reaction}
 \label{eq:icsor_scalar_inventory_example}
 c_{out,1}-c_{in,1}=-\xi,
 \qquad
@@ -26,6 +27,7 @@ Adding these equations eliminates the unknown conversion amount. The relation av
 
 The same calculation can be written using the small matrices
 \begin{equation}
+\equationname{Illustrative stoichiometric matrix and mass conservation operator}
 \label{eq:icsor_small_inventory_matrices}
 \nu=\begin{bmatrix}-1&1\end{bmatrix},
 \qquad
@@ -37,6 +39,7 @@ These matrices describe the reduced illustration, rather than the 20-component p
 
 The stoichiometric matrix \(\nu\in\mathbb{R}^{P\times F}\) records reactions as rows and components as columns. Let \(V_0\in\mathbb{R}^{F\times K}\) span its right null space, where \(K=5\). The invariant operator is
 \begin{equation}
+\equationname{Structured-regression mass conservation operator from the null space}
 \label{eq:icsor_invariant_operator}
 A=V_0^\top\in\mathbb{R}^{K\times F},
 \qquad \nu V_0=0,
@@ -46,12 +49,14 @@ The columns of \(V_0\) are independent, so \(A\) has full row rank. With an orth
 
 For the control volume and boundary accounting represented by the adopted process model, a reaction-induced change has the form
 \begin{equation}
+\equationname{Effluent change in stoichiometric process coordinates}
 \label{eq:icsor_stoichiometric_change}
 c_{out}-c_{in}=\nu^\top\xi,
 \qquad \xi\in\mathbb{R}^{P}.
 \end{equation}
 The reaction-progress vector \(\xi\) expresses the net contribution of the reactions in concentration-equivalent units. Multiplication by \(A\) removes that unknown contribution and gives
 \begin{equation}
+\equationname{Mass conservation equality for the structured-regression effluent}
 \label{eq:icsor_invariant_balance}
 A(c_{out}-c_{in})=0.
 \end{equation}
@@ -61,6 +66,7 @@ The equality in Equation~\eqref{eq:icsor_invariant_balance} applies only when th
 
 For a new influent state, the component set used by checked deployment is
 \begin{equation}
+\equationname{Structured-regression feasible set for mass conservation and non-negativity}
 \label{eq:icsor_feasible_set}
 \mathcal{F}(c_{in})=
 \left\{c\in\mathbb{R}^{F}\mid Ac=Ac_{in},\ c\geq\mathbf{0}\right\}.
@@ -79,6 +85,7 @@ Start with two hypothetical operating entries \(u_1,u_2\) and two influent entri
 
 For two column vectors, the Kronecker operation multiplies the entire second vector by the first entry of the first vector, then by its second entry. Thus
 \begin{equation}
+\equationname{Illustrative operating, influent, and mixed Kronecker products}
 \label{eq:icsor_small_kronecker}
 \begin{aligned}
 u\otimes u&=\begin{bmatrix}u_1u_1\\u_1u_2\\u_2u_1\\u_2u_2\end{bmatrix},
@@ -90,6 +97,7 @@ For the illustrative values \(u=(2,3)^\top\) and \(c=(4,5)^\top\), these three b
 
 The feature vector retains both roles through the ordered expansion
 \begin{equation}
+\equationname{Second-order driver feature vector and its dimension}
 \label{eq:icsor_features}
 \phi(u,c_{in})=
 \begin{bmatrix}
@@ -103,6 +111,7 @@ The symbol \(\otimes\) denotes the Kronecker product. The adopted dimensions giv
 
 Multiplication by regression coefficients can also be read one entry at a time. For an illustrative first driver, take the baseline coefficient as 1, operating coefficients as \((2,-1)\), and influent coefficients as \((0.5,0)\). Let its operating quadratic row be \((0.1,0.1,0.1,0)\), influent quadratic row be \((0,0,0,-0.05)\), and operating-load row be \((0,0,0.25,0)\). Applying these rows to the numerical feature blocks gives
 \begin{equation}
+\equationname{Numerical evaluation of an illustrative regression driver}
 \label{eq:icsor_driver_multiplication_example}
 \begin{aligned}
 r_1={}&1+\begin{bmatrix}2&-1\end{bmatrix}\begin{bmatrix}2\\3\end{bmatrix}
@@ -117,18 +126,21 @@ Each row-vector multiplication is a sum of coefficient times feature. It is the 
 
 Before grouping the coefficients into matrices, the first driver in this illustration can be written as
 \begin{equation}
+\equationname{Scalar polynomial form of the illustrative regression driver}
 \label{eq:icsor_scalar_driver_example}
 r_1=1+2u_1-u_2+0.5c_1+0.1u_1^2
 +0.2u_1u_2-0.05c_2^2+0.25u_2c_1.
 \end{equation}
 The coefficient 0.2 of \(u_1u_2\) is the sum of the two ordered coefficients 0.1. In a general row, the scalar calculation is \(r_f=\sum_{\ell=1}^{D}B_{f\ell}\phi_\ell\). Carrying out this sum for all components gives the driver \(r\in\mathbb{R}^{F}\) through
 \begin{equation}
+\equationname{Matrix mapping from second-order features to the regression driver}
 \label{eq:icsor_driver}
 r(u,c_{in})=B\phi(u,c_{in}),
 \qquad B\in\mathbb{R}^{F\times D}.
 \end{equation}
 The driver is an intermediate regression quantity. It is not a vector of mechanistic reaction rates and is not the final deployed state. Its coefficients have no sign restriction, so the regression can represent both increasing and decreasing effects. Non-negativity is imposed on component states where it has a physical meaning. The driver block form is
 \begin{equation}
+\equationname{Driver decomposition into operating, influent, and interaction blocks}
 \label{eq:icsor_driver_blocks}
 \begin{aligned}
 r(u,c_{in})={}&b+W_u u+W_{in}c_{in}
@@ -143,6 +155,7 @@ Here \(b\in\mathbb{R}^{F}\) is a baseline term. The matrices \(W_u\in\mathbb{R}^
 
 Consider an illustrative driver for one component with aeration level \(a\) and influent ammonium concentration \(n\). A term of the form
 \begin{equation}
+\equationname{Illustrative driver with aeration, nitrogen, and interaction effects}
 \label{eq:icsor_example_driver}
 r_f=\beta_0+\beta_a a+\beta_n n+\beta_{aa}a^2+\beta_{an}an
 \end{equation}
@@ -156,6 +169,7 @@ The choice of a second-order library limits the model deliberately. It can repre
 
 For a two-entry vector, direct multiplication gives
 \begin{equation}
+\equationname{Expansion of a two-variable quadratic form}
 \label{eq:icsor_scalar_quadratic}
 \begin{bmatrix}x_1&x_2\end{bmatrix}
 \begin{bmatrix}q_{11}&q_{12}\\q_{21}&q_{22}\end{bmatrix}
@@ -164,6 +178,7 @@ For a two-entry vector, direct multiplication gives
 \end{equation}
 Only the sum of the two off-diagonal coefficients enters this polynomial. Replacing them by their average leaves that sum unchanged. For example,
 \begin{equation}
+\equationname{Numerical example of quadratic-coefficient symmetrization}
 \label{eq:icsor_symmetry_numbers}
 Q=\begin{bmatrix}0.1&0.3\\-0.1&0\end{bmatrix},
 \qquad
@@ -173,6 +188,7 @@ At \(x=(2,3)^\top\), the first matrix gives \(0.4+1.8-0.6=1.6\). The symmetric m
 
 For component \(f\), reshape the corresponding rows of \(\Theta_{uu}\) and \(\Theta_{cc}\) into square matrices \(Q_{uu}^{(f)}\) and \(Q_{cc}^{(f)}\). A quadratic term can then be written as \(x^\top Qx\). For any real square matrix,
 \begin{equation}
+\equationname{Symmetric representation of a quadratic form}
 \label{eq:icsor_quadratic_symmetry}
 x^\top Qx=x^\top\operatorname{sym}(Q)x,
 \qquad
@@ -180,6 +196,7 @@ x^\top Qx=x^\top\operatorname{sym}(Q)x,
 \end{equation}
 The skew-symmetric part contributes nothing to the prediction. It can nevertheless increase the coefficient norm because
 \begin{equation}
+\equationname{Frobenius-norm decomposition into symmetric and skew parts}
 \label{eq:icsor_quadratic_norm}
 \|Q\|_F^2=
 \|\operatorname{sym}(Q)\|_F^2+
@@ -195,6 +212,7 @@ Each component has \(M_{op}(M_{op}+1)/2=3\) distinct operating quadratic terms a
 
 Consider two hypothetical component equations in which each channel has a coupling coefficient 0.2 to the other channel. With driver values 4 and 2, their equations are
 \begin{equation}
+\equationname{Illustrative coupled equations for two effluent components}
 \label{eq:icsor_scalar_coupling_example}
 c_1=4+0.2c_2,
 \qquad c_2=2+0.2c_1.
@@ -203,6 +221,7 @@ Substituting the second equation into the first gives \(c_1=4+0.2(2+0.2c_1)\). M
 
 Moving the coupled terms to the left makes the same calculation a matrix solve,
 \begin{equation}
+\equationname{Illustrative coupling matrix and coupled-state system}
 \label{eq:icsor_small_coupling_matrices}
 \Gamma=\begin{bmatrix}0&0.2\\0.2&0\end{bmatrix},
 \qquad
@@ -212,6 +231,7 @@ R\begin{bmatrix}c_1\\c_2\end{bmatrix}=\begin{bmatrix}4\\2\end{bmatrix}.
 \end{equation}
 The determinant of \(R\) is \(1-0.2^2=0.96\). Its inverse is
 \begin{equation}
+\equationname{Inverse of the illustrative two-component coupling system}
 \label{eq:icsor_small_coupling_inverse}
 R^{-1}=\frac{1}{0.96}\begin{bmatrix}1&0.2\\0.2&1\end{bmatrix}.
 \end{equation}
@@ -219,6 +239,7 @@ Multiplying this inverse by the driver gives the same two scalar solutions. The 
 
 The regression includes a matrix \(\Gamma\in\mathbb{R}^{F\times F}\) that describes fitted dependence among the effluent components. Define
 \begin{equation}
+\equationname{General coupled-state relation and system matrix}
 \label{eq:icsor_coupled_relation}
 R=I_F-\Gamma,
 \qquad Rc=r(u,c_{in}).
@@ -231,6 +252,7 @@ When \(R\) is nonsingular, the raw component prediction is \(R^{-1}r\). The depe
 
 The adopted coupling constraints require
 \begin{equation}
+\equationname{Diagonal, magnitude, and conditioning safeguards for component coupling}
 \label{eq:icsor_coupling_safeguards}
 \Gamma_{ff}=0,
 \qquad |\Gamma_{fj}|\leq\gamma_{abs}\quad(f\neq j),
@@ -252,6 +274,7 @@ Shrinking a candidate coupling matrix toward zero can provide a safe candidate b
 
 The squared error of one prediction is the square of its difference from the reference. For several components and observations, fitting adds these squared differences. A compact matrix norm represents this sum. For any matrix \(M\) with entries \(M_{ij}\),
 \begin{equation}
+\equationname{Squared Frobenius norm as a sum of coefficient squares}
 \label{eq:icsor_frobenius_definition}
 \|M\|_F^2=\sum_i\sum_j M_{ij}^2.
 \end{equation}
@@ -259,6 +282,7 @@ For example, a residual matrix \(\begin{bmatrix}1&-2\\3&0\end{bmatrix}\) has squ
 
 Let \(i\) identify an observation, \(f\) a component, \(k\) an invariant, and \(\ell\) a feature. The entry \(\widehat c_{if}\) is the fitted concentration, while \(\phi_{i\ell}\) is the corresponding feature entry. Before grouping the five training contributions into norms, their scalar form is
 \begin{equation}
+\equationname{Scalar expansion of the structured-regression training objective}
 \label{eq:icsor_training_scalar}
 \begin{aligned}
 J={}&\sum_{i=1}^{N}\sum_{f=1}^{F}
@@ -278,6 +302,7 @@ The dimensions of the matrices show how these sums are assembled. The entry in r
 
 For \(N\) training observations, \(\Phi\in\mathbb{R}^{N\times D}\) contains feature vectors as rows. The matrices \(C_{in}\) and \(C_{out}\) contain influent and reference effluent states in the same row convention. An auxiliary fitted-state matrix \(\widehat C\in\mathbb{R}_{+}^{N\times F}\) separates the predicted training states from the regression coefficients. The training criterion is
 \begin{equation}
+\equationname{Matrix form of the structured-regression training objective}
 \label{eq:icsor_training_objective}
 \begin{aligned}
 J(B,\Gamma,\widehat C)={}&
@@ -293,6 +318,7 @@ The first term measures component prediction error. The second term discourages 
 
 An illustrative one-observation calculation makes the five contributions concrete. Take \(c_{out}=(3,1)^\top\), \(c_{in}=(2,2)^\top\), \(\widehat c=(2.5,1.2)^\top\), and \(A=[1\ \ 1]\). Use the hypothetical coupling matrix in Equation~\eqref{eq:icsor_small_coupling_matrices}. For a single baseline feature, take \(B=(2,1)^\top\), so the driver is \((2,1)^\top\). The five unweighted contributions are
 \begin{equation}
+\equationname{Illustrative numerical contributions to the training penalties}
 \label{eq:icsor_penalty_numbers}
 \begin{aligned}
 \text{prediction error}&=(3-2.5)^2+(1-1.2)^2=0.29,\\
@@ -317,6 +343,7 @@ This distinction can be checked with the reduced residual \((1-\gamma z)^2\), wh
 
 For fixed \(\Gamma\) and \(\widehat C\), the driver update is a ridge-regularized linear least-squares problem. Define \(T=\widehat C R^\top\). For one output row, write its coefficient column as \(\beta\) and its target column from \(T\) as \(t\). The part of the objective that depends on this row is
 \begin{equation}
+\equationname{Regularized least-squares objective for one driver coefficient row}
 \label{eq:icsor_ridge_row_objective}
 \lambda_{sys}\sum_{i=1}^{N}
 \left(t_i-\sum_{\ell=1}^{D}\phi_{i\ell}\beta_\ell\right)^2
@@ -324,6 +351,7 @@ For fixed \(\Gamma\) and \(\widehat C\), the driver update is a ridge-regularize
 \end{equation}
 Differentiate with respect to one coefficient \(\beta_h\). The derivative of the squared residual contributes its residual times the feature \(\phi_{ih}\), while the ridge term contributes \(2\lambda_B\beta_h\). Setting the derivative to zero gives
 \begin{equation}
+\equationname{Scalar stationarity conditions for a driver coefficient row}
 \label{eq:icsor_ridge_scalar_normal}
 \lambda_{sys}\sum_{i=1}^{N}\phi_{ih}
 \left(\sum_{\ell=1}^{D}\phi_{i\ell}\beta_\ell-t_i\right)
@@ -331,6 +359,7 @@ Differentiate with respect to one coefficient \(\beta_h\). The derivative of the
 \end{equation}
 Writing this equation for every coefficient gives
 \begin{equation}
+\equationname{Normal equations for the driver coefficient row}
 \label{eq:icsor_ridge_normal_equations}
 \left(\lambda_{sys}\Phi^\top\Phi+\lambda_BI_D\right)\beta
 =\lambda_{sys}\Phi^\top t.
@@ -339,6 +368,7 @@ The matrix \(\Phi^\top\Phi\) contains sums of products of feature columns. The v
 
 For a hypothetical calculation with one coefficient and no intercept, let \(\Phi=(1,2)^\top\), \(t=(2,3)^\top\), and both weights equal one. The objective becomes
 \begin{equation}
+\equationname{Illustrative scalar ridge objective and its polynomial expansion}
 \label{eq:icsor_ridge_numeric_example}
 (2-\beta)^2+(3-2\beta)^2+\beta^2
 =13-16\beta+6\beta^2.
@@ -347,6 +377,7 @@ Its derivative is \(-16+12\beta\), so the minimizer is \(\beta=4/3\). The matrix
 
 Assembling the normal equations for all output rows gives the exact solution
 \begin{equation}
+\equationname{Closed-form ridge update for the driver coefficient matrix}
 \label{eq:icsor_ridge_update}
 B^\top=
 \left(\lambda_{sys}\Phi^\top\Phi+\lambda_B I_D\right)^{-1}
@@ -358,6 +389,7 @@ For fixed \(B\) and \(\widehat C\), define \(E=\widehat C-\Phi B^\top\).
 
 The coupling calculation can be read one output row at a time. For row \(f\), the residual at observation \(i\) is \(E_{if}-\sum_{j\neq f}\widehat c_{ij}\Gamma_{fj}\). Its minimization uses the other fitted component columns as predictors of \(E_{if}\), with a ridge penalty and box bounds. In a hypothetical row with one permitted coupling \(\gamma\), two predictor values 1 and 2, and residual targets 0.4 and 0.8, equal unit weights give
 \begin{equation}
+\equationname{Illustrative scalar coupling objective and its expansion}
 \label{eq:icsor_coupling_numeric_update}
 (0.4-\gamma)^2+(0.8-2\gamma)^2+\gamma^2
 =0.8-4\gamma+6\gamma^2.
@@ -366,6 +398,7 @@ The derivative \(-4+12\gamma\) vanishes at \(\gamma=1/3\). This value lies below
 
 Collecting these scalar residuals across all output rows gives the coupling proposal
 \begin{equation}
+\equationname{Regularized least-squares update for component coupling}
 \label{eq:icsor_coupling_update}
 \min_{\Gamma}\quad
 \lambda_{sys}\|E-\widehat C\Gamma^\top\|_F^2+
@@ -379,6 +412,7 @@ Expand the three residual sums for one observation before collecting their coeff
 
 Write the expanded quadratic as \(\widehat c_i^\top H_C\widehat c_i-2h_i^\top\widehat c_i\). The entry \((H_C)_{fg}\) multiplies the ordered product \(\widehat c_{if}\widehat c_{ig}\), and \((h_i)_f\) supplies its linear term. For distinct components, the two mirrored entries contribute together, following the quadratic symmetry convention. Let \(\delta_{fg}\) equal one when \(f=g\) and zero otherwise. Reading the coefficients entry by entry gives
 \begin{equation}
+\equationname{Scalar entries of the fitted-state Hessian and forcing vector}
 \label{eq:icsor_state_scalar_coefficients}
 \begin{aligned}
 (H_C)_{fg}&=\delta_{fg}+\lambda_{inv}\sum_{k=1}^{K}A_{kf}A_{kg}
@@ -392,6 +426,7 @@ For example, the invariant contribution to \((H_C)_{12}\) adds the product of th
 
 Completing the square explains what the non-negative solve is adjusting. With \(c_0=H_C^{-1}h_i\),
 \begin{equation}
+\equationname{Completed-square form of the fitted-state objective}
 \label{eq:icsor_state_completed_square}
 \widehat c^\top H_C\widehat c-2h_i^\top\widehat c
 =(\widehat c-c_0)^\top H_C(\widehat c-c_0)
@@ -405,6 +440,7 @@ At \((0,2/3)^\top\), the derivative in the first coordinate is \(2(c_2+1)=10/3\)
 
 The general coefficient arrays derived above are assembled in the compact form
 \begin{equation}
+\equationname{Hessian and forcing vector for the fitted-state update}
 \label{eq:icsor_state_update}
 \begin{aligned}
 H_C&=I_F+\lambda_{inv}A^\top A+\lambda_{sys}R^\top R,\\
@@ -465,6 +501,7 @@ Table~\ref{tab:icsor_fitting_settings} specifies numerical fitting choices. The 
 
 For a new pair \((u_*,c_{in,*})\), the fitted parameters give
 \begin{equation}
+\equationname{Raw deployed state from the fitted coupled system}
 \label{eq:icsor_raw_state}
 \widehat R=I_F-\widehat\Gamma,
 \qquad d_* =\widehat B\phi(u_*,c_{in,*}),
@@ -476,6 +513,7 @@ For a vector, the Euclidean norm is the square root of the sum of squared entrie
 
 For any candidate \(c\), define the diagnostic residuals
 \begin{equation}
+\equationname{Mass conservation and non-negativity diagnostics of a deployed state}
 \label{eq:icsor_deployment_diagnostics}
 v_{mc}(c)=\|A(c-c_{in,*})\|_2,
 \qquad
@@ -487,12 +525,14 @@ The minimum is taken componentwise. The adopted diagnostic tolerance is \(10^{-1
 
 The nearest state satisfying mass conservation can first be derived for the hypothetical two-component inventory. Write the raw prediction as \((p_1,p_2)^\top\) and the required total as \(T\). The two unknown projected concentrations minimize \((c_1-p_1)^2+(c_2-p_2)^2\) while satisfying \(c_1+c_2=T\). Introduce a multiplier \(\eta\) for that equality and write
 \begin{equation}
+\equationname{Lagrangian for an illustrative two-component affine projection}
 \label{eq:icsor_scalar_projection_lagrangian}
 \mathcal{L}=\frac{1}{2}(c_1-p_1)^2+
 \frac{1}{2}(c_2-p_2)^2+\eta(c_1+c_2-T).
 \end{equation}
 The factor one-half simplifies differentiation without changing the minimizer. Differentiating with respect to the two concentrations and the multiplier gives
 \begin{equation}
+\equationname{Stationarity and equality conditions for the illustrative affine projection}
 \label{eq:icsor_scalar_projection_conditions}
 c_1-p_1+\eta=0,
 \qquad c_2-p_2+\eta=0,
@@ -500,6 +540,7 @@ c_1-p_1+\eta=0,
 \end{equation}
 The first two equations give \(c_1=p_1-\eta\) and \(c_2=p_2-\eta\). Substituting them into the inventory equality gives \(p_1+p_2-2\eta=T\). Thus
 \begin{equation}
+\equationname{Closed-form solution of the illustrative affine projection}
 \label{eq:icsor_scalar_projection_solution}
 \begin{aligned}
 \eta&=\frac{p_1+p_2-T}{2},\\
@@ -511,12 +552,14 @@ The unweighted distance shares the inventory discrepancy equally between these t
 
 When the raw state fails its checks, the first projection solves
 \begin{equation}
+\equationname{Euclidean affine projection onto the mass conservation equality}
 \label{eq:icsor_affine_problem}
 c_{aff}=\mathop{\arg\min}_{c\in\mathbb{R}^{F}}\|c-c_{raw}\|_2^2
 \quad\text{subject to}\quad Ac=Ac_{in,*}.
 \end{equation}
 Introduce a Lagrange multiplier \(\eta\in\mathbb{R}^{K}\). Stationarity gives \(c-c_{raw}+A^\top\eta=0\). Substitution into the equality gives \(AA^\top\eta=A(c_{raw}-c_{in,*})\). The full row rank of \(A\) therefore gives the unique solution
 \begin{equation}
+\equationname{Closed-form affine projection of the raw component state}
 \label{eq:icsor_affine_solution}
 c_{aff}=c_{raw}-A^\top(AA^\top)^{-1}A(c_{raw}-c_{in,*}).
 \end{equation}
@@ -524,6 +567,7 @@ The fixed matrix \(A^\top(AA^\top)^{-1}A\) can be prepared once. The affine proj
 
 Each matrix step follows the same scalar derivation. The multiplier column contains one multiplier per independent inventory. The vector \(A^\top\eta\) converts these inventory projections into component adjustments. Solving \(AA^\top\eta=A(c_{raw}-c_{in,*})\) determines the adjustments needed to remove the inventory residual. For the two-component illustration,
 \begin{equation}
+\equationname{Illustrative matrix of the mass conservation projection}
 \label{eq:icsor_small_affine_matrix}
 AA^\top=2,
 \qquad
@@ -540,6 +584,7 @@ The affine state is checked for both mass conservation residuals and non-negativ
 
 The absolute-distance projection can also be written before introducing compact vector inequalities. For the state that satisfies mass conservation but violates non-negativity \((10.5,-0.5)^\top\), require \(c_1+c_2=10\) and \(c_1,c_2\geq0\). Introduce non-negative adjustment bounds \(\rho_1,\rho_2\). The constraints
 \begin{equation}
+\equationname{Absolute-adjustment bounds for an illustrative two-component projection}
 \label{eq:icsor_scalar_absolute_constraints}
 \begin{aligned}
 \rho_1&\geq c_1-10.5,&\rho_1&\geq10.5-c_1,\\
@@ -552,6 +597,7 @@ Set \(c_2=t\) to impose the inventory equality, so \(c_1=10-t\) and \(0\leq t\le
 
 When the affine state fails the non-negativity check, the final projection solves
 \begin{equation}
+\equationname{Weighted absolute-distance projection for mass conservation and non-negativity}
 \label{eq:icsor_weighted_correction}
 \begin{aligned}
 \widehat c =\mathop{\arg\min}_{c,\rho\in\mathbb{R}^{F}}\quad
@@ -594,6 +640,7 @@ The hypothetical state \((12,1)^\top\) follows the two No branches because its t
 
 The component state returned by this rule is the deployed output. Its reported quantities are
 \begin{equation}
+\equationname{Water-quality composites of the final checked state}
 \label{eq:icsor_deployed_composites}
 \widehat y_{\mathrm{comp}}=I_{\mathrm{comp}}\widehat c.
 \end{equation}
@@ -605,6 +652,7 @@ The deployment constraint is responsible for admissibility. The soft training pe
 
 The transformation from driver coefficients to output coefficients can be computed with small matrices. Use the hypothetical coupling matrix in Equation~\eqref{eq:icsor_small_coupling_matrices}, a reduced feature vector \((1,a)^\top\), and driver coefficients
 \begin{equation}
+\equationname{Illustrative driver coefficients and operating-dependent driver}
 \label{eq:icsor_small_driver_coefficient_matrix}
 B=\begin{bmatrix}4&1\\2&0\end{bmatrix},
 \qquad
@@ -612,6 +660,7 @@ r=\begin{bmatrix}4+a\\2\end{bmatrix}.
 \end{equation}
 The first coefficient column describes the baseline, and the second describes dependence on the hypothetical scalar input \(a\). Multiplication through the coupling inverse gives
 \begin{equation}
+\equationname{Illustrative transformation of driver coefficients through coupling}
 \label{eq:icsor_small_back_projection}
 \begin{aligned}
 R^{-1}B
@@ -626,6 +675,7 @@ The second component now depends on \(a\), even though its driver coefficient fo
 
 For a hypothetical reported quantity \(y=c_1+2c_2\), its reporting row is \([1\ \ 2]\). Its transformed coefficient row is
 \begin{equation}
+\equationname{Illustrative composite coefficients after coupling}
 \label{eq:icsor_small_composite_projection}
 \begin{bmatrix}1&2\end{bmatrix}R^{-1}B
 =\begin{bmatrix}125/12&35/24\end{bmatrix}.
@@ -634,12 +684,14 @@ At \(a=2\), the driver is \((6,2)^\top\), the raw component state is \((20/3,10/
 
 The rows of \(\widehat B\) refer to component drivers. They cannot be labeled directly as COD, TN, TP, or TSS coefficients. The raw component coefficient matrix is
 \begin{equation}
+\equationname{Raw component-response coefficients after coupling}
 \label{eq:icsor_raw_component_coefficients}
 B_{\mathrm{raw}}=\widehat R^{-1}\widehat B,
 \qquad c_{raw}=B_{\mathrm{raw}}\phi.
 \end{equation}
 The corresponding map in reported-composite space is
 \begin{equation}
+\equationname{Raw composite-response coefficients after coupling and reporting}
 \label{eq:icsor_raw_composite_coefficients}
 B_{\mathrm{raw,comp}}=I_{\mathrm{comp}}\widehat R^{-1}\widehat B,
 \qquad y_{\mathrm{raw,comp}}=B_{\mathrm{raw,comp}}\phi.
@@ -665,6 +717,7 @@ A coefficient-display threshold is used only to simplify reporting after fitting
 
 Differentiation of a scalar polynomial shows why a coefficient and a marginal response differ. For the illustrative driver in Equation~\eqref{eq:icsor_scalar_driver_example},
 \begin{equation}
+\equationname{Gradients of the illustrative scalar regression driver}
 \label{eq:icsor_scalar_driver_derivatives}
 \begin{aligned}
 \frac{\partial r_1}{\partial u_1}&=2+0.2u_1+0.2u_2,\\
@@ -677,6 +730,7 @@ At \(u=(2,3)^\top\) and \(c=(4,5)^\top\), these derivatives are 3, 0.4, 1.25, an
 
 The derivative of the second illustrative driver \(r_2=-u_1+u_2+0.2c_2\) with respect to \(u_1\) is \(-1\). Differentiate the coupled equations with the coupling held fixed. Their derivative equations are \(\partial c_1/\partial u_1-0.2\partial c_2/\partial u_1=3\) and \(-0.2\partial c_1/\partial u_1+\partial c_2/\partial u_1=-1\). Thus the same inverse used for prediction gives
 \begin{equation}
+\equationname{Illustrative propagation of an operating derivative through coupling}
 \label{eq:icsor_small_chain_derivative}
 \begin{bmatrix}\partial c_1/\partial u_1\\\partial c_2/\partial u_1\end{bmatrix}
 =\frac{1}{0.96}\begin{bmatrix}1&0.2\\0.2&1\end{bmatrix}
@@ -687,6 +741,7 @@ For the hypothetical reporting row \([1\ \ 2]\), the reported derivative is \(35
 
 Putting several derivatives in one matrix gives a Jacobian. Its rows identify the output being differentiated, and its columns identify the input being varied. At the illustrative inputs, the operating-driver Jacobian and its coupled transformation are
 \begin{equation}
+\equationname{Illustrative operating Jacobians before and after coupling}
 \label{eq:icsor_small_operating_jacobian}
 J_{r,u}=\begin{bmatrix}3&0.4\\-1&1\end{bmatrix},
 \qquad
@@ -696,6 +751,7 @@ The first column is the derivative calculation above. The second follows by solv
 
 A coefficient describes a term in the polynomial. A Jacobian describes the change in the whole mapping at an operating point. For component \(f\), let \(H_{uc}^{(f)}\in\mathbb{R}^{M_{op}\times F}\) reshape its interaction coefficients so that the cross term is \(u^\top H_{uc}^{(f)}c_{in}\). The driver can then be expressed as
 \begin{equation}
+\equationname{Component driver expressed through symmetric quadratic matrices}
 \label{eq:icsor_driver_component}
 \begin{aligned}
 r_f={}&b_f+(W_u)_{f,:}u+(W_{in})_{f,:}c_{in}
@@ -706,6 +762,7 @@ r_f={}&b_f+(W_u)_{f,:}u+(W_{in})_{f,:}c_{in}
 \end{equation}
 With symmetric square slices, its gradients are
 \begin{equation}
+\equationname{Operating and influent gradients of a component driver}
 \label{eq:icsor_driver_gradients}
 \begin{aligned}
 \nabla_u r_f&=(W_u)_{f,:}^\top+2Q_{uu}^{(f)}u
@@ -718,6 +775,7 @@ The quadratic gradients in Equation~\eqref{eq:icsor_driver_gradients} follow by 
 
 Stacking the transposed gradients gives \(J_{r,u}\in\mathbb{R}^{F\times M_{op}}\) and \(J_{r,c}\in\mathbb{R}^{F\times F}\). The raw-state and raw-composite Jacobians follow through the same back projection as the coefficients,
 \begin{equation}
+\equationname{Raw component and composite Jacobians after coupling}
 \label{eq:icsor_raw_jacobians}
 \begin{aligned}
 J_{raw,u}&=\widehat R^{-1}J_{r,u},
@@ -734,6 +792,7 @@ An illustrative aeration sensitivity can be inspected at low and high ammonium l
 
 Return to the two-feature example in Equation~\eqref{eq:icsor_small_back_projection}. Its raw derivative with respect to \(a\) is \((25/24,5/24)^\top\), whose total is \(5/4\). This raw response changes the total component inventory. At fixed influent inventory, an affine projection must remove that total change. For the two-component invariant,
 \begin{equation}
+\equationname{Illustrative operating derivative after affine projection}
 \label{eq:icsor_small_projection_derivative}
 \begin{aligned}
 P_A&=\frac{1}{2}\begin{bmatrix}1&-1\\-1&1\end{bmatrix},\\
@@ -748,12 +807,14 @@ The influent reference also changes when an influent component is perturbed. In 
 
 Define the complementary projection matrices
 \begin{equation}
+\equationname{Complementary mass conservation projection matrices}
 \label{eq:icsor_projection_matrices}
 Q_A=A^\top(AA^\top)^{-1}A,
 \qquad P_A=I_F-Q_A.
 \end{equation}
 Then \(c_{aff}=P_Ac_{raw}+Q_Ac_{in}\). With the fitted coefficients and invariant operator held fixed, its Jacobians are
 \begin{equation}
+\equationname{Operating and influent Jacobians of the affine-projected state}
 \label{eq:icsor_affine_jacobians}
 J_{aff,u}=P_AJ_{raw,u},
 \qquad J_{aff,c}=P_AJ_{raw,c}+Q_A.
@@ -768,6 +829,7 @@ When the affine branch is used over a neighborhood of inputs, its coefficients a
 
 An explicit boundary in the same hypothetical model shows the change in sensitivity caused by non-negativity. Keep the total influent inventory equal to 10. The affine components obtained from Equation~\eqref{eq:icsor_small_back_projection} are
 \begin{equation}
+\equationname{Illustrative affine-projected components as functions of an operating input}
 \label{eq:icsor_small_affine_branch}
 c_{aff,1}=\frac{35}{6}+\frac{5a}{12},
 \qquad
@@ -789,7 +851,7 @@ This distinction prevents three different quantities from being conflated. A dri
 
 The structured-regression assessment uses a design collection of 10,000 accepted steady-state reactor cases. Every method receives the same 22 physical inputs and predicts the same 20 effluent components. Its reported composites are obtained from the common composition matrix. The input domain, reaction model, simulation bounds, and acceptance criterion remain those of the declared reactor benchmark. The comparison therefore changes the predictor while holding the modeled process and prediction task fixed.
 
-The nine unconstrained comparators are XGBoost, LightGBM, CatBoost, AdaBoost, random forest, support vector regression, \(k\)-nearest neighbors, partial least squares, and a fully connected multilayer perceptron. These methods represent boosted and randomized tree ensembles, kernel regression, local neighbor averaging, latent linear regression, and nonlinear neural regression. Their foundations include the ensemble construction of \citet{Breiman2001}, the boosting formulations of \citet{Drucker1997,ChenGuestrin2016,Ke2017,Prokhorenkova2018}, and the latent regression of \citet{Wold2001}. The comparators have no invariant penalty, auxiliary non-negative fitted-state matrix, or learned component-coupling equation during fitting.
+The nine unconstrained comparators are XGBoost, LightGBM, CatBoost, AdaBoost, random forest, support vector regression, \(k\)-nearest neighbors, partial least squares, and a fully connected multilayer perceptron. These methods represent boosted and randomized tree ensembles, kernel regression, local neighbor averaging, latent linear regression, and nonlinear neural regression. Their foundations include the ensemble construction of \citet{Breiman2001}, the boosting formulations of \citet{Drucker1997}, \citet{ChenGuestrin2016}, \citet{Ke2017}, and \citet{Prokhorenkova2018}, and the latent regression of \citet{Wold2001}. The comparators have no invariant penalty, auxiliary non-negative fitted-state matrix, or learned component-coupling equation during fitting.
 
 The neural comparator has hidden layers with 128, 64, and 32 units and logistic activation. Dense connections map the 22 inputs through these layers to 20 component outputs. Its capacity is evaluated under the same samples and reported-composite map as the other predictors. A transparent polynomial and a neural network can therefore differ in their internal structure without changing the supervised target.
 
@@ -829,6 +891,7 @@ The scored ICSOR output is the final checked component state. For comparator acc
 
 Physical diagnostics use the direct raw states of the comparators. For ICSOR, diagnostics distinguish the raw coupled state, affine state, and final deployed state. This stage separation prevents affine projection for mass conservation used during scoring from being attributed to the learner. At each stage, the violation frequency for diagnostic \(v\) is
 \begin{equation}
+\equationname{Percentage frequency of a physical-constraint violation}
 \label{eq:icsor_violation_frequency}
 f_v=\frac{100}{n}\sum_{i=1}^{n}
 \mathbf{1}\{v(c_i)>10^{-10}\},
@@ -843,6 +906,7 @@ The absolute relative errors are \(1/2\) and \(2/4\), so their mean is 0.5. The 
 
 For reported quantity \(q\in\{1,2,3,4\}\), define the prediction residual \(e_{iq}=\widehat y_{iq}-y_{iq}\). The five measures are mean squared error, root mean squared error, mean absolute error, mean absolute relative error, and the coefficient of determination. They are computed per reported quantity and summarized across the four quantities. The squared and absolute measures are
 \begin{equation}
+\equationname{Per-composite squared, root, and absolute error measures}
 \label{eq:icsor_composite_error_metrics}
 E_{2,q}=\frac{1}{n}\sum_i e_{iq}^{2},
 \qquad E_{root,q}=\sqrt{E_{2,q}},
@@ -850,6 +914,7 @@ E_{2,q}=\frac{1}{n}\sum_i e_{iq}^{2},
 \end{equation}
 For strictly nonzero reference values, the relative measure is
 \begin{equation}
+\equationname{Mean relative absolute error of a reported composite}
 \label{eq:icsor_relative_error}
 E_{rel,q}=\frac{1}{n}\sum_i\frac{|e_{iq}|}{|y_{iq}|}.
 \end{equation}
@@ -857,6 +922,7 @@ It is reported as a ratio. Multiplication by 100 converts it to a percentage. A 
 
 The per-target coefficient of determination is
 \begin{equation}
+\equationname{Coefficient of determination for a reported composite}
 \label{eq:icsor_coefficient_determination}
 R_q^2=1-
 \frac{\sum_i e_{iq}^{2}}
@@ -866,6 +932,7 @@ A target with zero reference variance makes this expression undefined. A negativ
 
 The aggregate squared error pools the four composite residuals. Its root is
 \begin{equation}
+\equationname{Root mean squared error pooled across four reported composites}
 \label{eq:icsor_aggregate_root_error}
 E_{root}=\left(\frac{1}{4n}\sum_{q=1}^{4}\sum_{i=1}^{n}e_{iq}^{2}\right)^{1/2}.
 \end{equation}
@@ -879,6 +946,7 @@ The primary ordering measure is aggregate root mean squared error. The other mea
 
 The sample-size design uses
 \begin{equation}
+\equationname{Observation counts for structured-regression sample-size assessment}
 \label{eq:icsor_assessment_sizes}
 n\in\{500,1450,2400,3350,4300,5250,6200,7150,8100,9050,10000\}.
 \end{equation}
@@ -890,6 +958,7 @@ The learning-curve area can first be calculated over a reduced hypothetical sche
 
 For successive retained sizes \(n_1,\ldots,n_S\), write the mean error of predictor \(m\) under measure \(j\) as \(\overline M_{m,j}(n_s)\). The general numerical calculation is
 \begin{equation}
+\equationname{Trapezoidal approximation of normalized learning-curve area}
 \label{eq:icsor_learning_area_trapezoids}
 \frac{1}{n_{max}-n_{min}}
 \sum_{s=1}^{S-1}(n_{s+1}-n_s)
@@ -897,16 +966,18 @@ For successive retained sizes \(n_1,\ldots,n_S\), write the mean error of predic
 \end{equation}
 Let \(\overline M_{m,j}(n)\) denote the mean held-out measure \(j\) for predictor \(m\) at sample size \(n\). The normalized area under its learning curve is
 \begin{equation}
+\equationname{Integral definition of normalized learning-curve area}
 \label{eq:icsor_learning_area}
 L_{m,j}=\frac{1}{n_{max}-n_{min}}
 \int_{n_{min}}^{n_{max}}\overline M_{m,j}(n)\,\mathrm{d}n.
 \end{equation}
-The trapezoidal rule evaluates this integral over the stated sample sizes. Normalization by the sample-size interval gives an average height of the learning curve and preserves the units of measure \(j\). It does not normalize the prediction error by a target standard deviation. \citet{Cawley2011,Guyon2011} provide related trajectory summaries in active learning. The present design changes the number of sampled observations without choosing observations through an active acquisition rule.
+The trapezoidal rule evaluates this integral over the stated sample sizes. Normalization by the sample-size interval gives an average height of the learning curve and preserves the units of measure \(j\). It does not normalize the prediction error by a target standard deviation. \citet{Cawley2011} and \citet{Guyon2011} provide related trajectory summaries in active learning. The present design changes the number of sampled observations without choosing observations through an active acquisition rule.
 
 A rank discards the numerical distance between scores and keeps their order. For four hypothetical predictor errors 3.0, 3.0, 4.5, and 6.0, the dense ranks are 1, 1, 2, and 3. The tied first two predictors receive the same rank. There is no skipped rank after the tie. The difference between the third and fourth errors does not influence the difference between their ranks. If one predictor receives ranks 1, 2, and 2 in three illustrative comparisons, its mean rank is \((1+2+2)/3=5/3\). The actual assessment averages over the stated combinations of target, measure, and size.
 
 For each measure \(j\), reported quantity \(q\), and retained size \(n_s\), predictors receive a dense rank \(r_{m,j,q}(n_s)\) from their mean held-out score. Lower squared, root, absolute, and relative errors receive better ranks. Larger \(R^2\) values receive better ranks. Equal scores receive equal ranks, and the next distinct score receives the next consecutive rank. With \(S=11\) sizes and five measures, the summaries are
 \begin{equation}
+\equationname{Mean dense ranks over quantities, measures, and sample sizes}
 \label{eq:icsor_dense_rank}
 \overline r_{m,j}=\frac{1}{4S}\sum_{q=1}^{4}\sum_{s=1}^{S}r_{m,j,q}(n_s),
 \qquad
@@ -916,6 +987,7 @@ These are descriptive summaries of relative ordering. They do not establish stat
 
 At the largest sample size, the generalization gap is
 \begin{equation}
+\equationname{Held-out minus training root-error gap}
 \label{eq:icsor_generalization_gap}
 \Delta E_{root,m}=E_{root,m}^{held\text{-}out}-E_{root,m}^{training}.
 \end{equation}

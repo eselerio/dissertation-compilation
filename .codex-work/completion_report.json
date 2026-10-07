@@ -30,7 +30,13 @@
     "duplicate_entries": 0,
     "pdf_links": 327,
     "invalid_pdf_links": 0,
-    "included_in_contents": true
+    "included_in_contents": true,
+    "equation_specific_descriptions": 327,
+    "description_mismatches": 0,
+    "unique_pdf_destinations": 327,
+    "destination_number_mismatches": 0,
+    "explicit_description_required": true,
+    "mathematical_content_preserved": true
   },
   "acronym_definition_counts": {
     "ASM": 1,
@@ -50,7 +56,7 @@
     "LightGBM": 1,
     "AdaBoost": 1
   },
-  "pdf_pages": 237,
+  "pdf_pages": 238,
   "latex_errors_or_reference_warnings": false,
   "undefined_citations": 0,
   "uncited_bibliography_entries": 0,
@@ -61,6 +67,25 @@
   "single_author_verb_issues": 0,
   "citation_style": "Et al. for three or more authors, named authors for one or two, and matching year suffixes for the two Damalerio studies",
   "bibliography_repairs": "Four stale citation keys resolved, LaTeX-safe character encoding restored, and the complete Takacs-Patry-Nolasco author list retained from the component bibliography",
+  "citation_label_audit": {
+    "generated_author_year_labels_checked": 217,
+    "author_count_or_year_mismatches": 0,
+    "missing_citation_keys": 0,
+    "combined_narrative_citations_remaining": 0,
+    "restored_author_records": [
+      "Gujer1999",
+      "Machdar1997",
+      "Laine1999"
+    ],
+    "corrected_proposal_attribution": {
+      "retained_citation_key": "Laine1999",
+      "correct_authors": "Seggelke, Obenaus, and Rosenwinkel",
+      "publication_year": 1999,
+      "publisher_doi": "10.2166/wst.1999.0202"
+    },
+    "metadata_verification": "Gujer authors confirmed by the indexed publication record. Machdar authors confirmed by the newer publisher registration 10.2166/wst.1997.0447. Seggelke authors and page range confirmed by the publisher registration, superseding the proposal attribution.",
+    "rendered_citation_checks_passed": true
+  },
   "plant_assessment_limitations": "Descriptive post-selection holdout assessment remains distinct from independent mechanistic verification at selected controls",
   "visual_review": [
     "Equation list",

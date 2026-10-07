@@ -36,8 +36,8 @@ A row-column product gives a weighted sum. For a coefficient column $a$, the sca
 The magnitude of a vector is described by a norm. The Euclidean norm is the square root of the sum of squared coordinates. A hypothetical vector $(3,-4)^\top$ has Euclidean norm $\sqrt{3^2+(-4)^2}=5$. The sum of absolute coordinates gives its absolute-sum norm, $|3|+|-4|=7$. Squaring a norm and squaring each coordinate are therefore different steps that must be applied in the stated order. When coordinates have different physical bases, a numerical norm is meaningful only with the adopted unit convention or an explicit standardization.
 
 The 20-component state uses the same column-vector convention. Its fixed ordering is
-\equationname{Fixed ordering of the twenty component concentrations}
 \begin{equation}
+\equationname{Fixed ordering of the twenty component concentrations}
 \begin{split}
 c=(&S_O,S_F,S_A,S_{NH4},S_{NO2},S_{NO3},S_{N2},S_{PO4},S_I,S_{ALK},\\
 &X_I,X_S,X_H,X_{PAO},X_{PP},X_{PHA},X_{AOB},X_{NOB},X_{MeP},X_{MeOH})^\top.
@@ -95,6 +95,7 @@ The carbon source and the energy source describe different properties. Heterotro
 
 An idealized organic unit, $\mathrm{CH_2O}$, illustrates oxidation without assigning one chemical formula to all wastewater organic matter. Its complete aerobic oxidation is
 \begin{equation}
+\equationname{Idealized aerobic oxidation of an organic unit}
 \mathrm{CH_2O}+\mathrm{O_2}\longrightarrow\mathrm{CO_2}+\mathrm{H_2O}.
 \label{eq:teaching_carbon_oxidation}
 \end{equation}
@@ -102,6 +103,7 @@ Both sides contain one carbon atom, two hydrogen atoms, and three oxygen atoms. 
 
 Cell synthesis changes that accounting because part of the carbon and nitrogen enters biomass. The empirical formula $\mathrm{C_5H_7O_2N}$ is a useful teaching representation of biomass composition, as discussed in the assimilation study of \citet{Hoover1952}. It describes an average composition rather than a single molecular species. For example, an idealized complete oxidation of this biomass with nitrogen released as ammonium can be written as
 \begin{equation}
+\equationname{Idealized oxidation of biomass with ammonium release}
 \mathrm{C_5H_7O_2N}+5\mathrm{O_2}+\mathrm{H^+}
 \longrightarrow5\mathrm{CO_2}+\mathrm{NH_4^+}+2\mathrm{H_2O}.
 \label{eq:teaching_biomass_oxidation}
@@ -112,15 +114,18 @@ The carbon, hydrogen, oxygen, and nitrogen counts are respectively 5, 8, 12, and
 
 Separating nitrification into two steps makes the oxygen demand and the nitrite intermediate visible. Ignoring cell synthesis for this teaching calculation, the ammonium-oxidation and nitrite-oxidation reactions are
 \begin{align}
+\equationname{Idealized ammonium oxidation to nitrite}
 \mathrm{NH_4^+}+\tfrac32\mathrm{O_2}
 &\longrightarrow\mathrm{NO_2^-}+2\mathrm{H^+}+\mathrm{H_2O},
 \label{eq:teaching_ammonium_oxidation}\\
+\equationname{Idealized nitrite oxidation to nitrate}
 \mathrm{NO_2^-}+\tfrac12\mathrm{O_2}
 &\longrightarrow\mathrm{NO_3^-}.
 \label{eq:teaching_nitrite_oxidation}
 \end{align}
 The first reaction preserves one nitrogen atom, four hydrogen atoms, and three oxygen atoms. Its right-hand charge is $-1+2=+1$, which equals its left-hand charge. The second reaction preserves one nitrogen atom, three oxygen atoms, and a net charge of $-1$. Adding the reactions and cancelling the intermediate nitrite gives
 \begin{equation}
+\equationname{Idealized overall nitrification reaction}
 \mathrm{NH_4^+}+2\mathrm{O_2}
 \longrightarrow\mathrm{NO_3^-}+2\mathrm{H^+}+\mathrm{H_2O}.
 \label{eq:teaching_overall_nitrification}
@@ -130,9 +135,11 @@ Each mole of nitrogen has an approximate mass of 14 g. The first step requires $
 
 Denitrification uses oxidized nitrogen as an electron acceptor and can convert it to dinitrogen. With $\mathrm{CH_2O}$ as the illustrative donor and with cell synthesis omitted, two balanced net reactions are
 \begin{align}
+\equationname{Idealized nitrate denitrification with an organic donor}
 4\mathrm{NO_3^-}+5\mathrm{CH_2O}+4\mathrm{H^+}
 &\longrightarrow2\mathrm{N_2}+5\mathrm{CO_2}+7\mathrm{H_2O},
 \label{eq:teaching_nitrate_denitrification}\\
+\equationname{Idealized nitrite denitrification with an organic donor}
 4\mathrm{NO_2^-}+3\mathrm{CH_2O}+4\mathrm{H^+}
 &\longrightarrow2\mathrm{N_2}+3\mathrm{CO_2}+5\mathrm{H_2O}.
 \label{eq:teaching_nitrite_denitrification}
@@ -141,11 +148,12 @@ For the nitrate reaction, both sides contain four nitrogen atoms, five carbon at
 
 Anaerobic ammonium oxidation provides a different nitrogen pathway. An idealized net reaction that omits biomass synthesis and minor products is
 \begin{equation}
+\equationname{Idealized anaerobic ammonium oxidation reaction}
 \mathrm{NH_4^+}+\mathrm{NO_2^-}
 \longrightarrow\mathrm{N_2}+2\mathrm{H_2O}.
 \label{eq:teaching_anammox}
 \end{equation}
-It preserves two nitrogen atoms, four hydrogen atoms, two oxygen atoms, and zero net charge. It couples ammonium and nitrite without an organic electron donor in this idealized balance. The cultivation work of \citet{Strous1998} and the pathway studies of \citet{Dietl2015,Maalcke2016} explain why it differs biologically from ordinary heterotrophic denitrification. Its application requires its own organisms and operating conditions \citep{Vandekerckhove2018,Xie2021,WinklerStraka2019}. It is included here to clarify the boundary of the nitrogen discussion. It is not an additional process in the adopted 20-component, 28-process reactor model.
+It preserves two nitrogen atoms, four hydrogen atoms, two oxygen atoms, and zero net charge. It couples ammonium and nitrite without an organic electron donor in this idealized balance. The cultivation work of \citet{Strous1998} and the pathway studies of \citet{Dietl2015} and \citet{Maalcke2016} explain why it differs biologically from ordinary heterotrophic denitrification. Its application requires its own organisms and operating conditions \citep{Vandekerckhove2018,Xie2021,WinklerStraka2019}. It is included here to clarify the boundary of the nitrogen discussion. It is not an additional process in the adopted 20-component, 28-process reactor model.
 
 \subsection{From elemental accounting to the adopted state basis}
 
@@ -198,6 +206,7 @@ For hypothetical rates of 3 and 1 in compatible amount-per-time units, the contr
 
 The full model uses the same convention. Its orientation is fixed as
 \begin{equation}
+\equationname{Dimensions and orientation of the stoichiometric matrix}
 \nu\in\mathbb{R}^{P\times F},\qquad P=28,\qquad F=20.
 \label{eq:petersen_orientation}
 \end{equation}
@@ -205,6 +214,7 @@ Row $p$ describes process $p$ and column $j$ describes component $j$. A negative
 
 For component $j$ of the full model, the individual process contributions are $\nu_{1j}\rho_1$, $\nu_{2j}\rho_2$, and so on through $\nu_{28j}\rho_{28}$. Adding them gives the net reaction rate of that component. The expression $\rho(c,u)$ indicates that process rates depend on the current component state and operating inputs. For a rate vector $\rho(c,u)\in\mathbb{R}^{28}$, the reaction contribution to the component balance is
 \begin{equation}
+\equationname{Vector and scalar reaction contributions to component rates}
 r_{\mathrm{reaction}}(c,u)=\nu^\top\rho(c,u),\qquad
 r_{\mathrm{reaction},j}(c,u)=\sum_{p=1}^{28}\nu_{pj}\rho_p(c,u).
 \label{eq:reaction_contribution}
@@ -213,11 +223,13 @@ Stoichiometry specifies the proportions of a transformation. Kinetics specifies 
 
 A simple saturation expression makes this distinction concrete. Suppose, only for illustration, that the substrate concentration and its saturation constant are both 4 g COD m$^{-3}$. Dividing the concentration by their sum gives $4/(4+4)=0.5$. The unit cancels because numerator and denominator use the same constituent basis. If a limiting dissolved substrate has concentration $S$ and saturation constant $K_S>0$, the factor
 \begin{equation}
+\equationname{Monod substrate saturation factor}
 \frac{S}{K_S+S}
 \label{eq:saturation_example}
 \end{equation}
 equals one half at $S=K_S$, approaches zero as $S$ approaches zero, and approaches one as $S$ becomes large. A representative growth expression combines a maximum specific growth rate, biomass abundance, and two limitation factors. For hypothetical values $\mu=2$ d$^{-1}$, $X=10$ g biomass COD m$^{-3}$, a substrate factor of 0.5, and an oxygen factor of 0.25, the growth contribution is $2(10)(0.5)(0.25)=2.5$ g biomass COD m$^{-3}$ d$^{-1}$. Multiplication by dimensionless limitation factors reduces the unrestricted contribution $\mu X=20$ to 2.5. A representative growth expression can combine substrate and oxygen limitation with biomass abundance,
 \begin{equation}
+\equationname{Representative growth rate with substrate and oxygen limitation}
 \rho_{\mathrm{growth}}=
 \mu X\frac{S}{K_S+S}\frac{S_O}{K_O+S_O}.
 \label{eq:representative_growth}
@@ -241,11 +253,13 @@ The selector has first coordinate one because $S_O$ is first in the chosen compo
 \]
 All terms are numerical rates on the oxygen basis for this row. For another component, the units change to that component's native basis. With $e_{S_O}\in\mathbb{R}^{20}$ selecting dissolved oxygen, the same twenty scalar equations are collected into the steady balance
 \begin{equation}
+\equationname{Steady-state reactor component equation}
 0=D(c_{in}-c_{out})+\nu^\top\rho(c_{out},u)+\omega e_{S_O},
 \label{eq:reactor_steady_balance}
 \end{equation}
 Moving the hydraulic difference to the opposite side changes its sign. For one component, this operation gives $D(c_{out,j}-c_{in,j})=\sum_p\nu_{pj}\rho_p+\omega(e_{S_O})_j$. The vector equation is equivalently
 \begin{equation}
+\equationname{Effluent change expressed through reaction and oxygen transfer}
 D(c_{out}-c_{in})=\nu^\top\rho(c_{out},u)+\omega e_{S_O}.
 \label{eq:reactor_steady_difference}
 \end{equation}
@@ -253,8 +267,11 @@ The hydraulic term has the same native component-unit-per-day basis as the corre
 
 The operating inputs are HRT and a dimensionless aeration coordinate $u_{\mathrm{air}}$. HRT specifies the time needed to replace one reactor volume on the stated flow basis. A 12-hour residence time corresponds to two reactor-volume replacements per day because $24/12=2$. The dilution rate is consequently an inverse time. Oxygen transfer uses a different inverse-time coefficient. Multiplying that coefficient by the oxygen concentration deficit produces a concentration-per-time rate. The adopted parameterization is
 \begin{align}
+\equationname{Hydraulic dilution rate from retention time}
 D&=\frac{24\ \mathrm{h\,d}^{-1}}{\mathrm{HRT}},\label{eq:reactor_dilution}\\
+\equationname{Oxygen-transfer coefficient from the aeration setting}
 k_{La}&=(2+18u_{\mathrm{air}})\ \mathrm{d}^{-1},\label{eq:reactor_transfer_coefficient}\\
+\equationname{Net oxygen-transfer rate and saturation concentration}
 \omega&=k_{La}(S_{O,\mathrm{sat}}-S_{O,out}),\qquad
 S_{O,\mathrm{sat}}=8.5\ \mathrm{g\ O_2\,m}^{-3}.
 \label{eq:reactor_oxygen_transfer}
@@ -289,6 +306,7 @@ The first equation gives $a_B=2a_A$. The second then gives $a_C=a_A$. Choosing $
 
 For the full component basis, $\nu a=0$ imposes the same zero-contribution condition on every modeled process. If $a\in\mathbb{R}^{20}$ satisfies this condition, then
 \begin{equation}
+\equationname{Zero reaction contribution to a stoichiometric invariant}
 a^\top\nu^\top\rho=(\nu a)^\top\rho=0
 \label{eq:individual_invariant}
 \end{equation}
@@ -310,11 +328,13 @@ This square matrix has eigenvalues 4 and 6, so the two nonzero singular values o
 
 For the full decomposition, $U$ has dimension $28\times28$, $\Sigma$ has dimension $28\times20$, and $V$ has dimension $20\times20$. The rectangular $\Sigma$ contains singular values on its diagonal and zeros elsewhere. Multiplication in the order $U\Sigma V^\top$ recovers a $28\times20$ matrix. An independent invariant basis is obtained by singular-value decomposition of the $28\times20$ matrix $\nu$. The factorization is
 \begin{equation}
+\equationname{Singular-value decomposition of the stoichiometric matrix}
 \nu=U\Sigma V^\top,
 \label{eq:stoichiometric_svd}
 \end{equation}
 In finite numerical arithmetic, an exactly zero singular value may appear as a very small number. The rank calculation therefore uses a threshold rather than testing exact numerical equality with zero. The largest singular value sets the matrix scale. Machine precision sets the scale of rounding error, and the larger matrix dimension accounts for the calculation size. The numerical rank counts singular values exceeding
 \begin{equation}
+\equationname{Numerical threshold for stoichiometric rank}
 \tau_{\mathrm{rank}}=\max(P,F)\epsilon_{\mathrm{mach}}\|\nu\|_2.
 \label{eq:stoichiometric_rank_threshold}
 \end{equation}
@@ -326,11 +346,13 @@ V_{0,\rm toy}=\frac1{\sqrt6}\begin{bmatrix}1\\2\\1\end{bmatrix}.
 \]
 Its two process dot products are $(-2+2+0)/\sqrt6=0$ and $(0-2+2)/\sqrt6=0$. Its transpose gives an invariant row with length one. For the full matrix, five orthonormal right singular vectors play this role. Let $V_0\in\mathbb{R}^{20\times5}$ contain the right singular vectors spanning $\operatorname{null}(\nu)$. Define
 \begin{equation}
+\equationname{Orthonormal mass conservation operator from the null space}
 A=V_0^\top\in\mathbb{R}^{5\times20}.
 \label{eq:invariant_basis_definition}
 \end{equation}
 The first product below tests every combination of an invariant row and a reaction row. Its $(h,p)$ entry is the scalar sum $\sum_{j=1}^{20}A_{hj}\nu_{pj}$. The second product tests the dot products of invariant rows. A diagonal entry is their squared length and an off-diagonal entry is the dot product of two different rows. Unit lengths and mutual orthogonality therefore give the identity matrix. The resulting operator obeys
 \begin{equation}
+\equationname{Null-space and orthonormality identities of the invariant operator}
 A\nu^\top=0,\qquad AA^\top=I_5.
 \label{eq:invariant_basis_properties}
 \end{equation}
@@ -349,6 +371,7 @@ D\sum_{j=1}^{20}A_{hj}(c_{out,j}-c_{in,j})
 \]
 The first sum vanishes by the invariant construction. The selector leaves only the oxygen-column coefficient $A_{h1}$. Reaction cancellation and forcing cancellation are consequently separate checks. Premultiplying Equation~\eqref{eq:reactor_steady_difference} by $A$ gives
 \begin{equation}
+\equationname{Reactor invariant equation including oxygen transfer}
 D A(c_{out}-c_{in})=\omega A e_{S_O}.
 \label{eq:invariant_boundary_balance}
 \end{equation}
@@ -356,12 +379,14 @@ The aeration forcing must therefore be compatible with the selected invariants. 
 
 The range of a matrix is the set of vectors produced by multiplying it by all possible coordinate columns. A forcing in $\operatorname{range}(\nu^\top)$ can be represented as a combination of reaction-change columns and is annihilated by every invariant row. For the adopted matrix, the oxygen selector lies in $\operatorname{range}(\nu^\top)$. There is a process-coordinate vector $\lambda_O\in\mathbb{R}^{28}$ such that
 \begin{equation}
+\equationname{Compatibility of oxygen forcing with mass conservation}
 e_{S_O}=\nu^\top\lambda_O,\qquad
 Ae_{S_O}=A\nu^\top\lambda_O=0.
 \label{eq:oxygen_forcing_compatibility}
 \end{equation}
 The coordinates in $\lambda_O$ establish a subspace relation. They do not state that aeration is itself a biological reaction or that these coordinates are non-negative process rates. The scalar consequence is $A_{h1}=0$ for every invariant row. Dividing $D\sum_j A_{hj}(c_{out,j}-c_{in,j})=0$ by the positive dilution rate gives equality of the influent and effluent invariant sums. Since $D>0$, the invariant boundary relation reduces to
 \begin{equation}
+\equationname{Equality of influent and effluent invariant inventories}
 Ac_{out}=Ac_{in}.
 \label{eq:reactor_invariant_equality}
 \end{equation}
@@ -369,6 +394,7 @@ The relation is justified jointly by stoichiometry, the forcing direction, and t
 
 More generally, an additional component source $g$ contributes $\sum_jA_{hj}g_j$ to row $h$. Dividing this contribution by $D$ converts its concentration-per-time basis into a concentration-equivalent invariant change. An additional component source $g$ gives
 \begin{equation}
+\equationname{Invariant inventory change with an external source}
 A(c_{out}-c_{in})=D^{-1}Ag
 \label{eq:general_invariant_source}
 \end{equation}
@@ -390,6 +416,7 @@ Their weighted sum is $-2+2(0.5)+1=0$. Starting from the hypothetical state $(8,
 
 In a steady reactor balance, the relevant time scale is $D^{-1}$. Substituting $\omega e_{S_O}=\nu^\top(\omega\lambda_O)$ combines reaction and compatible forcing in the same component-change space. Each component change is then a sum of the form $\sum_p\nu_{pj}r_p$. Rearranging the steady balance and using Equation~\eqref{eq:oxygen_forcing_compatibility} gives
 \begin{equation}
+\equationname{Reaction-progress coordinates for the effluent change}
 c_{out}-c_{in}=\nu^\top r,\qquad
 r=D^{-1}(\rho+\omega\lambda_O).
 \label{eq:reaction_progress_coordinates}
@@ -405,6 +432,7 @@ Their invariant dot products are $(-2+2+0)/\sqrt5=0$ and $(1+4-5)/\sqrt{30}=0$. 
 
 This change basis differs from the invariant basis. The invariant basis identifies quantities that cannot change. The columns of $Z$ identify directions along which a state can change without changing those quantities. In the full model, five independent invariant rows leave fifteen independent change directions. Let $Z\in\mathbb{R}^{20\times15}$ have orthonormal columns spanning $\operatorname{null}(A)$. The fundamental subspace relation gives
 \begin{equation}
+\equationname{Equivalent reaction and invariant-null spaces}
 \operatorname{range}(\nu^\top)=\operatorname{null}(A),\qquad
 AZ=0,\qquad Z^\top Z=I_{15}.
 \label{eq:reaction_invariant_subspaces}
@@ -413,6 +441,7 @@ Every component change consistent with mass conservation can consequently be wri
 
 For one invariant row, the target for sample $i$ is the influent sum $b_{ih}=\sum_jA_{hj}c_{in,ij}$. A feasible effluent must satisfy $\sum_jA_{hj}c_j=b_{ih}$ for each of the five rows and $c_j\geq0$ for every component. The vertical bar in set notation means that all conditions to its right must hold. For sample $i$, define the target $b_i=Ac_{in,i}$ and the feasible set
 \begin{equation}
+\equationname{Component-state set satisfying mass conservation and non-negativity}
 \mathcal{F}_i=\{c\in\mathbb{R}^{20}\mid Ac=b_i,\ c\geq0\}.
 \label{eq:reactor_feasible_set}
 \end{equation}
@@ -462,6 +491,7 @@ A hypothetical reporting state containing only $X_H=100$ g COD m$^{-3}$ and $X_{
 \]
 Each numerical output uses its own reported constituent unit. This sparse example teaches the composition calculation and is not asserted to be a reactor steady state. The matrix map records these same four sums by placing the COD coefficients in its first row, the TN coefficients in its second row, and the remaining two coefficient groups in their corresponding rows. With the coefficients in Table~\ref{tab:component_basis_composites},
 \begin{equation}
+\equationname{Component-to-water-quality reporting map}
 y=I_{comp}c,\qquad
 y=(\mathrm{COD},\mathrm{TN},\mathrm{TP},\mathrm{TSS})^\top,\qquad
 I_{comp}\in\mathbb{R}^{4\times20}.
@@ -484,6 +514,7 @@ The preceding reactor balance assumes a single mixed concentration for each comp
 
 A small spatial control volume illustrates the additional accounting. For one component, let $V$ be its fixed volume and $\bar c$ its average concentration. Let $F_{\rm adv,in}$ and $F_{\rm adv,out}$ be advective mass flow rates. Let $F_{\rm diff,in}$ and $F_{\rm diff,out}$ be diffusive mass flow rates. The finite-volume balance is
 \begin{equation}
+\equationname{Control-volume component equation with transport and reaction}
 V\frac{\mathrm d\bar c}{\mathrm dt}
 =F_{\rm adv,in}-F_{\rm adv,out}
 +F_{\rm diff,in}-F_{\rm diff,out}+Vr.
@@ -493,6 +524,7 @@ The symbol $r$ is the net reaction production rate per unit volume. It can be ne
 
 In a one-dimensional domain with coordinate $z$, the advective flux is $v c$ and the diffusive flux is $-D_z\partial c/\partial z$. Here $v$ is the velocity and $D_z$ is a dispersion or diffusion coefficient. Dividing the balance of a slice by its volume and taking the limit as its thickness decreases gives
 \begin{equation}
+\equationname{One-dimensional advection-diffusion-reaction component equation}
 \frac{\partial c_j}{\partial t}
 =-\frac{\partial(v c_j)}{\partial z}
 +\frac{\partial}{\partial z}

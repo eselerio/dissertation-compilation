@@ -7,12 +7,14 @@ A surrogate learns the relationship between a reactor input and its steady-state
 
 For sample $i$, the two operating values are entered first. They are followed by the twenty influent concentrations in the established component order. Written as a list, the input begins with $(\mathrm{HRT}_i,u_{\mathrm{air},i},S_{O,in,i},S_{F,in,i})$ and ends with the remaining influent coordinates through $X_{MeOH,in,i}$. The component list and its units are fixed before any learner is fitted. Transposing the two input blocks into rows permits their horizontal concatenation. The final transpose restores the column convention. The complete input for sample $i$ is
 \begin{equation}
+\equationname{Reactor surrogate inputs from operation and influent concentrations}
 x_i=(u_i^\top,c_{in,i}^\top)^\top\in\mathbb{R}^{22},\qquad
 u_i=(\mathrm{HRT}_i,u_{\mathrm{air},i})^\top.
 \label{eq:surrogate_input_vector}
 \end{equation}
 A fitted surrogate is a function that takes these twenty-two numbers and returns twenty component values. The subscript $m$ identifies which fitted method is used. For component $j$, its prediction can be written as $c_{raw,ij}^{(m)}=f_{m,j}(x_{i1},\ldots,x_{i22})$. The superscript $(m)$ identifies the model and is not an exponent. Collecting its twenty scalar output functions, a fitted surrogate $f_m$ produces the raw component prediction
 \begin{equation}
+\equationname{Raw component-state prediction from a fitted surrogate}
 c_{raw,i}^{(m)}=f_m(x_i)\in\mathbb{R}^{20}.
 \label{eq:surrogate_raw_state}
 \end{equation}
@@ -105,6 +107,7 @@ Partial least squares regression represents the inputs and joint response throug
 
 Multi-task Lasso fits one coefficient matrix for all component outputs. A predicted output is a baseline plus a sum of input-coefficient products. For two hypothetical inputs and two outputs, the coefficient rows can be $(3,4)$ and $(0,0)$. The first input contributes to both outputs and the second contributes to neither. The Euclidean length of the first row is $\sqrt{3^2+4^2}=5$, and the length of the second row is zero. Adding row lengths gives 5. This operation penalizes an input's complete coefficient group rather than adding the absolute value of every coefficient separately. If row $B_{j,\cdot}$ contains the coefficients of input $j$ across those outputs, the row-group penalty is
 \begin{equation}
+\equationname{Row-group penalty for multiresponse regression coefficients}
 \|B\|_{2,1}=\sum_j\|B_{j,\cdot}\|_2.
 \label{eq:multiresponse_row_penalty}
 \end{equation}
@@ -131,6 +134,7 @@ Both neural predictors start from random initialization and use only the simulat
 
 The evaluation uses nested subsets at
 \begin{equation}
+\equationname{Observation counts for nested reactor assessment}
 N\in\{500,1450,2400,3350,4300,5250,6200,7150,8100,9050,10000\}.
 \label{eq:reactor_nested_sample_sizes}
 \end{equation}
@@ -231,6 +235,7 @@ Wh=\begin{bmatrix}h_1\\h_2/2\end{bmatrix}.
 \]
 No component is mixed with another in this operation. Each component discrepancy is divided by its own provisional concentration, so both weighted coordinates are relative discrepancies. The first step forms a strictly positive provisional target,
 \begin{equation}
+\equationname{Positive provisional target and relative projection weights}
 c_{+,i}^{(m)}=\max(c_{raw,i}^{(m)},\boldsymbol{\varepsilon}_c),\qquad
 W_i^{(m)}=\operatorname{Diag}\bigl(\mathbf{1}\oslash c_{+,i}^{(m)}\bigr).
 \label{eq:projection_positive_target}
@@ -250,6 +255,7 @@ Z_{\rm ex}=\frac1{\sqrt2}\begin{bmatrix}1\\-1\end{bmatrix}.
 \]
 Their product is $(1-1)/2=0$. A scalar change amount $t$ gives the candidate $(2+t,2-t)^\top$. In the normalized basis its coordinate is $q=\sqrt2t$, because $Z_{\rm ex}q=(t,-t)^\top$. The sum remains four for every $t$. All states consistent with mass conservation for sample $i$ have the form
 \begin{equation}
+\equationname{Null-space parameterization of states satisfying mass conservation}
 c=c_{in,i}+Zq,\qquad q\in\mathbb{R}^{15}.
 \label{eq:projection_affine_parameterization}
 \end{equation}
@@ -281,6 +287,7 @@ w_j^2\left(\sum_{k=1}^{15}Z_{jk}q_k-d_j\right)^2.
 \]
 The inner sum builds one component of the change satisfying mass conservation. Subtracting $d_j$ gives its discrepancy from the target change. Multiplication by $w_j^2$ scales its square. The outer sum combines these component contributions. The notation $\operatorname{argmin}$ identifies the coordinate vector at which this objective is smallest, rather than the value of the objective itself. The projection selects the change satisfying mass conservation closest to the provisional target change in the relative-error geometry,
 \begin{equation}
+\equationname{Weighted least-squares problem for projection coordinates}
 q_i^{*,(m)}=\underset{q\in\mathbb{R}^{15}}{\operatorname{argmin}}
 \left\|W_i^{(m)}\bigl[Zq-(c_{+,i}^{(m)}-c_{in,i})\bigr]\right\|_2^2.
 \label{eq:projection_weighted_least_squares}
@@ -298,6 +305,7 @@ Set this derivative to zero, divide by two, and move the target-change contribut
 \]
 The coefficient of $q_k$ is a weighted dot product of columns $\ell$ and $k$ of $Z$. Because $W_i^{(m)}$ is diagonal, its square places $w_j^2$ on the diagonal. Collecting these fifteen equations gives a $15\times15$ coefficient matrix and a fifteen-coordinate right-hand side. Differentiation gives
 \begin{equation}
+\equationname{Normal equations for weighted projection coordinates}
 Z^\top(W_i^{(m)})^2Zq_i^{*,(m)}
 =Z^\top(W_i^{(m)})^2(c_{+,i}^{(m)}-c_{in,i}).
 \label{eq:projection_normal_conditions}
@@ -306,6 +314,7 @@ For the hypothetical pair, the compact coefficient calculation gives $Z_{\rm ex}
 
 The selected coordinates build the component change through the fifteen sums $\sum_kZ_{jk}q_k^*$. Adding each sum to its matching influent coordinate constructs the state. In the hypothetical pair, this operation is $(2,2)^\top+(-0.8,0.8)^\top=(1.2,2.8)^\top$. Both entries are non-negative and their invariant value is $(1.2+2.8)/\sqrt2=4/\sqrt2$, equal to the anchor value. This example needs no projection interpolation for non-negativity. The candidate satisfying mass conservation is
 \begin{equation}
+\equationname{Component candidate satisfying mass conservation}
 c_{cand,i}^{(m)}=c_{in,i}+Zq_i^{*,(m)}.
 \label{eq:projection_conservative_candidate}
 \end{equation}
@@ -323,11 +332,13 @@ c_3(\alpha)=1+5.5\alpha.
 \]
 The first component requires $8-4\alpha\geq0$, so $\alpha\leq2$. The second requires $1-1.5\alpha\geq0$, so $\alpha\leq2/3$. The third increases and gives no upper bound for $\alpha\geq0$. Restricting $\alpha$ to $[0,1]$ makes $2/3$ the first boundary point. Define
 \begin{equation}
+\equationname{Candidate direction from the feasible influent anchor}
 \delta_i^{(m)}=c_{cand,i}^{(m)}-c_{in,i}=Zq_i^{*,(m)}.
 \label{eq:projection_candidate_direction}
 \end{equation}
 The segment $c_{in,i}+\alpha\delta_i^{(m)}$, with $0\leq\alpha\leq1$, satisfies mass conservation because $A\delta_i^{(m)}=0$. For a general decreasing coordinate, start with $c_{in,ij}+\alpha\delta_{ij}^{(m)}\geq0$. Moving the negative change to the other side gives $c_{in,ij}\geq\alpha(-\delta_{ij}^{(m)})$. The factor $-\delta_{ij}^{(m)}$ is positive, so dividing by it preserves the inequality direction. For every decreasing coordinate, non-negativity requires
 \begin{equation}
+\equationname{Interpolation bound for a decreasing concentration}
 \alpha\leq\frac{c_{in,ij}}{-\delta_{ij}^{(m)}}
 \qquad\text{when }\delta_{ij}^{(m)}<0.
 \label{eq:projection_coordinate_bound}
@@ -336,6 +347,7 @@ The minimum of these bounds is the first point at which the segment reaches the 
 
 If every candidate coordinate is non-negative, the entire direction is allowed and $\alpha=1$. If at least one candidate coordinate is negative, the smallest decreasing-coordinate ratio supplies a bound below one. Taking that bound reaches the concentration boundary. Multiplication by $1-\eta$ retreats slightly from the boundary to limit a sign change caused by rounding. With numerical safety margin $\eta=10^{-12}$, the accepted interpolation factor and final state are
 \begin{equation}
+\equationname{Interpolation factor and final state satisfying non-negativity}
 \begin{split}
 \alpha_i^{(m)}&=
 \begin{cases}
@@ -349,6 +361,7 @@ If every candidate coordinate is non-negative, the entire direction is allowed a
 \end{equation}
 If the candidate is negative somewhere, at least one bound lies below one. Non-negativity of the influent makes every bound non-negative. The factor is restricted to $[0,1]$ against roundoff. Decreasing coordinates satisfy $\tilde c_{ij}^{(m)}\geq\eta c_{in,ij}\geq0$, and increasing coordinates remain non-negative. For invariant row $h$, the final weighted component sum is $\sum_jA_{hj}c_{in,ij}+\alpha\sum_jA_{hj}\delta_{ij}^{(m)}$. The second sum is zero and the first is $b_{ih}$. Mass conservation follows from
 \begin{equation}
+\equationname{Mass conservation identity for the final projected state}
 A\tilde c_i^{(m)}=Ac_{in,i}+\alpha_i^{(m)}AZq_i^{*,(m)}=b_i.
 \label{eq:projection_final_conservation}
 \end{equation}
@@ -362,6 +375,7 @@ If an influent coordinate is zero and the candidate direction decreases that coo
 
 Numerical acceptance tests the returned state rather than assuming that the exact algebra eliminates rounding error. For row $h$, form the residual $r_h=\sum_jA_{hj}\tilde c_{ij}^{(m)}-b_{ih}$. Square its five values, add them, and take the square root to obtain the mass conservation norm. Separately compare each of the twenty concentrations with the negative of its own tolerance. A hypothetical concentration of $-5\times10^{-11}$ passes a $10^{-10}$ sign tolerance, whereas $-2\times10^{-10}$ fails it. These are numerical tolerance examples rather than permitted physical negative concentrations. A returned projection is accepted only when
 \begin{equation}
+\equationname{Numerical mass conservation and non-negativity acceptance checks}
 \|A\tilde c_i^{(m)}-b_i\|_2\leq\tau_{mc},\qquad
 \tilde c_{ij}^{(m)}\geq-\tau_{nn,j}\quad\text{for every }j,
 \label{eq:projection_numerical_acceptance}
@@ -385,6 +399,7 @@ The provisional positive target supplies a reference and weights for the solve. 
 
 Each raw or projected composite is obtained by multiplying the relevant component values by the coefficients already defined in Table~\ref{tab:component_basis_composites} and adding them. The coefficients do not change between the two prediction types. A paired comparison therefore changes only the component state supplied to the four scalar sums. Raw and projected composites are calculated with the same map,
 \begin{equation}
+\equationname{Raw and projected water-quality composites}
 y_{raw,i}^{(m)}=I_{comp}c_{raw,i}^{(m)},\qquad
 \tilde y_i^{(m)}=I_{comp}\tilde c_i^{(m)}.
 \label{eq:projection_paired_composites}
@@ -397,6 +412,7 @@ Feasibility is checked before this aggregation. Composite values cannot reveal e
 
 Let $\mathcal{T}$ denote the applicable training reference and let $\sigma_j^{(\mathcal{T})}$ be the population standard deviation of target component $j$ in that reference. For one assessed concentration, subtract the reference effluent value from the predicted value to obtain its signed physical error. Divide this error by the training standard deviation of the same component. For example, a hypothetical prediction of 3 g N m$^{-3}$ against a reference of 2 g N m$^{-3}$ has signed error 1 g N m$^{-3}$. A training standard deviation of 2 g N m$^{-3}$ gives standardized error 0.5. The constituent units cancel in the division. For prediction type $t$, which is either raw or projected, define
 \begin{equation}
+\equationname{Component error standardized by the training response scale}
 \xi_{ij}^{(m,t)}=
 \frac{c_{ij}^{(m,t)}-c_{out,ij}}{\sigma_j^{(\mathcal{T})}}.
 \label{eq:projection_standardized_error}
@@ -419,8 +435,11 @@ There are four scored component-observation pairs. Their squared errors sum to $
 
 For the twenty-component assessment, the first summation accumulates errors across observations and the second accumulates them across components. Division by $20n$ gives every scored pair equal weight after standardization. The compact definitions are
 \begin{align}
+\equationname{Normalized mean squared component error}
 \mathrm{nMSE}_{m,t}&=\frac{1}{20n}\sum_{i=1}^{n}\sum_{j=1}^{20}(\xi_{ij}^{(m,t)})^2,\label{eq:projection_nmse}\\
+\equationname{Normalized root mean squared component error}
 \mathrm{nRMSE}_{m,t}&=\sqrt{\mathrm{nMSE}_{m,t}},\label{eq:projection_nrmse}\\
+\equationname{Normalized mean absolute component error}
 \mathrm{nMAE}_{m,t}&=\frac{1}{20n}\sum_{i=1}^{n}\sum_{j=1}^{20}|\xi_{ij}^{(m,t)}|.
 \label{eq:projection_nmae}
 \end{align}
@@ -432,6 +451,7 @@ The coefficient of determination compares squared prediction error with the erro
 
 The mean used in this comparison is $\bar c_{out,j}=(c_{out,1j}+\cdots+c_{out,nj})/n$. It belongs to scoring and is not used to fit the model. The denominator of $R^2$ therefore differs from the training-defined scale of nMSE. For a scored partition with true mean $\bar c_{out,j}$, the component coefficient of determination and its equal-weight average are
 \begin{equation}
+\equationname{Component and macro-average coefficients of determination}
 R_{j,m,t}^2=1-
 \frac{\sum_i(c_{ij}^{(m,t)}-c_{out,ij})^2}
 {\sum_i(c_{out,ij}-\bar c_{out,j})^2},\qquad
@@ -450,6 +470,7 @@ The mass conservation residual begins with five scalar errors. For invariant row
 
 The negative magnitude uses a different operation. First divide each concentration by its training standard deviation. Then retain a negative coordinate if one is present and replace every non-negative coordinate by zero. Finally add the absolute values of the retained negatives. Hypothetical standardized values $(-2,1.5,-2)$ become $(-2,0,-2)$ and have absolute-sum magnitude four. A positive component cannot cancel a negative component in this diagnostic. The mass conservation residual and standardized total negative magnitude of a state $c$ are
 \begin{equation}
+\equationname{Mass conservation residual and standardized negative concentration}
 v_{mc,i}(c)=\|Ac-b_i\|_2,\qquad
 v_{nn,i}^{\mathrm{std}}(c)=
 \left\|\min(c\oslash\boldsymbol{\sigma}^{(\mathcal{T})},0)\right\|_1.
@@ -459,6 +480,7 @@ The minimum is componentwise. The mass conservation residual uses the same full-
 
 A frequency counts observations satisfying a stated failure condition and divides that count by the assessed observation count. The indicator $\mathbb{1}[\cdot]$ returns one when its bracketed condition is true and zero otherwise. For a hypothetical four-observation assessment, suppose the mass conservation failure indicators are $(1,0,1,0)$ and the non-negativity failure indicators are $(0,1,1,0)$. The two frequencies are $(1+0+1+0)/4=0.5$ and $(0+1+1+0)/4=0.5$. An observation with several negative components is still one failing observation in this row-level count. The two row-level violation frequencies are
 \begin{equation}
+\equationname{Mass conservation and non-negativity violation frequencies}
 \pi_{mc}=
 \frac{1}{n}\sum_i\mathbb{1}[v_{mc,i}(c_i)>\tau_{mc}],\qquad
 \pi_{nn}=
@@ -467,6 +489,7 @@ A frequency counts observations satisfying a stated failure condition and divide
 \end{equation}
 A state is counted as non-negative only when every component passes its tolerance. Component-specific violation frequencies identify which coordinates cross the boundary. In the four-observation example, only the fourth observation passes both conditions, so its joint feasible fraction is one quarter. The third fails both conditions and appears in both marginal failure counts. Adding the two failure frequencies would therefore count it twice. A joint indicator applies both pass conditions to the same observation before averaging. The joint feasible fraction is
 \begin{equation}
+\equationname{Jointly feasible fraction of assessed component states}
 \pi_{\mathrm{feasible}}=
 \frac{1}{n}\sum_i\mathbb{1}
 [v_{mc,i}(c_i)\leq\tau_{mc}\ \text{and}\ 
@@ -481,6 +504,7 @@ Mean, median, and maximum violation magnitudes are retained along with the frequ
 
 The paired accuracy effect subtracts the raw score from the projected score on the same assessment observations. If hypothetical raw and projected nRMSE values are 0.40 and 0.35, the difference is $0.35-0.40=-0.05$. If the projected value were 0.45, the difference would be $+0.05$. This sign convention expresses whether error decreases or increases. It does not identify which components move or whether their mass conservation residual improves. For each outer fold, the effect on the primary error score is
 \begin{equation}
+\equationname{Paired difference in projected and raw prediction error}
 \Delta\mathrm{nRMSE}_{m,N,g}=
 \mathrm{nRMSE}_{m,\mathrm{projected},N,g}
 -\mathrm{nRMSE}_{m,\mathrm{raw},N,g}.
@@ -490,6 +514,7 @@ A negative difference indicates lower error after projection, and a positive dif
 
 Displacement measures the difference between the projected prediction and its own raw prediction. It does not subtract the true effluent. Calculate one change per component, divide it by that component's training standard deviation, square it, sum the squares, and take the square root. For the hypothetical weighted-projection pair already calculated, the changes are $1.2-1=0.2$ and $2.8-2=0.8$. If its illustrative training standard deviations are 0.1 and 0.4, the standardized changes are 2 and 2. Their Euclidean displacement is $\sqrt{2^2+2^2}=2\sqrt2$. The example deliberately uses a training scale different from the provisional concentration scale, as the two operations serve different purposes. The sample-level standardized displacement is
 \begin{equation}
+\equationname{Standardized component displacement caused by projection}
 d_{c,i}^{\mathrm{std},(m)}=
 \left\|(\tilde c_i^{(m)}-c_{raw,i}^{(m)})
 \oslash\boldsymbol{\sigma}^{(\mathcal{T})}\right\|_2.
@@ -501,6 +526,7 @@ Learning curves retain the full error trajectory over Equation~\eqref{eq:reactor
 
 The full design has ten adjacent intervals. Calculate the trapezoidal area of each interval, add those areas, and divide by $10000-500=9500$. Division by the total interval converts the area into an average error height. As a descriptive summary, the normalized area under an error curve is calculated by trapezoidal integration,
 \begin{equation}
+\equationname{Normalized trapezoidal area under a learning curve}
 \mathcal{A}_{m,t}=
 \frac{1}{N_{11}-N_1}
 \sum_{\ell=1}^{10}\frac{E_{m,t}(N_\ell)+E_{m,t}(N_{\ell+1})}{2}
@@ -517,6 +543,7 @@ Extrapolation assessment uses separately simulated inputs outside the training h
 
 Four inputs can exceed their upper learning bounds. Exceedance is measured relative to the width of the original input interval. For HRT, the width is $36-6=30$ h. A hypothetical input of 39 h exceeds the upper bound by 3 h, giving exceedance $3/30=0.10$. Dividing by the original width allows a comparable severity description for inputs with different units. For input $\ell$ with bounds $[L_\ell,U_\ell]$, define its normalized exceedance as
 \begin{equation}
+\equationname{Input exceedance beyond an upper training-domain bound}
 e_{i\ell}=\frac{x_{i\ell}-U_\ell}{U_\ell-L_\ell}.
 \label{eq:projection_domain_exceedance}
 \end{equation}

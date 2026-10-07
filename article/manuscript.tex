@@ -32,7 +32,7 @@
     \ifcsname dissertation@listed@\theequation\endcsname\else
         \global\csdef{dissertation@listed@\theequation}{}%
         \ifx\dissertationequationtitle\@empty
-            \let\dissertationlistdescription\@currentlabelname
+            \PackageError{dissertation}{Missing description for equation \theequation}{Add \string\equationname\space before this numbered display or alignment row.}%
         \else
             \let\dissertationlistdescription\dissertationequationtitle
         \fi
