@@ -1,0 +1,185 @@
+\chapter{Introduction and Research Purpose}
+\label{ch:introduction}
+
+\section{Background and rationale}
+
+\subsection{Wastewater treatment as an engineering need}
+
+Wastewater treatment removes pollutants or changes them into forms that reduce their effects before water is discharged or reused. Wastewater carries organic matter, nutrients, and suspended particles from communities and industries. Influent is the water entering a treatment system. Effluent is the water leaving it. Their composition determines the treatment required and the quality achieved. \citet{Madhav2019} describe the sources and environmental effects of water pollutants. \citet{Lin2022} examine their different health consequences. These concerns establish why treatment decisions require more than a single measure of effluent quality.
+
+The need is relevant to the Philippines, where water management connects treatment infrastructure to institutions, financing, and local conditions. \citet{Tabios2020} discusses the physical setting and governance of Philippine water resources. \citet{DamalerioBarriers2022} identify technical, financial, social, and institutional barriers to wastewater management in developing countries and relate their discussion to Philippine technology selection. Their work supports a practical motivation for methods that help engineers compare treatment alternatives transparently. A faster calculation cannot resolve infrastructure or governance barriers by itself. It can support the technical assessment that informs planning and operation.
+
+Treatment must also fit the resources available to the community or operator. The guide edited by \citet{Ulrich2009} links decentralized treatment to technical requirements and local implementation conditions. \citet{Jafarinejad2020} places energy efficiency, cost, reliability, and sustainability within the same treatment-design problem. These sources explain why engineering relevance concerns the balance among treatment requirements and resource use. It does not follow from prediction accuracy alone.
+
+Biological wastewater treatment uses microorganisms to transform organic matter and nutrients. In activated sludge treatment, microorganisms grow as suspended biomass in tanks containing wastewater. A secondary clarifier separates much of this biomass from the treated water by settling. Part of the settled sludge returns to the biological tanks, and another part is withdrawn to control solids accumulation \citep{Henze2008,Takacs1991}.
+
+Organic substrate is material that microorganisms use for energy or growth. It can be oxidized or incorporated into biomass. Nitrogen can move among ammonium, nitrite, nitrate, biomass, and nitrogen gas. Nitrification oxidizes ammonium to nitrite and nitrate. Denitrification converts oxidized nitrogen to nitrogen gas under suitable conditions. Phosphorus can move among dissolved, stored, and particulate forms. \citet{Duan2022} describe biological nitrogen pathways, while \citet{Wentzel1992} explain the connections among nitrogen and phosphorus removal. These interactions require treatment analysis to track several material quantities together.
+
+The activated sludge model (ASM) family models these changes through component balances and process rates \citep{Henze1987,Henze1999,Henze2006}. A component is a material category tracked by the model, such as dissolved ammonium, soluble organic substrate, or a biomass group. It may combine several chemical species with a common process role. A component state is the collection of their concentrations at a specified location. Process rates describe how quickly biological or chemical transformations consume or produce these components \citep{Henze2006}.
+
+Reported water quality quantities combine selected components. Chemical oxygen demand (COD) describes oxygen-demand equivalents associated with oxidizable material. Total nitrogen (TN) and total phosphorus (TP) summarize nitrogen and phosphorus on the adopted reporting basis. Total suspended solids (TSS) measures suspended particulate material \citep{Henze2006,Henze2008}. Such combined quantities are called composites in this dissertation. They do not identify a unique component state. Two effluents can have the same TN while containing different proportions of ammonium and nitrate. The same total can therefore describe different treatment conditions.
+
+Operating choices influence the entire treatment response. Hydraulic retention time (HRT) is reactor volume divided by the flow rate specified for that reactor. It describes a nominal liquid residence time. Aeration transfers oxygen into the wastewater for biological reactions. Recycle returns liquid or settled sludge to an earlier treatment location. Wasting withdraws sludge from the plant to control the solids retained \citep{Henze2008}. An operating decision consequently affects several components and locations at once. These relationships matter when predicted effluent quality is used to compare candidate settings.
+
+\subsection{From process modeling to repeated operating calculations}
+
+Mechanistic models calculate treatment responses from equations for biological conversion, chemical reactions, liquid flow, and solids settling. Their inputs include influent concentrations and operating settings. Their outputs include component concentrations at the treatment locations. An inventory is the amount of material contained within a treatment unit. A steady-state calculation describes conditions at which modeled inventories no longer change with time under fixed inputs. \citet{Marais1976} establish steady-state activated sludge analysis, and \citet{Hauduc2013} review the process knowledge and limitations of activated sludge modeling. Each calculation remains conditional on its component definitions, parameter values, and system boundary. The system boundary identifies the units and material streams included in the balance.
+
+Simulation supports design and operating analysis because it permits engineers to examine conditions that have not been directly observed. \citet{Calise2020} address model validation for an activated sludge process. \citet{Rivas2008} connect model-based calculations to treatment-plant design. These applications show how a process model becomes a decision tool. A candidate operating setting must be evaluated, its treatment response interpreted, and its feasibility compared with the intended engineering requirements.
+
+Several routes can support these comparisons. An engineer can examine settings through repeated simulation and judgment. Numerical optimization searches for settings that improve a stated objective while satisfying specified limits. For activated sludge operation, the objective can combine effluent quality and resource use. A statistical surrogate is a model fitted to approximate the responses of a more detailed model at lower evaluation cost \citep{BhosekarIerapetritou2018,McBride2019}. In this research, the surrogate predicts component concentrations from influent conditions and operating settings. A feasible setting satisfies the imposed limits. It is not necessarily the best setting. Nonlinear reaction and recycle relationships can create several locally favorable settings, so termination of a numerical search does not establish the best setting over the entire allowed domain \citep{Araujo2013,BuzziFerraris2013}.
+
+Aeration illustrates the need for repeated calculations. More oxygen supply can change substrate removal and nitrification, but it also changes a resource demand. \citet{Araujo2013} examine operating sensitivities in an activated sludge optimization problem. \citet{Gu2023} review aeration optimization and control strategies. Choosing a setting requires assessment of the joint treatment response and the declared priorities. The preferred setting cannot be determined from an aeration variable or one effluent quantity alone.
+
+Statistical surrogates learn from paired influent and operating inputs and the corresponding mechanistic treatment responses \citep{Fang2011,Selerio2026}. Training is the fitting of model parameters to these pairs. A training sample here is one accepted steady-state simulation, rather than a measurement from an operating plant. \citet{Durkin2024} use surrogates in wastewater resource-recovery optimization. \citet{Sundui2021} review biological wastewater applications of machine learning. These developments motivate faster activated sludge calculations while retaining checks on the physical meaning of the predicted component state.
+
+\subsection{Why accurate prediction is insufficient}
+
+A prediction can be close to a mechanistic reference while violating a physical requirement. Consider a hypothetical effluent ammonium concentration of $0.2$~g~N~m$^{-3}$ and a prediction of $-0.1$~g~N~m$^{-3}$. Its absolute error is only $0.3$~g~N~m$^{-3}$, but a negative ammonium concentration is physically invalid. Larger substrate or biomass concentrations can dominate an average error score and conceal this problem. A small average error can also conceal a violation of mass conservation distributed across several components \citep{Hansen2024,KircherVotsmeier2025}.
+
+Mass conservation and non-negativity therefore need separate checks on the same predicted effluent. Mass conservation requires the material entering, leaving, accumulating, and reacting within the system boundary to agree under the adopted component accounting. Stoichiometry specifies the relative amounts consumed and produced by each modeled reaction. A stoichiometric invariant is a weighted combination of components that those reactions do not change \citep{Henze2006,SturmWexler2020,SturmWexler2022}. Boundary inputs and outputs must still be included when such a combination is used to check a reactor balance \citep{TakacsVanrolleghem2006}.
+
+Non-negativity requires each concentration to be zero or greater. Setting a negative ammonium prediction to zero can disturb the nitrogen balance. Enforcing only a balance can leave one of its component concentrations negative \citep{Harder2022,KircherVotsmeier2025}.
+
+Projection adjusts a completed component prediction to satisfy a specified set of constraints. In this research, those constraints include mass conservation and non-negativity, as imposed jointly in reactive-chemistry and activated sludge surrogates \citep{KircherVotsmeier2025,Selerio2026}. The feasible set contains the concentration states that satisfy the imposed constraints. The projection criterion specifies how changes from the raw prediction are measured. The raw prediction is the output before this adjustment, and the projected prediction is the output afterward. \citet{KircherVotsmeier2025} develop projection for simultaneous mass conservation and non-negativity in mechanistic kinetics surrogates. The method can be applied to different fitted models. Its guarantee concerns the imposed constraints, so it does not establish that the adjusted ammonium, substrate, or biomass concentrations reproduce every reaction rate or improve every prediction error \citep{SturmSilva2024,Selerio2026}.
+
+Validation checks predictions against reference responses excluded from the fit being assessed. Internal validation supports model selection, while a held-out assessment set evaluates the selected procedure \citep{Hastie2009,Kaufman2012}. In this research, these checks assess agreement with simulated activated sludge responses. They do not establish agreement with a measured plant \citep{Machado2014,Newhart2019}.
+
+Influent concentrations and selected aeration settings are available before a treatment response is calculated. The resulting effluent ammonium concentration is unknown at that point and cannot be supplied as an ordinary predictive input. Information leakage occurs when unavailable outputs or reserved assessment information influence fitting or model selection \citep{Kaufman2012,Newhart2019}. Keeping that information separate makes the assessment more credible. Extrapolation, which means prediction beyond the sampled input range, still requires separate assessment.
+
+Interpretability concerns whether the dependence of a prediction on its inputs can be examined. A structured regression separates fitted terms for operation, influent composition, curvature, and component coupling \citep{Selerio2026}. Such an explicit model supports examination of fitted relationships \citep{Rudin2019,Brunton2016}. Curvature allows the predicted response to change at different rates as an input changes. Influent loading is the material supplied to the system through the incoming concentrations and flow. An interaction allows an aeration response to depend on that loading. Component coupling expresses fitted dependence among outputs such as substrate and biomass concentrations. These terms describe statistical relationships and need not identify biological mechanisms uniquely.
+
+Projection can change both a concentration and its sensitivity to an operating input \citep{Selerio2026}. Interpretation therefore follows the raw regression and the final projected effluent.
+
+Operating optimization adds a further concern. A search may select an aeration or recycle setting with favorable predicted effluent quality where the surrogate is inaccurate. This can occur even when average held-out error is small. \citet{Alexandrov1998} develop methods for checking and managing model approximations during optimization. \citet{Pedrozo2025} compare surrogate optimization with reference process calculations. Their work supports an independent mechanistic calculation at the selected controls. Mass conservation and non-negativity remain necessary properties of a component prediction. Decision quality also depends on the treatment response and resource demand calculated at the selected setting.
+
+\subsection{Rationale for the research}
+
+The research is motivated by the need for a fast treatment prediction that remains understandable and usable as a component state. Existing literature supplies methods for statistical approximation, projection, and process optimization \citep{BhosekarIerapetritou2018,KircherVotsmeier2025,Durkin2024}. The engineering problem is to connect these methods while preserving the different questions each one answers. Prediction error describes agreement with a reference. Mass conservation and non-negativity describe specified physical requirements. Interpretability concerns the basis of the returned response. Decision quality concerns the operating choice evaluated with the reference model.
+
+This distinction matters at both reactor and plant scale. For one reactor, projection can impose mass conservation and non-negativity on the full component prediction \citep{Selerio2026}. For a connected plant, mixing, reactor, clarifier, recycle, and inventory relationships must also agree across the returned response \citep{Alex2008,JeppssonDiehl1996}. A physically acceptable state at one unit does not establish consistency of its connections to other units.
+
+The research therefore uses a common mechanistic foundation to examine three linked capabilities. The first is statistical approximation and projection of the complete reactor component response. The second is an interpretable second-order regression with a defined projection procedure. The third is a connected plant surrogate that supports operating analysis and independent evaluation of selected controls. These capabilities address a progression from prediction to physical constraints and then to engineering decisions.
+
+The research is intended to support more transparent treatment analysis. Researchers can distinguish prediction error from the effect of projection. Engineers can inspect the returned component state and evaluate a selected operating setting with the original process model. A valid projection establishes mass conservation and non-negativity under its stated assumptions \citep{KircherVotsmeier2025,Selerio2026}. Accuracy, computational cost, and decision quality remain separate assessment questions.
+
+\section{Statement of the problem}
+
+The central problem is how to use machine learning surrogates for activated sludge analysis when accurate approximation alone is insufficient for a usable engineering response. The research addresses four connected limitations.
+
+\subsection{Uncertain agreement with the complete component response}
+
+An error score for effluent TN alone does not establish accurate ammonium, nitrite, nitrate, and biomass predictions. Component errors can compensate in the total, and errors in small concentrations can be hidden \citep{Henze2006,Selerio2026}. Accuracy can also depend on the number of reactor cases used for training and on whether an influent or operating setting lies within the sampled ranges \citep{VieringLoog2023,Li2024}. A common assessment of all component concentrations is needed to distinguish these effects while keeping the activated sludge prediction target fixed.
+
+\subsection{Mass conservation and non-negativity are not established by training alone}
+
+Ordinary regression minimizes prediction error without requiring every new activated sludge effluent to satisfy mass conservation or concentration bounds. A residual is the numerical discrepancy in a balance equation. A physical residual penalty adds a cost for that discrepancy during fitting. A finite penalty can reduce violations without eliminating them at every new influent and operating setting \citep{Raissi2019,Hansen2024}. Projection and independent numerical checks provide one way to assess both physical requirements on the returned component state \citep{KircherVotsmeier2025,Selerio2026}.
+
+\subsection{A visible regression structure can still be difficult to interpret}
+
+A regression coefficient is the fitted weight of an input or input product. Its meaning depends on its units and its place in the prediction calculation. For example, a coefficient multiplying aeration and influent substrate describes a different relationship from a coefficient multiplying aeration alone. Component coupling and projection can further change the final predicted ammonium or biomass response \citep{Selerio2026}. Interpretation must therefore follow the complete calculation. Fitting and validation must also use only the information available for the intended activated sludge prediction \citep{Kaufman2012}.
+
+\subsection{Unit predictions do not establish the quality of plant decisions}
+
+Separately predicted activated sludge unit responses can disagree at their connections. The predicted clarifier underflow, for example, may imply a return-sludge contribution different from the one predicted at the mixer. Consistent reactor and clarifier connections are required by the component-transport and plant models \citep{JeppssonDiehl1996,Alex2008}. Joint projection can impose specified plant balances. Satisfaction of these selected relations does not establish agreement with every mechanistic equation, which remains outside the stated projection guarantee \citep{KircherVotsmeier2025,Selerio2026}. An operating search can still select a setting affected by these approximation errors. Selected aeration, recycle, and wasting controls therefore require independent mechanistic evaluation under the same treatment and resource priorities. This assessment follows the distinction between approximation quality and optimization behavior developed in surrogate optimization research \citep{Alexandrov1998,Pedrozo2025}.
+
+\section{Research questions and objectives}
+
+The general objective is to develop a unified framework for activated sludge surrogate prediction, projection, interpretation, and operating assessment. The framework treats mass conservation and non-negativity as explicit requirements and keeps predictive error and decision quality as separate endpoints.
+
+The first question asks how accurately different statistical learners approximate the complete reactor component response as training data change and inputs move beyond the sampled domain. Its objective is to establish a benchmark, which is a defined simulation task for comparing models. The comparison uses shared component targets, data partitions, and evaluation scales.
+
+The second question asks how projection affects mass conservation, non-negativity, error, displacement, and computational cost for the same raw predictions. Its objective is to compare raw and projected states in paired assessments. The comparison identifies the effect of projection without attributing it to a different fitted learner.
+
+The third question asks how an explicit second-order regression and learned component coupling can support interpretable activated sludge prediction with mass conservation and non-negativity. A second-order regression includes individual inputs, their squares, and pairwise products. Its driver is the fitted expression evaluated before component coupling is applied. The objective is to formulate and examine this model, its fitting problem, and its projection procedure. Interpretation distinguishes the driver, the raw component predictions, and the final projected effluent. Detailed formulations are developed in Chapter~\ref{ch:interpretable}.
+
+The fourth question asks how joint prediction and projection can support operating choices for a connected activated sludge plant. Its objective is to impose the declared unit connections, formulate common engineering priorities, and independently evaluate selected controls. Surrogate-assisted search is compared with direct mechanistic optimization on the original reference basis.
+
+\section{Significance of the study}
+
+\subsection{Scientific significance}
+
+The scientific value is a clear connection between predicted activated sludge responses and the component accounting of the mechanistic model. Stoichiometry defines the relative component changes in each reaction. The reactor and plant boundaries define the material streams included in mass conservation. Non-negativity applies to each modeled concentration, including dissolved nutrients and biomass. These explicit requirements make the physical meaning of a predicted treatment state available for examination.
+
+This contribution also clarifies the limit of a physical guarantee. A state that satisfies mass conservation and non-negativity need not satisfy the full nonlinear kinetic equations. Likewise, a reported nutrient total need not be identical to an inventory used for mass conservation. Identifying these distinctions supports a more precise interpretation of scientific machine learning in biological wastewater treatment \citep{Henze2006,TakacsVanrolleghem2006}.
+
+\subsection{Methodological significance}
+
+For researchers comparing activated sludge surrogates, the study provides separate evidence for prediction and projection. Models within each assessment receive common influent and operating inputs and predict the same component concentrations. Preprocessing transforms data into the coordinates used for fitting. Tuning selects model settings, called hyperparameters, using internal validation. These settings control model structure or fitting and differ from the coefficients estimated during training. Preprocessing and tuning use only the relevant training information to avoid information leakage \citep{Kaufman2012}. Paired raw and projected effluents identify which differences arise from projection. The reactor and plant assessments retain their specified validation designs, so their scores answer related questions without establishing one shared model ranking.
+
+The design reports errors for individual component concentrations and for the combined water quality quantities. It also reports mass conservation residuals, negative concentrations, projection displacement, and computational effort. Projection displacement measures how much the concentration vector changes during enforcement. These measures distinguish an accurate treatment prediction from one that requires substantial adjustment to satisfy the imposed balances. Their joint reporting makes the limits of an average effluent error score visible, as illustrated by component-level projection and activated sludge assessments \citep{SturmSilva2024,Selerio2026}.
+
+The structured regression provides an inspectable activated sludge model. Its named terms and component coupling permit direct coefficient and sensitivity calculations. Sensitivity measures the local change in a predicted concentration when an input such as aeration changes. Projection is analyzed as another stage of the returned effluent calculation. This supports examination of the treatment response without treating fitted coefficients as causal biological parameters \citep{Brunton2016,Selerio2026}.
+
+\subsection{Engineering and practical significance}
+
+Engineers need to compare operating conditions while maintaining a consistent account of material across the treatment plant \citep{Henze2008,Alex2008}. The connected surrogate models mixer, reactor, clarifier-outlet, and inventory responses together. Joint projection addresses contradictions that separate unit predictions can leave unresolved. The resulting numerical checks provide a basis for detecting specified mass conservation and non-negativity violations before a prediction enters an operating search.
+
+Independent mechanistic evaluation gives the operating assessment a practical reference, consistent with reference-model checks used in surrogate optimization \citep{Alexandrov1998,Pedrozo2025}. It determines treatment responses at the controls actually selected, checks the original engineering requirements, and distinguishes available decisions from failed or ineligible cases. This is useful for assessing whether a faster search supports the intended decision. It does not establish lower operating costs or better field treatment before those outcomes are evaluated.
+
+The framework is also relevant to technical capacity in wastewater planning. Philippine and other resource-limited settings require decisions that connect treatment needs with the resources and conditions of implementation \citep{Tabios2020,DamalerioBarriers2022,Ulrich2009}. A transparent, computationally manageable assessment can support such decisions. Plant calibration, reliable measurements, operating expertise, and institutional capacity remain necessary for practical application.
+
+\subsection{Significance for further research}
+
+The formulations provide a defined starting point for examining uncertainty, dynamic activated sludge operation, and other biological treatment configurations. Their value is the separation of physical constraints, statistical agreement, interpretation, and decision evidence. An extension must define its own modeled components and boundary streams. For example, a dynamic treatment model must account for changing reactor and clarifier inventories \citep{Takacs1991,Alex2008}. It cannot inherit the steady-state reactor or plant guarantees solely because it uses the same learning method.
+
+\section{Contributions of the research}
+
+The first contribution is a common reactor assessment that retains the complete component target. It examines learning behavior under specified data availability and input-domain conditions. Component and composite scores have distinct roles, so a favorable reported total cannot conceal every defect in the component state.
+
+The second contribution is a paired projection assessment for mass conservation and non-negativity. It adopts the projection principles of \citet{KircherVotsmeier2025} and applies a common physical requirement across different learners. Mathematical feasibility, projection displacement, prediction error, and cost are evaluated separately. The contribution concerns their organized use in activated sludge analysis and does not claim invention of the underlying projection method.
+
+The third contribution is an interpretable second-order regression with learned component coupling and checked projection. The explicit feature groups support structural inspection of the activated sludge regression \citep{Selerio2026}. The fitting formulation distinguishes soft physical penalties from the projection used to impose mass conservation and non-negativity on the returned state. Interpretation follows the complete response calculation rather than an isolated coefficient block.
+
+The fourth contribution is a connected plant formulation with joint projection and independent operating verification. It links unit responses through the declared mixing, reaction-inventory, clarification, and stored-solids relations. Selected controls are then assessed with the original mechanistic equations and a common objective. This connects the physical meaning of a surrogate state to the quality of the decision made with it.
+
+Table~\ref{tab:introduction_contributions} makes the problem--contribution relationship explicit. The evidence column identifies how each contribution is assessed. It does not report an empirical outcome.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Research problems, methodological contributions, and assessment evidence.}
+\label{tab:introduction_contributions}
+\begin{tabular}{p{0.27\textwidth}p{0.33\textwidth}p{0.30\textwidth}}
+\toprule
+Research problem & Contribution & Assessment evidence\\
+\midrule
+Complete response is hidden by a few reported totals & Common component-level reactor benchmark & Held-out component and composite errors, learning curves, and beyond-domain assessment\\
+Training does not establish mass conservation and non-negativity & Common projection with paired raw and projected assessment & Equality residuals, concentration checks, error differences, displacement, and cost\\
+Model terms do not directly explain the final response & Explicit second-order regression and component coupling with checked projection & Named coefficient groups, full response sensitivities, and stage-specific diagnostics\\
+Consistent predictions do not establish useful operating decisions & Joint plant projection and original-model verification of selected controls & Unit and inventory checks, common reference objectives, engineering eligibility, and failure accounting\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These contributions are mathematical and methodological. Their significance is the capacity to address the stated limitations through a coherent assessment. Empirical superiority over another learner or optimization route is not presumed.
+
+\section{Research framework}
+
+The research begins with a mechanistic activated sludge model and specified ranges of influent concentrations and operating settings. These ranges form the input domain. Each simulated case pairs those inputs with steady-state component concentrations. The pairs support statistical fitting. Reaction stoichiometry and boundary flows supply the mass conservation relations \citep{Henze2006,SturmWexler2022}. Non-negativity supplies the concentration requirement. Projection adjusts each raw effluent prediction to satisfy these requirements, following the joint enforcement approaches of \citet{KircherVotsmeier2025} and \citet{Selerio2026}.
+
+The logic extends to interpretation and operating analysis. A structured predictor exposes terms and sensitivities. A connected plant formulation adds relationships among unit responses and stored solids. An operating search selects controls, and independent mechanistic evaluation establishes their reference treatment response. Each step addresses a specific claim. The evidence required for one claim does not substitute for the evidence required for another.
+
+Figure~\ref{fig:research_conceptual_logic} links the information used to construct the prediction procedure to the evidence used to assess its engineering value. The central sequence concerns prediction, projection, operating choice, and reference evaluation. The side boxes retain the different assessment questions.
+
+\begin{figure}[htbp]
+\centering
+\input{figures/ch1_concept_research_logic}
+\caption{Conceptual research logic linking process knowledge, component prediction, projection, interpretation, and independent assessment of operating choices.}
+\label{fig:research_conceptual_logic}
+\end{figure}
+
+The supervised targets are the mechanistic component concentrations paired with known influent and operating inputs. Physical knowledge supplies the requirements used by projection. Error assessment compares predicted ammonium, substrate, biomass, and other concentrations with those targets. Physical checks assess mass conservation, non-negativity, and the additional plant constraints. Structural inspection examines the fitted treatment model. Decision assessment calculates the mechanistic treatment response at the selected controls. The reactor and connected plant use this logic with separately specified predictors and physical boundaries.
+
+\section{Scope and limitations}
+
+The study concerns simulated steady-state activated sludge responses. It includes a standalone reactor and a connected plant with biological reactors, secondary clarification, and recycle streams. The mechanistic equations supply reference responses under fixed process definitions and parameter values. The reactor and connected plant have separately specified operating domains.
+
+The state includes organic, nitrogen, phosphorus, oxygen, alkalinity, biomass, and solids coordinates within the adopted model basis. Mass conservation is imposed through that basis and the stated system boundary. Non-negativity is imposed on the represented concentrations. The guarantees do not establish complete elemental accounting for unrepresented species, full kinetic feasibility of every projected state, or dynamic stability beyond the specified checks. These limits follow from the adopted component boundary and the scope of the imposed constraints \citep{TakacsVanrolleghem2006,Selerio2026}.
+
+Agreement with simulated responses establishes agreement with the selected mechanistic reference. It does not establish performance at an operating treatment plant. Calibration uncertainty, measurement error, microbial adaptation, and unrepresented reactions require additional field evidence \citep{Machado2014,Newhart2019}. Reliable calibration and process understanding remain essential \citep{Petersen2003,Meijer2004}.
+
+Exploratory simulation informed the connected plant assessment design. Its separate holdout is a reserved set of simulated plant cases. It supports descriptive assessment conditional on those design choices, which is termed post-selection assessment. It does not provide independent external confirmation. Fitting and tuning still exclude the holdout responses. Independent mechanistic evaluation checks the selected controls, but it does not remove this statistical limitation.
+
+Attached-growth treatment, spatial transport, resource-recovery networks, and dynamic control provide relevant background and possible extensions. They are not additional evaluated case studies. The connected operating problem uses the declared topology and local numerical assessment. It does not certify a global optimum or a new network configuration.
+
+Numerical examples and conceptual figures explain the mathematical operations and are explicitly hypothetical. They do not report treatment, prediction, optimization, or timing findings. Empirical results are reported separately in the reactor projection, structured-regression, and connected-plant assessments.

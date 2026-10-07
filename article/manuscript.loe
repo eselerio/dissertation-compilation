@@ -1,0 +1,327 @@
+\contentsline {equation}{\numberline {3.1}Fixed ordering of the twenty component concentrations}{37}{equation.3.1}%
+\contentsline {equation}{\numberline {3.2}Idealized aerobic oxidation of an organic unit}{38}{equation.3.2}%
+\contentsline {equation}{\numberline {3.3}Idealized oxidation of biomass with ammonium release}{39}{equation.3.3}%
+\contentsline {equation}{\numberline {3.4}Idealized ammonium oxidation to nitrite}{39}{equation.3.4}%
+\contentsline {equation}{\numberline {3.5}Idealized nitrite oxidation to nitrate}{39}{equation.3.5}%
+\contentsline {equation}{\numberline {3.6}Idealized overall nitrification reaction}{39}{equation.3.6}%
+\contentsline {equation}{\numberline {3.7}Idealized nitrate denitrification with an organic donor}{40}{equation.3.7}%
+\contentsline {equation}{\numberline {3.8}Idealized nitrite denitrification with an organic donor}{40}{equation.3.8}%
+\contentsline {equation}{\numberline {3.9}Idealized anaerobic ammonium oxidation reaction}{40}{equation.3.9}%
+\contentsline {equation}{\numberline {3.10}Dimensions and orientation of the stoichiometric matrix}{42}{equation.3.10}%
+\contentsline {equation}{\numberline {3.11}Vector and scalar reaction contributions to component rates}{43}{equation.3.11}%
+\contentsline {equation}{\numberline {3.12}Monod substrate saturation factor}{43}{equation.3.12}%
+\contentsline {equation}{\numberline {3.13}Representative growth rate with substrate and oxygen limitation}{43}{equation.3.13}%
+\contentsline {equation}{\numberline {3.14}Steady-state reactor component equation}{44}{equation.3.14}%
+\contentsline {equation}{\numberline {3.15}Effluent change expressed through reaction and oxygen transfer}{44}{equation.3.15}%
+\contentsline {equation}{\numberline {3.16}Hydraulic dilution rate from retention time}{45}{equation.3.16}%
+\contentsline {equation}{\numberline {3.17}Oxygen-transfer coefficient from the aeration setting}{45}{equation.3.17}%
+\contentsline {equation}{\numberline {3.18}Net oxygen-transfer rate and saturation concentration}{45}{equation.3.18}%
+\contentsline {equation}{\numberline {3.19}Zero reaction contribution to a stoichiometric invariant}{46}{equation.3.19}%
+\contentsline {equation}{\numberline {3.20}Singular-value decomposition of the stoichiometric matrix}{47}{equation.3.20}%
+\contentsline {equation}{\numberline {3.21}Numerical threshold for stoichiometric rank}{47}{equation.3.21}%
+\contentsline {equation}{\numberline {3.22}Orthonormal mass conservation operator from the null space}{47}{equation.3.22}%
+\contentsline {equation}{\numberline {3.23}Null-space and orthonormality identities of the invariant operator}{48}{equation.3.23}%
+\contentsline {equation}{\numberline {3.24}Reactor invariant equation including oxygen transfer}{48}{equation.3.24}%
+\contentsline {equation}{\numberline {3.25}Compatibility of oxygen forcing with mass conservation}{48}{equation.3.25}%
+\contentsline {equation}{\numberline {3.26}Equality of influent and effluent invariant inventories}{49}{equation.3.26}%
+\contentsline {equation}{\numberline {3.27}Invariant inventory change with an external source}{49}{equation.3.27}%
+\contentsline {equation}{\numberline {3.28}Reaction-progress coordinates for the effluent change}{50}{equation.3.28}%
+\contentsline {equation}{\numberline {3.29}Equivalent reaction and invariant-null spaces}{50}{equation.3.29}%
+\contentsline {equation}{\numberline {3.30}Component-state set satisfying mass conservation and non-negativity}{51}{equation.3.30}%
+\contentsline {equation}{\numberline {3.31}Component-to-water-quality reporting map}{53}{equation.3.31}%
+\contentsline {equation}{\numberline {3.32}Control-volume component equation with transport and reaction}{54}{equation.3.32}%
+\contentsline {equation}{\numberline {3.33}One-dimensional advection-diffusion-reaction component equation}{54}{equation.3.33}%
+\contentsline {equation}{\numberline {4.1}Reactor surrogate inputs from operation and influent concentrations}{58}{equation.4.1}%
+\contentsline {equation}{\numberline {4.2}Raw component-state prediction from a fitted surrogate}{58}{equation.4.2}%
+\contentsline {equation}{\numberline {4.3}Row-group penalty for multiresponse regression coefficients}{61}{equation.4.3}%
+\contentsline {equation}{\numberline {4.4}Positive provisional target and relative projection weights}{64}{equation.4.4}%
+\contentsline {equation}{\numberline {4.5}Null-space parameterization of states satisfying mass conservation}{64}{equation.4.5}%
+\contentsline {equation}{\numberline {4.6}Weighted least-squares problem for projection coordinates}{65}{equation.4.6}%
+\contentsline {equation}{\numberline {4.7}Normal equations for weighted projection coordinates}{67}{equation.4.7}%
+\contentsline {equation}{\numberline {4.8}Component candidate satisfying mass conservation}{67}{equation.4.8}%
+\contentsline {equation}{\numberline {4.9}Candidate direction from the feasible influent anchor}{68}{equation.4.9}%
+\contentsline {equation}{\numberline {4.10}Interpolation bound for a decreasing concentration}{68}{equation.4.10}%
+\contentsline {equation}{\numberline {4.11}Interpolation factor and final state satisfying non-negativity}{68}{equation.4.11}%
+\contentsline {equation}{\numberline {4.12}Mass conservation identity for the final projected state}{69}{equation.4.12}%
+\contentsline {equation}{\numberline {4.13}Numerical mass conservation and non-negativity acceptance checks}{69}{equation.4.13}%
+\contentsline {equation}{\numberline {4.14}Raw and projected water-quality composites}{71}{equation.4.14}%
+\contentsline {equation}{\numberline {4.15}Observation counts for nested reactor assessment}{73}{equation.4.15}%
+\contentsline {equation}{\numberline {4.16}Component error standardized by the training response scale}{75}{equation.4.16}%
+\contentsline {equation}{\numberline {4.17}Normalized mean squared component error}{78}{equation.4.17}%
+\contentsline {equation}{\numberline {4.18}Normalized root mean squared component error}{78}{equation.4.18}%
+\contentsline {equation}{\numberline {4.19}Normalized mean absolute component error}{78}{equation.4.19}%
+\contentsline {equation}{\numberline {4.20}Component and macro-average coefficients of determination}{79}{equation.4.20}%
+\contentsline {equation}{\numberline {4.21}Mass conservation residual and standardized negative concentration}{80}{equation.4.21}%
+\contentsline {equation}{\numberline {4.22}Mass conservation and non-negativity violation frequencies}{80}{equation.4.22}%
+\contentsline {equation}{\numberline {4.23}Jointly feasible fraction of assessed component states}{80}{equation.4.23}%
+\contentsline {equation}{\numberline {4.24}Paired difference in projected and raw prediction error}{81}{equation.4.24}%
+\contentsline {equation}{\numberline {4.25}Standardized component displacement caused by projection}{81}{equation.4.25}%
+\contentsline {equation}{\numberline {4.26}Normalized trapezoidal area under a learning curve}{82}{equation.4.26}%
+\contentsline {equation}{\numberline {4.27}Input exceedance beyond an upper training-domain bound}{82}{equation.4.27}%
+\contentsline {equation}{\numberline {5.1}Illustrative component changes for a two-component reaction}{98}{equation.5.1}%
+\contentsline {equation}{\numberline {5.2}Illustrative stoichiometric matrix and mass conservation operator}{98}{equation.5.2}%
+\contentsline {equation}{\numberline {5.3}Structured-regression mass conservation operator from the null space}{99}{equation.5.3}%
+\contentsline {equation}{\numberline {5.4}Effluent change in stoichiometric process coordinates}{99}{equation.5.4}%
+\contentsline {equation}{\numberline {5.5}Mass conservation equality for the structured-regression effluent}{99}{equation.5.5}%
+\contentsline {equation}{\numberline {5.6}Structured-regression feasible set for mass conservation and non-negativity}{99}{equation.5.6}%
+\contentsline {equation}{\numberline {5.7}Illustrative operating, influent, and mixed Kronecker products}{100}{equation.5.7}%
+\contentsline {equation}{\numberline {5.8}Second-order driver feature vector and its dimension}{100}{equation.5.8}%
+\contentsline {equation}{\numberline {5.9}Numerical evaluation of an illustrative regression driver}{101}{equation.5.9}%
+\contentsline {equation}{\numberline {5.10}Scalar polynomial form of the illustrative regression driver}{101}{equation.5.10}%
+\contentsline {equation}{\numberline {5.11}Matrix mapping from second-order features to the regression driver}{101}{equation.5.11}%
+\contentsline {equation}{\numberline {5.12}Driver decomposition into operating, influent, and interaction blocks}{101}{equation.5.12}%
+\contentsline {equation}{\numberline {5.13}Illustrative driver with aeration, nitrogen, and interaction effects}{102}{equation.5.13}%
+\contentsline {equation}{\numberline {5.14}Expansion of a two-variable quadratic form}{102}{equation.5.14}%
+\contentsline {equation}{\numberline {5.15}Numerical example of quadratic-coefficient symmetrization}{102}{equation.5.15}%
+\contentsline {equation}{\numberline {5.16}Symmetric coefficient matrix of a quadratic form}{103}{equation.5.16}%
+\contentsline {equation}{\numberline {5.17}Frobenius-norm decomposition into symmetric and skew parts}{103}{equation.5.17}%
+\contentsline {equation}{\numberline {5.18}Illustrative coupled equations for two effluent components}{103}{equation.5.18}%
+\contentsline {equation}{\numberline {5.19}Illustrative coupling matrix and coupled-state system}{103}{equation.5.19}%
+\contentsline {equation}{\numberline {5.20}Inverse of the illustrative two-component coupling system}{103}{equation.5.20}%
+\contentsline {equation}{\numberline {5.21}General coupled-state relation and system matrix}{104}{equation.5.21}%
+\contentsline {equation}{\numberline {5.22}Diagonal, magnitude, and conditioning safeguards for component coupling}{104}{equation.5.22}%
+\contentsline {equation}{\numberline {5.23}Squared Frobenius norm as a sum of coefficient squares}{105}{equation.5.23}%
+\contentsline {equation}{\numberline {5.24}Scalar expansion of the structured-regression training objective}{105}{equation.5.24}%
+\contentsline {equation}{\numberline {5.25}Matrix form of the structured-regression training objective}{106}{equation.5.25}%
+\contentsline {equation}{\numberline {5.26}Illustrative numerical contributions to the training penalties}{106}{equation.5.26}%
+\contentsline {equation}{\numberline {5.27}Regularized least-squares objective for one driver coefficient row}{107}{equation.5.27}%
+\contentsline {equation}{\numberline {5.28}Scalar stationarity conditions for a driver coefficient row}{107}{equation.5.28}%
+\contentsline {equation}{\numberline {5.29}Normal equations for the driver coefficient row}{107}{equation.5.29}%
+\contentsline {equation}{\numberline {5.30}Illustrative scalar ridge objective and its polynomial expansion}{108}{equation.5.30}%
+\contentsline {equation}{\numberline {5.31}Closed-form ridge update for the driver coefficient matrix}{108}{equation.5.31}%
+\contentsline {equation}{\numberline {5.32}Illustrative scalar coupling objective and its expansion}{108}{equation.5.32}%
+\contentsline {equation}{\numberline {5.33}Regularized least-squares update for component coupling}{108}{equation.5.33}%
+\contentsline {equation}{\numberline {5.34}Scalar entries of the fitted-state Hessian and forcing vector}{109}{equation.5.34}%
+\contentsline {equation}{\numberline {5.35}Completed-square form of the fitted-state objective}{109}{equation.5.35}%
+\contentsline {equation}{\numberline {5.36}Hessian and forcing vector for the fitted-state update}{110}{equation.5.36}%
+\contentsline {equation}{\numberline {5.37}Raw deployed state from the fitted coupled system}{112}{equation.5.37}%
+\contentsline {equation}{\numberline {5.38}Mass conservation and non-negativity diagnostics of a deployed state}{113}{equation.5.38}%
+\contentsline {equation}{\numberline {5.39}Lagrangian for an illustrative two-component affine projection}{113}{equation.5.39}%
+\contentsline {equation}{\numberline {5.40}Stationarity and equality conditions for the illustrative affine projection}{113}{equation.5.40}%
+\contentsline {equation}{\numberline {5.41}Closed-form solution of the illustrative affine projection}{113}{equation.5.41}%
+\contentsline {equation}{\numberline {5.42}Euclidean affine projection onto the mass conservation equality}{113}{equation.5.42}%
+\contentsline {equation}{\numberline {5.43}Closed-form affine projection of the raw component state}{113}{equation.5.43}%
+\contentsline {equation}{\numberline {5.44}Illustrative matrix of the mass conservation projection}{114}{equation.5.44}%
+\contentsline {equation}{\numberline {5.45}Absolute-adjustment bounds for an illustrative two-component projection}{114}{equation.5.45}%
+\contentsline {equation}{\numberline {5.46}Weighted absolute-distance projection for mass conservation and non-negativity}{115}{equation.5.46}%
+\contentsline {equation}{\numberline {5.47}Water-quality composites of the final checked state}{116}{equation.5.47}%
+\contentsline {equation}{\numberline {5.48}Illustrative driver coefficients and operating-dependent driver}{118}{equation.5.48}%
+\contentsline {equation}{\numberline {5.49}Illustrative transformation of driver coefficients through coupling}{118}{equation.5.49}%
+\contentsline {equation}{\numberline {5.50}Illustrative composite coefficients after coupling}{118}{equation.5.50}%
+\contentsline {equation}{\numberline {5.51}Raw component-response coefficients after coupling}{118}{equation.5.51}%
+\contentsline {equation}{\numberline {5.52}Raw composite-response coefficients after coupling and reporting}{118}{equation.5.52}%
+\contentsline {equation}{\numberline {5.53}Gradients of the illustrative scalar regression driver}{119}{equation.5.53}%
+\contentsline {equation}{\numberline {5.54}Illustrative propagation of an operating derivative through coupling}{120}{equation.5.54}%
+\contentsline {equation}{\numberline {5.55}Illustrative operating Jacobians before and after coupling}{120}{equation.5.55}%
+\contentsline {equation}{\numberline {5.56}Component driver expressed through symmetric quadratic matrices}{120}{equation.5.56}%
+\contentsline {equation}{\numberline {5.57}Operating and influent gradients of a component driver}{120}{equation.5.57}%
+\contentsline {equation}{\numberline {5.58}Raw component and composite Jacobians after coupling}{121}{equation.5.58}%
+\contentsline {equation}{\numberline {5.59}Illustrative operating derivative after affine projection}{121}{equation.5.59}%
+\contentsline {equation}{\numberline {5.60}Complementary mass conservation projection matrices}{121}{equation.5.60}%
+\contentsline {equation}{\numberline {5.61}Operating and influent Jacobians of the affine-projected state}{122}{equation.5.61}%
+\contentsline {equation}{\numberline {5.62}Illustrative affine-projected components as functions of an operating input}{122}{equation.5.62}%
+\contentsline {equation}{\numberline {5.63}Percentage frequency of a physical-constraint violation}{127}{equation.5.63}%
+\contentsline {equation}{\numberline {5.64}Per-composite squared, root, and absolute error measures}{127}{equation.5.64}%
+\contentsline {equation}{\numberline {5.65}Mean relative absolute error of a reported composite}{127}{equation.5.65}%
+\contentsline {equation}{\numberline {5.66}Coefficient of determination for a reported composite}{128}{equation.5.66}%
+\contentsline {equation}{\numberline {5.67}Root mean squared error pooled across four reported composites}{128}{equation.5.67}%
+\contentsline {equation}{\numberline {5.68}Observation counts for structured-regression sample-size assessment}{128}{equation.5.68}%
+\contentsline {equation}{\numberline {5.69}Trapezoidal approximation of normalized learning-curve area}{129}{equation.5.69}%
+\contentsline {equation}{\numberline {5.70}Integral definition of normalized learning-curve area}{129}{equation.5.70}%
+\contentsline {equation}{\numberline {5.71}Mean dense ranks over quantities, measures, and sample sizes}{130}{equation.5.71}%
+\contentsline {equation}{\numberline {5.72}Held-out minus training root-error gap}{130}{equation.5.72}%
+\contentsline {equation}{\numberline {6.1}Reactor-train flow including both recycle streams}{145}{equation.6.1}%
+\contentsline {equation}{\numberline {6.2}Clarifier-feed flow after mixed-liquor recycle withdrawal}{145}{equation.6.2}%
+\contentsline {equation}{\numberline {6.3}Clarifier underflow split into return sludge and waste sludge}{145}{equation.6.3}%
+\contentsline {equation}{\numberline {6.4}Effluent flow after waste withdrawal}{145}{equation.6.4}%
+\contentsline {equation}{\numberline {6.5}Plant flow ratios relative to fresh-influent flow}{145}{equation.6.5}%
+\contentsline {equation}{\numberline {6.6}Scalar mixer equation for one component}{145}{equation.6.6}%
+\contentsline {equation}{\numberline {6.7}Mixer concentration as a flow-weighted component average}{145}{equation.6.7}%
+\contentsline {equation}{\numberline {6.8}Illustrative two-component mixer matrix equation}{146}{equation.6.8}%
+\contentsline {equation}{\numberline {6.9}Vector mixer equation for the complete component state}{146}{equation.6.9}%
+\contentsline {equation}{\numberline {6.10}Illustrative component inventory entering the mixer}{146}{equation.6.10}%
+\contentsline {equation}{\numberline {6.11}Illustrative mixer concentration after flow normalization}{146}{equation.6.11}%
+\contentsline {equation}{\numberline {6.12}Stage retention times and recycle-adjusted dilution rates}{146}{equation.6.12}%
+\contentsline {equation}{\numberline {6.13}Dynamic reactor-stage equation for one component}{147}{equation.6.13}%
+\contentsline {equation}{\numberline {6.14}Steady-state reactor-stage equation for one component}{147}{equation.6.14}%
+\contentsline {equation}{\numberline {6.15}Vector reactor-stage equation with aeration and external additions}{147}{equation.6.15}%
+\contentsline {equation}{\numberline {6.16}Illustrative stoichiometric matrix and normalized invariant row}{148}{equation.6.16}%
+\contentsline {equation}{\numberline {6.17}Illustrative cancellation of the reaction contribution to an invariant}{148}{equation.6.17}%
+\contentsline {equation}{\numberline {6.18}Illustrative steady-state equation for the consumed component}{148}{equation.6.18}%
+\contentsline {equation}{\numberline {6.19}Illustrative steady-state equation for the produced component}{148}{equation.6.19}%
+\contentsline {equation}{\numberline {6.20}Reaction, oxygen-forcing, and rank identities of the plant invariant operator}{148}{equation.6.20}%
+\contentsline {equation}{\numberline {6.21}Scalar cancellation of reaction rates in an invariant equation}{148}{equation.6.21}%
+\contentsline {equation}{\numberline {6.22}Scalar reactor-stage invariant equation with external additions}{148}{equation.6.22}%
+\contentsline {equation}{\numberline {6.23}Invariant inventory change across one reactor stage}{148}{equation.6.23}%
+\contentsline {equation}{\numberline {6.24}Accumulated invariant change across the reactor train}{149}{equation.6.24}%
+\contentsline {equation}{\numberline {6.25}Reactor-train invariant equation and external-addition total}{149}{equation.6.25}%
+\contentsline {equation}{\numberline {6.26}Reactor-train invariant equation after mixer substitution}{149}{equation.6.26}%
+\contentsline {equation}{\numberline {6.27}Invariant equation after cancellation of mixed-liquor recycle}{149}{equation.6.27}%
+\contentsline {equation}{\numberline {6.28}Clarifier-feed invariant flow equals the two outlet invariant flows}{149}{equation.6.28}%
+\contentsline {equation}{\numberline {6.29}External plant mass conservation after internal recycle cancellation}{149}{equation.6.29}%
+\contentsline {equation}{\numberline {6.30}Alkalinity-related invariant combination}{150}{equation.6.30}%
+\contentsline {equation}{\numberline {6.31}Metal-related invariant combination}{150}{equation.6.31}%
+\contentsline {equation}{\numberline {6.32}Illustrative soluble and particulate component selectors}{150}{equation.6.32}%
+\contentsline {equation}{\numberline {6.33}Illustrative coordinate projectors from the component selectors}{150}{equation.6.33}%
+\contentsline {equation}{\numberline {6.34}Completeness and orthogonality identities of the component selectors}{150}{equation.6.34}%
+\contentsline {equation}{\numberline {6.35}Scalar mass conservation across the clarifier}{151}{equation.6.35}%
+\contentsline {equation}{\numberline {6.36}Flow-weighted clarifier outlet component responses}{151}{equation.6.36}%
+\contentsline {equation}{\numberline {6.37}Joint clarifier component and soluble-transport equalities}{151}{equation.6.37}%
+\contentsline {equation}{\numberline {6.38}Flow-weighted soluble component in the overflow}{151}{equation.6.38}%
+\contentsline {equation}{\numberline {6.39}Equality of overflow and feed soluble concentrations}{151}{equation.6.39}%
+\contentsline {equation}{\numberline {6.40}Particulate densification requirement for the underflow}{151}{equation.6.40}%
+\contentsline {equation}{\numberline {6.41}Bounds on the fraction of feed particulate material recovered in underflow}{152}{equation.6.41}%
+\contentsline {equation}{\numberline {6.42}Overflow solids bound implied by particulate densification}{152}{equation.6.42}%
+\contentsline {equation}{\numberline {6.43}Feed, overflow, and underflow suspended-solids concentrations}{152}{equation.6.43}%
+\contentsline {equation}{\numberline {6.44}Bounded double-exponential settling velocity}{152}{equation.6.44}%
+\contentsline {equation}{\numberline {6.45}Illustrative solids equation for the upper clarifier layer}{153}{equation.6.45}%
+\contentsline {equation}{\numberline {6.46}Illustrative solids equation for the clarifier feed layer}{153}{equation.6.46}%
+\contentsline {equation}{\numberline {6.47}Illustrative solids equation for the lower clarifier layer}{153}{equation.6.47}%
+\contentsline {equation}{\numberline {6.48}Particulate outlet reconstruction from endpoint solids concentrations}{153}{equation.6.48}%
+\contentsline {equation}{\numberline {6.49}Illustrative four-layer clarifier solids inventory}{153}{equation.6.49}%
+\contentsline {equation}{\numberline {6.50}General clarifier solids inventory and total volume}{153}{equation.6.50}%
+\contentsline {equation}{\numberline {6.51}Interior-layer solids envelope between the outlet concentrations}{153}{equation.6.51}%
+\contentsline {equation}{\numberline {6.52}Lower inventory bound for two illustrative interior layers}{154}{equation.6.52}%
+\contentsline {equation}{\numberline {6.53}Upper inventory bound for two illustrative interior layers}{154}{equation.6.53}%
+\contentsline {equation}{\numberline {6.54}Lower total-inventory bound for an illustrative four-layer clarifier}{154}{equation.6.54}%
+\contentsline {equation}{\numberline {6.55}Upper total-inventory bound for an illustrative four-layer clarifier}{154}{equation.6.55}%
+\contentsline {equation}{\numberline {6.56}Lower clarifier-inventory bound from endpoint concentrations}{155}{equation.6.56}%
+\contentsline {equation}{\numberline {6.57}Upper clarifier-inventory bound from endpoint concentrations}{155}{equation.6.57}%
+\contentsline {equation}{\numberline {6.58}Admissible interval for the clarifier solids inventory}{155}{equation.6.58}%
+\contentsline {equation}{\numberline {6.59}Inventory represented by a common interior-layer concentration}{155}{equation.6.59}%
+\contentsline {equation}{\numberline {6.60}Solids inventory of the illustrative ten-layer clarifier}{155}{equation.6.60}%
+\contentsline {equation}{\numberline {6.61}Lower inventory bound for the illustrative ten-layer clarifier}{155}{equation.6.61}%
+\contentsline {equation}{\numberline {6.62}Upper inventory bound for the illustrative ten-layer clarifier}{155}{equation.6.62}%
+\contentsline {equation}{\numberline {6.63}Illustrative joint response of a one-stage, two-component plant}{155}{equation.6.63}%
+\contentsline {equation}{\numberline {6.64}Complete joint plant-response vector and its dimension}{156}{equation.6.64}%
+\contentsline {equation}{\numberline {6.65}Mechanistic reactor-and-clarifier state vector and its dimension}{156}{equation.6.65}%
+\contentsline {equation}{\numberline {6.66}Illustrative standardization of a control and an influent concentration}{156}{equation.6.66}%
+\contentsline {equation}{\numberline {6.67}Standardized plant input vector and its dimension}{157}{equation.6.67}%
+\contentsline {equation}{\numberline {6.68}Illustrative quadratic product matrix of two standardized inputs}{157}{equation.6.68}%
+\contentsline {equation}{\numberline {6.69}Illustrative unique-monomial second-order feature vector}{157}{equation.6.69}%
+\contentsline {equation}{\numberline {6.70}Linear and unique-quadratic feature coordinates}{157}{equation.6.70}%
+\contentsline {equation}{\numberline {6.71}Centered and scaled plant regression feature vector}{157}{equation.6.71}%
+\contentsline {equation}{\numberline {6.72}Dimension of the unique-monomial plant feature vector}{157}{equation.6.72}%
+\contentsline {equation}{\numberline {6.73}Scalar expansion of the multiresponse ridge objective}{158}{equation.6.73}%
+\contentsline {equation}{\numberline {6.74}Matrix form of the multiresponse ridge fitting problem}{158}{equation.6.74}%
+\contentsline {equation}{\numberline {6.75}Raw joint plant prediction on the physical response scale}{158}{equation.6.75}%
+\contentsline {equation}{\numberline {6.76}Normal equations for one ridge response coordinate}{158}{equation.6.76}%
+\contentsline {equation}{\numberline {6.77}Dimensionless logarithmic overflow-solids target}{159}{equation.6.77}%
+\contentsline {equation}{\numberline {6.78}Ridge fitting problem for the logarithmic overflow model}{159}{equation.6.78}%
+\contentsline {equation}{\numberline {6.79}Positive overflow-solids prediction from logarithmic back-transformation}{159}{equation.6.79}%
+\contentsline {equation}{\numberline {6.80}Illustrative logarithmic average and geometric concentration mean}{159}{equation.6.80}%
+\contentsline {equation}{\numberline {6.81}Illustrative mixer equality for the soluble component}{160}{equation.6.81}%
+\contentsline {equation}{\numberline {6.82}Illustrative mixer equality for the particulate component}{160}{equation.6.82}%
+\contentsline {equation}{\numberline {6.83}Illustrative reactor mass conservation equality}{160}{equation.6.83}%
+\contentsline {equation}{\numberline {6.84}Illustrative clarifier equality for the soluble component}{160}{equation.6.84}%
+\contentsline {equation}{\numberline {6.85}Illustrative clarifier equality for the particulate component}{160}{equation.6.85}%
+\contentsline {equation}{\numberline {6.86}Illustrative soluble underflow transport equality}{160}{equation.6.86}%
+\contentsline {equation}{\numberline {6.87}Illustrative empirical overflow-solids equality}{160}{equation.6.87}%
+\contentsline {equation}{\numberline {6.88}Matrix form of the illustrative plant projection equalities}{161}{equation.6.88}%
+\contentsline {equation}{\numberline {6.89}Illustrative joint response satisfying the plant projection equalities}{161}{equation.6.89}%
+\contentsline {equation}{\numberline {6.90}Joint mixer, reactor-invariant, and clarifier projection equalities}{161}{equation.6.90}%
+\contentsline {equation}{\numberline {6.91}Empirical overflow-solids closure equality}{161}{equation.6.91}%
+\contentsline {equation}{\numberline {6.92}Illustrative lower inventory bound in outlet-flow coordinates}{161}{equation.6.92}%
+\contentsline {equation}{\numberline {6.93}Illustrative upper inventory bound in outlet-flow coordinates}{161}{equation.6.93}%
+\contentsline {equation}{\numberline {6.94}Matrix form of illustrative densification and inventory inequalities}{162}{equation.6.94}%
+\contentsline {equation}{\numberline {6.95}General densification and clarifier-inventory projection inequalities}{162}{equation.6.95}%
+\contentsline {equation}{\numberline {6.96}Standardized projection displacement of one response coordinate}{162}{equation.6.96}%
+\contentsline {equation}{\numberline {6.97}Scaled mixer equation before the return-sludge term}{162}{equation.6.97}%
+\contentsline {equation}{\numberline {6.98}Return-sludge term and target of the scaled mixer equation}{162}{equation.6.98}%
+\contentsline {equation}{\numberline {6.99}Minimum-distance objective for joint plant projection}{163}{equation.6.99}%
+\contentsline {equation}{\numberline {6.100}Reconstruction of the projected physical plant response}{163}{equation.6.100}%
+\contentsline {equation}{\numberline {6.101}Illustrative weighted projection with mass conservation and non-negativity}{165}{equation.6.101}%
+\contentsline {equation}{\numberline {6.102}Illustrative projection stationarity for the first component}{165}{equation.6.102}%
+\contentsline {equation}{\numberline {6.103}Illustrative projection stationarity for the second component}{165}{equation.6.103}%
+\contentsline {equation}{\numberline {6.104}Illustrative projection equality for the component total}{165}{equation.6.104}%
+\contentsline {equation}{\numberline {6.105}Standardized matrices of the illustrative two-component projection}{165}{equation.6.105}%
+\contentsline {equation}{\numberline {6.106}Standardized quadratic projection with equalities and inequalities}{165}{equation.6.106}%
+\contentsline {equation}{\numberline {6.107}Stationarity condition for the plant quadratic projection}{165}{equation.6.107}%
+\contentsline {equation}{\numberline {6.108}Complementarity condition for the projection inequality multipliers}{165}{equation.6.108}%
+\contentsline {equation}{\numberline {6.109}Completed-square expansion of the projection Lagrangian}{166}{equation.6.109}%
+\contentsline {equation}{\numberline {6.110}Target terms in the completed-square projection Lagrangian}{166}{equation.6.110}%
+\contentsline {equation}{\numberline {6.111}Dual objective of the standardized quadratic projection}{166}{equation.6.111}%
+\contentsline {equation}{\numberline {6.112}Primal-dual gap and its non-negative decomposition}{166}{equation.6.112}%
+\contentsline {equation}{\numberline {6.113}Illustrative cancellation of the stationarity residual}{166}{equation.6.113}%
+\contentsline {equation}{\numberline {6.114}Illustrative inequality slack vector}{166}{equation.6.114}%
+\contentsline {equation}{\numberline {6.115}Illustrative value of the primal projection objective}{166}{equation.6.115}%
+\contentsline {equation}{\numberline {6.116}Illustrative value of the dual projection objective}{166}{equation.6.116}%
+\contentsline {equation}{\numberline {6.117}Weighted response norm from coordinate scales}{166}{equation.6.117}%
+\contentsline {equation}{\numberline {6.118}Variational inequality characterizing a Euclidean projection}{167}{equation.6.118}%
+\contentsline {equation}{\numberline {6.119}Coordinatewise squared-error decomposition}{167}{equation.6.119}%
+\contentsline {equation}{\numberline {6.120}Cross term in the coordinatewise squared-error decomposition}{167}{equation.6.120}%
+\contentsline {equation}{\numberline {6.121}Squared-error bound for a feasible reference}{167}{equation.6.121}%
+\contentsline {equation}{\numberline {6.122}Weighted error reduction bound when the reference is projection-feasible}{167}{equation.6.122}%
+\contentsline {equation}{\numberline {6.123}Distance from the reference state to the projection set}{167}{equation.6.123}%
+\contentsline {equation}{\numberline {6.124}Cross-term decomposition using a projected reference}{167}{equation.6.124}%
+\contentsline {equation}{\numberline {6.125}Reference-infeasibility term in the cross-term decomposition}{167}{equation.6.125}%
+\contentsline {equation}{\numberline {6.126}Product of projection displacement and reference infeasibility}{168}{equation.6.126}%
+\contentsline {equation}{\numberline {6.127}Squared-error bound including reference infeasibility}{168}{equation.6.127}%
+\contentsline {equation}{\numberline {6.128}Upper error bound using squared reference infeasibility}{168}{equation.6.128}%
+\contentsline {equation}{\numberline {6.129}Distance bound when the reference is not projection-feasible}{168}{equation.6.129}%
+\contentsline {equation}{\numberline {6.130}Scalar equality-constrained projection with a varying parameter}{168}{equation.6.130}%
+\contentsline {equation}{\numberline {6.131}Optimality system for the scalar parametric projection}{169}{equation.6.131}%
+\contentsline {equation}{\numberline {6.132}Derivative system for the scalar parametric projection}{169}{equation.6.132}%
+\contentsline {equation}{\numberline {6.133}Numerical example of the parametric projection derivative}{169}{equation.6.133}%
+\contentsline {equation}{\numberline {6.134}Linear system for a fixed active set of projection constraints}{169}{equation.6.134}%
+\contentsline {equation}{\numberline {6.135}Differentiated stationarity for a control-dependent active set}{169}{equation.6.135}%
+\contentsline {equation}{\numberline {6.136}Differentiated feasibility for a control-dependent active set}{169}{equation.6.136}%
+\contentsline {equation}{\numberline {6.137}Joint sensitivity system for a control-dependent active set}{169}{equation.6.137}%
+\contentsline {equation}{\numberline {6.138}Derivative of the control-dependent overflow-solids target}{169}{equation.6.138}%
+\contentsline {equation}{\numberline {6.139}Effluent component-to-water-quality map}{170}{equation.6.139}%
+\contentsline {equation}{\numberline {6.140}Scalar expansion of the weighted effluent-quality objective}{170}{equation.6.140}%
+\contentsline {equation}{\numberline {6.141}Vector form of the weighted effluent-quality objective}{170}{equation.6.141}%
+\contentsline {equation}{\numberline {6.142}Normalized retention-time and aeration objective terms}{171}{equation.6.142}%
+\contentsline {equation}{\numberline {6.143}Normalized mixed-liquor and return-sludge recycle objective terms}{171}{equation.6.143}%
+\contentsline {equation}{\numberline {6.144}Normalized waste-solids objective term}{171}{equation.6.144}%
+\contentsline {equation}{\numberline {6.145}Scalar expansion of the six-term engineering objective}{171}{equation.6.145}%
+\contentsline {equation}{\numberline {6.146}Vector engineering objective and normalized priority weights}{171}{equation.6.146}%
+\contentsline {equation}{\numberline {6.147}Aeration objective for the illustrative equal-volume reactor train}{171}{equation.6.147}%
+\contentsline {equation}{\numberline {6.148}Declared engineering and effluent-quality priority vectors}{171}{equation.6.148}%
+\contentsline {equation}{\numberline {6.149}External solids loss through effluent and waste sludge}{172}{equation.6.149}%
+\contentsline {equation}{\numberline {6.150}Plant solids retention time from inventory and external loss}{172}{equation.6.150}%
+\contentsline {equation}{\numberline {6.151}Illustrative effluent solids-loss calculation}{173}{equation.6.151}%
+\contentsline {equation}{\numberline {6.152}Illustrative waste-sludge solids-loss calculation}{173}{equation.6.152}%
+\contentsline {equation}{\numberline {6.153}Clarifier surface and solids loading measures}{173}{equation.6.153}%
+\contentsline {equation}{\numberline {6.154}Underflow, feed-solids, and external-loss safeguards}{173}{equation.6.154}%
+\contentsline {equation}{\numberline {6.155}Illustrative regularized feature Gram matrix}{174}{equation.6.155}%
+\contentsline {equation}{\numberline {6.156}Root-mean-square standardized projection displacement diagnostic}{175}{equation.6.156}%
+\contentsline {equation}{\numberline {6.157}Ridge feature-leverage diagnostic}{175}{equation.6.157}%
+\contentsline {equation}{\numberline {6.158}Particulate split-consistency diagnostic}{175}{equation.6.158}%
+\contentsline {equation}{\numberline {6.159}Scaled reactor-equation residual diagnostic}{175}{equation.6.159}%
+\contentsline {equation}{\numberline {6.160}Term-based scale for an independently checked residual}{175}{equation.6.160}%
+\contentsline {equation}{\numberline {6.161}Surrogate-assisted plant operating optimization problem}{176}{equation.6.161}%
+\contentsline {equation}{\numberline {6.162}McCormick inequalities for a bounded bilinear product}{176}{equation.6.162}%
+\contentsline {equation}{\numberline {6.163}Illustrative direct reactor equation for the consumed component}{177}{equation.6.163}%
+\contentsline {equation}{\numberline {6.164}Illustrative direct reactor equation for the produced component}{177}{equation.6.164}%
+\contentsline {equation}{\numberline {6.165}Interior-layer envelope residuals for direct optimization}{177}{equation.6.165}%
+\contentsline {equation}{\numberline {6.166}Direct mechanistic plant operating optimization problem}{178}{equation.6.166}%
+\contentsline {equation}{\numberline {6.167}Exact maximum and minimum expressed through absolute values}{178}{equation.6.167}%
+\contentsline {equation}{\numberline {6.168}Smooth approximation of a maximum}{178}{equation.6.168}%
+\contentsline {equation}{\numberline {6.169}Smooth approximation of a minimum}{178}{equation.6.169}%
+\contentsline {equation}{\numberline {6.170}Smooth approximation of the positive-part function}{178}{equation.6.170}%
+\contentsline {equation}{\numberline {6.171}Regularized smooth approximation of a quotient}{178}{equation.6.171}%
+\contentsline {equation}{\numberline {6.172}Rationalization of the smoothed positive-part expression}{179}{equation.6.172}%
+\contentsline {equation}{\numberline {6.173}Cancellation-resistant form of the smoothed positive part}{179}{equation.6.173}%
+\contentsline {equation}{\numberline {6.174}Quintic receiver switch and its transition coordinate}{179}{equation.6.174}%
+\contentsline {equation}{\numberline {6.175}Smoothing and receiver-width continuation sequence}{179}{equation.6.175}%
+\contentsline {equation}{\numberline {6.176}Illustrative recycle-dependent soluble mixer concentration}{180}{equation.6.176}%
+\contentsline {equation}{\numberline {6.177}Illustrative two-stage reactor Jacobian with recycle coupling}{180}{equation.6.177}%
+\contentsline {equation}{\numberline {6.178}Central finite-difference approximation of a Jacobian entry}{180}{equation.6.178}%
+\contentsline {equation}{\numberline {6.179}Second-order forward finite-difference approximation of a Jacobian entry}{180}{equation.6.179}%
+\contentsline {equation}{\numberline {6.180}Tridiagonal sparsity pattern of the clarifier-layer Jacobian}{180}{equation.6.180}%
+\contentsline {equation}{\numberline {6.181}Seven freely varied controls of the connected-plant case}{181}{equation.6.181}%
+\contentsline {equation}{\numberline {6.182}Conversion of a uniform integer to open-unit jitter}{187}{equation.6.182}%
+\contentsline {equation}{\numberline {6.183}Ten-layer initial solids-profile multipliers}{187}{equation.6.183}%
+\contentsline {equation}{\numberline {6.184}Waste-dependent horizon for dynamic relaxation}{188}{equation.6.184}%
+\contentsline {equation}{\numberline {6.185}Scaled component-equation acceptance residual}{189}{equation.6.185}%
+\contentsline {equation}{\numberline {6.186}Coordinatewise root error, absolute error, and bias}{192}{equation.6.186}%
+\contentsline {equation}{\numberline {6.187}Coefficient of determination for a plant-response coordinate}{192}{equation.6.187}%
+\contentsline {equation}{\numberline {6.188}Holdout-range normalization of a location-quality error}{193}{equation.6.188}%
+\contentsline {equation}{\numberline {6.189}Operating-control normalization to the unit interval}{194}{equation.6.189}%
+\contentsline {equation}{\numberline {6.190}Common center and displaced starts for the multistart comparison}{194}{equation.6.190}%
+\contentsline {equation}{\numberline {6.191}Route-specific water-quality objective scales}{200}{equation.6.191}%
+\contentsline {equation}{\numberline {6.192}Difference between route-native and reference-model objectives}{201}{equation.6.192}%
+\contentsline {equation}{\numberline {6.193}Reference-model objective difference between optimization routes}{201}{equation.6.193}%
+\contentsline {equation}{\numberline {6.194}Normalized operating-control differences and their summaries}{201}{equation.6.194}%
+\contentsline {equation}{\numberline {6.195}Percentage removal of a reported water-quality quantity}{202}{equation.6.195}%

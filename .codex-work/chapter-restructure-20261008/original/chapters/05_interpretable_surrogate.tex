@@ -1,21 +1,19 @@
 \chapter{Interpretable Regression with Checked Physical Predictions}
 \label{ch:interpretable}
 
-\section{Rationale}
+\section{An inspectable model of component transformations}
 
 A component prediction is useful for engineering analysis when its dependence on the inputs can be examined and its material accounting can be checked. These requirements address different questions. A transparent regression equation explains how the predicted state depends on operating conditions and influent loads. A mass conservation test determines whether that state preserves the inventories represented by the reaction network. A non-negativity test determines whether each predicted concentration is physically meaningful. An explicit equation can fail either physical test. A physically projected prediction can also remain difficult to interpret if the underlying regression is opaque.
 
-Invariant-constrained second-order regression (ICSOR) combines an explicit polynomial driver, learned dependence among effluent components, and checked prediction. A polynomial driver is the fitted expression containing inputs, squares, and pairwise products before component coupling is applied. In this chapter, deployment means evaluating the fitted model at a new influent and operating setting and returning a physically checked component state. The driver retains separate terms for operating conditions, influent composition, curvature, and interactions. The coupling relation expresses how the driver contributes to the predicted component state. Deployment then checks that state and applies a constrained projection when necessary. Together, these stages provide an inspectable regression and a checked effluent state.
+Invariant-constrained second-order regression (ICSOR) combines an explicit polynomial driver, learned dependence among effluent components, and checked prediction. A polynomial driver is the fitted expression containing inputs, squares, and pairwise products before component coupling is applied. In this chapter, deployment means evaluating the fitted model at a new influent and operating setting and returning a physically checked component state. The driver retains separate terms for operating conditions, influent composition, curvature, and interactions. The coupling relation expresses how the driver contributes to the predicted component state. Deployment then checks that state and applies a constrained projection when necessary. The interpretation of the regression and the guarantee provided by deployment therefore remain distinct.
 
-The preference for an inspectable regression follows the argument of \citet{Rudin2019} that transparent model structures can support decisions that require scrutiny. It also follows the broader development of models that combine learned relations with physical structure discussed by \citet{Shen2023}. The fitted relations are available for examination, comparison with process knowledge, and testing across operating conditions.
+The preference for an inspectable regression follows the argument of \citet{Rudin2019} that transparent model structures can support decisions that require scrutiny. It also follows the broader development of models that combine learned relations with physical structure discussed by \citet{Shen2023}. Transparency does not establish that a fitted coefficient is a biological mechanism. It makes the relation available for examination, comparison with process knowledge, and testing across operating conditions.
 
 Activated sludge nutrient removal provides a strong reason to retain interactions. Carbon availability influences denitrification and the activity of organisms that store phosphorus. Oxygen availability influences both carbon oxidation and nitrification. \citet{Wentzel1992} describe these connected pathways, and \citet{Guerrero2011} examine the role of carbon source in the competition between phosphorus-storing organisms and denitrifiers. A regression that represents an aeration effect independently of loading can overlook such dependencies. An interaction term can describe an association between an operating action and a loading condition while keeping that association visible.
 
 The prediction target is the effluent component vector \(c_{out}\in\mathbb{R}^{F}\). The adopted process basis has \(F=20\) components and \(P=28\) reactions. The operating vector \(u\in\mathbb{R}^{M_{op}}\) has \(M_{op}=2\) entries for HRT and aeration level. The full influent vector is \(c_{in}\in\mathbb{R}^{F}\). Component concentrations retain their physical units. The four reported composites are obtained from a fixed map \(I_{\mathrm{comp}}\in\mathbb{R}^{4\times F}\). That map is applied after component prediction.
 
-\section{Theory}
-
-\subsection{Mass conservation in the adopted state space}
+\section{Mass conservation in the adopted state space}
 
 The link between a component balance and a regression constraint can first be seen in a hypothetical conversion of one component into another. Suppose that one unit of component 1 is converted into one unit of component 2. The two components are expressed in a common inventory unit for this illustration. Their changes satisfy
 \begin{equation}
@@ -25,7 +23,7 @@ c_{out,1}-c_{in,1}=-\xi,
 \qquad
 c_{out,2}-c_{in,2}=\xi.
 \end{equation}
-Adding these equations eliminates the unknown conversion amount. The relation available to the regression is \(c_{out,1}+c_{out,2}=c_{in,1}+c_{in,2}\). With an illustrative influent \((6,4)^\top\) and conversion amount 2, the effluent is \((4,6)^\top\). Both totals are 10. Many other non-negative pairs also have that total. The balance defines a set of regression outputs with the same total inventory.
+Adding these equations eliminates the unknown conversion amount. The relation available to the regression is \(c_{out,1}+c_{out,2}=c_{in,1}+c_{in,2}\). With an illustrative influent \((6,4)^\top\) and conversion amount 2, the effluent is \((4,6)^\top\). Both totals are 10. Many other non-negative pairs also have that total. The balance therefore limits the possible regression output without identifying the particular state produced by the kinetics.
 
 The same calculation can be written using the small matrices
 \begin{equation}
@@ -37,7 +35,7 @@ A=\begin{bmatrix}1&1\end{bmatrix},
 \qquad
 A\nu^\top=1(-1)+1(1)=0.
 \end{equation}
-These hypothetical matrices use reduced dimensions to make each operation visible. The adopted reactor uses the stated 20-component basis, reaction matrix, and operating domain.
+These matrices describe the reduced illustration, rather than the 20-component process. All numerical teaching examples use hypothetical coefficients and states. Their dimensions are reduced to make each operation visible, and they report no process observations. The adopted reactor retains its stated component basis, reaction matrix, and operating domain.
 
 The stoichiometric matrix \(\nu\in\mathbb{R}^{P\times F}\) records reactions as rows and components as columns. Let \(V_0\in\mathbb{R}^{F\times K}\) span its right null space, where \(K=5\). The invariant operator is
 \begin{equation}
@@ -64,7 +62,7 @@ A(c_{out}-c_{in})=0.
 \end{equation}
 This construction uses the mass conservation logic of the photochemical surrogate framework of \citet{SturmWexler2020}. \citet{SturmWexler2022} further show how a stoichiometric transformation can connect learned reaction information to state changes satisfying mass conservation. The same linear algebra applies here, but the component combinations used for mass conservation are those of the activated sludge reaction network.
 
-Equation~\eqref{eq:icsor_invariant_balance} uses the modeled boundary in Equation~\eqref{eq:icsor_stoichiometric_change}. External gas transfer, chemical dosing, solids withdrawal, and other boundary fluxes enter the balance where they occur. With an explicit boundary contribution \(s\), the relation is \(A(c_{out}-c_{in}-s)=0\).
+The equality in Equation~\eqref{eq:icsor_invariant_balance} applies only when the modeled boundary supports the change relation in Equation~\eqref{eq:icsor_stoichiometric_change}. External gas transfer, chemical dosing, solids withdrawal, or another boundary flux must be included in the balance where it occurs. If an explicit boundary contribution \(s\) is present, the relevant relation becomes \(A(c_{out}-c_{in}-s)=0\). Using \(Ac_{out}=Ac_{in}\) while omitting a boundary contribution would impose the wrong constraint. The invariant operator does not make an incomplete material balance correct.
 
 For a new influent state, the component set used by checked deployment is
 \begin{equation}
@@ -73,17 +71,17 @@ For a new influent state, the component set used by checked deployment is
 \mathcal{F}(c_{in})=
 \left\{c\in\mathbb{R}^{F}\mid Ac=Ac_{in},\ c\geq\mathbf{0}\right\}.
 \end{equation}
-When \(c_{in}\geq\mathbf{0}\), this set contains \(c_{in}\) and is therefore nonempty. Its members satisfy the modeled linear invariants and component non-negativity within the declared boundary.
+When \(c_{in}\geq\mathbf{0}\), this set contains \(c_{in}\) and is therefore nonempty. Its members satisfy the modeled linear invariants and component non-negativity. Membership does not show that a state solves the nonlinear kinetic equations, is dynamically stable, or is reachable at the stated operating point. The set gives necessary physical conditions within the declared boundary.
 
 The reported composites provide another reason to work in component space. Distinct component states can have the same COD, TN, TP, and TSS values. A negative component can also be hidden by positive contributions to an aggregate. When \(I_{\mathrm{comp}}\) is entrywise non-negative, a non-negative component state produces non-negative composites. The reverse implication does not generally hold. Mass conservation and non-negativity are therefore tested before the component state is collapsed into the four reported quantities.
 
-\subsection{A partitioned second-order driver}
+\section{A partitioned second-order driver}
 
-\subsubsection{Separating operation from loading}
+\subsection{Separating operation from loading}
 
 Operating conditions and influent composition play different engineering roles. HRT and aeration define aspects of the reactor environment. Influent components define the material presented to that environment. This distinction is consistent with the operating-sensitivity analysis of \citet{Araujo2013} and the separation of operational and influent uncertainty examined by \citet{Machado2014}.
 
-Start with two hypothetical operating entries \(u_1,u_2\) and two influent entries \(c_1,c_2\). A second-order model uses the individual entries, their squares, and their pairwise products. The operating products are \(u_1^2,u_1u_2,u_2u_1,u_2^2\). The feature vector keeps both orders as an accounting convention, with \(u_1u_2=u_2u_1\).
+Start with two hypothetical operating entries \(u_1,u_2\) and two influent entries \(c_1,c_2\). A second-order model uses the individual entries, their squares, and their pairwise products. The operating products are \(u_1^2,u_1u_2,u_2u_1,u_2^2\). Keeping both orders is an accounting convention for the feature vector. It does not make \(u_1u_2\) different from \(u_2u_1\).
 
 For two column vectors, the Kronecker operation multiplies the entire second vector by the first entry of the first vector, then by its second entry. Thus
 \begin{equation}
@@ -124,7 +122,7 @@ r_1={}&1+\begin{bmatrix}2&-1\end{bmatrix}\begin{bmatrix}2\\3\end{bmatrix}
 ={}&1+1+2+1.6-1.25+3=7.35.
 \end{aligned}
 \end{equation}
-Each row-vector multiplication is a sum of coefficient times feature. It is the same operation as an ordinary linear regression, but the supplied features include nonlinear products. A second hypothetical driver \(r_2=-u_1+u_2+0.2c_2\) would equal 2 at the same inputs. The coupled relation converts the two driver values into predicted concentrations.
+Each row-vector multiplication is a sum of coefficient times feature. It is the same operation as an ordinary linear regression, but the supplied features include nonlinear products. A second hypothetical driver \(r_2=-u_1+u_2+0.2c_2\) would equal 2 at the same inputs. The two driver values need not be predicted concentrations until the coupled relation is solved.
 
 Before grouping the coefficients into matrices, the first driver in this illustration can be written as
 \begin{equation}
@@ -140,7 +138,7 @@ The coefficient 0.2 of \(u_1u_2\) is the sum of the two ordered coefficients 0.1
 r(u,c_{in})=B\phi(u,c_{in}),
 \qquad B\in\mathbb{R}^{F\times D}.
 \end{equation}
-The driver is an intermediate regression quantity supplied to the coupled prediction relation. Its coefficients have no sign restriction, so the regression can represent both increasing and decreasing effects. Non-negativity is imposed on component states where it has a physical meaning. The driver block form is
+The driver is an intermediate regression quantity. It is not a vector of mechanistic reaction rates and is not the final deployed state. Its coefficients have no sign restriction, so the regression can represent both increasing and decreasing effects. Non-negativity is imposed on component states where it has a physical meaning. The driver block form is
 \begin{equation}
 \equationname{Driver decomposition into operating, influent, and interaction blocks}
 \label{eq:icsor_driver_blocks}
@@ -153,7 +151,7 @@ r(u,c_{in})={}&b+W_u u+W_{in}c_{in}
 \end{equation}
 Here \(b\in\mathbb{R}^{F}\) is a baseline term. The matrices \(W_u\in\mathbb{R}^{F\times M_{op}}\) and \(W_{in}\in\mathbb{R}^{F\times F}\) contain first-order operating and influent terms. The matrices \(\Theta_{uu}\in\mathbb{R}^{F\times M_{op}^{2}}\) and \(\Theta_{cc}\in\mathbb{R}^{F\times F^{2}}\) contain curvature within each input group. The matrix \(\Theta_{uc}\in\mathbb{R}^{F\times M_{op}F}\) contains operating-load interactions.
 
-\subsubsection{Illustrative operating and loading effects}
+\subsection{Illustrative operating and loading effects}
 
 Consider an illustrative driver for one component with aeration level \(a\) and influent ammonium concentration \(n\). A term of the form
 \begin{equation}
@@ -161,13 +159,13 @@ Consider an illustrative driver for one component with aeration level \(a\) and 
 \label{eq:icsor_example_driver}
 r_f=\beta_0+\beta_a a+\beta_n n+\beta_{aa}a^2+\beta_{an}an
 \end{equation}
-has an aeration derivative \(\partial r_f/\partial a=\beta_a+2\beta_{aa}a+\beta_{an}n\). The effect described by this derivative changes with both aeration level and ammonium loading. The derivative of this hypothetical polynomial combines the linear aeration term, curvature, and the aeration-ammonium interaction.
+has an aeration derivative \(\partial r_f/\partial a=\beta_a+2\beta_{aa}a+\beta_{an}n\). The effect described by this derivative changes with both aeration level and ammonium loading. This example uses a hypothetical polynomial and reports no fitted relation. It explains why a single linear aeration coefficient cannot summarize the response represented by the entire polynomial.
 
-The same reasoning applies to simultaneous influent loads. A carbon-ammonium interaction allows the modeled association with carbon availability to depend on nitrogen loading. A phosphorus-storage interaction allows the modeled association with dissolved phosphate to depend on a particulate storage pool. These terms provide a transparent approximation to a nonlinear response involving the microbial pathways described by \citet{Henze1999}.
+The same reasoning applies to simultaneous influent loads. A carbon-ammonium interaction allows the modeled association with carbon availability to depend on nitrogen loading. A phosphorus-storage interaction allows the modeled association with dissolved phosphate to depend on a particulate storage pool. These terms provide a transparent approximation to a nonlinear response. They do not replace the microbial pathways described by \citet{Henze1999}, and their signs do not establish causation.
 
-The second-order library represents smooth local curvature and pairwise input interactions. Explicit nonlinear libraries make candidate response structures available for inspection, as illustrated by \citet{Brunton2016}.
+The choice of a second-order library limits the model deliberately. It can represent smooth local curvature and pairwise input interactions. It cannot reproduce every threshold, saturation relation, or higher-order interaction exactly. Explicit nonlinear libraries are useful for inspecting candidate structure, as illustrated by \citet{Brunton2016}. Their usefulness depends on the sampling domain, the adequacy of the library, and the stability of the fitted terms.
 
-\subsubsection{Symmetry and the meaning of cross terms}
+\subsection{Symmetry and the meaning of cross terms}
 
 For a two-entry vector, direct multiplication gives
 \begin{equation}
@@ -208,9 +206,9 @@ Replacing each square slice by its symmetric part preserves every fitted value a
 
 Symmetry also determines how a coefficient display is read. If \(q_{ij}=q_{ji}\), the two displayed off-diagonal cells together contribute \(2q_{ij}x_i x_j\). A displayed cell is therefore half the coefficient of the corresponding unordered cross term. For an illustrative matrix with \(q_{12}=q_{21}=0.3\), the polynomial contribution is \(0.6x_1x_2\). Reading either cell as the entire interaction coefficient would halve its contribution.
 
-Each component has \(M_{op}(M_{op}+1)/2=3\) distinct operating quadratic terms and \(F(F+1)/2=210\) distinct influent quadratic terms. Together with the baseline, linear terms, and operating-load interactions, the library has 276 distinct polynomial terms per component. These counts define the structural dimensions of the polynomial library.
+Each component has \(M_{op}(M_{op}+1)/2=3\) distinct operating quadratic terms and \(F(F+1)/2=210\) distinct influent quadratic terms. Together with the baseline, linear terms, and operating-load interactions, the library has 276 distinct polynomial terms per component. These are structural dimensions of the model. They do not describe how many coefficients are statistically important or biologically meaningful.
 
-\subsection{Learned coupling among effluent components}
+\section{Learned coupling among effluent components}
 
 Consider two hypothetical component equations in which each channel has a coupling coefficient 0.2 to the other channel. With driver values 4 and 2, their equations are
 \begin{equation}
@@ -219,7 +217,7 @@ Consider two hypothetical component equations in which each channel has a coupli
 c_1=4+0.2c_2,
 \qquad c_2=2+0.2c_1.
 \end{equation}
-Substituting the second equation into the first gives \(c_1=4+0.2(2+0.2c_1)\). Moving the remaining \(c_1\) term to the left gives \(0.96c_1=4.4\). Therefore \(c_1=55/12\) and \(c_2=35/12\). The solution is approximately \((4.5833,2.9167)^\top\). These hypothetical values demonstrate the arithmetic of a simultaneous regression relation.
+Substituting the second equation into the first gives \(c_1=4+0.2(2+0.2c_1)\). Moving the remaining \(c_1\) term to the left gives \(0.96c_1=4.4\). Therefore \(c_1=55/12\) and \(c_2=35/12\). The solution is approximately \((4.5833,2.9167)^\top\). These arithmetic values demonstrate a simultaneous regression relation. They do not describe a biochemical conversion.
 
 Moving the coupled terms to the left makes the same calculation a matrix solve,
 \begin{equation}
@@ -248,9 +246,9 @@ R=I_F-\Gamma,
 \end{equation}
 Equivalently, the equation for component \(f\) is \(c_f=r_f+\sum_{j\neq f}\Gamma_{fj}c_j\). This form separates the input-dependent driver from dependence among the predicted component channels. The diagonal of \(\Gamma\) is fixed to zero to avoid a redundant self-coupling coefficient.
 
-The sign of \(\Gamma_{fj}\) describes reinforcement or compensation within the fitted simultaneous relation. Activated sludge reactions involve several components at once, and the stoichiometric matrix specifies those transformations. The coupling matrix is learned from state patterns. Its entries describe fitted dependence associated with correlated transformations, loading patterns, and the allocation of effects between the driver and coupling blocks.
+The sign of \(\Gamma_{fj}\) describes reinforcement or compensation within this fitted simultaneous relation. It does not describe a one-way biochemical reaction from component \(j\) to component \(f\). Activated sludge reactions involve several components at once, and the stoichiometric matrix already specifies those transformations. The coupling matrix is learned from state patterns. Its entries can reflect correlated transformations, loading patterns, and the allocation of effects between the driver and coupling blocks.
 
-When \(R\) is nonsingular, the raw component prediction is \(R^{-1}r\). Multiplication by \(R^{-1}\) redistributes or amplifies the response represented by the driver. For interpretation, the driver, coupling matrix, and complete raw mapping are examined together.
+When \(R\) is nonsingular, the raw component prediction is \(R^{-1}r\). The dependence on \(R^{-1}\) means that the sign of a driver coefficient alone does not determine the response of the raw component prediction. Coupling can redistribute or amplify that response. For interpretation, the driver, coupling matrix, and complete raw mapping are examined together.
 
 The adopted coupling constraints require
 \begin{equation}
@@ -260,21 +258,19 @@ The adopted coupling constraints require
 \qquad |\Gamma_{fj}|\leq\gamma_{abs}\quad(f\neq j),
 \qquad \kappa_2(I_F-\Gamma)\leq\kappa_{max}.
 \end{equation}
-The condition number is the ratio of the largest to smallest singular value of the coupled-system matrix. A nearly singular matrix can amplify small driver perturbations and numerical errors. The condition check controls the complete matrix separately from the bounds on individual entries.
+The condition number is the ratio of the largest to smallest singular value of the coupled-system matrix. A nearly singular matrix can amplify small driver perturbations and numerical errors. Bounding individual entries does not by itself guarantee a well-conditioned matrix, so the condition check is separate from the box constraints.
 
 The small symmetric matrix in Equation~\eqref{eq:icsor_small_coupling_matrices} illustrates this measure without a large singular-value calculation. In the direction \((1,1)^\top\), multiplication by \(R\) scales the vector by 0.8. In the direction \((1,-1)^\top\), it scales the vector by 1.2. These orthogonal directions give singular values 0.8 and 1.2, so the condition number is \(1.2/0.8=1.5\).
 
-If the two illustrative couplings were 0.99, the same directions would have scales 0.01 and 1.99. The condition number would be 199. A driver error of magnitude \(\epsilon\) in each component along the first direction would produce a state error of \(100\epsilon\) in each component. This hypothetical choice illustrates amplification at a coupling magnitude of 0.99, above the adopted bound.
+If the two illustrative couplings were 0.99, the same directions would have scales 0.01 and 1.99. The condition number would be 199. A driver error of magnitude \(\epsilon\) in each component along the first direction would produce a state error of \(100\epsilon\) in each component. This hypothetical choice is outside the adopted coefficient bound and serves only to show the mechanism of amplification.
 
 Even a small entry bound can permit singularity in a larger matrix. In a hypothetical four-component matrix with every off-diagonal entry equal to \(1/3\), every row sum of \(\Gamma\) is one. Hence \(\Gamma\mathbf{1}=\mathbf{1}\) and \((I-\Gamma)\mathbf{1}=0\). Each entry is smaller than the adopted bound 0.368, but the coupled-system matrix is singular. This example explains why entry bounds and the condition-number test perform separate tasks.
 
-Shrinking a candidate coupling matrix toward zero can provide a safe candidate because \(I_F-0=I_F\). A zero coupling matrix gives a condition number of one. A prescribed \(\kappa_{max}>1\) therefore permits this fallback. The nonlinear condition-number requirement defines a generally nonconvex admissible coupling set. It is evaluated after the convex box-constrained estimation problem proposes a coupling update.
+Shrinking a candidate coupling matrix toward zero can provide a safe candidate because \(I_F-0=I_F\). A zero coupling matrix gives a condition number of one. A prescribed \(\kappa_{max}>1\) therefore permits this fallback. The admissible coupling set contains a nonlinear condition-number requirement. It is not generally a convex set, even though the box-constrained estimation problem used to propose a coupling update is convex.
 
-\section{Methodology}
+\section{Fitting in prediction space}
 
-\subsection{Fitting in prediction space}
-
-\subsubsection{The coupled training objective}
+\subsection{The coupled training objective}
 
 The fitting problem adjusts coefficients to approximate the mechanistic effluent concentrations. It also uses auxiliary fitted states, which are concentration variables optimized for the training cases. These variables help express fitting constraints and penalties. They differ from the component predictions calculated for a new influent after fitting.
 
@@ -302,7 +298,7 @@ J={}&\sum_{i=1}^{N}\sum_{f=1}^{F}
 +\lambda_{\Gamma}\sum_{f=1}^{F}\sum_{j=1}^{F}\Gamma_{fj}^2.
 \end{aligned}
 \end{equation}
-The second contribution first computes an inventory residual by adding component changes with their invariant weights. It then squares that residual. The third contribution compares the fitted component state, after coupling, with the driver generated by the inputs. The last two sums penalize coefficient magnitude rather than prediction residuals.
+The second contribution first computes an inventory residual by adding component changes with their invariant weights. It then squares that residual. It does not square each component change before the invariant calculation. The third contribution compares the fitted component state, after coupling, with the driver generated by the inputs. The last two sums penalize coefficient magnitude rather than prediction residuals.
 
 The dimensions of the matrices show how these sums are assembled. The entry in row \(i\), column \(k\) of \((\widehat C-C_{in})A^\top\) is the inventory residual in the second sum. The entry in row \(i\), column \(f\) of \(\widehat C R^\top\) is \(\widehat c_{if}-\sum_j\Gamma_{fj}\widehat c_{ij}\). The transpose appears because observations are stored as rows, while the single-observation equation \(Rc=r\) uses column vectors.
 
@@ -320,7 +316,7 @@ J(B,\Gamma,\widehat C)={}&
 \end{equation}
 The estimation problem minimizes this criterion subject to non-negative fitted training states, zero coupling diagonal, coupling box bounds, and the conditioning safeguard. All penalty weights are non-negative. The adopted ridge weights and coupled-system weight are strictly positive.
 
-The first term measures component prediction error. The second term discourages disagreement with the modeled invariants. The third term encourages agreement between the fitted states and the coupled regression equation. The final two terms limit coefficient magnitude. The non-negative fitted training state balances prediction error, invariant mismatch, and coupled-system mismatch through these weighted terms.
+The first term measures component prediction error. The second term discourages disagreement with the modeled invariants. The third term encourages agreement between the fitted states and the coupled regression equation. The final two terms limit coefficient magnitude. A non-negative fitted training state can therefore balance prediction error, invariant mismatch, and coupled-system mismatch. It need not satisfy either equality exactly.
 
 An illustrative one-observation calculation makes the five contributions concrete. Take \(c_{out}=(3,1)^\top\), \(c_{in}=(2,2)^\top\), \(\widehat c=(2.5,1.2)^\top\), and \(A=[1\ \ 1]\). Use the hypothetical coupling matrix in Equation~\eqref{eq:icsor_small_coupling_matrices}. For a single baseline feature, take \(B=(2,1)^\top\), so the driver is \((2,1)^\top\). The five unweighted contributions are
 \begin{equation}
@@ -335,17 +331,17 @@ An illustrative one-observation calculation makes the five contributions concret
 \text{coupling squared sum}&=0.2^2+0.2^2=0.08.
 \end{aligned}
 \end{equation}
-With illustrative weights \(\lambda_{inv}=2\), \(\lambda_{sys}=3\), \(\lambda_B=0.1\), and \(\lambda_{\Gamma}=0.5\), the objective is \(0.29+2(0.09)+3(0.1576)+0.1(5)+0.5(0.08)=1.4828\). These hypothetical weights illustrate the relative cost assigned to each discrepancy. Table~\ref{tab:icsor_fitting_settings} gives the adopted numerical fitting weights.
+With illustrative weights \(\lambda_{inv}=2\), \(\lambda_{sys}=3\), \(\lambda_B=0.1\), and \(\lambda_{\Gamma}=0.5\), the objective is \(0.29+2(0.09)+3(0.1576)+0.1(5)+0.5(0.08)=1.4828\). These weights are chosen only for arithmetic teaching. The adopted numerical fitting weights remain those in Table~\ref{tab:icsor_fitting_settings}. The example shows why changing a weight changes the relative cost of a discrepancy rather than making that discrepancy an exact equality.
 
-The auxiliary state is a variable in the fitting problem. The raw prediction for a new input is obtained by solving the learned coupled relation. Residual penalties guide this fit using the general penalty principle of physics-informed training developed by \citet{Raissi2019}. Checked deployment then enforces mass conservation and non-negativity on the returned state.
+This distinction matters for a new input. Neither a non-negative \(\widehat C\) nor a finite invariant penalty guarantees that \(R^{-1}B\phi\) is non-negative or consistent with mass conservation. The auxiliary state is a variable in the fitting problem, while the raw prediction is obtained by solving the learned coupled relation. A soft residual penalty encourages agreement but does not impose equality. Physics-informed residual training uses this general penalty principle, as developed by \citet{Raissi2019}. Exact feasibility requires the separate deployment conditions below.
 
-The objective is expressed in physical component coordinates. Components have different units and numerical scales, so the magnitudes of their residuals and coefficients reflect those conventions. The four penalty weights also depend on the fixed feature and invariant scaling. Consistent rescaling transforms the features, coefficients, invariant operator, reporting map, and penalty weights together. \citet{Pinheiro2025} discuss the influence of feature scaling on learning. For physical interpretation, unit consistency is as necessary as numerical conditioning.
+The objective is expressed in physical component coordinates. Components have different units and numerical scales, so the magnitudes of their residuals and coefficients reflect those conventions. The four penalty weights also depend on the fixed feature and invariant scaling. They cannot be transferred unchanged to arbitrary unit systems. Any rescaling must transform the corresponding features, coefficients, invariant operator, and reporting map consistently. \citet{Pinheiro2025} discuss the influence of feature scaling on learning. For physical interpretation, unit consistency is as necessary as numerical conditioning.
 
-\subsubsection{Deterministic block updates}
+\subsection{Deterministic block updates}
 
 The term \(\widehat C\Gamma^\top\) makes the joint objective nonconvex. Holding two variable blocks fixed gives a simpler problem in the remaining block. The fitting procedure updates the driver, coupling matrix, and fitted states in that order within each cycle.
 
-This distinction can be checked with the reduced residual \((1-\gamma z)^2\), where \(\gamma\) is a coupling and \(z\) a fitted component. If \(z\) is fixed, this is a quadratic function of \(\gamma\). If \(\gamma\) is fixed, it is a quadratic function of \(z\). It is not jointly convex. At \((\gamma,z)=(0.2,5)\) and \((0.1,10)\), the residual is zero. At the midpoint \((0.15,7.5)\), it is \((1-1.125)^2=1/64\). A convex function could not exceed the average of the two zero endpoint values at their midpoint. The product between a fitted state and a coupling coefficient accounts for the nonconvex joint objective.
+This distinction can be checked with the reduced residual \((1-\gamma z)^2\), where \(\gamma\) is a coupling and \(z\) a fitted component. If \(z\) is fixed, this is a quadratic function of \(\gamma\). If \(\gamma\) is fixed, it is a quadratic function of \(z\). It is not jointly convex. At \((\gamma,z)=(0.2,5)\) and \((0.1,10)\), the residual is zero. At the midpoint \((0.15,7.5)\), it is \((1-1.125)^2=1/64\). A convex function could not exceed the average of the two zero endpoint values at their midpoint. This small example identifies the product responsible for the lack of a general joint-convexity guarantee.
 
 For fixed \(\Gamma\) and \(\widehat C\), the driver update is a ridge-regularized linear least-squares problem. Define \(T=\widehat C R^\top\). For one output row, write its coefficient column as \(\beta\) and its target column from \(T\) as \(t\). The part of the objective that depends on this row is
 \begin{equation}
@@ -400,7 +396,7 @@ The coupling calculation can be read one output row at a time. For row \(f\), th
 (0.4-\gamma)^2+(0.8-2\gamma)^2+\gamma^2
 =0.8-4\gamma+6\gamma^2.
 \end{equation}
-The derivative \(-4+12\gamma\) vanishes at \(\gamma=1/3\). This value lies below the adopted absolute entry bound 0.368. If the illustrative box bound were instead 0.25, the convex scalar problem would attain its minimum at 0.25. The conditioning test is applied to the complete coupling matrix after these row-wise calculations.
+The derivative \(-4+12\gamma\) vanishes at \(\gamma=1/3\). This value lies below the adopted absolute entry bound 0.368. If the illustrative box bound were instead 0.25, the convex scalar problem would attain its minimum at 0.25. The conditioning test would still be applied to the complete coupling matrix. A row-wise scalar minimizer cannot certify the conditioning of that matrix.
 
 Collecting these scalar residuals across all output rows gives the coupling proposal
 \begin{equation}
@@ -410,7 +406,7 @@ Collecting these scalar residuals across all output rows gives the coupling prop
 \lambda_{sys}\|E-\widehat C\Gamma^\top\|_F^2+
 \lambda_{\Gamma}\|\Gamma\|_F^2
 \end{equation}
-subject to its zero diagonal and box bounds. This is a convex quadratic program. Its candidate is subsequently screened using Equation~\eqref{eq:icsor_coupling_safeguards}. A candidate that fails the condition check is shrunk toward zero or replaced by an admissible fallback. The screened proposal is evaluated against the previous admissible coupling matrix using the complete objective.
+subject to its zero diagonal and box bounds. This is a convex quadratic program. Its candidate is subsequently screened using Equation~\eqref{eq:icsor_coupling_safeguards}. A candidate that fails the condition check is shrunk toward zero or replaced by an admissible fallback. Screening preserves numerical admissibility, but it need not preserve the minimum of the unrestricted convex subproblem.
 
 For fixed \(B\) and \(\Gamma\), the fitted-state update separates over the training rows. For sample \(i\), write \(\widehat c_i\) as a column vector.
 
@@ -458,13 +454,13 @@ Each row minimizes \(\widehat c_i^\top H_C\widehat c_i-2h_i^\top\widehat c_i\) o
 
 The quadratic-program method of \citet{Stellato2018} provides an algorithmic foundation for the constrained coupling and fitted-state blocks. These blocks use their quadratic structure directly. A generic stochastic first-order method could also optimize a related criterion, but it would require separate mechanisms to control non-negativity, coupling bounds, and conditioning. The block formulation keeps each requirement attached to an explicit subproblem.
 
-\subsubsection{Descent, stopping, and numerical safeguards}
+\subsection{Descent, stopping, and numerical safeguards}
 
-Exact minimization over a block cannot increase the objective when its admissible set contains the previous block value. Since \(J\geq0\), an objective sequence that is monotone non-increasing converges in value. The convergence analysis of \citet{Razaviyayn2013} relates blockwise minimization to stationary solutions under its stated conditions.
+Exact minimization over a block cannot increase the objective when its admissible set contains the previous block value. Since \(J\geq0\), an objective sequence that is monotone non-increasing converges in value. This argument does not establish a global minimum of the joint problem. The convergence analysis of \citet{Razaviyayn2013} specifies additional conditions needed to relate blockwise minimization to stationary solutions.
 
-The conditioning screen requires particular care. Shrinking a coupling proposal can increase the training criterion relative to the previous admissible coupling matrix. The procedure therefore evaluates the objective after screening and retains the previous admissible matrix when a screened candidate cannot provide an acceptable non-increasing update. Solver tolerances also require an explicit allowance for numerical error. Monotone descent is assessed for the accepted objective-decreasing updates after screening.
+The conditioning screen requires particular care. Shrinking a coupling proposal can increase the training criterion relative to the previous admissible coupling matrix. The procedure therefore evaluates the objective after screening and retains the previous admissible matrix when a screened candidate cannot provide an acceptable non-increasing update. Solver tolerances also require an explicit allowance for numerical error. A claim of monotone descent applies to accepted objective-decreasing updates. It does not follow from box-constrained minimization alone.
 
-Each restart begins with an admissible coupling matrix and non-negative fitted states. A ridge solve supplies the initial driver. Full cycles continue until an iteration limit is reached or the slope of the trailing objective history is sufficiently small. A running minimum records the best admissible state reached. When several restarts are used, the admissible state with the smallest recorded objective is retained. A nearly flat objective triggers the prescribed stopping rule.
+Each restart begins with an admissible coupling matrix and non-negative fitted states. A ridge solve supplies the initial driver. Full cycles continue until an iteration limit is reached or the slope of the trailing objective history is sufficiently small. A running minimum records the best admissible state reached. When several restarts are used, the admissible state with the smallest recorded objective is retained. A nearly flat objective indicates limited further progress under that stopping rule. It does not certify parameter uniqueness or global optimality.
 
 Figure~\ref{fig:ch5_training_cycle} separates the three fitting updates from the checks that make an update acceptable. The scalar calculations in Equations~\eqref{eq:icsor_ridge_numeric_example} and \eqref{eq:icsor_coupling_numeric_update} illustrate the first and third computational boxes in the left column. The non-negative-state example explains the return path in the right column.
 
@@ -475,7 +471,7 @@ Figure~\ref{fig:ch5_training_cycle} separates the three fitting updates from the
 \label{fig:ch5_training_cycle}
 \end{figure}
 
-The cycle returns to the driver because each block changes the conditions faced by the others. The conditioning screen acts on the coupling proposal before the fitted-state update. The full objective is then recorded after the cycle. The restart decision concerns the prescribed search procedure, while the final selection compares admissible objective values. These steps define the accepted sequence of updates for the nonconvex joint fit.
+The cycle returns to the driver because each block changes the conditions faced by the others. The conditioning screen acts on the coupling proposal before the fitted-state update. The full objective is then recorded after the cycle. The restart decision concerns the prescribed search procedure, while the final selection compares admissible objective values. These steps explain why a sequence of convex block solves does not establish a jointly global optimum.
 
 \begin{table}[htbp]
 \centering
@@ -501,9 +497,9 @@ Objective slope tolerance & \(2.85\times10^{-7}\)\\
 
 Table~\ref{tab:icsor_fitting_settings} specifies numerical fitting choices. The condition threshold \(\kappa_{max}\) remains an additional prescribed numerical safeguard and is checked independently of the coefficient bound. Hyperparameter assessment uses validation observations within the training pool. Held-out test observations do not determine penalty weights or stopping choices. Fitting settings remain fixed within a sample-size comparison so that changes in the learning curve reflect changing sample availability under a common model specification.
 
-\subsection{Checked deployment}
+\section{Checked deployment}
 
-\subsubsection{The raw coupled state}
+\subsection{The raw coupled state}
 
 For a new pair \((u_*,c_{in,*})\), the fitted parameters give
 \begin{equation}
@@ -525,9 +521,9 @@ v_{mc}(c)=\|A(c-c_{in,*})\|_2,
 \qquad
 v_{nn}(c)=\|\min(c,\mathbf{0})\|_1.
 \end{equation}
-The minimum is taken componentwise. The adopted diagnostic tolerance is \(10^{-10}\). Algebraic equality and non-negativity define the mathematical requirement. Residuals below the numerical tolerance define its computational assessment. Invariant residual magnitudes use the stated scaling of \(A\).
+The minimum is taken componentwise. The adopted diagnostic tolerance is \(10^{-10}\). Algebraic equality and non-negativity define the mathematical requirement. Residuals below the numerical tolerance define its computational assessment. Invariant residual magnitudes are meaningful only under the stated scaling of \(A\).
 
-\subsubsection{Affine projection for mass conservation}
+\subsection{Affine projection for mass conservation}
 
 The nearest state satisfying mass conservation can first be derived for the hypothetical two-component inventory. Write the raw prediction as \((p_1,p_2)^\top\) and the required total as \(T\). The two unknown projected concentrations minimize \((c_1-p_1)^2+(c_2-p_2)^2\) while satisfying \(c_1+c_2=T\). Introduce a multiplier \(\eta\) for that equality and write
 \begin{equation}
@@ -582,11 +578,11 @@ A^\top(AA^\top)^{-1}A
 \end{equation}
 Taking the illustrative influent as \((6,4)^\top\), the raw-minus-influent difference is \((6,-3)^\top\). Multiplying it by this projection matrix gives \((1.5,1.5)^\top\), which is subtracted from the raw state. This recovers the scalar calculation without guessing how much either component should change.
 
-This projection is an orthogonal projection onto the affine set defined by mass conservation in the chosen numerical component coordinates. It removes the part of the prediction error normal to that set and retains the part tangent to it. The projection distance uses the stated component unit convention. \citet{SturmSilva2024} develop related projections for mass conservation and explain why species-dependent weights matter when concentration scales differ.
+This projection is an orthogonal projection onto the affine set defined by mass conservation in the chosen numerical component coordinates. It removes the part of the prediction error normal to that set. It retains the part tangent to the set, which can still be large. The projection therefore enforces mass conservation without establishing predictive accuracy. Its distance also depends on the component unit convention. \citet{SturmSilva2024} develop related projections for mass conservation and explain why species-dependent weights matter when concentration scales differ.
 
 The affine state is checked for both mass conservation residuals and non-negativity before deployment. The equality follows analytically from Equation~\eqref{eq:icsor_affine_solution}, but checking its residual catches numerical or operator inconsistency. An affine state that satisfies mass conservation can still contain a negative concentration. That possibility requires a projection with inequality constraints.
 
-\subsubsection{Joint mass conservation and non-negativity}
+\subsection{Joint mass conservation and non-negativity}
 
 The absolute-distance projection can also be written before introducing compact vector inequalities. For the state that satisfies mass conservation but violates non-negativity \((10.5,-0.5)^\top\), require \(c_1+c_2=10\) and \(c_1,c_2\geq0\). Introduce non-negative adjustment bounds \(\rho_1,\rho_2\). The constraints
 \begin{equation}
@@ -615,23 +611,23 @@ When the affine state fails the non-negativity check, the final projection solve
 & \rho\geq\mathbf{0}.
 \end{aligned}
 \end{equation}
-For strictly positive fixed weights \(w_c\), minimization makes \(\rho_f=|c_f-c_{aff,f}|\) at an optimum. The objective is therefore the weighted absolute adjustment \(\sum_f w_{c,f}|c_f-c_{aff,f}|\). The program minimizes adjustment from the affine state while retaining the fitted regression coefficients.
+For strictly positive fixed weights \(w_c\), minimization makes \(\rho_f=|c_f-c_{aff,f}|\) at an optimum. The objective is therefore the weighted absolute adjustment \(\sum_f w_{c,f}|c_f-c_{aff,f}|\). The reference is the affine state. The program does not minimize distance to the original raw state or re-estimate the regression coefficients.
 
 The program is linear because the absolute values are represented by auxiliary variables and linear inequalities. The revised-simplex method described by \citet{HuangfuHall2018} provides an algorithmic foundation for solving this type of projection. The mathematical feasible set is nonempty whenever the supplied influent state is non-negative under the adopted boundary relation. The positive weights make the adjustment objective bounded below and discourage unconstrained movement of any component. A minimizer exists, although several minimizing states can exist when the absolute-distance objective has a flat face.
 
-Large weights make changes to a component more costly. Small weights permit larger changes when those changes help satisfy the specified constraints. Weights are fixed before deployment using the intended component scaling and scientific priorities. A sensitivity analysis of the weights can examine how much the returned state depends on that modeling choice. Equal numerical weights also embody a choice because component units and typical magnitudes differ.
+Large weights make changes to a component more costly. Small weights permit larger changes when those changes help satisfy the specified constraints. Weights are fixed using the intended component scaling and scientific priorities. They are not chosen after seeing the reference target for a deployed observation. A sensitivity analysis of the weights can examine how much the returned state depends on that modeling choice. Equal numerical weights also embody a choice because component units and typical magnitudes differ.
 
-Three hypothetical components show how weights can change an admissible allocation. Let the inventory row be \([1\ \ 1\ \ 1]\) and the affine reference satisfying mass conservation be \((-1,4,7)^\top\), whose total is 10. Restoring its first component to zero requires removal of one unit from another component. Two feasible candidates are \((0,3,7)^\top\) and \((0,4,6)^\top\). For weights \((1,10,1)^\top\), their costs are respectively \(1(1)+10(1)=11\) and \(1(1)+1(1)=2\). The second component is more costly to change, so removing material from the third is preferable. With weights \((1,1,10)^\top\), the two costs become 2 and 11. The preferred allocation reverses. Both allocations preserve the same inventory, while the weights determine the preferred adjustment.
+Three hypothetical components show how weights can change an admissible allocation. Let the inventory row be \([1\ \ 1\ \ 1]\) and the affine reference satisfying mass conservation be \((-1,4,7)^\top\), whose total is 10. Restoring its first component to zero requires removal of one unit from another component. Two feasible candidates are \((0,3,7)^\top\) and \((0,4,6)^\top\). For weights \((1,10,1)^\top\), their costs are respectively \(1(1)+10(1)=11\) and \(1(1)+1(1)=2\). The second component is more costly to change, so removing material from the third is preferable. With weights \((1,1,10)^\top\), the two costs become 2 and 11. The preferred allocation reverses. Both allocations preserve the same inventory, and neither preference is supplied by mass conservation alone.
 
 \citet{KircherVotsmeier2025} show why a projection for mass conservation needs simultaneous non-negativity enforcement in reaction-kinetics surrogates. Their scaled-space treatment protects low-concentration species during projection. Equation~\eqref{eq:icsor_weighted_correction} addresses the same joint requirement through a weighted absolute-distance problem for activated sludge components. It imposes the adopted linear invariants and non-negativity on the returned state.
 
-\subsubsection{Illustrative projection and the failure of clipping}
+\subsection{Illustrative projection and the failure of clipping}
 
 Consider an illustrative two-component system with \(A=[1\ \ 1]\), a total influent inventory of 10, and a raw prediction \(c_{raw}=(12,1)^\top\). The raw total is 13. The affine formula subtracts 1.5 from each component and gives \(c_{aff}=(10.5,-0.5)^\top\). The total is now 10, but the second component is negative.
 
-Clipping that negative value to zero produces \((10.5,0)^\top\), which violates the total inventory. With equal projection weights, Equation~\eqref{eq:icsor_weighted_correction} instead returns \((10,0)^\top\). Both constraints hold. These hypothetical values illustrate the projection geometry.
+Clipping that negative value to zero produces \((10.5,0)^\top\), which violates the total inventory. With equal projection weights, Equation~\eqref{eq:icsor_weighted_correction} instead returns \((10,0)^\top\). Both constraints hold. These values are a hypothetical illustration of the projection geometry. They are not activated sludge predictions or experimental findings.
 
-The deployment order uses this geometry directly. A feasible raw state needs no adjustment. An infeasible raw state is first projected onto the mass conservation set. A feasible affine state can then be returned. The linear program is required only when the affine state still fails non-negativity. Every returned candidate is checked under the declared numerical tolerances. An unsuccessful numerical solve is recorded as a prediction failure.
+The deployment order uses this geometry directly. A feasible raw state needs no adjustment. An infeasible raw state is first projected onto the mass conservation set. A feasible affine state can then be returned. The linear program is required only when the affine state still fails non-negativity. Every returned candidate is checked under the declared numerical tolerances. An unsuccessful numerical solve does not authorize an unchecked prediction.
 
 Figure~\ref{fig:ch5_checked_deployment} makes the branch conditions explicit. Both physical checks appear at the raw and affine stages. The last projection branch also requires successful optimization and an independent admissibility check.
 
@@ -650,11 +646,11 @@ The component state returned by this rule is the deployed output. Its reported q
 \label{eq:icsor_deployed_composites}
 \widehat y_{\mathrm{comp}}=I_{\mathrm{comp}}\widehat c.
 \end{equation}
-The deployment constraints enforce admissibility, and the stage-wise assessment measures how often each projection is needed.
+The deployment constraint is responsible for admissibility. The soft training penalties can reduce the need for projection, but that possibility is an evaluation question rather than a mathematical guarantee.
 
-\subsection{Interpreting the complete prediction map}
+\section{Interpreting the complete prediction map}
 
-\subsubsection{Driver coefficients and back projection}
+\subsection{Driver coefficients and back projection}
 
 The transformation from driver coefficients to output coefficients can be computed with small matrices. Use the hypothetical coupling matrix in Equation~\eqref{eq:icsor_small_coupling_matrices}, a reduced feature vector \((1,a)^\top\), and driver coefficients
 \begin{equation}
@@ -686,9 +682,9 @@ For a hypothetical reported quantity \(y=c_1+2c_2\), its reporting row is \([1\ 
 \begin{bmatrix}1&2\end{bmatrix}R^{-1}B
 =\begin{bmatrix}125/12&35/24\end{bmatrix}.
 \end{equation}
-At \(a=2\), the driver is \((6,2)^\top\), the raw component state is \((20/3,10/3)^\top\), and the reported quantity is \(40/3\). The transformed row gives the same value through \(125/12+(35/24)2=40/3\). The hypothetical reporting row provides a reduced arithmetic example.
+At \(a=2\), the driver is \((6,2)^\top\), the raw component state is \((20/3,10/3)^\top\), and the reported quantity is \(40/3\). The transformed row gives the same value through \(125/12+(35/24)2=40/3\). This reporting row is chosen for teaching and is not an adopted COD or nutrient composition row.
 
-The rows of \(\widehat B\) refer to component drivers. Coupling and the reporting map convert these rows into COD, TN, TP, and TSS coefficients. The raw component coefficient matrix is
+The rows of \(\widehat B\) refer to component drivers. They cannot be labeled directly as COD, TN, TP, or TSS coefficients. The raw component coefficient matrix is
 \begin{equation}
 \equationname{Raw component-response coefficients after coupling}
 \label{eq:icsor_raw_component_coefficients}
@@ -717,9 +713,9 @@ In the two-feature example, the second driver has no direct coefficient for the 
 
 The named blocks can be displayed as coefficient maps. Operating terms are grouped separately from influent terms. Symmetric quadratic maps display both ordered cells while reporting unique cross terms consistently. Operating-load maps show which operating variables interact with which influent components. The coupling matrix is displayed separately because it has a different interpretation from the input-driver terms.
 
-A coefficient-display threshold is used only to simplify reporting after fitting. For each reported-composite raw-regression map, the threshold is \(10^{-4}\) times its largest absolute coefficient. For the coupling matrix, the threshold is \(10^{-4}\) times its largest absolute off-diagonal entry. The fitted mapping is retained in full, and the threshold determines which entries appear in the coefficient display. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still have a large contribution when multiplied by a large feature. Interpretation therefore examines coefficient magnitude, input scale, and the contribution of the corresponding term over the declared domain.
+A coefficient-display threshold is used only to simplify reporting after fitting. For each reported-composite raw-regression map, the threshold is \(10^{-4}\) times its largest absolute coefficient. For the coupling matrix, the threshold is \(10^{-4}\) times its largest absolute off-diagonal entry. The threshold does not modify the fitted mapping, select hyperparameters, or impose sparsity during training. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still have a large contribution when multiplied by a large feature. Interpretation therefore examines coefficient magnitude, input scale, and the contribution of the corresponding term over the declared domain.
 
-\subsubsection{Analytical jacobians of the raw regression}
+\subsection{Analytical jacobians of the raw regression}
 
 Differentiation of a scalar polynomial shows why a coefficient and a marginal response differ. For the illustrative driver in Equation~\eqref{eq:icsor_scalar_driver_example},
 \begin{equation}
@@ -790,11 +786,11 @@ J_{raw,comp,u}&=I_{\mathrm{comp}}J_{raw,u},
 &J_{raw,comp,c}&=I_{\mathrm{comp}}J_{raw,c}.
 \end{aligned}
 \end{equation}
-These derivatives describe the complete fitted raw regression at the specified inputs, including curvature and interactions. The projection-stage derivatives are calculated below.
+These derivatives describe the complete fitted raw regression at the specified inputs. They include curvature and interactions. They do not include the projection applied during deployment.
 
-An illustrative aeration sensitivity can be inspected at low and high ammonium loading while holding the remaining inputs fixed. A difference in the two derivatives identifies a loading-dependent association within the fitted model. Oxygen-transfer limitations and heterotrophic competition provide process context for assessing such a pattern, as discussed by \citet{StenstromSong1991}. Comparison with that process context provides a plausibility check on the fitted response pattern.
+An illustrative aeration sensitivity can be inspected at low and high ammonium loading while holding the remaining inputs fixed. A difference in the two derivatives identifies a loading-dependent association within the fitted model. Oxygen-transfer limitations and heterotrophic competition provide process context for assessing such a pattern, as discussed by \citet{StenstromSong1991}. Agreement with that context is a plausibility check. It is not evidence that changing aeration in a plant will cause exactly the fitted response.
 
-\subsubsection{Sensitivity after the affine projection}
+\subsection{Sensitivity after the affine projection}
 
 Return to the two-feature example in Equation~\eqref{eq:icsor_small_back_projection}. Its raw derivative with respect to \(a\) is \((25/24,5/24)^\top\), whose total is \(5/4\). This raw response changes the total component inventory. At fixed influent inventory, an affine projection must remove that total change. For the two-component invariant,
 \begin{equation}
@@ -825,13 +821,13 @@ Then \(c_{aff}=P_Ac_{raw}+Q_Ac_{in}\). With the fitted coefficients and invarian
 J_{aff,u}=P_AJ_{raw,u},
 \qquad J_{aff,c}=P_AJ_{raw,c}+Q_A.
 \end{equation}
-The second expression includes the change in the mass conservation reference when the influent changes. The term \(Q_A\) accounts for the changing influent reference.
+The second expression includes the change in the mass conservation reference when the influent changes. Omitting \(Q_A\) would treat that reference as fixed and give the wrong influent sensitivity.
 
 Multiplication by \(A\) gives \(AJ_{aff,u}=0\) and \(AJ_{aff,c}=A\). An operating perturbation changes the affine prediction only along directions that preserve its fixed influent inventories. An influent perturbation changes those inventories consistently with the influent reference. These relations provide analytical checks on the sensitivity calculation.
 
-When the affine branch is used over a neighborhood of inputs, its coefficients and Jacobians describe that branch. The complete deployment rule includes transitions between raw, affine, and linear-program branches, each with its corresponding sensitivity.
+When the affine branch is used over a neighborhood of inputs, its coefficients and Jacobians describe that branch. The complete deployment rule still includes transitions between raw, affine, and linear-program branches. A single coefficient map does not describe every branch at once.
 
-\subsubsection{Active constraints in the final projection}
+\subsection{Active constraints in the final projection}
 
 An explicit boundary in the same hypothetical model shows the change in sensitivity caused by non-negativity. Keep the total influent inventory equal to 10. The affine components obtained from Equation~\eqref{eq:icsor_small_back_projection} are
 \begin{equation}
@@ -841,57 +837,19 @@ c_{aff,1}=\frac{35}{6}+\frac{5a}{12},
 \qquad
 c_{aff,2}=\frac{25}{6}-\frac{5a}{12}.
 \end{equation}
-Their sum is 10. Near \(a=10\), the first component is positive, while the second reaches zero at \(a=10\). Immediately below this boundary the affine state is feasible and its derivative is \((5/12,-5/12)^\top\). Above the boundary the affine second component is negative. The positive-weight absolute projection returns \((10,0)^\top\), so its derivative with respect to \(a\) is \((0,0)^\top\). The final projected state therefore has a different derivative on each side of the boundary. The boundary is characterized by its two one-sided derivatives.
+Their sum is 10. Near \(a=10\), the first component is positive, while the second reaches zero at \(a=10\). Immediately below this boundary the affine state is feasible and its derivative is \((5/12,-5/12)^\top\). Above the boundary the affine second component is negative. The positive-weight absolute projection returns \((10,0)^\top\), so its derivative with respect to \(a\) is \((0,0)^\top\). The final projected state therefore has a different derivative on each side of the boundary. A single derivative is not available at the boundary itself.
 
 In the projected branch, the binding equalities are \(c_1+c_2=10\) and \(c_2=0\). Differentiating them gives \(\partial c_1/\partial a+\partial c_2/\partial a=0\) and \(\partial c_2/\partial a=0\). These two equations directly give the zero derivative. The general active-set calculation uses the same idea with all binding inventory and adjustment constraints.
 
 The linear program can make a component concentration equal to zero or bind one of the absolute-adjustment inequalities. These binding constraints define an active set. If the optimal solution is unique and its nondegenerate optimal basis remains unchanged over a local neighborhood, the solution varies affinely with the relevant right-hand sides in that neighborhood. A branch-specific sensitivity can then be derived from that fixed basis.
 
-At an active-set transition, the derivative can change abruptly. When several optimal projected states exist, the returned solution can also depend on the rule used to select among them. Local deployment sensitivity is assessed by differentiating a verified fixed basis where appropriate or by perturbing admissible inputs and resolving the entire deployment problem. The perturbation size and any branch changes are recorded as part of that sensitivity assessment.
+At an active-set transition, the derivative can change abruptly. When several optimal projected states exist, the returned solution can also depend on the rule used to select among them. A global raw-regression coefficient display cannot resolve these effects. Local deployment sensitivity is assessed by differentiating a verified fixed basis where appropriate or by perturbing admissible inputs and resolving the entire deployment problem. The perturbation size and any branch changes are recorded as part of that sensitivity assessment.
 
 This distinction prevents three different quantities from being conflated. A driver coefficient belongs to \(\widehat B\). A raw-state sensitivity passes through \(\widehat R^{-1}\). A deployed-state sensitivity also depends on the mass conservation reference and active projection constraints. Each quantity answers a different question about the model.
 
-\subsubsection{Following sensitivity through projection}
+\section{Assessment design for the structured regression}
 
-Interpretation follows the complete prediction map. Coupling transforms the driver into component predictions. The reporting map combines components, and active output constraints change their local derivatives. Physical-unit interpretation identifies a driver coefficient, a raw prediction derivative, or a derivative of the final projected response \citep{Brunton2016,Shen2023}.
-
-A second hypothetical calculation isolates the effect of projection using different raw equations. Let a dimensionless operating input be $a$, and let two hypothetical raw concentration equations be
-\[
-c_{raw,1}(a)=4+a,\qquad c_{raw,2}(a)=3+2a.
-\]
-The raw first-component slope is one and the second-component slope is two. At $a=2$, the concentrations are 6 and 7, with a total of 13. Suppose the required total is ten and the projection minimizes the sum of squared adjustments with equal weights. If the first adjustment is $d_1$ and the second is $d_2$, mass conservation requires $d_1+d_2=-3$. Substitute $d_2=-3-d_1$ into the squared-adjustment objective and differentiate,
-\[
-\begin{aligned}
-d_1^2+d_2^2&=d_1^2+(-3-d_1)^2,\\
-\frac{\mathrm d}{\mathrm d d_1}\bigl[d_1^2+(-3-d_1)^2\bigr]
-&=4d_1+6=0.
-\end{aligned}
-\]
-Both adjustments are $-1.5$, giving a state satisfying mass conservation with concentrations 4.5 and 5.5. For a general $a$, the excess total is $(4+a)+(3+2a)-10=3a-3$. Equal-weight projection subtracts one half of that excess from each coordinate,
-\[
-\begin{aligned}
-c_{aff,1}(a)&=4+a-\frac{3a-3}{2}=5.5-0.5a,\\
-c_{aff,2}(a)&=3+2a-\frac{3a-3}{2}=4.5+0.5a.
-\end{aligned}
-\]
-The projected slopes are $-0.5$ and $0.5$. The first changes sign even though its raw slope is positive. The sum of the projected slopes is zero, consistent with a total that does not depend on $a$.
-
-Non-negativity introduces another stage. The affine first component reaches zero at $a=11$. For $a>11$, the affine state lies outside the segment satisfying mass conservation and non-negativity. In this equal-weight two-component example, the nearest jointly feasible state is then $(0,10)^\top$. Both local output slopes are zero while that boundary remains active. The slope changes at the transition point. This calculation illustrates why a raw coefficient, an affine sensitivity, and a final constrained sensitivity have distinct meanings.
-
-Figure~\ref{fig:assessment_branch_sensitivity} plots the hypothetical first-component equations and the slopes calculated from them. The left panel shows the concentration returned at each stage. The right panel shows the corresponding local rate of change with respect to the operating input.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{ch7_concept_branch_sensitivity.pdf}
-\caption{Hypothetical first-component response and sensitivity before and after mass conservation and non-negativity enforcement. Open circles mark the two one-sided checked slopes at the active-boundary transition.}
-\label{fig:assessment_branch_sensitivity}
-\end{figure}
-
-Before the boundary becomes active, the affine and checked curves coincide. Their negative first-component slope differs from the positive raw slope because mass conservation redistributes the operating response between the two components. After the boundary becomes active, the checked concentration stays at zero and its local slope is zero. The transition is characterized by the two one-sided checked slopes.
-
-\subsection{Assessment design for the structured regression}
-
-\subsubsection{Common inputs and comparator models}
+\subsection{Common inputs and comparator models}
 
 The structured-regression assessment uses a design collection of 10,000 accepted steady-state reactor cases. Every method receives the same 22 physical inputs and predicts the same 20 effluent components. Its reported composites are obtained from the common composition matrix. The input domain, reaction model, simulation bounds, and acceptance criterion remain those of the declared reactor benchmark. The comparison therefore changes the predictor while holding the modeled process and prediction task fixed.
 
@@ -899,13 +857,13 @@ The nine unconstrained comparators are XGBoost, LightGBM, CatBoost, AdaBoost, ra
 
 The neural comparator has hidden layers with 128, 64, and 32 units and logistic activation. Dense connections map the 22 inputs through these layers to 20 component outputs. Its capacity is evaluated under the same samples and reported-composite map as the other predictors. A transparent polynomial and a neural network can therefore differ in their internal structure without changing the supervised target.
 
-\subsubsection{Training partitions and hyperparameter selection}
+\subsection{Training partitions and hyperparameter selection}
 
-The primary assessment uses a row-wise 80\% training and 20\% held-out split with random seed 42. The specified collection gives a training pool of 8000 rows and a held-out set of 2000 rows. Hyperparameter selection uses only the training pool. Half of that pool forms a 4000-row tuning subset. A further 80\% and 20\% split gives 3200 tuning-training rows and 800 tuning-validation rows. The tuning design uses one internal validation split.
+The primary assessment uses a row-wise 80\% training and 20\% held-out split with random seed 42. The specified collection gives a training pool of 8000 rows and a held-out set of 2000 rows. Hyperparameter selection uses only the training pool. Half of that pool forms a 4000-row tuning subset. A further 80\% and 20\% split gives 3200 tuning-training rows and 800 tuning-validation rows. This is one internal validation split rather than a cross-validation design.
 
 Each predictor receives 100 hyperparameter trials under a seeded tree-structured Parzen estimator with seed 42. No trial pruning or wall-clock timeout is imposed. \citet{Bergstra2011} develop this search approach, while \citet{Akiba2019} provide the associated hyperparameter optimization framework. The selection criterion is mean squared error in the shared physical component space on the internal validation set. Selected settings are held fixed for the primary assessment and the repeated sample-size design. The final primary fit uses the full 8000-row training pool.
 
-For the unconstrained comparators, input and output standardization parameters are estimated from the relevant training partition. Predictions are transformed back to physical component coordinates before any invariant check, reporting map, or error assessment. ICSOR remains in physical coordinates so that its driver, invariant operator, and deployed constraints use the same component convention. Internal-validation transformations are estimated from tuning-training rows only. The training partitions determine the means, standard deviations, and hyperparameters. Projection weights are fixed before held-out assessment.
+For the unconstrained comparators, input and output standardization parameters are estimated from the relevant training partition. Predictions are transformed back to physical component coordinates before any invariant check, reporting map, or error assessment. ICSOR remains in physical coordinates so that its driver, invariant operator, and deployed constraints use the same component convention. Internal-validation transformations are estimated from tuning-training rows only. Held-out observations do not determine the means, standard deviations, hyperparameters, or projection weights.
 
 Table~\ref{tab:icsor_comparator_settings} gives the specified numerical configurations. These values define fitted model settings rather than measured predictive performance. The internal search compares candidate configurations according to the stated validation objective.
 
@@ -929,26 +887,26 @@ Multilayer perceptron & Hidden widths \((128,64,32)\), logistic activation, adap
 \end{tabular}
 \end{table}
 
-\subsubsection{Scoring states and physical diagnostics}
+\subsection{Scoring states and physical diagnostics}
 
-The scored ICSOR output is the final checked component state. For comparator accuracy assessment, the raw component prediction receives the same affine projection for mass conservation in Equation~\eqref{eq:icsor_affine_solution}. The composition map is then applied to the projected state. This comparison describes the accuracy of a checked structured prediction and comparator predictions after affine projection. Comparator accuracy scoring uses the affine state, while ICSOR accuracy scoring uses the final state from checked deployment.
+The scored ICSOR output is the final checked component state. For comparator accuracy assessment, the raw component prediction receives the same affine projection for mass conservation in Equation~\eqref{eq:icsor_affine_solution}. The composition map is then applied to the projected state. This comparison describes the accuracy of a checked structured prediction and comparator predictions after affine projection. The comparator projection imposes neither component non-negativity nor the weighted linear projection.
 
-The numerical assessment used an operator \(A_{num}\) obtained by rounding the null-space basis, setting negligible coefficients to zero, and dividing each row by its first nonzero coefficient. The fitting, affine projection, and constrained deployment calculations used this operator in place of the ideal operator \(A\). The reported violation rates use these adopted numerical balances and the stated operator scaling.
+The numerical assessment used an operator \(A_{num}\) obtained by rounding the null-space basis, setting negligible coefficients to zero, and dividing each row by its first nonzero coefficient. The fitting, affine projection, and constrained deployment calculations used this operator in place of the ideal operator \(A\). Rounding and thresholding can alter the exact null-space relation. The reported violation rates therefore establish compliance with the adopted numerical balances. They do not establish the same residual tolerance for the unrounded stoichiometric operator. The exact physical interpretation of the theoretical constraints requires an operator that satisfies the stated null-space relation.
 
-Physical diagnostics use the direct raw states of the comparators. For ICSOR, diagnostics distinguish the raw coupled state, affine state, and final deployed state. This stage separation identifies the component state assessed by each diagnostic. The empirical balance diagnostic is \(v_{mc}^{num}(c)=\|A_{num}(c-c_{in})\|_2\). The non-negativity diagnostic remains \(v_{nn}\) in Equation~\eqref{eq:icsor_deployment_diagnostics}. At each stage, the violation frequency for diagnostic \(v\) is
+Physical diagnostics use the direct raw states of the comparators. For ICSOR, diagnostics distinguish the raw coupled state, affine state, and final deployed state. This stage separation prevents affine projection for mass conservation used during scoring from being attributed to the learner. The empirical balance diagnostic is \(v_{mc}^{num}(c)=\|A_{num}(c-c_{in})\|_2\). The non-negativity diagnostic remains \(v_{nn}\) in Equation~\eqref{eq:icsor_deployment_diagnostics}. At each stage, the violation frequency for diagnostic \(v\) is
 \begin{equation}
 \equationname{Percentage frequency of a physical-constraint violation}
 \label{eq:icsor_violation_frequency}
 f_v=\frac{100}{n}\sum_{i=1}^{n}
 \mathbf{1}\{v(c_i)>10^{-10}\},
 \end{equation}
-where \(n\) is the number of assessed observations and \(v\) is either \(v_{mc}^{num}\) or \(v_{nn}\). Frequencies, residual magnitudes, adjustment distances, and deployment-branch use describe different aspects of the same prediction procedure. Predictive error is reported alongside these physical diagnostics.
+where \(n\) is the number of assessed observations and \(v\) is either \(v_{mc}^{num}\) or \(v_{nn}\). Frequencies, residual magnitudes, adjustment distances, and deployment-branch use describe different aspects of the same prediction procedure. None is treated as a substitute for predictive error.
 
-\subsubsection{Composite error measures}
+\subsection{Composite error measures}
 
 The differences among the five measures can first be computed for two hypothetical observations of one reported quantity. Take reference values \((2,4)\) and predictions \((3,2)\). Their residuals are \((1,-2)\). Squaring them gives \((1,4)\), while taking absolute values gives \((1,2)\). The mean squared error is \((1+4)/2=2.5\), its square root is approximately 1.5811, and the mean absolute error is \((1+2)/2=1.5\). These measures describe different summaries of the same two errors.
 
-The absolute relative errors are \(1/2\) and \(2/4\), so their mean is 0.5. The reference mean is 3. Its total squared variation is \((2-3)^2+(4-3)^2=2\). The prediction residual squared sum is 5. Therefore the coefficient of determination is \(1-5/2=-1.5\). Its negative value says that the hypothetical predictions have greater squared error than assigning the reference mean to both observations. These values illustrate the definitions on a hypothetical pair of observations.
+The absolute relative errors are \(1/2\) and \(2/4\), so their mean is 0.5. The reference mean is 3. Its total squared variation is \((2-3)^2+(4-3)^2=2\). The prediction residual squared sum is 5. Therefore the coefficient of determination is \(1-5/2=-1.5\). Its negative value says that the hypothetical predictions have greater squared error than assigning the reference mean to both observations. None of these example values is a performance finding.
 
 For reported quantity \(q\in\{1,2,3,4\}\), define the prediction residual \(e_{iq}=\widehat y_{iq}-y_{iq}\). The five measures are mean squared error, root mean squared error, mean absolute error, mean absolute relative error, and the coefficient of determination. They are computed per reported quantity and summarized across the four quantities. The squared and absolute measures are
 \begin{equation}
@@ -964,7 +922,7 @@ For strictly nonzero reference values, the relative measure is
 \label{eq:icsor_relative_error}
 E_{rel,q}=\frac{1}{n}\sum_i\frac{|e_{iq}|}{|y_{iq}|}.
 \end{equation}
-It is reported as a ratio. Multiplication by 100 converts it to a percentage. A zero reference value makes this expression undefined, and a very small value can dominate it. Any zero-reference convention is declared explicitly before comparing predictors. Targets with undefined relative error are identified under that convention.
+It is reported as a ratio. Multiplication by 100 converts it to a percentage. A zero reference value makes this expression undefined, and a very small value can dominate it. Any zero-reference convention is declared explicitly before comparing predictors. A finite relative-error summary is not assigned to a target for which the unmodified expression is undefined.
 
 The per-target coefficient of determination is
 \begin{equation}
@@ -974,7 +932,7 @@ R_q^2=1-
 \frac{\sum_i e_{iq}^{2}}
 {\sum_i(y_{iq}-\overline y_q)^2}.
 \end{equation}
-A target with zero reference variance makes this expression undefined. A negative value is possible when the predictor has a greater squared error than the reference-mean predictor. This coefficient measures prediction error relative to the target variance.
+A target with zero reference variance makes this expression undefined. A negative value is possible when the predictor has a greater squared error than the reference-mean predictor. This coefficient measures relative prediction error and is not a correlation coefficient.
 
 The aggregate squared error pools the four composite residuals. Its root is
 \begin{equation}
@@ -982,13 +940,13 @@ The aggregate squared error pools the four composite residuals. Its root is
 \label{eq:icsor_aggregate_root_error}
 E_{root}=\left(\frac{1}{4n}\sum_{q=1}^{4}\sum_{i=1}^{n}e_{iq}^{2}\right)^{1/2}.
 \end{equation}
-Aggregate absolute and relative errors use the corresponding mean over observations and composites. Aggregate \(R^2\) uses the mean of the four target-specific coefficients. The composite coordinates retain their own physical units. Their pooled error is a numerical benchmark summary under that coordinate convention. Per-target scores remain necessary to show which reported quantities contribute to an aggregate comparison.
+Aggregate absolute and relative errors use the corresponding mean over observations and composites. Aggregate \(R^2\) uses the mean of the four target-specific coefficients. The composite coordinates retain their own physical units. Their pooled error is a numerical benchmark summary under that coordinate convention, rather than a single common material quantity. Per-target scores remain necessary to show which reported quantities contribute to an aggregate comparison.
 
 Pooling before taking the square root also matters. If four hypothetical target mean squared errors are 1, 9, 1, and 9, the pooled mean squared error is 5 and its root is \(\sqrt5\), approximately 2.2361. The arithmetic mean of the four target root errors is instead \((1+3+1+3)/4=2\). These are different summaries. Equation~\eqref{eq:icsor_aggregate_root_error} specifies the first calculation.
 
-The primary ordering measure is aggregate root mean squared error. The other measures provide complementary assessments. Squared error emphasizes larger residuals, absolute error gives average deviation, relative error emphasizes deviations in relation to the reference magnitude, and \(R^2\) compares the squared residual with reference variation. Predictor orderings are compared separately under each measure.
+The primary ordering measure is aggregate root mean squared error. The other measures provide complementary assessments. Squared error emphasizes larger residuals, absolute error gives average deviation, relative error emphasizes deviations in relation to the reference magnitude, and \(R^2\) compares the squared residual with reference variation. A predictor need not receive the same ordering under all these measures.
 
-\subsubsection{Repeated sample-size assessment}
+\subsection{Repeated sample-size assessment}
 
 The sample-size design uses
 \begin{equation}
@@ -996,11 +954,11 @@ The sample-size design uses
 \label{eq:icsor_assessment_sizes}
 n\in\{500,1450,2400,3350,4300,5250,6200,7150,8100,9050,10000\}.
 \end{equation}
-At each size, ten subsamples are drawn without replacement from the design collection. Deterministic seeds are derived from seed 42. Each run uses a row-wise 80\% training and 20\% held-out split. All ten predictors receive the same sampled rows and partitions. The design specifies 110 fits per predictor across the size schedule. The assessment uses repeated random splitting.
+At each size, ten subsamples are drawn without replacement from the design collection. Deterministic seeds are derived from seed 42. Each run uses a row-wise 80\% training and 20\% held-out split. All ten predictors receive the same sampled rows and partitions. The design specifies 110 fits per predictor across the size schedule. This is repeated random splitting rather than ten-fold cross-validation.
 
-The fixed hyperparameters isolate sensitivity to available observations under one model specification. The mean and spread of each held-out score are summarized across the ten runs. Learning curves describe predictive performance across the entire sample-size schedule. \citet{Geman1992} explain the relation between flexibility and the bias-variance problem, and \citet{VieringLoog2023} review the varied shapes of learning curves.
+The fixed hyperparameters isolate sensitivity to available observations under one model specification. The mean and spread of each held-out score are summarized across the ten runs. Learning curves are assessed over the entire schedule because behavior at one sample size does not establish behavior at other sizes. \citet{Geman1992} explain the relation between flexibility and the bias-variance problem, and \citet{VieringLoog2023} review the varied shapes of learning curves.
 
-The learning-curve area can first be calculated over a reduced hypothetical schedule. Suppose an error measure has values 6, 4, and 3 at sample sizes 100, 200, and 400. Between the first two sizes, a trapezoid has width 100 and mean height \((6+4)/2=5\), giving area 500. Between the next two, its width is 200 and mean height \((4+3)/2=3.5\), giving area 700. The total area is 1200. Dividing by the total width \(400-100=300\) gives a normalized area of 4. A larger interval contributes more to this average than a smaller interval, even when each has one pair of endpoints. This hypothetical schedule illustrates the area calculation for unequal sample-size intervals.
+The learning-curve area can first be calculated over a reduced hypothetical schedule. Suppose an error measure has values 6, 4, and 3 at sample sizes 100, 200, and 400. Between the first two sizes, a trapezoid has width 100 and mean height \((6+4)/2=5\), giving area 500. Between the next two, its width is 200 and mean height \((4+3)/2=3.5\), giving area 700. The total area is 1200. Dividing by the total width \(400-100=300\) gives a normalized area of 4. A larger interval contributes more to this average than a smaller interval, even when each has one pair of endpoints. This schedule is a teaching illustration and does not replace the stated assessment sizes.
 
 For successive retained sizes \(n_1,\ldots,n_S\), write the mean error of predictor \(m\) under measure \(j\) as \(\overline M_{m,j}(n_s)\). The general numerical calculation is
 \begin{equation}
@@ -1017,7 +975,7 @@ Let \(\overline M_{m,j}(n)\) denote the mean held-out measure \(j\) for predicto
 L_{m,j}=\frac{1}{n_{max}-n_{min}}
 \int_{n_{min}}^{n_{max}}\overline M_{m,j}(n)\,\mathrm{d}n.
 \end{equation}
-The trapezoidal rule evaluates this integral over the stated sample sizes. Normalization by the sample-size interval gives an average height of the learning curve and preserves the units of measure \(j\). The normalization denominator is the sample-size interval. \citet{Cawley2011} and \citet{Guyon2011} provide related trajectory summaries in active learning. The present design varies the number of randomly sampled observations.
+The trapezoidal rule evaluates this integral over the stated sample sizes. Normalization by the sample-size interval gives an average height of the learning curve and preserves the units of measure \(j\). It does not normalize the prediction error by a target standard deviation. \citet{Cawley2011} and \citet{Guyon2011} provide related trajectory summaries in active learning. The present design changes the number of sampled observations without choosing observations through an active acquisition rule.
 
 A rank discards the numerical distance between scores and keeps their order. For four hypothetical predictor errors 3.0, 3.0, 4.5, and 6.0, the dense ranks are 1, 1, 2, and 3. The tied first two predictors receive the same rank. There is no skipped rank after the tie. The difference between the third and fourth errors does not influence the difference between their ranks. If one predictor receives ranks 1, 2, and 2 in three illustrative comparisons, its mean rank is \((1+2+2)/3=5/3\). The actual assessment averages over the stated combinations of target, measure, and size.
 
@@ -1029,7 +987,7 @@ For each measure \(j\), reported quantity \(q\), and retained size \(n_s\), pred
 \qquad
 \overline r_m=\frac{1}{5}\sum_{j=1}^{5}\overline r_{m,j}.
 \end{equation}
-These summaries describe relative ordering across the stated comparisons. \citet{Demsar2006} develops broader rank-based model comparisons, while \citet{Shevchenko2024} emphasize variability in benchmarking. Mean ranks and absolute errors are reported together to describe both ordering and error magnitude.
+These are descriptive summaries of relative ordering. They do not establish statistical significance. \citet{Demsar2006} develops broader rank-based model comparisons, while \citet{Shevchenko2024} emphasize variability in benchmarking. Their contributions support careful comparative assessment without equating a mean rank with an absolute error or a significance test.
 
 At the largest sample size, the generalization gap is
 \begin{equation}
@@ -1039,24 +997,24 @@ At the largest sample size, the generalization gap is
 \end{equation}
 A positive gap indicates greater held-out error. A small gap can accompany either accurate prediction or high-error underfitting, so it is interpreted with the corresponding absolute scores. Training time is recorded for every repeated fit and summarized as a distribution across runs. Deployment effort is assessed separately through prediction time, projection-branch use, and constrained-solve effort. This separation makes the cost of learning distinct from the cost of returning a checked state.
 
-For a hypothetical predictor with training error 0.5 and held-out error 0.8, the gap is 0.3. Another with errors 5.0 and 5.1 has a gap of only 0.1. The second has the smaller gap but much larger absolute errors. This arithmetic shows how absolute error and the training-to-held-out gap describe different aspects of prediction.
+For a hypothetical predictor with training error 0.5 and held-out error 0.8, the gap is 0.3. Another with errors 5.0 and 5.1 has a gap of only 0.1. The second has the smaller gap but much larger absolute errors. This arithmetic explains why the gap cannot by itself identify the more useful surrogate.
 
-\subsection{Interpretability assessment}
+\section{Interpretability assessment and modeling limits}
 
-The interpretability assessment examines the six driver blocks, the coupling matrix, and the corresponding component and composite raw-regression maps. It compares fitted response patterns with the declared process domain. The reported coefficient summaries describe the response structure of one fitted model. \citet{Brunton2016} connect interpretable nonlinear terms to the problem of recovering structure from data, while \citet{Machado2014} show how operational and influent uncertainty complicate parameter identification in activated sludge models.
+The interpretability assessment examines the six driver blocks, the coupling matrix, and the corresponding component and composite raw-regression maps. It compares fitted response patterns with the declared process domain. The reported coefficient summaries describe one fit and do not quantify coefficient stability across repeated training partitions. Stability assessment remains important because an explicit polynomial library does not remove identifiability problems. \citet{Brunton2016} connect interpretable nonlinear terms to the problem of recovering structure from data, while \citet{Machado2014} show how operational and influent uncertainty complicate parameter identification in activated sludge models.
 
-The driver and coupling parameters can trade off in the relation \(Rc=B\phi\). Different joint stationary solutions can predict similar component states with different coefficients. Symmetry removes the redundancy of ordered self-quadratic pairs. Coefficient signs and magnitudes are interpreted together with the complete fitted response.
+The driver and coupling parameters can trade off in the relation \(Rc=B\phi\). Different joint stationary solutions can therefore predict similar component states with different coefficients. Symmetry removes the redundancy of ordered self-quadratic pairs. It does not establish uniqueness of \(B\) and \(\Gamma\) together. Coefficient signs and magnitudes are interpreted as properties of a specified fitted model. Repeated stability checks and response comparisons provide stronger evidence than an isolated coefficient value.
 
-Prediction error and physical diagnostics are assessed separately for the raw regression, the affine state, and the final deployed state. The comparison distinguishes what the regression learns from what the projection enforces. The magnitude of the projection is also examined because a feasible deployed state can lie far from its raw prediction. Computational assessment records fitting effort and deployment effort separately. These measures describe the cost of fitting the structured regression and enforcing its physical conditions.
+Prediction error and physical diagnostics are assessed separately for the raw regression, the affine state, and the final deployed state. The comparison distinguishes what the regression learns from what the projection enforces. The magnitude of the projection is also examined because a feasible deployed state can lie far from its raw prediction. Computational assessment records fitting effort and deployment effort separately. These measures establish the cost of the structured regression and the cost of enforcing its physical conditions without assuming an accuracy benefit.
 
-The assessment evaluates steady-state component prediction in the stated input domain and control volume. The raw regression supplies an inspectable approximation, and checked deployment enforces the adopted numerical invariants and non-negativity on the returned state.
+The scope remains steady-state component prediction within the stated input domain and control volume. The projected state preserves the adopted invariants and non-negativity when the optimization and numerical checks succeed. It does not inherit the kinetic equations, dynamic behavior, or thermodynamic conditions of the full process model. The raw regression supplies an inspectable approximation. The deployment constraints supply defined material-accounting conditions. Their combined use is evaluated as an engineering surrogate under these limits.
 
 \section{Results}
 \label{sec:icsor_results}
 
 \subsection{Accuracy on the fixed held-out partition}
 
-Table~\ref{tab:icsor_fixed_results} reports the four-composite scores on the 2000 held-out cases. ICSOR used its final checked state. The other predictors used their affine-aligned states for accuracy scoring. The multilayer perceptron had the lowest pooled root mean squared error of 4.38. LightGBM followed at 5.30. Support vector regression and ICSOR were closely spaced at 5.97 and 5.98. These scores pool the native composite coordinates under Equation~\eqref{eq:icsor_aggregate_root_error}. The pooled scores retain the native composite-coordinate convention.
+Table~\ref{tab:icsor_fixed_results} reports the four-composite scores on the 2000 held-out cases. ICSOR used its final checked state. The other predictors used their affine-aligned states for accuracy scoring. The multilayer perceptron had the lowest pooled root mean squared error of 4.38. LightGBM followed at 5.30. Support vector regression and ICSOR were closely spaced at 5.97 and 5.98. These scores pool the native composite coordinates under Equation~\eqref{eq:icsor_aggregate_root_error}. They are not dimensionless component errors.
 
 \begin{table}[htbp]
 \centering\small
@@ -1080,9 +1038,9 @@ Random Forest & 29.00 & 16.93 & 0.7934 & 0.0632\\
 \end{tabular}
 \end{table}
 
-ICSOR's pooled root error was 36.5\% higher than the multilayer perceptron's and 12.8\% higher than LightGBM's. It remained below XGBoost and CatBoost on this measure. The mean absolute relative error of 0.0256 corresponded to 2.56\%. The fixed-split comparison quantified the accuracy trade-off associated with the structured prediction procedure.
+ICSOR's pooled root error was 36.5\% higher than the multilayer perceptron's and 12.8\% higher than LightGBM's. It remained below XGBoost and CatBoost on this measure. The mean absolute relative error of 0.0256 corresponded to 2.56\%. The fixed-split comparison therefore showed an accuracy trade-off rather than the lowest reported-composite error for the structured model.
 
-Figure~\ref{fig:icsor_fixed_results} compares root error, absolute error, and mean composite $R^2$. ICSOR ranked fourth by pooled root error on this partition.
+Figure~\ref{fig:icsor_fixed_results} compares root error, absolute error, and mean composite $R^2$. ICSOR remained within the leading group, but its explicit structure did not give the lowest error on this partition.
 
 \begin{figure}[htbp]
 \centering
@@ -1115,7 +1073,7 @@ Random Forest & 45.87 & 4.00 & 0.0361 & 35.26\\
 \end{tabular}
 \end{table}
 
-Figure~\ref{fig:icsor_composite_results} shows why the aggregate comparison needs separate target scores. COD and TSS contributed much larger numerical errors than TP. The separate target panels retain the constituent units used for each reported quantity.
+Figure~\ref{fig:icsor_composite_results} shows why the aggregate comparison needs separate target scores. COD and TSS contributed much larger numerical errors than TP. Their different constituent units prevent the pooled score from being interpreted as one common material concentration.
 
 \begin{figure}[htbp]
 \centering
@@ -1130,7 +1088,7 @@ ICSOR had the lowest mean held-out root error at the smallest design size of 500
 
 \begin{table}[htbp]
 \centering\small
-\caption{Repeated-split composite assessment over eleven design sizes and ten runs per size. Final error and the held-out minus training gap refer to $n=10{,}000$. The learning-curve area is normalized by the design-size interval. Lower error and curve-area values indicate better performance. The gap measures the separation between training and held-out error.}
+\caption{Repeated-split composite assessment over eleven design sizes and ten runs per size. Final error and the held-out minus training gap refer to $n=10{,}000$. The learning-curve area is normalized by the design-size interval, not by target variability. Lower values indicate better performance, while a smaller gap only indicates less separation between training and held-out error.}
 \label{tab:icsor_scaling_results}
 \begin{tabular}{p{4.3cm}rrrr}
 \toprule
@@ -1150,25 +1108,25 @@ Random Forest & 28.78 & 30.31 & 8.2 & 18.71\\
 \end{tabular}
 \end{table}
 
-ICSOR had the lowest reported normalized root-error curve area of 6.33. LightGBM was close at 6.35 and had the best mean dense rank of 2.2. The multilayer perceptron had the second-best mean rank of 2.5. ICSOR and XGBoost each had a reported mean rank of 4.3. ICSOR led the curve-area comparison, while LightGBM led the mean-rank comparison.
+ICSOR had the lowest reported normalized root-error curve area of 6.33. LightGBM was close at 6.35 and had the best mean dense rank of 2.2. The multilayer perceptron had the second-best mean rank of 2.5. ICSOR and XGBoost each had a reported mean rank of 4.3. A favorable average root-error trajectory therefore did not make ICSOR the leading predictor across every metric, target, and design size.
 
-ICSOR's held-out minus training root-error gap was 0.22. This was smaller than the gaps for the multilayer perceptron, LightGBM, XGBoost, and support vector regression. Partial least squares also had a relatively small gap of 0.38, but its held-out root error was 27.96. ICSOR combined a small gap with substantially lower absolute error than partial least squares.
+ICSOR's held-out minus training root-error gap was 0.22. This was smaller than the gaps for the multilayer perceptron, LightGBM, XGBoost, and support vector regression. Partial least squares also had a relatively small gap of 0.38, but its held-out root error was 27.96. The small gap of the structured model was consequently meaningful only when considered with its much lower absolute error.
 
 Figure~\ref{fig:icsor_efficiency_results} presents the three trajectory summaries separately. ICSOR had the lowest root-error curve area, whereas LightGBM had the best mean rank. The two summaries answer different comparative questions.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{results/ch5/q03_sample_efficiency.png}
-\caption{Normalized root-error curve area, mean dense rank, and held-out minus training root-error gap. Curve areas and ranks summarize eleven design sizes with ten repeated splits per size. The gap refers to the largest design size. Teal identifies ICSOR. The gap is reported alongside the held-out error.}
+\caption{Normalized root-error curve area, mean dense rank, and held-out minus training root-error gap. Curve areas and ranks summarize eleven design sizes with ten repeated splits per size. The gap refers to the largest design size. Teal identifies ICSOR. A smaller gap does not by itself establish lower held-out error.}
 \label{fig:icsor_efficiency_results}
 \end{figure}
 
-Figure~\ref{fig:icsor_budget_results} compares the smallest and largest design sizes for four leading predictors. ICSOR led this group at 500 cases, while the multilayer perceptron led at 10,000 cases. The two endpoints show the change in the leading predictor between the smallest and largest designs.
+Figure~\ref{fig:icsor_budget_results} compares the smallest and largest design sizes for four leading predictors. ICSOR led this group at 500 cases, while the multilayer perceptron led at 10,000 cases. These endpoint comparisons do not specify the exact design size at which the ordering changed.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{results/ch5/q04_data_budget_comparison.png}
-\caption{Mean held-out pooled composite root error at design sizes 500 and 10,000 for ICSOR, XGBoost, LightGBM, and the multilayer perceptron. Values summarize ten repeated splits. The panels show repeated-split endpoint means at the two specified design sizes.}
+\caption{Mean held-out pooled composite root error at design sizes 500 and 10,000 for ICSOR, XGBoost, LightGBM, and the multilayer perceptron. Values summarize ten repeated splits. The displayed endpoints are distinct from the fixed-split scores and do not reconstruct intermediate learning-curve values.}
 \label{fig:icsor_budget_results}
 \end{figure}
 
@@ -1198,9 +1156,9 @@ Random Forest & 100.0 & 0.00\\
 \end{tabular}
 \end{table}
 
-No raw coupled ICSOR prediction passed both physical checks. All failed the balance tolerance, although 21.7\% were non-negative. Affine projection restored the adopted balances for every case and also returned a non-negative state for 436 cases, or 21.8\%. Those cases were returned after the affine stage. The remaining 1564 cases, or 78.2\%, required the weighted linear projection. The solve used a mean of 23.5 iterations and a maximum of 40. Every final state passed both checks.
+No raw coupled ICSOR prediction passed both physical checks. All failed the balance tolerance, although 21.7\% were non-negative. Affine projection restored the adopted balances for every case and also returned a non-negative state for 436 cases, or 21.8\%. Those cases required no constrained linear solve. The remaining 1564 cases, or 78.2\%, required the weighted linear projection. The solve used a mean of 23.5 iterations and a maximum of 40. Every final state passed both checks.
 
-Figure~\ref{fig:icsor_deployment_results} keeps the comparator diagnostics and ICSOR's deployment stages separate. The rise from zero raw balance compliance to complete final compliance occurred through projection. The branch counts show that the constrained solve was used for most deployed predictions.
+Figure~\ref{fig:icsor_deployment_results} keeps the comparator diagnostics and ICSOR's deployment stages separate. The rise from zero raw balance compliance to complete final compliance occurred through projection. The branch counts also show that the constrained solve was a regular part of deployment rather than a rare exception.
 
 \begin{figure}[htbp]
 \centering
@@ -1209,15 +1167,15 @@ Figure~\ref{fig:icsor_deployment_results} keeps the comparator diagnostics and I
 \label{fig:icsor_deployment_results}
 \end{figure}
 
-These stage counts identify the source of the final compliance. The affine stage restored the adopted balances, and the constrained projection supplied non-negativity for the remaining cases. The complete deployment procedure returned zero final violation rates.
+These stage counts identify the source of the final compliance. The soft invariant penalty and non-negative fitted-state variable did not make the raw coupled prediction feasible on an unseen case. The affine and constrained projection stages supplied the observed final compliance. The zero violation rates therefore belonged to the complete deployment procedure rather than to the fitted polynomial alone.
 
 \subsection{Computational effort}
 
 At the smallest design size, mean ICSOR fitting time was 21.5 s. LightGBM, XGBoost, and the multilayer perceptron required 4.72, 3.16, and 4.99 s, respectively. At the largest size, ICSOR required 94.4 s. The faster tree ensembles required 4.13--8.13 s, while partial least squares and the nearest-neighbor model required 0.228 and 2.70 s. ICSOR was nevertheless faster to fit than AdaBoost at 117.7 s, support vector regression at 136.8 s, and the multilayer perceptron at 161.6 s.
 
-The recursive constrained fitting procedure was more costly than the fastest comparators and faster than three comparators at the largest design size. Fitting time was assessed separately from deployment effort. The 78.2\% linear-projection activation rate showed that most fixed-split predictions required an optimization step after regression evaluation. The reported iteration counts described this deployment workload.
+The recursive constrained fitting procedure was therefore more costly than the fastest comparators. It did not become the most costly option at the largest design size. Fitting time remained separate from deployment effort. The 78.2\% linear-projection activation rate showed that most fixed-split predictions required an optimization step after regression evaluation. Iteration counts described that workload but did not establish a prediction latency or a plant-control sampling rate.
 
-Figure~\ref{fig:icsor_fitting_results} separates the two design sizes on logarithmic time axes. The smaller-size panel compares four predictors, and the larger-size panel compares ICSOR with five alternatives. The comparison reports the time required for the repeated model fits.
+Figure~\ref{fig:icsor_fitting_results} separates the two design sizes on logarithmic time axes. The smaller-size panel compares four predictors, and the larger-size panel compares ICSOR with five alternatives. The comparison concerns fitting rather than hyperparameter selection or final-state projection.
 
 \begin{figure}[htbp]
 \centering
@@ -1228,7 +1186,7 @@ Figure~\ref{fig:icsor_fitting_results} separates the two design sizes on logarit
 
 \subsection{Inspectable coefficient structure}
 
-Table~\ref{tab:icsor_coefficient_results} reports the COD raw-composite coefficient counts and the shared coupling entries. The polynomial summary counted 276 unique candidates. Adding the 380 off-diagonal coupling candidates gave 656 entries in this display. The display combined the COD polynomial row with the shared coupling entries. The display retained 469 entries, or 71.5\%, under the specified post-fitting thresholds.
+Table~\ref{tab:icsor_coefficient_results} reports the COD raw-composite coefficient counts and the shared coupling entries. The polynomial summary counted 276 unique candidates. Adding the 380 off-diagonal coupling candidates gave 656 entries in this display. This was not a count of all parameters across the twenty component drivers. The display retained 469 entries, or 71.5\%, under the specified post-fitting thresholds.
 
 \begin{table}[htbp]
 \centering\small
@@ -1250,16 +1208,16 @@ Combined display & 656 & 469 & 71.5\\
 \end{tabular}
 \end{table}
 
-The influent curvature block retained 44 of 210 unique terms. In contrast, 371 of 380 coupling entries exceeded their reporting threshold. The fitted structure therefore combined selective influent curvature with dense component coupling. Selectivity was concentrated in the influent-curvature block, while the coupling matrix was dense.
+The influent curvature block retained 44 of 210 unique terms. In contrast, 371 of 380 coupling entries exceeded their reporting threshold. The fitted structure therefore combined selective influent curvature with dense component coupling. It did not support a description of the complete model as uniformly sparse.
 
-The largest absolute COD influent-curvature entry was the dissolved-oxygen self term of $-5.8097$. Each mirrored dissolved-oxygen and dinitrogen cell had value $-1.7411$. Their combined unordered interaction coefficient was $-3.4822$. Other prominent terms linked dissolved oxygen with metal phosphate, ammonia-oxidizing biomass, soluble phosphate, nitrite-oxidizing biomass, and nitrite. These values described the raw composite map after coupling and reporting.
+The largest absolute COD influent-curvature entry was the dissolved-oxygen self term of $-5.8097$. Each mirrored dissolved-oxygen and dinitrogen cell had value $-1.7411$. Their combined unordered interaction coefficient was $-3.4822$. Other prominent terms linked dissolved oxygen with metal phosphate, ammonia-oxidizing biomass, soluble phosphate, nitrite-oxidizing biomass, and nitrite. These values described the raw composite map after coupling and reporting. They were not coefficients of the final projected state.
 
-Figure~\ref{fig:icsor_structure_results} displays the retained counts and selected oxygen-related curvature terms. Its interaction values combine the two mirrored cells. The comparison describes the fitted polynomial under its native input units.
+Figure~\ref{fig:icsor_structure_results} displays the retained counts and selected oxygen-related curvature terms. Its interaction values combine the two mirrored cells. The comparison describes the fitted polynomial under its native input units, not a ranking of causal process importance.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{results/ch5/q07_coefficient_structure.png}
-\caption{Coefficient structure of one fitted ICSOR model. The left panel separates entries above and below the display thresholds for the COD polynomial blocks and shared coupling. The right panel shows selected COD influent-curvature coefficients with mirrored interaction entries combined. Coefficient units depend on the corresponding input terms. The displayed values describe the raw composite mapping.}
+\caption{Coefficient structure of one fitted ICSOR model. The left panel separates entries above and below the display thresholds for the COD polynomial blocks and shared coupling. The right panel shows selected COD influent-curvature coefficients with mirrored interaction entries combined. Coefficient units depend on the corresponding input terms. These values describe the raw composite mapping rather than final deployed sensitivities.}
 \label{fig:icsor_structure_results}
 \end{figure}
 
@@ -1268,32 +1226,34 @@ Figure~\ref{fig:icsor_structure_results} displays the retained counts and select
 
 \subsection{A structured approximation under limited data}
 
-ICSOR's lowest small-design error and lowest reported root-error curve area supported a data-efficiency benefit in the evaluated domain. Its explicit second-order terms defined a structured response approximation. The invariant-aware fitting objective and learned component coupling supplied additional structure. The combined design performed well when fewer simulated states were available. This interpretation is consistent with the role of model structure in hybrid learning discussed by \citet{Shen2023} and with the changing model orderings described by \citet{VieringLoog2023}.
+ICSOR's lowest small-design error and lowest reported root-error curve area supported a data-efficiency benefit within the evaluated domain. Its explicit second-order terms restricted the response to a defined approximation class. The invariant-aware fitting objective and learned component coupling supplied additional structure. The combined design performed well when fewer simulated states were available. This interpretation is consistent with the role of model structure in hybrid learning discussed by \citet{Shen2023} and with the changing model orderings described by \citet{VieringLoog2023}.
 
-The leading predictor depended on the assessment measure. LightGBM had the best mean rank across targets, metrics, and sizes. The multilayer perceptron had the lowest full-size error. ICSOR's curve area was 6.33, close to LightGBM's 6.35. Selection based on full-size composite error favored the multilayer perceptron under this protocol. An inspectable equation, data efficiency, and checked final states provided additional engineering criteria for selecting ICSOR.
+The benefit was not uniform across assessment measures. LightGBM had the best mean rank across targets, metrics, and sizes. The multilayer perceptron had the lowest full-size error. The difference between ICSOR's curve area of 6.33 and LightGBM's 6.35 was small and descriptive. It did not establish statistically superior sample efficiency. A choice based only on the lowest full-size composite error would favor the multilayer perceptron under this protocol. A choice requiring an inspectable equation and checked final state would consider a different set of requirements.
 
-The training-to-held-out gap and absolute error described complementary properties. Partial least squares combined a small gap with high prediction error. ICSOR combined a gap of 0.22 with substantially lower held-out error, while the leading flexible predictors achieved still lower absolute error. Reporting both measures clarified the relation between generalization and accuracy.
+The small training-to-held-out gap provided supporting evidence rather than an independent measure of usefulness. Partial least squares demonstrated why a small gap could also accompany high-error underfitting. ICSOR combined its small gap with substantially lower held-out error, but still had higher error than the leading flexible predictors. Generalization and absolute accuracy therefore remained separate comparisons.
 
 \subsection{Fitting guidance and final-state enforcement}
 
-The physical assessment showed how the complete procedure supplied its returned state. The soft invariant penalty guided the fitted training states, and the learned coupled equation generated the raw prediction for each new input. Every fixed-split raw prediction required affine projection. The affine state passed both checks in 21.8\% of cases, and the weighted linear projection handled the remaining 78.2\%.
+The raw coupled results exposed the limit of physical guidance during training. A soft invariant penalty could reduce a discrepancy without forcing it below the deployment tolerance. A non-negative fitted-state variable constrained training variables but did not restrict every new polynomial prediction. The complete procedure still needed affine projection in every fixed-split case and a constrained linear projection in most cases.
 
-The complete deployment procedure returned zero final balance and non-negativity violations. Stage-wise diagnostics identified the affine and constrained projections as the source of this compliance. This separation between constrained fitting and output enforcement follows the approaches examined by \citet{Hansen2024} and \citet{KircherVotsmeier2025}.
+The staged assessment was therefore essential to interpreting the zero final violation rates. Those rates showed reliable numerical enforcement by the deployment procedure. They did not show that the raw regression learned exact feasibility. This distinction follows the separation between constrained fitting and hard output enforcement examined by \citet{Hansen2024} and \citet{KircherVotsmeier2025}.
 
-The numerical assessment used the rounded and normalized operator $A_{num}$ with a tolerance of $10^{-10}$. Accuracy scoring used checked ICSOR states and affine-aligned comparator states. Physical comparator diagnostics used their raw states. These specified procedures produced the 36.5\% root-error difference between ICSOR and the multilayer perceptron. The shared alignment and reporting convention also produced the common TP error of 0.0361.
+The operator convention further limited the meaning of exactness. The theoretical invariant relation used the stoichiometric null space. The empirical checks used the rounded and normalized operator $A_{num}$. A state satisfying the latter to $10^{-10}$ need not satisfy the unrounded relation to the same tolerance. The results established compliance with the declared numerical equations and non-negativity checks. A guarantee for the unrounded stoichiometric equations would require their separate numerical audit.
+
+The accuracy comparison also concerned complete prediction procedures. Comparator errors included affine alignment, whereas their physical violation rates used raw states. ICSOR errors and final physical rates used its checked deployment output. The 36.5\% root-error difference from the multilayer perceptron consequently compared these specified procedures. It was not a paired estimate of the error added by ICSOR's projection alone. The common TP error likewise reflected the shared alignment and reporting convention rather than evidence that every raw predictor independently learned the same phosphorus response.
 
 \subsection{What the coefficient structure explains}
 
-The named coefficient blocks exposed operating dependence, loading dependence, curvature, and component coupling for direct inspection. This form of interpretability follows the preference for transparent models discussed by \citet{Rudin2019}. Coupling and the reporting map translated the component-driver coefficients into composite response equations.
+The named coefficient blocks made operating dependence, loading dependence, curvature, and component coupling available for direct inspection. This was a structural form of interpretability consistent with the preference for transparent models discussed by \citet{Rudin2019}. It did not require a claim that the coefficients were causal biological parameters.
 
-The retained counts showed where the fitted representation was selective and where it remained dense. Most unique influent-curvature terms were below the display threshold, while almost all coupling entries exceeded their separate threshold. The display retained 469 of 656 entries. The complete fitted mapping retained its coefficients, with reporting thresholds controlling the detail visible in the display.
+The retained counts showed where the fitted representation was selective and where it remained dense. Most unique influent-curvature terms were below the display threshold, but almost all coupling entries exceeded their separate threshold. The reporting threshold did not set those terms to zero during fitting. It therefore could not be interpreted as evidence that regularization had selected exactly 469 active parameters.
 
-The prominent oxygen-related curvature terms were consistent with oxygen-sensitive reaction pathways in the adopted process model. \citet{StenstromSong1991} provide process context for oxygen dependence in nitrification, while \citet{Wentzel1992} describe interactions among nutrient-removal pathways. The dissolved-oxygen self coefficient and the oxygen-dinitrogen interaction therefore identified fitted response patterns that could be compared with the reaction model. Their contributions were interpreted in the native input units and through the complete coupled mapping.
+The prominent oxygen-related curvature terms were consistent with oxygen-sensitive reaction pathways in the adopted process model. \citet{StenstromSong1991} provide process context for oxygen limitations in nitrification, while \citet{Wentzel1992} describe interactions among nutrient-removal pathways. Such consistency was a plausibility check. Feature units, coefficient trade-offs, and the simultaneous coupling relation prevented an individual sign from establishing a causal operating effect.
 
-The polynomial supplied analytical raw sensitivities, while the affine projection modified them to preserve the influent inventories. Equations~\eqref{eq:icsor_raw_jacobians} and \eqref{eq:icsor_affine_jacobians} described these two stages. The frequent constrained branch made active-set sensitivity relevant to the final returned response. Figure~\ref{fig:assessment_branch_sensitivity} demonstrated this change through an explicit example in which the first-component slope changed from positive to negative and then became zero at an active non-negativity boundary.
+The raw mapping was global and differentiable, but final deployment depended on the projection branch and active constraints. A coefficient of the raw COD map therefore did not describe a global derivative of the returned COD value. Equations~\eqref{eq:icsor_raw_jacobians} and \eqref{eq:icsor_affine_jacobians} identified two distinct sensitivity calculations. The frequent constrained branch made the final active-set dependence practically relevant. Coefficient stability across repeated fits and final-state sensitivities remained unquantified by the reported coefficient display.
 
-\subsection{Engineering implications}
+\subsection{Engineering implications and limits}
 
-The structured model combined competitive composite prediction, favorable low-data behavior, and final states that passed the imposed numerical checks. Its second-order terms and coupling map made the fitted response available for inspection. Checked deployment then enforced the adopted material accounting and component non-negativity before reporting COD, TN, TP, and TSS.
+The structured model combined competitive composite prediction, favorable low-data behavior, and a final state that passed its imposed numerical checks. These benefits came with higher fitting cost than the fastest tree and linear comparators and frequent constrained deployment solves. The fitting measurements supported its use as an offline approximation under the evaluated conditions. They did not establish that the complete prediction procedure met a real-time control deadline.
 
-These properties involved distinct computational costs. ICSOR required more fitting time than the fastest tree and linear comparators. At 10,000 cases, it fitted faster than AdaBoost, support vector regression, and the multilayer perceptron. The constrained deployment solve was used for most fixed-split predictions. Separate fitting and deployment measurements therefore described the effort required to construct the approximation and return a checked state for engineering analysis.
+The evidence remained limited to simulated steady states of one standalone reactor within the sampled influent and operating ranges. No exterior-domain assessment was reported for this structured fit. Its coefficients and final numerical feasibility therefore did not establish extrapolation accuracy, transient behavior, kinetic reachability, or field performance. The useful result was an inspectable regression with explicitly checked returned states, not a replacement for all mechanistic validation.

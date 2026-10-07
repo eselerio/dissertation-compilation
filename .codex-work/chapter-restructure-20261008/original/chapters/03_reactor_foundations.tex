@@ -537,33 +537,3 @@ In a one-dimensional domain with coordinate $z$, the advective flux is $v c$ and
 The term $s_j$ represents a specified external source per unit volume. The first two terms express spatial transport. The summation is the same component-by-component reaction accounting used in the mixed reactor. Boundary conditions specify how material enters and leaves the spatial domain. An invariant weighted sum cancels compatible reaction terms, but the transport and external-source terms still remain in its balance.
 
 This spatial formulation explains how the theoretical ideas can extend to other treatment models. It is not an additional spatial reactor in the present study. Chapter~\ref{ch:plant} uses mixed reactor stages and a layered clarifier. The stages represent sequential treatment conditions, while the clarifier layers represent solids transport and inventory. Their distinct boundaries must be respected when mass conservation is imposed.
-
-\section{A common basis for assessing surrogate responses}
-
-The component formulation links mechanistic modeling, statistical prediction, physical enforcement, interpretation, and operating choice. The mechanistic model supplies the reference treatment state. The statistical predictor approximates that state from the influent and controls. Projection returns a state within the specified physical set. Interpretation follows the fitted response, and optimization uses that response to select operating settings. Substrate, nutrient, biomass, and solids quantities provide the engineering basis for examining each stage.
-
-Paired raw and projected assessments use the same fitted prediction to identify the effect of enforcement. A comparison between separately trained predictors also includes differences in fitting and hyperparameter selection. The structured regression adds intermediate coupled and affine states that can be examined before final projection. These stages connect the observed output to the part of the calculation that supplied it.
-
-For a connected plant, assessment follows the mixer, reactor stages, clarifier outlets, and solids inventory. Location-specific errors describe where joint projection changes the response. Plant aggregates summarize the resulting prediction across the treatment system. The quantities used in the intended operating decision guide this assessment \citep{BhosekarIerapetritou2018,McBride2019}.
-
-Table~\ref{tab:claim_evidence} records the evidence associated with these assessment questions. Input transformations, learned scales, regularization, and hyperparameter selection use development information. Reserved responses provide the final prediction assessment. This data separation applies to the full procedure, including its learned model and subsequent constrained calculation \citep{Kaufman2012}.
-
-\begin{table}[htbp]
-\centering\small
-\caption{Assessment questions and the evidence used to connect surrogate responses to engineering decisions.}
-\label{tab:claim_evidence}
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}>{\raggedright\arraybackslash}p{0.27\textwidth}}
-\toprule
-Assessment question & Evidence & Engineering quantity\\
-\midrule
-Predictive agreement & Held-out component and composite errors with defined scales & Substrate, nutrients, biomass, and solids concentrations\\
-Physical admissibility & Equality residuals, non-negativity checks, and inventory bounds & Conserved inventories and feasible component states\\
-Sample efficiency & Common learning curves and variation across partitions & Error at the available simulation budget\\
-Inspectable structure & Named coefficient blocks, physical units, and complete-response sensitivities & Dependence on influent and operating inputs\\
-Operating quality & Independent mechanistic evaluation at selected controls & Treatment outcomes, engineering requirements, and objective values\\
-Computational effort & Development, search, prediction, projection, and verification times & Time required to deliver an evaluated decision\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The numerical checks use stated tolerances and residual definitions. Equalities define the mathematical constraints, while residuals describe their satisfaction by the returned numerical state. Reporting these quantities in original units or a defined scaled form makes the physical calculation available for examination \citep{Boyd2004,BuzziFerraris2013}. Chapters~\ref{ch:projection}--\ref{ch:plant} apply this common assessment basis to their reactor, structured-regression, and connected-plant formulations.

@@ -1,0 +1,47 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Research problems, methodological contributions, and assessment evidence.}}{11}{table.caption.8}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Treatment prediction studies and the scope of their evidence.}}{20}{table.caption.10}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Established studies and the remaining questions addressed by the dissertation.}}{31}{table.caption.12}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Component meanings, native units, and fixed coefficients for the four reported water quality quantities. Each coefficient converts the native component basis to the corresponding reported basis.}}{37}{table.caption.14}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Assessment questions and the evidence used to connect surrogate responses to engineering decisions.}}{56}{table.caption.17}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Design bounds for the standalone reactor learning domain. The intervals define the sampled input ranges.}}{72}{table.caption.29}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Output handling and preprocessing for the statistical comparators. Scaling uses only the training partition applicable to each fit.}}{74}{table.caption.30}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Search domains and fixed controls for tree ensemble surrogates. Integer limits are inclusive. ``Log'' denotes a log-uniform search.}}{76}{table.caption.31}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Search domains and fixed controls for kernel, neighbor, multiresponse, and neural surrogates. Integer limits are inclusive. ``Log'' denotes a log-uniform search.}}{77}{table.caption.32}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Fixed exterior intervals for the two extrapolation designs. The intervals define the exterior input conditions.}}{83}{table.caption.36}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Accepted mechanistic reference states and their maximum invariant residuals. The residual uses the fixed invariant-coordinate convention. Solver acceptance uses the component-balance residual.}}{85}{table.caption.37}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Component prediction error at $N=10{,}000$. Raw and projected nRMSE values are five-fold means with sample standard deviations. The paired difference is projected minus raw and is calculated before rounding.}}{85}{table.caption.38}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Physical diagnostics at $N=10{,}000$. Entries are five-fold means. Every raw mass conservation violation rate was 100\%. Every projected mass conservation and non-negativity violation rate was zero.}}{89}{table.caption.42}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Component nRMSE beyond the learning domain. Each entry summarizes 600 accepted mechanistic states from one full-domain refit. }}{92}{table.caption.46}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Five-fold mean computational costs at $N=10{,}000$. Search and fitting are in seconds. Prediction costs are in milliseconds per sample under the fixed 512-row batch protocol. Complete prediction includes raw inference and projection.}}{94}{table.caption.49}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Specified fitting settings for the structured regression.}}{112}{table.caption.57}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Specified configurations of the nine unconstrained comparators.}}{126}{table.caption.72}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Fixed-split held-out composite performance. ICSOR is scored after checked deployment. Comparators are scored after affine alignment without a non-negativity constraint. Relative absolute error is a ratio rather than a percentage.}}{131}{table.caption.76}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Fixed-split root mean squared error for each composite. COD, TN, TP, and TSS use g COD m$^{-3}$, g N m$^{-3}$, g P m$^{-3}$, and g TSS m$^{-3}$, respectively.}}{133}{table.caption.78}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Repeated-split composite assessment over eleven design sizes and ten runs per size. Final error and the held-out minus training gap refer to $n=10{,}000$. The learning-curve area is normalized by the design-size interval. Lower error and curve-area values indicate better performance. The gap measures the separation between training and held-out error.}}{134}{table.caption.80}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Component-state violation frequencies on the 2000 held-out cases. ICSOR uses its final checked state. Comparators use their raw state, not the affine-aligned state used for accuracy scoring. Balance violations refer to $A_{num}$ and the declared $10^{-10}$ tolerance.}}{136}{table.caption.83}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Coefficients exceeding the reporting thresholds in one fitted model. Polynomial blocks describe the COD row of $B_{\mathrm {raw,comp}}$. The coupling matrix is shared across component outputs and uses its own threshold. Symmetric quadratic blocks count unique upper-triangular terms.}}{138}{table.caption.86}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Blocks in the 161-coordinate connected response.}}{156}{table.caption.97}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Hypothetical calculation of dimensionless objective contributions.}}{172}{table.caption.107}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Plant geometry and operating domain.}}{182}{table.caption.114}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Independent fresh-influent intervals for the connected plant.}}{183}{table.caption.116}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Fixed yields, constituent contents, and conversion factors.}}{184}{table.caption.118}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Fixed hydrolysis and heterotrophic rate and saturation constants.}}{184}{table.caption.119}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Fixed storage, nitrifier, and chemical rate and saturation constants.}}{185}{table.caption.120}%
+\contentsline {table}{\numberline {6.8}{\ignorespaces Fixed settling and oxygen-transfer parameters.}}{185}{table.caption.121}%
+\contentsline {table}{\numberline {6.9}{\ignorespaces Randomization and fitting settings specified before assessment.}}{186}{table.caption.123}%
+\contentsline {table}{\numberline {6.10}{\ignorespaces Steady-state generation and physical acceptance settings.}}{188}{table.caption.125}%
+\contentsline {table}{\numberline {6.11}{\ignorespaces Projection solve and independent audit settings.}}{192}{table.caption.128}%
+\contentsline {table}{\numberline {6.12}{\ignorespaces Surrogate search, sensitivity, and finite-poll settings.}}{196}{table.caption.132}%
+\contentsline {table}{\numberline {6.13}{\ignorespaces Direct continuation and exact-evaluation qualification settings.}}{198}{table.caption.135}%
+\contentsline {table}{\numberline {6.14}{\ignorespaces Distinct questions retained in failure and qualification accounting.}}{203}{table.caption.140}%
+\contentsline {table}{\numberline {6.15}{\ignorespaces Realized mechanistic samples for the connected-plant assessment. The separate development and holdout designs retained accepted states without replacing rejected candidates.}}{205}{table.caption.142}%
+\contentsline {table}{\numberline {6.16}{\ignorespaces Qualification of the initial center-start searches. Each route was attempted in eleven cases. Finite-poll qualification uses the specified directions and radii. The separately evaluated S1 direct decision appears in the paired figures but does not alter these initial-search counts.}}{208}{table.caption.146}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces Synthesis of the observed findings and their roles in activated sludge process optimization.}}{221}{table.caption.152}%

@@ -1,15 +1,15 @@
 # DENG Dissertation Manuscript
 
 LaTeX source and compiled outputs for the dissertation manuscript. The project
-develops an interpretable, physics-informed surrogate and optimization
-framework for connected wastewater-treatment-plant design and operation.
+develops physically constrained machine learning surrogates of activated sludge
+systems for process optimization.
 
 ## Repository layout
 
 - `article/manuscript.tex` — dissertation entry point.
 - `article/chapters/` — chapter sources, covering the research problem,
   literature, reactor foundations, prediction and projection, interpretable
-  surrogates, connected-plant modeling, and assessment.
+  surrogates, connected plant modeling, and conclusion and outlook.
 - `article/references.bib` — consolidated bibliography used by the manuscript.
 - `article/figures/` — source and rendered manuscript figures.
 - `article/compile/` — article/submission versions, supplementary material,
