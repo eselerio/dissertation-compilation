@@ -3,15 +3,13 @@
 
 \section{From an admissible reactor prediction to a plant decision}
 
-Mixed liquor is the wastewater and suspended biomass within the biological reactors. Clarifier overflow is the upper outlet carrying treated water. Clarifier underflow is the lower outlet carrying concentrated sludge. Their concentrations and flow rates determine the material discharged, recycled, and wasted.
-
 An activated sludge plant repeatedly moves material between biological reactors and a secondary clarifier. Settled biomass returns to the biological treatment train. Mixed liquor may return to an upstream stage to support nitrogen removal. A separate waste stream removes accumulated solids. Aeration, recycle, and wasting therefore affect more than one treatment unit. The account of biological treatment given by \citet{Henze2008} explains why these decisions need a common plant balance. The clarification and thickening model of \citet{HartelPopel1992} adds the storage and separation processes that determine which solids return to the reactors.
 
 The operating question is how to choose these settings while balancing treated-water quality and resource use. \citet{Araujo2013} formulate activated sludge operation as a constrained economic problem and examine the sensitivity of the resulting decisions. \citet{PadronPaez2020} examine wastewater treatment design through multiple objectives. \citet{Aboagye2021} organize treatment-network design and sustainability assessment within mathematical programming. These studies make a common point. A preferred decision depends on the objective, the feasible operating region, and the quantities used to measure treatment and resource use.
 
 A process surrogate can reduce the cost of evaluating the same plant at many candidate settings. \citet{McBride2019} describe surrogate construction from experiments and process simulations. \citet{BhosekarIerapetritou2018} connect surrogate prediction to feasibility analysis and optimization. Applications include the Kriging treatment model of \citet{He2023}, the machine learning process model within predictive control developed by \citet{Bernardelli2020}, and the unit surrogates used for wastewater resource-recovery optimization by \citet{Durkin2024}. Each application links prediction to a decision problem. Its objective and constraints determine which prediction errors matter most.
 
-A physically admissible prediction for one reactor does not by itself establish a consistent plant prediction. The predicted clarifier underflow may disagree with the predicted return-sludge contribution at the mixer. Separate predictions may also assign different amounts of an inventory used for mass conservation to connected streams. ICSOR supplies a useful starting point because it separates second-order statistical prediction from enforcement of declared physical relations \citep{Selerio2026}. Extending this principle to a plant requires a joint response and a joint projection. The projection must account for the mixer, all reactors, both clarifier outlets, and the solids stored in the clarifier.
+A physically admissible prediction for one reactor does not by itself establish a consistent plant prediction. The predicted clarifier underflow may disagree with the predicted return-sludge contribution at the mixer. Separate predictions may also assign different amounts of a inventory used for mass conservation to connected streams. ICSOR supplies a useful starting point because it separates second-order statistical prediction from enforcement of declared physical relations \citep{Selerio2026}. Extending this principle to a plant requires a joint response and a joint projection. The projection must account for the mixer, all reactors, both clarifier outlets, and the solids stored in the clarifier.
 
 Three questions remain distinct. A network prediction can satisfy the imposed balances. It can also approximate a mechanistic reference accurately. Finally, it can lead an optimizer to a useful operating decision. None of these properties is a substitute for the others. The surrogate comparisons studied by \citet{Pedrozo2025} make optimization performance a separate endpoint from predictive accuracy. The gray-box methods of \citet{Hameed2026} also retain checks against the original model when managing approximation error. The connected formulation developed here therefore includes independent mechanistic evaluation of selected controls.
 
@@ -125,7 +123,7 @@ Let $\vartheta$ collect only settings that vary freely. A constant setting remai
 
 \subsection{Biological conversion and non-negativity}
 
-The reaction network uses the component and process model of Chapter~\ref{ch:foundations}. Its stoichiometric matrix is $\nu\in\mathbb R^{P\times F}$ and its process-rate vector in stage $i$ is $\rho_i\in\mathbb R_+^P$. For component $f$, the dynamic component equation is
+The reaction network uses the component and process representation of Chapter~\ref{ch:foundations}. Its stoichiometric matrix is $\nu\in\mathbb R^{P\times F}$ and its process-rate vector in stage $i$ is $\rho_i\in\mathbb R_+^P$. For component $f$, the dynamic component equation is
 \begin{equation}
 \equationname{Dynamic reactor-stage equation for one component}
 V_i\frac{dc_{i,f}}{dt}=Q_Pc_{i-1,f}-Q_Pc_{i,f}
@@ -243,11 +241,11 @@ I_{\rm metal}&=3.45X_{MeP}+4.87X_{MeOH}.
 \end{align}
 The nitrogen and phosphorus rows use the constituent weights in Table~\ref{tab:component_basis_composites}. The nitrogen inventory also gives dissolved nitrogen gas unit weight. The stoichiometric rank is 15 under the stated parameterization. The inventory identities are audited rather than inferred from a reporting label such as TN.
 
-\section{Clarification and solids storage}
+\section{Clarification, component separation, and stored solids}
 
 \subsection{A nonreactive separator with two outlet flows}
 
-The clarifier uses a nonreactive settling model. Nonreactive means that the adopted clarifier equations transport and separate components without biological or chemical conversion within the unit. Soluble components follow the liquid. Particulate components can settle and concentrate in the underflow. \citet{Takacs1991} provide the settling and thickening formulation used for the aggregate solids profile. \citet{JeppssonDiehl1996} explain why component propagation through a clarifier requires attention beyond a single aggregate solids concentration.
+The clarifier uses a nonreactive settling representation. Soluble components follow the liquid. Particulate components can settle and concentrate in the underflow. \citet{Takacs1991} provide the settling and thickening formulation used for the aggregate solids profile. \citet{JeppssonDiehl1996} explain why component propagation through a clarifier requires attention beyond a single aggregate solids concentration.
 
 Selection means taking designated entries of a vector without changing them. For the illustrative order $(S_A,S_{NH4},X_H,X_I)$, the two selector matrices are
 \begin{equation}
@@ -364,7 +362,7 @@ E_Xc_E=\frac{s_1}{X_N}E_Xc_{n_r},\qquad
 E_Xc_U=\frac{s_L}{X_N}E_Xc_{n_r}.
 \label{eq:plant_outlet_reconstruction}
 \end{equation}
-Soluble outlet components equal their feed concentrations. This reduced model defines the physical scope of the mechanistic reference. Its steady component mapping is well defined when $X_N>0$. It does not establish the dynamic propagation of each particulate species considered in more detailed component-transport models \citep{JeppssonDiehl1996}.
+Soluble outlet components equal their feed concentrations. This reduced representation defines the physical scope of the mechanistic reference. Its steady component mapping is well defined when $X_N>0$. It does not establish the dynamic propagation of each particulate species considered in more detailed component-transport models \citep{JeppssonDiehl1996}.
 
 \subsection{An exact interval for aggregate inventory under the endpoint envelope}
 
@@ -536,7 +534,7 @@ The operator $\operatorname{vech}$ retains one triangular copy of the symmetric 
 
 Quadratic features undergo their own fitting-set centering and scaling after they are constructed. For the hypothetical standardized inputs $(3,1)$, the unscaled nonconstant terms are $(3,1,9,3,1)$. If the first squared feature has fitting mean 1 and standard deviation 2, its final value is $(9-1)/2=4$. If the cross-product has fitting mean 0.2 and standard deviation 0.5, its final value is $(3-0.2)/0.5=5.6$. This second standardization prevents squares with large variance from receiving a weaker effective ridge penalty merely because they are numerically larger.
 
-A monomial is a single polynomial term, such as $z_1^2$ or $z_1z_2$. The feature set containing each distinct term once spans the same quadratic functions as an ordered feature set that retains both $z_1z_2$ and $z_2z_1$. Their two coefficients enter prediction only through their sum. For an effective cross-product coefficient $b$, an ordered feature set can assign $b/2$ to each duplicate. The squared coefficient penalty is then $b^2/2$, compared with $b^2$ for one unique coefficient. Thus removing duplicates preserves the polynomial family but changes the regularization convention unless the penalty is adjusted. The connected fit selects its penalty for the stated feature set containing each distinct term once. For 27 inputs, the count is $1+27+378=406$.
+The unique-monomial representation spans the same quadratic functions as an ordered representation that retains both $z_1z_2$ and $z_2z_1$. Their two coefficients enter prediction only through their sum. For an effective cross-product coefficient $b$, an ordered representation can assign $b/2$ to each duplicate. The squared coefficient penalty is then $b^2/2$, compared with $b^2$ for one unique coefficient. Thus removing duplicates preserves the polynomial family but changes the regularization convention unless the penalty is adjusted. The connected fit selects its penalty for the stated unique-feature representation. For 27 inputs, the count is $1+27+378=406$.
 
 For response coordinate $k$, write its standardized target as $\widetilde\chi_{ik}=(\chi_{ik}-\bar\chi_k)/s_{\chi,k}$. Its fitted value is $C_{k0}+\sum_{j=1}^{n_\phi-1}C_{kj}\phi_{ij}$. The scalar ridge objective for all responses is
 \begin{equation}
@@ -599,7 +597,7 @@ Its concentration-scale prediction is
 \widehat X_{E,\log}=X_\star\exp\left(\widehat\beta_{E,\gamma_E}^\top\phi\right)>0.
 \label{eq:plant_log_prediction}
 \end{equation}
-A twofold concentration error has the same logarithmic discrepancy at low and high concentrations. Exponentiation guarantees a positive prediction. It does not guarantee an accurate concentration, a mechanistic minimum, or an effluent estimate consistent with mass conservation.
+A twofold concentration error has the same logarithmic discrepancy at low and high concentrations. Exponentiation guarantees a positive prediction. It does not guarantee an accurate concentration, a mechanistic minimum, or a effluent estimate consistent with mass conservation.
 
 For hypothetical targets of 2 and 8 mg L$^{-1}$, the dimensionless logarithms are $\log2$ and $\log8$. If a single fitted log value represents both equally, squared log error is minimized at
 \begin{equation}
@@ -608,7 +606,7 @@ For hypothetical targets of 2 and 8 mg L$^{-1}$, the dimensionless logarithms ar
 \end{equation}
 Back-transformation gives $1\times\exp(\log4)=4$ mg L$^{-1}$. The arithmetic mean is 5 mg L$^{-1}$, which explains why exponentiation is not an unbiased concentration-scale mean adjustment. A fitted log value of $-2$ instead gives $0.1353$ mg L$^{-1}$. It remains positive even though it is below the reference concentration $X_\star$. The reference establishes units and does not impose a lower bound.
 
-Under squared logarithmic error, direct exponentiation represents a conditional geometric center rather than an unbiased concentration-scale mean. No concentration-scale bias adjustment is applied. The separate model also avoids imposing a constant solids-removal fraction across all influents and controls. Such a fraction would disregard variation in feed composition, hydraulics, recycle, and biological state. Its fitted endpoint supplies the empirical closure introduced in Chapter~\ref{ch:literature}. The physical balances leave the division of solids between the two outlets undetermined. The fitted overflow solids concentration supplies the additional relation used in joint projection. It remains a statistical estimate rather than a mass conservation law.
+Under squared logarithmic error, direct exponentiation represents a conditional geometric center rather than an unbiased concentration-scale mean. No concentration-scale bias adjustment is applied. The separate model also avoids imposing a constant solids-removal fraction across all influents and controls. Such a fraction would disregard variation in feed composition, hydraulics, recycle, and biological state. Its fitted endpoint remains an empirical closure rather than a mass conservation law.
 
 \section{Joint projection onto the declared plant constraints}
 
@@ -812,7 +810,7 @@ c_1+2+\lambda&=0,\\
 \equationname{Illustrative projection equality for the component total}
 c_1+c_2&=10.
 \end{align}
-The first two equations imply $c_1=-2-\lambda$ and $c_2=9-4\lambda$. Their sum gives $7-5\lambda=10$, so $\lambda=-0.6$ and $(c_1,c_2)=(-1.4,11.4)$. Mass conservation alone leaves a negative component.
+The first two equations imply $c_1=-2-\lambda$ and $c_2=9-4\lambda$. Their sum gives $7-5\lambda=10$, so $\lambda=-0.6$ and $(c_1,c_2)=(-1.4,11.4)$. mass conservation alone leaves a negative component.
 
 Now impose the active boundary $c_1=0$, which forces $c_2=10$. Use multiplier $\mu_1\ge0$ for $-c_1\le0$ and $\mu_2\ge0$ for $-c_2\le0$. The Lagrangian is the objective plus $\lambda(c_1+c_2-10)-\mu_1c_1-\mu_2c_2$. Since component 2 is positive, its inequality is inactive and $\mu_2=0$. Its stationarity equation gives $\lambda=-0.25$. Component 1 then gives $2-0.25-\mu_1=0$, so $\mu_1=1.75$. Both inequality multipliers are non-negative, and both products $\mu_jc_j$ vanish. These checks certify the boundary solution rather than merely declaring it plausible.
 
@@ -1172,8 +1170,6 @@ X_U\le X_U^{\max},\qquad X_N\ge X_F^{\min}>0,\qquad
 The positive feed-solids limit keeps particulate outlet reconstruction defined. The positive external-loss limit keeps solids retention time defined. The underflow bound represents the admitted thickening or solids-handling range. Their numerical values are plant-specific problem inputs selected before search. An underflow limit should be based on accepted sludge-handling conditions. The feed and loss floors should prevent undefined calculations without excluding physically relevant low-solids operation. These engineering inputs are distinct from the fixed $X_U^{\rm ref}=15{,}000$ g m$^{-3}$ used only to normalize the wasted-solids objective.
 
 \subsection{Trust diagnostics without a mechanistic-accuracy guarantee}
-
-The trust diagnostics are numerical checks used to restrict the operating search to specified levels of data support and model consistency. They assess input coverage, projection size, fitted clarifier behavior, and reactor balance residuals. They are safeguards for selecting candidate aeration, recycle, and wasting settings. Their thresholds do not give a probability that the predicted treatment response is accurate.
 
 The imposed physical balances alone admit states that do not satisfy all mechanistic equations. The empirical closure can also exclude mechanistic states. An optimizer might exploit an admitted response that does not solve the full kinetics or settling equations. The projection diagnostic first squares each standardized movement, averages these squares over the response coordinates, and takes the square root. For the hypothetical two-component projection $u=(2,0.5)$, it is $\sqrt{(4+0.25)/2}=1.458$. Dividing by the number of coordinates makes its interpretation comparable across response dimensions.
 
@@ -1578,9 +1574,9 @@ Maximum aerated-stage $k_La$ & 47 d$^{-1}$\\
 
 \section{Mechanistic sampling, fitting, and prediction assessment}
 
-\subsection{Simulation groups and accepted cases}
+\subsection{Separate simulation streams and acceptance-conditioned data}
 
-The joint domain has seven control coordinates and twenty influent coordinates. Strength-one Latin-hypercube sampling places one point in each stratum of every coordinate. Independent random stratum orderings prevent a shared ordering from forcing artificial coordinate correlations. Open-unit jitter is a random fractional position strictly between zero and one. It places a candidate influent or control value inside each selected stratum, excluding its endpoints. The comparison of sampling designs by \citet{McKay1979} provides the basis for this coverage-oriented design.
+The joint domain has seven control coordinates and twenty influent coordinates. Strength-one Latin-hypercube sampling places one point in each stratum of every coordinate. Independent random stratum orderings prevent a shared ordering from forcing artificial coordinate correlations. Open-unit jitter places a point inside each selected stratum. The comparison of sampling designs by \citet{McKay1979} provides the basis for this coverage-oriented design.
 
 The study design attempts 8{,}000 development candidates and 2{,}000 holdout candidates from separate seeded streams. Rejected candidates are retained in the accounting and are not replaced. The two-start physical acceptance procedure determines which candidates enter a statistical partition. These attempted design sizes do not imply any accepted sample total.
 
@@ -1729,8 +1725,6 @@ After selection, both models are refitted once on all accepted development state
 The overflow target must be strictly positive before logarithmic fitting. Predicted logarithms and their back-transformations must be finite. The development-set low-overflow and high-overflow strata are fixed by the percentiles in Table~\ref{tab:plant_design_settings}. Separate stratum assessment can reveal an error pattern concealed by a central concentration range. The imbalanced-regression analysis of \citet{Shahbazi2026} motivates attention to sparse or extreme response ranges. It does not establish imbalance as the cause of an error in this plant experiment.
 
 \subsection{Scientific admission and projection audits}
-
-Scientific admission is the decision to accept the fitted plant surrogate for operating assessment under the specified numerical criteria. Out-of-fold predictions are calculated for development cases excluded from the corresponding fit. They provide checks on new-case prediction within that development design before the surrogate is used to select controls.
 
 Admission of the connected surrogate requires finite and independently audited out-of-fold projections for all accepted development states. The complete raw-response normalized root mean square error and the raw clarifier-inventory normalized error must each be below one. Because errors use development response scales, the threshold requires aggregate error below one scale unit. It is a case-specific admission criterion. It is not a universal standard of surrogate quality.
 
@@ -2112,4 +2106,4 @@ n_{dec}&>\frac{T_{dev}}{T_M-T_S}\qquad\text{when }T_M>T_S.
 \]
 The illustrative threshold is $100/(6-3)=33\tfrac13$, so at least thirty-four complete decisions are needed to cross it. If the complete per-decision cost is not smaller, a positive development cost cannot be recovered by this timing argument. The calculation also assumes that the compared decisions meet the required quality and feasibility conditions. Cost arithmetic alone does not establish that condition.
 
-The resulting evaluation keeps four types of evidence separate. Statistical assessment concerns approximation of accepted mechanistic states. Projection audits concern the imposed network and inventory constraints. Search audits concern local numerical evidence for the declared optimization problem. Original-model verification concerns treatment and feasibility at the selected controls. This separation allows a connected surrogate to be studied as a decision aid while preserving the limits of its empirical closure and aggregate clarifier model.
+The resulting evaluation keeps four types of evidence separate. Statistical assessment concerns approximation of accepted mechanistic states. Projection audits concern the imposed network and inventory constraints. Search audits concern local numerical evidence for the declared optimization problem. Original-model verification concerns treatment and feasibility at the selected controls. This separation allows a connected surrogate to be studied as a decision aid while preserving the limits of its empirical closure and aggregate clarifier representation.

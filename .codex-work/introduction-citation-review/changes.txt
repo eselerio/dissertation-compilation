@@ -1,0 +1,179 @@
+BEFORE
+Part of the settled sludge returns to the biological tanks, and another part is withdrawn to control solids accumulation.
+AFTER
+Part of the settled sludge returns to the biological tanks, and another part is withdrawn to control solids accumulation \citep{Henze2008,Takacs1991}.
+
+BEFORE
+Process rates describe how quickly biological or chemical transformations consume or produce these components.
+AFTER
+Process rates describe how quickly biological or chemical transformations consume or produce these components \citep{Henze2006}.
+
+BEFORE
+Total suspended solids (TSS) measures suspended particulate material.
+AFTER
+Total suspended solids (TSS) measures suspended particulate material \citep{Henze2006,Henze2008}.
+
+BEFORE
+Nonlinear reaction and recycle relationships can create several locally favorable settings, so termination of a numerical search does not establish the best setting over the entire allowed domain.
+AFTER
+Nonlinear reaction and recycle relationships can create several locally favorable settings, so termination of a numerical search does not establish the best setting over the entire allowed domain \citep{Araujo2013,BuzziFerraris2013}.
+
+BEFORE
+Statistical surrogates learn from paired influent and operating inputs and the corresponding mechanistic treatment responses.
+AFTER
+Statistical surrogates learn from paired influent and operating inputs and the corresponding mechanistic treatment responses \citep{Fang2011,Selerio2026}.
+
+BEFORE
+A stoichiometric invariant is a weighted combination of components that those reactions do not change.
+AFTER
+A stoichiometric invariant is a weighted combination of components that those reactions do not change \citep{Henze2006,SturmWexler2020,SturmWexler2022}.
+
+BEFORE
+Boundary inputs and outputs must still be included when such a combination is used to check a reactor balance.
+AFTER
+Boundary inputs and outputs must still be included when such a combination is used to check a reactor balance \citep{TakacsVanrolleghem2006}.
+
+BEFORE
+Enforcing only a balance can leave one of its component concentrations negative.
+AFTER
+Enforcing only a balance can leave one of its component concentrations negative \citep{Harder2022,KircherVotsmeier2025}.
+
+BEFORE
+In this research, those constraints include mass conservation and non-negativity.
+AFTER
+In this research, those constraints include mass conservation and non-negativity, as imposed jointly in reactive-chemistry and activated sludge surrogates \citep{KircherVotsmeier2025,Selerio2026}.
+
+BEFORE
+Its guarantee concerns the imposed constraints, so it does not establish that the adjusted ammonium, substrate, or biomass concentrations reproduce every reaction rate or improve every prediction error.
+AFTER
+Its guarantee concerns the imposed constraints, so it does not establish that the adjusted ammonium, substrate, or biomass concentrations reproduce every reaction rate or improve every prediction error \citep{SturmSilva2024,Selerio2026}.
+
+BEFORE
+Internal validation supports model selection, while a held-out assessment set evaluates the selected procedure.
+AFTER
+Internal validation supports model selection, while a held-out assessment set evaluates the selected procedure \citep{Hastie2009,Kaufman2012}.
+
+BEFORE
+They do not establish agreement with a measured plant.
+AFTER
+They do not establish agreement with a measured plant \citep{Machado2014,Newhart2019}.
+
+BEFORE
+A structured regression separates fitted terms for operation, influent composition, curvature, and component coupling \citep{Rudin2019,Brunton2016}.
+AFTER
+A structured regression separates fitted terms for operation, influent composition, curvature, and component coupling \citep{Selerio2026}. Such an explicit model supports examination of fitted relationships \citep{Rudin2019,Brunton2016}.
+
+BEFORE
+Projection can change both a concentration and its sensitivity to an operating input.
+AFTER
+Projection can change both a concentration and its sensitivity to an operating input \citep{Selerio2026}.
+
+BEFORE
+Existing literature supplies methods for statistical approximation, projection, and process optimization.
+AFTER
+Existing literature supplies methods for statistical approximation, projection, and process optimization \citep{BhosekarIerapetritou2018,KircherVotsmeier2025,Durkin2024}.
+
+BEFORE
+For one reactor, projection can impose mass conservation and non-negativity on the full component prediction.
+AFTER
+For one reactor, projection can impose mass conservation and non-negativity on the full component prediction \citep{Selerio2026}.
+
+BEFORE
+For a connected plant, mixing, reactor, clarifier, recycle, and inventory relationships must also agree across the returned response.
+AFTER
+For a connected plant, mixing, reactor, clarifier, recycle, and inventory relationships must also agree across the returned response \citep{Alex2008,JeppssonDiehl1996}.
+
+BEFORE
+A valid projection establishes mass conservation and non-negativity under its stated assumptions.
+AFTER
+A valid projection establishes mass conservation and non-negativity under its stated assumptions \citep{KircherVotsmeier2025,Selerio2026}.
+
+BEFORE
+Component errors can compensate in the total, and errors in small concentrations can be hidden.
+AFTER
+Component errors can compensate in the total, and errors in small concentrations can be hidden \citep{Henze2006,Selerio2026}.
+
+BEFORE
+Accuracy can also depend on the number of reactor cases used for training and on whether an influent or operating setting lies within the sampled ranges.
+AFTER
+Accuracy can also depend on the number of reactor cases used for training and on whether an influent or operating setting lies within the sampled ranges \citep{VieringLoog2023,Li2024}.
+
+BEFORE
+Projection and independent numerical checks are therefore needed to assess both physical requirements on the returned component state.
+AFTER
+Projection and independent numerical checks provide one way to assess both physical requirements on the returned component state \citep{KircherVotsmeier2025,Selerio2026}.
+
+BEFORE
+Component coupling and projection can further change the final predicted ammonium or biomass response.
+AFTER
+Component coupling and projection can further change the final predicted ammonium or biomass response \citep{Selerio2026}.
+
+BEFORE
+Fitting and validation must also use only the information available for the intended activated sludge prediction.
+AFTER
+Fitting and validation must also use only the information available for the intended activated sludge prediction \citep{Kaufman2012}.
+
+BEFORE
+The predicted clarifier underflow, for example, may imply a return-sludge contribution different from the one predicted at the mixer.
+AFTER
+The predicted clarifier underflow, for example, may imply a return-sludge contribution different from the one predicted at the mixer. Consistent reactor and clarifier connections are required by the component-transport and plant models \citep{JeppssonDiehl1996,Alex2008}.
+
+BEFORE
+Joint projection can impose specified plant balances, but it does not replace all nonlinear reaction and settling equations.
+AFTER
+Joint projection can impose specified plant balances. Satisfaction of these selected relations does not establish agreement with every mechanistic equation, which remains outside the stated projection guarantee \citep{KircherVotsmeier2025,Selerio2026}.
+
+BEFORE
+Selected aeration, recycle, and wasting controls therefore require independent mechanistic evaluation under the same treatment and resource priorities.
+AFTER
+Selected aeration, recycle, and wasting controls therefore require independent mechanistic evaluation under the same treatment and resource priorities. This assessment follows the distinction between approximation quality and optimization behavior developed in surrogate optimization research \citep{Alexandrov1998,Pedrozo2025}.
+
+BEFORE
+Preprocessing and tuning use only the relevant training information.
+AFTER
+Preprocessing and tuning use only the relevant training information to avoid information leakage \citep{Kaufman2012}.
+
+BEFORE
+Their joint reporting makes the limits of an average effluent error score visible.
+AFTER
+Their joint reporting makes the limits of an average effluent error score visible, as illustrated by component-level projection and activated sludge assessments \citep{SturmSilva2024,Selerio2026}.
+
+BEFORE
+This supports examination of the treatment response without treating fitted coefficients as causal biological parameters.
+AFTER
+This supports examination of the treatment response without treating fitted coefficients as causal biological parameters \citep{Brunton2016,Selerio2026}.
+
+BEFORE
+Engineers need to compare operating conditions while maintaining a consistent account of material across the treatment plant.
+AFTER
+Engineers need to compare operating conditions while maintaining a consistent account of material across the treatment plant \citep{Henze2008,Alex2008}.
+
+BEFORE
+Independent mechanistic evaluation gives the operating assessment a practical reference.
+AFTER
+Independent mechanistic evaluation gives the operating assessment a practical reference, consistent with reference-model checks used in surrogate optimization \citep{Alexandrov1998,Pedrozo2025}.
+
+BEFORE
+For example, a dynamic treatment model must account for changing reactor and clarifier inventories.
+AFTER
+For example, a dynamic treatment model must account for changing reactor and clarifier inventories \citep{Takacs1991,Alex2008}.
+
+BEFORE
+The explicit feature groups support structural inspection.
+AFTER
+The explicit feature groups support structural inspection of the activated sludge regression \citep{Selerio2026}.
+
+BEFORE
+Reaction stoichiometry and boundary flows supply the mass conservation relations.
+AFTER
+Reaction stoichiometry and boundary flows supply the mass conservation relations \citep{Henze2006,SturmWexler2022}.
+
+BEFORE
+Projection adjusts each raw effluent prediction to satisfy these requirements.
+AFTER
+Projection adjusts each raw effluent prediction to satisfy these requirements, following the joint enforcement approaches of \citet{KircherVotsmeier2025} and \citet{Selerio2026}.
+
+BEFORE
+The guarantees do not establish complete elemental accounting for unrepresented species, full kinetic feasibility of every projected state, or dynamic stability beyond the specified checks.
+AFTER
+The guarantees do not establish complete elemental accounting for unrepresented species, full kinetic feasibility of every projected state, or dynamic stability beyond the specified checks. These limits follow from the adopted component boundary and the scope of the imposed constraints \citep{TakacsVanrolleghem2006,Selerio2026}.

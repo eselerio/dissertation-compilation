@@ -5,15 +5,15 @@ flow/.style={->,thick,draw=black!75}]
 \node[block,text width=12.9cm,minimum height=12mm] (scope) at (0,0)
 {Defined process response and decision-time information};
 \node[evidence] (stat) at (-4.55,-2.25)
-{Component comparison\\Prediction accuracy\\Training size\\Extrapolation};
+{Statistical evidence\\Component accuracy\\Coverage and generalization};
 \node[evidence] (phys) at (0,-2.25)
-{Physical assessment\\Mass conservation\\Non-negativity\\Accuracy and cost};
+{Physical evidence\\Mass conservation\\Non-negativity};
 \node[evidence] (interp) at (4.55,-2.25)
-{Final prediction analysis\\Coupling and projection\\Local sensitivity\\Coefficient stability};
+{Interpretive evidence\\Meaning of model terms\\Meaning of returned state};
 \node[block,text width=10.1cm,minimum height=18mm,below=8mm of phys] (decision)
-{Connected operating assessment\\Shared streams and stored solids\\Mechanistic evaluation at selected controls};
+{Connected decision evidence\\Agreement at shared streams and stored inventories\\Credibility at selected operating conditions};
 \node[block,text width=12.9cm,minimum height=14mm,fill=black!5,below=7mm of decision] (gap)
-{Common research focus\\Assessment of the same learned and projected treatment responses};
+{Joint knowledge gap\\Evidence for all properties under the same engineering question};
 \draw[flow] (scope.south west)--(stat.north);
 \draw[flow] (scope.south)--(phys.north);
 \draw[flow] (scope.south east)--(interp.north);
