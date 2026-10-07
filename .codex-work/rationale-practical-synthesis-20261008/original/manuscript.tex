@@ -1,0 +1,279 @@
+\documentclass[12pt,twoside]{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3.5cm,right=2cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{array,booktabs,longtable,multirow}
+\usepackage{graphicx,float}
+\usepackage[labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage[capitalise]{cleveref}
+\usepackage[natbibapa]{apacite}
+\makeatletter
+\NAT@longnamesfalse
+\newcommand{\listofequations}{%
+    \chapter*{List of Equations}%
+    \addcontentsline{toc}{chapter}{List of Equations}%
+    \@starttoc{loe}%
+}
+\newcommand{\l@equation}{\@dottedtocline{1}{0em}{3.3em}}
+\newcommand{\dissertationequationtitle}{}
+\newcommand{\equationname}[1]{\gdef\dissertationequationtitle{#1}}
+\newcommand{\equationlistentry}{%
+    \ifcsname dissertation@listed@\theequation\endcsname\else
+        \global\csdef{dissertation@listed@\theequation}{}%
+        \ifx\dissertationequationtitle\@empty
+            \PackageError{dissertation}{Missing description for equation \theequation}{Add \string\equationname\space before this numbered display or alignment row.}%
+        \else
+            \let\dissertationlistdescription\dissertationequationtitle
+        \fi
+        \addcontentsline{loe}{equation}{\protect\numberline{\theequation}\dissertationlistdescription}%
+        \global\let\dissertationequationtitle\@empty
+    \fi
+}
+\AtEndEnvironment{equation}{\equationlistentry}
+\apptocmd{\make@display@tag}{%
+    \ifmeasuring@\else
+        \if@eqnsw\equationlistentry\fi
+    \fi
+}{}{\PackageError{dissertation}{Equation list registration failed}{Check the display tag hook.}}
+\makeatother
+\usepackage[autostyle]{csquotes}
+\MakeOuterQuote{"}
+\SetCiteCommand{\citep}
+\graphicspath{{figures/}}
+\linespread{1.2}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setcounter{MaxMatrixCols}{20}
+\setlength{\emergencystretch}{2em}
+\setlist{itemsep=2pt}
+\newcommand*{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand*{\NN}{\ensuremath{\mathbb{N}}}
+\newcommand*{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\vech}{vech}
+\makeatletter
+\newcommand{\@singlepar@cr}[1][]{\unskip\space\ignorespaces}
+\newenvironment{singlepar}{%
+  \def\par{\unskip\space\ignorespaces}%
+  \def\newline{\unskip\space\ignorespaces}%
+  \renewcommand{\\}{\@ifstar{\@singlepar@cr}{\@singlepar@cr}}%
+  \ignorespaces
+}{\endgraf}
+\makeatother
+\newcommand{\thesisYear}{2026}
+\newcommand{\thesisTitle}{Physically Constrained Machine Learning Surrogates of Activated Sludge Systems for Process Optimization}
+\newcommand{\thesisType}{Dissertation}
+\newcommand{\thesisAuthor}{Egberto F. Selerio Jr.}
+\newcommand{\thesisSupervisor}{Lorafe F. Lozano, D.Eng.}
+\newcommand{\thesisConsultant}{}
+\newcommand{\thesisUniversity}{University of San Carlos}
+\newcommand{\thesisFaculty}{School of Engineering}
+\newcommand{\thesisPlace}{Cebu City, Philippines}
+\newcommand{\thesisProgramme}{Doctor of Engineering (D.Eng.)}
+\newcommand{\thesisField}{Water Engineering}
+\newcommand{\thesisDepartment}{Department of Industrial Engineering}
+\hypersetup{pdftitle={Physically Constrained Machine Learning Surrogates of Activated Sludge Systems for Process Optimization},pdfauthor={Egberto F. Selerio Jr.}}
+
+\begin{document}
+\frontmatter
+\pagestyle{empty}
+
+
+% -------------------
+% Cover and front page
+% -------------------
+
+\begin{center}
+    \includegraphics[height=2.6cm]{usc_logo.png}\hspace{1.4cm}%
+    \includegraphics[height=2.6cm]{usc_soe_symbol.png}
+
+    \vspace{1.5em}
+
+    \sc\large
+    \thesisUniversity\\
+    \thesisFaculty
+
+    \vfill
+
+    {\LARGE\thesisTitle}\\
+    \thesisType
+\end{center}
+
+\vfill
+
+{
+    \large
+    \noindent \thesisYear\\
+    \thesisAuthor
+}
+\cleardoublepage
+
+\noindent
+\begin{center}
+    \includegraphics[height=3cm]{usc_logo.png}\hspace{1.5cm}%
+    \includegraphics[height=3cm]{usc_soe_symbol.png}
+
+    \vspace{1.5em}
+
+    \sc\large
+    \thesisUniversity\\
+    \thesisFaculty
+
+    \vfill
+
+    {\LARGE\thesisTitle}\\
+    \thesisType
+\end{center}
+
+\vfill
+
+\noindent
+\begin{tabular}{ll}
+    Study Programme & \thesisProgramme  \\
+    Field of Study  & \thesisField      \\
+    Department      & \thesisDepartment \\
+    Supervisor      & \thesisSupervisor \\
+    \ifdefempty{\thesisConsultant}{}{
+        Consultant      & \thesisConsultant \\
+    }
+\end{tabular}
+
+\vfill
+
+\noindent \thesisPlace, \thesisYear \\
+\thesisAuthor
+\cleardoublepage
+
+
+% -------------------
+% Declaration
+% -------------------
+
+\newpage
+\pagestyle{plain}
+
+\null
+\vfill
+{\noindent\bf Declaration}
+
+\begin{singlepar}
+    I hereby declare that the work presented in the dissertation entitled \enquote{\thesisTitle} is original
+    and the result of my own research. Formulations and ideas taken from other sources are cited as such.
+\end{singlepar}
+
+\vspace{3em}
+
+\noindent\thesisPlace, \thesisYear \hfill \makebox[15em]{\hrulefill}
+\par\noindent\hfill\makebox[15em][c]{\thesisAuthor}
+
+
+% -------------------
+% Acknowledgments
+% -------------------
+
+\newpage
+\pagestyle{plain}
+
+\null
+\vfill
+{\noindent\bf Acknowledgments}
+
+The author gratefully acknowledges the Department of Science and Technology of the Philippines for
+supporting his doctoral studies from 2022 to 2026 through the Engineering Research and Development for
+Technology scholarship. He is deeply grateful to his adviser, Dr.~Lorafe F. Lozano, for her guidance and
+unwavering support throughout this research. He also thanks Ms.~Alele Lagusan of the University of San Carlos scholarship office for her
+invaluable assistance with the administrative matters of his studies as a scholarship recipient at the university. The author is
+likewise indebted to Engr.~Luis Cabatingan, his closest batchmate in the D.Eng. program, whose stimulating
+intellectual conversations on chemical engineering helped inspire the topics explored in this dissertation.
+Finally, he thanks his boyfriend, Leomark, for the patience, love, and steadfast support that sustained him
+physically and emotionally throughout his doctoral journey.
+
+
+
+\cleardoublepage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Activated sludge process optimization requires rapid predictions that preserve material balances and non-negative concentrations. This dissertation integrates a comparison of thirteen reactor predictors, an interpretable second-order regression, and a connected plant optimization study. Mechanistic simulations provide component-resolved reference states. Projection adjusts predicted concentrations to satisfy the specified physical constraints. All 766,350 assessed reactor projection instances passed the mass conservation and non-negativity checks. At the largest design size, projection reduced aggregate component error for five of the thirteen predictors. The structured regression had the lowest mean composite error at the smallest design size of 500 cases, while the multilayer perceptron had the lowest error at the largest size. The structured regression's named operating, loading, interaction, and coupling terms supported direct examination of the fitted response. The complete projection procedure returned physically checked states in all 2000 fixed-partition cases. In the connected plant, joint projection linked the mixer, reactor train, clarifier outlets, and solids inventory. It reduced aggregate holdout normalized root mean squared error by 8.19\% across 1845 accepted states and improved 30 of 32 location--composite scores. Across ten influent scenarios, mean optimization times were 1.726 s for the connected surrogate and 5.236 s for the direct mechanistic route. Independent mechanistic evaluation gave lower objectives for the direct decisions in the nominal case and all ten scenarios. Together, these findings establish physical enforcement, predictive agreement, model interpretation, and operating quality as complementary parts of surrogate assessment. The integrated framework supports rapid candidate generation and component-resolved verification for activated sludge process optimization. Future research can develop adaptive sampling, uncertainty-aware prediction, dynamic treatment models, and validation with plant measurements.
+
+\paragraph*{Keywords.} activated sludge process, machine learning, statistical surrogate, physics enforcement, wastewater treatment, mass conservation, non-negativity, interpretable regression, process optimization.
+
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+
+\cleardoublepage
+\listofequations
+
+\cleardoublepage
+\chapter*{Principal Symbols}
+\addcontentsline{toc}{chapter}{Principal Symbols}
+\begin{longtable}{p{0.19\textwidth}p{0.73\textwidth}}
+\toprule
+Symbol & Meaning \\
+\midrule
+\endfirsthead
+\toprule Symbol & Meaning \\
+\midrule
+\endhead
+$F,P,K$ & Numbers of component states, reaction processes, and independent stoichiometric invariants \\
+$\nu$ & Stoichiometric matrix with processes in rows and components in columns \\
+$\rho$ & Vector of mechanistic process rates \\
+$A$ & Full-row-rank stoichiometric invariant operator \\
+$V_0,Z$ & Orthonormal bases of the stoichiometric right null space and the null space of $A$ \\
+$c_{in},c_{out}$ & Influent state and mechanistic reference effluent state \\
+$c_{raw},\widetilde c$ & Raw component prediction and projected component prediction \\
+$I_{\mathrm{comp}}$ & Fixed component-to-reported-composite map \\
+$D_i$ & Hydraulic dilution rate for the stated reactor and flow basis \\
+$\omega,e_{S_O}$ & Net dissolved-oxygen transfer rate and dissolved-oxygen coordinate selector \\
+$u$ & Standalone-reactor operating input vector \\
+$\phi,B,\Gamma,R$ & Second-order feature vector, driver coefficients, learned component coupling, and coupled-system matrix \\
+$\widehat C,\Phi$ & Auxiliary fitted component states and training feature matrix \\
+$N$ & Number of observations in the stated training-size design \\
+$n_r,L$ & Numbers of biological reactor stages and clarifier layers \\
+$\vartheta$ & Connected-plant control vector \\
+$q_P,q_C,q_E,q_U$ & Flow ratios for the reactor train, clarifier feed, overflow, and underflow relative to fresh flow \\
+$m,c_i,c_E,c_U$ & Mixer, reactor-stage, overflow, and underflow concentrations \\
+$g_E,g_U$ & Flow-weighted clarifier outlet component responses \\
+$\chi,M_{\mathrm{cl}}$ & Joint plant response and clarifier solids inventory \\
+$D_\chi$ & Positive scaling matrix for the plant response \\
+$J$ & Dimensionless engineering objective \\
+\bottomrule
+\end{longtable}
+Symbols specific to a formulation are defined with their equations. A numerical coordinate is interpreted using the unit of its corresponding component. The plant projection uses $u$ locally for its standardized response projection.
+
+\mainmatter
+\pagestyle{headings}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter}{\chaptername\ \thechapter}}
+\renewcommand{\sectionmark}[1]{}
+
+\input{chapters/01_research_problem}
+\input{chapters/02_integrated_literature}
+\input{chapters/03_reactor_foundations}
+\input{chapters/04_prediction_projection}
+\input{chapters/05_interpretable_surrogate}
+\input{chapters/06_connected_plant}
+\input{chapters/07_conclusion_outlook}
+
+\backmatter
+\bibliographystyle{bibstyles/apacite_dissertation}
+\bibliography{references}
+\end{document}
