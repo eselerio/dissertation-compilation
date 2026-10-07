@@ -1,0 +1,803 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2026-10-04T10:49:45Z",
+    "timestamp": 1791110985828,
+    "version": "4.1.0"
+  },
+  "reference-count": 43,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2022-10-01T00:00:00Z",
+        "timestamp": 1664582400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2022-10-01T00:00:00Z",
+        "timestamp": 1664582400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2022-10-01T00:00:00Z",
+        "timestamp": 1664582400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2022-10-01T00:00:00Z",
+        "timestamp": 1664582400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2022-10-01T00:00:00Z",
+        "timestamp": 1664582400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2022-10-01T00:00:00Z",
+        "timestamp": 1664582400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2022-10-01T00:00:00Z",
+        "timestamp": 1664582400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "41975173"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "41975173"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Atmospheric Research"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        10
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.atmosres.2022.106238",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        13
+      ]
+    ],
+    "date-time": "2022-05-13T04:36:58Z",
+    "timestamp": 1652416618000
+  },
+  "page": "106238",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 235,
+  "special_numbering": "C",
+  "title": [
+    "Application of XGBoost algorithm in the optimization of pollutant concentration"
+  ],
+  "prefix": "10.1016",
+  "volume": "276",
+  "author": [
+    {
+      "given": "Jiangtao",
+      "family": "Li",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xingqin",
+      "family": "An",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Qingyong",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Chao",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Haomin",
+      "family": "Yu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xinyuan",
+      "family": "Zhou",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yangli-ao",
+      "family": "Geng",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.atmosenv.2016.11.066",
+      "article-title": "Exposure assessment models for elemental components of particulate matter in an urban environment: a comparison of regression and random forest approaches",
+      "volume": "151",
+      "author": "Brokamp",
+      "year": "2017",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "52",
+      "DOI": "10.1016/j.scitotenv.2018.04.251",
+      "article-title": "A machine learning method to estimate PM2.5 concentrations across China with remote sensing, meteorological and land use information",
+      "volume": "636",
+      "author": "Chen",
+      "year": "2018",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0015",
+      "series-title": "XGBoost: A Scalable Tree Boosting System",
+      "author": "Chen",
+      "year": "2016"
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.atmosres.2022.106238_bb0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "2635",
+      "DOI": "10.1021/es052297c",
+      "article-title": "Coupled partitioning, dilution, and chemical aging of semivolatile organics",
+      "volume": "40",
+      "author": "Donahue",
+      "year": "2006",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "5747",
+      "DOI": "10.1175/JCLI-D-13-00571.1",
+      "article-title": "Numerical Simulations of Spatial Distributions and Diurnal Variations of Low-Level jets in China during early Summer",
+      "volume": "27",
+      "author": "Du",
+      "year": "2014",
+      "journal-title": "J. Clim."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "39",
+      "DOI": "10.1016/j.atmosenv.2012.12.034",
+      "article-title": "Emission inventory of primary pollutants and chemical speciation in 2010 for the Yangtze River Delta region, China",
+      "volume": "70",
+      "author": "Fu",
+      "year": "2013",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "148",
+      "DOI": "10.1016/j.scitotenv.2016.10.231",
+      "article-title": "Haze, public health and mitigation measures in China: a review of the current evidence for further policy response",
+      "volume": "578",
+      "author": "Gao",
+      "year": "2017",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0040",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.atmosenv.2020.118125",
+      "article-title": "Enhancing the Evaluation and Interpretability of Data-Driven Air Quality Models",
+      "volume": "246",
+      "author": "Gu",
+      "year": "2021",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "issue": "105801",
+      "key": "10.1016/j.atmosres.2022.106238_bb0045",
+      "article-title": "Construction of a virtual PM2.5 observation network in China based on high-density surface meteorological observations using the Extreme Gradient Boosting model",
+      "volume": "141",
+      "author": "Gui",
+      "year": "2020",
+      "journal-title": "Environ. Int."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0050",
+      "series-title": "China’s Medium and Long-Term Air Quality Improvement Path and Health Benefits",
+      "author": "He",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0055",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2021.150792",
+      "article-title": "Responses of surface O3 and PM2.5 trends to changes of anthropogenic emissions in summer over Beijing during 2014–2019: a study based on multiple linear regression and WRF-Chem",
+      "volume": "807",
+      "author": "He",
+      "year": "2022",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0060",
+      "series-title": "Science of Surveying and Mapping",
+      "article-title": "PM2.5 forecasting method based on machine learning and WRF hybrid model",
+      "author": "Hou",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0065",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.atmosres.2020.105146",
+      "article-title": "Estimation of hourly full-coverage PM2.5 concentrations at 1-km resolution in China using a two-stage random forest model",
+      "volume": "248",
+      "author": "Jiang",
+      "year": "2021",
+      "journal-title": "Atmos. Res."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0070",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.vacuum.2021.110647",
+      "article-title": "The influence of gas temperature on ozone generation and decomposition in ozone generator. How is ozone decomposed?",
+      "volume": "195",
+      "author": "Jodzis",
+      "year": "2022",
+      "journal-title": "Vacuum"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0075",
+      "doi-asserted-by": "crossref",
+      "first-page": "164",
+      "DOI": "10.1016/j.jenvman.2018.03.094",
+      "article-title": "The use of random forests in modelling short-term air pollution effects based on traffic and meteorological conditions: a case study in Wrocław",
+      "volume": "217",
+      "author": "Kamińska",
+      "year": "2018",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0080",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2021.151204",
+      "article-title": "Development and application of an automated air quality forecasting system based on machine learning",
+      "volume": "806",
+      "author": "Ke",
+      "year": "2022",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0085",
+      "doi-asserted-by": "crossref",
+      "first-page": "306",
+      "DOI": "10.1016/j.scitotenv.2017.03.094",
+      "article-title": "Land use regression modelling of air pollution in high density high rise cities: a case study in Hong Kong",
+      "volume": "592",
+      "author": "Lee",
+      "year": "2017",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "issue": "14",
+      "key": "10.1016/j.atmosres.2022.106238_bb0090",
+      "doi-asserted-by": "crossref",
+      "first-page": "6551",
+      "DOI": "10.5194/acp-10-6551-2010",
+      "article-title": "Impacts of HONO sources on the photochemistry in Mexico City during the MCMA-2006/MILAGO Campaign",
+      "volume": "10",
+      "author": "Li",
+      "year": "2010",
+      "journal-title": "Atmos. Chem. Phys."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "5169",
+      "DOI": "10.5194/acp-11-5169-2011",
+      "article-title": "Aerosol effects on the photochemistry in Mexico City during MCMA-2006/MILAGRO campaign",
+      "volume": "11",
+      "author": "Li",
+      "year": "2011",
+      "journal-title": "Atmos. Chem. Phys."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.atmosres.2022.106238_bb0100",
+      "doi-asserted-by": "crossref",
+      "first-page": "3789",
+      "DOI": "10.5194/acp-11-3789-2011",
+      "article-title": "Simulations of organic aerosol concentrations in Mexico City using the WRFCHEM model during the MCMA-2006/MILAGRO campaign",
+      "volume": "11",
+      "author": "Li",
+      "year": "2011",
+      "journal-title": "Atmos. Chem. Phys."
+    },
+    {
+      "issue": "18",
+      "key": "10.1016/j.atmosres.2022.106238_bb0105",
+      "doi-asserted-by": "crossref",
+      "first-page": "8751",
+      "DOI": "10.5194/acp-12-8751-2012",
+      "article-title": "Contribution of garbage burning to chloride and PM2.5 in Mexico City",
+      "volume": "12",
+      "author": "Li",
+      "year": "2012",
+      "journal-title": "Atmos. Chem. Phys."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0110",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.atmosenv.2021.118332",
+      "article-title": "Evaluation of WRF-Chem simulations on vertical profiles of PM2.5 with UAV observations during a haze pollution event",
+      "volume": "252",
+      "author": "Liu",
+      "year": "2021",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0115",
+      "article-title": "Estimation of monthly 1 km resolution PM2.5 concentrations using a random forest model over “2 + 26” cities",
+      "volume": "35",
+      "author": "Lu",
+      "year": "2021",
+      "journal-title": "China Urban Clim."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0120",
+      "series-title": "A Unified Approach to Interpreting Model Predictions",
+      "author": "Lundberg",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0125",
+      "series-title": "Consistent Individualized Feature Attribution for Tree Ensembles",
+      "author": "Lundberg",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0130",
+      "series-title": "Weather Prediction by Numerical Process",
+      "author": "Lynch",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0135",
+      "doi-asserted-by": "crossref",
+      "first-page": "122835",
+      "DOI": "10.1016/j.jclepro.2020.122835",
+      "article-title": "Identification of the Most influential areas for Air Pollution Control using XGBoost and Grid Importance Rank",
+      "author": "Ma",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.atmosres.2022.106238_bb0140",
+      "doi-asserted-by": "crossref",
+      "first-page": "123",
+      "DOI": "10.1023/A:1009604003981",
+      "article-title": "ISORROPIA: a new thermodynamic equilibrium model for multiphase multicomponent inorganic aerosols",
+      "volume": "4",
+      "author": "Nenes",
+      "year": "1998",
+      "journal-title": "Aquat. Geochem."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0145",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.atmosenv.2021.118334",
+      "article-title": "Temperature dependence of tropospheric ozone under NOx reductions over Germany",
+      "volume": "253",
+      "author": "Otero",
+      "year": "2021",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0150",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1088/1755-1315/113/1/012127",
+      "article-title": "Application of XGBoost algorithm in hourly PM2.5 concentration prediction",
+      "volume": "113",
+      "author": "Pan",
+      "year": "2018",
+      "journal-title": "IOP Conf. Ser. Earth Environ. Sci."
+    },
+    {
+      "issue": "5816",
+      "key": "10.1016/j.atmosres.2022.106238_bb0155",
+      "doi-asserted-by": "crossref",
+      "first-page": "1259",
+      "DOI": "10.1126/science.1133061",
+      "article-title": "Rethinking organic aerosols: semivolatile emissions and photochemical aging",
+      "volume": "315",
+      "author": "Robinson",
+      "year": "2007",
+      "journal-title": "Science"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0160",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.atmosenv.2020.118004",
+      "article-title": "High spatial resolution WRF-Chem model over Asia: Physics and chemistry evaluation",
+      "volume": "244",
+      "author": "Sicard",
+      "year": "2021",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0165",
+      "doi-asserted-by": "crossref",
+      "first-page": "4567",
+      "DOI": "10.1016/j.atmosenv.2008.01.068",
+      "article-title": "A model inter-comparison study focussing on episodes with elevated PM10 concentrations",
+      "volume": "42",
+      "author": "Stern",
+      "year": "2008",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0170",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2020.143775",
+      "article-title": "Policy-driven changes in the health risk of PM2.5 and O3 exposure in China during 2013–2018",
+      "volume": "757",
+      "author": "Wang",
+      "year": "2021",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0175",
+      "series-title": "Research on Calibration Approaches of Air Monitoring Sensors",
+      "author": "Wang",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0180",
+      "series-title": "Research on Shanghai Visibility Prediction Model Based on Multi-Source Data and XGBoost Algorithm",
+      "author": "Wang",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0185",
+      "doi-asserted-by": "crossref",
+      "first-page": "437",
+      "DOI": "10.1016/j.rse.2017.07.023",
+      "article-title": "Full-coverage high-resolution daily PM2.5 estimation using MAIAC AOD in the Yangtze River Delta of China",
+      "volume": "199",
+      "author": "Xiao",
+      "year": "2017",
+      "journal-title": "Remote Sens. Environ."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.atmosres.2022.106238_bb0190",
+      "first-page": "441",
+      "article-title": "Rapid improvement of PM2.5 pollution and associated health benefits in China during 2013~2017",
+      "volume": "50",
+      "author": "Xue",
+      "year": "2020",
+      "journal-title": "Sci. China Earth Sci."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0195",
+      "article-title": "Daily Global Solar Radiation in China estimated from High-Density Meteorological Observations: a Random Forest Model Framework. Earth and Space",
+      "volume": "7",
+      "author": "Zeng",
+      "year": "2020",
+      "journal-title": "Science"
+    },
+    {
+      "issue": "16",
+      "key": "10.1016/j.atmosres.2022.106238_bb0200",
+      "article-title": "Estimating hourly surface PM2.5 concentrations across China from high-density meteorological observations by machine learning",
+      "volume": "254",
+      "author": "Zeng",
+      "year": "2021",
+      "journal-title": "Atmos. Res."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0205",
+      "series-title": "Science of The Total Environment",
+      "first-page": "644",
+      "article-title": "Development of a stacked ensemble model for forecasting and analyzing daily average PM2.5 concentrations in Beijing, China",
+      "volume": "635",
+      "author": "Zhai",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0210",
+      "doi-asserted-by": "crossref",
+      "first-page": "70",
+      "DOI": "10.1016/j.atmosenv.2019.01.045",
+      "article-title": "High-resolution daily AOD estimated to full coverage using the random forest model approach in the Beijing-Tianjin-Hebei region",
+      "volume": "203",
+      "author": "Zhao",
+      "year": "2019",
+      "journal-title": "Atmos. Environ."
+    },
+    {
+      "key": "10.1016/j.atmosres.2022.106238_bb0215",
+      "doi-asserted-by": "crossref",
+      "first-page": "8442",
+      "DOI": "10.1016/j.atmosenv.2008.08.021",
+      "article-title": "Primary air pollutant emissions of coal-fired power plants in China: current status and future prediction",
+      "volume": "42",
+      "author": "Zhao",
+      "year": "2008",
+      "journal-title": "Atmos. Environ."
+    }
+  ],
+  "container-title": [
+    "Atmospheric Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0169809522002241?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0169809522002241?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        30
+      ]
+    ],
+    "date-time": "2025-09-30T15:56:10Z",
+    "timestamp": 1759247770000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0169809522002241"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        10
+      ]
+    ]
+  },
+  "references-count": 43,
+  "alternative-id": [
+    "S0169809522002241"
+  ],
+  "URL": "https://doi.org/10.1016/j.atmosres.2022.106238",
+  "relation": {},
+  "ISSN": [
+    "0169-8095"
+  ],
+  "issn-type": [
+    {
+      "value": "0169-8095",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        10
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Application of XGBoost algorithm in the optimization of pollutant concentration",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Atmospheric Research",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.atmosres.2022.106238",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2022 Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "106238"
+}

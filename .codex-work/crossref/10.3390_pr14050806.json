@@ -1,0 +1,893 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        1
+      ]
+    ],
+    "date-time": "2026-08-01T09:35:13Z",
+    "timestamp": 1785576913433,
+    "version": "3.56.0"
+  },
+  "reference-count": 49,
+  "publisher": "MDPI AG",
+  "issue": "5",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2026-02-28T00:00:00Z",
+        "timestamp": 1772236800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "name": "National Major Science and Technology Projects of Ministry of Industry and Information Technology of China",
+      "award": [
+        "2025ZD1608403"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2025ZD1608403"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Open Research Project of the State Key Laboratory of Industrial Control Technology, China",
+      "award": [
+        "ICT2025B08"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "ICT2025B08"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "National Foreign Experts Program of Ministry of Human Resources and Social Security of China",
+      "award": [
+        "S20250073"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "S20250073"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "National Foreign Experts Program of Ministry of Human Resources and Social Security of China",
+      "award": [
+        "Z20250924"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "Z20250924"
+          ]
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "crossref",
+      "award": [
+        "22508279"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "22508279"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "crossref"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100012226",
+      "name": "Fundamental Research Funds for the Central Universities",
+      "doi-asserted-by": "crossref",
+      "award": [
+        "2024CDJXY010"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2024CDJXY010"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100012226",
+          "id-type": "DOI",
+          "asserted-by": "crossref"
+        }
+      ]
+    },
+    {
+      "name": "Xinjiang Autonomous Region Regional Collaborative Innovation Special Science and Technology Assistance Plan Project",
+      "award": [
+        "2024E02036"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2024E02036"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Xinjiang Yihua Chemical Industry Co., Ltd.",
+      "award": [
+        "H20250275"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "H20250275"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Xinjiang Yihua Chemical Industry Co., Ltd.",
+      "award": [
+        "FWHT2025012007"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "FWHT2025012007"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chongqing Municipal Bureau of Human Resources and Social Security",
+      "award": [
+        "Z20240373"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "Z20240373"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chongqing Municipal Bureau of Human Resources and Social Security",
+      "award": [
+        "2303013370468530"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2303013370468530"
+          ]
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Processes"
+  ],
+  "abstract": "<jats:p>The optimization of coal chemical wastewater treatment networks (WTNs) faces a critical conflict between model fidelity and computational tractability. Rigorous models capture essential nonlinearities but hinder system-wide optimization, whereas simplified models often yield suboptimal designs. This work proposes an integrated framework embedding high-fidelity “stage-wise” neural network surrogates into a novel sequential multi-stage superstructure. By incorporating domain-specific treatment hierarchies to prune infeasible connections, the framework significantly reduces the combinatorial search space. The developed surrogate captures discrete stage choices and nonlinear responses with a relative error below 4%, allowing for accurate process representation. Case studies reveal a critical coupling between unit operating conditions and global topology: a minor shift in the extraction phase ratio can trigger a drastic network reconfiguration, nearly doubling the total treatment flow (2550 to 4763 t/h). By minimizing the total hydraulic load—a primary determinant of system costs and resource consumption—the proposed framework effectively reduces the operational scale of treatment facilities. Ultimately, this study offers a practical pathway for the coal chemical industry to strictly meet environmental discharge limits with improved economic efficiency, thereby supporting sustainable wastewater management.</jats:p>",
+  "DOI": "10.3390/pr14050806",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        3
+      ]
+    ],
+    "date-time": "2026-03-03T17:01:42Z",
+    "timestamp": 1772557302000
+  },
+  "page": "806",
+  "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 2,
+  "title": [
+    "Surrogate Model-Based Optimal Design of Coal Chemical Wastewater Treatment Networks with a Multi-Stage System"
+  ],
+  "prefix": "10.3390",
+  "volume": "14",
+  "author": [
+    {
+      "given": "Yujia",
+      "family": "Tang",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Systems Engineering, City University of Hong Kong, Hong Kong, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tangwu",
+      "family": "Cui",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Petroleum and Chemical Engineering, Xinjiang Applied Vocational Technical College, Kuitun 833200, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Wenjin",
+      "family": "Zhou",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "College of Chemistry and Chemical Engineering, Taiyuan University of Technology, Taiyuan 030024, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1318-9530",
+      "authenticated-orcid": false,
+      "given": "Chenglin",
+      "family": "Chang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Chemistry and Chemical Engineering, Chongqing University, Chongqing 401331, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "1968",
+  "published-online": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        28
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "15",
+      "DOI": "10.1016/S0016-2361(00)00203-9",
+      "article-title": "Chemicals and materials from coal in the 21st century",
+      "volume": "81",
+      "author": "Schobert",
+      "year": "2002",
+      "journal-title": "Fuel"
+    },
+    {
+      "key": "ref_2",
+      "doi-asserted-by": "crossref",
+      "first-page": "4349",
+      "DOI": "10.1016/j.energy.2009.05.029",
+      "article-title": "Coal chemical industry and its sustainable development in China",
+      "volume": "35",
+      "author": "Xie",
+      "year": "2010",
+      "journal-title": "Energy"
+    },
+    {
+      "key": "ref_3",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.1016/j.resconrec.2017.03.006",
+      "article-title": "History and future of the coal and coal chemical industry in China",
+      "volume": "124",
+      "author": "Li",
+      "year": "2017",
+      "journal-title": "Resour. Conserv. Recycl."
+    },
+    {
+      "key": "ref_4",
+      "doi-asserted-by": "crossref",
+      "first-page": "2023",
+      "DOI": "10.2166/wst.2019.195",
+      "article-title": "Comprehensive review on wastewater discharged from the coal-related industries–characteristics and treatment strategies",
+      "volume": "79",
+      "author": "Maiti",
+      "year": "2019",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref_5",
+      "doi-asserted-by": "crossref",
+      "first-page": "111107",
+      "DOI": "10.1016/j.enpol.2019.111107",
+      "article-title": "Life cycle economic assessment of coal chemical wastewater treatment facing the ‘Zero liquid discharge’industrial water policies in China: Discharge or reuse?",
+      "volume": "137",
+      "author": "Chen",
+      "year": "2020",
+      "journal-title": "Energy Policy"
+    },
+    {
+      "key": "ref_6",
+      "doi-asserted-by": "crossref",
+      "first-page": "113818",
+      "DOI": "10.1016/j.envres.2022.113818",
+      "article-title": "A comprehensive carbon footprint analysis of different wastewater treatment plant configurations",
+      "volume": "214",
+      "author": "Wu",
+      "year": "2022",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "ref_7",
+      "first-page": "241",
+      "article-title": "Review on chemical treatment of industrial waste water",
+      "volume": "17",
+      "author": "Sahu",
+      "year": "2013",
+      "journal-title": "J. Appl. Sci. Environ. Manag."
+    },
+    {
+      "key": "ref_8",
+      "doi-asserted-by": "crossref",
+      "first-page": "301",
+      "DOI": "10.1038/nature06599",
+      "article-title": "Science and technology for water purification in the coming decades",
+      "volume": "452",
+      "author": "Shannon",
+      "year": "2008",
+      "journal-title": "Nature"
+    },
+    {
+      "key": "ref_9",
+      "doi-asserted-by": "crossref",
+      "first-page": "38",
+      "DOI": "10.1016/j.jclepro.2016.02.147",
+      "article-title": "A review on the coal gasification wastewater treatment technologies: Past, present and future outlook",
+      "volume": "126",
+      "author": "Ji",
+      "year": "2016",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "ref_10",
+      "doi-asserted-by": "crossref",
+      "first-page": "179",
+      "DOI": "10.1016/j.cej.2005.12.011",
+      "article-title": "Solvent extraction process development and on-site trial-plant for phenol removal from industrial coal-gasification wastewater",
+      "volume": "117",
+      "author": "Yang",
+      "year": "2006",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "ref_11",
+      "doi-asserted-by": "crossref",
+      "first-page": "114640",
+      "DOI": "10.1016/j.desal.2020.114640",
+      "article-title": "Review on treatment technology of salt wastewater in coal chemical industry of China",
+      "volume": "493",
+      "author": "Shi",
+      "year": "2020",
+      "journal-title": "Desalination"
+    },
+    {
+      "key": "ref_12",
+      "doi-asserted-by": "crossref",
+      "first-page": "130166",
+      "DOI": "10.1016/j.jclepro.2021.130166",
+      "article-title": "Review on treatment technologies of coal gasification wastewater in China",
+      "volume": "333",
+      "author": "Shi",
+      "year": "2022",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "ref_13",
+      "doi-asserted-by": "crossref",
+      "first-page": "449",
+      "DOI": "10.2166/wst.2021.497",
+      "article-title": "Advances in treatment of coking wastewater–a state of art review",
+      "volume": "85",
+      "author": "Tamang",
+      "year": "2022",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref_14",
+      "doi-asserted-by": "crossref",
+      "first-page": "2666",
+      "DOI": "10.1021/ie990043s",
+      "article-title": "A mathematical programming model for water usage and treatment network design",
+      "volume": "38",
+      "author": "Huang",
+      "year": "1999",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref_15",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1016/j.compchemeng.2017.10.008",
+      "article-title": "Machine learning: Overview of the recent progresses and implications for the process systems engineering field",
+      "volume": "114",
+      "author": "Lee",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "ref_16",
+      "doi-asserted-by": "crossref",
+      "first-page": "1779",
+      "DOI": "10.1007/s10098-016-1152-9",
+      "article-title": "Mathematical programming synthesis of non-isothermal water networks by using a compact/reduced superstructure and an MINLP model",
+      "volume": "18",
+      "author": "Kravanja",
+      "year": "2016",
+      "journal-title": "Clean Technol. Environ. Policy"
+    },
+    {
+      "key": "ref_17",
+      "doi-asserted-by": "crossref",
+      "first-page": "17680",
+      "DOI": "10.1021/ie500978h",
+      "article-title": "Water network optimization with wastewater regeneration models",
+      "volume": "53",
+      "author": "Yang",
+      "year": "2014",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref_18",
+      "unstructured": "Biegler, L.T., Grossmann, I.E., and Westerberg, A.W. (1997). Systematic Methods for Chemical Process Design."
+    },
+    {
+      "key": "ref_19",
+      "doi-asserted-by": "crossref",
+      "first-page": "434",
+      "DOI": "10.1002/aic.12276",
+      "article-title": "Global superstructure optimization for the design of integrated process water networks",
+      "volume": "57",
+      "author": "Grossmann",
+      "year": "2011",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "ref_20",
+      "doi-asserted-by": "crossref",
+      "first-page": "878",
+      "DOI": "10.1016/j.jclepro.2018.03.314",
+      "article-title": "New superstructure-based optimization of property-based industrial water system",
+      "volume": "189",
+      "author": "Deng",
+      "year": "2018",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "ref_21",
+      "doi-asserted-by": "crossref",
+      "first-page": "130462",
+      "DOI": "10.1016/j.jclepro.2022.130462",
+      "article-title": "Synthesis of large-scale total water network with multiple water resources under seasonal flow rate constraints",
+      "volume": "337",
+      "author": "Iqbal",
+      "year": "2022",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "ref_22",
+      "doi-asserted-by": "crossref",
+      "first-page": "5125",
+      "DOI": "10.1021/ie801264c",
+      "article-title": "State-of-the-art review of pinch analysis techniques for water network synthesis",
+      "volume": "48",
+      "author": "Foo",
+      "year": "2009",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref_23",
+      "doi-asserted-by": "crossref",
+      "first-page": "4475",
+      "DOI": "10.1021/ie901632w",
+      "article-title": "Review of water network design methods with literature annotations",
+      "volume": "49",
+      "author": "Jezowski",
+      "year": "2010",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref_24",
+      "first-page": "16112",
+      "article-title": "Design Water Networks through MINLP Formulation: An Algorithm to Find the Stability Region of Parameters",
+      "volume": "61",
+      "year": "2022",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref_25",
+      "doi-asserted-by": "crossref",
+      "first-page": "219",
+      "DOI": "10.1007/s11081-011-9141-7",
+      "article-title": "On the optimal design of water distribution networks: A practical MINLP approach",
+      "volume": "13",
+      "author": "Bragalli",
+      "year": "2012",
+      "journal-title": "Optim. Eng."
+    },
+    {
+      "key": "ref_26",
+      "doi-asserted-by": "crossref",
+      "first-page": "10792",
+      "DOI": "10.1021/acssuschemeng.7b02758",
+      "article-title": "Optimal synthesis of water networks for addressing high-concentration wastewater in coal-based chemical plants",
+      "volume": "5",
+      "author": "Zhu",
+      "year": "2017",
+      "journal-title": "ACS Sustain. Chem. Eng."
+    },
+    {
+      "key": "ref_27",
+      "doi-asserted-by": "crossref",
+      "first-page": "650",
+      "DOI": "10.1016/j.compchemeng.2005.11.005",
+      "article-title": "Global optimization for the synthesis of integrated water systems in chemical processes",
+      "volume": "30",
+      "author": "Karuppiah",
+      "year": "2006",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "ref_28",
+      "doi-asserted-by": "crossref",
+      "first-page": "48",
+      "DOI": "10.1016/j.compchemeng.2012.02.020",
+      "article-title": "A superstructure optimization approach for water network synthesis with membrane separation-based regenerators",
+      "volume": "42",
+      "author": "Khor",
+      "year": "2012",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "ref_29",
+      "doi-asserted-by": "crossref",
+      "first-page": "5424",
+      "DOI": "10.1021/ie100025e",
+      "article-title": "Global optimization of large-scale generalized pooling problems: Quadratically constrained MINLP models",
+      "volume": "49",
+      "author": "Misener",
+      "year": "2010",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref_30",
+      "doi-asserted-by": "crossref",
+      "first-page": "621",
+      "DOI": "10.1016/j.cej.2016.07.013",
+      "article-title": "Conceptual design of a modified phenol and ammonia recovery process for the treatment of coal gasification wastewater",
+      "volume": "304",
+      "author": "Gai",
+      "year": "2016",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "ref_31",
+      "doi-asserted-by": "crossref",
+      "first-page": "753",
+      "DOI": "10.1016/j.chemosphere.2014.09.085",
+      "article-title": "Treatment of coal gasification wastewater by membrane bioreactor hybrid powdered activated carbon (MBR–PAC) system",
+      "volume": "117",
+      "author": "Jia",
+      "year": "2014",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "ref_32",
+      "doi-asserted-by": "crossref",
+      "first-page": "1123",
+      "DOI": "10.1515/revce-2021-0094",
+      "article-title": "Physicochemical methods for process wastewater treatment: Powerful tools for circular economy in the chemical industry",
+      "volume": "39",
+      "author": "Mizsey",
+      "year": "2023",
+      "journal-title": "Rev. Chem. Eng."
+    },
+    {
+      "key": "ref_33",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1016/j.compchemeng.2017.09.017",
+      "article-title": "Advances in surrogate based modeling, feasibility analysis, and optimization: A review",
+      "volume": "108",
+      "author": "Bhosekar",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "ref_34",
+      "doi-asserted-by": "crossref",
+      "first-page": "1216",
+      "DOI": "10.1002/aic.12341",
+      "article-title": "Surrogate-based superstructure optimization framework",
+      "volume": "57",
+      "author": "Henao",
+      "year": "2011",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "ref_35",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Bliek, L. (2022). A survey on sustainable surrogate-based optimisation. Sustainability, 14.",
+      "DOI": "10.3390/su14073867"
+    },
+    {
+      "key": "ref_36",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Di Martino, M., Avraamidou, S., and Pistikopoulos, E.N. (2022). A neural network based superstructure optimization approach to reverse osmosis desalination plants. Membranes, 12.",
+      "DOI": "10.3390/membranes12020199"
+    },
+    {
+      "key": "ref_37",
+      "doi-asserted-by": "crossref",
+      "first-page": "127477",
+      "DOI": "10.1016/j.jclepro.2021.127477",
+      "article-title": "Surrogate-assisted optimization of refinery hydrogen networks with hydrogen sulfide removal",
+      "volume": "310",
+      "author": "Xia",
+      "year": "2021",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "ref_38",
+      "doi-asserted-by": "crossref",
+      "first-page": "108584",
+      "DOI": "10.1016/j.compchemeng.2024.108584",
+      "article-title": "Surrogate-based optimisation of process systems to recover resources from wastewater",
+      "volume": "182",
+      "author": "Durkin",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "ref_39",
+      "doi-asserted-by": "crossref",
+      "first-page": "227",
+      "DOI": "10.1023/A:1021039126272",
+      "article-title": "Review of nonlinear mixed-integer and disjunctive programming techniques",
+      "volume": "3",
+      "author": "Grossmann",
+      "year": "2002",
+      "journal-title": "Optim. Eng."
+    },
+    {
+      "key": "ref_40",
+      "doi-asserted-by": "crossref",
+      "first-page": "3664",
+      "DOI": "10.1016/j.ces.2008.04.044",
+      "article-title": "Simultaneous optimization approach for integrated water-allocation and heat-exchange networks",
+      "volume": "63",
+      "author": "Dong",
+      "year": "2008",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "ref_41",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Wang, S.-C. (2003). Artificial neural network. Interdisciplinary Computing in Java Programming, Springer.",
+      "DOI": "10.1007/978-1-4615-0377-4"
+    },
+    {
+      "key": "ref_42",
+      "doi-asserted-by": "crossref",
+      "first-page": "91",
+      "DOI": "10.1016/j.supflu.2012.05.006",
+      "article-title": "Application of artificial neural network in predicting the extraction yield of essential oils of Diplotaenia cachrydifolia by supercritical fluid extraction",
+      "volume": "69",
+      "author": "Khajeh",
+      "year": "2012",
+      "journal-title": "J. Supercrit. Fluids"
+    },
+    {
+      "key": "ref_43",
+      "first-page": "201",
+      "article-title": "Wastewater engineering: Treatment and reuse",
+      "volume": "95",
+      "author": "Tchobanoglus",
+      "year": "2003",
+      "journal-title": "Am. Water Work. Association. J."
+    },
+    {
+      "key": "ref_44",
+      "doi-asserted-by": "crossref",
+      "first-page": "77",
+      "DOI": "10.1016/S0043-1354(00)00225-6",
+      "article-title": "Ultrafiltration of wastewater: Effects of particles, mode of operation, and backwash effectiveness",
+      "volume": "35",
+      "author": "Bourgeous",
+      "year": "2001",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref_45",
+      "first-page": "024",
+      "article-title": "Study on Removal of Ammonia-Nitrogen from Wastewater by Coal Ash",
+      "volume": "3",
+      "author": "Lifang",
+      "year": "2006",
+      "journal-title": "Electr. Power Constr."
+    },
+    {
+      "key": "ref_46",
+      "doi-asserted-by": "crossref",
+      "first-page": "2657",
+      "DOI": "10.1007/s11434-009-3587-4",
+      "article-title": "Composite denitrification reagent for high concentration ammonia removal by air stripping",
+      "volume": "55",
+      "author": "Lei",
+      "year": "2010",
+      "journal-title": "Chin. Sci. Bull."
+    },
+    {
+      "key": "ref_47",
+      "doi-asserted-by": "crossref",
+      "first-page": "230",
+      "DOI": "10.1016/j.marpolbul.2015.07.021",
+      "article-title": "Characteristics of phenol degradation in saline conditions of a halophilic strain JS3 isolated from industrial activated sludge",
+      "volume": "99",
+      "author": "Jiang",
+      "year": "2015",
+      "journal-title": "Mar. Pollut. Bull."
+    },
+    {
+      "key": "ref_48",
+      "doi-asserted-by": "crossref",
+      "first-page": "711",
+      "DOI": "10.1016/j.jhazmat.2008.07.016",
+      "article-title": "Electrochemical removal of phenol from oil refinery wastewater",
+      "volume": "163",
+      "author": "Abdelwahab",
+      "year": "2009",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "ref_49",
+      "doi-asserted-by": "crossref",
+      "first-page": "563",
+      "DOI": "10.1016/0098-1354(93)E0010-7",
+      "article-title": "Modelling and computational techniques for logic based integer programming",
+      "volume": "18",
+      "author": "Raman",
+      "year": "1994",
+      "journal-title": "Comput. Chem. Eng."
+    }
+  ],
+  "container-title": [
+    "Processes"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.mdpi.com/2227-9717/14/5/806/pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        4
+      ]
+    ],
+    "date-time": "2026-03-04T05:11:01Z",
+    "timestamp": 1772601061000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.mdpi.com/2227-9717/14/5/806"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        28
+      ]
+    ]
+  },
+  "references-count": 49,
+  "journal-issue": {
+    "issue": "5",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          3
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "pr14050806"
+  ],
+  "URL": "https://doi.org/10.3390/pr14050806",
+  "relation": {},
+  "ISSN": [
+    "2227-9717"
+  ],
+  "issn-type": [
+    {
+      "value": "2227-9717",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        28
+      ]
+    ]
+  }
+}

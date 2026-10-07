@@ -1,0 +1,753 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        18
+      ]
+    ],
+    "date-time": "2026-03-18T18:46:52Z",
+    "timestamp": 1773859612129,
+    "version": "3.50.1"
+  },
+  "reference-count": 37,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2026-02-01T00:00:00Z",
+        "timestamp": 1769904000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2026-02-01T00:00:00Z",
+        "timestamp": 1769904000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2026-02-01T00:00:00Z",
+        "timestamp": 1769904000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2026-02-01T00:00:00Z",
+        "timestamp": 1769904000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2026-02-01T00:00:00Z",
+        "timestamp": 1769904000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2026-02-01T00:00:00Z",
+        "timestamp": 1769904000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2026-02-01T00:00:00Z",
+        "timestamp": 1769904000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100013317",
+      "name": "Shanxi Provincial Key Research and Development Project",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "202302090301012"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "202302090301012"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100013317",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100002858",
+      "name": "China Postdoctoral Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2023M732570"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2023M732570"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100002858",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Environmental Research"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2026,
+        2
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.envres.2025.123435",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        27
+      ]
+    ],
+    "date-time": "2025-11-27T16:01:50Z",
+    "timestamp": 1764259310000
+  },
+  "page": "123435",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "special_numbering": "C",
+  "title": [
+    "A new paradigm in activated sludge management: an interpretable framework integrating mechanistic dynamics with a data-driven surrogate model"
+  ],
+  "prefix": "10.1016",
+  "volume": "290",
+  "author": [
+    {
+      "given": "Yaning",
+      "family": "Xiao",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Bowei",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Xiao",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Xiuping",
+      "family": "Yue",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.envres.2025.123435_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "496",
+      "DOI": "10.1016/j.aej.2025.04.037",
+      "article-title": "ODE, regression, and ANN models for energy forecasting: egypt as a study case",
+      "volume": "125",
+      "author": "Ali",
+      "year": "2025",
+      "journal-title": "Alex. Eng. J."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib2",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2024.122337",
+      "article-title": "Development and application of an intelligent nitrogen removal diagnosis and optimization framework for WWTPs: low-carbon and stable operation",
+      "volume": "266",
+      "author": "Chen",
+      "year": "2024",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib3",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2025.126784",
+      "article-title": "Neural chronos ODE: modelling bidirectional temporal patterns in time-series data",
+      "volume": "273",
+      "author": "Coelho",
+      "year": "2025",
+      "journal-title": "Expert Syst. Appl."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib4",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2024.174966",
+      "article-title": "Fit-for-purpose WWTP unmanned aerial systems: a game changer towards an integrated and sustainable management strategy",
+      "volume": "949",
+      "author": "Dimitriadou",
+      "year": "2024",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib5",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.seps.2024.102021",
+      "article-title": "Multi-class random forest model to classify wastewater treatment imbalanced data",
+      "volume": "95",
+      "author": "Distefano",
+      "year": "2024",
+      "journal-title": "Soc. Econ. Plann. Sci."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib6",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.measurement.2025.118228",
+      "article-title": "Stochastic dynamics in first-order thermal sigma-delta modulation",
+      "volume": "256",
+      "author": "Domínguez-Pumar",
+      "year": "2025",
+      "journal-title": "Measurement"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib7",
+      "article-title": "Hybrid data driven approach based on ANNs-PCA for wastewater treatment plant performance assessment",
+      "volume": "2",
+      "author": "Elharbili",
+      "year": "2024",
+      "journal-title": "Clean. Water(Washingt.)"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib8",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.bulsci.2025.103694",
+      "article-title": "Rational solutions of parametric first-order algebraic differential equations",
+      "volume": "205",
+      "author": "Falkensteiner",
+      "year": "2025",
+      "journal-title": "Bull. Sci. Math."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib9",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/app142210689",
+      "article-title": "Machine learning methods for the prediction of wastewater treatment efficiency and anomaly classification with lack of historical data",
+      "volume": "14",
+      "author": "Gulshin",
+      "year": "2024",
+      "journal-title": "Appl. Sci."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib10",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.rineng.2025.104019",
+      "article-title": "Investigating lightweight recycled brick aggregate concrete incorporating EPS beads: application to masonry units",
+      "volume": "25",
+      "author": "Hameed",
+      "year": "2025",
+      "journal-title": "Results Eng."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib11",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.dwt.2025.101147",
+      "article-title": "Shock load effects on WWTP performance under low loads following capacity expansion for combined sewer overflow control",
+      "volume": "322",
+      "author": "Han",
+      "year": "2025",
+      "journal-title": "Desalination Water Treat."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib12",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2025.146041",
+      "article-title": "Natural bio-photosensitizers in sludge: extracellular polymeric substances (EPS)-driven persulfate activation for sustainable antibiotic degradation",
+      "volume": "519",
+      "author": "He",
+      "year": "2025",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib13",
+      "article-title": "Single-stage MBBR as post-treatment step for upgrading large WWTPs – experiences of one-year pilot plant operation",
+      "volume": "46",
+      "author": "Leonhard",
+      "year": "2022",
+      "journal-title": "J. Water Proc. Eng."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib14",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2025.123804",
+      "article-title": "Machine learning-optimized advanced oxidation for enhanced sludge dewatering: EPS mechanistic insights and predictive modeling",
+      "volume": "283",
+      "author": "Ling",
+      "year": "2025",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "775",
+      "DOI": "10.1016/j.psep.2022.02.071",
+      "article-title": "Activated sludge process versus rotating biological contactors in WWTPs: evaluating the influence of operation and sludge bacterial content on their odor impact",
+      "volume": "160",
+      "author": "Márquez",
+      "year": "2022",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib16",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2024.122243",
+      "article-title": "Sludge bound-EPS solubilization enhance CH4 bioconversion and membrane fouling mitigation in electrochemical anaerobic membrane bioreactor: insights from continuous operation and interpretable machine learning algorithms",
+      "volume": "264",
+      "author": "Niu",
+      "year": "2024",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib17",
+      "article-title": "Dual purpose of shapley additive explanation (SHAP) in model explanation and feature selection for artificial intelligence-based digital twin of wastewater treatment plant",
+      "volume": "75",
+      "author": "Nourani",
+      "year": "2025",
+      "journal-title": "J. Water Proc. Eng."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "487",
+      "DOI": "10.3390/s23010487",
+      "article-title": "Application of machine learning methods for an analysis of E-Nose multidimensional signals in wastewater treatment",
+      "volume": "23",
+      "author": "Piłat-Rożek",
+      "year": "2023",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "2268",
+      "DOI": "10.3390/app9112268",
+      "article-title": "Improving SBR performance alongside with cost reduction through optimizing biological processes and dissolved oxygen concentration trajectory",
+      "volume": "9",
+      "author": "Piotrowski",
+      "year": "2019",
+      "journal-title": "Appl. Sci."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "8884",
+      "DOI": "10.3390/app14198884",
+      "article-title": "Recent applications of explainable AI (XAI): a systematic literature review",
+      "volume": "14",
+      "author": "Saarela",
+      "year": "2024",
+      "journal-title": "Appl. Sci."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib21",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2022.118915",
+      "article-title": "Elucidating the role of extracellular polymeric substances (EPS) in dewaterability of fecal sludge from onsite sanitation systems, and changes during anaerobic storage",
+      "volume": "222",
+      "author": "Sam",
+      "year": "2022",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib22",
+      "series-title": "Process Dynamics and Control",
+      "author": "Seborg",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib23",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/su151813380",
+      "article-title": "Analysis of machine learning models for wastewater treatment plant sludge output prediction",
+      "volume": "15",
+      "author": "Shao",
+      "year": "2023",
+      "journal-title": "Sustainability"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib24",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3389/fmicb.2016.00090",
+      "article-title": "Microbial community structure of activated sludge in treatment plants with different wastewater compositions",
+      "volume": "7",
+      "author": "Shchegolkova",
+      "year": "2016",
+      "journal-title": "Front. Microbiol."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "3579",
+      "DOI": "10.1007/s11356-020-10684-5",
+      "article-title": "Multivariate analysis of activated sludge community in full-scale wastewater treatment plants",
+      "volume": "28",
+      "author": "Sobczyk",
+      "year": "2021",
+      "journal-title": "Environ. Sci. Pollut. Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "1941",
+      "DOI": "10.3390/s20071941",
+      "article-title": "Soft sensor application in identification of the activated sludge bulking considering the technological and economical aspects of smart systems functioning",
+      "volume": "20",
+      "author": "Szeląg",
+      "year": "2020",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.1186/s40168-021-01151-5",
+      "article-title": "Successional dynamics and alternative stable states in a saline activated sludge microbial community over 9 years",
+      "volume": "9",
+      "author": "Wang",
+      "year": "2021",
+      "journal-title": "Microbiome"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib28",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2021.113941",
+      "article-title": "Towards better process management in wastewater treatment plants: process analytics based on SHAP values for tree-based machine learning methods",
+      "volume": "301",
+      "author": "Wang",
+      "year": "2022",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "1367",
+      "DOI": "10.1021/acsestengg.3c00631",
+      "article-title": "Prediction of activated sludge sedimentation performance using deep transfer learning",
+      "volume": "4",
+      "author": "Wang",
+      "year": "2024",
+      "journal-title": "ACS ES&T Eng."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib30",
+      "doi-asserted-by": "crossref",
+      "first-page": "1674",
+      "DOI": "10.3390/math13101674",
+      "article-title": "Economic model predictive control for wastewater treatment processes based on global maximum error POD-TPWL",
+      "volume": "13",
+      "author": "Wang",
+      "year": "2025",
+      "journal-title": "Mathematics"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib31",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cej.2024.155838",
+      "article-title": "Autotrophic biological nitrogen removal in anammox system at elevated temperature: EPS regulation and metagenomic analysis",
+      "volume": "498",
+      "author": "Ya",
+      "year": "2024",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib32",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.psep.2025.107395",
+      "article-title": "Analysis of intracellular electron behaviors and EPS defence mechanisms under florfenicol stress in mixotrophic denitrification system",
+      "volume": "200",
+      "author": "Yang",
+      "year": "2025",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib33",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2024.120256",
+      "article-title": "Modeling nitrogen removal performance based on novel microbial activity indicators in WWTP by machine learning and biological interpretation",
+      "volume": "354",
+      "author": "Yu",
+      "year": "2024",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib34",
+      "doi-asserted-by": "crossref",
+      "first-page": "59",
+      "DOI": "10.1016/j.chemosphere.2014.05.070",
+      "article-title": "Composition of EPS fractions from suspended sludge and biofilm and their roles in microbial cell aggregation",
+      "volume": "117",
+      "author": "Zhang",
+      "year": "2014",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib35",
+      "article-title": "The exopolysaccharides (EPS) produced by Bacillus polymyxa enhanced toluene removal by indigenous microorganisms: resistance control and degradation properties",
+      "author": "Zheng",
+      "year": "2025",
+      "journal-title": "J. Environ. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib36",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cej.2025.163185",
+      "article-title": "Performance and adaptation mechanisms of anammox granular sludge under salinity stress: role of EPS, microbial community and functional genes",
+      "volume": "514",
+      "author": "Zhou",
+      "year": "2025",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.envres.2025.123435_bib37",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.swevo.2025.102004",
+      "article-title": "Solving spherical multi-aircraft path planning problem using self-adaptive update strategy differential evolution algorithm",
+      "volume": "96",
+      "author": "Zhu",
+      "year": "2025",
+      "journal-title": "Swarm Evol. Comput."
+    }
+  ],
+  "container-title": [
+    "Environmental Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S001393512502688X?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S001393512502688X?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        18
+      ]
+    ],
+    "date-time": "2026-03-18T11:45:49Z",
+    "timestamp": 1773834349000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S001393512502688X"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        2
+      ]
+    ]
+  },
+  "references-count": 37,
+  "alternative-id": [
+    "S001393512502688X"
+  ],
+  "URL": "https://doi.org/10.1016/j.envres.2025.123435",
+  "relation": {},
+  "ISSN": [
+    "0013-9351"
+  ],
+  "issn-type": [
+    {
+      "value": "0013-9351",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        2
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "A new paradigm in activated sludge management: an interpretable framework integrating mechanistic dynamics with a data-driven surrogate model",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Environmental Research",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.envres.2025.123435",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "123435"
+}

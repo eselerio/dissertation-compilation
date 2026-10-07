@@ -1,0 +1,696 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        16
+      ]
+    ],
+    "date-time": "2026-09-16T11:37:40Z",
+    "timestamp": 1789558660221,
+    "version": "build-2803163510"
+  },
+  "reference-count": 61,
+  "publisher": "Copernicus GmbH",
+  "issue": "17",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            5
+          ]
+        ],
+        "date-time": "2022-09-05T00:00:00Z",
+        "timestamp": 1662336000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100011661",
+      "name": "Pacific Northwest National Laboratory",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "DE-AC05-76RL01830"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "DE-AC05-76RL01830"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100011661",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Geosci. Model Dev."
+  ],
+  "abstract": "<jats:p>Recent advances in deep convolutional neural network (CNN)-based super resolution can be used to downscale atmospheric chemistry simulations with substantially higher accuracy than conventional downscaling methods. This work both demonstrates the downscaling capabilities of modern CNN-based single image super resolution and video super-resolution schemes and develops modifications to these schemes to ensure they are appropriate for use with physical science data. The CNN-based video super-resolution schemes in particular incur only 39 % to 54 % of the grid-cell-level error of interpolation schemes and generate outputs with extremely realistic small-scale variability based on multiple perceptual quality metrics while performing a large (8×10) increase in resolution in the spatial dimensions. Methods are introduced to strictly enforce physical conservation laws within CNNs, perform large and asymmetric resolution changes between common model grid resolutions, account for non-uniform grid-cell areas, super-resolve lognormally distributed datasets, and leverage additional inputs such as high-resolution climatologies and model state variables. High-resolution chemistry simulations are critical for modeling regional air quality and for understanding future climate, and CNN-based downscaling has the potential to generate these high-resolution simulations and ensembles at a fraction of the computational cost.</jats:p>",
+  "DOI": "10.5194/gmd-15-6677-2022",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        5
+      ]
+    ],
+    "date-time": "2022-09-05T04:03:47Z",
+    "timestamp": 1662350627000
+  },
+  "page": "6677-6694",
+  "source": "Crossref",
+  "is-referenced-by-count": 27,
+  "title": [
+    "Downscaling atmospheric chemistry simulations with physically consistent deep learning"
+  ],
+  "prefix": "10.5194",
+  "volume": "15",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-2571-4603",
+      "authenticated-orcid": false,
+      "given": "Andrew",
+      "family": "Geiss",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        },
+        {
+          "role": "corresponding-author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Sam J.",
+      "family": "Silva",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-8489-4763",
+      "authenticated-orcid": false,
+      "given": "Joseph C.",
+      "family": "Hardin",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "3145",
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        5
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref1",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Abdal, R., Qin, Y., and Wonka, P.: Image 2 Style-GAN: How to embed images into the Style-GAN latent space?, International Conference on Computer Vision (ICCV), 27 October 2019–2 November 2019, Seoul, Korea, 10.1109/ICCV.2019.00453, 2019.",
+      "DOI": "10.1109/ICCV.2019.00453"
+    },
+    {
+      "key": "ref2",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Anh, D. T., Van, S. P., Dang, T. D., and Hoang, L. P.: Downscaling rainfall using deep learning long short-term memory and feedforward neural network, Int. J. Climatol., 39, 4170–4188, 10.1002/joc.6066, 2019.",
+      "DOI": "10.1002/joc.6066"
+    },
+    {
+      "key": "ref3",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Baño-Medina, J., Manzanas, R., and Gutiérrez, J. M.: Configuration and intercomparison of deep learning neural models for statistical downscaling, Geosci. Model Dev., 13, 2109–2124, 10.5194/gmd-13-2109-2020, 2020.",
+      "DOI": "10.5194/gmd-13-2109-2020"
+    },
+    {
+      "key": "ref4",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Bastidas, A. A. and Tang, H.: Channel Attention Networks, 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 16–17 June 2019, Long Beach, CA, USA, 881–888, 10.1109/CVPRW.2019.00117, 2019.",
+      "DOI": "10.1109/CVPRW.2019.00117"
+    },
+    {
+      "key": "ref5",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Bedia, J., Baño-Medina, J., Legasa, M. N., Iturbide, M., Manzanas, R., Herrera, S., Casanueva, A., San-Martín, D., Cofiño, A. S., and Gutiérrez, J. M.: Statistical downscaling with the downscaleR package (v3.1.0): contribution to the VALUE intercomparison experiment, Geosci. Model Dev., 13, 1711–1735, 10.5194/gmd-13-1711-2020, 2020.",
+      "DOI": "10.5194/gmd-13-1711-2020"
+    },
+    {
+      "key": "ref6",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Beucler, T., Pritchard, M., Rasp, S., Ott, J., Baldi, P., and Gentine, P.: Enforcing Analytic Constraints in Neural Networks Emulating Physical Systems, Phys. Rev. Lett., 126, 098302, 10.1103/PhysRevLett.126.098302, 2021.",
+      "DOI": "10.1103/PhysRevLett.126.098302"
+    },
+    {
+      "key": "ref7",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Boukabara, S.-A., Krasnopolsky, V., Penny, S. G., Stewart, J. Q., McGovern, A., Hall, D., Hoeve, J. E. T., Hickey, J., Huang, H.-L. A., Williams, J. K., Ide, K., Tissot, P., Haupt, S. E., Casey, K. S., Oza, N., Geer, A. J., Maddy, E. S., and Hoffman, R. N.: Outlook for Exploiting Artificial Intelligence in the Earth and Environmental Sciences, B. Am. Meteorol. Soc., 102, E1016–E1032, 10.1175/BAMS-D-20-0031.1, 2021.",
+      "DOI": "10.1175/BAMS-D-20-0031.1"
+    },
+    {
+      "key": "ref8",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Clifton, O. E., Fiore, A. M., Massman, W. J., Baublitz, C. B., Coyle, M., Emberson, L., Fares, S., Farmer, D. K., Gentine, P., Gerosa, G., Guenther, A. B., Helmig, D., Lombardozzi, D. L., Munger, J. W., Patton, E. G., Pusede, S. E., Schwede, D. B., Silva, S. J., Sörgel, M., Steiner, A. L., and Tai, A. P. K.: Dry Deposition of Ozone Over Land: Processes, Measurement, and Modeling, Rev. Geophys., 58, e2019RG000670, 10.1029/2019RG000670, 2020.",
+      "DOI": "10.1029/2019RG000670"
+    },
+    {
+      "key": "ref9",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Committee on the Future of Atmospheric Chemistry Research, Board on Atmospheric Sciences and Climate, Division on Earth and Life Studies, and National Academies of Sciences, Engineering, and Medicine: The Future of Atmospheric Chemistry Research: Remembering Yesterday, Understanding Today, Anticipating Tomorrow, National Academies Press, Washington, D. C., 10.17226/23573, 2016.",
+      "DOI": "10.17226/23573"
+    },
+    {
+      "key": "ref10",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Dong, C., Loy, C. C., He, K., and Tang, X.: Image Super-Resolution Using Deep Convolutional Networks, IEEE T. Pattern Anal., 38, 295–307, 2016.",
+      "DOI": "10.1109/TPAMI.2015.2439281"
+    },
+    {
+      "key": "ref11",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Forouzanfar, M. H., Alexander, L., Anderson, H. R., et al.: Global, regional, and national comparative risk assessment of 79 behavioural, environmental and occupational, and metabolic risks or clusters of risks in 188 countries, 1990–2013: a systematic analysis for the Global Burden of Disease Study 2013, The Lancet, 386, 2287–2323, 10.1016/S0140-6736(15)00128-2, 2015.",
+      "DOI": "10.1016/S0140-6736(15)00128-2"
+    },
+    {
+      "key": "ref12",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Geddes, J. A., Martin, R. V., Boys, B. L., and van Donkelaar, A.: Long-Term Trends Worldwide in Ambient NO2 Concentrations Inferred from Satellite Observations, Environ. Health Persp., 124, 281–289, 10.1289/ehp.1409567, 2016.",
+      "DOI": "10.1289/ehp.1409567"
+    },
+    {
+      "key": "ref13",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Geiss, A.: avgeiss/chem_downscaling: GMD Supplementary Code (Version v1), Zenodo [code], 10.5281/zenodo.6502897, 2022a.",
+      "DOI": "10.5281/zenodo.6502897",
+      "type": "software"
+    },
+    {
+      "key": "ref14",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Geiss, A.: Chem. Downscaling Models, Zenodo [data set], 10.5281/zenodo.6784614, 2022b.",
+      "DOI": "10.5281/zenodo.6784614",
+      "type": "dataset"
+    },
+    {
+      "key": "ref15",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Geiss, A.: Ozone Super Resolution Video Supplement, Zenodo [video], 10.5281/zenodo.6506306, 2022c.",
+      "DOI": "10.5281/zenodo.6506306"
+    },
+    {
+      "key": "ref16",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Geiss, A. and Hardin, J. C.: Radar Super Resolution Using a Deep Convolutional Neural Network, J. Atmos. Ocean. Tech., 37, 2197–2207, 10.1175/JTECH-D-20-0074.1, 2020.",
+      "DOI": "10.1175/JTECH-D-20-0074.1"
+    },
+    {
+      "key": "ref17",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Geiss, A. and Hardin, J. C.: Strict Enforcement of Conservation Laws and Invertibility in CNN-Based Super Resolution for Scientific Datasets, arXiv [preprint], 10.48550/arXiv.2011.05586, published: 11 November 2020, last updated: 26 October 2021.",
+      "DOI": "10.48550/arXiv.2011.05586",
+      "type": "preprint"
+    },
+    {
+      "key": "ref18",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Girshick, R., Donahue, J., Darrell, T., and Malik, J.: Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation, in: Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 23–28 June 2014, Columbus, OH, USA, 580–587, 10.1109/CVPR.2014.81, 2013.",
+      "DOI": "10.1109/CVPR.2014.81"
+    },
+    {
+      "key": "ref19",
+      "unstructured": "Glorot, X. and Bengio, Y.: Understanding the difficulty of training deep feedforward neural networks, in: Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics, Proc. Mach. Learn. Res., 9, 249–256, 2010."
+    },
+    {
+      "key": "ref20",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., and Bengio, Y., arXiv [preprint], 10.48550/arXiv.1406.2661, uploaded: 10 June 2014.",
+      "DOI": "10.48550/arXiv.1406.2661",
+      "type": "preprint"
+    },
+    {
+      "key": "ref21",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Haris, M., Shakhnarovich, G., and Ukita, N.: Recurrent Back-Projection Network for Video Super-Resolution, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 15–20 June 2019, Long Beach, CA, USA, 3892–3901, 10.1109/CVPR.2019.00402, 2019.",
+      "DOI": "10.1109/CVPR.2019.00402"
+    },
+    {
+      "key": "ref22",
+      "doi-asserted-by": "publisher",
+      "unstructured": "He, K., Zhang, X., Ren, S., and Sun, J.: Deep Residual Learning for Image Recognition, IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 27–30 June 2016, Las Vegas, NV, USA, 770–778, 10.1109/CVPR.2016.90, 2016.",
+      "DOI": "10.1109/CVPR.2016.90"
+    },
+    {
+      "key": "ref23",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Hu, L., Keller, C. A., Long, M. S., Sherwen, T., Auer, B., Da Silva, A., Nielsen, J. E., Pawson, S., Thompson, M. A., Trayanov, A. L., Travis, K. R., Grange, S. K., Evans, M. J., and Jacob, D. J.: Global simulation of tropospheric chemistry at 12.5 km resolution: performance and evaluation of the GEOS-Chem chemical module (v10-1) within the NASA GEOS Earth system model (GEOS-5 ESM), Geosci. Model Dev., 11, 4603–4620, 10.5194/gmd-11-4603-2018, 2018.",
+      "DOI": "10.5194/gmd-11-4603-2018"
+    },
+    {
+      "key": "ref24",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Huang, G., Liu, Z., van der Maaten, L., and Weinberger, K. Q.: Densely Connected Convolutional Networks, IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 21–26 July 2017, 10.1109/CVPR.2017.243, Honolulu, HI, USA, 2261–2269, 2017.",
+      "DOI": "10.1109/CVPR.2017.243"
+    },
+    {
+      "key": "ref25",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Jiang, C., Huang, J., Kashinath, K., Marcus, P., and Niessner, M.: Spherical CNNs on unstructured grids, arXiv [preprint], 10.48550/arxiv.1901.02039, uploaded: 7 January 2019.",
+      "DOI": "10.48550/arxiv.1901.02039",
+      "type": "preprint"
+    },
+    {
+      "key": "ref26",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Keller, C. A., Knowland, K. E., Duncan, B. N., Liu, J., Anderson, D. C., Das, S., Lucchesi, R. A., Lundgren, E. W., Nicely, J. M., Nielsen, E., Ott, L. E., Saunders, E., Strode, S. A., Wales, P. A., Jacob, D. J., and Pawson, S.: Description of the NASA GEOS Composition Forecast Modeling System GEOS-CF v1.0, J. Adv. Model. Earth Sy., 13, e2020MS002413, 10.1029/2020MS002413, 2021.",
+      "DOI": "10.1029/2020MS002413"
+    },
+    {
+      "key": "ref27",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Kim, J., Lee, J., and Lee, K.: Accurate Image Super-Resolution Using Very Deep Convolutional Networks, arXiv [preprint], 10.48550/arXiv.1511.04587, published: 14 November 2015, last updated: 11 November 2016.",
+      "DOI": "10.48550/arXiv.1511.04587",
+      "type": "preprint"
+    },
+    {
+      "key": "ref28",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Kim, S. Y., Lim, J., Na, T., and Kim, M.: Video Super-Resolution Based on 3D-CNNS with Consideration of Scene Change, in: 2019 IEEE International Conference on Image Processing (ICIP), 22–25 September 2019, Taipei, Taiwan, 2831–2835, 10.1109/ICIP.2019.8803297, 2019.",
+      "DOI": "10.1109/ICIP.2019.8803297"
+    },
+    {
+      "key": "ref29",
+      "unstructured": "Knowland, K., Keller, C., and Lucches, R.: File Specification for GEOS-CF Products, GMAO Office Note No. 17 (Version 1.1), 37, http://gmao.gsfc.nasa.gov/pubs/office_notes (last access: 16 November 2021), 2020.",
+      "type": "web-resource"
+    },
+    {
+      "key": "ref30",
+      "unstructured": "Krizhevsky, A., Sutskever, I., and Hinton, G. E.: ImageNet Classification with Deep Convolutional Neural Networks, in: Advances in Neural Information Processing Systems, vol. 25, edited by: Pereira, F., Burges, C. J. C., Bottou, L., and Weinberger, K. Q., Curran Associates, Inc., https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf (last access: 16 November 2021), 2012.",
+      "type": "web-resource"
+    },
+    {
+      "key": "ref31",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Lanaras, C., Bioucas-Dias, J., Galliani, S., Baltsavias, E., and Schindler, K.: Super-resolution of Sentinel-2 images: Learning a globally applicable deep neural network, ISPRS J. Photogramm., 146, 305–319, 2018.",
+      "DOI": "10.1016/j.isprsjprs.2018.09.018"
+    },
+    {
+      "key": "ref32",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Ledig, C., Theis, L., Huszar, F., Caballero, J., Cunningham, A., Acosta, A., Aitken, A., Tejani, A., Totz, J., Wang, Z., and Shi, W.: Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network, 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 21–26 July 2017, Honolulu, HI, USA, 105–114, 2017.",
+      "DOI": "10.1109/CVPR.2017.19"
+    },
+    {
+      "key": "ref33",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Liebel, L. and Körner, M.: Single-Image Super Resolution for Multispectral Remote Sensing Data Using Convolutional Neural Networks, Int. Arch. Photogramm., XLI-B3, 883–890, 10.5194/isprs-archives-XLI-B3-883-2016, 2016.",
+      "DOI": "10.5194/isprs-archives-XLI-B3-883-2016"
+    },
+    {
+      "key": "ref34",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Lim, B., Son, S., Kim, H., Nah, S., and Lee, K. M.: Enhanced Deep Residual Networks for Single Image Super-Resolution, in: 2017 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 21–26 July 2017, Honolulu, HI, USA, 1132–1140, 10.1109/CVPRW.2017.151, 2017.",
+      "DOI": "10.1109/CVPRW.2017.151"
+    },
+    {
+      "key": "ref35",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Liu, H., Ruan, Z., Zhao, P., Shang, F., Yang, L., and Liu, Y.: Video Super Resolution Based on Deep Learning: A comprehensive survey, arXiv [preprint], 10.48550/arXiv.2007.12928, published: 25 July 2020, last updated: 16 March 2022.",
+      "DOI": "10.48550/arXiv.2007.12928",
+      "type": "preprint"
+    },
+    {
+      "key": "ref36",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Long, J., Shelhamer, E., and Darell, T.: Fully Convolutional Networks for Semantic Segmentation, arXiv [preprint], 10.48550/arXiv.1411.4038, published: 14 November 2014, Last updated: 8 March 2015.",
+      "DOI": "10.48550/arXiv.1411.4038",
+      "type": "preprint"
+    },
+    {
+      "key": "ref37",
+      "unstructured": "Lucas, B. D. and Kanade, T.: An iterative image registration technique with an application to stereo vision, Proceedings of the 7th International Joint Conference on Artificial Intelligence (IJCAI), Vancouver, BC, Canada, 24–28 August 1981, 674–679, ISBN 0865760594, 1981."
+    },
+    {
+      "key": "ref38",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Mahowald, N.: Aerosol Indirect Effect on Biogeochemical Cycles and Climate, Science, 334, 794–796, 10.1126/science.1207374, 2011.",
+      "DOI": "10.1126/science.1207374"
+    },
+    {
+      "key": "ref39",
+      "doi-asserted-by": "publisher",
+      "unstructured": "McGovern, A., Ebert-Uphoff, I., Gagne, D. J., and Bostrom, A.: Why we need to focus on developing ethical, responsible, and trustworthy artificial intelligence approaches for environmental science, Environ. Data Sci., 1, E6, 10.1017/eds.2022.5, 2022.",
+      "DOI": "10.1017/eds.2022.5"
+    },
+    {
+      "key": "ref40",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Menon, S., Damian, A., Hu, S., Ravi N., and Rudin, C.:PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models, 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 13–19 June 2020, Seattle, WA, USA, 2434–2442, 10.1109/CVPR42600.2020.00251, 2020.",
+      "DOI": "10.1109/CVPR42600.2020.00251"
+    },
+    {
+      "key": "ref41",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Müller, M. U., Ekhtiari, N., Almeida, R. M., and Rieke, C.: Super Resolution of Multispectral Satellite Images using Convolutional Neural Networks, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, V-1-2020, 33–40, 10.5194/isprs-annals-V-1-2020-33-2020, 2020.",
+      "DOI": "10.5194/isprs-annals-V-1-2020-33-2020"
+    },
+    {
+      "key": "ref42",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Nasrollahi, K. and Moeslund, T.: Super-resolution: a comprehensive survey, Mach. Vision Appl., 25, 1423–1468, 10.1007/s00138-014-0623-4, 2014.",
+      "DOI": "10.1007/s00138-014-0623-4"
+    },
+    {
+      "key": "ref43",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Orbe, C., Oman, L. D., Strahan, S. E., Waugh, D. W., Pawson, S., Takacs, L. L., and Molod, A. M.: Large-scale atmospheric transport in GEOS replay simulations, J. Adv. Model. Earth Sy., 9, 2545–2560, 10.1002/2017MS001053, 2017.",
+      "DOI": "10.1002/2017MS001053"
+    },
+    {
+      "key": "ref44",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Reichstein, M., Camps-Valls, G., Stevens, B., Jung, M., Denzler, J., Carvalhais, N., and Prabhat: Deep learning and process understanding for data-driven Earth system science, Nature, 566, 195–204, 2019.",
+      "DOI": "10.1038/s41586-019-0912-1"
+    },
+    {
+      "key": "ref45",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Ronneberger, O., Fischer, P., and Brox, T.: U-Net: Convolutional Networks for Biomedical Image Segmentation, in: Medical Image Computing and Computer-Assisted Intervention – MICCAI 2015, Springer International Publishing, 234–241, 10.1007/978-3-319-24574-4_28, 2015.",
+      "DOI": "10.1007/978-3-319-24574-4_28"
+    },
+    {
+      "key": "ref46",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Shi, W., Caballero, J., Huszár, F., Totz, J., Aitken, A. P., Bishop, R., Rueckert, D., and Wang, Z.: Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network, 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 26 June–1 July, Las Vegas, NV, USA, 1874–1883, 2016.",
+      "DOI": "10.1109/CVPR.2016.207"
+    },
+    {
+      "key": "ref47",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Stengel, K., Glaws, A., Hettinger, D., and King, R. N.: Adversarial super-resolution of climatological wind and solar data, P. Natl. Acad. Sci. USA, 117, 16805–16815, 10.1073/pnas.1918964117, 2020.",
+      "DOI": "10.1073/pnas.1918964117"
+    },
+    {
+      "key": "ref48",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O. and Wexler, A. S.: A mass- and energy-conserving framework for using machine learning to speed computations: a photochemistry example, Geosci. Model Dev., 13, 4435–4442, 10.5194/gmd-13-4435-2020, 2020.",
+      "DOI": "10.5194/gmd-13-4435-2020"
+    },
+    {
+      "key": "ref49",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O. and Wexler, A. S.: Conservation laws in a neural network architecture: enforcing the atom balance of a Julia-based photochemical model (v0.2.0), Geosci. Model Dev., 15, 3417–3431, 10.5194/gmd-15-3417-2022, 2022.",
+      "DOI": "10.5194/gmd-15-3417-2022"
+    },
+    {
+      "key": "ref50",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sun, H., Shin, Y. M., Xia, M., Ke, S., Wan, M., Yuan, L., Guo, Y., and Archibald, A. T.: Spatial Resolved Surface Ozone with Urban and Rural Differentiation during 1990–2019: A Space–Time Bayesian Neural Network Downscaler, Environ. Sci. Technol., 56, acs.est.1c04797, 10.1021/acs.est.1c04797, 2021.",
+      "DOI": "10.1021/acs.est.1c04797"
+    },
+    {
+      "key": "ref51",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Timofte, R., De Smet, V., and Van Gool, L.: A+: Adjusted Anchored Neighborhood Regression for Fast Super-Resolution, in: Computer Vision – ACCV 2014, Lecture Notes in Computer Science, Springer, Cham, 9006, 111–126, 10.1007/978-3-319-16817-3_8, 2015.",
+      "DOI": "10.1007/978-3-319-16817-3_8"
+    },
+    {
+      "key": "ref52",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Ulyanov, D., Vedaldi, A., and Lempitsky, V.: Deep image prior, IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 18–23 June 2018, Salt Lake City, UT, USA, 9446–9454, 10.1109/CVPR.2018.00984, 2018.",
+      "DOI": "10.1109/CVPR.2018.00984"
+    },
+    {
+      "key": "ref53",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Vandal, T., Kodra, E., Ganguly, S., Michaelis, A., Nemani, R., and Ganguly, A. R.: Generating High Resolution Climate Change Projections through Single Image Super-Resolution: An Abridged Version, Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence, IJCAI-18, Twenty-Seventh International Joint Conference on Artificial Intelligence, 13–19 July 2018, Stockholm, Sweden, 5389–5393, 10.24963/ijcai.2018/759, 2018.",
+      "DOI": "10.24963/ijcai.2018/759"
+    },
+    {
+      "key": "ref54",
+      "doi-asserted-by": "publisher",
+      "unstructured": "von Rueden, L., Mayer, S., Beckh, K., Georgiev, B., Giesselbach, S., Heese, R., Kirsch, B., Walczak, M., Pfrommer, J., Pick, A., Ramamurthy, R., Garcke, J., Bauckhage, C., and Schuecker, J.: Informed Machine Learning – A Taxonomy and Survey of Integrating Prior Knowledge into Learning Systems, IEEE T. Knowl. Data En., 10.1109/tkde.2021.3079836, 2021.",
+      "DOI": "10.1109/tkde.2021.3079836"
+    },
+    {
+      "key": "ref55",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Wang, J., Liu, Z., Foster, I., Chang, W., Kettimuthu, R., and Kotamarthi, V. R.: Fast and accurate learned multiresolution dynamical downscaling for precipitation, Geosci. Model Dev., 14, 6355–6372, 10.5194/gmd-14-6355-2021, 2021.",
+      "DOI": "10.5194/gmd-14-6355-2021"
+    },
+    {
+      "key": "ref56",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Wang, Z., Bovik, A., Sheikh, H., and Simoncelli, E.: Image quality assessment: from error visibility to structural similarity, IEEE T. Image Process., 4, 600–612, 10.1109/TIP.2003.819861, 2004.",
+      "DOI": "10.1109/TIP.2003.819861"
+    },
+    {
+      "key": "ref57",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Wang, Z., Chen, J., and Hoi, S.: Deep Learning for Image Super-resolution: A Survey, arXiv [preprint], 10.48550/arXiv.1902.06068, published: 16 February 2019.",
+      "DOI": "10.48550/arXiv.1902.06068",
+      "type": "preprint"
+    },
+    {
+      "key": "ref58",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Weyn, J. A., Durran, D. R., and Caruana, R.: Improving data-driven global weather prediction using deep convolutional neural networks on a cubed sphere, J. Adv. Model. Earth Sy., 12, e2020MS002109, 10.1029/2020MS002109, 2020.",
+      "DOI": "10.1029/2020MS002109"
+    },
+    {
+      "key": "ref59",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Yan, B., Lin, C., and Tan, W.: Frame and Feature-Context Video Super-Resolution, Proceedings of the AAAI Conference on Artificial Intelligence, 27 January–1 February 2019, Honolulu, HI, 33, 5597–5604, 10.1609/aaai.v33i01.33015597, 2019.",
+      "DOI": "10.1609/aaai.v33i01.33015597"
+    },
+    {
+      "key": "ref60",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Zhang, Y., Li, K., Li, K., Wang, L., Zhong, B., and Fu, Y.: Image Super-Resolution Using Very Deep Residual Channel Attention Networks, arXiv [preprint], 10.48550/arXiv.1807.02758, 2018a.",
+      "DOI": "10.48550/arXiv.1807.02758",
+      "type": "preprint"
+    },
+    {
+      "key": "ref61",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Zhang, Y., Tian, Y., Kong, Y., Zhong, B., and Fu, Y.: Residual Dense Network for Image Super-Resolution, 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition, 18–23 June 2018, 10.1109/CVPR.2018.00262, Salt Lake City, UT, USA, 2472–2481, 2018b.",
+      "DOI": "10.1109/CVPR.2018.00262"
+    }
+  ],
+  "container-title": [
+    "Geoscientific Model Development"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://gmd.copernicus.org/articles/15/6677/2022/gmd-15-6677-2022.pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        15
+      ]
+    ],
+    "date-time": "2026-09-15T06:27:24Z",
+    "timestamp": 1789453644000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://gmd.copernicus.org/articles/15/6677/2022/"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        5
+      ]
+    ]
+  },
+  "references-count": 61,
+  "journal-issue": {
+    "issue": "17",
+    "published-online": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.5194/gmd-15-6677-2022",
+  "relation": {
+    "has-preprint": [
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76",
+        "asserted-by": "object"
+      }
+    ],
+    "has-review": [
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-CC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC3",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-CEC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC2",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-RC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-RC2",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC4",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-RC2",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-RC1",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-CEC1",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC4",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC3",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC2",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-AC1",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2022-76-CC1",
+        "asserted-by": "object"
+      }
+    ],
+    "is-part-of": [
+      {
+        "id-type": "doi",
+        "id": "10.5281/zenodo.6784614",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5281/zenodo.6502897",
+        "asserted-by": "subject"
+      }
+    ]
+  },
+  "ISSN": [
+    "1991-9603"
+  ],
+  "issn-type": [
+    {
+      "value": "1991-9603",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        5
+      ]
+    ]
+  }
+}

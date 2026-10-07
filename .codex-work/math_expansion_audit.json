@@ -1,0 +1,97 @@
+{
+  "title_unchanged": true,
+  "bibliography_unchanged": true,
+  "chapter_coverage": [
+    {
+      "chapter": "01_research_problem.tex",
+      "original_labeled_formulas": 0,
+      "current_labeled_formulas": 0,
+      "removed_formulas": [],
+      "changed_original_formula_blocks": [],
+      "lost_citation_keys": [],
+      "characters_before": 12244,
+      "characters_after": 13451
+    },
+    {
+      "chapter": "02_integrated_literature.tex",
+      "original_labeled_formulas": 0,
+      "current_labeled_formulas": 0,
+      "removed_formulas": [],
+      "changed_original_formula_blocks": [],
+      "lost_citation_keys": [],
+      "characters_before": 43996,
+      "characters_after": 43996
+    },
+    {
+      "chapter": "03_reactor_foundations.tex",
+      "original_labeled_formulas": 23,
+      "current_labeled_formulas": 23,
+      "removed_formulas": [],
+      "changed_original_formula_blocks": [],
+      "lost_citation_keys": [],
+      "characters_before": 22337,
+      "characters_after": 43401
+    },
+    {
+      "chapter": "04_prediction_projection.tex",
+      "original_labeled_formulas": 27,
+      "current_labeled_formulas": 27,
+      "removed_formulas": [],
+      "changed_original_formula_blocks": [],
+      "lost_citation_keys": [],
+      "characters_before": 46688,
+      "characters_after": 73790
+    },
+    {
+      "chapter": "05_interpretable_surrogate.tex",
+      "original_labeled_formulas": 38,
+      "current_labeled_formulas": 72,
+      "removed_formulas": [],
+      "changed_original_formula_blocks": [],
+      "lost_citation_keys": [],
+      "characters_before": 52801,
+      "characters_after": 90467
+    },
+    {
+      "chapter": "06_connected_plant.tex",
+      "original_labeled_formulas": 60,
+      "current_labeled_formulas": 60,
+      "removed_formulas": [],
+      "changed_original_formula_blocks": [],
+      "lost_citation_keys": [],
+      "characters_before": 91748,
+      "characters_after": 160787
+    },
+    {
+      "chapter": "07_assessment_framework.tex",
+      "original_labeled_formulas": 0,
+      "current_labeled_formulas": 0,
+      "removed_formulas": [],
+      "changed_original_formula_blocks": [],
+      "lost_citation_keys": [],
+      "characters_before": 11127,
+      "characters_after": 18202
+    }
+  ],
+  "root_example_arithmetic": {
+    "two_component_prediction_errors": true,
+    "clipping_inventory": true,
+    "affine_response_and_slopes": true,
+    "coordinate_normalization": true,
+    "latin_stratum": true,
+    "jitter_endpoints": true,
+    "log_state_step": true,
+    "horizon_cases": true,
+    "balance_residual": true,
+    "one_standard_error_rule": true,
+    "error_metrics": true,
+    "two_normalization_metrics": true,
+    "multistart_and_poll_counts": true,
+    "feasible_diagonal_poll": true,
+    "route_quality_scales": true,
+    "objective_differences": true,
+    "percentage_points_and_relative_error": true,
+    "normalized_control_difference": true,
+    "cost_amortization": true
+  }
+}

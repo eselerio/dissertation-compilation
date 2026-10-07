@@ -1,0 +1,71 @@
+\chapter{Integrated Assessment and Research Boundaries}
+\label{ch:assessment}
+
+\section{A common basis for evaluating the prediction chain}
+
+The research links a mechanistic component representation, statistical approximation, physical enforcement, interpretation, and operating choice. Each part introduces a specific question about credibility. The mechanistic representation defines the reference system. The statistical predictor approximates its response. The correction restricts the returned state to the imposed feasible set. Interpretation describes selected parts of the prediction map. Optimization uses the returned response to select controls. Evidence is needed at each point where the intended claim changes.
+
+The raw benchmark and the correction benchmark share a particular prediction. This permits a paired assessment of what changes when enforcement is applied. A comparison between two independently trained models answers a different question because it also contains differences in fitting and hyperparameter selection. The structured regression adds another distinction. Its raw head, affine correction, and final constrained output are separately assessable objects. Reporting only the final output would leave the contribution of the learned structure unclear.
+
+The connected plant adds several linked outputs. Its correction must be assessed across the mixer, reactor train, clarifier outlets, and solids inventory. A change that improves one location can worsen another while preserving joint constraints. Location-specific errors therefore remain necessary alongside a plant aggregate. This follows the general principle that approximation quality must be assessed in the quantities used by the intended decision \citep{BhosekarIerapetritou2018,McBride2019}.
+
+\begin{table}[htbp]
+\centering
+\caption{Claims and the evidence required to assess them.}
+\label{tab:claim_evidence}
+\small
+\begin{tabular}{p{0.25\textwidth}p{0.34\textwidth}p{0.31\textwidth}}
+\toprule
+Claim & Assessment evidence & Limit of the inference \\
+\midrule
+Accurate approximation & Held-out component and composite errors with defined scales & Agreement concerns the selected reference model and tested domain \\
+Physical admissibility & Original equality residuals, nonnegativity checks, and inventory bounds & Unimposed kinetic and dynamic relations remain unverified \\
+Sample efficiency & Common learning curves and variation across partitions & The conclusion depends on the sampling and fitting budget \\
+Transparent structure & Named blocks, physical-unit coefficients, and sensitivity calculations & Coefficients are predictive associations rather than identified causal laws \\
+Reliable operating choice & Independent mechanistic solve at selected controls & A local search does not establish a global optimum \\
+Computational benefit & Separate development, search, prediction, correction, and verification costs & Search-time savings alone do not establish a lower total cost \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Examples that separate the assessment questions}
+
+Consider a hypothetical two-component prediction problem in which the total inventory is ten concentration units. The raw prediction is $(8,3)$, while the reference state is $(6,4)$. The raw prediction is nonnegative but violates the total inventory. A conservative correction might return $(7,3)$. It satisfies the total and has a different prediction error. Conservation has been established by the equality check. Accuracy still requires comparison with the reference state. This example illustrates two assessment questions rather than a measured treatment response.
+
+Now consider a hypothetical conservative raw state $(11,-1)$ under the same inventory. Clipping the negative value gives $(11,0)$ and destroys conservation. An equality correction alone can also retain a negative component. The final assessment must therefore check both properties on the same returned state. Separate marginal summaries can be misleading if one prediction satisfies only conservation and another satisfies only nonnegativity \citep{KircherVotsmeier2025,Haddad2010}.
+
+A decision example makes a further distinction. Suppose two operating choices have surrogate-predicted dimensionless objectives of $0.90$ and $0.95$, with smaller values preferred. Independent mechanistic evaluation could instead give $1.10$ and $0.98$. Both projected surrogate states could satisfy every imposed balance, while the preferred decision changes under the reference evaluation. The example contains no optimization finding. It explains why physical consistency and average error cannot establish the ordering of selected decisions \citep{Alexandrov1998,Pedrozo2025}.
+
+Interpretation also depends on the complete map. A positive quadratic aeration coefficient in a raw driver does not imply that every final effluent quantity increases with aeration. Coupling transforms the driver into component predictions. The reporting map combines components. The active output constraints can alter local derivatives again. Physical-unit interpretation must therefore identify whether it concerns a driver coefficient, a raw prediction derivative, or a derivative of the final projected response \citep{Brunton2016,Shen2023}.
+
+\section{Data separation and the status of operating evidence}
+
+All quantities learned from data require a declared fitting reference. Input transformations, output scales, hyperparameters, regularization, overflow solids fitting, and trust calibration belong to the development information. The final assessment information is reserved for evaluating the specified procedure. This separation must remain consistent when the procedure contains a learned model followed by a constrained calculation \citep{Kaufman2012}.
+
+The standalone reactor benchmark uses nested cross-validation to separate model selection from outer assessment. Its beyond-domain samples are simulated separately and are not used to tune the fitted predictor. The structured-regression protocol uses its declared training and holdout partitions and repeated learning-curve assessment. These designs answer related questions with different units of evidence. Their scores should not be pooled into one model ranking as if they arose from a common assessment sample.
+
+The connected plant design distinguishes development, holdout prediction assessment, and operating verification. It also recognizes that engineering choices can be informed by earlier inspection of a simulated response. Where an analysis setting follows such inspection, mechanistic evaluation of the selected controls provides conditional evidence for that declared setting. It does not become a fully prospective assessment merely because another solve is performed. A later independent evaluation with frozen choices is needed for a stronger prospective claim \citep{Kaufman2012,Zhang2026}.
+
+Failure accounting is part of this evidence. A failed mechanistic solve, an infeasible projection, an operating search that fails a stopping criterion, and a control that violates the original engineering constraints are different events. Omitting them changes the apparent domain and the apparent computational cost. Acceptance rules and failure counts must therefore accompany empirical assessment when it is undertaken.
+
+\section{Limits of physical guarantees}
+
+The reactor invariant constraints follow from the stoichiometric matrix and the compatibility of the external forcing with those invariants. They apply to the declared component representation and reactor boundary. They do not establish that every feasible concentration vector is a reachable reactor steady state. The feasible set generally contains many states that satisfy inventories and nonnegativity without satisfying the nonlinear rate equations.
+
+The plant constraints extend this logic to connected unit outputs. Mixing, flow-weighted clarifier balances, soluble-component continuity, and solids inventory bounds address specified physical relationships. Their satisfaction does not reconstruct the full layered clarifier or prove dynamic stability. The direct reference equations remain necessary for judging the selected operating controls.
+
+Numerical feasibility also needs a declared tolerance. Exact equalities describe the mathematical formulation. Finite arithmetic and iterative solvers return approximate numerical states. A solver termination message is insufficient without residual checks in the original units or in a clearly stated scaled form. The same principle applies to the direct mechanistic comparator \citep{Boyd2004,BuzziFerraris2013}.
+
+\section{Limits of generalization and interpretation}
+
+Simulated training data reflect the selected process model, parameter values, and input design. A wide numerical range does not guarantee coverage of every important joint condition. A steady-state input description does not encode all dynamic or historical influences. The distinct standalone and plant alkalinity ranges also prevent an automatic transfer claim between those domains. Domain checks need to refer to the actual training representation.
+
+Interpretation is conditional on the fitted predictor. Second-order blocks support transparent inspection, but correlated inputs and the coupling variables can produce nonunique coefficient combinations. Resampling can assess stability of structural patterns. It cannot turn a predictive coefficient into a causal biological constant. Sensitivity analysis should identify the input unit, the operating point, and the correction stage to which it applies \citep{Machado2014,Brunton2016}.
+
+A corrected point prediction also lacks an automatic uncertainty guarantee. Model ensembles, probabilistic reconciliation, and hard-constrained probabilistic learning provide other approaches to uncertainty \citep{Lakshminarayanan2017,Hansen2024,Utkarsh2025}. Their existence does not make a deterministic correction a calibrated distribution. Uncertainty remains a separate extension requiring its own assumptions and validation.
+
+\section{Engineering interpretation of the planned assessment}
+
+The intended assessment can identify which prediction procedures are suitable for particular uses. A rapid unconstrained approximation may be useful for exploratory analysis if its limitations are visible. A corrected component state can support screening that requires declared balances and nonnegativity. An interpretable constrained procedure can support inspection of named response terms. A connected plant surrogate can support an operating search when selected controls are independently checked.
+
+The assessment must retain these different uses when interpreting empirical evidence. A smaller error does not settle every engineering requirement. A stronger physical guarantee does not settle every accuracy question. A faster search does not settle every cost question. The methodological contribution lies in making each requirement explicit and connecting it to evidence that can assess it. Treatment outcomes and empirical performance remain questions for the subsequent evaluation.

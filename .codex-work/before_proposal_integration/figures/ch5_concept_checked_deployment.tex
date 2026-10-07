@@ -1,0 +1,49 @@
+\begingroup\linespread{1}\selectfont
+\begin{tikzpicture}[
+    c5box/.style={draw=blue!50!black,fill=blue!5,rounded corners=2pt,
+        line width=0.7pt,align=center,font=\small,inner sep=6pt},
+    c5decision/.style={diamond,aspect=2.3,draw=blue!50!black,fill=black!4,
+        line width=0.7pt,align=center,font=\small,text width=2.3cm,inner sep=2pt},
+    c5arrow/.style={-{Latex[length=2.2mm]},draw=blue!65!black,line width=0.8pt},
+    c5label/.style={font=\small,fill=white,inner sep=2pt}
+]
+\node[c5box,text width=4.8cm] (raw) at (0,0)
+    {\textbf{Raw coupled prediction}\\\(c_{raw}=\widehat R^{-1}d_*\)};
+\node[c5decision,below=6mm of raw] (rawcheck)
+    {Both checks\\pass?};
+\node[c5box,text width=3.3cm] (rawaccept) at (6,0 |- rawcheck.center)
+    {Set \(\widehat c=c_{raw}\)};
+\node[c5box,text width=4.8cm,below=6mm of rawcheck] (affine)
+    {\textbf{Restore the invariants}\\Compute \(c_{aff}\)};
+\node[c5decision,below=6mm of affine] (affcheck)
+    {Both checks\\pass?};
+\node[c5box,text width=3.3cm] (affaccept) at (6,0 |- affcheck.center)
+    {Set \(\widehat c=c_{aff}\)};
+\node[c5box,text width=4.8cm,below=6mm of affcheck] (correction)
+    {\textbf{Weighted correction}\\Minimize \(w_c^\top\rho\)\\\(Ac=Ac_{in,*},\quad c\geq0\)\\\(\rho\geq|c-c_{aff}|\)};
+\node[c5decision,below=6mm of correction] (audit)
+    {Solve and\\audit pass?};
+\node[c5box,text width=3.3cm] (lpaccept) at (6,0 |- audit.center)
+    {Use optimized \(\widehat c\)};
+\node[c5box,text width=4.8cm,fill=black!5,draw=black!60,below=6mm of audit] (failed)
+    {\textbf{Prediction failure}\\Admissibility not verified};
+\node[c5box,text width=3.7cm] (return) at (6,0 |- failed.center)
+    {\textbf{Checked output}\\\(\widehat c,\quad I_{\mathrm{comp}}\widehat c\)};
+\coordinate (merge) at (8.5,0);
+\draw[c5arrow] (raw.south)--(rawcheck.north);
+\draw[c5arrow] (rawcheck.east)--node[c5label,above] {Yes}(rawaccept.west);
+\draw[c5arrow] (rawcheck.south)--node[c5label,right] {No}(affine.north);
+\draw[c5arrow] (affine.south)--(affcheck.north);
+\draw[c5arrow] (affcheck.east)--node[c5label,above] {Yes}(affaccept.west);
+\draw[c5arrow] (affcheck.south)--node[c5label,right] {No}(correction.north);
+\draw[c5arrow] (correction.south)--(audit.north);
+\draw[c5arrow] (audit.east)--node[c5label,above] {Yes}(lpaccept.west);
+\draw[c5arrow] (audit.south)--node[c5label,right] {No}(failed.north);
+\draw[c5arrow] (rawaccept.east)--(merge |- rawaccept.east)
+    --(merge |- return.east)--(return.east);
+\draw[draw=blue!65!black,line width=0.8pt] (affaccept.east)--(merge |- affaccept.east);
+\draw[draw=blue!65!black,line width=0.8pt] (lpaccept.east)--(merge |- lpaccept.east);
+\fill[blue!65!black] (merge |- affaccept.east) circle (1.2pt);
+\fill[blue!65!black] (merge |- lpaccept.east) circle (1.2pt);
+\end{tikzpicture}
+\endgroup

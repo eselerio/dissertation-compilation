@@ -1,0 +1,755 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        27
+      ]
+    ],
+    "date-time": "2026-09-27T18:11:43Z",
+    "timestamp": 1790532703587,
+    "version": "4.1.0"
+  },
+  "reference-count": 79,
+  "publisher": "American Geophysical Union (AGU)",
+  "issue": "3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            2
+          ]
+        ],
+        "date-time": "2023-03-02T00:00:00Z",
+        "timestamp": 1677715200000
+      },
+      "content-version": "vor",
+      "delay-in-days": 1,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2023-03-01T00:00:00Z",
+        "timestamp": 1677628800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "agupubs.onlinelibrary.wiley.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "J Adv Model Earth Syst"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        3
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>The chemical transport model LOTOS‐EUROS uses a volatility basis set (VBS) approach to represent the formation of secondary organic aerosol (SOA) in the atmosphere. Inclusion of the VBS approximately doubles the dimensionality of LOTOS‐EUROS and slows computation of the advection operator by a factor of two. This complexity limits SOA representation in operational forecasts. We develop a mass‐conserving dimensionality reduction method based on matrix factorization to find latent patterns in the VBS tracers that correspond to a smaller set of superspecies. Tracers are reversibly compressed to superspecies before transport, and the superspecies are subsequently decompressed to tracers for process‐based SOA modeling. This physically interpretable data‐driven method conserves the total concentration and phase of the tracers throughout the process. The superspecies approach is implemented in LOTOS‐EUROS and found to accelerate the advection operator by a factor of 1.5–1.8. Concentrations remain numerically stable over model simulation times of 2 weeks, including simulations at higher spatial resolutions than the data‐driven models were trained on. The reversible compression of VBS tracers enables detailed, process‐based SOA representation in LOTOS‐EUROS operational forecasts in a computationally efficient manner. Beyond this case study, the physically consistent data‐driven approach developed in this work enforces conservation laws that are essential to other Earth system modeling applications, and generalizes to other processes where computational benefit can be gained from a two‐way mapping between detailed process variables and their representation in a reduced‐dimensional space.</jats:p>",
+  "DOI": "10.1029/2022ms003235",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        2
+      ]
+    ],
+    "date-time": "2023-03-02T07:49:50Z",
+    "timestamp": 1677743390000
+  },
+  "update-policy": "https://doi.org/10.1002/crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 10,
+  "title": [
+    "Advecting Superspecies: Efficiently Modeling Transport of Organic Aerosol With a Mass‐Conserving Dimensionality Reduction Method"
+  ],
+  "prefix": "10.1029",
+  "volume": "15",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-7361-9590",
+      "authenticated-orcid": false,
+      "given": "Patrick Obin",
+      "family": "Sturm",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Air Quality Research Center University of California, Davis  Davis CA USA"
+        },
+        {
+          "name": "Delft Institute of Applied Mathematics Delft University of Technology  Delft The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Astrid",
+      "family": "Manders",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Climate, Air and Sustainability TNO  Utrecht The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ruud",
+      "family": "Janssen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Climate, Air and Sustainability TNO  Utrecht The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1319-0195",
+      "authenticated-orcid": false,
+      "given": "Arjo",
+      "family": "Segers",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Climate, Air and Sustainability TNO  Utrecht The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Anthony S.",
+      "family": "Wexler",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Air Quality Research Center University of California, Davis  Davis CA USA"
+        },
+        {
+          "name": "Departments of Mechanical and Aerospace Engineering Civil and Environmental Engineering, and Land, Air and Water Resources University of California, Davis  Davis CA USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1653-4854",
+      "authenticated-orcid": false,
+      "given": "Hai Xiang",
+      "family": "Lin",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Delft Institute of Applied Mathematics Delft University of Technology  Delft The Netherlands"
+        },
+        {
+          "name": "Institute of Environmental Sciences Leiden University  Leiden The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "13",
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        2
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_8_2_1",
+      "first-page": "265",
+      "volume-title": "12th {USENIX} symposium on operating systems design and implementation ({OSDI} 16)",
+      "author": "Abadi M.",
+      "year": "2016"
+    },
+    {
+      "key": "e_1_2_8_3_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.atmosenv.2013.02.019"
+    },
+    {
+      "key": "e_1_2_8_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-12-8499-2012"
+    },
+    {
+      "key": "e_1_2_8_5_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1103/PhysRevLett.126.098302"
+    },
+    {
+      "key": "e_1_2_8_6_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/9781316544754"
+    },
+    {
+      "key": "e_1_2_8_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2019MS001711"
+    },
+    {
+      "key": "e_1_2_8_8_1",
+      "volume-title": "Keras",
+      "author": "Chollet F.",
+      "year": "2015"
+    },
+    {
+      "key": "e_1_2_8_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-17-7653-2017"
+    },
+    {
+      "key": "e_1_2_8_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-10-3255-2017"
+    },
+    {
+      "key": "e_1_2_8_11_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01448839"
+    },
+    {
+      "key": "e_1_2_8_12_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1147/rd.112.0215"
+    },
+    {
+      "key": "e_1_2_8_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2004JD005623"
+    },
+    {
+      "key": "e_1_2_8_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-15-6503-2015"
+    },
+    {
+      "key": "e_1_2_8_15_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-11-3303-2011"
+    },
+    {
+      "key": "e_1_2_8_16_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1115186109"
+    },
+    {
+      "key": "e_1_2_8_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es052297c"
+    },
+    {
+      "key": "e_1_2_8_18_1",
+      "volume-title": "Image2000 and CLC2000. Products and methods. Corine land cover updating for the year 2000",
+      "author": "EEA",
+      "year": "2005"
+    },
+    {
+      "key": "e_1_2_8_19_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/JD094iD10p12925"
+    },
+    {
+      "key": "e_1_2_8_20_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/eds.2022.22"
+    },
+    {
+      "key": "e_1_2_8_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-15-5773-2015"
+    },
+    {
+      "key": "e_1_2_8_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2005GL023831"
+    },
+    {
+      "key": "e_1_2_8_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-16-7917-2016"
+    },
+    {
+      "key": "e_1_2_8_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.atmosenv.2014.08.072"
+    },
+    {
+      "key": "e_1_2_8_25_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/2016JD026402"
+    },
+    {
+      "key": "e_1_2_8_26_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1323740111"
+    },
+    {
+      "key": "e_1_2_8_27_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-19-15247-2019"
+    },
+    {
+      "key": "e_1_2_8_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.1180353"
+    },
+    {
+      "key": "e_1_2_8_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/bg-9-527-2012"
+    },
+    {
+      "key": "e_1_2_8_30_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-12-1209-2019"
+    },
+    {
+      "key": "e_1_2_8_31_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020MS002413"
+    },
+    {
+      "key": "e_1_2_8_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020JD032759"
+    },
+    {
+      "key": "e_1_2_8_33_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2021MS002926"
+    },
+    {
+      "key": "e_1_2_8_34_1",
+      "unstructured": "Kelp M. M. Tessum C. W. &Marshall J. D.(2018).Orders‐of‐magnitude speedup in atmospheric chemistry modeling through neural network‐based emulation. arXiv preprint arXiv:1808.03874."
+    },
+    {
+      "key": "e_1_2_8_35_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-15-1-2015"
+    },
+    {
+      "key": "e_1_2_8_36_1",
+      "first-page": "17",
+      "volume-title": "Proceedings of the 8th European symposium on the physico‐chemical behavior of air pollutants: A changing atmosphere",
+      "author": "Köble R.",
+      "year": "2001"
+    },
+    {
+      "key": "e_1_2_8_37_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es703225a"
+    },
+    {
+      "key": "e_1_2_8_38_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/44565"
+    },
+    {
+      "key": "e_1_2_8_39_1",
+      "series-title": "PMLR",
+      "first-page": "4313",
+      "volume-title": "Proceedings of the twenty third international conference on artificial intelligence and statistics",
+      "author": "Li M.",
+      "year": "2020"
+    },
+    {
+      "key": "e_1_2_8_40_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2006jd007813"
+    },
+    {
+      "key": "e_1_2_8_41_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-20-4313-2020"
+    },
+    {
+      "key": "e_1_2_8_42_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-10-4145-2017"
+    },
+    {
+      "key": "e_1_2_8_43_1",
+      "volume-title": "Lotos‐euros v2.2.000 reference guide",
+      "author": "Manders‐Groot A. M. M.",
+      "year": "2021"
+    },
+    {
+      "key": "e_1_2_8_44_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-16-1603-2016"
+    },
+    {
+      "key": "e_1_2_8_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1201/b17476"
+    },
+    {
+      "key": "e_1_2_8_46_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/2017ms000936"
+    },
+    {
+      "key": "e_1_2_8_47_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.aeaoa.2019.100018"
+    },
+    {
+      "key": "e_1_2_8_48_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-12-10797-2012"
+    },
+    {
+      "key": "e_1_2_8_49_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es803168a"
+    },
+    {
+      "key": "e_1_2_8_50_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-19-701-2019"
+    },
+    {
+      "key": "e_1_2_8_51_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es052269u"
+    },
+    {
+      "key": "e_1_2_8_52_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-14-10687-2014"
+    },
+    {
+      "key": "e_1_2_8_53_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es950943"
+    },
+    {
+      "key": "e_1_2_8_54_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-16-6453-2016"
+    },
+    {
+      "key": "e_1_2_8_55_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/env.3170050203"
+    },
+    {
+      "key": "e_1_2_8_56_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-20-2637-2020"
+    },
+    {
+      "key": "e_1_2_8_57_1",
+      "first-page": "2825",
+      "article-title": "Scikit‐learn: Machine learning in Python",
+      "volume": "12",
+      "author": "Pedregosa F.",
+      "year": "2011",
+      "journal-title": "Journal of Machine Learning Research"
+    },
+    {
+      "key": "e_1_2_8_58_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-17-343-2017"
+    },
+    {
+      "key": "e_1_2_8_59_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es402106h"
+    },
+    {
+      "key": "e_1_2_8_60_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-13-2185-2020"
+    },
+    {
+      "key": "e_1_2_8_61_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1810286115"
+    },
+    {
+      "key": "e_1_2_8_62_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.1133061"
+    },
+    {
+      "key": "e_1_2_8_63_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2001JD000384"
+    },
+    {
+      "key": "e_1_2_8_64_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2021MS002974"
+    },
+    {
+      "key": "e_1_2_8_65_1",
+      "volume-title": "Atmospheric chemistry and physics: From air pollution to climate change",
+      "author": "Seinfeld J. H.",
+      "year": "2006"
+    },
+    {
+      "key": "e_1_2_8_66_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2007jd009735"
+    },
+    {
+      "key": "e_1_2_8_67_1",
+      "volume-title": "Advecting superspecies: Reduced order modeling of organic aerosols in lotos‐euros using machine learning",
+      "author": "Sturm P. O.",
+      "year": "2021"
+    },
+    {
+      "key": "e_1_2_8_68_1",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm P. O.(2022).Code for Sturm et al. advecting superspecies[Software].Zenodo.https://doi.org/10.5281/zenodo.6601166",
+      "DOI": "10.5281/zenodo.6601166"
+    },
+    {
+      "key": "e_1_2_8_69_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-13-4435-2020"
+    },
+    {
+      "key": "e_1_2_8_70_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-15-3417-2022"
+    },
+    {
+      "key": "e_1_2_8_71_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-19-5403-2019"
+    },
+    {
+      "key": "e_1_2_8_72_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.aeaoa.2022.100173"
+    },
+    {
+      "key": "e_1_2_8_73_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-7-3153-2014"
+    },
+    {
+      "key": "e_1_2_8_74_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-10-525-2010"
+    },
+    {
+      "key": "e_1_2_8_75_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/1999jd901142"
+    },
+    {
+      "key": "e_1_2_8_76_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020gl091363"
+    },
+    {
+      "key": "e_1_2_8_77_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2021EO160820"
+    },
+    {
+      "key": "e_1_2_8_78_1",
+      "volume-title": "Dry deposition modelling with DEPAC_GCN2010 (Tech. Rep.)",
+      "author": "Zanten M. v.",
+      "year": "2010"
+    },
+    {
+      "key": "e_1_2_8_79_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S1352-2310(00)00326-5"
+    },
+    {
+      "key": "e_1_2_8_80_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.2006716117"
+    }
+  ],
+  "container-title": [
+    "Journal of Advances in Modeling Earth Systems"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022MS003235",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://agupubs.onlinelibrary.wiley.com/doi/full-xml/10.1029/2022MS003235",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022MS003235",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        16
+      ]
+    ],
+    "date-time": "2026-07-16T00:14:45Z",
+    "timestamp": 1784160885000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022MS003235"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3
+      ]
+    ]
+  },
+  "references-count": 79,
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1029/2022MS003235"
+  ],
+  "URL": "https://doi.org/10.1029/2022ms003235",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "1942-2466",
+    "1942-2466"
+  ],
+  "issn-type": [
+    {
+      "value": "1942-2466",
+      "type": "print"
+    },
+    {
+      "value": "1942-2466",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2022-06-05",
+      "order": 0,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2023-02-17",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2023-03-02",
+      "order": 3,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ],
+  "article-number": "e2022MS003235"
+}

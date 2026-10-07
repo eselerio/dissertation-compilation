@@ -1,0 +1,912 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        10
+      ]
+    ],
+    "date-time": "2026-09-10T06:23:24Z",
+    "timestamp": 1789021404668,
+    "version": "build-2803163510"
+  },
+  "reference-count": 55,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Cleaner Production"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jclepro.2023.139039",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        26
+      ]
+    ],
+    "date-time": "2023-09-26T05:28:58Z",
+    "timestamp": 1695706138000
+  },
+  "page": "139039",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 15,
+  "special_numbering": "C",
+  "title": [
+    "Towards low-carbon papermaking wastewater treatment process based on Kriging surrogate predictive model"
+  ],
+  "prefix": "10.1016",
+  "volume": "425",
+  "author": [
+    {
+      "given": "Zhenglei",
+      "family": "He",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Mengna",
+      "family": "Hong",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Hongze",
+      "family": "Zheng",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jinfeng",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Qingang",
+      "family": "Xiong",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3745-9128",
+      "authenticated-orcid": false,
+      "given": "Yi",
+      "family": "Man",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.3390/w12010291",
+      "article-title": "Reliability analysis of activated sludge process by means of biokinetic modelling and simulation results",
+      "volume": "12",
+      "author": "Andraka",
+      "year": "2020",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib2",
+      "first-page": "1",
+      "article-title": "Performance evaluation of an oily industrial wastewater treatment system using the application of activated sludge model No. 3",
+      "author": "Ayoub",
+      "year": "2023",
+      "journal-title": "Water Environ. J."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "1085",
+      "DOI": "10.1016/j.chemosphere.2009.12.044",
+      "article-title": "Estimation of greenhouse gas generation in wastewater treatment plants - model development and application",
+      "volume": "78",
+      "author": "Bani Shahabadi",
+      "year": "2010",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1016/j.compchemeng.2017.09.017",
+      "article-title": "Advances in surrogate based modeling, feasibility analysis, and optimization: a review",
+      "volume": "108",
+      "author": "Bhosekar",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0001538",
+      "article-title": "Toward a new plant-wide experimental and modeling approach for reduction of greenhouse gas emission from wastewater treatment plants",
+      "volume": "145",
+      "author": "Caniani",
+      "year": "2019",
+      "journal-title": "J. Environ. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib6",
+      "series-title": "The Annual Report of China Papermaking Industry in 2020",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "129",
+      "DOI": "10.1109/TEVC.2016.2622301",
+      "article-title": "A surrogate-assisted reference vector guided evolutionary algorithm for computationally expensive many-objective optimization",
+      "volume": "22",
+      "author": "Chugh",
+      "year": "2018",
+      "journal-title": "IEEE Trans. Evol. Comput."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.jclepro.2023.139039_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "948",
+      "DOI": "10.1002/ghg.1912",
+      "article-title": "Investigation of GHG emission sources and reducing GHG emissions in a municipal wastewater treatment plant",
+      "volume": "9",
+      "author": "Demir",
+      "year": "2019",
+      "journal-title": "Greenhouse Gases: Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "139",
+      "DOI": "10.1016/j.engstruct.2018.08.004",
+      "article-title": "Model updating of a historic concrete bridge by sensitivity- and global optimization-based Latin Hypercube Sampling",
+      "volume": "179",
+      "author": "Ferrari",
+      "year": "2019",
+      "journal-title": "Eng. Struct."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "698",
+      "DOI": "10.1016/j.apenergy.2019.02.029",
+      "article-title": "Combined ammonia recovery and solid oxide fuel cell use at wastewater treatment plants for energy and greenhouse gas emission improvements",
+      "volume": "240",
+      "author": "Grasham",
+      "year": "2019",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib11",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cma.2021.113741",
+      "article-title": "A physics-informed deep learning framework for inversion and surrogate modeling in solid mechanics",
+      "volume": "379",
+      "author": "Haghighat",
+      "year": "2021",
+      "journal-title": "Comput. Methods Appl. Mech. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib12",
+      "series-title": "IEEE Transactions on Automation Science and Engineering (Early Access)",
+      "article-title": "Process monitoring and fault prediction of papermaking by learning from imperfect data",
+      "author": "He",
+      "year": "2023"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib13",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2022.133803",
+      "article-title": "Data-driven soft sensors of papermaking process and its application to cleaner production with multi-objective optimization",
+      "volume": "372",
+      "author": "He",
+      "year": "2022",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "19",
+      "DOI": "10.1016/j.cis.2018.06.002",
+      "article-title": "A comprehensive review on rheological studies of sludge from various sections of municipal wastewater treatment plants for enhancement of process performance",
+      "volume": "257",
+      "author": "Hong",
+      "year": "2018",
+      "journal-title": "Adv. Colloid Interface Sci."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib15",
+      "series-title": "China Ecological Environment Statistics Annual Report in 2021",
+      "author": "Hu",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib16",
+      "doi-asserted-by": "crossref",
+      "first-page": "883",
+      "DOI": "10.1016/j.jclepro.2019.03.311",
+      "article-title": "Greenhouse gas emission by centralized wastewater treatment plants in Chinese industrial parks: inventory and mitigation measures",
+      "volume": "225",
+      "author": "Hu",
+      "year": "2019",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2022.134818",
+      "article-title": "A hierarchical intelligent control strategy for greenhouse gas reduction in wastewater treatment process of paper mill",
+      "volume": "379",
+      "author": "Huang",
+      "year": "2022",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib18",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2020.123233",
+      "article-title": "Impacts of dissolved oxygen control on different greenhouse gas emission sources in wastewater treatment process",
+      "volume": "274",
+      "author": "Huang",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib19",
+      "first-page": "4193",
+      "article-title": "Transformation characteristics of different forms of nitrogen nutrients in process of wastewater treatment",
+      "volume": "9",
+      "author": "Jin",
+      "year": "2015",
+      "journal-title": "Chinese Journal of Environmental Engineering"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "442",
+      "DOI": "10.1109/TEVC.2018.2869001",
+      "article-title": "Data-Driven evolutionary optimization: an overview and case studies",
+      "volume": "23",
+      "author": "Jin",
+      "year": "2019",
+      "journal-title": "IEEE Trans. Evol. Comput."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "13709",
+      "DOI": "10.1007/s00500-022-07362-8",
+      "article-title": "Recent advances and applications of surrogate models for finite element method computations: a review",
+      "volume": "26",
+      "author": "Kudela",
+      "year": "2022",
+      "journal-title": "Soft Comput."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib22",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.chemosphere.2021.129694",
+      "article-title": "Greenhouse gases emission control in WWTS via potential operational strategies: a critical review",
+      "volume": "273",
+      "author": "Kumar",
+      "year": "2021",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "6386",
+      "DOI": "10.3934/mbe.2021317",
+      "article-title": "Development of surrogate models in reliability-based design optimization: a review",
+      "volume": "18",
+      "author": "Li",
+      "year": "2021",
+      "journal-title": "Math. Biosci. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib24",
+      "first-page": "24",
+      "article-title": "Accounting and application of greenhouse gas emissions in paper enterprises",
+      "volume": "36",
+      "author": "Li",
+      "year": "2019",
+      "journal-title": "China Pulp Pap."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib25",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2020.141176",
+      "article-title": "Quantifying urban wastewater treatment sector's greenhouse gas emissions using a hybrid life cycle analysis method – an application on Shenzhen city in China",
+      "volume": "745",
+      "author": "Liao",
+      "year": "2020",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib26",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2020.116516",
+      "article-title": "Demand response through reject water scheduling in water resource recovery facilities: a demonstration with BSM2",
+      "volume": "188",
+      "author": "Liu",
+      "year": "2021",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib27",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2022.158849",
+      "article-title": "Automatic control and optimal operation for greenhouse gas mitigation in sustainable wastewater treatment plants: a review",
+      "volume": "855",
+      "author": "Lu",
+      "year": "2023",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib28",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2022.107961",
+      "article-title": "Data-driven strategies for optimization of integrated chemical plants",
+      "volume": "166",
+      "author": "Ma",
+      "year": "2022",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "228",
+      "DOI": "10.1016/j.resconrec.2018.07.013",
+      "article-title": "Water Meta-cycle model and indicators for industrial processes- the pulp & paper case in China",
+      "volume": "139",
+      "author": "Ma",
+      "year": "2018",
+      "journal-title": "Resour. Conserv. Recycl."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib30",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.rser.2020.109998",
+      "article-title": "Energy transition for the low-carbon pulp and paper industry in China",
+      "volume": "131",
+      "author": "Man",
+      "year": "2020",
+      "journal-title": "Renew. Sustain. Energy Rev."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib31",
+      "doi-asserted-by": "crossref",
+      "first-page": "643",
+      "DOI": "10.1016/j.jclepro.2017.08.236",
+      "article-title": "Modeling and simulation of the industrial sequencing batch reactor wastewater treatment process for cleaner production in pulp and paper mills",
+      "volume": "167",
+      "author": "Man",
+      "year": "2017",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib32",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.energy.2023.127279",
+      "article-title": "Overestimated carbon emission of the pulp and paper industry in China",
+      "volume": "273",
+      "author": "Man",
+      "year": "2023",
+      "journal-title": "Energy"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib33",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2019.117673",
+      "article-title": "Estimating greenhouse gas emissions from Iran's domestic wastewater sector and modeling the emission scenarios by 2030",
+      "volume": "236",
+      "author": "Nayeb",
+      "year": "2019",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib34",
+      "doi-asserted-by": "crossref",
+      "first-page": "498",
+      "DOI": "10.1016/j.watres.2019.03.030",
+      "article-title": "Data-driven performance analyses of wastewater treatment plants: a review",
+      "volume": "157",
+      "author": "Newhart",
+      "year": "2019",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib35",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2020.110440",
+      "article-title": "A critical review on life cycle assessment and plant-wide models towards emission control strategies for greenhouse gas from wastewater treatment plants",
+      "volume": "264",
+      "author": "Nguyen",
+      "year": "2020",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "1717",
+      "DOI": "10.1002/wer.1427",
+      "article-title": "Activated sludge and other aerobic suspended culture processes",
+      "volume": "92",
+      "author": "Ouyang",
+      "year": "2020",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib37",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ecoleng.2020.105747",
+      "article-title": "How do hydraulic load and intermittent aeration affect pollutants removal and greenhouse gases emission in wastewater ecological soil infiltration systems?",
+      "volume": "146",
+      "author": "Pang",
+      "year": "2020",
+      "journal-title": "Ecol. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib38",
+      "doi-asserted-by": "crossref",
+      "first-page": "2537",
+      "DOI": "10.1007/s00521-017-3212-4",
+      "article-title": "Optimal control for wastewater treatment process based on an adaptive multi-objective differential evolution algorithm",
+      "volume": "31",
+      "author": "Qiao",
+      "year": "2019",
+      "journal-title": "Neural Comput. Appl."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib39",
+      "article-title": "Linking the nitrous oxide production and mitigation with the microbial community in wastewater treatment: a review",
+      "volume": "7",
+      "author": "Ren",
+      "year": "2019",
+      "journal-title": "Bioresour. Technol. Rep."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib40",
+      "doi-asserted-by": "crossref",
+      "first-page": "150",
+      "DOI": "10.1016/j.compchemeng.2018.04.007",
+      "article-title": "Application of neural networks for optimal-setpoint design and MPC control in biological wastewater treatment",
+      "volume": "115",
+      "author": "Sadeghassadi",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib41",
+      "doi-asserted-by": "crossref",
+      "first-page": "20639",
+      "DOI": "10.1021/acs.iecr.9b02572",
+      "article-title": "Dissolved oxygen control in biological wastewater treatments with non-ideal sensors and actuators",
+      "volume": "58",
+      "author": "Santín",
+      "year": "2019",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2023.139039_bib42",
+      "first-page": "112",
+      "article-title": "On sensitivity estimation for nonlinear mathematical models",
+      "volume": "2",
+      "author": "Sobal",
+      "year": "1990",
+      "journal-title": "Math. Model Civ. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.5004/dwt.2019.23995",
+      "article-title": "Energy savings and reduced emissions in combined natural and engineered systems for wastewater treatment and reuse: the WWTP of antiparos Island, Greece",
+      "volume": "159",
+      "author": "Stathatou",
+      "year": "2019",
+      "journal-title": "Desalination Water Treat."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib44",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cma.2019.112732",
+      "article-title": "Surrogate modeling for fluid flows based on physics-constrained deep learning without simulation data",
+      "volume": "361",
+      "author": "Sun",
+      "year": "2020",
+      "journal-title": "Comput. Methods Appl. Mech. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib45",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0002023",
+      "article-title": "Design and evaluation of hierarchical control strategies for wastewater treatment plants using Bürger-Diehl settler model in BSM1 framework",
+      "volume": "148",
+      "author": "Tejaswini",
+      "year": "2022",
+      "journal-title": "J. Environ. Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib46",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2019.119872",
+      "article-title": "Nitrification kinetics and microbial communities of activated sludge as a full-scale membrane bioreactor plant transitioned to low dissolved oxygen operation",
+      "volume": "252",
+      "author": "Wen",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib47",
+      "first-page": "1",
+      "article-title": "Emissions of CO2, CH4, and N2O fluxes from forest soil in permafrost region of daxing’an mountains, northeast China",
+      "volume": "16",
+      "author": "Wu",
+      "year": "2019",
+      "journal-title": "Int. J. Environ. Res. Publ. Health"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib48",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ress.2020.106935",
+      "article-title": "A system active learning Kriging method for system reliability-based design optimization with a multiple response model",
+      "volume": "199",
+      "author": "Xiao",
+      "year": "2020",
+      "journal-title": "Reliab. Eng. Syst. Saf."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib49",
+      "doi-asserted-by": "crossref",
+      "first-page": "2608",
+      "DOI": "10.4209/aaqr.2017.08.0276",
+      "article-title": "Diurnal variation of greenhouse gas emission from petrochemical wastewater treatment processes using in-situ continuous monitoring system and the associated effect on emission factor estimation",
+      "volume": "17",
+      "author": "Yang",
+      "year": "2017",
+      "journal-title": "Aerosol Air Qual. Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2023.139039_bib50",
+      "doi-asserted-by": "crossref",
+      "first-page": "96",
+      "DOI": "10.2166/wpt.2020.100",
+      "article-title": "Minimization of greenhouse gas emissions from extended aeration activated sludge process",
+      "volume": "16",
+      "author": "Yapıcıoğlu",
+      "year": "2021",
+      "journal-title": "Water Pract. Technol."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.jclepro.2023.139039_bib51",
+      "doi-asserted-by": "crossref",
+      "first-page": "180",
+      "DOI": "10.1007/s13201-021-01484-4",
+      "article-title": "Minimizing greenhouse gas emissions of an industrial wastewater treatment plant in terms of water-energy nexus",
+      "volume": "11",
+      "author": "Yapıcıoğlu",
+      "year": "2021",
+      "journal-title": "Appl. Water Sci."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.jclepro.2023.139039_bib52",
+      "doi-asserted-by": "crossref",
+      "first-page": "3100",
+      "DOI": "10.2166/wcc.2022.146",
+      "article-title": "Economic performance index assessment of an industrial wastewater treatment plant in terms of the European Green Deal: effect of greenhouse gas emissions",
+      "volume": "13",
+      "author": "Yapıcıoğlu",
+      "year": "2022",
+      "journal-title": "J. Water Clim. Change"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib53",
+      "first-page": "68",
+      "article-title": "Pengcheng Ye. A review on surrogate-based global optimization methods for computationally expensive functions",
+      "volume": "7",
+      "author": "Ye",
+      "year": "2019",
+      "journal-title": "Software Eng."
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib54",
+      "doi-asserted-by": "crossref",
+      "first-page": "2072",
+      "DOI": "10.3390/pr10102072",
+      "article-title": "Cost optimal production-scheduling model based on VNS-NSGA-II hybrid algorithm—study on tissue paper mill",
+      "volume": "10",
+      "author": "Zhang",
+      "year": "2022",
+      "journal-title": "Processes"
+    },
+    {
+      "key": "10.1016/j.jclepro.2023.139039_bib55",
+      "article-title": "Modeling and simulation of an extended ASM2d model for the treatment of wastewater under different COD: N ratio",
+      "volume": "40",
+      "author": "Zhang",
+      "year": "2021",
+      "journal-title": "J. Water Proc. Eng."
+    }
+  ],
+  "container-title": [
+    "Journal of Cleaner Production"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0959652623031979?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0959652623031979?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        17
+      ]
+    ],
+    "date-time": "2025-10-17T20:03:18Z",
+    "timestamp": 1760731398000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0959652623031979"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "references-count": 55,
+  "alternative-id": [
+    "S0959652623031979"
+  ],
+  "URL": "https://doi.org/10.1016/j.jclepro.2023.139039",
+  "relation": {},
+  "ISSN": [
+    "0959-6526"
+  ],
+  "issn-type": [
+    {
+      "value": "0959-6526",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Towards low-carbon papermaking wastewater treatment process based on Kriging surrogate predictive model",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Cleaner Production",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jclepro.2023.139039",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2023 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "139039"
+}

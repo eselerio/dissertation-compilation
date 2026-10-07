@@ -1,0 +1,1236 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2026-10-03T16:46:15Z",
+    "timestamp": 1791045975611,
+    "version": "4.1.0"
+  },
+  "reference-count": 130,
+  "publisher": "The Royal Society",
+  "issue": "2194",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2021-02-15T00:00:00Z",
+        "timestamp": 1613347200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://royalsociety.org/journals/ethics-policies/data-sharing-mining/"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "royalsocietypublishing.org"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Phil. Trans. R. Soc. A."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        5
+      ]
+    ]
+  },
+  "abstract": "<jats:p>Machine learning (ML) provides novel and powerful ways of accurately and efficiently recognizing complex patterns, emulating nonlinear dynamics, and predicting the spatio-temporal evolution of weather and climate processes. Off-the-shelf ML models, however, do not necessarily obey the fundamental governing laws of physical systems, nor do they generalize well to scenarios on which they have not been trained. We survey systematic approaches to incorporating physics and domain knowledge into ML models and distill these approaches into broad categories. Through 10 case studies, we show how these approaches have been used successfully for emulating, downscaling, and forecasting weather and climate processes. The accomplishments of these studies include greater physical consistency, reduced training time, improved data efficiency, and better generalization. Finally, we synthesize the lessons learned and identify scientific, diagnostic, computational, and resource challenges for developing truly robust and reliable physics-informed ML models for weather and climate processes.</jats:p>\n                  <jats:p>This article is part of the theme issue ‘Machine learning for weather and climate modelling’.</jats:p>",
+  "DOI": "10.1098/rsta.2020.0093",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        16
+      ]
+    ],
+    "date-time": "2021-02-16T08:52:30Z",
+    "timestamp": 1613465550000
+  },
+  "page": "20200093",
+  "update-policy": "https://doi.org/10.1098/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 508,
+  "title": [
+    "Physics-informed machine learning: case studies for weather and climate modelling"
+  ],
+  "prefix": "10.1098",
+  "volume": "379",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-9311-5215",
+      "authenticated-orcid": true,
+      "given": "K.",
+      "family": "Kashinath",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "M.",
+      "family": "Mustafa",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Albert",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        },
+        {
+          "name": "Terrafuse Inc., Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "J-L.",
+      "family": "Wu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        },
+        {
+          "name": "Caltech, Pasadena, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "C.",
+      "family": "Jiang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        },
+        {
+          "name": "University of California, Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "S.",
+      "family": "Esmaeilzadeh",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Stanford University, Stanford, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "K.",
+      "family": "Azizzadenesheli",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Purdue University, West Lafayette, IN, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "R.",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        },
+        {
+          "name": "UC San Diego, La Jolla, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Chattopadhyay",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        },
+        {
+          "name": "Rice University, Houston, TX, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Singh",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        },
+        {
+          "name": "Terrafuse Inc., Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Manepalli",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        },
+        {
+          "name": "Terrafuse Inc., Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "D.",
+      "family": "Chirila",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Alfred Wegener Institute, Bremerhaven, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "R.",
+      "family": "Yu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "UC San Diego, La Jolla, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "R.",
+      "family": "Walters",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Northeastern University, Boston, MA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3739-9604",
+      "authenticated-orcid": true,
+      "given": "B.",
+      "family": "White",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Terrafuse Inc., Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "H.",
+      "family": "Xiao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Virginia Tech, Blacksburg, VA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "H. A.",
+      "family": "Tchelepi",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Stanford University, Stanford, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "P.",
+      "family": "Marcus",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "University of California, Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Anandkumar",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Caltech, Pasadena, CA, USA"
+        },
+        {
+          "name": "NVIDIA, Santa Clara, California, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "P.",
+      "family": "Hassanzadeh",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Rice University, Houston, TX, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "family": "Prabhat",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "NERSC - Lawrence Berkeley National Lab, Berkeley, CA, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "175",
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        15
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_3_5_2_2",
+      "unstructured": "The Royal Society 2019 The AI revolution in scientific research. London UK: The Royal Society. (http://www.The-Royal-Society-The-AI-revolution-in-scientific-research.com)"
+    },
+    {
+      "key": "e_1_3_5_3_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s00287-019-01215-9"
+    },
+    {
+      "key": "e_1_3_5_4_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/nature14539"
+    },
+    {
+      "key": "e_1_3_5_5_2",
+      "first-page": "114",
+      "article-title": "Cramming more components onto integrated circuits",
+      "volume": "38",
+      "author": "Moore GE",
+      "year": "1965",
+      "journal-title": "Electronics"
+    },
+    {
+      "key": "e_1_3_5_6_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1098/rsta.2019.0061"
+    },
+    {
+      "key": "e_1_3_5_7_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41586-019-0912-1"
+    },
+    {
+      "key": "e_1_3_5_8_2",
+      "unstructured": "Kasim MF et al. 2020 Building high accuracy emulators for scientific simulations with deep neural architecture search. (http://arxiv.org/abs/2001.08055)."
+    },
+    {
+      "key": "e_1_3_5_9_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41567-020-0962-1"
+    },
+    {
+      "key": "e_1_3_5_10_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.367.6479.728"
+    },
+    {
+      "key": "e_1_3_5_11_2",
+      "unstructured": "Hestness J Narang S Ardalani N Diamos G Jun H Kianinejad H Patwary MMA Yang Y Zhou Y. 2017 Deep learning scaling is predictable empirically. (http://arxiv.org/abs/1712.00409)."
+    },
+    {
+      "key": "e_1_3_5_12_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TKDE.2017.2720168"
+    },
+    {
+      "key": "e_1_3_5_13_2",
+      "unstructured": "Willard J Jia X Xu S Steinbach M Kumar V. 2020 Integrating physics-based modeling with machine learning: a survey. (http://arxiv.org/abs/2003.04919)."
+    },
+    {
+      "key": "e_1_3_5_14_2",
+      "unstructured": "Karpatne A Watkins W Read J Kumar V. 2018 Physics-guided neural networks (PGNN): an application in lake temperature modeling. In Proc. of the 2018 SIAM Int. Conf. on Data Mining ."
+    },
+    {
+      "key": "e_1_3_5_15_2",
+      "unstructured": "Beucler T Rasp S Pritchard M Gentine P. 2019 Achieving conservation of energy in neural network emulators for climate modeling. (http://arxiv.org/abs/1906.06622)."
+    },
+    {
+      "key": "e_1_3_5_16_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2018.10.045"
+    },
+    {
+      "key": "e_1_3_5_17_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2019.05.024"
+    },
+    {
+      "key": "e_1_3_5_18_2",
+      "unstructured": "Beucler T Pritchard M Rasp S Ott J Baldi P Gentine P. 2019 Enforcing analytic constraints in neural-networks emulating physical systems. (http://arxiv.org/abs/1909.00912)."
+    },
+    {
+      "key": "e_1_3_5_19_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2019.109209"
+    },
+    {
+      "key": "e_1_3_5_20_2",
+      "unstructured": "Márquez-Neila P Salzmann M Fua P. 2017 Imposing hard constraints on deep networks: promises and limitations. (http://arxiv.org/abs/1706.02025)."
+    },
+    {
+      "key": "e_1_3_5_21_2",
+      "unstructured": "Mohan AT Lubbers N Livescu D Chertkov M. 2020 Embedding hard physical constraints in neural network coarse-graining of 3D turbulence. (http://arxiv.org/abs/2002.00021)."
+    },
+    {
+      "key": "e_1_3_5_22_2",
+      "unstructured": "Jiang CM Kashinath K. 2020 Enforcing physical constraints in CNNs through differentiable PDE layer. In ICLR 2020 Workshop on Integration of Deep Neural Models and Differential Equations ."
+    },
+    {
+      "key": "e_1_3_5_23_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Daw A Thomas RQ Carey CC Read JS Appling AS Karpatne A. 2020 Physics-guided architecture (PGA) of neural networks for quantifying uncertainty in lake temperature modeling. In Proc. of the 2020 SIAM Int. Conf. on Data Mining pp. 532–540.",
+      "DOI": "10.1137/1.9781611976236.60"
+    },
+    {
+      "key": "e_1_3_5_24_2",
+      "unstructured": "Cohen TS Weiler M Kicanaoglu B Welling M. 2019 Gauge equivariant convolutional networks and the icosahedral CNN. In Proc. of the 36th Int. Conf. on Machine Learning ."
+    },
+    {
+      "key": "e_1_3_5_25_2",
+      "unstructured": "Maron H Fetaya E Segol N Lipman Y. 2019 On the universality of invariant networks. In Proc. of the 36th Int. Conf. on Machine Learning ."
+    },
+    {
+      "key": "e_1_3_5_26_2",
+      "unstructured": "Maron H Ben-Hamu H Shamir N Lipman Y. 2019 Invariant and equivariant graph networks. In Int. Conf. on Learning Representations ."
+    },
+    {
+      "key": "e_1_3_5_27_2",
+      "unstructured": "Thomas N Smidt T Kearnes S Yang L Li L Kohlhoff K Riley P. 2018 Tensor field networks: rotation-and translation-equivariant neural networks for 3D point clouds. (http://arxiv.org/abs/1802.08219)."
+    },
+    {
+      "key": "e_1_3_5_28_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/jfm.2016.615"
+    },
+    {
+      "key": "e_1_3_5_29_2",
+      "unstructured": "Cohen TS Geiger M K¨hler J Welling M. 2018 Spherical CNNs. In Int. Conf. on Learning Representations ."
+    },
+    {
+      "key": "e_1_3_5_30_2",
+      "unstructured": "Jiang C Huang J Kashinath K Marcus P Nießner M. 2019 Spherical CNNs on unstructured grids. In Int. Conf. on Learning Representations ."
+    },
+    {
+      "key": "e_1_3_5_31_2",
+      "unstructured": "Wang R Walters R Yu R. 2020 Incorporating symmetry into deep dynamics models for improved generalization. (http://arxiv.org/abs/2002.03061)."
+    },
+    {
+      "key": "e_1_3_5_32_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Chattopadhyay A Mustafa M Hassanzadeh P Kashinath K. 2020 Deep spatial transformers for autoregressive data-driven forecasting of geophysical turbulence. In Proc of the 10th Workshop on Climate Informatics Oxford UK 2020 .",
+      "DOI": "10.1145/3429309.3429325"
+    },
+    {
+      "key": "e_1_3_5_33_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Beucler T Pritchard M Gentine P Rasp S. 2020 Towards physically-consistent data-driven models of convection. (http://arxiv.org/abs/2002.08525).",
+      "DOI": "10.1109/IGARSS39084.2020.9324569"
+    },
+    {
+      "key": "e_1_3_5_34_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s42254-019-0062-2"
+    },
+    {
+      "key": "e_1_3_5_35_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/nature14541"
+    },
+    {
+      "key": "e_1_3_5_36_2",
+      "first-page": "485",
+      "article-title": "Using ensemble of neural networks to learn stochastic convection parameterizations for climate and numerical weather prediction models from data simulated by a cloud resolving model",
+      "volume": "2013",
+      "author": "Krasnopolsky VM",
+      "year": "2013",
+      "journal-title": "Ad. Artif. Neural Syst."
+    },
+    {
+      "key": "e_1_3_5_37_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2019MS001896"
+    },
+    {
+      "key": "e_1_3_5_38_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Groenke B Madaus L Monteleoni C. 2020 ClimAlign: unsupervised statistical downscaling of climate variables via normalizing flows. Proc. of the 10th Workshop on Climate Informatics Oxford UK 2020.",
+      "DOI": "10.1145/3429309.3429318"
+    },
+    {
+      "key": "e_1_3_5_39_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1090/S0273-0979-2012-01379-4"
+    },
+    {
+      "key": "e_1_3_5_40_2",
+      "unstructured": "Miller J Hardt M. 2019 Stable recurrent models. In Int. Conf. on Learning Representations ."
+    },
+    {
+      "key": "e_1_3_5_41_2",
+      "unstructured": "Erichson NB Muehlebach M Mahoney MW. 2019 Physics-informed Autoencoders for Lyapunov-stable Fluid Flow Prediction. (http://arxiv.org/abs/1905.10866)."
+    },
+    {
+      "key": "e_1_3_5_42_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-018-07210-0"
+    },
+    {
+      "key": "e_1_3_5_43_2",
+      "unstructured": "Mamakoukas G Abraham I Murphey TD. 2020 Learning data-driven stable Koopman operators. (http://arxiv.org/abs/2005.04291)."
+    },
+    {
+      "key": "e_1_3_5_44_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Brenowitz ND Beucler T Pritchard M Bretherton CS. 2020 Interpreting and stabilizing machine-learning parametrizations of convection. (http://arxiv.org/abs/2003.06549).",
+      "DOI": "10.1175/JAS-D-20-0082.1"
+    },
+    {
+      "key": "e_1_3_5_45_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Ott J Pritchard M Best N Linstead E Curcic M Baldi P. 2020 A Fortran-Keras deep learning bridge for scientific computing. arXiv:2004.10652 (https://arxiv.org/abs/2004.10652)",
+      "DOI": "10.1155/2020/8888811"
+    },
+    {
+      "key": "e_1_3_5_46_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-13-2185-2020"
+    },
+    {
+      "key": "e_1_3_5_47_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-020-17142-3"
+    },
+    {
+      "key": "e_1_3_5_48_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Yuval J O’Gorman PA Hill CN. 2020 Use of neural networks for stable accurate and physically consistent parameterization of subgrid atmospheric processes with good performance at reduced precision. (http://arxiv.org/abs/2010.00947).",
+      "DOI": "10.1029/2020GL091363"
+    },
+    {
+      "key": "e_1_3_5_49_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1098/rsta.2008.0207"
+    },
+    {
+      "key": "e_1_3_5_50_2",
+      "unstructured": "Mohan A Livescu D Chertkov M. 2020 Wavelet-powered neural networks for turbulence. In ICLR 2020 Workshop on Climate Change AI ."
+    },
+    {
+      "key": "e_1_3_5_51_2",
+      "unstructured": "Li Z Kovachki N Azizzadenesheli K Liu B Bhattacharya K Stuart A Anandkumar A. 2020 Fourier neural operator for parametric partial differential equations. (http://arxiv.org/abs/2010.08895)."
+    },
+    {
+      "key": "e_1_3_5_52_2",
+      "article-title": "Fourier features let networks learn high-frequency functions in low-dimensional domains",
+      "volume": "33",
+      "author": "Tancik M",
+      "year": "2020",
+      "journal-title": "NeurIPS"
+    },
+    {
+      "key": "e_1_3_5_53_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Pratt H Williams B Coenen F Zheng Y. 2017 FCNN: fourier convolutional neural networks. ECML PKDD 17 pp. 786–798.",
+      "DOI": "10.1007/978-3-319-71249-9_47"
+    },
+    {
+      "key": "e_1_3_5_54_2",
+      "unstructured": "Guan B Zhang J Sethares WA Kijowski R Liu F. 2019 SpecNet: spectral domain convolutional neural network. (http://arxiv.org/abs/1905.10915)."
+    },
+    {
+      "key": "e_1_3_5_55_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/2017GL075483"
+    },
+    {
+      "key": "e_1_3_5_56_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1146/annurev-fluid-010313-141322"
+    },
+    {
+      "key": "e_1_3_5_57_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Rupe A Kumar N Epifanov V Kashinath K Pavlyk O Schlimbach F Patwary M Maidanov S Lee V Prabhat M Crutchfield JP. 2019 DisCo: Physics-based unsupervised discovery of coherent structures in spatiotemporal systems. In Proceedings of the 2019 IEEE/ACM Workshop on Machine Learning in High Performance Computing Environments (MLHPC) Denver CO pp. 75–87.",
+      "DOI": "10.1109/MLHPC49564.2019.00013"
+    },
+    {
+      "key": "e_1_3_5_58_2",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1145/3197517.3201304",
+      "article-title": "tempoGAN: a temporally coherent, volumetric GAN for super-resolution fluid flow",
+      "volume": "37",
+      "author": "Xie Y",
+      "year": "2018",
+      "journal-title": "ACM Trans. Graph."
+    },
+    {
+      "key": "e_1_3_5_59_2",
+      "unstructured": "Li Z Kovachki N Azizzadenesheli K Liu B Bhattacharya K Stuart A Anandkumar A. 2020 Neural operator: graph kernel network for partial differential equations. (http://arxiv.org/abs/2003.03485)."
+    },
+    {
+      "key": "e_1_3_5_60_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "de Bezenac E Pajot A Gallinari P. 2018 Deep learning for physical processes: incorporating prior scientific knowledge. In Int. Conf. on Learning Representations .",
+      "DOI": "10.1088/1742-5468/ab3195"
+    },
+    {
+      "key": "e_1_3_5_61_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Xu K Wen L Li G Bo L Huang Q. 2019 Spatiotemporal CNN for video object segmentation. In Proc. of the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR) pp. 1379– 1388.",
+      "DOI": "10.1109/CVPR.2019.00147"
+    },
+    {
+      "key": "e_1_3_5_62_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/1520-0493(1963)091<0099:GCEWTP>2.3.CO;2"
+    },
+    {
+      "key": "e_1_3_5_63_2",
+      "unstructured": "Cheng Y et al. 2019 Deep learning for subgrid-scale turbulence modeling in large-eddy simulations of the atmospheric boundary layer. (http://arxiv.org/abs/1910.12125)."
+    },
+    {
+      "key": "e_1_3_5_64_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020GL087005"
+    },
+    {
+      "key": "e_1_3_5_65_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1814058116"
+    },
+    {
+      "key": "e_1_3_5_66_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1063/1.5028373"
+    },
+    {
+      "key": "e_1_3_5_67_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018MS001597"
+    },
+    {
+      "key": "e_1_3_5_68_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020MS002232"
+    },
+    {
+      "key": "e_1_3_5_69_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Farchi A Laloyaux P Bonavita M Bocquet M. 2020 Using machine learning to correct model error in data assimilation and forecast applications. arXiv:2010.12605 . (https://arxiv.org/abs/2010.12605)",
+      "DOI": "10.5194/egusphere-egu21-4007"
+    },
+    {
+      "key": "e_1_3_5_70_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2012MS000154"
+    },
+    {
+      "key": "e_1_3_5_71_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1146/annurev-fluid-010518-040547"
+    },
+    {
+      "key": "e_1_3_5_72_2",
+      "first-page": "1001",
+      "article-title": "Parameter variations in prediction skill optimization at ecmwf",
+      "volume": "71",
+      "author": "Ollinaho P",
+      "year": "2019",
+      "journal-title": "Nonlin. Processes Geophys."
+    },
+    {
+      "key": "e_1_3_5_73_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-10-3567-2017"
+    },
+    {
+      "key": "e_1_3_5_74_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/JCLI-D-15-0302.1"
+    },
+    {
+      "key": "e_1_3_5_75_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Duraisamy K. 2020 Machine learning-augmented Reynolds-averaged and large eddy simulation models of turbulence. (http://arxiv.org/abs/2009.10675).",
+      "DOI": "10.1103/PhysRevFluids.6.050504"
+    },
+    {
+      "key": "e_1_3_5_76_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-030-28954-6"
+    },
+    {
+      "key": "e_1_3_5_77_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Molnar C. 2019 Interpretable machine learning . https://christophm.github.io/interpretable-ml-book/.",
+      "DOI": "10.21105/joss.00786"
+    },
+    {
+      "key": "e_1_3_5_78_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-019-08987-4"
+    },
+    {
+      "key": "e_1_3_5_79_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s42256-019-0048-x"
+    },
+    {
+      "key": "e_1_3_5_80_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/BAMS-D-18-0195.1"
+    },
+    {
+      "key": "e_1_3_5_81_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/BAMS-D-20-0097.1"
+    },
+    {
+      "key": "e_1_3_5_82_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/MWR-D-18-0316.1"
+    },
+    {
+      "key": "e_1_3_5_83_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2019MS002002"
+    },
+    {
+      "key": "e_1_3_5_84_2",
+      "first-page": "1",
+      "article-title": "Testing the reliability of interpretable neural networks in geoscience using the Madden-Julian oscillation",
+      "author": "Toms BA",
+      "year": "2020",
+      "journal-title": "Geosci. Model Dev."
+    },
+    {
+      "key": "e_1_3_5_85_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Caldeira J Nord B. 2020 Deeply uncertain: comparing methods of uncertainty quantification in deep learning algorithms. In ICLR 2020 Workshop on Fundamental Science in the era of AI .",
+      "DOI": "10.2172/1623354"
+    },
+    {
+      "key": "e_1_3_5_86_2",
+      "unstructured": "Kendall A Gal Y. 2017 What uncertainties do we need in Bayesian deep learning for computer vision? In Advances in Neural Information Processing Systems vol. 30 pp. 5574–5584."
+    },
+    {
+      "key": "e_1_3_5_87_2",
+      "unstructured": "Gal Y Ghahramani Z. 2016 Dropout as a Bayesian approximation: representing model uncertainty in deep learning. In Proc. of the 33rd Int. Conf. on Machine Learning (ICML-16) ."
+    },
+    {
+      "key": "e_1_3_5_88_2",
+      "unstructured": "Lakshminarayanan B Pritzel A Blundell C. 2017 Simple and scalable predictive uncertainty estimation using deep ensembles. In Advances in Neural Information Processing Systems vol. 30 pp. 6402–6413."
+    },
+    {
+      "key": "e_1_3_5_89_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2019.05.027"
+    },
+    {
+      "key": "e_1_3_5_90_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Vandal T Kodra E Dy J Ganguly S Nemani R Ganguly AR. 2018 Quantifying uncertainty in discrete-continuous and skewed data with Bayesian deep learning. In Proc. of the 24th ACM SIGKDD Int. Conf. on Knowledge Discovery & Data Mining .",
+      "DOI": "10.1145/3219819.3219996"
+    },
+    {
+      "key": "e_1_3_5_91_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/2017GL076101"
+    },
+    {
+      "key": "e_1_3_5_92_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1810286115"
+    },
+    {
+      "key": "e_1_3_5_93_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018GL078202"
+    },
+    {
+      "key": "e_1_3_5_94_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018MS001351"
+    },
+    {
+      "key": "e_1_3_5_95_2",
+      "doi-asserted-by": "crossref",
+      "first-page": "e2020MS002084",
+      "DOI": "10.1029/2020MS002084",
+      "article-title": "Data-driven super-parameterization using deep learning: experimentation with multi-scale Lorenz 96 systems and transfer-learning",
+      "author": "Chattopadhyay A",
+      "year": "2020",
+      "journal-title": "J. Adv. Model. Earth Syst."
+    },
+    {
+      "key": "e_1_3_5_96_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018MS001472"
+    },
+    {
+      "key": "e_1_3_5_97_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-13-2109-2020"
+    },
+    {
+      "key": "e_1_3_5_98_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1918964117"
+    },
+    {
+      "key": "e_1_3_5_99_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-12-2797-2019"
+    },
+    {
+      "key": "e_1_3_5_100_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2019MS001958"
+    },
+    {
+      "key": "e_1_3_5_101_2",
+      "unstructured": "Pathak J Mustafa M Kashinath K Motheau E Kurth T Day M. 2020 Using Machine Learning to Augment Coarse-Grid Computational Fluid Dynamics Simulations. (http://arxiv.org/abs/2010.00072)."
+    },
+    {
+      "key": "e_1_3_5_102_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1906995116"
+    },
+    {
+      "key": "e_1_3_5_103_2",
+      "unstructured": "Manepalli A Albert A Rhoades A Feldman D. 2019 Emulating numeric hydroclimate models with physics-informed cGANs. In Climate Change AI Workshop at the 33rd Conf. on Neural Information Processing Systems ."
+    },
+    {
+      "key": "e_1_3_5_104_2",
+      "unstructured": "Singh A Albert A White B. 2019 Downscaling numerical weather models with GANs. In Climate Change AI workshop at the 33rd Conf. on Neural Information Processing Systems ."
+    },
+    {
+      "key": "e_1_3_5_105_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Jiang CM Esmaeilzadeh S Azizzadenesheli K Kashinath K Mustafa M Tchelepi HA Marcus P. 2020 MeshfreeFlowNet: a physics-constrained deep continuous space-time super-resolution framework. In SC ’20: Proc. of the 2020 ACM Conf. on Supercomputing (to appear) .",
+      "DOI": "10.1109/SC41405.2020.00013"
+    },
+    {
+      "key": "e_1_3_5_106_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Wang R Kashinath K Mustafa M Albert A Yu R. 2020 Towards physics-informed deep learning for turbulent flow prediction. In Proc. of the 26th ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining (KDD’20) .",
+      "DOI": "10.1145/3394486.3403198"
+    },
+    {
+      "key": "e_1_3_5_107_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018GL078510"
+    },
+    {
+      "key": "e_1_3_5_108_2",
+      "unstructured": "Goodfellow I Pouget-Abadie J Mirza M Xu B Warde-Farley D Ozair S Courville A Bengio Y. 2014 Generative adversarial nets. In Advances in Neural Information Processing Systems pp. 2672–2680."
+    },
+    {
+      "key": "e_1_3_5_109_2",
+      "unstructured": "King R Hennigh O Mohan A Chertkov M. 2018 From deep to physics-informed learning of turbulence: diagnostics. Workshop on Modeling and Decision-Making in the Spatiotemporal Domain NIPS 2018 ."
+    },
+    {
+      "key": "e_1_3_5_110_2",
+      "unstructured": "Mescheder L Geiger A Nowozin S. 2018 Which Training Methods for GANs do actually Converge? (http://arxiv.org/abs/1801.04406)."
+    },
+    {
+      "key": "e_1_3_5_111_2",
+      "unstructured": "Arjovsky M Bottou L. 2017 Towards principled methods for training generative adversarial networks. (http://arxiv.org/abs/1701.04862)."
+    },
+    {
+      "key": "e_1_3_5_112_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/18M1225409"
+    },
+    {
+      "key": "e_1_3_5_113_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2019.07.042"
+    },
+    {
+      "key": "e_1_3_5_114_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Isola P Zhu J Zhou T Efros AA. 2017 Image-to-image translation with conditional adversarial networks. In 2017 IEEE Conf. on Computer Vision and Pattern Recognition (CVPR) pp. 5967–5976.",
+      "DOI": "10.1109/CVPR.2017.632"
+    },
+    {
+      "key": "e_1_3_5_115_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/2017EF000789"
+    },
+    {
+      "key": "e_1_3_5_116_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-020-15108-z"
+    },
+    {
+      "key": "e_1_3_5_117_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Yang C Ma C Yang M. 2014 Single-image super-resolution: a benchmark. In European Conf. on Computer Vision pp. 372–386.",
+      "DOI": "10.1007/978-3-319-10593-2_25"
+    },
+    {
+      "key": "e_1_3_5_118_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Ledig C et al. 2017 Photo-realistic single image super-resolution using a generative adversarial network. In Proc. of the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR) pp. 4681–4690.",
+      "DOI": "10.1109/CVPR.2017.19"
+    },
+    {
+      "key": "e_1_3_5_119_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Vandal T Kodra E Ganguly S Micahelis A Nemani R Ganguly AR. 2017 Quantifying uncertainty in discrete-continuous and skewed data with Bayesian deep learning. In Proc. of the 23rd ACM SIGKDD Int. Conf. on Knowledge Discovery and Data Mining .",
+      "DOI": "10.1145/3219819.3219996"
+    },
+    {
+      "key": "e_1_3_5_120_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Wang X Yu K Wu S Gu J Liu Y Dong C Qiao Y Change Loy C. 2018 ESRGAN: enhanced super-resolution generative adversarial networks. In Proc. of the European Conf. on Computer Vision (ECCV) Workshops .",
+      "DOI": "10.1007/978-3-030-11021-5_5"
+    },
+    {
+      "key": "e_1_3_5_121_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-11-3999-2018"
+    },
+    {
+      "key": "e_1_3_5_122_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2019MS001705"
+    },
+    {
+      "key": "e_1_3_5_123_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/npg-27-373-2020"
+    },
+    {
+      "key": "e_1_3_5_124_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.3934/fods.2020004"
+    },
+    {
+      "key": "e_1_3_5_125_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1006/jcph.2002.7169"
+    },
+    {
+      "key": "e_1_3_5_126_2",
+      "unstructured": "Jaderberg M Simonyan K Zisserman A. 2015 Spatial transformer networks. In Advances in Neural Information Processing Systems pp. 2017–2025."
+    },
+    {
+      "key": "e_1_3_5_127_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s42256-020-0217-y"
+    },
+    {
+      "key": "e_1_3_5_128_2",
+      "unstructured": "Bihlo A. 2019 A generative adversarial network approach to (ensemble) weather prediction. (http://arxiv.org/abs/2007.07718)."
+    },
+    {
+      "key": "e_1_3_5_129_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Fanfarillo A Roozitalab B Hu W Cervone G. 2020 Probabilistic forecasting using deep generative models. (http://arxiv.org/abs/1909.11865).",
+      "DOI": "10.1002/essoar.10501903.1"
+    },
+    {
+      "key": "e_1_3_5_130_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020MS002203"
+    },
+    {
+      "key": "e_1_3_5_131_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3360307"
+    }
+  ],
+  "container-title": [
+    "Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2020.0093",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://royalsocietypublishing.org/doi/full-xml/10.1098/rsta.2020.0093",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2020.0093",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        21
+      ]
+    ],
+    "date-time": "2023-10-21T04:34:19Z",
+    "timestamp": 1697862859000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://royalsocietypublishing.org/doi/10.1098/rsta.2020.0093"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        15
+      ]
+    ]
+  },
+  "references-count": 130,
+  "journal-issue": {
+    "issue": "2194",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1098/rsta.2020.0093"
+  ],
+  "URL": "https://doi.org/10.1098/rsta.2020.0093",
+  "relation": {},
+  "ISSN": [
+    "1364-503X",
+    "1471-2962"
+  ],
+  "issn-type": [
+    {
+      "value": "1364-503X",
+      "type": "print"
+    },
+    {
+      "value": "1471-2962",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        15
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2020-11-24",
+      "order": 1,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2021-02-15",
+      "order": 2,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ]
+}

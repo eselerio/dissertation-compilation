@@ -1,0 +1,750 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        21
+      ]
+    ],
+    "date-time": "2026-08-21T13:11:27Z",
+    "timestamp": 1787317887496,
+    "version": "build-2736575974"
+  },
+  "reference-count": 44,
+  "publisher": "MDPI AG",
+  "issue": "9",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            23
+          ]
+        ],
+        "date-time": "2022-08-23T00:00:00Z",
+        "timestamp": 1661212800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "name": "International Collaborative Research Fund",
+      "award": [
+        "015ME0-256"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "015ME0-256"
+          ]
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Membranes"
+  ],
+  "abstract": "<jats:p>Membrane fouling significantly hinders the widespread application of membrane technology. In the current study, a support vector machine (SVM) and artificial neural networks (ANN) modelling approach was adopted to optimize the membrane permeability in a novel membrane rotating biological contactor (MRBC). The MRBC utilizes the disk rotation mechanism to generate a shear rate at the membrane surface to scour off the foulants. The effect of operational parameters (disk rotational speed, hydraulic retention time (HRT), and sludge retention time (SRT)) was studied on the membrane permeability. ANN and SVM are machine learning algorithms that aim to predict the model based on the trained data sets. The implementation and efficacy of machine learning and statistical approaches have been demonstrated through real-time experimental results. Feed-forward ANN with the back-propagation algorithm and SVN regression models for various kernel functions were trained to augment the membrane permeability. An overall comparison of predictive models for the test data sets reveals the model’s significance. ANN modelling with 13 hidden layers gives the highest R2 value of &gt;0.99, and the SVM model with the Bayesian optimizer approach results in R2 values higher than 0.99. The MRBC is a promising substitute for traditional suspended growth processes, which aligns with the stipulations of ecological evolution and environmentally friendly treatment.</jats:p>",
+  "DOI": "10.3390/membranes12090821",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        24
+      ]
+    ],
+    "date-time": "2022-08-24T00:22:48Z",
+    "timestamp": 1661300568000
+  },
+  "page": "821",
+  "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 51,
+  "title": [
+    "SVM and ANN Modelling Approach for the Optimization of Membrane Permeability of a Membrane Rotating Biological Contactor for Wastewater Treatment"
+  ],
+  "prefix": "10.3390",
+  "volume": "12",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0003-1426-7016",
+      "authenticated-orcid": false,
+      "given": "Sharjeel",
+      "family": "Waqas",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Chemical Engineering Department, Universiti Teknologi PETRONAS, Bandar Seri Iskandar 32610, Perak, Malaysia"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-4628-9351",
+      "authenticated-orcid": false,
+      "given": "Noorfidza Yub",
+      "family": "Harun",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Chemical Engineering Department, Universiti Teknologi PETRONAS, Bandar Seri Iskandar 32610, Perak, Malaysia"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Nonni Soraya",
+      "family": "Sambudi",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Chemical Engineering, Universitas Pertamina, Simprug, Jakarta Selatan 12220, Indonesia"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ushtar",
+      "family": "Arshad",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Chemical Engineering Department, Universiti Teknologi PETRONAS, Bandar Seri Iskandar 32610, Perak, Malaysia"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9216-3218",
+      "authenticated-orcid": false,
+      "given": "Nik Abdul Hadi Md",
+      "family": "Nordin",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Chemical Engineering Department, Universiti Teknologi PETRONAS, Bandar Seri Iskandar 32610, Perak, Malaysia"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-7292-6046",
+      "authenticated-orcid": false,
+      "given": "Muhammad Roil",
+      "family": "Bilad",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Faculty of Integrated Technologies, Universiti Brunei Darussalam, Gadong BE1410, Brunei"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-0728-7676",
+      "authenticated-orcid": false,
+      "given": "Anwar Ameen Hezam",
+      "family": "Saeed",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Chemical Engineering Department, Universiti Teknologi PETRONAS, Bandar Seri Iskandar 32610, Perak, Malaysia"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Asher Ahmed",
+      "family": "Malik",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Chemical Engineering Department, Universiti Teknologi PETRONAS, Bandar Seri Iskandar 32610, Perak, Malaysia"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "1968",
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        23
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "20439",
+      "DOI": "10.1080/19443994.2015.1113143",
+      "article-title": "Evaluation of a cost-effective and energy-efficient disc material for rotating biological contactors (RBC), and performance evaluation under varying condition of RPM and submergence",
+      "volume": "57",
+      "author": "Tabraiz",
+      "year": "2016",
+      "journal-title": "Desalination Water Treat."
+    },
+    {
+      "key": "ref_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Waqas, S., Harun, N.Y., Bilad, M.R., Samsuri, T., Nordin, N.A.H.M., Shamsuddin, N., Nandiyanto, A.B.D., Huda, N., and Roslan, J. (2022). Response Surface Methodology for Optimization of Rotating Biological Contactor Combined with External Membrane Filtration for Wastewater Treatment. Membranes, 12.",
+      "DOI": "10.3390/membranes12030271"
+    },
+    {
+      "key": "ref_3",
+      "doi-asserted-by": "crossref",
+      "first-page": "101",
+      "DOI": "10.17509/ijost.v6i1.31524",
+      "article-title": "Performance and Energy Consumption Evaluation of Rotating Biological Contactor for Domestic Wastewater Treatment",
+      "volume": "6",
+      "author": "Waqas",
+      "year": "2021",
+      "journal-title": "Indones. J. Sci. Technol."
+    },
+    {
+      "key": "ref_4",
+      "doi-asserted-by": "crossref",
+      "first-page": "2592",
+      "DOI": "10.1016/j.ijhydene.2018.12.033",
+      "article-title": "Efficient hydrogen gas production from molasses in hybrid anaerobic-activated sludge-rotating biological contactor",
+      "volume": "44",
+      "author": "Mohammadi",
+      "year": "2019",
+      "journal-title": "Int. J. Hydrogen Energy"
+    },
+    {
+      "key": "ref_5",
+      "doi-asserted-by": "crossref",
+      "first-page": "1071",
+      "DOI": "10.1007/s00449-021-02510-0",
+      "article-title": "Design, construction and optimization a flexible bench-scale rotating biological contactor (RBC) for enhanced production of bacterial cellulose by Acetobacter Xylinium",
+      "volume": "44",
+      "author": "Hamedi",
+      "year": "2021",
+      "journal-title": "Bioprocess Biosyst. Eng."
+    },
+    {
+      "key": "ref_6",
+      "doi-asserted-by": "crossref",
+      "first-page": "48",
+      "DOI": "10.1016/j.bej.2019.01.008",
+      "article-title": "Oxygen mass transfer and post-denitrification in a modified rotating drum biological contactor",
+      "volume": "144",
+      "author": "Li",
+      "year": "2019",
+      "journal-title": "Biochem. Eng. J."
+    },
+    {
+      "key": "ref_7",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Subhadarsini, L., and Dash, R.R. (2020, January 17–18). Treatment of Industrial Waste Water using Single-Stage Rotating Biological Contactor. Proceedings of the IOP Conference Series: Materials Science and Engineering, Odisha, India.",
+      "DOI": "10.1088/1757-899X/970/1/012025"
+    },
+    {
+      "key": "ref_8",
+      "doi-asserted-by": "crossref",
+      "first-page": "104869",
+      "DOI": "10.1016/j.jece.2020.104869",
+      "article-title": "Effect of membrane properties in a membrane rotating biological contactor for wastewater treatment",
+      "volume": "9",
+      "author": "Waqas",
+      "year": "2021",
+      "journal-title": "J. Environ. Chem. Eng."
+    },
+    {
+      "key": "ref_9",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1007/s13762-018-1658-2",
+      "article-title": "Removal of pharmaceuticals and personal care products from domestic wastewater using rotating biological contactors",
+      "volume": "16",
+      "author": "Delgado",
+      "year": "2019",
+      "journal-title": "Int. J. Environ. Sci. Technol."
+    },
+    {
+      "key": "ref_10",
+      "doi-asserted-by": "crossref",
+      "first-page": "70",
+      "DOI": "10.1039/C8EW00410B",
+      "article-title": "High rate domestic wastewater treatment at 15° C using anaerobic reactors inoculated with cold-adapted sediments/soils–shaping robust methanogenic communities",
+      "volume": "5",
+      "author": "Petropoulos",
+      "year": "2019",
+      "journal-title": "Sci. Water Res. Technol."
+    },
+    {
+      "key": "ref_11",
+      "doi-asserted-by": "crossref",
+      "first-page": "241",
+      "DOI": "10.17509/ijost.v4i2.18181",
+      "article-title": "A review on rotating biological contactors",
+      "volume": "4",
+      "author": "Waqas",
+      "year": "2019",
+      "journal-title": "Indones. J. Sci. Technol."
+    },
+    {
+      "key": "ref_12",
+      "first-page": "1",
+      "article-title": "Study of physio-psychological effects on traffic wardens due to traffic noise pollution; exposure-effect relation",
+      "volume": "13",
+      "author": "Tabraiz",
+      "year": "2015",
+      "journal-title": "J. Environ. Health sci."
+    },
+    {
+      "key": "ref_13",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Irfan, M., Waqas, S., Arshad, U., Khan, J.A., Legutko, S., Kruszelnicka, I., Ginter-Kramarczyk, D., Rahman, S., and Skrzypczak, A. (2022). Response Surface Methodology and Artificial Neural Network Modelling of Membrane Rotating Biological Contactors for Wastewater Treatment. Materials, 15.",
+      "DOI": "10.3390/ma15051932"
+    },
+    {
+      "key": "ref_14",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Irfan, M., Waqas, S., Khan, J.A., Rahman, S., Kruszelnicka, I., Ginter-Kramarczyk, D., Legutko, S., Ochowiak, M., Włodarczak, S., and Czernek, K. (2022). Effect of Operating Parameters and Energy Expenditure on the Biological Performance of Rotating Biological Contactor for Wastewater Treatment. Energies, 15.",
+      "DOI": "10.3390/en15103523"
+    },
+    {
+      "key": "ref_15",
+      "doi-asserted-by": "crossref",
+      "first-page": "110718",
+      "DOI": "10.1016/j.jenvman.2020.110718",
+      "article-title": "Recent progress in integrated fixed-film activated sludge process for wastewater treatment: A review",
+      "volume": "268",
+      "author": "Waqas",
+      "year": "2020",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "ref_16",
+      "doi-asserted-by": "crossref",
+      "first-page": "7287",
+      "DOI": "10.3390/su13137287",
+      "article-title": "Membrane Filtration as Post-Treatment of Rotating Biological Contactor for Wastewater Treatment",
+      "volume": "13",
+      "author": "Waqas",
+      "year": "2021",
+      "journal-title": "Sustainability"
+    },
+    {
+      "key": "ref_17",
+      "doi-asserted-by": "crossref",
+      "first-page": "124544",
+      "DOI": "10.1016/j.jclepro.2020.124544",
+      "article-title": "An energy-efficient membrane rotating biological contactor for wastewater treatment",
+      "volume": "282",
+      "author": "Waqas",
+      "year": "2021",
+      "journal-title": "J. Cleaner Prod."
+    },
+    {
+      "key": "ref_18",
+      "doi-asserted-by": "crossref",
+      "first-page": "4257",
+      "DOI": "10.1016/j.aej.2020.07.029",
+      "article-title": "An integrated rotating biological contactor and membrane separation process for domestic wastewater treatment",
+      "volume": "59",
+      "author": "Waqas",
+      "year": "2020",
+      "journal-title": "Alexandria Eng. J."
+    },
+    {
+      "key": "ref_19",
+      "doi-asserted-by": "crossref",
+      "first-page": "012063",
+      "DOI": "10.1088/1742-6596/1793/1/012063",
+      "article-title": "Effect of organic and nitrogen loading rate in a rotating biological contactor for wastewater treatment",
+      "volume": "1793",
+      "author": "Waqas",
+      "year": "2021",
+      "journal-title": "J. Phys. Conf. Ser."
+    },
+    {
+      "key": "ref_20",
+      "doi-asserted-by": "crossref",
+      "first-page": "125242",
+      "DOI": "10.1016/j.biortech.2021.125242",
+      "article-title": "Mitigation of membrane biofouling in membrane bioreactor treating sewage by novel quorum quenching strain of Acinetobacter originating from a full-scale membrane bioreactor",
+      "volume": "334",
+      "author": "Tabraiz",
+      "year": "2021",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "ref_21",
+      "doi-asserted-by": "crossref",
+      "first-page": "434",
+      "DOI": "10.1016/j.seppur.2016.07.007",
+      "article-title": "Comparison between artificial neural networks and Hermia’s models to assess ultrafiltration performance",
+      "volume": "170",
+      "year": "2016",
+      "journal-title": "Sep. Purif. Technol."
+    },
+    {
+      "key": "ref_22",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1016/j.psep.2015.03.015",
+      "article-title": "Evaluation and prediction of membrane fouling in a submerged membrane bioreactor with simultaneous upward and downward aeration using artificial neural network-genetic algorithm",
+      "volume": "96",
+      "author": "Mirbagheri",
+      "year": "2015",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "ref_23",
+      "doi-asserted-by": "crossref",
+      "first-page": "262",
+      "DOI": "10.1016/j.biortech.2019.03.044",
+      "article-title": "Prediction of interfacial interactions related with membrane fouling in a membrane bioreactor based on radial basis function artificial neural network (ANN)",
+      "volume": "282",
+      "author": "Zhao",
+      "year": "2019",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "ref_24",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1016/j.bej.2018.02.001",
+      "article-title": "Development of artificial neural networks to predict membrane fouling in an anoxic-aerobic membrane bioreactor treating domestic wastewater",
+      "volume": "133",
+      "author": "Schmitt",
+      "year": "2018",
+      "journal-title": "Biochem. Eng. J."
+    },
+    {
+      "key": "ref_25",
+      "doi-asserted-by": "crossref",
+      "first-page": "63",
+      "DOI": "10.1016/j.jclepro.2018.01.075",
+      "article-title": "Advanced process control for ultrafiltration membrane water treatment system",
+      "volume": "179",
+      "author": "Chew",
+      "year": "2018",
+      "journal-title": "J. Cleaner Prod."
+    },
+    {
+      "key": "ref_26",
+      "doi-asserted-by": "crossref",
+      "first-page": "139",
+      "DOI": "10.1016/j.memsci.2014.01.016",
+      "article-title": "Experimental analysis, modeling and optimization of chromium (VI) removal from aqueous solutions by polymer-enhanced ultrafiltration",
+      "volume": "456",
+      "author": "Chakraborty",
+      "year": "2014",
+      "journal-title": "J. Membr. Sci."
+    },
+    {
+      "key": "ref_27",
+      "doi-asserted-by": "crossref",
+      "first-page": "883",
+      "DOI": "10.1016/j.cherd.2012.08.004",
+      "article-title": "Experimental investigation, modeling and optimization of membrane separation using artificial neural network and multi-objective optimization using genetic algorithm",
+      "volume": "91",
+      "author": "Soleimani",
+      "year": "2013",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "ref_28",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.1016/j.jhazmat.2010.11.135",
+      "article-title": "Application of experimental design approach and artificial neural network (ANN) for the determination of potential micellar-enhanced ultrafiltration process",
+      "volume": "187",
+      "author": "Rahmanian",
+      "year": "2011",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "ref_29",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Meng, X., Wang, F., Meng, S., Wang, R., Mao, Z., Li, Y., Yu, M., Wang, X., Zhao, Q., and Yang, L. (2021). Novel Surrogates for Membrane Fouling and the Application of Support Vector Machine in Analyzing Fouling Mechanism. Membranes, 11.",
+      "DOI": "10.3390/membranes11120990"
+    },
+    {
+      "key": "ref_30",
+      "doi-asserted-by": "crossref",
+      "first-page": "229",
+      "DOI": "10.1016/j.psep.2019.01.013",
+      "article-title": "Advanced control of membrane fouling in filtration systems using artificial intelligence and machine learning techniques: A critical review",
+      "volume": "123",
+      "author": "Bagheri",
+      "year": "2019",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "ref_31",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Zhou, T., Wang, F., and Yang, Z. (2017). Comparative analysis of ANN and SVM models combined with wavelet preprocess for groundwater depth prediction. Water, 9.",
+      "DOI": "10.3390/w9100781"
+    },
+    {
+      "key": "ref_32",
+      "doi-asserted-by": "crossref",
+      "first-page": "124569",
+      "DOI": "10.1016/j.fuel.2022.124569",
+      "article-title": "Experimental analysis and data-driven machine learning modelling of the minimum ignition temperature (MIT) of aluminium dust",
+      "volume": "324",
+      "author": "Arshad",
+      "year": "2022",
+      "journal-title": "Fuel"
+    },
+    {
+      "key": "ref_33",
+      "doi-asserted-by": "crossref",
+      "first-page": "375",
+      "DOI": "10.1016/j.psep.2021.06.001",
+      "article-title": "SVM, ANN, and PSF modelling approaches for prediction of iron dust minimum ignition temperature (MIT) based on the synergistic effect of dispersion pressure and concentration",
+      "volume": "152",
+      "author": "Arshad",
+      "year": "2021",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "ref_34",
+      "doi-asserted-by": "crossref",
+      "first-page": "742",
+      "DOI": "10.1016/j.psep.2020.12.040",
+      "article-title": "Modelling of the minimum ignition temperature (MIT) of corn dust using statistical analysis and artificial neural networks based on the synergistic effect of concentration and dispersion pressure",
+      "volume": "147",
+      "author": "Arshad",
+      "year": "2021",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "ref_35",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1021/acs.iecr.6b04347",
+      "article-title": "Prediction of minimum ignition energy from molecular structure using quantitative structure–property relationship (QSPR) models",
+      "volume": "56",
+      "author": "Wang",
+      "year": "2017",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref_36",
+      "doi-asserted-by": "crossref",
+      "first-page": "2623",
+      "DOI": "10.1007/s11269-013-0307-2",
+      "article-title": "Conjunctive use of surface water and groundwater: Application of support vector machines (SVMs) and genetic algorithms",
+      "volume": "27",
+      "author": "Safavi",
+      "year": "2013",
+      "journal-title": "Water Resour. Manag."
+    },
+    {
+      "key": "ref_37",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Bafitlhile, T.M., and Li, Z. (2019). Applicability of ε-Support Vector Machine and Artificial Neural Network for Flood Forecasting in Humid, Semi-Humid and Semi-Arid Basins in China. Water, 11.",
+      "DOI": "10.3390/w11010085"
+    },
+    {
+      "key": "ref_38",
+      "doi-asserted-by": "crossref",
+      "first-page": "5876",
+      "DOI": "10.3390/w7115876",
+      "article-title": "An hourly streamflow forecasting model coupled with an enforced learning strategy",
+      "volume": "7",
+      "author": "Wu",
+      "year": "2015",
+      "journal-title": "Water"
+    },
+    {
+      "key": "ref_39",
+      "doi-asserted-by": "crossref",
+      "first-page": "217",
+      "DOI": "10.1016/j.ijrefrig.2016.12.011",
+      "article-title": "Modélisation de la tension superficielle de frigorigènes purs au moyen de réseaux neuronaux à rétropropagation non récurrents",
+      "volume": "75",
+      "author": "Nabipour",
+      "year": "2017",
+      "journal-title": "Int. J. Refrig"
+    },
+    {
+      "key": "ref_40",
+      "doi-asserted-by": "crossref",
+      "first-page": "1578",
+      "DOI": "10.11591/eei.v9i4.1997",
+      "article-title": "Cerebral infarction classification using multiple support vector machine with information gain feature selection",
+      "volume": "9",
+      "author": "Rustam",
+      "year": "2020",
+      "journal-title": "Bull. Electr. Eng. Inform."
+    },
+    {
+      "key": "ref_41",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Meng, X., Meng, S., and Liu, Y. (2021). The Limitations in Current Studies of Organic Fouling and Future Prospects. Membranes, 11.",
+      "DOI": "10.3390/membranes11120922"
+    },
+    {
+      "key": "ref_42",
+      "doi-asserted-by": "crossref",
+      "first-page": "334",
+      "DOI": "10.1016/j.cherd.2019.02.003",
+      "article-title": "New deterministic tools to systematically investigate fouling occurrence in membrane bioreactors",
+      "volume": "144",
+      "author": "Hamedi",
+      "year": "2019",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "ref_43",
+      "doi-asserted-by": "crossref",
+      "first-page": "373",
+      "DOI": "10.1016/j.jtbi.2003.08.015",
+      "article-title": "Application of SVM to predict membrane protein types",
+      "volume": "226",
+      "author": "Cai",
+      "year": "2004",
+      "journal-title": "J. Theor. Biol."
+    },
+    {
+      "key": "ref_44",
+      "doi-asserted-by": "crossref",
+      "first-page": "115696",
+      "DOI": "10.1016/j.seppur.2019.115696",
+      "article-title": "EDTA functionalized magnetic biochar for Pb (II) removal: Adsorption performance, mechanism and SVM model prediction",
+      "volume": "227",
+      "author": "Li",
+      "year": "2019",
+      "journal-title": "Sep. Purif. Technol."
+    }
+  ],
+  "container-title": [
+    "Membranes"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.mdpi.com/2077-0375/12/9/821/pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        11
+      ]
+    ],
+    "date-time": "2025-10-11T00:13:53Z",
+    "timestamp": 1760141633000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.mdpi.com/2077-0375/12/9/821"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        23
+      ]
+    ]
+  },
+  "references-count": 44,
+  "journal-issue": {
+    "issue": "9",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "membranes12090821"
+  ],
+  "URL": "https://doi.org/10.3390/membranes12090821",
+  "relation": {},
+  "ISSN": [
+    "2077-0375"
+  ],
+  "issn-type": [
+    {
+      "value": "2077-0375",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        23
+      ]
+    ]
+  }
+}

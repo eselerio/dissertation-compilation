@@ -1,0 +1,1171 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        24
+      ]
+    ],
+    "date-time": "2026-07-24T11:16:26Z",
+    "timestamp": 1784891786222,
+    "version": "3.55.0"
+  },
+  "reference-count": 85,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2020-08-01T00:00:00Z",
+        "timestamp": 1596240000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2020-08-01T00:00:00Z",
+        "timestamp": 1596240000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100000038",
+      "name": "Natural Sciences and Engineering Research Council of Canada",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100000038",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Computers &amp; Industrial Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        8
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.cie.2020.106611",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        23
+      ]
+    ],
+    "date-time": "2020-06-23T21:05:09Z",
+    "timestamp": 1592946309000
+  },
+  "page": "106611",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 29,
+  "special_numbering": "C",
+  "title": [
+    "A robust optimization model for designing a wastewater treatment network under uncertainty: Multi-objective approach"
+  ],
+  "prefix": "10.1016",
+  "volume": "146",
+  "author": [
+    {
+      "given": "Babak Mohamadpour",
+      "family": "Tosarkani",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Saman Hassanzadeh",
+      "family": "Amin",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.cie.2020.106611_b0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "667",
+      "DOI": "10.1016/j.ijpe.2016.01.014",
+      "article-title": "A robust optimization model for cellular manufacturing system into supply chain management",
+      "volume": "183",
+      "author": "Aalaei",
+      "year": "2017",
+      "journal-title": "International Journal of Production Economics"
+    },
+    {
+      "issue": "2324",
+      "key": "10.1016/j.cie.2020.106611_b0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "10153",
+      "DOI": "10.1016/j.apm.2016.07.001",
+      "article-title": "A comprehensive multidimensional framework for assessing the performance of sustainable supply chains",
+      "volume": "40",
+      "author": "Ahi",
+      "year": "2016",
+      "journal-title": "Applied Mathematical Modelling"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0015",
+      "unstructured": "Alberta Energy Regulator (2014). Alberta’s energy reserves 2013 and supply/demand outlook 2014–2023. https://www.nrcan.gc.ca/energy/sources/shale-tight-resources/17679 (accessed 30 January 2019)."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.cie.2020.106611_b0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "6782",
+      "DOI": "10.1016/j.eswa.2011.12.056",
+      "article-title": "An integrated model for closed-loop supply chain configuration and supplier selection: Multi-objective approach",
+      "volume": "39",
+      "author": "Amin",
+      "year": "2012",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.cie.2020.106611_b0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "4165",
+      "DOI": "10.1016/j.apm.2012.09.039",
+      "article-title": "A multi-objective facility location model for closed-loop supply chain network under uncertain demand and return",
+      "volume": "37",
+      "author": "Amin",
+      "year": "2013",
+      "journal-title": "Applied Mathematical Modelling"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "82",
+      "DOI": "10.1016/j.eswa.2016.12.024",
+      "article-title": "Effects of uncertainty on a tire closed-loop supply chain network",
+      "volume": "73",
+      "author": "Amin",
+      "year": "2017",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "526",
+      "DOI": "10.1016/j.apm.2018.03.034",
+      "article-title": "Robust supply chain network design with multi-products for a company in the food sector",
+      "volume": "60",
+      "author": "Aras",
+      "year": "2018",
+      "journal-title": "Applied Mathematical Modelling"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.cie.2020.106611_b0040",
+      "doi-asserted-by": "crossref",
+      "first-page": "353",
+      "DOI": "10.1007/s10098-009-0252-1",
+      "article-title": "Designing eco-industrial water exchange networks using fuzzy mathematical programming",
+      "volume": "12",
+      "author": "Aviso",
+      "year": "2010",
+      "journal-title": "Clean Technologies and Environmental Policy"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.cie.2020.106611_b0045",
+      "doi-asserted-by": "crossref",
+      "first-page": "850",
+      "DOI": "10.1016/j.tre.2011.05.017",
+      "article-title": "The influence of green practices on supply chain performance: A case study approach",
+      "volume": "47",
+      "author": "Azevedo",
+      "year": "2011",
+      "journal-title": "Transportation Research Part E: Logistics and Transportation Review"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.cie.2020.106611_b0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "1131",
+      "DOI": "10.1007/s10845-014-0939-y",
+      "article-title": "Robust optimization of supply chain network design in fuzzy decision system",
+      "volume": "27",
+      "author": "Bai",
+      "year": "2016",
+      "journal-title": "Journal of Intelligent Manufacturing"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0055",
+      "series-title": "Discrete-event system simulation",
+      "author": "Banks",
+      "year": "2005"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.cie.2020.106611_b0060",
+      "doi-asserted-by": "crossref",
+      "first-page": "3728",
+      "DOI": "10.1021/acssuschemeng.6b00372",
+      "article-title": "Multiobjective optimization model for minimizing cost and environmental impact in shale gas water and wastewater management",
+      "volume": "4",
+      "author": "Bartholomew",
+      "year": "2016",
+      "journal-title": "ACS Sustainable Chemistry & Engineering"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0065",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Baudendistel, T. A., Farrell, J. W., & Kidder, M. F. (2015). To treat or not to treat?: Optimized water decisions throughout the produced water management cycle. In Unconventional Resources Technology Conference, San Antonio, Texas, 20–22 July 2015 (pp. 1325-1336). Society of Exploration Geophysicists, American Association of Petroleum Geologists, Society of Petroleum Engineers.",
+      "DOI": "10.2118/178698-MS"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cie.2020.106611_b0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "248",
+      "DOI": "10.1287/msom.1050.0081",
+      "article-title": "Retailer-supplier flexible commitments contracts: A robust optimization approach",
+      "volume": "7",
+      "author": "Ben-Tal",
+      "year": "2005",
+      "journal-title": "Manufacturing & Service Operations Management"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cie.2020.106611_b0075",
+      "doi-asserted-by": "crossref",
+      "first-page": "411",
+      "DOI": "10.1007/PL00011380",
+      "article-title": "Robust solutions of linear programming problems contaminated with uncertain data",
+      "volume": "88",
+      "author": "Ben-Tal",
+      "year": "2000",
+      "journal-title": "Mathematical Programming"
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.cie.2020.106611_b0080",
+      "doi-asserted-by": "crossref",
+      "first-page": "1284",
+      "DOI": "10.1016/j.trb.2011.02.007",
+      "article-title": "A multiobjective chance constrained programming model for supplier selection under uncertainty",
+      "volume": "45",
+      "author": "Bilsel",
+      "year": "2011",
+      "journal-title": "Transportation Research Part B: Methodological"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0085",
+      "doi-asserted-by": "crossref",
+      "first-page": "245",
+      "DOI": "10.1016/j.ejor.2008.12.003",
+      "article-title": "A robust optimization approach to wine grape harvesting scheduling",
+      "volume": "200",
+      "author": "Bohle",
+      "year": "2010",
+      "journal-title": "European Journal of Operational Research"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0090",
+      "series-title": "SPE Latin American and Caribbean health, safety, environment and sustainability conference",
+      "article-title": "Water management: What we have learned and what we need to consider for developing a shale play in Argentina",
+      "author": "Bonapace",
+      "year": "2015"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0095",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Branke, J., Deb, K., & Miettinen, K. (Eds.) (2008). Multiobjective optimization: Interactive and evolutionary approaches (Vol. 5252). Springer Science & Business Media.",
+      "DOI": "10.1007/978-3-540-88908-3"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.cie.2020.106611_b0100",
+      "first-page": "13731",
+      "article-title": "Designing a sustainable supply chain using an integrated analytic network process and goal programming approach in quality function deployment",
+      "volume": "38",
+      "author": "Büyüközkan",
+      "year": "2011",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.cie.2020.106611_b0105",
+      "doi-asserted-by": "crossref",
+      "first-page": "1016",
+      "DOI": "10.1109/3477.650062",
+      "article-title": "Using fuzzy numbers in linear programming",
+      "volume": "27",
+      "author": "Cadenas",
+      "year": "1997",
+      "journal-title": "IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0110",
+      "unstructured": "Canadian Water Regulations (2016). Canadian water regulations applicable to hydraulic fracturing operations. https://www.csur.com/wp-content/uploads/2018/01/CSUR-Hydrualic-Fracturing-Package_Word1.pdf (accessed 20 August 2018)."
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "20",
+      "DOI": "10.1016/j.eneco.2018.03.014",
+      "article-title": "Towards more resilient integrated power grid capacity expansion: A robust optimization approach with operational flexibility",
+      "volume": "72",
+      "author": "Caunhye",
+      "year": "2018",
+      "journal-title": "Energy Economics"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "149",
+      "DOI": "10.1016/j.jclepro.2015.02.063",
+      "article-title": "A model proposal for green supply chain network design based on consumer segmentation",
+      "volume": "110",
+      "author": "Coskun",
+      "year": "2016",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.cie.2020.106611_b0125",
+      "doi-asserted-by": "crossref",
+      "first-page": "370",
+      "DOI": "10.1016/j.trd.2012.02.002",
+      "article-title": "Green supply chain network design to reduce carbon emissions",
+      "volume": "17",
+      "author": "Elhedhli",
+      "year": "2012",
+      "journal-title": "Transportation Research Part D: Transport and Environment"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0130",
+      "doi-asserted-by": "crossref",
+      "first-page": "351",
+      "DOI": "10.1016/j.trd.2017.01.003",
+      "article-title": "Robust solutions to the pollution-routing problem with demand and travel time uncertainty",
+      "volume": "51",
+      "author": "Eshtehadi",
+      "year": "2017",
+      "journal-title": "Transportation Research Part D: Transport and Environment"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0135",
+      "unstructured": "Fracfocus (2018). Total water volume in hydraulic fracturing. http://fracfocus.ca/find_well/AB (accessed 20 August 2018)."
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0140",
+      "doi-asserted-by": "crossref",
+      "first-page": "18",
+      "DOI": "10.1016/j.tre.2014.12.002",
+      "article-title": "A stochastic programming approach for floods emergency logistics",
+      "volume": "75",
+      "author": "Garrido",
+      "year": "2015",
+      "journal-title": "Transportation Research Part E: Logistics and Transportation Review"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0145",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.1016/j.compchemeng.2017.11.017",
+      "article-title": "A novel robust optimization approach for an integrated municipal water distribution system design under uncertainty: A case study of Mashhad",
+      "volume": "110",
+      "author": "Ghelichi",
+      "year": "2018",
+      "journal-title": "Computers & Chemical Engineering"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0150",
+      "doi-asserted-by": "crossref",
+      "first-page": "753",
+      "DOI": "10.1016/j.ecolind.2016.03.017",
+      "article-title": "A fuzzy multi-objective optimization model for sustainable reverse logistics network design",
+      "volume": "67",
+      "author": "Govindan",
+      "year": "2016",
+      "journal-title": "Ecological Indicators"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.cie.2020.106611_b0155",
+      "doi-asserted-by": "crossref",
+      "first-page": "1523",
+      "DOI": "10.1016/j.eneco.2012.07.002",
+      "article-title": "Stochastic carbon sinks for combating carbon dioxide emissions in the EU",
+      "volume": "34",
+      "author": "Gren",
+      "year": "2012",
+      "journal-title": "Energy Economics"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0160",
+      "doi-asserted-by": "crossref",
+      "first-page": "105",
+      "DOI": "10.1016/j.chaos.2015.10.008",
+      "article-title": "The research on optimization of auto supply chain network robust model under macroeconomic fluctuations",
+      "volume": "89",
+      "author": "Guo",
+      "year": "2016",
+      "journal-title": "Chaos, Solitons & Fractals"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0165",
+      "doi-asserted-by": "crossref",
+      "first-page": "191",
+      "DOI": "10.1016/S0165-0114(97)00304-7",
+      "article-title": "Two-phase approach for solving the fuzzy linear programming problems",
+      "volume": "107",
+      "author": "Guua",
+      "year": "1999",
+      "journal-title": "Fuzzy Sets and Systems"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.cie.2020.106611_b0170",
+      "doi-asserted-by": "crossref",
+      "first-page": "1596",
+      "DOI": "10.1080/00207543.2014.965349",
+      "article-title": "Robust closed-loop global supply chain network design under uncertainty: The case of the medical device industry",
+      "volume": "53",
+      "author": "Hasani",
+      "year": "2015",
+      "journal-title": "International Journal of Production Research"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0175",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.1016/j.cie.2018.05.051",
+      "article-title": "Green-Blood supply chain network design: Robust optimization, Bounded Objective Function & Lagrangian relaxation",
+      "volume": "122",
+      "author": "Heidari-Fathian",
+      "year": "2018",
+      "journal-title": "Computers & Industrial Engineering"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "302",
+      "DOI": "10.1016/j.ejor.2017.07.015",
+      "article-title": "Robust and sustainable supply chains under market uncertainties and different risk attitudes–A case study of the German biodiesel market",
+      "volume": "269",
+      "author": "Hombach",
+      "year": "2018",
+      "journal-title": "European Journal of Operational Research"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0185",
+      "doi-asserted-by": "crossref",
+      "first-page": "173",
+      "DOI": "10.1016/S0165-0114(96)00056-5",
+      "article-title": "Fuzzy programming approach to multi-objective stochastic linear programming problems",
+      "volume": "88",
+      "author": "Hulsurkar",
+      "year": "1997",
+      "journal-title": "Fuzzy Sets and Systems"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cie.2020.106611_b0190",
+      "doi-asserted-by": "crossref",
+      "first-page": "034014",
+      "DOI": "10.1088/1748-9326/6/3/034014",
+      "article-title": "Life cycle greenhouse gas emissions of Marcellus shale gas",
+      "volume": "6",
+      "author": "Jiang",
+      "year": "2011",
+      "journal-title": "Environmental Research Letters"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0195",
+      "doi-asserted-by": "crossref",
+      "first-page": "81",
+      "DOI": "10.1016/j.ijpe.2010.10.026",
+      "article-title": "Production planning of a hybrid manufacturing–remanufacturing system under uncertainty within a closed-loop supply chain",
+      "volume": "135",
+      "author": "Kenne",
+      "year": "2012",
+      "journal-title": "International Journal of Production Economics"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0200",
+      "doi-asserted-by": "crossref",
+      "first-page": "76",
+      "DOI": "10.1016/j.ejor.2015.08.028",
+      "article-title": "Hybrid robust and stochastic optimization for closed-loop supply chain network design using accelerated Benders decomposition",
+      "volume": "249",
+      "author": "Keyvanshokooh",
+      "year": "2016",
+      "journal-title": "European Journal of Operational Research"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0205",
+      "doi-asserted-by": "crossref",
+      "first-page": "1314",
+      "DOI": "10.1016/j.jclepro.2018.06.157",
+      "article-title": "Robust optimization model for closed-loop supply chain planning under reverse logistics flow and demand uncertainty",
+      "volume": "196",
+      "author": "Kim",
+      "year": "2018",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.cie.2020.106611_b0210",
+      "doi-asserted-by": "crossref",
+      "first-page": "1278",
+      "DOI": "10.1080/00207543.2011.571924",
+      "article-title": "A green supply chain is a requirement for profitability",
+      "volume": "50",
+      "author": "Kumar",
+      "year": "2012",
+      "journal-title": "International Journal of Production Research"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cie.2020.106611_b0215",
+      "doi-asserted-by": "crossref",
+      "first-page": "707",
+      "DOI": "10.1016/j.apm.2012.02.033",
+      "article-title": "A robust optimization approach to reduce the bullwhip effect of supply chains with vendor order placement lead time delays in an uncertain environment",
+      "volume": "37",
+      "author": "Li",
+      "year": "2013",
+      "journal-title": "Applied Mathematical Modelling"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.cie.2020.106611_b0220",
+      "doi-asserted-by": "crossref",
+      "first-page": "1328",
+      "DOI": "10.1016/j.fss.2005.12.003",
+      "article-title": "Computing efficient solutions to fuzzy multiple objective linear programming problems",
+      "volume": "157",
+      "author": "Li",
+      "year": "2006",
+      "journal-title": "Fuzzy Sets and Systems"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.cie.2020.106611_b0225",
+      "doi-asserted-by": "crossref",
+      "first-page": "2311",
+      "DOI": "10.1007/s10098-018-1611-6",
+      "article-title": "Optimal design of water networks for shale gas hydraulic fracturing including economic and environmental criteria",
+      "volume": "20",
+      "author": "López-Díaz",
+      "year": "2018",
+      "journal-title": "Clean Technologies and Environmental Policy"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.cie.2020.106611_b0230",
+      "doi-asserted-by": "crossref",
+      "first-page": "930",
+      "DOI": "10.3926/jiem.693",
+      "article-title": "Identifying and ranking of strategies to implement green supply chain management in Indian manufacturing industry using Analytical Hierarchy Process",
+      "volume": "6",
+      "author": "Luthra",
+      "year": "2013",
+      "journal-title": "Journal of Industrial Engineering and Management"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.cie.2020.106611_b0235",
+      "doi-asserted-by": "crossref",
+      "first-page": "411",
+      "DOI": "10.1504/IJLSM.2008.017592",
+      "article-title": "Environmental impacts on reverse logistics and green supply chains: Similarities and integration",
+      "volume": "4",
+      "author": "Marsillac",
+      "year": "2008",
+      "journal-title": "International Journal of Logistics Systems and Management"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0240",
+      "doi-asserted-by": "crossref",
+      "first-page": "76",
+      "DOI": "10.1016/j.ijpe.2009.10.004",
+      "article-title": "Stochastic optimization of medical supply location and distribution in disaster management",
+      "volume": "126",
+      "author": "Mete",
+      "year": "2010",
+      "journal-title": "International Journal of Production Economics"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0245",
+      "doi-asserted-by": "crossref",
+      "first-page": "28",
+      "DOI": "10.1016/j.ijpe.2011.01.027",
+      "article-title": "A multi-objective robust optimization model for multi-product multi-site aggregate production planning in a supply chain under uncertainty",
+      "volume": "134",
+      "author": "Mirzapour Al-E-Hashem",
+      "year": "2011",
+      "journal-title": "International Journal of Production Economics"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0250",
+      "doi-asserted-by": "crossref",
+      "first-page": "310",
+      "DOI": "10.1016/j.eneco.2015.12.019",
+      "article-title": "A robust model for the ramp-constrained economic dispatch problem with uncertain renewable energy",
+      "volume": "56",
+      "author": "Moarefdoost",
+      "year": "2016",
+      "journal-title": "Energy Economics"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0255",
+      "doi-asserted-by": "crossref",
+      "first-page": "898",
+      "DOI": "10.1016/j.chemosphere.2018.08.145",
+      "article-title": "On-site treatment of flowback and produced water from shale gas hydraulic fracturing: A review and economic evaluation",
+      "volume": "212",
+      "author": "Mohammad-Pajooh",
+      "year": "2018",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0260",
+      "doi-asserted-by": "crossref",
+      "first-page": "110",
+      "DOI": "10.1186/s13012-017-0637-1",
+      "article-title": "Developing a comprehensive definition of sustainability",
+      "volume": "12",
+      "author": "Moore",
+      "year": "2017",
+      "journal-title": "Implementation Science"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cie.2020.106611_b0265",
+      "doi-asserted-by": "crossref",
+      "first-page": "1050",
+      "DOI": "10.1016/j.ejor.2018.02.022",
+      "article-title": "An effective two-stage stochastic multi-trip location-transportation model with social concerns in relief supply chains",
+      "volume": "269",
+      "author": "Moreno",
+      "year": "2018",
+      "journal-title": "European Journal of Operational Research"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0270",
+      "doi-asserted-by": "crossref",
+      "first-page": "516",
+      "DOI": "10.1016/j.ejor.2018.02.017",
+      "article-title": "Robust optimization approaches for the equitable and effective distribution of donated food",
+      "volume": "269",
+      "author": "Orgut",
+      "year": "2018",
+      "journal-title": "European Journal of Operational Research"
+    },
+    {
+      "issue": "18",
+      "key": "10.1016/j.cie.2020.106611_b0275",
+      "doi-asserted-by": "crossref",
+      "first-page": "2640",
+      "DOI": "10.1016/j.fss.2009.02.021",
+      "article-title": "Fuzzy optimization for supply chain planning under supply, demand and process uncertainties",
+      "volume": "160",
+      "author": "Peidro",
+      "year": "2009",
+      "journal-title": "Fuzzy Sets and Systems"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.cie.2020.106611_b0280",
+      "doi-asserted-by": "crossref",
+      "first-page": "107",
+      "DOI": "10.1016/j.jmsy.2010.05.001",
+      "article-title": "A stochastic optimization model for integrated forward/reverse logistics network design",
+      "volume": "28",
+      "author": "Pishvaee",
+      "year": "2009",
+      "journal-title": "Journal of Manufacturing Systems"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0285",
+      "doi-asserted-by": "crossref",
+      "first-page": "407",
+      "DOI": "10.1016/j.apm.2015.04.054",
+      "article-title": "Novel robust fuzzy mathematical programming methods",
+      "volume": "40",
+      "author": "Pishvaee",
+      "year": "2016",
+      "journal-title": "Applied Mathematical Modelling"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0290",
+      "doi-asserted-by": "crossref",
+      "first-page": "637",
+      "DOI": "10.1016/j.apm.2010.07.013",
+      "article-title": "A robust optimization approach to closed-loop supply chain network design under uncertainty",
+      "volume": "35",
+      "author": "Pishvaee",
+      "year": "2011",
+      "journal-title": "Applied Mathematical Modelling"
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.cie.2020.106611_b0295",
+      "doi-asserted-by": "crossref",
+      "first-page": "3433",
+      "DOI": "10.1016/j.apm.2011.10.007",
+      "article-title": "Environmental supply chain network design using multiobjective fuzzy mathematical programming",
+      "volume": "36",
+      "author": "Pishvaee",
+      "year": "2012",
+      "journal-title": "Applied Mathematical Modelling"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0300",
+      "first-page": "1",
+      "article-title": "Closed-loop supply chain network design and modelling under risks and demand uncertainty: An integrated robust optimization approach",
+      "author": "Prakash",
+      "year": "2018",
+      "journal-title": "Annals of Operations Research"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0305",
+      "doi-asserted-by": "crossref",
+      "first-page": "463",
+      "DOI": "10.1007/s10479-015-1936-z",
+      "article-title": "Green supply chain network design with stochastic demand and carbon price",
+      "volume": "250",
+      "author": "Rezaee",
+      "year": "2017",
+      "journal-title": "Annals of Operations Research"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cie.2020.106611_b0310",
+      "doi-asserted-by": "crossref",
+      "first-page": "348",
+      "DOI": "10.1016/j.jmsy.2014.02.007",
+      "article-title": "An optimization model for reverse logistics network under stochastic environment by using genetic algorithm",
+      "volume": "33",
+      "author": "Roghanian",
+      "year": "2014",
+      "journal-title": "Journal of Manufacturing Systems"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0315",
+      "doi-asserted-by": "crossref",
+      "first-page": "15",
+      "DOI": "10.5267/j.ijiec.2014.10.001",
+      "article-title": "A new multi objective optimization model for designing a green supply chain network under uncertainty",
+      "volume": "6",
+      "author": "Saffar",
+      "year": "2015",
+      "journal-title": "International Journal of Industrial Engineering Computations"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.cie.2020.106611_b0320",
+      "doi-asserted-by": "crossref",
+      "first-page": "337",
+      "DOI": "10.1002/csr.220",
+      "article-title": "Reverse logistics and social sustainability",
+      "volume": "17",
+      "author": "Sarkis",
+      "year": "2010",
+      "journal-title": "Corporate Social Responsibility and Environmental Management"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0325",
+      "doi-asserted-by": "crossref",
+      "first-page": "3285",
+      "DOI": "10.1016/j.jclepro.2015.09.034",
+      "article-title": "A hybrid multi-stage stochastic programming-robust optimization model for maximizing the supply chain of a forest-based biomass power plant considering uncertainties",
+      "volume": "112",
+      "author": "Shabani",
+      "year": "2016",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0330",
+      "series-title": "Safety and environment in oil and gas exploration and production",
+      "article-title": "Key shale gas water management strategies: An economic assessment",
+      "author": "Slutz",
+      "year": "2012"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0335",
+      "doi-asserted-by": "crossref",
+      "first-page": "516",
+      "DOI": "10.1016/j.ejor.2018.10.005",
+      "article-title": "A stochastic program to evaluate disruption mitigation investments in the supply chain",
+      "volume": "274",
+      "author": "Snoeck",
+      "year": "2019",
+      "journal-title": "European Journal of Operational Research"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0340",
+      "doi-asserted-by": "crossref",
+      "first-page": "340",
+      "DOI": "10.1016/j.jmsy.2014.07.013",
+      "article-title": "A case-oriented approach to a lead/acid battery closed-loop supply chain network design under risk and uncertainty",
+      "volume": "37",
+      "author": "Subulan",
+      "year": "2015",
+      "journal-title": "Journal of Manufacturing Systems"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0345",
+      "doi-asserted-by": "crossref",
+      "first-page": "496",
+      "DOI": "10.1016/j.jclepro.2017.09.140",
+      "article-title": "Multi-objective target oriented robust optimization for the design of an integrated biorefinery",
+      "volume": "170",
+      "author": "Sy",
+      "year": "2018",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0350",
+      "doi-asserted-by": "crossref",
+      "first-page": "662",
+      "DOI": "10.1016/j.jclepro.2015.10.074",
+      "article-title": "A robust fuzzy optimization model for carbon-efficient closed-loop supply chain network design problem: A numerical illustration in electronics industry",
+      "volume": "113",
+      "author": "Talaei",
+      "year": "2016",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0355",
+      "doi-asserted-by": "crossref",
+      "first-page": "193",
+      "DOI": "10.1016/j.fss.2007.08.010",
+      "article-title": "An interactive possibilistic programming approach for multiple objective supply chain master planning",
+      "volume": "159",
+      "author": "Torabi",
+      "year": "2008",
+      "journal-title": "Fuzzy Sets and Systems"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0360",
+      "doi-asserted-by": "crossref",
+      "first-page": "662",
+      "DOI": "10.1016/j.jclepro.2018.07.056",
+      "article-title": "A multi-objective model to configure an electronic reverse logistics network and third party selection",
+      "volume": "198",
+      "author": "Tosarkani",
+      "year": "2018",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0365",
+      "doi-asserted-by": "crossref",
+      "first-page": "540",
+      "DOI": "10.1016/j.compchemeng.2018.11.014",
+      "article-title": "An environmental optimization model to configure a hybrid forward and reverse supply chain network under uncertainty",
+      "volume": "121",
+      "author": "Tosarkani",
+      "year": "2019",
+      "journal-title": "Computers & Chemical Engineering"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0370",
+      "first-page": "107557",
+      "article-title": "A scenario-based possibilistic model for a multi-objective electronic reverse logistics network",
+      "author": "Tosarkani",
+      "year": "2019",
+      "journal-title": "International Journal of Production Economics"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0375",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.1016/j.ijpe.2015.08.020",
+      "article-title": "A bi-objective interval-stochastic robust optimization model for designing closed loop supply chain network with multi-priority queuing system",
+      "volume": "170",
+      "author": "Vahdani",
+      "year": "2015",
+      "journal-title": "International Journal of Production Economics"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.cie.2020.106611_b0380",
+      "doi-asserted-by": "crossref",
+      "first-page": "262",
+      "DOI": "10.1016/j.dss.2010.11.020",
+      "article-title": "A multi-objective optimization for green supply chain network design",
+      "volume": "51",
+      "author": "Wang",
+      "year": "2011",
+      "journal-title": "Decision Support Systems"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0385",
+      "doi-asserted-by": "crossref",
+      "first-page": "500",
+      "DOI": "10.1016/j.cie.2018.09.022",
+      "article-title": "Comparisons of interactive fuzzy programming approaches for closed-loop supply chain network design under uncertainty",
+      "volume": "125",
+      "author": "Wu",
+      "year": "2018",
+      "journal-title": "Computers & Industrial Engineering"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.cie.2020.106611_b0390",
+      "doi-asserted-by": "crossref",
+      "first-page": "1869",
+      "DOI": "10.1080/0305215X.2016.1139399",
+      "article-title": "An enhanced fuzzy robust optimization model for regional solid waste management under uncertainty",
+      "volume": "48",
+      "author": "Xu",
+      "year": "2016",
+      "journal-title": "Engineering Optimization"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.cie.2020.106611_b0395",
+      "doi-asserted-by": "crossref",
+      "first-page": "3490",
+      "DOI": "10.1002/aic.14526",
+      "article-title": "Optimization models for shale gas water management",
+      "volume": "60",
+      "author": "Yang",
+      "year": "2014",
+      "journal-title": "AIChE Journal"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0400",
+      "doi-asserted-by": "crossref",
+      "first-page": "177",
+      "DOI": "10.1016/j.eneco.2017.03.010",
+      "article-title": "Stochastic valuation of energy storage in wholesale power markets",
+      "volume": "64",
+      "author": "Yu",
+      "year": "2017",
+      "journal-title": "Energy Economics"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.cie.2020.106611_b0405",
+      "doi-asserted-by": "crossref",
+      "first-page": "1168",
+      "DOI": "10.1080/00207543.2016.1232499",
+      "article-title": "Robust supply chain networks design and ambiguous risk preferences",
+      "volume": "55",
+      "author": "Yu",
+      "year": "2017",
+      "journal-title": "International Journal of Production Research"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0410",
+      "doi-asserted-by": "crossref",
+      "first-page": "119",
+      "DOI": "10.1504/IJISE.2015.070878",
+      "article-title": "A possibilistic mixed-integer linear programme for dynamic closed-loop supply chain network design under uncertainty",
+      "volume": "21",
+      "author": "Zare",
+      "year": "2015",
+      "journal-title": "International Journal of Industrial and Systems Engineering"
+    },
+    {
+      "key": "10.1016/j.cie.2020.106611_b0415",
+      "doi-asserted-by": "crossref",
+      "first-page": "182",
+      "DOI": "10.1016/j.tre.2016.02.011",
+      "article-title": "Sustainable design of a closed-loop location-routing-inventory supply chain network under mixed uncertainty",
+      "volume": "89",
+      "author": "Zhalechian",
+      "year": "2016",
+      "journal-title": "Transportation Research Part E: Logistics and Transportation Review"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cie.2020.106611_b0420",
+      "doi-asserted-by": "crossref",
+      "first-page": "45",
+      "DOI": "10.1016/0165-0114(78)90031-3",
+      "article-title": "Fuzzy programming and linear programming with several objective functions",
+      "volume": "1",
+      "author": "Zimmermann",
+      "year": "1978",
+      "journal-title": "Fuzzy Sets and Systems"
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.cie.2020.106611_b0425",
+      "doi-asserted-by": "crossref",
+      "first-page": "15",
+      "DOI": "10.1007/s10479-014-1756-6",
+      "article-title": "Robust supply chain network design: An optimization model with real world application",
+      "volume": "257",
+      "author": "Zokaee",
+      "year": "2017",
+      "journal-title": "Annals of Operations Research"
+    }
+  ],
+  "container-title": [
+    "Computers &amp; Industrial Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0360835220303454?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0360835220303454?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2025-10-06T18:32:08Z",
+    "timestamp": 1759775528000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0360835220303454"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        8
+      ]
+    ]
+  },
+  "references-count": 85,
+  "alternative-id": [
+    "S0360835220303454"
+  ],
+  "URL": "https://doi.org/10.1016/j.cie.2020.106611",
+  "relation": {},
+  "ISSN": [
+    "0360-8352"
+  ],
+  "issn-type": [
+    {
+      "value": "0360-8352",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        8
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "A robust optimization model for designing a wastewater treatment network under uncertainty: Multi-objective approach",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Computers & Industrial Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.cie.2020.106611",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2020 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "106611"
+}

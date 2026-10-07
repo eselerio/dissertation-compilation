@@ -1,0 +1,686 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2026-10-05T05:55:38Z",
+    "timestamp": 1791179738165,
+    "version": "4.1.0"
+  },
+  "reference-count": 55,
+  "publisher": "Wiley",
+  "issue": "6",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2015-09-01T00:00:00Z",
+        "timestamp": 1441065600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 2817,
+      "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Biotechnol. Bioeng."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2007,
+        12,
+        15
+      ]
+    ]
+  },
+  "DOI": "10.1002/bit.21508",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        26
+      ]
+    ],
+    "date-time": "2007-05-26T23:47:06Z",
+    "timestamp": 1180223226000
+  },
+  "page": "1242-1258",
+  "source": "Crossref",
+  "is-referenced-by-count": 43,
+  "title": [
+    "A general kinetic model for biological nutrient removal activated sludge systems: Model development"
+  ],
+  "prefix": "10.1002",
+  "volume": "98",
+  "author": [
+    {
+      "given": "Zhi-rong",
+      "family": "Hu",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "M.C.",
+      "family": "Wentzel",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "G.A.",
+      "family": "Ekama",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "reference": [
+    {
+      "key": "10.1002/bit.21508-BIB1",
+      "author": "Artan",
+      "year": "1997",
+      "unstructured": ", , . 1997. The fate of phosphorus under anoxic conditions in biological nutrient removal activated sludge systems. Procs. 2nd Int. Spec. Conf. on Microorganisms in Activated Sludge and Biofilm Processes, Ed: Jenkins D and Hermanowicz SW, 319–326, 21–23 July, Berkeley, CA."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB2",
+      "doi-asserted-by": "crossref",
+      "first-page": "769",
+      "DOI": "10.1016/0043-1354(95)00217-0",
+      "volume": "30",
+      "author": "Barker",
+      "year": "1996",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB3",
+      "doi-asserted-by": "crossref",
+      "first-page": "969",
+      "DOI": "10.2175/106143097X125669",
+      "volume": "69",
+      "author": "Barker",
+      "year": "1997",
+      "journal-title": "Water Environ Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB4",
+      "doi-asserted-by": "crossref",
+      "first-page": "119",
+      "DOI": "10.2166/wst.1996.0363",
+      "volume": "34",
+      "author": "Bortone",
+      "year": "1996",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB5",
+      "first-page": "439",
+      "volume": "26",
+      "author": "De Haas",
+      "year": "2000",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB6",
+      "first-page": "135",
+      "volume": "27",
+      "author": "De Haas",
+      "year": "2001",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB7",
+      "doi-asserted-by": "crossref",
+      "first-page": "801",
+      "DOI": "10.1002/bit.21196",
+      "volume": "97",
+      "author": "De Kreuk",
+      "year": "2007",
+      "journal-title": "Biotechnol Bioeng"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB8",
+      "first-page": "47",
+      "volume": "12",
+      "author": "Dold",
+      "year": "1980",
+      "journal-title": "Prog Wat Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB9",
+      "doi-asserted-by": "crossref",
+      "first-page": "63",
+      "DOI": "10.2166/wst.1986.0061",
+      "volume": "18",
+      "author": "Dold",
+      "year": "1986",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB10",
+      "author": "Dold",
+      "year": "1991a",
+      "unstructured": ", , , . 1991a. Activated sludge simulation programs: Version 1.0 Nitrification and nitrification/denitrification systems. Pub. by Water Research Commission, P/Bag X03, Gezina 0031, South Africa."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB11",
+      "doi-asserted-by": "crossref",
+      "first-page": "871",
+      "DOI": "10.1080/09593339109385081",
+      "volume": "12",
+      "author": "Dold",
+      "year": "1991b",
+      "journal-title": "Environ Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB12",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.1999.0247",
+      "volume": "39",
+      "author": "Ekama",
+      "year": "1999a",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB13",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "DOI": "10.2166/wst.1999.0264",
+      "volume": "39",
+      "author": "Ekama",
+      "year": "1999b",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB14",
+      "author": "Filipe",
+      "year": "1997",
+      "unstructured": ". 1997. Evaluation of the capacity of phosphorus accumulating organisms to use nitrate as well as oxygen as final electron acceptor: A theoretical study on population dynamics. Procs. 70th Annual WEF Conference and Exhibition, Chicago, Water Environment Federation, Alexandria, VA."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB15",
+      "doi-asserted-by": "crossref",
+      "first-page": "335",
+      "DOI": "10.2166/wst.1998.0659",
+      "volume": "37",
+      "author": "Goel",
+      "year": "1998",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB16",
+      "doi-asserted-by": "crossref",
+      "first-page": "61",
+      "DOI": "10.1016/0043-1354(91)90099-C",
+      "volume": "25",
+      "author": "Henze",
+      "year": "1991",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB17",
+      "author": "Henze",
+      "year": "1987",
+      "unstructured": ", , , . 1987. Activated Sludge Model No. 1. IAWQ Scientific and Technical Report No.1, IAWQ, London. 33 pp."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB18",
+      "author": "Henze",
+      "year": "1995",
+      "unstructured": ", , , , . 1995. Activated sludge model No. 2. IAWQ Scientific and Technical Report No. 3, IAWQ, London U.K. 32 pp."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB19",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB20",
+      "first-page": "225",
+      "volume": "26",
+      "author": "Hu",
+      "year": "2000",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB21",
+      "author": "Hu",
+      "year": "2001",
+      "unstructured": ", . 2001. External nitrification in biological nutrient removal activated sludge systems. Research Report W108, Department of Civil Engineering, University of Cape Town. Rondebosch7701, South Africa."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB22",
+      "doi-asserted-by": "crossref",
+      "first-page": "4927",
+      "DOI": "10.1016/S0043-1354(02)00186-0",
+      "volume": "36",
+      "author": "Hu",
+      "year": "2002",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB23",
+      "doi-asserted-by": "crossref",
+      "first-page": "360",
+      "DOI": "10.1002/bit.10664",
+      "volume": "83",
+      "author": "Hu",
+      "year": "2003a",
+      "journal-title": "Biotech Bioeng"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB24",
+      "doi-asserted-by": "crossref",
+      "first-page": "3430",
+      "DOI": "10.1016/S0043-1354(03)00168-4",
+      "volume": "37",
+      "author": "Hu",
+      "year": "2003b",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB25",
+      "doi-asserted-by": "crossref",
+      "first-page": "1259",
+      "DOI": "10.1002/bit.21507",
+      "volume": "98",
+      "author": "Hu",
+      "year": "2007",
+      "journal-title": "Biotechnol Bioeng"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB26",
+      "doi-asserted-by": "crossref",
+      "first-page": "617",
+      "DOI": "10.1016/0043-1354(93)90171-D",
+      "volume": "27",
+      "author": "Kern-Jespersen",
+      "year": "1993",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB27",
+      "doi-asserted-by": "crossref",
+      "first-page": "241",
+      "DOI": "10.2166/wst.1993.0504",
+      "volume": "27",
+      "author": "Kuba",
+      "year": "1993",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB28",
+      "doi-asserted-by": "crossref",
+      "first-page": "685",
+      "DOI": "10.1002/(SICI)1097-0290(19961220)52:6<685::AID-BIT6>3.0.CO;2-K",
+      "volume": "52",
+      "author": "Kuba",
+      "year": "1996",
+      "journal-title": "Biotech Bioeng"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB29",
+      "doi-asserted-by": "crossref",
+      "first-page": "777",
+      "DOI": "10.1016/S0043-1354(96)00370-3",
+      "volume": "31",
+      "author": "Kuba",
+      "year": "1997",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB30",
+      "first-page": "342",
+      "volume": "60",
+      "author": "McClintock",
+      "year": "1988",
+      "journal-title": "J Wat Pollut Control Fed"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB31",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.2166/wst.1995.0080",
+      "volume": "31",
+      "author": "Mino",
+      "year": "1995a",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB32",
+      "doi-asserted-by": "crossref",
+      "first-page": "25",
+      "DOI": "10.2166/wst.1995.0066",
+      "volume": "31",
+      "author": "Mino",
+      "year": "1995b",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB33",
+      "author": "Moodley",
+      "year": "1999",
+      "unstructured": ", . 1999. External nitrification in biological nutrient removal activated sludge systems. Research Report W100, Department of Civil Engineering, University of Cape Town, Rondebosch, 7701, South Africa."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB34",
+      "doi-asserted-by": "crossref",
+      "first-page": "434",
+      "DOI": "10.1002/(SICI)1097-0290(19970605)54:5<434::AID-BIT4>3.0.CO;2-F",
+      "volume": "54",
+      "author": "Murnleitner",
+      "year": "1997",
+      "journal-title": "Biotech Bioeng"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB35",
+      "author": "Nicholls",
+      "year": "1982",
+      "unstructured": ", . 1982. Performance of large-scale nutrient removal activated sludge plants. Research Report W43, Department of Civil Engineering, University of Cape Town, Rondebosch, 7701, South Africa."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB36",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.2166/wst.1996.0536",
+      "volume": "34",
+      "author": "Orhon",
+      "year": "1997",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB37",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "DOI": "10.2166/wst.1988.0154",
+      "volume": "20",
+      "author": "Pitman",
+      "year": "1988",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB38",
+      "doi-asserted-by": "crossref",
+      "first-page": "153",
+      "DOI": "10.2166/wst.1997.0035",
+      "volume": "35",
+      "author": "Randall",
+      "year": "1997",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB39",
+      "author": "Scheer",
+      "year": "1997",
+      "unstructured": "1997. Enhanced biological phosphate removal: Procedures for dimensioning. Proc. La déhosphatation des eaux usées, 93-109, 22-23 May, CEBEDEAU, Liege, Belgium."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB40",
+      "doi-asserted-by": "crossref",
+      "first-page": "461",
+      "DOI": "10.1002/bit.260430605",
+      "volume": "43",
+      "author": "Smolders",
+      "year": "1994",
+      "journal-title": "Biotechnol Bioeng"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB41",
+      "doi-asserted-by": "crossref",
+      "first-page": "2748",
+      "DOI": "10.1016/S0043-1354(96)00127-3",
+      "volume": "30",
+      "author": "Smolders",
+      "year": "1996",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB42",
+      "doi-asserted-by": "crossref",
+      "first-page": "1573",
+      "DOI": "10.1016/0043-1354(95)00331-2",
+      "volume": "30",
+      "author": "Sorm",
+      "year": "1996",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB43",
+      "first-page": "105",
+      "author": "Sotemann",
+      "year": "2003",
+      "journal-title": "Water SA, Special Edition. WISA"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB44",
+      "doi-asserted-by": "crossref",
+      "first-page": "139",
+      "DOI": "10.2166/wst.1999.0031",
+      "volume": "39",
+      "author": "Sperandio",
+      "year": "1999",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB45",
+      "doi-asserted-by": "crossref",
+      "first-page": "1135",
+      "DOI": "10.1016/0043-1354(81)90089-0",
+      "volume": "15",
+      "author": "Van Haandel",
+      "year": "1981",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB46",
+      "doi-asserted-by": "crossref",
+      "first-page": "791",
+      "DOI": "10.1080/09593338809384634",
+      "volume": "9",
+      "author": "Vlekke",
+      "year": "1988",
+      "journal-title": "Environ Tech Lett"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB47",
+      "doi-asserted-by": "crossref",
+      "first-page": "445",
+      "DOI": "10.2166/wst.1992.0532",
+      "volume": "25",
+      "author": "Wanner",
+      "year": "1991",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB48",
+      "author": "Wentzel",
+      "year": "1997a",
+      "unstructured": ". 1997a. Principles in the modelling of biological wastewater treatment plants. Chapter 5 in: Microbial Community Analysis: The key to the design of biological wastewater treatment systems, Ed. Cloete T.E and Muyimba NYO, IAWQ Scientific and Technical Report No. 5, IWA, London."
+    },
+    {
+      "key": "10.1002/bit.21508-BIB49",
+      "doi-asserted-by": "crossref",
+      "first-page": "1222",
+      "DOI": "10.2175/106143097X125975",
+      "volume": "69",
+      "author": "Wentzel",
+      "year": "1997b",
+      "journal-title": "Water Environ Res"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB50",
+      "doi-asserted-by": "crossref",
+      "first-page": "57",
+      "DOI": "10.2166/wst.1985.0221",
+      "volume": "17",
+      "author": "Wentzel",
+      "year": "1985",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB51",
+      "first-page": "71",
+      "volume": "15",
+      "author": "Wentzel",
+      "year": "1989a",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB52",
+      "first-page": "89",
+      "volume": "15",
+      "author": "Wentzel",
+      "year": "1989b",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB53",
+      "first-page": "29",
+      "volume": "16",
+      "author": "Wentzel",
+      "year": "1990",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB54",
+      "doi-asserted-by": "crossref",
+      "first-page": "59",
+      "DOI": "10.2166/wst.1992.0114",
+      "volume": "25",
+      "author": "Wentzel",
+      "year": "1992",
+      "journal-title": "Wat Sci Technol"
+    },
+    {
+      "key": "10.1002/bit.21508-BIB55",
+      "author": "Wentzel",
+      "year": "1994",
+      "unstructured": ", . 1994. Influence of wastewater biodegradable COD fractions on biological excess phosphorus removal. Procs. IAWQ specialized seminar on modelling and control of activated sludge processes. Copenhagen, Aug."
+    }
+  ],
+  "container-title": [
+    "Biotechnology and Bioengineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fbit.21508",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full/10.1002/bit.21508",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        7,
+        1
+      ]
+    ],
+    "date-time": "2021-07-01T11:32:39Z",
+    "timestamp": 1625139159000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/bit.21508"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2007,
+        12,
+        15
+      ]
+    ]
+  },
+  "references-count": 55,
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          12,
+          15
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.1002/bit.21508",
+  "relation": {},
+  "ISSN": [
+    "0006-3592",
+    "1097-0290"
+  ],
+  "issn-type": [
+    {
+      "value": "0006-3592",
+      "type": "print"
+    },
+    {
+      "value": "1097-0290",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2007,
+        12,
+        15
+      ]
+    ]
+  }
+}

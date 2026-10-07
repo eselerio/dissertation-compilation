@@ -1,0 +1,1614 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        2
+      ]
+    ],
+    "date-time": "2026-10-02T20:11:18Z",
+    "timestamp": 1790971878587,
+    "version": "4.1.0"
+  },
+  "reference-count": 144,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2019-06-01T00:00:00Z",
+        "timestamp": 1559347200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2019-06-01T00:00:00Z",
+        "timestamp": 1559347200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            10
+          ]
+        ],
+        "date-time": "2020-04-10T00:00:00Z",
+        "timestamp": 1586476800000
+      },
+      "content-version": "am",
+      "delay-in-days": 314,
+      "URL": "http://www.elsevier.com/open-access/userlicense/1.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Water Research"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.watres.2019.03.030",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        3,
+        21
+      ]
+    ],
+    "date-time": "2019-03-21T12:27:32Z",
+    "timestamp": 1553171252000
+  },
+  "page": "498-513",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 446,
+  "special_numbering": "C",
+  "title": [
+    "Data-driven performance analyses of wastewater treatment plants: A review"
+  ],
+  "prefix": "10.1016",
+  "volume": "157",
+  "author": [
+    {
+      "given": "Kathryn B.",
+      "family": "Newhart",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ryan W.",
+      "family": "Holloway",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Amanda S.",
+      "family": "Hering",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-0669-4117",
+      "authenticated-orcid": false,
+      "given": "Tzahi Y.",
+      "family": "Cath",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib1",
+      "series-title": "Encyclopedia of Social Sciences Research Methods",
+      "article-title": "Partial least squares (PLS) regression",
+      "author": "Abdi",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib2",
+      "series-title": "Benchmark for Evaluating Control Strategies in Wastewater Treatment Plants",
+      "author": "Alex",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib3",
+      "first-page": "101",
+      "article-title": "Application of multivariate control charts for monitoring an industrial process",
+      "volume": "17",
+      "author": "Alves",
+      "year": "2013",
+      "journal-title": "Tecno-Lóg."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib4",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2166/wst.2009.723",
+      "article-title": "Real-time fault detection and isolation in biological wastewater treatment plants",
+      "volume": "60",
+      "author": "Baggiani",
+      "year": "2009",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "6126",
+      "DOI": "10.1021/ie900322x",
+      "article-title": "Nonlinear model-based control of an experimental reverse-osmosis water desalination system",
+      "volume": "48",
+      "author": "Bartman",
+      "year": "2009",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "129",
+      "DOI": "10.1016/j.jesit.2014.08.001",
+      "article-title": "Fuzzy dynamic modelling and predictive control of a coagulation chemical dosing unit for water treatment plants",
+      "volume": "1",
+      "author": "Bello",
+      "year": "2014",
+      "journal-title": "J. Electr. Syst. Inf. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib7",
+      "first-page": "1534",
+      "article-title": "Constructing control charts for wastewater treatment plant operation",
+      "volume": "61",
+      "author": "Berthouex",
+      "year": "1989",
+      "journal-title": "J. Water Pollut. Control Fed."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "1865",
+      "DOI": "10.1016/0043-1354(96)00063-2",
+      "article-title": "Time series models for forecasting wastewater treatment plant performance",
+      "volume": "30",
+      "author": "Berthouex",
+      "year": "1996",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib9",
+      "series-title": "Time Series Analysis - Forecasting and Control",
+      "author": "Box",
+      "year": "1994"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "484",
+      "DOI": "10.1080/00401706.2016.1272494",
+      "article-title": "Phase I distribution-free analysis of multivariate data",
+      "volume": "59",
+      "author": "Capizzi",
+      "year": "2017",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib11",
+      "series-title": "Presented at the 2016 IEEE 25th International Symposium on Industrial Electronics (ISIE)",
+      "article-title": "PCA and PLS monitoring approaches for fault detection of wastewater treatment process",
+      "author": "Chen",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib12",
+      "series-title": "Computational Intelligence in Economics and Finance",
+      "author": "Chen",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "193",
+      "DOI": "10.1016/S0168-1656(96)01644-6",
+      "article-title": "Software sensors in bioprocess engineering",
+      "volume": "52",
+      "author": "Chéruy",
+      "year": "1997",
+      "journal-title": "J. Biotechnol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib14",
+      "series-title": "Fault Detection and Diagnosis in Industrial Systems",
+      "author": "Chiang",
+      "year": "2001"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "295",
+      "DOI": "10.1016/j.jprocont.2004.06.010",
+      "article-title": "Multiblock PLS-based localized process diagnosis",
+      "volume": "15",
+      "author": "Choi",
+      "year": "2005",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib16",
+      "unstructured": "Clean Water Act, 1977."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib17",
+      "series-title": "The COST Simulation Benchmark: Description and Simulator Manual",
+      "author": "Copp",
+      "year": "2002"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib18",
+      "series-title": "Introduction to Algorithms",
+      "author": "Cormen",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib19",
+      "first-page": "89",
+      "article-title": "Transforming data into knowledge for improved wastewater treatment operation: a critical review of techniques",
+      "volume": "106",
+      "author": "Corominas",
+      "year": "2018",
+      "journal-title": "Environ. Model. Softw., Special Issue on Environmental Data Science. Applications to Air quality and Water cycle"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "333",
+      "DOI": "10.1002/bit.22953",
+      "article-title": "Performance evaluation of fault detection methods for wastewater treatment processes",
+      "volume": "108",
+      "author": "Corominas",
+      "year": "2011",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "291",
+      "DOI": "10.1080/00401706.1988.10488402",
+      "article-title": "Multivariate generalizations of cumulative sum quality-control schemes",
+      "volume": "30",
+      "author": "Crosier",
+      "year": "1988",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "96",
+      "DOI": "10.1016/j.envsoft.2008.06.002",
+      "article-title": "Predictive modeling for wastewater applications: linear and nonlinear approaches",
+      "volume": "24",
+      "author": "Dellana",
+      "year": "2009",
+      "journal-title": "Environ. Model. Softw"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib23",
+      "series-title": "Advances in Economics and Econometrics: Theory and Applications, Eighth World Congress of the Econometric Society",
+      "first-page": "115",
+      "article-title": "Big data\" dynamic factor models for macroeconomic measurement and forecasting",
+      "author": "Diebold",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib24",
+      "series-title": "Neural Netw. SE - 1 1–83",
+      "article-title": "Neural networks: an overview",
+      "author": "Dreyfus",
+      "year": "2005"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "2213",
+      "DOI": "10.1016/j.watres.2011.01.015",
+      "article-title": "The effect of anoxia and anaerobia on ciliate community in biological nutrient removal systems using laboratory-scale sequencing batch reactors (SBRs)",
+      "volume": "45",
+      "author": "Dubber",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib26",
+      "first-page": "47",
+      "article-title": "Data-driven modeling approaches to support wastewater treatment plant operation",
+      "volume": "30",
+      "author": "Dürrenmatt",
+      "year": "2012",
+      "journal-title": "Environ. Model. Softw"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib27",
+      "first-page": "234",
+      "article-title": "Temporal performance assessment of wastewater treatment plants by using multivariate statistical analysis",
+      "volume": "193",
+      "author": "Ebrahimi",
+      "year": "2017",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib28",
+      "series-title": "An Introduction to the Bootstrap",
+      "author": "Efron",
+      "year": "1994"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "333",
+      "DOI": "10.2166/wst.1993.0673",
+      "article-title": "Integration of multi AI paradigms for intelligent operation support systems – fuzzy rule extraction from a neural network",
+      "volume": "28",
+      "author": "Enbutsu",
+      "year": "1993",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib30",
+      "first-page": "137",
+      "article-title": "Beyond the hype: big data concepts, methods, and analytics",
+      "volume": "35",
+      "author": "Gandomi",
+      "year": "2015",
+      "journal-title": "Int. J. Inf. Manag."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib31",
+      "series-title": "Big Plants Produce Big Data that They Do Not Know of…. Presented at the WEFTEC",
+      "first-page": "2065",
+      "author": "Golhar",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib32",
+      "doi-asserted-by": "crossref",
+      "first-page": "1739",
+      "DOI": "10.2166/wst.2011.323",
+      "article-title": "Is modeling of biological wastewater treatment a mature technology?",
+      "volume": "63",
+      "author": "Gujer",
+      "year": "2011",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.2166/wst.1999.0039",
+      "article-title": "Activated sludge model No. 3",
+      "volume": "39",
+      "author": "Gujer",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib34",
+      "doi-asserted-by": "crossref",
+      "first-page": "747",
+      "DOI": "10.3233/AIC-160714",
+      "article-title": "Do machine learning methods used in data mining enhance the potential of decision support systems? A review for the urban water sector",
+      "volume": "29",
+      "author": "Hadjimichael",
+      "year": "2016",
+      "journal-title": "AI Commun"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib35",
+      "doi-asserted-by": "crossref",
+      "first-page": "88",
+      "DOI": "10.1016/j.envsoft.2013.05.009",
+      "article-title": "Data-derived soft-sensors for biological wastewater treatment plants: an overview",
+      "volume": "47",
+      "author": "Haimi",
+      "year": "2013",
+      "journal-title": "Environ. Model. Softw"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "1970",
+      "DOI": "10.1109/TIE.2013.2266086",
+      "article-title": "Nonlinear model-predictive control for industrial processes: an application to wastewater treatment process",
+      "volume": "61",
+      "author": "Han",
+      "year": "2014",
+      "journal-title": "IEEE Trans. Ind. Electron."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib37",
+      "doi-asserted-by": "crossref",
+      "first-page": "667",
+      "DOI": "10.1007/s00521-009-0323-6",
+      "article-title": "Research on an online self-organizing radial basis function neural network",
+      "volume": "19",
+      "author": "Han",
+      "year": "2010",
+      "journal-title": "Neural Comput. Appl."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib38",
+      "series-title": "Neural Networks",
+      "author": "Haykin",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib39",
+      "series-title": "Activated Sludge Model No. 1 (No. 1900222248)",
+      "author": "Henze",
+      "year": "1987"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib40",
+      "series-title": "Activated Sludge Model No. 2",
+      "author": "Henze",
+      "year": "1995"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib41",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "article-title": "Activated sludge model No. 2d",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib42",
+      "doi-asserted-by": "crossref",
+      "first-page": "98",
+      "DOI": "10.1016/j.conengprac.2015.09.005",
+      "article-title": "Model predictive control of pH neutralization processes: a review",
+      "volume": "45",
+      "author": "Hermansson",
+      "year": "2015",
+      "journal-title": "Contr. Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "1527",
+      "DOI": "10.1162/neco.2006.18.7.1527",
+      "article-title": "A fast learning algorithm for deep belief nets",
+      "volume": "18",
+      "author": "Hinton",
+      "year": "2006",
+      "journal-title": "Neural Comput."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib44",
+      "series-title": "Prediction Methods in Science and Technology",
+      "author": "Hoskuldsson",
+      "year": "1996"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib45",
+      "series-title": "Techniques of Statistical Analysis",
+      "first-page": "111",
+      "article-title": "Multivariate quality control",
+      "author": "Hotelling",
+      "year": "1947"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib46",
+      "first-page": "203",
+      "article-title": "The exponentially weighted moving average",
+      "volume": "18",
+      "author": "Hunter",
+      "year": "1986",
+      "journal-title": "J. Qual. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib47",
+      "doi-asserted-by": "crossref",
+      "first-page": "387",
+      "DOI": "10.1016/0005-1098(84)90098-0",
+      "article-title": "Process fault detection based on modeling and estimation methods—a survey",
+      "volume": "20",
+      "author": "Isermann",
+      "year": "1984",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib48",
+      "series-title": "Modern Multivariate Statistical Techniques: Regression, Classification, and Manifold Learning",
+      "first-page": "88",
+      "article-title": "Kernel density estimation",
+      "author": "Izenman",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib49",
+      "series-title": "A User's Guide to Principal Components",
+      "author": "Jackson",
+      "year": "1991"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib50",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1371/journal.pone.0147725",
+      "article-title": "Microbial community profiles in wastewaters from onsite wastewater treatment systems technology",
+      "volume": "11",
+      "author": "Jałowiecki",
+      "year": "2016",
+      "journal-title": "PLoS One"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib51",
+      "series-title": "An Introduction to Statistical Learning",
+      "author": "James",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib52",
+      "doi-asserted-by": "crossref",
+      "first-page": "299",
+      "DOI": "10.1016/j.conengprac.2003.07.001",
+      "article-title": "The COST benchmark simulation model—current state and future perspective",
+      "volume": "12",
+      "author": "Jeppsson",
+      "year": "2004",
+      "journal-title": "Contr. Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib53",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.2166/wst.2007.604",
+      "article-title": "Benchmark simulation model no 2: general protocol and exploratory case studies",
+      "volume": "56",
+      "author": "Jeppsson",
+      "year": "2007",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib54",
+      "first-page": "209",
+      "article-title": "A variable-selection-based multivariate EWMA chart for process monitoring and diagnosis",
+      "volume": "44",
+      "author": "Jiang",
+      "year": "2012",
+      "journal-title": "J. Qual. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib55",
+      "series-title": "World Environmental and Water Resources Congress 2013. Presented at the World Environmental and Water Resources Congress 2013",
+      "first-page": "768",
+      "article-title": "Improving resilience of water distribution system through burst detection",
+      "author": "Jung",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib56",
+      "series-title": "Leveraging Other Industries - Big Data Management",
+      "author": "Kadiyala",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib57",
+      "doi-asserted-by": "crossref",
+      "first-page": "795",
+      "DOI": "10.1016/j.compchemeng.2008.12.012",
+      "article-title": "Data-driven soft sensors in the process industry",
+      "volume": "33",
+      "author": "Kadlec",
+      "year": "2009",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib58",
+      "doi-asserted-by": "crossref",
+      "first-page": "1527",
+      "DOI": "10.1007/s00477-016-1246-2",
+      "article-title": "Comparison of linear and nonlinear dimension reduction techniques for automated process monitoring of a decentralized wastewater treatment facility",
+      "volume": "30",
+      "author": "Kazor",
+      "year": "2016",
+      "journal-title": "Stoch. Environ. Res. Risk Assess."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib59",
+      "series-title": "Classification of Deviations in a Processes",
+      "author": "King",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib60",
+      "first-page": "151",
+      "article-title": "MVN: an R package for assessing multivariate normality",
+      "volume": "6",
+      "author": "Korkmaz",
+      "year": "2014",
+      "journal-title": "Rom. Jahrb."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib61",
+      "doi-asserted-by": "crossref",
+      "first-page": "879",
+      "DOI": "10.1016/j.jprocont.2004.02.002",
+      "article-title": "Improved principal component monitoring of large-scale processes",
+      "volume": "14",
+      "author": "Kruger",
+      "year": "2004",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib62",
+      "doi-asserted-by": "crossref",
+      "first-page": "179",
+      "DOI": "10.1016/0169-7439(95)00076-3",
+      "article-title": "Disturbance detection and isolation by dynamic principal component analysis",
+      "volume": "30",
+      "author": "Ku",
+      "year": "1995",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib63",
+      "doi-asserted-by": "crossref",
+      "first-page": "1643",
+      "DOI": "10.1016/j.engappai.2013.04.001",
+      "article-title": "Modeling and analysis of pumps in a wastewater treatment plant: a data-mining approach",
+      "volume": "26",
+      "author": "Kusiak",
+      "year": "2013",
+      "journal-title": "Eng. Appl. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib64",
+      "doi-asserted-by": "crossref",
+      "first-page": "407",
+      "DOI": "10.4097/kjae.2017.70.4.407",
+      "article-title": "Statistical data preparation: management of missing values and outliers",
+      "volume": "70",
+      "author": "Kwak",
+      "year": "2017",
+      "journal-title": "Korean J. Anesthesiol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib65",
+      "doi-asserted-by": "crossref",
+      "first-page": "2032",
+      "DOI": "10.14778/2367502.2367572",
+      "article-title": "Challenges and opportunities with big data",
+      "volume": "5",
+      "author": "Labrinidis",
+      "year": "2012",
+      "journal-title": "Proc. VLDB Endow."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib66",
+      "series-title": "3D Data Management: Controlling Data Volume, Velocity, and Variety (No. 0950–5849), Application Delivery Strategies",
+      "author": "Laney",
+      "year": "2001"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib67",
+      "doi-asserted-by": "crossref",
+      "first-page": "63",
+      "DOI": "10.2166/wst.2003.0086",
+      "article-title": "A multivariate calibration procedure for UV/VIS spectrometric quantification of organic matter and nitrate in wastewater",
+      "volume": "47",
+      "author": "Langergraber",
+      "year": "2003",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib68",
+      "doi-asserted-by": "crossref",
+      "first-page": "251",
+      "DOI": "10.2166/wst.2006.027",
+      "article-title": "Sensor fault diagnosis in a wastewater treatment process",
+      "volume": "53",
+      "author": "Lee",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib69",
+      "doi-asserted-by": "crossref",
+      "first-page": "670",
+      "DOI": "10.1002/bit.10247",
+      "article-title": "Hybrid neural network modeling of a full-scale industrial wastewater treatment process",
+      "volume": "78",
+      "author": "Lee",
+      "year": "2002",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib70",
+      "doi-asserted-by": "crossref",
+      "first-page": "2050",
+      "DOI": "10.1016/j.procbio.2006.05.006",
+      "article-title": "Nonlinear dynamic partial least squares modeling of a full-scale biological wastewater treatment plant",
+      "volume": "41",
+      "author": "Lee",
+      "year": "2006",
+      "journal-title": "Process Biochem."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib71",
+      "doi-asserted-by": "crossref",
+      "first-page": "4335",
+      "DOI": "10.1021/ie050916k",
+      "article-title": "Multivariate online monitoring of a full-scale biological anaerobic filter process using kernel-based algorithms",
+      "volume": "45",
+      "author": "Lee",
+      "year": "2006",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib72",
+      "doi-asserted-by": "crossref",
+      "first-page": "119",
+      "DOI": "10.1023/B:EMAS.0000014498.72455.18",
+      "article-title": "Adaptive consensus principal component analysis for on-line batch process monitoring",
+      "volume": "92",
+      "author": "Lee",
+      "year": "2004",
+      "journal-title": "Environ. Monit. Assess."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib73",
+      "doi-asserted-by": "crossref",
+      "first-page": "223",
+      "DOI": "10.1016/j.ces.2003.09.012",
+      "article-title": "Nonlinear process monitoring using kernel principal component analysis",
+      "volume": "59",
+      "author": "Lee",
+      "year": "2004",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib74",
+      "doi-asserted-by": "crossref",
+      "first-page": "1107",
+      "DOI": "10.1016/j.procbio.2008.06.002",
+      "article-title": "Real-time remote monitoring of small-scaled biological wastewater treatment plants by a multivariate statistical process control and neural network-based software sensors",
+      "volume": "43",
+      "author": "Lee",
+      "year": "2008",
+      "journal-title": "Process Biochem."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib75",
+      "doi-asserted-by": "crossref",
+      "first-page": "46",
+      "DOI": "10.2307/1269551",
+      "article-title": "A multivariate exponentially weighted moving average control chart",
+      "volume": "34",
+      "author": "Lowry",
+      "year": "1992",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib76",
+      "doi-asserted-by": "crossref",
+      "first-page": "648",
+      "DOI": "10.1016/j.envsoft.2009.05.013",
+      "article-title": "Formal verification of wastewater treatment processes using events detected from continuous signals by means of artificial neural networks. Case study: SBR plant",
+      "volume": "25",
+      "author": "Luccarini",
+      "year": "2010",
+      "journal-title": "Environ. Model. Softw"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib77",
+      "doi-asserted-by": "crossref",
+      "first-page": "403",
+      "DOI": "10.1016/0967-0661(95)00014-L",
+      "article-title": "Statistical process control of multivariate processes",
+      "volume": "3",
+      "author": "MacGregor",
+      "year": "1995",
+      "journal-title": "Contr. Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib78",
+      "doi-asserted-by": "crossref",
+      "first-page": "523",
+      "DOI": "10.1016/S1474-6670(17)48203-6",
+      "article-title": "Multivariate statistical process control of batch processes using PCA and PLS",
+      "volume": "27",
+      "author": "MacGregor",
+      "year": "1994",
+      "journal-title": "IFAC Proc"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib79",
+      "series-title": "Big Data: the Next Frontier for Innovation, Competition, and Productivity",
+      "author": "Manyika",
+      "year": "2011"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib80",
+      "series-title": "Wastewater Engineering: Treatment and Resource Recovery",
+      "author": "Metcalf",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib81",
+      "series-title": "Applied Statistics for Social and Management Sciences",
+      "first-page": "233",
+      "article-title": "Multiple regression",
+      "author": "Miah",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib82",
+      "doi-asserted-by": "crossref",
+      "first-page": "185",
+      "DOI": "10.15837/ijccc.2007.2.2351",
+      "article-title": "fault detection for large scale systems using dynamic principal components analysis with adaptation",
+      "author": "Mina",
+      "year": "2007",
+      "journal-title": "Int. J. Comput. Commun. Control II"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib83",
+      "series-title": "Introduction to Statistical Quality Control",
+      "author": "Montgomery",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib84",
+      "doi-asserted-by": "crossref",
+      "first-page": "3683",
+      "DOI": "10.1016/j.engstruct.2010.08.012",
+      "article-title": "Fault detection based on kernel principal component analysis",
+      "volume": "32",
+      "author": "Nguyen",
+      "year": "2010",
+      "journal-title": "Eng. Struct."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib85",
+      "series-title": "Neural Networks and Deep Learning",
+      "author": "Nielsen",
+      "year": "2015"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib86",
+      "series-title": "E-handbook of Statistical Methods",
+      "article-title": "Univariate and multivariate control charts",
+      "author": "NIST/SEMATECH",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib87",
+      "doi-asserted-by": "crossref",
+      "first-page": "97",
+      "DOI": "10.1016/0169-7439(95)00043-7",
+      "article-title": "Multi-way partial least squares in monitoring batch processes",
+      "volume": "30",
+      "author": "Nomikos",
+      "year": "1995",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib88",
+      "doi-asserted-by": "crossref",
+      "first-page": "1361",
+      "DOI": "10.1002/aic.690400809",
+      "article-title": "Monitoring batch processes using multiway principal component analysis",
+      "volume": "40",
+      "author": "Nomikos",
+      "year": "1994",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib89",
+      "doi-asserted-by": "crossref",
+      "first-page": "1967",
+      "DOI": "10.2166/wst.2010.044",
+      "article-title": "Benchmark Simulation Model No 2: finalisation of plant layout and default control strategy",
+      "volume": "62",
+      "author": "Nopens",
+      "year": "2010",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib90",
+      "doi-asserted-by": "crossref",
+      "first-page": "54",
+      "DOI": "10.1016/j.conengprac.2010.09.001",
+      "article-title": "Model predictive control of an activated sludge process: a case study",
+      "volume": "19",
+      "author": "O'Brien",
+      "year": "2011",
+      "journal-title": "Contr. Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib91",
+      "series-title": "Model Predictive Control of Wastewater Systems, Advances in Industrial Control",
+      "article-title": "Suboptimal MPC approach based on piecewise linear functions",
+      "author": "Ocampo-Martinez",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib92",
+      "series-title": "Statistical Process Control Can Help Treatment Plants",
+      "author": "O'Day",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib93",
+      "doi-asserted-by": "crossref",
+      "first-page": "880",
+      "DOI": "10.1002/asmb.2333",
+      "article-title": "Multistate multivariate statistical process control",
+      "volume": "34",
+      "author": "Odom",
+      "year": "2018",
+      "journal-title": "Appl. Stoch Model Bus. Ind."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib94",
+      "doi-asserted-by": "crossref",
+      "first-page": "1585",
+      "DOI": "10.1016/j.watres.2011.12.054",
+      "article-title": "ICA and me – a subjective review",
+      "volume": "46",
+      "author": "Olsson",
+      "year": "2012",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib95",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.1998.0484",
+      "article-title": "Operation and control of wastewater treatment—a Scandinavian perspective over 20 years",
+      "volume": "37",
+      "author": "Olsson",
+      "year": "1998",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib96",
+      "series-title": "Wastewater Treatment Systems: Modelling, Diagnosis and Control",
+      "author": "Olsson",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib97",
+      "series-title": "Instrumentation, Control and Automation in Wastewater Systems",
+      "author": "Olsson",
+      "year": "2005"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib98",
+      "doi-asserted-by": "crossref",
+      "first-page": "586",
+      "DOI": "10.1016/j.engappai.2009.09.015",
+      "article-title": "A hybrid neural network and ARIMA model for water quality time series prediction",
+      "volume": "23",
+      "author": "Ömer Faruk",
+      "year": "2009",
+      "journal-title": "Eng. Appl. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib99",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2166/wpt.2013.002",
+      "article-title": "Towards advanced control for anaerobic digesters: volatile solids inferential sensor",
+      "volume": "8",
+      "author": "Oppong",
+      "year": "2013",
+      "journal-title": "Water Pract. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib100",
+      "doi-asserted-by": "crossref",
+      "first-page": "135",
+      "DOI": "10.14257/ijca.2015.8.10.13",
+      "article-title": "Application of transfer function ARIMA modeling for the sedimentation process on water treatment plant",
+      "volume": "8",
+      "author": "Park",
+      "year": "2015",
+      "journal-title": "Int. J. Control Autom."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib101",
+      "series-title": "Issues of Fault Diagnosis for Dynamic Systems",
+      "author": "Patton",
+      "year": "2000"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib102",
+      "doi-asserted-by": "crossref",
+      "first-page": "530",
+      "DOI": "10.2175/106143017X15131012153068",
+      "article-title": "Statistical exposé of a multiple-compartment anaerobic reactor treating domestic wastewater",
+      "volume": "90",
+      "author": "Pfluger",
+      "year": "2018",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib103",
+      "doi-asserted-by": "crossref",
+      "first-page": "645",
+      "DOI": "10.1080/03610918.2010.549989",
+      "article-title": "Bootstrap-based T2 multivariate control charts",
+      "volume": "40",
+      "author": "Phaladiganon",
+      "year": "2011",
+      "journal-title": "Commun. Stat. Simulat. Comput."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib104",
+      "doi-asserted-by": "crossref",
+      "first-page": "1133",
+      "DOI": "10.1016/j.watres.2011.12.005",
+      "article-title": "Wastewater quality monitoring system using sensor fusion and machine learning techniques",
+      "volume": "46",
+      "author": "Qin",
+      "year": "2012",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib105",
+      "article-title": "The future of WRRF modelling – outlook and challenges",
+      "author": "Regmi",
+      "year": "2018",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib106",
+      "series-title": "Standard Methods for the Examination of Water and Wastewater",
+      "author": "Rice",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib107",
+      "doi-asserted-by": "crossref",
+      "first-page": "413",
+      "DOI": "10.1016/0005-1098(78)90001-8",
+      "article-title": "Model predictive heuristic control: applications to industrial processes",
+      "volume": "14",
+      "author": "Richalet",
+      "year": "1978",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib108",
+      "doi-asserted-by": "crossref",
+      "first-page": "239",
+      "DOI": "10.1080/00401706.1959.10489860",
+      "article-title": "Control chart tests based on geometric moving averages",
+      "volume": "1",
+      "author": "Roberts",
+      "year": "1959",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib109",
+      "doi-asserted-by": "crossref",
+      "first-page": "41",
+      "DOI": "10.2166/wst.2004.0669",
+      "article-title": "Towards a common benchmark for long-term process control and monitoring performance evaluation",
+      "volume": "50",
+      "author": "Rosen",
+      "year": "2004",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib110",
+      "doi-asserted-by": "crossref",
+      "first-page": "3402",
+      "DOI": "10.1016/S0043-1354(01)00069-0",
+      "article-title": "Multivariate and multiscale monitoring of wastewater treatment operation",
+      "volume": "35",
+      "author": "Rosen",
+      "year": "2001",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib111",
+      "doi-asserted-by": "crossref",
+      "first-page": "171",
+      "DOI": "10.2166/wst.2003.0113",
+      "article-title": "Multivariate on-line monitoring: challenges and solutions for modern wastewater treatment operation",
+      "volume": "47",
+      "author": "Rosen",
+      "year": "2003",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib112",
+      "doi-asserted-by": "crossref",
+      "first-page": "375",
+      "DOI": "10.2166/wst.2006.143",
+      "article-title": "Fault detection for control of wastewater treatment plants",
+      "volume": "53",
+      "author": "Schraa",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib113",
+      "series-title": "A Modern Approach to Regression with R",
+      "author": "Sheather",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib114",
+      "doi-asserted-by": "crossref",
+      "first-page": "593",
+      "DOI": "10.1002/j.1538-7305.1926.tb00125.x",
+      "article-title": "Quality control charts",
+      "volume": "5",
+      "author": "Shewhart",
+      "year": "1926",
+      "journal-title": "Bell Syst. Tech. J."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib115",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.2166/wst.2006.114",
+      "article-title": "Application of a model-based optimisation methodology for nutrient removing SBRs leads to falsification of the model",
+      "volume": "53",
+      "author": "Sin",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib116",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "DOI": "10.1016/j.jup.2017.02.002",
+      "article-title": "Data utilization at Finnish water and wastewater utilities: current practices vs. state of the art",
+      "volume": "45",
+      "author": "Sirkiä",
+      "year": "2017",
+      "journal-title": "Util. Pol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib117",
+      "first-page": "88",
+      "article-title": "Big Data: preparing for the future of “smart water” and “big data",
+      "author": "Slawecki",
+      "year": "2016",
+      "journal-title": "Water Environ. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib118",
+      "series-title": "Multi-way Analysis: Applications in the Chemical Sciences",
+      "author": "Smilde",
+      "year": "2005"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib119",
+      "doi-asserted-by": "crossref",
+      "first-page": "219",
+      "DOI": "10.2166/wst.1998.0545",
+      "article-title": "Towards a simulation-benchmark for evaluating respirometry-based control strategies",
+      "volume": "37",
+      "author": "Spanjers",
+      "year": "1998",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib120",
+      "series-title": "Presented at the Proceedings of the 36th SICE Annual Conference. International Session Papers",
+      "first-page": "1105",
+      "article-title": "Optimization of coagulant dosing process in water purification system",
+      "author": "Tae-Hwan",
+      "year": "1997"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib121",
+      "series-title": "Continuous Monitoring Data Sharing Strategy. EP-C-12-052 Task Order No. 0005",
+      "author": "US EPA",
+      "year": "2015"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib122",
+      "series-title": "Configuring Online Monitoring Event Detection Systems. 600/R-14/254",
+      "author": "US EPA",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib123",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.2003.0074",
+      "article-title": "On-line monitoring equipment for wastewater treatment processes: state of the art",
+      "volume": "47",
+      "author": "Vanrolleghem",
+      "year": "2003",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib124",
+      "doi-asserted-by": "crossref",
+      "first-page": "486",
+      "DOI": "10.1021/ie071134p",
+      "article-title": "Neural network modeling and simulation of the solid/liquid activated carbon adsorption process",
+      "volume": "47",
+      "author": "Vasanth Kumar",
+      "year": "2008",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib125",
+      "series-title": "Computer Software Structures Integrating AI/KBS Systems in Process Control",
+      "article-title": "Towards integrated process supervision: current status and future directions",
+      "author": "Venkatasubramanian",
+      "year": "1995"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib126",
+      "doi-asserted-by": "crossref",
+      "first-page": "1366",
+      "DOI": "10.1016/j.engappai.2012.08.015",
+      "article-title": "Predicting the total suspended solids in wastewater: a data-mining approach",
+      "volume": "26",
+      "author": "Verma",
+      "year": "2013",
+      "journal-title": "Eng. Appl. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib127",
+      "series-title": "Multivariate and Qualitative Data-Analysis for Monitoring, Diagnosis and Control of Sequencing Batch Reactors for Wastewater Treatment",
+      "author": "Villez",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib128",
+      "doi-asserted-by": "crossref",
+      "first-page": "2817",
+      "DOI": "10.1016/j.watres.2006.05.011",
+      "article-title": "Continuity-based model interfacing for plant-wide simulation: a general approach",
+      "volume": "40",
+      "author": "Volcke",
+      "year": "2006",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib129",
+      "doi-asserted-by": "crossref",
+      "first-page": "34",
+      "DOI": "10.1016/j.memsci.2013.06.021",
+      "article-title": "Flexible hybrid membrane treatment systems for tailored nutrient management: a new paradigm in urban wastewater treatment",
+      "volume": "446",
+      "author": "Vuono",
+      "year": "2013",
+      "journal-title": "J. Membr. Sci."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib130",
+      "doi-asserted-by": "crossref",
+      "first-page": "155",
+      "DOI": "10.1016/j.watres.2016.03.046",
+      "article-title": "Multivariate statistical analysis of water chemistry conditions in three wastewater stabilization ponds with algae blooms and pH fluctuations",
+      "volume": "96",
+      "author": "Wallace",
+      "year": "2016",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib131",
+      "first-page": "247",
+      "article-title": "High-dimensional process monitoring and fault isolation via variable selection",
+      "volume": "41",
+      "author": "Wang",
+      "year": "2009",
+      "journal-title": "J. Qual. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib132",
+      "first-page": "1",
+      "article-title": "Statistical monitoring and dynamic simulation of a wastewater treatment plant: a combined approach to achieve model predictive control",
+      "volume": "193",
+      "author": "Wang",
+      "year": "2017",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib133",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1002/cem.1180030104",
+      "article-title": "A multiblock partial least squares algorithm for investigating complex chemical systems",
+      "volume": "3",
+      "author": "Wangen",
+      "year": "1989",
+      "journal-title": "J. Chemom."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib134",
+      "series-title": "Modeling and Optimization of Wastewater Treatment Process with a Data-Driven Approach",
+      "author": "Wei",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib135",
+      "first-page": "315",
+      "article-title": "Transfer function modeling of processes with dynamic inputs",
+      "volume": "34",
+      "author": "West",
+      "year": "2002",
+      "journal-title": "J. Qual. Technol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib136",
+      "doi-asserted-by": "crossref",
+      "first-page": "329",
+      "DOI": "10.1016/0959-1524(96)00009-1",
+      "article-title": "The process chemometrics approach to process monitoring and fault detection",
+      "volume": "6",
+      "author": "Wise",
+      "year": "1996",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib137",
+      "doi-asserted-by": "crossref",
+      "first-page": "149",
+      "DOI": "10.1016/0169-7439(93)E0075-F",
+      "article-title": "Exponentially weighted moving principal components analysis and projections to latent structures",
+      "volume": "23",
+      "author": "Wold",
+      "year": "1994",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib138",
+      "doi-asserted-by": "crossref",
+      "first-page": "538",
+      "DOI": "10.1016/j.jhazmat.2008.04.004",
+      "article-title": "On-line estimation of key process variables based on kernel partial least squares in an industrial cokes wastewater treatment plant",
+      "volume": "161",
+      "author": "Woo",
+      "year": "2009",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib139",
+      "doi-asserted-by": "crossref",
+      "first-page": "96",
+      "DOI": "10.1016/j.chemolab.2016.12.009",
+      "article-title": "Fault diagnosis and prognosis of wastewater processes with incomplete data by the auto-associative neural networks and ARMA model",
+      "volume": "161",
+      "author": "Xiao",
+      "year": "2017",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib140",
+      "first-page": "318",
+      "article-title": "An online water quality monitoring and management system developed for the Liming River basin in Daqing, China",
+      "volume": "88",
+      "author": "Yang",
+      "year": "2008",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib141",
+      "doi-asserted-by": "crossref",
+      "first-page": "1715",
+      "DOI": "10.1016/j.watres.2004.01.006",
+      "article-title": "Application of multiway ICA for on-line process monitoring of a sequencing batch reactor",
+      "volume": "38",
+      "author": "Yoo",
+      "year": "2004",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib142",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/S0168-1656(03)00168-8",
+      "article-title": "Nonlinear modeling and adaptive monitoring with fuzzy and multivariate statistical methods in biological wastewater treatment plants",
+      "volume": "105",
+      "author": "Yoo",
+      "year": "2003",
+      "journal-title": "J. Biotechnol."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib143",
+      "first-page": "38",
+      "article-title": "Outline of a new approach to the analysis of complex systems and decision processes",
+      "volume": "1100",
+      "author": "Zadeh",
+      "year": "1973",
+      "journal-title": "IEEE Trans. Syst. Man Cybern."
+    },
+    {
+      "key": "10.1016/j.watres.2019.03.030_bib144",
+      "doi-asserted-by": "crossref",
+      "first-page": "175",
+      "DOI": "10.1016/S0019-0578(07)60188-8",
+      "article-title": "Adaptive predictive functional control of a class of nonlinear systems",
+      "volume": "45",
+      "author": "Zhang",
+      "year": "2006",
+      "journal-title": "ISA Trans."
+    }
+  ],
+  "container-title": [
+    "Water Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0043135419302490?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0043135419302490?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2025-09-23T02:06:10Z",
+    "timestamp": 1758593170000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0043135419302490"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        6
+      ]
+    ]
+  },
+  "references-count": 144,
+  "alternative-id": [
+    "S0043135419302490"
+  ],
+  "URL": "https://doi.org/10.1016/j.watres.2019.03.030",
+  "relation": {},
+  "ISSN": [
+    "0043-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0043-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        6
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Data-driven performance analyses of wastewater treatment plants: A review",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Water Research",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.watres.2019.03.030",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2019 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

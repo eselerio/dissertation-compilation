@@ -1,0 +1,1532 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2026-09-28T11:49:29Z",
+    "timestamp": 1790596169563,
+    "version": "4.1.0"
+  },
+  "reference-count": 126,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            5
+          ]
+        ],
+        "date-time": "2016-05-05T00:00:00Z",
+        "timestamp": 1462406400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Water Conserv Sci Eng"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1007/s41101-016-0001-3",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        4
+      ]
+    ],
+    "date-time": "2016-05-04T21:40:46Z",
+    "timestamp": 1462398046000
+  },
+  "page": "1-20",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 36,
+  "title": [
+    "Optimization of Wastewater Anaerobic Digestion Using Mechanistic and Meta-heuristic Methods: Current Limitations and Future Opportunities"
+  ],
+  "prefix": "10.1007",
+  "volume": "1",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-4215-5284",
+      "authenticated-orcid": false,
+      "given": "P. E.",
+      "family": "Poh",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "D.",
+      "family": "Gouwanda",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Y.",
+      "family": "Mohan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A. A.",
+      "family": "Gopalai",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "H. M.",
+      "family": "Tan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        5
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "1_CR1",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.watres.2010.07.081",
+      "volume": "45",
+      "author": "R Escudié",
+      "year": "2011",
+      "unstructured": "Escudié R, Cresson R, Delgenès JP, Bernet N (2011) Control of start-up and operation of anaerobic biofilm reactors: an overview of 15 years of research. Water Res 45:1–10",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR2",
+      "doi-asserted-by": "crossref",
+      "first-page": "4044",
+      "DOI": "10.1016/j.biortech.2007.01.057",
+      "volume": "99",
+      "author": "Y Chen",
+      "year": "2008",
+      "unstructured": "Chen Y, Cheng JJ, Creamer KS (2008) Inhibition of anaerobic digestion process: a review. Bioresour Technol 99:4044–4064",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR3",
+      "doi-asserted-by": "crossref",
+      "first-page": "717",
+      "DOI": "10.1016/j.rser.2013.06.008",
+      "volume": "26",
+      "author": "MJ Chin",
+      "year": "2013",
+      "unstructured": "Chin MJ, Poh PE, Tey BT, Chan ES, Chin KL (2013) Biogas from palm oil mill effluent (POME): opportunities and challenges from Malaysia’s perspective. Renew Sust Energ Rev 26:717–726",
+      "journal-title": "Renew Sust Energ Rev"
+    },
+    {
+      "key": "1_CR4",
+      "doi-asserted-by": "crossref",
+      "first-page": "175",
+      "DOI": "10.1016/S0960-8524(98)00046-7",
+      "volume": "65",
+      "author": "L Seghezzo",
+      "year": "1998",
+      "unstructured": "Seghezzo L, Zeeman G, van Lier JB, Hamelers HVM, Lettinga G (1998) A review: the anaerobic treatment of sewage in UASB and EGSB reactors. Bioresour Technol 65:175–190",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR5",
+      "doi-asserted-by": "crossref",
+      "first-page": "2625",
+      "DOI": "10.1021/ie302233t",
+      "volume": "52",
+      "author": "R Flores-Estrella",
+      "year": "2013",
+      "unstructured": "Flores-Estrella R, Quiroz G, Mendez-Acosta HO, Femat RH (2013) Control of anaerobic digester for winery industry wastewater treatment. Ind Eng Chem Res 52:2625–2632",
+      "journal-title": "Ind Eng Chem Res"
+    },
+    {
+      "key": "1_CR6",
+      "unstructured": "Jensen JK, Jensen AB (2000) Biogas and natural gas fuel mixture for the future. 1st World Conference and Exhibition on Biomass for Energy and Industry, Sevilla, Spain"
+    },
+    {
+      "issue": "4",
+      "key": "1_CR7",
+      "doi-asserted-by": "crossref",
+      "first-page": "595",
+      "DOI": "10.1007/s11157-015-9376-4",
+      "volume": "14",
+      "author": "DJ Batstone",
+      "year": "2015",
+      "unstructured": "Batstone DJ, Puyol D, Flores-Alsina X, Rodriguez J (2015) Mathematical modelling of anaerobic digestion processes: applications and future needs. Rev Environ Sci Biotechnol 14(4):595–613",
+      "journal-title": "Rev Environ Sci Biotechnol"
+    },
+    {
+      "key": "1_CR8",
+      "doi-asserted-by": "crossref",
+      "first-page": "5347",
+      "DOI": "10.1016/j.watres.2011.08.059",
+      "volume": "45",
+      "author": "A Donoso-Bravo",
+      "year": "2011",
+      "unstructured": "Donoso-Bravo A, Mailier J, Martin C, Rodriguez J, Aceves-Lara CA, Wouwer AV (2011) Model selection, identification and validation in anaerobic digestion: a review. Water Res 45:5347–5364",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR9",
+      "doi-asserted-by": "crossref",
+      "first-page": "701",
+      "DOI": "10.1016/j.renene.2014.05.055",
+      "volume": "71",
+      "author": "N Kythreotou",
+      "year": "2014",
+      "unstructured": "Kythreotou N, Florides G, Tassou SA (2014) A review of simple to scientific models for anaerobic digestion. Renew Energy 71:701–714",
+      "journal-title": "Renew Energy"
+    },
+    {
+      "key": "1_CR10",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Gerardi MH (2003) The microbiology of anaerobic digesters. Wiley-Interscience, New Jersey 51–57",
+      "DOI": "10.1002/0471468967.ch7"
+    },
+    {
+      "key": "1_CR11",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Gerardi MH (2006) Wastewater bacteria. Wiley-Interscience, New Jersey 19–31",
+      "DOI": "10.1002/0471979910.ch3"
+    },
+    {
+      "key": "1_CR12",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.biortech.2008.06.022",
+      "volume": "100",
+      "author": "PE Poh",
+      "year": "2009",
+      "unstructured": "Poh PE, Chong MF (2009) Development of anaerobic digestion methods for palm oil mill effluent (POME) treatment. Bioresour Technol 100:1–9",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR13",
+      "doi-asserted-by": "crossref",
+      "first-page": "21",
+      "DOI": "10.1007/s11157-005-4888-y",
+      "volume": "5",
+      "author": "A Haandel van",
+      "year": "2006",
+      "unstructured": "van Haandel A, Kato MT, Cavalcanti PFF, Florencio L (2006) Anaerobic reactor design concepts for the treatment of domestic wastewater. Rev Environ Sci Biotechnol 5:21–38",
+      "journal-title": "Rev Environ Sci Biotechnol"
+    },
+    {
+      "key": "1_CR14",
+      "doi-asserted-by": "crossref",
+      "first-page": "253",
+      "DOI": "10.1080/02648725.1984.10647801",
+      "volume": "2",
+      "author": "G Lettinga",
+      "year": "1984",
+      "unstructured": "Lettinga G et al (1984) High-rate anaerobic waste-water treatment using the UASB reactor under a wide range of temperature conditions. Biotechnol Genet Eng Rev 2:253–283",
+      "journal-title": "Biotechnol Genet Eng Rev"
+    },
+    {
+      "key": "1_CR15",
+      "doi-asserted-by": "crossref",
+      "first-page": "48",
+      "DOI": "10.1016/j.biortech.2013.02.044",
+      "volume": "145",
+      "author": "W Kim",
+      "year": "2013",
+      "unstructured": "Kim W, Cho K, Lee S, Hwang S (2013) Comparison of methanogenic community structure and anaerobic process performance treating swine wastewater between pilot and optimized lab scale bioreactors. Bioresour Technol 145:48–56",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR16",
+      "first-page": "11",
+      "volume": "78",
+      "author": "SL Tong",
+      "year": "2006",
+      "unstructured": "Tong SL, Jaafar AB (2006) POME biogas capture, upgrading and utilization. Palm Oil Eng Bull 78:11–17",
+      "journal-title": "Palm Oil Eng Bull"
+    },
+    {
+      "key": "1_CR17",
+      "doi-asserted-by": "crossref",
+      "first-page": "291",
+      "DOI": "10.1016/0960-1481(96)00080-8",
+      "volume": "10",
+      "author": "EO Ugoji",
+      "year": "1997",
+      "unstructured": "Ugoji EO (1997) Anaerobic digestion of palm oil mill effluent and its utilization as fertilizer for environmental protection. Renew Energy 10:291–294",
+      "journal-title": "Renew Energy"
+    },
+    {
+      "key": "1_CR18",
+      "doi-asserted-by": "crossref",
+      "first-page": "2475",
+      "DOI": "10.1016/j.watres.2004.12.012",
+      "volume": "39",
+      "author": "M Halalsheh",
+      "year": "2005",
+      "unstructured": "Halalsheh M et al (2005) Effect of SRT and temperature on biological conversions and the related scum-forming potential. Water Res 39:2475–2482",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR19",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1016/0960-8524(95)00100-X",
+      "volume": "55",
+      "author": "SV Kalyuzhnyi",
+      "year": "1996",
+      "unstructured": "Kalyuzhnyi SV et al (1996) Organic removal and microbiological features of UASB-reactor under various organic loading rates. Bioresour Technol 55:47–54",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR20",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1007/BF00872193",
+      "volume": "67",
+      "author": "G Lettinga",
+      "year": "1995",
+      "unstructured": "Lettinga G (1995) Anaerobic digestion and wastewater treatment systems. Antonie Van Leeuwenhoek 67:3–28",
+      "journal-title": "Antonie Van Leeuwenhoek"
+    },
+    {
+      "key": "1_CR21",
+      "unstructured": "Giraldo-Gomez E and Duque M (1998) Automatic start-up of a high rate anaerobic reactor using a fuzzy logic control system. Fifth Latin American Workshop-Seminar Wastewater Anaerobic Treatment, 27th–30th, Vina del Mar, Chile"
+    },
+    {
+      "key": "1_CR22",
+      "doi-asserted-by": "crossref",
+      "first-page": "1094",
+      "DOI": "10.1016/j.chemosphere.2013.01.009",
+      "volume": "91",
+      "author": "JY Ji",
+      "year": "2013",
+      "unstructured": "Ji JY, Xing YJ, Ma ZT, Zhang M, Zheng P (2013) Acute toxicity of pharmaceutical wastewaters containing antibiotics to anaerobic digestion treatment. Chemosphere 91:1094–1098",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "1_CR23",
+      "doi-asserted-by": "crossref",
+      "first-page": "10810",
+      "DOI": "10.1016/j.biortech.2011.09.001",
+      "volume": "102",
+      "author": "MA Sampaio",
+      "year": "2011",
+      "unstructured": "Sampaio MA, Gonçalves MF, Marques IP (2011) Anaerobic digestion challenge of raw olive mill wastewater. Bioresour Technol 102:10810–10818",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR24",
+      "doi-asserted-by": "crossref",
+      "first-page": "2441",
+      "DOI": "10.1016/j.biortech.2010.10.140",
+      "volume": "102",
+      "author": "W Wang",
+      "year": "2011",
+      "unstructured": "Wang W, Ma W, Han H, Li H, Yuan M (2011) Thermophilic anaerobic digestion of Lurgi coal gasification wastewater in a UASB reactor. Bioresour Technol 102:2441–2447",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "issue": "7",
+      "key": "1_CR25",
+      "doi-asserted-by": "crossref",
+      "first-page": "1136",
+      "DOI": "10.1016/j.cherd.2010.12.001",
+      "volume": "89",
+      "author": "W Cao",
+      "year": "2011",
+      "unstructured": "Cao W, Mehrvar M (2011) Slaughterhouse wastewater treatment by combined anaerobic baffled reactor and UV/H2O2 processes. Chem Eng Res Des 89(7):1136–1143",
+      "journal-title": "Chem Eng Res Des"
+    },
+    {
+      "issue": "1",
+      "key": "1_CR26",
+      "doi-asserted-by": "crossref",
+      "first-page": "149",
+      "DOI": "10.1007/BF03326204",
+      "volume": "8",
+      "author": "R Rajakumar",
+      "year": "2011",
+      "unstructured": "Rajakumar R, Meenambal T, Rajesh Banu J, Yeom LT (2011) Treatment of poultry slaughterhouse wastewater in upflow anaerobic filter under low upflow velocity. Int J Environ Sci Technol 8(1):149–158",
+      "journal-title": "Int J Environ Sci Technol"
+    },
+    {
+      "issue": "3",
+      "key": "1_CR27",
+      "doi-asserted-by": "crossref",
+      "first-page": "229",
+      "DOI": "10.1081/FRI-200029422",
+      "volume": "20",
+      "author": "GS Mittal",
+      "year": "2004",
+      "unstructured": "Mittal GS (2004) Characterization of the effluent wastewater from abattoirs for land application. Food Rev Int 20(3):229–256",
+      "journal-title": "Food Rev Int"
+    },
+    {
+      "issue": "2",
+      "key": "1_CR28",
+      "first-page": "119",
+      "volume": "28",
+      "author": "Y Caldera",
+      "year": "2005",
+      "unstructured": "Caldera Y, Madueno P, Griborio A, Fernandez N, Gutierrez E (2005) Effect of the organic load in the performance of the UASB reactor treating slaughterhouse effluent. Revista Tecnica de la Facultad de Ingenieria Universidad del Zulia 28(2):119–127",
+      "journal-title": "Revista Tecnica de la Facultad de Ingenieria Universidad del Zulia"
+    },
+    {
+      "key": "1_CR29",
+      "doi-asserted-by": "crossref",
+      "first-page": "234",
+      "DOI": "10.1016/j.renene.2013.06.047",
+      "volume": "62",
+      "author": "RJ Lopez",
+      "year": "2014",
+      "unstructured": "Lopez RJ, Higgins SR, Pagaling E, Yan T, Cooney MJ (2014) High rate anaerobic digestion of wastewater separated from grease trap waste. Renew Energy 62:234–242",
+      "journal-title": "Renew Energy"
+    },
+    {
+      "key": "1_CR30",
+      "doi-asserted-by": "crossref",
+      "first-page": "335",
+      "DOI": "10.1016/j.biortech.2004.04.003",
+      "volume": "96",
+      "author": "E Sànchez",
+      "year": "2005",
+      "unstructured": "Sànchez E, Borja R, Tavieso L, Martín A, Colmenarejo MF (2005) Effect of organic loading rate on the stability, operational parameters and performance of a secondary upflow anaerobic sludge bed reactor treating piggery waste. Bioresour Technol 96:335–344",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR31",
+      "doi-asserted-by": "crossref",
+      "first-page": "2534",
+      "DOI": "10.1016/j.biortech.2008.11.028",
+      "volume": "100",
+      "author": "D Sreekanth",
+      "year": "2009",
+      "unstructured": "Sreekanth D, Sivaramakrishna D, Himabindu V, Anjaneyulu Y (2009) Thermophilic treatment of bulk drug pharmaceutical industrial wastewaters by using hybrid up flow anaerobic sludge blanket reactor. Bioresour Technol 100:2534–2539",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR32",
+      "doi-asserted-by": "crossref",
+      "first-page": "3009",
+      "DOI": "10.1016/j.biortech.2007.06.022",
+      "volume": "99",
+      "author": "A Alvarado-Lassman",
+      "year": "2008",
+      "unstructured": "Alvarado-Lassman A et al (2008) Brewery wastewater treatment using anaerobic inverse fluidized bed reactors. Bioresour Technol 99:3009–3015",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "issue": "8",
+      "key": "1_CR33",
+      "doi-asserted-by": "crossref",
+      "first-page": "2017",
+      "DOI": "10.1016/j.watres.2004.01.007",
+      "volume": "38",
+      "author": "F Raposo",
+      "year": "2004",
+      "unstructured": "Raposo F, Borja R, Sanchez E, Martin MA, Martin A (2004) Performance and kinetic evaluation of the anaerobic digestion of two-phase olive mill effluents in reactors with suspended and immobilized biomass. Water Res 38(8):2017–2026",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR34",
+      "doi-asserted-by": "crossref",
+      "first-page": "231",
+      "DOI": "10.1016/j.biombioe.2014.05.007",
+      "volume": "67",
+      "author": "PE Poh",
+      "year": "2014",
+      "unstructured": "Poh PE, Chong MF (2014) Upflow anaerobic sludge blanket-hollow centered packed bed (UASB-HCPB) reactor for thermophilic palm oil mill effluent (POME) treatment. Biomass Bioenergy 67:231–242",
+      "journal-title": "Biomass Bioenergy"
+    },
+    {
+      "key": "1_CR35",
+      "doi-asserted-by": "crossref",
+      "first-page": "370",
+      "DOI": "10.1016/j.procbio.2005.06.031",
+      "volume": "41",
+      "author": "GD Najafpour",
+      "year": "2006",
+      "unstructured": "Najafpour GD, Zinatizadeh AAL, Mohamed AL, Hasnain Isa M, Nasrollahzadeh H (2006) High-rate anaerobic digestion of palm oil mill effluent in an upflow anaerobic sludge-fixed film bioreactor. Process Biochem 41:370–379",
+      "journal-title": "Process Biochem"
+    },
+    {
+      "key": "1_CR36",
+      "doi-asserted-by": "crossref",
+      "first-page": "229",
+      "DOI": "10.1016/j.jhazmat.2011.02.025",
+      "volume": "189",
+      "author": "C Fang",
+      "year": "2011",
+      "unstructured": "Fang C, O-Thong S, Boe K, Angelidaki I (2011) Comparison of UASB and EGSB reactors performance, for treatment of raw and deoiled palm oil mill effluent (POME). J Hazard Mater 189:229–234",
+      "journal-title": "J Hazard Mater"
+    },
+    {
+      "key": "1_CR37",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Long JH, Aziz TN, de los Reyes FL III, Ducoste JJ (2012) Anaerobic co-digestion of fat, oil, and grease (FOG): a review of gas production and process limitations. Process Saf Environ Prot 90:231–245",
+      "DOI": "10.1016/j.psep.2011.10.001"
+    },
+    {
+      "key": "1_CR38",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "DOI": "10.1504/IJEP.2005.006396",
+      "volume": "23",
+      "author": "S Ke",
+      "year": "2005",
+      "unstructured": "Ke S, Shi Z, Fang HHP (2005) Application of two-phase anaerobic degradation in industrial wastewater treatment. Int J Environ Pollut 23:65–80",
+      "journal-title": "Int J Environ Pollut"
+    },
+    {
+      "key": "1_CR39",
+      "doi-asserted-by": "crossref",
+      "first-page": "328",
+      "DOI": "10.1263/jbb.102.328",
+      "volume": "102",
+      "author": "JK Kim",
+      "year": "2006",
+      "unstructured": "Kim JK, Oh BR, Chun YN, Kim SW (2006) Effects of temperature and hydraulic retention time on anaerobic digestion of food waste. J Biosci Bioeng 102:328–332",
+      "journal-title": "J Biosci Bioeng"
+    },
+    {
+      "key": "1_CR40",
+      "doi-asserted-by": "crossref",
+      "first-page": "156",
+      "DOI": "10.1016/j.biortech.2006.11.038",
+      "volume": "99",
+      "author": "T Yilmaz",
+      "year": "2008",
+      "unstructured": "Yilmaz T, Yuceer A, Basibuyuk M (2008) A comparison of the performance of mesophilic and thermophilic anaerobic filters treating papermill wastewater. Bioresour Technol 99:156–163",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR41",
+      "doi-asserted-by": "crossref",
+      "first-page": "447",
+      "DOI": "10.1016/S0032-9592(02)00161-9",
+      "volume": "38",
+      "author": "HQ Yu",
+      "year": "2002",
+      "unstructured": "Yu HQ, Fang HHP, Gu GW (2002) Comparative performance of mesophilic and thermophilic acidogenic upflow reactors. Process Biochem 38:447–454",
+      "journal-title": "Process Biochem"
+    },
+    {
+      "issue": "12",
+      "key": "1_CR42",
+      "doi-asserted-by": "crossref",
+      "first-page": "3157",
+      "DOI": "10.1016/S0043-1354(97)00215-7",
+      "volume": "31",
+      "author": "A Muller",
+      "year": "1997",
+      "unstructured": "Muller A, Marsili-Libelli S, Aivasidis A, Lloyd T, Kroner S, Wandrey C (1997) Fuzzy control of disturbances in a wastewater treatment plant. Water Res 31(12):3157–3167",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR43",
+      "doi-asserted-by": "crossref",
+      "first-page": "2626",
+      "DOI": "10.1016/S0043-1354(97)00110-3",
+      "volume": "31",
+      "author": "I Lau",
+      "year": "1997",
+      "unstructured": "Lau I, Fang H (1997) Effect of temperature shock to thermophilic granules. Water Res 31:2626–2632",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR44",
+      "doi-asserted-by": "crossref",
+      "first-page": "893",
+      "DOI": "10.1016/j.renene.2005.05.013",
+      "volume": "31",
+      "author": "W Parawira",
+      "year": "2006",
+      "unstructured": "Parawira W, Murto M, Zvauya R, Mattiasson B (2006) Comparative performance of a UASB reactor and an anaerobic packed-bed reactor when treating potato waste leachate. Renew Energy 31:893–903",
+      "journal-title": "Renew Energy"
+    },
+    {
+      "key": "1_CR45",
+      "doi-asserted-by": "crossref",
+      "first-page": "1551",
+      "DOI": "10.1016/j.jhazmat.2008.06.048",
+      "volume": "162",
+      "author": "L Altas",
+      "year": "2009",
+      "unstructured": "Altas L (2009) Inhibitory effect of heavy metals on methane-producing anaerobic granular sludge. J Hazard Mater 162:1551–1556",
+      "journal-title": "J Hazard Mater"
+    },
+    {
+      "key": "1_CR46",
+      "doi-asserted-by": "crossref",
+      "first-page": "131",
+      "DOI": "10.1016/S0960-8524(97)00107-7",
+      "volume": "63",
+      "author": "IR Leighton",
+      "year": "1998",
+      "unstructured": "Leighton IR, Forster CF (1998) The effect of heavy metals on a thermophilic methanogenic upflow sludge blanket reactor. Bioresour Technol 63:131–137",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "issue": "2",
+      "key": "1_CR47",
+      "doi-asserted-by": "crossref",
+      "first-page": "409",
+      "DOI": "10.1016/S0043-1354(98)00211-5",
+      "volume": "33",
+      "author": "CY Lin",
+      "year": "1999",
+      "unstructured": "Lin CY, Chen CC (1999) Effect of heavy metals on the methanogenic UASB granule. Water Res 33(2):409–416",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR48",
+      "doi-asserted-by": "crossref",
+      "first-page": "1523",
+      "DOI": "10.1016/j.biotechadv.2014.10.005",
+      "volume": "32",
+      "author": "JL Chen",
+      "year": "2014",
+      "unstructured": "Chen JL, Ortiz R, Steele TWJ, Stuckey DC (2014) Toxicants inhibiting anaerobic digestion: a review. Biotechnol Adv 32:1523–1534",
+      "journal-title": "Biotechnol Adv"
+    },
+    {
+      "key": "1_CR49",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "DOI": "10.1016/S0960-8524(01)00142-0",
+      "volume": "82",
+      "author": "H Patel",
+      "year": "2002",
+      "unstructured": "Patel H, Madamwar D (2002) Effects of temperatures and organic loading rates on biomethanation of acidic petrochemical wastewater using an anaerobic upflow fixed-film reactor. Bioresour Technol 82:65–71",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR50",
+      "doi-asserted-by": "crossref",
+      "first-page": "705",
+      "DOI": "10.1016/0005-1098(86)90007-5",
+      "volume": "22",
+      "author": "J Bailey",
+      "year": "1986",
+      "unstructured": "Bailey J, Ollis D (1986) On-line estimation of microbial specific growth rates. Automatica 22:705–709",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "1_CR51",
+      "doi-asserted-by": "crossref",
+      "first-page": "1519",
+      "DOI": "10.1002/bit.260281010",
+      "volume": "28",
+      "author": "SG Pavlostathis",
+      "year": "1986",
+      "unstructured": "Pavlostathis SG, Gosset JM (1986) A kinetic model for anaerobic digestion of biological sludge. Biotechnol Bioeng 28:1519–1530",
+      "journal-title": "Biotechnol Bioeng"
+    },
+    {
+      "key": "1_CR52",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1002/bit.260310102",
+      "volume": "31",
+      "author": "M Denac",
+      "year": "1988",
+      "unstructured": "Denac M, Miguel A, Dunn I (1988) Modelling dynamic experiments on the anaerobic degradation of the molasses wastewater. Biotechnol Bioeng 31:1–10",
+      "journal-title": "Biotechnol Bioeng"
+    },
+    {
+      "issue": "7",
+      "key": "1_CR53",
+      "doi-asserted-by": "crossref",
+      "first-page": "175",
+      "DOI": "10.2166/wst.2001.0418",
+      "volume": "43",
+      "author": "O Bernard",
+      "year": "2001",
+      "unstructured": "Bernard O, Polit M, Hadj-Sadok Z, Pengov M, Dochain D, Estaben M, Labat P (2001) Advanced monitoring and control of anaerobic wastewater treatment plants. Water Sci Technol 43(7):175–182",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1_CR54",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Batstone DJ, et al. (2002) Anaerobic Digestion Model No. 1 (ADM1). Report No. 13. London: IWA Publishing",
+      "DOI": "10.2166/wst.2002.0292"
+    },
+    {
+      "key": "1_CR55",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Bastin G and Dochain D (1990) On-line estimation and adaptive control of bioreactors. Elsevier",
+      "DOI": "10.1016/B978-0-444-88430-5.50009-8"
+    },
+    {
+      "issue": "1–2",
+      "key": "1_CR56",
+      "doi-asserted-by": "crossref",
+      "first-page": "449",
+      "DOI": "10.2166/wst.2005.0552",
+      "volume": "52",
+      "author": "V Alcaraz-Gonzalez",
+      "year": "2005",
+      "unstructured": "Alcaraz-Gonzalez V et al (2005) Robust interval-based regulation for anaerobic digestion processes. Water Sci Technol 52(1–2):449–456",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "issue": "15",
+      "key": "1_CR57",
+      "doi-asserted-by": "crossref",
+      "first-page": "1743",
+      "DOI": "10.1002/rnc.1782",
+      "volume": "22",
+      "author": "N Dimitrova",
+      "year": "2011",
+      "unstructured": "Dimitrova N, Krastanov M (2011) Nonlinear adaptive stabilizing control of an anaerobic digestion model with unknown kinetics. Int J Robust Nonlinear Control 22(15):1743–1752",
+      "journal-title": "Int J Robust Nonlinear Control"
+    },
+    {
+      "key": "1_CR58",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.1007/978-3-540-73188-7_6",
+      "volume": "361",
+      "author": "HO Mendez-Acosta",
+      "year": "2007",
+      "unstructured": "Mendez-Acosta HO, Steyer JP, Femat R, Gonzalez-Alvarez V (2007) Robust nonlinear control of a pilot scale anaerobic digester. Lecture Notes Control Inform Sci 361:165–199",
+      "journal-title": "Lecture Notes Control Inform Sci"
+    },
+    {
+      "key": "1_CR59",
+      "doi-asserted-by": "crossref",
+      "first-page": "1355",
+      "DOI": "10.1016/j.jprocont.2009.04.006",
+      "volume": "19",
+      "author": "A Rincon",
+      "year": "2009",
+      "unstructured": "Rincon A, Angulo F, Olivar G (2009) Control of an anaerobic digester through normal form of fold bifurcation. J Process Control 19:1355–1367",
+      "journal-title": "J Process Control"
+    },
+    {
+      "key": "1_CR60",
+      "doi-asserted-by": "crossref",
+      "first-page": "1785",
+      "DOI": "10.1016/j.jprocont.2012.07.014",
+      "volume": "22",
+      "author": "A Rincon",
+      "year": "2012",
+      "unstructured": "Rincon A, Erazo C, Angulo F (2012) A robust adaptive controller for an anaerobic digester with saturated input: guarantees for the boundedness and convergence properties. J Process Control 22:1785–1792",
+      "journal-title": "J Process Control"
+    },
+    {
+      "key": "1_CR61",
+      "doi-asserted-by": "crossref",
+      "first-page": "375",
+      "DOI": "10.1016/j.jprocont.2010.01.006",
+      "volume": "20",
+      "author": "HO Mendez-Acosta",
+      "year": "2010",
+      "unstructured": "Mendez-Acosta HO, Palacios-Ruiz B, Alcaraz-Gonzalez V, Gonzalez-Alvarez V, Garcia-Sandoval JP (2010) A robust control scheme to improve the stability of anaerobic digestion processes. J Process Control 20:375–383",
+      "journal-title": "J Process Control"
+    },
+    {
+      "key": "1_CR62",
+      "doi-asserted-by": "crossref",
+      "first-page": "7928",
+      "DOI": "10.1016/j.biortech.2008.02.044",
+      "volume": "99",
+      "author": "AJ Ward",
+      "year": "2008",
+      "unstructured": "Ward AJ, Hobbs PJ, Holliman PJ, Jones DL (2008) Optimisation of the anaerobic digestion of agricultural resources. Bioresour Technol 99:7928–7940",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR63",
+      "doi-asserted-by": "crossref",
+      "first-page": "147",
+      "DOI": "10.2166/wst.2007.483",
+      "volume": "56",
+      "author": "DJ Batstone",
+      "year": "2007",
+      "unstructured": "Batstone DJ, Styer JP (2007) Use of modeling to evaluate best control practice for winery-type wastewasters. Water Sci Technol 56:147–152",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1_CR64",
+      "doi-asserted-by": "crossref",
+      "first-page": "1519",
+      "DOI": "10.1021/ie060853l",
+      "volume": "46",
+      "author": "SJ Mu",
+      "year": "2007",
+      "unstructured": "Mu SJ, Zeng Y, Tartakovsky B, Wu P (2007) Simulation and control of an upflow anaerobic sludge blanket (UASB) reactor using an ADM1-based distributed parameter model. Ind Eng Chem Res 46:1519–1526",
+      "journal-title": "Ind Eng Chem Res"
+    },
+    {
+      "key": "1_CR65",
+      "doi-asserted-by": "crossref",
+      "first-page": "6707",
+      "DOI": "10.1021/ie0617001",
+      "volume": "46",
+      "author": "C Garcia",
+      "year": "2007",
+      "unstructured": "Garcia C, Molina F, Roca E, Lema JM (2007) Fuzzy-based control of an anaerobic reactor treating wastewaters containing ethanol and carbohydrates. Ind Eng Chem Res 46:6707–6715",
+      "journal-title": "Ind Eng Chem Res"
+    },
+    {
+      "issue": "4",
+      "key": "1_CR66",
+      "doi-asserted-by": "crossref",
+      "first-page": "975",
+      "DOI": "10.1137/S0363012991221791",
+      "volume": "34",
+      "author": "JP Gauthier",
+      "year": "1994",
+      "unstructured": "Gauthier JP, Kupka I (1994) Observability and observers for nonlinear systems. SIAM J Control Opt 34(4):975–994",
+      "journal-title": "SIAM J Control Opt"
+    },
+    {
+      "key": "1_CR67",
+      "doi-asserted-by": "crossref",
+      "first-page": "383",
+      "DOI": "10.1016/j.pecs.2013.03.003",
+      "volume": "39",
+      "author": "J Lauwers",
+      "year": "2013",
+      "unstructured": "Lauwers J et al (2013) Mathematical modeling of anaerobic digestion of biomass and waste: power and limitations. Prog Energy Combust Sci 39:383–402",
+      "journal-title": "Prog Energy Combust Sci"
+    },
+    {
+      "key": "1_CR68",
+      "doi-asserted-by": "crossref",
+      "first-page": "244",
+      "DOI": "10.1016/j.biortech.2012.12.166",
+      "volume": "132",
+      "author": "C García-Diéguez",
+      "year": "2013",
+      "unstructured": "García-Diéguez C, Bernard O, Roca E (2013) Reducing the Anaerobic Digestion Model No. 1 for its application to an industrial wastewater treatment plant treating winery effluent wastewater. Bioresour Technol 132:244–253",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR69",
+      "doi-asserted-by": "crossref",
+      "first-page": "900",
+      "DOI": "10.1016/j.procbio.2010.12.015",
+      "volume": "46",
+      "author": "C Garcia-Dieguez",
+      "year": "2011",
+      "unstructured": "Garcia-Dieguez C, Molina F, Roca E (2011) Multi-objective cascade controller for an anaerobic digester. Process Biochem 46:900–909",
+      "journal-title": "Process Biochem"
+    },
+    {
+      "key": "1_CR70",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.2166/wst.2003.0647",
+      "volume": "47",
+      "author": "DJ Batstone",
+      "year": "2003",
+      "unstructured": "Batstone DJ, Keller J (2003) Industrial applications of the IWA anaerobic digestion model no. 1 (ADM1). Water Sci Technol 47:199–206",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1_CR71",
+      "doi-asserted-by": "crossref",
+      "first-page": "6823",
+      "DOI": "10.1016/j.biortech.2011.04.015",
+      "volume": "102",
+      "author": "F Mairet",
+      "year": "2011",
+      "unstructured": "Mairet F, Bernard O, Ras M, Lardon L, Steyer JP (2011) Modeling anaerobic digestion of microalgae using ADM1. Bioresour Technol 102:6823–6829",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR72",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1016/S0960-8524(98)00106-0",
+      "volume": "67",
+      "author": "C Paredes",
+      "year": "1999",
+      "unstructured": "Paredes C, Cegarra J, Roig A, Sánchez-Monedero MA, Bernal MP (1999) Characterization of olive mill wastewater (alpechin) and its sludge for agricultural purposes. Bioresour Technol 67:111–115",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR73",
+      "doi-asserted-by": "crossref",
+      "first-page": "11732",
+      "DOI": "10.1021/ie101486w",
+      "volume": "49",
+      "author": "PE Poh",
+      "year": "2010",
+      "unstructured": "Poh PE, Yong WJ, Chong MF (2010) Palm Oil Mill Effluent (POME) characteristic and the applicability of anaerobic systems for the treatment of POME. Ind Eng Chem Res 49:11732–11740",
+      "journal-title": "Ind Eng Chem Res"
+    },
+    {
+      "key": "1_CR74",
+      "doi-asserted-by": "crossref",
+      "first-page": "2656",
+      "DOI": "10.1016/S0043-1354(01)00484-5",
+      "volume": "36",
+      "author": "A Punal",
+      "year": "2002",
+      "unstructured": "Punal A, Roca E, Lema JM (2002) An expert system for monitoring and diagnosis of anaerobic wastewater treatment plants. Water Res 36:2656–2666",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR75",
+      "doi-asserted-by": "crossref",
+      "first-page": "959",
+      "DOI": "10.1016/j.conengprac.2005.05.007",
+      "volume": "14",
+      "author": "C Karakuzu",
+      "year": "2006",
+      "unstructured": "Karakuzu C, Turker M, Ozturk S (2006) Modelling, on-line state estimation and fuzzy control of production scale fed-batch baker’s yeast fermentation. Control Eng Pract 14:959–974",
+      "journal-title": "Control Eng Pract"
+    },
+    {
+      "issue": "9",
+      "key": "1_CR76",
+      "doi-asserted-by": "crossref",
+      "first-page": "933",
+      "DOI": "10.1002/clen.201100718",
+      "volume": "40",
+      "author": "JL Montiel-Escobar",
+      "year": "2012",
+      "unstructured": "Montiel-Escobar JL, Alcaraz-Gonzalez V, Mendez-Acosta HO, Gonzalez-Alvarez V (2012) ADM1-based robust interval observer for anaerobic digestion processes. Clean Soil Air Water 40(9):933–940",
+      "journal-title": "Clean Soil Air Water"
+    },
+    {
+      "issue": "2",
+      "key": "1_CR77",
+      "doi-asserted-by": "crossref",
+      "first-page": "57",
+      "DOI": "10.2166/wst.1993.0077",
+      "volume": "27",
+      "author": "A Boscolo",
+      "year": "1993",
+      "unstructured": "Boscolo A, Mangiavacchi C, Drius F, Rongione F, Pavan P, Cecchi F (1993) Fuzzy control of an anaerobic digester for the treatment of the organic fraction of municipal solid waste (MSW). Water Sci Technol 27(2):57–68",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1_CR78",
+      "doi-asserted-by": "crossref",
+      "first-page": "5064",
+      "DOI": "10.1016/j.eswa.2008.06.006",
+      "volume": "36",
+      "author": "H Mingzhi",
+      "year": "2009",
+      "unstructured": "Mingzhi H, Ma Y, Jinquan W, Yan W (2009) Simulation of a paper mill wastewater treatment using a fuzzy neural network. Exp Syst Appl 36:5064–5070",
+      "journal-title": "Exp Syst Appl"
+    },
+    {
+      "issue": "4",
+      "key": "1_CR79",
+      "doi-asserted-by": "crossref",
+      "first-page": "25",
+      "DOI": "10.2166/wst.2006.107",
+      "volume": "53",
+      "author": "J Steyer",
+      "year": "2006",
+      "unstructured": "Steyer J, Bernard O, Batstone D, Angelidaki I (2006) Lessons learnt from 15 years of ICA in anaerobic digesters. Water Sci Technol 53(4):25–33",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1_CR80",
+      "doi-asserted-by": "crossref",
+      "first-page": "460",
+      "DOI": "10.1016/j.jhazmat.2010.06.054",
+      "volume": "182",
+      "author": "FI Turkdogan-Aydinol",
+      "year": "2010",
+      "unstructured": "Turkdogan-Aydinol FI, Yetilmezsoy K (2010) A fuzzy-logic-based model to predict biogas and methane production rates in a pilot-scale mesophilic UASB reactor treating molasses wastewater. J Hazard Mater 182:460–471",
+      "journal-title": "J Hazard Mater"
+    },
+    {
+      "issue": "3",
+      "key": "1_CR81",
+      "first-page": "788",
+      "volume": "6",
+      "author": "AL Varne",
+      "year": "2012",
+      "unstructured": "Varne AL, Macwan J (2012) Fuzzy rule based approach for modelling biogas production rate in a real scale UASB reactor treating distillery wastewater. J Environ Res Dev 6(3):788–800",
+      "journal-title": "J Environ Res Dev"
+    },
+    {
+      "key": "1_CR82",
+      "doi-asserted-by": "crossref",
+      "first-page": "317",
+      "DOI": "10.1016/S0020-0190(02)00447-7",
+      "volume": "85",
+      "author": "IC Trelea",
+      "year": "2003",
+      "unstructured": "Trelea IC (2003) The particle swarm optimization algorithm: convergence analysis and parameter selection. Inf Process Lett 85:317–325",
+      "journal-title": "Inf Process Lett"
+    },
+    {
+      "key": "1_CR83",
+      "doi-asserted-by": "crossref",
+      "first-page": "251",
+      "DOI": "10.1016/S0960-8524(97)00020-5",
+      "volume": "60",
+      "author": "I Ruiz",
+      "year": "1997",
+      "unstructured": "Ruiz I, Veiga MC, de Santiago P, Blázquez R (1997) Treatment of slaughterhouse wastewater in a UASB reactor and an anaerobic filter. Bioresour Technol 60:251–258",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR84",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Cai ZX (1997) Intelligent control: principles, techniques and applications. Series in Intelligent Control and Intelligent Automation: Volume 7:182–238",
+      "DOI": "10.1142/3028"
+    },
+    {
+      "issue": "6",
+      "key": "1_CR85",
+      "doi-asserted-by": "crossref",
+      "first-page": "685",
+      "DOI": "10.1016/S0952-1976(98)00036-0",
+      "volume": "11",
+      "author": "CH Wen",
+      "year": "1998",
+      "unstructured": "Wen CH, Vassiliadis CA (1998) Applying hybrid artificial intelligence techniques in wastewater treatment. Eng Appl Artif Intell 11(6):685–705",
+      "journal-title": "Eng Appl Artif Intell"
+    },
+    {
+      "key": "1_CR86",
+      "doi-asserted-by": "crossref",
+      "first-page": "2582",
+      "DOI": "10.1016/S0043-1354(01)00487-0",
+      "volume": "36",
+      "author": "P Holubar",
+      "year": "2002",
+      "unstructured": "Holubar P, Zani L, Hager M, Froschl W, Radak Z, Braun R (2002) Advanced controlling of anaerobic digestion by means of hierarchical neural networks. Water Res 36:2582–2588",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR87",
+      "doi-asserted-by": "crossref",
+      "first-page": "1416",
+      "DOI": "10.1016/S1001-0742(07)60231-9",
+      "volume": "19",
+      "author": "P Rangasamy",
+      "year": "2007",
+      "unstructured": "Rangasamy P, Iyer PVR, Ganesan S (2007) Anaerobic tapered fluidized bed reactor for starch wastewater treatment and modelling using multilayer perceptron neural network. J Environ Sci 19:1416–1423",
+      "journal-title": "J Environ Sci"
+    },
+    {
+      "key": "1_CR88",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Abbas N, Nasser Y, Ahmad KE (2015) Recent advances on artificial intelligence and learning techniques in cognitive radio networks. EURASIP J Wirel Commun Netw 174",
+      "DOI": "10.1186/s13638-015-0381-7"
+    },
+    {
+      "key": "1_CR89",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Bai Q (2010) Analysis of particle swarm optimization algorithm. Comput Inform Sci 3(1)",
+      "DOI": "10.5539/cis.v3n1p180"
+    },
+    {
+      "key": "1_CR90",
+      "doi-asserted-by": "crossref",
+      "first-page": "513",
+      "DOI": "10.1016/j.biortech.2015.06.080",
+      "volume": "193",
+      "author": "D Nguyen",
+      "year": "2015",
+      "unstructured": "Nguyen D, Gadhamshetty V, Nitayavardhana S, Khanal SK (2015) Automatic process control in anaerobic digestion technology: a critical review. Bioresour Technol 193:513–522",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR91",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Juang CF (2004) A hybrid of genetic algorithm and particle swarm optimization for recurrent network design. IEEE Trans Syst Man Cybernet 34 (2)",
+      "DOI": "10.1109/TSMCB.2003.818557"
+    },
+    {
+      "key": "1_CR92",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Zhang Q, Li C, Liu Y, Kang L (2007) Fast multi-swarm optimization with Cauchy mutation and crossover operation. In: Advances in computation and intelligence. Springer: 344 – 352.",
+      "DOI": "10.1007/978-3-540-74581-5_38"
+    },
+    {
+      "key": "1_CR93",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Manshad AK, Rostami H, Rezaei H and Hosseini SM (2015) Application of artificial neural network-particle swarm optimization algorithm for prediction of asphaltene precipitation during gas injection process and comparison with Gaussian process algorithm. J Energy Resour Technol 137",
+      "DOI": "10.1115/1.4031042"
+    },
+    {
+      "key": "1_CR94",
+      "unstructured": "Smith SA (2009) Critical evaluation of the sugar degradation pathways of Anaerobic Digestion Model No. 1. Ph.D. thesis, Washington State University"
+    },
+    {
+      "key": "1_CR95",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Kruse R (2008) Fuzzy neural network. Scholarpedia 3 (11)",
+      "DOI": "10.4249/scholarpedia.6043"
+    },
+    {
+      "issue": "3",
+      "key": "1_CR96",
+      "doi-asserted-by": "crossref",
+      "first-page": "265",
+      "DOI": "10.1016/j.engappai.2004.03.001",
+      "volume": "17",
+      "author": "JAB Vieira",
+      "year": "2004",
+      "unstructured": "Vieira JAB, Dias FM, Mota AM (2004) Artificial neural networks and neuro-fuzzy systems for modelling and controlling real systems: a comparative study. Eng Appl Artif Intell 17(3):265–273",
+      "journal-title": "Eng Appl Artif Intell"
+    },
+    {
+      "issue": "11",
+      "key": "1_CR97",
+      "doi-asserted-by": "crossref",
+      "first-page": "2849",
+      "DOI": "10.1016/S0043-1354(00)00057-9",
+      "volume": "34",
+      "author": "J Tay",
+      "year": "2000",
+      "unstructured": "Tay J, Zhang X (2000) A fast predicting neural fuzzy model for high-rate anaerobic wastewater treatment systems. Water Res 34(11):2849–2860",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR98",
+      "doi-asserted-by": "crossref",
+      "first-page": "359",
+      "DOI": "10.1016/j.resconrec.2009.08.012",
+      "volume": "54",
+      "author": "H Abu Qdais",
+      "year": "2010",
+      "unstructured": "Abu Qdais H, Bani Hani K, Shatnawi N (2010) Modelling and optimization of biogas production from a waste digester using artificial neural network and genetic algorithm. Resour Conserv Recycl 54:359–363",
+      "journal-title": "Resour Conserv Recycl"
+    },
+    {
+      "key": "1_CR99",
+      "first-page": "3318",
+      "volume": "5",
+      "author": "V Rajagopal",
+      "year": "2013",
+      "unstructured": "Rajagopal V, Radha V (2013) Selection of optimum features using PSO-SPG2 for predicting COD effluent level in wastewater. Int J Eng Technol 5:3318–3327",
+      "journal-title": "Int J Eng Technol"
+    },
+    {
+      "key": "1_CR100",
+      "first-page": "79",
+      "volume": "48",
+      "author": "E Heinzle",
+      "year": "1993",
+      "unstructured": "Heinzle E, Dunn IJ, Ryhiner GH (1993) Modeling and control of anaerobic wastewater treatment. Adv Biochem Eng Biotechnol 48:79–114",
+      "journal-title": "Adv Biochem Eng Biotechnol"
+    },
+    {
+      "key": "1_CR101",
+      "doi-asserted-by": "crossref",
+      "first-page": "3442",
+      "DOI": "10.1021/ie960238p",
+      "volume": "35",
+      "author": "O Monroy",
+      "year": "1996",
+      "unstructured": "Monroy O, Ramirez J, Cuervo F, Ricardo F (1996) An adaptive strategy to control anaerobic digesters for wastewater treatment. Ind Eng Chem Res 35:3442–3446",
+      "journal-title": "Ind Eng Chem Res"
+    },
+    {
+      "issue": "4",
+      "key": "1_CR102",
+      "doi-asserted-by": "crossref",
+      "first-page": "367",
+      "DOI": "10.1016/S0967-0661(99)00165-3",
+      "volume": "8",
+      "author": "N Hilgert",
+      "year": "2000",
+      "unstructured": "Hilgert N, Harmand J, Steyer J, Vila P (2000) Nonparametric identification and adaptive control of an anaerobic fluidized bed digester. Control Eng Pract 8(4):367–376",
+      "journal-title": "Control Eng Pract"
+    },
+    {
+      "key": "1_CR103",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Alcaraz-Gonzalez V, et al. (2000) Robust interval-based SISO and SIMO regulation for a class of highly uncertain bioreactors: application to the anaerobic digestion. Proceedings of the 39th IEEE Conference on Decision and Control 2000 (Vol. 5): 4532–4537",
+      "DOI": "10.1109/CDC.2001.914625"
+    },
+    {
+      "key": "1_CR104",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Alcaraz-Gonzalez V, et al. (2001) Robust interval-based siso regulation under maximum uncertainty conditions in an anaerobic digester. Proceedings of the 2001 I.E. International Symposium on Intelligent Control 2001: 240–245",
+      "DOI": "10.1109/ISIC.2001.971515"
+    },
+    {
+      "issue": "4",
+      "key": "1_CR105",
+      "doi-asserted-by": "crossref",
+      "first-page": "495",
+      "DOI": "10.1109/TCST.2003.813376",
+      "volume": "11",
+      "author": "R Antonelli",
+      "year": "2003",
+      "unstructured": "Antonelli R, Harmand J, Steyer JP, Astolfi A (2003) Set-point regulation of an anaerobic digestion process with bounded output feedback. IEEE Trans Control Syst 11(4):495–504",
+      "journal-title": "IEEE Trans Control Syst"
+    },
+    {
+      "key": "1_CR106",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.1016/S0168-1656(03)00018-X",
+      "volume": "102",
+      "author": "J Seok",
+      "year": "2003",
+      "unstructured": "Seok J (2003) Hybrid adaptive optimal control of anaerobic fluidized bed bioreactor for the de-icing waste treatment. JBiotechnol 102:165–175",
+      "journal-title": "JBiotechnol"
+    },
+    {
+      "key": "1_CR107",
+      "doi-asserted-by": "crossref",
+      "first-page": "1379",
+      "DOI": "10.1016/j.automatica.2004.01.030",
+      "volume": "40",
+      "author": "L Mailleret",
+      "year": "2004",
+      "unstructured": "Mailleret L, Bernard O, Steyer JP (2004) Nonlinear adaptive control for bioreactors with unknown kinetics. Automatica 40:1379–1385",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "1_CR108",
+      "doi-asserted-by": "crossref",
+      "first-page": "3246",
+      "DOI": "10.1016/j.compchemeng.2008.05.013",
+      "volume": "32",
+      "author": "JP Garcia-Sandoval",
+      "year": "2008",
+      "unstructured": "Garcia-Sandoval JP, Gonzalez-Alvarez V, Castillo-Toledo B, Pelayo-Ortiz C (2008) Robust discrete control of nonlinear processes: application to chemical reactors. Comput Chem Eng 32:3246–3253",
+      "journal-title": "Comput Chem Eng"
+    },
+    {
+      "key": "1_CR109",
+      "doi-asserted-by": "crossref",
+      "first-page": "7666",
+      "DOI": "10.1016/j.biortech.2011.05.053",
+      "volume": "102",
+      "author": "HO Mendez-Acosta",
+      "year": "2011",
+      "unstructured": "Mendez-Acosta HO, Garcia-Sandoval JP, Gonzalez-Alvarez V, Alcaraz-Gonzalez V, Jauregui-Jauregui JA (2011) Regulation of the organic pollution level in anaerobic digesters by using off-line COD measurements. Bioresour Technol 102:7666–7672",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "1_CR110",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Petre E, Selisteanu D (2013) Adaptive and robust-adaptive control schemes for an anaerobic bioprocess with biogas production. 17th International Conference on System Theory, Control and Computing (ICSTCC), Sinaia 404–409",
+      "DOI": "10.1109/ICSTCC.2013.6688992"
+    },
+    {
+      "key": "1_CR111",
+      "doi-asserted-by": "crossref",
+      "first-page": "177",
+      "DOI": "10.1007/s004499900147",
+      "volume": "23",
+      "author": "J Harmand",
+      "year": "2000",
+      "unstructured": "Harmand J, Manh AG, Steyer JP (2000) Identification and disturbance accommodating control of a fluidized bed anaerobic digester. Bioprocess Eng 23:177–185",
+      "journal-title": "Bioprocess Eng"
+    },
+    {
+      "key": "1_CR112",
+      "doi-asserted-by": "crossref",
+      "first-page": "725",
+      "DOI": "10.1002/jctb.609",
+      "volume": "77",
+      "author": "J Alvarez-Ramirez",
+      "year": "2002",
+      "unstructured": "Alvarez-Ramirez J, Meraz M, Monroy O, Velasco A (2002) Feedback control design for an anaerobic digestion process. J Chem Technol Biotechnol 77:725–734",
+      "journal-title": "J Chem Technol Biotechnol"
+    },
+    {
+      "issue": "20",
+      "key": "1_CR113",
+      "doi-asserted-by": "crossref",
+      "first-page": "7715",
+      "DOI": "10.1021/ie800256e",
+      "volume": "47",
+      "author": "HO Mendez-Acosta",
+      "year": "2008",
+      "unstructured": "Mendez-Acosta HO et al (2008) Robust control of volatile fatty acids in anaerobic digestion processes. Ind Eng Chem Res 47(20):7715–7720",
+      "journal-title": "Ind Eng Chem Res"
+    },
+    {
+      "issue": "5",
+      "key": "1_CR114",
+      "doi-asserted-by": "crossref",
+      "first-page": "385",
+      "DOI": "10.1016/S0952-1976(02)00091-X",
+      "volume": "15",
+      "author": "M Polit",
+      "year": "2002",
+      "unstructured": "Polit M, Estaben M, Labat P (2002) A fuzzy model for an anaerobic digester, comparison with experimental results. Eng Appl Artif Intell 15(5):385–390",
+      "journal-title": "Eng Appl Artif Intell"
+    },
+    {
+      "issue": "7",
+      "key": "1_CR115",
+      "doi-asserted-by": "crossref",
+      "first-page": "191",
+      "DOI": "10.2166/wst.2001.0422",
+      "volume": "43",
+      "author": "A Punal",
+      "year": "2003",
+      "unstructured": "Punal A, Rodriguez J, Franco A, Carrasco EF, Roca E, Lema JM (2003) Advanced monitoring and control of anaerobic wastewater treatment plants: diagnosis and supervision by a fuzzy-based expert system. Water Sci Technol 43(7):191–198",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1_CR116",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Yordanova ST (2004) Fuzzy two-level control for anaerobic wastewater treatment. Proc. 2nd IEEE International Conference on Intelligent Systems: 348–352",
+      "DOI": "10.1109/IS.2004.1344759"
+    },
+    {
+      "key": "1_CR117",
+      "doi-asserted-by": "crossref",
+      "first-page": "1613",
+      "DOI": "10.1016/j.compchemeng.2005.01.005",
+      "volume": "29",
+      "author": "HO Mendez-Acosta",
+      "year": "2005",
+      "unstructured": "Mendez-Acosta HO, Campos-Delgado DU, Femat R, Gonzalez-Alvarez V (2005) A robust feedforward/feedback control for an anaerobic digester. Comput Chem Eng 29:1613–1623",
+      "journal-title": "Comput Chem Eng"
+    },
+    {
+      "issue": "37",
+      "key": "1_CR118",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.1016/S0947-3580(95)70006-1",
+      "volume": "1",
+      "author": "G Bastin",
+      "year": "1995",
+      "unstructured": "Bastin G, Van Impe JF (1995) Nonlinear and adaptive control in biotechnology: a tutorial. Eur J Control 1(37):37–53",
+      "journal-title": "Eur J Control"
+    },
+    {
+      "key": "1_CR119",
+      "doi-asserted-by": "crossref",
+      "first-page": "287",
+      "DOI": "10.1002/bit.260310402",
+      "volume": "31",
+      "author": "P Renard",
+      "year": "1986",
+      "unstructured": "Renard P, Dochain D, Bastin G, Naveau H, Nyns EJ (1986) Adaptive control of anaerobic digestion processes: a pilot-scale approach. Biotechnol Bioeng 31:287–294",
+      "journal-title": "Biotechnol Bioeng"
+    },
+    {
+      "key": "1_CR120",
+      "doi-asserted-by": "crossref",
+      "first-page": "1007",
+      "DOI": "10.1016/S0967-0661(02)00230-7",
+      "volume": "11",
+      "author": "D Theilliol",
+      "year": "2003",
+      "unstructured": "Theilliol D, Ponsart JC, Harmand J, Join C, Pascal G (2003) On-line estimation of unmeasured inputs for anaerobic wastewater treatment process. Control Eng Pract 11:1007–1019",
+      "journal-title": "Control Eng Pract"
+    },
+    {
+      "issue": "9",
+      "key": "1_CR121",
+      "doi-asserted-by": "crossref",
+      "first-page": "2059",
+      "DOI": "10.1016/S0043-1354(98)00430-8",
+      "volume": "33",
+      "author": "J Steyer",
+      "year": "1999",
+      "unstructured": "Steyer J, Buffiere P, Rolland D, Moletta R (1999) Advanced control of anaerobic digestion processes through disturbances monitoring. Water Res 33(9):2059–2068",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1_CR122",
+      "unstructured": "Gaida D, et al. (2011) Optimal control of biogas plants using nonlinear model predictive control. Irish Signals and Systems Conference 2011"
+    },
+    {
+      "issue": "3–4",
+      "key": "1_CR123",
+      "doi-asserted-by": "crossref",
+      "first-page": "203",
+      "DOI": "10.1016/S0020-0255(97)00010-8",
+      "volume": "101",
+      "author": "Z Boger",
+      "year": "1997",
+      "unstructured": "Boger Z (1997) Experience in industrial plant model development using large-scale artificial neural networks. Inf Sci 101(3–4):203–216",
+      "journal-title": "Inf Sci"
+    },
+    {
+      "key": "1_CR124",
+      "unstructured": "Lindberg CF (1997) Control and estimation strategies applied to the activated sludge process. PhD thesis, Uppsala University, Finland"
+    },
+    {
+      "key": "1_CR125",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "DOI": "10.1016/j.desal.2010.10.041",
+      "volume": "269",
+      "author": "RA Alrawi",
+      "year": "2011",
+      "unstructured": "Alrawi RA, Ahmad A, Ismail NA, Kadir MO (2011) Anaerobic co-digestion of palm oil mill effluent with rumen fluid as co-substrate. Desalination 269:50–57",
+      "journal-title": "Desalination"
+    },
+    {
+      "key": "1_CR126",
+      "doi-asserted-by": "crossref",
+      "first-page": "3542",
+      "DOI": "10.1016/j.procbio.2005.03.062",
+      "volume": "40",
+      "author": "GN Demirer",
+      "year": "2005",
+      "unstructured": "Demirer GN, Chen S (2005) Two-phased anaerobic digestion of unscreened dairy manure. Process Biochem 40:3542–3549",
+      "journal-title": "Process Biochem"
+    }
+  ],
+  "container-title": [
+    "Water Conservation Science and Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s41101-016-0001-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1007/s41101-016-0001-3/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s41101-016-0001-3",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2019,
+        9,
+        7
+      ]
+    ],
+    "date-time": "2019-09-07T05:11:55Z",
+    "timestamp": 1567833115000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "http://link.springer.com/10.1007/s41101-016-0001-3"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        5
+      ]
+    ]
+  },
+  "references-count": 126,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          6
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "1"
+  ],
+  "URL": "https://doi.org/10.1007/s41101-016-0001-3",
+  "relation": {},
+  "ISSN": [
+    "2366-3340",
+    "2364-5687"
+  ],
+  "issn-type": [
+    {
+      "value": "2366-3340",
+      "type": "print"
+    },
+    {
+      "value": "2364-5687",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        5
+      ]
+    ]
+  }
+}

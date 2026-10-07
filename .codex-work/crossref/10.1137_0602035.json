@@ -1,0 +1,254 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        20
+      ]
+    ],
+    "date-time": "2026-08-20T14:42:08Z",
+    "timestamp": 1787236928724,
+    "version": "build-2736575974"
+  },
+  "reference-count": 18,
+  "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+  "issue": "3",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "SIAM. J. on Algebraic and Discrete Methods"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        1981,
+        9
+      ]
+    ]
+  },
+  "abstract": "<jats:p>Let $(X_i ,Y_i )$, $i = 1, \\cdots ,n$ be i.i.d. bivariate random vectors such that $X_i \\in \\mathbb{R}^p ,Y_i \\in \\mathbb{R}^1 $. Suppose $r_n (x)$ denotes the k-nearest neighbor (k-NN) estimator of $r(x) = E(Y | X = x )$. Under appropriate conditions, we derive the rates of convergence for the bias and variance as well as asymptotic normality of $r_n (x)$. These appear to share some similarities with the k-NN density estimates. The technique is by conditioning on $R_n $, the Euclidean distance between x and its kth nearest neighbor among the $X_j $’s. Some comparison is made between the k-NN and kernel methods.</jats:p>",
+  "DOI": "10.1137/0602035",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2005,
+        2,
+        27
+      ]
+    ],
+    "date-time": "2005-02-27T07:03:33Z",
+    "timestamp": 1109487813000
+  },
+  "page": "311-323",
+  "source": "Crossref",
+  "is-referenced-by-count": 108,
+  "title": [
+    "Local Properties of\n                    <i>k</i>\n                    -NN Regression Estimates"
+  ],
+  "prefix": "10.1137",
+  "volume": "2",
+  "author": [
+    {
+      "given": "Y. P.",
+      "family": "Mack",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "351",
+  "published-online": {
+    "date-parts": [
+      [
+        2006,
+        8,
+        2
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "R1",
+      "unstructured": "J. K. Benedetti,  Kernel estimation of regression functions,  Proc. of Computer Science and Statistics, 8th Annual Symp. of the Interface, Health Science Computing Facility, UCLA, Los Angeles,  1975,  405–412"
+    },
+    {
+      "key": "R2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/00401706.1977.10489521"
+    },
+    {
+      "key": "R3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176343851"
+    },
+    {
+      "key": "R4",
+      "doi-asserted-by": "crossref",
+      "unstructured": "E. Fix, J. L. Hodges,  Discriminatory analysis; nonparametric discrimination: consistency properties, Report, 4, USAF SAM Series in Statistics,  1951, Project No. 21-49-004",
+      "DOI": "10.1037/e471672008-001"
+    },
+    {
+      "key": "R5",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/01621459.1963.10500830"
+    },
+    {
+      "key": "R6",
+      "unstructured": "S. L. Lai, Masters Thesis,  Large sample properties of\n                      k\n                      -nearest neighbor procedures, Ph.D. dissertation, University of California, Los Angeles,  1977"
+    },
+    {
+      "key": "R7",
+      "first-page": "53",
+      "volume": "42",
+      "author": "Mack Y. P.",
+      "year": "1980",
+      "journal-title": "Sankhyā Ser. A"
+    },
+    {
+      "key": "R8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0047-259X(79)90065-4"
+    },
+    {
+      "key": "R9",
+      "volume-title": "Statistical Decision Theory and Related Topics",
+      "author": "Moore D. S.",
+      "year": "1976"
+    },
+    {
+      "key": "R10",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02504741"
+    },
+    {
+      "key": "R11",
+      "first-page": "25",
+      "volume-title": "Multivariate Analysis, II (Proc. Second Internat. Sympos., Dayton, Ohio, 1968)",
+      "author": "Rosenblatt M.",
+      "year": "1969"
+    },
+    {
+      "key": "R12",
+      "unstructured": "R. M. Royall, Masters Thesis,  A class of nonparameteric estimates of a smooth regression function, Ph.D. dissertation, Stanford University, Stanford CA,  1966"
+    },
+    {
+      "key": "R13",
+      "unstructured": "C. J. Stone,  Nearest neighbor estimators of a nonlinear regression function,  Proc. of Computer Science and Statistics; 8th Annual Symp. on the Interface, Health Science Computing Facility, UCLA, Los Angeles,  1975,  413–418"
+    },
+    {
+      "key": "R14",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176343886"
+    },
+    {
+      "key": "R15",
+      "unstructured": "C. J. Stone,  Optimal rates of convergence for nonparametric inference, Technical Report, UCLA,  1978"
+    },
+    {
+      "key": "R16",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIT.1975.1055408"
+    },
+    {
+      "key": "R17",
+      "first-page": "359",
+      "volume": "26",
+      "author": "Watson Geoffrey S.",
+      "year": "1964",
+      "journal-title": "Sankhyā Ser. A"
+    },
+    {
+      "key": "R18",
+      "unstructured": "S. S. Yang,  Linear Functions of concomitants of order statistics, Technical Report, 7, Department of Mathematics, M.I.T., Cambridge, MA,  1977"
+    }
+  ],
+  "container-title": [
+    "SIAM Journal on Algebraic Discrete Methods"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://epubs.siam.org/doi/pdf/10.1137/0602035",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        20
+      ]
+    ],
+    "date-time": "2026-08-20T14:20:49Z",
+    "timestamp": 1787235649000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://epubs.siam.org/doi/10.1137/0602035"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        1981,
+        9
+      ]
+    ]
+  },
+  "references-count": 18,
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          1981,
+          9
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1137/0602035"
+  ],
+  "URL": "https://doi.org/10.1137/0602035",
+  "relation": {},
+  "ISSN": [
+    "0196-5212",
+    "2168-345X"
+  ],
+  "issn-type": [
+    {
+      "value": "0196-5212",
+      "type": "print"
+    },
+    {
+      "value": "2168-345X",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        1981,
+        9
+      ]
+    ]
+  }
+}

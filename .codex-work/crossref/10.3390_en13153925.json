@@ -1,0 +1,427 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        18
+      ]
+    ],
+    "date-time": "2026-08-18T04:40:36Z",
+    "timestamp": 1787028036086,
+    "version": "build-2736575974"
+  },
+  "reference-count": 23,
+  "publisher": "MDPI AG",
+  "issue": "15",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            31
+          ]
+        ],
+        "date-time": "2020-07-31T00:00:00Z",
+        "timestamp": 1596153600000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Energies"
+  ],
+  "abstract": "<jats:p>The aim of the present paper is to develop a reliable and accurate model of the wastewater biochemical treatment process and to explore the behaviour through a general dynamic simulation environment, namely the INtegrated Simulation Environment Language (INSEL), for the analysis of the energy demand of the whole wastewater treatment plant. In particular, the presented model pays special attention to the chemical kinetics involved in the activated sludge process for the reduction of nitrogen and carbon compounds. According to the best practices, the plant configuration considered in this work includes the denitrification-nitrification process, performed by completely mixed reactors. In particular, the process analysed in this paper is based on the Ludzak-Ettinger process. The biological process is simulated according to the well-known method widely used in the literature, namely the Activated Sludge Model No 1 (ASM1). The model includes a set of equations for the calculation of aerobic growth of heterotrophs, anoxic growth of heterotrophs, aerobic growth of autotrophs, decay of autotrophs, ammonification of soluble nitrogen, hydrolysis of entrapped organics, and hydrolysis of entrapped organic nitrogen. All these equations, along with energy and mass balances, are solved by the explicit Euler method. The developed model is validated using literature data, showing a great accuracy (deviation below 1%). As for the temperature, results show that, between 15 and 25 °C, in the initial part of the process, transport effects dominate the consumption ones. When the temperature is higher than 30 °C, nitrate consumption is so fast that biomass growth is limited by this effect. Conversely, in case of low temperatures (5–10 °C), biomass growth is not limited by nitrate availability. Finally, results also showed that temperature significantly affects the denitrification process, whereas the effect on the oxygen is lower.</jats:p>",
+  "DOI": "10.3390/en13153925",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        3
+      ]
+    ],
+    "date-time": "2020-08-03T06:16:47Z",
+    "timestamp": 1596435407000
+  },
+  "page": "3925",
+  "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 14,
+  "title": [
+    "Wastewater Treatment Plant: Modelling and Validation of an Activated Sludge Process"
+  ],
+  "prefix": "10.3390",
+  "volume": "13",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-5315-7592",
+      "authenticated-orcid": false,
+      "given": "Francesco",
+      "family": "Calise",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Industrial Engineering, University of Naples Federico II, 80125 Naples, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ursula",
+      "family": "Eicker",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Building, Civil, and Environmental Engineering, Concordia University Montreal, Montreal, QC H3G 1M8, Canada"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Juergen",
+      "family": "Schumacher",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Building, Civil, and Environmental Engineering, Concordia University Montreal, Montreal, QC H3G 1M8, Canada"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Maria",
+      "family": "Vicidomini",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Industrial Engineering, University of Naples Federico II, 80125 Naples, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "1968",
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        7,
+        31
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "64",
+      "DOI": "10.1016/j.coesh.2018.03.005",
+      "article-title": "Wastewater treatment and water reuse",
+      "volume": "2",
+      "author": "Salgot",
+      "year": "2018",
+      "journal-title": "Curr. Opin. Environ. Sci. Health"
+    },
+    {
+      "key": "ref_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Filipe, J., Bessa, R.J., Reis, M., Alves, R., and Póvoa, P. (2019). Data-driven predictive energy optimization in a wastewater pumping station. Appl. Energy, 252.",
+      "DOI": "10.1016/j.apenergy.2019.113423"
+    },
+    {
+      "key": "ref_3",
+      "doi-asserted-by": "crossref",
+      "first-page": "1251",
+      "DOI": "10.1016/j.apenergy.2016.07.043",
+      "article-title": "Monitoring and diagnosis of energy consumption in wastewater treatment plants. A state of the art and proposals for improvement",
+      "volume": "179",
+      "author": "Longo",
+      "year": "2016",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "ref_4",
+      "doi-asserted-by": "crossref",
+      "first-page": "303",
+      "DOI": "10.1016/j.apenergy.2015.11.061",
+      "article-title": "Modeling and optimization of a wastewater pumping system with data-mining methods",
+      "volume": "164",
+      "author": "Zhang",
+      "year": "2016",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "ref_5",
+      "doi-asserted-by": "crossref",
+      "first-page": "145",
+      "DOI": "10.1016/j.pecs.2018.10.002",
+      "article-title": "Towards sustainable and energy efficient municipal wastewater treatment by up-concentration of organics",
+      "volume": "70",
+      "author": "Guven",
+      "year": "2019",
+      "journal-title": "Prog. Energy Combust. Sci."
+    },
+    {
+      "key": "ref_6",
+      "doi-asserted-by": "crossref",
+      "first-page": "346",
+      "DOI": "10.1016/j.rser.2015.04.129",
+      "article-title": "An overview of biogas production and utilization at full-scale wastewater treatment plants (WWTPs) in the United States: Challenges and opportunities towards energy-neutral WWTPs",
+      "volume": "50",
+      "author": "Shen",
+      "year": "2015",
+      "journal-title": "Renew. Sustain. Energy Rev."
+    },
+    {
+      "key": "ref_7",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Wang, J., You, S., Zong, Y., Træholt, C., Dong, Z.Y., and Zhou, Y. (2019). Flexibility of combined heat and power plants: A review of technologies and operation strategies. Appl. Energy, 252.",
+      "DOI": "10.1016/j.apenergy.2019.113445"
+    },
+    {
+      "key": "ref_8",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1016/j.enconman.2017.09.022",
+      "article-title": "Impact of retrofitting existing combined heat and power plant with polygeneration of biomethane: A comparative techno-economic analysis of integrating different gasifiers",
+      "volume": "152",
+      "author": "Salman",
+      "year": "2017",
+      "journal-title": "Energy Convers. Manag."
+    },
+    {
+      "key": "ref_9",
+      "doi-asserted-by": "crossref",
+      "first-page": "649",
+      "DOI": "10.1016/j.energy.2019.05.123",
+      "article-title": "District heating based on biogas from wastewater treatment plant",
+      "volume": "180",
+      "author": "Picardo",
+      "year": "2019",
+      "journal-title": "Energy"
+    },
+    {
+      "key": "ref_10",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Calise, F., Cappiello, F.L., Dentice d’Accadia, M., Infante, A., and Vicidomini, M. (2020). Modeling of the Anaerobic Digestion of Organic Wastes: Integration of Heat Transfer and Biochemical Aspects. Energies, 13.",
+      "DOI": "10.3390/en13112702"
+    },
+    {
+      "key": "ref_11",
+      "doi-asserted-by": "crossref",
+      "first-page": "533",
+      "DOI": "10.1016/j.enconman.2019.05.035",
+      "article-title": "Energy, exergy and economic analysis of a novel geothermal energy system for wastewater and sludge treatment",
+      "volume": "195",
+      "author": "Macaluso",
+      "year": "2019",
+      "journal-title": "Energy Convers. Manag."
+    },
+    {
+      "key": "ref_12",
+      "doi-asserted-by": "crossref",
+      "first-page": "41",
+      "DOI": "10.1016/j.fbp.2019.03.014",
+      "article-title": "Performance analysis of the activated sludge model (number 1)",
+      "volume": "116",
+      "author": "Nelson",
+      "year": "2019",
+      "journal-title": "Food Bioprod. Process."
+    },
+    {
+      "key": "ref_13",
+      "doi-asserted-by": "crossref",
+      "first-page": "505",
+      "DOI": "10.1016/0043-1354(87)90058-3",
+      "article-title": "A general model for single-sludge wastewater treatment systems",
+      "volume": "21",
+      "author": "Henze",
+      "year": "1987",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref_14",
+      "doi-asserted-by": "crossref",
+      "first-page": "24",
+      "DOI": "10.1002/bit.24624",
+      "article-title": "Critical review of activated sludge modeling: State of process knowledge, modeling concepts, and limitations",
+      "volume": "110",
+      "author": "Hauduc",
+      "year": "2013",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "ref_15",
+      "doi-asserted-by": "crossref",
+      "first-page": "806",
+      "DOI": "10.3390/w3030806",
+      "article-title": "Activated Sludge and Other Aerobic Suspended Culture Processes",
+      "volume": "3",
+      "author": "Moretti",
+      "year": "2011",
+      "journal-title": "Water"
+    },
+    {
+      "key": "ref_16",
+      "unstructured": "(2020, July 30). Available online: https://pdfs.semanticscholar.org/b076/822899ab977bd49e271e51ae6fa8ec9ad951.pdf."
+    },
+    {
+      "key": "ref_17",
+      "unstructured": "(2020, July 30). Available online: https://op.europa.eu/en/publication-detail/-/publication/8448ef88-37dd-4d1a-823f-3143e7902429."
+    },
+    {
+      "key": "ref_18",
+      "unstructured": "(2020, July 30). The European Co-Operation in the Field of Scient. ific and Technical Research, Action 624: Optimal Management of Wastewater SystemsCOST Action 624 Website. Available online: http://www.ensic.inpl-nancy.fr/COSTWWTP."
+    },
+    {
+      "key": "ref_19",
+      "doi-asserted-by": "crossref",
+      "first-page": "630",
+      "DOI": "10.1016/j.jenvman.2016.07.047",
+      "article-title": "Wastewater treatment aeration process optimization: A data mining approach",
+      "volume": "203",
+      "author": "Asadi",
+      "year": "2017",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "ref_20",
+      "doi-asserted-by": "crossref",
+      "first-page": "149",
+      "DOI": "10.4314/wsa.v38i1.18",
+      "article-title": "Technical note on modifying the Arrhenius equation to compensate for temperature changes for reactions within biological systems",
+      "volume": "38",
+      "author": "Sheridan",
+      "year": "2012",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "ref_21",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Henze, M., Gujer, W., Mino, T., and van Loosdrecht, M.C.M. (2000). Activated Sludge Models ASM1, ASM2, ASM2d and ASM3, IWA Publishing.",
+      "DOI": "10.2166/wst.1999.0036"
+    },
+    {
+      "key": "ref_22",
+      "doi-asserted-by": "crossref",
+      "first-page": "1263",
+      "DOI": "10.1016/0043-1354(91)90066-Y",
+      "article-title": "A dynamic model of the clarification-thickening process",
+      "volume": "25",
+      "author": "Takacs",
+      "year": "1991",
+      "journal-title": "Wat. Res."
+    },
+    {
+      "key": "ref_23",
+      "unstructured": "Alex, J., Benedetti, L., Copp, J., Gernaey, K.V., Jeppsson, U., Nopens, I., Pons, M.N., Rieger, L., Rosen, C., and Steyer, J.P. (2020, July 30). Benchmark Simulation Model no 1 (BSM1). Department of Industrial Electrical Engineering and Automation, Lund University. Available online: https://www.iea.lth.se/publications/Reports/LTH-IEA-7229.pdf."
+    }
+  ],
+  "container-title": [
+    "Energies"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.mdpi.com/1996-1073/13/15/3925/pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        11
+      ]
+    ],
+    "date-time": "2025-10-11T09:53:29Z",
+    "timestamp": 1760176409000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.mdpi.com/1996-1073/13/15/3925"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        7,
+        31
+      ]
+    ]
+  },
+  "references-count": 23,
+  "journal-issue": {
+    "issue": "15",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          8
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "en13153925"
+  ],
+  "URL": "https://doi.org/10.3390/en13153925",
+  "relation": {},
+  "ISSN": [
+    "1996-1073"
+  ],
+  "issn-type": [
+    {
+      "value": "1996-1073",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        7,
+        31
+      ]
+    ]
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        1
+      ]
+    ],
+    "date-time": "2026-08-01T09:35:16Z",
+    "timestamp": 1785576916041,
+    "version": "3.56.0"
+  },
+  "reference-count": 30,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100002858",
+      "name": "China Postdoctoral Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2021T140225"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2021T140225"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100002858",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100003453",
+      "name": "Natural Science Foundation of Guangdong Province",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2016A030306033"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2016A030306033"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100003453",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Cleaner Production"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jclepro.2021.128076",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        23
+      ]
+    ],
+    "date-time": "2021-06-23T00:42:28Z",
+    "timestamp": 1624408948000
+  },
+  "page": "128076",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 33,
+  "special_numbering": "C",
+  "title": [
+    "Adaptive dynamic prediction of effluent quality in wastewater treatment processes using partial least squares embedded with relevance vector machine"
+  ],
+  "prefix": "10.1016",
+  "volume": "314",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-9067-9413",
+      "authenticated-orcid": false,
+      "given": "Chong",
+      "family": "Yang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yuchen",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Mingzhi",
+      "family": "Huang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9645-686X",
+      "authenticated-orcid": false,
+      "given": "Hongbin",
+      "family": "Liu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "10",
+      "key": "10.1016/j.jclepro.2021.128076_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "159",
+      "DOI": "10.1016/S1474-6670(17)38535-X",
+      "article-title": "Dynamic non-linear PLS modelling",
+      "volume": "33",
+      "author": "Baffi",
+      "year": "2000",
+      "journal-title": "IFAC Proc. Vol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2021.128076_bib2",
+      "doi-asserted-by": "crossref",
+      "first-page": "660",
+      "DOI": "10.1109/JSEN.2017.2772798",
+      "article-title": "Indoor positioning algorithm based on nonlinear PLS integrated with RVM",
+      "volume": "18",
+      "author": "Chen",
+      "year": "2018",
+      "journal-title": "IEEE Sensor. J."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "DOI": "10.1016/j.envsoft.2017.11.023",
+      "article-title": "Transforming data into knowledge for improved wastewater treatment operation: a critical review of techniques",
+      "volume": "106",
+      "author": "Corominas",
+      "year": "2018",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "issue": "38",
+      "key": "10.1016/j.jclepro.2021.128076_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "12646",
+      "DOI": "10.1021/acs.iecr.8b02913",
+      "article-title": "Process data analytics via probabilistic latent variable models: a tutorial review",
+      "volume": "57",
+      "author": "Ge",
+      "year": "2018",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "18",
+      "key": "10.1016/j.jclepro.2021.128076_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "8685",
+      "DOI": "10.1021/ie101146d",
+      "article-title": "Nonlinear soft sensor development based on relevance vector machine",
+      "volume": "49",
+      "author": "Ge",
+      "year": "2010",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.jclepro.2021.128076_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "3543",
+      "DOI": "10.1021/ie302069q",
+      "article-title": "Review of recent research on data-based process monitoring",
+      "volume": "52",
+      "author": "Ge",
+      "year": "2013",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib7",
+      "series-title": "Benchmarking of Control Strategies for Wastewater Treatment Plants",
+      "author": "Gernaey",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib8",
+      "article-title": "A novel model with GA evolving FWNN for effluent quality and biogas production forecast in a Full-Scale anaerobic wastewater treatment process",
+      "author": "Huang",
+      "year": "2019",
+      "journal-title": "Complexity 2019"
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "124",
+      "DOI": "10.1016/j.jhazmat.2014.05.098",
+      "article-title": "Evaluation of passenger health risk assessment of sustainable indoor air quality monitoring in metro systems based on a non-Gaussian dynamic sensor validation method",
+      "volume": "278",
+      "author": "Kim",
+      "year": "2014",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2021.128076_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "179",
+      "DOI": "10.1016/0169-7439(95)00076-3",
+      "article-title": "Disturbance detection and isolation by dynamic principal component analysis",
+      "volume": "30",
+      "author": "Ku",
+      "year": "1995",
+      "journal-title": "Chemometr. Intell. Lab."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.jclepro.2021.128076_bib11",
+      "doi-asserted-by": "crossref",
+      "first-page": "2050",
+      "DOI": "10.1016/j.procbio.2006.05.006",
+      "article-title": "Nonlinear dynamic partial least squares modeling of a full-scale biological wastewater treatment plant",
+      "volume": "41",
+      "author": "Lee",
+      "year": "2006",
+      "journal-title": "Process Biochem."
+    },
+    {
+      "issue": "36",
+      "key": "10.1016/j.jclepro.2021.128076_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "16676",
+      "DOI": "10.1021/acs.iecr.9b00701",
+      "article-title": "Dynamic nonlinear partial least squares modeling using Gaussian process regression",
+      "volume": "58",
+      "author": "Liu",
+      "year": "2019",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "266",
+      "DOI": "10.1016/j.jhazmat.2018.07.034",
+      "article-title": "Modeling of subway indoor air quality using Gaussian process regression",
+      "volume": "359",
+      "author": "Liu",
+      "year": "2018",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "106149",
+      "DOI": "10.1016/j.asoc.2020.106149",
+      "article-title": "Soft sensor modeling of industrial process data using kernel latent variables-based relevance vector machine",
+      "volume": "90",
+      "author": "Liu",
+      "year": "2020",
+      "journal-title": "Appl. Soft Comput."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.jclepro.2021.128076_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "4159",
+      "DOI": "10.1007/s11356-019-06935-9",
+      "article-title": "Multivariate statistical monitoring of subway indoor air quality using dynamic concurrent partial least squares",
+      "volume": "27",
+      "author": "Liu",
+      "year": "2020",
+      "journal-title": "Environ. Sci. Pollut. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib16",
+      "doi-asserted-by": "crossref",
+      "first-page": "209",
+      "DOI": "10.1016/j.jhazmat.2015.11.051",
+      "article-title": "A robust localized soft sensor for particulate matter modeling in Seoul metro systems",
+      "volume": "305",
+      "author": "Liu",
+      "year": "2016",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib17",
+      "doi-asserted-by": "crossref",
+      "first-page": "263",
+      "DOI": "10.1016/j.compchemeng.2014.08.008",
+      "article-title": "A probabilistic self-validating soft-sensor with application to wastewater treatment",
+      "volume": "71",
+      "author": "Liu",
+      "year": "2014",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "49",
+      "key": "10.1016/j.jclepro.2021.128076_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "16092",
+      "DOI": "10.1021/ie3005379",
+      "article-title": "Nonlinear PLS integrated with Error-Based LSSVM and its application to NOx modeling",
+      "volume": "51",
+      "author": "Lv",
+      "year": "2012",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "539",
+      "DOI": "10.1016/j.jclepro.2018.01.139",
+      "article-title": "Prediction of effluent quality parameters of a wastewater treatment plant using a supervised committee fuzzy logic model",
+      "volume": "180",
+      "author": "Nadiri",
+      "year": "2018",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "498",
+      "DOI": "10.1016/j.watres.2019.03.030",
+      "article-title": "Data-driven performance analyses of wastewater treatment plants: a review",
+      "volume": "157",
+      "author": "Newhart",
+      "year": "2019",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "23",
+      "key": "10.1016/j.jclepro.2021.128076_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "8025",
+      "DOI": "10.1021/ie203043q",
+      "article-title": "Localized, adaptive recursive partial least squares regression for dynamic system modeling",
+      "volume": "51",
+      "author": "Ni",
+      "year": "2012",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "121787",
+      "DOI": "10.1016/j.jclepro.2020.121787",
+      "article-title": "A novel effluent quality predicting model based on genetic-deep belief network algorithm for cleaner production in a full-scale paper-making wastewater treatment",
+      "volume": "265",
+      "author": "Niu",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2021.128076_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "147",
+      "DOI": "10.1016/0098-1354(95)00011-P",
+      "article-title": "Nonlinear FIR modeling via a neural net PLS approach",
+      "volume": "20",
+      "author": "Qin",
+      "year": "1996",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jclepro.2021.128076_bib24",
+      "doi-asserted-by": "crossref",
+      "first-page": "1419",
+      "DOI": "10.1021/ie100836w",
+      "article-title": "Predictive dynamic modeling of key process variables in granulation processes using partial least squares approach",
+      "volume": "50",
+      "author": "Ronen",
+      "year": "2011",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "115959",
+      "DOI": "10.1016/j.watres.2020.115959",
+      "article-title": "A systematic literature review of forecasting and predictive models for cyanobacteria blooms in freshwater lakes",
+      "volume": "182",
+      "author": "Rousso",
+      "year": "2020",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "93",
+      "DOI": "10.1016/j.jtice.2016.10.013",
+      "article-title": "Process modeling based on nonlinear PLS models using a prior knowledge-driven time difference method",
+      "volume": "69",
+      "author": "Shi",
+      "year": "2016",
+      "journal-title": "J. Taiwan Inst. Chem. E."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.jclepro.2016.05.068",
+      "article-title": "Characteristics of water quality of municipal wastewater treatment plants in China: implications for resources utilization and management",
+      "volume": "131",
+      "author": "Sun",
+      "year": "2016",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "issue": "Jun",
+      "key": "10.1016/j.jclepro.2021.128076_bib28",
+      "first-page": "211",
+      "article-title": "Sparse Bayesian learning and the relevance vector machine",
+      "volume": "1",
+      "author": "Tipping",
+      "year": "2001",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.jclepro.2021.128076_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "115788",
+      "DOI": "10.1016/j.watres.2020.115788",
+      "article-title": "A predictive model of recreational water quality based on adaptive synthetic sampling algorithms and machine learning",
+      "volume": "177",
+      "author": "Xu",
+      "year": "2020",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.jclepro.2021.128076_bib30",
+      "doi-asserted-by": "crossref",
+      "first-page": "1087",
+      "DOI": "10.1007/BF02719479",
+      "article-title": "Application of fuzzy partial least squares (FPLS) modeling nonlinear biological processes",
+      "volume": "21",
+      "author": "Yoo",
+      "year": "2004",
+      "journal-title": "Kor. J. Chem. Eng."
+    }
+  ],
+  "container-title": [
+    "Journal of Cleaner Production"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0959652621022940?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0959652621022940?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        17
+      ]
+    ],
+    "date-time": "2025-10-17T17:15:38Z",
+    "timestamp": 1760721338000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0959652621022940"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        9
+      ]
+    ]
+  },
+  "references-count": 30,
+  "alternative-id": [
+    "S0959652621022940"
+  ],
+  "URL": "https://doi.org/10.1016/j.jclepro.2021.128076",
+  "relation": {},
+  "ISSN": [
+    "0959-6526"
+  ],
+  "issn-type": [
+    {
+      "value": "0959-6526",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Adaptive dynamic prediction of effluent quality in wastewater treatment processes using partial least squares embedded with relevance vector machine",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Cleaner Production",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jclepro.2021.128076",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2021 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "128076"
+}

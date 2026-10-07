@@ -1,0 +1,1164 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        27
+      ]
+    ],
+    "date-time": "2026-08-27T03:29:55Z",
+    "timestamp": 1787801395909,
+    "version": "build-2784847793"
+  },
+  "reference-count": 78,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100010897",
+      "name": "Newton Fund",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "630319963"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "630319963"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100010897",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100010926",
+      "name": "Illinois State University",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/100010926",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Environmental Management"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jenvman.2023.119899",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        30
+      ]
+    ],
+    "date-time": "2023-12-30T00:45:24Z",
+    "timestamp": 1703897124000
+  },
+  "page": "119899",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 21,
+  "special_numbering": "C",
+  "title": [
+    "Effluent parameters prediction of a biological nutrient removal (BNR) process using different machine learning methods: A case study"
+  ],
+  "prefix": "10.1016",
+  "volume": "351",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-6050-6308",
+      "authenticated-orcid": false,
+      "given": "Neslihan",
+      "family": "Manav-Demir",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Huseyin Baran",
+      "family": "Gelgor",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Ersoy",
+      "family": "Oz",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-3037-2713",
+      "authenticated-orcid": false,
+      "given": "Fatih",
+      "family": "Ilhan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Kubra",
+      "family": "Ulucan-Altuntas",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-6723-1231",
+      "authenticated-orcid": false,
+      "given": "Abhishek",
+      "family": "Tiwary",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-1864-4253",
+      "authenticated-orcid": false,
+      "given": "Eyup",
+      "family": "Debik",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib1",
+      "series-title": "Rama Rao Karri, Gobinath Ravindran, Mohammad Hadi Dehghani, Soft Computing Techniques in Solid Waste and Wastewater Management",
+      "first-page": "365",
+      "article-title": "Chapter 22 - modeling undefined complexities of wastewater treatment processes with artificial neural network, editor(s",
+      "author": "Ahammed",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib2",
+      "series-title": "Credible Asset Allocation, Optimal Transport Methods, and Related Topics. TES 2022",
+      "article-title": "An introduction to stacking regression for economists",
+      "volume": "vol. 429",
+      "author": "Ahrens",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib3",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102423",
+      "article-title": "Use of artificial neural network for predicting effluent quality parameters and enabling wastewater reuse for climate change resilience – a case from Jordan",
+      "volume": "44",
+      "author": "Al-Ghazawi",
+      "year": "2021",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib4",
+      "series-title": "Introduction to Machine Learning",
+      "author": "Alpaydın",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib5",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2022.103009",
+      "article-title": "The prediction of WWTP influent characteristics: good practices and challenges",
+      "volume": "49",
+      "author": "Andreides",
+      "year": "2022",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jenvman.2023.119899_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "786",
+      "DOI": "10.2134/agronj2012.0506",
+      "article-title": "Nonlinear regression models and applications in agricultural research",
+      "volume": "107",
+      "author": "Archontoulis",
+      "year": "2015",
+      "journal-title": "Agron. J."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib7",
+      "article-title": "A comparison among interpretative proposals for Random Forests",
+      "volume": "6",
+      "author": "Aria",
+      "year": "2021",
+      "journal-title": "Machine Learn. Appl."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "229",
+      "DOI": "10.1016/j.psep.2019.01.013",
+      "article-title": "Advanced control of membrane fouling in filtration systems using artificial intelligence and machine learning techniques: a critical review",
+      "volume": "123",
+      "author": "Bagheri",
+      "year": "2019",
+      "journal-title": "Process Saf. Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib9",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102033",
+      "article-title": "Comparative study on total nitrogen prediction in wastewater treatment plant and effect of various feature selection methods on machine learning algorithms performance",
+      "volume": "41",
+      "author": "Bagherzadeh",
+      "year": "2021",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "458",
+      "DOI": "10.1016/j.psep.2021.08.040",
+      "article-title": "Prediction of energy consumption and evaluation of affecting factors in a full-scale WWTP using a machine learning approach",
+      "volume": "154",
+      "author": "Bagherzadeh",
+      "year": "2021",
+      "journal-title": "Process Saf. Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib11",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jhazmat.2020.123492",
+      "article-title": "Heavy metal contamination prediction using ensemble model: case study of Bay sedimentation, Australia",
+      "volume": "403",
+      "author": "Bhagat",
+      "year": "2021",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.jenvman.2023.119899_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "3426",
+      "DOI": "10.3390/s21103426",
+      "article-title": "Identifying and estimating the location of sources of industrial pollution in the sewage network",
+      "volume": "21",
+      "author": "Buras",
+      "year": "2021",
+      "journal-title": "Sensors"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.jenvman.2023.119899_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "235",
+      "DOI": "10.1016/j.resconrec.2009.08.005",
+      "article-title": "Forecasting effluent quality of an industry wastewater treatment plant by evolutionary grey dynamic model",
+      "volume": "54",
+      "author": "Chen",
+      "year": "2010",
+      "journal-title": "Resour. Conserv. Recycl."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib14",
+      "series-title": "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining-KDD 16",
+      "article-title": "XGBoost",
+      "author": "Chen",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib15",
+      "first-page": "184475",
+      "article-title": "Forecasting of wastewater treatment plant key features using deep learning-based models: a case study",
+      "volume": "8",
+      "author": "Cheng",
+      "year": "2020",
+      "journal-title": "IEEE"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib16",
+      "series-title": "Learning from Data: Concepts, Theory and Methods",
+      "author": "Cherkassky",
+      "year": "1998"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.envres.2022.112953",
+      "article-title": "Development of a wide-range soft sensor for predicting wastewater BOD5 using an eXtreme gradient boosting (XGBoost) machine",
+      "volume": "210",
+      "author": "Ching",
+      "year": "2022",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib18",
+      "series-title": "Statistics for Machine Learning",
+      "author": "Dangeti",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib19",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102380",
+      "article-title": "Forecasting effluent and performance of wastewater treatment plant using different machine learning techniques",
+      "volume": "44",
+      "author": "El-Rawy",
+      "year": "2021",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "1224",
+      "DOI": "10.1016/j.psep.2022.01.065",
+      "article-title": "Machine learning classification algorithms for inadequate wastewater treatment risk mitigation",
+      "volume": "159",
+      "author": "Elsayed",
+      "year": "2022",
+      "journal-title": "Process Saf. Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib21",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eti.2021.101632",
+      "article-title": "Prediction of wastewater treatment quality using LSTM neural network",
+      "volume": "23",
+      "author": "Farhi",
+      "year": "2021",
+      "journal-title": "Environ. Technol. Innov."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.jenvman.2023.119899_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "1189",
+      "DOI": "10.1214/aos/1013203451",
+      "article-title": "Greedy function approximation: a gradient boosting machine",
+      "volume": "29",
+      "author": "Friedman",
+      "year": "2001",
+      "journal-title": "Ann. Stat."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jenvman.2023.119899_bib79",
+      "doi-asserted-by": "crossref",
+      "first-page": "105",
+      "DOI": "10.3390/w9020105",
+      "article-title": "Machine learning algorithms for the forecasting of wastewater quality indicators",
+      "volume": "9",
+      "author": "Granata",
+      "year": "2017",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib24",
+      "series-title": "Crude Oil Price Forecasting Using XGBoost. 2017 International Conference on Computer Science and Engineering (UBMK)",
+      "author": "Gumus",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib25",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2022.128468",
+      "article-title": "Review of explainable machine learning for anaerobic digestion",
+      "volume": "369",
+      "author": "Gupta",
+      "year": "2023",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jenvman.2023.119899_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "490",
+      "DOI": "10.13164/re.2016.0490",
+      "article-title": "Signal and noise modeling of microwave transistors using characteristic support vector-based sparse regression",
+      "volume": "25",
+      "author": "Güneş",
+      "year": "2016",
+      "journal-title": "Radioengineering"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jenvman.2023.119899_bib27",
+      "first-page": "134",
+      "article-title": "Design of a front–end amplifier for the maximum power delivery and required noise by HBMO with support vector microstrip model",
+      "volume": "23",
+      "author": "Güneş",
+      "year": "2014",
+      "journal-title": "Radioengineering"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib28",
+      "series-title": "Neural Networks: A Comprehensive Foundation",
+      "author": "Haykin",
+      "year": "1999"
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.jenvman.2023.119899_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "2671",
+      "DOI": "10.2166/wst.2020.382",
+      "article-title": "Performance improvement of wastewater treatment processes by application of machine learning",
+      "volume": "82",
+      "author": "Icke",
+      "year": "2020",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib30",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.clce.2022.100039",
+      "article-title": "Optimization of effluents using artificial neural network and support vector regression in detergent industrial wastewater treatment",
+      "volume": "3",
+      "author": "Jana",
+      "year": "2022",
+      "journal-title": "Cleaner Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib31",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cej.2021.129540",
+      "article-title": "Artificial neural network modeling of wastewater treatment and desalination using membrane processes: a review",
+      "volume": "419",
+      "author": "Jawad",
+      "year": "2021",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jenvman.2023.119899_bib32",
+      "doi-asserted-by": "crossref",
+      "first-page": "699",
+      "DOI": "10.1109/TSMCB.2005.861067",
+      "article-title": "Hybrid approach of selecting hyperparameters of support vector machine for regression",
+      "volume": "36",
+      "author": "Jeng",
+      "year": "2006",
+      "journal-title": "IEEE Trans. Syst. Man Cybern. B Cybern."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jenvman.2023.119899_bib33",
+      "article-title": "Ensemble-based surrogate modeling of microwave antennas using XGBoost algorithm",
+      "volume": "35",
+      "author": "Kalayci",
+      "year": "2022",
+      "journal-title": "Int. J. Numer. Methods Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib34",
+      "series-title": "2019 Moratuwa Engineering Research Conference (MERCon)",
+      "first-page": "54",
+      "article-title": "Taxi trip travel time prediction with isolated XGBoost regression",
+      "author": "Kankanamge",
+      "year": "2019"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jenvman.2023.119899_bib35",
+      "first-page": "743",
+      "article-title": "Compression of ECG data by support vector regression method",
+      "volume": "33",
+      "author": "Karal",
+      "year": "2018",
+      "journal-title": "J. Fac. Eng. Archit. Gaz."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib36",
+      "series-title": "Advances in Neural Information Processing Systems",
+      "article-title": "Light GBM: a highly efficient gradient boosting decision tree",
+      "author": "Ke",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib37",
+      "series-title": "IEEE International Conference on Automation Science and Engineering",
+      "first-page": "812",
+      "article-title": "COD and NH4-N estimation in the inflow of wastewater treatment plants using machine learning techniques",
+      "author": "Kern",
+      "year": "2014"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jenvman.2023.119899_bib38",
+      "doi-asserted-by": "crossref",
+      "first-page": "2174",
+      "DOI": "10.1109/TAP.2021.3111299",
+      "article-title": "Accurate modeling of antenna structures by means of domain confinement and pyramidal deep neural networks",
+      "volume": "70",
+      "author": "Koziel",
+      "year": "2022",
+      "journal-title": "IEEE Trans. Antenn. Propag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib39",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2021.115078",
+      "article-title": "A stock selection algorithm hybridizing grey wolf optimizer and support vector regression",
+      "volume": "179",
+      "author": "Liu",
+      "year": "2021",
+      "journal-title": "Expert Syst. Appl."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib40",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2022.154930",
+      "article-title": "Exploring potential machine learning application based on big data for prediction of wastewater quality from different full-scale wastewater treatment plants",
+      "volume": "832",
+      "author": "Ly",
+      "year": "2022",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib41",
+      "doi-asserted-by": "crossref",
+      "first-page": "2489",
+      "DOI": "10.1007/s10346-022-01923-6",
+      "article-title": "Metaheuristic-based support vector regression for landslide displacement prediction: a comparative study",
+      "volume": "19",
+      "author": "Ma",
+      "year": "2022",
+      "journal-title": "Landslides"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.jenvman.2023.119899_bib42",
+      "doi-asserted-by": "crossref",
+      "first-page": "10777",
+      "DOI": "10.1109/TAP.2022.3191131",
+      "article-title": "Computationally efficient surrogate-assisted design of pyramidal-shaped 3D reflectarray antennas",
+      "volume": "70",
+      "author": "Mahouti",
+      "year": "2022",
+      "journal-title": "IEEE Trans. Antenn. Propag."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.jenvman.2023.119899_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "1955",
+      "DOI": "10.1007/s11269-022-03118-z",
+      "article-title": "Forecasting groundwater levels using a hybrid of support vector regression and particle swarm optimization",
+      "volume": "36",
+      "author": "Mozaffari",
+      "year": "2022",
+      "journal-title": "Water Resour. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib44",
+      "doi-asserted-by": "crossref",
+      "first-page": "539",
+      "DOI": "10.1016/j.jclepro.2018.01.139",
+      "article-title": "Prediction of effluent quality parameters of a wastewater treatment plant using a supervised committee fuzzy logic model",
+      "volume": "180",
+      "author": "Nadiri",
+      "year": "2018",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib45",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2022.102920",
+      "article-title": "Water quality classification using machine learning algorithms",
+      "volume": "48",
+      "author": "Nasir",
+      "year": "2022",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.jenvman.2023.119899_bib46",
+      "doi-asserted-by": "crossref",
+      "first-page": "3674",
+      "DOI": "10.1016/j.apm.2011.01.019",
+      "article-title": "Predicting effluent from the wastewater treatment plant of industrial park based on fuzzy network and influent quality",
+      "volume": "35",
+      "author": "Pai",
+      "year": "2011",
+      "journal-title": "Appl. Math. Model."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib47",
+      "doi-asserted-by": "crossref",
+      "first-page": "833",
+      "DOI": "10.1016/j.psep.2022.10.033",
+      "article-title": "Prediction of municipal wastewater biochemical oxygen demand using machine learning techniques: a sustainable approach",
+      "volume": "168",
+      "author": "Qambar",
+      "year": "2022",
+      "journal-title": "Process Saf. Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib48",
+      "series-title": "Encyclopedia of Bioinformatics and Computational Biology: ABC of Bioinformatics",
+      "author": "Ranganathan",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib49",
+      "series-title": "Communication Research Statistics",
+      "author": "Reinard",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib50",
+      "series-title": "Advances in Data Mining. Applications and Theoretical Aspects. ICDM 2013",
+      "article-title": "Wastewater treatment plant performance prediction with support vector machines",
+      "volume": "vol. 7987",
+      "author": "Ribeiro",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib51",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2022.102974",
+      "article-title": "A review of artificial intelligence in water purification and wastewater treatment: recent advancements”",
+      "volume": "49",
+      "author": "Safeer",
+      "year": "2022",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.jenvman.2023.119899_bib52",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.asej.2022.101778",
+      "article-title": "Random Forest modelling and evaluation of the performance of a full-scale subsurface constructed wetland plant in Egypt",
+      "volume": "13",
+      "author": "Salem",
+      "year": "2022",
+      "journal-title": "Ain Shams Eng. J."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib53",
+      "series-title": "Support Vector Learning",
+      "author": "Scholkopf",
+      "year": "1997"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib54",
+      "doi-asserted-by": "crossref",
+      "first-page": "1926",
+      "DOI": "10.1109/18.705570",
+      "article-title": "Structural risk minimization over data-dependent hierarchies",
+      "volume": "44",
+      "author": "Shawe-Taylor",
+      "year": "1998",
+      "journal-title": "IEEE Trans. Inf. Theor."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib55",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.autcon.2021.103827",
+      "article-title": "Machine learning models for predicting the residual value of heavy construction equipment: an evaluation of modified decision tree, Light GBM, and XGBoost regression",
+      "volume": "129",
+      "author": "Shehadeh",
+      "year": "2021",
+      "journal-title": "Autom. ConStruct."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib56",
+      "series-title": "Fundamentals and Methods of Machine and Deep Learning: Algorithms, Tools, and Applications",
+      "author": "Singh",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib57",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2022.135238",
+      "article-title": "Water footprint modeling and forecasting of cassava based on different artificial intelligence algorithms in Guangxi, China",
+      "volume": "382",
+      "author": "Tao",
+      "year": "2023",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib58",
+      "series-title": "Proceedings of International Conference on Big Data, Machine Learning and Their Applications: ICBMA 2019",
+      "author": "Tiwari",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib59",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.5899/2016/ojids-00002",
+      "article-title": "Classification of thyroid disease by using data mining models: a comparison of decision tree algorithms",
+      "volume": "2",
+      "author": "Turanoglu-Bekar",
+      "year": "2016",
+      "journal-title": "Oxford J. Intelligent Dec. Data Sci."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.jenvman.2023.119899_bib60",
+      "doi-asserted-by": "crossref",
+      "first-page": "6044",
+      "DOI": "10.1016/j.csda.2006.11.041",
+      "article-title": "Boosting ridge regression",
+      "volume": "51",
+      "author": "Tutz",
+      "year": "2007",
+      "journal-title": "Comput. Stat. Data Anal."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib61",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2022.103336",
+      "article-title": "Emerging pollutants removal in full-scale biological treatment plants: a case study",
+      "volume": "51",
+      "author": "Ulucan-Altuntas",
+      "year": "2023",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib62",
+      "series-title": "Annual Conference on Neural Information Processing Systems (NIPS)",
+      "first-page": "281",
+      "article-title": "Support vector method for function approximation, regression estimation, and signal processing",
+      "author": "Vapnik",
+      "year": "1997"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib63",
+      "series-title": "Advanced Image Processing Techniques for Remotely Sensed Hyperspectral Data",
+      "author": "Varshney",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib64",
+      "series-title": "Working with Dynamic Crop Models: Evaluations, Analysis, Parameterization, and Applications",
+      "first-page": "11",
+      "article-title": "Evaluating crop models",
+      "author": "Wallach",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib65",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2021.113941",
+      "article-title": "Towards better process management in wastewater treatment plants: process analytics based on SHAP values for tree-based machine learning methods",
+      "volume": "301",
+      "author": "Wang",
+      "year": "2022",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib66",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2021.147138",
+      "article-title": "A machine learning framework to improve effluent quality control in wastewater treatment plants",
+      "volume": "784",
+      "author": "Wang",
+      "year": "2021",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jenvman.2023.119899_bib67",
+      "doi-asserted-by": "crossref",
+      "first-page": "481",
+      "DOI": "10.3233/IDA-183832",
+      "article-title": "Bayesian optimization of support vector machine for regression prediction of short-term traffic flow",
+      "volume": "23",
+      "author": "Wang",
+      "year": "2019",
+      "journal-title": "Intell. Data Anal."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib68",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.envres.2022.113054",
+      "article-title": "A full-view management method based on artificial neural networks for energy and material-savings in wastewater treatment plants",
+      "volume": "211",
+      "author": "Wang",
+      "year": "2022",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib69",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.energy.2021.119969",
+      "article-title": "Support vector regression with asymmetric loss for optimal electric load forecasting",
+      "volume": "223",
+      "author": "Wu",
+      "year": "2021",
+      "journal-title": "Energy"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib70",
+      "doi-asserted-by": "crossref",
+      "first-page": "1053",
+      "DOI": "10.3390/w14071053",
+      "article-title": "Enhancing real-time prediction of effluent water quality of wastewater treatment plant based on improved feedforward neural network coupled with optimization algorithm",
+      "volume": "14",
+      "author": "Xie",
+      "year": "2022",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib71",
+      "doi-asserted-by": "crossref",
+      "first-page": "515",
+      "DOI": "10.1016/j.psep.2021.12.034",
+      "article-title": "Prediction of effluent quality in a wastewater treatment plant by dynamic neural network modeling",
+      "volume": "158",
+      "author": "Yang",
+      "year": "2022",
+      "journal-title": "Process Saf. Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib72",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102521",
+      "article-title": "Modeling nutrient removal by membrane bioreactor at a sewage treatment plant using machine learning models",
+      "volume": "46",
+      "author": "Yaqub",
+      "year": "2022",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jenvman.2023.119899_bib73",
+      "doi-asserted-by": "crossref",
+      "first-page": "332",
+      "DOI": "10.1007/s11766-003-0059-5",
+      "article-title": "SVM classification: its contents and challenges",
+      "volume": "18",
+      "author": "Yue",
+      "year": "2003",
+      "journal-title": "Appl. Math. Chin. Univ."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jenvman.2023.119899_bib74",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jece.2022.107430",
+      "article-title": "Application of machine learning techniques to model a full-scale wastewater treatment plant with biological nutrient removal",
+      "volume": "10",
+      "author": "Zaghloul",
+      "year": "2022",
+      "journal-title": "J. Environ. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib75",
+      "doi-asserted-by": "crossref",
+      "first-page": "383",
+      "DOI": "10.1007/s41666-020-00077-1",
+      "article-title": "Predicting missing values in medical data via XGBoost regression",
+      "volume": "4",
+      "author": "Zhang",
+      "year": "2020",
+      "journal-title": "J. Helathc. Inform. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119899_bib76",
+      "series-title": "International Geophysical Conference Qingdao",
+      "first-page": "17",
+      "article-title": "Machine learning in rock facies classification: an application of XGBoost",
+      "author": "Zhang",
+      "year": "2017"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.jenvman.2023.119899_bib77",
+      "doi-asserted-by": "crossref",
+      "first-page": "1309",
+      "DOI": "10.3390/buildings12091309",
+      "article-title": "Application of Light GBM algorithm in the initial design of a library in the cold area of China based on comprehensive performance",
+      "volume": "12",
+      "author": "Zhou",
+      "year": "2022",
+      "journal-title": "Buildings"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jenvman.2023.119899_bib78",
+      "doi-asserted-by": "crossref",
+      "first-page": "107",
+      "DOI": "10.1016/j.eehl.2022.06.001",
+      "article-title": "A review of the application of machine learning in water quality evaluation",
+      "volume": "1",
+      "author": "Zhu",
+      "year": "2022",
+      "journal-title": "Eco-Environ. Health"
+    }
+  ],
+  "container-title": [
+    "Journal of Environmental Management"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479723026877?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479723026877?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        4
+      ]
+    ],
+    "date-time": "2025-11-04T20:10:12Z",
+    "timestamp": 1762287012000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301479723026877"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "references-count": 78,
+  "alternative-id": [
+    "S0301479723026877"
+  ],
+  "URL": "https://doi.org/10.1016/j.jenvman.2023.119899",
+  "relation": {},
+  "ISSN": [
+    "0301-4797"
+  ],
+  "issn-type": [
+    {
+      "value": "0301-4797",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Effluent parameters prediction of a biological nutrient removal (BNR) process using different machine learning methods: A case study",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Environmental Management",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jenvman.2023.119899",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2023 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "119899"
+}

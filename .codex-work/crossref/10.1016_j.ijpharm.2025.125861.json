@@ -1,0 +1,816 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        1
+      ]
+    ],
+    "date-time": "2026-08-01T09:35:15Z",
+    "timestamp": 1785576915170,
+    "version": "3.56.0"
+  },
+  "reference-count": 47,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            26
+          ]
+        ],
+        "date-time": "2025-06-26T00:00:00Z",
+        "timestamp": 1750896000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100004330",
+      "name": "GSK plc",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/100004330",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "International Journal of Pharmaceutics"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.ijpharm.2025.125861",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        6,
+        26
+      ]
+    ],
+    "date-time": "2025-06-26T19:10:23Z",
+    "timestamp": 1750965023000
+  },
+  "page": "125861",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 3,
+  "special_numbering": "C",
+  "title": [
+    "A novel surrogate-based optimisation framework for pharmaceutical process systems"
+  ],
+  "prefix": "10.1016",
+  "volume": "682",
+  "author": [
+    {
+      "given": "Artemis",
+      "family": "Tsochatzidi",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Francesca",
+      "family": "Cenci",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Magdalini",
+      "family": "Aroniada",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-4652-6086",
+      "authenticated-orcid": false,
+      "given": "Lazaros G.",
+      "family": "Papageorgiou",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "3",
+      "key": "10.1016/j.ijpharm.2025.125861_b1",
+      "doi-asserted-by": "crossref",
+      "first-page": "385",
+      "DOI": "10.1016/j.ecolmodel.2006.11.005",
+      "article-title": "A methodology for developing simulation models of complex systems",
+      "volume": "202",
+      "author": "Aumann",
+      "year": "2007",
+      "journal-title": "Ecol. Model.",
+      "ISSN": "https://id.crossref.org/issn/0304-3800",
+      "issn-type": "print"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.ijpharm.2025.125861_b2",
+      "first-page": "875",
+      "article-title": "Grid search in hyperparameter optimization of machine learning models for prediction of HIV/AIDS test results",
+      "volume": "44",
+      "author": "Belete",
+      "year": "2022",
+      "journal-title": "Int. J. Comput. Appl."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b3",
+      "series-title": "2017 IEEE MIT Undergraduate Research Technology Conference",
+      "first-page": "1",
+      "article-title": "Regression and classification using optimal decision trees",
+      "author": "Bertsimas",
+      "year": "2017"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.ijpharm.2025.125861_b4",
+      "doi-asserted-by": "crossref",
+      "first-page": "701",
+      "DOI": "10.1016/j.ejor.2015.12.018",
+      "article-title": "Global optimization advances in mixed-integer nonlinear programming, MINLP, and constrained derivative-free optimization, CDFO",
+      "volume": "252",
+      "author": "Boukouvala",
+      "year": "2016",
+      "journal-title": "European J. Oper. Res.",
+      "ISSN": "https://id.crossref.org/issn/0377-2217",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b5",
+      "doi-asserted-by": "crossref",
+      "first-page": "164",
+      "DOI": "10.1016/j.compchemeng.2019.03.004",
+      "article-title": "Integrated process design, scheduling, and control using multiparametric programming",
+      "volume": "125",
+      "author": "Burnak",
+      "year": "2019",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.ijpharm.2025.125861_b6",
+      "doi-asserted-by": "crossref",
+      "first-page": "1509",
+      "DOI": "10.1016/j.envsoft.2006.10.004",
+      "article-title": "An effective screening design for sensitivity analysis of large models",
+      "volume": "22",
+      "author": "Campolongo",
+      "year": "2007",
+      "journal-title": "Environ. Model. Softw.",
+      "ISSN": "https://id.crossref.org/issn/1364-8152",
+      "issn-type": "print"
+    },
+    {
+      "issue": "349",
+      "key": "10.1016/j.ijpharm.2025.125861_b7",
+      "first-page": "1",
+      "article-title": "OMLT: Optimization & machine learning toolkit",
+      "volume": "23",
+      "author": "Ceccon",
+      "year": "2022",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b8",
+      "series-title": "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+      "isbn-type": "print",
+      "doi-asserted-by": "crossref",
+      "first-page": "785",
+      "DOI": "10.1145/2939672.2939785",
+      "article-title": "XGBoost: A scalable tree boosting system",
+      "author": "Chen",
+      "year": "2016",
+      "ISBN": "https://id.crossref.org/isbn/9781450342322"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b9",
+      "doi-asserted-by": "crossref",
+      "first-page": "40",
+      "DOI": "10.1016/j.ces.2017.09.021",
+      "article-title": "Mathematical modelling of water absorption and evaporation in a pharmaceutical tablet during film coating",
+      "volume": "175",
+      "author": "Christodoulou",
+      "year": "2018",
+      "journal-title": "Chem. Eng. Sci.",
+      "ISSN": "https://id.crossref.org/issn/0009-2509",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b10",
+      "doi-asserted-by": "crossref",
+      "first-page": "68",
+      "DOI": "10.1109/99.714603",
+      "article-title": "The NEOS server",
+      "volume": "5",
+      "author": "Czyzyk",
+      "year": "1998",
+      "journal-title": "IEEE J. Comput. Sci. Eng."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b11",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ijpharm.2022.121715",
+      "article-title": "A review on the modernization of pharmaceutical development and manufacturing – trends, perspectives, and the role of mathematical modeling",
+      "volume": "620",
+      "author": "Destro",
+      "year": "2022",
+      "journal-title": "Int. J. Pharm.",
+      "ISSN": "https://id.crossref.org/issn/0378-5173",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b12",
+      "doi-asserted-by": "crossref",
+      "first-page": "1333",
+      "DOI": "10.1007/s12247-021-09609-7",
+      "article-title": "Application of a system model for continuous manufacturing of an active pharmaceutical ingredient in an industrial environment",
+      "volume": "17",
+      "author": "Diab",
+      "year": "2022",
+      "journal-title": "J. Pharm. Innov."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.ijpharm.2025.125861_b13",
+      "doi-asserted-by": "crossref",
+      "first-page": "2864",
+      "DOI": "10.1021/acs.oprd.2c00208",
+      "article-title": "Mathematical modeling and optimization to inform impurity control in an industrial active pharmaceutical ingredient manufacturing process",
+      "volume": "26",
+      "author": "Diab",
+      "year": "2022",
+      "journal-title": "Org. Process. Res. Dev."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b14",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ijpharm.2021.121161",
+      "article-title": "A novel framework of surrogate-based feasibility analysis for establishing design space of twin-column continuous chromatography",
+      "volume": "609",
+      "author": "Ding",
+      "year": "2021",
+      "journal-title": "Int. J. Pharm.",
+      "ISSN": "https://id.crossref.org/issn/0378-5173",
+      "issn-type": "print"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.ijpharm.2025.125861_b15",
+      "doi-asserted-by": "crossref",
+      "first-page": "1809",
+      "DOI": "10.1021/ie200617d",
+      "article-title": "A simultaneous approach for parameter estimation of a system of ordinary differential equations, using artificial neural network approximation",
+      "volume": "51",
+      "author": "Dua",
+      "year": "2012",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b16",
+      "series-title": "GAMPy documentation",
+      "author": "GAMPy Development Team",
+      "year": "2024"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.ijpharm.2025.125861_b17",
+      "doi-asserted-by": "crossref",
+      "first-page": "1216",
+      "DOI": "10.1002/aic.12341",
+      "article-title": "Surrogate-based superstructure optimization framework",
+      "volume": "57",
+      "author": "Henao",
+      "year": "2011",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b18",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2020.107221",
+      "article-title": "Parameter estimation of partial differential equations using artificial neural network",
+      "volume": "147",
+      "author": "Jamili",
+      "year": "2021",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.ijpharm.2025.125861_b19",
+      "doi-asserted-by": "crossref",
+      "first-page": "912",
+      "DOI": "10.1021/op200097d",
+      "article-title": "Using the right green yardstick: Why process mass intensity is used in the pharmaceutical industry to drive more sustainable processes",
+      "volume": "15",
+      "author": "Jimenez-Gonzalez",
+      "year": "2011",
+      "journal-title": "Org. Process. Res. Dev."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.ijpharm.2025.125861_b20",
+      "doi-asserted-by": "crossref",
+      "first-page": "2318",
+      "DOI": "10.1002/bit.28454",
+      "article-title": "Using artificial neural networks to accelerate flowsheet optimization for downstream process development",
+      "volume": "121",
+      "author": "Keulen",
+      "year": "2024",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b21",
+      "doi-asserted-by": "crossref",
+      "first-page": "495",
+      "DOI": "10.1016/j.cherd.2020.02.003",
+      "article-title": "System model development and computer experiments for continuous api manufacturing",
+      "volume": "156",
+      "author": "Lee",
+      "year": "2020",
+      "journal-title": "Chem. Eng. Res. Des.",
+      "ISSN": "https://id.crossref.org/issn/0263-8762",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b22",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "DOI": "10.1007/s10994-024-06643-7",
+      "article-title": "Interpretable optimisation-based approach for hyper-box classification",
+      "volume": "114",
+      "author": "Liapis",
+      "year": "2025",
+      "journal-title": "Mach. Learn."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b23",
+      "series-title": "reluMIP: Open source tool for MILP optimization of ReLU neural networks",
+      "author": "Lueg",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b24",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2022.107970",
+      "article-title": "Data-driven strategies for extractive distillation unit optimization",
+      "volume": "167",
+      "author": "Ma",
+      "year": "2022",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.ijpharm.2025.125861_b25",
+      "doi-asserted-by": "crossref",
+      "first-page": "228",
+      "DOI": "10.1002/cite.201800091",
+      "article-title": "Overview of surrogate modeling in chemical process engineering",
+      "volume": "91",
+      "author": "McBride",
+      "year": "2019",
+      "journal-title": "Chem. Ing. Tech."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b26",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2023.108411",
+      "article-title": "Formulating data-driven surrogate models for process optimization",
+      "volume": "179",
+      "author": "Misener",
+      "year": "2023",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.ijpharm.2025.125861_b27",
+      "doi-asserted-by": "crossref",
+      "first-page": "1605",
+      "DOI": "10.1287/opre.2019.1928",
+      "article-title": "Optimization of tree ensembles",
+      "volume": "68",
+      "author": "Mišić",
+      "year": "2020",
+      "journal-title": "Oper. Res."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.ijpharm.2025.125861_b28",
+      "doi-asserted-by": "crossref",
+      "first-page": "1103",
+      "DOI": "10.1287/ijoc.2020.0993",
+      "article-title": "Mixed-integer convex nonlinear optimization with gradient-boosted trees embedded",
+      "volume": "33",
+      "author": "Mistry",
+      "year": "2021",
+      "journal-title": "INFORMS J. Comput."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b29",
+      "series-title": "14th International Symposium on Process Systems Engineering",
+      "first-page": "31",
+      "article-title": "Surrogate modeling and surrogate-based optimization with stochastic simulations",
+      "volume": "vol. 49",
+      "author": "Mohammadi",
+      "year": "2022"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.ijpharm.2025.125861_b30",
+      "doi-asserted-by": "crossref",
+      "first-page": "161",
+      "DOI": "10.1080/00401706.1991.10484804",
+      "article-title": "Factorial sampling plans for preliminary computational experiments",
+      "volume": "33",
+      "author": "Morris",
+      "year": "1991",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b31",
+      "doi-asserted-by": "crossref",
+      "first-page": "434",
+      "DOI": "10.1016/j.compchemeng.2019.03.034",
+      "article-title": "Optimization under uncertainty in the era of big data and deep learning: When machine learning meets mathematical programming",
+      "volume": "125",
+      "author": "Ning",
+      "year": "2019",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b32",
+      "doi-asserted-by": "crossref",
+      "first-page": "46",
+      "DOI": "10.1186/s12874-019-0666-3",
+      "article-title": "A review of spline function procedures in R",
+      "volume": "19",
+      "author": "Perperoglou",
+      "year": "2019",
+      "journal-title": "BMC Med. Res. Methodol."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b33",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2020.106759",
+      "article-title": "An artificial neural network approach to recognise kinetic models from experimental data",
+      "volume": "135",
+      "author": "Quaglio",
+      "year": "2020",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b34",
+      "series-title": "Applications of AI and IOT in Renewable Energy",
+      "isbn-type": "print",
+      "doi-asserted-by": "crossref",
+      "first-page": "107",
+      "DOI": "10.1016/B978-0-323-91699-8.00006-1",
+      "article-title": "Chapter six - renewable energy system for industrial internet of things model using fusion-AI",
+      "author": "Rajawat",
+      "year": "2022",
+      "ISBN": "https://id.crossref.org/isbn/9780323916998"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.ijpharm.2025.125861_b35",
+      "doi-asserted-by": "crossref",
+      "first-page": "1247",
+      "DOI": "10.1007/s10898-012-9951-y",
+      "article-title": "Derivative-free optimization: A review of algorithms and comparison of software implementations",
+      "volume": "56",
+      "author": "Rios",
+      "year": "2013",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b36",
+      "series-title": "Proceedings of the 8th International Conference on Foundations of Computer-Aided Process Design",
+      "first-page": "144",
+      "article-title": "Challenges and opportunities in pharmaceutical manufacturing modeling and optimization",
+      "volume": "vol. 34",
+      "author": "Rogers",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b37",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2024.108752",
+      "article-title": "An optimal experimental design framework for fast kinetic model identification based on artificial neural networks",
+      "volume": "187",
+      "author": "Sangoi",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.ijpharm.2025.125861_b38",
+      "doi-asserted-by": "crossref",
+      "first-page": "925",
+      "DOI": "10.1007/s10957-018-1396-0",
+      "article-title": "Deterministic global optimization with artificial neural networks embedded",
+      "volume": "180",
+      "author": "Schweidtmann",
+      "year": "2019",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b39",
+      "series-title": "gPROMS — products",
+      "author": "Siemens Process Systems Engineering",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b40",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2021.107343",
+      "article-title": "ENTMOOT: A framework for optimization over ensemble tree models",
+      "volume": "151",
+      "author": "Thebelt",
+      "year": "2021",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.ijpharm.2025.125861_b41",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/aic.18364",
+      "article-title": "A surrogate-based framework for feasibility-driven optimization of expensive simulations",
+      "volume": "70",
+      "author": "Tian",
+      "year": "2023",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b42",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2024.108807",
+      "article-title": "Comparative assessment of simulation-based and surrogate-based approaches to flowsheet optimization using dimensionality reduction",
+      "volume": "189",
+      "author": "Triantafyllou",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng.",
+      "ISSN": "https://id.crossref.org/issn/0098-1354",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b43",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/pr12010209",
+      "article-title": "Model based optimization of energy consumption in milk evaporators",
+      "volume": "12",
+      "author": "Tsochatzidi",
+      "year": "2024",
+      "journal-title": "Processes",
+      "ISSN": "https://id.crossref.org/issn/2227-9717",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b44",
+      "doi-asserted-by": "crossref",
+      "first-page": "172",
+      "DOI": "10.1016/j.cherd.2024.02.021",
+      "article-title": "Surrogate model-based optimization of methanol synthesis process for multiple objectives: A pathway towards achieving sustainable development goals",
+      "volume": "204",
+      "author": "Wolday",
+      "year": "2024",
+      "journal-title": "Chem. Eng. Res. Des.",
+      "ISSN": "https://id.crossref.org/issn/0263-8762",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b45",
+      "series-title": "Proceedings of the Companion Publication of the 2014 Annual Conference on Genetic and Evolutionary Computation",
+      "isbn-type": "print",
+      "doi-asserted-by": "crossref",
+      "first-page": "1181",
+      "DOI": "10.1145/2598394.2610012",
+      "article-title": "Epsilon constrained method for constrained multiobjective optimization problems: some preliminary results",
+      "author": "Yang",
+      "year": "2014",
+      "ISBN": "https://id.crossref.org/isbn/9781450328814"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b46",
+      "doi-asserted-by": "crossref",
+      "first-page": "347",
+      "DOI": "10.1016/j.eswa.2017.02.013",
+      "article-title": "A regression tree approach using mathematical programming",
+      "volume": "78",
+      "author": "Yang",
+      "year": "2017",
+      "journal-title": "Expert Syst. Appl.",
+      "ISSN": "https://id.crossref.org/issn/0957-4174",
+      "issn-type": "print"
+    },
+    {
+      "key": "10.1016/j.ijpharm.2025.125861_b47",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cej.2023.148421",
+      "article-title": "Accelerating operation optimization of complex chemical processes: A novel framework integrating artificial neural network and mixed-integer linear programming",
+      "volume": "481",
+      "author": "Zhou",
+      "year": "2024",
+      "journal-title": "Chem. Eng. J.",
+      "ISSN": "https://id.crossref.org/issn/1385-8947",
+      "issn-type": "print"
+    }
+  ],
+  "container-title": [
+    "International Journal of Pharmaceutics"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0378517325006982?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0378517325006982?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        22
+      ]
+    ],
+    "date-time": "2026-05-22T12:27:44Z",
+    "timestamp": 1779452864000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378517325006982"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "references-count": 47,
+  "alternative-id": [
+    "S0378517325006982"
+  ],
+  "URL": "https://doi.org/10.1016/j.ijpharm.2025.125861",
+  "relation": {},
+  "ISSN": [
+    "0378-5173"
+  ],
+  "issn-type": [
+    {
+      "value": "0378-5173",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "A novel surrogate-based optimisation framework for pharmaceutical process systems",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "International Journal of Pharmaceutics",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.ijpharm.2025.125861",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2025 The Authors. Published by Elsevier B.V.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "125861"
+}

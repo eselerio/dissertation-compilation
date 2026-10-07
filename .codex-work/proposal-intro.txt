@@ -1,0 +1,309 @@
+Page |8
+
+
+1    Introduction
+
+Water pollution presents a critical environmental and public health challenge worldwide,
+with particularly severe repercussions in developing nations (Lin et al., 2022; Madhav et
+al., 2020). In the Philippines, over 90% of wastewater is discharged untreated into natural
+water bodies annually (Tabios III, 2020). This leads to the degradation of aquatic
+ecosystems, which pose risks to human health (NEDA & DOH, 2010; Tabios III, 2020).
+Addressing this issue requires innovative and contextually appropriate wastewater
+treatment technologies. Biological wastewater treatment is the most widely used
+consortium of technologies worldwide to combat this issue (Duan et al., 2022; Hellal &
+Abou-Elela, 2021; Liang et al., 2021; Rapi et al., 2021; Winkler & Straka, 2019) and is the
+dominant approach applied for wastewater treatment in developing countries (Damalerio,
+Beltran, Orbecido, et al., 2022; Machdar et al., 1997; Ulrich et al., 2009). There are two
+objectives in biologically treating domestic wastewater. The first objective is to
+substantially reduce its organic matter content, which inhibits the growth of heterotrophic
+organisms (Marais & Ekama, 1976). This process prevents the potential spread of
+disease and mitigates the depletion of O 2 in water bodies, which is a common
+consequence of excessive heterotrophic activity. The secondary goal is to curtail the
+concentration of eutrophic substances, such as NH4+, NO2⁻, and NO3⁻ (Marais & Ekama,
+1976). This curtailment restricts the growth of autotrophic organisms and safeguards the
+receiving water bodies from harmful algal blooms.
+
+                                                                             Good-enough
+    Observations           Physical Models          Trial and Error
+                                                                               Designs
+
+
+
+                                                                            Globally Optimal
+                                                   Exact Algorithms
+                                                                                Designs
+
+
+
+                                                                            Locally Optimal
+                                                  Heuristic Algorithms
+                                                                               Designs
+
+
+
+
+                                                        Linear
+                                                   Approximation of
+                                                                             Near-globally
+                                                    Physical Models
+                                                                            Optimal Designs
+                                                           +
+                                                   Exact Algorithms
+
+
+
+Figure 1-1 General wastewater treatment design flow with alternative computational
+methodologies and design outputs
+
+Page |9
+
+Designing biological wastewater treatment systems involves a hierarchy of
+methodologies (Aboagye et al., 2021; Gu et al., 2023; Narayanan & Narayan, 2019;
+Padrón-Páez et al., 2020; Rivas et al., 2008; Shojaei & Shojaei, 2021), each with unique
+strengths and limitations. A general structure of the alternative computational design
+methodologies employed in the literature is summarized in Figure 1-1. At the most
+fundamental level, direct observations—such as monitoring microbial populations,
+nutrient concentrations, sludge quality, and oxygen demand—provide the baseline data
+necessary for any subsequent design work (Croll et al., 2023; Manav-Demir et al., 2024).
+These observations feed into biophysical models that simulate key biochemical
+processes (Henze et al., 2006). Widely recognized models, such as the activated sludge
+models (ASM) (Henze et al., 2006), make it possible to predict effluent quality (Calise et
+al., 2020; Szeląg et al., 2022), manage energy usage (Szeląg et al., 2022), and achieve
+process stability (Caro et al., 2024; Jafarinejad, 2020) in biological wastewater treatment
+systems. Initial design efforts often follow a trial-and-error approach, making minor
+adjustments like altering retention times, aeration rates, or pH levels, to achieve
+acceptable outcomes for the system (Sadri Moghaddam & Pirali, 2021). This approach is
+often assisted with simulation software like GPS-X, Biowin, AQUASIM, SUMO, and
+SIMBA (Bazemo et al., 2021; Bressani-Ribeiro et al., 2021; Caro et al., 2024; Jafarinejad,
+2020; Sadri Moghaddam & Pirali, 2021).
+However, as system complexity grows and optimization demands increase, exact
+algorithms can be employed to mathematically search for globally optimal configurations
+(Aboagye et al., 2021; Damalerio, Beltran, & Aviso, 2022; Padrón-Páez et al., 2020). In
+practice, computational challenges and non-linearities in biological reactions limit the
+feasibility of exact optimization algorithms, leading to the adoption of heuristic
+optimization algorithms—like genetic algorithms, simulated annealing, or generalized
+reduce gradient—that generate workable, locally optimal solutions (Gu et al., 2023; Jana
+et al., 2022; B. Li et al., 2022; Niu et al., 2022; Rivas et al., 2008; Shojaei & Shojaei,
+2021). To bridge the gap between computational complexity and accuracy, linear
+approximations of non-linear models can be combined with exact algorithms, delivering
+near-globally optimal designs that approach ideal performance without excessive
+calculation times (Kim et al., 2009; Kusiak & Wei, 2012; M. Li et al., 2020; T. Yang et al.,
+2014). Ultimately, depending on design requirements and resource constraints, the
+selection of design methodology can yield outcomes ranging from basic “good-enough”
+solutions to near-globally optimal ones, creating a spectrum of approaches that
+wastewater engineers can strategically apply for the optimization of new or existing
+treatment infrastructure.
+
+P a g e | 10
+
+                    Trial and Error                                                                                           Exact Algorithms
+
+                               Solutions are not optimal,                                           Solutions are not guaranteed.
+                                 but are good enough.
+                                                                                                      Optimization model is directly
+                                      Solutions are greatly                                             based on physical model.
+                                      dependent on human                 Applicability is
+                                           judgment.                     contingent on              Execution is automatic.
+                                                                          many factors.
+                                                                                                         Computational cost scales
+                                Execution is labor-                                                       exponentially with the
+                                    intensive.                                                           complexity of the physical
+                                                                                                                  model.
+
+
+
+                                                                                                    Solutions are independent
+                                                                   Reliability of the solution is      of human judgment.
+                                     Computationally                dependent on either the
+                                 inexpensive (in general)           accuracy of the physical              Computational cost is
+                                                                    model or the reliability of        greatly dependent on solver
+                                                                     the calibration dataset.          type and parameter values.
+
+
+
+
+                              Solutions are always
+                                  guaranteed.                                                        Solutions are not
+                               Computationally inexpensive                                           globally-optimal.
+                              regardless of solver type or the
+                                                                      Computational cost
+                             complexity of the physical model.                                                   Solutions are not
+                                                                      scales linearly with
+                                       Solutions are near              the complexity of                        always guaranteed.
+                                       globally-optimal.              the physical model.
+                                  Reliability of the solution is                                       Solutions are not
+                                  dependent on the accuracy                                            globally-optimal.
+   Linear Approximation of
+                                    of the approximation.
+       Physical Models
+              +
+      Exact Algorithms                                                                                                     Heuristic Algorithms
+
+
+Figure 1-2 Similarities and differences between the computational design methodologies
+A comparison of the alternative computational design approaches described above are
+presented in Figure 1-2. Trial-and-error methods excel at providing quick fixes and
+allowing operators to make incremental improvements based on empirical observations.
+It is the most commonly applied approach in practice with the use of various simulation
+software (Bazemo et al., 2021; Caro et al., 2024; Díez-Montero et al., 2019; Hellal & Abou-
+Elela, 2021; Jafarinejad, 2020; Jasim, 2020; Kasi et al., 2011; Lainé et al., 1999; Liang et
+al., 2021; Nazif et al., 2023; Sadri Moghaddam & Pirali, 2021; Simsek et al., 2012). Such
+methods are manageable, but they often require substantial human effort and are labor-
+intensive. On the opposite end, exact algorithms seek globally optimal configurations and
+ensure that no superior solution remains undiscovered in an optimization routine that
+seeks either optimal process design or control. Though computationally demanding,
+these algorithms provide high precision and are best suited for well-defined and smaller-
+scale problems, where linearity assumptions can be considered acceptable (Aboagye et
+al., 2021; Damalerio, Beltran, & Aviso, 2022; Padrón-Páez et al., 2020). However, this
+rarely happens when dealing directly with complex biochemical models of wastewater
+treatment processes, which are often nonlinear due to Monod functions that define
+reaction rates (Henze et al., 2006). Positioned between these extremes, heuristic
+algorithms offer a pragmatic compromise by applying educated “rules of thumb” to
+
+P a g e | 11
+
+navigate large, complex, and highly non-linear scenarios (Poh et al., 2016). While they
+may not guarantee a global optimum, they efficiently generate good solutions within
+reasonable timeframes, making them popular for intricate systems where exact
+approaches may be infeasible (Poh et al., 2016).
+On the other hand, linear approximations present a way to simplify complex, non-linear
+biological processes into more manageable models (Kim et al., 2009; Kusiak & Wei, 2012;
+M. Li et al., 2020; T. Yang et al., 2014). These linear model approximations may directly
+be calibrated using data that would otherwise be used to calibrate the nonlinear
+biophysical models that are usually used in simulation software like Biowin, GPS-X,
+AQUASIM, SUMO, and SIMBA (Bressani-Ribeiro et al., 2021; Hellal & Abou-Elela, 2021;
+Kasi et al., 2011; Lainé et al., 1999; Liang et al., 2021). Unlike nonlinear biophysical
+models, these methods can be integrated with exact optimization algorithms to achieve
+near-globally optimal solutions without imposing excessive computational demands. This
+balanced approach effectively combines accuracy with practicality. However, a notable
+challenge is that linearization techniques commonly employed in the literature, such as
+Taylor series expansions (M. Li et al., 2020; T. Yang et al., 2014), significantly restrict the
+applicability of the models to the vicinity of the approximation point. Furthermore, while
+such approaches are frequently utilized in process controller design (M. Li et al., 2020; T.
+Yang et al., 2014), their application to optimal process design—such as wastewater
+network optimization and process set-point determination—remains relatively rare.
+Another linearization technique is through multivariable polynomial fitting (Ahn et al.,
+2014; Kim et al., 2009; Lim et al., 2011). However, the current application of this approach
+usually disregards the interdependence of compounds in biological wastewater treatment
+systems, which is a major flaw. Kusiak & Wei (2012) was the first to address this issue
+with a system of coupled nonlinear equations for the activated sludge process, but their
+training dataset included target variables which constitute a major data spillage. Their
+model is also nonlinear. At present, a competent linear model addressing the issues
+presented above is not yet developed.
+On the other hand, common machine learning (ML) methods, such as XGBoost,
+LightGBM, random forests, support vector machines (SVM), and artificial neural networks
+(ANNs), while widely used in soft sensing and optimal control (Croll et al., 2023; Fang et
+al., 2011; Manav-Demir et al., 2024), are rarely utilized for approximating biophysical
+models of biological wastewater treatment systems like, for example, bio-towers (Tyagi
+et al., 2021). These ML methods yield nonlinear approximations, but they can still be
+solved with greater ease than the original biophysical models using heuristic optimization
+algorithms (Fang et al., 2011). For example, Fang et al. (2011) trained an SVM using
+simulation data then performed optimization using the trained SVM model. A similar data-
+driven application was performed by Asadi et al. (2017) but with random forests, artificial
+neural networks, multi-adaptive regression spline, and k-nearest neighbors algorithms.
+ML methods are suitable candidates for the approximation because they can
+
+P a g e | 12
+
+simultaneously perform predictions on multiple wastewater compounds. Multiple
+response optimization has been emphasized as an important research direction in the
+field of biological wastewater treatment (Nazlabadi et al., 2021).
+On the other hand, ML method that generate linear models that can perform simultaneous
+predictions on multiple wastewater compounds is presently unexplored in the literature
+(Nazlabadi et al., 2021). An obvious candidate for such a method would be some new
+implementation of the canonical regression technique, but no attempt is currently made
+for applications such as approximating nonlinear biophysical models of biological
+wastewater treatment systems. This research direction is interesting because it can
+greatly improve on existing linear approximations like Taylor series expansion (M. Li et
+al., 2020; T. Yang et al., 2014) and multivariable polynomial fitting (Ahn et al., 2014; Kim
+et al., 2009; Lim et al., 2011); and would facilitate near-global optimization for either
+process design or control unlike the previously mentioned ML models which are only
+solvable using heuristic optimization algorithms that yield locally optimal solutions.
+The special case of bio-towers as a potential application for these ML methodologies is
+also interesting because the transport and biochemical reaction mechanisms of bio-
+towers are governed by advection-diffusion-reaction (ADR) equations. A protocol for
+approximating either the steady-state or unsteady state ADR equations of bio-towers by
+ML methods is also an unexplored realm in the literature. ADR equations are notoriously
+difficult to calculate within an optimization routine, so a protocol for its linear
+approximation can greatly advance the efficiency of computational routines in simulation
+and design software like Biowin, GPS-X, AQUASIM, SUMO, and SIMBA. In fact, none of
+this software currently have built-in process design optimization features, which could be
+attributed to the computational difficulty of calculating with the nonlinear biophysical
+models of biological wastewater systems for which they are based on. Given these gaps,
+the objectives of this study are:
+      Investigate and compare existing ML algorithms for approximating nonlinear
+       biophysical models of biological wastewater treatment systems.
+      Develop a new method for generating a linear model that surpasses the ML
+       algorithms mentioned above in terms of (i) computing time, (ii) prediction accuracy,
+       and (iii) robustness when modeling both the activated sludge system (perfectly
+       mixed, suspended growth system) and bio-tower system (advective-diffusive,
+       attached growth system).
+      Demonstrate the use of ML algorithms for optimal process design.
+
+P a g e | 13
+
+2    Theoretical Background
+
+Central to biological wastewater treatment is the fact that continuous supply of matter and
+energy is essential to support life through the creation and upkeep of cells. The key
+elements involved in this life system include hydrogen (H), oxygen (O), carbon (C) and
+nitrogen (N). Based on this, microorganisms involved in biological wastewater treatment
+can be categorized based on the three main energy sources they derive from.
+Photosynthetic autotrophs rely on radiation as their primary energy source. Heterotrophs
+obtain energy from organic compounds. Chemical autotrophs use inorganic compounds
+as their energy source.
+
+    Bulk wastewater                                                                                                                              Predation
+                                                                                                                                                  Decay
+                                     Photosynthesized carbohydrates
+
+
+
+
+                                                                                                                                        Electron acceptors,
+                             Light                                                                          Organics
+                                                                                                                                         i.e.,  and N
+                                                                      Predation, Decay
+
+
+
+
+                                                                                                             Egestion, Decay
+
+
+
+            Photosynthesis
+                                                                                                                               Growth
+
+
+
+
+        Photosynthetic
+                                                                                                            Heterotrophs                                      Chemical autotrophs
+         autotrophs
+                                                                                    Decay, Ammonification
+
+
+
+
+                                                                                                                                            Nutrients,
+        i.e., Cyanobacteria                                                                                        i.e., Rotifers           i.e., N           i.e., Nitrosomonas species
+                                                          Decay
+                                                     Growth
+
+
+Figure 2-1 Simplistic representation of the processes carried out by microorganisms in
+biological WWTPs following ASM3. The arrows indicate material conversion. The labels
+on the arrows indicate the conversion process.
+A simplistic representation of the (bio)processes that microorganisms carry out in
+biological WWTPs is illustrated in Figure 2-1. Solar radiation is the primary energy source
+for the biosphere, and photosynthetic autotrophs capture this energy through
+photosynthesis, converting CO₂ and water into glucose and releasing O₂, which supports
+other life forms. These autotrophs also require nutrients like nitrogen and phosphorus for
+growth and metabolism, with nitrogen being essential for proteins and nucleic acids, and
+phosphorous for ATP production. However, nutrient availability, especially in aquatic
+ecosystems, can limit their growth. Heterotrophs, such as protozoa, fungi, and bacteria,
+rely on consuming other organisms or organic matter for energy, which is used to
+synthesize their cells, though some energy is lost as heat in the process. This results in
+a decrease in available organic energy as it transfers between organisms, eventually
+limiting heterotrophic life. Chemical autotrophs, which derive energy from the oxidation of

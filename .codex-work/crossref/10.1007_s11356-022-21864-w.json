@@ -1,0 +1,840 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        5
+      ]
+    ],
+    "date-time": "2026-08-05T12:42:43Z",
+    "timestamp": 1785933763740,
+    "version": "3.56.0"
+  },
+  "reference-count": 55,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            3
+          ]
+        ],
+        "date-time": "2022-08-03T00:00:00Z",
+        "timestamp": 1659484800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            3
+          ]
+        ],
+        "date-time": "2022-08-03T00:00:00Z",
+        "timestamp": 1659484800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Environ Sci Pollut Res"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1007/s11356-022-21864-w",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        3
+      ]
+    ],
+    "date-time": "2022-08-03T07:03:57Z",
+    "timestamp": 1659510237000
+  },
+  "page": "1622-1639",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 20,
+  "title": [
+    "A new hybrid ensemble approach for the prediction of effluent total nitrogen from a full-scale wastewater treatment plant using a combined trickling filter-activated sludge system"
+  ],
+  "prefix": "10.1007",
+  "volume": "30",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0003-1943-1604",
+      "authenticated-orcid": false,
+      "given": "Shabnam",
+      "family": "Sadri Moghaddam",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Hassan",
+      "family": "Mesghali",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        3
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "issue": "14",
+      "key": "21864_CR1",
+      "doi-asserted-by": "publisher",
+      "first-page": "20496",
+      "DOI": "10.1007/s11356-021-17190-2",
+      "volume": "29",
+      "author": "J Alavi",
+      "year": "2022",
+      "unstructured": "Alavi J, Ewees AA, Ansari S, Shahid S, Yaseen ZM (2022) A new insight for real-time wastewater quality prediction using hybridized kernel-based extreme learning machines with advanced optimization algorithms. Environ Sci Pollut Res 29(14):20496–20516. https://doi.org/10.1007/s11356-021-17190-2",
+      "journal-title": "Environ Sci Pollut Res"
+    },
+    {
+      "issue": "11",
+      "key": "21864_CR2",
+      "doi-asserted-by": "publisher",
+      "first-page": "302",
+      "DOI": "10.14569/ijacsa.2011.021110",
+      "volume": "2",
+      "author": "M-A Amal",
+      "year": "2011",
+      "unstructured": "Amal M-A, Ahmed B-A (2011) Survey of nearest neighbor condensing techniques. Int J Adv Comp Sci Appl 2(11):302–5. https://doi.org/10.14569/ijacsa.2011.021110",
+      "journal-title": "Int J Adv Comp Sci Appl"
+    },
+    {
+      "issue": "March",
+      "key": "21864_CR3",
+      "doi-asserted-by": "publisher",
+      "first-page": "102033",
+      "DOI": "10.1016/j.jwpe.2021.102033",
+      "volume": "41",
+      "author": "F Bagherzadeh",
+      "year": "2021",
+      "unstructured": "Bagherzadeh F, Mehrani MJ, Basirifard M, Roostaei J (2021) Comparative study on total nitrogen prediction in wastewater treatment plant and effect of various feature selection methods on machine learning algorithms performance. J Water Process Eng 41(March):102033. https://doi.org/10.1016/j.jwpe.2021.102033",
+      "journal-title": "J Water Process Eng"
+    },
+    {
+      "key": "21864_CR4",
+      "doi-asserted-by": "publisher",
+      "first-page": "115663",
+      "DOI": "10.1016/j.envpol.2020.115663",
+      "volume": "268",
+      "author": "SK Bhagat",
+      "year": "2021",
+      "unstructured": "Bhagat SK, Tiyasha T, Awadh SM, Tung TM, Jawad AH, Yaseen ZM (2021) Prediction of sediment heavy metal at the Australian bays using newly developed hybrid artificial intelligence models. Environ Pollut 268:115663. https://doi.org/10.1016/j.envpol.2020.115663",
+      "journal-title": "Environ Pollut"
+    },
+    {
+      "key": "21864_CR5",
+      "unstructured": "Breiman L, Friedman JH, Olshen R, Stone C (1984) Classification and regression trees. Wadsworth & Brooks, Pacific Grove"
+    },
+    {
+      "key": "21864_CR6",
+      "unstructured": "Buitinck L, Gilles L, Mathieu B, Fabian P, Andreas M, Olivier G, Vlad N et al (2013) API design for machine learning software: experiences from the Scikit-learn project. In: European conference on machine learning and principles and practices of knowledge discovery in databases. pp 1–15. http://arxiv.org/abs/1309.0238"
+    },
+    {
+      "issue": "13",
+      "key": "21864_CR7",
+      "doi-asserted-by": "publisher",
+      "first-page": "3819",
+      "DOI": "10.1016/j.watres.2010.04.042",
+      "volume": "44",
+      "author": "E Clifford",
+      "year": "2010",
+      "unstructured": "Clifford E, Nielsen M, Sørensen K, Rodgers M (2010) Nitrogen dynamics and removal in a horizontal flow biofilm reactor for wastewater treatment. Water Res 44(13):3819–3828. https://doi.org/10.1016/j.watres.2010.04.042",
+      "journal-title": "Water Res"
+    },
+    {
+      "issue": "5",
+      "key": "21864_CR8",
+      "doi-asserted-by": "publisher",
+      "first-page": "388",
+      "DOI": "10.2175/106143010X12681059117210",
+      "volume": "83",
+      "author": "GT Daigger",
+      "year": "2011",
+      "unstructured": "Daigger GT, Boltz JP (2011) Trickling filter and trickling filter-suspended growth process design and operation: a state-of-the-art review. Water Environ Res 83(5):388–404. https://doi.org/10.2175/106143010X12681059117210",
+      "journal-title": "Water Environ Res"
+    },
+    {
+      "issue": "18",
+      "key": "21864_CR9",
+      "doi-asserted-by": "publisher",
+      "first-page": "4476",
+      "DOI": "10.1016/j.watres.2005.08.031",
+      "volume": "39",
+      "author": "MK De Kreuk",
+      "year": "2005",
+      "unstructured": "De Kreuk MK, Pronk M, Van Loosdrecht MCM (2005) Formation of aerobic granules and conversion processes in an aerobic granular sludge reactor at moderate and low temperatures. Water Res 39(18):4476–4484. https://doi.org/10.1016/j.watres.2005.08.031",
+      "journal-title": "Water Res"
+    },
+    {
+      "issue": "December 2018",
+      "key": "21864_CR10",
+      "doi-asserted-by": "publisher",
+      "first-page": "100819",
+      "DOI": "10.1016/j.jwpe.2019.100819",
+      "volume": "31",
+      "author": "A Elawwad",
+      "year": "2019",
+      "unstructured": "Elawwad A, Minerva M, Mohamed A-Z, Hisham A-H (2019) Plant-wide modeling and optimization of a large-scale WWTP using BioWin’s ASDM model. J Water Process Eng 31(December 2018):100819. https://doi.org/10.1016/j.jwpe.2019.100819",
+      "journal-title": "J Water Process Eng"
+    },
+    {
+      "key": "21864_CR11",
+      "doi-asserted-by": "publisher",
+      "first-page": "3133",
+      "DOI": "10.1117/1.JRS.11.015020",
+      "volume": "15",
+      "author": "M Fernández-Delgado",
+      "year": "2014",
+      "unstructured": "Fernández-Delgado M, Cernadas E, Barro S, Amorim D (2014) Do we need hundreds of classifiers to solve real world classification problems? J Mach Learn Res 15:3133–3181. https://doi.org/10.1117/1.JRS.11.015020",
+      "journal-title": "J Mach Learn Res"
+    },
+    {
+      "key": "21864_CR12",
+      "unstructured": "Géron A (2019) Book review: hands-on machine learning with Scikit-Learn, Keras, and Tensorflow, 2nd edn. O’Reilly Media, Inc. https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/"
+    },
+    {
+      "issue": "2",
+      "key": "21864_CR13",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.3390/w9020105",
+      "volume": "9",
+      "author": "F Granata",
+      "year": "2017",
+      "unstructured": "Granata F, Papirio S, Esposito G, Gargano R, de Marinis G (2017) Machine learning algorithms for the forecasting of wastewater quality indicators. Water (switzerland) 9(2):1–12. https://doi.org/10.3390/w9020105",
+      "journal-title": "Water (switzerland)"
+    },
+    {
+      "key": "21864_CR14",
+      "doi-asserted-by": "publisher",
+      "first-page": "90",
+      "DOI": "10.1016/j.jes.2015.01.007",
+      "volume": "32",
+      "author": "H Guo",
+      "year": "2015",
+      "unstructured": "Guo H, Jeong K, Lim J, Jo J, Kim YM, Park JP, Kim JH, Cho KH (2015) Prediction of effluent concentration in a wastewater treatment plant using machine learning models. J Environ Sci (China) 32:90–101. https://doi.org/10.1016/j.jes.2015.01.007",
+      "journal-title": "J Environ Sci (China)"
+    },
+    {
+      "issue": "July 2020",
+      "key": "21864_CR15",
+      "doi-asserted-by": "publisher",
+      "first-page": "124114",
+      "DOI": "10.1016/j.biortech.2020.124114",
+      "volume": "319",
+      "author": "HN Guo",
+      "year": "2021",
+      "unstructured": "Guo HN, Wu SB, Tian YJ, Zhang J, Liu HT (2021) Application of Machine learning methods for the prediction of organic solid waste treatment and recycling processes: a review. Bioresour Technol 319(July 2020):124114. https://doi.org/10.1016/j.biortech.2020.124114",
+      "journal-title": "Bioresour Technol"
+    },
+    {
+      "key": "21864_CR16",
+      "doi-asserted-by": "publisher",
+      "first-page": "88",
+      "DOI": "10.1016/j.envsoft.2013.05.009",
+      "volume": "47",
+      "author": "H Haimi",
+      "year": "2013",
+      "unstructured": "Haimi H, Mulas M, Corona F, Vahala R (2013) Data-derived soft-sensors for biological wastewater treatment plants: an overview. Environ Model Softw 47:88–107. https://doi.org/10.1016/j.envsoft.2013.05.009",
+      "journal-title": "Environ Model Softw"
+    },
+    {
+      "key": "21864_CR17",
+      "doi-asserted-by": "publisher",
+      "first-page": "111",
+      "DOI": "10.1016/j.psep.2018.04.017",
+      "volume": "117",
+      "author": "G Hasani",
+      "year": "2018",
+      "unstructured": "Hasani G, Daraei H, Shahmoradi B, Gharibi F, Maleki A, Yetilmezsoy K, McKay G (2018) A novel ANN approach for modeling of alternating pulse current electrocoagulation-flotation (APC-ECF) process: humic acid removal from aqueous media. Process Saf Environ Prot 117:111–124. https://doi.org/10.1016/j.psep.2018.04.017",
+      "journal-title": "Process Saf Environ Prot"
+    },
+    {
+      "issue": "August 2021",
+      "key": "21864_CR18",
+      "doi-asserted-by": "publisher",
+      "first-page": "113783",
+      "DOI": "10.1016/j.jenvman.2021.113783",
+      "volume": "301",
+      "author": "SMZ Hossain",
+      "year": "2022",
+      "unstructured": "Hossain SMZ, Sultana N, Mohammed ME, Razzak SA, Hossain MM (2022) Hybrid support vector regression and crow search algorithm for modeling and multiobjective optimization of microalgae-based wastewater treatment. J Environ Manage 301(August 2021):113783. https://doi.org/10.1016/j.jenvman.2021.113783",
+      "journal-title": "J Environ Manage"
+    },
+    {
+      "issue": "1",
+      "key": "21864_CR19",
+      "doi-asserted-by": "publisher",
+      "first-page": "279",
+      "DOI": "10.1016/j.aej.2021.04.100",
+      "volume": "61",
+      "author": "KS Ibrahim",
+      "year": "2022",
+      "unstructured": "Ibrahim KS, Hassan M, Huang YF, Ahmed AN, Koo CH, El-Shafie A (2022) A review of the hybrid artificial intelligence and optimization modelling of hydrological streamflow forecasting. Alex Eng J 61(1):279–303. https://doi.org/10.1016/j.aej.2021.04.100",
+      "journal-title": "Alex Eng J"
+    },
+    {
+      "key": "21864_CR20",
+      "unstructured": "Iqbal MA (2020) Application of regression techniques with their advantages and disadvantages. Elektron Magazine 11–17"
+    },
+    {
+      "key": "21864_CR21",
+      "doi-asserted-by": "publisher",
+      "unstructured": "James G, Witten D, Hastie T, Tibshirani R (2013) An introduction to statistical learning. journal of physics a: mathematical and theoretical, vol 103. Springer Texts in Statistics. Springer New York, New York, NY. https://doi.org/10.1007/978-1-4614-7138-7",
+      "DOI": "10.1007/978-1-4614-7138-7"
+    },
+    {
+      "issue": "January",
+      "key": "21864_CR22",
+      "doi-asserted-by": "publisher",
+      "first-page": "104792",
+      "DOI": "10.1016/j.envsoft.2020.104792",
+      "volume": "132",
+      "author": "J Jiang",
+      "year": "2020",
+      "unstructured": "Jiang J, Tang S, Han D, Guangtao Fu, Solomatine D, Zheng Yi (2020) A comprehensive review on the design and optimization of surface water quality monitoring networks. Environ Model Softw 132(January):104792. https://doi.org/10.1016/j.envsoft.2020.104792",
+      "journal-title": "Environ Model Softw"
+    },
+    {
+      "key": "21864_CR23",
+      "doi-asserted-by": "publisher",
+      "first-page": "905",
+      "DOI": "10.1016/j.psep.2020.12.016",
+      "volume": "146",
+      "author": "P Kazemi",
+      "year": "2021",
+      "unstructured": "Kazemi P, Bengoa C, Steyer JP, Giralt J (2021) Data-driven techniques for fault detection in anaerobic digestion process. Process Saf Environ Prot 146:905–915. https://doi.org/10.1016/j.psep.2020.12.016",
+      "journal-title": "Process Saf Environ Prot"
+    },
+    {
+      "key": "21864_CR24",
+      "doi-asserted-by": "publisher",
+      "first-page": "130204",
+      "DOI": "10.1016/j.chemosphere.2021.130204",
+      "volume": "276",
+      "author": "Bo Ke",
+      "year": "2021",
+      "unstructured": "Ke Bo, Nguyen H, Bui XN, Bui HB, Choi Y, Zhou J, Moayedi H, Costache R, Nguyen-Trang T (2021) Predicting the sorption efficiency of heavy metal based on the biochar characteristics, metal sources, and environmental conditions using various novel hybrid machine learning models. Chemosphere 276:130204. https://doi.org/10.1016/j.chemosphere.2021.130204",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "issue": "1",
+      "key": "21864_CR25",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.29115/sp-2018-0001",
+      "volume": "11",
+      "author": "A Kirchner",
+      "year": "2018",
+      "unstructured": "Kirchner A, Signorino CS (2018) Using support vector machines for survey research. Surv Pract 11(1):1–14. https://doi.org/10.29115/sp-2018-0001",
+      "journal-title": "Surv Pract"
+    },
+    {
+      "issue": "December",
+      "key": "21864_CR26",
+      "doi-asserted-by": "publisher",
+      "first-page": "89",
+      "DOI": "10.5194/adgeo-5-89-2005",
+      "volume": "5",
+      "author": "P Krause",
+      "year": "2005",
+      "unstructured": "Krause P, Boyle DP, Bäse F (2005) Comparison of different efficiency criteria for hydrological model assessment. Adv Geosci 5(December):89–97. https://doi.org/10.5194/adgeo-5-89-2005",
+      "journal-title": "Adv Geosci"
+    },
+    {
+      "key": "21864_CR27",
+      "doi-asserted-by": "publisher",
+      "first-page": "85",
+      "DOI": "10.1016/j.scitotenv.2019.04.396",
+      "volume": "678",
+      "author": "E Lee",
+      "year": "2019",
+      "unstructured": "Lee E, Rout PR, Shin C, Bae J (2019) Effects of sodium hypochlorite concentration on the methanogenic activity in an anaerobic fluidized membrane bioreactor. Sci Total Environ 678:85–93. https://doi.org/10.1016/j.scitotenv.2019.04.396",
+      "journal-title": "Sci Total Environ"
+    },
+    {
+      "issue": "February",
+      "key": "21864_CR28",
+      "doi-asserted-by": "publisher",
+      "first-page": "197",
+      "DOI": "10.1016/j.apenergy.2018.09.182",
+      "volume": "232",
+      "author": "Yi Li",
+      "year": "2018",
+      "unstructured": "Li Yi, Zou C, Berecibar M, Nanini-Maury E, Chan JCW, van den Bossche P, Van Mierlo J, Omar N (2018) Random forest regression for online capacity estimation of lithium-ion batteries. Appl Energy 232(February):197–210. https://doi.org/10.1016/j.apenergy.2018.09.182",
+      "journal-title": "Appl Energy"
+    },
+    {
+      "issue": "November 2017",
+      "key": "21864_CR29",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "DOI": "10.1016/j.ecoinf.2018.01.003",
+      "volume": "44",
+      "author": "L Liu",
+      "year": "2018",
+      "unstructured": "Liu L, Lei Y (2018) An accurate ecological footprint analysis and prediction for Beijing based on SVM model. Ecol Inf 44(November 2017):33–42. https://doi.org/10.1016/j.ecoinf.2018.01.003",
+      "journal-title": "Ecol Inf"
+    },
+    {
+      "key": "21864_CR30",
+      "unstructured": "Lundberg, Scott M., and Su In Lee. 2017. “A unified approach to interpreting model predictions.” Adv Neural Inf Process Syst 2017-Decem (Section 2): 4766–75."
+    },
+    {
+      "key": "21864_CR31",
+      "doi-asserted-by": "publisher",
+      "first-page": "193",
+      "DOI": "10.1016/j.apenergy.2016.08.096",
+      "volume": "183",
+      "author": "J Ma",
+      "year": "2016",
+      "unstructured": "Ma J, Cheng JCP (2016) Identifying the influential features on the regional energy use intensity of residential buildings based on random forests. Appl Energy 183:193–201. https://doi.org/10.1016/j.apenergy.2016.08.096",
+      "journal-title": "Appl Energy"
+    },
+    {
+      "key": "21864_CR32",
+      "unstructured": "APHA (2012) Standard methods for the examination of water and waste water, 22nd edn. American Public Health Association, American Water Works Association, Water Environment Federation"
+    },
+    {
+      "key": "21864_CR33",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Mockus J (1989) “Global optimization and the Bayesian approach.” In , 1:1–3. https://doi.org/10.1007/978-94-009-0909-0_1",
+      "DOI": "10.1007/978-94-009-0909-0_1"
+    },
+    {
+      "issue": "4",
+      "key": "21864_CR34",
+      "doi-asserted-by": "publisher",
+      "first-page": "102",
+      "DOI": "10.46326/JMES.2020.61(4).11",
+      "volume": "61",
+      "author": "AD Nguyen",
+      "year": "2020",
+      "unstructured": "Nguyen AD, Tran HQ, Tran BD, Soukhanouvong P (2020) Prediction of the peak velocity of blasting vibration based on various models at Ninh Dan Quarry, Thanh Ba District, Phu Tho Province. J Min Earth Sci 61(4):102–9. https://doi.org/10.46326/JMES.2020.61(4).11",
+      "journal-title": "J Min Earth Sci"
+    },
+    {
+      "issue": "10",
+      "key": "21864_CR35",
+      "doi-asserted-by": "publisher",
+      "first-page": "2064",
+      "DOI": "10.2166/wst.2018.477",
+      "volume": "78",
+      "author": "V Nourani",
+      "year": "2018",
+      "unstructured": "Nourani V, Elkiran G, Abba SI (2018) Wastewater treatment plant performance analysis using artificial intelligence – an ensemble approach. Water Sci Technol 78(10):2064–2076. https://doi.org/10.2166/wst.2018.477",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "21864_CR36",
+      "doi-asserted-by": "publisher",
+      "first-page": "504705",
+      "DOI": "10.1155/2013/504705",
+      "volume": "2013",
+      "author": "D Nourmohammadi",
+      "year": "2013",
+      "unstructured": "Nourmohammadi D, Esmaeeli MB, Akbarian H, Ghasemian M (2013) Nitrogen removal in a full-scale domestic wastewater treatment plant with activated sludge and trickling filter. J Environ Public Health 2013:504705. https://doi.org/10.1155/2013/504705",
+      "journal-title": "J Environ Public Health"
+    },
+    {
+      "issue": "20",
+      "key": "21864_CR37",
+      "doi-asserted-by": "publisher",
+      "first-page": "15910",
+      "DOI": "10.1007/s11356-015-4676-3",
+      "volume": "22",
+      "author": "HS Ou",
+      "year": "2015",
+      "unstructured": "Ou HS, Wei CH, Hai Zhen Wu, Mo CH, He BY (2015) Sequential dynamic artificial neural network modeling of a full-scale coking wastewater treatment plant with fluidized bed reactors. Environ Sci Pollut Res 22(20):15910–15919. https://doi.org/10.1007/s11356-015-4676-3",
+      "journal-title": "Environ Sci Pollut Res"
+    },
+    {
+      "issue": "99003",
+      "key": "21864_CR38",
+      "first-page": "525",
+      "volume": "1",
+      "author": "M Pelikan",
+      "year": "1999",
+      "unstructured": "Pelikan M, Goldberg DE, Cantú-Paz E (1999) BOA : The Bayesian optimization algorithm 1 introduction. Proc Gene Evol Comput Conf GECCO- 1(99003):525–32",
+      "journal-title": "Proc Gene Evol Comput Conf GECCO-"
+    },
+    {
+      "key": "21864_CR39",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Pelikan M (2005) “Bayesian optimization algorithm.” In , 48:31–48. https://doi.org/10.1007/978-3-540-32373-0_3",
+      "DOI": "10.1007/978-3-540-32373-0_3"
+    },
+    {
+      "issue": "January",
+      "key": "21864_CR40",
+      "doi-asserted-by": "publisher",
+      "first-page": "196",
+      "DOI": "10.17148/IJARCCE.2015.4142",
+      "volume": "2015",
+      "author": "TR Prajwala",
+      "year": "2015",
+      "unstructured": "Prajwala TR (2015) A comparative study on decision tree and random forest using R tool. IJARCCE 2015(January):196–99. https://doi.org/10.17148/IJARCCE.2015.4142",
+      "journal-title": "IJARCCE"
+    },
+    {
+      "issue": "July",
+      "key": "21864_CR41",
+      "doi-asserted-by": "publisher",
+      "first-page": "113246",
+      "DOI": "10.1016/j.jenvman.2021.113246",
+      "volume": "296",
+      "author": "PR Rout",
+      "year": "2021",
+      "unstructured": "Rout PR, Shahid MK, Dash RR, Bhunia P, Liu D, Varjani S, Zhang TC, Surampalli RY (2021) Nutrient removal from domestic wastewater: a comprehensive review on conventional and advanced technologies. J Environ Manage 296(July):113246. https://doi.org/10.1016/j.jenvman.2021.113246",
+      "journal-title": "J Environ Manage"
+    },
+    {
+      "issue": "4",
+      "key": "21864_CR42",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.1002/widm.1249",
+      "volume": "8",
+      "author": "O Sagi",
+      "year": "2018",
+      "unstructured": "Sagi O, Rokach L (2018) Ensemble learning: a survey. Wiley Interdisc Rev: Data Min Knowl Discov 8(4):1–18. https://doi.org/10.1002/widm.1249",
+      "journal-title": "Wiley Interdisc Rev: Data Min Knowl Discov"
+    },
+    {
+      "issue": "4",
+      "key": "21864_CR43",
+      "doi-asserted-by": "publisher",
+      "first-page": "359",
+      "DOI": "10.3233/MAS-180446",
+      "volume": "13",
+      "author": "DN Schreiber-Gregory",
+      "year": "2018",
+      "unstructured": "Schreiber-Gregory DN (2018) Ridge regression and multicollinearity: an in-depth review. Model Assist Stat Appl 13(4):359–365. https://doi.org/10.3233/MAS-180446",
+      "journal-title": "Model Assist Stat Appl"
+    },
+    {
+      "key": "21864_CR44",
+      "unstructured": "Scikit-optimize (2022) “Sequential model-based optimization in python.” https://Scikit-Optimize.Github.Io/Stable/. 2022. https://scikit-optimize.github.io/stable/"
+    },
+    {
+      "issue": "4",
+      "key": "21864_CR45",
+      "doi-asserted-by": "publisher",
+      "first-page": "2094",
+      "DOI": "10.21275/v5i4.nov162954",
+      "volume": "5",
+      "author": "H Sharma",
+      "year": "2016",
+      "unstructured": "Sharma H, Kumar S (2016) A survey on decision tree algorithms of classification in data mining. Int J Sci Res (IJSR) 5(4):2094–97. https://doi.org/10.21275/v5i4.nov162954",
+      "journal-title": "Int J Sci Res (IJSR)"
+    },
+    {
+      "issue": "October 2021",
+      "key": "21864_CR46",
+      "doi-asserted-by": "publisher",
+      "first-page": "101587",
+      "DOI": "10.1016/j.jocs.2022.101587",
+      "volume": "59",
+      "author": "J Sun",
+      "year": "2022",
+      "unstructured": "Sun J, Wu S, Zhang H, Zhang X, Wang T (2022) Based on multi-algorithm hybrid method to predict the slope safety factor – stacking ensemble learning with Bayesian optimization. J Comput Sci 59(October 2021):101587. https://doi.org/10.1016/j.jocs.2022.101587",
+      "journal-title": "J Comput Sci"
+    },
+    {
+      "key": "21864_CR47",
+      "unstructured": "Tabachnick BG, Fidell LS (2007) Using multivariate statistics, 5th edn. Allyn & Bacon/Pearson Education"
+    },
+    {
+      "key": "21864_CR48",
+      "volume-title": "Wastewater engineering: treatment and reuse",
+      "author": "G Tchobanoglous",
+      "year": "2014",
+      "unstructured": "Tchobanoglous G, Burton FL, David Stensel H, Metcalf, and Eddy. (2014) Wastewater engineering: treatment and reuse, 5th edn. Tata McGraw-Hill Publishing Company Limited, New Delhi",
+      "edition": "5"
+    },
+    {
+      "issue": "PA",
+      "key": "21864_CR49",
+      "doi-asserted-by": "publisher",
+      "first-page": "114020",
+      "DOI": "10.1016/j.jenvman.2021.114020",
+      "volume": "302",
+      "author": "R Wang",
+      "year": "2022",
+      "unstructured": "Wang R, Yu Y, Chen Y, Pan Z, Li X, Tan Z, Zhang J (2022b) Model construction and application for effluent prediction in wastewater treatment plant: data processing method optimization and process parameters integration. J Environ Manage 302(PA):114020. https://doi.org/10.1016/j.jenvman.2021.114020",
+      "journal-title": "J Environ Manage"
+    },
+    {
+      "key": "21864_CR50",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Wang D, Thunéll S, Lindberg U, Jiang L, Trygg J, Tysklind M (2022a) Towards better process management in wastewater treatment plants: process analytics based on SHAP values for tree-based machine learning methods. J Environ Manage 301. https://doi.org/10.1016/j.jenvman.2021.113941",
+      "DOI": "10.1016/j.jenvman.2021.113941"
+    },
+    {
+      "issue": "1",
+      "key": "21864_CR51",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "DOI": "10.11989/JEST.1674-862X.80904120",
+      "volume": "17",
+      "author": "J Wu",
+      "year": "2019",
+      "unstructured": "Wu J, Chen XY, Zhang H, Xiong LD, Lei H, Deng SH (2019) Hyperparameter optimization for machine learning models based on Bayesian optimization. J Electron Sci Technol 17(1):26–40. https://doi.org/10.11989/JEST.1674-862X.80904120",
+      "journal-title": "J Electron Sci Technol"
+    },
+    {
+      "key": "21864_CR52",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Wu X, Kumar V, Ross QJ, Ghosh J, Yang Q, Motoda H, McLachlan GJ et al (2008) Top 10 algorithms in data mining. Knowl Inf Syst 14(1):1–37. https://doi.org/10.1007/s10115-007-0114-2",
+      "DOI": "10.1007/s10115-007-0114-2"
+    },
+    {
+      "issue": "August 2021",
+      "key": "21864_CR53",
+      "doi-asserted-by": "publisher",
+      "first-page": "111848",
+      "DOI": "10.1016/j.postharvbio.2022.111848",
+      "volume": "186",
+      "author": "W Xie",
+      "year": "2022",
+      "unstructured": "Xie W, Wei S, Zheng Z, Chang Z, Yang D (2022) Developing a Stacked Ensemble Model for Predicting the Mass of Fresh Carrot. Postharvest Biol Technol 186(August 2021):111848. https://doi.org/10.1016/j.postharvbio.2022.111848",
+      "journal-title": "Postharvest Biol Technol"
+    },
+    {
+      "issue": "January",
+      "key": "21864_CR54",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jwpe.2020.101388",
+      "volume": "37",
+      "author": "M Yaqub",
+      "year": "2020",
+      "unstructured": "Yaqub M, Asif H, Kim S, Lee W (2020) Modeling of a full-scale sewage treatment plant to predict the nutrient removal efficiency using a long short-term memory (LSTM) neural network. J Water Process Eng 37(January):101388. https://doi.org/10.1016/j.jwpe.2020.101388",
+      "journal-title": "J Water Process Eng"
+    },
+    {
+      "issue": "14",
+      "key": "21864_CR55",
+      "doi-asserted-by": "publisher",
+      "first-page": "20556",
+      "DOI": "10.1007/s11356-021-16916-6",
+      "volume": "29",
+      "author": "M Zounemat-Kermani",
+      "year": "2022",
+      "unstructured": "Zounemat-Kermani M, Alizamir M, Keshtegar B, Batelaan O, Hinkelmann R (2022) Prediction of effluent arsenic concentration of wastewater treatment plants using machine learning and Kriging-based models. Environ Sci Pollut Res 29(14):20556–20570. https://doi.org/10.1007/s11356-021-16916-6",
+      "journal-title": "Environ Sci Pollut Res"
+    }
+  ],
+  "container-title": [
+    "Environmental Science and Pollution Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s11356-022-21864-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s11356-022-21864-w/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s11356-022-21864-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        4
+      ]
+    ],
+    "date-time": "2023-01-04T05:25:00Z",
+    "timestamp": 1672809900000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s11356-022-21864-w"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        3
+      ]
+    ]
+  },
+  "references-count": 55,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "21864"
+  ],
+  "URL": "https://doi.org/10.1007/s11356-022-21864-w",
+  "relation": {},
+  "ISSN": [
+    "0944-1344",
+    "1614-7499"
+  ],
+  "issn-type": [
+    {
+      "value": "0944-1344",
+      "type": "print"
+    },
+    {
+      "value": "1614-7499",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        3
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "13 April 2022",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "1 July 2022",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "3 August 2022",
+      "order": 3,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "order": 1,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Declarations"
+      }
+    },
+    {
+      "value": "The submitted study has not been published elsewhere in any form or language (partially or in full).",
+      "order": 2,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Ethics approval"
+      }
+    },
+    {
+      "value": "The authors give their consent for submission and publication.",
+      "order": 3,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Consent for publication"
+      }
+    },
+    {
+      "value": "The authors declare no competing interests.",
+      "order": 4,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Competing interests"
+      }
+    }
+  ]
+}

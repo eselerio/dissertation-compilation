@@ -1,0 +1,872 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        20
+      ]
+    ],
+    "date-time": "2026-08-20T16:13:55Z",
+    "timestamp": 1787242435382,
+    "version": "build-2736575974"
+  },
+  "reference-count": 45,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2025-12-01T00:00:00Z",
+        "timestamp": 1764547200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2025-12-01T00:00:00Z",
+        "timestamp": 1764547200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2025-12-01T00:00:00Z",
+        "timestamp": 1764547200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2025-12-01T00:00:00Z",
+        "timestamp": 1764547200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2025-12-01T00:00:00Z",
+        "timestamp": 1764547200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2025-12-01T00:00:00Z",
+        "timestamp": 1764547200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2025-12-01T00:00:00Z",
+        "timestamp": 1764547200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100002648",
+      "name": "Catholic University of Korea",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100002648",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Environmental Research"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2025,
+        12
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.envres.2025.122990",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2025-10-07T00:08:48Z",
+    "timestamp": 1759795728000
+  },
+  "page": "122990",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 7,
+  "special_numbering": "P3",
+  "title": [
+    "Machine learning based prediction of waste activated sludge generation for optimization of WWTP operational efficiency"
+  ],
+  "prefix": "10.1016",
+  "volume": "286",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0005-1455-0737",
+      "authenticated-orcid": false,
+      "given": "Seongjun",
+      "family": "Yang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Junyoung",
+      "family": "Kim",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jiyoung",
+      "family": "Eom",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0003-4775-1039",
+      "authenticated-orcid": false,
+      "given": "Minseo",
+      "family": "Kim",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Myungjin",
+      "family": "Lee",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-7520-9261",
+      "authenticated-orcid": false,
+      "given": "Kang Hoon",
+      "family": "Lee",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.envres.2025.122990_bib1",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cageo.2020.104555",
+      "article-title": "Principal component analysis (PCA) based hybrid models for the accurate estimation of reservoir water saturation",
+      "volume": "145",
+      "author": "Asante-Okyere",
+      "year": "2020",
+      "journal-title": "Comput. Geosci."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.envres.2025.122990_bib2",
+      "doi-asserted-by": "crossref",
+      "first-page": "343",
+      "DOI": "10.3390/info15060343",
+      "article-title": "Identification of optimal data augmentation techniques for multimodal time-series sensory data: a framework",
+      "volume": "15",
+      "author": "Ashfaq",
+      "year": "2024",
+      "journal-title": "Information"
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib3",
+      "article-title": "Comparative study on total nitrogen prediction in wastewater treatment plant and effect of various feature selection methods on machine learning algorithms performance",
+      "volume": "41",
+      "author": "Bagherzadeh",
+      "year": "2021",
+      "journal-title": "J. Water Proc. Eng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.envres.2025.122990_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "5",
+      "DOI": "10.1023/A:1010933404324",
+      "article-title": "Random forests",
+      "volume": "45",
+      "author": "Breiman",
+      "year": "2001",
+      "journal-title": "Mach. Learn."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib5",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2019.122455",
+      "article-title": "Correlations of nitrogen removal and core functional genera in full-scale wastewater treatment plants: influences of different treatment processes and influent characteristics",
+      "volume": "297",
+      "author": "Cao",
+      "year": "2020",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib6",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2024.131362",
+      "article-title": "Prediction and optimization of wastewater treatment process effluent chemical oxygen demand and energy consumption based on typical ensemble learning models",
+      "volume": "411",
+      "author": "Chen",
+      "year": "2024",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib7",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2024.122696",
+      "article-title": "Quality evaluation parameter and classification model for effluents of wastewater treatment plant based on machine learning",
+      "volume": "268",
+      "author": "Chen",
+      "year": "2025",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib8",
+      "series-title": "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+      "first-page": "785",
+      "article-title": "XGBoost: a scalable tree boosting system",
+      "author": "Chen",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib9",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2024.122337",
+      "article-title": "Development and application of an intelligent nitrogen removal diagnosis and optimization framework for WWTPs: Low-carbon and stable operation",
+      "volume": "266",
+      "author": "Chen",
+      "year": "2024",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib10",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2023.119448",
+      "article-title": "Application of machine learning algorithms and feature selection methods for better prediction of sludge production in a real advanced biological wastewater treatment plant",
+      "volume": "348",
+      "author": "Ekinci",
+      "year": "2023",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib11",
+      "doi-asserted-by": "crossref",
+      "first-page": "122",
+      "DOI": "10.1016/j.healthplace.2019.04.001",
+      "article-title": "A scoping review of simulation modeling in built environment and physical activity research: current status, gaps, and future directions for improving translation",
+      "volume": "57",
+      "author": "Frerichs",
+      "year": "2019",
+      "journal-title": "Health Place"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.envres.2025.122990_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "1189",
+      "DOI": "10.1214/aos/1013203451",
+      "article-title": "Greedy function approximation: a gradient boosting machine",
+      "volume": "29",
+      "author": "Friedman",
+      "year": "2001",
+      "journal-title": "Ann. Stat."
+    },
+    {
+      "issue": "14",
+      "key": "10.1016/j.envres.2025.122990_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "2225",
+      "DOI": "10.1016/j.patrec.2010.03.014",
+      "article-title": "Variable selection using random forests",
+      "volume": "31",
+      "author": "Genuer",
+      "year": "2010",
+      "journal-title": "Pattern Recognit. Lett."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib14",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.envres.2024.118146",
+      "article-title": "Machine learning-based prediction of effluent total suspended solids in a wastewater treatment plant using different feature selection approaches: a comparative study",
+      "volume": "246",
+      "author": "Gholizadeh",
+      "year": "2024",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "86",
+      "DOI": "10.1016/j.wasman.2024.01.005",
+      "article-title": "Grouping of unused agricultural by-product biomass for fuel conversion in South Korea through multivariate analysis",
+      "volume": "177",
+      "author": "Ju",
+      "year": "2024",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.envres.2025.122990_bib16",
+      "doi-asserted-by": "crossref",
+      "first-page": "100",
+      "DOI": "10.1006/jmva.1999.1852",
+      "article-title": "Canonical analysis applied to multivariate analysis of variance",
+      "volume": "72",
+      "author": "Lejeune",
+      "year": "2000",
+      "journal-title": "J. Multivariate Anal."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.envres.2024.120653",
+      "article-title": "Optimizing carbon source addition to control surplus sludge yield via machine learning-based interpretable ensemble model",
+      "volume": "267",
+      "author": "Li",
+      "year": "2025",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib18",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2022.116072",
+      "article-title": "The overall and time-varying efficiency test for the carbon market in China",
+      "volume": "322",
+      "author": "Lin",
+      "year": "2022",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.envres.2025.122990_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "546",
+      "DOI": "10.3390/ma9070546",
+      "article-title": "Acid-Alkali resistance of new reclaimed tiles containing sewage sludge ash and waste glass",
+      "volume": "9",
+      "author": "Lin",
+      "year": "2016",
+      "journal-title": "Materials"
+    },
+    {
+      "issue": "13",
+      "key": "10.1016/j.envres.2025.122990_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "12828",
+      "DOI": "10.1007/s11356-019-04671-8",
+      "article-title": "Online prediction of effluent COD in the anaerobic wastewater treatment system based on PCA-LSSVM algorithm",
+      "volume": "26",
+      "author": "Liu",
+      "year": "2019",
+      "journal-title": "Environ. Sci. Pollut. Control Ser."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "1493",
+      "DOI": "10.1016/j.scitotenv.2018.06.254",
+      "article-title": "Ten years of application of sewage sludge on tropical soil. A balance sheet on agricultural crops and environmental quality",
+      "volume": "643",
+      "author": "Melo",
+      "year": "2018",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib22",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jhazmat.2021.125426",
+      "article-title": "Vertical flow constructed wetlands using expanded clay and biochar for wastewater remediation: a comparative study and prediction of effluents using machine learning",
+      "volume": "413",
+      "author": "Nguyen",
+      "year": "2021",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.envres.2025.122990_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "3110",
+      "DOI": "10.1016/j.watres.2012.03.028",
+      "article-title": "Water quality sample collection, data treatment and results presentation for principal components analysis – literature review and Illinois River watershed case study",
+      "volume": "46",
+      "author": "Olsen",
+      "year": "2012",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.envres.2025.122990_bib24",
+      "doi-asserted-by": "crossref",
+      "first-page": "2621",
+      "DOI": "10.1016/j.watres.2005.04.024",
+      "article-title": "Evaluation of river water quality monitoring stations by principal component analysis",
+      "volume": "39",
+      "author": "Ouyang",
+      "year": "2005",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.envres.2025.122990_bib25",
+      "first-page": "4821",
+      "article-title": "Prediction of biochemical oxygen demand in a wastewater treatment plant by artificial neural networks",
+      "volume": "21",
+      "author": "Ozkan",
+      "year": "2009",
+      "journal-title": "Asian J. Chem."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.envres.2025.122990_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "1261",
+      "DOI": "10.1007/s00521-016-2642-8",
+      "article-title": "Dynamic multi-objective optimization control for wastewater treatment process",
+      "volume": "29",
+      "author": "Qiao",
+      "year": "2018",
+      "journal-title": "Neural Comput. Appl."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib27",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2023.120503",
+      "article-title": "Predicting aqueous sorption of organic pollutants on microplastics with machine learning",
+      "volume": "244",
+      "author": "Qiu",
+      "year": "2023",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "52",
+      "DOI": "10.1016/j.wasman.2023.01.025",
+      "article-title": "Sustainability assessment of alternative waste-to-energy technologies for the management of sewage sludge",
+      "volume": "159",
+      "author": "Ronda",
+      "year": "2023",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.envres.2025.122990_bib29",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/aisy.202400304",
+      "article-title": "A perspective on explainable artificial intelligence methods: SHAP and LIME",
+      "volume": "7",
+      "author": "Salih",
+      "year": "2025",
+      "journal-title": "Adv Intell Syst."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib30",
+      "series-title": "Analysis of Machine Learning Models for Wastewater Treatment Plant Sludge Output Prediction",
+      "author": "Shao",
+      "year": "2023"
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib31",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2022.128486",
+      "article-title": "Artificial intelligence and machine learning-based monitoring and design of biological wastewater treatment systems",
+      "volume": "369",
+      "author": "Singh",
+      "year": "2023",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.envres.2025.122990_bib32",
+      "doi-asserted-by": "crossref",
+      "first-page": "313",
+      "DOI": "10.1504/IJEWM.2019.103106",
+      "article-title": "Artificial neural networks for forecasting wastewater parameters of a common effluent treatment plant",
+      "volume": "24",
+      "author": "Vyas",
+      "year": "2019",
+      "journal-title": "Int. J. Environ. Waste Manag."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "4882",
+      "DOI": "10.1109/ICRA.2019.8793656",
+      "article-title": "Part segmentation for highly accurate deformable tracking in occlusions via fully convolutional neural networks",
+      "volume": "2019",
+      "author": "Wan",
+      "year": "2019",
+      "journal-title": "2019 International Conference on Robotics and Automation (ICRA)"
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib34",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2021.147138",
+      "article-title": "A machine learning framework to improve effluent quality control in wastewater treatment plants",
+      "volume": "784",
+      "author": "Wang",
+      "year": "2021",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib35",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2024.120380",
+      "article-title": "Identifying and monitoring of abandoned farmland in key agricultural production areas on the Qinghai‒Tibet Plateau: a case study of the Huangshui Basin",
+      "volume": "354",
+      "author": "Wang",
+      "year": "2024",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.envres.2025.122990_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "4050",
+      "DOI": "10.1021/acs.est.2c07073",
+      "article-title": "Enhancing biochar-based nonradical persulfate activation using data-driven techniques",
+      "volume": "57",
+      "author": "Wang",
+      "year": "2023",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.envres.2025.122990_bib37",
+      "doi-asserted-by": "crossref",
+      "first-page": "1984",
+      "DOI": "10.1109/TPWRS.2020.3028133",
+      "article-title": "Short-Term load forecasting for industrial customers based on TCN-LightGBM",
+      "volume": "36",
+      "author": "Wang",
+      "year": "2021",
+      "journal-title": "IEEE Trans. Power Syst."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib38",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.wasman.2025.114821",
+      "article-title": "An analytic hierarchy process combined with artificial neural network model to evaluate sustainable sludge treatment scenarios",
+      "volume": "201",
+      "author": "Wu",
+      "year": "2025",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.envres.2025.122990_bib39",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jece.2023.111849",
+      "article-title": "Machine learning-based prediction of biological oxygen demand and unit electricity consumption in different-scale wastewater treatment plants",
+      "volume": "12",
+      "author": "Ye",
+      "year": "2024",
+      "journal-title": "J. Environ. Chem. Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.envres.2025.122990_bib40",
+      "doi-asserted-by": "crossref",
+      "first-page": "820",
+      "DOI": "10.1021/acsestwater.3c00215",
+      "article-title": "Machine learning for heavy metal removal from water: recent advances and challenges",
+      "volume": "4",
+      "author": "Yuan",
+      "year": "2024",
+      "journal-title": "ACS ES&T Water"
+    },
+    {
+      "issue": "17",
+      "key": "10.1016/j.envres.2025.122990_bib41",
+      "doi-asserted-by": "crossref",
+      "first-page": "11925",
+      "DOI": "10.1021/acs.est.1c01849",
+      "article-title": "Applied machine learning for prediction of CO2 adsorption on biomass waste-derived porous carbons",
+      "volume": "55",
+      "author": "Yuan",
+      "year": "2021",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib42",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2025.123976",
+      "article-title": "Machine learning-based optimization of enhanced nitrogen removal in a full-scale urban wastewater treatment plant with ecological combination ponds",
+      "volume": "285",
+      "author": "Yun",
+      "year": "2025",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.1016/j.wasman.2024.07.032",
+      "article-title": "Machine learning modeling of thermally assisted biodrying process for municipal sludge",
+      "volume": "188",
+      "author": "Zhang",
+      "year": "2024",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.envres.2025.122990_bib44",
+      "doi-asserted-by": "crossref",
+      "first-page": "1781",
+      "DOI": "10.1007/s00477-019-01732-9",
+      "article-title": "A random forest model for inflow prediction at wastewater treatment plants",
+      "volume": "33",
+      "author": "Zhou",
+      "year": "2019",
+      "journal-title": "Stoch. Environ. Res. Risk Assess."
+    },
+    {
+      "key": "10.1016/j.envres.2025.122990_bib45",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2022.119349",
+      "article-title": "Machine learning modelling of a membrane capacitive deionization (MCDI) system for prediction of long-term system performance and optimization of process control parameters in remote brackish water desalination",
+      "volume": "227",
+      "author": "Zhu",
+      "year": "2022",
+      "journal-title": "Water Res."
+    }
+  ],
+  "updated-by": [
+    {
+      "DOI": "10.1016/j.envres.2025.123542",
+      "type": "erratum",
+      "label": "Erratum",
+      "source": "publisher",
+      "updated": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2026-02-15T00:00:00Z",
+        "timestamp": 1771113600000
+      }
+    }
+  ],
+  "container-title": [
+    "Environmental Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0013935125022431?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0013935125022431?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        10
+      ]
+    ],
+    "date-time": "2026-03-10T12:19:38Z",
+    "timestamp": 1773145178000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0013935125022431"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        12
+      ]
+    ]
+  },
+  "references-count": 45,
+  "alternative-id": [
+    "S0013935125022431"
+  ],
+  "URL": "https://doi.org/10.1016/j.envres.2025.122990",
+  "relation": {},
+  "ISSN": [
+    "0013-9351"
+  ],
+  "issn-type": [
+    {
+      "value": "0013-9351",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        12
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Machine learning based prediction of waste activated sludge generation for optimization of WWTP operational efficiency",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Environmental Research",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.envres.2025.122990",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "122990"
+}

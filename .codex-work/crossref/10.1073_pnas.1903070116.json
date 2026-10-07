@@ -1,0 +1,509 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2026-10-06T12:42:30Z",
+    "timestamp": 1791290550234,
+    "version": "4.3.0"
+  },
+  "reference-count": 31,
+  "publisher": "National Academy of Sciences",
+  "issue": "32",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            24
+          ]
+        ],
+        "date-time": "2020-01-24T00:00:00Z",
+        "timestamp": 1579824000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 184,
+      "URL": "https://www.pnas.org/site/aboutpnas/licenses.xhtml"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "RI-1815697"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "RI-1815697"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "CCF-1740833"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "CCF-1740833"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000879",
+      "name": "Alfred P. Sloan Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "FG-2016-6295"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "FG-2016-6295"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000879",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "www.pnas.org"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Proc. Natl. Acad. Sci. U.S.A."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        8,
+        6
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Significance</jats:title>\n                  <jats:p>While breakthroughs in machine learning and artificial intelligence are changing society, our fundamental understanding has lagged behind. It is traditionally believed that fitting models to the training data exactly is to be avoided as it leads to poor performance on unseen data. However, powerful modern classifiers frequently have near-perfect fit in training, a disconnect that spurred recent intensive research and controversy on whether theory provides practical insights. In this work, we show how classical theory and modern practice can be reconciled within a single unified performance curve and propose a mechanism underlying its emergence. We believe this previously unknown pattern connecting the structure and performance of learning architectures will help shape design and understanding of learning algorithms.</jats:p>",
+  "DOI": "10.1073/pnas.1903070116",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        24
+      ]
+    ],
+    "date-time": "2019-07-24T19:15:28Z",
+    "timestamp": 1563995728000
+  },
+  "page": "15849-15854",
+  "update-policy": "https://doi.org/10.1073/pnas.cm10313",
+  "source": "Crossref",
+  "is-referenced-by-count": 1238,
+  "title": [
+    "Reconciling modern machine-learning practice and the classical bias–variance trade-off"
+  ],
+  "prefix": "10.1073",
+  "volume": "116",
+  "author": [
+    {
+      "given": "Mikhail",
+      "family": "Belkin",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Computer Science and Engineering, The Ohio State University, Columbus, OH 43210;"
+        },
+        {
+          "name": "Department of Statistics, The Ohio State University, Columbus, OH 43210;"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Daniel",
+      "family": "Hsu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Computer Science Department and Data Science Institute, Columbia University, New York, NY 10027"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Siyuan",
+      "family": "Ma",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Computer Science and Engineering, The Ohio State University, Columbus, OH 43210;"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Soumik",
+      "family": "Mandal",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Computer Science and Engineering, The Ohio State University, Columbus, OH 43210;"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "341",
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        24
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_3_3_1_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1992.4.1.1"
+    },
+    {
+      "key": "e_1_3_3_2_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-0-387-21606-5"
+    },
+    {
+      "key": "e_1_3_3_3_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1111/j.1756-8765.2008.01006.x"
+    },
+    {
+      "key": "e_1_3_3_4_2",
+      "unstructured": "R. Salakhutdinov Deep learning tutorial at the Simons Institute Berkeley. https://simons.berkeley.edu/talks/ruslan-salakhutdinov-01-26-2017-1. Accessed 28 December 2018 (2017)."
+    },
+    {
+      "key": "e_1_3_3_5_2",
+      "unstructured": "C. Zhang S. Bengio M. Hardt B. Recht O. Vinyals “Understanding deep learning requires rethinking generalization” in Proceedings of International Conference on Learning Representations (International Conference on Learning Representations 2017)."
+    },
+    {
+      "key": "e_1_3_3_6_2",
+      "unstructured": "M. Belkin S. Ma S. Mandal “To understand deep learning we need to understand kernel learning” in Proceedings of the 35th International Conference on Machine Learning J. Dy A. Krause Eds. (Proceedings of Machine Learning Research Stockholm Sweden 2018) vol. 80 pp. 541–549."
+    },
+    {
+      "key": "e_1_3_3_7_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-1-4757-2440-0"
+    },
+    {
+      "key": "e_1_3_3_8_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0020-0190(87)90114-1"
+    },
+    {
+      "key": "e_1_3_3_9_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/18.661502"
+    },
+    {
+      "key": "e_1_3_3_10_2",
+      "first-page": "1651",
+      "article-title": "Boosting the margin: A new explanation for the effectiveness of voting methods",
+      "volume": "26",
+      "author": "Schapire R. E.",
+      "year": "1998",
+      "unstructured": "R. E. Schapire, Y. Freund, P. Bartlett, W. S. Lee, Boosting the margin: A new explanation for the effectiveness of voting methods. Ann. Stat. 26, 1651–1686 (1998).",
+      "journal-title": "Ann. Stat."
+    },
+    {
+      "key": "e_1_3_3_11_2",
+      "first-page": "2300",
+      "volume-title": "Advances in Neural Information Processing Systems",
+      "author": "Belkin M.",
+      "year": "2018",
+      "unstructured": "M. Belkin, D. Hsu, P. Mitra, “Overfitting or perfect fitting? Risk bounds for classification and regression rules that interpolate” in Advances in Neural Information Processing Systems, S. Bengio, H. Wallach, H. Larochelle, K. Grauman, N. Cesa-Bianchi, R. Garnett, Eds. (Curran Associates, Inc., 2018), pp. 2300–2311."
+    },
+    {
+      "key": "e_1_3_3_12_2",
+      "unstructured": "M. Belkin A. Rakhlin A. B. Tsybakov “Does data interpolation contradict statistical optimality?” in Proceedings of Machine Learning Research K. Chaudhuri M. Sugiyama Eds. (Proceedings of Machine Learning Research 2019) vol. 89 pp. 1611–1619."
+    },
+    {
+      "key": "e_1_3_3_13_2",
+      "first-page": "1177",
+      "volume-title": "Advances in Neural Information Processing Systems",
+      "author": "Rahimi A.",
+      "year": "2008",
+      "unstructured": "A. Rahimi, B. Recht, “Random features for large-scale kernel machines” in Advances in Neural Information Processing Systems, J. C. Platt, D. Koller, Y. Singer, S. T. Roweis, Eds. (Curran Associates, Inc., 2008), pp. 1177–1184."
+    },
+    {
+      "key": "e_1_3_3_14_2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "B. E. Boser I. M. Guyon V. N. Vapnik “A training algorithm for optimal margin classifiers” in Proceedings of the Fifth Annual Workshop on Computational Learning Theory (ACM New York NY 1992) pp. 144–152.",
+      "DOI": "10.1145/130385.130401"
+    },
+    {
+      "key": "e_1_3_3_15_2",
+      "first-page": "3215",
+      "volume-title": "Advances in Neural Information Processing Systems",
+      "author": "Rudi A.",
+      "year": "2017",
+      "unstructured": "A. Rudi, L. Rosasco, “Generalization properties of learning with random features” in Advances in Neural Information Processing Systems, I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, R. Garnett, Eds. (Curran Associates, Inc., New York, NY, 2017), pp. 3215–3225."
+    },
+    {
+      "key": "e_1_3_3_16_2",
+      "first-page": "6151",
+      "volume-title": "Advances in Neural Information Processing Systems",
+      "author": "Gunasekar S.",
+      "year": "2017",
+      "unstructured": "S. Gunasekar, B. E. Woodworth, S. Bhojanapalli, B. Neyshabur, N. Srebro, “Implicit regularization in matrix factorization” in Advances in Neural Information Processing Systems, I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, R. Garnett, Eds. (Curran Associates, Inc., New York, NY, 2017), pp. 6151–6159."
+    },
+    {
+      "key": "e_1_3_3_17_2",
+      "unstructured": "Y. Li T. Ma H. Zhang “Algorithmic regularization in over-parameterized matrix sensing and neural networks with quadratic activations” in Proceedings of the 31st Conference On Learning Theory S. Bubeck V. Perchet P. Rigollet Eds. (Proceedings of Machine Learning Research 2018) vol. 75 pp. 2–47."
+    },
+    {
+      "key": "e_1_3_3_18_2",
+      "first-page": "141",
+      "volume-title": "Advances in Neural Information Processing Systems",
+      "author": "Bös S.",
+      "year": "1997",
+      "unstructured": "S. Bös, M. Opper, “Dynamics of training” in Advances in Neural Information Processing Systems, M. C. Mozer, M. I. Jordan, T. Petsche, Eds. (MIT Press, 1997), pp. 141–147."
+    },
+    {
+      "key": "e_1_3_3_19_2",
+      "unstructured": "M. S. Advani A. M. Saxe High-dimensional dynamics of generalization error in neural networks. arXiv:1710.03667 (10 October 2017)."
+    },
+    {
+      "key": "e_1_3_3_20_2",
+      "unstructured": "B. Neal A modern take on the bias-variance tradeoff in neural networks. arXiv:1810.08591 (25 January 2019)."
+    },
+    {
+      "key": "e_1_3_3_21_2",
+      "unstructured": "S. Spigler A jamming transition from under-to over-parametrization affects loss landscape and generalization. arXiv:1810.09665 (22 October 2018)."
+    },
+    {
+      "key": "e_1_3_3_22_2",
+      "unstructured": "A. Canziani A. Paszke E. Culurciello An analysis of deep neural network models for practical applications. arXiv:1605.07678 (24 May 2016)."
+    },
+    {
+      "key": "e_1_3_3_23_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11263-015-0816-y"
+    },
+    {
+      "key": "e_1_3_3_24_2",
+      "first-page": "1",
+      "article-title": "Explaining the success of adaboost and random forests as interpolating classifiers",
+      "volume": "18",
+      "author": "Wyner A. J.",
+      "year": "2017",
+      "unstructured": "A. J. Wyner, M. Olson, J. Bleich, D. Mease, Explaining the success of adaboost and random forests as interpolating classifiers. J. Mach. Learn. Res. 18, 1–33(2017).",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "e_1_3_3_25_2",
+      "first-page": "490",
+      "article-title": "Pert-perfect random tree ensembles",
+      "volume": "33",
+      "author": "Cutler A.",
+      "year": "2001",
+      "unstructured": "A. Cutler, G. Zhao, Pert-perfect random tree ensembles. Comput. Sci. Stat. 33, 490–497 (2001).",
+      "journal-title": "Comput. Sci. Stat."
+    },
+    {
+      "key": "e_1_3_3_26_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1013203451"
+    },
+    {
+      "key": "e_1_3_3_27_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1198/016214503000125"
+    },
+    {
+      "key": "e_1_3_3_28_2",
+      "volume-title": "All of Nonparametric Statistics",
+      "author": "Wasserman L.",
+      "year": "2006",
+      "unstructured": "L. Wasserman, All of Nonparametric Statistics (Springer, 2006)."
+    },
+    {
+      "key": "e_1_3_3_29_2",
+      "doi-asserted-by": "crossref",
+      "first-page": "63",
+      "DOI": "10.1007/978-3-540-28650-9_4",
+      "volume-title": "Advanced Lectures on Machine Learning",
+      "author": "Rasmussen C. E.",
+      "year": "2004",
+      "unstructured": "C. E. Rasmussen, “Gaussian processes in machine learning” in Advanced Lectures on Machine Learning, O. Bousquet, U. von Luxburg, G. Rätsch, Eds. (Springer, Berlin, 2004), pp. 63–71."
+    },
+    {
+      "key": "e_1_3_3_30_2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIT.2018.2854560"
+    },
+    {
+      "key": "e_1_3_3_31_2",
+      "unstructured": "S. Ma R. Bassily M. Belkin “The power of interpolation: Understanding the effectiveness of SGD in modern over-parametrized learning” in Proceedings of the 35th International Conference on Machine Learning Proceedings of Machine Learning Research J. Dy A. Krause eds. (PMLR Stockholmsmässan Stockholm Sweden 2018) vol. 80 pp. 3325–3334."
+    }
+  ],
+  "container-title": [
+    "Proceedings of the National Academy of Sciences"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://www.pnas.org/syndication/doi/10.1073/pnas.1903070116",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://pnas.org/doi/pdf/10.1073/pnas.1903070116",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        13
+      ]
+    ],
+    "date-time": "2022-04-13T05:11:19Z",
+    "timestamp": 1649826679000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://pnas.org/doi/full/10.1073/pnas.1903070116"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        24
+      ]
+    ]
+  },
+  "references-count": 31,
+  "journal-issue": {
+    "issue": "32",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          8,
+          6
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1073/pnas.1903070116"
+  ],
+  "URL": "https://doi.org/10.1073/pnas.1903070116",
+  "relation": {},
+  "ISSN": [
+    "0027-8424",
+    "1091-6490"
+  ],
+  "issn-type": [
+    {
+      "value": "0027-8424",
+      "type": "print"
+    },
+    {
+      "value": "1091-6490",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        24
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2019-07-24",
+      "order": 2,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ]
+}

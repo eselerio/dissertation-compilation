@@ -1,0 +1,515 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        1
+      ]
+    ],
+    "date-time": "2026-08-01T09:35:11Z",
+    "timestamp": 1785576911619,
+    "version": "3.56.0"
+  },
+  "reference-count": 27,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2018-11-01T00:00:00Z",
+        "timestamp": 1541030400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2018-11-01T00:00:00Z",
+        "timestamp": 1541030400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100007038",
+      "name": "Yara International",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100007038",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        11
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.compchemeng.2018.08.031",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        8,
+        24
+      ]
+    ],
+    "date-time": "2018-08-24T22:40:47Z",
+    "timestamp": 1535150447000
+  },
+  "page": "143-151",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 11,
+  "special_numbering": "C",
+  "title": [
+    "Surrogate model generation using self-optimizing variables"
+  ],
+  "prefix": "10.1016",
+  "volume": "119",
+  "author": [
+    {
+      "given": "Julian",
+      "family": "Straus",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-6187-8261",
+      "authenticated-orcid": false,
+      "given": "Sigurd",
+      "family": "Skogestad",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0001",
+      "doi-asserted-by": "crossref",
+      "first-page": "846",
+      "DOI": "10.1021/ie060285+",
+      "article-title": "Null space method for selecting optimal measurement combinations as controlled variables",
+      "volume": "46",
+      "author": "Alstad",
+      "year": "2007",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0002",
+      "doi-asserted-by": "crossref",
+      "first-page": "138",
+      "DOI": "10.1016/j.jprocont.2008.01.002",
+      "article-title": "Optimal measurement combinations as controlled variables",
+      "volume": "19",
+      "author": "Alstad",
+      "year": "2009",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0003",
+      "series-title": "A General-Purpose Software Framework for Dynamic Optimization",
+      "author": "Andersson",
+      "year": "2013"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0004",
+      "doi-asserted-by": "crossref",
+      "first-page": "2633",
+      "DOI": "10.1002/aic.11579",
+      "article-title": "An algorithm for the use of surrogate models in modular flowsheet optimization",
+      "volume": "54",
+      "author": "Caballero",
+      "year": "2008",
+      "journal-title": "AlChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "64",
+      "DOI": "10.1016/j.jprocont.2015.11.008",
+      "article-title": "A directional modifier-adaptation algorithm for real-time optimization",
+      "volume": "39",
+      "author": "Costello",
+      "year": "2016",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0006",
+      "doi-asserted-by": "crossref",
+      "first-page": "2211",
+      "DOI": "10.1002/aic.14418",
+      "article-title": "Learning surrogate models for simulation-based optimization",
+      "volume": "60",
+      "author": "Cozad",
+      "year": "2014",
+      "journal-title": "AlChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0007",
+      "series-title": "Engineering Design via Surrogate Modelling: A Practical Guide",
+      "author": "Forrester",
+      "year": "2008"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0008",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "DOI": "10.1016/j.paerosci.2008.11.001",
+      "article-title": "Recent advances in surrogate-based optimization",
+      "volume": "45",
+      "author": "Forrester",
+      "year": "2009",
+      "journal-title": "Prog. Aerosp. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0009",
+      "unstructured": "Grimstad, B. et al. (2015). SPLINTER: a library for multivariate function approximation with splines. http://github.com/bgrimstad/splinter. Accessed: 2017-11-26."
+    },
+    {
+      "issue": "14",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "3273",
+      "DOI": "10.1021/ie020833t",
+      "article-title": "Optimal selection of controlled variables",
+      "volume": "42",
+      "author": "Halvorsen",
+      "year": "2003",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "Supplement C",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0011",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.1016/j.arcontrol.2017.03.001",
+      "article-title": "Self-optimizing control a survey",
+      "volume": "43",
+      "author": "Jäschke",
+      "year": "2017",
+      "journal-title": "Annu. Rev. Control"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0012",
+      "series-title": "26th European Symposium on Computer Aided Process Engineering",
+      "first-page": "463",
+      "article-title": "Multi-scale modelling software framework facilitating simulation of interconnected scales using surrogate-models",
+      "volume": "vol. 38",
+      "author": "Karolius",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0013",
+      "unstructured": "Krige, D. G. (1951). A Statistical Approach to Some Mine Valuations and Allied Problems at the Witwatersrand. Master’s thesis.South Africa University of Witwatersrand."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0014",
+      "doi-asserted-by": "crossref",
+      "first-page": "503",
+      "DOI": "10.1007/s10898-014-0166-2",
+      "article-title": "ANTIGONE: Algorithms for coNTinuous / integer global optimization of nonlinear equations",
+      "volume": "59",
+      "author": "Misener",
+      "year": "2014",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "161",
+      "DOI": "10.1080/00401706.1991.10484804",
+      "article-title": "Factorial sampling plans for preliminary computational experiments",
+      "volume": "33",
+      "author": "Morris",
+      "year": "1991",
+      "journal-title": "Technometrics"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0016",
+      "doi-asserted-by": "crossref",
+      "first-page": "888",
+      "DOI": "10.1002/aic.690440414",
+      "article-title": "Analysis of instability in an industrial ammonia reactor",
+      "volume": "44",
+      "author": "Morud",
+      "year": "1998",
+      "journal-title": "AlChE J."
+    },
+    {
+      "issue": "Supplement C",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0017",
+      "doi-asserted-by": "crossref",
+      "first-page": "143",
+      "DOI": "10.1016/j.compchemeng.2016.04.039",
+      "article-title": "Large scale optimization of a sour water stripping plant using surrogate models",
+      "volume": "92",
+      "author": "Quirante",
+      "year": "2016",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0018",
+      "doi-asserted-by": "crossref",
+      "first-page": "175",
+      "DOI": "10.1093/comjnl/3.3.175",
+      "article-title": "An automatic method for finding the greatest or least value of a function",
+      "volume": "3",
+      "author": "Rosenbrock",
+      "year": "1960",
+      "journal-title": "Comput. J."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0019",
+      "first-page": "409",
+      "article-title": "Design and analysis of computer experiments",
+      "volume": "4",
+      "author": "Sacks",
+      "year": "1989",
+      "journal-title": "Statist. Sci."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2018.08.031_sbref0018",
+      "doi-asserted-by": "crossref",
+      "first-page": "5718",
+      "DOI": "10.1016/j.ifacol.2017.08.1124",
+      "article-title": "Improved directional derivatives for modifier-adaptation schemes",
+      "volume": "50",
+      "author": "Singhal",
+      "year": "2017",
+      "journal-title": "IFAC-PapersOnLine"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0021",
+      "doi-asserted-by": "crossref",
+      "first-page": "487",
+      "DOI": "10.1016/S0959-1524(00)00023-8",
+      "article-title": "Plantwide control: the search for the self-optimizing control structure",
+      "volume": "10",
+      "author": "Skogestad",
+      "year": "2000",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0022",
+      "series-title": "26th European Symposium on Computer Aided Process Engineering",
+      "first-page": "289",
+      "article-title": "Minimizing the complexity of surrogate models for optimization",
+      "volume": "vol. 38",
+      "author": "Straus",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0023",
+      "series-title": "2017 21st International Conference on Process Control (PC)",
+      "first-page": "309",
+      "article-title": "Economic NMPC for heat-integrated chemical reactors",
+      "author": "Straus",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0024",
+      "series-title": "Proceedings of Foundations of Computer-Aided Process Operations 2017, Tucson, AZ, USA, 8–12 Jan. 2017",
+      "article-title": "Variable reduction for surrogate modelling",
+      "author": "Straus",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "225",
+      "DOI": "10.1007/s10107-005-0581-8",
+      "article-title": "A polyhedral branch-and-cut approach to global optimization",
+      "volume": "103",
+      "author": "Tawarmalani",
+      "year": "2005",
+      "journal-title": "Math. Program"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0026",
+      "doi-asserted-by": "crossref",
+      "first-page": "25",
+      "DOI": "10.1007/s10107-004-0559-y",
+      "article-title": "On the implementation of an interior-point filter line-search algorithm for large-scale nonlinear programming",
+      "volume": "106",
+      "author": "Wächter",
+      "year": "2006",
+      "journal-title": "Math. Program"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2018.08.031_bib0027",
+      "doi-asserted-by": "crossref",
+      "first-page": "995",
+      "DOI": "10.1016/j.jprocont.2012.04.013",
+      "article-title": "Convex formulations for optimal selection of controlled variables and measurements using mixed integer quadratic programming",
+      "volume": "22",
+      "author": "Yelchuru",
+      "year": "2012",
+      "journal-title": "J. Process Control"
+    }
+  ],
+  "container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135418301601?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135418301601?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2025-09-25T17:46:24Z",
+    "timestamp": 1758822384000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0098135418301601"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        11
+      ]
+    ]
+  },
+  "references-count": 27,
+  "alternative-id": [
+    "S0098135418301601"
+  ],
+  "URL": "https://doi.org/10.1016/j.compchemeng.2018.08.031",
+  "relation": {},
+  "ISSN": [
+    "0098-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0098-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        11
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Surrogate model generation using self-optimizing variables",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Computers & Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.compchemeng.2018.08.031",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2018 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

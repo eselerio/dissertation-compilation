@@ -1,0 +1,876 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2026-09-29T08:33:43Z",
+    "timestamp": 1790670823548,
+    "version": "4.1.0"
+  },
+  "reference-count": 47,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2021-10-01T00:00:00Z",
+        "timestamp": 1633046400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2021-10-01T00:00:00Z",
+        "timestamp": 1633046400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2021-10-01T00:00:00Z",
+        "timestamp": 1633046400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2021-10-01T00:00:00Z",
+        "timestamp": 1633046400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2021-10-01T00:00:00Z",
+        "timestamp": 1633046400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2021-10-01T00:00:00Z",
+        "timestamp": 1633046400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2021-10-01T00:00:00Z",
+        "timestamp": 1633046400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100003562",
+      "name": "Ministry of Environment",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2020003160009"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2020003160009"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100003562",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100003725",
+      "name": "National Research Foundation of Korea",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100003725",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100014188",
+      "name": "Ministry of Science and ICT, South Korea",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2021R1A2C2007838"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2021R1A2C2007838"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100014188",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Water Process Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        10
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jwpe.2021.102206",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        7,
+        14
+      ]
+    ],
+    "date-time": "2021-07-14T01:35:50Z",
+    "timestamp": 1626226550000
+  },
+  "page": "102206",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 58,
+  "special_numbering": "C",
+  "title": [
+    "Intelligent sensor validation for sustainable influent quality monitoring in wastewater treatment plants using stacked denoising autoencoders"
+  ],
+  "prefix": "10.1016",
+  "volume": "43",
+  "author": [
+    {
+      "given": "Abdulrahman H.",
+      "family": "Ba-Alawi",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Paulina",
+      "family": "Vilela",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jorge",
+      "family": "Loy-Benitez",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "SungKu",
+      "family": "Heo",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "ChangKyoo",
+      "family": "Yoo",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "287",
+      "DOI": "10.1016/j.psep.2018.02.006",
+      "article-title": "Monitoring of wastewater treatment plants using improved univariate statistical technique",
+      "volume": "116",
+      "author": "Baklouti",
+      "year": "2018",
+      "journal-title": "Process. Saf. Environ. Prot."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0010",
+      "article-title": "Population response modeling and habitat suitability of Cobitis choii fish species in South Korea for climate change adaptation",
+      "author": "Vilela",
+      "year": "2019",
+      "journal-title": "Ecotoxicol. Environ. Saf."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "259",
+      "DOI": "10.1016/j.psep.2019.11.018",
+      "article-title": "Process assessment of a full-scale wastewater treatment plant using reliability, resilience, and Econo-socio-environmental analyses (R2ESE)",
+      "volume": "133",
+      "author": "Ba-Alawi",
+      "year": "2020",
+      "journal-title": "Process Saf. Environ. Prot. Trans. Inst. Chem. Eng. Part B."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.watres.2016.12.026",
+      "article-title": "Effect of long-term successive storm flows on water reclamation plant resilience",
+      "volume": "111",
+      "author": "Zhu",
+      "year": "2017",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0025",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2019.121814",
+      "article-title": "Decision support systems (DSS) for wastewater treatment plants – a review of the state of the art",
+      "volume": "290",
+      "author": "Mannina",
+      "year": "2019",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.jprocont.2019.03.005",
+      "article-title": "Explicit and interpretable nonlinear soft sensor models for influent surveillance at a full-scale wastewater treatment plant",
+      "volume": "77",
+      "author": "Wang",
+      "year": "2019",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "38",
+      "DOI": "10.1016/j.conengprac.2019.04.008",
+      "article-title": "Ensemble model of wastewater treatment plant based on rich diversity of principal component determining by genetic algorithm for status monitoring",
+      "volume": "88",
+      "author": "Li",
+      "year": "2019",
+      "journal-title": "Control. Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0040",
+      "doi-asserted-by": "crossref",
+      "first-page": "989",
+      "DOI": "10.1016/j.scitotenv.2018.03.247",
+      "article-title": "A systematic approach of removal mechanisms, control and optimization of silver nanoparticle in wastewater treatment plants",
+      "volume": "633",
+      "author": "Vilela",
+      "year": "2018",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0045",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scs.2019.101670",
+      "article-title": "Deep learning approach for sustainable WWTP operation: a case study on data-driven influent conditions monitoring",
+      "volume": "50",
+      "author": "Dairi",
+      "year": "2019",
+      "journal-title": "Sustain. Cities Soc."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "348",
+      "DOI": "10.1016/j.scs.2017.11.030",
+      "article-title": "COVERS-UP: collaborative verification of smart user profiles for social sustainability of smart cities",
+      "volume": "38",
+      "author": "Lorimer",
+      "year": "2018",
+      "journal-title": "Sustain. Cities Soc."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0055",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2019.119145",
+      "article-title": "An integrated data-driven framework for surface water quality anomaly detection and early warning",
+      "volume": "251",
+      "author": "Liu",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0060",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2020.121787",
+      "article-title": "A novel effluent quality predicting model based on genetic-deep belief network algorithm for cleaner production in a full-scale paper-making wastewater treatment",
+      "volume": "265",
+      "author": "Niu",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0065",
+      "doi-asserted-by": "crossref",
+      "first-page": "498",
+      "DOI": "10.1016/j.watres.2019.03.030",
+      "article-title": "Data-driven performance analyses of wastewater treatment plants: a review",
+      "volume": "157",
+      "author": "Newhart",
+      "year": "2019",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "11",
+      "DOI": "10.1016/j.chemolab.2018.02.001",
+      "article-title": "Neural component analysis for fault detection",
+      "volume": "176",
+      "author": "Zhao",
+      "year": "2018",
+      "journal-title": "Chemom. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0075",
+      "doi-asserted-by": "crossref",
+      "first-page": "513",
+      "DOI": "10.2166/wst.2006.155",
+      "article-title": "Sensor validation and reconciliation for a partial nitrification process",
+      "volume": "53",
+      "author": "Yoo",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0080",
+      "doi-asserted-by": "crossref",
+      "first-page": "448",
+      "DOI": "10.1016/j.jhazmat.2010.07.045",
+      "article-title": "Predictive monitoring and diagnosis of periodic air pollution in a subway station",
+      "volume": "183",
+      "author": "Kim",
+      "year": "2010",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0085",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scs.2019.101847",
+      "article-title": "Sustainable subway indoor air quality monitoring and fault-tolerant ventilation control using a sparse autoencoder-driven sensor self-validation",
+      "volume": "52",
+      "author": "Loy-Benitez",
+      "year": "2020",
+      "journal-title": "Sustain. Cities Soc."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0090",
+      "doi-asserted-by": "crossref",
+      "first-page": "316",
+      "DOI": "10.1016/j.ecoenv.2018.11.024",
+      "article-title": "Sequential prediction of quantitative health risk assessment for the fine particulate matter in an underground facility using deep recurrent neural networks",
+      "volume": "169",
+      "author": "Loy-Benitez",
+      "year": "2019",
+      "journal-title": "Ecotoxicol. Environ. Saf."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "94",
+      "DOI": "10.1016/j.infsof.2017.11.008",
+      "article-title": "Software defect prediction using stacked denoising autoencoders and two-stage ensemble learning",
+      "volume": "96",
+      "author": "Tong",
+      "year": "2018",
+      "journal-title": "Inf. Softw. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0100",
+      "doi-asserted-by": "crossref",
+      "first-page": "169",
+      "DOI": "10.1016/j.psep.2019.11.014",
+      "article-title": "Application of artificial intelligence to wastewater treatment: a bibliometric analysis and systematic review of technology, economy, management, and wastewater reuse",
+      "volume": "133",
+      "author": "Zhao",
+      "year": "2020",
+      "journal-title": "Process. Saf. Environ. Prot."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0105",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.asoc.2020.106149",
+      "article-title": "Soft sensor modeling of industrial process data using kernel latent variables-based relevance vector machine",
+      "volume": "90",
+      "author": "Liu",
+      "year": "2020",
+      "journal-title": "Appl. Soft Comput. J."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0110",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ymssp.2020.107353",
+      "article-title": "Asynchronous fault detection filtering for piecewise homogenous Markov jump linear systems via a dual hidden Markov model",
+      "volume": "151",
+      "author": "Cheng",
+      "year": "2021",
+      "journal-title": "Mech. Syst. Signal Process."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "82",
+      "DOI": "10.1016/j.chemolab.2018.11.007",
+      "article-title": "Interval multiple-output soft sensors development with capacity control for wastewater treatment applications: a comparative study",
+      "volume": "184",
+      "author": "Xiao",
+      "year": "2019",
+      "journal-title": "Chemom. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "137",
+      "DOI": "10.1016/j.neucom.2019.07.065",
+      "article-title": "Establishing strong imputation performance of a denoising autoencoder in a wide range of missing data problems",
+      "volume": "365",
+      "author": "Abiri",
+      "year": "2019",
+      "journal-title": "Neurocomputing."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0125",
+      "doi-asserted-by": "crossref",
+      "first-page": "31",
+      "DOI": "10.1016/j.chemolab.2016.08.007",
+      "article-title": "Nonlinear and robust statistical process monitoring based on variant autoencoders",
+      "volume": "158",
+      "author": "Yan",
+      "year": "2016",
+      "journal-title": "Chemom. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0130",
+      "doi-asserted-by": "crossref",
+      "first-page": "1518",
+      "DOI": "10.1109/TCYB.2013.2288980",
+      "article-title": "Distributed finite-time containment control for double-integrator multiagent systems",
+      "volume": "44",
+      "author": "Wang",
+      "year": "2014",
+      "journal-title": "IEEE Trans. Cybern."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0135",
+      "series-title": "Stacked Denoising Autoencoders: Learning Useful Representations in a Deep Network with a Local Denoising Criterion",
+      "author": "Ca",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0140",
+      "article-title": "Soft sensor validation for monitoring and resilient control of sequential subway indoor air quality through memory-gated recurrent neural networks-based autoencoders, control Eng",
+      "volume": "97",
+      "author": "Loy-Benitez",
+      "year": "2020",
+      "journal-title": "Pract."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0145",
+      "doi-asserted-by": "crossref",
+      "first-page": "49",
+      "DOI": "10.1016/j.jprocont.2018.02.004",
+      "article-title": "Automated feature learning for nonlinear process monitoring – An approach using stacked denoising autoencoder and k-nearest neighbor rule",
+      "volume": "64",
+      "author": "Zhang",
+      "year": "2018",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0150",
+      "doi-asserted-by": "crossref",
+      "first-page": "504",
+      "DOI": "10.1126/science.1127647",
+      "article-title": "Reducing the dimensionality of data with neural networks",
+      "volume": "80-.). 313",
+      "author": "Hinton",
+      "year": "2006",
+      "journal-title": "Science"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0155",
+      "doi-asserted-by": "crossref",
+      "first-page": "235",
+      "DOI": "10.1016/j.neucom.2019.05.050",
+      "article-title": "Manifold regularized stacked denoising autoencoders with feature selection",
+      "volume": "358",
+      "author": "Yu",
+      "year": "2019",
+      "journal-title": "Neurocomputing."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0160",
+      "series-title": "2014 IEEE Int. Conf. Syst. Man, Cybern",
+      "first-page": "2651",
+      "article-title": "Anomaly detection from multivariate time-series with sparse representation",
+      "author": "Takeishi",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0165",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.asoc.2019.105527",
+      "article-title": "A probabilistic principal component analysis-based approach in process monitoring and fault diagnosis with application in wastewater treatment plant",
+      "volume": "82",
+      "author": "Wang",
+      "year": "2019",
+      "journal-title": "Appl. Soft Comput. J."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0170",
+      "series-title": "Proc. 25th Int. Conf. Mach. Learn",
+      "first-page": "1096",
+      "article-title": "Extracting and composing robust features with denoising autoencoders",
+      "author": "Vincent",
+      "year": "2008"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0175",
+      "doi-asserted-by": "crossref",
+      "first-page": "49",
+      "DOI": "10.1016/j.jprocont.2018.02.004",
+      "article-title": "Automated feature learning for nonlinear process monitoring – An approach using stacked denoising autoencoder and k-nearest neighbor rule",
+      "volume": "64",
+      "author": "Zhang",
+      "year": "2018",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "119",
+      "DOI": "10.1016/j.asoc.2018.08.024",
+      "article-title": "Stacked autoencoder with echo-state regression for tourism demand forecasting using search query data",
+      "volume": "73",
+      "author": "Lv",
+      "year": "2018",
+      "journal-title": "Appl. Soft Comput. J."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0185",
+      "doi-asserted-by": "crossref",
+      "first-page": "43",
+      "DOI": "10.1016/j.neunet.2019.05.022",
+      "article-title": "Global-and-local-structure-based neural network for fault detection",
+      "volume": "118",
+      "author": "Zhao",
+      "year": "2019",
+      "journal-title": "Neural Netw."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0190",
+      "doi-asserted-by": "crossref",
+      "first-page": "1065",
+      "DOI": "10.1214/aoms/1177704472",
+      "article-title": "On the estimation of probability density functions and mode",
+      "volume": "33",
+      "author": "Parzen",
+      "year": "1962",
+      "journal-title": "Ann. Math. Stat."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0195",
+      "article-title": "Identification of faulty sensors using PrincipaI Component AnaIysis",
+      "volume": "42",
+      "author": "Dunia",
+      "year": "1996"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0200",
+      "article-title": "TTA, a new approach to estimate Hurst exponent with less estimation error and computational time",
+      "author": "Iotfalinezhad",
+      "year": "2019",
+      "journal-title": "Physica A"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0205",
+      "doi-asserted-by": "crossref",
+      "first-page": "8640",
+      "DOI": "10.3390/s130708640",
+      "article-title": "Fibre optic sensors for selected wastewater characteristics",
+      "volume": "13",
+      "author": "Chong",
+      "year": "2013",
+      "journal-title": "Sensors (Switzerland)"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0210",
+      "doi-asserted-by": "crossref",
+      "first-page": "219",
+      "DOI": "10.3390/ijerph10010219",
+      "article-title": "Development of software sensors for determining total phosphorus and total nitrogen in waters",
+      "volume": "10",
+      "author": "Lee",
+      "year": "2013",
+      "journal-title": "Int. J. Environ. Res. Public Health"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0215",
+      "doi-asserted-by": "crossref",
+      "first-page": "337",
+      "DOI": "10.1002/jctb.393",
+      "article-title": "On-line monitoring of wastewater quality: a review",
+      "volume": "76",
+      "author": "Bourgeois",
+      "year": "2001",
+      "journal-title": "J. Chem. Technol. Biotechnol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0220",
+      "doi-asserted-by": "crossref",
+      "first-page": "248",
+      "DOI": "10.1016/j.watres.2017.05.040",
+      "article-title": "A reliable sewage quality abnormal event monitoring system",
+      "volume": "121",
+      "author": "Li",
+      "year": "2017",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0225",
+      "series-title": "Industrial Electrical Engineering and Automation Benchmark Simulation Model",
+      "volume": "no. 1 (BSM1)",
+      "author": "Alex",
+      "year": "2008"
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0230",
+      "doi-asserted-by": "crossref",
+      "first-page": "347",
+      "DOI": "10.1016/j.proeng.2014.11.198",
+      "article-title": "A new approach to urban water management: safe and sure",
+      "volume": "89",
+      "author": "Butler",
+      "year": "2014",
+      "journal-title": "Procedia Eng."
+    },
+    {
+      "key": "10.1016/j.jwpe.2021.102206_bb0235",
+      "doi-asserted-by": "crossref",
+      "first-page": "149",
+      "DOI": "10.1016/j.watres.2017.02.047",
+      "article-title": "Resilience theory incorporated into urban wastewater systems management",
+      "volume": "115",
+      "author": "Juan-García",
+      "year": "2017",
+      "journal-title": "State of the Art, Water Res."
+    }
+  ],
+  "container-title": [
+    "Journal of Water Process Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2214714421002932?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2214714421002932?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        15
+      ]
+    ],
+    "date-time": "2026-05-15T16:27:58Z",
+    "timestamp": 1778862478000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2214714421002932"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        10
+      ]
+    ]
+  },
+  "references-count": 47,
+  "alternative-id": [
+    "S2214714421002932"
+  ],
+  "URL": "https://doi.org/10.1016/j.jwpe.2021.102206",
+  "relation": {},
+  "ISSN": [
+    "2214-7144"
+  ],
+  "issn-type": [
+    {
+      "value": "2214-7144",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        10
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Intelligent sensor validation for sustainable influent quality monitoring in wastewater treatment plants using stacked denoising autoencoders",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Water Process Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jwpe.2021.102206",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2021 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "102206"
+}

@@ -1,0 +1,312 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2026-10-03T14:22:33Z",
+    "timestamp": 1791037353001,
+    "version": "4.1.0"
+  },
+  "reference-count": 7,
+  "publisher": "Elsevier BV",
+  "issue": "5",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2009-05-01T00:00:00Z",
+        "timestamp": 1241136000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2009,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2009-05-01T00:00:00Z",
+        "timestamp": 1241136000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            17
+          ]
+        ],
+        "date-time": "2013-07-17T00:00:00Z",
+        "timestamp": 1374019200000
+      },
+      "content-version": "vor",
+      "delay-in-days": 1538,
+      "URL": "http://www.elsevier.com/open-access/userlicense/1.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Applied Mathematics Letters"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2009,
+        5
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.aml.2008.05.003",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2008,
+        10,
+        14
+      ]
+    ],
+    "date-time": "2008-10-14T22:59:35Z",
+    "timestamp": 1224025175000
+  },
+  "page": "629-635",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 46,
+  "title": [
+    "Analysis of the activated sludge model (number 1)"
+  ],
+  "prefix": "10.1016",
+  "volume": "22",
+  "author": [
+    {
+      "given": "M.I.",
+      "family": "Nelson",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "H.S.",
+      "family": "Sidhu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "5",
+      "key": "10.1016/j.aml.2008.05.003_b1",
+      "doi-asserted-by": "crossref",
+      "first-page": "505",
+      "DOI": "10.1016/0043-1354(87)90058-3",
+      "article-title": "A general model for single-sludge wastewater treatment systems",
+      "volume": "21",
+      "author": "Henze",
+      "year": "1987",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.aml.2008.05.003_b2",
+      "doi-asserted-by": "crossref",
+      "first-page": "853",
+      "DOI": "10.1016/j.conengprac.2004.10.003",
+      "article-title": "Optimal operation of alternating activated sludge processes",
+      "volume": "13",
+      "author": "Fikar",
+      "year": "2005",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.aml.2008.05.003_b3",
+      "doi-asserted-by": "crossref",
+      "first-page": "3738",
+      "DOI": "10.1016/j.watres.2005.06.015",
+      "article-title": "Critical operational parameters for zero sludge production in biological wastewater treatment processes combined with sludge disintegration",
+      "volume": "39",
+      "author": "Yoon",
+      "year": "2005",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.aml.2008.05.003_b4",
+      "unstructured": "E.J. Doedel, T.F. Fairgrieve, B. Sandstede, A.R. Champneys, Y.A. Kuznetsov, X. Wang, AUTO 97: Continuation and bifurcation software for Ordinary Differential Equations (with HomCont), March 1998. Available by anonymous ftp from: http://ftp.cs.concordia.ca/pub/doedel/auto"
+    },
+    {
+      "key": "10.1016/j.aml.2008.05.003_b5",
+      "series-title": "Environmental Processes I: Wastewater Treatment",
+      "first-page": "417",
+      "article-title": "Modelling of aerobic wastewater treatment processes",
+      "volume": "vol. 11a",
+      "author": "Henze",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.aml.2008.05.003_b6",
+      "unstructured": "M. Henze, W. Gujer, T. Mino, T. Matsuo, M.C. Wentzel, G.V.R. Marais, Activated sludge model no 2. IAWQ Scientific and Technical Reports 3, IAWQ, 1995"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.aml.2008.05.003_b7",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.2166/wst.1999.0039",
+      "article-title": "Activated sludge model No 3",
+      "volume": "39",
+      "author": "Gujer",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    }
+  ],
+  "container-title": [
+    "Applied Mathematics Letters"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0893965908002528?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0893965908002528?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        12
+      ]
+    ],
+    "date-time": "2025-10-12T03:25:25Z",
+    "timestamp": 1760239525000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0893965908002528"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2009,
+        5
+      ]
+    ]
+  },
+  "references-count": 7,
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          5
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S0893965908002528"
+  ],
+  "URL": "https://doi.org/10.1016/j.aml.2008.05.003",
+  "relation": {},
+  "ISSN": [
+    "0893-9659"
+  ],
+  "issn-type": [
+    {
+      "value": "0893-9659",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2009,
+        5
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Analysis of the activated sludge model (number 1)",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Applied Mathematics Letters",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.aml.2008.05.003",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "Copyright © 2008 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

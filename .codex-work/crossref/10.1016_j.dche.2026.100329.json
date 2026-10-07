@@ -1,0 +1,987 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        12
+      ]
+    ],
+    "date-time": "2026-09-12T04:05:35Z",
+    "timestamp": 1789185935977,
+    "version": "build-2803163510"
+  },
+  "reference-count": 71,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2026-09-01T00:00:00Z",
+        "timestamp": 1788220800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2026-09-01T00:00:00Z",
+        "timestamp": 1788220800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            22
+          ]
+        ],
+        "date-time": "2026-07-22T00:00:00Z",
+        "timestamp": 1784678400000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100010892",
+      "name": "Republic of the Philippines Department of Science and Technology",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100010892",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Digital Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2026,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.dche.2026.100329",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        7,
+        31
+      ]
+    ],
+    "date-time": "2026-07-31T15:16:38Z",
+    "timestamp": 1785510998000
+  },
+  "page": "100329",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "special_numbering": "C",
+  "title": [
+    "An interpretable statistical surrogate of activated sludge systems that preserves mass conservation and component non-negativity"
+  ],
+  "prefix": "10.1016",
+  "volume": "20",
+  "author": [
+    {
+      "suffix": "Jr.",
+      "given": "Egberto F.",
+      "family": "Selerio",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "9",
+      "key": "10.1016/j.dche.2026.100329_b1",
+      "doi-asserted-by": "crossref",
+      "first-page": "1326",
+      "DOI": "10.3390/w13091326",
+      "article-title": "Systematic design, optimization, and sustainability assessment for generation of efficient wastewater treatment networks",
+      "volume": "13",
+      "author": "Aboagye",
+      "year": "2021",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b2",
+      "doi-asserted-by": "crossref",
+      "first-page": "46",
+      "DOI": "10.1016/j.ibiod.2014.04.014",
+      "article-title": "Determination of optimal operating factors via modeling for livestock wastewater treatment: Comparison of simulated and experimental data",
+      "volume": "95",
+      "author": "Ahn",
+      "year": "2014",
+      "journal-title": "Int. Biodeterioration Biodegrad."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b3",
+      "series-title": "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining",
+      "first-page": "2623",
+      "article-title": "Optuna: A next-generation hyperparameter optimization framework",
+      "author": "Akiba",
+      "year": "2019"
+    },
+    {
+      "issue": "29",
+      "key": "10.1016/j.dche.2026.100329_b4",
+      "doi-asserted-by": "crossref",
+      "first-page": "9908",
+      "DOI": "10.1021/ie4006673",
+      "article-title": "Sensitivity analysis of optimal operation of an activated sludge process model for economic controlled variable selection",
+      "volume": "52",
+      "author": "de Araujo",
+      "year": "2013",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b5",
+      "doi-asserted-by": "crossref",
+      "first-page": "630",
+      "DOI": "10.1016/j.jenvman.2016.07.047",
+      "article-title": "Wastewater treatment aeration process optimization: A data mining approach",
+      "volume": "203",
+      "author": "Asadi",
+      "year": "2017",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b6",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102206",
+      "article-title": "Intelligent sensor validation for sustainable influent quality monitoring in wastewater treatment plants using stacked denoising autoencoders",
+      "volume": "43",
+      "author": "Ba-Alawi",
+      "year": "2021",
+      "journal-title": "J. Water Process. Eng."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b7",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102033",
+      "article-title": "Comparative study on total nitrogen prediction in wastewater treatment plant and effect of various feature selection methods on machine learning algorithms performance",
+      "volume": "41",
+      "author": "Bagherzadeh",
+      "year": "2021",
+      "journal-title": "J. Water Process. Eng."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b8",
+      "series-title": "Advances in Neural Information Processing Systems",
+      "article-title": "Algorithms for hyper-parameter optimization",
+      "volume": "Vol. 24",
+      "author": "Bergstra",
+      "year": "2011"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.dche.2026.100329_b9",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1103/PhysRevLett.126.098302",
+      "article-title": "Enforcing analytic constraints in neural networks emulating physical systems",
+      "volume": "126",
+      "author": "Beucler",
+      "year": "2021",
+      "journal-title": "Phys. Rev. Lett."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b10",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1016/j.compchemeng.2017.09.017",
+      "article-title": "Advances in surrogate based modeling, feasibility analysis, and optimization: A review",
+      "volume": "108",
+      "author": "Bhosekar",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "15",
+      "key": "10.1016/j.dche.2026.100329_b11",
+      "doi-asserted-by": "crossref",
+      "first-page": "3932",
+      "DOI": "10.1073/pnas.1517384113",
+      "article-title": "Discovering governing equations from data by sparse identification of nonlinear dynamical systems",
+      "volume": "113",
+      "author": "Brunton",
+      "year": "2016",
+      "journal-title": "Proc. Natl. Acad. Sci."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b12",
+      "unstructured": "Cawley, G.C., 2011. Baseline methods for active learning. In: JMLR Workshop and Conference Proceedings. Vol. 16, pp. 47–57."
+    },
+    {
+      "issue": "20",
+      "key": "10.1016/j.dche.2026.100329_b13",
+      "doi-asserted-by": "crossref",
+      "first-page": "1775",
+      "DOI": "10.1080/10643389.2023.2183699",
+      "article-title": "Reinforcement learning applied to wastewater treatment process control optimization: Approaches, challenges, and path forward",
+      "volume": "53",
+      "author": "Croll",
+      "year": "2023",
+      "journal-title": "Crit. Rev. Environ. Sci. Technol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.dche.2026.100329_b14",
+      "doi-asserted-by": "crossref",
+      "first-page": "235",
+      "DOI": "10.1073/pnas.38.3.235",
+      "article-title": "Integration of stiff equations",
+      "volume": "38",
+      "author": "Curtiss",
+      "year": "1952",
+      "journal-title": "Proc. Natl. Acad. Sci."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b15",
+      "first-page": "1",
+      "article-title": "Statistical comparisons of classifiers over multiple data sets",
+      "volume": "7",
+      "author": "Demšar",
+      "year": "2006",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "issue": "13",
+      "key": "10.1016/j.dche.2026.100329_b16",
+      "doi-asserted-by": "crossref",
+      "first-page": "2302",
+      "DOI": "10.1080/10643389.2021.1877976",
+      "article-title": "Heterotrophic nitrifying bacteria in wastewater biological nitrogen removal systems: A review",
+      "volume": "52",
+      "author": "Duan",
+      "year": "2022",
+      "journal-title": "Crit. Rev. Environ. Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2024.108584",
+      "article-title": "Surrogate-based optimisation of process systems to recover resources from wastewater",
+      "volume": "182",
+      "author": "Durkin",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "2–3",
+      "key": "10.1016/j.dche.2026.100329_b18",
+      "doi-asserted-by": "crossref",
+      "first-page": "635",
+      "DOI": "10.1016/j.cej.2011.09.079",
+      "article-title": "A simulation-based integrated approach to optimize the biological nutrient removal process in a full-scale wastewater treatment plant",
+      "volume": "174",
+      "author": "Fang",
+      "year": "2011",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "issue": "17",
+      "key": "10.1016/j.dche.2026.100329_b19",
+      "doi-asserted-by": "crossref",
+      "first-page": "6677",
+      "DOI": "10.5194/gmd-15-6677-2022",
+      "article-title": "Downscaling atmospheric chemistry simulations with physically consistent deep learning",
+      "volume": "15",
+      "author": "Geiss",
+      "year": "2022",
+      "journal-title": "Geosci. Model Dev."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.dche.2026.100329_b20",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1162/neco.1992.4.1.1",
+      "article-title": "Neural networks and the bias/variance dilemma",
+      "volume": "4",
+      "author": "Geman",
+      "year": "1992",
+      "journal-title": "Neural Comput."
+    },
+    {
+      "issue": "16",
+      "key": "10.1016/j.dche.2026.100329_b21",
+      "doi-asserted-by": "crossref",
+      "first-page": "4793",
+      "DOI": "10.1016/j.watres.2011.06.019",
+      "article-title": "The nature of the carbon source rules the competition between PAO and denitrifiers in systems for simultaneous biological nitrogen and phosphorus removal",
+      "volume": "45",
+      "author": "Guerrero",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b22",
+      "unstructured": "Guyon, I., Cawley, G., Dror, G., Lemaire, V., 2011. Results of the active learning challenge. In: JMLR Workshop and Conference Proceedings. Vol. 16, pp. 19–45."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b23",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.physd.2023.133952",
+      "article-title": "Learning physical models that can respect conservation laws",
+      "volume": "457",
+      "author": "Hansen",
+      "year": "2024",
+      "journal-title": "Phys. D"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b24",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1017/eds.2022.22",
+      "article-title": "Physics-informed learning of aerosol microphysics",
+      "volume": "1",
+      "author": "Harder",
+      "year": "2022",
+      "journal-title": "Environ. Data Sci."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b25",
+      "article-title": "Activated sludge models ASM1, ASM2, ASM2d and ASM3",
+      "volume": "5",
+      "author": "Henze",
+      "year": "2006",
+      "journal-title": "Water Intell. Online"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.dche.2026.100329_b26",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "article-title": "Activated sludge model no. 2d, ASM2D",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.dche.2026.100329_b27",
+      "doi-asserted-by": "crossref",
+      "first-page": "119",
+      "DOI": "10.1007/s12532-017-0130-5",
+      "article-title": "Parallelizing the dual revised simplex method",
+      "volume": "10",
+      "author": "Huangfu",
+      "year": "2018",
+      "journal-title": "Math. Program. Comput."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b28",
+      "first-page": "1419",
+      "article-title": "A review of partial least squares modeling (PLSM) for water quality analysis",
+      "volume": "6",
+      "author": "Khatri",
+      "year": "2020",
+      "journal-title": "Model. Earth Syst. Environ."
+    },
+    {
+      "issue": "13",
+      "key": "10.1016/j.dche.2026.100329_b29",
+      "doi-asserted-by": "crossref",
+      "first-page": "6363",
+      "DOI": "10.1021/ie801689t",
+      "article-title": "Dual optimization strategy for N and P removal in a biological wastewater treatment plant",
+      "volume": "48",
+      "author": "Kim",
+      "year": "2009",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "19",
+      "key": "10.1016/j.dche.2026.100329_b30",
+      "doi-asserted-by": "crossref",
+      "first-page": "4715",
+      "DOI": "10.1021/acs.jpclett.5c00602",
+      "article-title": "Machine learning surrogate models for mechanistic kinetics: Embedding atom balance and positivity",
+      "volume": "16",
+      "author": "Kircher",
+      "year": "2025",
+      "journal-title": "J. Phys. Chem. Lett."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.dche.2026.100329_b31",
+      "doi-asserted-by": "crossref",
+      "first-page": "2435",
+      "DOI": "10.1007/s12555-019-0438-1",
+      "article-title": "Dissolved oxygen model predictive control for activated sludge process model based on the fuzzy C-means cluster algorithm",
+      "volume": "18",
+      "author": "Li",
+      "year": "2020",
+      "journal-title": "Int. J. Control Autom. Syst."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.dche.2026.100329_b32",
+      "doi-asserted-by": "crossref",
+      "first-page": "433",
+      "DOI": "10.1002/apj.563",
+      "article-title": "Exploration of dual optimal conditions for COD and nitrogen removal in an MBR",
+      "volume": "6",
+      "author": "Lim",
+      "year": "2011",
+      "journal-title": "Asia-Pac. J. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b33",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3389/fenvs.2022.880246",
+      "article-title": "Effects of water pollution on human health and disease heterogeneity: A review",
+      "volume": "10",
+      "author": "Lin",
+      "year": "2022",
+      "journal-title": "Front. Environ. Sci."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b34",
+      "doi-asserted-by": "crossref",
+      "first-page": "274",
+      "DOI": "10.1016/j.psep.2020.09.034",
+      "article-title": "Monitoring of wastewater treatment processes using dynamic concurrent kernel partial least squares",
+      "volume": "147",
+      "author": "Liu",
+      "year": "2021",
+      "journal-title": "Process. Saf. Environ. Prot."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.dche.2026.100329_b35",
+      "doi-asserted-by": "crossref",
+      "first-page": "1271",
+      "DOI": "10.1007/s00449-013-1099-8",
+      "article-title": "Activated sludge model 2d calibration with full-scale WWTP data: comparing model parameter identifiability with influent and operational uncertainty",
+      "volume": "37",
+      "author": "Machado",
+      "year": "2014",
+      "journal-title": "Bioprocess Biosyst. Eng."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b36",
+      "series-title": "Sensors in Water Pollutants Monitoring: Role of Material",
+      "first-page": "43",
+      "article-title": "Water pollutants: sources and impact on the environment and human health",
+      "author": "Madhav",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b37",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2024.105384",
+      "article-title": "Optimization of effluent quality and energy consumption of aeration process in wastewater treatment plants using artificial intelligence",
+      "volume": "63",
+      "author": "Mao",
+      "year": "2024",
+      "journal-title": "J. Water Process. Eng."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.dche.2026.100329_b38",
+      "first-page": "239",
+      "article-title": "Comparison of three methods for selecting values of input variables in the analysis of output from a computer code",
+      "volume": "21",
+      "author": "McKay",
+      "year": "1979",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b39",
+      "series-title": "Hard-constrained neural networks with universal approximation guarantees",
+      "author": "Min",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b40",
+      "doi-asserted-by": "crossref",
+      "first-page": "92",
+      "DOI": "10.5004/dwt.2021.27315",
+      "article-title": "A systematic and critical review of two decades’ application of response surface methodology in biological wastewater treatment processes",
+      "volume": "228",
+      "author": "Nazlabadi",
+      "year": "2021",
+      "journal-title": "Desalination Water Treat."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b41",
+      "doi-asserted-by": "crossref",
+      "first-page": "498",
+      "DOI": "10.1016/j.watres.2019.03.030",
+      "article-title": "Data-driven performance analyses of wastewater treatment plants: A review",
+      "volume": "157",
+      "author": "Newhart",
+      "year": "2019",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b42",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2020.106850",
+      "article-title": "Sustainable wastewater treatment plants design through multiobjective optimization",
+      "volume": "140",
+      "author": "Padron-Paez",
+      "year": "2020",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b43",
+      "doi-asserted-by": "crossref",
+      "first-page": "199903",
+      "DOI": "10.1109/ACCESS.2025.3635541",
+      "article-title": "The impact of feature scaling in machine learning: Effects on regression and classification tasks",
+      "volume": "13",
+      "author": "Pinheiro",
+      "year": "2025",
+      "journal-title": "IEEE Access"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b44",
+      "doi-asserted-by": "crossref",
+      "first-page": "686",
+      "DOI": "10.1016/j.jcp.2018.10.045",
+      "article-title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+      "volume": "378",
+      "author": "Raissi",
+      "year": "2019",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.dche.2026.100329_b45",
+      "doi-asserted-by": "crossref",
+      "first-page": "1126",
+      "DOI": "10.1137/120891009",
+      "article-title": "A unified convergence analysis of block successive minimization methods for nonsmooth optimization",
+      "volume": "23",
+      "author": "Razaviyayn",
+      "year": "2013",
+      "journal-title": "SIAM J. Optim."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.dche.2026.100329_b46",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.5194/npg-28-111-2021",
+      "article-title": "Training a convolutional neural network to conserve mass in data assimilation",
+      "volume": "28",
+      "author": "Ruckstuhl",
+      "year": "2021",
+      "journal-title": "Nonlinear Process. Geophys."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.dche.2026.100329_b47",
+      "doi-asserted-by": "crossref",
+      "first-page": "206",
+      "DOI": "10.1038/s42256-019-0048-x",
+      "article-title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+      "volume": "1",
+      "author": "Rudin",
+      "year": "2019",
+      "journal-title": "Nat. Mach. Intell."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b48",
+      "doi-asserted-by": "crossref",
+      "first-page": "150",
+      "DOI": "10.1016/j.compchemeng.2018.04.007",
+      "article-title": "Application of neural networks for optimal-setpoint design and MPC control in biological wastewater treatment",
+      "volume": "115",
+      "author": "Sadeghassadi",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.dche.2026.100329_b49",
+      "doi-asserted-by": "crossref",
+      "first-page": "1622",
+      "DOI": "10.1007/s11356-022-21864-w",
+      "article-title": "A new hybrid ensemble approach for the prediction of effluent total nitrogen from a full-scale wastewater treatment plant using a combined trickling filter-activated sludge system",
+      "volume": "30",
+      "author": "Sadri Moghaddam",
+      "year": "2023",
+      "journal-title": "Environ. Sci. Pollut. Res."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.dche.2026.100329_b50",
+      "doi-asserted-by": "crossref",
+      "first-page": "552",
+      "DOI": "10.1038/s43017-023-00450-9",
+      "article-title": "Differentiable modelling to unify machine learning and physical models for geosciences",
+      "volume": "4",
+      "author": "Shen",
+      "year": "2023",
+      "journal-title": "Nat. Rev. Earth Environ."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b51",
+      "series-title": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "first-page": "5701",
+      "article-title": "From variability to stability: Advancing RecSys benchmarking practices",
+      "author": "Shevchenko",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b52",
+      "series-title": "2018 UKACC 12th International Conference on Control",
+      "first-page": "339",
+      "article-title": "OSQP: An operator splitting solver for quadratic programs",
+      "author": "Stellato",
+      "year": "2018"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.dche.2026.100329_b53",
+      "first-page": "208",
+      "article-title": "Effects of oxygen transport limitation on nitrification in the activated sludge process",
+      "volume": "63",
+      "author": "Stenstrom",
+      "year": "1991",
+      "journal-title": "Res. J. Water Pollut. Control Fed."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b54",
+      "doi-asserted-by": "crossref",
+      "first-page": "143",
+      "DOI": "10.1016/j.compchemeng.2018.08.031",
+      "article-title": "Surrogate model generation using self-optimizing variables",
+      "volume": "119",
+      "author": "Straus",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.dche.2026.100329_b55",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1029/2022MS003235",
+      "article-title": "Advecting superspecies: Efficiently modeling transport of organic aerosol with a mass-conserving dimensionality reduction method",
+      "volume": "15",
+      "author": "Sturm",
+      "year": "2023",
+      "journal-title": "J. Adv. Model. Earth Syst."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.dche.2026.100329_b56",
+      "doi-asserted-by": "crossref",
+      "first-page": "99",
+      "DOI": "10.1021/acsestair.4c00220",
+      "article-title": "A nudge to the truth: Atom conservation as a hard constraint in models of atmospheric composition using a species-weighted correction",
+      "volume": "2",
+      "author": "Sturm",
+      "year": "2025",
+      "journal-title": "ACS ES T Air"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.dche.2026.100329_b57",
+      "doi-asserted-by": "crossref",
+      "first-page": "4435",
+      "DOI": "10.5194/gmd-13-4435-2020",
+      "article-title": "A mass- and energy-conserving framework for using machine learning to speed computations: A photochemistry example",
+      "volume": "13",
+      "author": "Sturm",
+      "year": "2020",
+      "journal-title": "Geosci. Model Dev."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.dche.2026.100329_b58",
+      "doi-asserted-by": "crossref",
+      "first-page": "3417",
+      "DOI": "10.5194/gmd-15-3417-2022",
+      "article-title": "Conservation laws in a neural network architecture: Enforcing the atom balance of a Julia-based photochemical model (v0.2.0)",
+      "volume": "15",
+      "author": "Sturm",
+      "year": "2022",
+      "journal-title": "Geosci. Model Dev."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.dche.2026.100329_b59",
+      "doi-asserted-by": "crossref",
+      "first-page": "806",
+      "DOI": "10.3390/pr14050806",
+      "article-title": "Surrogate model-based optimal design of coal chemical wastewater treatment networks with a multi-stage system",
+      "volume": "14",
+      "author": "Tang",
+      "year": "2026",
+      "journal-title": "Processes"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b60",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ijpharm.2025.125861",
+      "article-title": "A novel surrogate-based optimisation framework for pharmaceutical process systems",
+      "volume": "682",
+      "author": "Tsochatzidi",
+      "year": "2025",
+      "journal-title": "Int. J. Pharm."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b61",
+      "series-title": "End-to-end probabilistic framework for learning with hard constraints",
+      "author": "Utkarsh",
+      "year": "2025"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.dche.2026.100329_b62",
+      "doi-asserted-by": "crossref",
+      "first-page": "7799",
+      "DOI": "10.1109/TPAMI.2022.3220744",
+      "article-title": "The shape of learning curves: A review",
+      "volume": "45",
+      "author": "Viering",
+      "year": "2023",
+      "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b63",
+      "article-title": "Comparison of interpretable machine learning models and mechanistic model for predicting effluent nitrogen in WWTP",
+      "volume": "77",
+      "author": "Wang",
+      "year": "2025",
+      "journal-title": "J. Water Process. Eng."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.dche.2026.100329_b64",
+      "doi-asserted-by": "crossref",
+      "first-page": "59",
+      "DOI": "10.2166/wst.1992.0114",
+      "article-title": "Processes and modelling of nitrification denitrification biological excess phosphorus removal systems–A review",
+      "volume": "25",
+      "author": "Wentzel",
+      "year": "1992",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.dche.2026.100329_b65",
+      "doi-asserted-by": "crossref",
+      "first-page": "109",
+      "DOI": "10.1016/S0169-7439(01)00155-1",
+      "article-title": "PLS-regression: a basic tool of chemometrics",
+      "volume": "58",
+      "author": "Wold",
+      "year": "2001",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.dche.2026.100329_b66",
+      "doi-asserted-by": "crossref",
+      "first-page": "538",
+      "DOI": "10.1016/j.jhazmat.2008.04.004",
+      "article-title": "On-line estimation of key process variables based on kernel partial least squares in an industrial cokes wastewater treatment plant",
+      "volume": "161",
+      "author": "Woo",
+      "year": "2009",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b67",
+      "article-title": "A new paradigm in activated sludge management: an interpretable framework integrating mechanistic dynamics with a data-driven surrogate model",
+      "author": "Xiao",
+      "year": "2025",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b68",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.envres.2025.122990",
+      "article-title": "Machine learning based prediction of waste activated sludge generation for optimization of WWTP operational efficiency",
+      "author": "Yang",
+      "year": "2025",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b69",
+      "doi-asserted-by": "crossref",
+      "first-page": "88",
+      "DOI": "10.1016/j.neucom.2014.01.025",
+      "article-title": "Fuzzy model-based predictive control of dissolved oxygen in activated sludge processes",
+      "volume": "136",
+      "author": "Yang",
+      "year": "2014",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "key": "10.1016/j.dche.2026.100329_b70",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2021.128076",
+      "article-title": "Adaptive dynamic prediction of effluent quality in wastewater treatment processes using partial least squares embedded with relevance vector machine",
+      "volume": "314",
+      "author": "Yang",
+      "year": "2021",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.dche.2026.100329_b71",
+      "doi-asserted-by": "crossref",
+      "first-page": "2590",
+      "DOI": "10.1016/j.watres.2007.02.011",
+      "article-title": "Effectiveness of an alternating aerobic, anoxic/anaerobic strategy for maintaining biomass activity of BNR sludge during long-term starvation",
+      "volume": "41",
+      "author": "Yilmaz",
+      "year": "2007",
+      "journal-title": "Water Res."
+    }
+  ],
+  "container-title": [
+    "Digital Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2772508126000426?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2772508126000426?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        12
+      ]
+    ],
+    "date-time": "2026-09-12T03:06:41Z",
+    "timestamp": 1789182401000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2772508126000426"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        9
+      ]
+    ]
+  },
+  "references-count": 71,
+  "alternative-id": [
+    "S2772508126000426"
+  ],
+  "URL": "https://doi.org/10.1016/j.dche.2026.100329",
+  "relation": {},
+  "ISSN": [
+    "2772-5081"
+  ],
+  "issn-type": [
+    {
+      "value": "2772-5081",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "An interpretable statistical surrogate of activated sludge systems that preserves mass conservation and component non-negativity",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Digital Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.dche.2026.100329",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2026 The Author. Published by Elsevier Ltd on behalf of Institution of Chemical Engineers (IChemE).",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "100329"
+}

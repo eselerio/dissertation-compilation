@@ -1,0 +1,1160 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        13
+      ]
+    ],
+    "date-time": "2026-06-13T00:55:57Z",
+    "timestamp": 1781312157457,
+    "version": "3.54.1"
+  },
+  "reference-count": 82,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Expert Systems with Applications"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2026,
+        8
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.eswa.2026.131908",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        18
+      ]
+    ],
+    "date-time": "2026-03-18T09:33:10Z",
+    "timestamp": 1773826390000
+  },
+  "page": "131908",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "special_numbering": "C",
+  "title": [
+    "Hybrid imbalanced regression through unified data-level and algorithm-level balancing"
+  ],
+  "prefix": "10.1016",
+  "volume": "322",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0008-5402-1313",
+      "authenticated-orcid": false,
+      "given": "Shermin",
+      "family": "Shahbazi",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0001-5179-8660",
+      "authenticated-orcid": false,
+      "given": "Hossein",
+      "family": "Mohammadi",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-8329-9463",
+      "authenticated-orcid": false,
+      "given": "Mohsen",
+      "family": "Afsharchi",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "7",
+      "key": "10.1016/j.eswa.2026.131908_bib0001",
+      "doi-asserted-by": "crossref",
+      "first-page": "4165",
+      "DOI": "10.1007/s10994-023-06353-6",
+      "article-title": "A survey on learning from imbalanced data streams: Taxonomy, challenges, empirical study, and reproducible experimental framework",
+      "volume": "113",
+      "author": "Aguiar",
+      "year": "2024",
+      "journal-title": "Machine Learning"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0002",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1613/jair.1.16062",
+      "article-title": "A selective under-sampling (SUS) method for imbalanced regression",
+      "volume": "82",
+      "author": "Aleksic",
+      "year": "2025",
+      "journal-title": "Journal of Artificial Intelligence Research"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.eswa.2026.131908_bib0003",
+      "doi-asserted-by": "crossref",
+      "first-page": "80",
+      "DOI": "10.1007/s10462-023-10652-8",
+      "article-title": "Cost-sensitive learning for imbalanced medical data: A review",
+      "volume": "57",
+      "author": "Araf",
+      "year": "2024",
+      "journal-title": "Artificial Intelligence Review"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.eswa.2026.131908_bib0004",
+      "doi-asserted-by": "crossref",
+      "first-page": "82",
+      "DOI": "10.1007/s10462-024-10724-3",
+      "article-title": "Resampling strategies for imbalanced regression: a survey and empirical analysis",
+      "volume": "57",
+      "author": "Avelino",
+      "year": "2024",
+      "journal-title": "Artificial Intelligence Review"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.eswa.2026.131908_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "146",
+      "DOI": "10.1007/s10994-025-06766-5",
+      "article-title": "Imbalanced regression pipeline recommendation",
+      "volume": "114",
+      "author": "Avelino",
+      "year": "2025",
+      "journal-title": "Machine Learning"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0007",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2024.124118",
+      "article-title": "Oversampling techniques for imbalanced data in regression",
+      "volume": "252",
+      "author": "Belhaouari",
+      "year": "2024",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0008",
+      "first-page": "36",
+      "article-title": "Proceedings of the first international workshop on learning with imbalanced domains: Theory and applications",
+      "volume": "vol. 74",
+      "author": "Branco",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0009",
+      "series-title": "Proceedings of the second international workshop on learning with imbalanced domains: Theory and applications",
+      "first-page": "67",
+      "article-title": "Rebagg: Resampled bagging for imbalanced regression",
+      "volume": "vol. 94",
+      "author": "Branco",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "76",
+      "DOI": "10.1016/j.neucom.2018.11.100",
+      "article-title": "Pre-processing approaches for imbalanced distributions in regression",
+      "volume": "343",
+      "author": "Branco",
+      "year": "2019",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "87918",
+      "DOI": "10.1109/ACCESS.2021.3089036",
+      "article-title": "Comparative analysis review of pioneering DBSCAN and successive density-based clustering algorithms",
+      "volume": "9",
+      "author": "Bushra",
+      "year": "2021",
+      "journal-title": "IEEE Access"
+    },
+    {
+      "issue": "19",
+      "key": "10.1016/j.eswa.2026.131908_bib0011",
+      "doi-asserted-by": "crossref",
+      "first-page": "8789",
+      "DOI": "10.1007/s10489-024-05608-6",
+      "article-title": "Wsmoter: a novel approach for imbalanced regression",
+      "volume": "54",
+      "author": "Camacho",
+      "year": "2024",
+      "journal-title": "Applied Intelligence"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.eswa.2026.131908_sbref0013",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/w9030224",
+      "article-title": "Clustering and support vector regression for water demand forecasting and anomaly detection",
+      "volume": "9",
+      "author": "Candelieri",
+      "year": "2017",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0014",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2024.123930",
+      "article-title": "Cost-sensitive learning considering label and feature distribution consistency: A novel perspective for health prognosis of rotating machinery with imbalanced data",
+      "volume": "250",
+      "author": "Cao",
+      "year": "2024",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.eswa.2026.131908_bib0014",
+      "doi-asserted-by": "crossref",
+      "first-page": "71",
+      "DOI": "10.1186/s40537-025-01119-4",
+      "article-title": "Resampling approaches to handle class imbalance: a review from a data perspective",
+      "volume": "12",
+      "author": "Carvalho",
+      "year": "2025",
+      "journal-title": "Journal of Big Data"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0016",
+      "doi-asserted-by": "crossref",
+      "first-page": "321",
+      "DOI": "10.1613/jair.953",
+      "article-title": "Smote: synthetic minority over-sampling technique",
+      "volume": "16",
+      "author": "Chawla",
+      "year": "2002",
+      "journal-title": "Journal of Artificial Intelligence Research"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0017",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.inffus.2024.102733",
+      "article-title": "Multi-view support vector machine classifier via l0/1 soft-margin loss with structural information",
+      "volume": "115",
+      "author": "Chen",
+      "year": "2025",
+      "journal-title": "Information Fusion"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.eswa.2026.131908_sbref0018",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2196/11990",
+      "article-title": "Detecting hypoglycemia incidents reported in patients’ secure messages: Using cost-sensitive learning and oversampling to reduce data imbalance",
+      "volume": "21",
+      "author": "Chen",
+      "year": "2019",
+      "journal-title": "Journal of Medical Internet Research"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.eswa.2026.131908_bib0018",
+      "doi-asserted-by": "crossref",
+      "first-page": "137",
+      "DOI": "10.1007/s10462-024-10759-6",
+      "article-title": "A survey on imbalanced learning: latest research, applications and future directions",
+      "volume": "57",
+      "author": "Chen",
+      "year": "2024",
+      "journal-title": "Artificial Intelligence Review"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.eswa.2026.131908_bib0019",
+      "doi-asserted-by": "crossref",
+      "first-page": "4785",
+      "DOI": "10.1007/s10994-023-06326-9",
+      "article-title": "Understanding CNN fragility when learning with imbalanced data",
+      "volume": "113",
+      "author": "Dablain",
+      "year": "2024",
+      "journal-title": "Machine Learning"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0021",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compag.2025.110020",
+      "article-title": "Forest biomass carbon stock estimates via a novel approach: K-nearest neighbor-based weighted least squares multiple birth support vector regression coupled with whale optimization algorithm",
+      "volume": "232",
+      "author": "Deng",
+      "year": "2025",
+      "journal-title": "Computers and Electronics in Agriculture"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0022",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.asoc.2022.109271",
+      "article-title": "Deep imbalanced regression using cost-sensitive learning and deep feature transfer for bearing remaining useful life estimation",
+      "volume": "127",
+      "author": "Ding",
+      "year": "2022",
+      "journal-title": "Applied Soft Computing"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0023",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2024.125526",
+      "article-title": "Uncertainty quantification driven machine learning for improving model accuracy in imbalanced regression tasks",
+      "volume": "261",
+      "author": "Dolar",
+      "year": "2025",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0024",
+      "series-title": "KDD",
+      "first-page": "226",
+      "article-title": "A density-based algorithm for discovering clusters in large spatial databases with noise",
+      "volume": "vol. 96",
+      "author": "Ester",
+      "year": "1996"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0025",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.aei.2025.103192",
+      "article-title": "Improved gaussian mixture model and gaussian mixture regression for learning from demonstration based on gaussian noise scattering",
+      "volume": "65",
+      "author": "Feng",
+      "year": "2025",
+      "journal-title": "Advanced Engineering Informatics"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0026",
+      "series-title": "Learning from imbalanced data sets",
+      "volume": "vol. 10",
+      "author": "Fernández",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0027",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.infsof.2023.107268",
+      "article-title": "A survey on dataset quality in machine learning",
+      "volume": "162",
+      "author": "Gong",
+      "year": "2023",
+      "journal-title": "Information and Software Technology"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0028",
+      "series-title": "Proceedings of the 39th international conference on machine learning",
+      "first-page": "7634",
+      "article-title": "RankSim: Ranking similarity regularization for deep imbalanced regression",
+      "volume": "vol. 162",
+      "author": "Gong",
+      "year": "2022"
+    },
+    {
+      "issue": "27",
+      "key": "10.1016/j.eswa.2026.131908_bib0028",
+      "doi-asserted-by": "crossref",
+      "first-page": "70025",
+      "DOI": "10.1007/s11042-024-18244-6",
+      "article-title": "A literature survey on various aspect of class imbalance problem in data mining",
+      "volume": "83",
+      "author": "Goswami",
+      "year": "2024",
+      "journal-title": "Multimedia Tools and Applications"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0029",
+      "series-title": "2020 5th international conference on cloud computing and artificial intelligence: Technologies and applications (cloudtech)",
+      "first-page": "1",
+      "article-title": "Machine learning for anomaly detection. performance study considering anomaly distribution in an imbalanced dataset",
+      "author": "Hajjami",
+      "year": "2020"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.eswa.2026.131908_bib0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "3767",
+      "DOI": "10.1109/TETCI.2024.3372435",
+      "article-title": "Deep regression modeling for imbalanced and incomplete time-series data",
+      "volume": "8",
+      "author": "Hssayeni",
+      "year": "2024",
+      "journal-title": "IEEE Transactions on Emerging Topics in Computational Intelligence"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0032",
+      "doi-asserted-by": "crossref",
+      "first-page": "90",
+      "DOI": "10.1016/j.ins.2021.12.100",
+      "article-title": "A boosting resampling method for regression based on a conditional variational autoencoder",
+      "volume": "590",
+      "author": "Huang",
+      "year": "2022",
+      "journal-title": "Information Sciences"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.eswa.2026.131908_sbref0033",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/s22103776",
+      "article-title": "Machine learning-based boosted regression ensemble combined with hyperparameter tuning for optimal adaptive learning",
+      "volume": "22",
+      "author": "Isabona",
+      "year": "2022",
+      "journal-title": "Sensors"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0033",
+      "series-title": "Data management, analytics and innovation",
+      "first-page": "117",
+      "article-title": "A comprehensive survey of regression-based loss functions for time series forecasting",
+      "author": "Jadon",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0035",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2025.129406",
+      "article-title": "Deep multi-view least squares support vector machine with consistency and complementarity principle based on cross-output knowledge transfer",
+      "volume": "298",
+      "author": "Jia",
+      "year": "2026",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.eswa.2026.131908_bib0035",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1145/3343440",
+      "article-title": "A systematic review on imbalanced data challenges in machine learning: Applications and solutions",
+      "volume": "52",
+      "author": "Kaur",
+      "year": "2019",
+      "journal-title": "ACM Computing Surveys"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0037",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2023.122778",
+      "article-title": "A review of ensemble learning and data augmentation models for class imbalanced problems: Combination, implementation and evaluation",
+      "volume": "244",
+      "author": "Khan",
+      "year": "2024",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.eswa.2026.131908_bib0037",
+      "doi-asserted-by": "crossref",
+      "first-page": "172",
+      "DOI": "10.1186/s40537-025-01217-3",
+      "article-title": "Enhancing fraud detection in imbalanced motor insurance datasets using CP-SMOTE and random under-sampling",
+      "volume": "12",
+      "author": "Komsrimorakot",
+      "year": "2025",
+      "journal-title": "Journal of Big Data"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0038",
+      "series-title": "Advances in knowledge discovery and data mining",
+      "first-page": "629",
+      "article-title": "Low-dimensional representation learning from imbalanced data streams",
+      "author": "Korycki",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0040",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.patcog.2020.107262",
+      "article-title": "Radial-based undersampling for imbalanced data classification",
+      "volume": "102",
+      "author": "Koziarski",
+      "year": "2020",
+      "journal-title": "Pattern Recognition"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0040",
+      "series-title": "ICML",
+      "first-page": "179",
+      "article-title": "Addressing the curse of imbalanced training sets: One-sided selection",
+      "volume": "vol. 97",
+      "author": "Kubat",
+      "year": "1997"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0042",
+      "series-title": "Representation learning",
+      "author": "Lavrač",
+      "year": "2021"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.eswa.2026.131908_sbref0043",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ipm.2024.104025",
+      "article-title": "Financial risk assessment of imbalanced data based on nonlinear causal time-series network",
+      "volume": "62",
+      "author": "Li",
+      "year": "2025",
+      "journal-title": "Information Processing and Management"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0044",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ins.2023.119541",
+      "article-title": "Imbalanced least squares regression with adaptive weight learning",
+      "volume": "648",
+      "author": "Li",
+      "year": "2023",
+      "journal-title": "Information Sciences"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.eswa.2026.131908_bib0044",
+      "doi-asserted-by": "crossref",
+      "first-page": "318",
+      "DOI": "10.1109/TPAMI.2018.2858826",
+      "article-title": "Focal loss for dense object detection",
+      "volume": "42",
+      "author": "Lin",
+      "year": "2020",
+      "journal-title": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.eswa.2026.131908_bib0045",
+      "doi-asserted-by": "crossref",
+      "first-page": "1141",
+      "DOI": "10.1007/s00500-021-06532-4",
+      "article-title": "Importance-SMOTE: a synthetic minority oversampling method for noisy imbalanced data",
+      "volume": "26",
+      "author": "Liu",
+      "year": "2022",
+      "journal-title": "Soft Computing"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0047",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2024.125814",
+      "article-title": "Multi-view structural twin support vector machine with the consensus and complementarity principles and its safe screening rules",
+      "volume": "265",
+      "author": "Liu",
+      "year": "2025",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "20",
+      "key": "10.1016/j.eswa.2026.131908_sbref0048",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/en13205420",
+      "article-title": "Price forecasting for the balancing energy market using machine-learning regression",
+      "volume": "13",
+      "author": "Lucas",
+      "year": "2020",
+      "journal-title": "Energies"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.eswa.2026.131908_bib0048",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1145/2379776.2379786",
+      "article-title": "Ensemble approaches for regression: A survey",
+      "volume": "45",
+      "author": "Mendes-Moreira",
+      "year": "2012",
+      "journal-title": "ACM Computing Surveys"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.eswa.2026.131908_bib0049",
+      "doi-asserted-by": "crossref",
+      "first-page": "1730",
+      "DOI": "10.1109/JBHI.2017.2691715",
+      "article-title": "A novel continuous blood pressure estimation approach based on data mining techniques",
+      "volume": "21",
+      "author": "Miao",
+      "year": "2017",
+      "journal-title": "IEEE Journal of Biomedical and Health Informatics"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0051",
+      "series-title": "Proceedings of the first international workshop on learning with imbalanced domains: Theory and applications",
+      "first-page": "129",
+      "article-title": "Evaluation of ensemble methods in imbalanced regression tasks",
+      "volume": "vol. 74",
+      "author": "Moniz",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0051",
+      "series-title": "2018 IEEE 5th international conference on data science and advanced analytics (DSAA)",
+      "first-page": "150",
+      "article-title": "Smoteboost for regression: Improving the prediction of extreme values",
+      "author": "Moniz",
+      "year": "2018"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.eswa.2026.131908_bib0052",
+      "doi-asserted-by": "crossref",
+      "first-page": "7999",
+      "DOI": "10.1007/s00500-019-04094-0",
+      "article-title": "Auto-encoder-based generative models for data augmentation on regression problems",
+      "volume": "24",
+      "author": "Ohno",
+      "year": "2020",
+      "journal-title": "Soft Computing"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.eswa.2026.131908_bib0053",
+      "doi-asserted-by": "crossref",
+      "first-page": "1365",
+      "DOI": "10.1007/s10994-022-06199-4",
+      "article-title": "Imbalanced regression using regressor-classifier ensembles",
+      "volume": "112",
+      "author": "Orhobor",
+      "year": "2023",
+      "journal-title": "Machine Learning"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "1214",
+      "DOI": "10.1016/j.ins.2019.10.048",
+      "article-title": "Learning imbalanced datasets based on SMOTE and gaussian distribution",
+      "volume": "512",
+      "author": "Pan",
+      "year": "2020",
+      "journal-title": "Information Sciences"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0056",
+      "series-title": "Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR)",
+      "article-title": "Gated fusion network for single image dehazing",
+      "author": "Ren",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0057",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.asoc.2023.110415",
+      "article-title": "A broad review on class imbalance learning techniques",
+      "volume": "143",
+      "author": "Rezvani",
+      "year": "2023",
+      "journal-title": "Applied Soft Computing"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.eswa.2026.131908_bib0057",
+      "doi-asserted-by": "crossref",
+      "first-page": "1803",
+      "DOI": "10.1007/s10994-020-05900-9",
+      "article-title": "Imbalanced regression and extreme value prediction",
+      "volume": "109",
+      "author": "Ribeiro",
+      "year": "2020",
+      "journal-title": "Machine Learning"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0060",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2022.117023",
+      "article-title": "A novel SMOTE-based resampling technique trough noise detection and the boosting procedure",
+      "volume": "200",
+      "author": "Sag̎lam",
+      "year": "2022",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.eswa.2026.131908_sbref0061",
+      "doi-asserted-by": "crossref",
+      "first-page": "251",
+      "DOI": "10.5194/gmd-16-251-2023",
+      "article-title": "Adapting a deep convolutional RNN model with imbalanced regression loss for improved spatio-temporal forecasting of extreme wind speed events in the short to medium range",
+      "volume": "16",
+      "author": "Scheepens",
+      "year": "2023",
+      "journal-title": "Geoscientific Model Development"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0060",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/s00357-025-09511-8",
+      "article-title": "A model-based clustering approach for bounded data using transformation-based gaussian mixture models",
+      "author": "Scrucca",
+      "year": "2025",
+      "journal-title": "Journal of Classification"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0063",
+      "series-title": "Advances in neural information processing systems",
+      "article-title": "Learning structured output representation using deep conditional generative models",
+      "volume": "vol. 28",
+      "author": "Sohn",
+      "year": "2015"
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.eswa.2026.131908_bib0062",
+      "doi-asserted-by": "crossref",
+      "first-page": "2187",
+      "DOI": "10.1007/s10994-021-06023-5",
+      "article-title": "Density-based weighting for imbalanced regression",
+      "volume": "110",
+      "author": "Steininger",
+      "year": "2021",
+      "journal-title": "Machine Learning"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0063",
+      "series-title": "Neural information processing",
+      "first-page": "354",
+      "article-title": "Data augmentation with variational autoencoder for imbalanced dataset",
+      "author": "Stocksieker",
+      "year": "2025"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0066",
+      "doi-asserted-by": "crossref",
+      "first-page": "76",
+      "DOI": "10.1016/j.ins.2017.10.017",
+      "article-title": "Imbalanced enterprise credit evaluation with DTE-SBD: Decision tree ensemble based on SMOTE and bagging with differentiated sampling rates",
+      "volume": "425",
+      "author": "Sun",
+      "year": "2018",
+      "journal-title": "Information Sciences"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.eswa.2026.131908_sbref0067",
+      "doi-asserted-by": "crossref",
+      "first-page": "3738",
+      "DOI": "10.1016/j.patcog.2012.03.014",
+      "article-title": "Inverse random under sampling for class imbalance problem and its application to multi-label classification",
+      "volume": "45",
+      "author": "Tahir",
+      "year": "2012",
+      "journal-title": "Pattern Recognition"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0066",
+      "doi-asserted-by": "crossref",
+      "first-page": "47643",
+      "DOI": "10.1109/ACCESS.2022.3169512",
+      "article-title": "Stop oversampling for class imbalance learning: A review",
+      "volume": "10",
+      "author": "Tarawneh",
+      "year": "2022",
+      "journal-title": "IEEE Access"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0069",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ins.2023.119157",
+      "article-title": "Unbalanced regression sample generation algorithm based on confrontation",
+      "volume": "642",
+      "author": "Tian",
+      "year": "2023",
+      "journal-title": "Information Sciences"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0070",
+      "series-title": "Progress in artificial intelligence",
+      "first-page": "378",
+      "article-title": "Smote for regression",
+      "author": "Torgo",
+      "year": "2013"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.eswa.2026.131908_bib0069",
+      "doi-asserted-by": "crossref",
+      "first-page": "5909",
+      "DOI": "10.1007/s00704-024-04984-w",
+      "article-title": "Pp-loss: An imbalanced regression loss based on plotting position for improved precipitation nowcasting",
+      "volume": "155",
+      "author": "Xu",
+      "year": "2024",
+      "journal-title": "Theoretical and Applied Climatology"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0070",
+      "article-title": "Modeling tabular data using conditional gan",
+      "volume": "32",
+      "author": "Xu",
+      "year": "2019",
+      "journal-title": "Advances in Neural Information Processing Systems"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.eswa.2026.131908_bib0071",
+      "first-page": "6376",
+      "article-title": "Spatial distribution-based imbalanced undersampling",
+      "volume": "35",
+      "author": "Yan",
+      "year": "2023",
+      "journal-title": "IEEE Transactions on Knowledge and Data Engineering"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.eswa.2026.131908_bib0072",
+      "doi-asserted-by": "crossref",
+      "first-page": "7",
+      "DOI": "10.1186/s40537-023-00857-7",
+      "article-title": "Impact of random oversampling and random undersampling on the performance of prediction models developed using observational health data",
+      "volume": "11",
+      "author": "Yang",
+      "year": "2024",
+      "journal-title": "Journal of Big Data"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0075",
+      "series-title": "Proceedings of the 38th international conference on machine learning",
+      "first-page": "11842",
+      "article-title": "Delving into deep imbalanced regression",
+      "volume": "vol. 139",
+      "author": "Yang",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0076",
+      "series-title": "International conference on machine learning",
+      "first-page": "11842",
+      "article-title": "Delving into deep imbalanced regression",
+      "volume": "vol. 139",
+      "author": "Yang",
+      "year": "2021"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.eswa.2026.131908_sbref0077",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.xops.2024.100659",
+      "article-title": "Deep imbalanced regression model for predicting refractive error from retinal photos",
+      "volume": "5",
+      "author": "Yew",
+      "year": "2025",
+      "journal-title": "Ophthalmology Science"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0078",
+      "series-title": "Advances in neural information processing systems",
+      "first-page": "17882",
+      "article-title": "Rank-n-contrast: Learning continuous representations for regression",
+      "volume": "vol. 36",
+      "author": "Zha",
+      "year": "2023"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_bib0077",
+      "first-page": "1",
+      "article-title": "Irmae-akde: A novel solution to deep imbalanced regression for performance prediction of rolled steel plate",
+      "volume": "74",
+      "author": "Zhang",
+      "year": "2025",
+      "journal-title": "IEEE Transactions on Instrumentation and Measurement"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0080",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.chemolab.2025.105366",
+      "article-title": "Stacking density estimation and its oversampling method for continuously imbalanced data in chemometrics",
+      "volume": "261",
+      "author": "Zhao",
+      "year": "2025",
+      "journal-title": "Chemometrics and Intelligent Laboratory Systems"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0081",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.atmosenv.2024.120952",
+      "article-title": "Data imbalance causes underestimation of high ozone pollution in machine learning models: A weighted support vector regression solution",
+      "volume": "343",
+      "author": "Zhen",
+      "year": "2025",
+      "journal-title": "Atmospheric Environment"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0082",
+      "series-title": "Ensemble methods: Foundations and algorithms",
+      "author": "Zhou",
+      "year": "2025"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0083",
+      "doi-asserted-by": "crossref",
+      "first-page": "140",
+      "DOI": "10.1016/j.knosys.2018.12.021",
+      "article-title": "Minority oversampling for imbalanced ordinal regression",
+      "volume": "166",
+      "author": "Zhu",
+      "year": "2019",
+      "journal-title": "Knowledge-Based Systems"
+    },
+    {
+      "key": "10.1016/j.eswa.2026.131908_sbref0084",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ins.2024.120873",
+      "article-title": "IRDA: Implicit data augmentation for deep imbalanced regression",
+      "volume": "677",
+      "author": "Zhu",
+      "year": "2024",
+      "journal-title": "Information Sciences"
+    }
+  ],
+  "container-title": [
+    "Expert Systems with Applications"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0957417426008213?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0957417426008213?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        13
+      ]
+    ],
+    "date-time": "2026-06-13T00:02:10Z",
+    "timestamp": 1781308930000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0957417426008213"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        8
+      ]
+    ]
+  },
+  "references-count": 82,
+  "alternative-id": [
+    "S0957417426008213"
+  ],
+  "URL": "https://doi.org/10.1016/j.eswa.2026.131908",
+  "relation": {},
+  "ISSN": [
+    "0957-4174"
+  ],
+  "issn-type": [
+    {
+      "value": "0957-4174",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        8
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Hybrid imbalanced regression through unified data-level and algorithm-level balancing",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Expert Systems with Applications",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.eswa.2026.131908",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2026 Published by Elsevier Ltd.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "131908"
+}

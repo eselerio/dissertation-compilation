@@ -1,0 +1,990 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        1
+      ]
+    ],
+    "date-time": "2026-10-01T21:29:23Z",
+    "timestamp": 1790890163165,
+    "version": "4.1.0"
+  },
+  "reference-count": 41,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "41907297"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "41907297"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "41977300"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "41977300"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100003392",
+      "name": "Fujian Provincial Natural Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2020I1001"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2020I1001"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100003392",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100003453",
+      "name": "Natural Science Foundation of Guangdong Province",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2016A030306033"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2016A030306033"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100003453",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100004000",
+      "name": "Guangzhou Science and Technology Program key projects",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "202002020055"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "202002020055"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100004000",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100013050",
+      "name": "Guangdong Provincial Applied Science and Technology Research and Development Program",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2017B030314057"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2017B030314057"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100013050",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Cleaner Production"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        4
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jclepro.2022.131140",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        27
+      ]
+    ],
+    "date-time": "2022-02-27T23:35:00Z",
+    "timestamp": 1646004900000
+  },
+  "page": "131140",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 67,
+  "special_numbering": "C",
+  "title": [
+    "Dynamic optimization of wastewater treatment process based on novel multi-objective ant lion optimization and deep learning algorithm"
+  ],
+  "prefix": "10.1016",
+  "volume": "345",
+  "author": [
+    {
+      "given": "Guoqiang",
+      "family": "Niu",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-7371-7924",
+      "authenticated-orcid": false,
+      "given": "Xiaoyong",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-3616-1503",
+      "authenticated-orcid": false,
+      "given": "Xin",
+      "family": "Wan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xinzhong",
+      "family": "He",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yinzhong",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xiaohui",
+      "family": "Yi",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Chen",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Liang",
+      "family": "Xujun",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Guangguo",
+      "family": "Ying",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-2592-3544",
+      "authenticated-orcid": false,
+      "given": "Mingzhi",
+      "family": "Huang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "441",
+      "DOI": "10.1016/S1570-7946(08)80078-8",
+      "article-title": "Model predictive control of the waste water treatment plant based on the benchmark simulation model No.1-BSM1",
+      "volume": "25",
+      "author": "Alex",
+      "year": "2008",
+      "journal-title": "Computer Aided Chemical Engineering"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2022.131140_bib2",
+      "doi-asserted-by": "crossref",
+      "first-page": "178",
+      "DOI": "10.29137/umagd.771671",
+      "article-title": "Using machine learning and deep learning algorithms for stock price prediction",
+      "volume": "13",
+      "author": "Arslankaya",
+      "year": "2021",
+      "journal-title": "Uluslararası Muhendislik Arastirma ve Gelistirme Dergisi"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.jclepro.2022.131140_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "109",
+      "DOI": "10.2166/wst.2007.592",
+      "article-title": "Towards a global multi objective optimization of wastewater treatment plant based on modeling and genetic algorithms",
+      "volume": "56",
+      "author": "Béraud",
+      "year": "2007",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "13",
+      "key": "10.1016/j.jclepro.2022.131140_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "1781",
+      "DOI": "10.3390/w13131781",
+      "article-title": "Application of biological and chemical processes to wastewater treatment",
+      "volume": "13",
+      "author": "Chatzisymeon",
+      "year": "2021",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "53",
+      "DOI": "10.3233/IDA-192742",
+      "article-title": "Futures price prediction modeling and decision-making based on DBN deep learning",
+      "volume": "23",
+      "author": "Chen",
+      "year": "2019",
+      "journal-title": "Intell. Data Anal."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.jclepro.2022.131140_bib6",
+      "first-page": "44",
+      "article-title": "Model and application based on ALO-ENN algorithm in flood disaster evaluation",
+      "volume": "37",
+      "author": "Cui",
+      "year": "2016",
+      "journal-title": "Pearl River"
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib7",
+      "first-page": "1051",
+      "article-title": "Mopso: a proposal for multiple objective particle swarm",
+      "volume": "2",
+      "author": "Coello",
+      "year": "2002",
+      "journal-title": "IEEE Congresson Evolutionary Computation"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2022.131140_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "223",
+      "DOI": "10.2166/wst.2015.489",
+      "article-title": "The application of multi-objective optimization method for activated sludge process: a review",
+      "volume": "73",
+      "author": "Da I",
+      "year": "2016",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2022.131140_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "182",
+      "DOI": "10.1109/4235.996017",
+      "article-title": "A fast and elitist multiobjective genetic algorithm: NSGA-II",
+      "volume": "6",
+      "author": "Deb",
+      "year": "2002",
+      "journal-title": "IEEE Trans. Evol. Comput."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "259",
+      "DOI": "10.1016/j.compchemeng.2015.07.003",
+      "article-title": "Model predictive control for the self-optimized operation in wastewater treatment plants: analysis of dynamic issues",
+      "volume": "82",
+      "author": "Francisco",
+      "year": "2015",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jclepro.2022.131140_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1016/j.jprocont.2013.12.010",
+      "article-title": "Nonlinear multiobjective model-predictive control scheme for wastewater treatment process",
+      "volume": "24",
+      "author": "Han",
+      "year": "2014",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2022.131140_bib13",
+      "first-page": "926",
+      "article-title": "A practical guide to training restricted Boltzmann machines",
+      "volume": "9",
+      "author": "Hinton",
+      "year": "2010",
+      "journal-title": "Momentum"
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "112418",
+      "DOI": "10.1016/j.enconman.2019.112418",
+      "article-title": "Ultra-short term wind prediction with wavelet transform, deep belief network and ensemble learning",
+      "volume": "205",
+      "author": "He",
+      "year": "2020",
+      "journal-title": "Energy Convers. Manag."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib45",
+      "first-page": "1",
+      "article-title": "A hybrid fuzzy wavelet neural network model with self-adapted fuzzy c -means clustering and genetic algorithm for water quality prediction in rivers",
+      "author": "Huang",
+      "year": "2018",
+      "journal-title": "Complexity"
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "3123",
+      "DOI": "10.1109/ICSMC.2001.971998",
+      "article-title": "NSGA-based multiobjective optimisation for modular strategical planning of electric distribution systems",
+      "volume": "5",
+      "author": "Ippolito",
+      "year": "2001",
+      "journal-title": "IEEE Int. Conf. Syst. Man Cybern."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2022.131140_bib16",
+      "doi-asserted-by": "crossref",
+      "first-page": "1531",
+      "DOI": "10.1109/TPWRS.2019.2943972",
+      "article-title": "Improved deep belief network for short-term load forecasting considering demand-side management",
+      "volume": "35",
+      "author": "Kong",
+      "year": "2019",
+      "journal-title": "IEEE Trans. Power Syst."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.jclepro.2022.131140_bib17",
+      "doi-asserted-by": "crossref",
+      "first-page": "3220",
+      "DOI": "10.3390/w12113220",
+      "article-title": "Steady-state methodology for activated sludge model 1 (asm1) state variable calculation in mbr",
+      "volume": "12",
+      "author": "Lahdhiri",
+      "year": "2020",
+      "journal-title": "Water"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.jclepro.2022.131140_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "176",
+      "DOI": "10.1016/j.ifacol.2019.08.175",
+      "article-title": "Transient rotor angle stability prediction based on deep belief network and long short-term memory network",
+      "volume": "52",
+      "author": "Liu",
+      "year": "2019",
+      "journal-title": "IFAC-PapersOnLine"
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "126343",
+      "DOI": "10.1016/j.jclepro.2021.126343",
+      "article-title": "Application of novel hybrid deep leaning model for cleaner production in a paper industrial wastewater treatment system",
+      "volume": "294",
+      "author": "Li",
+      "year": "2021",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.jclepro.2022.131140_bib20",
+      "first-page": "1868",
+      "article-title": "Optimal control of wastewater treatment process using NSGAII algorithm based on multi-objective uniform distribution",
+      "volume": "70",
+      "author": "Li",
+      "year": "2019",
+      "journal-title": "CIE J."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2022.131140_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "1861",
+      "DOI": "10.30534/ijatcse/2020/146922020",
+      "article-title": "Artificial neural network architecture optimization for heart disease classification using genetic algorithm",
+      "volume": "9",
+      "author": "Liegar",
+      "year": "2020",
+      "journal-title": "Int. J. Adv. Trends Comput. Sci. Eng."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2022.131140_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "309",
+      "DOI": "10.1080/0952813X.2019.1647565",
+      "article-title": "An improved multi-objective antlion optimization algorithm for the optimal design of the robotic gripper",
+      "volume": "32",
+      "author": "Mahanta",
+      "year": "2020",
+      "journal-title": "J. Exp. Theor. Artif. Intell."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2022.131140_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "79",
+      "DOI": "10.1007/s10489-016-0825-8",
+      "article-title": "Multi-objective ant lion optimizer: a multi-objective optimization algorithm for solving engineering problems",
+      "volume": "46",
+      "author": "Mirjalili",
+      "year": "2017",
+      "journal-title": "Appl. Intell."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib24",
+      "doi-asserted-by": "crossref",
+      "first-page": "121787",
+      "DOI": "10.1016/j.jclepro.2020.121787",
+      "article-title": "A novel effluent quality predicting model based on genetic-deep belief network algorithm for cleaner production in a full-scale paper-making wastewater treatment",
+      "volume": "265",
+      "author": "Niu",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "e127",
+      "DOI": "10.1016/B978-0-444-59436-5.00035-0",
+      "article-title": "Penalty function method",
+      "author": "Piela",
+      "year": "2014",
+      "journal-title": "Ideas of Quantum Chemistry"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.jclepro.2022.131140_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "1532",
+      "DOI": "10.2166/wst.2015.630",
+      "article-title": "Sustainability assessment of tertiary wastewater treatment technologies: a multi-criteria analysis",
+      "volume": "73",
+      "author": "Plakas",
+      "year": "2016",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.jclepro.2022.131140_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "1261",
+      "DOI": "10.1007/s00521-016-2642-8",
+      "article-title": "Dynamic multi-objective optimization control for wastewater treatment process",
+      "volume": "29",
+      "author": "Qiao",
+      "year": "2016",
+      "journal-title": "Neural Comput. Appl."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.jclepro.2022.131140_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "2314",
+      "DOI": "10.2166/wst.2013.087",
+      "article-title": "Adaptive optimal control for a wastewater treatment plant based on a data-driven method",
+      "volume": "67",
+      "author": "Qiao",
+      "year": "2013",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib29",
+      "series-title": "Application of Multivariate Virtual Reference Feedback Tuning for Wastewater Treatment Plant Control",
+      "author": "Rojas",
+      "year": "2012"
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib30",
+      "doi-asserted-by": "crossref",
+      "first-page": "520",
+      "DOI": "10.1007/978-3-540-31880-4_36",
+      "article-title": "Demo: differential evolution for multiobjective optimization",
+      "volume": "3410",
+      "author": "Robi",
+      "year": "2005",
+      "journal-title": "Evolutionary Multi-Criterion Optimization"
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib31",
+      "doi-asserted-by": "crossref",
+      "first-page": "111731",
+      "DOI": "10.1109/ACCESS.2020.3002928",
+      "article-title": "A hybrid forecasting model for the velocity of hybrid robotic fish based on back-propagation neural network with genetic algorithm optimization",
+      "volume": "8",
+      "author": "Shen",
+      "year": "2020",
+      "journal-title": "IEEE Access"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.jclepro.2022.131140_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "298",
+      "DOI": "10.5573/IEIESPC.2020.9.4.298",
+      "article-title": "Development and optimization of deep belief networks applied for academic performance prediction with larger datasets",
+      "volume": "9",
+      "author": "Sokkhey",
+      "year": "2020",
+      "journal-title": "IEIE Transactions on Smart Processing Computing"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jclepro.2022.131140_bib35",
+      "doi-asserted-by": "crossref",
+      "first-page": "628",
+      "DOI": "10.1002/spe.2915",
+      "article-title": "A graph‐based convolutional neural network stock price prediction with leading indicators",
+      "volume": "51",
+      "author": "Wu",
+      "year": "2020",
+      "journal-title": "Software Pract. Ex."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib43",
+      "article-title": "Water quality prediction model using Gaussian process regression based on deep learning for carbon neutrality in papermaking wastewater treatment system",
+      "volume": "2022",
+      "author": "Wan",
+      "year": "2022",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2022.131140_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.1109/4235.585893",
+      "article-title": "No free lunch theorems for optimization",
+      "volume": "1",
+      "author": "Wolpert",
+      "year": "1997",
+      "journal-title": "IEEE Trans. Evol. Comput."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib44",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jhazmat.2021.127029",
+      "article-title": "Accurate prediction and further dissection of neonicotinoid elimination in the water treatment by CTS@AgBC using multihead attention-based convolutional neural network combined with the time-dependent Cox regression model",
+      "volume": "423",
+      "author": "Zhang",
+      "year": "2022",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "key": "10.1016/j.jclepro.2022.131140_bib37",
+      "doi-asserted-by": "crossref",
+      "first-page": "115975",
+      "DOI": "10.1016/j.watres.2020.115975",
+      "article-title": "Heterogeneous electro-Fenton using three-dimension NZVI-BC electrodes for degradation of neonicotinoid wastewater",
+      "volume": "182",
+      "author": "Zhang",
+      "year": "2020",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.jclepro.2022.131140_bib38",
+      "first-page": "1",
+      "article-title": "Fast nondominated sorting genetic algorithm II with lévy distribution for network topology optimization",
+      "volume": "2020",
+      "author": "Zhang",
+      "year": "2020",
+      "journal-title": "Math. Probl Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jclepro.2022.131140_bib39",
+      "doi-asserted-by": "crossref",
+      "first-page": "1098",
+      "DOI": "10.1007/s10489-018-1319-7",
+      "article-title": "Multiobjective optimal control for wastewater treatment process using adaptive MOEA/D",
+      "volume": "49",
+      "author": "Zhou",
+      "year": "2019",
+      "journal-title": "Appl. Intell."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.jclepro.2022.131140_bib40",
+      "doi-asserted-by": "crossref",
+      "first-page": "62",
+      "DOI": "10.1504/IJBIC.2019.10022705",
+      "article-title": "Analyses of inverted generational distance for many-objective optimization algorithms",
+      "volume": "14",
+      "author": "Zhang",
+      "year": "2019",
+      "journal-title": "Int. J. Bio-Inspired Comput."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.jclepro.2022.131140_bib42",
+      "first-page": "3511",
+      "article-title": "Optimal control of wastewater treatment process using hybrid multi-objective barebones particle swarm optimization algorithm",
+      "volume": "68",
+      "author": "Zhou",
+      "year": "2017",
+      "journal-title": "CIE J."
+    }
+  ],
+  "container-title": [
+    "Journal of Cleaner Production"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0959652622007727?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0959652622007727?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        17
+      ]
+    ],
+    "date-time": "2025-10-17T18:05:04Z",
+    "timestamp": 1760724304000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0959652622007727"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        4
+      ]
+    ]
+  },
+  "references-count": 41,
+  "alternative-id": [
+    "S0959652622007727"
+  ],
+  "URL": "https://doi.org/10.1016/j.jclepro.2022.131140",
+  "relation": {},
+  "ISSN": [
+    "0959-6526"
+  ],
+  "issn-type": [
+    {
+      "value": "0959-6526",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        4
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Dynamic optimization of wastewater treatment process based on novel multi-objective ant lion optimization and deep learning algorithm",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Cleaner Production",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jclepro.2022.131140",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2022 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "131140"
+}

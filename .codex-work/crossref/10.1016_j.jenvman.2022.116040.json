@@ -1,0 +1,769 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        5
+      ]
+    ],
+    "date-time": "2026-06-05T04:21:36Z",
+    "timestamp": 1780633296766,
+    "version": "3.54.1"
+  },
+  "reference-count": 46,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2022-12-01T00:00:00Z",
+        "timestamp": 1669852800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2022-12-01T00:00:00Z",
+        "timestamp": 1669852800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            23
+          ]
+        ],
+        "date-time": "2022-08-23T00:00:00Z",
+        "timestamp": 1661212800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Environmental Management"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jenvman.2022.116040",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        12
+      ]
+    ],
+    "date-time": "2022-09-12T12:12:21Z",
+    "timestamp": 1662984741000
+  },
+  "page": "116040",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 15,
+  "special_numbering": "C",
+  "title": [
+    "Modeling nutrient removal and energy consumption in an advanced activated sludge system under uncertainty"
+  ],
+  "prefix": "10.1016",
+  "volume": "323",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-0559-5475",
+      "authenticated-orcid": false,
+      "given": "Bartosz",
+      "family": "Szeląg",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-0213-2413",
+      "authenticated-orcid": false,
+      "given": "Adam",
+      "family": "Kiczko",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-3366-9272",
+      "authenticated-orcid": false,
+      "given": "Ewa",
+      "family": "Zaborowska",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Giorgio",
+      "family": "Mannina",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jacek",
+      "family": "Mąkinia",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "2374",
+      "DOI": "10.2166/wst.2013.139",
+      "article-title": "Aeration control – a review",
+      "volume": "67",
+      "author": "Åmand",
+      "year": "2013",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib2",
+      "first-page": "1",
+      "article-title": "Methodology for energy optimization in wastewater treatment plants. Phase I: control of the best operating conditions",
+      "volume": "11",
+      "author": "Avilés",
+      "year": "2019",
+      "journal-title": "Sustainability"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib3",
+      "series-title": "Uncertainty in Wastewater Treatment Design and Operation",
+      "author": "Belia",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "14",
+      "DOI": "10.2166/wqrjc.2012.038",
+      "article-title": "Uncertainty analysis of WWTP control strategies made feasible",
+      "volume": "47",
+      "author": "Benedetti",
+      "year": "2012",
+      "journal-title": "Water Qual. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "279",
+      "DOI": "10.1002/hyp.3360060305",
+      "article-title": "The future distributed models: model calibration and uncertainty prediction",
+      "volume": "6",
+      "author": "Beven",
+      "year": "1992",
+      "journal-title": "Hydrol. Process."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "189",
+      "DOI": "10.2166/wst.1996.0333",
+      "article-title": "Design and construction of aeration systems for optimum operation of large wastewater treatment plants",
+      "volume": "33",
+      "author": "Bischof",
+      "year": "1996",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "935",
+      "DOI": "10.1016/j.cej.2017.02.091",
+      "article-title": "Understanding N2O formation mechanisms through sensitivity analyses using a plant-wide benchmark simulation model",
+      "volume": "317",
+      "author": "Boiocchi",
+      "year": "2017",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "10",
+      "DOI": "10.1016/j.jwpe.2018.12.010",
+      "article-title": "Data scarcity in modelling and simulation of a large-scale WWTP: stop sign or a challenge",
+      "volume": "28",
+      "author": "Borzooei",
+      "year": "2019",
+      "journal-title": "J. Water Proc. Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "1182",
+      "DOI": "10.1016/j.scitotenv.2019.07.241",
+      "article-title": "Optimization of the wastewater treatment plant: from energy saving to environmental impact mitigation",
+      "volume": "69",
+      "author": "Borzooei",
+      "year": "2019",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "17972",
+      "DOI": "10.1007/s11356-020-08277-3",
+      "article-title": "Energy optimization of a wastewater treatment plant based on energy audit data: small investment with high return",
+      "volume": "27",
+      "author": "Borzooei",
+      "year": "2020",
+      "journal-title": "Environ. Sci. Pollut. Res. Int."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib11",
+      "doi-asserted-by": "crossref",
+      "first-page": "1541",
+      "DOI": "10.2166/wst.2020.220",
+      "article-title": "Application of unsupervised learning and process simulation for energy optimization of a WWTP under various weather conditions",
+      "volume": "81",
+      "author": "Borzooei",
+      "year": "2020",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib12",
+      "first-page": "363",
+      "article-title": "Comparison of dimension reduction methods for DEA under big data via Monte Carlo simulation",
+      "volume": "6",
+      "author": "Chen",
+      "year": "2021",
+      "journal-title": "Int. J Manag Sci Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "40",
+      "DOI": "10.1016/j.envsoft.2013.07.009",
+      "article-title": "Global sensitivity analysis in wastewater applications: a comprehensive comparison of different methods",
+      "volume": "49",
+      "author": "Cosenza",
+      "year": "2013",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "1068",
+      "DOI": "10.1016/j.scitotenv.2013.10.069",
+      "article-title": "Variance-based sensitivity analysis for wastewater treatment plant modeling",
+      "volume": "470–471",
+      "author": "Cosenza",
+      "year": "2014",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "2036",
+      "DOI": "10.1002/j.1554-7531.2011.tb00270.x",
+      "article-title": "Stepwise calibration of the activated sludge model No. 1 at a partially denitrifying large wastewater treatment plant",
+      "volume": "83",
+      "author": "Fall",
+      "year": "2011",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib17",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "DOI": "10.1016/j.envsoft.2012.04.005",
+      "article-title": "Assessing the use of activated sludge process design guidelines in wastewater treatment plant projects: a methodology based on global sensitivity analysis",
+      "volume": "38",
+      "author": "Flores-Alsina",
+      "year": "2012",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "616",
+      "DOI": "10.1016/j.scitotenv.2013.07.046",
+      "article-title": "Balancing effluent quality, economic cost and greenhouse gas emissions during the evaluation of (plant-wide) control/operational strategies in WWTPs",
+      "volume": "466–467",
+      "author": "Flores-Alsina",
+      "year": "2014",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "1100",
+      "DOI": "10.1016/j.envsoft.2009.03.003",
+      "article-title": "Urban runoff modelling uncertainty: comparison among Bayesian and pseudo-Bayesian methods",
+      "volume": "24",
+      "author": "Freni",
+      "year": "2009",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "197",
+      "DOI": "10.1177/096228029500400303",
+      "article-title": "An introduction to multivariate adaptive regression splines",
+      "volume": "4",
+      "author": "Friedman",
+      "year": "1995",
+      "journal-title": "Stat. Methods Med. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "3741",
+      "DOI": "10.1016/j.egypro.2017.03.868",
+      "article-title": "Energy self-sufficient wastewater treatment plants: feasibilities and challenges",
+      "volume": "105",
+      "author": "Gu",
+      "year": "2017",
+      "journal-title": "Energy Proc."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "323",
+      "DOI": "10.1016/j.jclepro.2016.03.173",
+      "article-title": "Sustainable value - an energy efficiency indicator in wastewater treatment plants",
+      "volume": "142",
+      "author": "Henriques",
+      "year": "2017",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib23",
+      "series-title": "Activated Sludge Models ASM1, ASM2, ASM2d and ASM3",
+      "author": "Henze",
+      "year": "2000"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib24",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.jclepro.2020.123233",
+      "article-title": "Impacts of dissolved oxygen control on different greenhouse gas emission sources in wastewater treatment process",
+      "volume": "274",
+      "author": "Huang",
+      "year": "2020",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.jenvman.2022.116040_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "566",
+      "DOI": "10.2166/wpt.2018.070",
+      "article-title": "Plant-wide modelling for assessment and optimization of upgraded full-scale wastewater treatment plant performance",
+      "volume": "13",
+      "author": "Hvala",
+      "year": "2018",
+      "journal-title": "Water Pract. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "1558",
+      "DOI": "10.2166/wst.2019.427",
+      "article-title": "Identification of behavioural model input data sets for WWTP uncertainty analysis",
+      "volume": "81",
+      "author": "Lindblom",
+      "year": "2020",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "575",
+      "DOI": "10.2166/hydro.2011.041",
+      "article-title": "A practical protocol for calibration of nutrient removal wastewater treatment models",
+      "volume": "13",
+      "author": "Mannina",
+      "year": "2011",
+      "journal-title": "J. Hydroinf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "56",
+      "DOI": "10.1016/j.memsci.2011.04.003",
+      "article-title": "An integrated model for biological and physical process simulation in membrane bioreactors (MBR)",
+      "volume": "376",
+      "author": "Mannina",
+      "year": "2011",
+      "journal-title": "J. Membr. Sci."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "9531",
+      "DOI": "10.1080/19443994.2015.1030780",
+      "article-title": "Sensitivity and uncertainty analysis of an integrated membrane bioreactor model",
+      "volume": "57",
+      "author": "Mannina",
+      "year": "2016",
+      "journal-title": "Desalination Water Treat."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib31",
+      "doi-asserted-by": "crossref",
+      "first-page": "73",
+      "DOI": "10.2166/wst.2006.711",
+      "article-title": "Experimental and model-based evaluation of the role of denitrifying polyphosphate accumulating organisms at two large scale WWTPs in northern Poland",
+      "volume": "54",
+      "author": "Mąkinia",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib32",
+      "series-title": "Mathematical Modelling and Computer Simulation of Activated Sludge Systems",
+      "author": "Mąkinia",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "1489",
+      "DOI": "10.1016/j.watres.2005.01.023",
+      "article-title": "Long-term simulation of the activated sludge process at the Hanover-Gümmerwald pilot WWTP",
+      "volume": "39",
+      "author": "Mąkinia",
+      "year": "2005",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib34",
+      "doi-asserted-by": "crossref",
+      "first-page": "15",
+      "DOI": "10.2166/hydro.2002.0003",
+      "article-title": "Evaluation of an ASM1 model calibration procedure on a municipal – industrial wastewater treatment plant",
+      "volume": "4",
+      "author": "Petersen",
+      "year": "2002",
+      "journal-title": "J. Hydroinf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "948",
+      "DOI": "10.1016/j.watres.2015.11.029",
+      "article-title": "A two pathway model for N2O emissions by ammonium oxidizing bacteria supported by the NO/N2O variation",
+      "volume": "88",
+      "author": "Pocquet",
+      "year": "2016",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib37",
+      "doi-asserted-by": "crossref",
+      "first-page": "1315",
+      "DOI": "10.1016/j.ress.2005.11.030",
+      "article-title": "Comments on generalized likelihood uncertainty estimation",
+      "volume": "91",
+      "author": "Romanowicz",
+      "year": "2006",
+      "journal-title": "Reliab. Eng. Syst. Saf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib38",
+      "doi-asserted-by": "crossref",
+      "first-page": "219",
+      "DOI": "10.1016/j.envsoft.2014.06.006",
+      "article-title": "Uncertainty and sensitivity analyses using GLUE when modeling inhibition and pharmaceutical cometabolism during nitrification",
+      "volume": "60",
+      "author": "Sathyamoorthy",
+      "year": "2014",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib39",
+      "doi-asserted-by": "crossref",
+      "first-page": "7737",
+      "DOI": "10.1016/j.sbspro.2010.05.204",
+      "article-title": "Evaluation of MARS modeling technique for sensitivity analysis of model output",
+      "volume": "2",
+      "author": "Shahsavania",
+      "year": "2010",
+      "journal-title": "Procedia Social and Behavioral Sciences"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib40",
+      "doi-asserted-by": "crossref",
+      "first-page": "639",
+      "DOI": "10.1016/j.watres.2010.08.025",
+      "article-title": "Global sensitivity analysis in wastewater treatment plant model applications: prioritizing sources of uncertainty",
+      "volume": "45",
+      "author": "Sin",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib41",
+      "doi-asserted-by": "crossref",
+      "first-page": "646",
+      "DOI": "10.2175/106143012X13373550426670",
+      "article-title": "Modeling external carbon addition in biological nutrient removal processes with an extension of the International Water Association activated sludge model",
+      "volume": "84",
+      "author": "Swinarski",
+      "year": "2012",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib42",
+      "doi-asserted-by": "crossref",
+      "first-page": "1263",
+      "DOI": "10.1016/0043-1354(91)90066-Y",
+      "article-title": "A dynamic model of the clarification-thickening process",
+      "volume": "25",
+      "author": "Takács",
+      "year": "1991",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.jprocont.2019.03.005",
+      "article-title": "Explicit and interpretable nonlinear soft sensor models for influent surveillance at a full-scale wastewater treatment plant",
+      "volume": "77",
+      "author": "Wang",
+      "year": "2019",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib44",
+      "doi-asserted-by": "crossref",
+      "first-page": "235",
+      "DOI": "10.1016/j.jenvman.2015.09.041",
+      "article-title": "Simulation and optimization of a coking wastewater biological treatment process by activated sludge models (ASM)",
+      "volume": "165",
+      "author": "Wu",
+      "year": "2016",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib45",
+      "doi-asserted-by": "crossref",
+      "first-page": "727",
+      "DOI": "10.2166/wst.2016.564",
+      "article-title": "Strategies for achieving energy neutrality in biological nutrient removal systems – a case study of the Slupsk WWTP (northern Poland)",
+      "volume": "75",
+      "author": "Zaborowska",
+      "year": "2017",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib46",
+      "doi-asserted-by": "crossref",
+      "first-page": "53",
+      "DOI": "10.1016/j.watres.2019.06.057",
+      "article-title": "Strategies for mitigating nitrous oxide production and decreasing the carbon footprint of a full-scale combined nitrogen and phosphorus removal activated sludge system",
+      "volume": "162",
+      "author": "Zaborowska",
+      "year": "2019",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib47",
+      "doi-asserted-by": "crossref",
+      "first-page": "762",
+      "DOI": "10.1016/j.scitotenv.2019.02.024",
+      "article-title": "Comparative energy and carbon footprint analysis of biosolids management strategies in water resource recovery facilities",
+      "volume": "665",
+      "author": "Zhao",
+      "year": "2019",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib48",
+      "doi-asserted-by": "crossref",
+      "first-page": "8493",
+      "DOI": "10.1038/srep08493",
+      "article-title": "A novel protocol for model calibration in biological wastewater treatment",
+      "volume": "5",
+      "author": "Zhu",
+      "year": "2015",
+      "journal-title": "Sci. Rep."
+    },
+    {
+      "key": "10.1016/j.jenvman.2022.116040_bib49",
+      "doi-asserted-by": "crossref",
+      "first-page": "1618",
+      "DOI": "10.1080/09593330.2013.876450",
+      "article-title": "Estimation of parameter uncertainty for an activated sludge model using Bayesian inference: a comparison with the frequentist method",
+      "volume": "35",
+      "author": "Zonta",
+      "year": "2014",
+      "journal-title": "Environ. Technol."
+    }
+  ],
+  "container-title": [
+    "Journal of Environmental Management"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479722016139?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479722016139?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2025-10-04T10:22:17Z",
+    "timestamp": 1759573337000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301479722016139"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "references-count": 46,
+  "alternative-id": [
+    "S0301479722016139"
+  ],
+  "URL": "https://doi.org/10.1016/j.jenvman.2022.116040",
+  "relation": {},
+  "ISSN": [
+    "0301-4797"
+  ],
+  "issn-type": [
+    {
+      "value": "0301-4797",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Modeling nutrient removal and energy consumption in an advanced activated sludge system under uncertainty",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Environmental Management",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jenvman.2022.116040",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "Published by Elsevier Ltd.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "116040"
+}

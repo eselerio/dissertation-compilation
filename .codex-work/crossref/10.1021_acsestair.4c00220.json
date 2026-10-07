@@ -1,0 +1,598 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2026-09-23T21:14:26Z",
+    "timestamp": 1790198066006,
+    "version": "4.1.0"
+  },
+  "reference-count": 62,
+  "publisher": "American Chemical Society (ACS)",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            20
+          ]
+        ],
+        "date-time": "2024-11-20T00:00:00Z",
+        "timestamp": 1732060800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100006198",
+      "name": "Goddard Space Flight Center",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "80NSSC23K0523"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "80NSSC23K0523"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100006198",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "ACS EST Air"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2025,
+        1,
+        10
+      ]
+    ]
+  },
+  "DOI": "10.1021/acsestair.4c00220",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        11,
+        20
+      ]
+    ],
+    "date-time": "2024-11-20T09:49:38Z",
+    "timestamp": 1732096178000
+  },
+  "page": "99-108",
+  "source": "Crossref",
+  "is-referenced-by-count": 8,
+  "title": [
+    "A Nudge to the Truth: Atom Conservation as a Hard Constraint in Models of Atmospheric Composition Using a Species-Weighted Correction"
+  ],
+  "prefix": "10.1021",
+  "volume": "2",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-7361-9590",
+      "authenticated-orcid": true,
+      "given": "Patrick Obin",
+      "family": "Sturm",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Earth Sciences",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        },
+        {
+          "name": "University of Southern California",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-6343-8382",
+      "authenticated-orcid": true,
+      "given": "Sam J.",
+      "family": "Silva",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Earth Sciences",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        },
+        {
+          "name": "University of Southern California",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        },
+        {
+          "name": "Department of Environmental Engineering",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        },
+        {
+          "name": "University of Southern California",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        },
+        {
+          "name": "Department of Population and Public Health Sciences",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        },
+        {
+          "name": "University of Southern California",
+          "place": [
+            "Los Angeles, United States"
+          ]
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "316",
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        11,
+        20
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref1/cit1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/2017GL072602"
+    },
+    {
+      "key": "ref2/cit2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/sciadv.aay8967"
+    },
+    {
+      "key": "ref3/cit3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-17-1511-2024"
+    },
+    {
+      "key": "ref4/cit4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S1352-2310(97)83212-8"
+    },
+    {
+      "key": "ref5/cit5",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2022MS003293"
+    },
+    {
+      "key": "ref6/cit6",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/1520-0469(1999)056<3808:DCFIMA>2.0.CO;2"
+    },
+    {
+      "key": "ref7/cit7",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.atmosenv.2005.10.038"
+    },
+    {
+      "key": "ref8/cit8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1103/PhysRevLett.126.098302"
+    },
+    {
+      "key": "ref9/cit9",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-15-6677-2022"
+    },
+    {
+      "issue": "365",
+      "key": "ref10/cit10",
+      "first-page": "1",
+      "volume": "24",
+      "author": "Harder P.",
+      "year": "2023",
+      "journal-title": "Journal of Machine Learning Research"
+    },
+    {
+      "key": "ref11/cit11",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2022MS003235"
+    },
+    {
+      "key": "ref12/cit12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/eds.2022.22"
+    },
+    {
+      "key": "ref13/cit13",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-13-4435-2020"
+    },
+    {
+      "key": "ref14/cit14",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.physd.2023.133952"
+    },
+    {
+      "key": "ref15/cit15",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Horie, M.; Mitsume, N. Graph Neural PDE Solvers with Conservation and Similarity-Equivariance.\n                      arXiv\n                      May 25, 2024. 10.48550/arXiv.2405.16183. (accessed 2024-08-12).",
+      "DOI": "10.48550/arXiv.2405.16183"
+    },
+    {
+      "key": "ref16/cit16",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Praditia, T.; Karlbauer, M.; Otte, S.; Oladyshkin, S.; Butz, M. V.; Nowak, W. Finite Volume Neural Network: Modeling Subsurface Contaminant Transport.\n                      arXiv\n                      April 13, 2021. 10.48550/arXiv.2104.06010. (accessed 2024-08-12).",
+      "DOI": "10.48550/arXiv.2104.06010"
+    },
+    {
+      "key": "ref17/cit17",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cej.2023.146869"
+    },
+    {
+      "key": "ref18/cit18",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cej.2024.149863"
+    },
+    {
+      "key": "ref19/cit19",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/B978-0-443-28824-1.50137-X"
+    },
+    {
+      "key": "ref20/cit20",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acs.iecr.3c01471"
+    },
+    {
+      "key": "ref21/cit21",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-15-3417-2022"
+    },
+    {
+      "key": "ref22/cit22",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020GL090481"
+    },
+    {
+      "key": "ref23/cit23",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.proci.2024.105507"
+    },
+    {
+      "key": "ref24/cit24",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-12-1209-2019"
+    },
+    {
+      "key": "ref25/cit25",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-20-8063-2020"
+    },
+    {
+      "key": "ref26/cit26",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2001JD000807"
+    },
+    {
+      "key": "ref27/cit27",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0167-9473(01)00065-2"
+    },
+    {
+      "key": "ref28/cit28",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/2939672.2939785"
+    },
+    {
+      "key": "ref29/cit29",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/9781108583664"
+    },
+    {
+      "key": "ref30/cit30",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2004.08.013"
+    },
+    {
+      "key": "ref31/cit31",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/050640928"
+    },
+    {
+      "key": "ref32/cit32",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2018.10.045"
+    },
+    {
+      "key": "ref33/cit33",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-14-3067-2021"
+    },
+    {
+      "key": "ref34/cit34",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2021.110624"
+    },
+    {
+      "key": "ref35/cit35",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Márquez-Neila, P.; Salzmann, M.; Fua, P. Imposing Hard Constraints on Deep Networks: Promises and Limitations.\n                      arXiv\n                      June 6, 2017. 10.48550/arXiv.1706.02025. (accessed 2024-08-16).",
+      "DOI": "10.48550/arXiv.1706.02025"
+    },
+    {
+      "key": "ref36/cit36",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/1520-0469(1997)054<1675:MCCIAR>2.0.CO;2"
+    },
+    {
+      "key": "ref37/cit37",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-16-4193-2023"
+    },
+    {
+      "key": "ref38/cit38",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Guo, L.; Yang, X.; Zheng, Z.; Riemer, N.; Tessum, C. W. Uncertainty Quantification in Reduced-Order Gas-Phase Atmospheric Chemistry Modeling Using Ensemble SINDy.\n                      arXiv\n                      July 12, 2024. 10.48550/arXiv.2407.09757. (accessed 2024-08-06).",
+      "DOI": "10.48550/arXiv.2407.09757"
+    },
+    {
+      "key": "ref39/cit39",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2024JH000132"
+    },
+    {
+      "key": "ref40/cit40",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1103/PhysRevE.109.L023301"
+    },
+    {
+      "key": "ref41/cit41",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-14-2679-2014"
+    },
+    {
+      "key": "ref42/cit42",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1371/journal.pcbi.1011530"
+    },
+    {
+      "key": "ref43/cit43",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5334/jors.151"
+    },
+    {
+      "key": "ref44/cit44",
+      "unstructured": "Burkholder, J. B.; Sander, S. P.; Abbat, J.; Barker, J. R.; Cappa, C.; Crounse, J. D.; Dibble, T. S.; Huie, R. E.; Kolb, C. E.; Kurylo, M. J.; Orkin, V. L.; Percival, C. J.; Wilmouth, D. M.; Wine, P. H.\n                      Chemical Kinetics and Photochemical Data for Use in Atmospheric Studies, Evaluation No. 19\n                      , JPL Publication 19-5, Jet Propulsion Laboratory, 2019, http://jpldataeval.jpl.nasa.gov. (accessed 2024–08–06)."
+    },
+    {
+      "key": "ref45/cit45",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020MS002413"
+    },
+    {
+      "key": "ref46/cit46",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Li, E. W.; Sturm, P. O.; Silva, S. J.; Barber, V. A.; Keller, C. A. Characterizing the Speed of Chemical Cycling in the Atmosphere.\n                      ESS Open Archive\n                      July 11, 2024. 10.22541/essoar.172072964.41409656/v1. (accessed 2024-08-06).",
+      "DOI": "10.22541/essoar.172072964.41409656/v1"
+    },
+    {
+      "key": "ref47/cit47",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020JD032759"
+    },
+    {
+      "key": "ref48/cit48",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-21-3555-2021"
+    },
+    {
+      "key": "ref49/cit49",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2021MS002881"
+    },
+    {
+      "key": "ref50/cit50",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/AIES-D-23-0045.1"
+    },
+    {
+      "key": "ref51/cit51",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/GL004i006p00227"
+    },
+    {
+      "key": "ref52/cit52",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/j100565a019"
+    },
+    {
+      "key": "ref53/cit53",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-18-15363-2018"
+    },
+    {
+      "key": "ref54/cit54",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1404727111"
+    },
+    {
+      "key": "ref55/cit55",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acsearthspacechem.3c00043"
+    },
+    {
+      "key": "ref56/cit56",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/hess-26-3377-2022"
+    },
+    {
+      "key": "ref57/cit57",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2023.112234"
+    },
+    {
+      "key": "ref58/cit58",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Richter-Powell, J.; Lipman, Y.; Chen, R. T. Q. Neural Conservation Laws: A Divergence-Free Perspective.\n                      arXiv\n                      October 4, 2022. 10.48550/arXiv.2210.01741. (accessed 2024-11-14).",
+      "DOI": "10.48550/arXiv.2210.01741"
+    },
+    {
+      "key": "ref59/cit59",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10462-023-10562-9"
+    },
+    {
+      "key": "ref60/cit60",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Kingma, D. P.; Welling, M. Auto-Encoding Variational Bayes.\n                      arXiv\n                      December 10, 2022. 10.48550/arXiv.1312.6114. (accessed 2024-11-14).",
+      "DOI": "10.48550/arXiv.1312.6114"
+    },
+    {
+      "key": "ref61/cit61",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Maddix, D. C.; Wang, Y.; Smola, A. Deep Factors with Gaussian Processes for Forecasting.\n                      arXiv\n                      November 30, 2018. 10.48550/arXiv.1812.00098. (accessed 2024-11-14).",
+      "DOI": "10.48550/arXiv.1812.00098"
+    },
+    {
+      "key": "ref62/cit62",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2021MS002926"
+    }
+  ],
+  "container-title": [
+    "ACS ES&amp;T Air"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://pubs.acs.org/doi/pdf/10.1021/acsestair.4c00220",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "unspecified"
+    },
+    {
+      "URL": "https://pubs.acs.org/doi/pdf/10.1021/acsestair.4c00220",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        1,
+        16
+      ]
+    ],
+    "date-time": "2026-01-16T13:21:57Z",
+    "timestamp": 1768569717000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://pubs.acs.org/doi/10.1021/acsestair.4c00220"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        11,
+        20
+      ]
+    ]
+  },
+  "references-count": 62,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          10
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1021/acsestair.4c00220"
+  ],
+  "URL": "https://doi.org/10.1021/acsestair.4c00220",
+  "relation": {},
+  "ISSN": [
+    "2837-1402",
+    "2837-1402"
+  ],
+  "issn-type": [
+    {
+      "value": "2837-1402",
+      "type": "print"
+    },
+    {
+      "value": "2837-1402",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        11,
+        20
+      ]
+    ]
+  }
+}

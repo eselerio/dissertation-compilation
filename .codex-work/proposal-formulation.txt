@@ -1,0 +1,780 @@
+P a g e | 50
+
+constraint. Although the framework is designed to handle large-scale systems—
+especially superstructures that involve multiple sources, sinks, and interconnected
+units—practical deployment for real-time optimization or extremely large configurations
+may require advanced computing resources that exceed the scope of this work.
+Another important limitation relates to the balance between interpretability and predictive
+power. While the hybrid approach strives to merge mechanistic insights with data-driven
+modeling to facilitate transparency, certain black-box ML algorithms might deliver slightly
+higher predictive accuracy for highly specialized tasks at the expense of clarity about
+underlying biochemical processes. This trade-off is purposeful, ensuring that the insights
+provided by the model can be acted upon by process engineers who rely on mechanistic
+understanding for effective troubleshooting and process optimization. Furthermore,
+although the study includes bio-towers as a representative of advective-diffusive
+attached-growth systems, the inherent variability and unique conditions of individual
+treatment plants imply that further calibration and customization may be required to
+realize optimal performance in specific operational contexts.
+Despite these constraints, the scope of this dissertation is well-justified by the pressing
+need to develop a robust, scalable, and interpretable modeling framework that addresses
+critical gaps in current wastewater treatment research. By focusing on both suspended-
+growth (activated sludge) and attached-growth (bio-towers) processes, and by employing
+a breadth of existing experimental data, the study maximizes its relevance to real-world
+situations while also laying a solid foundation for future extensions.
+
+P a g e | 51
+
+
+7     Model Formulation
+
+7.1   Coupled Linear Equations Framework for Optimization (CLEFO)
+The biochemical processes involved in biological wastewater treatment are inherently
+complex, characterized by multiple interdependent constituents, including various
+compounds and biomass concentrations. Here, we propose a coupled linear equations
+framework for optimization tailored to encapsulate the intricate interdependencies and
+interaction effects inherent in biological wastewater treatment systems. The primary
+objective of this model is to provide a tractable yet comprehensive framework that
+captures the dynamic relationships among active wastewater constituents, specifically
+compound and biomass concentrations, while accounting for the influence of key
+operational parameters such as flow rate, media porosity, and influent compound
+concentrations without loss of tractability in a global optimization routine.
+7.2   Variables
+The model delineates independent variables, encompassing factors like flow rate, media
+porosity, and process variables, denoted as 𝐗 𝑝 , and various influent compound
+concentrations, denoted as 𝐗 𝑐 . To concatenate 𝐗 𝑝 (process variables) and 𝐗 𝑐 (influent
+                                                                                             𝐗𝑝
+compound concentrations), we can define a single vector 𝐗 = [ ] =
+                                                                                             𝐗𝑐
+                                          ⊤
+[𝑋1 , 𝑋2 , … , 𝑋𝑜 , 𝑋𝑜+1 , 𝑋𝑜+2 , … , 𝑋𝑚 ] by stacking 𝐗 𝑝 and 𝐗 𝑐 vertically. This ensures that all
+independent variables are represented in a unified manner. These variables serve as the
+primary drivers influencing the system's behavior. Concurrently, the model identifies
+dependent variables (𝐘), which include post-treatment compound concentrations
+(𝑌1 , 𝑌2 , … , 𝑌𝑝 ) and biomass concentrations (𝑌𝑝+1 , 𝑌𝑝+2 , … , 𝑌𝑛 ). Recognizing the inherent
+interdependencies among these dependent variables—where the concentration of one
+compound or biomass species may influence others—the model incorporates a coupling
+coefficients matrix (𝚪) to represent these mutual interactions. For example, in a biological
+wastewater treatment system, the concentration of dissolved oxygen (𝑌1 ) plays a critical
+role in the activity and growth of aerobic biomass species, such as nitrifying bacteria (𝑌2 ).
+An increase in 𝑌1 can enhance the metabolic activity of nitrifying bacteria, leading to higher
+rates of ammonium (𝑌3 ) oxidation to nitrite and nitrate. Conversely, as the nitrification
+process progresses and oxygen is consumed, 𝑌1 may decrease, potentially limiting the
+activity of the aerobic biomass. This dynamic interplay between dissolved oxygen and
+biomass illustrates how changes in one dependent variable can cascade through the
+system, influencing others. The coupling coefficients matrix (𝚪) captures these
+interdependencies quantitatively, enabling the model to account for such feedback loops
+and their effects on the overall biochemical processes.
+
+P a g e | 52
+
+On the other hand, to capture the interaction effects among independent variables, the
+model introduces pairwise interaction terms (𝐙). These are constructed by taking the
+product of every unique pair of independent variables, such as the interaction between
+flow rate and media porosity (𝑍1 = 𝑋1 × 𝑋2 ), thereby encapsulating synergistic or
+antagonistic effects that individual variables alone may not reveal. For instance, in a
+biological wastewater treatment system, the interaction between flow rate (𝑋1 ) and media
+porosity (𝑋2 ) can significantly influence the efficiency of the treatment process. A high
+flow rate might lead to insufficient contact time between the influent wastewater and the
+treatment media, potentially reducing the removal efficiency of pollutants. However, if the
+media porosity is also high, it could compensate for the reduced contact time by allowing
+greater penetration and distribution of wastewater throughout the treatment bed.
+Conversely, a combination of low flow rate and low porosity might create stagnant zones,
+leading to uneven treatment and localized inefficiencies. By including the interaction term
+(𝑍1 = 𝑋1 × 𝑋2 ), the model captures these synergistic or antagonistic effects, reflecting
+how the interplay between flow rate and media porosity jointly impacts the treatment
+performance in ways that considering these variables individually might miss.
+Additionally, the model accounts for interaction effects between independent and
+dependent variables through another set of interaction terms (𝐖), defined as the product
+of each independent variable with each dependent variable (e.g., 𝑊1 = 𝑋1 × 𝑌1 ). This
+allows the influence of an independent variable on a dependent variable to be modulated
+by the current state of that dependent variable, effectively capturing feedback
+mechanisms within the system. For example, consider the interaction between flow rate
+(𝑋1 ) and the concentration of dissolved oxygen (𝑌1 ) in a biological wastewater treatment
+system. While a higher flow rate can increase the mixing of oxygen in the system, thereby
+potentially raising dissolved oxygen levels, the actual impact depends on the existing
+concentration of 𝑌1 . If 𝑌1 is already at a sufficient level, the additional mixing from
+increased 𝑋1 may have a negligible effect. Conversely, if 𝑌1 is low, the same increase in
+𝑋1 could have a significant positive impact by enhancing oxygen transfer. By including
+the interaction term 𝑊1 = 𝑋1 × 𝑌1 , the model captures this feedback mechanism, where
+the effect of flow rate on dissolved oxygen is modulated by the current state of 𝑌1 .
+7.3   Coupled Linear Equations Model
+The mathematical formulation of the baseline model is expressed as:
+Equation 7-1 Coupled linear equations model
+
+                           𝐘 = 𝚼 + 𝐁𝐗 + 𝚯𝐙 + 𝚪𝐘 + diag(𝚲𝐗)𝐘.
+In this equation, the intercept vector 𝚼 = [𝜖1 , 𝜖2 , … , 𝜖𝑛 ]⊤ is an 𝑛 × 1 vector where each
+element 𝜖𝑖 represents the intercept or residual for the 𝑖-th dependent variable 𝑌𝑖 . It
+provides the baseline level of each dependent variable when all independent variables
+and interaction terms are zero. On the other hand, the linear coefficients matrix 𝐁 is an
+
+P a g e | 53
+
+𝑛 × 𝑚 matrix where each element 𝛽𝑖,𝑗 quantifies the direct influence of the 𝑗-th
+independent variable 𝑋𝑗 on the 𝑖-th dependent variable 𝑌𝑖 .
+                                   𝛽1,1    𝛽1,2   ⋯   𝛽1,𝑚
+                                   𝛽       𝛽2,2   ⋯   𝛽2,𝑚
+                               𝐁 = 2,1                       .
+                                     ⋮      ⋮     ⋱     ⋮
+                                  [𝛽𝑛,1    𝛽𝑛,2   ⋯   𝛽𝑛,𝑚 ]
+This matrix captures the linear relationships between each independent variable and each
+dependent variable, allowing the model to account for how changes in operational
+parameters directly affect treatment outcomes. We also introduce the interaction
+coefficients matrix for 𝐙 denoted by 𝚯, which is an 𝑛 × 𝑞 matrix, where 𝑞 = (𝑚
+                                                                             2
+                                                                               ) represents
+the number of unique pairwise interaction terms among independent variables. Each
+element 𝜃𝑖,𝑘 quantifies the effect of the 𝑘-th interaction term 𝑍𝑘 on the 𝑖-th dependent
+variable 𝑌𝑖 .
+                                   𝜃1,1    𝜃1,2   ⋯ 𝜃1,𝑞
+                                   𝜃       𝜃2,2   ⋯ 𝜃2,𝑞
+                               𝚯 = 2,1                     .
+                                     ⋮      ⋮     ⋱  ⋮
+                                  [𝜃𝑛,1    𝜃𝑛,2   ⋯ 𝜃𝑛,𝑞 ]
+By incorporating interaction terms, this matrix allows the model to capture how
+combinations of independent variables jointly influence the dependent variables,
+reflecting synergistic or antagonistic effects that are not apparent when considering
+variables in isolation. On the other hand, we have the coupling coefficients matrix among
+𝐘 denoted by 𝚪, which is an 𝑛 × 𝑛 matrix where each element 𝛾𝑖,𝑗 represents the influence
+of the 𝑗-th dependent variable 𝑌𝑗 on the 𝑖-th dependent variable 𝑌𝑖 .
+                                   𝛾1,1    𝛾1,2   ⋯   𝛾1,𝑛
+                                   𝛾2,1    𝛾2,2   ⋯   𝛾2,𝑛
+                                𝚪=[ ⋮       ⋮     ⋱    ⋮ ].
+                                   𝛾𝑛,1    𝛾𝑛,2   ⋯   𝛾𝑛,𝑛
+This coupling matrix captures the interdependencies among dependent variables,
+allowing the concentration of one compound or biomass species to affect others. Such
+interactions are commonplace in biochemical processes where, for example, the growth
+of one biomass species may inhibit or promote the growth of another. Lastly, we have the
+interaction coefficients matrix between 𝐗 and 𝐘 denoted by 𝚲 is an 𝑛 × 𝑚 matrix where
+each element 𝜆𝑖,𝑗 quantifies how the 𝑗-th independent variable 𝑋𝑗 interacts with the 𝑖-th
+dependent variable 𝑌𝑖 .
+                                    𝜆1,1   𝜆1,2   ⋯ 𝜆1,𝑛
+                                    𝜆      𝜆2,2   ⋯ 𝜆2,𝑛
+                                𝚲 = 2,1                    .
+                                      ⋮     ⋮     ⋱  ⋮
+                                   [𝜆𝑛,1   𝜆𝑛,2   ⋯ 𝜆𝑛,𝑛 ]
+
+P a g e | 54
+
+This matrix enables the model to account for how the effect of an independent variable
+on a dependent variable may vary depending on the current state of that dependent
+variable. For instance, the impact of flow rate on biomass concentration might differ based
+on the existing biomass levels, reflecting feedback mechanisms within the treatment
+system. On the other hand, the diagonal interaction matrix diag(𝚲𝐗) is an 𝑛 × 𝑛 diagonal
+matrix where each diagonal element (𝚲𝐗)𝑖,𝑖 = ∑𝑚    𝑗=1 𝜆𝑖,𝑗 𝑋𝑗 and thus:
+                                       𝑚
+
+                                   ∑ 𝜆1,𝑗 𝑋𝑗                 0     ⋯              0
+                                       𝑗=1
+                                                       𝑚
+
+                                             0         ∑ 𝜆2,𝑗 𝑋𝑗   ⋯              0
+                     diag(𝚲𝐗) =                                                               .
+                                                       𝑗=1
+                                             ⋮               ⋮     ⋱              ⋮
+                                                                            𝑚
+
+                                             0               0     ⋯        ∑ 𝜆𝑛,𝑗 𝑋𝑗
+                                   [                                        𝑗=1           ]
+By scaling each 𝑌𝑖 with ∑𝑚 𝑗=1 𝜆𝑖,𝑗 𝑋𝑗 , the model incorporates how the influence of each
+independent variable on a dependent variable is modulated by both the variable itself and
+the current state of the dependent variable. This design maintains model linearity while
+allowing for dynamic interaction effects.
+                                                 𝑚                 𝑚
+
+                          (diag(𝚲𝐗)𝐘)𝑖 = ∑ 𝜆𝑖,𝑗 𝑋𝑗 𝑌𝑖 = 𝑌𝑖 ∑ 𝜆𝑖,𝑗 𝑋𝑗 .
+                                                 𝑗=1               𝑗=1
+
+The complete model equation can be rearranged to isolate the dependent variables 𝐘 as
+follows:
+Equation 7-2 Solution to the coupled linear equations model by matrix inversion
+
+                (𝐈 − 𝚪 − diag(𝚲𝐗))𝐘 = 𝚼 + 𝐁𝐗 + 𝚯𝐙
+                                                                       −1
+                                       𝐘 = (𝐈 − 𝚪 − diag(𝚲𝐗)) (𝚼 + 𝐁𝐗 + 𝚯𝐙).
+In this equation, 𝐈 is the identity matrix.
+7.4   Single-Unit Optimization Framework
+We shall use Equation 7-1 to solve the single-unit design problem defined in Equation
+3-3 by developing a single-unit CLEFO method. The objective function of the optimization
+routine can be formulated as a multi-objective function representing the minimization of
+                                                                                      ⊤           ⊤
+pollutant concentrations and operational costs using [𝑐1,1 , … , 𝑐1,𝑛 ] and [𝑐2,1 , … , 𝑐2,𝑚 ] as
+their respective weight vectors. We also define the dependent variable set 𝒴 = {1,2, … , 𝑛}
+and independent variable set 𝒳 = {1,2, … , 𝑚}. Given these, we can express the explicit
+nonlinear optimization model using the summation form of Equation 7-1 as follows:
+
+P a g e | 55
+
+Equation 7-3 Single-unit nonlinear optimization framework
+
+       min ∑ 𝑐1,𝑖 𝑌𝑖 + ∑ 𝑐2,𝑗 𝑋𝑗
+            𝑖∈𝒴        𝑗∈𝒳
+
+             𝑌𝑖 + ∑ 𝛾𝑖,𝑗 𝑌𝑗 + ∑ 𝜆𝑖,𝑗 𝑋𝑗 𝑌𝑖 = 𝜖𝑖 + ∑ 𝛽𝑖,𝑗 𝑋𝑗 + ∑ ∑ 𝜃𝑖,𝑙,𝑘 𝑋𝑙 𝑋𝑘 ,   ∀𝑖 ∈ 𝒴 .
+      𝑠. 𝑡. {      𝑗∈𝒴        𝑗∈𝒳                 𝑗∈𝒳         𝑙∈𝒳 𝑘∈𝒳
+               min           max    min            max
+     {        𝑋𝑗 ≤ 𝑋𝑗 ≤ 𝑋𝑗 , 𝑌𝑖 ≤ 𝑌𝑖 ≤ 𝑌𝑖 , ∀𝑖 ∈ 𝒴, ∀𝑗 ∈ 𝒳
+
+The bilinear terms of the optimization problem may be linearized using a plethora of
+approaches. However, the improvement of such linearization techniques may not be
+necessary given that the decision variables and constraints of the optimization problem
+scale only with the wastewater compounds and process variables considered. It is,
+however, worthwhile to investigate the gains obtained from a linear model. To this end,
+we first attempt to relax the bilinear terms 𝑋𝑗 𝑌𝑖 and 𝑋𝑙 𝑋𝑘 . Linearization of such
+multiplications of continuous variables can be complex and computationally demanding.
+We employ a relaxation approach for bounded variables by transforming the product of
+two continuous variables into a separable form (Bisschop, 2018). We employ this
+approach to relax the terms. Consider the product of two continuous variables, 𝑥1 ⋅ 𝑥2 . To
+obtain a separable form, we define two new continuous variables 𝑦1 and 𝑦2 as follows:
+                                      𝑦1 = 0.5(𝑥1 + 𝑥2 ),
+                                      𝑦2 = 0.5(𝑥1 − 𝑥2 ).
+By construction, the product 𝑥1 ⋅ 𝑥2 can now be represented as a difference of squares:
+                                       𝑦12 − 𝑦22 ≡ 𝑥1 ⋅ 𝑥2 .
+Following the same principle, we apply this relaxation technique to the bilinear terms 𝑋𝑗 𝑌𝑖
+and 𝑋𝑙 𝑋𝑘 present in our optimization model. For each bilinear term 𝑋𝑗 𝑌𝑖 , we introduce two
+auxiliary variables:
+                                     𝑢𝑖,𝑗,1 = 0.5(𝑋𝑗 + 𝑌𝑖 ),
+
+                                     𝑢𝑖,𝑗,2 = 0.5(𝑋𝑗 − 𝑌𝑖 ).
+Using these definitions, the product 𝑋𝑗 𝑌𝑖 is equivalently written as:
+                                               2        2
+                                      𝑋𝑗 𝑌𝑖 = 𝑢𝑖,𝑗,1 − 𝑢𝑖,𝑗,2 .
+
+If 𝑋𝑗𝑚𝑖𝑛 ≤ 𝑋𝑗 ≤ 𝑋𝑗𝑚𝑎𝑥 and 𝑌𝑖𝑚𝑖𝑛 ≤ 𝑌𝑖 ≤ 𝑌𝑖𝑚𝑎𝑥 , then the bounds of 𝑢𝑖,𝑗,1 and 𝑢𝑖,𝑗,2 are:
+
+                       0.5(𝑋𝑗𝑚𝑖𝑛 + 𝑌𝑖𝑚𝑖𝑛 ) ≤ 𝑢𝑖,𝑗,1 ≤ 0.5(𝑋𝑗𝑚𝑎𝑥 + 𝑌𝑖𝑚𝑎𝑥 ),
+
+                       0.5(𝑋𝑗𝑚𝑖𝑛 − 𝑌𝑖𝑚𝑎𝑥 ) ≤ 𝑢𝑖,𝑗,2 ≤ 0.5(𝑋𝑗𝑚𝑎𝑥 − 𝑌𝑖𝑚𝑖𝑛 ).
+
+P a g e | 56
+
+This transformation replaces the original bilinear term with a separable expression
+involving the squares of new variables. Similarly, for each term 𝑋𝑙 𝑋𝑘 , we define:
+                                          𝑣𝑙,𝑘,1 = 0.5(𝑋𝑙 + 𝑋𝑘 ),
+                                          𝑣𝑙,𝑘,2 = 0.5(𝑋𝑙 − 𝑋𝑘 ).
+The product 𝑋𝑙 𝑋𝑘 can then be expressed as:
+                                                    2        2
+                                           𝑋𝑙 𝑋𝑘 = 𝑣𝑙,𝑘,1 − 𝑣𝑙,𝑘,2 .
+The bounds of 𝑣𝑙,𝑘,1 and 𝑣𝑙,𝑘,2 are:
+
+                          0.5(𝑋𝑙𝑚𝑖𝑛 + 𝑋𝑘𝑚𝑖𝑛 ) ≤ 𝑣𝑙,𝑘,1 ≤ 0.5(𝑋𝑙𝑚𝑎𝑥 + 𝑋𝑘𝑚𝑎𝑥 ),
+
+                          0.5(𝑋𝑙𝑚𝑖𝑛 − 𝑋𝑘𝑚𝑎𝑥 ) ≤ 𝑣𝑙,𝑘,2 ≤ 0.5(𝑋𝑙𝑚𝑎𝑥 − 𝑋𝑘𝑚𝑖𝑛 ).
+Incorporating these relaxations into the optimization model, the system dynamics
+constraints become:
+                             2        2                                       2        2
+   𝑌𝑖 + ∑ 𝛾𝑖,𝑗 𝑌𝑗 + ∑ 𝜆𝑖,𝑗 (𝑢𝑖,𝑗,1 − 𝑢𝑖,𝑗,2 ) = 𝜖𝑖 + ∑ 𝛽𝑖,𝑗 𝑋𝑗 + ∑ ∑ 𝜃𝑖,𝑙,𝑘 (𝑣𝑙,𝑘,1 − 𝑣𝑙,𝑘,2 ),    ∀𝑖 ∈ 𝒴.
+        𝑗∈𝒴         𝑗∈𝒳                             𝑗∈𝒳           𝑙∈𝒳 𝑘∈𝒳
+
+To arrive at a fully linear formulation, we now apply a piecewise linear (multiple choice)
+                                                                  2     2        2        2
+approximation for each squared auxiliary variable (𝑢𝑖,𝑗,1            , 𝑢𝑖,𝑗,2 , 𝑣𝑙,𝑘,1 , 𝑣𝑙,𝑘,2 ). Consider any
+one of the auxiliary variables, generically denoted as 𝑤, whose square we need to
+approximate (i.e., 𝑤 ∈ {𝑢𝑖,𝑗,1 , 𝑢𝑖,𝑗,2 , 𝑣𝑙,𝑘,1 , 𝑣𝑙,𝑘,2 }). We can use the known bound of 𝑤, i.e.,
+𝑤 𝑚𝑖𝑛 ≤ 𝑤 ≤ 𝑤 𝑚𝑎𝑥 , to partition the interval [𝑤 𝑚𝑖𝑛 , 𝑤 𝑚𝑎𝑥 ] into 𝐾 subintervals
+{𝑏0 , 𝑏1 , … , 𝑏𝐾−1 , 𝑏𝐾 } using exponential breakpoints so that each subinterval becomes
+progressively wider. Suppose 𝒬 = {1,2, … , 𝐾 }. The breakpoints are generated using:
+                                            𝑞 2 𝑚𝑎𝑥
+                          𝑏𝑞 = 𝑤 𝑚𝑖𝑛 + (       ) (𝑤 − 𝑤 𝑚𝑖𝑛 ),              ∀𝑞 ∈ 𝒬.
+                                           𝐾−1
+The spacing between consecutive breakpoints increases exponentially, with smaller
+intervals near 𝑤 𝑚𝑖𝑛 and wider intervals near 𝑤 𝑚𝑎𝑥 . This method ensures 𝑏0 < 𝑏1 < 𝑏2 <
+⋯ < 𝑏𝐾−1 < 𝑏𝐾 . These breakpoints provide better resolution than breakpoints of equal
+interval in regions where smaller values dominate and greater flexibility in capturing
+behavior across a wider range of the variable. This is demonstrated in Figure 7-1.
+
+P a g e | 57
+
+
+
+
+Figure 7-1 Comparison of linear (equal interval) and exponential breakpoints in piecewise
+linear approximation of quadratic variables (𝑥 2 )
+
+To linearize 𝑤 2 over each subinterval [𝑏𝑞−1 , 𝑏𝑞 ], we introduce a set of binary variables
+α𝑞 ∈ {0,1} for all 𝑞 ∈ 𝒬 and a continuous variable 𝑇 that will approximate 𝑤 2 . We then
+impose two main sets of constraints:
+
+                                            ∑ 𝛼𝑞 = 1,
+                                            𝑞∈𝒬
+
+ensuring that 𝑤 is assigned to exactly one of the 𝐾 subintervals.
+                                𝑏𝑞−1 α𝑞 ≤ 𝑤 ≤ 𝑏𝑞 α𝑞 ,      ∀𝑞 ∈ 𝒬.
+
+These inequalities restrict 𝑤 to lie within [𝑏𝑞−1 , 𝑏𝑞 ] only if α𝑞 = 1. For any other interval,
+those bounds become inactive. To complete the linearization, we must approximate the
+function 𝑓 (𝑤) = 𝑤 2 using a linear segment within each subinterval. One typical approach
+                                  2
+is to connect the points (𝑏𝑞−1 , 𝑏𝑞−1 ) and (𝑏𝑞 , 𝑏𝑞2 ) with a chord. Denoting:
+                       2                                                           2
+           𝑓(𝑏𝑞−1 ) = 𝑏𝑞−1 ,    𝑓(𝑏𝑞 ) = 𝑏𝑞2 ,    Δ𝑏𝑞 = 𝑏𝑞 − 𝑏𝑞−1 ,   Δ𝑓𝑞 = 𝑏𝑞2 − 𝑏𝑞−1 ,
+the slope of this linear chord is
+                                               2
+                                    Δ𝑓𝑞 𝑏𝑞2 − 𝑏𝑞−1
+                               𝑠𝑞 =    =           = 𝑏𝑞 + 𝑏𝑞−1 .
+                                    Δ𝑏𝑞 𝑏𝑞 − 𝑏𝑞−1
+
+Hence, within the subinterval [𝑏𝑞−1 , 𝑏𝑞 ], the linear approximation of 𝑤 2 can be written as:
+                                           2
+                                 𝑓𝑞 (𝑤) = 𝑏𝑞−1 + 𝑠𝑞 (𝑤 − 𝑏𝑞−1 ),
+which we enforce via an additional continuous variable 𝑇 in the following manner:
+                                2
+                          𝑇 − [𝑏𝑞−1 + 𝑠𝑞 (𝑤 − 𝑏𝑞−1 )] ≤ 𝑀 (1 − α𝑞 ),
+                            2
+                          [𝑏𝑞−1 + 𝑠𝑞 (𝑤 − 𝑏𝑞−1 )] − 𝑇 ≤ 𝑀 (1 − α𝑞 ),
+where 𝑀 is a sufficiently large constant (big-𝑀 parameter) for the 𝑞-th subinterval. These
+constraints ensure that if α𝑞 = 1, 𝑇 must lie exactly on the chord, approximating 𝑤 2 . If
+
+P a g e | 58
+
+α𝑞 = 0, then the inequalities become non-restrictive. We repeat the procedure described
+above for each of the squares
+                                                  2            2           2           2
+                                                 𝑢𝑖,𝑗,1 ,     𝑢𝑖,𝑗,2 ,    𝑣𝑙,𝑘,1 ,    𝑣𝑙,𝑘,2 ,
+
+each time introducing a set of breakpoints {𝑏0 , 𝑏1 , … , 𝑏𝐾 }, binary variables α𝑞 to select one
+interval, a continuous variable (say, 𝑇𝑢𝑖,𝑗,1 , 𝑇𝑢𝑖,𝑗,2 , 𝑇𝑣𝑙,𝑘,1 , 𝑇𝑣𝑙,𝑘,1 ) to approximate the square,
+and linear constraints enforcing subinterval assignment and the linear chord
+approximation. Once these constraints and variables are added, the terms
+                        2                        2                         2                         2
+                       𝑢𝑖,𝑗,1 ↦ 𝑇𝑢𝑖,𝑗,1 ,       𝑢𝑖,𝑗,2 ↦ 𝑇𝑢𝑖,𝑗,2 ,        𝑣𝑙,𝑘,1 ↦ 𝑇𝑣𝑙,𝑘,1 ,        𝑣𝑙,𝑘,2 ↦ 𝑇𝑣𝑙,𝑘,2 ,
+
+become linear references to the new continuous variables 𝑇 within the system dynamics
+                                            2      2          2        2
+equations. Consequently, the expressions 𝑢𝑖,𝑗,1 − 𝑢𝑖,𝑗,2 and 𝑣𝑙,𝑘,1 − 𝑣𝑙,𝑘,2 can each be
+written in a linear form as:
+                 2        2                                                   2        2
+               (𝑢𝑖,𝑗,1 − 𝑢𝑖,𝑗,2 ) ≡ (𝑇𝑢𝑖,𝑗,1 − 𝑇𝑢𝑖,𝑗,2 ) ,                  (𝑣𝑙,𝑘,1 − 𝑣𝑙,𝑘,2 ) ≡ (𝑇𝑣𝑙,𝑘,1 − 𝑇𝑣𝑙,𝑘,2 ).
+
+By substituting these piecewise linear approximations into the previously derived CLEFO-
+based constraints, we obtain a fully linear Mixed-Integer Programming (MIP) model:
+    𝑚𝑖𝑛 ∑ 𝑐1,𝑖 𝑌𝑖 + ∑ 𝑐2,𝑗 𝑋𝑗
+        𝑖∈𝒴          𝑗∈𝒳
+
+         𝑌𝑖 + ∑ 𝛾𝑖,𝑗 𝑌𝑗 + ∑ 𝜆𝑖,𝑗 (𝑇𝑢𝑖,𝑗,1 − 𝑇𝑢𝑖,𝑗,2 ) = 𝜖𝑖 + ∑ 𝛽𝑖,𝑗 𝑋𝑗 + ∑ ∑ 𝜃𝑖,𝑙,𝑘 (𝑇𝑣𝑙,𝑘,1 − 𝑇𝑣𝑙,𝑘,2 ) ,        ∀𝑖 ∈ 𝒴
+               𝑗∈𝒴         𝑗∈𝒳                                𝑗∈𝒳           𝑙∈𝒳 𝑘∈𝒳
+         𝑢𝑖,𝑗,1 = 0.5(𝑋𝑗 + 𝑌𝑖 ),    𝑢𝑖,𝑗,2 = 0.5(𝑋𝑗 − 𝑌𝑖 ),   𝑣𝑙,𝑘,1 = 0.5(𝑋𝑙 + 𝑋𝑘 ),       𝑣𝑙,𝑘,2 = 0.5(𝑋𝑙 − 𝑋𝑘 ),     ∀𝑖 ∈ 𝒴,      ∀𝑗, 𝑙, 𝑘 ∈ 𝒳
+          𝐾                                                                                                                                                        .
+ 𝑠. 𝑡. ∑ 𝛼𝑤,𝑞 = 1,         𝑏𝑤,𝑞−1 𝛼𝑤,𝑞 ≤ 𝑤 ≤ 𝑏𝑤,𝑞 𝛼𝑤,𝑞 ,       𝛼𝑤,𝑞 ∈ {0,1},      ∀𝑞 ∈ 𝒬,      ∀𝑤 ∈ {𝑢𝑖,𝑗,1 , 𝑢𝑖,𝑗,2 , 𝑣𝑙,𝑘,1 , 𝑣𝑙,𝑘,2 |𝑖 ∈ 𝒴 𝑎𝑛𝑑 𝑗, 𝑙, 𝑘 ∈ 𝒳}
+         𝑞∈𝒬
+                2
+         𝑇𝑤 − [𝑏𝑤,𝑞−1 + (𝑏𝑤,𝑞 + 𝑏𝑤,𝑞−1 )( 𝑤 − 𝑏𝑤,𝑞−1 )] ≤ 𝑀 (1 − 𝛼𝑤,𝑞 ),             ∀𝑞 ∈ 𝒬,     ∀𝑤 ∈ {𝑢𝑖,𝑗,1 , 𝑢𝑖,𝑗,2 , 𝑣𝑙,𝑘,1 , 𝑣𝑙,𝑘,2 |𝑖 ∈ 𝒴 𝑎𝑛𝑑 𝑗, 𝑙, 𝑘 ∈ 𝒳}
+           2
+         [𝑏𝑤,𝑞−1 + (𝑏𝑤,𝑞 + 𝑏𝑤,𝑞−1 )( 𝑤 − 𝑏𝑤,𝑞−1 )] − 𝑇𝑤 ≤ 𝑀 (1 − 𝛼𝑤,𝑞 ),             ∀𝑞 ∈ 𝒬,     ∀𝑤 ∈ {𝑢𝑖,𝑗,1 , 𝑢𝑖,𝑗,2 , 𝑣𝑙,𝑘,1 , 𝑣𝑙,𝑘,2 |𝑖 ∈ 𝒴 𝑎𝑛𝑑 𝑗, 𝑙, 𝑘 ∈ 𝒳}
+          𝑚𝑖𝑛
+{      {𝑋𝑗    ≤ 𝑋𝑗 ≤ 𝑋𝑗𝑚𝑎𝑥 ,       𝑌𝑖𝑚𝑖𝑛 ≤ 𝑌𝑖 ≤ 𝑌𝑖𝑚𝑎𝑥 ,     ∀𝑖 ∈ 𝒴,      ∀𝑗 ∈ 𝒳
+
+The model above can be further simplified using a 𝐏𝐢𝐞𝐜𝐞𝐰𝐢𝐬𝐞(𝑤, 𝑤𝑚𝑖𝑛 , 𝑤𝑚𝑎𝑥 , 𝑇𝑤 , 𝐾 )
+operator that takes in the bounds 𝑤𝑚𝑖𝑛 and 𝑤𝑚𝑎𝑥 of the auxiliary variables 𝑤 ∈
+{𝑢𝑖,𝑗,1 , 𝑢𝑖,𝑗,2 , 𝑣𝑙,𝑘,1 , 𝑣𝑙,𝑘,2 |𝑖 ∈ 𝒴 and 𝑗, 𝑙, 𝑘 ∈ 𝒳} and the number of partitions 𝐾 for the
+segmentation. Using these inputs, the operator then calculates the breakpoints 𝑏𝑤,𝑞 and
+generates the constraint block for the piecewise linear approximation. The new model
+representation given these is as follows:
+Equation 7-4 Single-unit mixed-integer linear programming optimization framework
+
+P a g e | 59
+
+
+    min ∑ 𝑐1,𝑖 𝑌𝑖 + ∑ 𝑐2,𝑗 𝑋𝑗
+         𝑖∈𝒴            𝑗∈𝒳
+
+          𝑌𝑖 + ∑ 𝛾𝑖,𝑗 𝑌𝑗 + ∑ 𝜆𝑖,𝑗 (𝑇𝑢𝑖,𝑗,1 − 𝑇𝑢𝑖,𝑗,2 ) = 𝜖𝑖 + ∑ 𝛽𝑖,𝑗 𝑋𝑗 + ∑ ∑ 𝜃𝑖,𝑙,𝑘 (𝑇𝑣𝑙,𝑘,1 − 𝑇𝑣𝑙,𝑘,2 ) ,   ∀𝑖 ∈ 𝒴
+                  𝑗∈𝒴         𝑗∈𝒳                              𝑗∈𝒳         𝑙∈𝒳 𝑘∈𝒳                                                         .
+    𝑠. 𝑡. 𝑢𝑖,𝑗,1 = 0.5(𝑋𝑗 + 𝑌𝑖 ), 𝑢𝑖,𝑗,2 = 0.5(𝑋𝑗 − 𝑌𝑖 ), 𝑣𝑙,𝑘,1 = 0.5(𝑋𝑙 + 𝑋𝑘 ), 𝑣𝑙,𝑘,2 = 0.5(𝑋𝑙 − 𝑋𝑘 ),         ∀𝑖 ∈ 𝒴,   ∀𝑗, 𝑙, 𝑘 ∈ 𝒳
+          𝐏𝐢𝐞𝐜𝐞𝐰𝐢𝐬𝐞(𝑤, 𝑤𝑚𝑖𝑛 , 𝑤𝑚𝑎𝑥 , 𝑇𝑤 , 𝐾), ∀𝑤 ∈ {𝑢𝑖,𝑗,1 , 𝑢𝑖,𝑗,2 , 𝑣𝑙,𝑘,1 , 𝑣𝑙,𝑘,2 |𝑖 ∈ 𝒴 𝑎𝑛𝑑 𝑗, 𝑙, 𝑘 ∈ 𝒳}
+            min
+{       { 𝑋𝑗      ≤ 𝑋𝑗 ≤ 𝑋𝑗max ,    𝑌𝑖min ≤ 𝑌𝑖 ≤ 𝑌𝑖max ,   ∀𝑖 ∈ 𝒴,   ∀𝑗 ∈ 𝒳
+
+7.5      Multi-Stage, Multi-Unit Network Optimization Framework
+The single-unit CLEFO optimization model for wastewater treatment is extended to
+accommodate a multi-stage, multi-unit framework that captures the complexities of
+sequential treatment processes, which is required to solve the problem detailed in
+Equation 3-2. In this extended model, the wastewater undergoes 𝑆 sequential treatment
+stages 𝑠 = 1, 2, … , 𝑆, with each stage 𝑠 capable of employing one among 𝑈𝑠 alternative
+process units 𝑢 ∈ 𝒰𝑠 . This selection is governed by binary decision variables 𝑦𝑠,𝑢 ,
+ensuring that exactly one unit is chosen per stage, thereby constructing a superstructure
+of feasible unit configurations across all stages.
+The model incorporates three distinct types of independent variables 𝑋 namely, the
+influent compound concentrations (𝑋 𝐼 ), flow variables (𝑋 𝐹 ), and process-unit-specific
+                                                                                   𝐼
+variables (𝑋 𝑃 ). For the first stage (𝑠 = 1), influent compound concentrations 𝑋𝑠,𝑖  represent
+the raw wastewater concentrations of compound 𝑖 ∈ ℐ. For subsequent stages (𝑠 > 1),
+the influent concentrations are directly linked to the effluent concentrations from the
+                             𝐼
+preceding stage, i.e., 𝑋𝑠,𝑖     = 𝑌𝑠−1,𝑖 . On the other hand, the value of volumetric flow
+variables 𝑋𝑓𝐹 are decided exclusively at the first stage for 𝑓 ∈ ℱ are held constant across
+all stages to maintain consistent flow rates throughout the treatment process. Lastly,
+                                     𝑃
+process-unit-specific variables 𝑋𝑢,𝑗      and 𝑗 ∈ 𝒥 pertain to operational parameters unique to
+each process unit, such as aeration rates or chemical dosages – depending on the
+treatment mechanism of the unit. They are activated only if their corresponding unit 𝑢 is
+selected in stage 𝑠.
+The core of the optimization lies in the CLEFO-type balance equations for each unit 𝑢 at
+each stage 𝑠 and for each compound 𝑖. The balance equation is formulated as follows:
+
+P a g e | 60
+
+
+     𝑌𝑠,𝑢,𝑖 + ∑ γ𝑠,𝑢,𝑖,𝑖 ′ 𝑌𝑠,𝑢,𝑖 ′ + ∑ λ𝐹𝑌        𝐹𝑌         𝐹𝑌
+                                         𝑠,𝑢,𝑖,𝑓 (𝑇𝑠,𝑓,𝑖,1 − 𝑇𝑠,𝑓,𝑖,2 )
+              𝑖 ′ ∈ℐ                         𝑓∈ℱ
+
+                        + ∑ λ𝑃𝑌        𝑃𝑌           𝑃𝑌
+                             𝑠,𝑢,𝑖,𝑗 (𝑇𝑠,𝑢,𝑗,𝑖,1 − 𝑇𝑠,𝑢,𝑗,𝑖,2 )
+                            𝑗∈𝒥
+
+                        + ∑ λ𝐼𝑌          𝐼𝑌            𝐼𝑌
+                             𝑠,𝑢,𝑖,𝑖 ′ (𝑇𝑠,𝑖 ′ ,𝑖,1 − 𝑇𝑠,𝑖 ′ ,𝑖,2 )
+                            𝑖 ′ ∈ℐ
+
+                        = 𝑦𝑠,𝑢 ϵ𝑠,𝑢,𝑖 + ∑ β𝐹𝑠,𝑢,𝑖,𝑓 𝑋𝑓𝐹 + ∑ β𝑃𝑠,𝑢,𝑖,𝑗 𝑋𝑗𝑃 + ∑ β𝐼𝑠,𝑢,𝑖,𝑖 ′ 𝑋𝑖𝐼′
+                                              𝑓∈ℱ                   𝑗∈𝒥                       𝑖 ′ ∈ℐ
+
+                        + ∑ ∑ θ𝐹𝐹            𝐹𝐹         𝐹𝐹
+                               𝑠,𝑢,𝑖,𝑓,𝑓′ (𝑇𝑓,𝑓′ ,1 − 𝑇𝑓,𝑓′ ,2 )
+                            𝑓∈ℱ 𝑓′ ∈ℱ
+
+                        + ∑ ∑ θ𝐹𝑃          𝐹𝑃         𝐹𝑃
+                               𝑠,𝑢,𝑖,𝑓,𝑗 (𝑇𝑢,𝑓,𝑗,1 − 𝑇𝑢,𝑓,𝑗,2 )
+                            𝑓∈ℱ 𝑗∈𝒥
+
+                        + ∑ ∑ θ𝐹𝐼            𝐹𝐼            𝐹𝐼
+                               𝑠,𝑢,𝑖,𝑓,𝑖 ′ (𝑇𝑠,𝑓,𝑖 ′ ,1 − 𝑇𝑠,𝑓,𝑖 ′ ,2 )
+                            𝑓∈ℱ 𝑖 ′ ∈ℐ
+
+                        + ∑ ∑ θ𝑃𝑃            𝑃𝑃            𝑃𝑃
+                               𝑠,𝑢,𝑖,𝑗,𝑗 ′ (𝑇𝑢,𝑗,𝑗 ′ ,1 − 𝑇𝑢,𝑗,𝑗 ′ ,2 )
+                            𝑗∈𝒥 𝑗 ′ ∈𝒥
+
+                        + ∑ ∑ θ𝑃𝐼             𝑃𝐼             𝑃𝐼
+                               𝑠,𝑢,𝑖,𝑗,𝑖 ′ (𝑇𝑠,𝑢,𝑗,𝑖 ′ ,1 − 𝑇𝑠,𝑢,𝑗,𝑖 ′ ,2 )
+                            𝑗∈𝒥 𝑖 ′ ∈ℐ
+
+                        + ∑ ∑ θ𝐼𝐼                𝐼𝐼                𝐼𝐼
+                               𝑠,𝑢,𝑖,𝑖 ′ ,𝑖 ′′ (𝑇𝑠,𝑖 ′ ,𝑖 ′′ ,1 − 𝑇𝑠,𝑖 ′ ,𝑖 ′′ ,2 ) ,            ∀𝑠 ∈ 𝒮, 𝑢 ∈ 𝒰𝑠 , 𝑖 ∈ ℐ.
+                            𝑖 ′ ∈ℐ 𝑖 ′′ ∈ℐ
+
+In this equation, 𝑌𝑠,𝑢,𝑖 is the effluent concentration of compound 𝑖 from unit 𝑢 at stage 𝑠.
+The γ𝑠,𝑢,𝑖,𝑖 ′ 𝑌𝑠,𝑢,𝑖 ′ term is the coupling between compounds 𝑖 and 𝑖 ′ . The λ terms represent
+the interaction between independent variables (flow 𝑓, process parameters 𝑗, influent
+concentrations 𝑖 ′ ) and the effluent compound 𝑖, linearized through auxiliary variables 𝑇.
+The 𝑦𝑠,𝑢 ϵ𝑠,𝑢,𝑖 term is the baseline intercept for compound 𝑖. When the unit 𝑢 is not selected
+for stage 𝑠, the term 𝑦𝑠,𝑢 ϵ𝑠,𝑢,𝑖 = 0 so that the entire balance equation could be deactivated.
+The β terms are the direct effects of independent variables on compound 𝑖. The θ terms
+represent higher-order interactions among pairs of independent variables linearized via
+auxiliary variables 𝑇. The 𝑇 variables are auxiliary variables representing the quadratic
+terms obtained from the linearization of the bilinear multiplications of the variables 𝑌𝑠,𝑖 ,
+𝑋𝑓𝐹 , 𝑋𝑗𝑃 , and 𝑋𝑖𝐼 illustrated as follows:
+                                     2               2                   2                                  2
+                       𝐹𝑌
+          𝑋𝑓𝐹 𝑌𝑠,𝑖 ↦ (𝑢𝑠,𝑓,𝑖,1       𝐹𝑌
+                               ) − (𝑢𝑠,𝑓,𝑖,2 ) ,              𝐹𝑌
+                                                            (𝑢𝑠,𝑓,𝑖,1      𝐹𝑌
+                                                                      ) ↦ 𝑇𝑠,𝑓,𝑖,1 ,              𝐹𝑌
+                                                                                                (𝑢𝑠,𝑓,𝑖,2      𝐹𝑌
+                                                                                                          ) ↦ 𝑇𝑠,𝑓,𝑖,2 ,
+      𝑃            𝑃𝑌            2 𝑃𝑌               2         𝑃𝑌          2  𝑃𝑌                      𝑃𝑌             2
+                                                                                                                    𝑃𝑌
+     𝑋𝑢,𝑗 𝑌𝑠,𝑖 ↦ (𝑢𝑠,𝑢,𝑗,𝑖,1 ) − (𝑢𝑠,𝑢,𝑗,𝑖,2 ) ,            (𝑢𝑠,𝑢,𝑗,𝑖,1 ) ↦ 𝑇𝑠,𝑢,𝑗,𝑖,1 ,           (𝑢𝑠,𝑢,𝑗,𝑖,2 ) ↦ 𝑇𝑠,𝑢,𝑗,𝑖,2 ,
+         𝐼              𝐼𝑌           2   𝐼𝑌             2      𝐼𝑌         2    𝐼𝑌                  𝐼𝑌           2  𝐼𝑌
+        𝑋𝑠,𝑖 ′ 𝑌𝑠,𝑖 ↦ (𝑢𝑠,𝑖 ′ ,𝑖,1 ) − (𝑢𝑠,𝑖 ′ ,𝑖,2 ) ,      (𝑢𝑠,𝑖 ′ ,𝑖,1 ) ↦ 𝑇𝑠,𝑖 ′ ,𝑖,1 ,      (𝑢𝑠,𝑖 ′ ,𝑖,2 ) ↦ 𝑇𝑠,𝑖 ′ ,𝑖,2 ,
+
+P a g e | 61
+
+                                           2                 2                  2                                    2
+                          𝐹𝐹
+             𝑋𝑓𝐹 𝑋𝑓𝐹′ ↦ (𝑣𝑓,𝑓            𝐹𝐹
+                              ′ ,1 ) − (𝑣𝑓,𝑓 ′ ,2 ) ,
+                                                                    𝐹𝐹
+                                                                  (𝑣𝑓,𝑓            𝐹𝐹
+                                                                        ′ ,1 ) ↦ 𝑇𝑓,𝑓 ′ ,1 ,
+                                                                                                         𝐹𝐹
+                                                                                                       (𝑣𝑓,𝑓            𝐹𝐹
+                                                                                                             ′ ,2 ) ↦ 𝑇𝑓,𝑓 ′ ,2 ,
+
+                                           2              2                     2                                        2
+              𝑃
+         𝑋𝑓𝐹 𝑋𝑢,𝑗     𝐹𝑃
+                  ↦ (𝑣𝑢,𝑓,𝑗,1       𝐹𝑃
+                              ) − (𝑣𝑢,𝑓,𝑗,2 ) ,                     𝐹𝑃
+                                                                  (𝑣𝑢,𝑓,𝑗,1      𝐹𝑃
+                                                                            ) ↦ 𝑇𝑢,𝑓,𝑗,1 ,                   𝐹𝑃
+                                                                                                           (𝑣𝑢,𝑓,𝑗,2      𝐹𝑃
+                                                                                                                     ) ↦ 𝑇𝑢,𝑓,𝑗,2 ,
+                                       2                  2                      2                                           2
+            𝐼         𝐹𝐼               𝐹𝐼                           𝐹𝐼              𝐹𝐼                       𝐹𝐼              𝐹𝐼
+       𝑋𝑓𝐹 𝑋𝑠,𝑖 ′ ↦ (𝑣𝑠,𝑓,𝑖 ′ ,1 ) − (𝑣𝑠,𝑓,𝑖 ′ ,2 ) ,             (𝑣𝑠,𝑓,𝑖 ′ ,1 ) ↦ 𝑇𝑠,𝑓,𝑖 ′ ,1 ,           (𝑣𝑠,𝑓,𝑖 ′ ,2 ) ↦ 𝑇𝑠,𝑓,𝑖 ′ ,2 ,
+
+                                       2                     2                      2                                            2
+      𝑃    𝑃         𝑃𝑃               𝑃𝑃                            𝑃𝑃              𝑃𝑃                        𝑃𝑃              𝑃𝑃
+     𝑋𝑢,𝑗 𝑋𝑢,𝑗 ′ ↦ (𝑣𝑢,𝑗,𝑗 ′ ,1 ) − (𝑣𝑢,𝑗,𝑗 ′ ,2 ) ,              (𝑣𝑢,𝑗,𝑗 ′ ,1 ) ↦ 𝑇𝑢,𝑗,𝑗 ′ ,1 ,            (𝑣𝑢,𝑗,𝑗 ′ ,2 ) ↦ 𝑇𝑢,𝑗,𝑗 ′ ,2 ,
+
+
+                                   2                     2                          2                                                2
+  𝑃    𝐼         𝑃𝐼                 𝑃𝐼                             𝑃𝐼                𝑃𝐼                        𝑃𝐼                𝑃𝐼
+ 𝑋𝑢,𝑗 𝑋𝑠,𝑖 ′ ↦ (𝑣𝑠,𝑢,𝑗,𝑖 ′ ,1 ) − (𝑣𝑠,𝑢,𝑗,𝑖 ′ ,2 ) ,             (𝑣𝑠,𝑢,𝑗,𝑖 ′ ,1 ) ↦ 𝑇𝑠,𝑢,𝑗,𝑖 ′ ,1 ,          (𝑣𝑠,𝑢,𝑗,𝑖 ′ ,2 ) ↦ 𝑇𝑠,𝑢,𝑗,𝑖 ′ ,2 ,
+
+
+    𝐼      𝐼          𝐼𝐼               2   𝐼𝐼             2         𝐼𝐼              2   𝐼𝐼                     𝐼𝐼                  𝐼𝐼2
+   𝑋𝑠,𝑖 ′ 𝑋𝑠,𝑖 ′′ ↦ (𝑣𝑠,𝑖 ′ ,𝑖 ′′ ,1 ) − (𝑣𝑠,𝑖 ′ ,𝑖 ′′ ,2 ) ,     (𝑣𝑠,𝑖 ′ ,𝑖 ′′ ,1 ) ↦ 𝑇𝑠,𝑖 ′ ,𝑖 ′′ ,1 ,     (𝑣𝑠,𝑖 ′ ,𝑖 ′′ ,2 ) ↦ 𝑇𝑠,𝑖 ′ ,𝑖 ′′ ,2 .
+
+
+The 𝑢 and 𝑣 auxiliary variables, whose square are represented by the 𝑇 variables, are
+added using the same bilinear term relaxation protocol deployed in the single-unit method
+from the previous section. Their introduction adds the following constraints to the model:
+                                𝐹𝑌
+                               𝑢𝑠,𝑓,𝑖,1 = 0.5(𝑋𝑓𝐹 + 𝑌𝑠,𝑖 ),                𝐹𝑌
+                                                                          𝑢𝑠,𝑓,𝑖,2 = 0.5(𝑋𝑓𝐹 − 𝑌𝑠,𝑖 ),
+                             𝑃𝑌               𝑃                            𝑃𝑌               𝑃
+                            𝑢𝑠,𝑢,𝑗,𝑖,1 = 0.5(𝑋𝑢,𝑗 + 𝑌𝑠,𝑖 ),               𝑢𝑠,𝑢,𝑗,𝑖,2 = 0.5(𝑋𝑢,𝑗 − 𝑌𝑠,𝑖 ),
+                              𝐼𝑌                𝐼                          𝐼𝑌                𝐼
+                             𝑢𝑠,𝑖 ′ ,𝑖,1 = 0.5(𝑋𝑠,𝑖 ′ + 𝑌𝑠,𝑖 ),           𝑢𝑠,𝑖 ′ ,𝑖,2 = 0.5(𝑋𝑠,𝑖 ′ − 𝑌𝑠,𝑖 ),
+
+
+                                𝐹𝐹              𝐹    𝐹                     𝐹𝐹              𝐹    𝐹
+                               𝑣𝑓,𝑓 ′ ,1 = 0.5(𝑋𝑓 + 𝑋𝑓 ′ ),               𝑣𝑓,𝑓 ′ ,2 = 0.5(𝑋𝑓 − 𝑋𝑓 ′ ),
+
+
+                              𝐹𝑃
+                             𝑣𝑢,𝑓,𝑗,1              𝑃
+                                      = 0.5(𝑋𝑓𝐹 + 𝑋𝑢,𝑗 ),                  𝐹𝑃
+                                                                          𝑣𝑢,𝑓,𝑗,2 = 0.5(𝑋𝑓𝐹 − 𝑋𝑢,𝑗
+                                                                                                𝑃
+                                                                                                    ),
+                              𝐹𝐼                𝐹    𝐼                     𝐹𝐼                𝐹    𝐼
+                             𝑣𝑠,𝑓,𝑖 ′ ,1 = 0.5(𝑋𝑓 + 𝑋𝑠,𝑖 ′ ),             𝑣𝑠,𝑓,𝑖 ′ ,2 = 0.5(𝑋𝑓 − 𝑋𝑠,𝑖 ′ ),
+
+
+                           𝑃𝑃                𝑃      𝑃                      𝑃𝑃                𝑃      𝑃
+                          𝑣𝑢,𝑗,𝑗 ′ ,1 = 0.5(𝑋𝑢,𝑗 + 𝑋𝑢,𝑗 ′ ),              𝑣𝑢,𝑗,𝑗 ′ ,2 = 0.5(𝑋𝑢,𝑗 − 𝑋𝑢,𝑗 ′ ),
+
+                          𝑃𝐼                  𝑃      𝐼                     𝑃𝐼                  𝑃      𝐼
+                         𝑣𝑠,𝑢,𝑗,𝑖 ′ ,1 = 0.5(𝑋𝑢,𝑗 + 𝑋𝑠,𝑖 ′ ),             𝑣𝑠,𝑢,𝑗,𝑖 ′ ,2 = 0.5(𝑋𝑢,𝑗 − 𝑋𝑠,𝑖 ′ ),
+
+                         𝐼𝐼                    𝐼        𝐼                  𝐼𝐼                    𝐼        𝐼
+                        𝑣𝑠,𝑖 ′ ,𝑖 ′′ ,1 = 0.5(𝑋𝑠,𝑖 ′ + 𝑋𝑠,𝑖 ′′ ),         𝑣𝑠,𝑖 ′ ,𝑖 ′′ ,2 = 0.5(𝑋𝑠,𝑖 ′ − 𝑋𝑠,𝑖 ′′ ).
+
+
+These variables have the following bounds:
+
+                             0.5(𝑋𝑓𝐹,𝑚𝑖𝑛 + 𝑌𝑠,𝑖
+                                             𝑚𝑖𝑛      𝐹𝑌
+                                                 ) ≤ 𝑢𝑠,𝑓,𝑖,1 ≤ 0.5(𝑋𝑓𝐹,𝑚𝑎𝑥 + 𝑌𝑠,𝑖
+                                                                                𝑚𝑎𝑥
+                                                                                    ),
+
+                             0.5(𝑋𝑓𝐹,𝑚𝑖𝑛 − 𝑌𝑠,𝑖
+                                             𝑚𝑎𝑥      𝐹𝑌
+                                                 ) ≤ 𝑢𝑠,𝑓,𝑖,2 ≤ 0.5(𝑋𝑓𝐹,𝑚𝑎𝑥 − 𝑌𝑠,𝑖
+                                                                                𝑚𝑖𝑛
+                                                                                    ),
+                                 𝑃,𝑚𝑖𝑛     𝑚𝑖𝑛      𝑃𝑌               𝑃,𝑚𝑎𝑥     𝑚𝑎𝑥
+                            0.5(𝑋𝑢,𝑗   + 𝑌𝑠,𝑖  ) ≤ 𝑢𝑠,𝑢,𝑗,𝑖,1 ≤ 0.5(𝑋𝑢,𝑗   + 𝑌𝑠,𝑖  ),
+                                 𝑃,𝑚𝑖𝑛     𝑚𝑎𝑥      𝑃𝑌               𝑃,𝑚𝑎𝑥     𝑚𝑖𝑛
+                            0.5(𝑋𝑢,𝑗   − 𝑌𝑠,𝑖  ) ≤ 𝑢𝑠,𝑢,𝑗,𝑖,2 ≤ 0.5(𝑋𝑢,𝑗   − 𝑌𝑠,𝑖  ),
+                                   𝐼,𝑚𝑖𝑛     𝑚𝑖𝑛      𝐼𝑌                 𝐼,𝑚𝑎𝑥     𝑚𝑎𝑥
+                             0.5 (𝑋𝑠,𝑖 ′ + 𝑌𝑠,𝑖  ) ≤ 𝑢𝑠,𝑖 ′ ,𝑖,1 ≤ 0.5 (𝑋 ′
+                                                                         𝑠,𝑖
+                                                                               + 𝑌𝑠,𝑖  ),
+
+P a g e | 62
+
+                          𝐼,𝑚𝑖𝑛     𝑚𝑎𝑥      𝐼𝑌                 𝐼,𝑚𝑎𝑥     𝑚𝑖𝑛
+                    0.5 (𝑋𝑠,𝑖 ′ − 𝑌𝑠,𝑖  ) ≤ 𝑢𝑠,𝑖 ′ ,𝑖,2 ≤ 0.5 (𝑋 ′
+                                                                𝑠,𝑖
+                                                                      − 𝑌𝑠,𝑖  ),
+
+                  0.5 (𝑋𝑓𝐹,𝑚𝑖𝑛 + 𝑋𝑓𝐹,𝑚𝑖𝑛
+                                    ′
+                                              𝐹𝐹
+                                         ) ≤ 𝑣𝑓,𝑓              𝐹,𝑚𝑎𝑥
+                                                  ′ ,1 ≤ 0.5 (𝑋𝑓     + 𝑋𝑓𝐹,𝑚𝑎𝑥
+                                                                          ′    ),
+
+                  0.5 (𝑋𝑓𝐹,𝑚𝑖𝑛 − 𝑋𝑓𝐹,𝑚𝑎𝑥
+                                    ′
+                                              𝐹𝐹
+                                         ) ≤ 𝑣𝑓,𝑓              𝐹,𝑚𝑎𝑥
+                                                  ′ ,2 ≤ 0.5 (𝑋𝑓     − 𝑋𝑓𝐹,𝑚𝑖𝑛
+                                                                          ′    ),
+                                  𝑃,𝑚𝑖𝑛
+                   0.5(𝑋𝑓𝐹,𝑚𝑖𝑛 + 𝑋𝑢,𝑗        𝐹𝑃
+                                        ) ≤ 𝑣𝑢,𝑓,𝑗,1                  𝑃,𝑚𝑎𝑥
+                                                     ≤ 0.5(𝑋𝑓𝐹,𝑚𝑎𝑥 + 𝑋𝑢,𝑗   ),
+                                  𝑃,𝑚𝑎𝑥
+                   0.5(𝑋𝑓𝐹,𝑚𝑖𝑛 − 𝑋𝑢,𝑗        𝐹𝑃
+                                        ) ≤ 𝑣𝑢,𝑓,𝑗,2                  𝑃,𝑚𝑖𝑛
+                                                     ≤ 0.5(𝑋𝑓𝐹,𝑚𝑎𝑥 − 𝑋𝑢,𝑗   ),
+                                  𝐼,𝑚𝑖𝑛
+                  0.5 (𝑋𝑓𝐹,𝑚𝑖𝑛 + 𝑋𝑠,𝑖 ′
+                                             𝐹𝐼
+                                        ) ≤ 𝑣𝑠,𝑓,𝑖              𝐹,𝑚𝑎𝑥
+                                                   ′ ,1 ≤ 0.5 (𝑋𝑓
+                                                                         𝐼,𝑚𝑎𝑥
+                                                                      + 𝑋𝑠,𝑖 ′ ),
+                                  𝐼,𝑚𝑎𝑥
+                  0.5 (𝑋𝑓𝐹,𝑚𝑖𝑛 − 𝑋𝑠,𝑖 ′
+                                             𝐹𝐼
+                                        ) ≤ 𝑣𝑠,𝑓,𝑖              𝐹,𝑚𝑎𝑥
+                                                   ′ ,2 ≤ 0.5 (𝑋𝑓
+                                                                         𝐼,𝑚𝑖𝑛
+                                                                      − 𝑋𝑠,𝑖 ′ ),
+                       𝑃,𝑚𝑖𝑛    𝑃𝑚𝑖𝑛       𝑃𝑃                 𝑃,𝑚𝑎𝑥    𝑃,𝑚𝑎𝑥
+                  0.5(𝑋𝑢,𝑗   + 𝑋𝑢,𝑗 ′ ) ≤ 𝑣𝑢,𝑗,𝑗 ′ ,1 ≤ 0.5 (𝑋𝑢,𝑗   + 𝑋𝑢,𝑗 ′ ),
+                        𝑃,𝑚𝑖𝑛    𝑃,𝑚𝑎𝑥      𝑃𝑃                 𝑃,𝑚𝑎𝑥    𝑃,𝑚𝑖𝑛
+                  0.5 (𝑋𝑢,𝑗   − 𝑋𝑢,𝑗 ′ ) ≤ 𝑣𝑢,𝑗,𝑗 ′ ,2 ≤ 0.5 (𝑋𝑢,𝑗   − 𝑋𝑢,𝑗 ′ ),
+
+                       𝑃,𝑚𝑖𝑛    𝐼,𝑚𝑖𝑛      𝑃𝐼                   𝑃,𝑚𝑎𝑥    𝐼,𝑚𝑎𝑥
+                 0.5 (𝑋𝑢,𝑗   + 𝑋𝑠,𝑖 ′ ) ≤ 𝑣𝑠,𝑢,𝑗,𝑖 ′ ,1 ≤ 0.5 (𝑋𝑢,𝑗   + 𝑋𝑠,𝑖 ′ ),
+                       𝑃,𝑚𝑖𝑛    𝐼,𝑚𝑎𝑥      𝑃𝐼                   𝑃,𝑚𝑎𝑥    𝐼,𝑚𝑖𝑛
+                 0.5 (𝑋𝑢,𝑗   − 𝑋𝑠,𝑖 ′ ) ≤ 𝑣𝑠,𝑢,𝑗,𝑖 ′ ,2 ≤ 0.5 (𝑋𝑢,𝑗   − 𝑋𝑠,𝑖 ′ ),
+
+                   0.5(𝑋𝑖𝐼,𝑚𝑖𝑛
+                          ′    + 𝑋𝑖𝐼,𝑚𝑖𝑛
+                                    ′′
+                                              𝐼𝐼
+                                         ) ≤ 𝑣𝑠,𝑖                   𝐼,𝑚𝑎𝑥
+                                                  ′ ,𝑖 ′′ ,1 ≤ 0.5(𝑋 ′
+                                                                    𝑖
+                                                                          + 𝑋𝑖𝐼,𝑚𝑎𝑥
+                                                                               ′′   ),
+                        𝐼,𝑚𝑖𝑛    𝐼,𝑚𝑎𝑥       𝐼𝐼                     𝐼,𝑚𝑎𝑥    𝐼,𝑚𝑖𝑛
+                  0.5 (𝑋𝑠,𝑖 ′ − 𝑋𝑠,𝑖 ′′ ) ≤ 𝑣𝑠,𝑖 ′ ,𝑖 ′′ ,2 ≤ 0.5 (𝑋𝑠,𝑖 ′ − 𝑋𝑠,𝑖 ′′ ),
+
+
+We can generalize the bounding expressions above for the 𝑢 and 𝑣 variables as 𝑤𝑚𝑖𝑛 ≤
+𝑤 ≤ 𝑤𝑚𝑎𝑥 . Using these bounds and a specified number of segments 𝐾, we can then
+execute      the       same       piecewise     linear     approximation    using      the
+𝐏𝐢𝐞𝐜𝐞𝐰𝐢𝐬𝐞(𝑤, 𝑤𝑚𝑖𝑛 , 𝑤𝑚𝑎𝑥 , 𝑇𝑤 , 𝐾 ) operator as in the single-unit case for all auxiliary
+variables 𝑤. On the other hand, to ensure that the balance equations are active only when
+a specific unit 𝑢 is selected in stage 𝑠, we incorporate Big-𝑀 constraints:
+                                      𝑃      𝑃,𝑚𝑎𝑥
+               𝑌𝑠,𝑢,𝑖 ≤ 𝑀 ⋅ 𝑦𝑠,𝑢 ,   𝑋𝑢,𝑗 ≤ 𝑋𝑢,𝑗   ⋅ 𝑦𝑠,𝑢 ,    ∀𝑠 ∈ 𝒮, 𝑢 ∈ 𝒰𝑠 , 𝑖 ∈ ℐ,
+
+for a sufficiently large constant 𝑀. This effectively deactivates the equations for non-
+selected units, maintaining the integrity of the model. On the other hand, the objective
+function of this multi-stage model is designed to minimize the total costs associated with
+final effluent pollutant concentrations, operational costs of the selected units, and flow-
+related costs, potentially including penalties for raw influent concentrations. Formally, it
+can be expressed as:
+
+P a g e | 63
+
+                             𝐹
+  min ∑ 𝑐1,𝑖 ⋅ 𝑌𝑆,𝑖 + ∑ ∑ ∑ 𝑐2,𝑠,𝑢,𝑓                       𝑃
+                                     ⋅ 𝑋𝑓𝐹 ⋅ 𝑦𝑠,𝑢 + ∑ ∑ ∑ 𝑐2,𝑠,𝑢,𝑗    𝑃
+                                                                   ⋅ 𝑋𝑢,𝑗 ⋅ 𝑦𝑠,𝑢 + ∑ 𝑐0,𝑖
+       𝑖∈ℐ               𝑠∈𝒮 𝑢∈𝒰𝑠 𝑓∈ℱ                          𝑠∈𝒮 𝑢∈𝒰𝑠 𝑗∈𝒥                      𝑖∈ℐ
+                        𝐼
+                    ⋅ Δ𝑋𝑖 .
+Here, ∑𝑖∈ℐ 𝑐1,𝑖 ⋅ 𝑌𝑆,𝑖 penalizes the concentrations of pollutants in the final effluent. The term
+        𝐹
+∑𝑠,𝑢,𝑓 𝑐2,𝑠,𝑢,𝑓 ⋅ 𝑋𝑓𝐹 ⋅ 𝑦𝑠,𝑢 accounts for operational costs related to flow variables, incurred
+                                                                   𝑃        𝑃
+only if the corresponding unit is selected. The term ∑𝑠,𝑢,𝑗 𝑐2,𝑠,𝑢,𝑗    ⋅ 𝑋𝑢,𝑗 ⋅ 𝑦𝑠,𝑢 incorporates
+costs associated with process-unit-specific operating parameters, active only upon unit
+selection. The term ∑𝑖∈ℐ 𝑐0,𝑖 ⋅ Δ𝑋𝑖𝐼 includes costs for raw wastewater amendments to alter
+compound concentration of the influent. The expressions 𝑋𝑓𝐹 ⋅ 𝑦𝑠,𝑢 and 𝑋𝑢,𝑗  𝑃
+                                                                                ⋅ 𝑦𝑠,𝑢 are
+nonlinear, but they can easily be linearized using McCormick envelopes, which is exact
+for the product of continuous and binary variables as follows:
+                              𝐹          𝐹              𝑃          𝑃
+   min ∑ 𝑐1,𝑖 ⋅ 𝑌𝑆,𝑖 + ∑ ∑ ∑ 𝑐2,𝑠,𝑢,𝑓 ⋅ 𝑍𝑠,𝑢,𝑓 + ∑ ∑ ∑ 𝑐2,𝑠,𝑢,𝑗 ⋅ 𝑍𝑠,𝑢,𝑗 + ∑ 𝑐0,𝑖 ⋅ Δ𝑋𝑖𝐼 ,
+        𝑖∈ℐ                  𝑠∈𝒮 𝑢∈𝒰𝑠 𝑓∈ℱ                   𝑠∈𝒮 𝑢∈𝒰𝑠 𝑗∈𝒥                 𝑖∈ℐ
+
+                              𝐹
+                             𝑍𝑠,𝑢,𝑓 ≤ 𝑋𝑓𝐹,max ⋅ 𝑦𝑠,𝑢
+                              𝐹
+                             𝑍𝑠,𝑢,𝑓 ≤ 𝑋𝑓𝐹
+              𝑋𝑓𝐹 ⋅ 𝑦𝑠,𝑢                                         ,    ∀𝑠 ∈ 𝒮, 𝑢 ∈ 𝒰𝑠 , 𝑓 ∈ ℱ,
+                              𝐹
+                             𝑍𝑠,𝑢,𝑓 ≥ 𝑋𝑓𝐹 − 𝑋𝑓𝐹,max ⋅ (1 − 𝑦𝑠,𝑢 )
+                               𝐹
+                            { 𝑍𝑠,𝑢,𝑓 ≥ 0
+                               𝑃        𝑃,max
+                              𝑍𝑠,𝑢,𝑗 ≤ 𝑋𝑢,𝑗   ⋅ 𝑦𝑠,𝑢
+                               𝑃        𝑃
+               𝑃
+                              𝑍𝑠,𝑢,𝑗 ≤ 𝑋𝑢,𝑗
+              𝑋𝑢,𝑗 ⋅ 𝑦𝑠,𝑢      𝑃        𝑃      𝑃,max              ,    ∀𝑠 ∈ 𝒮, 𝑢 ∈ 𝒰𝑠 , 𝑗 ∈ 𝒥.
+                              𝑍𝑠,𝑢,𝑗 ≥ 𝑋𝑢,𝑗 − 𝑋𝑢,𝑗   ⋅ (1 − 𝑦𝑠,𝑢 )
+                                𝑃
+                            { 𝑍𝑠,𝑢,𝑗 ≥ 0
+The other constraints on the objective are as follows: At each treatment stage 𝑠 ∈ 𝒮 =
+{1,2, … , 𝑆}, exactly one process unit 𝑢 ∈ 𝒰𝑠 = {1,2, … , 𝑈𝑠 } must be selected. This selection
+is governed by binary variables 𝑦𝑠,𝑢 ∈ {0,1}:
+
+                                              ∑ 𝑦𝑠,𝑢 = 1,    ∀𝑠 ∈ 𝒮.
+                                              𝑢∈𝒰𝑠
+
+On the other hand, the effluent concentrations 𝑌𝑠,𝑖 at each stage 𝑠 for each compound 𝑖 ∈
+ℐ = {1,2, … , 𝑛} are determined by the effluent of the selected unit within that stage. We
+enforce this rule through the following constraints:
+                            𝑌𝑠,𝑖 ≥ 𝑌𝑠,𝑢,𝑖 − 𝑀(1 − 𝑦𝑠,𝑢 ),   ∀𝑠 ∈ 𝒮, 𝑢 ∈ 𝒰𝑠 , 𝑖 ∈ ℐ.
+
+                            𝑌𝑠,𝑖 ≤ 𝑌𝑠,𝑢,𝑖 + 𝑀(1 − 𝑦𝑠,𝑢 ),   ∀𝑠 ∈ 𝒮, 𝑢 ∈ 𝒰𝑠 , 𝑖 ∈ ℐ.
+
+P a g e | 64
+
+The influent concentrations for each stage are directly linked to the effluent of the
+preceding stage. In the first stage, Δ𝑋𝑖𝐼 is the concentration added to the base concertation
+𝑋𝑖𝐼,base of the raw influent:
+       𝐼,𝑚𝑖𝑛           𝐼,𝑚𝑎𝑥         𝐼,𝑚𝑎𝑥
+      𝑋1,𝑖      𝐼
+             ≤ 𝑋1,𝑖 ≤ 𝑋1,𝑖   ,      𝑋1,𝑖   = 𝑋𝑖𝐼,base + Δ𝑋𝑖𝐼 ,     0 ≤ Δ𝑋𝑖𝐼 ≤ Δ𝑋𝑖𝐼,𝑚𝑎𝑥 ,   ∀𝑖 ∈ ℐ,
+
+where Δ𝑋𝑖𝐼 is the decision variable while 𝑋𝑖𝐼,base is given. For the generation of the
+                                                         𝐼
+breakpoints for the auxiliary variable corresponding to 𝑋1,𝑖 , the maximum bound 𝑋𝑖𝐼,base +
+Δ𝑋𝑖𝐼,𝑚𝑎𝑥 can be used as an approximate to not complicate the piecewise linearization
+scheme especially that Δ𝑋𝑖𝐼 is a decision variable. In the succeeding stages, we have:
+                                 𝐼
+                                𝑋𝑠,𝑖 = 𝑌𝑠−1,𝑖 ,   ∀𝑠 = 2, … , 𝑆,   ∀𝑖 ∈ ℐ.
+
+Flow variables 𝑋𝑓𝐹 for 𝑓 ∈ ℱ = {1,2, … , 𝐹} are decided only at the first stage and remain
+constant across all subsequent stages. Thus, 𝑋𝑓𝐹 are decision variables ∀𝑓 ∈ ℱ. The
+same 𝑋𝑓𝐹 from the first stage is used across all stages. All decision variables are bounded
+to reflect physical and operational limitations:
+
+                                  𝑋𝑓𝐹,𝑚𝑖𝑛 ≤ 𝑋𝑓𝐹 ≤ 𝑋𝑓𝐹,𝑚𝑎𝑥 ,      ∀𝑓 ∈ ℱ,
+                            𝑃,𝑚𝑖𝑛    𝑃      𝑃,𝑚𝑎𝑥
+                           𝑋𝑢,𝑗   ≤ 𝑋𝑢,𝑗 ≤ 𝑋𝑢,𝑗   ,         ∀𝑢 ∈ 𝒰𝑠 , 𝑗 ∈ 𝒥,
+                                          𝑚𝑎𝑥
+                           0 ≤ 𝑌𝑠,𝑢,𝑖 ≤ 𝑌𝑠,𝑢,𝑖 ,      ∀𝑠 ∈ 𝒮, 𝑢 ∈ 𝒰𝑠 , 𝑖 ∈ ℐ.
+7.6   McCormick Envelopes
+It is apparent that the following linearization employed on bilinear terms of the multi-stage,
+multi-unit framework makes the model large due to the multiple linearization steps of the
+method and its introduction of binary variables and constraints at each step, which begins
+by expressing the bilinear term xy as a difference of two squared auxiliary 𝑤 variables,
+i.e., (𝑤1 )2 − (𝑤2 )2 , and then the squared terms are linearized using piecewise linear
+approximation through the auxiliary 𝑇 variables, i.e., (𝑤1 )2 ↦ 𝑇1 , (𝑢2 )2 ↦ 𝑇2. For large
+applications, the linearization may render the model more computationally costly that its
+original nonlinear model. We address this issue by employing a linear relaxation using
+McCormick envelopes (McCormick, 1976). We know that 𝑥 and 𝑦 are continuous
+variables with known bounds
+                                𝑥 𝑚𝑖𝑛 ≤ 𝑥 ≤ 𝑥 𝑚𝑎𝑥 ,     𝑦 𝑚𝑖𝑛 ≤ 𝑦 ≤ 𝑦 𝑚𝑎𝑥 .
+We introduce an auxiliary variable 𝑤 to represent the product of the continuous variables
+𝑤 = 𝑥 ∙ 𝑦. The standard McCormick linear constraints are:
+
+P a g e | 65
+
+                                   𝑤 ≥ 𝑥 𝑚𝑖𝑛 𝑦 + 𝑥𝑦 𝑚𝑖𝑛 − 𝑥 𝑚𝑖𝑛 𝑦 𝑚𝑖𝑛
+                                   𝑤 ≥ 𝑥 𝑚𝑎𝑥 𝑦 + 𝑥𝑦 𝑚𝑎𝑥 − 𝑥 𝑚𝑎𝑥 𝑦 𝑚𝑎𝑥
+                                    𝑤 ≤ 𝑥 𝑚𝑎𝑥 𝑦 + 𝑥𝑦 𝑚𝑖𝑛 − 𝑥 𝑚𝑎𝑥 𝑦 𝑚𝑖𝑛
+                                          𝑚𝑖𝑛       𝑚𝑎𝑥
+                                  { 𝑤 ≤ 𝑥 𝑦 + 𝑥𝑦         − 𝑥 𝑚𝑖𝑛 𝑦 𝑚𝑎𝑥
+                                                                                               𝐼
+                                                                                   𝑃
+We perform this linear relaxation for all bilinear terms of the model: 𝑋𝑓𝐹 𝑌𝑠,𝑖 , 𝑋𝑢,𝑗 𝑌𝑠,𝑖 , 𝑋𝑠,𝑖 ′ 𝑌𝑠,𝑖 ,
+
+𝑋𝑓𝐹 𝑋𝑓𝐹′ , 𝑋𝑓𝐹 𝑋𝑢,𝑗
+                𝑃          𝐼
+                    , 𝑋𝑓𝐹 𝑋𝑠,𝑖      𝑃    𝑃        𝑃    𝐼            𝐼      𝐼
+                               ′ , 𝑋𝑢,𝑗 𝑋𝑢,𝑗 ′ , 𝑋𝑢,𝑗 𝑋𝑠,𝑖 ′ , and 𝑋𝑠,𝑖 ′ 𝑋𝑠,𝑖 ′′ . It should be noted that the
+
+McCormick method for the product of two continuous variables is not an exact
+linearization, but an approximation. The accuracy of the approximation is determined by
+the tightness of the bounds of the continuous variables. Given this, we suggest using the
+original linearized multi-stage, multi-unit model for small problems because it is near exact
+given a sufficiently large 𝐾 for the piecewise linear approximation. For larger problems,
+however, the McCormick linearized multi-stage, multi-unit model is suggested for
+computational efficiency.

@@ -1,0 +1,491 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        1
+      ]
+    ],
+    "date-time": "2026-10-01T15:55:13Z",
+    "timestamp": 1790870113389,
+    "version": "4.1.0"
+  },
+  "reference-count": 25,
+  "publisher": "Elsevier BV",
+  "issue": "12",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2007,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2007-06-01T00:00:00Z",
+        "timestamp": 1180656000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Water Research"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2007,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.watres.2007.02.011",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2007,
+        4,
+        13
+      ]
+    ],
+    "date-time": "2007-04-13T11:48:54Z",
+    "timestamp": 1176464934000
+  },
+  "page": "2590-2598",
+  "source": "Crossref",
+  "is-referenced-by-count": 57,
+  "title": [
+    "Effectiveness of an alternating aerobic, anoxic/anaerobic strategy for maintaining biomass activity of BNR sludge during long-term starvation"
+  ],
+  "prefix": "10.1016",
+  "volume": "41",
+  "author": [
+    {
+      "given": "Gulsum",
+      "family": "Yilmaz",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Romain",
+      "family": "Lemaire",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jurg",
+      "family": "Keller",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Zhiguo",
+      "family": "Yuan",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.watres.2007.02.011_bib1",
+      "unstructured": "Amann, R.I., 1995. In situ identification of microorganisms by whole cell hybridization with rRNA-targeted nucleic acid probes. Molecular Microbial Ecology Manual. Kluwer Academic Publications, Dordrecht, Holland, pp. 3.3.6: 1–15."
+    },
+    {
+      "key": "10.1016/j.watres.2007.02.011_bib2",
+      "series-title": "Standard Methods for the Examination of Water and Wastewater",
+      "author": "APHA",
+      "year": "1995"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.watres.2007.02.011_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "200",
+      "DOI": "10.1016/S0043-1354(97)00183-8",
+      "article-title": "Impact of excessive aeration on biological phosphorus removal from wastewater",
+      "volume": "32",
+      "author": "Brdjanovic",
+      "year": "1998",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.watres.2007.02.011_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "1175",
+      "DOI": "10.1128/AEM.66.3.1175-1182.2000",
+      "article-title": "Identification of polyphosphate-accumulating organisms and design of 16S rRNA-directed probes for their detection and quantitation",
+      "volume": "66",
+      "author": "Crocetti",
+      "year": "2000",
+      "journal-title": "Appl. Environ. Microbiol."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.watres.2007.02.011_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "3353",
+      "DOI": "10.1099/00221287-148-11-3353",
+      "article-title": "Glycogen accumulating organisms in laboratory-scale and full-scale activated sludge processes",
+      "volume": "148",
+      "author": "Crocetti",
+      "year": "2002",
+      "journal-title": "Microbiology"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.watres.2007.02.011_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "434",
+      "DOI": "10.1016/S0723-2020(99)80053-8",
+      "article-title": "The domain-specific probe EUB338 is insufficient for the detection of all bacteria: development and evaluation of a more comprehensive probe set",
+      "volume": "22",
+      "author": "Daims",
+      "year": "1999",
+      "journal-title": "Syst. Appl. Microbiol."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.watres.2007.02.011_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "5273",
+      "DOI": "10.1128/AEM.67.11.5273-5284.2001",
+      "article-title": "In situ characterization of Nitrospira-like nitrite oxidizing bacteria active in wastewater treatment plants",
+      "volume": "67",
+      "author": "Daims",
+      "year": "2001",
+      "journal-title": "Appl. Environ. Microbiol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.watres.2007.02.011_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "223",
+      "DOI": "10.2175/106143001X139209",
+      "article-title": "pH as a key factor in the competition between glycogen-accumulating organisms and phosphorus-accumulating organisms",
+      "volume": "73",
+      "author": "Filipe",
+      "year": "2001",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.watres.2007.02.011_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "2708",
+      "DOI": "10.1016/S0043-1354(98)00470-9",
+      "article-title": "Modeling long term nutrient removal in a sequencing batch reactor",
+      "volume": "33",
+      "author": "Furumai",
+      "year": "1999",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "17",
+      "key": "10.1016/j.watres.2007.02.011_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "4202",
+      "DOI": "10.1016/S0043-1354(03)00341-5",
+      "article-title": "Effects of predation and ORP conditions on the performance of nitrifiers in activated sludge systems",
+      "volume": "37",
+      "author": "Lee",
+      "year": "2003",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.watres.2007.02.011_bib11",
+      "doi-asserted-by": "crossref",
+      "first-page": "1519",
+      "DOI": "10.1016/j.watres.2006.01.040",
+      "article-title": "Endogenous processes during long-term starvation in activated sludge performing enhanced biological phosphorus removal",
+      "volume": "40",
+      "author": "Lopez",
+      "year": "2006",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.watres.2007.02.011_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "2416",
+      "DOI": "10.1016/j.watres.2006.04.019",
+      "article-title": "Decay processes of nitrifying bacteria in biological wastewater treatment systems",
+      "volume": "40",
+      "author": "Manser",
+      "year": "2006",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.watres.2007.02.011_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "2156",
+      "DOI": "10.1128/AEM.62.6.2156-2162.1996",
+      "article-title": "Phylogenetic probes for analyzing abundance and spatial organization of nitrifying bacteria",
+      "volume": "62",
+      "author": "Mobarry",
+      "year": "1996",
+      "journal-title": "Appl. Environ. Microbiol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.watres.2007.02.011_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "105",
+      "DOI": "10.2166/wst.2000.0018",
+      "article-title": "Effect of long-term idle periods on the performance of sequencing batch reactors",
+      "volume": "41",
+      "author": "Morgenroth",
+      "year": "2000",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.watres.2007.02.011_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "9",
+      "DOI": "10.2166/wst.1994.0248",
+      "article-title": "Nitrification inhibition—a method for the estimation of actual maximum autotrophic growth-rates in activated-sludge systems",
+      "volume": "30",
+      "author": "Nowak",
+      "year": "1994",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.watres.2007.02.011_bib16",
+      "doi-asserted-by": "crossref",
+      "first-page": "43",
+      "DOI": "10.1002/bit.20480",
+      "article-title": "Anaerobic metabolism of propionate by polyphosphate-accumulating organisms in enhanced biological phosphorus removal systems",
+      "volume": "91",
+      "author": "Oehmen",
+      "year": "2005",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.watres.2007.02.011_bib17",
+      "doi-asserted-by": "crossref",
+      "first-page": "1563",
+      "DOI": "10.1128/AEM.61.4.1563-1570.1995",
+      "article-title": "Aerobic and anaerobic starvation metabolism in methanotrophic bacteria",
+      "volume": "61",
+      "author": "Roslev",
+      "year": "1995",
+      "journal-title": "Appl. Environ. Microbiol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.watres.2007.02.011_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "252",
+      "DOI": "10.1002/bit.20822",
+      "article-title": "Determination of the decay rate of nitrifying bacteria",
+      "volume": "94",
+      "author": "Salem",
+      "year": "2006",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.watres.2007.02.011_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "129",
+      "DOI": "10.2166/wst.1999.0028",
+      "article-title": "Reduction of biomass decay rate under anoxic and anaerobic conditions",
+      "volume": "39",
+      "author": "Siegrist",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.watres.2007.02.011_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "461",
+      "DOI": "10.1002/bit.260430605",
+      "article-title": "Model of the anaerobic metabolism of the biological phosphorus removal process—stoichiometry and pH influence",
+      "volume": "43",
+      "author": "Smolders",
+      "year": "1994",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.watres.2007.02.011_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "222",
+      "DOI": "10.1002/bit.260480309",
+      "article-title": "A metabolic model of the biological phosphorus removal process I. Effect of sludge retention time",
+      "volume": "48",
+      "author": "Smolders",
+      "year": "1995",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.watres.2007.02.011_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "2471",
+      "DOI": "10.1128/AEM.65.6.2471-2477.1999",
+      "article-title": "Maintenance energy demand and starvation recovery dynamics of Nitrosomonas europaea and Nitrobacter winogradskyi cultivated in a retentostat with complete biomass retention",
+      "volume": "65",
+      "author": "Tappe",
+      "year": "1999",
+      "journal-title": "Appl. Environ. Microbiol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.watres.2007.02.011_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "107",
+      "DOI": "10.2166/wst.1999.0024",
+      "article-title": "Maintenance, endogeneous respiration, lysis, decay and predation",
+      "volume": "39",
+      "author": "Van Loosdrecht",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.watres.2007.02.011_bib24",
+      "doi-asserted-by": "crossref",
+      "first-page": "237",
+      "DOI": "10.2166/wst.1996.0377",
+      "article-title": "In situ analysis of nitrifying bacteria in sewage treatment plants",
+      "volume": "34",
+      "author": "Wagner",
+      "year": "1996",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.watres.2007.02.011_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "539",
+      "DOI": "10.1016/S0043-1354(99)00177-3",
+      "article-title": "Reducing the size of a nitrogen removal activated sludge plant by shortening the retention time of inert solids via sludge storage",
+      "volume": "34",
+      "author": "Yuan",
+      "year": "2000",
+      "journal-title": "Water Res."
+    }
+  ],
+  "container-title": [
+    "Water Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0043135407001108?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0043135407001108?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2020,
+        4,
+        21
+      ]
+    ],
+    "date-time": "2020-04-21T11:14:14Z",
+    "timestamp": 1587467654000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0043135407001108"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2007,
+        6
+      ]
+    ]
+  },
+  "references-count": 25,
+  "journal-issue": {
+    "issue": "12",
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          6
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S0043135407001108"
+  ],
+  "URL": "https://doi.org/10.1016/j.watres.2007.02.011",
+  "relation": {},
+  "ISSN": [
+    "0043-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0043-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2007,
+        6
+      ]
+    ]
+  }
+}

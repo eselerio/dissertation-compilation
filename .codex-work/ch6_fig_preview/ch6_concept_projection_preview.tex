@@ -1,0 +1,39 @@
+\documentclass[12pt,border=3mm]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\linespread{1.2}
+\begin{document}
+\begin{tikzpicture}[>=Latex,
+block/.style={draw=black!75,rounded corners,fill=cyan!6,align=center,font=\footnotesize,inner sep=4pt},
+physical/.style={block,fill=black!5},
+empirical/.style={block,dashed,fill=white},
+flow/.style={->,thick,draw=black!80},
+failflow/.style={->,dashed,draw=black!70},
+lab/.style={font=\scriptsize,fill=white,inner sep=2pt}]
+\node[block,text width=8.6cm] (inputs) at (0,0) {Declared controls and fresh-influent components};
+\node[block,text width=4.0cm,minimum height=3.4cm] (raw) at (-4.65,-2.35)
+{Raw connected response\\$\chi_{\rm raw}$\\$m,c_1,\ldots,c_5$\\$g_E,g_U,M_{\rm cl}$};
+\node[physical,text width=4.0cm,minimum height=3.4cm] (phys) at (0,-2.35)
+{Physical relations\\Mixer and inventories\\Clarifier balances\\Separation bounds\\Inventory bounds\\Nonnegativity};
+\node[empirical,text width=4.0cm,minimum height=3.4cm] (closure) at (4.65,-2.35)
+{Empirical closure\\Logarithmic model\\Positive overflow solids\\$t_X^\top g_E=q_E\widehat X_{E,\log}$};
+\node[block,text width=8.6cm] (projection) at (0,-5.45)
+{Joint nearest-response projection\\Minimum standardized correction\\Physical relations and fitted closure imposed together};
+\node[physical,text width=8.6cm] (audit) at (0,-7.45)
+{Independent projection audit\\Feasibility, nonnegativity, and optimality residuals};
+\node[block,text width=7.7cm] (output) at (-2.2,-9.45)
+{Audited projected response $\widehat\chi$\\Used for the objective and trust screening\\Kinetics and layer fluxes remain unverified};
+\node[empirical,text width=3.1cm] (failure) at (4.5,-9.45)
+{Projection fails\\or audit fails\\Retain status};
+\draw[flow] (inputs.south)--(phys.north);
+\draw[flow] (inputs.west)-|(raw.north);
+\draw[flow] (inputs.east)-|(closure.north);
+\draw[flow] (raw.south)--(projection.north west);
+\draw[flow] (phys.south)--(projection.north);
+\draw[flow] (closure.south)--(projection.north east);
+\draw[flow] (projection)--(audit);
+\draw[flow] (audit.south west)--(output.north) node[midway,left,lab] {Pass};
+\draw[failflow] (audit.south east)--(failure.north) node[midway,right,lab] {Fail};
+\end{tikzpicture}
+\end{document}

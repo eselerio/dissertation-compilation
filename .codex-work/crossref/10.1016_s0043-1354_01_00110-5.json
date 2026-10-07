@@ -1,0 +1,408 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2026-10-05T05:56:25Z",
+    "timestamp": 1791179785805,
+    "version": "4.1.0"
+  },
+  "reference-count": 20,
+  "publisher": "Elsevier BV",
+  "issue": "16",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2001,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2001-11-01T00:00:00Z",
+        "timestamp": 1004572800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Water Research"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2001,
+        11
+      ]
+    ]
+  },
+  "DOI": "10.1016/s0043-1354(01)00110-5",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2002,
+        10,
+        31
+      ]
+    ],
+    "date-time": "2002-10-31T16:53:12Z",
+    "timestamp": 1036083192000
+  },
+  "page": "3887-3903",
+  "source": "Crossref",
+  "is-referenced-by-count": 155,
+  "title": [
+    "The eawag bio-p module for activated sludge model no. 3"
+  ],
+  "prefix": "10.1016",
+  "volume": "35",
+  "author": [
+    {
+      "given": "L.",
+      "family": "Rieger",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "G.",
+      "family": "Koch",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "M.",
+      "family": "Kühni",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "W.",
+      "family": "Gujer",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "H.",
+      "family": "Siegrist",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "1",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB1",
+      "doi-asserted-by": "crossref",
+      "first-page": "200",
+      "DOI": "10.1016/S0043-1354(97)00183-8",
+      "article-title": "Impact of excessive aeration on biological phosphorus removal from waste water",
+      "volume": "32",
+      "author": "Brdjanovic",
+      "year": "1998",
+      "journal-title": "Wat. Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB2",
+      "doi-asserted-by": "crossref",
+      "first-page": "75",
+      "DOI": "10.2166/wst.1999.0017",
+      "article-title": "Microbial competition for the organic substrates and its impact on EBPR systems under conditions of changing carbon feed",
+      "volume": "39",
+      "author": "Carucci",
+      "year": "1999",
+      "journal-title": "Wat. Sci. Technol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB3",
+      "doi-asserted-by": "crossref",
+      "first-page": "1175",
+      "DOI": "10.1128/AEM.66.3.1175-1182.2000",
+      "article-title": "Identification of polyphosphate-accumulating organisms and design of 16S rRNA-directed probes for their detection and quantification",
+      "volume": "66",
+      "author": "Crocetti",
+      "year": "2000",
+      "journal-title": "Appl. Environ. Microbiol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB4",
+      "doi-asserted-by": "crossref",
+      "first-page": "257",
+      "DOI": "10.2166/wst.1995.0114",
+      "article-title": "The Implementation of biokinetics and conservation principles in ASIM",
+      "volume": "31",
+      "author": "Gujer",
+      "year": "1995",
+      "journal-title": "Wat. Sci. Technol."
+    },
+    {
+      "key": "10.1016/S0043-1354(01)00110-5_BIB5",
+      "unstructured": "Henze M., Gujer W., Mino T. and van Loosdrecht M. (2000) Activated Sludge Model No. 3. Scientific and Technical Report No 9: Activated Sludge Models ASM1, ASM2, ASM2d and ASM3. IWA Task Group on Mathematical Modelling for Design and Operation of Biological Wastewater Treatment, IWA Publishing, London."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB6",
+      "doi-asserted-by": "crossref",
+      "first-page": "49",
+      "DOI": "10.2166/wst.1996.0355",
+      "article-title": "Modeling of the anaerobic reactor in a biological phosphate removal process",
+      "volume": "34",
+      "author": "Johansson",
+      "year": "1996",
+      "journal-title": "Wat. Sci. Technol."
+    },
+    {
+      "key": "10.1016/S0043-1354(01)00110-5_BIB7",
+      "unstructured": "Koch G., Kühni M., Gujer W. and Siegrist H. (1998) Final Report: Nitrogen removal in activated sludge plants. Studies at the WWTPs Werdhölzli and Neugut (Stickstoffelimination in Belebungsanlagen. Untersuchungen auf den Kläranlagen Werdhölzli und Neugut). EAWAG"
+    },
+    {
+      "issue": "14",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB8",
+      "doi-asserted-by": "crossref",
+      "first-page": "3580",
+      "DOI": "10.1016/S0043-1354(00)00105-6",
+      "article-title": "Calibration and validation of activated sludge model no. 3 for Swiss municipal wastewater",
+      "volume": "34",
+      "author": "Koch",
+      "year": "2000",
+      "journal-title": "Wat. Res."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB9",
+      "doi-asserted-by": "crossref",
+      "first-page": "2246",
+      "DOI": "10.1016/S0043-1354(00)00515-7",
+      "article-title": "Calibration and validation of an ASM3-based steady state model for activated sludge systems—Part II",
+      "volume": "35",
+      "author": "Koch",
+      "year": "2001",
+      "journal-title": "Wat. Res."
+    },
+    {
+      "key": "10.1016/S0043-1354(01)00110-5_BIB10",
+      "unstructured": "Kunst S. (1991) Investigations of enhanced biological phosphorus removal with regard to waste water treatment (Untersuchungen zur biologischen Phosphorelimination im Hinblick auf ihre abwassertechnische Nutzung). Published by the Institute of Sanitary Engineering and Waste Management of the University of Hannover."
+    },
+    {
+      "key": "10.1016/S0043-1354(01)00110-5_BIB11",
+      "unstructured": "Maurer M. (1996) Enhanced biological phosphorus removal. Modelling of the biological and chemical processes (Erhöhte Biologische Phosphorelimination. Modellierung der biologischen und chemischen Prozesse). Ph.D. Thesis, ETHZ Nr. 11920."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB12",
+      "doi-asserted-by": "crossref",
+      "first-page": "484",
+      "DOI": "10.1016/S0043-1354(98)00221-8",
+      "article-title": "Kinetics of biologically induced phosphorus precipitation in waste-water treatment",
+      "volume": "33",
+      "author": "Maurer",
+      "year": "1999",
+      "journal-title": "Wat. Res."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB13",
+      "doi-asserted-by": "crossref",
+      "first-page": "25",
+      "DOI": "10.2166/wst.1995.0066",
+      "article-title": "Modelling glycogen storage and denitrification capability of microorganisms in enhanced biological phosphate removal processes",
+      "volume": "31",
+      "author": "Mino",
+      "year": "1995",
+      "journal-title": "Wat. Sci. Technol."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB14",
+      "doi-asserted-by": "crossref",
+      "first-page": "3193",
+      "DOI": "10.1016/S0043-1354(98)00129-8",
+      "article-title": "Review paper",
+      "volume": "32",
+      "author": "Mino",
+      "year": "1998",
+      "journal-title": "Wat. Res."
+    },
+    {
+      "key": "10.1016/S0043-1354(01)00110-5_BIB15",
+      "unstructured": "Reichert P. (1998) AQUASIM 2.0—Computer program for the identification and simulation of aquatic systems. EAWAG Report."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB16",
+      "doi-asserted-by": "crossref",
+      "first-page": "9",
+      "DOI": "10.2166/wst.1996.0350",
+      "article-title": "Anaerobic substrate uptake by the enhanced biological phosphorus removal activated sludge treating real sewage",
+      "volume": "34",
+      "author": "Satoh",
+      "year": "1996",
+      "journal-title": "Wat. Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB17",
+      "doi-asserted-by": "crossref",
+      "first-page": "129",
+      "DOI": "10.2166/wst.1999.0028",
+      "article-title": "Reduction of biomass decay rate under anoxic and anaerobic conditions",
+      "volume": "39",
+      "author": "Siegrist",
+      "year": "1999",
+      "journal-title": "Wat. Sci. Technol."
+    },
+    {
+      "key": "10.1016/S0043-1354(01)00110-5_BIB18",
+      "doi-asserted-by": "crossref",
+      "first-page": "837",
+      "DOI": "10.1002/bit.260440709",
+      "article-title": "Stoichiometry of the aerobic metabolism",
+      "volume": "44",
+      "author": "Smolders",
+      "year": "1994",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "16",
+      "key": "10.1016/S0043-1354(01)00110-5_BIB19",
+      "doi-asserted-by": "crossref",
+      "first-page": "3459",
+      "DOI": "10.1016/S0043-1354(99)00064-0",
+      "article-title": "Modeling biological phosphorus and nitrogen removal in a full-scale activated sludge process",
+      "volume": "33",
+      "author": "Van Veldhuizen",
+      "year": "1999",
+      "journal-title": "Wat. Res."
+    },
+    {
+      "key": "10.1016/S0043-1354(01)00110-5_BIB20",
+      "unstructured": "Wild D. (1997) Nutrient fluxes in WWTPs with enhanced biological phosphorus removal (Nährstoffflüsse in Kläranlagen mit Biologischer Phosphorelimination). Ph.D. Thesis, ETHZ Nr. 12197."
+    }
+  ],
+  "container-title": [
+    "Water Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0043135401001105?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0043135401001105?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2020,
+        1,
+        13
+      ]
+    ],
+    "date-time": "2020-01-13T05:04:06Z",
+    "timestamp": 1578891846000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0043135401001105"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2001,
+        11
+      ]
+    ]
+  },
+  "references-count": 20,
+  "journal-issue": {
+    "issue": "16",
+    "published-print": {
+      "date-parts": [
+        [
+          2001,
+          11
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S0043135401001105"
+  ],
+  "URL": "https://doi.org/10.1016/s0043-1354(01)00110-5",
+  "relation": {},
+  "ISSN": [
+    "0043-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0043-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2001,
+        11
+      ]
+    ]
+  }
+}

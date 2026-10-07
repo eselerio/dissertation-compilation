@@ -1,0 +1,1132 @@
+                                                                    Digital Chemical Engineering 20 (2026) 100329
+
+
+                                                                      Contents lists available at ScienceDirect
+
+
+                                                                 Digital Chemical Engineering
+                                                               journal homepage: www.elsevier.com/locate/dche
+
+
+Original Article
+
+An interpretable statistical surrogate of activated sludge systems that
+preserves mass conservation and component non-negativity
+Egberto F. Selerio Jr.
+School of Engineering, University of San Carlos, Philippines
+
+
+
+ARTICLE                INFO                                    ABSTRACT
+
+Dataset link: https://github.com/egbertoselerio                Activated sludge models are essential for wastewater-treatment design and operation, but their detailed sim-
+1997/icsor.git                                                 ulations can be too computationally demanding for repeated analysis. Machine-learning surrogates are faster,
+                                                               yet accurate predictions may still violate mass conservation or produce negative component concentrations.
+Keywords:
+Wastewater treatment
+                                                               This study introduces Invariant-Constrained Second-Order Regression (ICSOR), an interpretable surrogate
+Activated sludge model                                         that combines a transparent, invariant-aware regression head with a constrained deployment procedure.
+Physics-informed machine learning                              The regression head predicts the effluent component state from influent conditions and operating inputs.
+Surrogate modeling                                             At deployment, each prediction is checked, projected onto the mass-conservation constraints, and, when
+Constrained optimization                                       necessary, adjusted by a linear program to enforce both conservation and non-negativity. ICSOR was evaluated
+Stoichiometric mass conservation                               on 10,000 steady-state samples from an ASM2d-TSN continuous stirred tank reactor and compared with
+Interpretable regression                                       XGBoost, LightGBM, CatBoost, AdaBoost, Random Forest, support vector regression, 𝑘-nearest neighbors,
+                                                               partial least squares, and a multilayer perceptron. The deployed ICSOR predictions had zero conservation
+                                                               and non-negativity violations: the affine projection resolved 21.8% of test cases, and the linear program
+                                                               resolved the remaining 78.2%. For context, none of the raw regression-head predictions satisfied conservation,
+                                                               although 21.7% were non-negative, showing that the hard guarantee came from constrained deployment rather
+                                                               than training alone. This physical reliability involved a moderate accuracy tradeoff: aggregate test RMSE
+                                                               was 5.98, compared with 4.38 for the multilayer perceptron and 5.30 for LightGBM. Across the dataset-
+                                                               size study, however, ICSOR achieved the lowest normalized area under the RMSE learning curve and the
+                                                               smallest train–validation RMSE gap among the comparatively accurate models. ICSOR therefore offers a useful
+                                                               balance of interpretability, data efficiency, and guaranteed physical admissibility for steady-state activated
+                                                               sludge surrogate modeling.
+
+
+
+1. Introduction                                                                                   In response to the computational and mathematical complexity in-
+                                                                                               herent in non-linear Activated Sludge Models, research has increasingly
+    Water pollution presents a critical environmental and public health                        focused on developing surrogate models to approximate the behavior
+challenge worldwide, with particularly severe repercussions in develop-                        of biological wastewater treatment systems (Bhosekar and Ierapetri-
+ing nations (Lin et al., 2022; Madhav et al., 2020). Biological wastewa-                       tou, 2018; Durkin et al., 2024; Tsochatzidi et al., 2025). Traditional
+ter treatment systems, particularly those based on the activated sludge                        approaches have explored linearization techniques (Li et al., 2020;
+process, are the dominant approach applied to combat this issue (Duan                          Yang et al., 2014) and multivariable polynomial fitting (Ahn et al.,
+et al., 2022). However, their modeling and analysis present formidable                         2014; Kim et al., 2009; Lim et al., 2011). While linear methods like
+engineering and computational challenges (Xiao et al., 2025). The un-                          Partial Least Squares (PLS) offer interpretable mappings, they inher-
+derlying biophysical mechanisms are governed by the Activated Sludge                           ently struggle to capture the severe non-linearities of microbial kinetics
+Models (ASM) (Henze et al., 2006), which rely on coupled, multiplica-                          without extensive feature engineering; indeed, comparative wastewater
+tive non-linear kinetic expressions to describe microbial growth and                           studies report substantial error reductions when linear PLS is replaced
+substrate consumption. This inherent non-linearity limits the practical                        by kernel-based or nonlinear inner-model variants (Liu et al., 2021;
+application of transparent analytical methods for process design, fre-                         Woo et al., 2009; Yang et al., 2021). To overcome these limitations,
+quently forcing engineers to rely on iterative trial-and-error approaches                      the machine learning (ML) paradigm has emerged as a powerful route
+or computationally expensive heuristic algorithms (Aboagye et al.,                             for approximating highly non-linear wastewater-treatment behavior
+2021; Padron-Paez et al., 2020).
+
+
+
+     E-mail address: egbertoselerio@gmail.com.
+
+https://doi.org/10.1016/j.dche.2026.100329
+Received 23 January 2026; Received in revised form 15 July 2026; Accepted 22 July 2026
+Available online 31 July 2026
+2772-5081/© 2026 The Author. Published by Elsevier Ltd on behalf of Institution of Chemical Engineers (IChemE). This is an open access article under the CC BY
+license (http://creativecommons.org/licenses/by/4.0/).
+E.F. Selerio Jr.                                                                                          Digital Chemical Engineering 20 (2026) 100329
+
+
+
+    Nomenclature                                                          𝛩𝑢𝑢                   Operating–operating driver block (𝛩𝑢𝑢 ∈
+                                                                                                       2
+                                                                                                R𝐹 ×𝑀𝑜𝑝 ); each output-specific 𝑀𝑜𝑝 × 𝑀𝑜𝑝
+    𝐴              Full-row-rank invariant matrix defining the
+                                                                                                reshape is symmetrized
+                   null space of the stoichiometric matrix
+                                                                          𝑊𝑖𝑛                   First-order influent driver block (𝑊𝑖𝑛 ∈
+    𝑏              Baseline forcing vector of the blockwise
+                                                                                                R𝐹 ×𝐹 )
+                   driver (𝑏 ∈ R𝐹 )
+                                                                          𝑊𝑢                    First-order operating driver block (𝑊𝑢 ∈
+    𝐵              Second-order driver coefficient matrix
+                                                                                                R𝐹 ×𝑀𝑜𝑝 )
+    𝑐𝑎𝑓 𝑓          Affine invariant projection of the raw cou-
+                                                                          ⊗                     Kronecker product
+                   pled state; exactly conservative but not
+                   necessarily non-negative
+    𝑐𝑖𝑛            Influent ASM component concentration vec-
+                   tor (𝑐𝑖𝑛 ∈ R𝐹 )
+                                                                       (Croll et al., 2023; Nazlabadi et al., 2021). Recent wastewater evidence
+    𝑐𝑜𝑢𝑡           True steady-state effluent ASM component            further shows that, when predictive accuracy alone is the criterion,
+                   concentration vector (𝑐𝑜𝑢𝑡 ∈ R𝐹 )                   modern ML models can outperform mechanistic ASM baselines for
+    𝑐𝑟𝑎𝑤           Unconstrained regression-head component             effluent nitrogen prediction (Wang et al., 2025). A wide array of
+                   prediction with no hard feasibility guaran-         data-driven algorithms — ranging from distance-based methods like k-
+                   tee                                                 Nearest Neighbors (k-NN) and PLS (Khatri et al., 2020; Wold et al.,
+    𝑐̂             Final checked or corrected ICSOR compo-             2001), to kernel methods like Support Vector Regression (SVR) (Fang
+                   nent state returned at deployment                   et al., 2011), tree-based ensembles such as Random Forest (RF), Ad-
+    𝐶̂             Fitted non-negative component prediction            aBoost, XGBoost, LightGBM, and CatBoost (Sadri Moghaddam and
+                   matrix used in training                             Mesghali, 2023; Wang et al., 2025; Yang et al., 2025), and Artificial
+    𝐷              Total dimension of the second-order feature         Neural Networks (ANN) (Asadi et al., 2017; Bagherzadeh et al., 2021;
+                   map                                                 Mao et al., 2024) — have demonstrated strong predictive capabilities
+    𝐹              Number of mechanistic ASM components                for effluent quality.
+                  Admissible set for 𝛤 (zero diagonal, box                Despite their predictive accuracy, these standard ML algorithms
+                   bounds, conditioning threshold)                     remain structurally blind to a central physical requirement of activated
+    𝛤              Learned ASM component coupling matrix               sludge systems: material cannot be created or destroyed arbitrarily
+                                                                       across the modeled control volume. A surrogate may fit observed
+    𝐼𝑐𝑜𝑚𝑝          Composition matrix mapping ASM compo-
+                                                                       effluent behavior well while still implying an impossible redistribu-
+                   nents to measured composites (𝐼𝑐𝑜𝑚𝑝 ∈
+                                                                       tion of the underlying ASM components, thereby violating the mass
+                   R𝐾×𝐹 )
+                                                                       balances that govern COD, nitrogen, or phosphorus transfer. Related
+    𝐾              Number of measured composite variables
+                                                                       composition-preserving ML studies show that even accurate tree-based
+    𝜅(⋅)           Matrix condition number                             predictors can exhibit persistent unphysical conservation residuals un-
+    𝜆𝐵             Ridge regularization weight on 𝐵                    less an explicit corrective mechanism is imposed (Sturm and Silva,
+    𝜆𝛤             Ridge regularization weight on 𝛤                    2025). At the same time, physically admissible concentration states
+    𝜆𝑖𝑛𝑣           Soft invariant-residual penalty weight in the       must remain componentwise non-negative. These two requirements are
+                   training objective                                  inseparable in practice. A surrogate that conserves mass but predicts
+    𝜆𝑠𝑦𝑠           Coupled-system consistency penalty weight           negative concentrations is still unusable, and a surrogate that preserves
+                   in the training objective                           non-negativity while violating mass conservation remains physically
+    𝑀𝑜𝑝            Number of operational variables                     misleading.
+    𝑁              Number of steady-state training samples                 Recent scientific-ML literature shows that satisfying both require-
+    𝑁𝑟𝑥𝑛           Number of reactions in the mechanistic              ments simultaneously is nontrivial. A substantial class of methods en-
+                   model                                               forces conservation alone through conservative flux formulations, stoi-
+                                                                       chiometric architectures, projection operators, Bayesian reconciliation,
+    𝑅              Coupled-system matrix, 𝑅 = 𝐼𝐹 − 𝛤
+                                                                       or completion strategies, but does not guarantee non-negativity of the
+    𝑢              Operational input vector (𝑢 ∈ R𝑀𝑜𝑝 )
+                                                                       corrected state (Beucler et al., 2021; Geiss et al., 2022; Hansen et al.,
+    𝑤𝑐             Componentwise weight vector used in de-             2024; Harder et al., 2022; Sturm and Silva, 2025; Sturm and Wexler,
+                   ployed correction                                   2020, 2022). In that broader literature, completion methods reconstruct
+    𝑦𝑒𝑥𝑡           Reported measured effluent composite vec-           withheld variables to satisfy linear equality constraints (Beucler et al.,
+                   tor (𝑦𝑒𝑥𝑡 ∈ R𝐾 )                                    2021), Bayesian reconciliation treats conservation as a probabilistic
+    𝑦̂𝑒𝑥𝑡          Reported composite prediction, 𝑦̂𝑒𝑥𝑡 =              update (Hansen et al., 2024), and recent atmospheric-composition stud-
+                   𝐼𝑐𝑜𝑚𝑝 𝑐̂                                            ies use stoichiometric null-space constructions and invariant-restoring
+    𝜈              Stoichiometric matrix (𝜈 ∈ R𝑁𝑟𝑥𝑛 ×𝐹 )               nudges to keep learned states on the conservation manifold (Sturm
+    𝜉              Net reaction progress vector                        and Silva, 2025; Sturm and Wexler, 2020, 2022). Closely related soft-
+    𝛷              Feature matrix collecting 𝜙 row-wise over           constraint approaches, such as physics-informed neural networks, can
+                   the training set (𝛷 ∈ R𝑁×𝐷 )                        encourage physically plausible behavior but generally provide neither
+    𝜙              Partitioned second-order feature map                exact conservation nor strict positivity guarantees; more generally, soft-
+    𝛩𝑐𝑐            Influent–influent driver block (𝛩𝑐𝑐         ∈       penalty conservation treatments need not drive residual violations to
+                          2
+                   R𝐹 ×𝐹 ); each output-specific 𝐹 × 𝐹 reshape         zero at deployment (Hansen et al., 2024; Raissi et al., 2019). Positivity-
+                   is symmetrized                                      only output transformations — whether activation-function clipping,
+                                                                       ReLU              output           layers,           or           manual
+    𝛩𝑢𝑐            Operating–influent interaction driver block
+                                                                       thresholding — can prevent negative states, but without an accompany-
+                   (𝛩𝑢𝑐 ∈ R𝐹 ×(𝑀𝑜𝑝 𝐹 ) )
+                                                                       ing conservation mechanism they do not by themselves enforce global
+                                                                       material balance (Kircher and Votsmeier, 2025; Ruckstuhl et al., 2021;
+                                                                       Utkarsh et al., 2025). Conversely, conservative projection steps that
+
+                                                                   2
+E.F. Selerio Jr.                                                                                                       Digital Chemical Engineering 20 (2026) 100329
+
+
+ignore positivity can still generate infeasible negative states in practice,       2. Theory and calculation
+which is precisely why joint enforcement remains difficult (Kircher and
+Votsmeier, 2025).                                                                  2.1. Physical scope, state spaces, and notation
+    A smaller body of work has reported simultaneous enforcement of
+conservation and non-negativity. Kircher and Votsmeier (2025) develop
+                                                                                       A fixed reactor block or process unit represented by steady-state
+positivity-preserving conservative corrections for mechanistic kinetics
+                                                                                   samples is considered. The system boundary used to define influent and
+surrogates in atmospheric chemistry and heterogeneous catalysis, while
+Sturm et al. (2023) show in aerosol transport that mass-preserving                 effluent states is identical to the boundary used to define stoichiometric
+scaling can maintain both total conservation and non-negativity for                conservation. Any external source or sink that crosses that boundary
+advected aerosol superspecies. Min et al. (2024) and Utkarsh et al.                must therefore be represented in the adopted stoichiometric model;
+(2025) likewise propose hard-constrained learning frameworks that can              otherwise, it lies outside the present conservation claim.
+impose equality and inequality constraints together in more general                    ICSOR is formulated natively in ASM component space. Its scien-
+machine-learning settings. These results demonstrate that dual phys-               tific output is the effluent component vector itself, not a measured
+ical guarantees are achievable, but they arise in application settings             aggregate. Measured composites are obtained only afterward through
+whose state definitions, constraints, and deployment objectives differ             an external composition matrix. This choice is deliberate because mass
+substantially from those of activated sludge process surrogates.                   conservation and componentwise non-negativity are both defined in
+    This gap is consequential for wastewater engineering. Activated                ASM component coordinates.
+sludge models couple multiple conserved material inventories with                      Let 𝑀𝑜𝑝 be the number of operational variables, 𝐹 the number
+biologically and chemically constrained component states, so violations            of ASM components, 𝐾 the number of reported composite variables,
+of either mass conservation or non-negativity can distort interpretation,
+                                                                                   and 𝑁𝑟𝑥𝑛 the number of reactions. Single-sample vectors are written as
+confound process optimization, and undermine confidence in surrogate-
+                                                                                   column vectors. The following state spaces and operators are defined:
+assisted design (Hansen et al., 2024; Liu et al., 2021; Straus and
+Skogestad, 2018; Tang et al., 2026). A physically constrained data-
+                                                                                       • 𝑢 ∈ R𝑀𝑜𝑝 : Operational input vector (e.g., hydraulic retention time,
+driven model would therefore offer several practical benefits: it would
+                                                                                         aeration intensity).
+preserve the bookkeeping needed for COD, nitrogen, and phosphorus
+analysis, prevent impossible negative component concentrations, re-                    • 𝑐𝑖𝑛 ∈ R𝐹 : Influent ASM component concentration vector.
+duce reliance on ad hoc clipping or reconciliation (Ba-Alawi et al.,                   • 𝑐𝑜𝑢𝑡 ∈ R𝐹 : True steady-state effluent ASM component concentra-
+2021; Kircher and Votsmeier, 2025), and yield predictions that remain                    tion vector.
+more defensible as operating conditions and influent loads vary. Yet, to               • 𝑐̂ ∈ R𝐹 : Final deployed ICSOR component prediction.
+our knowledge, prior wastewater surrogate and review literature has                    • 𝑦𝑒𝑥𝑡 ∈ R𝐾 : Reported measured composite vector.
+not reported an activated sludge surrogate that provides hard guar-                    • 𝐼𝑐𝑜𝑚𝑝 ∈ R𝐾×𝐹 : Composition matrix mapping ASM component
+antees of both stoichiometric mass conservation and componentwise                        concentrations to reported composites, such that 𝑦𝑒𝑥𝑡 = 𝐼𝑐𝑜𝑚𝑝 𝑐𝑜𝑢𝑡 .
+non-negativity within a single interpretable steady-state framework                    • 𝜈 ∈ R𝑁𝑟𝑥𝑛 ×𝐹 : Stoichiometric matrix.
+(Kircher and Votsmeier, 2025; Newhart et al., 2019; Wang et al., 2025).
+    This study addresses that need through Invariant-Constrained                       The linear composition map 𝐼𝑐𝑜𝑚𝑝 remains external to the model
+Second-Order Regression (ICSOR), an interpretable surrogate for                    itself. In the common wastewater-reporting case where its rows are
+steady-state activated sludge systems. ICSOR is designed for a practical           entrywise non-negative, non-negative component predictions imply
+task: using influent conditions and operating settings to provide a
+                                                                                   non-negative reported composites automatically. Thus ICSOR places
+fast estimate of the effluent state that engineers can inspect and use
+                                                                                   the hard non-negativity guarantee where it is physically meaningful,
+with confidence. Unlike an unconstrained predictor, ICSOR checks the
+                                                                                   namely on the predicted ASM component state.
+predicted component state before returning it and ensures that the
+final result conserves the modeled material inventories and contains
+no negative concentrations.                                                        2.2. Stoichiometric structure and conserved quantities
+    The method separates two responsibilities. First, a transparent re-
+gression model captures how operating conditions and influent loads                    Let 𝜈 ∈ R𝑁𝑟𝑥𝑛 ×𝐹 be the stoichiometric matrix written in the adopted
+are associated with the effluent components. Second, a deployment step             ASM component basis. For a steady-state sample, define the net reac-
+checks physical admissibility and adjusts the prediction when needed.              tion progress vector 𝜉 ∈ R𝑁𝑟𝑥𝑛 , scaled into concentration-equivalent
+This arrangement preserves the speed and interpretability expected                 units, such that the net change across the control volume is:
+from a surrogate while preventing the impossible material balances and
+negative concentrations identified above.                                          𝑐𝑜𝑢𝑡 − 𝑐𝑖𝑛 = 𝜈 𝑇 𝜉                                                           (1)
+    ICSOR is intended to be understandable as well as physically de-
+pendable. Its fitted structure keeps the roles of operating conditions,            The vector 𝜉 is rarely observed directly. To eliminate it and isolate the
+influent loads, nonlinear effects, and relationships among effluent com-           conserved quantities, a full-row-rank matrix 𝐴 ∈ R𝑞×𝐹 is introduced
+ponents visible. This differs from linear summaries such as PLS loadings           whose rows span the left null space of 𝜈, so that 𝐴𝜈 𝑇 = 0. Multiplying
+and from local explanations of black-box neural networks. The trans-               the stoichiometric change relation by 𝐴 yields:
+parent regression model supports process interpretation, while the
+separate deployment step is responsible for ensuring that the returned             𝐴(𝑐𝑜𝑢𝑡 − 𝑐𝑖𝑛 ) = 𝐴𝜈 𝑇 𝜉 = 0   ⟹    𝐴𝑐𝑜𝑢𝑡 = 𝐴𝑐𝑖𝑛                              (2)
+prediction is physically admissible.                                               This invariant-matrix construction follows the same mathematical idea
+    The objective of this article is to evaluate whether ICSOR can
+                                                                                   used by Sturm and Wexler (2020) in mass-conserving photochemical
+provide useful steady-state predictions without sacrificing interpretabil-
+                                                                                   surrogates, where a null-space matrix is used to preserve elemental
+ity or the two essential physical requirements identified above. The
+                                                                                   inventories exactly. In the present setting, the conserved rows of 𝐴
+study uses a standalone Continuous Stirred Tank Reactor and com-
+pares ICSOR with established unconstrained machine-learning models.                represent wastewater-material inventories implied by the adopted ASM
+It examines predictive accuracy, performance across dataset sizes, com-            reaction network and system boundary rather than atmospheric atom
+putational cost, and physical admissibility. The scope is limited to               counts. Each row of 𝐴 represents one independent conserved combina-
+steady-state prediction: ICSOR guarantees mass conservation and non-               tion of ASM components implied by the adopted reaction network and
+negativity for the returned state, but it does not claim complete kinetic          system boundary. The basis of 𝐴 is not unique, but once it is fixed, the
+or thermodynamic feasibility and is not a replacement for dynamic                  invariant relation 𝐴𝑐𝑜𝑢𝑡 = 𝐴𝑐𝑖𝑛 defines the exact conservation law that
+simulation.                                                                        deployed ICSOR predictions must satisfy.
+
+                                                                               3
+E.F. Selerio Jr.                                                                                                                          Digital Chemical Engineering 20 (2026) 100329
+
+
+2.3. Coupled second-order driver and prediction-space training                               a fitted non-negative component prediction matrix 𝐶̂ ∈ R𝑁×𝐹
+                                                                                                                                                     +   and
+                                                                                                               ̂ through the coupled objective
+                                                                                             estimates (𝐵, 𝛤 , 𝐶)
+    Operational variables 𝑢 alter the process environment, whereas                                                                  ‖         ‖
+                                                                                              ̂ 𝛤̂, 𝐶)
+                                                                                             (𝐵,    ̂ = arg             min         ‖𝐶𝑜𝑢𝑡 − 𝐶̂‖2𝐹
+influent concentrations 𝑐𝑖𝑛 determine the material inventory presented                                                    ̂ 𝑁×𝐹 ‖
+                                                                                                                 𝐵, 𝛤 ∈, 𝐶∈R                 ‖
+                                                                                                                             +
+to that environment (de Araujo et al., 2013; Machado et al., 2014).                                             ‖              ‖
+                                                                                                         + 𝜆𝑖𝑛𝑣 ‖(𝐶̂ − 𝐶𝑖𝑛 )𝐴𝑇 ‖2𝐹
+ICSOR keeps these roles explicit by using a partitioned second-order                                            ‖              ‖                                 (7)
+                                                                                                                ‖̂           𝑇        𝑇 ‖2
+feature map:                                                                                             + 𝜆𝑠𝑦𝑠 ‖𝐶(𝐼   −  𝛤 )  −   𝛷𝐵   ‖
+                                                                                                                ‖    𝐹                  ‖𝐹
+             ⎡ 1 ⎤                                                                                       + 𝜆𝐵 ‖𝐵‖2𝐹 + 𝜆𝛤 ‖𝛤 ‖2𝐹 .
+             ⎢ 𝑢 ⎥                                                                               Each term has a distinct role. The first term fits effluent ASM
+             ⎢          ⎥                                                                    components directly. The second softly penalizes invariant mismatch
+                  𝑐𝑖𝑛 ⎥
+𝜙(𝑢, 𝑐𝑖𝑛 ) = ⎢            ∈ R𝐷                                                    (3)
+             ⎢ 𝑢⊗𝑢 ⎥                                                                         in component space; it is not a hard equality constraint. The third
+             ⎢𝑐 ⊗ 𝑐 ⎥                                                                        encourages consistency between the fitted states and the coupled driver
+             ⎢ 𝑖𝑛    𝑖𝑛 ⎥
+             ⎣ 𝑢 ⊗ 𝑐𝑖𝑛 ⎦                                                                     relation. The ridge penalties stabilize the driver and coupling esti-
+                                                                                             mates, and the positive 𝐵 ridge penalty also selects the symmetric
+where ⊗ denotes the Kronecker product under column-wise vectoriza-
+                               2 + 𝐹2 + 𝑀 𝐹.                                                 minimum-norm representative of each duplicated ordered quadratic
+tion and 𝐷 = 1 + 𝑀𝑜𝑝 + 𝐹 + 𝑀𝑜𝑝            𝑜𝑝
+                                                                                             pair.
+    The feature map drives a latent component-space forcing vector
+rather than the final deployed prediction directly:
+                                                                                             2.4. Deployment-time inference with exact conservation and non-negativity
+𝑟(𝑢, 𝑐𝑖𝑛 ) = 𝐵𝜙(𝑢, 𝑐𝑖𝑛 )                                                          (4)
+                                                                                                 Training determines 𝐵   ̂ and 𝛤̂. Deployment then predicts a new
+Using a latent driver rather than predicting the deployed state directly                     component state through a staged inference rule: a direct coupled eval-
+is also consistent with stoichiometry-driven flux-to-tendency architec-                      uation, a closed-form affine projection, and, only when non-negativity
+tures such as the conservation-law neural-network formulation of Sturm                       is still violated, a final linear program. For a new sample (𝑢∗ , 𝑐𝑖𝑛,∗ ),
+and Wexler (2022). The present article adopts that separation in a                           define
+different way: ICSOR keeps the driver explicitly linear-quadratic and
+                                                                                             𝜙∗ = 𝜙(𝑢∗ , 𝑐𝑖𝑛,∗ ),             ̂ ∗,
+                                                                                                                         𝑑∗ = 𝐵𝜙           ̂ = 𝐼𝐹 − 𝛤̂.
+                                                                                                                                           𝑅                                       (8)
+interpretable, then combines it with a learned coupling matrix and a
+separate constrained deployment step rather than embedding a fixed                                        ̂ is nonsingular, the unconstrained coupled state is
+                                                                                                 Whenever 𝑅
+stoichiometric layer inside a deep network.
+    Using the same partitioned basis, the driver can be written block-                              ̂−1 𝑑∗ .
+                                                                                             𝑐𝑟𝑎𝑤 = 𝑅                                                                              (9)
+wise as                                                                                         A cheap affine presolve then restores exact invariants without yet
+𝑟(𝑢, 𝑐𝑖𝑛 ) = 𝑏 + 𝑊𝑢 𝑢 + 𝑊𝑖𝑛 𝑐𝑖𝑛 + 𝛩𝑢𝑢 (𝑢 ⊗ 𝑢) + 𝛩𝑐𝑐 (𝑐𝑖𝑛 ⊗ 𝑐𝑖𝑛 ) + 𝛩𝑢𝑐 (𝑢 ⊗ 𝑐𝑖𝑛 ), (5)       enforcing non-negativity. The nearest invariant-consistent state to the
+                                                                  2
+                                                                                             raw predictor is
+                                                                                    2
+with 𝑏 ∈ R𝐹 , 𝑊𝑢 ∈ R𝐹 ×𝑀𝑜𝑝 , 𝑊𝑖𝑛 ∈ R𝐹 ×𝐹 , 𝛩𝑢𝑢 ∈ R𝐹 ×𝑀𝑜𝑝 , 𝛩𝑐𝑐 ∈ R𝐹 ×𝐹 ,
+and 𝛩𝑢𝑐 ∈ R𝐹 ×(𝑀𝑜𝑝 𝐹 ) .                                                                     𝑐𝑎𝑓 𝑓 = arg min ‖𝑐 − 𝑐𝑟𝑎𝑤 ‖22           subject to     𝐴𝑐 = 𝐴𝑐𝑖𝑛,∗ .                (10)
+                                                                                                          𝑐∈R𝐹
+   For output component 𝑘, let 𝑄(𝑘)𝑢𝑢 ∈ R
+                                            𝑀𝑜𝑝 ×𝑀𝑜𝑝
+                                                     and 𝑄(𝑘)
+                                                            𝑐𝑐 ∈ R
+                                                                    𝐹 ×𝐹
+                                                                                             Because 𝐴 is full row rank, 𝐴𝐴𝑇 is invertible and the Lagrange condi-
+denote the square reshapes of the corresponding rows of 𝛩𝑢𝑢 and 𝛩𝑐𝑐 .
+                                                                                             tions yield a closed-form solution:
+The full ordered Kronecker map retains both 𝑥𝑖 𝑥𝑗 and 𝑥𝑗 𝑥𝑖 , so after
+every 𝐵 update the implementation projects each self-quadratic slice                         𝑐𝑎𝑓 𝑓 = 𝑐𝑟𝑎𝑤 − 𝐴𝑇 (𝐴𝐴𝑇 )−1 𝐴 (𝑐𝑟𝑎𝑤 − 𝑐𝑖𝑛,∗ ).                                       (11)
+onto the symmetric subspace,
+                                                                                             The affine presolve is therefore the orthogonal projection of 𝑐𝑟𝑎𝑤 onto
+               𝑄 + 𝑄𝑇           {           }
+                                         (𝑘) 𝐹                                               the invariant-consistent affine set {𝑐 ∶ 𝐴𝑐 = 𝐴𝑐𝑖𝑛,∗ } and requires only
+𝑄 ← sym(𝑄) =           ,    𝑄 ∈ 𝑄(𝑘)
+                                   𝑢𝑢 , 𝑄𝑐𝑐 𝑘=1 .
+                  2                                                                          a single matrix–vector multiplication at deployment. This closed-form
+This projection preserves the coupled-QP optimum. For any vector 𝑥,                          correction plays the role of a conservation-restoring nudge: like the
+𝑥𝑇 𝑄𝑥 = 𝑥𝑇 sym(𝑄)𝑥, whereas                                                                  species-weighted correction proposed by Sturm and Silva (2025), it
+                                                                                             returns the nearest invariant-consistent state to the raw predictor. Here,
+‖𝑄‖2𝐹 = ‖ sym(𝑄)‖2𝐹 + ‖ skew(𝑄)‖2𝐹 .
+                                                                                             however, the affine projection is treated as a cheap intermediate stage
+Consequently, removing the skew-symmetric part leaves every fitted                           rather than the final deployed output, because exact invariants alone
+value unchanged and cannot increase the ridge-regularized objective.                         do not preclude negative ASM component concentrations.
+Because the reported estimator uses 𝜆𝐵 > 0, the unique ridge solution                            If 𝑐𝑟𝑎𝑤 already satisfies the invariants and remains non-negative,
+has zero skew part, so the explicit projection makes the commutativity-                      ICSOR can deploy it directly. If 𝑐𝑟𝑎𝑤 is infeasible but 𝑐𝑎𝑓 𝑓 is non-
+induced equality 𝜃𝑘,𝑖𝑗 = 𝜃𝑘,𝑗𝑖 hold to machine precision.                                    negative, the affine presolve is already sufficient. Only when the affine
+    Cross-component dependence is introduced explicitly through a                            state still contains negative components does ICSOR activate the full
+learned coupling matrix 𝛤 ∈ R𝐹 ×𝐹 . In this study, 𝛤 is estimated in                         correction program:
+an admissible set that fixes its diagonal to zero, bounds its off-diagonal                             𝑐̂ = arg        min        𝑤𝑇𝑐 𝜌
+entries, and rejects choices that make 𝑅 = 𝐼𝐹 − 𝛤 poorly conditioned.                                               𝑐∈R𝐹 , 𝜌∈R𝐹
+
+The coupled relation is written as                                                           subject to     𝐴𝑐 = 𝐴𝑐𝑖𝑛,∗ ,
+                                                                                                            𝑐 ≥ 0,                                                               (12)
+𝑅𝑐 = 𝑟(𝑢, 𝑐𝑖𝑛 ),      𝑅 = 𝐼𝐹 − 𝛤                                                  (6)
+                                                                                                             − 𝜌 ≤ 𝑐 − 𝑐𝑎𝑓 𝑓 ≤ 𝜌,
+    The sign of 𝐵 is not constrained. That choice is deliberate: increasing
+                                                                                                            𝜌≥0
+and decreasing effects are both allowed in the latent driver, while non-
+negativity is enforced later where it matters physically, on the predicted                   with fixed componentwise correction weights 𝑤𝑐 ∈ R𝐹+ . Eq. (12) is
+component state itself.                                                                      the final correction branch of the checked deployment rule. It en-
+    Over a dataset of 𝑁 steady-state samples, let 𝛷 ∈ R𝑁×𝐷 collect the                       forces exact invariant preservation and componentwise non-negativity
+feature rows, let 𝐶𝑖𝑛 ∈ R𝑁×𝐹+     collect influent component states, and                     simultaneously while keeping the final state as close as possible to the
+let 𝐶𝑜𝑢𝑡 ∈ R𝑁×𝐹
+             +    collect effluent component targets. ICSOR introduces                       coupled affine reference in a weighted 𝐿1 sense. The hard feasibility
+
+                                                                                         4
+E.F. Selerio Jr.                                                                                                               Digital Chemical Engineering 20 (2026) 100329
+
+
+guarantee is produced by this checked deployment rule, not by the                     The coupling coefficients in 𝛤 serve a different purpose. They do not
+training objective. In particular, the 𝜆𝑖𝑛𝑣 term in Eq. (7) is a soft             describe how the operating point generates forcing; they describe how
+regularizer and does not guarantee that 𝑐𝑟𝑎𝑤 satisfies 𝐴𝑐𝑟𝑎𝑤 = 𝐴𝑐𝑖𝑛,∗ .           that forcing is redistributed across ASM component balances once cre-
+A raw or affine state is returned only after it passes the applicable             ated. Couplings among dissolved oxygen and nitrifier channels, among
+feasibility checks; otherwise Eq. (12) imposes 𝐴𝑐 = 𝐴𝑐𝑖𝑛,∗ and 𝑐 ≥ 0              ammonium, nitrite, and nitrate, among 𝑆PO4 , 𝑋𝑃 𝐴𝑂 , 𝑋𝑃 𝑃 , and 𝑋𝑃 𝐻𝐴 , or
+jointly. Because the physically admissible 𝑐𝑖𝑛,∗ is itself feasible under         between soluble and particulate COD-bearing states correspond to re-
+the adopted component basis, the LP feasible set is nonempty. That                curring material linkages long documented in activated-sludge nutrient-
+second stage reflects the same central lesson emphasized by Kircher and           removal models for nitrification, denitrification, phosphorus storage,
+Votsmeier (2025): a conservative correction is only physically useful if          and hydrolysis-uptake behavior (Wentzel et al., 1992; Henze et al.,
+positivity is preserved at the same time. Their scaled-space formulation          1999). The sign of a coupling coefficient indicates whether that link-
+is specifically designed to keep small predicted concentrations from              age is reinforcing or compensating, and its magnitude indicates how
+crossing into negative values during correction. The present adop-                strongly the redistribution must be represented to reproduce the ob-
+tion targets steady-state activated sludge component predictions rather           served state pattern. Persistent entries of 𝛤 are therefore interpretable
+than atmospheric chemistry or heterogeneous catalysis, and it uses a              as recurring process linkages rather than as purely statistical artifacts.
+weighted 𝐿1 correction about the affine invariant reference rather than
+the exact scaling strategy proposed there.                                        2.6. Deterministic recursive coupled-QP estimation and modeling bound-
+    Under the adopted non-negative component basis, 𝑐𝑖𝑛,∗ is feasible             aries
+whenever the influent state itself is physically admissible. The deployed
+problem is therefore not an afterthought but the mechanism by which                    This article adopts the recursive coupled-QP training route rather
+ICSOR closes the following gap: every deployed prediction preserves               than a generic stochastic first-order optimizer such as Adam. That
+the adopted conserved quantities and remains non-negative componen-               choice is deliberate. Writing the training criterion in Eq. (7) as
+twise. The raw-check, affine-presolve, then LP-correction sequence is                       ̂ each restart performs deterministic block-coordinate Gauss–
+                                                                                  𝐽 (𝐵, 𝛤 , 𝐶),
+also practically important because it reserves the general optimizer for          Seidel sweeps of the form
+the subset of samples whose non-negativity constraints are genuinely                                   (                    )
+                                                                                  𝐵 (𝑡+1,𝑠) = arg min 𝐽 𝐵, 𝛤 (𝑡,𝑠) , 𝐶̂(𝑡,𝑠) ,                       (14)
+active.                                                                                             𝐵
+                                                                                                       (                       )
+2.5. External reporting and blockwise interpretability                            𝛤 (𝑡+1,𝑠) = arg min 𝐽 𝐵 (𝑡+1,𝑠) , 𝛤 , 𝐶̂(𝑡,𝑠) ,                                     (15)
+                                                                                                  𝛤 ∈
+                                                                                                       (                          )
+   If reported measured composites are needed after deployment, they              𝐶̂(𝑡+1,𝑠) = arg min 𝐽 𝐵 (𝑡+1,𝑠) , 𝛤 (𝑡+1,𝑠) , 𝐶̂ .                                  (16)
+                                                                                                  ̂ 𝑁×𝐹
+                                                                                                  𝐶∈R
+are computed externally by                                                                           +
+
+                                                                                  After each full cycle, the objective is evaluated as
+𝑦̂𝑒𝑥𝑡 = 𝐼𝑐𝑜𝑚𝑝 𝑐.
+              ̂                                                       (13)
+                                                                                               (                                 )
+                                                                                  𝐽 (𝑡+1,𝑠) = 𝐽 𝐵 (𝑡+1,𝑠) , 𝛤 (𝑡+1,𝑠) , 𝐶̂(𝑡+1,𝑠) .                                   (17)
+This collapse is not part of the regression model itself; it is a reporting
+operator applied after deployment. Keeping it external matters because                             ̂ the 𝐵 subproblem is a ridge-regularized linear least-
+                                                                                   For fixed (𝛤 , 𝐶),
+different internal ASM component states can produce the same mea-                 squares solve followed by the prediction-preserving symmetric pro-
+sured aggregates. The learned scientific object is therefore 𝑐,  ̂ not the        jection stated in Section 2.3. For fixed (𝐵, 𝐶), ̂ the 𝛤 subproblem is
+reported collapse alone.                                                          a convex box-constrained quadratic program. For fixed (𝐵, 𝛤 ), the
+    Interpretability is retained at two levels. Because ICSOR is con-             𝐶̂ subproblem is a convex non-negative quadratic program in which
+structed as an intrinsically transparent surrogate, process interpretation        invariant mismatch remains a soft quadratic penalty.
+is taken from its explicit coefficient blocks and coupling terms rather               One practical reason is the matrix 𝑅 = 𝐼𝐹 − 𝛤 itself. Deployment
+than from a separate post hoc explainer (Rudin, 2019; Shen et al.,                requires 𝑅 to remain invertible, and in practice it must remain well
+2023). First, the six blocks of 𝐵 have direct engineering meaning in the          conditioned because both the raw coupled state and the subsequent
+latent driver: 𝑏 is the baseline forcing, 𝑊𝑢 and 𝑊𝑖𝑛 encode first-order           correction depend on solving through 𝑅. A nearly singular 𝑅 would
+operating and influent effects, 𝛩𝑢𝑢 and 𝛩𝑐𝑐 encode within-subspace cur-           amplify numerical noise, distort the affine presolve, and make the
+vature, and 𝛩𝑢𝑐 encodes operation-loading interaction effects. Second,            deployed correction unstable. The recursive coupled-QP route can con-
+𝛤 describes how that driver is redistributed across ASM components                trol this requirement explicitly: each 𝛤 update is box-constrained, its
+through the coupled system matrix 𝑅 = 𝐼𝐹 −𝛤 . The deployed prediction             diagonal is fixed at zero, and the candidate is accepted only if 𝜅(𝐼𝐹 −
+must therefore be read as the result of a driver, a coupling structure,           𝛤 ) stays below a prescribed conditioning threshold. If that threshold
+and a constrained inference solve acting together.                                is violated, the candidate can be shrunk toward the origin and, if
+    These coefficients are motivated by plant operation rather than by            necessary, replaced by a safe fallback. Stochastic methods such as
+algebraic convenience. The operating block 𝑊𝑢 corresponds to levers               Adam, and indeed other generic first-order solvers, do not provide that
+that engineers actually move, such as aeration intensity and hydraulic            admissibility guarantee by themselves. They may lower the objective
+retention time, while 𝑊𝑖𝑛 captures first-order loading carry-through              while still visiting or returning nearly singular coupling matrices unless
+from the influent state. The quadratic blocks then retain the regime              an additional conditioning projection is imposed externally.
+dependence and interaction structure that plant interpretation requires:              This architecture is preferred here over generic stochastic first-order
+𝛩𝑢𝑢 allows operating actions such as aeration to have different marginal          training for three reasons. First, under exact block minimization, each
+effects across regimes, 𝛩𝑢𝑐 captures the fact that the same intervention          block update cannot increase the coupled objective, so the objective
+acts differently under different influent loads, and 𝛩𝑐𝑐 captures cou-            sequence within a restart is monotone non-increasing and converges
+pled loading states such as simultaneous COD–nitrogen or phosphorus-              in value to a stationary point under standard block-successive mini-
+related effects. In that sense, the block structure of 𝐵 remains tied to          mization conditions (Razaviyayn et al., 2013). Second, the optimization
+practical diagnoses of nitrification loss, carbon limitation, and phos-           variables remain attached to interpretable convex subproblems instead
+phorus breakthrough rather than to a purely algebraic expansion. More             of being absorbed into one optimizer trajectory with learning-rate,
+generally, recent hard-constrained learning frameworks likewise em-               momentum, clipping, or epoch-count sensitivity. Third, with fixed ini-
+phasize that nonlinear interaction structure must be retained if one              tialization, restart policy, and solver tolerances, the recursive coupled-
+wants expressive surrogates after equality and inequality constraints             QP route is reproducible in a way that stochastic training need not
+are imposed (Utkarsh et al., 2025).                                               be.
+
+                                                                              5
+E.F. Selerio Jr.                                                                                                      Digital Chemical Engineering 20 (2026) 100329
+
+
+    The solver choices follow the same principle of structural fidelity.       Table 1
+OSQP is used for the convex QP subproblems because the 𝛤 and                   Ranges of the 22 sampled inputs used in the Latin hypercube design.
+𝐶̂ blocks are sparse, box- and non-negativity-constrained quadratic             Variable   Range           Unit          Variable    Range            Unit
+programs (Stellato et al., 2018). The deployment problem in Eq. (12)            HRT        [6.0, 36.0]     h             𝑆𝐼          [10.0, 90.0]     g COD/m3
+is solved with HiGHS because, once 𝑐𝑎𝑓 𝑓 is fixed, the deployed cor-            Aeration   [0.5, 2.5]      –             𝑆𝐴𝐿𝐾        [80.0, 260.0]    mol/m3
+rection is a linear program rather than a quadratic one (Huangfu                𝑆𝑂         [0.0, 0.5]      g O2 /m3      𝑋𝐼          [20.0, 120.0]    g COD/m3
+                                                                                𝑆𝐹         [20.0, 180.0]   g COD/m3      𝑋𝑆          [60.0, 280.0]    g COD/m3
+and Hall, 2018). A second computational advantage comes from the                𝑆𝐴         [5.0, 80.0]     g COD/m3      𝑋𝐻          [15.0, 100.0]    g COD/m3
+hierarchical deployment rule described in Section 2.4: the raw coupled          𝑆NH4       [12.0, 55.0]    g N/m3        𝑋𝑃 𝐴𝑂       [5.0, 60.0]      g COD/m3
+state is checked first, the closed-form affine projection is evaluated          𝑆NO2       [0.0, 3.0]      g N/m3        𝑋𝑃 𝑃        [2.0, 20.0]      g P/m3
+second, and the LP is reserved only for states whose non-negativity             𝑆NO3       [0.0, 8.0]      g N/m3        𝑋𝑃 𝐻𝐴       [1.0, 30.0]      g COD/m3
+                                                                                𝑆𝑁2        [0.0, 2.0]      g N/m3        𝑋𝐴𝑂𝐵        [0.5, 8.0]       g COD/m3
+constraints remain active after those cheaper steps. The manuscript
+                                                                                𝑆PO4       [2.0, 18.0]     g P/m3        𝑋𝑁𝑂𝐵        [0.5, 8.0]       g COD/m3
+therefore presents one definite ICSOR contract: direct component-space                                                   𝑋𝑀𝑒𝑃        [0.0, 12.0]      g TSS/m3
+prediction, explicit learned coupling, invariant-aware training, exact                                                   𝑋MeOH       [0.0, 12.0]      g TSS/m3
+constrained deployment, and deterministic recursive coupled-QP esti-
+mation.
+    The iterative estimator and the accelerated deployment logic can be
+summarized as follows.                                                         denitrification through nitrate and nitrite pathways; fermentation; stor-
+                                                                               age, growth, and lysis pathways for phosphate-accumulating organisms
+    Pseudocode 1. Deterministic recursive coupled-QP training                  (PAO); growth and lysis of ammonia-oxidizing bacteria (AOB) and
+                                                                               nitrite-oxidizing bacteria (NOB); and precipitation-redissolution reac-
+    Input: 𝛷, 𝐶𝑖𝑛 , 𝐶𝑜𝑢𝑡 , 𝐴, solver settings                                  tions for phosphorus-bearing metal solids. The state basis contains 𝐹 =
+    for restart 𝑠 = 1, … , 𝑆 do                                                20 ASM component states, comprising the dissolved variables 𝑆O , 𝑆F ,
+         initialize admissible 𝛤 (0,𝑠) and non-negative 𝐶̂(0,𝑠)                𝑆𝐴 , 𝑆NH4 , 𝑆NO2 , 𝑆NO3 , 𝑆N2 , 𝑆PO4 , 𝑆𝐼 , and 𝑆𝐴𝐿𝐾 together with the
+         compute 𝐵 (0,𝑠) from the corresponding ridge solve and                particulate variables 𝑋𝐼 , 𝑋𝑆 , 𝑋𝐻 , 𝑋𝑃 𝐴𝑂 , 𝑋𝑃 𝑃 , 𝑋𝑃 𝐻𝐴 , 𝑋𝐴𝑂𝐵 , 𝑋𝑁𝑂𝐵 ,
+         project every 𝑄(𝑘)          (𝑘)                                       𝑋MeP , and 𝑋MeOH . The stoichiometric matrix, composition matrix, and
+                            𝑢𝑢 and 𝑄𝑐𝑐 onto the symmetric subspace
+         for 𝑡 = 0, … , 𝑇max − 1 do                                            the kinetic and stoichiometric parameter tables used for the adopted
+               update 𝐵 (𝑡+1,𝑠) via Eq. (14) and project every 𝑄(𝑘)
+                                                                𝑢𝑢 and
+                                                                               ASM2d-TSN implementation are provided in the Supplementary Excel
+               𝑄(𝑘)
+                 𝑐𝑐 onto the symmetric subspace
+                                                                               file.
+               update 𝛤 (𝑡+1,𝑠) via Eq. (15)                                       For every simulated steady state, the reported outputs were com-
+               enforce zero diagonal, box bounds, and 𝜅(𝐼𝐹 − 𝛤 (𝑡+1,𝑠) )       puted externally from the component state through the same composi-
+               ≤ 𝜅max                                                          tion matrix 𝐼𝑐𝑜𝑚𝑝 used throughout the study. The reported output basis
+               update 𝐶̂(𝑡+1,𝑠) via Eq. (16)                                   therefore contains 𝐾 = 4 composites: chemical oxygen demand (COD),
+               compute 𝐽 (𝑡+1,𝑠) via Eq. (17) and record its running           total nitrogen (TN), total phosphorus (TP), and total suspended solids
+               minimum                                                         (TSS). The composite calculations are not unique to ICSOR; they are
+               if the trailing objective slope is below tolerance then         part of the benchmark-data construction used for every model family.
+               stop the restart                                                    Table 1 introduces the full Latin hypercube design used to generate
+         end for                                                               the benchmark. The table is organized to distinguish the two manip-
+    end for                                                                    ulated operating variables from the soluble and particulate influent-
+    retain the feasible restart with the smallest recorded objective           component ranges, because those groups play different roles in the
+    Output: 𝐵,̂ 𝛤̂, 𝐶̂                                                         study: the operating variables define the reactor environment, whereas
+                                                                               the influent components define the loading state presented to that
+    Pseudocode 2. Hierarchical deployment with affine presolve                 environment. Read row-wise, the table gives the admissible interval
+                                                                               for each of the 22 sampled inputs and therefore specifies the envelope
+                        ̂ 𝛤̂, 𝐴
+    Input: 𝑢∗ , 𝑐𝑖𝑛,∗ , 𝐵,                                                     within which the steady-state simulations, surrogate fitting, and later
+    form 𝜙∗ and compute the raw coupled state 𝑐𝑟𝑎𝑤 = (𝐼𝐹 − 𝛤̂)−1 𝐵𝜙̂ ∗         benchmarking claims are valid.
+    if 𝑐𝑟𝑎𝑤 is invariant-consistent and non-negative then return 𝑐𝑟𝑎𝑤              Within Table 1, the first two rows define the controllable reactor set-
+    compute the closed-form affine invariant projection 𝑐𝑎𝑓 𝑓 via              tings and the remaining rows define the influent composition envelope.
+    Eq. (11)                                                                   The soluble-state bounds cover oxygen, carbon, nitrogen, phosphorus,
+    if 𝑐𝑎𝑓 𝑓 is non-negative then return 𝑐𝑎𝑓 𝑓                                 inert, and alkalinity loadings, while the particulate-state bounds cover
+    solve the deployment LP in Eq. (12) with 𝑐𝑎𝑓 𝑓 as the reference            inert solids, biodegradable substrate, biomass pools, storage polymers,
+    state                                                                      and precipitated solids. That separation matters later when interpreting
+    return the projected state 𝑐̂                                              ICSOR coefficients, because the model treats operating conditions and
+                                                                               influent components as distinct blocks in both feature construction and
+3. Methodology                                                                 physical correction.
+
+3.1. ASM2d-TSN process model, state basis, and reported composites             3.2. Simulation protocol, initialization, and steady-state acceptance
+
+    The benchmark was generated from a standalone steady-state con-                The 22-dimensional sampling domain, consisting of the two op-
+tinuous stirred tank reactor based on Activated Sludge Model No.               erating variables and the 20-component influent state, was explored
+2d with two-step nitrification (ASM2d-TSN). The ASM2d-TSN imple-               by Latin hypercube sampling with random seed 42 (McKay et al.,
+mentation follows Guerrero et al. (2011), which was adopted as the             1979). Sampling continued until 10,000 valid steady states had been
+basis for the process model; all stoichiometric values and simulation          accepted. The complete accepted simulation dataset is provided as a
+rate coefficients used here were taken from that study. The adopted            Supplementary CSV file. At every sampled operating-influent point, the
+process model contains 𝑁𝑟𝑥𝑛 = 28 coupled biological and chemical pro-          steady-state ASM balance equations were solved under box constraints
+cesses spanning aerobic, anoxic, and anaerobic hydrolysis; aerobic het-        by nonlinear least squares with lower and upper state bounds of 10−8
+erotrophic growth on fermentable substrate and acetate; heterotrophic          and 1500, variable, residual, and gradient tolerances of 10−9 , and a
+
+                                                                           6
+E.F. Selerio Jr.                                                                                                                Digital Chemical Engineering 20 (2026) 100329
+
+
+Table 2
+Initialization heuristics used for the steady-state nonlinear solve.
+ Quantity                     Primary initialization                                                                             Multistart initialization
+                                    (𝑝𝑟𝑒𝑣)
+ Base state                   0.55 𝑐𝑜𝑢𝑡    + 0.45 𝑐𝑖𝑛 when a previous accepted state exists; otherwise influent-based            Primary initialization reused as base state
+ 𝑆𝐴 and 𝑆𝐹                    70% of the base value                                                                              35% of the primary value
+ 𝑋𝐻                           max(base, 0.25 𝑋𝑆 )                                                                                max(primary, 0.45 𝑋𝑆 )
+ 𝑋𝑃 𝐴𝑂                        max(base, 1.2 𝑋𝑃 𝑃 )                                                                               max(primary, 1.8 𝑋𝑃 𝑃 )
+ 𝑋𝐴𝑂𝐵                         max(base, 0.03 𝑆NH4 )                                                                              max(primary, 0.08 𝑆NH4 )
+ 𝑋𝑁𝑂𝐵                         max(base, 0.10 𝑆NO2 )                                                                              max(primary, 0.25 𝑆NO2 )
+                              𝐷 𝑆𝑂(𝑝𝑟𝑒𝑣) + 𝑘𝐿 𝑎 𝑆𝑂𝑠𝑎𝑡
+ 𝑆𝑂                                                   with 𝐷 = 24∕HRT, 𝑘𝐿 𝑎 = 2.0 + 18.0 Aeration, and 𝑆𝑂𝑠𝑎𝑡 = 8.5               Inherited from the primary initialization
+                                    𝐷 + 𝑘𝐿 𝑎
+ Bounds                       Clipped to [10−6 , 1500]                                                                           Clipped to [10−6 , 1500]
+
+
+
+maximum of 1200 function evaluations. Up to 25 candidate attempts                            ASM component concentrations. Every model was trained against the
+were permitted per target sample so that infeasible operating-influent                       same 20-component effluent targets in ASM component space, and the
+draws could be replaced without changing the prescribed sample count.                        same external composition map was then used to compute COD, TN,
+    The nonlinear solve was supplied with two physically informed                            TP, and TSS from those predicted component states. The benchmark
+initializations. The primary initialization blended the current influ-                       therefore holds fixed the sampled operating conditions, the training
+ent state with the previous accepted steady state, promoted biomass                          targets, and the composite-reporting rule across all model families.
+pools with comparatively slow decay and demonstrated resilience                              The methodological distinction lies only in the internal structure used
+across nearby operating conditions (Wentzel et al., 1992; Yilmaz et al.,                     to estimate the component state: ICSOR predicts the 20-component
+2007), and estimated dissolved oxygen from the hydraulic-dilution                            effluent state under invariant and non-negativity constraints using 𝑐𝑖𝑛
+and oxygen-transfer balance. A second multistart initialization then                         as the invariant reference in training and deployment, whereas the
+applied stronger substrate depletion and stronger biomass enrichment                         unconstrained regressors map the same 22-dimensional input directly
+to probe alternative feasible basins. Both initializations were clipped to                   to an unconstrained 20-component effluent prediction.
+the admissible state bounds before optimization. If neither initialization                       This common component-space training target determines the com-
+yielded a solution whose maximum absolute residual was no greater                            parison protocol. The classical regressors were fitted without invariant-
+than 10−9 , the model was dynamically relaxed for 20 days with a stiff                       aware penalties, a coupled non-negative fitted-state variable, or a
+backward differentiation formula integrator (Curtiss and Hirschfelder,                       constrained deployment rule. One could append post-prediction treat-
+1952) and the terminal state of that dynamic relaxation was reused as                        ments such as analytic projection, null-space completion, conservative
+a new steady-state guess. Only converged steady states that satisfied                        reconciliation, Bayesian correction, or positivity-preserving adjustment
+the residual-acceptance threshold were retained, so the final dataset                        (Beucler et al., 2021; Hansen et al., 2024; Kircher and Votsmeier, 2025;
+contains only biologically viable operating points.                                          Min et al., 2024; Sturm and Silva, 2025; Sturm and Wexler, 2020,
+    Table 2 summarizes these two initialization routes in the exact order                    2022; Utkarsh et al., 2025), but that protocol was not applied to the
+they were applied. The table should be read as a decision aid for                            baselines here. ICSOR differs in two distinct respects that should not be
+the nonlinear solver: the primary column defines the first physically                        conflated: its regression head is trained with soft invariant and coupled-
+informed guess used at each sampled operating point, and the mul-                            system penalties and a non-negative auxiliary fitted state, while exact
+tistart column defines the more aggressive fallback used to probe an                         conservation and non-negativity are imposed only on the final state
+alternative feasible basin before dynamic relaxation is invoked. Each                        returned by its deployment correction.
+row isolates one part of that initialization logic so that the steady-state
+acceptance protocol can be reproduced without ambiguity.                                     3.4. Benchmark models and Optuna hyperparameter design
+    The structure of Table 2 reflects the intended solver behavior. The
+base-state row carries forward information from the previous accepted                            The benchmark comprised ICSOR and nine unconstrained regres-
+steady state when that information exists, which improves continuity                         sors: XGBoost, LightGBM, CatBoost, AdaBoost, Random Forest, Support
+across neighboring Latin hypercube samples. The substrate and biomass                        Vector Regression, 𝑘-Nearest Neighbors, Partial Least Squares, and
+rows then bias the initialization toward biologically plausible regimes                      one fully connected multilayer perceptron (MLP). The MLP baseline
+by partially depleting readily consumed substrates and preserving key                        contained three hidden layers of widths 128, 64, and 32, used lo-
+biomass pools. The dissolved-oxygen row supplies a separate process-                         gistic activation, and mapped the 22-dimensional input vector to the
+based estimate tied to hydraulic dilution and oxygen transfer, and                           20-component effluent state.
+the bounds row ensures that every initialization remains inside the                              Fig. 1 summarizes the retained MLP architecture so that its input
+admissible numerical domain before the nonlinear least-squares solve                         stage, hidden layers, output stage, and dense inter-layer connectivity
+begins.                                                                                      are visually distinguished from the other benchmark models. The Op-
+                                                                                             tuna configuration used to tune every retained model is summarized
+3.3. Constraint operators, benchmark dataset, and common training targets                    in Table 3. The selected ICSOR settings are then listed separately
+                                                                                             in Table 4 because that model carries the additional coupled and
+    The invariant operator 𝐴 used by ICSOR was built from the same                           constraint-aware hyperparameters that do not appear in the uncon-
+stoichiometric model that generated the dataset. Specifically, if 𝜈 ∈                        strained baselines. For the remaining baselines, Table 5 groups the
+R28×20 denotes the ASM2d-TSN Petersen matrix, then 𝐴 was obtained                            selected settings for the tree-based regressors, Table 6 groups the
+as a basis for the left null space of 𝜈 so that 𝐴𝜈 𝑇 = 0 and hence 𝐴𝑐𝑜𝑢𝑡 =                   kernel, instance-based, and linear regressors, and Table 7 reports the
+𝐴𝑐𝑖𝑛 for admissible steady states. The null-space basis was obtained                         final MLP-specific configuration. Taken together, these tables document
+by singular value decomposition of 𝜈 𝑇 , after which the retained basis                      both the common tuning contract and the final model-specific settings
+vectors were transposed into row form, rounded for numerical stability,                      used in the benchmark and repeated dataset-size study.
+thresholded to remove negligible coefficients, and normalized by the                             All retained models were assigned Optuna studies under a common
+first non-zero coefficient in each row.                                                      tuning design (Akiba et al., 2019). Hyperparameter selection minimized
+    A single benchmark dataset was constructed from the accepted                             validation mean squared error in the shared 20-component effluent
+steady states. Every model used the same exact 22 physical inputs,                           prediction space using a seeded tree-structured Parzen estimator sam-
+namely hydraulic retention time, aeration level, and the 20 influent                         pler (Bergstra et al., 2011), a no-pruning policy, and 100 trials per
+
+                                                                                         7
+E.F. Selerio Jr.                                                                                                       Digital Chemical Engineering 20 (2026) 100329
+
+
+
+
+Fig. 1. Architecture of the retained fully connected MLP baseline. The input and output stages are shown as labeled rectangular blocks to distinguish them from
+the hidden-layer neurons, which are shown as circular vertices. Representative vertices are displayed for the 22-input stage, the three hidden layers of widths
+128, 64, and 32, and the 20-component effluent output stage, while the edge pattern indicates dense inter-layer connectivity between successive layers.
+
+
+Table 3                                                                              test rows. The unconstrained regressors were standardized by z-score
+Common Optuna design used for all retained models.                                   transformations fit on the training split only, separately for the 22-
+ Setting                                      Value                                  input feature matrix and the 20-output effluent-component matrix, to
+ Objective                                    Validation mean squared error          avoid preprocessing leakage from held-out data (Ba-Alawi et al., 2021;
+ Optimization direction                       Minimize                               Pinheiro et al., 2025), and their predictions were inverse-transformed
+ Sampler                                      Tree-structured Parzen estimator
+                                                                                     before external composite calculation and metric evaluation. ICSOR
+ Pruning policy                               None
+ Study seed                                   42                                     was kept in physical coordinates so that the invariant operator 𝐴,
+ Trials per model                             100                                    the coupled deployment rule, and the external reporting map 𝐼𝑐𝑜𝑚𝑝
+ Training-pool fraction for tuning            0.50                                   remained aligned with the formulation of Section 2. For all models,
+ Validation fraction within tuning subset     0.20                                   COD, TN, TP, and TSS were computed from the predicted component
+ Tuning-training rows                         3200
+ Tuning-validation rows                       800
+                                                                                     states through the same composition map, after which aggregate 𝑅2 ,
+ Timeout                                      None                                   root mean squared error, mean absolute error, and mean absolute
+                                                                                     percentage error and per-target root mean squared error were reported
+                                                                                     over those four composites.
+                                                                                         For the predictive-accuracy comparison, ICSOR was evaluated at
+Table 4                                                                              its final checked deployment output. The comparator regressors were
+Optuna-selected ICSOR hyperparameters.                                               evaluated after the benchmark’s common equality-only affine align-
+ Parameter                                                      Selected value       ment, followed by the same external composition map; this alignment
+ include_bias_term                                              True                 enforces the reporting invariants but does not impose component non-
+ 𝜆𝑖𝑛𝑣                                                           8.68 × 10−3          negativity and is not the ICSOR LP. Raw-head physical-admissibility
+ 𝜆𝑠𝑦𝑠                                                           1.27 × 10−3          frequencies are reported separately so that this numerical alignment is
+ 𝜆𝐵                                                             6.09 × 10−5
+ 𝜆𝛤                                                             6.55 × 10−4
+                                                                                     not mistaken for a property learned by an unconstrained regressor.
+ 𝛾𝑎𝑏𝑠                                                           0.368                    Sample-efficiency, computational scaling, and ranking stability were
+ max_outer_iterations                                           60                   examined through a repeated dataset-size analysis based on repeated
+ n_restarts                                                     1                    random train-test evaluations at each retained size. The 10,000-sample
+ objective_regression_window                                    12
+                                                                                     benchmark was subsampled without replacement at total sizes of 500,
+ objective_regression_slope_tolerance                           2.85 × 10−7
+                                                                                     1450, 2400, 3350, 4300, 5250, 6200, 7150, 8100, 9050, and 10,000
+                                                                                     rows. At each retained total size, ten independent subsamples were
+                                                                                     drawn from the full benchmark using deterministic seeds derived from
+model. The authoritative 8000-row training pool was first reduced to                 the base seed 42, and each subsample was split row-wise into an 80%
+a 4000-row tuning subset, corresponding to 50% of the training pool,                 training partition and a 20% held-out test partition using the same
+and that subset was then partitioned with a 20% validation fraction,                 deterministic seed for that run. All ten retained models were trained
+yielding 3200 tuning-training rows and 800 tuning-validation rows.                   and evaluated under the same size schedule, seed construction, and
+No wall-clock timeout was imposed. Once the Optuna studies were                      train-test fraction, so that observed performance differences at a given
+completed, the final selected hyperparameters were fixed and reused                  size reflect model structure rather than differences in protocol. This
+for the one-shot benchmark and the repeated dataset-size analysis.                   study contract yielded 110 train-test re-estimations per model across
+                                                                                     the full size sweep (11 retained sizes × 10 repeated runs per size).
+3.5. Evaluation protocol                                                             The Optuna-selected settings listed above were held fixed throughout
+                                                                                     this sweep so that the resulting learning curves isolated sample-size
+   A single row-wise 80–20 train-test split with random seed 42 was                  sensitivity and run-to-run variability rather than retuning noise. For
+used for the one-shot benchmark, yielding 8000 training rows and 2000                every fit within this sweep, wall-clock training time was recorded,
+
+                                                                                 8
+E.F. Selerio Jr.                                                                                                                              Digital Chemical Engineering 20 (2026) 100329
+
+
+                           Table 5
+                           Optuna-selected hyperparameters for the tree-based regressors.
+                               Model                  Selected settings
+                               XGBoost                𝑛𝑒𝑠𝑡𝑖𝑚𝑎𝑡𝑜𝑟𝑠 = 309, learning_rate = 0.125, max_depth = 3, min_child_weight = 6.84, subsample = 0.915,
+                                                      colsample_bytree = 0.828, reg_alpha = 1.18 × 10−3 , reg_lambda = 0.382
+                               LightGBM               𝑛𝑒𝑠𝑡𝑖𝑚𝑎𝑡𝑜𝑟𝑠 = 302, learning_rate = 0.0809, num_leaves = 16, max_depth = 8, min_child_samples = 14,
+                                                      subsample = 0.845, colsample_bytree = 0.869, reg_alpha = 3.17 × 10−3 , reg_lambda = 3.36 × 10−4
+                               CatBoost               iterations = 236, learning_rate = 0.172, depth= 4, l2_leaf_reg = 0.0266, bagging_temperature = 0.0277,
+                                                      random_strength = 0.0657
+                               AdaBoost               𝑛𝑒𝑠𝑡𝑖𝑚𝑎𝑡𝑜𝑟𝑠 = 236, learning_rate = 0.999, loss = square
+                               Random Forest          𝑛𝑒𝑠𝑡𝑖𝑚𝑎𝑡𝑜𝑟𝑠 = 390, max_depth = 14, min_samples_split = 3, min_samples_leaf = 1, max_features = 0.500,
+                                                      bootstrap = false
+
+
+                           Table 6
+                           Optuna-selected hyperparameters for the kernel, instance-based, and linear regressors.
+                               Model                   Selected settings
+                               SVR                     𝐶 = 0.118, epsilon = 0.0458, kernel = poly, gamma = scale, degree= 4, tol= 8.96 × 10−4 , coef0 = 0.889
+                               𝑘-NN                    n_neighbors = 15, weights = distance, algorithm = kd_tree, leaf_size = 40, 𝑝 = 2, metric = manhattan
+                               PLS                     n_components = 6, max_iter = 887, tol = 9.91 × 10−5
+
+
+Table 7                                                                                             Table 8
+Optuna-selected hyperparameters for the retained fully connected ANN.                               Fixed-split 80–20 test performance in the reported-composite space. ICSOR is
+ Parameter                                                                   Selected value         evaluated after its checked deployment rule; comparator predictions receive
+                                                                                                    the benchmark’s common equality-only affine alignment before external com-
+ hidden_layer_sizes                                                          (128, 64, 32)
+ Activation                                                                  Logistic               position collapse.
+ Solver                                                                      Adam                    Model                     RMSE             MAE             𝑅2                MAPE
+ Alpha                                                                       6.33 × 10−4             MLP                       4.38             2.55            0.9915            0.0123
+ batch_size                                                                  64                      LightGBM                  5.30             3.21            0.9806            0.0203
+ learning_rate_init                                                          1.08 × 10−3             SVR                       5.97             3.49            0.9713            0.0244
+ max_iter                                                                    500                     ICSOR                     5.98             3.70            0.9700            0.0256
+ tol                                                                         1.63 × 10−5             XGBoost                   6.12             3.81            0.9733            0.0244
+ Shuffle                                                                     False                   CatBoost                  6.45             4.07            0.9727            0.0250
+ early_stopping                                                              False                   AdaBoost                  21.27            13.15           0.8643            0.0653
+                                                                                                     𝑘-NN                      23.61            13.87           0.8535            0.0557
+                                                                                                     PLS                       28.24            17.05           0.7808            0.0681
+                                                                                                     Random Forest             29.00            16.93           0.7934            0.0632
+and computational scaling with dataset size was summarized from
+the distribution of training seconds across the ten repeated runs at
+each retained size. Predictive-performance ranking was based primarily
+on the mean held-out RMSE over the repeated runs, computed from                                     so positive values indicate that the training partitions outperformed the
+the final reported composite outputs, and was supplemented by held-                                 held-out test partitions.
+out MAE, MSE, MAPE, 𝑅2 , a normalized area-under-the-learning-curve                                     Physical-admissibility diagnostics were evaluated before external
+summary, dense average rank across target-metric-size combinations,                                 composition collapse. To distinguish learned feasibility from post-
+and the train-validation RMSE gap at the largest retained dataset size.                             processing, Table 11 uses the final checked ICSOR output but the direct
+Area-under-learning-curve summaries have prior use in the learning-                                 raw-head output of each unconstrained comparator; Section 4.3 reports
+curve and active-learning literature (Cawley, 2011; Guyon et al., 2011;                             the raw, affine, and final ICSOR stages separately. For a component
+Viering and Loog, 2023). Here, a simple linear normalization over                                   prediction 𝑐, ̃ mass-conservation violation was quantified by 𝑣𝑚𝑐 =
+retained dataset size was used. Writing 𝑀 ̄ 𝑖,𝑚 (𝑛) for the mean held-out                           ‖𝐴(𝑐̃ − 𝑐𝑖𝑛 )‖2 , and non-negativity violation was quantified by 𝑣𝑛𝑛 =
+metric of model 𝑖 at dataset size 𝑛 and metric 𝑚 over the repeated runs,                            ‖ min(𝑐,
+                                                                                                          ̃ 0)‖1 , where the minimum is taken componentwise. A sample
+the normalized area under the learning curve was computed by                                        was counted as violating mass conservation or non-negativity when the
+                             max 𝑛                                                                  corresponding quantity exceeded a numerical tolerance of 10−10 . For
+                    1            ̄ 𝑖,𝑚 (𝑛) 𝑑𝑛,
+nAUC𝑖,𝑚 =                        𝑀                                                      (18)        each model, violation frequency was reported as the percentage of test
+                          ∫
+               𝑛max − 𝑛min 𝑛min
+                                                                                                    samples that violated each condition.
+evaluated numerically by the trapezoidal rule over the sampled dataset
+sizes. For each metric 𝑚, target 𝑘, and size 𝑛, models were assigned a
+                                                                                                    4. Results and discussion
+dense rank 𝑟𝑖,𝑚,𝑘 (𝑛) from the mean held-out metric over repeated runs,
+with lower-is-better ordering for RMSE, MAE, MAPE, and MSE and
+                                                                                                    4.1. Overall benchmark performance on the fixed train-test split
+higher-is-better ordering for 𝑅2 ; this rank-based aggregation follows the
+same general benchmarking logic used for cross-dataset average-rank
+summaries in machine-learning evaluation (Demšar, 2006; Shevchenko                                      Table 8 summarizes the fixed 80–20 benchmark after each model’s
+et al., 2024), and the metric-specific average rank and overall average                             predicted ASM component state has been collapsed through the same
+rank were then                                                                                      external composition map to COD, TN, TP, and TSS. Aggregate test
+                                                                                                    RMSE is adopted as the primary ordering metric because it measures
+           1 ∑∑                                    1 ∑
+               𝐾   𝑆
+𝑟̄𝑖,𝑚 =             𝑟     (𝑛 ),           𝑟̄𝑖 =          𝑟̄ ,                           (19)        error in the same reported-composite space used throughout the com-
+          𝐾𝑆 𝑘=1 𝑠=1 𝑖,𝑚,𝑘 𝑠                      || 𝑚∈ 𝑖,𝑚                                       parison. On that criterion, the retained models separate into a leading
+where  = {RMSE, MAE, 𝑅2 , MAPE, MSE}. At the largest retained                                      group and a trailing group. The MLP attains the lowest aggregate
+dataset size 𝑛max , the train-validation RMSE gap was                                               RMSE (4.38), MAE (2.55), 𝑅2 (0.9915), and MAPE (0.0123); LightGBM
+                                                                                                    follows at RMSE 5.30; and SVR and ICSOR are closely spaced at 5.97
+                         val                       train
+𝛥RMSE
+ 𝑖    (𝑛max ) = RMSE𝑖 (𝑛max ) − RMSE𝑖                      (𝑛max ),                     (20)        and 5.98, respectively.
+
+                                                                                                9
+E.F. Selerio Jr.                                                                                                        Digital Chemical Engineering 20 (2026) 100329
+
+
+Table 9                                                                           Table 10
+Per-target fixed-split test RMSE for the retained models in the reported-         Summary of the repeated dataset-size benchmark. Final RMSE and 𝛥RMSE
+composite space.                                                                  are evaluated at the largest retained dataset size, and lower values are better
+ Model                  COD            TN            TP            TSS            for all columns except that a smaller 𝛥RMSE indicates less train-validation
+                                                                                  separation.
+ MLP                    6.48           1.58          0.0361        5.66
+ LightGBM               7.59           2.77          0.0361        6.85            Model             Final RMSE     RMSE nAUC        Sample Avg. rank       𝛥RMSE
+ SVR                    8.87           3.50          0.0361        7.20            MLP               4.62           6.75             2.5                    0.65
+ ICSOR                  7.77           3.55          0.0361        8.36            LightGBM          5.27           6.35             2.2                    1.99
+ XGBoost                8.78           3.27          0.0361        7.88            SVR               5.84           6.90             4.0                    1.19
+ CatBoost               9.13           3.23          0.0361        8.53            ICSOR             5.94           6.33             4.3                    0.22
+ AdaBoost               38.30          5.58          0.0361        17.68           XGBoost           6.10           7.01             4.3                    1.44
+ 𝑘-NN                   38.24          4.23          0.0361        27.37           CatBoost          6.26           7.60             5.0                    0.69
+ PLS                    43.22          5.09          0.0361        36.00           AdaBoost          21.42          20.29            8.2                    0.23
+ Random Forest          45.87          4.00          0.0361        35.26           𝑘-NN              23.76          25.77            7.0                    23.66
+                                                                                   PLS               27.96          30.17            9.4                    0.38
+                                                                                   Random Forest     28.78          30.31            8.2                    18.71
+
+    In terms of predictive accuracy on the fixed split, the MLP attains
+the lowest error among the retained baselines and LightGBM attains the
+lowest among the tree-based methods. ICSOR does not attain the lowest             unconstrained baselines with the lowest pointwise errors also tend to
+aggregate RMSE: its final deployed outputs give 5.98, which is 36.5%              rank well on a broader set of criteria. ICSOR’s sample-average rank of
+higher than the MLP value of 4.38 and 12.8% higher than the LightGBM              4.3 is comparable to that of XGBoost (4.3), suggesting that its low-data
+value of 5.30. ICSOR remains within 0.01 of SVR and below XGBoost                 advantage, while observable, does not translate into a dominant rank
+and CatBoost. These results define a moderate accuracy–feasibility                across the full evaluation grid.
+tradeoff. Under the stated reporting protocol, the comparator values                  The generalization behavior observed in Table 10 warrants separate
+include the common equality-only affine alignment but no LP non-                  attention. The train–validation RMSE gap of ICSOR at the largest
+negativity correction, whereas ICSOR is evaluated after its complete              retained dataset size is 0.22, lower than those of LightGBM (1.99),
+checked deployment rule.                                                          XGBoost (1.44), SVR (1.19), and the MLP (0.65). PLS also exhibits a
+    Table 9 indicates that the aggregate ordering is driven primar-               small gap (0.38), but its training and held-out errors are both large,
+ily by COD, TN, and TSS. The MLP attains the lowest RMSE on all                   consistent with high-bias underfitting and prior evidence that linear
+three of those composites, while LightGBM attains the lowest among                PLS can mis-specify strongly nonlinear wastewater behavior (Geman
+the non-neural methods. On COD alone, ICSOR (RMSE 7.77) is 0.18                   et al., 1992; Woo et al., 2009). The repeated-size analysis therefore
+above LightGBM and below XGBoost, CatBoost, SVR, and the remaining                indicates comparatively small train–validation separation for ICSOR,
+baselines. Its larger TN and TSS errors, however, prevent that COD per-           while the fixed-split results in Section 4.1 still show the moderate
+formance from translating into a correspondingly favorable aggregate              absolute accuracy tradeoff relative to the MLP and LightGBM.
+rank. TP contributes negligibly to model differentiation: the equality-
+                                                                                      Fig. 3 shows that this favorable generalization comes at a cost in
+aligned reported outputs give an RMSE of 0.0361 for every retained
+                                                                                  training time. At the smallest retained dataset size of 500 rows, ICSOR
+method. The per-target decomposition therefore suggests that, once
+                                                                                  requires a mean of 21.5 s, compared with 4.72 s for LightGBM, 3.16 s
+phosphorus prediction is effectively saturated, the observable model
+                                                                                  for XGBoost, and 4.99 s for the MLP. At the full 10,000-row dataset
+separation arises from carbon, nitrogen, and suspended-solids behavior.
+                                                                                  size, ICSOR rises to 94.4 s, which is slower than the tree-based models
+    Because the leading fixed-split models remain closely spaced on
+                                                                                  (4.13–8.13 s), PLS (0.228 s), and 𝑘-NN (2.70 s), but remains below
+aggregate RMSE, a single train-test partition does not suffice to charac-
+terize sample efficiency or ranking stability. The repeated dataset-size          AdaBoost (117.7 s), SVR (136.8 s), and the MLP (161.6 s). The recursive
+study described below provides a broader basis for distinguishing mod-            coupled-QP route is therefore more expensive than the fastest retained
+els whose performance on one split may not generalize from those that             methods at every retained size, but it does not become the costliest
+remain competitive as the amount of training data varies.                         option at the larger dataset scales and remains practical for offline
+                                                                                  surrogate fitting.
+4.2. Sample efficiency, ranking stability, and generalization
+                                                                                  4.3. Physical admissibility and deployment behavior
+    Fig. 2 shows a pattern that the fixed split alone does not capture: at
+the smallest retained dataset size of 500 rows, ICSOR attains the lowest
+                                                                                      Table 11 reports the final checked ICSOR output alongside the
+mean held-out RMSE (10.79) among the retained models, followed by
+                                                                                  direct raw-head outputs of the unconstrained comparators. The ICSOR
+XGBoost (11.26) and LightGBM (11.45), while the MLP ranks fifth
+                                                                                  deployment pipeline is the only retained pipeline that produces 0.0%
+(13.26). As dataset size increases, however, the ordering shifts. By
+                                                                                  mass-conservation violations and 0.0% non-negativity violations on
+the full 10,000-row dataset size, the MLP attains the lowest RMSE
+                                                                                  the reported component-space test predictions. Every unconstrained
+(4.62), followed by LightGBM (5.27), SVR (5.84), and ICSOR (5.94).
+                                                                                  baseline raw head violates conservation on 100% of the test samples.
+This crossover is consistent with broader learning-curve and hybrid-
+modeling literature, in which models with stronger structural priors              Non-negativity violation frequencies vary across models, ranging from
+can be more sample-efficient at small 𝑁, whereas more flexible uncon-             0.0% for AdaBoost, Random Forest, and 𝑘-NN to 70.1% for CatBoost,
+strained models may overtake them once sufficient data are available              68.65% for SVR, 64.95% for XGBoost, 58.2% for the MLP, 48.7% for
+(Viering and Loog, 2023; Shen et al., 2023).                                      PLS, and 46.0% for LightGBM.
+    Table 10 condenses the repeated-size sweep into four summary                      The zero non-negativity frequency for AdaBoost, Random Forest,
+statistics. ICSOR attains the lowest RMSE nAUC (6.33), indicating that            and 𝑘-NN should not be interpreted as full physical admissibility. These
+its average RMSE profile across the full range of retained dataset                regressors still violate the invariant conservation relations on every
+sizes is favorable even though it does not attain the lowest final-size           test sample, but their componentwise predictions are formed through
+RMSE. LightGBM attains the lowest sample-average rank (2.2) and the               aggregation rules that can preserve non-negativity when trained on
+MLP is second (2.5), indicating that when the evaluation is broadened             nonnegative concentration targets: Random Forest averages nonnega-
+across all reported metrics, targets, and retained dataset sizes, the             tive leaf responses, 𝑘-NN averages nonnegative neighbor responses, and
+
+                                                                             10
+E.F. Selerio Jr.                                                                                                     Digital Chemical Engineering 20 (2026) 100329
+
+
+
+
+Fig. 2. Repeated dataset-size learning curves from the repeated random train-test evaluations at each retained size. Lines show the mean held-out RMSE across
+the retained dataset-size sweep, and shaded bands show the interquartile range across the ten repeated runs at each size.
+
+
+
+
+Fig. 3. Repeated dataset-size runtime curves for the retained models. Lines show the mean training time across repeated runs and shaded bands show the
+interquartile range across the ten repeated runs at each size; the 𝑦-axis is logarithmic to keep the full cost spread readable.
+
+
+AdaBoost combines nonnegative tree responses through a weighted-                  component-level predictions. AdaBoost, Random Forest, and 𝑘-NN re-
+median ensemble rule. Their reported 0.0% non-negativity rate there-              main nonnegative on the test set, yet all three still violate the stoi-
+fore reflects the geometry of these unconstrained predictors in the               chiometric invariants on every sample; positivity alone therefore does
+positive orthant, not enforcement of stoichiometric feasibility.                  not recover consistent material bookkeeping. Conversely, several of
+   These diagnostics illustrate why predictive accuracy in the reported           the models with the lowest aggregate RMSE, including the MLP and
+composite space does not by itself ensure physically interpretable                LightGBM, violate the conserved material inventories on every test
+
+                                                                             11
+E.F. Selerio Jr.                                                                                                                Digital Chemical Engineering 20 (2026) 100329
+
+
+Table 11                                                                               Table 12
+Physical-admissibility violation frequencies for the final checked ICSOR output        Retained coefficients in the COD raw-head structure. The reported-output
+and the direct raw-head outputs of the unconstrained comparators. Mass                 blocks use 10−4 of the largest absolute COD raw-head coefficient (4.7332 ×
+conservation and non-negativity are assessed before external composition               10−3 ); the shared 𝛤 block uses 10−4 of its own largest off-diagonal magnitude
+collapse.                                                                              (3.6803 × 10−5 ). Symmetric quadratic totals count only unique upper-triangular
+ Model                  Mass-conservation         Non-negativity violations (%)        terms.
+                        violations (%)                                                  Coefficient block       Total coeffs.         Retained coeffs.         % Retained
+ MLP                    100.0                     58.20                                 𝑏                       1                     1                        100.0
+ LightGBM               100.0                     46.00                                 𝑊𝑢                      2                     2                        100.0
+ SVR                    100.0                     68.65                                 𝑊𝑖𝑛                     20                    19                       95.0
+ ICSOR                  0.0                       0.0                                   𝛩𝑢𝑢                     3                     3                        100.0
+ XGBoost                100.0                     64.95                                 𝛩𝑢𝑐                     40                    29                       72.5
+ CatBoost               100.0                     70.10                                 𝛩𝑐𝑐                     210                   44                       21.0
+ AdaBoost               100.0                     0.0                                   𝛤                       380                   371                      97.6
+ 𝑘-NN                   100.0                     0.0                                   Overall summary         656                   469                      71.5
+ PLS                    100.0                     48.70
+ Random Forest          100.0                     0.0
+
+
+                                                                                       (−1.3055 × 10−1 ), 𝑋𝑁𝑂𝐵 (−1.0182 × 10−1 ), and 𝑆NO2 (−9.4127 × 10−2 ).
+                                                                                       Under the ordered Kronecker convention, a displayed off-diagonal
+sample and produce negative component concentrations on a substan-
+                                                                                       value 𝑞𝑖𝑗 = 𝑞𝑗𝑖 contributes (𝑞𝑖𝑗 + 𝑞𝑗𝑖 )𝑥𝑖 𝑥𝑗 = 2𝑞𝑖𝑗 𝑥𝑖 𝑥𝑗 to the polyno-
+tial fraction of the test set. A surrogate may thus appear accurate in
+                                                                                       mial, so cell values and combined unordered cross-term coefficients
+the reported composite space while producing component-level states
+                                                                                       are not interchangeable. The concentration of the largest raw-head
+that are not physically admissible, a mismatch that has also been doc-
+                                                                                       curvatures around dissolved oxygen, nitrogen-linked states, and phos-
+umented in atmospheric-composition and reaction-kinetics surrogates
+                                                                                       phorus/metal components is consistent with the nonlinear switching
+when favorable aggregate error metrics obscure physically unaccept-
+                                                                                       and coupled nutrient-removal behavior represented in activated-sludge
+able species- or component-level behavior (Kircher and Votsmeier,
+                                                                                       models (Henze et al., 2006; Stenstrom and Song, 1991; de Araujo et al.,
+2025; Sturm and Silva, 2025).
+                                                                                       2013; Wentzel et al., 1992). These associations describe the fitted pre-
+    The staged deployment logic can also be examined at the level of
+                                                                                       deployment map and should not be interpreted as causal effects or as
+individual correction stages. None of the raw coupled test predictions
+                                                                                       global sensitivities of the final deployed state.
+was simultaneously invariant-consistent and non-negative: raw feasi-
+bility was 0.0%, raw conservation compliance was 0.0%, and 21.7% of                        Table 12 counts independently interpretable terms rather than du-
+raw states was non-negative. The closed-form affine projection restored                plicated display cells. Thus 𝛩𝑢𝑢 has 2(2 + 1)∕2 = 3 unique terms and 𝛩𝑐𝑐
+invariants for all samples and was itself sufficient for 21.8% of the test             has 20(20 + 1)∕2 = 210, although their displayed heatmaps contain 4
+set (436 of 2000 samples), resolving those cases without invoking a                    and 400 cells, respectively. The reporting threshold is post-training only
+numerical optimizer. The remaining 78.2% (1564 samples) required                       and does not affect model selection, fitting, or deployment. Nineteen
+the final LP correction, which converged in a mean of 23.5 HiGHS                       of 20 𝑊𝑖𝑛 entries, all three unique 𝛩𝑢𝑢 terms, 29 of 40 𝛩𝑢𝑐 terms, and
+iterations with a maximum of 40. The final returned prediction was                     44 of 210 unique 𝛩𝑐𝑐 terms exceed the COD raw-head threshold; 371
+feasible for 100% of the test cases. Thus, the zero final violation rates              of 380 off-diagonal 𝛤 entries exceed the separately scaled coupling
+are properties of the constrained deployment map, not of the learned                   threshold. Overall, 469 of 656 unique candidates (71.5%) are retained.
+regression head in isolation.                                                          The result indicates selective influent curvature within a comparatively
+    Taken together, these results show a moderate accuracy–feasibility                 dense coupling structure, not a uniformly sparse model.
+tradeoff within the present benchmark, consistent with prior studies                       The COD 𝛩𝑐𝑐 panel serves as a representative raw-head surface,
+in which hard corrective constraints improve physical admissibility                    while Supplementary Figures S1–S4 preserve the full target-wise raw-
+while sometimes sacrificing pointwise accuracy (Hansen et al., 2024;                   head atlases. Interpretation must consider the external mapping in
+Sturm and Silva, 2025). When the sole objective is minimum reported-                   Eq. (21), the component coupling 𝛤 , and the later constrained deploy-
+composite error, the MLP and LightGBM are preferable. When the                         ment stages together; inspection of a single raw-head block does not
+objective also requires final predictions that satisfy invariant conserva-             replace analysis of the full pipeline (Brunton et al., 2016; Shen et al.,
+tion and component non-negativity, the ICSOR constrained-deployment                    2023).
+pipeline is the only retained pipeline that provides both guarantees.                      This coefficient-level view differs from PLS loadings and local ANN
+                                                                                       sensitivity analysis because the ICSOR raw head exposes named global
+4.4. Interpretable raw-head structure of the learned ICSOR model                       blocks for operating effects, loading effects, within-subspace curvature,
+                                                                                       and cross-component coupling. The values are shaped by invariant-
+   Coefficient interpretation is performed on the globally defined pre-                aware soft training and the coupled non-negative fitted-state variable,
+correction head rather than on the piecewise deployment correction.                    but raw-head feasibility is not guaranteed. Exact physical admissibility
+                 ̂ its reported-composite counterpart is
+             ̂−1 𝐵𝜙,
+Since 𝑐𝑟𝑎𝑤 = 𝑅                                                                         is imposed afterward by constrained deployment. The coefficient blocks
+                                                                                       therefore support transparent structural inspection without implying
+𝑦𝑟𝑎𝑤 = 𝐼𝑐𝑜𝑚𝑝 𝑐𝑟𝑎𝑤 = 𝐵𝑟𝑎𝑤,𝑒𝑥𝑡 𝜙,                      ̂−1 𝐵.
+                                    𝐵𝑟𝑎𝑤,𝑒𝑥𝑡 = 𝐼𝑐𝑜𝑚𝑝 𝑅   ̂                 (21)
+                                                                                       that the raw head is itself feasible.
+Fig. 4 presents the COD row’s 𝛩𝑐𝑐 block from 𝐵𝑟𝑎𝑤,𝑒𝑥𝑡 . The COD, TN,                       The coefficients in Fig. 4 and Table 12 correspond to one ICSOR fit
+TP, and TSS raw-head atlases are provided as Supplementary Figures                     on the full training partition. Explicit symmetry resolves the ordered-
+S1–S4. Rows of 𝐵̂ are ASM component-driver rows and therefore cannot                   pair ambiguity within 𝛩𝑢𝑢 and 𝛩𝑐𝑐 , but it does not remove other
+be indexed directly by reported-composite labels. The final affine/LP                                                                                        ̂ is
+                                                                                       model-level identifiability limits. The joint objective over (𝐵, 𝛤 , 𝐶)
+map is active-set dependent and has no single global coefficient matrix;               non-convex, and 𝐵 and 𝛤 can trade off in 𝑅𝑐 = 𝐵𝜙; different training
+Fig. 4 must not be read as a derivative of the final deployed output.                  partitions or stationary points can therefore produce similar predictions
+     The COD raw-head surface is exactly symmetric at stored precision.                with different coefficients. Interpretation should focus on structural
+Its largest-magnitude entry is the 𝑆𝑂 –𝑆𝑂 self-curvature term (−5.8097),               patterns rather than treating a single numerical coefficient as uniquely
+followed by the mirrored 𝑆𝑂 –𝑆N2 pair (−1.7411). Other prominent                       causal. Coefficient stability across resamples remains a useful future
+terms link 𝑆𝑂 with 𝑋MeP (2.3190 × 10−1 ), 𝑋𝐴𝑂𝐵 (−1.3264 × 10−1 ), 𝑆PO4                 diagnostic (Brunton et al., 2016).
+
+                                                                                  12
+E.F. Selerio Jr.                                                                                                          Digital Chemical Engineering 20 (2026) 100329
+
+
+
+
+Fig. 4. COD raw-head 𝛩𝑐𝑐 heatmap from 𝐵𝑟𝑎𝑤,𝑒𝑥𝑡 = 𝐼𝑐𝑜𝑚𝑝 𝑅       ̂ Rows and columns enumerate influent ASM components. The matrix is symmetric to machine
+                                                           ̂−1 𝐵.
+precision; off-diagonal cells are mirrored and each displayed cell is half the coefficient of the corresponding unordered cross term. The full raw-head atlases are
+reported in Supplementary Figures S1–S4.
+
+
+5. Conclusion                                                                        the chosen stoichiometric model and system boundary; unrepresented
+                                                                                     external sources or sinks therefore remain outside that guarantee.
+    This study introduced Invariant-Constrained Second-Order Regres-                 Future work should test whether the same balance is retained for
+sion (ICSOR), an interpretable surrogate for steady-state activated                  more complex reactor configurations, wider operating envelopes, and
+sludge systems. ICSOR separates prediction from physical enforcement.                surrogate-assisted optimization and control (Sadeghassadi et al., 2018;
+Its invariant-aware regression head provides a transparent component-                Wang et al., 2025).
+level prediction, and a hierarchical deployment procedure ensures
+that the returned state satisfies exact stoichiometric conservation and              CRediT authorship contribution statement
+componentwise non-negativity. The procedure first checks the raw
+prediction, then applies a closed-form affine projection, and finally
+                                                                                         Egberto F. Selerio: Writing – review & editing, Writing – origi-
+uses a linear program when non-negativity is still violated. The affine
+                                                                                     nal draft, Visualization, Validation, Supervision, Software, Resources,
+stage was sufficient for 21.8% of test cases, while the linear program
+                                                                                     Project administration, Methodology, Investigation, Funding acquisi-
+handled the remaining 78.2%. Consequently, every deployed ICSOR
+                                                                                     tion, Formal analysis, Data curation, Conceptualization.
+prediction satisfied both physical requirements. By comparison, every
+unconstrained baseline violated conservation on all test samples, and
+several also predicted negative component concentrations.                            Declaration of competing interest
+    These physical guarantees came with a moderate accuracy tradeoff.
+On the fixed 80–20 split, ICSOR produced an aggregate test RMSE                          The authors declare that they have no known competing finan-
+of 5.98, compared with 4.38 for the MLP and 5.30 for LightGBM.                       cial interests or personal relationships that could have appeared to
+These differences correspond to increases of 36.5% and 12.8%, respec-                influence the work reported in this paper.
+tively. However, ICSOR performed strongly when data were limited:
+it achieved the lowest mean held-out RMSE at the smallest retained                   Acknowledgments & disclosure of funding
+dataset size and the lowest normalized area under the RMSE learning
+curve across the full dataset-size study. Its train–validation RMSE gap
+                                                                                         This work is funded by the Department of Science and Technology
+was also small at 0.22. Training was slower than for the fastest tree-
+                                                                                     of the Philippines through the Engineering Research and Development
+based methods, but remained faster than SVR and the MLP at the largest
+                                                                                     for Technology scholarship awarded to Egberto F. Selerio Jr. at the
+dataset size.
+                                                                                     University of San Carlos.
+    Within the scope of this study, ICSOR provides a practical bal-
+ance among interpretability, data efficiency, predictive accuracy, and
+guaranteed physical admissibility. The evidence is limited to steady-                Appendix A. Supplementary data
+state predictions from one standalone CSTR within the sampled influ-
+ent and operating ranges. The method does not claim full kinetic or                      Supplementary material related to this article can be found online
+thermodynamic feasibility, and its conservation guarantee depends on                 at https://doi.org/10.1016/j.dche.2026.100329.
+
+                                                                                13
+E.F. Selerio Jr.                                                                                                                               Digital Chemical Engineering 20 (2026) 100329
+
+
+Data availability                                                                                 Guyon, I., Cawley, G., Dror, G., Lemaire, V., 2011. Results of the active learning
+                                                                                                       challenge. In: JMLR Workshop and Conference Proceedings. Vol. 16, pp. 19–45.
+                                                                                                  Hansen, D., Maddix, D.C., Alizadeh, S., Gupta, G., Mahoney, M.W., 2024. Learning
+    The complete codebase that reproduces the results presented in
+                                                                                                       physical models that can respect conservation laws. Phys. D 457, 133952. http:
+this study is available in the GitHub repository https://github.com/                                   //dx.doi.org/10.1016/j.physd.2023.133952.
+egbertoselerio1997/icsor.git. The repository may be cloned using the                              Harder, P., Watson-Parris, D., Stier, P., Strassel, D., Gauger, N.R., Keuper, J., 2022.
+command git clone                                                                                      Physics-informed learning of aerosol microphysics. Environ. Data Sci. 1, e20.
+https://github.com/egbertoselerio1997/icsor.git.                                                       http://dx.doi.org/10.1017/eds.2022.22.
+                                                                                                  Henze, M., Gujer, W., Mino, T., van Loosedrecht, M., 2006. Activated sludge models
+                                                                                                       ASM1, ASM2, ASM2d and ASM3. Water Intell. Online 5, http://dx.doi.org/10.2166/
+                                                                                                       9781780402369.
+References                                                                                        Henze, M., Gujer, W., Mino, T., Matsuo, T., Wentzel, M.C., Marais, G.v.R., van
+                                                                                                       Loosdrecht, M.C.M., 1999. Activated sludge model no. 2d, ASM2D. Water Sci.
+Aboagye, E.A., Burnham, S.M., Dailey, J., Zia, R., Tran, C., Desai, M., Yenkie, K.M.,                  Technol. 39 (1), 165–182. http://dx.doi.org/10.2166/wst.1999.0036.
+    2021. Systematic design, optimization, and sustainability assessment for generation           Huangfu, Q., Hall, J.A.J., 2018. Parallelizing the dual revised simplex method. Math.
+    of efficient wastewater treatment networks. Water 13 (9), 1326. http://dx.doi.org/                 Program. Comput. 10 (1), 119–142. http://dx.doi.org/10.1007/s12532-017-0130-5.
+    10.3390/w13091326.                                                                            Khatri, P., Gupta, K.K., Gupta, R.K., 2020. A review of partial least squares modeling
+Ahn, J.Y., Chu, K.H., Yoo, S.S., Mang, J.S., Sung, B.W., Ko, K.B., 2014. Determination                 (PLSM) for water quality analysis. Model. Earth Syst. Environ. 6, 1419–1426.
+    of optimal operating factors via modeling for livestock wastewater treatment:                      http://dx.doi.org/10.1007/s40808-020-00995-4.
+    Comparison of simulated and experimental data. Int. Biodeterioration Biodegrad.               Kim, M., Rao, A.S., Yoo, C., 2009. Dual optimization strategy for N and P removal in a
+    95, 46–54. http://dx.doi.org/10.1016/j.ibiod.2014.04.014.                                          biological wastewater treatment plant. Ind. Eng. Chem. Res. 48 (13), 6363–6371.
+Akiba, T., Sano, S., Yanase, T., Ohta, T., Koyama, M., 2019. Optuna: A next-generation                 http://dx.doi.org/10.1021/ie801689t.
+    hyperparameter optimization framework. In: Proceedings of the 25th ACM SIGKDD                 Kircher, T., Votsmeier, M., 2025. Machine learning surrogate models for mechanistic
+    International Conference on Knowledge Discovery & Data Mining. pp. 2623–2631.                      kinetics: Embedding atom balance and positivity. J. Phys. Chem. Lett. 16 (19),
+    http://dx.doi.org/10.1145/3292500.3330701.                                                         4715–4723. http://dx.doi.org/10.1021/acs.jpclett.5c00602.
+de Araujo, A.C.B., Gallani, S., Mulas, M., Skogestad, S., 2013. Sensitivity analysis of           Li, M., Hu, S., Xia, J., Wang, J., Song, X., Shen, H., 2020. Dissolved oxygen model
+    optimal operation of an activated sludge process model for economic controlled                     predictive control for activated sludge process model based on the fuzzy C-means
+    variable selection. Ind. Eng. Chem. Res. 52 (29), 9908–9921. http://dx.doi.org/10.                 cluster algorithm. Int. J. Control Autom. Syst. 18 (9), 2435–2444. http://dx.doi.
+    1021/ie4006673.                                                                                    org/10.1007/s12555-019-0438-1.
+Asadi, A., Verma, A., Yang, K., Mejabi, B., 2017. Wastewater treatment aeration                   Lim, J., Lee, Y., Ataei, A., Yoo, C., 2011. Exploration of dual optimal conditions for
+    process optimization: A data mining approach. J. Environ. Manag. 203, 630–639.                     COD and nitrogen removal in an MBR. Asia-Pac. J. Chem. Eng. 6 (3), 433–440.
+    http://dx.doi.org/10.1016/j.jenvman.2016.07.047.                                                   http://dx.doi.org/10.1002/apj.563.
+Ba-Alawi, A.H., Vilela, P., Loy-Benitez, J., Heo, S., Yoo, C., 2021. Intelligent sensor           Lin, L., Yang, H., Xu, X., 2022. Effects of water pollution on human health and disease
+    validation for sustainable influent quality monitoring in wastewater treatment                     heterogeneity: A review. Front. Environ. Sci. 10, 880246. http://dx.doi.org/10.
+    plants using stacked denoising autoencoders. J. Water Process. Eng. 43, 102206.                    3389/fenvs.2022.880246.
+    http://dx.doi.org/10.1016/j.jwpe.2021.102206.                                                 Liu, H., Yang, J., Zhang, Y., Yang, C., 2021. Monitoring of wastewater treatment
+Bagherzadeh, F., Mehrani, M.J., Basirifard, M., Roostaei, J., 2021. Comparative study                  processes using dynamic concurrent kernel partial least squares. Process. Saf.
+    on total nitrogen prediction in wastewater treatment plant and effect of various                   Environ. Prot. 147, 274–282. http://dx.doi.org/10.1016/j.psep.2020.09.034.
+    feature selection methods on machine learning algorithms performance. J. Water                Machado, V.C., Lafuente, J., Baeza, J.A., 2014. Activated sludge model 2d calibration
+    Process. Eng. 41, 102033. http://dx.doi.org/10.1016/j.jwpe.2021.102033.                            with full-scale WWTP data: comparing model parameter identifiability with influent
+Bergstra, J., Bardenet, R., Bengio, Y., Kégl, B., 2011. Algorithms for hyper-parameter                 and operational uncertainty. Bioprocess Biosyst. Eng. 37 (7), 1271–1287. http:
+    optimization. In: Advances in Neural Information Processing Systems. Vol. 24.                      //dx.doi.org/10.1007/s00449-013-1099-8.
+Beucler, T., Pritchard, M., Rasp, S., Ott, J., Baldi, P., Gentine, P., 2021. Enforcing            Madhav, S., Ahamad, A., Singh, A.K., Kushawaha, J., Chauhan, J.S., Sharma, S.,
+    analytic constraints in neural networks emulating physical systems. Phys. Rev. Lett.               Singh, P., 2020. Water pollutants: sources and impact on the environment and
+    126 (9), 098302. http://dx.doi.org/10.1103/physrevlett.126.098302.                                 human health. In: Sensors in Water Pollutants Monitoring: Role of Material. pp.
+Bhosekar, A., Ierapetritou, M., 2018. Advances in surrogate based modeling, feasibility                43–62. http://dx.doi.org/10.1007/978-981-15-0671-0_4.
+    analysis, and optimization: A review. Comput. Chem. Eng. 108, 250–267. http:                  Mao, Z., Li, X., Zhang, X., Li, D., Lu, J., Li, J., Zheng, F., 2024. Optimization
+    //dx.doi.org/10.1016/j.compchemeng.2017.09.017.                                                    of effluent quality and energy consumption of aeration process in wastewater
+Brunton, S.L., Proctor, J.L., Kutz, J.N., 2016. Discovering governing equations from                   treatment plants using artificial intelligence. J. Water Process. Eng. 63, 105384.
+    data by sparse identification of nonlinear dynamical systems. Proc. Natl. Acad. Sci.               http://dx.doi.org/10.1016/j.jwpe.2024.105384.
+    113 (15), 3932–3937. http://dx.doi.org/10.1073/pnas.1517384113.                               McKay, M.D., Beckman, R.J., Conover, W.J., 1979. Comparison of three methods for
+Cawley, G.C., 2011. Baseline methods for active learning. In: JMLR Workshop and                        selecting values of input variables in the analysis of output from a computer
+    Conference Proceedings. Vol. 16, pp. 47–57.                                                        code. Technometrics 21 (2), 239–245. http://dx.doi.org/10.1080/00401706.1979.
+Croll, H.C., Ikuma, K., Ong, S.K., Sarkar, S., 2023. Reinforcement learning applied                    10489755.
+    to wastewater treatment process control optimization: Approaches, challenges,                 Min, Y., Sonar, A., Azizan, N., 2024. Hard-constrained neural networks with universal
+    and path forward. Crit. Rev. Environ. Sci. Technol. 53 (20), 1775–1794. http:                      approximation guarantees. arXiv preprint arXiv:2410.10807.
+    //dx.doi.org/10.1080/10643389.2023.2183699.                                                   Nazlabadi, E., Niaragh, E.K., Moghaddam, M.R.A., 2021. A systematic and critical
+Curtiss, C.F., Hirschfelder, J.O., 1952. Integration of stiff equations. Proc. Natl. Acad.             review of two decades’ application of response surface methodology in biological
+    Sci. 38 (3), 235–243. http://dx.doi.org/10.1073/pnas.38.3.235.                                     wastewater treatment processes. Desalination Water Treat. 228, 92–120. http:
+Demšar, J., 2006. Statistical comparisons of classifiers over multiple data sets. J. Mach.             //dx.doi.org/10.5004/dwt.2021.27315.
+    Learn. Res. 7, 1–30.                                                                          Newhart, K.B., Holloway, R.W., Hering, A.S., Cath, T.Y., 2019. Data-driven performance
+Duan, S., Zhang, Y., Zheng, S., 2022. Heterotrophic nitrifying bacteria in wastewater                  analyses of wastewater treatment plants: A review. Water Res. 157, 498–513.
+    biological nitrogen removal systems: A review. Crit. Rev. Environ. Sci. Technol. 52                http://dx.doi.org/10.1016/j.watres.2019.03.030.
+    (13), 2302–2338. http://dx.doi.org/10.1080/10643389.2021.1877976.                             Padron-Paez, J.I., Almaraz, S.D.L., Román-Martínez, A., 2020. Sustainable wastewater
+Durkin, A., Otte, L., Guo, M., 2024. Surrogate-based optimisation of process systems                   treatment plants design through multiobjective optimization. Comput. Chem. Eng.
+    to recover resources from wastewater. Comput. Chem. Eng. 182, 108584. http:                        140, 106850. http://dx.doi.org/10.1016/j.compchemeng.2020.106850.
+    //dx.doi.org/10.1016/j.compchemeng.2024.108584.                                               Pinheiro, J.M.H., Oliveira, S.V.B., Silva, T.H.S., Saraiva, P.A.R., Souza, E.F., Godoy, R.V.,
+Fang, F., Ni, B., Li, W., Sheng, G., Yu, H., 2011. A simulation-based integrated approach              Ambrosio, L.A., Becker, M., 2025. The impact of feature scaling in machine learn-
+    to optimize the biological nutrient removal process in a full-scale wastewater                     ing: Effects on regression and classification tasks. IEEE Access 13, 199903–199931.
+    treatment plant. Chem. Eng. J. 174 (2–3), 635–643. http://dx.doi.org/10.1016/                      http://dx.doi.org/10.1109/access.2025.3635541.
+    j.cej.2011.09.079.                                                                            Raissi, M., Perdikaris, P., Karniadakis, G.E., 2019. Physics-informed neural networks:
+Geiss, A., Silva, S.J., Hardin, J.C., 2022. Downscaling atmospheric chemistry simulations              A deep learning framework for solving forward and inverse problems involving
+    with physically consistent deep learning. Geosci. Model Dev. 15 (17), 6677–6694.                   nonlinear partial differential equations. J. Comput. Phys. 378, 686–707. http:
+    http://dx.doi.org/10.5194/gmd-15-6677-2022.                                                        //dx.doi.org/10.1016/j.jcp.2018.10.045.
+Geman, S., Bienenstock, E., Doursat, R., 1992. Neural networks and the bias/variance              Razaviyayn, M., Hong, M., Luo, Z.-Q., 2013. A unified convergence analysis of block
+    dilemma. Neural Comput. 4 (1), 1–58. http://dx.doi.org/10.1162/neco.1992.4.1.1.                    successive minimization methods for nonsmooth optimization. SIAM J. Optim. 23
+Guerrero, J., Guisasola, A., Baeza, J.A., 2011. The nature of the carbon source                        (2), 1126–1153. http://dx.doi.org/10.1137/120891009.
+    rules the competition between PAO and denitrifiers in systems for simultaneous                Ruckstuhl, Y., Janjić, T., Rasp, S., 2021. Training a convolutional neural network to
+    biological nitrogen and phosphorus removal. Water Res. 45 (16), 4793–4802.                         conserve mass in data assimilation. Nonlinear Process. Geophys. 28 (1), 111–119.
+    http://dx.doi.org/10.1016/j.watres.2011.06.019.                                                    http://dx.doi.org/10.5194/npg-28-111-2021.
+
+
+                                                                                             14
+E.F. Selerio Jr.                                                                                                                             Digital Chemical Engineering 20 (2026) 100329
+
+
+Rudin, C., 2019. Stop explaining black box machine learning models for high stakes                Tang, Y., Cui, T., Zhou, W., Chang, C., 2026. Surrogate model-based optimal design of
+     decisions and use interpretable models instead. Nat. Mach. Intell. 1 (5), 206–215.               coal chemical wastewater treatment networks with a multi-stage system. Processes
+     http://dx.doi.org/10.1038/s42256-019-0048-x.                                                     14 (5), 806. http://dx.doi.org/10.3390/pr14050806.
+Sadeghassadi, M., Macnab, C.J.B., Gopaluni, B., Westwick, D., 2018. Application                   Tsochatzidi, A., Cenci, F., Aroniada, M., Papageorgiou, L.G., 2025. A novel surrogate-
+     of neural networks for optimal-setpoint design and MPC control in biological                     based optimisation framework for pharmaceutical process systems. Int. J. Pharm.
+     wastewater treatment. Comput. Chem. Eng. 115, 150–160. http://dx.doi.org/10.                     682, 125861. http://dx.doi.org/10.1016/j.ijpharm.2025.125861.
+     1016/j.compchemeng.2018.04.007.                                                              Utkarsh, Maddix, D.C., Ma, R., Mahoney, M.W., Wang, Y., 2025. End-to-end
+Sadri Moghaddam, S., Mesghali, H., 2023. A new hybrid ensemble approach for the                       probabilistic framework for learning with hard constraints. arXiv preprint.
+     prediction of effluent total nitrogen from a full-scale wastewater treatment plant           Viering, T., Loog, M., 2023. The shape of learning curves: A review. IEEE Trans.
+     using a combined trickling filter-activated sludge system. Environ. Sci. Pollut. Res.            Pattern Anal. Mach. Intell. 45 (6), 7799–7819. http://dx.doi.org/10.1109/tpami.
+     30 (1), 1622–1639. http://dx.doi.org/10.1007/s11356-022-21864-w.                                 2022.3220744.
+Shen, C., Appling, A.P., Gentine, P., Bandai, T., Gupta, H., Tartakovsky, A., Baity-              Wang, Y., Li, T., Bai, L., Yu, H., Qu, F., 2025. Comparison of interpretable machine
+     Jesi, M., Fenicia, F., Kifer, D., Li, L., Liu, X., Ren, W., Zheng, Y., Harman, C.J.,             learning models and mechanistic model for predicting effluent nitrogen in WWTP.
+     Clark, M., Farthing, M., Feng, D., Kumar, P., Aboelyazeed, D., Rahmani, F.,                      J. Water Process. Eng. 77, 108344. http://dx.doi.org/10.1016/j.jwpe.2025.108344.
+     Song, Y., Beck, H.E., Bindas, T., Dwivedi, D., Fang, K., Höge, M., Rackauckas, C.,           Wentzel, M.C., Ekama, G.A., Marais, G.v.R., 1992. Processes and modelling of nitrifica-
+     Mohanty, B., Roy, T., Xu, C., Lawson, K., 2023. Differentiable modelling to unify                tion denitrification biological excess phosphorus removal systems–A review. Water
+     machine learning and physical models for geosciences. Nat. Rev. Earth Environ. 4                 Sci. Technol. 25 (6), 59–82. http://dx.doi.org/10.2166/wst.1992.0114.
+     (8), 552–567. http://dx.doi.org/10.1038/s43017-023-00450-9.                                  Wold, S., Sjöström, M., Eriksson, L., 2001. PLS-regression: a basic tool of chemometrics.
+Shevchenko, V., Belousov, N., Vasilev, A., Zholobov, V., Sosedka, A., Semenova, N.,                   Chemometr. Intell. Lab. Syst. 58 (2), 109–130. http://dx.doi.org/10.1016/s0169-
+     Volodkevich, A., Savchenko, A., Zaytsev, A., 2024. From variability to stability:                7439(01)00155-1.
+     Advancing RecSys benchmarking practices. In: Proceedings of the 30th ACM                     Woo, S.H., Jeon, C.O., Yun, Y.-S., Choi, H., Lee, C.-S., Lee, D.S., 2009. On-line
+     SIGKDD Conference on Knowledge Discovery and Data Mining. pp. 5701–5712.                         estimation of key process variables based on kernel partial least squares in an
+     http://dx.doi.org/10.1145/3637528.3671655.                                                       industrial cokes wastewater treatment plant. J. Hazard. Mater. 161 (1), 538–544.
+Stellato, B., Banjac, G., Goulart, P., Bemporad, A., Boyd, S., 2018. OSQP: An operator                http://dx.doi.org/10.1016/j.jhazmat.2008.04.004.
+     splitting solver for quadratic programs. In: 2018 UKACC 12th International Confer-           Xiao, Y., Zhao, B., Zhang, X., Yue, X., 2025. A new paradigm in activated sludge
+     ence on Control. CONTROL, IEEE, p. 339. http://dx.doi.org/10.1109/control.2018.                  management: an interpretable framework integrating mechanistic dynamics with
+     8516834.                                                                                         a data-driven surrogate model. Environ. Res. 123435. http://dx.doi.org/10.1016/j.
+Stenstrom, M.K., Song, S.S., 1991. Effects of oxygen transport limitation on nitrification            envres.2025.123435.
+     in the activated sludge process. Res. J. Water Pollut. Control Fed. 63 (3), 208–219.         Yang, S.J., Kim, J., Eom, J., Kim, M., Lee, M., Lee, K.H., 2025. Machine learning
+Straus, J., Skogestad, S., 2018. Surrogate model generation using self-optimizing                     based prediction of waste activated sludge generation for optimization of WWTP
+     variables. Comput. Chem. Eng. 119, 143–151. http://dx.doi.org/10.1016/j.                         operational efficiency. Environ. Res. 122990. http://dx.doi.org/10.1016/j.envres.
+     compchemeng.2018.08.031.                                                                         2025.122990.
+Sturm, P.M., Cappa, C.D., Wexler, A.S., 2023. Advecting superspecies: Efficiently                 Yang, T., Qiu, W., Ma, Y., Chadli, M., Zhang, L., 2014. Fuzzy model-based predictive
+     modeling transport of organic aerosol with a mass-conserving dimensionality                      control of dissolved oxygen in activated sludge processes. Neurocomputing 136,
+     reduction method. J. Adv. Model. Earth Syst. 15 (3), e2022MS003235. http:                        88–95. http://dx.doi.org/10.1016/j.neucom.2014.01.025.
+     //dx.doi.org/10.1029/2022ms003235.                                                           Yang, C., Zhang, Y., Huang, M., Liu, H., 2021. Adaptive dynamic prediction of effluent
+Sturm, P.O., Silva, S.J., 2025. A nudge to the truth: Atom conservation as a hard con-                quality in wastewater treatment processes using partial least squares embedded
+     straint in models of atmospheric composition using a species-weighted correction.                with relevance vector machine. J. Clean. Prod. 314, 128076. http://dx.doi.org/10.
+     ACS ES T Air 2 (1), 99–108. http://dx.doi.org/10.1021/acsestair.4c00220.                         1016/j.jclepro.2021.128076.
+Sturm, P.M., Wexler, A.S., 2020. A mass- and energy-conserving framework for using                Yilmaz, G., Lemaire, R., Keller, J., Yuan, Z., 2007. Effectiveness of an alternating
+     machine learning to speed computations: A photochemistry example. Geosci. Model                  aerobic, anoxic/anaerobic strategy for maintaining biomass activity of BNR sludge
+     Dev. 13 (9), 4435–4442. http://dx.doi.org/10.5194/gmd-13-4435-2020.                              during long-term starvation. Water Res. 41 (12), 2590–2598. http://dx.doi.org/10.
+Sturm, P.M., Wexler, A.S., 2022. Conservation laws in a neural network architecture:                  1016/j.watres.2007.02.011.
+     Enforcing the atom balance of a Julia-based photochemical model (v0.2.0). Geosci.
+     Model Dev. 15 (9), 3417–3431. http://dx.doi.org/10.5194/gmd-15-3417-2022.
+
+
+
+
+                                                                                             15
+

@@ -1,0 +1,411 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2026-10-06T07:34:21Z",
+    "timestamp": 1791272061156,
+    "version": "4.1.0"
+  },
+  "reference-count": 42,
+  "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+  "issue": "2",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "SIAM J. Optim."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:p>The block coordinate descent (BCD) method is widely used for minimizing a continuous function $f$ of several block variables. At each iteration of this method, a single block of variables is optimized, while the remaining variables are held fixed. To ensure the convergence of the BCD method, the subproblem of each block variable needs to be solved to its unique global optimal. Unfortunately, this requirement is often too restrictive for many practical scenarios. In this paper, we study an alternative inexact BCD approach which updates the variable blocks by successively minimizing a sequence of approximations of $f$ which are either locally tight upper bounds of $f$ or strictly convex local approximations of $f$. The main contributions of this work include the characterizations of the convergence conditions for a fairly wide class of such methods, especially for the cases where the objective functions are either nondifferentiable or nonconvex. Our results unify and extend the existing convergence results for many classical algorithms such as the BCD method, the difference of convex functions (DC) method, the expectation maximization (EM) algorithm, as well as the block forward-backward splitting algorithm, all of which are popular for large scale optimization problems involving big data.</jats:p>",
+  "DOI": "10.1137/120891009",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        6,
+        6
+      ]
+    ],
+    "date-time": "2013-06-06T11:03:38Z",
+    "timestamp": 1370516618000
+  },
+  "page": "1126-1153",
+  "source": "Crossref",
+  "is-referenced-by-count": 1142,
+  "title": [
+    "A Unified Convergence Analysis of Block Successive Minimization Methods for Nonsmooth Optimization"
+  ],
+  "prefix": "10.1137",
+  "volume": "23",
+  "author": [
+    {
+      "given": "Meisam",
+      "family": "Razaviyayn",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Mingyi",
+      "family": "Hong",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Zhi-Quan",
+      "family": "Luo",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "351",
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        6,
+        6
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "atypb1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10107-011-0484-9"
+    },
+    {
+      "key": "atypb2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF00940050"
+    },
+    {
+      "key": "atypb3",
+      "unstructured": "D. P. Bertsekas,<i>Nonlinear Programming</i> 2nd ed., Athena-Scientific, Nashua, NH, 1999."
+    },
+    {
+      "key": "atypb4",
+      "unstructured": "D. P. Bertsekas and J. N. Tsitsiklis,<i>Parallel and Distributed Computation: Numerical Methods</i> 2nd ed., Athena-Scientific, Nashua, NH, 1999."
+    },
+    {
+      "key": "atypb5",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/imanum/drq024"
+    },
+    {
+      "key": "atypb7",
+      "doi-asserted-by": "crossref",
+      "unstructured": "S. Boyd and L. Vandenberghe,<i>Convex Optimization</i> Cambridge University Press, Cambridge, UK,2004.",
+      "DOI": "10.1017/CBO9780511804441"
+    },
+    {
+      "key": "atypb8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02310791"
+    },
+    {
+      "key": "atypb9",
+      "unstructured": "Y. Censor and S. A. Zenios,<i>Parallel Optimization: Theory, Algorithm, and Applications</i> Oxford University Press, Oxford, UK, 1997."
+    },
+    {
+      "key": "atypb10",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/110834524"
+    },
+    {
+      "key": "atypb11",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TWC.2007.05960"
+    },
+    {
+      "key": "atypb12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TWC.2007.05960"
+    },
+    {
+      "key": "atypb13",
+      "unstructured": "P. L. Combettes and J.C Pesquet,<i>Proximal splitting methods in signal processing</i> Tech. report, http://arxiv.org/abs/0912.3522, 2009."
+    },
+    {
+      "key": "atypb14",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/050626090"
+    },
+    {
+      "key": "atypb15",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1111/j.2517-6161.1977.tb01600.x"
+    },
+    {
+      "key": "atypb16",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0169-7439(02)00089-8"
+    },
+    {
+      "key": "atypb17",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/10556789908805730"
+    },
+    {
+      "key": "atypb18",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0167-6377(99)00074-7"
+    },
+    {
+      "key": "atypb19",
+      "first-page": "1",
+      "volume": "16",
+      "author": "Harshman R. A.",
+      "year": "1970",
+      "journal-title": "multi-modal factor analysis, UCLA Working Papers in Phonetics"
+    },
+    {
+      "key": "atypb20",
+      "first-page": "100",
+      "volume": "28",
+      "author": "Hartigan J. A.",
+      "year": "1979",
+      "journal-title": "J. Roy. Statist. Soc. Ser. C"
+    },
+    {
+      "key": "atypb21",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/00401706.1966.10490375"
+    },
+    {
+      "key": "atypb22",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0196-6774(90)90014-6"
+    },
+    {
+      "key": "atypb23",
+      "first-page": "2941",
+      "author": "Hong M.",
+      "year": "2012",
+      "journal-title": "Washington, DC"
+    },
+    {
+      "key": "atypb24",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01580431"
+    },
+    {
+      "key": "atypb25",
+      "first-page": "39",
+      "author": "Kim S. J.",
+      "year": "2008",
+      "journal-title": "Urbana-Champaign"
+    },
+    {
+      "key": "atypb26",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/07070111X"
+    },
+    {
+      "key": "atypb27",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/JSTSP.2007.914876"
+    },
+    {
+      "key": "atypb28",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1287/opre.26.4.681"
+    },
+    {
+      "key": "atypb29",
+      "unstructured": "C. Navasca, L. De Lathauwer, and S. Kindermann,<i>Swamp reducing technique for tensor decomposition</i> in Proceedings of the 16th European Signal Processing Conference (EUSIPCO), Lausanne, Switzerland, 2008."
+    },
+    {
+      "key": "atypb30",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/JSAC.2010.101206"
+    },
+    {
+      "key": "atypb31",
+      "first-page": "3270",
+      "author": "Papandriopoulos J.",
+      "year": "2006",
+      "journal-title": "Washington, DC"
+    },
+    {
+      "key": "atypb32",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01584660"
+    },
+    {
+      "key": "atypb33",
+      "first-page": "1",
+      "author": "Razaviyayn M.",
+      "year": "2011",
+      "journal-title": "MD"
+    },
+    {
+      "key": "atypb34",
+      "first-page": "1001",
+      "author": "Shi C.",
+      "year": "2009",
+      "journal-title": "Washington, DC"
+    },
+    {
+      "key": "atypb35",
+      "first-page": "1619",
+      "author": "Shi C.",
+      "year": "2009",
+      "journal-title": "Washington, DC"
+    },
+    {
+      "key": "atypb36",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TSP.2011.2147784"
+    },
+    {
+      "key": "atypb37",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.csda.2004.11.013"
+    },
+    {
+      "key": "atypb38",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1017501703105"
+    },
+    {
+      "key": "atypb39",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10107-007-0170-0"
+    },
+    {
+      "key": "atypb40",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Y. Xu and W. Yin,<i>A block coordinate descent method for multi-convex optimization with applications to nonnegative tensor factorization and completion</i> available online at http://www.caam.rice.edu/$\\sim$optimization/BCD/, 2012.",
+      "DOI": "10.21236/ADA567404"
+    },
+    {
+      "key": "atypb41",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/08997660360581958"
+    },
+    {
+      "key": "atypb42",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1287/mnsc.16.9.642"
+    },
+    {
+      "key": "atypb43",
+      "first-page": "2953",
+      "author": "Zhang Y.",
+      "year": "2012",
+      "journal-title": "Washington, DC"
+    }
+  ],
+  "container-title": [
+    "SIAM Journal on Optimization"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://epubs.siam.org/doi/pdf/10.1137/120891009",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        21
+      ]
+    ],
+    "date-time": "2026-08-21T19:06:15Z",
+    "timestamp": 1787339175000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://epubs.siam.org/doi/10.1137/120891009"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        1
+      ]
+    ]
+  },
+  "references-count": 42,
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1137/120891009"
+  ],
+  "URL": "https://doi.org/10.1137/120891009",
+  "relation": {},
+  "ISSN": [
+    "1052-6234",
+    "1095-7189"
+  ],
+  "issn-type": [
+    {
+      "value": "1052-6234",
+      "type": "print"
+    },
+    {
+      "value": "1095-7189",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        1
+      ]
+    ]
+  }
+}

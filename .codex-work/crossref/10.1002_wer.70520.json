@@ -1,0 +1,480 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2026-09-28T01:56:31Z",
+    "timestamp": 1790560591432,
+    "version": "4.1.0"
+  },
+  "reference-count": 29,
+  "publisher": "Wiley",
+  "issue": "8",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            5
+          ]
+        ],
+        "date-time": "2026-08-05T00:00:00Z",
+        "timestamp": 1785888000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 4,
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2026-08-01T00:00:00Z",
+        "timestamp": 1785542400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Water Environment Research"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2026,
+        8
+      ]
+    ]
+  },
+  "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>Aeration is the dominant controllable energy demand in activated‐sludge wastewater treatment, but peak‐period aeration reduction can compromise dissolved oxygen supply, nitrification, and effluent NH₄‐N compliance. This study develops an XGBoost‐assisted effluent ammonium buffer‐first aeration scheduling framework (XGB‐WQBF‐guarded) for flexible wastewater treatment under influent disturbances. Offline Benchmark Simulation Model No. 2 (BSM2) rollouts were used to train surrogate models for future maximum NH₄‐N, violation probability, and aeration flexibility capacity (AFC) over an 8 h horizon. Online candidate KLa sequences were accepted only after predictive water‐quality screening, and a transparent recovery guard overrode the data‐driven action when the current NH₄‐N buffer was low, or no predicted‐safe schedule existed. XGB‐WQBF‐guarded maintained zero NH₄‐N violations in the evaluated deterministic BSM2 scenarios, with peak‐period aeration reductions of 17.86%, 9.92%, and 11.11% for dry‐weather, high‐ammonium‐shock, and rain‐disturbance cases, respectively. Under combined sensor noise and actuator mismatch, violation rates increased to 7.22% in the high‐ammonium‐shock case and 3.89% in the rain case; a conservative threshold reduced these rates to 3.89% and 2.22%, respectively, with lower PAR. Held‐out shock tests further showed that zero‐violation performance is conditional on disturbance patterns similar to the training rollouts. The framework should therefore be interpreted as a benchmark‐supported, operator‐facing scheduling concept that requires plant‐specific validation before full‐scale deployment.</jats:p>",
+  "DOI": "10.1002/wer.70520",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        5
+      ]
+    ],
+    "date-time": "2026-08-05T09:02:36Z",
+    "timestamp": 1785920556000
+  },
+  "update-policy": "https://doi.org/10.1002/crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 0,
+  "title": [
+    "XGBoost‐Assisted Effluent Ammonium Buffer‐First Aeration Scheduling for Wastewater Treatment Under Influent Disturbances: A BSM2 Study"
+  ],
+  "prefix": "10.1002",
+  "volume": "98",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-8468-4937",
+      "authenticated-orcid": false,
+      "given": "Hongyang",
+      "family": "Ren",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "School of Chemistry and Chemical Engineering Southwest Petroleum University  Chengdu China"
+        },
+        {
+          "name": "Oil &amp; Gas Field Applied Chemistry Key Laboratory of Sichuan Province  Chengdu China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0000-6745-7601",
+      "authenticated-orcid": false,
+      "given": "Junfu",
+      "family": "Cao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Chemistry and Chemical Engineering Southwest Petroleum University  Chengdu China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Wen",
+      "family": "Zhao",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Chemistry and Chemical Engineering Southwest Petroleum University  Chengdu China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jie",
+      "family": "Jin",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Sichuan Development Guorun Water Investment Co., Ltd  Chengdu China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Boyu",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Sichuan Development Guorun Water Investment Co., Ltd  Chengdu China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xuanbei",
+      "family": "Wu",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Sichuan Development Guorun Water Investment Co., Ltd  Chengdu China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "published-online": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        5
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_10_2_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2013.139"
+    },
+    {
+      "key": "e_1_2_10_3_1",
+      "unstructured": "Angelopoulos A. N. andS.Bates.2021. “A Gentle Introduction to Conformal Prediction and Distribution‐Free Uncertainty Quantification.” arXiv:2107.07511."
+    },
+    {
+      "key": "e_1_2_10_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ifacol.2019.08.259"
+    },
+    {
+      "key": "e_1_2_10_5_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.apenergy.2020.115965"
+    },
+    {
+      "key": "e_1_2_10_6_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Chen T. andC.Guestrin.2016. “XGBoost: A Scalable Tree Boosting System.” Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining.785–794.",
+      "DOI": "10.1145/2939672.2939785"
+    },
+    {
+      "key": "e_1_2_10_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/jctb.280560110"
+    },
+    {
+      "key": "e_1_2_10_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jclepro.2023.138008"
+    },
+    {
+      "key": "e_1_2_10_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2006.031"
+    },
+    {
+      "key": "e_1_2_10_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jwpe.2020.101487"
+    },
+    {
+      "key": "e_1_2_10_11_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jclepro.2022.131497"
+    },
+    {
+      "key": "e_1_2_10_12_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2022.281"
+    },
+    {
+      "key": "e_1_2_10_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2022.388"
+    },
+    {
+      "key": "e_1_2_10_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/elsc.202200058"
+    },
+    {
+      "key": "e_1_2_10_15_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wpt.2022.154"
+    },
+    {
+      "key": "e_1_2_10_16_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1111/wej.12925"
+    },
+    {
+      "key": "e_1_2_10_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.sajce.2026.100845"
+    },
+    {
+      "key": "e_1_2_10_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1051/e3sconf/202564703003"
+    },
+    {
+      "key": "e_1_2_10_19_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/jctb.1460"
+    },
+    {
+      "key": "e_1_2_10_20_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2019.03.030"
+    },
+    {
+      "key": "e_1_2_10_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jwpe.2022.103237"
+    },
+    {
+      "key": "e_1_2_10_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2022.115"
+    },
+    {
+      "key": "e_1_2_10_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2019.032"
+    },
+    {
+      "key": "e_1_2_10_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2025.106"
+    },
+    {
+      "key": "e_1_2_10_25_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2021.116960"
+    },
+    {
+      "key": "e_1_2_10_26_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2020.266"
+    },
+    {
+      "key": "e_1_2_10_27_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.copbio.2025.103271"
+    },
+    {
+      "key": "e_1_2_10_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2006.773"
+    },
+    {
+      "key": "e_1_2_10_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.eng.2024.04.012"
+    },
+    {
+      "key": "e_1_2_10_30_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2023.120676"
+    }
+  ],
+  "container-title": [
+    "Water Environment Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/wer.70520",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/wer.70520",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/wer.70520",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2026-09-28T01:52:54Z",
+    "timestamp": 1790560374000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/wer.70520"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        8
+      ]
+    ]
+  },
+  "references-count": 29,
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          8
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1002/wer.70520"
+  ],
+  "URL": "https://doi.org/10.1002/wer.70520",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "1061-4303",
+    "1554-7531"
+  ],
+  "issn-type": [
+    {
+      "value": "1061-4303",
+      "type": "print"
+    },
+    {
+      "value": "1554-7531",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        8
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2026-04-28",
+      "order": 0,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2026-07-17",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2026-08-05",
+      "order": 3,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ],
+  "article-number": "e70520"
+}

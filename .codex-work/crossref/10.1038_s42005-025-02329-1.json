@@ -1,0 +1,577 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        1
+      ]
+    ],
+    "date-time": "2026-10-01T01:47:23Z",
+    "timestamp": 1790819243056,
+    "version": "4.1.0"
+  },
+  "reference-count": 30,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ],
+        "date-time": "2025-11-17T00:00:00Z",
+        "timestamp": 1763337600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            17
+          ]
+        ],
+        "date-time": "2025-11-17T00:00:00Z",
+        "timestamp": 1763337600000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+    }
+  ],
+  "funder": [
+    {
+      "name": "Portuguese FCT - Fundação para a Ciência e a Tecnologia"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Commun Phys"
+  ],
+  "DOI": "10.1038/s42005-025-02329-1",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        17
+      ]
+    ],
+    "date-time": "2025-11-17T21:04:27Z",
+    "timestamp": 1763413467000
+  },
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 20,
+  "title": [
+    "Physics-consistent machine learning with output projection onto physical manifolds"
+  ],
+  "prefix": "10.1038",
+  "volume": "8",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0009-0003-7328-0584",
+      "authenticated-orcid": false,
+      "given": "Matilde",
+      "family": "Valente",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tiago C.",
+      "family": "Dias",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6878-6850",
+      "authenticated-orcid": false,
+      "given": "Vasco",
+      "family": "Guerra",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Rodrigo",
+      "family": "Ventura",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        17
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "2329_CR1",
+      "doi-asserted-by": "publisher",
+      "first-page": "51",
+      "DOI": "10.1038/s41524-019-0189-9",
+      "volume": "5",
+      "author": "C Nyshadham",
+      "year": "2019",
+      "unstructured": "Nyshadham, C. et al. Machine-learned multi-system surrogate models for materials prediction. npj Comput. Mater. 5, 51 (2019).",
+      "journal-title": "npj Comput. Mater."
+    },
+    {
+      "key": "2329_CR2",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Schmidt, J., Marques, M., Botti, S. & Marques, M. Recent advances and applications of machine learning in solid-state materials science. npj Comput. Mater. 5, https://doi.org/10.1038/s41524-019-0221-0 (2019).",
+      "DOI": "10.1038/s41524-019-0221-0"
+    },
+    {
+      "key": "2329_CR3",
+      "doi-asserted-by": "publisher",
+      "first-page": "679",
+      "DOI": "10.1038/s41578-020-00260-1",
+      "volume": "6",
+      "author": "J Jiang",
+      "year": "2021",
+      "unstructured": "Jiang, J., Chen, M. & Fan, J. A. Deep neural networks for the evaluation and design of photonic devices. Nat. Rev. Mater. 6, 679–700 (2021).",
+      "journal-title": "Nat. Rev. Mater."
+    },
+    {
+      "key": "2329_CR4",
+      "first-page": "746",
+      "volume": "16",
+      "author": "R Pache",
+      "year": "2022",
+      "unstructured": "Pache, R. & Rung, T. Data-driven surrogate modeling of aerodynamic forces on the superstructure of container vessels. Eng. Appl. Comput. Fluid Mech. 16, 746–763 (2022).",
+      "journal-title": "Eng. Appl. Comput. Fluid Mech."
+    },
+    {
+      "key": "2329_CR5",
+      "doi-asserted-by": "publisher",
+      "first-page": "11670",
+      "DOI": "10.1021/acs.iecr.4c00669",
+      "volume": "63",
+      "author": "V Dhakane",
+      "year": "2024",
+      "unstructured": "Dhakane, V. & Yada, A. Computational fluid dynamics-deep neural network (CFD-DNN) surrogate model with graphical user interface (GUI) for predicting hydrodynamic parameters in three-phase bubble column reactors. Ind. Eng. Chem. Res. 63, 11670–11685 (2024).",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "2329_CR6",
+      "doi-asserted-by": "publisher",
+      "first-page": "115020",
+      "DOI": "10.1016/j.enbuild.2024.115020",
+      "volume": "326",
+      "author": "W Zhang",
+      "year": "2025",
+      "unstructured": "Zhang, W. et al. Convolutional neural networks-based surrogate model for fast computational fluid dynamics simulations of indoor airflow distribution. Energy Build. 326, 115020 (2025).",
+      "journal-title": "Energy Build."
+    },
+    {
+      "key": "2329_CR7",
+      "doi-asserted-by": "publisher",
+      "first-page": "024003",
+      "DOI": "10.1088/1361-6595/acb28c",
+      "volume": "32",
+      "author": "AD Bonzanini",
+      "year": "2023",
+      "unstructured": "Bonzanini, A. D. et al. Foundations of machine learning for low-temperature plasmas: methods and case studies. Plasma Sources Sci. Technol. 32, 024003 (2023).",
+      "journal-title": "Plasma Sources Sci. Technol."
+    },
+    {
+      "key": "2329_CR8",
+      "doi-asserted-by": "publisher",
+      "first-page": "299",
+      "DOI": "10.1016/j.cherd.2024.09.031",
+      "volume": "211",
+      "author": "P Liu",
+      "year": "2024",
+      "unstructured": "Liu, P., Wu, Q., Ren, X., Wang, Y. & Ni, D. A deep-learning-based surrogate modeling method with application to plasma processing. Chem. Eng. Res. Des. 211, 299–317 (2024).",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "2329_CR9",
+      "doi-asserted-by": "publisher",
+      "first-page": "125013",
+      "DOI": "10.1088/1361-6595/ad98bf",
+      "volume": "33",
+      "author": "Y Zhao",
+      "year": "2024",
+      "unstructured": "Zhao, Y., Chen, W., Miao, Z., Yang, P. & Zhou, X. Deep learning-assisted magnetized inductively coupled plasma discharge modeling. Plasma Sources Sci. Technol. 33, 125013 (2024).",
+      "journal-title": "Plasma Sources Sci. Technol."
+    },
+    {
+      "key": "2329_CR10",
+      "doi-asserted-by": "publisher",
+      "first-page": "568",
+      "DOI": "10.1038/s42256-024-00839-1",
+      "volume": "6",
+      "author": "A Diaw",
+      "year": "2024",
+      "unstructured": "Diaw, A. et al. Efficient learning of accurate surrogates for simulations of complex systems. Nat. Mach. Intell. 6, 568–577 (2024).",
+      "journal-title": "Nat. Mach. Intell."
+    },
+    {
+      "key": "2329_CR11",
+      "doi-asserted-by": "publisher",
+      "first-page": "686–707,",
+      "DOI": "10.1016/j.jcp.2018.10.045",
+      "volume": "378",
+      "author": "M Raissi",
+      "year": "2019",
+      "unstructured": "Raissi, M., Perdikaris, P. & Karniadakis, G. E. Physics-informed neural networks: a deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. J. Comp. Phys. 378, 686–707, (2019).",
+      "journal-title": "J. Comp. Phys."
+    },
+    {
+      "key": "2329_CR12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41598-024-62117-9",
+      "volume": "14",
+      "author": "HS Wong",
+      "year": "2024",
+      "unstructured": "Wong, H. S. et al. Strategies for multi-case physics-informed neural networks for tube flows: a study using 2D flow scenarios. Sci. Rep. 14, 11577 (2024).",
+      "journal-title": "Sci. Rep."
+    },
+    {
+      "key": "2329_CR13",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-019-10343-5",
+      "volume": "10",
+      "author": "GPP Pun",
+      "year": "2019",
+      "unstructured": "Pun, G. P. P. et al. Physically informed artificial neural networks for atomistic modeling of materials. Nat. Commun. 10, 2339 (2019).",
+      "journal-title": "Nat. Commun."
+    },
+    {
+      "key": "2329_CR14",
+      "doi-asserted-by": "publisher",
+      "first-page": "572",
+      "DOI": "10.1109/TPWRS.2022.3162473",
+      "volume": "38",
+      "author": "B Huang",
+      "year": "2023",
+      "unstructured": "Huang, B. & Wang, J. Applications of physics-informed neural networks in power systems—a review. IEEE Trans. Power Sys. 38, 572–588 (2023).",
+      "journal-title": "IEEE Trans. Power Sys"
+    },
+    {
+      "key": "2329_CR15",
+      "first-page": "035032",
+      "volume": "4",
+      "author": "SP Moschou",
+      "year": "2023",
+      "unstructured": "Moschou, S. P. et al. Physics-informed neural networks for modeling astrophysical shocks. Mach. Learn.: Sci. Technol. 4, 035032 (2023).",
+      "journal-title": "Mach. Learn.: Sci. Technol."
+    },
+    {
+      "key": "2329_CR16",
+      "doi-asserted-by": "publisher",
+      "first-page": "5396",
+      "DOI": "10.1016/j.net.2024.07.048",
+      "volume": "56",
+      "author": "J Seo",
+      "year": "2024",
+      "unstructured": "Seo, J., Kim, I. H. & Nam, H. Leveraging physics-informed neural computing for transport simulations of nuclear fusion plasmas. Nucl. Eng. Technol. 56, 5396–5404 (2024).",
+      "journal-title": "Nucl. Eng. Technol."
+    },
+    {
+      "key": "2329_CR17",
+      "doi-asserted-by": "publisher",
+      "first-page": "20200093",
+      "DOI": "10.1098/rsta.2020.0093",
+      "volume": "379",
+      "author": "K Kashinath",
+      "year": "2021",
+      "unstructured": "Kashinath, K. et al. Physics-informed machine learning: case studies for weather and climate modelling. Philos. Trans. R. Soc. A 379, 20200093 (2021).",
+      "journal-title": "Philos. Trans. R. Soc. A"
+    },
+    {
+      "key": "2329_CR18",
+      "doi-asserted-by": "publisher",
+      "first-page": "422",
+      "DOI": "10.1038/s42254-021-00314-5",
+      "volume": "3",
+      "author": "GE Karniadakis",
+      "year": "2021",
+      "unstructured": "Karniadakis, G. E. et al. Physics-informed machine learning. Nat. Rev. Phys. 3, 422–440 (2021).",
+      "journal-title": "Nat. Rev. Phys."
+    },
+    {
+      "key": "2329_CR19",
+      "doi-asserted-by": "publisher",
+      "first-page": "88",
+      "DOI": "10.1007/s10915-022-01939-z",
+      "volume": "92",
+      "author": "S Cuomo",
+      "year": "2022",
+      "unstructured": "Cuomo, S. et al. Scientific machine learning through physics–informed neural networks: where we are and what’s next. J. Sci. Comput 92, 88 (2022).",
+      "journal-title": "J. Sci. Comput"
+    },
+    {
+      "key": "2329_CR20",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41598-023-49977-3",
+      "volume": "14",
+      "author": "J Seo",
+      "year": "2024",
+      "unstructured": "Seo, J. Solving real-world optimization tasks using physics-informed neural computing. Sci. Rep. 14, 202 (2024).",
+      "journal-title": "Sci. Rep."
+    },
+    {
+      "key": "2329_CR21",
+      "doi-asserted-by": "publisher",
+      "first-page": "376",
+      "DOI": "10.1029/2018MS001472",
+      "volume": "11",
+      "author": "T Bolton",
+      "year": "2019",
+      "unstructured": "Bolton, T. & Zanna, L. Applications of deep learning to ocean data inference and subgrid parameterization. J. Adv. Model. Earth Syst. 11, 376–399 (2019).",
+      "journal-title": "J. Adv. Model. Earth Syst."
+    },
+    {
+      "key": "2329_CR22",
+      "doi-asserted-by": "publisher",
+      "first-page": "166",
+      "DOI": "10.1016/j.neunet.2020.08.017",
+      "volume": "132",
+      "author": "P Jin",
+      "year": "2020",
+      "unstructured": "Jin, P. et al. SympNets: Intrinsic structure-preserving symplectic networks for identifying Hamiltonian systems. Neural Netw. 132, 166–179 (2020).",
+      "journal-title": "Neural Netw."
+    },
+    {
+      "key": "2329_CR23",
+      "doi-asserted-by": "publisher",
+      "first-page": "098302",
+      "DOI": "10.1103/PhysRevLett.126.098302",
+      "volume": "126",
+      "author": "T Beucler",
+      "year": "2021",
+      "unstructured": "Beucler, T. et al. Enforcing analytic constraints in neural networks emulating physical systems. Phys. Rev. Lett. 126, 098302 (2021).",
+      "journal-title": "Phys. Rev. Lett."
+    },
+    {
+      "key": "2329_CR24",
+      "doi-asserted-by": "publisher",
+      "first-page": "110325",
+      "DOI": "10.1016/j.jcp.2021.110325",
+      "volume": "437",
+      "author": "Y Tong",
+      "year": "2021",
+      "unstructured": "Tong, Y. et al. Symplectic neural networks in Taylor series form for Hamiltonian systems. J. Comp. Phys. 437, 110325 (2021).",
+      "journal-title": "J. Comp. Phys."
+    },
+    {
+      "key": "2329_CR25",
+      "doi-asserted-by": "publisher",
+      "first-page": "084003",
+      "DOI": "10.1088/1361-6595/aceaa4",
+      "volume": "32",
+      "author": "TC Dias",
+      "year": "2023",
+      "unstructured": "Dias, T. C. et al. A reaction mechanism for oxygen plasmas. Plasma Sources Sci. Technol. 32, 084003 (2023).",
+      "journal-title": "Plasma Sources Sci. Technol."
+    },
+    {
+      "key": "2329_CR26",
+      "doi-asserted-by": "publisher",
+      "first-page": "043001",
+      "DOI": "10.1088/1361-6595/ab0537",
+      "volume": "28",
+      "author": "A Tejero-del-Caz",
+      "year": "2019",
+      "unstructured": "Tejero-del-Caz, A. et al. The LisbOn KInetics Boltzmann solver. Plasma Sources Sci. Technolo. 28, 043001 (2019).",
+      "journal-title": "Plasma Sources Sci. Technolo."
+    },
+    {
+      "key": "2329_CR27",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Prechelt, L. Early stopping—but when? In Neural Networks: Tricks of the Trade, Lecture Notes in Computer Science Vol. 7700 (eds Orr, G. B. & Müller, K. R.) (Springer, 2012).",
+      "DOI": "10.1007/978-3-642-35289-8_5"
+    },
+    {
+      "key": "2329_CR28",
+      "unstructured": "Glorot, X. & Bengio, Y. Understanding the difficulty of training deep feedforward neural networks. In Proc. of the 13th International Conference on Artificial Intelligence and Statistics, PMLR Vol. 9 (eds Teh, Y. W. & Titterington, M.) 249–256 (JMLR Workshop and Conference Proceedings, 2010)."
+    },
+    {
+      "key": "2329_CR29",
+      "unstructured": "Kingma, D. P. & Ba, J. Adam: a method for stochastic optimization. arXiv preprint https://arxiv.org/abs/1412.6980 (2017)."
+    },
+    {
+      "key": "2329_CR30",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Andersson, J. A. E., Gillis, J., Horn, G., Rawlings, J. B. & Diehl, M. CasADi—A Software Framework for Nonlinear Optimization and Optimal Control (Mathematical Programming Computation, 2018).",
+      "DOI": "10.1007/s12532-018-0139-4"
+    }
+  ],
+  "container-title": [
+    "Communications Physics"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s42005-025-02329-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s42005-025-02329-1",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s42005-025-02329-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        17
+      ]
+    ],
+    "date-time": "2025-11-17T21:04:29Z",
+    "timestamp": 1763413469000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s42005-025-02329-1"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        17
+      ]
+    ]
+  },
+  "references-count": 30,
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          12
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "2329"
+  ],
+  "URL": "https://doi.org/10.1038/s42005-025-02329-1",
+  "relation": {},
+  "ISSN": [
+    "2399-3650"
+  ],
+  "issn-type": [
+    {
+      "value": "2399-3650",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        11,
+        17
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "25 March 2025",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "25 September 2025",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "17 November 2025",
+      "order": 3,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "The authors declare no competing interests.",
+      "order": 1,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Competing interests"
+      }
+    }
+  ],
+  "article-number": "433"
+}

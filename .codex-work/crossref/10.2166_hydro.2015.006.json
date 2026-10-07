@@ -1,0 +1,1687 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        13
+      ]
+    ],
+    "date-time": "2026-09-13T02:47:28Z",
+    "timestamp": 1789267648486,
+    "version": "build-2803163510"
+  },
+  "reference-count": 139,
+  "publisher": "IWA Publishing",
+  "issue": "5",
+  "content-domain": {
+    "domain": [
+      "iwaponline.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [],
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        9,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:p>Activated sludge systems have been applied for 100 years now. Over the course of the years, researchers have developed various models to describe activated sludge processes. The main aim has been to gain a better understanding of the conditions that favour the conversions of carbon, nitrogen and phosphorus present in wastewater, and associated oxygen consumption and sludge production. The current paper presents a reflection on the historical developments, state-of-the-art of activated sludge modelling and future trends. Over the years, many wastewater research groups have benefitted greatly from the development of activated sludge models (ASMs). On one hand, modelling has been expanded through the development of novel theoretical concepts and their application in new fields. On the other hand, models have been used for practical projects. Although, scientists are still searching for the ideal model, one can say that ASMs are developed to the extent that they can be applied in practice with confidence. New developments are expected to be seen regarding plant-wide modelling, integration with other models at the (urban) system level, organizational and computational infrastructure, and interface and communication with various stakeholders and users.</jats:p>",
+  "DOI": "10.2166/hydro.2015.006",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2015,
+        8,
+        21
+      ]
+    ],
+    "date-time": "2015-08-21T15:12:28Z",
+    "timestamp": 1440169948000
+  },
+  "page": "697-718",
+  "update-policy": "https://doi.org/10.2166/iwapcrossmarkpolicypage",
+  "source": "Crossref",
+  "is-referenced-by-count": 64,
+  "title": [
+    "Twenty-five years of ASM1: past, present and future of wastewater treatment modelling"
+  ],
+  "prefix": "10.2166",
+  "volume": "17",
+  "author": [
+    {
+      "given": "M. C. M.",
+      "family": "Van Loosdrecht",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Biotechnology, Delft University of Technology, Julianalaan 67, 2628 BC Delft, The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "C. M.",
+      "family": "Lopez-Vazquez",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Environmental Engineering and Water Technology, UNESCO-IHE Institute for Water Education, Westvest 7, 2611AX Delft, The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "S. C. F.",
+      "family": "Meijer",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Yuniko B.V., Stenograaf 1, 6921EX Duiven, The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "C. M.",
+      "family": "Hooijmans",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Environmental Engineering and Water Technology, UNESCO-IHE Institute for Water Education, Westvest 7, 2611AX Delft, The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "D.",
+      "family": "Brdjanovic",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Biotechnology, Delft University of Technology, Julianalaan 67, 2628 BC Delft, The Netherlands"
+        },
+        {
+          "name": "Department of Environmental Engineering and Water Technology, UNESCO-IHE Institute for Water Education, Westvest 7, 2611AX Delft, The Netherlands"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "945",
+  "published-online": {
+    "date-parts": [
+      [
+        2015,
+        6,
+        1
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "issue": "3–4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C1",
+      "doi-asserted-by": "crossref",
+      "first-page": "308",
+      "DOI": "10.2166/hydro.2009.051",
+      "article-title": "Applications of numerical modelling in hydroinformatics",
+      "volume": "11",
+      "author": "Abbott",
+      "year": "2009",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C2",
+      "doi-asserted-by": "crossref",
+      "first-page": "110",
+      "DOI": "10.2166/hydro.2010.065",
+      "article-title": "Realising social justice in water sector: Part 1",
+      "volume": "12",
+      "author": "Abbott",
+      "year": "2010",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C3",
+      "doi-asserted-by": "crossref",
+      "first-page": "225",
+      "DOI": "10.2166/hydro.2009.065",
+      "article-title": "Realising social justice in water sector: Part 2",
+      "volume": "12",
+      "author": "Abbott",
+      "year": "2010",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C4",
+      "doi-asserted-by": "crossref",
+      "first-page": "516",
+      "DOI": "10.2166/hydro.2013.198",
+      "article-title": "Towards a hydroinformatics praxis in the service of social justice",
+      "volume": "16",
+      "author": "Abbott",
+      "year": "2013",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "issue": "4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C5",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "DOI": "10.1145/1721654.1721672",
+      "article-title": "A view of cloud computing",
+      "volume": "53",
+      "author": "Armbrust",
+      "year": "2010",
+      "journal-title": "Commun. ACM"
+    },
+    {
+      "issue": "5",
+      "key": "2020032613563623500_HYDRO-D-15-00006C6",
+      "doi-asserted-by": "crossref",
+      "first-page": "969",
+      "DOI": "10.2175/106143097X125669",
+      "article-title": "General model for biological nutrient removal activated-sludge systems: model presentation",
+      "volume": "69",
+      "author": "Barker",
+      "year": "1997",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "issue": "10",
+      "key": "2020032613563623500_HYDRO-D-15-00006C7",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "DOI": "10.2166/wst.2002.0292",
+      "article-title": "The IWA Anaerobic Digestion Model No. 1 (ADM1)",
+      "volume": "45",
+      "author": "Batstone",
+      "year": "2002",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C8",
+      "doi-asserted-by": "crossref",
+      "first-page": "1147",
+      "DOI": "10.2166/wst.2012.300",
+      "article-title": "Towards a generalized physicochemical framework",
+      "volume": "66",
+      "author": "Batstone",
+      "year": "2012",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "5",
+      "key": "2020032613563623500_HYDRO-D-15-00006C9",
+      "doi-asserted-by": "crossref",
+      "first-page": "965",
+      "DOI": "10.2166/wst.2013.312",
+      "article-title": "Cost-effective solutions for water quality improvement in the Dommel River supported by sewer–WWTP–river integrated modelling",
+      "volume": "68",
+      "author": "Benedetti",
+      "year": "2013",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C10",
+      "doi-asserted-by": "crossref",
+      "first-page": "1203",
+      "DOI": "10.2166/wst.2013.397",
+      "article-title": "Modelling and monitoring of integrated urban wastewater systems: review on status and perspectives",
+      "volume": "68",
+      "author": "Benedetti",
+      "year": "2013",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C11",
+      "doi-asserted-by": "crossref",
+      "first-page": "509",
+      "DOI": "10.1016/j.biortech.2007.01.020",
+      "article-title": "Production of polyhydroxyalkanoates by activated sludge treating a paper mill wastewater",
+      "volume": "99",
+      "author": "Bengtsson",
+      "year": "2008",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C12",
+      "unstructured": "Betancur S. 2014 Evaluation and modelling of UPM pulp mill wastewater treatment plant in Fray Bentos, Uruguay. MSc. Thesis. UNESCO-IHE Institute for Water Education, Delft, the Netherlands."
+    },
+    {
+      "issue": "4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C13",
+      "doi-asserted-by": "crossref",
+      "first-page": "1035",
+      "DOI": "10.1016/S0043-1354(97)00322-9",
+      "article-title": "Influence of temperature on biological phosphorus removal: process and ecological studies",
+      "volume": "32",
+      "author": "Brdjanovic",
+      "year": "1998",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C14",
+      "doi-asserted-by": "crossref",
+      "first-page": "846",
+      "DOI": "10.1016/S0043-1354(99)00219-5",
+      "article-title": "Modelling COD, N and P removal in a full-scale wwtp Haarlem Waarderpolder",
+      "volume": "34",
+      "author": "Brdjanovic",
+      "year": "2000",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "7",
+      "key": "2020032613563623500_HYDRO-D-15-00006C15",
+      "doi-asserted-by": "crossref",
+      "first-page": "21",
+      "DOI": "10.2166/wst.2007.675",
+      "article-title": "Use of plant-wide modelling for optimization and upgrade of a tropical wastewater treatment plant in a developing country",
+      "volume": "56",
+      "author": "Brdjanovic",
+      "year": "2007",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C16",
+      "doi-asserted-by": "crossref",
+      "first-page": "156",
+      "DOI": "10.2166/washdev.2014.098",
+      "article-title": "eSOS – emergency sanitation operation system",
+      "volume": "5",
+      "author": "Brdjanovic",
+      "year": "2014",
+      "journal-title": "J. Water Sanit. Hyg. Dev."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2166/9781780404660",
+      "volume-title": "Applications of Activated Sludge Models",
+      "author": "Brdjanovic",
+      "year": "2015"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C18",
+      "article-title": "New developments in modeling wastewater treatment plants – Using stoichiometry to build a plant-wide mass balance based steady state WWTP model",
+      "author": "Brink",
+      "year": "2007"
+    },
+    {
+      "issue": "16",
+      "key": "2020032613563623500_HYDRO-D-15-00006C19",
+      "doi-asserted-by": "crossref",
+      "first-page": "4113",
+      "DOI": "10.1016/S0043-1354(02)00104-5",
+      "article-title": "Practical identifiability of ASM2d parameters – systematic selection and tuning of parameter subsets",
+      "volume": "36",
+      "author": "Brun",
+      "year": "2002",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C20",
+      "doi-asserted-by": "crossref",
+      "first-page": "2247",
+      "DOI": "10.1016/j.watres.2011.01.020",
+      "article-title": "A consistent modelling methodology for secondary settling tanks in wastewater treatment",
+      "volume": "45",
+      "author": "Bürger",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C21",
+      "doi-asserted-by": "crossref",
+      "first-page": "93",
+      "DOI": "10.1016/j.compchemeng.2012.02.016",
+      "article-title": "On reliable and unreliable numerical methods for the simulation of secondary settling tanks in wastewater treatment",
+      "volume": "41",
+      "author": "Bürger",
+      "year": "2012",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C22",
+      "doi-asserted-by": "crossref",
+      "first-page": "1219",
+      "DOI": "10.1016/0043-1354(93)90014-9",
+      "article-title": "Competition between phosphate and polysaccharide accumulating bacteria in enhanced biological phosphorus removal systems",
+      "volume": "27",
+      "author": "Cech",
+      "year": "1993",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C23",
+      "doi-asserted-by": "crossref",
+      "first-page": "448",
+      "DOI": "10.2166/wst.2013.272",
+      "article-title": "Perspectives on modelling micropollutants in wastewater treatment plants",
+      "volume": "68",
+      "author": "Clouzot",
+      "year": "2013",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "12",
+      "key": "2020032613563623500_HYDRO-D-15-00006C24",
+      "doi-asserted-by": "crossref",
+      "first-page": "1511",
+      "DOI": "10.1016/0043-1354(86)90115-6",
+      "article-title": "Biochemical model for enhanced biological phosphorus removal",
+      "volume": "20",
+      "author": "Comeau",
+      "year": "1986",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C25",
+      "volume-title": "The COST Simulation Benchmark: Description and Simulator Manual",
+      "author": "Copp",
+      "year": "2002"
+    },
+    {
+      "issue": "4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C26",
+      "doi-asserted-by": "crossref",
+      "first-page": "841",
+      "DOI": "10.2166/wst.2010.912",
+      "article-title": "New framework for standardized notation in wastewater treatment modelling",
+      "volume": "61",
+      "author": "Corominas",
+      "year": "2010",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C27",
+      "doi-asserted-by": "crossref",
+      "first-page": "801",
+      "DOI": "10.1002/bit.21196",
+      "article-title": "Kinetic model of a granular sludge SBR: influences on nutrient removal",
+      "volume": "97",
+      "author": "de Kreuk",
+      "year": "2007",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C28",
+      "first-page": "47",
+      "article-title": "A general model for the activated sludge process",
+      "volume": "12",
+      "author": "Dold",
+      "year": "1980",
+      "journal-title": "Progress Water Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C29",
+      "unstructured": "Dold P. L. Wentzel M. C. Billing A. E. Ekama G. A. Marais G. v. R. 1991 Activated sludge simulation programs: Nitrification and nitrification/denitrification systems (version 1.0). Report TT 52/91. Water Research Commission, Pretoria, South Africa."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C30",
+      "unstructured": "Ekama G. A. Marais G. v. R. 1978 The dynamic behaviour of the activated sludge process. Research Report W27. Department of Civil Engineering, University of Cape Town, Rondebosch, South Africa."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C31",
+      "article-title": "Modelling",
+      "volume-title": "Activated Sludge: 100 Years and Counting",
+      "author": "Ekama",
+      "year": "2014"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C32",
+      "author": "Energyfabriek",
+      "year": "2015"
+    },
+    {
+      "issue": "11",
+      "key": "2020032613563623500_HYDRO-D-15-00006C33",
+      "doi-asserted-by": "crossref",
+      "first-page": "2036",
+      "DOI": "10.1002/j.1554-7531.2011.tb00270.x",
+      "article-title": "Stepwise calibration of the activated sludge model No. 1 at a partially denitrifying large wastewater treatment plant",
+      "volume": "83",
+      "author": "Fall",
+      "year": "2011",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "issue": "15",
+      "key": "2020032613563623500_HYDRO-D-15-00006C34",
+      "doi-asserted-by": "crossref",
+      "first-page": "4272",
+      "DOI": "10.1016/j.watres.2010.06.007",
+      "article-title": "Activated sludge model (ASM) based modelling of membrane bioreactor (MBR) processes: a critical review with special regard to MBR specificities",
+      "volume": "44",
+      "author": "Fenu",
+      "year": "2010",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C35",
+      "doi-asserted-by": "crossref",
+      "first-page": "155",
+      "DOI": "10.1002/cfg.82",
+      "article-title": "Combining genomics, metabolome analysis, and biochemical modelling to understand metabolic networks",
+      "volume": "2",
+      "author": "Fiehn",
+      "year": "2001",
+      "journal-title": "Comp. Funct. Genom."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C36",
+      "doi-asserted-by": "crossref",
+      "first-page": "1140",
+      "DOI": "10.2175/106143097X122103",
+      "article-title": "Evaluation of the capacity of phosphorus-accumulating organisms to use nitrate and oxygen as final electron acceptors: a theoretical study on population dynamics",
+      "volume": "71",
+      "author": "Filipe",
+      "year": "1999",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C37",
+      "doi-asserted-by": "crossref",
+      "first-page": "32",
+      "DOI": "10.1002/bit.1023",
+      "article-title": "Stoichiometry and kinetics of acetate uptake under anaerobic conditions by an enriched culture of phosphorus-accumulating organisms at different pHs",
+      "volume": "76",
+      "author": "Filipe",
+      "year": "2001",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C38",
+      "doi-asserted-by": "crossref",
+      "first-page": "172",
+      "DOI": "10.1016/j.watres.2013.10.022",
+      "article-title": "Calibration and validation of a phenomenological influent pollutant disturbance scenario generator using full-scale data",
+      "volume": "51",
+      "author": "Flores-Alsina",
+      "year": "2014",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "9",
+      "key": "2020032613563623500_HYDRO-D-15-00006C39",
+      "doi-asserted-by": "crossref",
+      "first-page": "763",
+      "DOI": "10.1016/j.envsoft.2003.03.005",
+      "article-title": "Activated sludge wastewater treatment plant modelling and simulation: state of the art",
+      "volume": "19",
+      "author": "Gernaey",
+      "year": "2004",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "issue": "11",
+      "key": "2020032613563623500_HYDRO-D-15-00006C40",
+      "doi-asserted-by": "crossref",
+      "first-page": "1255",
+      "DOI": "10.1016/j.envsoft.2011.06.001",
+      "article-title": "Dynamic influent pollutant disturbance scenario generation using a phenomenological modelling approach",
+      "volume": "26",
+      "author": "Gernaey",
+      "year": "2011",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C41",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Gernaey K. V. Jeppsson U. Vanrolleghem P. A. Copp J. B. 2014 Benchmarking of Control Strategies for Wastewater Treatment Plants. IWA Scientific and Technical Report No. 23. IWA Publishing, London, UK. ISBN: 9781843391463.",
+      "DOI": "10.2166/9781780401171"
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C42",
+      "doi-asserted-by": "crossref",
+      "first-page": "141",
+      "DOI": "10.2166/wst.2009.589",
+      "article-title": "A comparative analysis of different approaches for integrated WWTP modelling",
+      "volume": "59",
+      "author": "Grau",
+      "year": "2009",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C43",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.2166/wst.2006.082",
+      "article-title": "Activated sludge modelling: past, present and future",
+      "volume": "53",
+      "author": "Gujer",
+      "year": "2006",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C44",
+      "doi-asserted-by": "crossref",
+      "first-page": "1011",
+      "DOI": "10.2166/wst.1991.0553",
+      "article-title": "Activated sludge modelling and simulation",
+      "volume": "23",
+      "author": "Gujer",
+      "year": "1991",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C45",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.2166/wst.1999.0039",
+      "article-title": "Activated Sludge Model No. 3",
+      "volume": "3",
+      "author": "Gujer",
+      "year": "1999",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C46",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.watres.2014.06.043",
+      "article-title": "A review of biological sulfate conversions in wastewater treatment",
+      "volume": "65",
+      "author": "Hao",
+      "year": "2014",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "8",
+      "key": "2020032613563623500_HYDRO-D-15-00006C47",
+      "doi-asserted-by": "crossref",
+      "first-page": "1943",
+      "DOI": "10.2166/wst.2009.223",
+      "article-title": "Activated sludge modelling in practice–an international survey",
+      "volume": "60",
+      "author": "Hauduc",
+      "year": "2009",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C48",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.1992.0110",
+      "article-title": "Characterization of wastewater for modelling of activated sludge processes",
+      "volume": "25",
+      "author": "Henze",
+      "year": "1992",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "5",
+      "key": "2020032613563623500_HYDRO-D-15-00006C49",
+      "doi-asserted-by": "crossref",
+      "first-page": "505",
+      "DOI": "10.1016/0043-1354(87)90058-3",
+      "article-title": "A general model for single-sludge wastewater treatment systems",
+      "volume": "21",
+      "author": "Henze",
+      "year": "1987",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C50",
+      "unstructured": "Henze M. Grady J. R. C. P. L. Gujer W. Marais G. v. R. Matsuo T. 1987b Activated Sludge Model No 1. IAWPRC Scientific and Technical Report No. 1. IAWQ, London, UK."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C51",
+      "unstructured": "Henze M. Gujer W. Mino T. Matsuo T. Wentzel M. C. Marais G. V. R. 1995 Activated Sludge Model No. 2. IAWQ Scientific and Technical Report No. 3. IAWQ, London, UK."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C52",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "article-title": "Activated Sludge Model No. 2d, ASM2d",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C53",
+      "unstructured": "Henze M. Gujer W. Mino T. van Loosedrecht M. 2000 Activated Sludge Models ASM1, ASM2, ASM2d and ASM3. IWA Scientific and Technical Report No. 9. IWA Publishing, London, UK."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C54",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2166/9781780401867",
+      "volume-title": "Biological Wastewater Treatment. Principles, Modelling and Design",
+      "author": "Henze",
+      "year": "2008"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C55",
+      "article-title": "Model-based evaluation of the urban wastewater infrastructure reconstruction options in a developing country: Case study Sarajevo in Bosnia and Herzegovina",
+      "author": "Hodzic",
+      "year": "2011"
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C56",
+      "doi-asserted-by": "crossref",
+      "first-page": "1242",
+      "DOI": "10.1002/bit.21508",
+      "article-title": "A general kinetic model for biological nutrient removal activated sludge systems: model development",
+      "volume": "98",
+      "author": "Hu",
+      "year": "2007",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C57",
+      "doi-asserted-by": "crossref",
+      "first-page": "127",
+      "DOI": "10.2166/wst.2002.0100",
+      "article-title": "A practical protocol for dynamic modelling of activated sludge systems",
+      "volume": "45",
+      "author": "Hulsbeek",
+      "year": "2002",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C58",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1201/b14666",
+      "volume-title": "Sewer Processes: Microbial and Chemical Process Engineering of Sewer Networks",
+      "author": "Hvitved-Jacobsen",
+      "year": "2013"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C59",
+      "article-title": "A 3-phase anaerobic digestion model",
+      "author": "Ikumi",
+      "year": "2011"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C60",
+      "doi-asserted-by": "crossref",
+      "first-page": "267",
+      "DOI": "10.1016/j.watres.2014.02.008",
+      "article-title": "Biodegradability of wastewater and activated sludge organics in anaerobic digestion",
+      "volume": "56",
+      "author": "Ikumi",
+      "year": "2014",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C61",
+      "unstructured": "Ikumi D. S. Harding T. H. Vogts M. Lakay M. T. Mafungwa H. Brouckaert C. J. Ekama G. A. 2014b Mass balances modelling over wastewater treatment plants III. Final Report. Water Research Comission, South Africa."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C62",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2166/9781780404943",
+      "volume-title": "Activated Sludge – 100 Years and Counting",
+      "author": "Jenkins",
+      "year": "2014"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C63",
+      "unstructured": "Jeppsson U. 1996 Modelling aspects of wastewater treatment processes. PhD thesis. Lund University of Technology. Lund, Sweden. ISBN: 91-88934-00-4."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C64",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.2013.246",
+      "article-title": "Benchmark simulation models, quo vadis?",
+      "volume": "68",
+      "author": "Jeppsson",
+      "year": "2013",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "17",
+      "key": "2020032613563623500_HYDRO-D-15-00006C65",
+      "doi-asserted-by": "crossref",
+      "first-page": "5517",
+      "DOI": "10.1016/j.watres.2012.07.028",
+      "article-title": "Waste to resource: converting paper mill wastewater to bioplastic",
+      "volume": "46",
+      "author": "Jiang",
+      "year": "2012",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C66",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.2166/wst.1992.0118",
+      "article-title": "Estimation of kinetic parameters of heterotrophic biomass under aerobic conditions and characterization of wastewater for activated sludge modelling",
+      "volume": "25",
+      "author": "Kappeler",
+      "year": "1992",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "5979",
+      "key": "2020032613563623500_HYDRO-D-15-00006C67",
+      "doi-asserted-by": "crossref",
+      "first-page": "702",
+      "DOI": "10.1126/science.1185941",
+      "article-title": "Sewage treatment with anammox",
+      "volume": "328",
+      "author": "Kartal",
+      "year": "2010",
+      "journal-title": "Science"
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C68",
+      "doi-asserted-by": "crossref",
+      "first-page": "685",
+      "DOI": "10.1002/(SICI)1097-0290(19961220)52:6<685::AID-BIT6>3.0.CO;2-K",
+      "article-title": "A metabolic model for biological phosphorus removal by denitrifying organisms",
+      "volume": "52",
+      "author": "Kuba",
+      "year": "1996",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C69",
+      "doi-asserted-by": "crossref",
+      "first-page": "777",
+      "DOI": "10.1016/S0043-1354(96)00370-3",
+      "article-title": "Occurrence of denitrifying phosphorus removing bacteria in modified UCT-type wastewater treatment plants",
+      "volume": "31",
+      "author": "Kuba",
+      "year": "1997",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C70",
+      "doi-asserted-by": "crossref",
+      "first-page": "292",
+      "DOI": "10.1016/j.watres.2014.02.032",
+      "article-title": "Full-scale partial nitritation/anammox experiences – an application survey",
+      "volume": "55",
+      "author": "Lackner",
+      "year": "2014",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C71",
+      "doi-asserted-by": "crossref",
+      "first-page": "728",
+      "DOI": "10.2166/wst.2013.301",
+      "article-title": "On data requirements for calibration of integrated models for urban water systems",
+      "volume": "68",
+      "author": "Langeveld",
+      "year": "2013",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "9",
+      "key": "2020032613563623500_HYDRO-D-15-00006C72",
+      "doi-asserted-by": "crossref",
+      "first-page": "1687",
+      "DOI": "10.2166/wst.2009.131",
+      "article-title": "CWM1 – a general model to describe biokinetic processes in subsurface flow constructed wetlands",
+      "volume": "59",
+      "author": "Langergraber",
+      "year": "2009",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "10",
+      "key": "2020032613563623500_HYDRO-D-15-00006C73",
+      "doi-asserted-by": "crossref",
+      "first-page": "1575",
+      "DOI": "10.2166/wst.2014.425",
+      "article-title": "A protocol for the use of computational fluid dynamics as a supportive tool for wastewater treatment plant modelling",
+      "volume": "70",
+      "author": "Laurent",
+      "year": "2014",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C74",
+      "doi-asserted-by": "crossref",
+      "first-page": "450",
+      "DOI": "10.1016/j.watres.2008.10.032",
+      "article-title": "Modelling the PAO–GAO competition: effects of carbon source, pH and temperature",
+      "volume": "43",
+      "author": "Lopez-Vazquez",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C75",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "DOI": "10.2166/washdev.2013.017",
+      "article-title": "Coupling ASM3 and ADM1 for wastewater treatment process optimisation and biogas production in a developing country: case-study Surat, India",
+      "volume": "3",
+      "author": "Lopez-Vazquez",
+      "year": "2013",
+      "journal-title": "J. Water Sanit. Hyg. Dev."
+    },
+    {
+      "issue": "14",
+      "key": "2020032613563623500_HYDRO-D-15-00006C76",
+      "doi-asserted-by": "crossref",
+      "first-page": "3613",
+      "DOI": "10.1016/j.watres.2009.05.013",
+      "article-title": "Steady-state model based evaluation of sulfate reduction, autotrophic denitrification and nitrification integrated (SANI) process",
+      "volume": "43",
+      "author": "Lu",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C77",
+      "doi-asserted-by": "crossref",
+      "first-page": "91",
+      "DOI": "10.2166/wst.2006.079",
+      "article-title": "Modification of ASM3 for the determination of biomass adsorption/storage capacity in bulking sludge control",
+      "volume": "53",
+      "author": "Makinia",
+      "year": "2006",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C78",
+      "doi-asserted-by": "crossref",
+      "first-page": "195",
+      "DOI": "10.1016/0043-1354(93)90211-Y",
+      "article-title": "A rapid physical-chemical method for the determination of readily biodegradable soluble COD in municipal wastewater",
+      "volume": "27",
+      "author": "Mamais",
+      "year": "1993",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C79",
+      "first-page": "164",
+      "article-title": "The activated sludge process Part 1 – steady-state behaviour",
+      "volume": "2",
+      "author": "Marais",
+      "year": "1976",
+      "journal-title": "Water SA"
+    },
+    {
+      "issue": "4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C80",
+      "doi-asserted-by": "crossref",
+      "first-page": "793",
+      "DOI": "10.1016/j.watres.2003.11.005",
+      "article-title": "Filamentous bulking sludge – a critical review",
+      "volume": "38",
+      "author": "Martins",
+      "year": "2004",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "21",
+      "key": "2020032613563623500_HYDRO-D-15-00006C81",
+      "doi-asserted-by": "crossref",
+      "first-page": "5632",
+      "DOI": "10.1021/es049659l",
+      "article-title": "Three-dimensional dual-morphotype species modelling of activated sludge flocs",
+      "volume": "38",
+      "author": "Martins",
+      "year": "2004",
+      "journal-title": "Environ. Sci. Tech."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C82",
+      "doi-asserted-by": "crossref",
+      "first-page": "147",
+      "DOI": "10.2166/wst.1999.0033",
+      "article-title": "Modeling of phosphorus precipitation in wastewater treatment plants with enhanced biological phosphorus removal",
+      "volume": "39",
+      "author": "Maurer",
+      "year": "1999",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C83",
+      "doi-asserted-by": "crossref",
+      "first-page": "484",
+      "DOI": "10.1016/S0043-1354(98)00221-8",
+      "article-title": "Kinetics of biologically induced phosphorus precipitation in waste-water treatment",
+      "volume": "33",
+      "author": "Maurer",
+      "year": "1999",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C84",
+      "unstructured": "Meijer S. C. F. 2004 Theoretical and practical aspects of modelling activated sludge processes. PhD Thesis. Delft University of Technology, Delft, The Netherlands."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C85",
+      "volume-title": "A practical guide to activated sludge modelling. Lecture Notes",
+      "author": "Meijer",
+      "year": "2012"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C86",
+      "doi-asserted-by": "crossref",
+      "first-page": "2711",
+      "DOI": "10.1016/S0043-1354(00)00567-4",
+      "article-title": "Metabolic modeling of full-scale biological nitrogen and phosphorus removing WWTPs",
+      "volume": "35",
+      "author": "Meijer",
+      "year": "2001",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C87",
+      "doi-asserted-by": "crossref",
+      "first-page": "145",
+      "DOI": "10.2166/wst.2002.0102",
+      "article-title": "Error diagnostics and data reconciliation for activated sludge modelling using mass balances",
+      "volume": "25",
+      "author": "Meijer",
+      "year": "2002",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "5",
+      "key": "2020032613563623500_HYDRO-D-15-00006C88",
+      "doi-asserted-by": "crossref",
+      "first-page": "434",
+      "DOI": "10.1002/(SICI)1097-0290(19970605)54:5<434::AID-BIT4>3.0.CO;2-F",
+      "article-title": "An integrated metabolic model for the aerobic and denitrifying biological phosphorus removal",
+      "volume": "54",
+      "author": "Murnleitner",
+      "year": "1997",
+      "journal-title": "Biotech. Bioeng."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C89",
+      "doi-asserted-by": "crossref",
+      "first-page": "153",
+      "DOI": "10.1002/bit.24620",
+      "article-title": "Evaluating four mathematical models for nitrous oxide production by autotrophic ammonia-oxidizing bacteria",
+      "volume": "110",
+      "author": "Ni",
+      "year": "2013",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "17",
+      "key": "2020032613563623500_HYDRO-D-15-00006C90",
+      "doi-asserted-by": "crossref",
+      "first-page": "5070",
+      "DOI": "10.1016/j.watres.2010.07.036",
+      "article-title": "A conceptual ecosystem model of microbial communities in enhanced biological phosphorus removal plants",
+      "volume": "44",
+      "author": "Nielsen",
+      "year": "2010",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "7",
+      "key": "2020032613563623500_HYDRO-D-15-00006C91",
+      "doi-asserted-by": "crossref",
+      "first-page": "1913",
+      "DOI": "10.1016/j.watres.2009.01.012",
+      "article-title": "An ASM/ADM model interface for dynamic plant-wide simulation",
+      "volume": "43",
+      "author": "Nopens",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C92",
+      "first-page": "31",
+      "article-title": "Maximising the benefits of activated sludge modelling",
+      "volume": "April",
+      "author": "Nopens",
+      "year": "2014",
+      "journal-title": "Water 21 Magazine"
+    },
+    {
+      "issue": "11",
+      "key": "2020032613563623500_HYDRO-D-15-00006C93",
+      "doi-asserted-by": "crossref",
+      "first-page": "2271",
+      "DOI": "10.1016/j.watres.2007.02.030",
+      "article-title": "Advances in enhanced biological phosphorus removal: from micro to macro scale",
+      "volume": "41",
+      "author": "Oehmen",
+      "year": "2007",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "17",
+      "key": "2020032613563623500_HYDRO-D-15-00006C94",
+      "doi-asserted-by": "crossref",
+      "first-page": "4992",
+      "DOI": "10.1016/j.watres.2010.06.071",
+      "article-title": "Incorporating microbial ecology into the metabolic modelling of polyphosphate accumulating organisms and glycogen accumulating organisms",
+      "volume": "44",
+      "author": "Oehmen",
+      "year": "2010",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C95",
+      "doi-asserted-by": "crossref",
+      "first-page": "191",
+      "DOI": "10.1016/S0269-7491(96)00111-X",
+      "article-title": "Characterization and COD fractionation of domestic wastewaters",
+      "volume": "95",
+      "author": "Orhon",
+      "year": "1997",
+      "journal-title": "Environ. Pollut."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C96",
+      "volume-title": "Chemical Reaction Analysis",
+      "author": "Petersen",
+      "year": "1965"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C97",
+      "doi-asserted-by": "crossref",
+      "first-page": "15",
+      "DOI": "10.2166/hydro.2002.0003",
+      "article-title": "Evaluation of an ASM1 model calibration procedure on a municipal-industrial wastewater treatment plant",
+      "volume": "4",
+      "author": "Petersen",
+      "year": "2002",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C98",
+      "article-title": "A critical review on clarifier modelling: state-of-the-art and enginering practices",
+      "author": "Plósz",
+      "year": "2012"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C99",
+      "volume-title": "Urban Hydroinformatics: Data, Models and Decision Support for Integrated Urban Water Management",
+      "author": "Price",
+      "year": "2010"
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C100",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.memsci.2010.07.036",
+      "article-title": "Modelling the effect of biofilm formation on reverse osmosis performance: flux, feed channel pressure drop and solute passage",
+      "volume": "365",
+      "author": "Radu",
+      "year": "2010",
+      "journal-title": "J. Membr. Sci."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C101",
+      "article-title": "Modelling the effects of process configurations on the occurrence of microbial populations and their impact on the performance of enhanced biological phosphorus removal (EBPR) systems",
+      "author": "Ramirez-Higareda",
+      "year": "2012"
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C102",
+      "doi-asserted-by": "crossref",
+      "first-page": "81",
+      "DOI": "10.2166/wst.2002.0059",
+      "article-title": "Deterministic modelling of integrated urban drainage systems",
+      "volume": "45",
+      "author": "Rauch",
+      "year": "2002",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "16",
+      "key": "2020032613563623500_HYDRO-D-15-00006C103",
+      "doi-asserted-by": "crossref",
+      "first-page": "3887",
+      "DOI": "10.1016/S0043-1354(01)00110-5",
+      "article-title": "The EAWAG Bio-P module for Activated Sludge Model No. 3",
+      "volume": "35",
+      "author": "Rieger",
+      "year": "2001",
+      "journal-title": ". Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C104",
+      "unstructured": "Rieger L. Gillot S. Langergraber G. Ohtsuki T. Shaw A. Takács I. Winkler S. 2012 Guidelines for using activated sludge models. IWA Task Group on Good Modelling Practice. Scientific and Technical Report No. 22. IWA Publishing, London, UK."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C105",
+      "doi-asserted-by": "crossref",
+      "first-page": "77",
+      "DOI": "10.2166/wst.2002.0095",
+      "article-title": "Experience with guidelines for wastewater characterisation in the Netherlands",
+      "volume": "45",
+      "author": "Roeleveld",
+      "year": "2002",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C106",
+      "author": "Sahlstedt",
+      "year": "2004"
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C107",
+      "doi-asserted-by": "crossref",
+      "first-page": "319",
+      "DOI": "10.2166/hydro.2013.302",
+      "article-title": "An integrated cellular automata evolutionary-based approach for evaluating future scenarios and the expansion of urban drainage networks",
+      "volume": "16",
+      "author": "Sanchez",
+      "year": "2013",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C108",
+      "doi-asserted-by": "crossref",
+      "first-page": "203",
+      "DOI": "10.2166/wst.1994.0270",
+      "article-title": "Deterioration of enhanced biological phosphorus removal by the domination of microorganisms without polyphosphate accumulation",
+      "volume": "30",
+      "author": "Satoh",
+      "year": "1994",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "11",
+      "key": "2020032613563623500_HYDRO-D-15-00006C109",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.2166/wst.2003.0584",
+      "article-title": "The effect of GAO (glycogen accumulating organisms) on anaerobic carbon requirements in full-scale Australian EBPR (enhanced biological phosphorus removal) plants",
+      "volume": "47",
+      "author": "Saunders",
+      "year": "2003",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "12",
+      "key": "2020032613563623500_HYDRO-D-15-00006C110",
+      "doi-asserted-by": "crossref",
+      "first-page": "237",
+      "DOI": "10.2166/wst.2006.426",
+      "article-title": "Evolution of an ASM 2 d-like model structure due to operational changes of an SBR process",
+      "volume": "53",
+      "author": "Sin",
+      "year": "2006",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C111",
+      "doi-asserted-by": "crossref",
+      "first-page": "461",
+      "DOI": "10.1002/bit.260430605",
+      "article-title": "Model of the anaerobic metabolism of the biological phosphorous removal process: stoichiometry and pH influence",
+      "volume": "43",
+      "author": "Smolders",
+      "year": "1994",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "7",
+      "key": "2020032613563623500_HYDRO-D-15-00006C112",
+      "doi-asserted-by": "crossref",
+      "first-page": "837",
+      "DOI": "10.1002/bit.260440709",
+      "article-title": "Stoichiometric model of the aerobic metabolism of the biological phosphorus removal process",
+      "volume": "44",
+      "author": "Smolders",
+      "year": "1994",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C113",
+      "doi-asserted-by": "crossref",
+      "first-page": "277",
+      "DOI": "10.1002/bit.260470302",
+      "article-title": "Structured metabolic model for anaerobic and aerobic stoichiometry and kinetics of the biological phosphorus removal process",
+      "volume": "47",
+      "author": "Smolders",
+      "year": "1995",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C114",
+      "doi-asserted-by": "crossref",
+      "first-page": "222",
+      "DOI": "10.1002/bit.260480309",
+      "article-title": "A metabolic model for the biological phosphorus removal process: effect of the sludge retention time",
+      "volume": "48",
+      "author": "Smolders",
+      "year": "1995",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "3",
+      "key": "2020032613563623500_HYDRO-D-15-00006C115",
+      "doi-asserted-by": "crossref",
+      "first-page": "234",
+      "DOI": "10.1002/bit.260480310",
+      "article-title": "A metabolic model of the biological phosphorus removal process: II. Validation during start-up conditions",
+      "volume": "48",
+      "author": "Smolders",
+      "year": "1995",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "4–6",
+      "key": "2020032613563623500_HYDRO-D-15-00006C116",
+      "first-page": "1057",
+      "article-title": "Characterisation of domestic wastewater for mathematical modelling of the activated sludge process",
+      "volume": "23",
+      "author": "Sollfrank",
+      "year": "1990",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C117",
+      "doi-asserted-by": "crossref",
+      "first-page": "105",
+      "DOI": "10.2166/wst.1995.0082",
+      "article-title": "Respirometry as a tool for rapid characterizatiom of wastewater and activated sludge",
+      "volume": "31",
+      "author": "Spanjers",
+      "year": "1999",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "9",
+      "key": "2020032613563623500_HYDRO-D-15-00006C118",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.2166/wst.2007.606",
+      "article-title": "Elemental balance based methodology to establish reaction stoichiometry in environmental modelling",
+      "volume": "56",
+      "author": "Takács",
+      "year": "2007",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C119",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2175/193864713813685430",
+      "article-title": "Towards improved 1-D settler modelling: calibration of the Bürger model and case study",
+      "author": "Torfs",
+      "year": "2013"
+    },
+    {
+      "issue": "6191",
+      "key": "2020032613563623500_HYDRO-D-15-00006C120",
+      "doi-asserted-by": "crossref",
+      "first-page": "1452",
+      "DOI": "10.1126/science.1255183",
+      "article-title": "Anticipating the next century of wastewater treatment",
+      "volume": "344",
+      "author": "van Loosdrecht",
+      "year": "2014",
+      "journal-title": "Science"
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C121",
+      "doi-asserted-by": "crossref",
+      "first-page": "289",
+      "DOI": "10.1007/s002530051052",
+      "article-title": "Biological phosphorus removal processes: a mini review",
+      "volume": "48",
+      "author": "van Loosdrecht",
+      "year": "1997",
+      "journal-title": "Appl. Microbiol. Biotechnol."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C122",
+      "doi-asserted-by": "crossref",
+      "first-page": "27",
+      "DOI": "10.2166/hydro.2003.0003",
+      "article-title": "WEST: modelling biological wastewater treatment",
+      "volume": "5",
+      "author": "Vanhooren",
+      "year": "2003",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "issue": "11",
+      "key": "2020032613563623500_HYDRO-D-15-00006C123",
+      "doi-asserted-by": "crossref",
+      "first-page": "2561",
+      "DOI": "10.1016/0043-1354(95)00105-T",
+      "article-title": "Practical identifiability of a biokinetic model of activated sludge respiration",
+      "volume": "29",
+      "author": "Vanrolleghem",
+      "year": "1995",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "1",
+      "key": "2020032613563623500_HYDRO-D-15-00006C124",
+      "doi-asserted-by": "crossref",
+      "first-page": "195",
+      "DOI": "10.2166/wst.1999.0042",
+      "article-title": "Estimating (combinations of) Activated Sludge Model No. 1 parameters and components by respirometry",
+      "volume": "39",
+      "author": "Vanrolleghem",
+      "year": "1999",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "1–2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C125",
+      "doi-asserted-by": "crossref",
+      "first-page": "493",
+      "DOI": "10.2166/wst.2005.0558",
+      "article-title": "Continuity-based interfacing of models for wastewater systems described by Petersen matrices",
+      "volume": "52",
+      "author": "Vanrolleghem",
+      "year": "2005",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C126",
+      "article-title": "Towards BSM2-GPS-X: A plant-wide benchmark simulation model not only for carbon and nitrogen, but also for greenhouse gases (G), phosphorus (P), sulphur (S) and micropollutants (X), all within the fence of WWTPs/WRRFs",
+      "author": "Vanrolleghem",
+      "year": "2014"
+    },
+    {
+      "issue": "16",
+      "key": "2020032613563623500_HYDRO-D-15-00006C127",
+      "doi-asserted-by": "crossref",
+      "first-page": "3459",
+      "DOI": "10.1016/S0043-1354(99)00064-0",
+      "article-title": "Modelling biological phosphorus and nitrogen removal in a full scale activated sludge process",
+      "volume": "33",
+      "author": "Veldhuizen van",
+      "year": "1999",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C128",
+      "volume-title": "Flood Risk and Social Justice: from Hydroinformatics of Quantities to Hydroinformatics of Qualities",
+      "author": "Vojinovic",
+      "year": "2011"
+    },
+    {
+      "issue": "5",
+      "key": "2020032613563623500_HYDRO-D-15-00006C129",
+      "doi-asserted-by": "crossref",
+      "first-page": "1044",
+      "DOI": "10.2166/hydro.2014.223",
+      "article-title": "Multi-objective rehabilitation of urban drainage systems under uncertainties",
+      "volume": "16",
+      "author": "Vojinovic",
+      "year": "2014",
+      "journal-title": "J. Hydroinform."
+    },
+    {
+      "issue": "15",
+      "key": "2020032613563623500_HYDRO-D-15-00006C130",
+      "doi-asserted-by": "crossref",
+      "first-page": "2817",
+      "DOI": "10.1016/j.watres.2006.05.011",
+      "article-title": "Continuity-based model interfacing for plant-wide simulation: a general approach",
+      "volume": "40",
+      "author": "Volcke",
+      "year": "2006",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C131",
+      "volume-title": "Biological Wastewater Treatment in Warm Climate Regions",
+      "author": "Von Sperling",
+      "year": "2005"
+    },
+    {
+      "issue": "9",
+      "key": "2020032613563623500_HYDRO-D-15-00006C132",
+      "doi-asserted-by": "crossref",
+      "first-page": "2363",
+      "DOI": "10.1016/j.watres.2009.02.037",
+      "article-title": "A novel sulfate reduction, autotrophic denitrification, nitrification integrated (SANI) process for saline wastewater treatment",
+      "volume": "43",
+      "author": "Wang",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C133",
+      "volume-title": "Mathematical Modelling of Biofilms",
+      "author": "Wanner",
+      "year": "2006"
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C134",
+      "first-page": "81",
+      "article-title": "Enhanced polyphosphate organism cultures in activated sludge systems. Part I: enhanced culture development",
+      "volume": "14",
+      "author": "Wentzel",
+      "year": "1988",
+      "journal-title": "Water SA"
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C135",
+      "first-page": "71",
+      "article-title": "Enhanced polyphosphate organism cultures in activated sludge systems. Part II: experimental behaviour",
+      "volume": "15",
+      "author": "Wentzel",
+      "year": "1989",
+      "journal-title": "Water SA"
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C136",
+      "first-page": "89",
+      "article-title": "Enhanced polyphosphate organism cultures in activated sludge systems. Part III: kinetic model",
+      "volume": "15",
+      "author": "Wentzel",
+      "year": "1989",
+      "journal-title": "Water SA"
+    },
+    {
+      "issue": "2",
+      "key": "2020032613563623500_HYDRO-D-15-00006C137",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "DOI": "10.2166/wst.2013.150",
+      "article-title": "Going for mainstream deammonification from bench-to full-scale for maximized resource efficiency",
+      "volume": "68",
+      "author": "Wett",
+      "year": "2013",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "issue": "4",
+      "key": "2020032613563623500_HYDRO-D-15-00006C138",
+      "doi-asserted-by": "crossref",
+      "first-page": "29",
+      "DOI": "10.2166/wst.2002.0544",
+      "article-title": "Control of nitrate recirculation flow in predenitrification systems",
+      "volume": "45",
+      "author": "Yuan",
+      "year": "2002",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "2020032613563623500_HYDRO-D-15-00006C139",
+      "doi-asserted-by": "crossref",
+      "first-page": "645",
+      "DOI": "10.1016/j.scitotenv.2015.01.051",
+      "article-title": "Decision support system for the provision of emergency sanitation",
+      "volume": "512–513",
+      "author": "Zakaria",
+      "year": "2015",
+      "journal-title": "Sci. Total Environ."
+    }
+  ],
+  "container-title": [
+    "Journal of Hydroinformatics"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://iwaponline.com/jh/article-pdf/17/5/697/387980/jh0170697.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "http://iwaponline.com/jh/article-pdf/17/5/697/387980/jh0170697.pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2022-05-20T19:35:57Z",
+    "timestamp": 1653075357000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://iwaponline.com/jh/article/17/5/697/3499/Twentyfive-years-of-ASM1-past-present-and-future"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2015,
+        6,
+        1
+      ]
+    ]
+  },
+  "references-count": 139,
+  "journal-issue": {
+    "issue": "5",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          9,
+          1
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.2166/hydro.2015.006",
+  "relation": {},
+  "ISSN": [
+    "1464-7141",
+    "1465-1734"
+  ],
+  "issn-type": [
+    {
+      "value": "1464-7141",
+      "type": "print"
+    },
+    {
+      "value": "1465-1734",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published-other": {
+    "date-parts": [
+      [
+        2015,
+        9,
+        1
+      ]
+    ]
+  },
+  "published": {
+    "date-parts": [
+      [
+        2015,
+        6,
+        1
+      ]
+    ]
+  }
+}

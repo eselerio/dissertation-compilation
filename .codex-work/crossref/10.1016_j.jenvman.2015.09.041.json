@@ -1,0 +1,532 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2026-09-25T16:36:29Z",
+    "timestamp": 1790354189946,
+    "version": "4.1.0"
+  },
+  "reference-count": 28,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2016-01-01T00:00:00Z",
+        "timestamp": 1451606400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "funder": [
+    {
+      "name": "National Science & Technology Pillar Program",
+      "award": [
+        "2012BAC02B04"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2012BAC02B04"
+          ]
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Environmental Management"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jenvman.2015.09.041",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2015,
+        10,
+        2
+      ]
+    ],
+    "date-time": "2015-10-02T17:53:10Z",
+    "timestamp": 1443808390000
+  },
+  "page": "235-242",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 90,
+  "special_numbering": "C",
+  "title": [
+    "Simulation and optimization of a coking wastewater biological treatment process by activated sludge models (ASM)"
+  ],
+  "prefix": "10.1016",
+  "volume": "165",
+  "author": [
+    {
+      "given": "Xiaohui",
+      "family": "Wu",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yang",
+      "family": "Yang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Gaoming",
+      "family": "Wu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Juan",
+      "family": "Mao",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tao",
+      "family": "Zhou",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib1",
+      "series-title": "Standard Methods for the Examination of Water and Wastewater",
+      "author": "APHA",
+      "year": "1995"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib2",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.2004.0151",
+      "article-title": "Modelling carbon oxidation in pulp mill activated sludge systems: calibration of Activated Sludge Model No 3",
+      "volume": "50",
+      "author": "Barañao",
+      "year": "2004",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "620",
+      "DOI": "10.1016/j.jhazmat.2007.01.085",
+      "article-title": "Comparison of nutrients degradation in smallscale MBR fed with synthetic/domestic wastewater",
+      "volume": "144",
+      "author": "Bracklow",
+      "year": "2007",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "409",
+      "DOI": "10.1016/j.chemosphere.2011.09.007",
+      "article-title": "Treatment of coking wastewater by an advanced Fenton oxidation process using iron powder and hydrogen peroxide",
+      "volume": "86",
+      "author": "Chu",
+      "year": "2012",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "144",
+      "DOI": "10.1016/j.biortech.2009.08.034",
+      "article-title": "Respirometric analysis of activated sludge models from palm oil mill effluent",
+      "volume": "101",
+      "author": "Damayanti",
+      "year": "2010",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib6",
+      "series-title": "Modeling Carbon Oxidation in Pulp Mill Activated Sludge Systems: Determining Model Parameters",
+      "author": "Debrorah",
+      "year": "1997"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "85",
+      "DOI": "10.1016/S0273-1223(98)00681-7",
+      "article-title": "Intracellular storage compounds, oxygen uptake rates and biomass yield with readily and slowly degradable substrates",
+      "volume": "38",
+      "author": "Goel",
+      "year": "1998",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.1016/S0273-1223(98)00785-9",
+      "article-title": "Activated sludge model no. 3",
+      "volume": "39",
+      "author": "Gujer",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "1788",
+      "DOI": "10.1016/j.jhazmat.2010.12.068",
+      "article-title": "Different solvents for the regeneration of the exhausted activated carbon used in the treatment of coking wastewater",
+      "volume": "186",
+      "author": "Guo",
+      "year": "2011",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib10",
+      "series-title": "Activated Sludge Model No. 1. IAWQ Scientific and Technical Report No. 1",
+      "author": "Henze",
+      "year": "1987"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib11",
+      "series-title": "Activated Sludge Model No. 2. IAWQ Scientific and Technical Report No. 3",
+      "author": "Henze",
+      "year": "1995"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.1016/S0273-1223(98)00829-4",
+      "article-title": "Outline activated sludge model No. 2d",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib13",
+      "series-title": "Activated Sludge Models ASM1, ASM2, ASM2d, and ASM3. IWA Scientific and Technical Report",
+      "author": "Henze",
+      "year": "2000"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib14",
+      "series-title": "Wastewater Treatment. Biological and Chemical Processes",
+      "author": "Henze",
+      "year": "2002"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.2166/wst.1992.0118",
+      "article-title": "Estimation of kinetic parameters of heterotrophic biomass under aerobic conditions and characterization of wastewater for activated sludge modelling",
+      "volume": "25",
+      "author": "Kappeler",
+      "year": "1992",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib16",
+      "doi-asserted-by": "crossref",
+      "first-page": "1030",
+      "DOI": "10.1061/(ASCE)0733-9372(2002)128:11(1030)",
+      "article-title": "Experimental assessment of bacterial storage yield",
+      "volume": "128",
+      "author": "Karahan-Gül",
+      "year": "2002",
+      "journal-title": "J. Environ. Eng. ASCE"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib17",
+      "doi-asserted-by": "crossref",
+      "first-page": "3580",
+      "DOI": "10.1016/S0043-1354(00)00105-6",
+      "article-title": "Calibration and validation of Activated Sludge Model No. 3 for Swiss municipal wastewater",
+      "volume": "34",
+      "author": "Koch",
+      "year": "2000",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "4768",
+      "DOI": "10.1016/j.watres.2005.08.026",
+      "article-title": "Variability estimation of urban wastewater biodegradable fractions by respirometry",
+      "volume": "39",
+      "author": "Lagarde",
+      "year": "2005",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "923",
+      "DOI": "10.1016/j.watres.2007.09.008",
+      "article-title": "Effect of anionic and nonionic surfactants on the kinetics of the aerobic heterotrophic biodegradation of organic matter in industrial wastewater",
+      "volume": "42",
+      "author": "Liwarska-Bizukojc",
+      "year": "2008",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "8612",
+      "DOI": "10.1016/j.biortech.2008.04.004",
+      "article-title": "Characterization of tannery wastewater and biomass in a membrane bioreactor using respirometric analysis",
+      "volume": "99",
+      "author": "Munz",
+      "year": "2008",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "171",
+      "DOI": "10.2166/wst.1994.0557",
+      "article-title": "Estimation of maximum specific growth rate of heterotrophic and autotrophic biomass: a combined technique of mathematical modelling and batch cultivations",
+      "volume": "30",
+      "author": "Novák",
+      "year": "1994",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib22",
+      "series-title": "Biotechnology for the Environment: Wastewater Treatment and Modelling. Waste Gas Handling",
+      "first-page": "102",
+      "article-title": "Calibration of activated sludge models: a critical review of experimental designs",
+      "author": "Petersen",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "1057",
+      "DOI": "10.2166/wst.1991.0557",
+      "article-title": "Characterization of domestic waste-water for mathematical- modeling of the activated-sludge process",
+      "volume": "23",
+      "author": "Sollfrank",
+      "year": "1991",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib24",
+      "doi-asserted-by": "crossref",
+      "first-page": "105",
+      "DOI": "10.2166/wst.1995.0082",
+      "article-title": "Respirometry as a tool for rapid characterization wastewater and activated sludge",
+      "volume": "31",
+      "author": "Spanjers",
+      "year": "1995",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.2004.0473",
+      "article-title": "Environmental engineering education for developing countries: framework for the future",
+      "volume": "49",
+      "author": "Ujang",
+      "year": "2004",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.2166/wst.2002.0090",
+      "article-title": "Modelling of activated sludge processes with structured biomass",
+      "volume": "45",
+      "author": "van Loosdrecht",
+      "year": "2002",
+      "journal-title": "Water Sci. Tech."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "3459",
+      "DOI": "10.1016/S0043-1354(99)00064-0",
+      "article-title": "Modelling biological phosphorus and nitrogen removal in a full scale activated sludge process",
+      "volume": "33",
+      "author": "van Veldhuizen",
+      "year": "1999",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2015.09.041_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "195",
+      "DOI": "10.1016/S0273-1223(98)00786-0",
+      "article-title": "Estimating (combinations of) Activated Sludge Model No. 1 parameters and components by respirometry",
+      "volume": "39",
+      "author": "Vanrolleghem",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    }
+  ],
+  "container-title": [
+    "Journal of Environmental Management"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479715302930?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479715302930?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2019,
+        8,
+        31
+      ]
+    ],
+    "date-time": "2019-08-31T02:10:16Z",
+    "timestamp": 1567217416000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301479715302930"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        1
+      ]
+    ]
+  },
+  "references-count": 28,
+  "alternative-id": [
+    "S0301479715302930"
+  ],
+  "URL": "https://doi.org/10.1016/j.jenvman.2015.09.041",
+  "relation": {},
+  "ISSN": [
+    "0301-4797"
+  ],
+  "issn-type": [
+    {
+      "value": "0301-4797",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        1
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Simulation and optimization of a coking wastewater biological treatment process by activated sludge models (ASM)",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Environmental Management",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jenvman.2015.09.041",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "Copyright © 2015 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

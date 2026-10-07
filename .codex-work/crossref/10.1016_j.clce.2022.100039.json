@@ -1,0 +1,665 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2026-09-25T16:58:57Z",
+    "timestamp": 1790355537822,
+    "version": "4.1.0"
+  },
+  "reference-count": 36,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2022-09-01T00:00:00Z",
+        "timestamp": 1661990400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2022-09-01T00:00:00Z",
+        "timestamp": 1661990400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            15
+          ]
+        ],
+        "date-time": "2022-06-15T00:00:00Z",
+        "timestamp": 1655251200000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Cleaner Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.clce.2022.100039",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        22
+      ]
+    ],
+    "date-time": "2022-06-22T12:50:15Z",
+    "timestamp": 1655902215000
+  },
+  "page": "100039",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 54,
+  "special_numbering": "C",
+  "title": [
+    "Optimization of Effluents Using Artificial Neural Network and Support Vector Regression in Detergent Industrial Wastewater Treatment"
+  ],
+  "prefix": "10.1016",
+  "volume": "3",
+  "author": [
+    {
+      "given": "Dipak Kumar",
+      "family": "Jana",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Prajna",
+      "family": "Bhunia",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Sirsendu",
+      "family": "Das Adhikary",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-0742-5039",
+      "authenticated-orcid": false,
+      "given": "Barnali",
+      "family": "Bej",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.clce.2022.100039_sbref0001",
+      "doi-asserted-by": "crossref",
+      "first-page": "156",
+      "DOI": "10.1016/j.procs.2017.11.223",
+      "article-title": "Effluent prediction of chemical oxygen demand from the astewater treatment plant using artificial neural network application",
+      "volume": "120",
+      "author": "Abba",
+      "year": "2017",
+      "journal-title": "Procedia Computer Science"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0002",
+      "doi-asserted-by": "crossref",
+      "first-page": "40",
+      "DOI": "10.1186/2052-336X-12-40",
+      "article-title": "Evaluation of multivariate linear regression and artificial neural networks in prediction of water quality parameters",
+      "volume": "12",
+      "author": "Abyaneh",
+      "year": "2014",
+      "journal-title": "Journal of environmental health science & engineering"
+    },
+    {
+      "issue": "16",
+      "key": "10.1016/j.clce.2022.100039_bib0003",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/su12166348",
+      "article-title": "Intelligent system for the predictive analysis of an industrial wastewater treatment process",
+      "volume": "12",
+      "author": "Arismendy",
+      "year": "2020",
+      "journal-title": "Sustainability"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0004",
+      "series-title": "Soft Computing Techniques in Solid Waste and Wastewater Management",
+      "first-page": "275",
+      "article-title": "Chapter 16 - prediction of effluent chemical oxygen demand and suspended solids from a domestic wastewater treatment plant using svm and ann",
+      "author": "Bachir",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "101",
+      "DOI": "10.1016/j.desal.2014.04.016",
+      "article-title": "Neural network based correlation for estimating water permeability constant in ro desalination process under fouling",
+      "volume": "345",
+      "author": "Barello",
+      "year": "2014",
+      "journal-title": "Desalination"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.clce.2022.100039_bib0006",
+      "doi-asserted-by": "crossref",
+      "first-page": "263",
+      "DOI": "10.1016/0376-7388(94)00195-5",
+      "article-title": "Dynamic modeling of crossflow microfiltration using neural networks",
+      "volume": "98",
+      "author": "Dornier",
+      "year": "1995",
+      "journal-title": "Journal of Membrane Science"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0007",
+      "doi-asserted-by": "crossref",
+      "first-page": "1224",
+      "DOI": "10.1016/j.psep.2022.01.065",
+      "article-title": "Machine learning classification algorithms for inadequate wastewater treatment risk mitigation",
+      "volume": "159",
+      "author": "Elsayed",
+      "year": "2022",
+      "journal-title": "Process Safety and Environmental Protection"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0008",
+      "doi-asserted-by": "crossref",
+      "first-page": "90",
+      "DOI": "10.1016/j.jes.2015.01.007",
+      "article-title": "Prediction of effluent concentration in a wastewater treatment plant using machine learning models",
+      "volume": "32",
+      "author": "Guo",
+      "year": "2015",
+      "journal-title": "Journal of Environmental Sciences"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0009",
+      "doi-asserted-by": "crossref",
+      "first-page": "102837",
+      "DOI": "10.1016/j.adhoc.2022.102837",
+      "article-title": "A reinforcement learning-based sleep scheduling algorithm for cooperative computing in event-driven wireless sensor networks",
+      "volume": "130",
+      "author": "Guo",
+      "year": "2022",
+      "journal-title": "Ad Hoc Networks"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "265",
+      "DOI": "10.1111/j.1745-4581.2000.tb00328.x",
+      "article-title": "New approach for modeling generalized microbial growth curves using artificial neural networks",
+      "volume": "8",
+      "author": "HAJMEER",
+      "year": "2007",
+      "journal-title": "Journal of Rapid Methods & Automation in Microbiology"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.clce.2022.100039_sbref0011",
+      "doi-asserted-by": "crossref",
+      "first-page": "55",
+      "DOI": "10.2166/wst.1999.0327",
+      "article-title": "Integrated wastewater treatment plant performance evaluation using artificial neural networks",
+      "volume": "40",
+      "author": "Hamoda",
+      "year": "1999",
+      "journal-title": "Water Science and Technology"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0012",
+      "series-title": "Neural Networks: A Comprehensive Foundation",
+      "author": "Haykin",
+      "year": "1999"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.clce.2022.100039_bib0013",
+      "doi-asserted-by": "crossref",
+      "first-page": "709",
+      "DOI": "10.1016/j.pnucene.2009.03.004",
+      "article-title": "Estimation of research reactor core parameters using cascade feed forward artificial neural networks",
+      "volume": "51",
+      "author": "Hedayat",
+      "year": "2009",
+      "journal-title": "Progress in Nuclear Energy"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0014",
+      "doi-asserted-by": "crossref",
+      "first-page": "101194",
+      "DOI": "10.1016/j.csite.2021.101194",
+      "article-title": "Cascade forward artificial neural network to estimate thermal conductivity of functionalized graphene-water nanofluids",
+      "volume": "26",
+      "author": "Hemmat Esfe",
+      "year": "2021",
+      "journal-title": "Case Studies in Thermal Engineering"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.clce.2022.100039_bib0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "168",
+      "DOI": "10.1016/j.jmst.2018.06.017",
+      "article-title": "Modeling the corrosion behavior of ni-cr-mo-v high strength steel in the simulated deep sea environments using design of experiment and artificial neural network",
+      "volume": "35",
+      "author": "Hu",
+      "year": "2019",
+      "journal-title": "Journal of Materials Science & Technology"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0016",
+      "doi-asserted-by": "crossref",
+      "first-page": "129540",
+      "DOI": "10.1016/j.cej.2021.129540",
+      "article-title": "Artificial neural network modeling of wastewater treatment and desalination using membrane processes: A review",
+      "volume": "419",
+      "author": "Jawad",
+      "year": "2021",
+      "journal-title": "Chemical Engineering Journal"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.clce.2022.100039_bib0017",
+      "doi-asserted-by": "crossref",
+      "first-page": "106099",
+      "DOI": "10.1016/j.jece.2021.106099",
+      "article-title": "Ozonation treatment processes for the remediation of detergent wastewater: A comprehensive review",
+      "volume": "9",
+      "author": "Joseph",
+      "year": "2021",
+      "journal-title": "Journal of Environmental Chemical Engineering"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.clce.2022.100039_bib0018",
+      "doi-asserted-by": "crossref",
+      "first-page": "2266",
+      "DOI": "10.1016/j.corsci.2009.06.004",
+      "article-title": "Artificial neural network corrosion modeling for metals in an equatorial climate",
+      "volume": "51",
+      "author": "Kenny",
+      "year": "2009",
+      "journal-title": "Corrosion Science"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0019",
+      "doi-asserted-by": "crossref",
+      "first-page": "213",
+      "DOI": "10.2166/wst.2019.257",
+      "article-title": "Prediction of effluent quality in iceas-sequential batch reactor using feedforward artificial neural network",
+      "volume": "80 2",
+      "author": "Khatri",
+      "year": "2019",
+      "journal-title": "Water science and technology : a journal of the International Association on Water Pollution Research"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "101477",
+      "DOI": "10.1016/j.jwpe.2020.101477",
+      "article-title": "Artificial neural network modelling of faecal coliform removal in an intermittent cycle extended aeration system-sequential batch reactor based wastewater treatment plant",
+      "volume": "37",
+      "author": "Khatri",
+      "year": "2020",
+      "journal-title": "Journal of Water Process Engineering"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_sbref0021",
+      "doi-asserted-by": "crossref",
+      "first-page": "102",
+      "DOI": "10.1016/j.desal.2012.06.023",
+      "article-title": "Artificial neural network model for desalination by sweeping gas membrane distillation",
+      "volume": "308",
+      "author": "Khayet",
+      "year": "2013",
+      "journal-title": "Desalination"
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.clce.2022.100039_sbref0022",
+      "doi-asserted-by": "crossref",
+      "first-page": "981",
+      "DOI": "10.3182/20070822-3-ZA-2920.00163",
+      "article-title": "A neural network model for control of wastewater treatment processes",
+      "volume": "40",
+      "author": "Kriger",
+      "year": "2007",
+      "journal-title": "IFAC Proceedings Volumes"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0023",
+      "doi-asserted-by": "crossref",
+      "first-page": "102165",
+      "DOI": "10.1016/j.rcim.2021.102165",
+      "article-title": "A novel kinematic parameters calibration method for industrial robot based on levenberg-marquardt and differential evolution hybrid algorithm",
+      "volume": "71",
+      "author": "Luo",
+      "year": "2021",
+      "journal-title": "Robotics and Computer-Integrated Manufacturing"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.clce.2022.100039_bib0024",
+      "doi-asserted-by": "crossref",
+      "first-page": "146",
+      "DOI": "10.1016/S1004-9541(14)60007-0",
+      "article-title": "A multi-model approach for soft sensor development based on feature extraction using weighted kernel fisher criterion",
+      "volume": "22",
+      "author": "Lü",
+      "year": "2014",
+      "journal-title": "Chinese Journal of Chemical Engineering"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "118638",
+      "DOI": "10.1016/j.jclepro.2019.118638",
+      "article-title": "Integrated anammox-biochar in synthetic wastewater treatment: Performance and optimization by artificial neural network",
+      "volume": "243",
+      "author": "Mojiri",
+      "year": "2020",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0026",
+      "doi-asserted-by": "crossref",
+      "first-page": "100088",
+      "DOI": "10.1016/j.nexus.2022.100088",
+      "article-title": "Redefining the role of microalgae in industrial wastewater remediation",
+      "volume": "6",
+      "author": "Mondal",
+      "year": "2022",
+      "journal-title": "Energy Nexus"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0027",
+      "doi-asserted-by": "crossref",
+      "first-page": "105683",
+      "DOI": "10.1016/j.compbiomed.2022.105683",
+      "article-title": "Utility of unsupervised deep learning using a 3d variational autoencoder in detecting inner ear abnormalities on ct images",
+      "volume": "147",
+      "author": "Ogawa",
+      "year": "2022",
+      "journal-title": "Computers in Biology and Medicine"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0028",
+      "doi-asserted-by": "crossref",
+      "first-page": "104397",
+      "DOI": "10.1016/j.engfailanal.2020.104397",
+      "article-title": "Corrosion defect modelling of aged pipelines with a feed-forward multi-layer neural network for leak and burst failure estimation",
+      "volume": "110",
+      "author": "Ossai",
+      "year": "2020",
+      "journal-title": "Engineering Failure Analysis"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.clce.2022.100039_bib0029",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.1016/j.jhazmat.2010.11.135",
+      "article-title": "Application of experimental design approach and artificial neural network (ann) for the determination of potential micellar-enhanced ultrafiltration process",
+      "volume": "187",
+      "author": "Rahmanian",
+      "year": "2011",
+      "journal-title": "Journal of Hazardous Materials"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "105428",
+      "DOI": "10.1016/j.ultsonch.2020.105428",
+      "article-title": "Ann based modelling of hydrodynamic cavitation processes: Biomass pre-treatment and wastewater treatment",
+      "volume": "72",
+      "author": "Ranade",
+      "year": "2021",
+      "journal-title": "Ultrasonics Sonochemistry"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0031",
+      "doi-asserted-by": "crossref",
+      "first-page": "592",
+      "DOI": "10.1016/j.renene.2019.03.065",
+      "article-title": "Corrosion rate prediction for metals in biodiesel using artificial neural networks",
+      "volume": "140",
+      "author": "Rocabruno-Valdés",
+      "year": "2019",
+      "journal-title": "Renewable Energy"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.clce.2022.100039_bib0032",
+      "doi-asserted-by": "crossref",
+      "first-page": "828",
+      "DOI": "10.1016/j.cjche.2014.05.003",
+      "article-title": "Local partial least squares based online soft sensing method for multi-output processes with adaptive process states division",
+      "volume": "22",
+      "author": "Shao",
+      "year": "2014",
+      "journal-title": "Chinese Journal of Chemical Engineering"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0033",
+      "doi-asserted-by": "crossref",
+      "first-page": "104450",
+      "DOI": "10.1016/j.compbiomed.2021.104450",
+      "article-title": "A comprehensive review and analysis of supervised-learning and soft computing techniques for stress diagnosis in humans",
+      "volume": "134",
+      "author": "Sharma",
+      "year": "2021",
+      "journal-title": "Computers in Biology and Medicine"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.clce.2022.100039_bib0034",
+      "doi-asserted-by": "crossref",
+      "first-page": "516",
+      "DOI": "10.1109/72.925555",
+      "article-title": "A neural learning approach for adaptive image restoration using a fuzzy model-based network architecture",
+      "volume": "12",
+      "author": "Wong",
+      "year": "2001",
+      "journal-title": "IEEE Transactions on Neural Networks"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.clce.2022.100039_bib0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "1038",
+      "DOI": "10.1016/S1004-9541(13)60570-4",
+      "article-title": "Soft sensor for inputs and parameters using nonlinear singular state observer in chemical processes",
+      "volume": "21",
+      "author": "XU",
+      "year": "2013",
+      "journal-title": "Chinese Journal of Chemical Engineering"
+    },
+    {
+      "key": "10.1016/j.clce.2022.100039_bib0036",
+      "doi-asserted-by": "crossref",
+      "first-page": "113212",
+      "DOI": "10.1016/j.molliq.2020.113212",
+      "article-title": "Density and speed of sound prediction for binary mixtures of water and ammonium-based ionic liquids using feedforward and cascade forward neural networks",
+      "volume": "311",
+      "author": "Zimmermann",
+      "year": "2020",
+      "journal-title": "Journal of Molecular Liquids"
+    }
+  ],
+  "container-title": [
+    "Cleaner Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2772782322000377?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2772782322000377?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        9
+      ]
+    ],
+    "date-time": "2025-09-09T12:48:30Z",
+    "timestamp": 1757422110000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2772782322000377"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "references-count": 36,
+  "alternative-id": [
+    "S2772782322000377"
+  ],
+  "URL": "https://doi.org/10.1016/j.clce.2022.100039",
+  "relation": {},
+  "ISSN": [
+    "2772-7823"
+  ],
+  "issn-type": [
+    {
+      "value": "2772-7823",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Optimization of Effluents Using Artificial Neural Network and Support Vector Regression in Detergent Industrial Wastewater Treatment",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Cleaner Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.clce.2022.100039",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2022 The Author(s). Published by Elsevier Ltd.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "100039"
+}

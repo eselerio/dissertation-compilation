@@ -1,0 +1,152 @@
+from pathlib import Path
+
+root=Path(__file__).resolve().parents[1]
+old=(root/'.codex-work/original/manuscript.tex').read_text(encoding='utf8')
+front=old[old.index(r'\begin{document}'):old.index('% Abstract (English)')]
+front=front[:front.rfind('% -------------------')]
+front=front.replace('Department of Science and Technology (DOST)','Department of Science and Technology')
+front=front.replace('Technology (ERDT) scholarship','Technology scholarship')
+front=front.replace('USC--ERDT office','University of San Carlos scholarship office')
+front=front.replace('an ERDT scholar at USC','a scholarship recipient at the university')
+
+preamble=r'''\documentclass[12pt,twoside]{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3.5cm,right=2cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage{indentfirst}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{array,booktabs,longtable,multirow}
+\usepackage{graphicx,float}
+\usepackage[labelfont=bf]{caption}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+\usepackage{enumitem}
+\usepackage{xurl}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage[capitalise]{cleveref}
+\usepackage[natbibapa]{apacite}
+\makeatletter
+\NAT@longnamesfalse
+\makeatother
+\usepackage[autostyle]{csquotes}
+\MakeOuterQuote{"}
+\SetCiteCommand{\citep}
+\graphicspath{{figures/}}
+\linespread{1.2}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setcounter{MaxMatrixCols}{20}
+\setlength{\emergencystretch}{2em}
+\setlist{itemsep=2pt}
+\newcommand*{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand*{\NN}{\ensuremath{\mathbb{N}}}
+\newcommand*{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\vech}{vech}
+\makeatletter
+\newcommand{\@singlepar@cr}[1][]{\unskip\space\ignorespaces}
+\newenvironment{singlepar}{%
+  \def\par{\unskip\space\ignorespaces}%
+  \def\newline{\unskip\space\ignorespaces}%
+  \renewcommand{\\}{\@ifstar{\@singlepar@cr}{\@singlepar@cr}}%
+  \ignorespaces
+}{\endgraf}
+\makeatother
+\newcommand{\thesisYear}{2026}
+\newcommand{\thesisTitle}{Physics Enforcement on Machine Learning Surrogates of the Activated Sludge Process}
+\newcommand{\thesisType}{Dissertation}
+\newcommand{\thesisAuthor}{Egberto F. Selerio Jr.}
+\newcommand{\thesisSupervisor}{Lorafe F. Lozano, D.Eng.}
+\newcommand{\thesisConsultant}{}
+\newcommand{\thesisUniversity}{University of San Carlos}
+\newcommand{\thesisFaculty}{School of Engineering}
+\newcommand{\thesisPlace}{Cebu City, Philippines}
+\newcommand{\thesisProgramme}{Doctor of Engineering (D.Eng.)}
+\newcommand{\thesisField}{Water Engineering}
+\newcommand{\thesisDepartment}{Department of Industrial Engineering}
+\hypersetup{pdftitle={Physics Enforcement on Machine Learning Surrogates of the Activated Sludge Process},pdfauthor={Egberto F. Selerio Jr.}}
+
+'''
+
+tail=r'''
+\cleardoublepage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Activated sludge treatment links biological conversion, nutrient transformations, solids separation, and recirculation. Mechanistic models describe these relationships, but repeated simulation can be costly when many operating conditions are examined. Statistical surrogates offer faster response evaluation. Their usefulness depends on more than agreement with reference data because a prediction can have a small average error while violating conservation or producing negative component concentrations. This research develops a common framework for prediction, physical enforcement, interpretation, and operating assessment. A steady-state reactor benchmark compares several learning families through training-size studies, nested validation, and separately simulated beyond-domain conditions. A common post prediction procedure imposes stoichiometric conservation and nonnegativity while allowing paired assessment of prediction error and correction size. A structured second-order regression separates operating effects, influent effects, curvature, and component coupling. Its checked output procedure distinguishes invariant-aware fitting from final-state feasibility. A connected plant surrogate extends enforcement to the mixer, reactor train, clarifier outlets, and solids inventory. Surrogate-selected operating controls are assessed through independent mechanistic solution and comparison with direct optimization under common engineering priorities. The theoretical and methodological framework treats predictive accuracy, physical admissibility, interpretability, and decision quality as distinct requirements. Its guarantees concern the declared process representation and imposed constraints. Empirical treatment outcomes and model performance are reserved for subsequent evaluation.
+
+\paragraph*{Keywords.} Activated sludge process, machine learning surrogate, wastewater treatment, conservation, nonnegativity, interpretable regression, operating optimization.
+
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+
+\cleardoublepage
+\chapter*{Principal Symbols}
+\addcontentsline{toc}{chapter}{Principal Symbols}
+\begin{longtable}{p{0.19\textwidth}p{0.73\textwidth}}
+\toprule
+Symbol & Meaning \\
+\midrule
+\endfirsthead
+\toprule Symbol & Meaning \\
+\midrule
+\endhead
+$F,P,K$ & Numbers of component states, reaction processes, and independent stoichiometric invariants \\
+$\nu$ & Stoichiometric matrix with processes in rows and components in columns \\
+$\rho$ & Vector of mechanistic process rates \\
+$A$ & Full-row-rank stoichiometric invariant operator \\
+$V_0,Z$ & Orthonormal bases of the stoichiometric right null space and the null space of $A$ \\
+$c_{in},c_{out}$ & Influent state and mechanistic reference effluent state \\
+$c_{raw},\widetilde c$ & Raw component prediction and corrected component prediction \\
+$I_{\mathrm{comp}}$ & Fixed component-to-reported-composite map \\
+$D_i$ & Hydraulic dilution rate for the stated reactor and flow basis \\
+$\omega,e_{S_O}$ & Net dissolved-oxygen transfer rate and dissolved-oxygen coordinate selector \\
+$u$ & Standalone-reactor operating input vector \\
+$\phi,B,\Gamma,R$ & Second-order feature vector, driver coefficients, learned component coupling, and coupled-system matrix \\
+$\widehat C,\Phi$ & Auxiliary fitted component states and training feature matrix \\
+$N$ & Number of observations in the stated training-size design \\
+$n_r,L$ & Numbers of biological reactor stages and clarifier layers \\
+$\vartheta$ & Connected-plant control vector \\
+$q_P,q_C,q_E,q_U$ & Flow ratios for the reactor train, clarifier feed, overflow, and underflow relative to fresh flow \\
+$m,c_i,c_E,c_U$ & Mixer, reactor-stage, overflow, and underflow concentrations \\
+$g_E,g_U$ & Flow-weighted clarifier outlet component responses \\
+$\chi,M_{\mathrm{cl}}$ & Joint plant response and clarifier solids inventory \\
+$D_\chi$ & Positive scaling matrix for the plant response \\
+$J$ & Dimensionless engineering objective \\
+\bottomrule
+\end{longtable}
+Symbols specific to a formulation are defined with their equations. A numerical coordinate is interpreted using the unit of its corresponding component. The plant projection uses $u$ locally for its standardized response correction.
+
+\mainmatter
+\pagestyle{headings}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter}{\chaptername\ \thechapter}}
+\renewcommand{\sectionmark}[1]{}
+
+\input{chapters/01_research_problem}
+\input{chapters/02_integrated_literature}
+\input{chapters/03_reactor_foundations}
+\input{chapters/04_prediction_projection}
+\input{chapters/05_interpretable_surrogate}
+\input{chapters/06_connected_plant}
+\input{chapters/07_assessment_framework}
+
+\backmatter
+\bibliographystyle{apacite}
+\bibliography{references}
+\end{document}
+'''
+
+(root/'article/manuscript.tex').write_text(preamble+front+tail,encoding='utf8')
+print('Assembled seven-chapter manuscript with original dissertation title.')

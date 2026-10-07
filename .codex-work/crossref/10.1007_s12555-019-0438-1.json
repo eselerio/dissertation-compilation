@@ -1,0 +1,828 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        3
+      ]
+    ],
+    "date-time": "2026-09-03T15:37:33Z",
+    "timestamp": 1788449853020,
+    "version": "build-2803163510"
+  },
+  "reference-count": 48,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "9",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2020-02-28T00:00:00Z",
+        "timestamp": 1582848000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            28
+          ]
+        ],
+        "date-time": "2020-02-28T00:00:00Z",
+        "timestamp": 1582848000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Int. J. Control Autom. Syst."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1007/s12555-019-0438-1",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        28
+      ]
+    ],
+    "date-time": "2020-02-28T06:03:00Z",
+    "timestamp": 1582869780000
+  },
+  "page": "2435-2444",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 26,
+  "title": [
+    "Dissolved Oxygen Model Predictive Control for Activated Sludge Process Model Based on the Fuzzy C-means Cluster Algorithm"
+  ],
+  "prefix": "10.1007",
+  "volume": "18",
+  "author": [
+    {
+      "given": "Minghe",
+      "family": "Li",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Saifei",
+      "family": "Hu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jianwei",
+      "family": "Xia",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jing",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Xiaona",
+      "family": "Song",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Hao",
+      "family": "Shen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        28
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "issue": "6191",
+      "key": "438_CR1",
+      "doi-asserted-by": "crossref",
+      "first-page": "1452",
+      "DOI": "10.1126/science.1255183",
+      "volume": "344",
+      "author": "L Van",
+      "year": "2014",
+      "unstructured": "L. Van, C. Mark, and D. Brdjanovic, “Anticipating the next century of wastewater treatment,” Science, vol. 344, no. 6191, pp. 1452–1453, June 2014.",
+      "journal-title": "Science"
+    },
+    {
+      "issue": "2",
+      "key": "438_CR2",
+      "doi-asserted-by": "crossref",
+      "first-page": "94",
+      "DOI": "10.1108/IJICC-12-2016-0069",
+      "volume": "10",
+      "author": "J Qiao",
+      "year": "2017",
+      "unstructured": "J. Qiao, G. Han, H. Han, and W. Chai, “Wastewater treatment control method based on a rule adaptive recurrent fuzzy neural network,” International Journal of Intelligent Computing and Cybernetics, vol. 10, no. 2, pp. 94–110, February 2017.",
+      "journal-title": "International Journal of Intelligent Computing and Cybernetics"
+    },
+    {
+      "issue": "2",
+      "key": "438_CR3",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.1995.0061",
+      "volume": "31",
+      "author": "W Gujer",
+      "year": "1995",
+      "unstructured": "W. Gujer, M. Henze, T. Mino, T. Matsuo, M. Wentzel, and G. Marais, “The activated sludge model No. 2: biological phosphorus removal,” Water Sci. Technol., vol. 31, no. 2, pp. 1–11, January 1995.",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "438_CR4",
+      "volume-title": "Activated sludge models ASM1, ASM2, ASM2D and ASM3",
+      "author": "M Henze",
+      "year": "2000",
+      "unstructured": "M. Henze, W. Gujer, T. Mino, and M. C. van Loosdrecht, Activated sludge models ASM1, ASM2, ASM2D and ASM3, IWA Publishing, Alliance House, London, UK, 2000."
+    },
+    {
+      "issue": "1",
+      "key": "438_CR5",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "volume": "39",
+      "author": "M Henze",
+      "year": "1999",
+      "unstructured": "M. Henze, W. Gujer, T. Mino, T. Matsuo, M. C. Wentzel, G. v. R. Marais, and M. C. Van Loosdrecht, “Activated sludge model No. 2d, ASM2d,” Water Sci. Technol., vol. 39, no. 1, pp. 165–182, January 1999.",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "438_CR6",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.2166/wst.1999.0039",
+      "volume": "39",
+      "author": "W Gujer",
+      "year": "1999",
+      "unstructured": "W. Gujer, M. Henze, T. Mino, and M. Van Loosdrecht, “Activated sludge model No. 3,” Water Sci. Technol., vol. 39, no. 1, pp. 183–193, January 1999.",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "438_CR7",
+      "first-page": "20",
+      "volume": "452",
+      "author": "A Mark",
+      "year": "2008",
+      "unstructured": "A. Mark, “Science and technology for water purification in the coming decades,” Nature, vol. 452, p. 20, 2008.",
+      "journal-title": "Nature"
+    },
+    {
+      "issue": "1",
+      "key": "438_CR8",
+      "doi-asserted-by": "crossref",
+      "first-page": "114",
+      "DOI": "10.1016/j.conengprac.2007.04.005",
+      "volume": "16",
+      "author": "R Piotrowski",
+      "year": "2008",
+      "unstructured": "R. Piotrowski, M. Brdys, K. Konarczak, K. Duzinkiewicz, and W. Chotkowski, “Hierarchical dissolved oxygen control for activated sludge processes,” Control Eng. Pract., vol. 16, no. 1, pp. 114–131, January 2008.",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "issue": "4-5",
+      "key": "438_CR9",
+      "doi-asserted-by": "crossref",
+      "first-page": "135",
+      "DOI": "10.2166/wst.2002.0570",
+      "volume": "45",
+      "author": "B Carlsson",
+      "year": "2002",
+      "unstructured": "B. Carlsson and A. Rehnström, “Control of an activated sludge process with nitrogen removal-a benchmark study,” Water Sci. Technol., vol. 45, no. 4-5, pp. 135–142, February 2002.",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "3",
+      "key": "438_CR10",
+      "doi-asserted-by": "crossref",
+      "first-page": "239",
+      "DOI": "10.1016/j.bej.2009.04.016",
+      "volume": "45",
+      "author": "N A Wahab",
+      "year": "2009",
+      "unstructured": "N. A. Wahab, R. Katebi, and J. Balderud, “Multivariable pid control design for activated sludge process with nitrification and denitrification,” Biochem. Eng. J, vol. 45, no. 3, pp. 239–248, August 2009.",
+      "journal-title": "Biochem. Eng. J"
+    },
+    {
+      "key": "438_CR11",
+      "doi-asserted-by": "crossref",
+      "unstructured": "P. M. Vallejo LLamas and P. Vega, “Analytical fuzzy predictive control applied to wastewater treatment biological processes,” Complexity, vol. 2019, January 2019.",
+      "DOI": "10.1155/2019/5720185"
+    },
+    {
+      "issue": "1",
+      "key": "438_CR12",
+      "doi-asserted-by": "crossref",
+      "first-page": "234",
+      "DOI": "10.1007/s12555-018-0109-7",
+      "volume": "17",
+      "author": "K Eltag",
+      "year": "2019",
+      "unstructured": "K. Eltag, M. S. Aslamx, and R. Ullah, “Dynamic stability enhancement using fuzzy PID control technology for power system,” Int. J. Control, Auto.Syst., vol. 17, no. 1, pp. 234–242, January 2019.",
+      "journal-title": "Int. J. Control, Auto.Syst."
+    },
+    {
+      "key": "438_CR13",
+      "doi-asserted-by": "crossref",
+      "first-page": "383",
+      "DOI": "10.1016/j.neucom.2017.08.059",
+      "volume": "275",
+      "author": "J-F Qiao",
+      "year": "2018",
+      "unstructured": "J.-F. Qiao, Y. Hou, L. Zhang, and H.-G. Han, “Adaptive fuzzy neural network control of wastewater treatment process with multiobjective operation,” Neurocomputing, vol. 275, pp. 383–393, January 2018.",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "issue": "5",
+      "key": "438_CR14",
+      "doi-asserted-by": "crossref",
+      "first-page": "1158",
+      "DOI": "10.1007/s12555-017-0631-z",
+      "volume": "17",
+      "author": "L Yang",
+      "year": "2019",
+      "unstructured": "L. Yang, Y. Chen, Z. Liu, K. Chen, and Z. Zhang, “Adaptive fuzzy control for teleoperation system with uncertain kinematics and dynamics,” Int. J. Control, Auto.Syst., vol. 17, no. 5, pp. 1158–1166, May 2019.",
+      "journal-title": "Int. J. Control, Auto.Syst."
+    },
+    {
+      "issue": "2",
+      "key": "438_CR15",
+      "doi-asserted-by": "crossref",
+      "first-page": "969",
+      "DOI": "10.1109/TII.2019.2923715",
+      "volume": "16",
+      "author": "N Sun",
+      "year": "2020",
+      "unstructured": "N. Sun, D. Liang, Y. Wu, Y. Chen, Y. Qin, and Y. Fang, “Adaptive control for pneumatic artificial muscle systems with parametric uncertainties and unidirectional input constraints,” IEEE Trans. Industrial Info., vol. 16, no. 2, pp. 969–979, 2020.",
+      "journal-title": "IEEE Trans. Industrial Info."
+    },
+    {
+      "issue": "2",
+      "key": "438_CR16",
+      "doi-asserted-by": "crossref",
+      "first-page": "261",
+      "DOI": "10.3390/app8020261",
+      "volume": "8",
+      "author": "X Du",
+      "year": "2018",
+      "unstructured": "X. Du, J. Wang, V. Jegatheesan, and G. Shi, “Dissolved oxygen control in activated sludge process using a neural network-based adaptive PID algorithm,” Appl.Sci., vol. 8, no. 2, p. 261, February 2018.",
+      "journal-title": "Appl.Sci."
+    },
+    {
+      "issue": "4",
+      "key": "438_CR17",
+      "doi-asserted-by": "crossref",
+      "first-page": "1938",
+      "DOI": "10.1007/s12555-017-0552-x",
+      "volume": "16",
+      "author": "E Rouhani",
+      "year": "2018",
+      "unstructured": "E. Rouhani and A. Erfanian, “A finite-time adaptive fuzzy terminal sliding mode control for uncertain nonlinear systems,” Int. J. Control, Auto. Syst., vol. 16, no. 4, pp. 1938–1950, August 2018.",
+      "journal-title": "Int. J. Control, Auto. Syst."
+    },
+    {
+      "key": "438_CR18",
+      "first-page": "1",
+      "volume-title": "IEEE Trans. Control Syst. Technol.",
+      "author": "H Han",
+      "year": "2018",
+      "unstructured": "H. Han, X. Wu, and J. Qiao, “A self-organizing sliding-mode controller for wastewater treatment processes,” IEEE Trans. Control Syst. Technol., no. 99, pp. 1–12, May 2018."
+    },
+    {
+      "issue": "1-2",
+      "key": "438_CR19",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.1016/j.ins.2003.07.001",
+      "volume": "159",
+      "author": "C-W Park",
+      "year": "2004",
+      "unstructured": "C.-W. Park and M. Park, “Adaptive parameter estimator based on T-S fuzzy models and its applications to indirect adaptive fuzzy control design,” Inf. Sci., vol. 159, no. 1-2, pp. 125–139, January 2004.",
+      "journal-title": "Inf. Sci."
+    },
+    {
+      "key": "438_CR20",
+      "doi-asserted-by": "crossref",
+      "first-page": "606",
+      "DOI": "10.1016/j.apm.2017.01.019",
+      "volume": "45",
+      "author": "S Rastegar",
+      "year": "2017",
+      "unstructured": "S. Rastegar, R. Araújo, and J. Mendes, “Online identification of Takagi-Sugeno fuzzy models based on self-adaptive hierarchical particle swarm optimization algorithm,” Appl. Math. Model., vol. 45, pp. 606–620, May 2017.",
+      "journal-title": "Appl. Math. Model."
+    },
+    {
+      "key": "438_CR21",
+      "doi-asserted-by": "crossref",
+      "first-page": "132",
+      "DOI": "10.1016/j.eswa.2017.06.039",
+      "volume": "88",
+      "author": "I Boulkaibet",
+      "year": "2017",
+      "unstructured": "I. Boulkaibet, K. Belarbi, S. Bououden, T. Marwala, and M. Chadli, “A new T-S fuzzy model predictive control for nonlinear processes,” Expert Systems with Applications, vol. 88, pp. 132–151, December 2017.",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "1",
+      "key": "438_CR22",
+      "first-page": "589",
+      "volume": "357",
+      "author": "H Chen",
+      "year": "2020",
+      "unstructured": "H. Chen, and N. Sun, “Nonlinear control of underactuated systems subject to both actuated and unactuated state constraints with experimental verification,” IEEE Trans. Industrial Elec., vol. 357, no. 1, pp. 589–605, 2020.",
+      "journal-title": "IEEE Trans. Industrial Elec."
+    },
+    {
+      "key": "438_CR23",
+      "first-page": "384",
+      "volume": "151",
+      "author": "H Shen",
+      "year": "2018",
+      "unstructured": "H. Shen, M. Chen, Z. Wu, J. Cao, and J. Park, “Reliable event-triggered asynchronous passive control for semi-Markov jump fuzzy systems and its application,” IEEE Trans. Fuzzy Syst., vol. 151, pp. 384–391, 2018.",
+      "journal-title": "IEEE Trans. Fuzzy Syst."
+    },
+    {
+      "key": "438_CR24",
+      "first-page": "124578",
+      "volume": "362",
+      "author": "M Xing",
+      "year": "2019",
+      "unstructured": "M. Xing, J. Xia, J. Wang, B. Meng, and H. Shen, “Asynchronous H8 filtering for nonlinear persistent dwell-time switched singular systems with measurement quantization,” Appl. Math. Comput., vol. 362, 124578, December 2019.",
+      "journal-title": "Appl. Math. Comput."
+    },
+    {
+      "key": "438_CR25",
+      "volume-title": "IEEE Trans. Fuzzy Syst.",
+      "author": "H Shen",
+      "year": "2019",
+      "unstructured": "H. Shen, M. Xing, Z. Wu, S. Xu, and J. Cao, “Multi-objective fault-tolerant control for fuzzy switched systems with persistent dwell-time and its application in electric circuits,” IEEE Trans. Fuzzy Syst., 2019. DOI: 10.1109/TFUZZ.2019.2935685"
+    },
+    {
+      "issue": "1",
+      "key": "438_CR26",
+      "doi-asserted-by": "crossref",
+      "first-page": "589",
+      "DOI": "10.1016/j.jfranklin.2019.09.031",
+      "volume": "357",
+      "author": "J Wang",
+      "year": "2019",
+      "unstructured": "J. Wang, L. Shen, J. Xia, Y. Wei, and Z. Wang, “Asynchronous fuzzy dissipative filtering for nonlinear jumping systems subject to fading channels,” J. Franklin Inst., vol. 357, no. 1, pp. 589–605, 2019.",
+      "journal-title": "J. Franklin Inst."
+    },
+    {
+      "key": "438_CR27",
+      "doi-asserted-by": "crossref",
+      "first-page": "384",
+      "DOI": "10.1016/j.compag.2018.06.013",
+      "volume": "151",
+      "author": "Q Ren",
+      "year": "2018",
+      "unstructured": "Q. Ren, L. Zhang, Y. Wei, and D. Li, “A method for predicting dissolved oxygen in aquaculture water in an aquapon-ics system,” Computers and Electronics in Agriculture, vol. 151, pp. 384–391, August 2018.",
+      "journal-title": "Computers and Electronics in Agriculture"
+    },
+    {
+      "issue": "4",
+      "key": "438_CR28",
+      "doi-asserted-by": "crossref",
+      "first-page": "907",
+      "DOI": "10.1007/s12555-018-0245-0",
+      "volume": "17",
+      "author": "W-B Xie",
+      "year": "2019",
+      "unstructured": "W.-B. Xie, H. Li, Z.-H. Wang, and J. Zhang, “Observer-based controller design for a T-S fuzzy system with unknown premise variables,” Int. J. Control, Auto. Syst., vol. 17, no. 4, pp. 907–915, April 2019.",
+      "journal-title": "Int. J. Control, Auto. Syst."
+    },
+    {
+      "issue": "5",
+      "key": "438_CR29",
+      "doi-asserted-by": "crossref",
+      "first-page": "612",
+      "DOI": "10.1109/TSMCB.2002.1033180",
+      "volume": "32",
+      "author": "J Abonyi",
+      "year": "2002",
+      "unstructured": "J. Abonyi, R. Babuska, and F. Szeifert, “Modified gath-geva fuzzy clustering for identification of takagi-sugeno fuzzy models,” IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics), vol. 32, no. 5, pp. 612–621, October 2002.",
+      "journal-title": "IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)"
+    },
+    {
+      "key": "438_CR30",
+      "doi-asserted-by": "crossref",
+      "first-page": "55",
+      "DOI": "10.1016/j.ins.2012.07.021",
+      "volume": "235",
+      "author": "T Yang",
+      "year": "2013",
+      "unstructured": "T. Yang, L. Zhang, A. Wang, and H. Gao, “Fuzzy modeling approach to predictions of chemical oxygen demand in activated sludge processes,” Inf. Sci., vol. 235, pp. 55–64, June 2013.",
+      "journal-title": "Inf. Sci."
+    },
+    {
+      "key": "438_CR31",
+      "doi-asserted-by": "crossref",
+      "first-page": "88",
+      "DOI": "10.1016/j.neucom.2014.01.025",
+      "volume": "136",
+      "author": "T Yang",
+      "year": "2014",
+      "unstructured": "T. Yang, W. Qiu, Y. Ma, M. Chadli, and L. Zhang, “Fuzzy model-based predictive control of dissolved oxygen in activated sludge processes,” Neurocomputing, vol. 136, pp. 88–95, July 2014.",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "key": "438_CR32",
+      "unstructured": "“International Water Association Task Group on Benchmarking of Control Strategies for WWTPs.<http://www. benchmarkwwtp.org/>.”"
+    },
+    {
+      "issue": "3",
+      "key": "438_CR33",
+      "doi-asserted-by": "crossref",
+      "first-page": "319",
+      "DOI": "10.1016/S0165-0114(96)00384-3",
+      "volume": "98",
+      "author": "J Q Chen",
+      "year": "1998",
+      "unstructured": "J. Q. Chen, Y.-G. Xi, and Z.-J. Zhang, “A clustering algorithm for fuzzy model identification,” Fuzzy Sets Syst., vol. 98, no. 3, pp. 319–329, September 1998.",
+      "journal-title": "Fuzzy Sets Syst."
+    },
+    {
+      "key": "438_CR34",
+      "doi-asserted-by": "crossref",
+      "first-page": "404",
+      "DOI": "10.1016/j.patcog.2018.04.006",
+      "volume": "81",
+      "author": "L T Ngo",
+      "year": "2018",
+      "unstructured": "L. T. Ngo, T. H. Dang, and W. Pedrycz, “Towards interval-valued fuzzy set-based collaborative fuzzy clustering algorithms,” Pattern Recognition, vol. 81, pp. 404–416, September 2018.",
+      "journal-title": "Pattern Recognition"
+    },
+    {
+      "issue": "1",
+      "key": "438_CR35",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.1016/S0169-7439(98)00026-4",
+      "volume": "41",
+      "author": "P Teppola",
+      "year": "1998",
+      "unstructured": "P. Teppola, S.-P. Mujunen, and P. Minkkinen, “A combined approach of partial least squares and fuzzy C-means clustering for the monitoring of an activated-sludge waste-water treatment plant,” Chemom. Intell. Lab. Syst., vol. 41, no. 1, pp. 95–103, July 1998.",
+      "journal-title": "Chemom. Intell. Lab. Syst."
+    },
+    {
+      "issue": "1",
+      "key": "438_CR36",
+      "doi-asserted-by": "crossref",
+      "first-page": "18",
+      "DOI": "10.18517/ijaseit.8.1.3490",
+      "volume": "8",
+      "author": "A K Dubey",
+      "year": "2018",
+      "unstructured": "A. K. Dubey, U. Gupta, and S. Jain, “Comparative study of k-means and fuzzy C-means algorithms on the breast cancer data,” International Journal on Advanced Science, Engineering and Information Technology, vol. 8, no. 1, pp. 18–29, 2018.",
+      "journal-title": "International Journal on Advanced Science, Engineering and Information Technology"
+    },
+    {
+      "key": "438_CR37",
+      "first-page": "136",
+      "volume-title": "Proc. of the International Conference on Intelligent Computing",
+      "author": "X-L Shi",
+      "year": "2018",
+      "unstructured": "X.-L. Shi, J. Zhou, X.-F. Wang, and L. Zou, “Prediction of dissolved oxygen concentration in sewage using support vector regression based on fuzzy C-means clustering,” Proc. of the International Conference on Intelligent Computing, Springer, pp. 136–142, July 2018."
+    },
+    {
+      "issue": "5",
+      "key": "438_CR38",
+      "doi-asserted-by": "crossref",
+      "first-page": "164",
+      "DOI": "10.3390/ijgi7050164",
+      "volume": "7",
+      "author": "X Zhou",
+      "year": "2018",
+      "unstructured": "X. Zhou, F. Miao, H. Ma, H. Zhang, and H. Gong, “A trajectory regression clustering technique combining a novel fuzzy C-means clustering algorithm with the least squares method,” ISPRS International Journal of Geo-Information, vol. 7, no. 5, p. 164, April 2018.",
+      "journal-title": "ISPRS International Journal of Geo-Information"
+    },
+    {
+      "issue": "5",
+      "key": "438_CR39",
+      "doi-asserted-by": "crossref",
+      "first-page": "2499",
+      "DOI": "10.1109/TFUZZ.2018.2813314",
+      "volume": "26",
+      "author": "X Zhu",
+      "year": "2018",
+      "unstructured": "X. Zhu, W. Pedrycz, and Z. Li, “A design of granular Takagi-Sugeno fuzzy model through the synergy of fuzzy subspace clustering and optimal allocation of information granularity,” IEEE Trans. Fuzzy Syst., vol. 26, no. 5, pp. 2499–2509, March 2018.",
+      "journal-title": "IEEE Trans. Fuzzy Syst."
+    },
+    {
+      "key": "438_CR40",
+      "doi-asserted-by": "crossref",
+      "first-page": "133",
+      "DOI": "10.1007/978-81-322-2208-8_14",
+      "volume-title": "Computational Intelligence in Data Mining-Volume 2",
+      "author": "J Nayak",
+      "year": "2015",
+      "unstructured": "J. Nayak, B. Naik, and H. Behera, “Fuzzy C-means (FCM) clustering algorithm: a decade review from 2000 to 2014,” Computational Intelligence in Data Mining-Volume 2, Springer, pp. 133–149, December 2015."
+    },
+    {
+      "issue": "17-18",
+      "key": "438_CR41",
+      "doi-asserted-by": "crossref",
+      "first-page": "6315",
+      "DOI": "10.1016/j.eswa.2015.04.032",
+      "volume": "42",
+      "author": "T M Silva Filho",
+      "year": "2015",
+      "unstructured": "T. M. Silva Filho, B. A. Pimentel, R. M. Souza, and A. L. Oliveira, “Hybrid methods for fuzzy clustering based on fuzzy C-means and improved particle swarm optimization,” Expert Systems with Applications, vol. 42, no. 17-18, pp. 6315–6328, October 2015.",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "issue": "1",
+      "key": "438_CR42",
+      "doi-asserted-by": "crossref",
+      "first-page": "368",
+      "DOI": "10.1007/s12555-017-0079-1",
+      "volume": "16",
+      "author": "Y-H Byeon",
+      "year": "2018",
+      "unstructured": "Y.-H. Byeon, M.-W. Lee, J.-N. Lee, and K.-C. Kwak, “Prediction of dinghy boom direction using intelligent predictor,” Int. J. Control, Auto.Syst., vol. 16, no. 1, pp. 368–376, March 2018.",
+      "journal-title": "Int. J. Control, Auto.Syst."
+    },
+    {
+      "key": "438_CR43",
+      "first-page": "19",
+      "volume-title": "Report by the IWA Taskgroup on Benchmarking of Control Strategies for WWTPs",
+      "author": "J Alex",
+      "year": "2008",
+      "unstructured": "J. Alex, L. Benedetti, J. Copp, K. V. Gernaey, U. Jeppsson, I. Nopens, M. N. Pons, J. P. Steyer, and P. Vanrolleghem, “Benchmark simulation model no. 1 (BSM1),” Report by the IWA Taskgroup on Benchmarking of Control Strategies for WWTPs, pp. 19–20, 2008."
+    },
+    {
+      "issue": "14",
+      "key": "438_CR44",
+      "doi-asserted-by": "crossref",
+      "first-page": "6371",
+      "DOI": "10.1016/j.jfranklin.2018.06.030",
+      "volume": "355",
+      "author": "Z Wang",
+      "year": "2018",
+      "unstructured": "Z. Wang, L. Shen, J. Xia, H. Shen, and J. Wang, “Finite-time non-fragile L2 - L8 control for jumping stochastic systems subject to input constraints via an event-triggered mechanism,” J. Franklin Inst., vol. 355, no. 14, pp. 6371–6389, September 2018.",
+      "journal-title": "J. Franklin Inst."
+    },
+    {
+      "issue": "6",
+      "key": "438_CR45",
+      "doi-asserted-by": "crossref",
+      "first-page": "2545",
+      "DOI": "10.1109/TAC.2018.2867163",
+      "volume": "64",
+      "author": "S Ding",
+      "year": "2019",
+      "unstructured": "S. Ding, K. Mei, and S. Li, “A new second-order sliding mode and its application to nonlinear constrained systems,” IEEE Trans. Automat. Control, vol. 64, no. 6, pp. 2545–2552, June 2019.",
+      "journal-title": "IEEE Trans. Automat. Control"
+    },
+    {
+      "key": "438_CR46",
+      "doi-asserted-by": "crossref",
+      "first-page": "403",
+      "DOI": "10.1016/j.neucom.2018.11.011",
+      "volume": "331",
+      "author": "M Dai",
+      "year": "2019",
+      "unstructured": "M. Dai, J. Xia, X. Huang, and H. Shen, “Event-triggered passive synchronization for Markov jump neural networks subject to randomly occurring gain variations,” Neurocomputing, vol. 331, pp. 403–411, February 2019.",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "key": "438_CR47",
+      "first-page": "297",
+      "volume": "47",
+      "author": "M Li",
+      "year": "2016",
+      "unstructured": "M. Li, L. Zhou, and J. Wang, “Neural network predictive control for dissolved oxygen based on levenberg-marquardt algorithm,” Trans. Chin. Soc. Agric. Mach, vol. 47, pp. 297–302, June 2016.",
+      "journal-title": "Trans. Chin. Soc. Agric. Mach"
+    },
+    {
+      "issue": "8",
+      "key": "438_CR48",
+      "doi-asserted-by": "crossref",
+      "first-page": "1210",
+      "DOI": "10.1109/TCSI.2016.2573281",
+      "volume": "63",
+      "author": "C K Ahn",
+      "year": "2016",
+      "unstructured": "C. K. Ahn, P. Shi, and M. Basin, “Deadbeat dissipative FIR filtering,” IEEE Trans. Circuits Syst. I, Regul. Papers, vol. 63, no. 8, pp. 1210–1221, August 2016.",
+      "journal-title": "IEEE Trans. Circuits Syst. I, Regul. Papers"
+    }
+  ],
+  "container-title": [
+    "International Journal of Control, Automation and Systems"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s12555-019-0438-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1007/s12555-019-0438-1/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s12555-019-0438-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        27
+      ]
+    ],
+    "date-time": "2021-02-27T00:30:14Z",
+    "timestamp": 1614385814000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "http://link.springer.com/10.1007/s12555-019-0438-1"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        28
+      ]
+    ]
+  },
+  "references-count": 48,
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          9
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "438"
+  ],
+  "URL": "https://doi.org/10.1007/s12555-019-0438-1",
+  "relation": {},
+  "ISSN": [
+    "1598-6446",
+    "2005-4092"
+  ],
+  "issn-type": [
+    {
+      "value": "1598-6446",
+      "type": "print"
+    },
+    {
+      "value": "2005-4092",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        28
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "16 June 2019",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "12 November 2019",
+      "order": 2,
+      "name": "revised",
+      "label": "Revised",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "5 December 2019",
+      "order": 3,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "28 February 2020",
+      "order": 4,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    }
+  ]
+}

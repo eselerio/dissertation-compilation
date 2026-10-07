@@ -1,0 +1,497 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2026-10-05T07:41:15Z",
+    "timestamp": 1791186075609,
+    "version": "4.1.0"
+  },
+  "reference-count": 27,
+  "publisher": "MDPI AG",
+  "issue": "5",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            25
+          ]
+        ],
+        "date-time": "2012-04-25T00:00:00Z",
+        "timestamp": 1335312000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/3.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Molecules"
+  ],
+  "abstract": "<jats:p>One of the OECD principles for model validation requires defining the Applicability Domain (AD) for the QSAR models. This is important since the reliable predictions are generally limited to query chemicals structurally similar to the training compounds used to build the model. Therefore, characterization of interpolation space is significant in defining the AD and in this study some existing descriptor-based approaches performing this task are discussed and compared by implementing them on existing validated datasets from the literature. Algorithms adopted by different approaches allow defining the interpolation space in several ways, while defined thresholds contribute significantly to the extrapolations. For each dataset and approach implemented for this study, the comparison analysis was carried out by considering the model statistics and relative position of test set with respect to the training space.</jats:p>",
+  "DOI": "10.3390/molecules17054791",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2012-04-25T11:42:51Z",
+    "timestamp": 1335354171000
+  },
+  "page": "4791-4810",
+  "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 593,
+  "title": [
+    "Comparison of Different Approaches to Define the Applicability Domain of QSAR Models"
+  ],
+  "prefix": "10.3390",
+  "volume": "17",
+  "author": [
+    {
+      "given": "Faizan",
+      "family": "Sahigara",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Milano Chemometrics and QSAR Research Group, Department of Environmental Sciences, University of Milano-Bicocca, P.za della Scienza 1-20126 Milano, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Kamel",
+      "family": "Mansouri",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Milano Chemometrics and QSAR Research Group, Department of Environmental Sciences, University of Milano-Bicocca, P.za della Scienza 1-20126 Milano, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Davide",
+      "family": "Ballabio",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Milano Chemometrics and QSAR Research Group, Department of Environmental Sciences, University of Milano-Bicocca, P.za della Scienza 1-20126 Milano, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Andrea",
+      "family": "Mauri",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Milano Chemometrics and QSAR Research Group, Department of Environmental Sciences, University of Milano-Bicocca, P.za della Scienza 1-20126 Milano, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-6252-9805",
+      "authenticated-orcid": false,
+      "given": "Viviana",
+      "family": "Consonni",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Milano Chemometrics and QSAR Research Group, Department of Environmental Sciences, University of Milano-Bicocca, P.za della Scienza 1-20126 Milano, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6454-4192",
+      "authenticated-orcid": false,
+      "given": "Roberto",
+      "family": "Todeschini",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Milano Chemometrics and QSAR Research Group, Department of Environmental Sciences, University of Milano-Bicocca, P.za della Scienza 1-20126 Milano, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "1968",
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        25
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "155",
+      "DOI": "10.1177/026119290503300209",
+      "article-title": "Current status of methods for defining the applicability domain of (quantitative) structure-activity relationships. The report and recommendations of ECVAM Workshop 52",
+      "volume": "33",
+      "author": "Netzeva",
+      "year": "2005",
+      "journal-title": "Altern. Lab. Anim."
+    },
+    {
+      "key": "ref_2",
+      "doi-asserted-by": "crossref",
+      "first-page": "445",
+      "DOI": "10.1177/026119290503300508",
+      "article-title": "QSAR applicabilty domain estimation by projection of the training set descriptor space: A review",
+      "volume": "33",
+      "author": "Jaworska",
+      "year": "2005",
+      "journal-title": "Altern. Lab. Anim."
+    },
+    {
+      "key": "ref_3",
+      "doi-asserted-by": "crossref",
+      "first-page": "839",
+      "DOI": "10.1021/ci0500381",
+      "article-title": "Stepwise approach for defining the applicability domain of SAR and QSAR models",
+      "volume": "45",
+      "author": "Dimitrov",
+      "year": "2005",
+      "journal-title": "J. Chem. Inf. Model."
+    },
+    {
+      "key": "ref_4",
+      "unstructured": "European Community Regulation on chemicals and their safe use. Available online:http://ec.europa.eu/environment/chemicals/reach/reach_intro.htm."
+    },
+    {
+      "key": "ref_5",
+      "unstructured": "Worth, A.P., Bassan, A., Gallegos, A., Netzeva, T.I., Patlewicz, G., Pavan, M., Tsakovska, I., and Vracko, M. (2005). The Characterisation of (Quantitative) Structure-Activity Relationships: Preliminary Guidance, ECB Report EUR 21866 EN, European Commission, Joint Research Centre."
+    },
+    {
+      "key": "ref_6",
+      "unstructured": "Quantitative Structure-Activity Relationships Project [(Q)SARs]. Available online:http://www.oecd.org/document/23/0,3746,en_2649_34377_33957015_1_1_1_1,00.html."
+    },
+    {
+      "key": "ref_7",
+      "doi-asserted-by": "crossref",
+      "first-page": "331",
+      "DOI": "10.1080/10629360412331297371",
+      "article-title": "The prospects for using (Q)SARs in a changing political environment: high expectations and a key role for the Commission’s Joint Research Centre",
+      "volume": "15",
+      "author": "Worth",
+      "year": "2004",
+      "journal-title": "SAR QSAR Environ. Res."
+    },
+    {
+      "key": "ref_8",
+      "doi-asserted-by": "crossref",
+      "first-page": "461",
+      "DOI": "10.1177/026119290503300510",
+      "article-title": "An approach to determining applicability domains for QSAR group contribution models: an analysis of SRC KOWWIN",
+      "volume": "33",
+      "author": "Jaworska",
+      "year": "2005",
+      "journal-title": "Altern. Lab. Anim."
+    },
+    {
+      "key": "ref_9",
+      "doi-asserted-by": "crossref",
+      "first-page": "1912",
+      "DOI": "10.1021/ci049782w",
+      "article-title": "Similarity to molecules in the training set is a good discriminator for prediction accuracy in QSAR",
+      "volume": "44",
+      "author": "Sheridan",
+      "year": "2004",
+      "journal-title": "J. Chem. Inf. Comp. Sci."
+    },
+    {
+      "key": "ref_10",
+      "doi-asserted-by": "crossref",
+      "first-page": "1701",
+      "DOI": "10.1016/j.chemosphere.2008.09.033",
+      "article-title": "A new hybrid QSAR model for predicting bioconcentration factor (BCF)",
+      "volume": "73",
+      "author": "Zhao",
+      "year": "2008",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "ref_11",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Lombardo, A., Roncaglioni, A., Boriani, E., Milan, C., and Benfenati, E. (2010). Assessment and validation of the CAESAR predictive model for bioconcentration factor (BCF) in fish. Chem. Cent. J., 4 (Suppl 1).",
+      "DOI": "10.1186/1752-153X-4-S1-S1"
+    },
+    {
+      "key": "ref_12",
+      "unstructured": "Meylan, W.M., Howard, P.H., Aronson, D., Printup, H., and Gouchie, S. (1997). Improved Method for Estimating Bioconcentration Factor (BCF) from Octanol-Water Partition Coefficient, 2nd Update; SRC TR-97-006, Syracuse Research Corp., Environmental Science Center. Prepared for: Robert S. Boethling, EPA-OPPT."
+    },
+    {
+      "key": "ref_13",
+      "doi-asserted-by": "crossref",
+      "first-page": "664",
+      "DOI": "10.1002/etc.5620180412",
+      "article-title": "Improved method for estimating bioconcentration/bioaccumulation factor from octanol/water partition coefficient",
+      "volume": "18",
+      "author": "Meylan",
+      "year": "1999",
+      "journal-title": "Environ. Toxicol. Chem."
+    },
+    {
+      "key": "ref_14",
+      "unstructured": "The Language of Technical Computing. Available online:http://www.mathworks.com/products/matlab/."
+    },
+    {
+      "key": "ref_15",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.1016/0169-7439(87)80084-9",
+      "article-title": "Principal component analysis",
+      "volume": "2",
+      "author": "Wold",
+      "year": "1987",
+      "journal-title": "Chemometr. Intell. Lab."
+    },
+    {
+      "key": "ref_16",
+      "unstructured": "Preparata, F.P., and Shamos, M.I. (1991). Computational Geometry: An Introduction, Springer-Verlag."
+    },
+    {
+      "key": "ref_17",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "DOI": "10.1002/qsar.200390007",
+      "article-title": "The importance of being earnest: validation is the absolute essential for successful application and interpretation of QSPR Models",
+      "volume": "22",
+      "author": "Tropsha",
+      "year": "2003",
+      "journal-title": "QSAR Comb.Sci."
+    },
+    {
+      "key": "ref_18",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "DOI": "10.1016/S0003-2670(98)00626-6",
+      "article-title": "Detection of prediction outliers and inliers in multivariate calibration",
+      "volume": "388",
+      "author": "Bouveresse",
+      "year": "1999",
+      "journal-title": "Anal. Chim. Acta"
+    },
+    {
+      "key": "ref_19",
+      "doi-asserted-by": "crossref",
+      "first-page": "435",
+      "DOI": "10.1002/cem.1180050504",
+      "article-title": "A class-modelling technique based on potential functions",
+      "volume": "5",
+      "author": "Forina",
+      "year": "1991",
+      "journal-title": "J. Chemometr."
+    },
+    {
+      "key": "ref_20",
+      "doi-asserted-by": "crossref",
+      "first-page": "525",
+      "DOI": "10.1021/ci020058s",
+      "article-title": "Perkins, R. Decision forest: Combining the predictions of multiple independent decision tree models",
+      "volume": "43",
+      "author": "Tong",
+      "year": "2003",
+      "journal-title": "J. Chem. Inf. Comput. Sci."
+    },
+    {
+      "key": "ref_21",
+      "first-page": "65",
+      "article-title": "Assessing QSAR limitations: A regulatory perspective",
+      "volume": "1",
+      "author": "Tong",
+      "year": "2004",
+      "journal-title": "Curr. Comput. Aid. Drug Des."
+    },
+    {
+      "key": "ref_22",
+      "doi-asserted-by": "crossref",
+      "first-page": "1049",
+      "DOI": "10.1021/ci990306t",
+      "article-title": "Self-configuring radial basis function neural networks for chemical pattern recognition",
+      "volume": "39",
+      "author": "Wan",
+      "year": "1999",
+      "journal-title": "J. Chem. Inf. Comput. Sci."
+    },
+    {
+      "key": "ref_23",
+      "unstructured": "DRAGON (Software for Molecular Descriptor Calculations). Available online:http://www.talete.mi.it."
+    },
+    {
+      "key": "ref_24",
+      "doi-asserted-by": "crossref",
+      "first-page": "1669",
+      "DOI": "10.1021/ci900115y",
+      "article-title": "Comments on the definition of the Q2 parameter for QSAR validation",
+      "volume": "49",
+      "author": "Consonni",
+      "year": "2009",
+      "journal-title": "J. Chem. Inf. Model."
+    },
+    {
+      "key": "ref_25",
+      "doi-asserted-by": "crossref",
+      "first-page": "104",
+      "DOI": "10.1002/cem.1290",
+      "article-title": "Evaluation of model predictive ability by external validation techniques",
+      "volume": "24",
+      "author": "Consonni",
+      "year": "2010",
+      "journal-title": "J. Chemometr."
+    },
+    {
+      "key": "ref_26",
+      "doi-asserted-by": "crossref",
+      "first-page": "1733",
+      "DOI": "10.1021/ci800151m",
+      "article-title": "Critical assessment of QSAR models of environmental toxicity against Tetrahymena pyriformis: Focusing on applicability domain and overfitting by variable selection",
+      "volume": "48",
+      "author": "Tetko",
+      "year": "2008",
+      "journal-title": "J. Chem. Inf. Model."
+    },
+    {
+      "key": "ref_27",
+      "doi-asserted-by": "crossref",
+      "first-page": "1315",
+      "DOI": "10.1016/j.jmgm.2008.01.002",
+      "article-title": "The importance of the domain of applicability in QSAR modeling",
+      "volume": "26",
+      "author": "Weaver",
+      "year": "2008",
+      "journal-title": "J. Mol. Graph. Model."
+    }
+  ],
+  "container-title": [
+    "Molecules"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.mdpi.com/1420-3049/17/5/4791/pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        11
+      ]
+    ],
+    "date-time": "2025-10-11T21:49:58Z",
+    "timestamp": 1760219398000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.mdpi.com/1420-3049/17/5/4791"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        25
+      ]
+    ]
+  },
+  "references-count": 27,
+  "journal-issue": {
+    "issue": "5",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          5
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "molecules17054791"
+  ],
+  "URL": "https://doi.org/10.3390/molecules17054791",
+  "relation": {},
+  "ISSN": [
+    "1420-3049"
+  ],
+  "issn-type": [
+    {
+      "value": "1420-3049",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        25
+      ]
+    ]
+  }
+}

@@ -1,0 +1,1634 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        2
+      ]
+    ],
+    "date-time": "2026-10-02T14:58:42Z",
+    "timestamp": 1790953122900,
+    "version": "4.1.0"
+  },
+  "reference-count": 137,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2018-01-01T00:00:00Z",
+        "timestamp": 1514764800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "funder": [
+    {
+      "name": "NSF",
+      "award": [
+        "1159244"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "1159244"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NSF",
+      "award": [
+        "1434548"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "1434548"
+          ]
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.compchemeng.2017.09.017",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        9,
+        21
+      ]
+    ],
+    "date-time": "2017-09-21T12:15:22Z",
+    "timestamp": 1505996122000
+  },
+  "page": "250-267",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 673,
+  "special_numbering": "C",
+  "title": [
+    "Advances in surrogate based modeling, feasibility analysis, and optimization: A review"
+  ],
+  "prefix": "10.1016",
+  "volume": "108",
+  "author": [
+    {
+      "given": "Atharv",
+      "family": "Bhosekar",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Marianthi",
+      "family": "Ierapetritou",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "137",
+      "DOI": "10.1016/j.ces.2016.03.028",
+      "article-title": "An effective computation strategy for assessing operational flexibility of high-dimensional systems with complicated feasible regions",
+      "volume": "147",
+      "author": "Adi",
+      "year": "2016",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "716",
+      "DOI": "10.1109/TAC.1974.1100705",
+      "article-title": "A new look at the statistical model identification",
+      "volume": "19",
+      "author": "Akaike",
+      "year": "1974",
+      "journal-title": "IEEE Trans. Autom. Control"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0015",
+      "series-title": "Multidisciplinary Optimization of a Supersonic Transport Using Design of Experiments Theory and Response Surface Modeling",
+      "author": "Anthony",
+      "year": "1997"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "55",
+      "DOI": "10.1016/j.csda.2013.03.016",
+      "article-title": "Cross validation and maximum likelihood estimations of hyper-parameters of Gaussian processes with model misspecification",
+      "volume": "66",
+      "author": "Bachoc",
+      "year": "2013",
+      "journal-title": "Comput. Stat. Data Anal."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0025",
+      "first-page": "1",
+      "article-title": "Multifidelity response surface model for HSCT wing bending material weight",
+      "author": "Balabanov",
+      "year": "1998",
+      "journal-title": "Proceedings of 7th …"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "825",
+      "DOI": "10.1111/j.1467-9868.2008.00663.x",
+      "article-title": "Gaussian predictive process models for large spatial data sets",
+      "volume": "70",
+      "author": "Banerjee",
+      "year": "2008",
+      "journal-title": "J. R. Stat. Soc. Ser. B: Stat. Methodol."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "1515",
+      "DOI": "10.1016/j.compchemeng.2010.02.016",
+      "article-title": "Computationally efficient black-box modeling for feasibility analysis",
+      "volume": "34",
+      "author": "Banerjee",
+      "year": "2010",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "C",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0040",
+      "doi-asserted-by": "crossref",
+      "first-page": "535",
+      "DOI": "10.1016/S0927-0507(06)13018-2",
+      "article-title": "Chapter 18 metamodel-based simulation optimization",
+      "volume": "13",
+      "author": "Barton",
+      "year": "2006",
+      "journal-title": "Handbooks Oper. Res. Manag. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0045",
+      "series-title": "Proceedings of the 24th Conference on Winter Simulation",
+      "first-page": "289",
+      "article-title": "Metamodels for simulation input-output relations",
+      "author": "Barton",
+      "year": "1992"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "2",
+      "DOI": "10.1287/opre.2015.1436",
+      "article-title": "OR Forum—an algorithmic approach to linear regression",
+      "volume": "64",
+      "author": "Bertsimas",
+      "year": "2016",
+      "journal-title": "Oper. Res."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "249",
+      "DOI": "10.1162/EVCO_a_00069",
+      "article-title": "Resampling methods for meta-model validation with recommendations for evolutionary computation",
+      "volume": "20",
+      "author": "Bischl",
+      "year": "2012",
+      "journal-title": "Evol. Comput."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0060",
+      "first-page": "1",
+      "article-title": "mlr: Machine learning in r",
+      "volume": "17",
+      "author": "Bischl",
+      "year": "2016",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0065",
+      "doi-asserted-by": "crossref",
+      "first-page": "373",
+      "DOI": "10.1023/A:1011584207202",
+      "article-title": "Global optimization of costly nonconvex functions using radial basis functions",
+      "volume": "1",
+      "author": "Björkman",
+      "year": "2000",
+      "journal-title": "Optim. Eng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "39",
+      "DOI": "10.1016/S0019-0578(07)60112-8",
+      "article-title": "Neural networks for process control and optimization: two industrial applications",
+      "volume": "42",
+      "author": "Bloch",
+      "year": "2003",
+      "journal-title": "ISA Trans."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0075",
+      "series-title": "Improving Kriging Surrogates of High-dimensional Design Models by Partial Least Squares Dimension Reduction To Cite This Version: Improving Kriging Surrogates of High-dimensional Design Models by Partial Least Squares Dimension Reduction",
+      "first-page": "935",
+      "author": "Bouhlel",
+      "year": "2015"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0080",
+      "article-title": "ARGONAUT: AlgoRithms for Global Optimization of coNstrAined grey-box compUTational problems",
+      "author": "Boukouvala",
+      "year": "2016",
+      "journal-title": "Optim. Lett."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0085",
+      "doi-asserted-by": "crossref",
+      "first-page": "358",
+      "DOI": "10.1016/j.compchemeng.2011.06.005",
+      "article-title": "Feasibility analysis of black-box processes using an adaptive sampling Kriging-based method",
+      "volume": "36",
+      "author": "Boukouvala",
+      "year": "2012",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0090",
+      "doi-asserted-by": "crossref",
+      "first-page": "2462",
+      "DOI": "10.1002/aic.14442",
+      "article-title": "Derivative-free optimization for expensive constrained problems using a novel expected improvement objective function",
+      "volume": "60",
+      "author": "Boukouvala",
+      "year": "2014",
+      "journal-title": "AIChE J."
+    },
+    {
+      "issue": "0",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0095",
+      "article-title": "Learning heteroscedastic gaussian processes for complex datasets",
+      "volume": "44",
+      "author": "Boukouvalas",
+      "year": "2009",
+      "journal-title": "Group"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0100",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1080/00401706.1995.10484371",
+      "article-title": "Better subset regression using the nonnegative garrote",
+      "author": "Breiman",
+      "year": "1995",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0105",
+      "doi-asserted-by": "crossref",
+      "first-page": "225",
+      "DOI": "10.1016/j.csda.2003.11.001",
+      "article-title": "Computational aspects of algorithms for variable selection in the context of principal components",
+      "volume": "47",
+      "author": "Cadima",
+      "year": "2004",
+      "journal-title": "Comput. Stat. Data Anal."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0110",
+      "unstructured": "Cadima, J., Cerdeira, J. O., Silva, P. D., & Minhoto, M., 2012. The subselect R package."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "2313",
+      "DOI": "10.1214/009053606000001523",
+      "article-title": "The Dantzig selector: statistical estimation when p is much larger than n",
+      "volume": "35",
+      "author": "Candes",
+      "year": "2007",
+      "journal-title": "Ann. Stat."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "40",
+      "DOI": "10.1214/15-STS531",
+      "article-title": "Analysis methods for computer experiments: how to assess and what counts?",
+      "volume": "31",
+      "author": "Chen",
+      "year": "2013",
+      "journal-title": "Stat. Sci."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0125",
+      "doi-asserted-by": "crossref",
+      "first-page": "759",
+      "DOI": "10.1093/biomet/asn034",
+      "article-title": "Extended bayesian information criteria for model selection with large model spaces model selection extended Bayesian information criteria for with large model spaces",
+      "volume": "95",
+      "author": "Chen",
+      "year": "2014",
+      "journal-title": "Biometrika"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0130",
+      "doi-asserted-by": "crossref",
+      "first-page": "2607",
+      "DOI": "10.1214/11-AOS919",
+      "article-title": "Penalized maximum likelihood estimation and variable selection in geostatistics",
+      "volume": "39",
+      "author": "Chu",
+      "year": "2011",
+      "journal-title": "Ann. Stat."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0135",
+      "doi-asserted-by": "crossref",
+      "first-page": "1077",
+      "DOI": "10.1115/1.1897403",
+      "article-title": "Analysis of support vector regression for approximation of complex engineering analyses",
+      "volume": "127",
+      "author": "Clarke",
+      "year": "2005",
+      "journal-title": "J. Mech. Des."
+    },
+    {
+      "issue": "1–3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0140",
+      "doi-asserted-by": "crossref",
+      "first-page": "397",
+      "DOI": "10.1007/BF02614326",
+      "article-title": "Recent progress in unconstrained nonlinear optimization without derivatives",
+      "volume": "79",
+      "author": "Conn",
+      "year": "1997",
+      "journal-title": "Math. Program."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0145",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/aic.14418",
+      "article-title": "Learning surrogate models for simulation-based optimization",
+      "volume": "60",
+      "author": "Cozad",
+      "year": "2014",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0150",
+      "doi-asserted-by": "crossref",
+      "first-page": "116",
+      "DOI": "10.1016/j.compchemeng.2014.11.010",
+      "article-title": "A combined first-principles and data-driven approach to model building",
+      "volume": "73",
+      "author": "Cozad",
+      "year": "2015",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0155",
+      "doi-asserted-by": "crossref",
+      "first-page": "209",
+      "DOI": "10.1111/j.1467-9868.2007.00633.x",
+      "article-title": "Fixed rank kriging for very large spatial data sets",
+      "volume": "70",
+      "author": "Cressie",
+      "year": "2008",
+      "journal-title": "J. R. Stat. Soc. Ser. B (Stat. Methodol.)"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0160",
+      "doi-asserted-by": "crossref",
+      "first-page": "683",
+      "DOI": "10.1016/j.ejor.2011.05.032",
+      "article-title": "Efficient space-filling and non-collapsing sequential design strategies for simulation-based modeling",
+      "volume": "214",
+      "author": "Crombecq",
+      "year": "2011",
+      "journal-title": "Eur. J. Oper. Res."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0165",
+      "doi-asserted-by": "crossref",
+      "first-page": "201",
+      "DOI": "10.1007/s101070100263",
+      "article-title": "Benchmarcking optimization software with performance profiles",
+      "volume": "91",
+      "author": "Dolan",
+      "year": "2002",
+      "journal-title": "Math. Programm."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0170",
+      "doi-asserted-by": "crossref",
+      "first-page": "220",
+      "DOI": "10.1016/j.compchemeng.2014.05.021",
+      "article-title": "Adaptive sequential sampling for surrogate model generation with artificial neural networks",
+      "volume": "68",
+      "author": "Eason",
+      "year": "2014",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0175",
+      "doi-asserted-by": "crossref",
+      "first-page": "407",
+      "DOI": "10.1214/009053604000000067",
+      "article-title": "Least angle regression",
+      "volume": "32",
+      "author": "Efron",
+      "year": "2004",
+      "journal-title": "The Ann. Stat."
+    },
+    {
+      "issue": "456",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "1348",
+      "DOI": "10.1198/016214501753382273",
+      "article-title": "Variable selection via nonconcave penalized",
+      "volume": "96",
+      "author": "Fan",
+      "year": "2001",
+      "journal-title": "J. Am. Stat. Assoc."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0185",
+      "doi-asserted-by": "crossref",
+      "first-page": "849",
+      "DOI": "10.1111/j.1467-9868.2008.00674.x",
+      "article-title": "Sure independence screening for ultrahigh dimensional feature space",
+      "volume": "70",
+      "author": "Fan",
+      "year": "2008",
+      "journal-title": "J. R. Stat. Soc. Ser. B: Stat. Methodol."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0190",
+      "doi-asserted-by": "crossref",
+      "first-page": "449",
+      "DOI": "10.1002/ceat.200500310",
+      "article-title": "Optimization of fischer-tropsch synthesis using neural networks",
+      "volume": "29",
+      "author": "Fernandes",
+      "year": "2006",
+      "journal-title": "Chem. Eng. Technol."
+    },
+    {
+      "issue": "20",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0195",
+      "doi-asserted-by": "crossref",
+      "first-page": "4267",
+      "DOI": "10.1021/ie001014g",
+      "article-title": "Global optimization in design under uncertainty: feasibility test and flexibility index problems",
+      "volume": "40",
+      "author": "Floudas",
+      "year": "2001",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "1-3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0200",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "DOI": "10.1016/j.paerosci.2008.11.001",
+      "article-title": "Recent advances in surrogate-based optimization",
+      "volume": "45",
+      "author": "Forrester",
+      "year": "2009",
+      "journal-title": "Progr. Aerospace Sci."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0205",
+      "doi-asserted-by": "crossref",
+      "first-page": "1947",
+      "DOI": "10.1214/aos/1176325766",
+      "article-title": "The risk inflation criterion for multiple regression",
+      "volume": "22",
+      "author": "Foster",
+      "year": "1994",
+      "journal-title": "The Ann. Stat."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0210",
+      "doi-asserted-by": "crossref",
+      "first-page": "499",
+      "DOI": "10.1080/00401706.1974.10489231",
+      "article-title": "Regressions by leaps and bounds",
+      "volume": "16",
+      "author": "Furnival",
+      "year": "1974",
+      "journal-title": "Technometrics"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0215",
+      "doi-asserted-by": "crossref",
+      "first-page": "502",
+      "DOI": "10.1198/106186006X132178",
+      "article-title": "Covariance tapering for interpolation of large spatial datasets",
+      "volume": "15",
+      "author": "Furrer",
+      "year": "2006",
+      "journal-title": "J. Comput. Graph. Stat."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0220",
+      "unstructured": "GLOBAL Library. http://www.gamsworld.org/global/globallib.htm."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0225",
+      "doi-asserted-by": "crossref",
+      "first-page": "103",
+      "DOI": "10.1016/j.compchemeng.2016.10.006",
+      "article-title": "Smart sampling algorithm for surrogate model development",
+      "volume": "96",
+      "author": "Garud",
+      "year": "2017",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0230",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.1007/s00158-006-0051-9",
+      "article-title": "Ensemble of surrogates",
+      "volume": "33",
+      "author": "Goel",
+      "year": "2007",
+      "journal-title": "Struct. Multidiscip. Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0235",
+      "first-page": "2051",
+      "article-title": "A surrogate modeling and adaptive sampling toolbox for computer based design",
+      "volume": "11",
+      "author": "Gorissen",
+      "year": "2010",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0240",
+      "doi-asserted-by": "crossref",
+      "first-page": "2902",
+      "DOI": "10.1002/aic.690481217",
+      "article-title": "Determination of operability limits using simplicial approximation",
+      "volume": "48",
+      "author": "Goyal",
+      "year": "2002",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0245",
+      "doi-asserted-by": "crossref",
+      "first-page": "22",
+      "DOI": "10.1016/j.compchemeng.2013.12.013",
+      "article-title": "Evolution of concepts and models for quantifying resiliency and flexibility of chemical processes",
+      "volume": "70",
+      "author": "Grossmann",
+      "year": "2014",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0250",
+      "series-title": "Support Vector Machines for Classification and Regression. In Group",
+      "author": "Gunn",
+      "year": "1998"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0255",
+      "doi-asserted-by": "crossref",
+      "first-page": "201",
+      "DOI": "10.1023/A:1011255519438",
+      "article-title": "A radial basis function method for global optimization",
+      "volume": "19",
+      "author": "Gutmann",
+      "year": "2001",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0260",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1007/s00158-016-1432-3",
+      "article-title": "Parallel surrogate-assisted global optimization with expensive functions? A survey",
+      "volume": "54",
+      "author": "Haftka",
+      "year": "2016",
+      "journal-title": "Struct. Multidiscip. Optim."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0265",
+      "doi-asserted-by": "crossref",
+      "first-page": "190",
+      "DOI": "10.1111/j.2517-6161.1979.tb01072.x",
+      "article-title": "The determination of the order of an autoregression",
+      "volume": "41",
+      "author": "Hannan",
+      "year": "1979",
+      "journal-title": "J. R. Stat. Soc. Ser. B (Methodol.)"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0270",
+      "first-page": "337",
+      "article-title": "The elements of statistical learning",
+      "volume": "1",
+      "author": "Hastie",
+      "year": "2009",
+      "journal-title": "Elements"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0275",
+      "doi-asserted-by": "crossref",
+      "first-page": "1216",
+      "DOI": "10.1002/aic.12341",
+      "article-title": "Surrogate-based superstructure optimization framework",
+      "volume": "57",
+      "author": "Henao",
+      "year": "2011",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0280",
+      "doi-asserted-by": "crossref",
+      "first-page": "311",
+      "DOI": "10.1007/s11081-008-9037-3",
+      "article-title": "An adaptive radial basis algorithm (ARBF) for expensive black-box mixed-integer constrained global optimization",
+      "volume": "9",
+      "author": "Holmström",
+      "year": "2008",
+      "journal-title": "Optim. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0285",
+      "series-title": "“Direct S E a R C H ” Solution of Numerical and Statistical Problems **",
+      "first-page": "212",
+      "author": "Hooke",
+      "year": "1960"
+    },
+    {
+      "issue": "479",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0290",
+      "doi-asserted-by": "crossref",
+      "first-page": "1009",
+      "DOI": "10.1198/016214507000000491",
+      "article-title": "Optimal geostatistical model selection",
+      "volume": "102",
+      "author": "Huang",
+      "year": "2007",
+      "journal-title": "J. Am. Stat. Assoc."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0295",
+      "doi-asserted-by": "crossref",
+      "first-page": "297",
+      "DOI": "10.1093/biomet/76.2.297",
+      "article-title": "Regression and time series model selection in small samples",
+      "volume": "76",
+      "author": "Hurvich",
+      "year": "1989",
+      "journal-title": "Biometrika"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0300",
+      "doi-asserted-by": "crossref",
+      "first-page": "174",
+      "DOI": "10.1007/s12247-009-9070-6",
+      "article-title": "Predictive modeling for pharmaceutical processes using Kriging and response surface",
+      "volume": "4",
+      "author": "Jia",
+      "year": "2009",
+      "journal-title": "J. Pharm. Innov."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0305",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1007/s00158-001-0160-4",
+      "article-title": "Comparative studies of metamodelling techniques under multiple modelling criteria",
+      "volume": "23",
+      "author": "Jin",
+      "year": "2001",
+      "journal-title": "Struct. Multidiscip. Optim."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0310",
+      "doi-asserted-by": "crossref",
+      "first-page": "157",
+      "DOI": "10.1007/BF00941892",
+      "article-title": "Lipschitzian optimization without the Lipschitz constant",
+      "volume": "79",
+      "author": "Jones",
+      "year": "1993",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0315",
+      "doi-asserted-by": "crossref",
+      "first-page": "455",
+      "DOI": "10.1023/A:1008306431147",
+      "article-title": "Efficient global optimization of expensive black-box functions",
+      "volume": "13",
+      "author": "Jones",
+      "year": "1998",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0320",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1115/1.2829873",
+      "article-title": "Blind kriging: a new method for developing metamodels",
+      "volume": "130",
+      "author": "Joseph",
+      "year": "2008",
+      "journal-title": "J. Mech. Des."
+    },
+    {
+      "issue": "484",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0325",
+      "doi-asserted-by": "crossref",
+      "first-page": "1545",
+      "DOI": "10.1198/016214508000000959",
+      "article-title": "Covariance tapering for likelihood-based estimation in large spatial data sets",
+      "volume": "103",
+      "author": "Kaufman",
+      "year": "2008",
+      "journal-title": "J. Am. Stat. Assoc."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0330",
+      "first-page": "393",
+      "article-title": "Most likely heteroscedastic gaussian process regression",
+      "author": "Kersting",
+      "year": "2007",
+      "journal-title": "24th International Conference on Machine Learning (ICML 2007)"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0335",
+      "doi-asserted-by": "crossref",
+      "first-page": "273",
+      "DOI": "10.1007/s10898-008-9323-9",
+      "article-title": "Choosing the best set of variables in regression analysis using integer programming",
+      "volume": "44",
+      "author": "Konno",
+      "year": "2009",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0340",
+      "doi-asserted-by": "crossref",
+      "first-page": "273",
+      "DOI": "10.1007/s10898-008-9323-9",
+      "article-title": "Choosing the best set of variables in regression analysis using integer programming",
+      "volume": "44",
+      "author": "Konno",
+      "year": "2009",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0345",
+      "series-title": "A Statistical Approach to Some Mine Valuation and Allied Problems on the Witwatersrand",
+      "author": "Krige",
+      "year": "1951"
+    },
+    {
+      "issue": "501",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0350",
+      "doi-asserted-by": "crossref",
+      "first-page": "325",
+      "DOI": "10.1080/01621459.2012.746061",
+      "article-title": "A resampling-based stochastic approximation method for analysis of large geostatistical data",
+      "volume": "108",
+      "author": "Liang",
+      "year": "2013",
+      "journal-title": "J. Am. Stat. Assoc."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0355",
+      "series-title": "Model Selection",
+      "author": "Linhart",
+      "year": "1986"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0360",
+      "series-title": "Computational Methods of Feature Selection (Chapman & Hall/Crc Data Mining and Knowledge Discovery Series)",
+      "author": "Liu",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0365",
+      "unstructured": "Lophaven, S., Nielsen, H., & Sondergaard, J., 2002. DACE: A MATLAB Kriging Toolbox. In Version 2.0, Tech. Rep. IMMTR-2002-12, Informatics and Mathematical Modelling."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0370",
+      "unstructured": "Lophaven, S., Nielsen, H., & Søndergaard, J., 2002. Aspects of the matlab toolbox DACE. Technical Report, (IMM-REP-2002-13)."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0375",
+      "doi-asserted-by": "crossref",
+      "first-page": "79",
+      "DOI": "10.1007/s10898-010-9620-y",
+      "article-title": "Mixture surrogate models based on Dempster-Shafer theory for global optimization problems",
+      "volume": "51",
+      "author": "Müller",
+      "year": "2011",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0380",
+      "doi-asserted-by": "crossref",
+      "first-page": "3285",
+      "DOI": "10.5194/gmd-8-3285-2015",
+      "article-title": "CH4 parameter estimation in CLM4.5bgc using surrogate global optimization",
+      "volume": "8",
+      "author": "Müller",
+      "year": "2015",
+      "journal-title": "Geosci. Model Dev."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0385",
+      "first-page": "661",
+      "article-title": "Some comments on CP",
+      "volume": "15",
+      "author": "Mallows",
+      "year": "1973",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0390",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.2113/gsecongeo.58.8.1246",
+      "article-title": "Principles of geostatistics",
+      "author": "Matheron",
+      "year": "1963",
+      "journal-title": "Econ. Geol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0395",
+      "first-page": "239",
+      "article-title": "Comparison of three methods for selecting values of input variables in the analysis of output from a computer code",
+      "volume": "21",
+      "author": "McKay",
+      "year": "1979",
+      "journal-title": "Technometrics"
+    },
+    {
+      "issue": "98",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0400",
+      "doi-asserted-by": "crossref",
+      "first-page": "S587",
+      "DOI": "10.1016/S0098-1354(98)00104-5",
+      "article-title": "Intelligent modelling in the chemical process industry with neural networks: a case study",
+      "volume": "22",
+      "author": "Meert",
+      "year": "1998",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "2–3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0405",
+      "doi-asserted-by": "crossref",
+      "first-page": "503",
+      "DOI": "10.1007/s10898-014-0166-2",
+      "article-title": "ANTIGONE: algorithms for coNTinuous/Integer global optimization of nonlinear equations",
+      "volume": "59",
+      "author": "Misener",
+      "year": "2014",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0410",
+      "doi-asserted-by": "crossref",
+      "first-page": "635",
+      "DOI": "10.1205/cherd.05096",
+      "article-title": "Neural network based modelling and control in batch reactor",
+      "volume": "84",
+      "author": "Mujtaba",
+      "year": "2006",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0415",
+      "doi-asserted-by": "crossref",
+      "first-page": "308",
+      "DOI": "10.1093/comjnl/7.4.308",
+      "article-title": "A simplex method for function minimization",
+      "volume": "7",
+      "author": "Nelder",
+      "year": "1965",
+      "journal-title": "Comput. J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0420",
+      "first-page": "1",
+      "article-title": "Water resources research",
+      "author": "Nippgen",
+      "year": "2016",
+      "journal-title": "Water Resour. Res."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0425",
+      "doi-asserted-by": "crossref",
+      "first-page": "579",
+      "DOI": "10.1080/10618600.2014.914946",
+      "article-title": "A multiresolution gaussian process model for the analysis of large spatial datasets",
+      "volume": "24",
+      "author": "Nychka",
+      "year": "2015",
+      "journal-title": "J. Comput. Graph. Stat."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0430",
+      "doi-asserted-by": "crossref",
+      "first-page": "26",
+      "DOI": "10.1080/02286203.2009.11442507",
+      "article-title": "Boosters: a derivative-free algorithm based on radial basis functions",
+      "volume": "29",
+      "author": "Oeuvray",
+      "year": "2009",
+      "journal-title": "Int. J. Model. Simul."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0435",
+      "doi-asserted-by": "crossref",
+      "first-page": "760",
+      "DOI": "10.1205/026387602320776830",
+      "article-title": "Metamodeling approach to optimization of steady-state flowsheet simulations",
+      "volume": "80",
+      "author": "Palmer",
+      "year": "2002",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0440",
+      "unstructured": "Park, Y. W., & Klabjan, D., 2013. Subset Selection for Multiple Linear Regression via Optimization, (i), 1–27."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0445",
+      "first-page": "2825",
+      "article-title": "Scikit-learn: machine learning in {P}ython",
+      "volume": "12",
+      "author": "Pedregosa",
+      "year": "2011",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0450",
+      "series-title": "Advances in Optimization and Numerical Analysis",
+      "first-page": "51",
+      "article-title": "A direct search optimization method that models the objective and constraint functions by linear interpolation",
+      "author": "Powell",
+      "year": "1994"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0455",
+      "series-title": "Large-Scale Nonlinear Optimization",
+      "first-page": "255",
+      "article-title": "The NEWUOA software for unconstrained optimization without derivatives",
+      "author": "Powell",
+      "year": "1994"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0460",
+      "doi-asserted-by": "crossref",
+      "first-page": "259",
+      "DOI": "10.1016/j.oceaneng.2014.03.032",
+      "article-title": "Application of a surrogate modeling to the ship structural design",
+      "volume": "84",
+      "author": "Prebeg",
+      "year": "2014",
+      "journal-title": "Ocean Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0465",
+      "unstructured": "Princeton Library. http://www.gamsworld.org/performance/princetonlib/princetonlib.htm."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0470",
+      "series-title": "Proceedings of the Fifth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+      "first-page": "23",
+      "article-title": "Efficient progressive sampling",
+      "author": "Provost",
+      "year": "1999"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0475",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.paerosci.2005.02.001",
+      "article-title": "Surrogate-based analysis and optimization",
+      "volume": "41",
+      "author": "Queipo",
+      "year": "2005",
+      "journal-title": "Prog. Aerosp. Sci."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0480",
+      "doi-asserted-by": "crossref",
+      "first-page": "366",
+      "DOI": "10.1198/TECH.2011.09141",
+      "article-title": "A computationally stable approach to gaussian process interpolation of deterministic computer simulation data",
+      "volume": "53",
+      "author": "Ranjan",
+      "year": "2011",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0485",
+      "series-title": "Gaussian Processes for Machine Learning. Gaussian Processes for Machine Learning",
+      "author": "Rasmussen",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0490",
+      "series-title": "Gaussian Processes for Machine Learning. Gaussian Processes for Machine Learning",
+      "author": "Rasmussen",
+      "year": "2006"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0495",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1029/2011WR011527",
+      "article-title": "Review of surrogate modeling in water resources",
+      "volume": "48",
+      "author": "Razavi",
+      "year": "2012",
+      "journal-title": "Water Resour. Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0500",
+      "doi-asserted-by": "crossref",
+      "first-page": "153",
+      "DOI": "10.1007/s10898-004-0570-0",
+      "article-title": "Constrained global optimization of expensive black box functions using radial basis functions",
+      "volume": "31",
+      "author": "Regis",
+      "year": "2005",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0505",
+      "doi-asserted-by": "crossref",
+      "first-page": "113",
+      "DOI": "10.1007/s10898-006-9040-1",
+      "article-title": "Improved strategies for radial basis function methods for global optimization",
+      "volume": "37",
+      "author": "Regis",
+      "year": "2007",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0510",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Regis, R. G., & Wild, S. M., 2015. CONORBIT: Constrained optimization by radial basis function interpolation in trust regions 1 CONORBIT: Constrained optimization by radial basis function interpolation in trust regions, (October).",
+      "DOI": "10.1080/10556788.2016.1226305"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0515",
+      "doi-asserted-by": "crossref",
+      "first-page": "1037",
+      "DOI": "10.1080/0305215X.2015.1082350",
+      "article-title": "Trust regions in Kriging-based optimization with expected improvement",
+      "volume": "48",
+      "author": "Regis",
+      "year": "2016",
+      "journal-title": "Eng. Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0520",
+      "series-title": "Genetic Programming Theory and Practice VII",
+      "author": "Riolo",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0525",
+      "series-title": "Genetic Programming Theory and Practice VIII",
+      "author": "Riolo",
+      "year": "2011"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0530",
+      "doi-asserted-by": "crossref",
+      "first-page": "1247",
+      "DOI": "10.1007/s10898-012-9951-y",
+      "article-title": "Derivative-free optimization: a review of algorithms and comparison of software implementations",
+      "volume": "56",
+      "author": "Rios",
+      "year": "2013",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0535",
+      "doi-asserted-by": "crossref",
+      "first-page": "1005",
+      "DOI": "10.1016/j.ces.2015.06.026",
+      "article-title": "Feasibility and flexibility analysis of black-box processes part 2: Surrogate-based flexibility analysis",
+      "volume": "137",
+      "author": "Rogers",
+      "year": "2015",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0540",
+      "doi-asserted-by": "crossref",
+      "first-page": "409",
+      "DOI": "10.1214/ss/1177012413",
+      "article-title": "Design and analysis of computer experiments",
+      "volume": "4",
+      "author": "Sacks",
+      "year": "1989",
+      "journal-title": "Stat. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0545",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1111/j.1467-9868.2011.01007.x",
+      "article-title": "A full scale approximation of covariance functions for large spatial data sets",
+      "volume": "1988",
+      "author": "Sang",
+      "year": "2012",
+      "journal-title": "J. R. Stat. Soc."
+    },
+    {
+      "issue": "April",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0550",
+      "doi-asserted-by": "crossref",
+      "first-page": "81",
+      "DOI": "10.1126/science.1165893",
+      "article-title": "Distilling natural laws",
+      "volume": "324",
+      "author": "Schmidt",
+      "year": "2009",
+      "journal-title": "Science"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0555",
+      "doi-asserted-by": "crossref",
+      "first-page": "461",
+      "DOI": "10.1214/aos/1176344136",
+      "article-title": "Estimating the dimension of a model",
+      "volume": "6",
+      "author": "Schwarz",
+      "year": "1978",
+      "journal-title": "Ann. Stat."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0560",
+      "series-title": "Linear Regression Analysis",
+      "author": "Seber",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0565",
+      "first-page": "1",
+      "article-title": "On the use of statistics in design and the implications for deterministic computer experiments",
+      "author": "Simpson",
+      "year": "1997",
+      "journal-title": "Proceedings of DETC’97 1997 ASME Design Engineering Technical Conferences"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0570",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.1023/B:STCO.0000035301.49549.88",
+      "article-title": "A tutorial on support vector regression",
+      "volume": "14",
+      "author": "Smola",
+      "year": "2004",
+      "journal-title": "Stat. Comput."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0575",
+      "unstructured": "Snelson, E., & Ghahramani, Z., 2007. Local and global sparse Gaussian process approximations. In M. Meila & X. Shen (Eds.), Proceedings of the Eleventh International Conference on Artificial Intelligence and Statistics (AISTATS-07) (Vol. 2, pp. 524–531). Journal of Machine Learning Research − Proceedings Track. Retrieved from http://jmlr.csail.mit.edu/proceedings/papers/v2/snelson07a/snelson07a.pdf."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0580",
+      "first-page": "784",
+      "article-title": "on of points in a cube and the approximate evaluation of integrals",
+      "volume": "7",
+      "author": "Sobol",
+      "year": "1967",
+      "journal-title": "Zh. Vychisl. Mat. I Mat. Fiz."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0585",
+      "doi-asserted-by": "crossref",
+      "first-page": "339",
+      "DOI": "10.1016/0098-1354(93)80025-I",
+      "article-title": "Design optimization of stochastic flexibility",
+      "volume": "17",
+      "author": "Straub",
+      "year": "1993",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0590",
+      "doi-asserted-by": "crossref",
+      "first-page": "621",
+      "DOI": "10.1002/aic.690310412",
+      "article-title": "An index for operational flexibility in chemical process design. Part I: Formulation and theory",
+      "volume": "31",
+      "author": "Swaney",
+      "year": "1985",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0595",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Tajbakhsh, S., Aybat, N., & Castillo, E. Del., 2014. Sparse Precision Matrix Selection for Fitting Gaussian Random Field Models to Large Data Sets. arXiv Preprint arXiv:1405.5576, 25(Ml), 1–18. http://doi.org/10.1007/s10107-014-0826-5.",
+      "DOI": "10.1007/s10107-014-0826-5"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0600",
+      "doi-asserted-by": "crossref",
+      "first-page": "225",
+      "DOI": "10.1007/s10107-005-0581-8",
+      "article-title": "A polyhedral branch-and-cut approach to global optimization",
+      "volume": "103",
+      "author": "Tawarmalani",
+      "year": "2005",
+      "journal-title": "Math. Program."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0605",
+      "doi-asserted-by": "crossref",
+      "first-page": "34",
+      "DOI": "10.1145/1824801.1824812",
+      "article-title": "Algorithm 905: SHEPPACK: modified shepard algorithm for interpolation of scattered multivariate data",
+      "volume": "37",
+      "author": "Thacker",
+      "year": "2010",
+      "journal-title": "ACM Trans. Math. Softw."
+    },
+    {
+      "issue": "2011",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0610",
+      "doi-asserted-by": "crossref",
+      "first-page": "3267",
+      "DOI": "10.1098/rspa.2009.0096",
+      "article-title": "An adjoint for likelihood maximization",
+      "volume": "465",
+      "author": "Toal",
+      "year": "2009",
+      "journal-title": "Proc. R. Society A Math. Phys. Eng. Sci."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0615",
+      "doi-asserted-by": "crossref",
+      "first-page": "675",
+      "DOI": "10.1080/0305215X.2010.508524",
+      "article-title": "The development of a hybridized particle swarm for kriging hyperparameter tuning",
+      "volume": "43",
+      "author": "Toal",
+      "year": "2011",
+      "journal-title": "Eng. Optim."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0620",
+      "doi-asserted-by": "crossref",
+      "first-page": "439",
+      "DOI": "10.1007/s00158-008-0338-0",
+      "article-title": "Multiple surrogates: how cross-validation errors can help us to obtain the best predictor",
+      "volume": "39",
+      "author": "Viana",
+      "year": "2009",
+      "journal-title": "Struct. Multidiscip. Optim."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0625",
+      "doi-asserted-by": "crossref",
+      "first-page": "669",
+      "DOI": "10.1007/s10898-012-9892-5",
+      "article-title": "Efficient global optimization algorithm assisted by multiple surrogate techniques",
+      "volume": "56",
+      "author": "Viana",
+      "year": "2013",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0630",
+      "unstructured": "Viana, F. A. C., 2010. SURROGATES Toolbox User’s Guide, version 2.1."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0635",
+      "article-title": "A novel feasibility analysis method for black-box processes using a radial basis function adaptive sampling approach",
+      "author": "Wang",
+      "year": "2016",
+      "journal-title": "AIChE J."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0640",
+      "doi-asserted-by": "crossref",
+      "first-page": "370",
+      "DOI": "10.1115/1.2429697",
+      "article-title": "Review of metamodeling techniques in support of engineering design optimization",
+      "volume": "129",
+      "author": "Wang",
+      "year": "2007",
+      "journal-title": "J. Mech. Des."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0645",
+      "doi-asserted-by": "crossref",
+      "first-page": "349",
+      "DOI": "10.1137/120902434",
+      "article-title": "Global convergence of radial basis function trust-region algorithms for derivative-free optimization",
+      "volume": "55",
+      "author": "Wild",
+      "year": "2013",
+      "journal-title": "SIAM Rev."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0650",
+      "doi-asserted-by": "crossref",
+      "first-page": "3197",
+      "DOI": "10.1137/070691814",
+      "article-title": "ORBIT: optimization by radial basis function interpolation in trust-Regions",
+      "volume": "30",
+      "author": "Wild",
+      "year": "2008",
+      "journal-title": "SIAM J. Sci. Comput."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0655",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2017.02.010",
+      "article-title": "The ALAMO approach to machine learning",
+      "author": "Wilson",
+      "year": "2017",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0660",
+      "doi-asserted-by": "crossref",
+      "first-page": "1014",
+      "DOI": "10.1115/1.1906264",
+      "article-title": "Metamodeling development for vehicle frontal impact simulation",
+      "volume": "127",
+      "author": "Yang",
+      "year": "2005",
+      "journal-title": "J. Mech. Des."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0665",
+      "doi-asserted-by": "crossref",
+      "first-page": "760",
+      "DOI": "10.1016/j.cie.2011.05.008",
+      "article-title": "Kriging metamodel with modified nugget-effect: the heteroscedastic variance case",
+      "volume": "61",
+      "author": "Yin",
+      "year": "2011",
+      "journal-title": "Comput. Ind. Eng."
+    },
+    {
+      "issue": "3–4",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0670",
+      "doi-asserted-by": "crossref",
+      "first-page": "197",
+      "DOI": "10.1016/j.petrol.2005.03.002",
+      "article-title": "An optimization methodology of alkaline-surfactant-polymer flooding processes using field scale numerical simulation and multiple surrogates",
+      "volume": "47",
+      "author": "Zerpa",
+      "year": "2005",
+      "journal-title": "J. Petrol. Sci. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0675",
+      "volume": "vol. 17",
+      "author": "Zhang",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0680",
+      "series-title": "One-Step Sparse Estimates in Nonconcave Penalized Likelihood Models",
+      "author": "Zou",
+      "year": "2008"
+    },
+    {
+      "issue": "476",
+      "key": "10.1016/j.compchemeng.2017.09.017_bib0685",
+      "doi-asserted-by": "crossref",
+      "first-page": "1418",
+      "DOI": "10.1198/016214506000000735",
+      "article-title": "The adaptive lasso and its oracle properties",
+      "volume": "101",
+      "author": "Zou",
+      "year": "2006",
+      "journal-title": "J. Am. Stat. Assoc."
+    }
+  ],
+  "container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135417303228?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135417303228?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        6,
+        27
+      ]
+    ],
+    "date-time": "2024-06-27T00:32:00Z",
+    "timestamp": 1719448320000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0098135417303228"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        1
+      ]
+    ]
+  },
+  "references-count": 137,
+  "alternative-id": [
+    "S0098135417303228"
+  ],
+  "URL": "https://doi.org/10.1016/j.compchemeng.2017.09.017",
+  "relation": {},
+  "ISSN": [
+    "0098-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0098-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        1
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Advances in surrogate based modeling, feasibility analysis, and optimization: A review",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Computers & Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.compchemeng.2017.09.017",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2017 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

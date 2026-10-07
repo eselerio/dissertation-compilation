@@ -1,0 +1,691 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2026-09-28T20:29:58Z",
+    "timestamp": 1790627398212,
+    "version": "4.1.0"
+  },
+  "reference-count": 43,
+  "publisher": "IWA Publishing",
+  "issue": "11",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            19
+          ]
+        ],
+        "date-time": "2020-06-19T00:00:00Z",
+        "timestamp": 1592524800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 18,
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "iwaponline.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [],
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Two separate goals should be jointly pursued in wastewater treatment: nutrient removal and energy conservation. An efficient controller performance should cope with process uncertainties, seasonal variations and process nonlinearities. This paper describes the design and testing of a model predictive controller (MPC) based on neuro-fuzzy techniques that is capable of estimating the main process variables and providing the right amount of aeration to achieve an efficient and economical operation. This algorithm has been field tested on a large-scale municipal wastewater treatment plant of about 500,000 PE, with encouraging results in terms of better effluent quality and energy savings.</jats:p>",
+  "DOI": "10.2166/wst.2020.298",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        19
+      ]
+    ],
+    "date-time": "2020-06-19T13:29:23Z",
+    "timestamp": 1592573363000
+  },
+  "page": "2391-2400",
+  "update-policy": "https://doi.org/10.2166/iwapcrossmarkpolicypage",
+  "source": "Crossref",
+  "is-referenced-by-count": 99,
+  "title": [
+    "Real-time model predictive control of a wastewater treatment plant based on machine learning"
+  ],
+  "prefix": "10.2166",
+  "volume": "81",
+  "author": [
+    {
+      "given": "A.",
+      "family": "Bernardelli",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "1EnergyWay srl Via Sant'Orsola, 33, 41121 Modena, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "S.",
+      "family": "Marsili-Libelli",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "2University of Florence, Piazza di San Marco, 4, 50121 Firenze FI, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Manzini",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "1EnergyWay srl Via Sant'Orsola, 33, 41121 Modena, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "S.",
+      "family": "Stancari",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "1EnergyWay srl Via Sant'Orsola, 33, 41121 Modena, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "G.",
+      "family": "Tardini",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "1EnergyWay srl Via Sant'Orsola, 33, 41121 Modena, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "D.",
+      "family": "Montanari",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "1EnergyWay srl Via Sant'Orsola, 33, 41121 Modena, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "G.",
+      "family": "Anceschi",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "1EnergyWay srl Via Sant'Orsola, 33, 41121 Modena, Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "P.",
+      "family": "Gelli",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "3Gruppo HERA SpA, Viale Carlo Berti Pichat, 2/4, 40127 Bologna (BO), Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "S.",
+      "family": "Venier",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "3Gruppo HERA SpA, Viale Carlo Berti Pichat, 2/4, 40127 Bologna (BO), Italy"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "945",
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        19
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "2022090611410383200_WST-EM20259C1",
+      "volume-title": "Fuzzy Modeling for Control",
+      "year": "1998"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C2",
+      "doi-asserted-by": "crossref",
+      "first-page": "35",
+      "DOI": "10.1016/j.envsoft.2017.11.026",
+      "article-title": "Data-driven rainfall/runoff modelling based on a neuro-fuzzy inference system",
+      "volume": "106",
+      "year": "2018",
+      "journal-title": "Environmental Modelling and Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C3",
+      "first-page": "440",
+      "volume-title": "Predictive Control for Linear and Hybrid Systems",
+      "year": "2017"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C4",
+      "doi-asserted-by": "crossref",
+      "first-page": "177",
+      "DOI": "10.1016/j.envsoft.2016.06.019",
+      "article-title": "An integrated knowledge-based and optimization tool for the sustainable selection of wastewater treatment process concepts",
+      "volume": "84",
+      "year": "2016",
+      "journal-title": "Environmental Modelling and Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C5",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "DOI": "10.1016/j.envsoft.2017.11.023",
+      "article-title": "Transforming data into knowledge for improved wastewater treatment operation: a critical review of techniques",
+      "volume": "106",
+      "year": "2018",
+      "journal-title": "Environmental Modelling and Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C6",
+      "article-title": "A multilevel coordinated control strategy for energy conservation in wastewater treatment plants",
+      "year": "2012"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C7",
+      "first-page": "47",
+      "article-title": "Data-driven modeling approaches to support wastewater treatment plant operation",
+      "volume": "30",
+      "year": "2011",
+      "journal-title": "Environmental Modelling & Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C8",
+      "doi-asserted-by": "crossref",
+      "first-page": "8",
+      "DOI": "10.1016/j.eswa.2016.06.028",
+      "article-title": "Soft-sensing estimation of plant effluent concentrations in a biological wastewater treatment plant using an optimal neural network",
+      "volume": "63",
+      "year": "2016",
+      "journal-title": "Expert Systems with Applications"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C9",
+      "doi-asserted-by": "crossref",
+      "first-page": "1031",
+      "DOI": "10.1016/j.cej.2016.07.018",
+      "article-title": "Predictive control of an activated sludge process for long term operation",
+      "volume": "304",
+      "year": "2016",
+      "journal-title": "Chemical Engineering Journal"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C9a",
+      "doi-asserted-by": "crossref",
+      "first-page": "259",
+      "DOI": "10.1016/j.compchemeng.2015.07.003",
+      "article-title": "Model predictive control for the self-optimized operation in wastewater treatment plants: Analysis of dynamic issues",
+      "volume": "82",
+      "year": "2015",
+      "journal-title": "Computers and Chemical Engineering"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C10",
+      "doi-asserted-by": "crossref",
+      "first-page": "641",
+      "DOI": "10.1016/j.envsoft.2009.05.010",
+      "article-title": "Fuzzy modelling of the composting process",
+      "volume": "25",
+      "year": "2010",
+      "journal-title": "Environmental Modelling & Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C11",
+      "doi-asserted-by": "crossref",
+      "first-page": "73",
+      "DOI": "10.1016/j.envsoft.2014.09.020",
+      "article-title": "A fuzzy decision support system for irrigation and water conservation in agriculture",
+      "volume": "63",
+      "year": "2015",
+      "journal-title": "Environmental Modelling & Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C11a",
+      "first-page": "913",
+      "article-title": "Neural NLMPC schemes for the control of the activated sludge process. In: IFAC-PapersOnLine",
+      "year": "2016"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C12",
+      "volume-title": "Genetic Algorithms in Search, Optimization, and Machine Learning",
+      "year": "1989"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C13",
+      "volume-title": "Neural Network Design",
+      "year": "1996"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C14",
+      "doi-asserted-by": "crossref",
+      "first-page": "88",
+      "DOI": "10.1016/j.envsoft.2013.05.009",
+      "article-title": "Data-derived soft-sensors for biological wastewater treatment plants: an overview",
+      "volume": "47",
+      "year": "2013",
+      "journal-title": "Environmental Modelling & Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C15",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "DOI": "10.1016/j.engappai.2016.02.003",
+      "article-title": "Adaptive data-derived anomaly detection in the activated sludge process of a large-scale wastewater treatment plant",
+      "volume": "52",
+      "year": "2016",
+      "journal-title": "Engineering Applications of Artificial Intelligence"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C16",
+      "doi-asserted-by": "crossref",
+      "first-page": "1970",
+      "DOI": "10.1109/TIE.2013.2266086",
+      "article-title": "Nonlinear model-predictive control for industrial processes: an application to wastewater treatment process",
+      "volume": "61",
+      "year": "2014",
+      "journal-title": "IEEE Transactions on Industrial Electronics"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C17",
+      "doi-asserted-by": "crossref",
+      "first-page": "1270",
+      "DOI": "10.1016/j.compchemeng.2007.06.008",
+      "article-title": "Dissolved oxygen control of the activated sludge wastewater treatment process using model predictive control",
+      "volume": "32",
+      "year": "2008",
+      "journal-title": "Computers and Chemical Engineering"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C18",
+      "first-page": "232",
+      "volume-title": "Adaptation in Natural and Artificial Systems: An Introductory Analysis With Applications to Biology, Control, and Artificial Intelligence",
+      "year": "1998"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C19",
+      "doi-asserted-by": "crossref",
+      "first-page": "1199",
+      "DOI": "10.1016/S0043-1354(02)00493-1",
+      "article-title": "Evolutionary self-organising modelling of a municipal wastewater treatment plant",
+      "volume": "37",
+      "year": "2003",
+      "journal-title": "Water Research"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C20",
+      "doi-asserted-by": "crossref",
+      "first-page": "862",
+      "DOI": "10.1016/j.envsoft.2006.05.017",
+      "article-title": "Integration of remote sensing techniques and connectionist models for decision support in fishing catches",
+      "volume": "22",
+      "year": "2007",
+      "journal-title": "Environmental Modelling & Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C21",
+      "doi-asserted-by": "crossref",
+      "first-page": "665",
+      "DOI": "10.1109/21.256541",
+      "article-title": "ANFIS: adaptive-network-based fuzzy inference system",
+      "volume": "23",
+      "year": "1993",
+      "journal-title": "IEEE Trans. on Systems, Man, and Cibernetics"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C22",
+      "first-page": "284",
+      "volume-title": "Knowledge-based Expert Systems in Chemistry: Artificial Intelligence in Decision Making",
+      "year": "2019"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C22a",
+      "first-page": "449",
+      "article-title": "Neural networks and fuzzy systems",
+      "year": "1992"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C23",
+      "doi-asserted-by": "crossref",
+      "first-page": "121814",
+      "DOI": "10.1016/j.biortech.2019.121814",
+      "article-title": "Decision support systems (DSS) for wastewater treatment plants – a review of the state of the art",
+      "volume": "290",
+      "year": "2019",
+      "journal-title": "Bioresource Technology"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C24",
+      "first-page": "546",
+      "volume-title": "Environmental Systems Analysis with MATLAB",
+      "year": "2016"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C25",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.2166/wst.2002.0546",
+      "article-title": "Fuzzy predictive control for nitrogen removal in biological wastewater treatment",
+      "volume": "45",
+      "year": "2002",
+      "journal-title": "Water Science and Technology"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C26",
+      "first-page": "18",
+      "article-title": "An application of predictive control to the Viikinmäki wastewater treatment plant",
+      "volume": "12",
+      "year": "2013",
+      "journal-title": "IFAC Proceedings Volumes (IFAC-PapersOnline)"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C27",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "DOI": "10.1016/j.jprocont.2015.08.005",
+      "article-title": "Predictive control of an activated sludge process: an application to the Viikinmaki wastewater treatment plant",
+      "volume": "35",
+      "year": "2015",
+      "journal-title": "Journal of Process Control"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C28",
+      "volume-title": "Expert Systems: Introduction to First and Second Generation and Hybrid Knowledge Based Systems",
+      "year": "2019"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C29",
+      "doi-asserted-by": "crossref",
+      "first-page": "54",
+      "DOI": "10.1016/j.conengprac.2010.09.001",
+      "article-title": "Model predictive control of an activated sludge process: a case study",
+      "volume": "19",
+      "year": "2011",
+      "journal-title": "Control Engineering Practice"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C30",
+      "doi-asserted-by": "crossref",
+      "first-page": "383",
+      "DOI": "10.1016/j.neucom.2017.08.059",
+      "article-title": "Adaptive fuzzy neural network control of wastewater treatment process with multiobjective operation",
+      "volume": "275",
+      "year": "2018",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C31",
+      "first-page": "623",
+      "volume-title": "Model Predictive Control: Theory, Computation, and Design",
+      "year": "2017"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C32",
+      "doi-asserted-by": "crossref",
+      "first-page": "1251",
+      "DOI": "10.2166/wst.2014.347",
+      "article-title": "Challenges encountered when expanding activated sludge models: a case study based on N2O production",
+      "volume": "70",
+      "year": "2014",
+      "journal-title": "Water Science and Technology"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C33",
+      "doi-asserted-by": "crossref",
+      "first-page": "2004",
+      "DOI": "10.1016/j.watres.2007.01.029",
+      "article-title": "Comparison of control strategies for nitrogen removal in an activated sludge process in terms of operating costs: a simulation study",
+      "volume": "41",
+      "year": "2007",
+      "journal-title": "Water Research"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C34",
+      "first-page": "116",
+      "article-title": "Fuzzy identification of systems and its applications to modeling and control",
+      "volume": "15",
+      "year": "1985",
+      "journal-title": "IEEE Trans. on Systems, Man, and Cibernetics"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C35",
+      "doi-asserted-by": "crossref",
+      "first-page": "1149",
+      "DOI": "10.1061/(ASCE)0733-9372(1999)125:12(1149)",
+      "article-title": "Neural fuzzy modeling of anaerobic biological wastewater treatment systems",
+      "volume": "125",
+      "year": "1999",
+      "journal-title": "ASCE Journal of Environmental Engineering"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C36",
+      "doi-asserted-by": "crossref",
+      "first-page": "2849",
+      "DOI": "10.1016/S0043-1354(00)00057-9",
+      "article-title": "A fast predicting neural fuzzy model for high-rate anaerobic wastewater treatment system",
+      "volume": "34",
+      "year": "2000",
+      "journal-title": "Water Research"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C37",
+      "first-page": "601",
+      "article-title": "Energy saving in wastewater treatment plants: a plant-generic cooperative decision support system",
+      "volume": "167",
+      "year": "2018",
+      "journal-title": "Journal of Cleaner Production"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C38",
+      "doi-asserted-by": "crossref",
+      "first-page": "108",
+      "DOI": "10.1016/j.envsoft.2013.12.016",
+      "article-title": "Protocol for developing ANN models and its application to the assessment of the quality of the ANN model development process in drinking water quality modelling",
+      "volume": "54",
+      "year": "2014",
+      "journal-title": "Environmental Modelling and Software"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C39",
+      "volume-title": "Fuzzy Sets, Neural Networks, and Soft Computing",
+      "year": "1994"
+    },
+    {
+      "key": "2022090611410383200_WST-EM20259C40",
+      "doi-asserted-by": "crossref",
+      "first-page": "169",
+      "DOI": "10.1016/j.psep.2019.11.014",
+      "article-title": "Application of artificial intelligence to wastewater treatment: a bibliometric analysis and systematic review of technology, economy, management, and wastewater reuse",
+      "volume": "133",
+      "year": "2020",
+      "journal-title": "Process Safety and Environmental Protection"
+    }
+  ],
+  "container-title": [
+    "Water Science and Technology"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://iwaponline.com/wst/article-pdf/81/11/2391/1103969/wst081112391.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://iwaponline.com/wst/article-pdf/81/11/2391/1103969/wst081112391.pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        6
+      ]
+    ],
+    "date-time": "2022-09-06T07:42:04Z",
+    "timestamp": 1662450124000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://iwaponline.com/wst/article/81/11/2391/74854/Real-time-model-predictive-control-of-a-wastewater"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        1
+      ]
+    ]
+  },
+  "references-count": 43,
+  "journal-issue": {
+    "issue": "11",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          19
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          1
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.2166/wst.2020.298",
+  "relation": {},
+  "ISSN": [
+    "0273-1223",
+    "1996-9732"
+  ],
+  "issn-type": [
+    {
+      "value": "0273-1223",
+      "type": "print"
+    },
+    {
+      "value": "1996-9732",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        1
+      ]
+    ]
+  }
+}

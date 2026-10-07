@@ -1,0 +1,935 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        6
+      ]
+    ],
+    "date-time": "2026-05-06T10:37:02Z",
+    "timestamp": 1778063822062,
+    "version": "3.51.4"
+  },
+  "reference-count": 63,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2025-06-01T00:00:00Z",
+        "timestamp": 1748736000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2025-06-01T00:00:00Z",
+        "timestamp": 1748736000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            17
+          ]
+        ],
+        "date-time": "2025-05-17T00:00:00Z",
+        "timestamp": 1747440000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100006009",
+      "name": "Innovate Washington",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/100006009",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100021130",
+      "name": "Bundesministerium für Wirtschaft und Klimaschutz",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "03EI5421A"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "03EI5421A"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100021130",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Energy Reports"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2025,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.egyr.2025.05.045",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        5,
+        29
+      ]
+    ],
+    "date-time": "2025-05-29T09:01:29Z",
+    "timestamp": 1748509289000
+  },
+  "page": "6349-6361",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 4,
+  "special_numbering": "C",
+  "title": [
+    "Energy Management Model for Wastewater Treatment Plants"
+  ],
+  "prefix": "10.1016",
+  "volume": "13",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-5122-351X",
+      "authenticated-orcid": false,
+      "given": "Jonas",
+      "family": "Miederer",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Lukas",
+      "family": "Meier",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-0804-2726",
+      "authenticated-orcid": false,
+      "given": "Nora",
+      "family": "Elhaus",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Simon",
+      "family": "Markthaler",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Jürgen",
+      "family": "Karl",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b1",
+      "series-title": "Benchmark Simulation Model No. 1 (BSM1)",
+      "author": "Alex",
+      "year": "2008"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b2",
+      "series-title": "Performance Assessment of Wastewater Treatment Plants: Multi-Objective Analysis Using Plant-Wide Models",
+      "author": "Arnell",
+      "year": "2016"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.egyr.2025.05.045_b3",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "DOI": "10.2166/wst.2002.0292",
+      "article-title": "The IWA anaerobic digestion model no 1 (ADM1)",
+      "volume": "45",
+      "author": "Batstone",
+      "year": "2002",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b4",
+      "doi-asserted-by": "crossref",
+      "first-page": "152",
+      "DOI": "10.1016/j.compchemeng.2011.09.011",
+      "article-title": "Dissolved oxygen control of the activated sludge wastewater treatment process using stable adaptive fuzzy control",
+      "volume": "37",
+      "author": "Belchior",
+      "year": "2012",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.egyr.2025.05.045_b5",
+      "doi-asserted-by": "crossref",
+      "first-page": "192",
+      "DOI": "10.2166/wst.2013.239",
+      "article-title": "A consistent modelling methodology for secondary settling tanks: a reliable numerical method",
+      "volume": "68",
+      "author": "Bürger",
+      "year": "2013",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.egyr.2025.05.045_b6",
+      "doi-asserted-by": "crossref",
+      "first-page": "841",
+      "DOI": "10.2166/wst.2010.912",
+      "article-title": "New framework for standardized notation in wastewater treatment modelling",
+      "volume": "61",
+      "author": "Corominas",
+      "year": "2010",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b7",
+      "series-title": "West",
+      "author": "DHI",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b8",
+      "unstructured": "DWA, 2015. Energiecheck und Energieanalyse - Instrumente zur Energieoptimierung von Abwasseranlagen. Technical Report, Hennef, Germany, p. 62."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b9",
+      "series-title": "Sumo",
+      "author": "Dynamita",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b10",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2023.139509",
+      "article-title": "Environmental assessment of anaerobic digestion and biological methanation in power-to-methane systems",
+      "volume": "429",
+      "author": "Elhaus",
+      "year": "2023",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b11",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.energy.2022.125106",
+      "article-title": "Techno-economic analysis and case study of combined heat and power systems in a wastewater treatment plant",
+      "volume": "260",
+      "author": "Elio",
+      "year": "2022",
+      "journal-title": "Energy"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b12",
+      "series-title": "BioWin",
+      "author": "EnviroSim",
+      "year": "2024"
+    },
+    {
+      "issue": "18",
+      "key": "10.1016/j.egyr.2025.05.045_b13",
+      "doi-asserted-by": "crossref",
+      "first-page": "4527",
+      "DOI": "10.1016/j.watres.2009.07.033",
+      "article-title": "Including the effects of filamentous bulking sludge during the simulation of wastewater treatment plants using a risk assessment model",
+      "volume": "43",
+      "author": "Flores-Alsina",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "16",
+      "key": "10.1016/j.egyr.2025.05.045_b14",
+      "doi-asserted-by": "crossref",
+      "first-page": "4700",
+      "DOI": "10.1016/j.watres.2011.04.040",
+      "article-title": "Including greenhouse gas emissions during benchmarking of wastewater treatment plant control strategies",
+      "volume": "45",
+      "author": "Flores-Alsina",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b15",
+      "series-title": "Benchmarking of Control Strategies for Wastewater Treatment Plants",
+      "author": "Gernaey",
+      "year": "2014"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.egyr.2025.05.045_b16",
+      "doi-asserted-by": "crossref",
+      "first-page": "763",
+      "DOI": "10.1016/j.envsoft.2003.03.005",
+      "article-title": "Activated sludge wastewater treatment plant modelling and simulation: state of the art",
+      "volume": "19",
+      "author": "Gernaey",
+      "year": "2004",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "issue": "4–6",
+      "key": "10.1016/j.egyr.2025.05.045_b17",
+      "doi-asserted-by": "crossref",
+      "first-page": "1011",
+      "DOI": "10.2166/wst.1991.0553",
+      "article-title": "Activated sludge modelling and simulation",
+      "volume": "23",
+      "author": "Gujer",
+      "year": "1991",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.egyr.2025.05.045_b18",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.1995.0061",
+      "article-title": "The activated sludge model no. 2: biological phosphorus removal",
+      "volume": "31",
+      "author": "Gujer",
+      "year": "1995",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.egyr.2025.05.045_b19",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.2166/wst.1999.0039",
+      "article-title": "Activated sludge model no. 3",
+      "volume": "39",
+      "author": "Gujer",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.egyr.2025.05.045_b20",
+      "doi-asserted-by": "crossref",
+      "first-page": "465",
+      "DOI": "10.1016/j.conengprac.2012.01.001",
+      "article-title": "Model predictive control of dissolved oxygen concentration based on a self-organizing RBF neural network",
+      "volume": "20",
+      "author": "Han",
+      "year": "2012",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.egyr.2025.05.045_b21",
+      "doi-asserted-by": "crossref",
+      "first-page": "402",
+      "DOI": "10.1109/TNNLS.2015.2465174",
+      "article-title": "Nonlinear model predictive control based on a self-organizing recurrent neural network",
+      "volume": "27",
+      "author": "Han",
+      "year": "2015",
+      "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b22",
+      "series-title": "GPS-X",
+      "author": "Hatch",
+      "year": "2024"
+    },
+    {
+      "issue": "18",
+      "key": "10.1016/j.egyr.2025.05.045_b23",
+      "doi-asserted-by": "crossref",
+      "first-page": "9393",
+      "DOI": "10.3390/app12189393",
+      "article-title": "Design and implementation of an additively manufactured reactor concept for the catalytic methanation",
+      "volume": "12",
+      "author": "Hauser",
+      "year": "2022",
+      "journal-title": "Appl. Sci."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b24",
+      "doi-asserted-by": "crossref",
+      "first-page": "505",
+      "DOI": "10.1016/0043-1354(87)90058-3",
+      "article-title": "A general model for single-sludge wastewater treatment systems",
+      "author": "Henze",
+      "year": "1987",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.egyr.2025.05.045_b25",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "article-title": "Activated sludge model no. 2d, ASM2d",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b26",
+      "first-page": "55",
+      "article-title": "Odepack, a systemized collection of ODE solvers",
+      "author": "Hindmarsh",
+      "year": "1983",
+      "journal-title": "Sci. Comput."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b27",
+      "series-title": "Simba",
+      "author": "IFAK",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b28",
+      "series-title": "Frontiers in Wastewater Treatment and Modelling: FICWTM 2017 1",
+      "first-page": "81",
+      "article-title": "The benchmark simulation modelling platform–Areas of recent development and extension",
+      "author": "Jeppsson",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b29",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.2166/wst.2007.604",
+      "article-title": "Benchmark simulation model no 2—General protocol and exploratory case studies",
+      "volume": "56",
+      "author": "Jeppsson",
+      "year": "2007",
+      "journal-title": "Water Sci. Technol. : A J. Int. Assoc. Water Pollut. Res."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.egyr.2025.05.045_b30",
+      "doi-asserted-by": "crossref",
+      "first-page": "287",
+      "DOI": "10.2166/wst.2006.031",
+      "article-title": "Towards a benchmark simulation model for plant-wide control strategy performance evaluation of WWTPs",
+      "volume": "53",
+      "author": "Jeppsson",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b31",
+      "series-title": "2018 15th International Conference on the European Energy Market",
+      "first-page": "1",
+      "article-title": "Market effects of industrial demand response and flexibility potential from wastewater treatment facilities",
+      "author": "Kirchem",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b32",
+      "series-title": "Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC",
+      "first-page": "1",
+      "article-title": "Numba: A llvm-based python jit compiler",
+      "author": "Lam",
+      "year": "2015"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b33",
+      "doi-asserted-by": "crossref",
+      "first-page": "385",
+      "DOI": "10.1016/j.enconman.2017.03.060",
+      "article-title": "Thermo-environ-economic modeling and optimization of an integrated wastewater treatment plant with a combined heat and power generation system",
+      "volume": "142",
+      "author": "Lee",
+      "year": "2017",
+      "journal-title": "Energy Convers. Manage."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b34",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2020.116516",
+      "article-title": "Demand response through reject water scheduling in water resource recovery facilities: A demonstration with BSM2",
+      "volume": "188",
+      "author": "Liu",
+      "year": "2021",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b35",
+      "doi-asserted-by": "crossref",
+      "first-page": "1251",
+      "DOI": "10.1016/j.apenergy.2016.07.043",
+      "article-title": "Monitoring and diagnosis of energy consumption in wastewater treatment plants. A state of the art and proposals for improvement",
+      "volume": "179",
+      "author": "Longo",
+      "year": "2016",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b36",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ces.2020.115847",
+      "article-title": "Numerical simulation of trickle bed reactors for biological methanation",
+      "volume": "226",
+      "author": "Markthaler",
+      "year": "2020",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b37",
+      "series-title": "Techno-economic assessment of direct methanation on wastewater treatment plants",
+      "author": "Miederer",
+      "year": "2022"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.egyr.2025.05.045_b38",
+      "doi-asserted-by": "crossref",
+      "first-page": "1913",
+      "DOI": "10.1016/j.watres.2009.01.012",
+      "article-title": "An ASM/ADM model interface for dynamic plant-wide simulation",
+      "volume": "43",
+      "author": "Nopens",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "5–6",
+      "key": "10.1016/j.egyr.2025.05.045_b39",
+      "doi-asserted-by": "crossref",
+      "first-page": "1391",
+      "DOI": "10.2166/wst.1992.0582",
+      "article-title": "Dynamic models for clarifiers of activated sludge plants with dry and wet weather flows",
+      "volume": "26",
+      "author": "Otterpohl",
+      "year": "1992",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.egyr.2025.05.045_b40",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1994.0040",
+      "article-title": "Optimizing operation of wastewater treatment plants by offline and online computer simulation",
+      "volume": "30",
+      "author": "Otterpohl",
+      "year": "1994",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.egyr.2025.05.045_b41",
+      "doi-asserted-by": "crossref",
+      "first-page": "1639",
+      "DOI": "10.3390/pr11061639",
+      "article-title": "Techno-economic assessment of PEM electrolysis for O2 supply in activated sludge systems—A simulation study based on the BSM2 wastewater treatment plant",
+      "volume": "11",
+      "author": "Parra Ramirez",
+      "year": "2023",
+      "journal-title": "Processes"
+    },
+    {
+      "issue": "15",
+      "key": "10.1016/j.egyr.2025.05.045_b42",
+      "doi-asserted-by": "crossref",
+      "first-page": "3359",
+      "DOI": "10.1016/j.watres.2007.03.007",
+      "article-title": "One-dimensional modelling of the secondary clarifier-factors affecting simulation in the clarification zone and the assessment of the thickening flow dependence",
+      "volume": "41",
+      "author": "Plósz",
+      "year": "2007",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.egyr.2025.05.045_b43",
+      "doi-asserted-by": "crossref",
+      "first-page": "612",
+      "DOI": "10.3390/w13050612",
+      "article-title": "Eco-efficiency assessment of control actions in wastewater treatment plants",
+      "volume": "13",
+      "author": "Revollar",
+      "year": "2021",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b44",
+      "doi-asserted-by": "crossref",
+      "first-page": "282",
+      "DOI": "10.1016/j.envsoft.2017.03.026",
+      "article-title": "A model library for simulation and benchmarking of integrated urban wastewater systems",
+      "volume": "93",
+      "author": "Saagi",
+      "year": "2017",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b45",
+      "doi-asserted-by": "crossref",
+      "first-page": "9724",
+      "DOI": "10.1016/j.egyr.2022.07.155",
+      "article-title": "Energy, exergy, economic and environmental analysis of a running integrated anaerobic digester-combined heat and power system in a municipal wastewater treatment plant",
+      "volume": "8",
+      "author": "Sanaye",
+      "year": "2022",
+      "journal-title": "Energy Rep."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b46",
+      "doi-asserted-by": "crossref",
+      "first-page": "40",
+      "DOI": "10.1016/j.jprocont.2015.02.005",
+      "article-title": "Applying variable dissolved oxygen set point in a two level hierarchical control structure to a wastewater treatment process",
+      "volume": "28",
+      "author": "Santín",
+      "year": "2015",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b47",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.rser.2021.110937",
+      "article-title": "Codigestion and combined heat and power systems energize wastewater treatment plants–analysis and case studies",
+      "volume": "144",
+      "author": "Sarpong",
+      "year": "2021",
+      "journal-title": "Renew. Sustain. Energy Rev."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b48",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.enconman.2019.111999",
+      "article-title": "Energy autarky of small scale wastewater treatment plants by enhanced carbon capture and codigestion–a quantitative analysis",
+      "volume": "199",
+      "author": "Sarpong",
+      "year": "2019",
+      "journal-title": "Energy Convers. Manage."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b49",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.enconman.2020.113147",
+      "article-title": "Evaluation of energy recovery potential in wastewater treatment based on codigestion and combined heat and power schemes",
+      "volume": "222",
+      "author": "Sarpong",
+      "year": "2020",
+      "journal-title": "Energy Convers. Manage."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.egyr.2025.05.045_b50",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.30897/ijegeo.794643",
+      "article-title": "On the use of mathematical models for wastewater treatment: a review and analysis of activated sludge models ASM1 and ASM3",
+      "volume": "8",
+      "author": "Savun-Hemimoğlu",
+      "year": "2021",
+      "journal-title": "Int. J. Environ. Geoinformatics"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.egyr.2025.05.045_b51",
+      "doi-asserted-by": "crossref",
+      "first-page": "2503",
+      "DOI": "10.2166/wst.2022.115",
+      "article-title": "Hybrid modelling of water resource recovery facilities: status and opportunities",
+      "volume": "85",
+      "author": "Schneider",
+      "year": "2022",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.egyr.2025.05.045_b52",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.1080/00986445.2023.2218290",
+      "article-title": "Design of supervisory controllers to reduce energy consumption in plant-wide biological wastewater treatment plants with feedback signals from non-ideal sensors",
+      "volume": "211",
+      "author": "Sheik",
+      "year": "2024",
+      "journal-title": "Chem. Eng. Commun."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.egyr.2025.05.045_b53",
+      "doi-asserted-by": "crossref",
+      "first-page": "1854",
+      "DOI": "10.3390/pr9101854",
+      "article-title": "Energy flexibility chances for the wastewater treatment plant of the benchmark simulation model 1",
+      "volume": "9",
+      "author": "Skouteris",
+      "year": "2021",
+      "journal-title": "Processes"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b54",
+      "series-title": "SMARD strommarktdaten 2023",
+      "author": "SMARD",
+      "year": "2024"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.egyr.2025.05.045_b55",
+      "doi-asserted-by": "crossref",
+      "first-page": "1263",
+      "DOI": "10.1016/0043-1354(91)90066-Y",
+      "article-title": "A dynamic model of the clarification-thickening process",
+      "volume": "25",
+      "author": "Takács",
+      "year": "1991",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b56",
+      "series-title": "2023 IEEE 11th International Conference on Smart Energy Grid Engineering",
+      "first-page": "201",
+      "article-title": "Dynamic energy flexibility pricing for industrial energy systems",
+      "author": "Torolsan",
+      "year": "2023"
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b57",
+      "series-title": "Gymnasium",
+      "author": "Towers",
+      "year": "2023"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.egyr.2025.05.045_b58",
+      "first-page": "302",
+      "article-title": "Design of prototype thickeners from batch settling tests",
+      "volume": "115",
+      "author": "Vesilind",
+      "year": "1968",
+      "journal-title": "Water Sew. Work."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b59",
+      "unstructured": "Vrecko, D., Volcke, E., Jeppsson, U., Gernaey, K., 2007. Evaluation Criteria Description and Example for BSM2. IWA BSM TG Technical Report."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.egyr.2025.05.045_b60",
+      "doi-asserted-by": "crossref",
+      "first-page": "7362",
+      "DOI": "10.1109/TIE.2020.3001840",
+      "article-title": "Data-driven iterative adaptive critic control toward an urban wastewater treatment plant",
+      "volume": "68",
+      "author": "Wang",
+      "year": "2020",
+      "journal-title": "IEEE Trans. Ind. Electron."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.egyr.2025.05.045_b61",
+      "doi-asserted-by": "crossref",
+      "first-page": "274",
+      "DOI": "10.2166/wst.2021.095",
+      "article-title": "The development in biological wastewater treatment over the last 50 years",
+      "volume": "84",
+      "author": "Wanner",
+      "year": "2021",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b62",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.enconman.2022.115323",
+      "article-title": "Organic flash cycles in Rankine-based Carnot batteries with large storage temperature spreads",
+      "volume": "255",
+      "author": "Weitzer",
+      "year": "2022",
+      "journal-title": "Energy Convers. Manage."
+    },
+    {
+      "key": "10.1016/j.egyr.2025.05.045_b63",
+      "series-title": "Benchmark simulation models",
+      "author": "wwtmodels",
+      "year": "2025"
+    }
+  ],
+  "container-title": [
+    "Energy Reports"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2352484725003245?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2352484725003245?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        12
+      ]
+    ],
+    "date-time": "2026-03-12T07:17:46Z",
+    "timestamp": 1773299866000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2352484725003245"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        6
+      ]
+    ]
+  },
+  "references-count": 63,
+  "alternative-id": [
+    "S2352484725003245"
+  ],
+  "URL": "https://doi.org/10.1016/j.egyr.2025.05.045",
+  "relation": {},
+  "ISSN": [
+    "2352-4847"
+  ],
+  "issn-type": [
+    {
+      "value": "2352-4847",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        6
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Energy Management Model for Wastewater Treatment Plants",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Energy Reports",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.egyr.2025.05.045",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2025 The Authors. Published by Elsevier Ltd.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

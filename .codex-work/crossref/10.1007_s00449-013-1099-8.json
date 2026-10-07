@@ -1,0 +1,548 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        17
+      ]
+    ],
+    "date-time": "2026-08-17T15:23:52Z",
+    "timestamp": 1786980232939,
+    "version": "build-2736575974"
+  },
+  "reference-count": 35,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "7",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            12,
+            13
+          ]
+        ],
+        "date-time": "2013-12-13T00:00:00Z",
+        "timestamp": 1386892800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Bioprocess Biosyst Eng"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2014,
+        7
+      ]
+    ]
+  },
+  "DOI": "10.1007/s00449-013-1099-8",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        12,
+        12
+      ]
+    ],
+    "date-time": "2013-12-12T00:12:51Z",
+    "timestamp": 1386807171000
+  },
+  "page": "1271-1287",
+  "source": "Crossref",
+  "is-referenced-by-count": 18,
+  "title": [
+    "Activated sludge model 2d calibration with full-scale WWTP data: comparing model parameter identifiability with influent and operational uncertainty"
+  ],
+  "prefix": "10.1007",
+  "volume": "37",
+  "author": [
+    {
+      "given": "Vinicius Cunha",
+      "family": "Machado",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Javier",
+      "family": "Lafuente",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Juan Antonio",
+      "family": "Baeza",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        12,
+        13
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "1099_CR1",
+      "unstructured": "Jeppsson U (1996) Modelling aspects of wastewater treatment processes. PhD thesis, Lund Institute of Technology, Sweden. http://www.iea.lth.se/publications"
+    },
+    {
+      "key": "1099_CR2",
+      "doi-asserted-by": "crossref",
+      "first-page": "539",
+      "DOI": "10.1016/S0043-1354(99)00177-3",
+      "volume": "34",
+      "author": "Z Yuan",
+      "year": "2000",
+      "unstructured": "Yuan Z, Bogaert H, Leten J, Verstraete W (2000) Reducing the size of a nitrogen removal activated sludge plant by shortening the retention time of inert solids via sludge storage. Water Res 34:539–549",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1099_CR3",
+      "unstructured": "Henze M, Grady Jr. CPL, Gujer W, Marais GR, Matsuo T (1987) Activated sludge model no. 1, IAWQ scientific and technical report no. 1. IWAQ, London"
+    },
+    {
+      "key": "1099_CR4",
+      "doi-asserted-by": "crossref",
+      "first-page": "4667",
+      "DOI": "10.1016/S0043-1354(02)00192-6",
+      "volume": "36",
+      "author": "SCF Meijer",
+      "year": "2002",
+      "unstructured": "Meijer SCF, van Loosdrecht MCM, Heijnen JJ (2002) Modelling the start-up of a full-scale biological phosphorous and nitrogen removing WWTP. Water Res 36:4667–4682",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1099_CR5",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Henze M, Gujer W, Mino T, van Loosdrecht MCM (2000) Activated sludge models ASM1, ASM2, ASM2d and ASM3: scientific and technical report no. 9. IWA Publishing, London",
+      "DOI": "10.2166/wst.1999.0036"
+    },
+    {
+      "key": "1099_CR6",
+      "doi-asserted-by": "crossref",
+      "first-page": "287",
+      "DOI": "10.1007/s00449-010-0470-2",
+      "volume": "34",
+      "author": "M Trutnau",
+      "year": "2011",
+      "unstructured": "Trutnau M, Petzold M, Mehlig L, Eschenhagen M, Geipel K, Müller S, Bley T, Röske I (2011) Using a carbon-based ASM3 EAWAG Bio-P for modelling the enhanced biological phosphorus removal in anaerobic/aerobic activated sludge systems. Bioprocess Biosyst Eng 34:287–295",
+      "journal-title": "Bioprocess Biosyst Eng"
+    },
+    {
+      "key": "1099_CR7",
+      "doi-asserted-by": "crossref",
+      "first-page": "87",
+      "DOI": "10.2166/wst.2004.0363",
+      "volume": "50",
+      "author": "J Ferrer",
+      "year": "2004",
+      "unstructured": "Ferrer J, Morenilla JJ, Bouzas A, García-Usach F (2004) Calibration and simulation of two large wastewater treatment plants operated for nutrient removal. Water Sci Technol 50:87–94",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR8",
+      "doi-asserted-by": "crossref",
+      "first-page": "105",
+      "DOI": "10.2166/wst.2006.115",
+      "volume": "53",
+      "author": "P Ingildsen",
+      "year": "2006",
+      "unstructured": "Ingildsen P, Rosen C, Gernaey KV, Nielsen MK, Guildal T, Jacobsen BN (2006) Modelling and control strategy testing of biological and chemical phosphorus removal at Avedøre WWTP. Water Sci Technol 53:105–113",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR9",
+      "doi-asserted-by": "crossref",
+      "first-page": "9",
+      "DOI": "10.1016/j.bej.2011.04.010",
+      "volume": "56",
+      "author": "W-M Xie",
+      "year": "2011",
+      "unstructured": "Xie W-M, Zhang R, Li W-W, Ni B-J, Fang F, Sheng G-P, Yu H-Q, Song J, Le D-Z, Bi X-J, Liu C-Q, Yang M (2011) Simulation and optimization of a full-scale Carrousel oxidation ditch plant for municipal wastewater treatment. Biochem Eng J 56:9–16",
+      "journal-title": "Biochem Eng J"
+    },
+    {
+      "key": "1099_CR10",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.2166/wst.2006.422",
+      "volume": "53",
+      "author": "F García-Usach",
+      "year": "2006",
+      "unstructured": "García-Usach F, Ferrer J, Bouzas A, Seco A (2006) Calibration and simulation of ASM2d at different temperatures in a phosphorus removal pilot plant. Water Sci Technol 53:199–206",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR11",
+      "doi-asserted-by": "crossref",
+      "first-page": "1274",
+      "DOI": "10.1016/j.envsoft.2009.05.001",
+      "volume": "24",
+      "author": "VC Machado",
+      "year": "2009",
+      "unstructured": "Machado VC, Tapia G, Gabriel D, Lafuente J, Baeza JA (2009) Systematic identifiability study based on the Fisher information matrix for reducing the number of parameters calibration of an activated sludge model. Environ Model Softw 24:1274–1284",
+      "journal-title": "Environ Model Softw"
+    },
+    {
+      "key": "1099_CR12",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.2166/wst.2006.097",
+      "volume": "53",
+      "author": "G Olsson",
+      "year": "2006",
+      "unstructured": "Olsson G (2006) Instrumentation, control and automation in the water industry—state-of-the-art and new challenges. Water Sci Technol 53:1–16",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR13",
+      "unstructured": "Copp JB, Spanjers H, Vanrolleghem PA (2002) Respirometry in control of the activated sludge process: benchmarking control strategies. Scientific and technical report no. 11. IWA Publishing"
+    },
+    {
+      "key": "1099_CR14",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.2166/wst.2006.098",
+      "volume": "53",
+      "author": "D Vrecko",
+      "year": "2006",
+      "unstructured": "Vrecko D, Hvala N, Stare A, Burica O, Strazar M, Levstek M, Cerar P, Podbevsek S (2006) Improvement of ammonia removal in activated sludge process with feedforward-feedback aeration controllers. Water Sci Technol 53:125–132",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR15",
+      "doi-asserted-by": "crossref",
+      "first-page": "115",
+      "DOI": "10.2166/wst.2001.0028",
+      "volume": "43",
+      "author": "P Samuelsson",
+      "year": "2001",
+      "unstructured": "Samuelsson P, Carlsson B (2001) Feed-forward control of the external carbon flow rate in an activated sludge process. Water Sci Technol 43:115–122",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR16",
+      "doi-asserted-by": "crossref",
+      "first-page": "193",
+      "DOI": "10.2166/wst.2006.124",
+      "volume": "53",
+      "author": "E Ayesa",
+      "year": "2006",
+      "unstructured": "Ayesa E, De La Sota A, Grau P, Sagarna JM, Salterain A, Suescun J (2006) Supervisory control strategies for the new WWTP of Galindo-Bilbao: the long run from the conceptual design to the full-scale experimental validation. Water Sci Technol 53:193–201",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR17",
+      "doi-asserted-by": "crossref",
+      "first-page": "73",
+      "DOI": "10.1002/jctb.280610111",
+      "volume": "61",
+      "author": "D Orhon",
+      "year": "1994",
+      "unstructured": "Orhon D, Artan N, Ates E (1994) A description of three methods for the determination of the initial inert particulate chemical oxygen demand of wastewater. J Chem Technol Biotechnol 61:73–80",
+      "journal-title": "J Chem Technol Biotechnol"
+    },
+    {
+      "key": "1099_CR18",
+      "doi-asserted-by": "crossref",
+      "first-page": "2459",
+      "DOI": "10.1016/j.watres.2005.05.006",
+      "volume": "39",
+      "author": "G Sin",
+      "year": "2005",
+      "unstructured": "Sin G, Van Hulle SWH, De Pauw DJW, van Griensven A, Vanrolleghem PA (2005) A critical comparison of systematic calibration protocols for activated sludge models: a SWOT analysis. Water Res 39:2459–2474",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1099_CR19",
+      "doi-asserted-by": "crossref",
+      "first-page": "107",
+      "DOI": "10.2166/wst.2007.605",
+      "volume": "56",
+      "author": "MV Ruano",
+      "year": "2007",
+      "unstructured": "Ruano MV, Ribes J, De Pauw DJW, Sin G (2007) Parameter subset selection for the dynamic calibration of activated sludge models (ASMs): experience versus systems analysis. Water Sci Technol 56:107–115",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR20",
+      "doi-asserted-by": "crossref",
+      "first-page": "127",
+      "DOI": "10.2166/wst.2002.0100",
+      "volume": "45",
+      "author": "JJW Hulsbeek",
+      "year": "2002",
+      "unstructured": "Hulsbeek JJW, Kruit J, Roeleveld PJ, van Loosdrech MCM (2002) A practical protocol for dynamic modelling of activated sludge systems. Water Sci Technol 45:127–136",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR21",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Vanrolleghem PA, Insel G, Petersen B, Sin G, De Pauw D, Nopens I, Dovermann H, Weijers S, Gernaey K (2003) A comprehensive model calibration procedure for activated sludge. WEFTEC 76th annual technical exhibition conference water environment federation, Los Angeles, pp 210–237",
+      "DOI": "10.2175/193864703784639615"
+    },
+    {
+      "key": "1099_CR22",
+      "unstructured": "Melcer H, Dold PL, Jones RM, Bye CM, Takacs I, Stensel HD, Wilson AW, Sun P, Bury S (2003) Methods for wastewater characterization in activated sludge modelling. Water Environment Research Foundation (WERF), Alexandria"
+    },
+    {
+      "key": "1099_CR23",
+      "doi-asserted-by": "crossref",
+      "first-page": "131",
+      "DOI": "10.2166/wst.2004.0436",
+      "volume": "50",
+      "author": "G Langergraber",
+      "year": "2004",
+      "unstructured": "Langergraber G, Rieger L, Winkler S, Alex J, Wiese J, Owerdieck C, Ahnert M, Simon J, Maurer M (2004) A guideline for simulation studies of wastewater treatment plants. Water Sci Technol 50:131–138",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR24",
+      "doi-asserted-by": "crossref",
+      "first-page": "499",
+      "DOI": "10.1007/s00449-012-0806-1",
+      "volume": "36",
+      "author": "A Cosenza",
+      "year": "2013",
+      "unstructured": "Cosenza A, Mannina G, Neumann MB, Viviani G, Vanrolleghem PA (2013) Biological nitrogen and phosphorus removal in membrane bioreactors: model development and parameter estimation. Bioprocess Biosyst Eng 36:499–514",
+      "journal-title": "Bioprocess Biosyst Eng"
+    },
+    {
+      "key": "1099_CR25",
+      "doi-asserted-by": "crossref",
+      "first-page": "575",
+      "DOI": "10.2166/hydro.2011.041",
+      "volume": "13",
+      "author": "G Mannina",
+      "year": "2011",
+      "unstructured": "Mannina G, Cosenza A, Vanrolleghem PA, Viviani G (2011) A practical protocol for calibration of nutrient removal wastewater treatment models. J Hydroinformatics 13:575–595",
+      "journal-title": "J Hydroinformatics"
+    },
+    {
+      "key": "1099_CR26",
+      "doi-asserted-by": "crossref",
+      "first-page": "1543",
+      "DOI": "10.1016/j.envsoft.2007.02.004",
+      "volume": "22",
+      "author": "JC Refsgaard",
+      "year": "2007",
+      "unstructured": "Refsgaard JC, van der Sluijs JP, Højberg AL, Vanrolleghem PA (2007) Uncertainty in the environmental modelling process—a framework and guidance. Environ Model Softw 22:1543–1556",
+      "journal-title": "Environ Model Softw"
+    },
+    {
+      "key": "1099_CR27",
+      "doi-asserted-by": "crossref",
+      "first-page": "2894",
+      "DOI": "10.1016/j.watres.2009.03.048",
+      "volume": "43",
+      "author": "G Sin",
+      "year": "2009",
+      "unstructured": "Sin G, Gernaey KV, Neumann MB, Van Loosdrecht MCM, Gujer W (2009) Uncertainty analysis in WWTP model applications: a critical discussion using an example from design. Water Res 43:2894–2906",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1099_CR28",
+      "doi-asserted-by": "crossref",
+      "first-page": "233",
+      "DOI": "10.2166/wst.2012.081",
+      "volume": "65",
+      "author": "K Cierkens",
+      "year": "2012",
+      "unstructured": "Cierkens K, Plano S, Benedetti L, Weijers S, de Jonge J, Nopens I (2012) Impact of influent data frequency and model structure on the quality of WWTP model calibration and uncertainty. Water Sci Technol 65:233–242",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR29",
+      "doi-asserted-by": "crossref",
+      "first-page": "61",
+      "DOI": "10.1016/j.pce.2011.04.008",
+      "volume": "42–44",
+      "author": "G Mannina",
+      "year": "2012",
+      "unstructured": "Mannina G, Cosenza A, Viviani G (2012) Uncertainty assessment of a model for biological nitrogen and phosphorus removal: application to a large wastewater treatment plant. Phys Chem Earth, Parts A/B/C 42–44:61–69",
+      "journal-title": "Phys Chem Earth, Parts A/B/C"
+    },
+    {
+      "key": "1099_CR30",
+      "doi-asserted-by": "crossref",
+      "first-page": "14",
+      "DOI": "10.2166/wqrjc.2012.038",
+      "volume": "47",
+      "author": "L Benedetti",
+      "year": "2012",
+      "unstructured": "Benedetti L, Batstone DJ, De Baets B, Nopens I, Vanrolleghem PA (2012) Uncertainty analysis of WWTP control strategies made feasible. Water Qual Res J Can 47:14",
+      "journal-title": "Water Qual Res J Can"
+    },
+    {
+      "key": "1099_CR31",
+      "doi-asserted-by": "crossref",
+      "first-page": "1929",
+      "DOI": "10.2166/wst.2009.225",
+      "volume": "60",
+      "author": "E Belia",
+      "year": "2009",
+      "unstructured": "Belia E, Amerlinck Y, Benedetti L, Johnson B, Sin G, Vanrolleghem PA, Gernaey KV, Gillot S, Neumann MB, Rieger L, Shaw A, Villez K (2009) Wastewater treatment modelling: dealing with uncertainties. Water Sci Technol 60:1929–1941",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "1099_CR32",
+      "doi-asserted-by": "crossref",
+      "first-page": "1263",
+      "DOI": "10.1016/0043-1354(91)90066-Y",
+      "volume": "25",
+      "author": "I Takács",
+      "year": "1991",
+      "unstructured": "Takács I, Patry GG, Nolasco D (1991) A dynamic model of the clarification-thickening process. Water Res 25:1263–1271",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "1099_CR33",
+      "unstructured": "Orhon D, Artan N (1994) Modelling of activated sludge systems. CRC Press"
+    },
+    {
+      "key": "1099_CR34",
+      "unstructured": "Montpart N (2010) Redesign of a dissolved oxygen control system in an urban WWTP. Master in environmental studies. Universitat Autònoma de Barcelona, Barcelona"
+    },
+    {
+      "key": "1099_CR35",
+      "doi-asserted-by": "crossref",
+      "first-page": "2007",
+      "DOI": "10.1002/jctb.4060",
+      "volume": "88",
+      "author": "AK Vangsgaard",
+      "year": "2013",
+      "unstructured": "Vangsgaard AK, Mutlu AG, Gernaey KV, Smets BF, Sin G (2013) Calibration and validation of a model describing complete autotrophic nitrogen removal in a granular SBR system. J Chem Technol Biotechnol 88:2007–2015",
+      "journal-title": "J Chem Technol Biotechnol"
+    }
+  ],
+  "container-title": [
+    "Bioprocess and Biosystems Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s00449-013-1099-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1007/s00449-013-1099-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s00449-013-1099-8",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        21
+      ]
+    ],
+    "date-time": "2024-05-21T07:26:06Z",
+    "timestamp": 1716276366000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "http://link.springer.com/10.1007/s00449-013-1099-8"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        12,
+        13
+      ]
+    ]
+  },
+  "references-count": 35,
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          7
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "1099"
+  ],
+  "URL": "https://doi.org/10.1007/s00449-013-1099-8",
+  "relation": {},
+  "ISSN": [
+    "1615-7591",
+    "1615-7605"
+  ],
+  "issn-type": [
+    {
+      "value": "1615-7591",
+      "type": "print"
+    },
+    {
+      "value": "1615-7605",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        12,
+        13
+      ]
+    ]
+  }
+}

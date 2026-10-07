@@ -1,0 +1,688 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        6,
+        20
+      ]
+    ],
+    "date-time": "2026-06-20T04:45:42Z",
+    "timestamp": 1781930742553,
+    "version": "3.54.5"
+  },
+  "reference-count": 74,
+  "publisher": "Wiley",
+  "issue": "5",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            27
+          ]
+        ],
+        "date-time": "2026-01-27T00:00:00Z",
+        "timestamp": 1769472000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            27
+          ]
+        ],
+        "date-time": "2026-01-27T00:00:00Z",
+        "timestamp": 1769472000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "aiche.onlinelibrary.wiley.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "AIChE Journal"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2026,
+        5
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Optimizing industrial processes often involves gray‐box models that couple algebraic glass‐box equations with black‐box components lacking analytic derivatives. Such systems challenge derivative‐based solvers. The classical trust‐region filter (TRF) algorithm provides a robust framework but requires extensive parameter tuning and numerous black‐box evaluations. This work introduces four Hessian‐informed TRF variants that use projected positive definite Hessians for automatic step scaling and minimal tuning, combined with both low‐fidelity (linear, quadratic) and high‐fidelity (Taylor series, Gaussian process) surrogates for local black‐box approximation. Tested on 25 gray‐box benchmarks and five engineering case studies, the new variants achieved up to order‐of‐magnitude reductions in iterations and black‐box evaluations, with reduced sensitivity to tuning parameters relative to the classical TRF algorithm. High‐fidelity surrogates solved 92%–100% of problems, compared with 72%–84% for low‐fidelity surrogates. The developed TRF methods also outperformed classical derivative‐free optimization solvers. Results show that new variants offer robust, scalable alternatives for gray‐box optimization.</jats:p>",
+  "DOI": "10.1002/aic.70236",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2026,
+        1,
+        27
+      ]
+    ],
+    "date-time": "2026-01-27T09:38:22Z",
+    "timestamp": 1769506702000
+  },
+  "update-policy": "https://doi.org/10.1002/crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 2,
+  "title": [
+    "Trust‐region filter algorithms utilizing Hessian information for gray‐box optimization"
+  ],
+  "prefix": "10.1002",
+  "volume": "72",
+  "author": [
+    {
+      "given": "Gul",
+      "family": "Hameed",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "School of Chemistry and Chemical Engineering University of Surrey  Guildford UK"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tao",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Chemistry and Chemical Engineering University of Surrey  Guildford UK"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Antonio",
+      "family": "del Rio Chanona",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Chemical Engineering Imperial College London  London UK"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Lorenz T.",
+      "family": "Biegler",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Chemical Engineering Carnegie Mellon University  Pittsburgh Pennsylvania USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-9719-3368",
+      "authenticated-orcid": false,
+      "given": "Michael",
+      "family": "Short",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Chemistry and Chemical Engineering University of Surrey  Guildford UK"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "published-online": {
+    "date-parts": [
+      [
+        2026,
+        1,
+        27
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_9_2_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.15325"
+    },
+    {
+      "key": "e_1_2_9_3_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02591747"
+    },
+    {
+      "key": "e_1_2_9_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.21236/ADA138522"
+    },
+    {
+      "key": "e_1_2_9_5_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/S0036144504446096"
+    },
+    {
+      "key": "e_1_2_9_6_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/0‐387‐30065‐1_4"
+    },
+    {
+      "key": "e_1_2_9_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/10556789908805759"
+    },
+    {
+      "key": "e_1_2_9_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10107‐004‐0559‐y"
+    },
+    {
+      "key": "e_1_2_9_9_1",
+      "volume-title": "Adaptive Modelling and Simulation (ADMOS 2023)",
+      "author": "Wackers J",
+      "year": "2023"
+    },
+    {
+      "key": "e_1_2_9_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/1.9780898718768"
+    },
+    {
+      "key": "e_1_2_9_11_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.16364"
+    },
+    {
+      "key": "e_1_2_9_12_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2021.107655"
+    },
+    {
+      "key": "e_1_2_9_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/S0962492919000060"
+    },
+    {
+      "key": "e_1_2_9_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978‐94‐015‐8330‐5_4"
+    },
+    {
+      "key": "e_1_2_9_15_1",
+      "first-page": "26",
+      "volume-title": "Cambridge NA Report NA2009/06",
+      "author": "Powell MJD",
+      "year": "2009"
+    },
+    {
+      "key": "e_1_2_9_16_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s101070100290"
+    },
+    {
+      "key": "e_1_2_9_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/0‐387‐30065‐1_16"
+    },
+    {
+      "key": "e_1_2_9_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3544489"
+    },
+    {
+      "key": "e_1_2_9_19_1",
+      "unstructured": "AdamsBM.Dakota 6.22.0 documentation. Albuquerque NM.2024.https://snl-dakota.github.io/"
+    },
+    {
+      "key": "e_1_2_9_20_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.48550/arXiv.2210.12018"
+    },
+    {
+      "key": "e_1_2_9_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10898‐012‐9951‐y"
+    },
+    {
+      "key": "e_1_2_9_22_1",
+      "unstructured": "EasonJP.A trust region filter algorithm for surrogate‐based optimization. Doctoral Dissertation Carnegie Mellon University.2018. doi:10.1184/R1/6714431.v1"
+    },
+    {
+      "key": "e_1_2_9_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/1.9780898719857"
+    },
+    {
+      "key": "e_1_2_9_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s101070100244"
+    },
+    {
+      "key": "e_1_2_9_25_1",
+      "volume-title": "A Novel Filter Trust‐Region Algorithm for Constrained Optimization Using Reduced Order Modeling",
+      "author": "Agarwal A",
+      "year": "2012"
+    },
+    {
+      "key": "e_1_2_9_26_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11081‐011‐9164‐0"
+    },
+    {
+      "key": "e_1_2_9_27_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10589‐015‐9793‐x"
+    },
+    {
+      "key": "e_1_2_9_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.17054"
+    },
+    {
+      "key": "e_1_2_9_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2024.108738"
+    },
+    {
+      "key": "e_1_2_9_30_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2024.108816"
+    },
+    {
+      "key": "e_1_2_9_31_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.dche.2024.100197"
+    },
+    {
+      "key": "e_1_2_9_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978‐1‐4757‐5331‐8_8"
+    },
+    {
+      "key": "e_1_2_9_33_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2012.06.045"
+    },
+    {
+      "key": "e_1_2_9_34_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/B978‐0‐323‐99134‐6.00006‐2"
+    },
+    {
+      "key": "e_1_2_9_35_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2018.07.016"
+    },
+    {
+      "key": "e_1_2_9_36_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11590‐016‐1028‐2"
+    },
+    {
+      "key": "e_1_2_9_37_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2018.01.005"
+    },
+    {
+      "key": "e_1_2_9_38_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.14418"
+    },
+    {
+      "key": "e_1_2_9_39_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2017.02.010"
+    },
+    {
+      "key": "e_1_2_9_40_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11590‐019‐01421‐0"
+    },
+    {
+      "key": "e_1_2_9_41_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2017.12.011"
+    },
+    {
+      "key": "e_1_2_9_42_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/070691814"
+    },
+    {
+      "key": "e_1_2_9_43_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/0305215X.2015.1082350"
+    },
+    {
+      "key": "e_1_2_9_44_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cam.2015.04.047"
+    },
+    {
+      "key": "e_1_2_9_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2017.09.017"
+    },
+    {
+      "key": "e_1_2_9_46_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1515/9783111383439-005"
+    },
+    {
+      "key": "e_1_2_9_47_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2025.109199"
+    },
+    {
+      "key": "e_1_2_9_48_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/B978‐0‐323‐88506‐5.50003‐6"
+    },
+    {
+      "key": "e_1_2_9_49_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01197433"
+    },
+    {
+      "key": "e_1_2_9_50_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2172/834714"
+    },
+    {
+      "key": "e_1_2_9_51_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3641519.365743"
+    },
+    {
+      "key": "e_1_2_9_52_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3680528.3687650"
+    },
+    {
+      "key": "e_1_2_9_53_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/JPROC.2015.2494218"
+    },
+    {
+      "key": "e_1_2_9_54_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2019.2957109"
+    },
+    {
+      "key": "e_1_2_9_55_1",
+      "volume-title": "Gaussian Processes for Machine Learning",
+      "author": "Williams CKI",
+      "year": "2006"
+    },
+    {
+      "key": "e_1_2_9_56_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s40042‐021‐00112‐3"
+    },
+    {
+      "key": "e_1_2_9_57_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978‐1‐4419‐0158‐3_29"
+    },
+    {
+      "key": "e_1_2_9_58_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s12532‐011‐0026‐8"
+    },
+    {
+      "key": "e_1_2_9_59_1",
+      "volume-title": "A Survey of the Trust Region Subproblem within a Semidefinite Framework",
+      "author": "Fortin C",
+      "year": "2000"
+    },
+    {
+      "key": "e_1_2_9_60_1",
+      "unstructured": "LukšanMatonohaC VlčekJ.A shifted Steihaug‐Toint method for computing a trust‐region step (Technical report No. 914). Institute of Computer ScienceAcademy of Sciences of the Czech Republic.2004 https://www.cs.cas.cz/matonoha/download/V914.pdf."
+    },
+    {
+      "key": "e_1_2_9_61_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/1011036"
+    },
+    {
+      "key": "e_1_2_9_62_1",
+      "unstructured": "HighamN.Diagonally perturbing a symmetric matrix to make it positive definite research.https://nhigham.com/2021/02/16/diagonally-perturbing-a-symmetric-matrix-to-make-it-positive-definite/?utm_source=chatgpt.com"
+    },
+    {
+      "key": "e_1_2_9_63_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/10556788.2019.1624747"
+    },
+    {
+      "key": "e_1_2_9_64_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/1073368.1073394"
+    },
+    {
+      "key": "e_1_2_9_65_1",
+      "volume-title": "Convex Analysis",
+      "author": "Rockafellar RT",
+      "year": "1997"
+    },
+    {
+      "key": "e_1_2_9_66_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978‐0‐387‐40065‐5"
+    },
+    {
+      "key": "e_1_2_9_67_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5281/zenodo.17639336"
+    },
+    {
+      "key": "e_1_2_9_68_1",
+      "unstructured": "SurjanovicS BinghamD.Virtual library of simulation experiments: test functions and datasets.https://www.sfu.ca/∼ssurjano/index.html"
+    },
+    {
+      "key": "e_1_2_9_69_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2022.107700"
+    },
+    {
+      "key": "e_1_2_9_70_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s101070100263"
+    },
+    {
+      "key": "e_1_2_9_71_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s00521‐022‐08058‐8"
+    },
+    {
+      "key": "e_1_2_9_72_1",
+      "volume-title": "Optimization of Chemical Processes",
+      "author": "Edgar TF",
+      "year": "2001"
+    },
+    {
+      "key": "e_1_2_9_73_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978‐3‐642‐20859‐1_12"
+    },
+    {
+      "key": "e_1_2_9_74_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/1.9780898719383"
+    },
+    {
+      "key": "e_1_2_9_75_1",
+      "unstructured": "YoshioN EasonJ BieglerLT.GitHub Repository: Pyomo. Trust region framework method solver.https://pyomo.readthedocs.io/en/6.8.1/explanation/solvers/trustregion.html"
+    }
+  ],
+  "container-title": [
+    "AIChE Journal"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.70236",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://aiche.onlinelibrary.wiley.com/doi/full-xml/10.1002/aic.70236",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.70236",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        4,
+        6
+      ]
+    ],
+    "date-time": "2026-04-06T05:01:27Z",
+    "timestamp": 1775451687000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://aiche.onlinelibrary.wiley.com/doi/10.1002/aic.70236"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2026,
+        1,
+        27
+      ]
+    ]
+  },
+  "references-count": 74,
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          5
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1002/aic.70236"
+  ],
+  "URL": "https://doi.org/10.1002/aic.70236",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "0001-1541",
+    "1547-5905"
+  ],
+  "issn-type": [
+    {
+      "value": "0001-1541",
+      "type": "print"
+    },
+    {
+      "value": "1547-5905",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2026,
+        1,
+        27
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2025-09-07",
+      "order": 0,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2026-01-09",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2026-01-27",
+      "order": 3,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ],
+  "article-number": "e70236"
+}

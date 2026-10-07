@@ -1,0 +1,21 @@
+\begingroup
+\linespread{1}\selectfont
+\begin{tikzpicture}[
+    >=Latex,
+    pool/.style={draw=black!75,fill=white,rounded corners=2pt,
+        text width=3.0cm,minimum height=1.0cm,align=center,font=\small},
+    process/.style={draw=blue!65!black,line width=1pt,->},
+    account/.style={font=\small,align=center,text width=4.3cm}]
+\node[pool] (a) at (0,0) {$2A$\\Unit weight $1$};
+\node[pool] (b) at (4.6,0) {$B$\\Unit weight $2$};
+\node[pool] (c) at (9.2,0) {$2C$\\Unit weight $1$};
+\draw[process] (a)--(b) node[midway,above=3pt,font=\small] {$\rho_1$};
+\draw[process] (b)--(c) node[midway,above=3pt,font=\small] {$\rho_2$};
+\node[account] at (2.3,-1.8) {First process\\$(-2\rho_1,\rho_1,0)$\\Inventory change $0$};
+\node[account] at (6.9,-1.8) {Second process\\$(0,-\rho_2,2\rho_2)$\\Inventory change $0$};
+\node[draw=blue!65!black,fill=blue!4,rounded corners=2pt,
+    text width=10.9cm,align=center,font=\small] at (4.6,-3.4)
+    {Net change $(-2\rho_1,\rho_1-\rho_2,2\rho_2)$\\
+    Conserved inventory $c_A+2c_B+c_C$};
+\end{tikzpicture}
+\endgroup

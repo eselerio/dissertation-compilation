@@ -1,0 +1,191 @@
+P a g e | 44
+
+and sinks such as those in Equation 3-1. In such scenarios, the number of decision
+variables and constraints multiplies quickly, making the overall optimization problem
+computationally expensive and prone to convergence issues—especially if a heuristic
+optimizer is used in conjunction with a complex ML model. Ensuring that these large-
+scale optimization problems remain tractable without compromising solution accuracy is
+a prominent concern for real-world implementations. In light of these challenges, there is
+a growing call for developing models that offer the best of both worlds: (i) the ability to
+capture interdependencies among wastewater constituents, (ii) the avoidance of data
+spillage, (iii) mechanistic interpretability, and (iv) predictive power that rivals or surpasses
+that of nonlinear ML methods. A linear model that is carefully designed to reflect the
+interactions of different compounds would address many of the criticisms leveled against
+purely data-driven ML approaches (Nazlabadi et al., 2021). By incorporating terms or
+factors that account for relevant biochemical relationships, such a model could maintain
+interpretability—offering straightforward parameter coefficients tied to physical
+phenomena—while still accurately predicting system behavior. This is especially critical
+in large-scale optimization tasks, such as superstructure design, water reuse networks
+(Equation 3-1), and multi-stage wastewater treatment plant designs (Equation 3-2),
+where linear (or linearized) models are often necessary for computational tractability
+(Nazlabadi et al., 2021). Furthermore, a linear model that respects the avoidance of data
+spillage would ensure more rigorous calibration and validation processes. By carefully
+segregating inputs and outputs—such that the target variables do not inadvertently enter
+as model inputs—researchers could preserve the model’s integrity and bolster confidence
+in its extrapolative capabilities. This methodological rigor would also facilitate clearer
+integration of domain knowledge about microbial kinetics or stoichiometric relationships,
+potentially bridging the gap between data-driven and mechanistic modeling approaches.
+
+P a g e | 45
+
+4   Statement of the Problem
+
+Over the past two decades, various machine learning (ML) techniques have
+demonstrated promise in modeling and optimizing biological wastewater treatment
+processes. These approaches can capture nonlinear relationships among operational
+parameters, biochemical reactions, and treatment performance indicators. However,
+three main challenges persist:
+Data Spillage and Oversimplification
+Many existing studies include performance indicators (e.g., effluent concentrations) as
+direct inputs to ML models, leading to “data spillage.” This undermines model
+generalizability and inflates predictive accuracy in ways that do not hold in real operational
+settings. Additionally, linear or polynomial models often fail to capture compound
+interdependencies, ignoring the coupled biochemical reactions and microbial community
+interactions critical to process performance.
+Lack of Mechanistic Interpretability
+Advanced ML methods (e.g., random forests, neural networks) deliver high predictive
+power but function as “black boxes,” making it difficult to extract mechanistic insights. This
+lack of transparency limits the ability of process engineers to incorporate domain
+knowledge, improve fundamental processes, or troubleshoot effectively when real-world
+performance deviates from model predictions.
+Scalability and Model Gaps
+When extending optimization to large-scale treatment superstructures with multiple units,
+sources, mixers, and sinks, the dimensionality of the decision space escalates, causing
+heuristic optimizers and complex ML models to struggle with convergence and tractability.
+Moreover, no ML method has been validated for modeling advective-diffusive attached-
+growth systems (e.g., bio-towers), leaving an important class of wastewater processes
+insufficiently studied.
+These gaps underscore the need for a modeling framework that:
+       Reflects the interconnected nature of multiple wastewater constituents without
+        causing data spillage,
+       Maintains interpretability by integrating fundamental biochemical relationships,
+        and
+       Remains computationally tractable for large-scale or superstructure optimization
+        tasks.
+The research questions that this dissertation will answer are the following:
+
+P a g e | 46
+
+      How can ML-based models be designed to capture the interdependencies among
+       multiple wastewater constituents without incurring data spillage, thereby improving
+       predictive accuracy and generalizability?
+      What modeling strategies or frameworks can balance the “black-box” nature of
+       advanced ML methods with the mechanistic interpretability needed for practical
+       process design and troubleshooting?
+      How can these improved modeling approaches be scaled up to large, multi-stage
+       or superstructure configurations—including advective-diffusive attached-growth
+       systems—while ensuring computational feasibility and robust convergence in
+       optimization?
+The primary objective of this dissertation is to develop and validate a modeling and
+optimization framework that bridges the gap between purely data-driven ML methods and
+mechanistic models for biological wastewater treatment. Specifically, the proposed
+approach will:
+      Eliminate data spillage by rigorously separating input variables from performance
+       metrics in model training and validation, ensuring more trustworthy predictions.
+      Enhance mechanistic interpretability by incorporating biochemical and microbial
+       process fundamentals into the modeling architecture, providing process engineers
+       with actionable insights.
+      Demonstrate scalability through the application of the framework to multi-stage
+       systems and superstructures, including advective-diffusive attached-growth units
+       like bio-towers, thereby confirming both computational tractability and practical
+       relevance.
+By achieving these goals, the study aims to lay a foundation for next-generation modeling
+tools that offer robust, interpretable, and scalable solutions for optimizing biological
+wastewater treatment processes.
+
+P a g e | 47
+
+5   Significance of the Study
+
+This study holds significant value on both theoretical and practical fronts by addressing
+the critical limitations in existing modeling and optimization approaches for biological
+wastewater treatment. First, it responds to the persistent issue of “data spillage,” whereby
+models are inadvertently trained using the same performance indicators they are tasked
+to predict. By proposing a rigorous strategy to separate input parameters from output
+variables during model development, this research establishes a methodological
+safeguard that greatly enhances the generalizability and reliability of predictions. The
+avoidance of data spillage is particularly important in operational settings where overly
+optimistic model performance often fails to translate into real-world success. Through its
+emphasis on methodological integrity, the study’s contributions will help process
+engineers make more dependable decisions about treatment system design and daily
+operations.
+Second, this work advances the field by reconciling advanced machine learning (ML)
+techniques with mechanistic interpretability. While black-box ML algorithms such as
+neural networks and ensemble methods can capture highly nonlinear relationships, they
+often obscure the biochemical and microbial interactions that govern treatment
+performance. By integrating fundamental biochemical and microbial principles into the
+modeling architecture, this dissertation demonstrates how interpretability and domain
+knowledge can be preserved without sacrificing predictive accuracy. This synergy is
+crucial for engineers and researchers who not only need accurate predictions but also
+require clear pathways to troubleshoot issues and refine plant operations based on
+physical or biological insights. The enhanced interpretability opens the door to more
+transparent design revisions, better-informed regulatory compliance, and more targeted
+process improvements.
+A third key contribution lies in the framework’s demonstrated scalability to large-scale or
+superstructure configurations—a critical aspect for municipalities, industrial operators,
+and research institutions seeking to optimize complex treatment networks. Existing
+methods often falter when the dimensionality of a multi-unit system or superstructure
+becomes too large, leading to insurmountable computational demands and convergence
+problems. By employing linear or carefully linearized models that still respect the
+underlying biochemical relationships, the proposed approach maintains computational
+tractability, making large-scale optimization feasible. Notably, this framework also covers
+advective-diffusive attached-growth systems like bio-towers, which have not yet been
+modeled successfully by current ML techniques. Filling this gap extends the applicability
+of next-generation modeling tools to a wider range of treatment processes, ultimately
+helping operators achieve more holistic and efficient treatment designs.
+
+P a g e | 48
+
+Finally, by blending data-driven and mechanistic approaches, the dissertation paves the
+way for future research in hybrid modeling and advanced control of wastewater
+processes. Its methodological rigor, especially in terms of careful calibration, validation,
+and interpretability, not only establishes a template for improved modeling practices but
+also lays a foundation for the real-time optimization of treatment plants. The potential
+impacts include reducing operational costs, minimizing energy consumption, ensuring
+reliable effluent quality, and accommodating evolving regulatory standards. Collectively,
+these contributions position this study at the forefront of efforts to modernize and enhance
+wastewater treatment technologies, ensuring more sustainable and effective solutions for
+safeguarding public health and the environment.
+
+P a g e | 49
+
+6    Scope and Limitations of the Study
+
+This dissertation is dedicated to the development and validation of a hybrid modeling and
+optimization framework specifically designed for biological wastewater treatment
+systems. The research focuses on integrating fundamental biochemical principles with
+advanced machine learning (ML) techniques to achieve a balance between high
+predictive accuracy and mechanistic interpretability. In particular, the framework is
+demonstrated using two key treatment processes: (1) the activated sludge process,
+representing suspended-growth systems, and (2) bio-towers, representing attached-
+growth systems. These two processes collectively capture a broad spectrum of biological
+treatment scenarios—ranging from conventional aeration basins to biofilm-based
+reactors—and therefore serve as representative testbeds for evaluating the robustness,
+scalability, and interpretability of the proposed modeling approach. Although limiting case
+studies to these two processes excludes other potential treatment technologies (e.g.,
+membrane bioreactors, sequencing batch reactors), they were selected because of their
+widespread application, data availability in published literature, and capacity to illustrate
+both suspended- and attached-growth phenomena.
+A defining characteristic of this study is the reliance on experimental data sourced
+exclusively from existing literature, rather than generating new experimental data. This
+approach makes it possible to incorporate a diverse range of documented operational
+scenarios and performance metrics from multiple studies, thereby enhancing the
+framework’s potential applicability across various plant configurations and treatment
+objectives. However, this choice introduces certain limitations. First, the quality and
+consistency of the secondary data can vary considerably, influencing both the calibration
+and validation phases of the modeling process. Ensuring compatibility and coherency
+among datasets derived from disparate sources is an inherent challenge that must be
+carefully managed to maintain methodological rigor. Second, the decision to focus on the
+activated sludge process and bio-towers means that some advanced or specialized
+wastewater technologies (e.g., membrane reactors or emerging hybrid systems) will not
+be covered in depth. While this targeted approach is sufficient for illustrating the feasibility
+and benefits of the proposed framework, it may limit generalizability to other treatment
+processes that involve substantially different biochemical or operational complexities.
+
+
+Additionally, while the study leverages a wide range of operational conditions, it cannot
+represent every conceivable variation found in real-world wastewater treatment practice.
+This selective coverage is necessary to maintain a focused scope and to demonstrate
+depth of analysis in the target domains; nevertheless, it also highlights the need for future
+research to extend or adapt the framework to other treatment technologies. The
+computational feasibility of the proposed optimization algorithms presents another

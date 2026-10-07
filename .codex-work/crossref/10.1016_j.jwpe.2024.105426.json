@@ -1,0 +1,498 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        6
+      ]
+    ],
+    "date-time": "2026-09-06T13:12:05Z",
+    "timestamp": 1788700325691,
+    "version": "build-2803163510"
+  },
+  "reference-count": 19,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Water Process Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jwpe.2024.105426",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        9
+      ]
+    ],
+    "date-time": "2024-05-09T22:39:30Z",
+    "timestamp": 1715294370000
+  },
+  "page": "105426",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 8,
+  "special_numbering": "C",
+  "title": [
+    "Bio2Py: An API for integrating Python with BioWin for enhanced data acquisition in wastewater treatment simulations"
+  ],
+  "prefix": "10.1016",
+  "volume": "63",
+  "author": [
+    {
+      "given": "Florencia",
+      "family": "Caro",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jimena",
+      "family": "Ferreira",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Elena",
+      "family": "Castelló",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "José Carlos",
+      "family": "Pinto",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Claudia",
+      "family": "Santiviago",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "4",
+      "key": "10.1016/j.jwpe.2024.105426_bb0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "672",
+      "DOI": "10.2166/wst.2022.234",
+      "article-title": "Automating process design by coupling genetic algorithms with commercial simulators: a case study for hybrid MABR processes",
+      "volume": "86",
+      "author": "Yang",
+      "year": "2022",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0010",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2021.151109",
+      "article-title": "Modeling, simulation and control of biological and chemical P-removal processes for membrane bioreactors (MBRs) from lab to full-scale applications: state of the art",
+      "volume": "809",
+      "author": "Nadeem",
+      "year": "2022",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0015",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2023.104477",
+      "article-title": "Practical review of modelling and simulation applications at full-scale wastewater treatment plants",
+      "volume": "56",
+      "author": "Ruiz",
+      "year": "2023",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0020",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2022.107785",
+      "article-title": "A comparative study on Aspen Hysys interconnection methodologies",
+      "volume": "162",
+      "author": "Santos Bartolome",
+      "year": "2022",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0025",
+      "author": "Hydromantis"
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0030",
+      "author": "Dynamita Process Modeling"
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "99",
+      "DOI": "10.1016/j.watres.2015.06.048",
+      "article-title": "Evaluation of new alternatives in wastewater treatment plants based on dynamic modelling and life cycle assessment (DM-LCA)",
+      "volume": "84",
+      "author": "Bisinella de Faria",
+      "year": "2015",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0040",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2023.168022",
+      "article-title": "Comparative assessment of different scenarios for upgrading activated sludge wastewater treatment plants in developing countries",
+      "volume": "907",
+      "author": "Awad",
+      "year": "2024",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0045",
+      "doi-asserted-by": "crossref",
+      "first-page": "280",
+      "DOI": "10.1016/j.chemosphere.2017.12.169",
+      "article-title": "Cost effectiveness of phosphorus removal processes in municipal wastewater treatment",
+      "volume": "197",
+      "author": "Bashar",
+      "year": "2018",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0050",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2019.109718",
+      "article-title": "Resource recovery assessment at a pulp mill wastewater treatment plant in Uruguay",
+      "volume": "255",
+      "author": "Bentancur",
+      "year": "2020",
+      "journal-title": "J. Environ. Manage."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "208",
+      "DOI": "10.1016/j.psep.2020.08.029",
+      "article-title": "Modelling of a pulp mill wastewater treatment plant for improving its performance on phosphorus removal",
+      "volume": "146",
+      "author": "Bentancur",
+      "year": "2021",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0060",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2019.100819",
+      "article-title": "Plant-wide modeling and optimization of a large-scale WWTP using BioWin’s ASDM model",
+      "volume": "31",
+      "author": "Elawwad",
+      "year": "2019",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0065",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2023.168022",
+      "article-title": "Comparative assessment of different scenarios for upgrading activated sludge wastewater treatment plants in developing countries",
+      "volume": "907",
+      "author": "Awad",
+      "year": "2024",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "issue": "19",
+      "key": "10.1016/j.jwpe.2024.105426_bb0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "7278",
+      "DOI": "10.1016/j.biortech.2010.04.065",
+      "article-title": "Identification of the most sensitive parameters in the activated sludge model implemented in BioWin software",
+      "volume": "101",
+      "author": "Liwarska-Bizukojc",
+      "year": "2010",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0075",
+      "article-title": "BioWin® modeling of anaerobic sludge blanket treatment of domestic wastewater",
+      "volume": "20",
+      "author": "Callahan",
+      "year": "2022",
+      "journal-title": "Bioresour. Technol. Rep."
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0080",
+      "author": "Caro"
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0085",
+      "author": "Sweigart"
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0090",
+      "author": "Object Management Group"
+    },
+    {
+      "key": "10.1016/j.jwpe.2024.105426_bb0095",
+      "author": "Decreto 253/979"
+    }
+  ],
+  "container-title": [
+    "Journal of Water Process Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2214714424006585?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2214714424006585?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        2,
+        2
+      ]
+    ],
+    "date-time": "2025-02-02T06:01:32Z",
+    "timestamp": 1738476092000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2214714424006585"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        6
+      ]
+    ]
+  },
+  "references-count": 19,
+  "alternative-id": [
+    "S2214714424006585"
+  ],
+  "URL": "https://doi.org/10.1016/j.jwpe.2024.105426",
+  "relation": {},
+  "ISSN": [
+    "2214-7144"
+  ],
+  "issn-type": [
+    {
+      "value": "2214-7144",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        6
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Bio2Py: An API for integrating Python with BioWin for enhanced data acquisition in wastewater treatment simulations",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Water Process Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jwpe.2024.105426",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2024 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "105426"
+}

@@ -1,0 +1,801 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        21
+      ]
+    ],
+    "date-time": "2026-09-21T18:36:59Z",
+    "timestamp": 1790015819944,
+    "version": "4.0.1"
+  },
+  "reference-count": 61,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2023-11-01T00:00:00Z",
+        "timestamp": 1698796800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            17
+          ]
+        ],
+        "date-time": "2023-08-17T00:00:00Z",
+        "timestamp": 1692230400000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100003246",
+      "name": "Nederlandse Organisatie voor Wetenschappelijk Onderzoek",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "628.009.012"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "628.009.012"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100003246",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Applied Soft Computing"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.asoc.2023.110744",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        14
+      ]
+    ],
+    "date-time": "2023-08-14T21:05:40Z",
+    "timestamp": 1692047140000
+  },
+  "page": "110744",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 20,
+  "special_numbering": "C",
+  "title": [
+    "Benchmarking surrogate-based optimisation algorithms on expensive black-box functions"
+  ],
+  "prefix": "10.1016",
+  "volume": "147",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-3853-4708",
+      "authenticated-orcid": false,
+      "given": "Laurens",
+      "family": "Bliek",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Arthur",
+      "family": "Guijt",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Rickard",
+      "family": "Karlsson",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Sicco",
+      "family": "Verwer",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-0470-6241",
+      "authenticated-orcid": false,
+      "given": "Mathijs",
+      "family": "de Weerdt",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.asoc.2023.110744_b1",
+      "doi-asserted-by": "crossref",
+      "first-page": "148",
+      "DOI": "10.1109/JPROC.2015.2494218",
+      "article-title": "Taking the human out of the loop: A review of Bayesian optimization",
+      "volume": "104",
+      "author": "Shahriari",
+      "year": "2016",
+      "journal-title": "Proc. IEEE"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b2",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1038/s41524-021-00656-9",
+      "article-title": "Benchmarking the performance of Bayesian optimization across multiple experimental materials science domains",
+      "volume": "7",
+      "author": "Liang",
+      "year": "2021",
+      "journal-title": "npj Comput. Mater."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b3",
+      "series-title": "Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI-19",
+      "first-page": "5850",
+      "article-title": "Safe contextual Bayesian optimization for sustainable room temperature PID control tuning",
+      "author": "Fiducioso",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b4",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.enbuild.2019.109576",
+      "article-title": "An efficient metamodel-based method to carry out multi-objective building performance optimizations",
+      "volume": "206",
+      "author": "Bre",
+      "year": "2020",
+      "journal-title": "Energy Build."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b5",
+      "doi-asserted-by": "crossref",
+      "first-page": "16",
+      "DOI": "10.2514/1.J058687",
+      "article-title": "Surrogate approaches for aerodynamic section performance modeling",
+      "volume": "58",
+      "author": "Keane",
+      "year": "2020",
+      "journal-title": "AIAA J."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.asoc.2023.110744_b6",
+      "doi-asserted-by": "crossref",
+      "first-page": "167",
+      "DOI": "10.1109/TNNLS.2016.2615134",
+      "article-title": "Online optimization with costly and noisy measurements using random Fourier expansions",
+      "volume": "29",
+      "author": "Bliek",
+      "year": "2018",
+      "journal-title": "IEEE Trans. Neural Netw. Learn. Syst."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b7",
+      "series-title": "International Conference on Machine Learning",
+      "first-page": "115",
+      "article-title": "Making a science of model search: Hyperparameter optimization in hundreds of dimensions for vision architectures",
+      "author": "Bergstra",
+      "year": "2013"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.asoc.2023.110744_b8",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/su14073867",
+      "article-title": "A survey on sustainable surrogate-based optimisation",
+      "volume": "14",
+      "author": "Bliek",
+      "year": "2022",
+      "journal-title": "Sustainability"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b9",
+      "series-title": "Bayesian optimisation against climate change: Applications and benchmarks",
+      "author": "Hellan",
+      "year": "2023"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b10",
+      "series-title": "Proceedings of the Genetic and Evolutionary Computation Conference Companion",
+      "first-page": "1592",
+      "article-title": "On the use of surrogate models in engineering design optimization and exploration: The key issues",
+      "author": "Palar",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b11",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1016/j.compchemeng.2017.09.017",
+      "article-title": "Advances in surrogate based modeling, feasibility analysis, and optimization: A review",
+      "volume": "108",
+      "author": "Bhosekar",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b12",
+      "series-title": "International Conference on Learning and Intelligent Optimization",
+      "first-page": "507",
+      "article-title": "Sequential model-based optimization for general algorithm configuration",
+      "author": "Hutter",
+      "year": "2011"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b13",
+      "doi-asserted-by": "crossref",
+      "first-page": "275",
+      "DOI": "10.1007/s00163-020-00336-7",
+      "article-title": "Managing computational complexity using surrogate models: a critical review",
+      "volume": "31",
+      "author": "Alizadeh",
+      "year": "2020",
+      "journal-title": "Res. Eng. Des."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b14",
+      "series-title": "Optimization Techniques IFIP Technical Conference",
+      "first-page": "400",
+      "article-title": "On Bayesian methods for seeking the extremum",
+      "author": "Močkus",
+      "year": "1975"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b15",
+      "first-page": "1",
+      "article-title": "Black-box combinatorial optimization using models with integer-valued minima",
+      "author": "Bliek",
+      "year": "2020",
+      "journal-title": "Ann. Math. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b16",
+      "series-title": "Proceedings of the Genetic and Evolutionary Computation Conference Companion",
+      "first-page": "1851",
+      "article-title": "Black-box mixed-variable optimisation using a surrogate model that satisfies integer constraints",
+      "author": "Bliek",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b17",
+      "series-title": "Sequential Model-Based Optimization for General Algorithm Configuration (Extended Version)",
+      "author": "Hutter",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b18",
+      "series-title": "Bayesian Optimization: Open source constrained global optimization tool for Python",
+      "author": "Nogueira",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b19",
+      "series-title": "Proceedings of the 37th International Conference on Machine Learning",
+      "first-page": "8276",
+      "article-title": "Bayesian optimisation over multiple continuous and categorical inputs",
+      "volume": "vol. 119",
+      "author": "Ru",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b20",
+      "series-title": "Identifying properties of real-world optimisation problems through a questionnaire",
+      "author": "van der Blom",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b21",
+      "series-title": "COmparing Continuous Optimizers: numbbo/COCO on Github",
+      "author": "Hansen",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b22",
+      "series-title": "International Conference on Parallel Problem Solving from Nature",
+      "first-page": "296",
+      "article-title": "A suite of computationally expensive shape optimisation problems using computational fluid dynamics",
+      "author": "Daniels",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b23",
+      "series-title": "Proceedings of the Genetic and Evolutionary Computation Conference Companion",
+      "article-title": "On benchmarking surrogate-assisted evolutionary algorithms",
+      "author": "Volz",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b24",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.asoc.2019.105494",
+      "article-title": "Biochemical parameter estimation vs. benchmark functions: A comparative study of optimization performance and representation design",
+      "volume": "81",
+      "author": "Tangherloni",
+      "year": "2019",
+      "journal-title": "Appl. Soft Comput."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b25",
+      "series-title": "Empirical review of standard benchmark functions using evolutionary global optimization",
+      "author": "Dieterich",
+      "year": "2012"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b26",
+      "series-title": "Adaptive and Natural Computing Algorithms",
+      "first-page": "538",
+      "article-title": "HeuristicLab: A generic and extensible optimization environment",
+      "author": "Wagner",
+      "year": "2005"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b27",
+      "doi-asserted-by": "crossref",
+      "first-page": "881",
+      "DOI": "10.1007/s10732-013-9228-8",
+      "article-title": "ParadisEO-MO: from fitness landscape analysis to efficient local search algorithms",
+      "volume": "19",
+      "author": "Humeau",
+      "year": "2013",
+      "journal-title": "J. Heuristics"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b28",
+      "series-title": "European Conference on Evolutionary Computation in Combinatorial Optimization",
+      "first-page": "136",
+      "article-title": "HyFlex: A benchmark framework for cross-domain heuristic search",
+      "author": "Ochoa",
+      "year": "2012"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.asoc.2023.110744_b29",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/math8050785",
+      "article-title": "The SOS platform: Designing, tuning and statistically benchmarking optimisation algorithms",
+      "volume": "8",
+      "author": "Caraffini",
+      "year": "2020",
+      "journal-title": "Mathematics"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b30",
+      "series-title": "IOHprofiler: A benchmarking and profiling tool for iterative optimization heuristics",
+      "author": "Doerr",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b31",
+      "series-title": "28th Congress of the International Council of the Aeronautical Sciences 2012, ICAS 2012, Vol. 2",
+      "first-page": "1625",
+      "article-title": "Comparison of infill sampling criteria in Kriging-based aerodynamic optimization",
+      "author": "Liu",
+      "year": "2012"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b32",
+      "series-title": "An open source AutoML benchmark",
+      "author": "Gijsbers",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b33",
+      "series-title": "ICML",
+      "first-page": "7105",
+      "article-title": "NAS-Bench-101: Towards reproducible neural architecture search",
+      "author": "Ying",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b34",
+      "series-title": "NAS-Bench-201: Extending the scope of reproducible neural architecture search",
+      "author": "Dong",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b35",
+      "series-title": "NAS-Bench-301 and the case for surrogate benchmarks for neural architecture search",
+      "author": "Siems",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b36",
+      "series-title": "Proceedings of the 35th International Conference on Machine Learning",
+      "first-page": "1436",
+      "article-title": "BOHB: Robust and efficient hyperparameter optimization at scale",
+      "author": "Falkner",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b37",
+      "doi-asserted-by": "crossref",
+      "first-page": "177",
+      "DOI": "10.1016/j.ast.2012.01.006",
+      "article-title": "Improving variable-fidelity surrogate modeling via gradient-enhanced kriging and a generalized hybrid bridge function",
+      "volume": "25",
+      "author": "hua Han",
+      "year": "2013",
+      "journal-title": "Aerosp. Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b38",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.advengsoft.2019.03.005",
+      "article-title": "A Python surrogate modeling framework with derivatives",
+      "author": "Bouhlel",
+      "year": "2019",
+      "journal-title": "Adv. Eng. Softw."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b39",
+      "first-page": "2051",
+      "article-title": "A surrogate modeling and adaptive sampling toolbox for computer based design",
+      "volume": "11",
+      "author": "Gorissen",
+      "year": "2010",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b40",
+      "series-title": "Proceedings of the Genetic and Evolutionary Computation Conference",
+      "article-title": "Single- and multi-objective game-benchmark for evolutionary algorithms",
+      "author": "Volz",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b41",
+      "series-title": "Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence (IJCAI’21)",
+      "first-page": "1668",
+      "article-title": "DACBench: A benchmark library for dynamic algorithm configuration",
+      "author": "Eimer",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b42",
+      "doi-asserted-by": "crossref",
+      "first-page": "597",
+      "DOI": "10.1007/s12532-018-0144-7",
+      "article-title": "RBFOpt: an open-source library for black-box optimization with costly function evaluations",
+      "volume": "10",
+      "author": "Costa",
+      "year": "2018",
+      "journal-title": "Math. Program. Comput."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b43",
+      "series-title": "CompModels: A suite of computer model test functions for Bayesian optimization",
+      "author": "Pourmohamad",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b44",
+      "series-title": "HPObench",
+      "author": "Eggensperger",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b45",
+      "series-title": "AClib2",
+      "author": "Lindauer",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b46",
+      "series-title": "Nevergrad - A gradient-free optimization platform",
+      "author": "Rapin",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b47",
+      "series-title": "BayesMark",
+      "author": "Turner",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b48",
+      "series-title": "MATSuMoTo",
+      "author": "Mueller",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b49",
+      "series-title": "pySOT and POAP: An event-driven asynchronous framework for surrogate optimization",
+      "author": "Eriksson",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b50",
+      "series-title": "FLORIS. Version 2.1.1",
+      "author": "NREL",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b51",
+      "series-title": "Proceedings of the Genetic and Evolutionary Computation Conference",
+      "first-page": "1348",
+      "article-title": "Comparison of parallel surrogate-assisted optimization approaches",
+      "author": "Rehbach",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b52",
+      "series-title": "ACM SIGKDD",
+      "first-page": "785",
+      "article-title": "XGBoost: A scalable tree boosting system",
+      "author": "Chen",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b53",
+      "first-page": "281",
+      "article-title": "Random search for hyper-parameter optimization",
+      "volume": "13",
+      "author": "Bergstra",
+      "year": "2012",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b54",
+      "series-title": "Benchmarking in optimization: Best practice and open issues",
+      "author": "Bartz-Beielstein",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b55",
+      "doi-asserted-by": "crossref",
+      "first-page": "154",
+      "DOI": "10.1016/j.asoc.2017.01.039",
+      "article-title": "Model-based methods for continuous and discrete global optimization",
+      "volume": "55",
+      "author": "Bartz-Beielstein",
+      "year": "2017",
+      "journal-title": "Appl. Soft Comput."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b56",
+      "series-title": "Proceedings of the Benelux Conference on Artificial Intelligence",
+      "first-page": "88",
+      "article-title": "Continuous surrogate-based optimization algorithms are well-suited for expensive discrete problems",
+      "author": "Karlsson",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b57",
+      "series-title": "Re-examining linear embeddings for high-dimensional Bayesian optimization",
+      "author": "Letham",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b58",
+      "series-title": "Advances in Neural Information Processing Systems, Vol. 32",
+      "first-page": "1",
+      "article-title": "Combinatorial Bayesian optimization using the graph cartesian product",
+      "author": "Oh",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b59",
+      "doi-asserted-by": "crossref",
+      "first-page": "1925",
+      "DOI": "10.1007/s10994-020-05899-z",
+      "article-title": "High-dimensional Bayesian optimization using low-dimensional feature spaces",
+      "volume": "109",
+      "author": "Moriconi",
+      "year": "2020",
+      "journal-title": "Mach. Learn."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b60",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "DOI": "10.1016/j.cor.2013.11.015",
+      "article-title": "Towards objective measures of algorithm performance across instance space",
+      "volume": "45",
+      "author": "Smith-Miles",
+      "year": "2014",
+      "journal-title": "Comput. Oper. Res."
+    },
+    {
+      "key": "10.1016/j.asoc.2023.110744_b61",
+      "first-page": "2825",
+      "article-title": "Scikit-learn: Machine learning in Python",
+      "volume": "12",
+      "author": "Pedregosa",
+      "year": "2011",
+      "journal-title": "J. Mach. Learn. Res."
+    }
+  ],
+  "container-title": [
+    "Applied Soft Computing"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1568494623007627?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1568494623007627?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        27
+      ]
+    ],
+    "date-time": "2025-10-27T20:23:40Z",
+    "timestamp": 1761596620000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1568494623007627"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "references-count": 61,
+  "alternative-id": [
+    "S1568494623007627"
+  ],
+  "URL": "https://doi.org/10.1016/j.asoc.2023.110744",
+  "relation": {},
+  "ISSN": [
+    "1568-4946"
+  ],
+  "issn-type": [
+    {
+      "value": "1568-4946",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Benchmarking surrogate-based optimisation algorithms on expensive black-box functions",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Applied Soft Computing",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.asoc.2023.110744",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2023 The Authors. Published by Elsevier B.V.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "110744"
+}

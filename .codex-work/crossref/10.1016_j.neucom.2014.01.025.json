@@ -1,0 +1,626 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        23
+      ]
+    ],
+    "date-time": "2026-08-23T17:16:15Z",
+    "timestamp": 1787505375230,
+    "version": "build-2736575974"
+  },
+  "reference-count": 37,
+  "publisher": "Elsevier BV",
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Neurocomputing"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2014,
+        7
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.neucom.2014.01.025",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2014,
+        2,
+        15
+      ]
+    ],
+    "date-time": "2014-02-15T05:00:56Z",
+    "timestamp": 1392440456000
+  },
+  "page": "88-95",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 97,
+  "special_numbering": "C",
+  "title": [
+    "Fuzzy model-based predictive control of dissolved oxygen in activated sludge processes"
+  ],
+  "prefix": "10.1016",
+  "volume": "136",
+  "author": [
+    {
+      "given": "Ting",
+      "family": "Yang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Wei",
+      "family": "Qiu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "You",
+      "family": "Ma",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Mohammed",
+      "family": "Chadli",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Lixian",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.neucom.2014.01.025_bib1",
+      "unstructured": "International Water Association Task Group on Benchmarking of Control Strategies for WWTPs, 〈http://www.benchmarkwwtp.org/〉."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.neucom.2014.01.025_bib2",
+      "doi-asserted-by": "crossref",
+      "first-page": "759",
+      "DOI": "10.1007/s00449-009-0404-z",
+      "article-title": "Linearization of the full Activated Sludge Model No. 1 for interaction analysis",
+      "volume": "33",
+      "author": "Benhalla",
+      "year": "2010",
+      "journal-title": "Bioprocess. Biosyst. Eng."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neucom.2014.01.025_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "132",
+      "DOI": "10.15837/ijccc.2007.2.2346",
+      "article-title": "Predictive control of a wastewater treatment process",
+      "volume": "2",
+      "author": "Caraman",
+      "year": "2007",
+      "journal-title": "Int. J. Comput., Commun. Control"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neucom.2014.01.025_bib4",
+      "doi-asserted-by": "crossref",
+      "first-page": "319",
+      "DOI": "10.1016/S0165-0114(96)00384-3",
+      "article-title": "A clustering algorithm for fuzzy model identification",
+      "volume": "98",
+      "author": "Chen",
+      "year": "1998",
+      "journal-title": "Fuzzy Sets Syst."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neucom.2014.01.025_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "995",
+      "DOI": "10.1016/0043-1354(95)93250-W",
+      "article-title": "Dynamic modelling of the activated sludge process",
+      "volume": "29",
+      "author": "Cote",
+      "year": "1995",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neucom.2014.01.025_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "701",
+      "DOI": "10.1002/btpr.126",
+      "article-title": "Robust control of the activated sludge process",
+      "volume": "25",
+      "author": "David",
+      "year": "2009",
+      "journal-title": "Biotechnol. Prog."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neucom.2014.01.025_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "96",
+      "DOI": "10.1016/j.envsoft.2008.06.002",
+      "article-title": "Predictive modeling for wastewater applications",
+      "volume": "24",
+      "author": "Dellana",
+      "year": "2009",
+      "journal-title": "Environ. Modell. Softw."
+    },
+    {
+      "issue": "7–8",
+      "key": "10.1016/j.neucom.2014.01.025_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "643",
+      "DOI": "10.1016/j.jprocont.2007.12.006",
+      "article-title": "Bilinear black-box identification and MPC of the activated sludge process",
+      "volume": "18",
+      "author": "Ekman",
+      "year": "2008",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "issue": "23",
+      "key": "10.1016/j.neucom.2014.01.025_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "3715",
+      "DOI": "10.1016/0009-2509(95)00204-I",
+      "article-title": "Fuzzy modeling and pattern recognition for dynamic processes and its application for an activated sludge process",
+      "volume": "50",
+      "author": "Fu",
+      "year": "1995",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neucom.2014.01.025_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "281",
+      "DOI": "10.1016/S0165-0114(96)00208-4",
+      "article-title": "Fuzzy model and decision of COD control for an activated sludge process",
+      "volume": "93",
+      "author": "Fu",
+      "year": "1998",
+      "journal-title": "Fuzzy Sets Syst."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neucom.2014.01.025_bib11",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/0273-1223(95)00175-M",
+      "article-title": "The Activated Sludge Model No. 2",
+      "volume": "31",
+      "author": "Gujer",
+      "year": "1995",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neucom.2014.01.025_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.1016/S0273-1223(98)00785-9",
+      "article-title": "Activated Sludge Model No. 3",
+      "volume": "39",
+      "author": "Gujer",
+      "year": "1998",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neucom.2014.01.025_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "465",
+      "DOI": "10.1016/j.conengprac.2012.01.001",
+      "article-title": "Model predictive control of dissolved oxygen concentration based on a self-organizing RBF neural network",
+      "volume": "20",
+      "author": "Han",
+      "year": "2012",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.neucom.2014.01.025_bib14",
+      "unstructured": "M. Henze, C. Grady, W. Gujer, G.V.R. Marais, T. Matsuo, Activated Sludge Model No. 1, IAWQ Scientific and Technical Report No. 1, IAWQ, London, 1987."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neucom.2014.01.025_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.1016/S0273-1223(98)00829-4",
+      "article-title": "Activated Sludge Model No. 2d, ASM2d",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.neucom.2014.01.025_bib16",
+      "doi-asserted-by": "crossref",
+      "first-page": "1278",
+      "DOI": "10.1016/j.compchemeng.2007.06.008",
+      "article-title": "Dissolved oxygen control of the activated sludge wastewater treatment process using predictive control",
+      "volume": "32",
+      "author": "Holenda",
+      "year": "2008",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.neucom.2014.01.025_bib17",
+      "doi-asserted-by": "crossref",
+      "first-page": "2314",
+      "DOI": "10.1016/j.ins.2010.02.002",
+      "article-title": "Takagi–Sugeno fuzzy model based indirect adaptive fuzzy observer and controller design",
+      "volume": "180",
+      "author": "Hyun",
+      "year": "2010",
+      "journal-title": "Inf. Sci."
+    },
+    {
+      "key": "10.1016/j.neucom.2014.01.025_bib18",
+      "doi-asserted-by": "crossref",
+      "unstructured": "S. Igor, T. Luka, Monitoring of waste-water treatment plant using Takagi–Sugeno fuzzy model, in: Proceedings of the Mediterranean Electrotechnical Conference, Melecon, 2008, pp. 67–70.",
+      "DOI": "10.1109/MELCON.2008.4618412"
+    },
+    {
+      "issue": "4–5",
+      "key": "10.1016/j.neucom.2014.01.025_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.2166/wst.2002.0546",
+      "article-title": "Fuzzy predictive control for nitrogen removal in biological wastewater treatment",
+      "volume": "45",
+      "author": "Marsili-Libelli",
+      "year": "2002",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.neucom.2014.01.025_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "2711",
+      "DOI": "10.1016/S0043-1354(00)00567-4",
+      "article-title": "Metabolic modelling of full-scale biological nitrogen and phosphorus removing WWTP׳s",
+      "volume": "35",
+      "author": "Meijer",
+      "year": "2001",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.neucom.2014.01.025_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "661",
+      "DOI": "10.1109/TFUZZ.2004.834812",
+      "article-title": "Effective optimization for fuzzy model predictive control",
+      "volume": "12",
+      "author": "Mollov",
+      "year": "2004",
+      "journal-title": "IEEE Trans. Fuzzy Syst."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.neucom.2014.01.025_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "269",
+      "DOI": "10.1016/S0378-4754(98)00158-X",
+      "article-title": "Estimation and optimal control design of a biological wastewater treatment process",
+      "volume": "48",
+      "author": "Nejjari",
+      "year": "1999",
+      "journal-title": "Math. Comput. Simul."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neucom.2014.01.025_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "54",
+      "DOI": "10.1016/j.conengprac.2010.09.001",
+      "article-title": "Model predictive control of an activated sludge process",
+      "volume": "19",
+      "author": "O׳Brien",
+      "year": "2011",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.neucom.2014.01.025_bib24",
+      "series-title": "Model Predictive Control of Wastewater Systems",
+      "author": "Ocampo-Martinez",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.neucom.2014.01.025_bib25",
+      "unstructured": "I.T.G. on Mathematical Modelling for Design and O. of Biological Wastewater Treatment. Sludge Models ASM1, ASM2, ASM2D and ASM3, IWA Publishing, Alliance House, London, UK, 2000."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.neucom.2014.01.025_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.1016/j.ins.2003.07.001",
+      "article-title": "Adaptive parameter estimator based on T-S fuzzy models and its applications to indirect adaptive fuzzy control design",
+      "volume": "159",
+      "author": "Park",
+      "year": "2004",
+      "journal-title": "Inf. Sci."
+    },
+    {
+      "key": "10.1016/j.neucom.2014.01.025_bib27",
+      "series-title": "Knowledge-Based Clustering",
+      "author": "Pedrycz",
+      "year": "2005"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neucom.2014.01.025_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "114",
+      "DOI": "10.1016/j.conengprac.2007.04.005",
+      "article-title": "Hierarchical dissolved oxygen control for activated sludge processes",
+      "volume": "16",
+      "author": "Piotrowski",
+      "year": "2008",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.neucom.2014.01.025_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "2849",
+      "DOI": "10.1016/j.compchemeng.2008.01.009",
+      "article-title": "Application of model predictive control to the BSM1 benchmark of wastewater treatment process",
+      "volume": "32",
+      "author": "Shen",
+      "year": "2008",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.neucom.2014.01.025_bib30",
+      "doi-asserted-by": "crossref",
+      "first-page": "161",
+      "DOI": "10.1016/j.cej.2009.07.039",
+      "article-title": "Model predictive control for wastewater treatment process with feedforward compensation",
+      "volume": "155",
+      "author": "Shen",
+      "year": "2009",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.neucom.2014.01.025_bib31",
+      "doi-asserted-by": "crossref",
+      "first-page": "1831",
+      "DOI": "10.1016/S0043-1354(02)00580-8",
+      "article-title": "Linearization of the Activated Sludge Model ASM1 for fast and reliable predictions",
+      "volume": "37",
+      "author": "Smets",
+      "year": "2003",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.neucom.2014.01.025_bib32",
+      "doi-asserted-by": "crossref",
+      "first-page": "159",
+      "DOI": "10.1016/S0019-0578(07)60187-6",
+      "article-title": "Modeling, identification, and validation of models for predictive ammonia control in a wastewater treatment plant – a case study",
+      "volume": "45",
+      "author": "Stare",
+      "year": "2006",
+      "journal-title": "ISA Trans."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.neucom.2014.01.025_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "1114",
+      "DOI": "10.1109/TFUZZ.2012.2196522",
+      "article-title": "A novel approach to filter design for T-S fuzzy discrete-time systems with time-varying delay",
+      "volume": "20",
+      "author": "Su",
+      "year": "2012",
+      "journal-title": "IEEE Trans. Fuzzy Syst."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.neucom.2014.01.025_bib34",
+      "doi-asserted-by": "crossref",
+      "first-page": "655",
+      "DOI": "10.1109/TFUZZ.2012.2226941",
+      "article-title": "A novel control design on discrete-time Takagi–Sugeno fuzzy systems with time-varying delays",
+      "volume": "21",
+      "author": "Su",
+      "year": "2013",
+      "journal-title": "IEEE Trans. Fuzzy Syst."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.neucom.2014.01.025_bib35",
+      "doi-asserted-by": "crossref",
+      "first-page": "2027",
+      "DOI": "10.1016/j.patcog.2004.03.012",
+      "article-title": "FCM-based model selection algorithms for determining the number of clusters",
+      "volume": "37",
+      "author": "Sun",
+      "year": "2004",
+      "journal-title": "Pattern Recognit."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.neucom.2014.01.025_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.1016/S0169-7439(98)00026-4",
+      "article-title": "A combined approach of partial least squares and fuzzy c-means clustering for the monitoring of an activated-sludge waste-water treatment plant",
+      "volume": "41",
+      "author": "Teppola",
+      "year": "1998",
+      "journal-title": "Chemom. Intell. Lab. Syst."
+    },
+    {
+      "issue": "20",
+      "key": "10.1016/j.neucom.2014.01.025_bib37",
+      "doi-asserted-by": "crossref",
+      "first-page": "55",
+      "DOI": "10.1016/j.ins.2012.07.021",
+      "article-title": "Fuzzy modeling approach to predictions of chemical oxygen demand in activated sludge processes",
+      "volume": "235",
+      "author": "Yang",
+      "year": "2013",
+      "journal-title": "Inf. Sci."
+    }
+  ],
+  "container-title": [
+    "Neurocomputing"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0925231214002185?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0925231214002185?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2025-05-01T17:26:09Z",
+    "timestamp": 1746120369000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0925231214002185"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2014,
+        7
+      ]
+    ]
+  },
+  "references-count": 37,
+  "alternative-id": [
+    "S0925231214002185"
+  ],
+  "URL": "https://doi.org/10.1016/j.neucom.2014.01.025",
+  "relation": {},
+  "ISSN": [
+    "0925-2312"
+  ],
+  "issn-type": [
+    {
+      "value": "0925-2312",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2014,
+        7
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Fuzzy model-based predictive control of dissolved oxygen in activated sludge processes",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Neurocomputing",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.neucom.2014.01.025",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "Copyright © 2014 Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

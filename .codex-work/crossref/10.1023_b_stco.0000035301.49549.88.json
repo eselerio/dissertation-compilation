@@ -1,0 +1,1314 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2026-10-06T13:49:40Z",
+    "timestamp": 1791294580505,
+    "version": "4.1.0"
+  },
+  "reference-count": 137,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2004,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2004-08-01T00:00:00Z",
+        "timestamp": 1091318400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2004,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2004-08-01T00:00:00Z",
+        "timestamp": 1091318400000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Statistics and Computing"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2004,
+        8
+      ]
+    ]
+  },
+  "DOI": "10.1023/b:stco.0000035301.49549.88",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2004,
+        7,
+        19
+      ]
+    ],
+    "date-time": "2004-07-19T21:06:27Z",
+    "timestamp": 1090271187000
+  },
+  "page": "199-222",
+  "source": "Crossref",
+  "is-referenced-by-count": 10644,
+  "title": [
+    "A tutorial on support vector regression"
+  ],
+  "prefix": "10.1007",
+  "volume": "14",
+  "author": [
+    {
+      "given": "Alex J.",
+      "family": "Smola",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Bernhard",
+      "family": "Schölkopf",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "reference": [
+    {
+      "key": "5272520_CR1",
+      "first-page": "821",
+      "volume": "25",
+      "author": "M.A. Aizerman",
+      "year": "1964",
+      "unstructured": "Aizerman M.A., Braverman É.M., and Rozonoér L.I. 1964. Theoretical foundations of the potential function method in pattern recognition learning. Automation and Remote Control 25: 821-837.",
+      "journal-title": "Automation and Remote Control"
+    },
+    {
+      "key": "5272520_CR2",
+      "doi-asserted-by": "crossref",
+      "first-page": "337",
+      "DOI": "10.1090/S0002-9947-1950-0051437-7",
+      "volume": "68",
+      "author": "N. Aronszajn",
+      "year": "1950",
+      "unstructured": "Aronszajn N. 1950. Theory of reproducing kernels. Transactions of the American Mathematical Society 68: 337-404.",
+      "journal-title": "Transactions of the American Mathematical Society"
+    },
+    {
+      "key": "5272520_CR3",
+      "unstructured": "Bazaraa M.S., Sherali H.D., and Shetty C.M. 1993. Nonlinear Programming: Theory and Algorithms, 2nd edition, Wiley."
+    },
+    {
+      "key": "5272520_CR4",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1515/9781400874668",
+      "volume-title": "Adaptive Control Processes",
+      "author": "R.E. Bellman",
+      "year": "1961",
+      "unstructured": "Bellman R.E. 1961. Adaptive Control Processes. Princeton University Press, Princeton, NJ."
+    },
+    {
+      "key": "5272520_CR5",
+      "first-page": "307",
+      "volume-title": "Advances in Kernel Methods-SV Learning",
+      "author": "K. Bennett",
+      "year": "1999",
+      "unstructured": "Bennett K. 1999. Combining support vector and mathematical programming methods for induction. In: Schölkopf B., Burges C.J.C., and Smola A.J., (Eds.), Advances in Kernel Methods-SV Learning, MIT Press, Cambridge, MA, pp. 307-326."
+    },
+    {
+      "key": "5272520_CR6",
+      "doi-asserted-by": "crossref",
+      "first-page": "23",
+      "DOI": "10.1080/10556789208805504",
+      "volume": "1",
+      "author": "K.P. Bennett",
+      "year": "1992",
+      "unstructured": "Bennett K.P. and Mangasarian O.L. 1992. Robust linear programming discrimination of two linearly inseparable sets. Optimization Methods and Software 1: 23-34.",
+      "journal-title": "Optimization Methods and Software"
+    },
+    {
+      "key": "5272520_CR7",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/978-1-4612-1128-0",
+      "volume-title": "Harmonic Analysis on Semigroups",
+      "author": "C. Berg",
+      "year": "1984",
+      "unstructured": "Berg C., Christensen J.P.R., and Ressel P. 1984. Harmonic Analysis on Semigroups. Springer, New York."
+    },
+    {
+      "key": "5272520_CR8",
+      "volume-title": "Nonlinear Programming",
+      "author": "D.P. Bertsekas",
+      "year": "1995",
+      "unstructured": "Bertsekas D.P. 1995. Nonlinear Programming. Athena Scientific, Belmont, MA."
+    },
+    {
+      "key": "5272520_CR9",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1093/oso/9780198538493.001.0001",
+      "volume-title": "Neural Networks for Pattern Recognition",
+      "author": "C.M. Bishop",
+      "year": "1995",
+      "unstructured": "Bishop C.M. 1995. Neural Networks for Pattern Recognition. Clarendon Press, Oxford."
+    },
+    {
+      "key": "5272520_CR10",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Blanz V., Schölkopf B., Bülthoff H., Burges C., Vapnik V., and Vetter T. 1996. Comparison of view-based object recognition algorithms using realistic 3D models. In: von der Malsburg C., von Seelen W., Vorbrüggen J.C., and Sendhoff B. (Eds.), Artificial Neural Networks ICANN'96, Berlin. Springer Lecture Notes in Computer Science, Vol. 1112, pp. 251-256.",
+      "DOI": "10.1007/3-540-61510-5_45"
+    },
+    {
+      "key": "5272520_CR11",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1515/9781400881994",
+      "volume-title": "Lectures on Fourier integral",
+      "author": "S. Bochner",
+      "year": "1959",
+      "unstructured": "Bochner S. 1959. Lectures on Fourier integral. Princeton Univ. Press, Princeton, New Jersey."
+    },
+    {
+      "key": "5272520_CR12",
+      "first-page": "144",
+      "volume-title": "Proceedings of the Annual Conference on Computational Learning Theory",
+      "author": "B.E. Boser",
+      "year": "1992",
+      "unstructured": "Boser B.E., Guyon I.M., and Vapnik V.N. 1992. Atraining algorithm for optimal margin classifiers. In: Haussler D. (Ed.), Proceedings of the Annual Conference on Computational Learning Theory. ACM Press, Pittsburgh, PA, pp. 144-152."
+    },
+    {
+      "key": "5272520_CR13",
+      "unstructured": "Bradley P.S., Fayyad U.M., and Mangasarian O.L. 1998. Data mining: Overview and optimization opportunities. Technical Report 98-01, University ofWisconsin, Computer Sciences Department, Madison, January. INFORMS Journal on Computing, to appear."
+    },
+    {
+      "key": "5272520_CR14",
+      "first-page": "82",
+      "volume-title": "Proceedings of the International Conference on Machine Learning",
+      "author": "P.S. Bradley",
+      "year": "1998",
+      "unstructured": "Bradley P.S. and Mangasarian O.L. 1998. Feature selection via concave minimization and support vector machines. In: Shavlik J. (Ed.), Proceedings of the International Conference on Machine Learning, Morgan Kaufmann Publishers, San Francisco, California, pp. 82-90. ftp://ftp.cs.wisc.edu/math-prog/tech-reports/98-03.ps.Z."
+    },
+    {
+      "key": "5272520_CR15",
+      "doi-asserted-by": "crossref",
+      "first-page": "163",
+      "DOI": "10.1090/S0025-5718-1977-0428694-0",
+      "volume": "31",
+      "author": "J.R. Bunch",
+      "year": "1977",
+      "unstructured": "Bunch J.R. and Kaufman L. 1977. Some stable methods for calculating inertia and solving symmetric linear systems. Mathematics of Computation 31: 163-179.",
+      "journal-title": "Mathematics of Computation"
+    },
+    {
+      "key": "5272520_CR16",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Bunch J.R. and Kaufman L. 1980. A computational method for the indefinite quadratic programming problem. Linear Algebra and Its Applications, pp. 341-370, December.",
+      "DOI": "10.1016/0024-3795(80)90172-X"
+    },
+    {
+      "key": "5272520_CR17",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.1007/BF01399088",
+      "volume": "27",
+      "author": "J.R. Bunch",
+      "year": "1976",
+      "unstructured": "Bunch J.R., Kaufman L., and Parlett B. 1976. Decomposition of a symmetric matrix. Numerische Mathematik 27: 95-109.",
+      "journal-title": "Numerische Mathematik"
+    },
+    {
+      "key": "5272520_CR18",
+      "first-page": "71",
+      "volume-title": "Proceedings of the International Conference on Machine Learning",
+      "author": "C.J.C. Burges",
+      "year": "1996",
+      "unstructured": "Burges C.J.C. 1996. Simplified support vector decision rules. In L. Saitta (Ed.), Proceedings of the International Conference on Machine Learning, Morgan Kaufmann Publishers, San Mateo, CA, pp. 71-77."
+    },
+    {
+      "issue": "2",
+      "key": "5272520_CR19",
+      "doi-asserted-by": "publisher",
+      "first-page": "121",
+      "DOI": "10.1023/A:1009715923555",
+      "volume": "2",
+      "author": "C.J.C. Burges",
+      "year": "1998",
+      "unstructured": "Burges C.J.C. 1998. A tutorial on support vector machines for pattern recognition. Data Mining and Knowledge Discovery 2(2): 121-167.",
+      "journal-title": "Data Mining and Knowledge Discovery"
+    },
+    {
+      "key": "5272520_CR20",
+      "first-page": "89",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "C.J.C. Burges",
+      "year": "1999",
+      "unstructured": "Burges C.J.C. 1999. Geometry and invariance in kernel based methods. In Schölkopf B., Burges C.J.C., and Smola A.J., (Eds.), Advances in Kernel Methods-Support Vector Learning, MIT Press, Cambridge, MA, pp. 89-116."
+    },
+    {
+      "key": "5272520_CR21",
+      "first-page": "375",
+      "volume-title": "Advances in Neural Information Processing Systems 9",
+      "author": "C.J.C. Burges",
+      "year": "1997",
+      "unstructured": "Burges C.J.C. and SchölkopfB. 1997. Improving the accuracy and speed of support vector learning machines. In Mozer M.C., Jordan M.I., and Petsche T., (Eds.), Advances in Neural Information Processing Systems 9, MIT Press, Cambridge, MA, pp. 375-381."
+    },
+    {
+      "issue": "1",
+      "key": "5272520_CR22",
+      "doi-asserted-by": "crossref",
+      "first-page": "127",
+      "DOI": "10.1016/S0893-6080(03)00209-0",
+      "volume": "17",
+      "author": "A. Chalimourda",
+      "year": "2004",
+      "unstructured": "Chalimourda A., Schölkopf B., and Smola A.J. 2004. Experimentally optimal νin support vector regression for different noise models and parameter settings. Neural Networks 17(1): 127-141.",
+      "journal-title": "Neural Networks"
+    },
+    {
+      "key": "5272520_CR23",
+      "unstructured": "Chang C.-C., Hsu C.-W., and Lin C.-J. 1999. The analysis of decomposition methods for support vector machines. In Proceeding of IJCAI99, SVM Workshop."
+    },
+    {
+      "issue": "9",
+      "key": "5272520_CR24",
+      "doi-asserted-by": "crossref",
+      "first-page": "2119",
+      "DOI": "10.1162/089976601750399335",
+      "volume": "13",
+      "author": "C.C. Chang",
+      "year": "2001",
+      "unstructured": "Chang C.C. and Lin C.J. 2001. Training ν-support vector classi-fiers: Theory and algorithms. Neural Computation 13(9): 2119-2147.",
+      "journal-title": "Neural Computation"
+    },
+    {
+      "issue": "1",
+      "key": "5272520_CR25",
+      "doi-asserted-by": "crossref",
+      "first-page": "33",
+      "DOI": "10.1137/S1064827596304010",
+      "volume": "20",
+      "author": "S. Chen",
+      "year": "1999",
+      "unstructured": "Chen S., Donoho D., and Saunders M. 1999. Atomic decomposition by basis pursuit. Siam Journal of Scientific Computing 20(1): 33-61.",
+      "journal-title": "Siam Journal of Scientific Computing"
+    },
+    {
+      "key": "5272520_CR26",
+      "volume-title": "Learning from Data",
+      "author": "V. Cherkassky",
+      "year": "1998",
+      "unstructured": "Cherkassky V. and Mulier F. 1998. Learning from Data. JohnWiley and Sons, New York."
+    },
+    {
+      "key": "5272520_CR27",
+      "doi-asserted-by": "publisher",
+      "first-page": "273",
+      "DOI": "10.1023/A:1022627411411",
+      "volume": "20",
+      "author": "C. Cortes",
+      "year": "1995",
+      "unstructured": "Cortes C. and Vapnik V. 1995. Support vector networks. Machine Learning 20: 273-297.",
+      "journal-title": "Machine Learning"
+    },
+    {
+      "key": "5272520_CR28",
+      "first-page": "1676",
+      "volume": "18",
+      "author": "D. Cox",
+      "year": "1990",
+      "unstructured": "Cox D. and O'Sullivan F. 1990. Asymptotic analysis of penalized likelihood and related estimators. Annals of Statistics 18: 1676-1695.CPLEX Optimization Inc. Using the CPLEX callable library. Manual, 1994.",
+      "journal-title": "Annals of Statistics"
+    },
+    {
+      "key": "5272520_CR29",
+      "volume-title": "An Introduction to Support Vector Machines",
+      "author": "N. Cristianini",
+      "year": "2000",
+      "unstructured": "Cristianini N. and Shawe-Taylor J. 2000. An Introduction to Support Vector Machines. Cambridge University Press, Cambridge, UK."
+    },
+    {
+      "key": "5272520_CR30",
+      "unstructured": "Cristianini N., Campbell C., and Shawe-Taylor J. 1998. Multiplicative updatings for support vector learning. NeuroCOLT Technical Report NC-TR-98-016, Royal Holloway College."
+    },
+    {
+      "key": "5272520_CR31",
+      "volume-title": "Linear Programming and Extensions",
+      "author": "G.B. Dantzig",
+      "year": "1962",
+      "unstructured": "Dantzig G.B. 1962. Linear Programming and Extensions. Princeton Univ. Press, Princeton, NJ."
+    },
+    {
+      "key": "5272520_CR32",
+      "volume-title": "Number 31 in Applications of mathematics",
+      "author": "L. Devroye",
+      "year": "1996",
+      "unstructured": "Devroye L., Györfi L., and Lugosi G. 1996. A Probabilistic Theory of Pattern Recognition. Number 31 in Applications of mathematics.Springer, New York."
+    },
+    {
+      "key": "5272520_CR33",
+      "first-page": "155",
+      "volume-title": "Advances in Neural Information Processing Systems 9",
+      "author": "H. Drucker",
+      "year": "1997",
+      "unstructured": "Drucker H., Burges C.J.C., Kaufman L., Smola A., and Vapnik V. 1997.Support vector regression machines. In: Mozer M.C., Jordan M.I., and Petsche T. (Eds.), Advances in Neural Information Processing Systems 9, MIT Press, Cambridge, MA, pp. 155-161."
+    },
+    {
+      "key": "5272520_CR34",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9781611970319",
+      "volume-title": "The jacknife, the bootstrap, and other resampling plans",
+      "author": "B. Efron",
+      "year": "1982",
+      "unstructured": "Efron B. 1982. The jacknife, the bootstrap, and other resampling plans. SIAM, Philadelphia."
+    },
+    {
+      "key": "5272520_CR35",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1201/9780429246593",
+      "volume-title": "An Introduction to the Bootstrap",
+      "author": "B. Efron",
+      "year": "1994",
+      "unstructured": "Efron B. and Tibshirani R.J. 1994. An Introduction to the Bootstrap. Chapman and Hall, New York."
+    },
+    {
+      "key": "5272520_CR36",
+      "doi-asserted-by": "crossref",
+      "first-page": "507",
+      "DOI": "10.1007/BF02275347",
+      "volume": "89",
+      "author": "A. El-Bakry",
+      "year": "1996",
+      "unstructured": "El-Bakry A., Tapia R., Tsuchiya R., and ZhangY. 1996. On the formulation and theory of the Newton interior-point method for nonlinear programming. J. Optimization Theory and Applications 89: 507-541.",
+      "journal-title": "J. Optimization Theory and Applications"
+    },
+    {
+      "key": "5272520_CR37",
+      "volume-title": "Practical Methods of Optimization",
+      "author": "R. Fletcher",
+      "year": "1989",
+      "unstructured": "Fletcher R. 1989. Practical Methods of Optimization. John Wiley and Sons, New York."
+    },
+    {
+      "issue": "6",
+      "key": "5272520_CR38",
+      "doi-asserted-by": "publisher",
+      "first-page": "1455",
+      "DOI": "10.1016/0265-3036(89)90067-5",
+      "volume": "10",
+      "author": "F. Girosi",
+      "year": "1998",
+      "unstructured": "Girosi F. 1998. An equivalence between sparse approximation and support vector machines. Neural Computation 10(6): 1455-1480.",
+      "journal-title": "Neural Computation"
+    },
+    {
+      "key": "5272520_CR39",
+      "unstructured": "Girosi F., Jones M., and Poggio T. 1993. Priors, stabilizers and basis functions: From regularization to radial, tensor and additive splines. A.I. Memo No. 1430, Artificial Intelligence Laboratory, Massachusetts Institute of Technology."
+    },
+    {
+      "key": "5272520_CR40",
+      "unstructured": "Guyon I., Boser B., and Vapnik V. 1993. Automatic capacity tuning of very large VC-dimension classifiers. In: Hanson S.J., Cowan J.D., and Giles C.L. (Eds.), Advances in Neural Information Processing Systems 5. Morgan Kaufmann Publishers, pp. 147-155."
+    },
+    {
+      "key": "5272520_CR41",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Härdle W. 1990. Applied nonparametric regression, volume 19 of Econometric Society Monographs. Cambridge University Press.",
+      "DOI": "10.1017/CCOL0521382483"
+    },
+    {
+      "key": "5272520_CR42",
+      "volume-title": "Generalized Additive Models, volume 43 of Monographs on Statistics and Applied Probability",
+      "author": "T.J. Hastie",
+      "year": "1990",
+      "unstructured": "Hastie T.J. and Tibshirani R.J. 1990. Generalized Additive Models, volume 43 of Monographs on Statistics and Applied Probability. Chapman and Hall, London."
+    },
+    {
+      "key": "5272520_CR43",
+      "volume-title": "Neural Networks: A Comprehensive Foundation",
+      "author": "S. Haykin",
+      "year": "1998",
+      "unstructured": "Haykin S. 1998. Neural Networks: A Comprehensive Foundation. 2nd edition. Macmillan, New York.",
+      "edition": "2nd edition"
+    },
+    {
+      "key": "5272520_CR44",
+      "doi-asserted-by": "crossref",
+      "first-page": "18",
+      "DOI": "10.1109/5254.708428",
+      "volume": "13",
+      "author": "M.A. Hearst",
+      "year": "1998",
+      "unstructured": "Hearst M.A., Schölkopf B., Dumais S., Osuna E., and Platt J. 1998. Trends and controversies-support vector machines. IEEE Intelligent Systems 13: 18-28.",
+      "journal-title": "IEEE Intelligent Systems"
+    },
+    {
+      "key": "5272520_CR45",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Herbrich R. 2002. LearningKernel Classifiers: Theory and Algorithms. MIT Press.",
+      "DOI": "10.7551/mitpress/4170.001.0001"
+    },
+    {
+      "key": "5272520_CR46",
+      "doi-asserted-by": "crossref",
+      "first-page": "1041",
+      "DOI": "10.1214/aoms/1177692459",
+      "volume": "43",
+      "author": "P.J. Huber",
+      "year": "1972",
+      "unstructured": "Huber P.J. 1972. Robust statistics: A review. Annals of Statistics 43: 1041.",
+      "journal-title": "Annals of Statistics"
+    },
+    {
+      "key": "5272520_CR47",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/0471725250",
+      "volume-title": "Robust Statistics",
+      "author": "P.J. Huber",
+      "year": "1981",
+      "unstructured": "Huber P.J. 1981. Robust Statistics. John Wiley and Sons, New York. IBM Corporation. 1992. IBM optimization subroutine library guide and reference. IBM Systems Journal, 31, SC23-0519."
+    },
+    {
+      "key": "5272520_CR48",
+      "unstructured": "Jaakkola T.S. and Haussler D. 1999. Probabilistic kernel regression models. In: Proceedings of the 1999 Conference on AI and Statistics."
+    },
+    {
+      "key": "5272520_CR49",
+      "first-page": "169",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "T. Joachims",
+      "year": "1999",
+      "unstructured": "Joachims T. 1999. Making large-scale SVM learning practical. In: Schölkopf B., Burges C.J.C., and Smola A.J. (Eds.), Advances in Kernel Methods-Support Vector Learning, MIT Press, Cambridge, MA, pp. 169-184."
+    },
+    {
+      "key": "5272520_CR50",
+      "unstructured": "Karush W. 1939. Minima of functions of several variables with inequalities as side constraints. Master's thesis, Dept. of Mathematics, Univ. of Chicago."
+    },
+    {
+      "key": "5272520_CR51",
+      "first-page": "147",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "L. Kaufman",
+      "year": "1999",
+      "unstructured": "Kaufman L. 1999. Solving the quadratic programming problem arising in support vector classification. In: Schölkopf B., Burges C.J.C., and Smola A.J. (Eds.), Advances in Kernel Methods-Support Vector Learning, MIT Press, Cambridge, MA, pp. 147-168"
+    },
+    {
+      "key": "5272520_CR52",
+      "volume-title": "Technical Report",
+      "author": "S.S. Keerthi",
+      "year": "1999",
+      "unstructured": "Keerthi S.S., Shevade S.K., Bhattacharyya C., and Murthy K.R.K. 1999. Improvements to Platt's SMO algorithm for SVM classifier design. Technical Report CD-99-14, Dept. of Mechanical and Production Engineering, Natl. Univ. Singapore, Singapore."
+    },
+    {
+      "key": "5272520_CR53",
+      "first-page": "637",
+      "volume": "13",
+      "author": "S.S. Keerthi",
+      "year": "2001",
+      "unstructured": "Keerthi S.S., Shevade S.K., Bhattacharyya C., and Murty K.R.K. 2001. Improvements to platt's SMO algorithm for SVM classifier design. Neural Computation 13: 637-649.",
+      "journal-title": "Improvements to platt's SMO algorithm for SVM classifier design. Neural Computation"
+    },
+    {
+      "key": "5272520_CR54",
+      "doi-asserted-by": "crossref",
+      "first-page": "495",
+      "DOI": "10.1214/aoms/1177697089",
+      "volume": "41",
+      "author": "G.S. Kimeldorf",
+      "year": "1970",
+      "unstructured": "Kimeldorf G.S. and Wahba G. 1970. A correspondence between Bayesian estimation on stochastic processes and smoothing by splines. Annals of Mathematical Statistics 41: 495-502.",
+      "journal-title": "Annals of Mathematical Statistics"
+    },
+    {
+      "key": "5272520_CR55",
+      "doi-asserted-by": "crossref",
+      "first-page": "82",
+      "DOI": "10.1016/0022-247X(71)90184-3",
+      "volume": "33",
+      "author": "G.S. Kimeldorf",
+      "year": "1971",
+      "unstructured": "Kimeldorf G.S. and Wahba G. 1971. Some results on Tchebycheffian spline functions. J. Math. Anal. Applic. 33: 82-95.",
+      "journal-title": "J. Math. Anal. Applic."
+    },
+    {
+      "key": "5272520_CR56",
+      "doi-asserted-by": "crossref",
+      "first-page": "75",
+      "DOI": "10.7551/mitpress/1113.003.0009",
+      "volume-title": "Advances in Large Margin Classifiers",
+      "author": "A. Kowalczyk",
+      "year": "2000",
+      "unstructured": "Kowalczyk A. 2000. Maximal margin perceptron. In: Smola A.J., Bartlett P.L., Schölkopf B., and Schuurmans D. (Eds.), Advances in Large Margin Classifiers, MIT Press, Cambridge, MA, pp. 75-113."
+    },
+    {
+      "key": "5272520_CR57",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Kuhn H.W. and Tucker A.W. 1951. Nonlinear programming. In: Proc. 2nd Berkeley Symposium on Mathematical Statistics and Probabilistics, Berkeley. University of California Press, pp. 481-492.",
+      "DOI": "10.1525/9780520411586-036"
+    },
+    {
+      "issue": "1",
+      "key": "5272520_CR58",
+      "doi-asserted-by": "crossref",
+      "first-page": "5",
+      "DOI": "10.1023/A:1011215321374",
+      "volume": "20",
+      "author": "Y.J. Lee",
+      "year": "2001",
+      "unstructured": "Lee Y.J. and Mangasarian O.L. 2001. SSVM: A smooth support vector machine for classification. Computational optimization and Applications 20(1): 5-22.",
+      "journal-title": "Computational optimization and Applications"
+    },
+    {
+      "key": "5272520_CR59",
+      "volume-title": "Texts and Monographs in Computer Science",
+      "author": "M. Li",
+      "year": "1993",
+      "unstructured": "Li M. and Vitányi P. 1993. An introduction to Kolmogorov Complexity and its applications. Texts and Monographs in Computer Science. Springer, New York."
+    },
+    {
+      "issue": "6",
+      "key": "5272520_CR60",
+      "doi-asserted-by": "crossref",
+      "first-page": "1288",
+      "DOI": "10.1109/72.963765",
+      "volume": "12",
+      "author": "C.J. Lin",
+      "year": "2001",
+      "unstructured": "Lin C.J. 2001. On the convergence of the decomposition method for support vector machines. IEEE Transactions on Neural Networks 12(6): 1288-1298.",
+      "journal-title": "IEEE Transactions on Neural Networks"
+    },
+    {
+      "key": "5272520_CR61",
+      "unstructured": "Lustig I.J., Marsten R.E., and Shanno D.F. 1990. On implementing Mehrotra's predictor-corrector interior point method for linear programming. Princeton Technical Report SOR90-03., Dept. of Civil Engineering and Operations Research, Princeton University."
+    },
+    {
+      "issue": "3",
+      "key": "5272520_CR62",
+      "doi-asserted-by": "crossref",
+      "first-page": "435",
+      "DOI": "10.1137/0802022",
+      "volume": "2",
+      "author": "I.J. Lustig",
+      "year": "1992",
+      "unstructured": "Lustig I.J., Marsten R.E., and Shanno D.F. 1992. On implementing Mehrotra's predictor-corrector interior point method for linear programming. SIAM Journal on Optimization 2(3): 435-449.",
+      "journal-title": "SIAM Journal on Optimization"
+    },
+    {
+      "key": "5272520_CR63",
+      "unstructured": "MacKay D.J.C. 1991. Bayesian Methods for Adaptive Models. PhD thesis, Computation and Neural Systems, California Institute of Technology, Pasadena, CA."
+    },
+    {
+      "key": "5272520_CR64",
+      "doi-asserted-by": "crossref",
+      "first-page": "444",
+      "DOI": "10.1287/opre.13.3.444",
+      "volume": "13",
+      "author": "O.L. Mangasarian",
+      "year": "1965",
+      "unstructured": "Mangasarian O.L. 1965. Linear and nonlinear separation of patterns by linear programming. Operations Research 13: 444-452.",
+      "journal-title": "Operations Research"
+    },
+    {
+      "key": "5272520_CR65",
+      "doi-asserted-by": "crossref",
+      "first-page": "801",
+      "DOI": "10.1109/TIT.1968.1054229",
+      "volume": "-14",
+      "author": "O.L. Mangasarian",
+      "year": "1968",
+      "unstructured": "Mangasarian O.L. 1968. Multi-surface method of pattern separation. IEEE Transactions on Information Theory IT-14: 801-807.",
+      "journal-title": "IEEE Transactions on Information Theory IT"
+    },
+    {
+      "key": "5272520_CR66",
+      "volume-title": "Nonlinear Programming",
+      "author": "O.L. Mangasarian",
+      "year": "1969",
+      "unstructured": "Mangasarian O.L. 1969. Nonlinear Programming. McGraw-Hill, New York."
+    },
+    {
+      "key": "5272520_CR67",
+      "first-page": "211",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "D. Mattera",
+      "year": "1999",
+      "unstructured": "Mattera D. and Haykin S. 1999. Support vector machines for dynamic reconstruction of a chaotic system. In: SchölkopfB., Burges C.J.C., and Smola A.J. (Eds.), Advances in Kernel Methods-Support Vector Learning, MIT Press, Cambridge, MA, pp. 211-242."
+    },
+    {
+      "key": "5272520_CR68",
+      "volume-title": "Nonlinear Programming: Theory, Algorithms, and Applications",
+      "author": "G.P. McCormick",
+      "year": "1983",
+      "unstructured": "McCormick G.P. 1983. Nonlinear Programming: Theory, Algorithms, and Applications. John Wiley and Sons, New York."
+    },
+    {
+      "key": "5272520_CR69",
+      "first-page": "131",
+      "volume-title": "Progressin Mathematical Programming, chapter Pathways to the optimal set in linear programming",
+      "author": "N. Megiddo",
+      "year": "1989",
+      "unstructured": "Megiddo N. 1989. Progressin Mathematical Programming, chapter Pathways to the optimal set in linear programming, Springer, New York, NY, pp. 131-158."
+    },
+    {
+      "issue": "4",
+      "key": "5272520_CR70",
+      "doi-asserted-by": "crossref",
+      "first-page": "575",
+      "DOI": "10.1137/0802028",
+      "volume": "2",
+      "author": "S. Mehrotra",
+      "year": "1992",
+      "unstructured": "Mehrotra S. and Sun J. 1992. On the implementation of a (primal-dual) interior point method. SIAM Journal on Optimization 2(4): 575-601.",
+      "journal-title": "SIAM Journal on Optimization"
+    },
+    {
+      "key": "5272520_CR71",
+      "first-page": "415",
+      "volume": "209",
+      "author": "J. Mercer",
+      "year": "1909",
+      "unstructured": "Mercer J. 1909. Functions of positive and negative type and their connection with the theory of integral equations. Philosophical Transactions of the Royal Society, London A 209: 415-446.",
+      "journal-title": "Philosophical Transactions of the Royal Society"
+    },
+    {
+      "key": "5272520_CR72",
+      "doi-asserted-by": "crossref",
+      "first-page": "81",
+      "DOI": "10.1090/psapm/036/864367",
+      "volume": "36",
+      "author": "C.A. Micchelli",
+      "year": "1986",
+      "unstructured": "Micchelli C.A. 1986. Algebraic aspects of interpolation. Proceedings of Symposia in Applied Mathematics 36: 81-102.",
+      "journal-title": "Proceedings of Symposia in Applied Mathematics"
+    },
+    {
+      "key": "5272520_CR73",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Morozov V.A. 1984. Methods for Solving Incorrectly Posed Problems. Springer.",
+      "DOI": "10.1007/978-1-4612-5280-1"
+    },
+    {
+      "key": "5272520_CR74",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Müller K.-R., Smola A., Rätsch G., Schölkopf B., Kohlmorgen J., and Vapnik V. 1997. Predicting time series with support vector machines. In: Gerstner W., Germond A., Hasler M., and Nicoud J.-D. (Eds.), Artificial Neural Networks ICANN'97, Berlin. Springer Lecture Notes in Computer Science Vol. 1327 pp. 999-1004.",
+      "DOI": "10.1007/BFb0020283"
+    },
+    {
+      "key": "5272520_CR75",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Murtagh B.A. and Saunders M.A. 1983. MINOS 5.1 user's guide. Technical Report SOL 83-20R, Stanford University, CA, USA, Revised 1987.",
+      "DOI": "10.21236/ADA138522"
+    },
+    {
+      "key": "5272520_CR76",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Neal R. 1996. Bayesian Learning in Neural Networks. Springer.",
+      "DOI": "10.1007/978-1-4612-0745-0"
+    },
+    {
+      "key": "5272520_CR77",
+      "unstructured": "Nilsson N.J. 1965. Learning machines: Foundations ofTrainable Pattern Classifying Systems. McGraw-Hill."
+    },
+    {
+      "key": "5272520_CR78",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Nyquist. H. 1928. Certain topics in telegraph transmission theory. Trans. A.I.E.E., pp. 617-644.",
+      "DOI": "10.1109/T-AIEE.1928.5055024"
+    },
+    {
+      "key": "5272520_CR79",
+      "doi-asserted-by": "crossref",
+      "first-page": "276",
+      "DOI": "10.1109/NNSP.1997.622408",
+      "volume-title": "Neural Networks for Signal Processing VII-Proceedings of the 1997 IEEEWorkshop",
+      "author": "E. Osuna",
+      "year": "1997",
+      "unstructured": "Osuna E., Freund R., and Girosi F. 1997. An improved training algorithm for support vector machines. In Principe J., Gile L., Morgan N., and Wilson E. (Eds.), Neural Networks for Signal Processing VII-Proceedings of the 1997 IEEEWorkshop, pp. 276-285, New York, IEEE."
+    },
+    {
+      "key": "5272520_CR80",
+      "first-page": "271",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "E. Osuna",
+      "year": "1999",
+      "unstructured": "Osuna E. and Girosi F. 1999. Reducing the run-time complexity in support vector regression. In: Schölkopf B., Burges C.J.C., and Smola A. J. (Eds.), Advances in Kernel Methods-Support Vector Learning, pp. 271-284, Cambridge, MA, MIT Press."
+    },
+    {
+      "key": "5272520_CR81",
+      "unstructured": "Ovari Z. 2000.Kernels, eigenvalues and support vector machines. Honours thesis, Australian National University, Canberra."
+    },
+    {
+      "key": "5272520_CR82",
+      "first-page": "185",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "J. Platt",
+      "year": "1999",
+      "unstructured": "Platt J. 1999. Fast training of support vector machines using sequential minimal optimization. In: Schölkopf B., Burges C.J.C., and Smola A.J. (Eds.) Advances in Kernel Methods-Support Vector Learning, pp. 185-208, Cambridge, MA, MIT Press."
+    },
+    {
+      "key": "5272520_CR83",
+      "doi-asserted-by": "crossref",
+      "first-page": "201",
+      "DOI": "10.1007/BF02281970",
+      "volume": "19",
+      "author": "T. Poggio",
+      "year": "1975",
+      "unstructured": "Poggio T. 1975. On optimal nonlinear associative recall. Biological Cybernetics, 19: 201-209.",
+      "journal-title": "Biological Cybernetics"
+    },
+    {
+      "key": "5272520_CR84",
+      "unstructured": "Rasmussen C. 1996. Evaluation of Gaussian Processes and Other Methods for Non-Linear Regression. PhD thesis, Department of Computer Science, University of Toronto, ftp://ftp.cs.toronto.edu/pub/carl/thesis.ps.gz."
+    },
+    {
+      "key": "5272520_CR85",
+      "doi-asserted-by": "publisher",
+      "first-page": "465",
+      "DOI": "10.1016/0005-1098(78)90005-5",
+      "volume": "14",
+      "author": "J. Rissanen",
+      "year": "1978",
+      "unstructured": "Rissanen J. 1978. Modeling by shortest data description. Automatica, 14: 465-471.",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "5272520_CR86",
+      "unstructured": "Saitoh S. 1988. Theory of Reproducing Kernels and its Applications. Longman Scientific & Technical, Harlow, England."
+    },
+    {
+      "key": "5272520_CR87",
+      "unstructured": "Saunders C., Stitson M.O., Weston J., Bottou L., Schölkopf B., and Smola A. 1998. Support vector machine-reference manual.Technical Report CSD-TR-98-03, Department of Computer Science, Royal Holloway, University of London, Egham, UK. SVM available at http://svm.dcs.rhbnc.ac.uk/."
+    },
+    {
+      "key": "5272520_CR88",
+      "doi-asserted-by": "crossref",
+      "first-page": "96",
+      "DOI": "10.1215/S0012-7094-42-00908-6",
+      "volume": "9",
+      "author": "I. Schoenberg",
+      "year": "1942",
+      "unstructured": "Schoenberg I. 1942. Positive definite functions on spheres. Duke Math. J., 9: 96-108.",
+      "journal-title": "Duke Math. J."
+    },
+    {
+      "key": "5272520_CR89",
+      "unstructured": "Schölkopf B. 1997. Support Vector Learning. R. Oldenbourg Verlag, München. Doktorarbeit, TU Berlin. Download: http://www.kernel-machines.org."
+    },
+    {
+      "key": "5272520_CR90",
+      "volume-title": "Proceedings, First International Conference on Knowledge Discovery & Data Mining",
+      "author": "B. Schölkopf",
+      "year": "1995",
+      "unstructured": "Schölkopf B., Burges C., and Vapnik V. 1995. Extracting support data for a given task. In: Fayyad U.M. and Uthurusamy R. (Eds.), Proceedings, First International Conference on Knowledge Discovery & Data Mining, Menlo Park, AAAI Press."
+    },
+    {
+      "key": "5272520_CR91",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1007/3-540-61510-5_12",
+      "volume-title": "Artificial Neural Networks ICANN'96",
+      "author": "B. Schölkopf",
+      "year": "1996",
+      "unstructured": "Schölkopf B., Burges C., and Vapnik V. 1996. Incorporating invariances in support vector learning machines. In: von der Malsburg C., von Seelen W., Vorbrüggen J. C., and Sendhoff B. (Eds.), Artificial Neural Networks ICANN'96, pp. 47-52, Berlin, Springer Lecture Notes in Computer Science, Vol. 1112."
+    },
+    {
+      "key": "5272520_CR92",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "year": "1999",
+      "unstructured": "Schölkopf B., Burges C.J.C., and Smola A.J. 1999a. (Eds.) Advances in Kernel Methods-Support Vector Learning. MIT Press, Cambridge, MA."
+    },
+    {
+      "key": "5272520_CR93",
+      "unstructured": "Schölkopf B., Herbrich R., Smola A.J., and Williamson R.C. 2001. A generalized representer theorem. Technical Report 2000-81, NeuroCOLT, 2000.To appear in Proceedings of the Annual Conference on Learning Theory, Springer (2001)."
+    },
+    {
+      "issue": "5",
+      "key": "5272520_CR94",
+      "doi-asserted-by": "crossref",
+      "first-page": "1000",
+      "DOI": "10.1109/72.788641",
+      "volume": "10",
+      "author": "B. Schölkopf",
+      "year": "1999",
+      "unstructured": "Schölkopf B., Mika S., Burges C., Knirsch P., Müller K.-R., Rätsch G., and Smola A. 1999b. Input space vs. feature space in kernel-based methods. IEEE Transactions on Neural Networks, 10(5): 1000-1017.",
+      "journal-title": "IEEE Transactions on Neural Networks"
+    },
+    {
+      "issue": "7",
+      "key": "5272520_CR95",
+      "doi-asserted-by": "publisher",
+      "first-page": "1443",
+      "DOI": "10.1162/089976601750264965",
+      "volume": "13",
+      "author": "B. Schölkopf",
+      "year": "2001",
+      "unstructured": "Schölkopf B., Platt J., Shawe-Taylor J., Smola A.J., and Williamson R.C.2001. Estimating the support of a high-dimensional distribution. Neural Computation,13(7): 1443-1471.",
+      "journal-title": "Neural Computation"
+    },
+    {
+      "key": "5272520_CR96",
+      "first-page": "640",
+      "volume-title": "Advances in Neural Information Processing Systems 10",
+      "author": "B. Schölkopf",
+      "year": "1998",
+      "unstructured": "Schölkopf B., Simard P., Smola A., and Vapnik V. 1998a. Prior knowledge in support vector kernels. In: Jordan M.I., Kearns M.J., and Solla S.A. (Eds.) Advances in Neural Information Processing Systems 10, MIT Press. Cambridge, MA, pp. 640-646."
+    },
+    {
+      "key": "5272520_CR97",
+      "doi-asserted-by": "crossref",
+      "first-page": "1299",
+      "DOI": "10.1162/089976698300017467",
+      "volume": "10",
+      "author": "B. Schölkopf",
+      "year": "1998",
+      "unstructured": "Schölkopf B., Smola A., and Müller K.-R. 1998b. Nonlinear component analysis as a kernel eigenvalue problem. Neural Computation, 10: 1299-1319.",
+      "journal-title": "Neural Computation"
+    },
+    {
+      "key": "5272520_CR98",
+      "doi-asserted-by": "crossref",
+      "first-page": "1207",
+      "DOI": "10.1162/089976600300015565",
+      "volume": "12",
+      "author": "B. Schölkopf",
+      "year": "2000",
+      "unstructured": "Schölkopf B., Smola A., Williamson R.C., and Bartlett P.L. 2000. New support vector algorithms. Neural Computation, 12: 1207-1245.",
+      "journal-title": "Neural Computation"
+    },
+    {
+      "key": "5272520_CR99",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Schölkopf B. and Smola A.J. 2002. Learning with Kernels. MIT Press.",
+      "DOI": "10.7551/mitpress/4175.001.0001"
+    },
+    {
+      "key": "5272520_CR100",
+      "doi-asserted-by": "publisher",
+      "first-page": "2758",
+      "DOI": "10.1109/78.650102",
+      "volume": "45",
+      "author": "B. Schölkopf",
+      "year": "1997",
+      "unstructured": "Schölkopf B., Sung K., Burges C., Girosi F., Niyogi P., Poggio T., and Vapnik V. 1997. Comparing support vector machines with Gaussian kernels to radial basis function classifiers. IEEE Transactions on Signal Processing, 45: 2758-2765.",
+      "journal-title": "IEEE Transactions on Signal Processing"
+    },
+    {
+      "key": "5272520_CR101",
+      "doi-asserted-by": "crossref",
+      "first-page": "379",
+      "DOI": "10.1002/j.1538-7305.1948.tb01338.x",
+      "volume": "27",
+      "author": "C.E. Shannon",
+      "year": "1948",
+      "unstructured": "Shannon C.E. 1948. A mathematical theory of communication. Bell System Technical Journal, 27: 379-423, 623-656.",
+      "journal-title": "Bell System Technical Journal"
+    },
+    {
+      "issue": "5",
+      "key": "5272520_CR102",
+      "doi-asserted-by": "crossref",
+      "first-page": "1926",
+      "DOI": "10.1109/18.705570",
+      "volume": "44",
+      "author": "J. Shawe-Taylor",
+      "year": "1998",
+      "unstructured": "Shawe-Taylor J., Bartlett P.L., Williamson R.C., and Anthony M. 1998. Structural risk minimization over data-dependent hierarchies. IEEE Transactions on Information Theory, 44(5): 1926-1940.",
+      "journal-title": "IEEE Transactions on Information Theory"
+    },
+    {
+      "key": "5272520_CR103",
+      "first-page": "105",
+      "volume-title": "Proceedings of the International Conference on Artificial Neural Networks, Perspectives in Neural Computing",
+      "author": "A. Smola",
+      "year": "1998",
+      "unstructured": "Smola A., Murata N., Schölkopf B., and Müller K.-R. 1998a. Asymptotically optimal choice of ε-loss for support vector machines. In: Niklasson L., Bodén M., and Ziemke T. (Eds.) Proceedings of the International Conference on Artificial Neural Networks, Perspectives in Neural Computing, pp. 105-110, Berlin, Springer."
+    },
+    {
+      "key": "5272520_CR104",
+      "doi-asserted-by": "crossref",
+      "first-page": "637",
+      "DOI": "10.1016/S0893-6080(98)00032-X",
+      "volume": "11",
+      "author": "A. Smola",
+      "year": "1998",
+      "unstructured": "Smola A., Schölkopf B., and Müller K.-R. 1998b. The connection between regularization operators and support vector kernels. Neural Networks, 11: 637-649.",
+      "journal-title": "Neural Networks"
+    },
+    {
+      "key": "5272520_CR105",
+      "first-page": "79",
+      "volume-title": "Proc. of the Ninth Australian Conf. on Neural Networks",
+      "author": "A. Smola",
+      "year": "1998",
+      "unstructured": "Smola A., Schölkopf B., and Müller K.-R. 1998c. General cost functions for support vector regression. In: Downs T., Frean M., and Gallagher M. (Eds.) Proc. of the Ninth Australian Conf. on Neural Networks, pp. 79-83, Brisbane, Australia. University of Queensland."
+    },
+    {
+      "key": "5272520_CR106",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Smola A., Schölkopf B., and Rätsch G. 1999. Linear programs for automatic accuracy control in regression. In: Ninth International Conference on Artificial Neural Networks, Conference Publications No. 470, pp. 575-580, London. IEE.",
+      "DOI": "10.1049/cp:19991171"
+    },
+    {
+      "key": "5272520_CR107",
+      "unstructured": "Smola. A.J. 1996. Regression estimation with support vector learning machines. Diplomarbeit, Technische Universität München."
+    },
+    {
+      "key": "5272520_CR108",
+      "unstructured": "Smola A.J. 1998. Learning with Kernels. PhD thesis, Technische Universit ät Berlin. GMD Research Series No. 25."
+    },
+    {
+      "key": "5272520_CR109",
+      "doi-asserted-by": "crossref",
+      "first-page": "369",
+      "DOI": "10.7551/mitpress/1113.003.0028",
+      "volume-title": "Advances in Large Margin Classifiers",
+      "author": "A.J. Smola",
+      "year": "2000",
+      "unstructured": "Smola A.J., Elisseeff A., Schölkopf B., and Williamson R.C. 2000. Entropy numbers for convex combinations and MLPs. In Smola A.J., Bartlett P.L., Schölkopf B., and Schuurmans D. (Eds.) Advances in Large Margin Classifiers, MIT Press, Cambridge, MA, pp. 369-387."
+    },
+    {
+      "key": "5272520_CR110",
+      "unstructured": "Smola A.J., óvári Z.L., and Williamson R.C. 2001. Regularization with dot-product kernels. In: Leen T.K., Dietterich T.G., and Tresp V. (Eds.) Advances in Neural Information Processing Systems 13, MIT Press, pp. 308-314."
+    },
+    {
+      "key": "5272520_CR111",
+      "doi-asserted-by": "crossref",
+      "first-page": "211",
+      "DOI": "10.1007/PL00013831",
+      "volume": "22",
+      "author": "A.J. Smola",
+      "year": "1998",
+      "unstructured": "Smola A.J. and Schölkopf B. 1998a. On a kernel-based method for pattern recognition, regression, approximation and operator inversion. Algorithmica, 22: 211-231.",
+      "journal-title": "Algorithmica"
+    },
+    {
+      "key": "5272520_CR112",
+      "volume-title": "NeuroCOLT Technical Report NC-TR-98-030",
+      "author": "A.J. Smola",
+      "year": "1998",
+      "unstructured": "Smola A.J. and Schölkopf B. 1998b. A tutorial on support vector regression. NeuroCOLT Technical Report NC-TR-98-030, Royal Holloway College, University of London, UK."
+    },
+    {
+      "key": "5272520_CR113",
+      "first-page": "911",
+      "volume-title": "Proceedings of the International Conference on Machine Learning",
+      "author": "A.J. Smola",
+      "year": "2000",
+      "unstructured": "Smola A.J. and Schölkopf B. 2000. Sparse greedy matrix approximation for machine learning. In: Langley P. (Ed.), Proceedings of the International Conference on Machine Learning, Morgan Kaufmann Publishers, San Francisco, pp. 911-918."
+    },
+    {
+      "key": "5272520_CR114",
+      "first-page": "285",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "M. Stitson",
+      "year": "1999",
+      "unstructured": "Stitson M., Gammerman A., Vapnik V., Vovk V., Watkins C., and Weston J. 1999. Support vector regression with ANOVA decomposition kernels. In: Schölkopf B., Burges C.J.C., and Smola A.J. (Eds.), Advances in Kernel Methods-Support Vector Learning, MIT Press Cambridge, MA, pp. 285-292."
+    },
+    {
+      "key": "5272520_CR115",
+      "doi-asserted-by": "crossref",
+      "first-page": "689",
+      "DOI": "10.1214/aos/1176349548",
+      "volume": "13",
+      "author": "C.J. Stone",
+      "year": "1985",
+      "unstructured": "Stone C.J. 1985. Additive regression and other nonparametric models. Annals of Statistics, 13: 689-705.",
+      "journal-title": "Annals of Statistics"
+    },
+    {
+      "key": "5272520_CR116",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1111/j.2517-6161.1974.tb00994.x",
+      "volume": "B36",
+      "author": "M. Stone",
+      "year": "1974",
+      "unstructured": "Stone M. 1974. Cross-validatory choice and assessment of statistical predictors (with discussion). Journal of the Royal Statistical Society, B36: 111-147.",
+      "journal-title": "Journal of the Royal Statistical Society"
+    },
+    {
+      "key": "5272520_CR117",
+      "volume-title": "Technical Report MP-TR-95-11",
+      "author": "W.N. Sreet",
+      "year": "1995",
+      "unstructured": "Sreet W.N. and Mangasarian O.L. 1995. Improved generalization via tolerant training. Technical Report MP-TR-95-11, University of Wisconsin, Madison."
+    },
+    {
+      "key": "5272520_CR118",
+      "unstructured": "Tikhonov A.N. and Arsenin V.Y. 1977. Solution of Ill-posed problems. V. H. Winston and Sons."
+    },
+    {
+      "key": "5272520_CR119",
+      "first-page": "652",
+      "volume-title": "Advances in Neural Information Processing Systems 12",
+      "author": "M.E. Tipping",
+      "year": "2000",
+      "unstructured": "Tipping M.E. 2000. The relevance vector machine. In: Solla S.A., Leen T.K., and Müller K.-R. (Eds.), Advances in Neural Information Processing Systems 12, MIT Press, Cambridge, MA, pp. 652-658."
+    },
+    {
+      "key": "5272520_CR120",
+      "volume-title": "Statistics and Operations Research",
+      "author": "R.J. Vanderbei",
+      "year": "1994",
+      "unstructured": "Vanderbei R.J. 1994. LOQO: An interior point code for quadratic programming.TR SOR-94-15, Statistics and Operations Research, Princeton Univ., NJ."
+    },
+    {
+      "key": "5272520_CR121",
+      "unstructured": "Vanderbei R.J. 1997. LOQO user's manual-version 3.10. Technical Report SOR-97-08, Princeton University, Statistics and Operations Research, Code available at http://www.princeton.edu/ ~rvdb/."
+    },
+    {
+      "key": "5272520_CR122",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/978-1-4757-2440-0",
+      "volume-title": "The Nature of Statistical Learning Theory",
+      "author": "V. Vapnik",
+      "year": "1995",
+      "unstructured": "Vapnik V. 1995. The Nature of Statistical Learning Theory. Springer, New York."
+    },
+    {
+      "key": "5272520_CR123",
+      "volume-title": "Statistical Learning Theory",
+      "author": "V. Vapnik",
+      "year": "1998",
+      "unstructured": "Vapnik V. 1998. Statistical Learning Theory. John Wiley and Sons, New York."
+    },
+    {
+      "key": "5272520_CR124",
+      "first-page": "25",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "V. Vapnik",
+      "year": "1999",
+      "unstructured": "Vapnik. V. 1999. Three remarks on the support vector method of function estimation. In: Schölkopf B., Burges C.J.C., and Smola A.J. (Eds.), Advances in Kernel Methods-Support Vector Learning, MIT Press, Cambridge, MA, pp. 25-42."
+    },
+    {
+      "key": "5272520_CR125",
+      "unstructured": "Vapnik V. and Chervonenkis A. 1964. A note on one class of perceptrons. Automation and Remote Control, 25."
+    },
+    {
+      "key": "5272520_CR126",
+      "volume-title": "Theory of Pattern Recognition",
+      "author": "V. Vapnik",
+      "year": "1974",
+      "unstructured": "Vapnik V. and Chervonenkis A. 1974. Theory of Pattern Recognition [in Russian]. Nauka, Moscow. (German Translation: Wapnik W. & Tscherwonenkis A., Theorie der Zeichenerkennung, Akademie-Verlag, Berlin, 1979)."
+    },
+    {
+      "key": "5272520_CR127",
+      "first-page": "281",
+      "volume-title": "Advances in Neural Information Processing Systems 9",
+      "author": "V. Vapnik",
+      "year": "1997",
+      "unstructured": "Vapnik V., Golowich S., and Smola A. 1997. Support vector method for function approximation, regression estimation, and signal processing. In: Mozer M.C., Jordan M.I., and Petsche T. (Eds.) Advances in Neural Information Processing Systems 9, MA, MIT Press, Cambridge. pp. 281-287."
+    },
+    {
+      "key": "5272520_CR128",
+      "first-page": "774",
+      "volume": "24",
+      "author": "V. Vapnik",
+      "year": "1963",
+      "unstructured": "Vapnik V. and Lerner A. 1963. Pattern recognition using generalized portrait method. Automation and Remote Control, 24: 774-780.",
+      "journal-title": "Automation and Remote Control"
+    },
+    {
+      "key": "5272520_CR129",
+      "volume-title": "Estimation of Dependences Based on Empirical Data",
+      "author": "V.N. Vapnik",
+      "year": "1982",
+      "unstructured": "Vapnik V.N. 1982. Estimation of Dependences Based on Empirical Data. Springer, Berlin."
+    },
+    {
+      "issue": "2",
+      "key": "5272520_CR130",
+      "doi-asserted-by": "crossref",
+      "first-page": "264",
+      "DOI": "10.1137/1116025",
+      "volume": "16",
+      "author": "V.N. Vapnik",
+      "year": "1971",
+      "unstructured": "Vapnik V.N. and Chervonenkis A.Y. 1971. On the uniformconvergence of relative frequencies of events to their probabilities. Theory of Probability and its Applications, 16(2): 264-281.",
+      "journal-title": "Theory of Probability and its Applications"
+    },
+    {
+      "key": "5272520_CR131",
+      "first-page": "8",
+      "volume-title": "Proceedings of the International Conference on Approximation theory in honour of George Lorenz",
+      "author": "G. Wahba",
+      "year": "1980",
+      "unstructured": "Wahba G. 1980. Spline bases, regularization, and generalized cross-validation for solving approximation problems with large quantities of noisy data. In: Ward J. and Cheney E. (Eds.), Proceedings of the International Conference on Approximation theory in honour of George Lorenz, Academic Press, Austin, TX, pp. 8-10."
+    },
+    {
+      "key": "5272520_CR132",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9781611970128",
+      "volume-title": "Spline Models for Observational Data",
+      "author": "G. Wahba",
+      "year": "1990",
+      "unstructured": "Wahba G. 1990. Spline Models for Observational Data, volume 59 of CBMS-NSF Regional Conference Series in Applied Mathematics. SIAM, Philadelphia."
+    },
+    {
+      "key": "5272520_CR133",
+      "first-page": "69",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "G. Wahba",
+      "year": "1999",
+      "unstructured": "Wahba G. 1999. Support vector machines, reproducing kernel Hilbert spaces and the randomized GACV. In: Schölkopf B., Burges C.J.C., and Smola A.J. (Eds.), Advances in Kernel Methods-Support Vector Learning, MIT Press, Cambridge, MA. pp. 69-88."
+    },
+    {
+      "key": "5272520_CR134",
+      "first-page": "293",
+      "volume-title": "Advances in Kernel Methods-Support Vector Learning",
+      "author": "J. Weston",
+      "year": "1999",
+      "unstructured": "Weston J., Gammerman A., Stitson M., Vapnik V., Vovk V., and Watkins C. 1999. Support vector density estimation. In: Schölkopf B., Burges C.J.C., and Smola A.J. (Eds.) Advances in Kernel Methods-Support Vector Learning, MIT Press, Cambridge, MA. pp. 293-306."
+    },
+    {
+      "key": "5272520_CR135",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Williams C.K.I. 1998. Prediction with Gaussian processes: From linear regression to linear prediction and beyond. In: Jordan M.I. (Ed.), Learning and Inference in Graphical Models, Kluwer Academic, pp. 599-621.",
+      "DOI": "10.1007/978-94-011-5014-9_23"
+    },
+    {
+      "issue": "6",
+      "key": "5272520_CR136",
+      "first-page": "2516",
+      "volume": "47",
+      "author": "R.C. Williamson",
+      "year": "1998",
+      "unstructured": "Williamson R.C., Smola A.J., and Schölkopf B. 1998. Generalization performance of regularization networks and support vector machines via entropy numbers of compact operators. Technical Report 19, NeuroCOLT, http://www.neurocolt.com. Published in IEEE Transactions on Information Theory, 47(6): 2516-2532 (2001).",
+      "journal-title": "Technical Report 19, NeuroCOLT"
+    },
+    {
+      "key": "5272520_CR137",
+      "first-page": "344",
+      "volume-title": "In: Proceedings of the International Conference on Computer Vision",
+      "author": "A. Yuille",
+      "year": "1988",
+      "unstructured": "Yuille A. and Grzywacz N. 1988. The motion coherence theory. In: Proceedings of the International Conference on Computer Vision, IEEE Computer Society Press, Washington, DC, pp. 344-354."
+    }
+  ],
+  "container-title": [
+    "Statistics and Computing"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1023/B:STCO.0000035301.49549.88.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1023/B:STCO.0000035301.49549.88/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1023/B:STCO.0000035301.49549.88.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2025-08-08T05:17:04Z",
+    "timestamp": 1754630224000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1023/B:STCO.0000035301.49549.88"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2004,
+        8
+      ]
+    ]
+  },
+  "references-count": 137,
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2004,
+          8
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "5272520"
+  ],
+  "URL": "https://doi.org/10.1023/b:stco.0000035301.49549.88",
+  "relation": {},
+  "ISSN": [
+    "0960-3174",
+    "1573-1375"
+  ],
+  "issn-type": [
+    {
+      "value": "0960-3174",
+      "type": "print"
+    },
+    {
+      "value": "1573-1375",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2004,
+        8
+      ]
+    ]
+  }
+}

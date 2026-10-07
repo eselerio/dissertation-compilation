@@ -1,0 +1,879 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        30
+      ]
+    ],
+    "date-time": "2026-05-30T12:12:52Z",
+    "timestamp": 1780143172416,
+    "version": "3.54.0"
+  },
+  "reference-count": 68,
+  "publisher": "MDPI AG",
+  "issue": "9",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            4,
+            22
+          ]
+        ],
+        "date-time": "2021-04-22T00:00:00Z",
+        "timestamp": 1619049600000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Water"
+  ],
+  "abstract": "<jats:p>Biological trickling filters are widely used for sewage treatment. This study models a biological trickling filter based on an anaerobic–anoxic–oxic process (A2O–BTF), established by a combination of aerobic and anaerobic technology. The performance and operational parameters were analyzed using Sumo, a commercially available wastewater treatment process (WWTP) simulation software. The wastewater treatment performance of the anaerobic–anoxic–oxic process biological trickling filter (A2O–BTF), the conventional three-stage biological trickling filter (Three-Stage–BTF), and the single-stage biological trickling filter (Single–BTF) was compared, which indicated the higher performance of A2O–BTF in terms of COD, TN, NH3-N, and TP removal. The operational parameters of A2O–BTF were optimized by Sumo simulation software, and the results showed that the removal efficiency of pollutants was increased by raising the temperature to the range of 13.94–21.60 °C. The dissolved oxygen (DO) in the aerobic reactor enhanced removal efficiency under a saturation concentration of 2.2–2.6 g O2/m3. In addition, the optimization of the reflux ratio promoted the removal efficiency of the pollutants, indicated by the maximum removal efficiency of COD and TN, achieved at the reflux ratio of 2.25, and that of NH3-N and TP, achieved at a reflux ratio of 0.75. This study provides a proof-in-concept demonstration that software modeling can be a useful tool for assisting the optimization of the design and operation of sewage treatment processes.</jats:p>",
+  "DOI": "10.3390/w13091152",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        22
+      ]
+    ],
+    "date-time": "2021-04-22T21:25:56Z",
+    "timestamp": 1619126756000
+  },
+  "page": "1152",
+  "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 18,
+  "title": [
+    "Modeling a Three-Stage Biological Trickling Filter Based on the A2O Process for Sewage Treatment"
+  ],
+  "prefix": "10.3390",
+  "volume": "13",
+  "author": [
+    {
+      "given": "Jiabin",
+      "family": "Liang",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "State Key Laboratory of Urban Water Resource and Environment, School of Environment, Harbin Institute of Technology, Harbin 150090, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yuan",
+      "family": "Yuan",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "School of Biological Engineering, Beijing Polytechnic, Beijing 100176, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Zimeng",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "State Key Laboratory of Urban Water Resource and Environment, School of Environment, Harbin Institute of Technology, Harbin 150090, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Shijie",
+      "family": "You",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "State Key Laboratory of Urban Water Resource and Environment, School of Environment, Harbin Institute of Technology, Harbin 150090, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yixing",
+      "family": "Yuan",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "State Key Laboratory of Urban Water Resource and Environment, School of Environment, Harbin Institute of Technology, Harbin 150090, China"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "1968",
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        22
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "2734",
+      "DOI": "10.1021/es103534g",
+      "article-title": "Comparison of partial and full nitrification processes applied for treating high-strength nitrogen wastewaters: Microbial ecology through nitrous oxide production",
+      "volume": "45",
+      "author": "Ahn",
+      "year": "2011",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "ref_2",
+      "doi-asserted-by": "crossref",
+      "first-page": "843",
+      "DOI": "10.3390/w3030843",
+      "article-title": "Biofilm Fixed Film Systems",
+      "volume": "3",
+      "author": "Gullicks",
+      "year": "2011",
+      "journal-title": "Water"
+    },
+    {
+      "key": "ref_3",
+      "doi-asserted-by": "crossref",
+      "first-page": "134786",
+      "DOI": "10.1016/j.scitotenv.2019.134786",
+      "article-title": "Design of a bioaugmented multistage biofilter for accelerated municipal wastewater treatment and deactivation of pathogenic microorganisms",
+      "volume": "703",
+      "author": "Ibrahim",
+      "year": "2020",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "ref_4",
+      "doi-asserted-by": "crossref",
+      "first-page": "2437",
+      "DOI": "10.2166/wst.2013.135",
+      "article-title": "Enhancement of phosphorus removal in a low temperature A2/O process by anaerobic phosphorus release of activated sludge",
+      "volume": "67",
+      "author": "Li",
+      "year": "2013",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref_5",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Pan, Z., Zhou, J., Lin, Z., Wang, Y., Zhao, P., Zhou, J., Liu, S., and He, X. (2020). Effects of COD/TN ratio on nitrogen removal efficiency, microbial community for high saline wastewater treatment based on heterotrophic nitrification-aerobic denitrification process. Bioresour. Technol., 301.",
+      "DOI": "10.1016/j.biortech.2019.122726"
+    },
+    {
+      "key": "ref_6",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Golshan, M., Jorfi, S., Haghighifard, N.J., Takdastan, A., Ghafari, S., Rostami, S., and Ahmadi, M. (2019). Development of salt-tolerant microbial consortium during the treatment of saline bisphenol A-containing wastewater: Removal mechanisms and microbial characterization. J. Water Process Eng., 32.",
+      "DOI": "10.1016/j.jwpe.2019.100949"
+    },
+    {
+      "key": "ref_7",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Ghosh, S., and Chakraborty, S. (2019). Influence of inoculum variation on formation and stability of aerobic granules in oily wastewater treatment. J. Environ. Manage., 248.",
+      "DOI": "10.1016/j.jenvman.2019.07.010"
+    },
+    {
+      "key": "ref_8",
+      "doi-asserted-by": "crossref",
+      "first-page": "84",
+      "DOI": "10.5004/dwt.2019.24627",
+      "article-title": "Biological treatment of a saline and recalcitrant petrochemical wastewater by using a newly isolated halo-tolerant bacterial consortium in MBBR",
+      "volume": "167",
+      "author": "Ahmadi",
+      "year": "2019",
+      "journal-title": "Desalin. Water Treat."
+    },
+    {
+      "key": "ref_9",
+      "doi-asserted-by": "crossref",
+      "first-page": "27915",
+      "DOI": "10.1007/s11356-019-05761-3",
+      "article-title": "Development of generalized empirical models for comparing effectiveness of wastewater nutrient removal technologies",
+      "volume": "26",
+      "author": "Hodgson",
+      "year": "2019",
+      "journal-title": "Environ. Sci. Pollut. Res."
+    },
+    {
+      "key": "ref_10",
+      "doi-asserted-by": "crossref",
+      "first-page": "148",
+      "DOI": "10.1016/j.chemosphere.2019.05.264",
+      "article-title": "Performance evaluation of A2O MBR system with graphene oxide (GO) blended polysulfone (PSf) composite membrane for treatment of high strength synthetic wastewater containing lead",
+      "volume": "234",
+      "author": "Ravishankar",
+      "year": "2019",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "ref_11",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Yang, C.C., Lu, M.S., Dao, K.C., Lin, J.W., Chou, Y.H., and Tsai, Y.P. (2020). Comparison of the Influences of Cadmium Toxicity to Phosphate Removal in Activated Sludge Separately Fed by Glucose and Acetic Acid as Carbon Sources. Water, 12.",
+      "DOI": "10.3390/w12041205"
+    },
+    {
+      "key": "ref_12",
+      "doi-asserted-by": "crossref",
+      "first-page": "136299",
+      "DOI": "10.1016/j.scitotenv.2019.136299",
+      "article-title": "The treatment of veterinary antibiotics in swine wastewater by biodegradation and Fenton-like oxidation",
+      "volume": "710",
+      "author": "Qian",
+      "year": "2020",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "ref_13",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Park, J., Kim, C., Hong, Y., Lee, W., Chung, H., Jeong, D.H., and Kim, H. (2020). Distribution and Removal of Pharmaceuticals in Liquid and Solid Phases in the Unit Processes of Sewage Treatment Plants. Int. J. Env. Res. Public Health, 17.",
+      "DOI": "10.3390/ijerph17030687"
+    },
+    {
+      "key": "ref_14",
+      "doi-asserted-by": "crossref",
+      "first-page": "100854",
+      "DOI": "10.1016/j.jwpe.2019.100854",
+      "article-title": "Steady-state modeling and evaluation of partial nitrification-anammox (PNA) for moving bed biofilm reactor and integrated fixed-film activated sludge processes treating municipal wastewater",
+      "volume": "31",
+      "author": "Tao",
+      "year": "2019",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "ref_15",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Leyva-Diaz, J.C., Monteoliva-Garcia, A., Martin-Pascual, J., Munio, M.M., Garcia-Mesa, J.J., and Poyatos, J.M. (2020). Moving bed biofilm reactor as an alternative wastewater treatment process for nutrient removal and recovery in the circular economy model. Bioresour. Technol., 299.",
+      "DOI": "10.1016/j.biortech.2019.122631"
+    },
+    {
+      "key": "ref_16",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Cramer, M., and Traenckner, J. (2020). Development of Decay in Biofilms under Starvation Conditions-Rethinking of the Biomass Model. Water, 12.",
+      "DOI": "10.3390/w12051249"
+    },
+    {
+      "key": "ref_17",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Cramer, M., Tranckner, J., and Kotzbauer, U. (2019). Kinetic of denitrification and enhanced biological phosphorous removal (EBPR) of a trickling filter operated in a sequence-batch-reactor-mode (SBR-TF). Environ. Technol., 10.",
+      "DOI": "10.1080/09593330.2019.1709564"
+    },
+    {
+      "key": "ref_18",
+      "doi-asserted-by": "crossref",
+      "first-page": "424",
+      "DOI": "10.1080/09593330.2014.951400",
+      "article-title": "Assessment of biological trickling filter systems with various packing materials for improved wastewater treatment",
+      "volume": "36",
+      "author": "Naz",
+      "year": "2015",
+      "journal-title": "Environ. Technol."
+    },
+    {
+      "key": "ref_19",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Akratos, C.S., Tatoulis, T.I., and Tekerlekopoulou, A.G. (2020). Biotreatment of Winery Wastewater Using a Hybrid System Combining Biological Trickling Filters and Constructed Wetlands. Appl. Sci., 10.",
+      "DOI": "10.3390/app10020619"
+    },
+    {
+      "key": "ref_20",
+      "doi-asserted-by": "crossref",
+      "first-page": "187",
+      "DOI": "10.1016/j.scitotenv.2019.01.136",
+      "article-title": "Model-based evaluation of a trickling filter facility upgrade to biological nutrient removal",
+      "volume": "661",
+      "author": "Castrillo",
+      "year": "2019",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "ref_21",
+      "doi-asserted-by": "crossref",
+      "first-page": "1156",
+      "DOI": "10.1080/15435075.2017.1370594",
+      "article-title": "Characterization of municipal and dairy wastewaters with 30 quality parameters and potential wastewater treatment by biological trickling filters",
+      "volume": "14",
+      "author": "Aziz",
+      "year": "2017",
+      "journal-title": "Int. J. Green Energy"
+    },
+    {
+      "key": "ref_22",
+      "first-page": "779",
+      "article-title": "Textile wastewater treatment using biological trickling filter with natural media in cold weather (case study: Motahari textile factory)",
+      "volume": "27",
+      "author": "Shahriari",
+      "year": "2018",
+      "journal-title": "Fresenius Environ. Bull."
+    },
+    {
+      "key": "ref_23",
+      "doi-asserted-by": "crossref",
+      "first-page": "303",
+      "DOI": "10.1007/s10499-018-0325-4",
+      "article-title": "Bacterial complexes of Bacillus subtilis and Pseudomonas stutzeri alter the microbial composition in grass carp water",
+      "volume": "27",
+      "author": "Zhang",
+      "year": "2019",
+      "journal-title": "Aquacult. Int."
+    },
+    {
+      "key": "ref_24",
+      "doi-asserted-by": "crossref",
+      "first-page": "357",
+      "DOI": "10.1002/bab.1284",
+      "article-title": "Simultaneous efficient removal of high-strength ammonia nitrogen and chemical oxygen demand from landfill leachate by using an extremely high ammonia nitrogen-resistant strain",
+      "volume": "62",
+      "author": "Yu",
+      "year": "2015",
+      "journal-title": "Biotechnol. Appl. Biochem."
+    },
+    {
+      "key": "ref_25",
+      "doi-asserted-by": "crossref",
+      "first-page": "176",
+      "DOI": "10.1016/j.ibiod.2008.08.005",
+      "article-title": "Investigations on ultraviolet light and nitrous acid induced mutations of halotolerant bacterial strains for the treatment of tannery soak liquor",
+      "volume": "63",
+      "author": "Sekar",
+      "year": "2009",
+      "journal-title": "Int. Biodeterior. Biodegrad."
+    },
+    {
+      "key": "ref_26",
+      "doi-asserted-by": "crossref",
+      "first-page": "225",
+      "DOI": "10.1016/j.scitotenv.2018.06.100",
+      "article-title": "Overview of strategies for enhanced treatment of municipal/domestic wastewater at low temperature",
+      "volume": "643",
+      "author": "Zhou",
+      "year": "2018",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "ref_27",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Gomez-Rios, D., Ramirez-Malule, H., Neubauer, P., Junne, S., and Rios-Estepa, R. (2019). Degradation Kinetics of Clavulanic Acid in Fermentation Broths at Low Temperatures. Antibiotics, 8.",
+      "DOI": "10.3390/antibiotics8010006"
+    },
+    {
+      "key": "ref_28",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Kumwimba, M.N., Zhu, B., Wang, T., Dzakpasu, M., and Li, X. (2020). Nutrient dynamics and retention in a vegetated drainage ditch receiving nutrient-rich sewage at low temperatures. Sci. Total Environ., 741.",
+      "DOI": "10.1016/j.scitotenv.2020.140268"
+    },
+    {
+      "key": "ref_29",
+      "doi-asserted-by": "crossref",
+      "first-page": "203",
+      "DOI": "10.2166/wst.1998.0049",
+      "article-title": "Dynamic modelling of enhanced biological phosphorus and nitrogen removal in activated sludge systems",
+      "volume": "38",
+      "author": "Maurer",
+      "year": "1998",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref_30",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.2166/wst.1999.0039",
+      "article-title": "Activated Sludge Model No. 3",
+      "volume": "39",
+      "author": "Gujer",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref_31",
+      "doi-asserted-by": "crossref",
+      "first-page": "8",
+      "DOI": "10.1016/j.jwpe.2020.101724",
+      "article-title": "Performance evaluation of down-flow hanging sponge reactor for direct treatment of actual textile wastewater; Effect of effluent recirculation to performance and microbial community",
+      "volume": "39",
+      "author": "Watari",
+      "year": "2021",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "ref_32",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1080/09593330.2017.1385648",
+      "article-title": "Decentralized wastewater treatment using passively aerated biological filter",
+      "volume": "40",
+      "author": "Hellal",
+      "year": "2019",
+      "journal-title": "Environ. Technol."
+    },
+    {
+      "key": "ref_33",
+      "first-page": "2105",
+      "article-title": "Effect of nitrite accumulation on enhanced biological phosphorus removal (EBPR) in A2O process treating domestic wastewater",
+      "volume": "31",
+      "author": "Zeng",
+      "year": "2010",
+      "journal-title": "Huan Jing Ke Xue"
+    },
+    {
+      "key": "ref_34",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Makuwa, S., Tlou, M., Fosso-Kankeu, E., and Green, E. (2020). Evaluation of Fecal Coliform Prevalence and Physicochemical Indicators in the Effluent from a Wastewater Treatment Plant in the North-West Province, South Africa. Int. J. Env. Res. Public Health, 17.",
+      "DOI": "10.3390/ijerph17176381"
+    },
+    {
+      "key": "ref_35",
+      "doi-asserted-by": "crossref",
+      "first-page": "604",
+      "DOI": "10.1016/j.biortech.2012.09.078",
+      "article-title": "Biological nutrient removal by applying modified four step-feed technology to treat weak wastewater",
+      "volume": "128",
+      "author": "Cao",
+      "year": "2013",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "ref_36",
+      "doi-asserted-by": "crossref",
+      "first-page": "6405",
+      "DOI": "10.1016/j.biortech.2011.03.043",
+      "article-title": "Enhanced nutrient removal in three types of step feeding process from municipal wastewater",
+      "volume": "102",
+      "author": "Peng",
+      "year": "2011",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "ref_37",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "DOI": "10.2166/wst.2002.0093",
+      "article-title": "Modelling wastewater transformation in sewers based on ASM3",
+      "volume": "45",
+      "author": "Huisman",
+      "year": "2002",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref_38",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.2166/wrd.2016.154",
+      "article-title": "Simulation of municipal-industrial full scale WWTP in an arid climate by application of ASM3",
+      "volume": "7",
+      "author": "Elawwad",
+      "year": "2017",
+      "journal-title": "J. Water Reuse Desalin."
+    },
+    {
+      "key": "ref_39",
+      "doi-asserted-by": "crossref",
+      "first-page": "454",
+      "DOI": "10.1080/15435075.2018.1479265",
+      "article-title": "Modeling of real scale waste activated sludge anaerobic digestion process by Anaerobic Digestion Model 1 (ADM1)",
+      "volume": "15",
+      "author": "Otuzalti",
+      "year": "2018",
+      "journal-title": "Int. J. Green Energy"
+    },
+    {
+      "key": "ref_40",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "DOI": "10.1016/j.cej.2010.08.069",
+      "article-title": "Applicability of Anaerobic Digestion Model No. 1 (ADM1) for a specific industrial wastewater: Opium alkaloid effluents",
+      "volume": "165",
+      "author": "Dereli",
+      "year": "2010",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "ref_41",
+      "doi-asserted-by": "crossref",
+      "first-page": "322",
+      "DOI": "10.1016/j.watres.2018.11.026",
+      "article-title": "Modelling anaerobic, aerobic and partial nitritation-anammox granular sludge reactors—A review",
+      "volume": "149",
+      "author": "Baeten",
+      "year": "2019",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref_42",
+      "doi-asserted-by": "crossref",
+      "first-page": "37",
+      "DOI": "10.1016/j.watres.2017.11.044",
+      "article-title": "Pinpointing wastewater and process parameters controlling the AOB to NOB activity ratio in sewage treatment plants",
+      "volume": "138",
+      "author": "Seuntjens",
+      "year": "2018",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref_43",
+      "doi-asserted-by": "crossref",
+      "first-page": "848",
+      "DOI": "10.2166/wpt.2017.091",
+      "article-title": "Full-scale wastewater treatment plant simulation for real-time optimization",
+      "volume": "12",
+      "author": "Kenyeres",
+      "year": "2017",
+      "journal-title": "Water Pract. Technol."
+    },
+    {
+      "key": "ref_44",
+      "doi-asserted-by": "crossref",
+      "first-page": "295",
+      "DOI": "10.1016/j.watres.2006.10.019",
+      "article-title": "Effective partial nitrification to nitrite by down-flow hanging sponge reactor under limited oxygen condition",
+      "volume": "41",
+      "author": "Chuang",
+      "year": "2007",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref_45",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Watari, T., Vazquez, C.L., Hatamoto, M., Yamaguchi, T., and van Lier, J.B. (2020). Development of a single-stage mainstream anammox process using a sponge-bed trickling filter. Environ. Technol.",
+      "DOI": "10.1080/09593330.2020.1720309"
+    },
+    {
+      "key": "ref_46",
+      "doi-asserted-by": "crossref",
+      "first-page": "314",
+      "DOI": "10.1016/j.biortech.2015.03.140",
+      "article-title": "Autotrophic nitrogen removal over nitrite in a sponge-bed trickling filter",
+      "volume": "187",
+      "author": "Guillen",
+      "year": "2015",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "ref_47",
+      "first-page": "29",
+      "article-title": "Effects of Influent Organic Loading on Removal of Nitrogen and Phosphorus from the Three Stage Bio-Trickling Filters",
+      "volume": "35",
+      "author": "Tian",
+      "year": "2017",
+      "journal-title": "Environ. Engineer."
+    },
+    {
+      "key": "ref_48",
+      "unstructured": "Bai, X. (2016). The Optimization Research about the Operation of Wastewater Treatment Plant by Biowin Simulation Model. [Master’s Thesis, Kunming University of Science and Technology]."
+    },
+    {
+      "key": "ref_49",
+      "doi-asserted-by": "crossref",
+      "first-page": "85",
+      "DOI": "10.1016/j.chemosphere.2015.02.004",
+      "article-title": "Detection of nitrifiers and evaluation of partial nitrification for wastewater treatment: A review",
+      "volume": "140",
+      "author": "Ge",
+      "year": "2015",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "ref_50",
+      "doi-asserted-by": "crossref",
+      "first-page": "140",
+      "DOI": "10.1016/j.jenvman.2016.12.051",
+      "article-title": "Composting technology in waste stabilization: On the methods, challenges and future prospects",
+      "volume": "190",
+      "author": "Onwosi",
+      "year": "2017",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "ref_51",
+      "doi-asserted-by": "crossref",
+      "first-page": "513",
+      "DOI": "10.1016/j.biortech.2016.09.125",
+      "article-title": "Thermodynamic parameters for adsorption equilibrium of heavy metals and dyes from wastewaters: Research updated",
+      "volume": "222",
+      "author": "Chang",
+      "year": "2016",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "ref_52",
+      "doi-asserted-by": "crossref",
+      "first-page": "159",
+      "DOI": "10.1002/ep.670100313",
+      "article-title": "Temperature profile and heat-transfer model for a chemical waste-water treatment-plant",
+      "volume": "10",
+      "author": "Brown",
+      "year": "1991",
+      "journal-title": "Environ. Prog."
+    },
+    {
+      "key": "ref_53",
+      "doi-asserted-by": "crossref",
+      "first-page": "190",
+      "DOI": "10.1111/wej.12196",
+      "article-title": "Effects of recirculation rate of nitrified liquor and temperature on biological nitrification-denitrification process using a trickling filter",
+      "volume": "30",
+      "author": "Kanda",
+      "year": "2016",
+      "journal-title": "Water Environ. J."
+    },
+    {
+      "key": "ref_54",
+      "doi-asserted-by": "crossref",
+      "first-page": "173",
+      "DOI": "10.1016/j.chemosphere.2017.01.129",
+      "article-title": "A review: Driving factors and regulation strategies of microbial community structure and dynamics in wastewater treatment systems",
+      "volume": "174",
+      "author": "Chen",
+      "year": "2017",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "ref_55",
+      "doi-asserted-by": "crossref",
+      "first-page": "400",
+      "DOI": "10.1080/10643380802278943",
+      "article-title": "Use of Filamentous Fungi for Wastewater Treatment and Production of High Value Fungal Byproducts: A Review",
+      "volume": "40",
+      "author": "Sankaran",
+      "year": "2010",
+      "journal-title": "Crit. Rev. Environ. Sci. Technol."
+    },
+    {
+      "key": "ref_56",
+      "doi-asserted-by": "crossref",
+      "first-page": "142540",
+      "DOI": "10.1016/j.scitotenv.2020.142540",
+      "article-title": "A review on performance of constructed wetlands in tropical and cold climate: Insights of mechanism, role of influencing factors, and system modification in low temperature",
+      "volume": "755",
+      "author": "Varma",
+      "year": "2020",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "ref_57",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1016/j.watres.2014.07.047",
+      "article-title": "Simultaneous partial nitritation and anammox at low temperature with granular sludge",
+      "volume": "66",
+      "author": "Lotti",
+      "year": "2014",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref_58",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Li, J., Zhang, L., Peng, Y., and Zhang, Q. (2017). Effect of low COD/N ratios on stability of single-stage partial nitritation/anammox (SPN/A) process in a long-term operation. Bioresour. Technol., 244.",
+      "DOI": "10.1016/j.biortech.2017.07.127"
+    },
+    {
+      "key": "ref_59",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Gani, K.M., Awolusi, O.O., Khan, A.A., Kumari, S., and Bux, F. (2020). Potential strategies for the mainstream application of anammox in treatment of anaerobic effluents—A review. Crit. Rev. Environ. Sci. Technol.",
+      "DOI": "10.1080/10643389.2020.1797423"
+    },
+    {
+      "key": "ref_60",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Cao, S., Du, R., and Zhou, Y. (2020). Coupling anammox with heterotrophic denitrification for enhanced nitrogen removal: A review. Crit. Rev. Environ. Sci. Technol.",
+      "DOI": "10.1080/10643389.2020.1778394"
+    },
+    {
+      "key": "ref_61",
+      "doi-asserted-by": "crossref",
+      "first-page": "807",
+      "DOI": "10.4491/eer.2019.151",
+      "article-title": "Application of cell immobilization technology to promote nitritation: A review",
+      "volume": "25",
+      "author": "Kunapongkiti",
+      "year": "2020",
+      "journal-title": "Environ. Eng. Res."
+    },
+    {
+      "key": "ref_62",
+      "doi-asserted-by": "crossref",
+      "first-page": "1833",
+      "DOI": "10.30638/eemj.2013.224",
+      "article-title": "Experimental Studies on The Effects of Different Carbon Sources on Phosphorus Removal During Denitrifying Process in the Parallel A(2)O-Mbr System",
+      "volume": "12",
+      "author": "Wang",
+      "year": "2013",
+      "journal-title": "Environ. Eng. Manag. J."
+    },
+    {
+      "key": "ref_63",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Peng, S., Kong, Q., Deng, S., Xie, B., Yang, X., Li, D., Hu, Z., and Sun, S. (2020). Application potential of simultaneous nitrification/Fe-0-supported autotrophic denitrification (SNAD) based on iron-scraps and micro electrolysis. Sci. Total Environ., 711.",
+      "DOI": "10.1016/j.scitotenv.2019.135087"
+    },
+    {
+      "key": "ref_64",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.5004/dwt.2019.23634",
+      "article-title": "In-situ sludge reduction and simultaneous phosphorus removal in A(2)O and side-stream induced crystallization coupling system for treating domestic wastewater",
+      "volume": "146",
+      "author": "Wang",
+      "year": "2019",
+      "journal-title": "Desalin. Water Treat."
+    },
+    {
+      "key": "ref_65",
+      "doi-asserted-by": "crossref",
+      "first-page": "985",
+      "DOI": "10.1007/s12205-019-1562-4",
+      "article-title": "Efficiencies of Organic Matters and Nitrogen Removal at Different Recycle Ratios in a SMBR System",
+      "volume": "23",
+      "author": "Jung",
+      "year": "2019",
+      "journal-title": "Ksce J. Civil Eng."
+    },
+    {
+      "key": "ref_66",
+      "first-page": "87",
+      "article-title": "Experimental studies on the effects of different carbon sources on phosphorus removal during denitrifying process in the parallel A(2)O-mbr system",
+      "volume": "45",
+      "author": "Yan",
+      "year": "2019",
+      "journal-title": "Environ. Prot. Eng."
+    },
+    {
+      "key": "ref_67",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Li, J., Li, J., Peng, Y., Wang, S., Zhang, L., Yang, S., and Li, S. (2020). Insight into the impacts of organics on anammox and their potential linking to system performance of sewage partial nitrification-anammox (PN/A): A critical review. Bioresour. Technol., 300.",
+      "DOI": "10.1016/j.biortech.2019.122655"
+    },
+    {
+      "key": "ref_68",
+      "doi-asserted-by": "crossref",
+      "first-page": "393",
+      "DOI": "10.1016/j.scitotenv.2019.07.293",
+      "article-title": "Towards mainstream deammonification of municipal wastewater: Partial nitrification-anammox versus partial denitrification-anammox",
+      "volume": "692",
+      "author": "Zhang",
+      "year": "2019",
+      "journal-title": "Sci. Total Environ."
+    }
+  ],
+  "container-title": [
+    "Water"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.mdpi.com/2073-4441/13/9/1152/pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        11
+      ]
+    ],
+    "date-time": "2025-10-11T05:51:15Z",
+    "timestamp": 1760161875000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.mdpi.com/2073-4441/13/9/1152"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        22
+      ]
+    ]
+  },
+  "references-count": 68,
+  "journal-issue": {
+    "issue": "9",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "w13091152"
+  ],
+  "URL": "https://doi.org/10.3390/w13091152",
+  "relation": {},
+  "ISSN": [
+    "2073-4441"
+  ],
+  "issn-type": [
+    {
+      "value": "2073-4441",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        22
+      ]
+    ]
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        11
+      ]
+    ],
+    "date-time": "2026-09-11T21:24:16Z",
+    "timestamp": 1789161856636,
+    "version": "build-2803163510"
+  },
+  "reference-count": 49,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2020-09-01T00:00:00Z",
+        "timestamp": 1598918400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2020-09-01T00:00:00Z",
+        "timestamp": 1598918400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100003141",
+      "name": "Consejo Nacional de Ciencia y Tecnología",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "323488"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "323488"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100003141",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.compchemeng.2020.106850",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        5,
+        26
+      ]
+    ],
+    "date-time": "2020-05-26T02:30:08Z",
+    "timestamp": 1590460208000
+  },
+  "page": "106850",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 61,
+  "special_numbering": "C",
+  "title": [
+    "Sustainable wastewater treatment plants design through multiobjective optimization"
+  ],
+  "prefix": "10.1016",
+  "volume": "140",
+  "author": [
+    {
+      "given": "Juan I.",
+      "family": "Padrón-Páez",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Sofía De-León",
+      "family": "Almaraz",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Alicia",
+      "family": "Román-Martínez",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0001",
+      "doi-asserted-by": "crossref",
+      "first-page": "603",
+      "DOI": "10.1007/s10098-018-1490-x",
+      "article-title": "Multiobjective optimization for the socio-eco-efficient conversion of lignocellulosic biomass to biofuels and bioproducts",
+      "volume": "20",
+      "author": "Álvarez del Castillo-Romo",
+      "year": "2018",
+      "journal-title": "Clean. Technol. Environ. Policy"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0002",
+      "first-page": "70",
+      "article-title": "Energy from domestic wastewater and recovering the potential energy of sewage sludge",
+      "volume": "12",
+      "author": "Amiri",
+      "year": "2015",
+      "journal-title": "J. Energy Technol. Policy 5"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0003",
+      "doi-asserted-by": "crossref",
+      "first-page": "2093",
+      "DOI": "10.1016/S0098-1354(00)00579-2",
+      "article-title": "A review of recent design procedures for water networks in refineries and process plants",
+      "volume": "24",
+      "author": "Bagajewicz",
+      "year": "2000",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0004",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/S1570-7946(09)70006-9",
+      "article-title": "On the appropriate architecture of the water/wastewater allocation problem in process plants",
+      "volume": "26",
+      "author": "Bagajewicz",
+      "year": "2009",
+      "journal-title": "Comput. Aided Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "153",
+      "DOI": "10.1016/S1462-0758(02)00014-6",
+      "article-title": "Indicators for the sustainability assessment of wastewater treatment systems",
+      "volume": "4",
+      "author": "Balkema",
+      "year": "2002",
+      "journal-title": "Urban Water"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0006",
+      "doi-asserted-by": "crossref",
+      "first-page": "1653",
+      "DOI": "10.1016/B978-0-444-63428-3.50280-0",
+      "article-title": "Optimal design of a styrene monomer plant under market volatility",
+      "volume": "38",
+      "author": "Barzaghi",
+      "year": "2016",
+      "journal-title": "Comput. Aided Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0007",
+      "doi-asserted-by": "crossref",
+      "first-page": "597",
+      "DOI": "10.1080/10556780903087124",
+      "article-title": "Branching and bounds tightening techniques for non-convex MINLP",
+      "volume": "24",
+      "author": "Belotti",
+      "year": "2009",
+      "journal-title": "Optim. Methods Softw."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0008",
+      "doi-asserted-by": "crossref",
+      "first-page": "479",
+      "DOI": "10.1002/1521-4125(200006)23:6<479::AID-CEAT479>3.0.CO;2-5",
+      "article-title": "Study on the methodology for retrofitting chemical processes",
+      "volume": "23",
+      "author": "Ben-Guang",
+      "year": "2000",
+      "journal-title": "Chem. Eng. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0009",
+      "doi-asserted-by": "crossref",
+      "first-page": "186",
+      "DOI": "10.1016/j.disopt.2006.10.011",
+      "article-title": "An algorithmic framework for convex mixed integer nonlinear programs",
+      "volume": "5",
+      "author": "Bonami",
+      "year": "2008",
+      "journal-title": "Discret. Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0010",
+      "series-title": "Best Available Techniques (BAT) Reference Document For Common Waste Water and Waste Gas Treatment/Management Systems in the Chemical Sector, Industrial Emissions Directive 2010/75/EU (Integrated Pollution Prevention and Control)",
+      "author": "Brinkmann",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0011",
+      "doi-asserted-by": "crossref",
+      "first-page": "177",
+      "DOI": "10.1016/j.envsoft.2016.06.019",
+      "article-title": "An integrated knowledge-based and optimization tool for the sustainable selection of wastewater treatment process concepts",
+      "volume": "84",
+      "author": "Castillo",
+      "year": "2016",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0012",
+      "series-title": "Multiobjective Optimization: Principles and Case Studies",
+      "author": "Collette",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0013",
+      "series-title": "Estadísticas Del Agua En México",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0014",
+      "series-title": "Multi-Objective Optimisation Of A Hydrogen Supply chain",
+      "author": "De-León Almaraz",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0015",
+      "series-title": "An Integrated Framework For Treatment and Management of Produced Water - Technical assessment of Produced Water Treatment Technologies",
+      "author": "Drewes",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0016",
+      "series-title": "Optimization of Chemical Processes",
+      "author": "Edgar",
+      "year": "2001"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0017",
+      "series-title": "Water and Wastewater Industries: Characteristics and Energy Management Opportunities",
+      "year": "1996"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0018",
+      "unstructured": "EPRI (Electric Power Research Institute), 2013. Electricity use and management in the municipal water supply and wastewater industries, Report 3002001433, Palo Alto, California, USA."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0019",
+      "doi-asserted-by": "crossref",
+      "first-page": "4036",
+      "DOI": "10.1021/ie980133h",
+      "article-title": "Optimal design of distributed wastewater treatment networks",
+      "volume": "37",
+      "author": "Galan",
+      "year": "1998",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "123",
+      "DOI": "10.1016/j.mcm.2011.12.022",
+      "article-title": "On rank reversal and TOPSIS method",
+      "volume": "56",
+      "author": "García-Cascales",
+      "year": "2012",
+      "journal-title": "Math. Comput. Model"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0021",
+      "volume": "4",
+      "author": "Hangos",
+      "year": "2001"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0022",
+      "series-title": "Water Treatment Unit Processes: Physical and Chemical",
+      "author": "Hendricks",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0023",
+      "series-title": "Multiple Attribute Decision Making: Methods and Applications",
+      "author": "Hwang",
+      "year": "1981"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0024",
+      "doi-asserted-by": "crossref",
+      "first-page": "S23",
+      "DOI": "10.1002/ird.183",
+      "article-title": "Treatment technology and standards for agricultural wastewater reuse: a case study in Mexico",
+      "volume": "54",
+      "author": "Jiménez",
+      "year": "2005",
+      "journal-title": "Irrig. Drain."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "4273",
+      "DOI": "10.1016/S0009-2509(97)00186-3",
+      "article-title": "Effluent treatment systems design",
+      "volume": "52",
+      "author": "Kuo",
+      "year": "1997",
+      "journal-title": "Chem. Eng. Sci"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0026",
+      "doi-asserted-by": "crossref",
+      "first-page": "516",
+      "DOI": "10.1080/1331677X.2015.1075139",
+      "article-title": "Multiple criteria decision-making techniques and their applications – a review of the literature from 2000 to 2014",
+      "volume": "28",
+      "author": "Mardani",
+      "year": "2015",
+      "journal-title": "Econ. Res. Istraživanja"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0027",
+      "series-title": "Technologies For Small Water and Wastewater Systems",
+      "author": "Martin",
+      "year": "1991"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0028",
+      "first-page": "9652",
+      "article-title": "An improved version of the augmented ε-constraint method (AUGMECON2) for finding the exact pareto set in multi-objective integer programming problems",
+      "volume": "219",
+      "author": "Mavrotas",
+      "year": "2013",
+      "journal-title": "Appl. Math. Comput."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0029",
+      "series-title": "Wastewater Engineering: Treatment and Resource Recovery",
+      "author": "Tchobanoglous",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "607",
+      "DOI": "10.1016/j.scitotenv.2014.08.026",
+      "article-title": "Assessing the sustainability of small wastewater treatment systems: a composite indicator approach",
+      "volume": "497–498",
+      "author": "Molinos-Senante",
+      "year": "2014",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0031",
+      "doi-asserted-by": "crossref",
+      "first-page": "1139",
+      "DOI": "10.1016/j.scitotenv.2016.09.197",
+      "article-title": "Energy demand for elimination of organic micropollutants in municipal wastewater treatment plants",
+      "volume": "575",
+      "author": "Mousel",
+      "year": "2017",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0032",
+      "doi-asserted-by": "crossref",
+      "first-page": "437",
+      "DOI": "10.1016/j.jenvman.2007.03.008",
+      "article-title": "Sustainability of wastewater treatment technologies",
+      "volume": "88",
+      "author": "Muga",
+      "year": "2008",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0033",
+      "doi-asserted-by": "crossref",
+      "first-page": "2707",
+      "DOI": "10.1016/B978-0-444-63965-3.50453-0",
+      "article-title": "Assessment of sustainable wastewater treatment networks design applying LCA",
+      "volume": "40",
+      "author": "Padrón-Páez",
+      "year": "2017",
+      "journal-title": "Comput. Aided Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0034",
+      "doi-asserted-by": "crossref",
+      "first-page": "139",
+      "DOI": "10.2166/wst.2006.416",
+      "article-title": "Disc filtration for separation of flocs from a moving bed bio-film reactor",
+      "volume": "53",
+      "author": "Persson",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "931",
+      "DOI": "10.1016/B978-0-444-63234-0.50156-1",
+      "article-title": "Applicability of sustainability indicators to wastewater treatment processes",
+      "volume": "32",
+      "author": "Popovic",
+      "year": "2013",
+      "journal-title": "Comput. Aided Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0036",
+      "doi-asserted-by": "crossref",
+      "first-page": "723",
+      "DOI": "10.1016/B978-0-444-63433-7.50105-X",
+      "article-title": "Indicators of social sustainability for wastewater treatment processes",
+      "volume": "34",
+      "author": "Popovic",
+      "year": "2014",
+      "journal-title": "Comput. Aided Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0037",
+      "series-title": "Wastewater Treatment Plants: Planning, Design, and Operation",
+      "author": "Qasim",
+      "year": "1998"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0038",
+      "doi-asserted-by": "crossref",
+      "first-page": "5160",
+      "DOI": "10.1021/ie401379j",
+      "article-title": "Industrial process water treatment and reuse: a framework for synthesis and design",
+      "volume": "53",
+      "author": "Quaglia",
+      "year": "2014",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0039",
+      "doi-asserted-by": "crossref",
+      "first-page": "17722",
+      "DOI": "10.1021/ie5025408",
+      "article-title": "Multiobjective optimization using goal programming for industrial water network design",
+      "volume": "53",
+      "author": "Ramos",
+      "year": "2014",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0040",
+      "first-page": "10",
+      "article-title": "Comparative analysis of a novel M-TOPSIS method and TOPSIS",
+      "volume": "2007",
+      "author": "Ren",
+      "year": "2007",
+      "journal-title": "Appl. Math. Res. Express"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0041",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2019.118227",
+      "article-title": "A multi-objective optimization model for decision support in water reclamation system planning",
+      "volume": "240",
+      "author": "Rezaei",
+      "year": "2019",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0042",
+      "series-title": "Tratamiento De Aguas residuales: Teoría y principios De Diseño",
+      "author": "Romero Rojas",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0043",
+      "first-page": "57",
+      "article-title": "Classement et choix en présence de points de vue multiples",
+      "volume": "2",
+      "author": "Roy",
+      "year": "1968",
+      "journal-title": "RAIRO - Operations Research - Recherche Opérationnelle"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0044",
+      "unstructured": "SEMARNAT (Secretaría de Medio Ambiente y Recursos Naturales), 2014. Normas oficiales Mexicanas, México."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0045",
+      "series-title": "Development of a Preliminary Cost Estimation Method For Water Treatment Plants",
+      "author": "Sharma",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0046",
+      "doi-asserted-by": "crossref",
+      "first-page": "215",
+      "DOI": "10.1016/j.jclepro.2006.09.002",
+      "article-title": "A simple sequential approach for designing industrial wastewater treatment networks",
+      "volume": "16",
+      "author": "Statyukha",
+      "year": "2008",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0047",
+      "doi-asserted-by": "crossref",
+      "first-page": "231",
+      "DOI": "10.1016/j.jclepro.2015.07.101",
+      "article-title": "Industrial wastewater treatment network based on recycling and rerouting strategies for retrofit design schemes",
+      "volume": "111",
+      "author": "Sueviriyapan",
+      "year": "2016",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0048",
+      "doi-asserted-by": "crossref",
+      "first-page": "225",
+      "DOI": "10.1007/s10107-005-0581-8",
+      "article-title": "A polyhedral branch-and-cut approach to global optimization",
+      "volume": "103",
+      "author": "Tawarmalani",
+      "year": "2005",
+      "journal-title": "Math. Program."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2020.106850_bib0049",
+      "unstructured": "WCED (World Commission on Environment and Development), 1987. the so called Brundtland report, “Our common future”, New York, Oxford University Press."
+    }
+  ],
+  "container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S009813541931004X?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S009813541931004X?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2026-04-29T15:52:34Z",
+    "timestamp": 1777477954000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S009813541931004X"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "references-count": 49,
+  "alternative-id": [
+    "S009813541931004X"
+  ],
+  "URL": "https://doi.org/10.1016/j.compchemeng.2020.106850",
+  "relation": {},
+  "ISSN": [
+    "0098-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0098-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Sustainable wastewater treatment plants design through multiobjective optimization",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Computers & Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.compchemeng.2020.106850",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2020 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "106850"
+}

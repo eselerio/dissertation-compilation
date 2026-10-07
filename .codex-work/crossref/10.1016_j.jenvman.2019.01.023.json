@@ -1,0 +1,1170 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        20
+      ]
+    ],
+    "date-time": "2026-03-20T17:20:17Z",
+    "timestamp": 1774027217460,
+    "version": "3.50.1"
+  },
+  "reference-count": 80,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T00:00:00Z",
+        "timestamp": 1551398400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T00:00:00Z",
+        "timestamp": 1551398400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T00:00:00Z",
+        "timestamp": 1551398400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T00:00:00Z",
+        "timestamp": 1551398400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T00:00:00Z",
+        "timestamp": 1551398400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T00:00:00Z",
+        "timestamp": 1551398400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2019-03-01T00:00:00Z",
+        "timestamp": 1551398400000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "51728902"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "51728902"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "name": "Department of Science and Technology of Zhejiang Province",
+      "award": [
+        "LGF18D060002"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "LGF18D060002"
+          ]
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100000038",
+      "name": "NSERC",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100000038",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "name": "CCSEP"
+    },
+    {
+      "name": "Foreign Affairs, Trade and Development Canada, and the City of St. John's"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Environmental Management"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        3
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jenvman.2019.01.023",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        15
+      ]
+    ],
+    "date-time": "2019-01-15T00:22:21Z",
+    "timestamp": 1547511741000
+  },
+  "page": "525-536",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 35,
+  "special_numbering": "C",
+  "title": [
+    "Multi-agent hybrid particle swarm optimization (MAHPSO) for wastewater treatment network planning"
+  ],
+  "prefix": "10.1016",
+  "volume": "234",
+  "author": [
+    {
+      "given": "Xudong",
+      "family": "Ye",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Bing",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Liang",
+      "family": "Jing",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6997-4765",
+      "authenticated-orcid": false,
+      "given": "Baiyu",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-8181-1080",
+      "authenticated-orcid": false,
+      "given": "Yong",
+      "family": "Liu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "791",
+      "DOI": "10.1016/j.apenergy.2014.04.063",
+      "article-title": "Optimal design for heat-integrated water-using and wastewater treatment networks",
+      "volume": "135",
+      "author": "Ahmetović",
+      "year": "2014",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib2",
+      "doi-asserted-by": "crossref",
+      "first-page": "566",
+      "DOI": "10.1016/j.biortech.2015.08.017",
+      "article-title": "An integrated prediction and optimization model of biogas production system at a wastewater treatment facility",
+      "volume": "196",
+      "author": "Akbaş",
+      "year": "2015",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "271",
+      "DOI": "10.1111/risa.12117",
+      "article-title": "Uncertainty in climate change modeling: can global sensitivity analysis be of help?",
+      "volume": "34",
+      "author": "Anderson",
+      "year": "2014",
+      "journal-title": "Risk Anal."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib4",
+      "first-page": "180",
+      "article-title": "Analysis of particle swarm optimization algorithm",
+      "volume": "3",
+      "author": "Bai",
+      "year": "2010",
+      "journal-title": "Comput. Inf. Sci."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib5",
+      "doi-asserted-by": "crossref",
+      "first-page": "257",
+      "DOI": "10.1061/(ASCE)0733-9496(2008)134:3(257)",
+      "article-title": "Use of multiobjective particle swarm optimization in water resources management",
+      "volume": "134",
+      "author": "Baltar",
+      "year": "2008",
+      "journal-title": "J. Water Resour. Plann. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib6",
+      "series-title": "Nature and Biologically Inspired Computing (NaBIC), 2011 Third World Congress on",
+      "first-page": "633",
+      "article-title": "Inertia weight strategies in particle swarm optimization",
+      "author": "Bansal",
+      "year": "2011"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "319",
+      "DOI": "10.1016/S0304-3800(03)00236-9",
+      "article-title": "Agent based simulation of a small catchment water management in northern Thailand: description of the CATCHSCAPE model",
+      "volume": "170",
+      "author": "Becu",
+      "year": "2003",
+      "journal-title": "Ecol. Model."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib8",
+      "doi-asserted-by": "crossref",
+      "first-page": "129",
+      "DOI": "10.1007/s11269-006-9045-z",
+      "article-title": "Capturing the complexity of water uses and water users within a multi-agent framework",
+      "volume": "21",
+      "author": "Berger",
+      "year": "2007",
+      "journal-title": "Water Resour. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib9",
+      "first-page": "122",
+      "article-title": "An environmental modelling approach: the use of multi-agent simulations",
+      "volume": "113",
+      "author": "Bousquet",
+      "year": "1999",
+      "journal-title": "Adv. Environ. Ecol. Model."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "313",
+      "DOI": "10.1016/j.ecolmodel.2004.01.011",
+      "article-title": "Multi-agent simulations and ecosystem management: a review",
+      "volume": "176",
+      "author": "Bousquet",
+      "year": "2004",
+      "journal-title": "Ecol. Model."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib11",
+      "series-title": "Technical Supplement 1, Canada-wide Strategy Forthe Management of Municipal Wastewater Effluent, Economic Plan Supporting the Canada-wide Strategy for the Management of Municipal Wastewater Effluent",
+      "author": "Canadian Council of Ministers of the Environment (CCME)",
+      "year": "2008"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib12",
+      "series-title": "Technical Supplement 2, Canada-wide Strategy for the Management of Municipal Wastewater Effluent, Environmental Risk Management: Framework and Guidance",
+      "author": "Canadian Council of Ministers of the Environment (CCME)",
+      "year": "2008"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib13",
+      "series-title": "Canada-wide Strategy for the Management of Municipal Wastewater Effluent",
+      "author": "Canadian Council of Ministers of the Environment (CCME)",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "1565",
+      "DOI": "10.1016/j.compchemeng.2007.01.004",
+      "article-title": "Pinch multi-agent genetic algorithm for optimizing water-using networks",
+      "volume": "31",
+      "author": "Cao",
+      "year": "2007",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "566",
+      "DOI": "10.1109/TEVC.2002.804323",
+      "article-title": "A genetic algorithm for shortest path routing problem and the sizing of populations",
+      "volume": "6",
+      "author": "Chang Wook",
+      "year": "2002",
+      "journal-title": "IEEE Trans. Evol. Comput."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib16",
+      "series-title": "Seas at the millennium: an environmental evaluation",
+      "author": "Charles",
+      "year": "2000"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib17",
+      "series-title": "Particle Swarm Optimization Algorithm and its Application to Clustering Analysis, Electrical Power Distribution Networks (EPDC), 2012 Proceedings of 17th Conference on",
+      "first-page": "789",
+      "author": "Chen",
+      "year": "2012"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "258",
+      "DOI": "10.1016/j.engappai.2015.09.010",
+      "article-title": "A comparative study of population-based optimization algorithms for downstream river flow forecasting by a hybrid neural network model",
+      "volume": "46",
+      "author": "Chen",
+      "year": "2015",
+      "journal-title": "Eng. Appl. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "4232",
+      "DOI": "10.3390/w7084232",
+      "article-title": "Daily reservoir runoff forecasting method using artificial neural network based on quantum-behaved particle swarm optimization",
+      "volume": "7",
+      "author": "Cheng",
+      "year": "2015",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib20",
+      "series-title": "Proceedings of the Water Environment Federation",
+      "first-page": "3407",
+      "article-title": "Cost trends of MBR systems for municipal wastewater treatment",
+      "author": "DeCarolis",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib21",
+      "series-title": "Distributed Wastewater Treatment Network Design with Detailed Models of Processes, Computer Aided Chemical Engineering",
+      "first-page": "853",
+      "author": "Dzhygyrey",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib22",
+      "series-title": "Proceedings of the Sixth International Symposium on",
+      "first-page": "39",
+      "article-title": "A new optimizer using particle swarm theory, Micro Machine and Human Science",
+      "author": "Eberhart",
+      "year": "1995"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib23",
+      "series-title": "Proceedings of the 2000 Congress on",
+      "first-page": "84",
+      "article-title": "Comparing inertia weights and constriction factors in particle swarm optimization, evolutionary computation",
+      "author": "Eberhart",
+      "year": "2000"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib24",
+      "series-title": "Proceedings of the Companion Publication of the 2014 Annual Conference on Genetic and Evolutionary Computation",
+      "first-page": "381",
+      "article-title": "Particle swarm optimization",
+      "author": "Engelbrecht",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib25",
+      "series-title": "From Agents to Organizations: an Organizational View of Multi-Agent Systems, International Workshop on Agent-Oriented Software Engineering",
+      "first-page": "214",
+      "author": "Ferber",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib26",
+      "doi-asserted-by": "crossref",
+      "first-page": "413",
+      "DOI": "10.1016/S1364-8152(03)00006-9",
+      "article-title": "SINUSE: a multi-agent model to negotiate water demand management on a free access water table",
+      "volume": "18",
+      "author": "Feuillette",
+      "year": "2003",
+      "journal-title": "Environ. Model. Softw"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "360",
+      "DOI": "10.1016/j.jenvman.2005.11.013",
+      "article-title": "Study of urban population attitudes towards various wastewater reuse options: Israel as a case study",
+      "volume": "81",
+      "author": "Friedler",
+      "year": "2006",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "384",
+      "DOI": "10.1016/j.jenvman.2012.08.013",
+      "article-title": "Implementation of a knowledge-based methodology in a decision support system for the design of suitable wastewater treatment process flow diagrams",
+      "volume": "112",
+      "author": "Garrido-Baserba",
+      "year": "2012",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "297",
+      "DOI": "10.1080/03052150802449227",
+      "article-title": "Particle-swarm harmony search for water network design",
+      "volume": "41",
+      "author": "Geem",
+      "year": "2009",
+      "journal-title": "Eng. Optim."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib30",
+      "series-title": "Guidelines for the Design, Construction and Operation of Water and Sewerage Systems",
+      "author": "Government of Newfoundland and Labrador",
+      "year": "2005"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib31",
+      "series-title": "Municipal Wastewater Management–Theory and Practices",
+      "author": "Government of Newfoundland and Labrador",
+      "year": "2005"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib32",
+      "doi-asserted-by": "crossref",
+      "first-page": "2175",
+      "DOI": "10.1021/ie030389+",
+      "article-title": "Superstructure decomposition and parametric optimization approach for the synthesis of distributed wastewater treatment networks",
+      "volume": "43",
+      "author": "Hernández-Suárez",
+      "year": "2004",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "507",
+      "DOI": "10.1205/psep06065",
+      "article-title": "Water network synthesis using mutation-enhanced particle swarm optimization",
+      "volume": "85",
+      "author": "Hul",
+      "year": "2007",
+      "journal-title": "Process Saf. Environ. Protect."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib34",
+      "doi-asserted-by": "crossref",
+      "first-page": "777",
+      "DOI": "10.1016/j.camwa.2008.02.007",
+      "article-title": "Design optimization of wastewater collection networks by PSO",
+      "volume": "56",
+      "author": "Izquierdo",
+      "year": "2008",
+      "journal-title": "Comput. Math. Appl."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib35",
+      "first-page": "6",
+      "article-title": "Whether and how to select inertia and acceleration of discrete particle swarm optimization algorithm: a study on channel assignment",
+      "author": "Jin",
+      "year": "2014",
+      "journal-title": "Math. Probl. Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "861",
+      "DOI": "10.1089/ees.2017.0100",
+      "article-title": "Wastewater treatment plant network design using a multiscale two-stage mixed integer stochastic model",
+      "volume": "34",
+      "author": "Jing",
+      "year": "2017",
+      "journal-title": "Environ. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib37",
+      "series-title": "Proceedings of the International Conference on Marine and Freshwater Environments (iMFE 2014)-Our Water, Our Future",
+      "article-title": "An integrated system planning and process control system for marine wastewater management",
+      "author": "Jing",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib38",
+      "doi-asserted-by": "crossref",
+      "first-page": "101",
+      "DOI": "10.1016/j.watres.2015.03.023",
+      "article-title": "Process simulation and dynamic control for marine oily wastewater treatment using UV irradiation",
+      "volume": "81",
+      "author": "Jing",
+      "year": "2015",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib81",
+      "series-title": "Computational Cybernetics and Simulation., 1997 IEEE International Conference on. IEEE",
+      "first-page": "4104",
+      "article-title": "A discrete binary version of the particle swarm algorithm, Systems, Man, and Cybernetics, 1997",
+      "author": "Kennedy",
+      "year": "1997"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib39",
+      "doi-asserted-by": "crossref",
+      "first-page": "115",
+      "DOI": "10.1016/j.ijepes.2010.06.021",
+      "article-title": "A hybrid multi-agent based particle swarm optimization algorithm for economic power dispatch",
+      "volume": "33",
+      "author": "Kumar",
+      "year": "2011",
+      "journal-title": "Int. J. Electr. Power Energy Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib40",
+      "doi-asserted-by": "crossref",
+      "first-page": "170",
+      "DOI": "10.1016/j.jclepro.2016.01.052",
+      "article-title": "Design of distributed wastewater treatment networks of multiple contaminants with maximum inlet concentration constraints",
+      "volume": "118",
+      "author": "Li",
+      "year": "2016",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib41",
+      "doi-asserted-by": "crossref",
+      "first-page": "564",
+      "DOI": "10.1016/j.jenvman.2007.03.022",
+      "article-title": "Environmental and economic feasibility study of a total wastewater treatment network system",
+      "volume": "88",
+      "author": "Lim",
+      "year": "2008",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib42",
+      "doi-asserted-by": "crossref",
+      "first-page": "1454",
+      "DOI": "10.1016/j.jenvman.2008.09.005",
+      "article-title": "Environmental impact minimization of a total wastewater treatment network system from a life cycle perspective",
+      "volume": "90",
+      "author": "Lim",
+      "year": "2009",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib82",
+      "doi-asserted-by": "crossref",
+      "first-page": "666",
+      "DOI": "10.1109/TEVC.2015.2503422",
+      "article-title": "An analysis of the inertia weight parameter for binary particle swarm optimization",
+      "volume": "20",
+      "author": "Liu",
+      "year": "2016",
+      "journal-title": "IEEE Trans. Evol. Comput."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "1743",
+      "DOI": "10.1109/TPWRS.2007.908471",
+      "article-title": "Multi-agent systems for power engineering applications—Part I: concepts, approaches, and technical challenges",
+      "volume": "22",
+      "author": "McArthur",
+      "year": "2007",
+      "journal-title": "IEEE Trans. Power Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib83",
+      "series-title": "System Theory, Control and Computing (ICSTCC), 2015 19th International Conference on. IEEE",
+      "first-page": "627",
+      "article-title": "A Binary Hybrid Topology Particle Swarm Optimization Algorithm for Sewer Network Discharge",
+      "author": "Minzu",
+      "year": "2015"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib44",
+      "doi-asserted-by": "crossref",
+      "first-page": "433",
+      "DOI": "10.1111/mice.12062",
+      "article-title": "Water distribution system computer‐aided design by agent swarm optimization",
+      "volume": "29",
+      "author": "Montalvo",
+      "year": "2014",
+      "journal-title": "Comput. Aided Civ. Infrastruct. Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib45",
+      "doi-asserted-by": "crossref",
+      "first-page": "769",
+      "DOI": "10.1016/j.camwa.2008.02.006",
+      "article-title": "Particle swarm optimization applied to the design of water supply systems",
+      "volume": "56",
+      "author": "Montalvo",
+      "year": "2008",
+      "journal-title": "Comput. Math. Appl."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib46",
+      "doi-asserted-by": "crossref",
+      "first-page": "1219",
+      "DOI": "10.1016/j.mcm.2010.02.017",
+      "article-title": "Multi-objective particle swarm optimization applied to water distribution systems design: an approach with human interaction",
+      "volume": "52",
+      "author": "Montalvo",
+      "year": "2010",
+      "journal-title": "Math. Comput. Model."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib47",
+      "doi-asserted-by": "crossref",
+      "first-page": "66",
+      "DOI": "10.1016/j.ijepes.2011.08.023",
+      "article-title": "A combination of genetic algorithm and particle swarm optimization for optimal DG location and sizing in distribution systems",
+      "volume": "34",
+      "author": "Moradi",
+      "year": "2012",
+      "journal-title": "Int. J. Electr. Power Energy Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib48",
+      "doi-asserted-by": "crossref",
+      "first-page": "48",
+      "DOI": "10.1109/TAC.2008.2009515",
+      "article-title": "Distributed subgradient methods for multi-agent optimization",
+      "volume": "54",
+      "author": "Nedic",
+      "year": "2009",
+      "journal-title": "IEEE Trans. Automat. Contr."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib49",
+      "first-page": "21",
+      "article-title": "Binary particle swarm optimization: challenges and new solutions",
+      "volume": "6",
+      "author": "Nezamabadi-pour",
+      "year": "2008",
+      "journal-title": "CSI J. Comput. Sci. Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib50",
+      "doi-asserted-by": "crossref",
+      "first-page": "1807",
+      "DOI": "10.1080/10934520600778986",
+      "article-title": "Optimizing the use of sludge treatment facilities at municipal WWTPs",
+      "volume": "41",
+      "author": "Nowak",
+      "year": "2006",
+      "journal-title": "J. Environ. Sci. Health Part A"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib51",
+      "doi-asserted-by": "crossref",
+      "first-page": "215",
+      "DOI": "10.1109/JPROC.2006.887293",
+      "article-title": "Consensus and cooperation in networked multi-agent systems",
+      "volume": "95",
+      "author": "Olfati-Saber",
+      "year": "2007",
+      "journal-title": "Proc. IEEE"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib52",
+      "doi-asserted-by": "crossref",
+      "first-page": "4019",
+      "DOI": "10.1016/j.watres.2011.05.014",
+      "article-title": "Occurrence and suitability of sucralose as an indicator compound of wastewater loading to surface waters in urbanized regions",
+      "volume": "45",
+      "author": "Oppenheimer",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib53",
+      "doi-asserted-by": "crossref",
+      "first-page": "156",
+      "DOI": "10.1109/TPWRS.2009.2030293",
+      "article-title": "An improved particle swarm optimization for nonconvex economic dispatch problems",
+      "volume": "25",
+      "author": "Park",
+      "year": "2010",
+      "journal-title": "IEEE Trans. Power Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib84",
+      "doi-asserted-by": "crossref",
+      "first-page": "1173",
+      "DOI": "10.1109/TPWRS.2009.2021219",
+      "article-title": "Scheduling of demand side resources using binary particle swarm optimization",
+      "volume": "24",
+      "author": "Pedrasa",
+      "year": "2009",
+      "journal-title": "IEEE Trans. Power Syst"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib54",
+      "doi-asserted-by": "crossref",
+      "first-page": "27",
+      "DOI": "10.1007/s11269-016-1506-4",
+      "article-title": "Multi-Core parallel particle swarm optimization for the operation of Inter-Basin water transfer-supply systems",
+      "volume": "31",
+      "author": "Peng",
+      "year": "2017",
+      "journal-title": "Water Resour. Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib55",
+      "doi-asserted-by": "crossref",
+      "first-page": "79",
+      "DOI": "10.2166/hydro.2009.042",
+      "article-title": "Performance evaluation of elitist-mutated multi-objective particle swarm optimization for integrated water resources management",
+      "volume": "11",
+      "author": "Reddy",
+      "year": "2009",
+      "journal-title": "J. Hydroinf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib56",
+      "doi-asserted-by": "crossref",
+      "first-page": "226",
+      "DOI": "10.1016/j.knosys.2013.11.015",
+      "article-title": "Optimal parameters selection for BP neural network based on particle swarm optimization: a case study of wind speed forecasting",
+      "volume": "56",
+      "author": "Ren",
+      "year": "2014",
+      "journal-title": "Knowl. Base Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib57",
+      "first-page": "19",
+      "article-title": "Particle swarm optimization: technique, system and challenges",
+      "volume": "14",
+      "author": "Rini",
+      "year": "2011",
+      "journal-title": "Int. J. Comput. Appl."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib58",
+      "series-title": "Proceedings of the First International Joint Conference on Autonomous Agents and Multiagent Systems: Part 1",
+      "first-page": "475",
+      "article-title": "Reputation and social network analysis in multi-agent systems",
+      "author": "Sabater",
+      "year": "2002"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib59",
+      "doi-asserted-by": "crossref",
+      "first-page": "582",
+      "DOI": "10.1016/j.aei.2012.03.007",
+      "article-title": "Hybrid particle swarm optimization and differential evolution for optimal design of water distribution systems",
+      "volume": "26",
+      "author": "Sedki",
+      "year": "2012",
+      "journal-title": "Adv. Eng. Inf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib60",
+      "doi-asserted-by": "crossref",
+      "first-page": "788",
+      "DOI": "10.1080/15325000801911385",
+      "article-title": "Application of hybrid multiagent-based particle swarm optimization to optimal reactive power dispatch",
+      "volume": "36",
+      "author": "Shunmugalatha",
+      "year": "2008",
+      "journal-title": "Electr. Power Compon. Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib61",
+      "doi-asserted-by": "crossref",
+      "first-page": "231",
+      "DOI": "10.1016/j.jclepro.2015.07.101",
+      "article-title": "Industrial wastewater treatment network based on recycling and rerouting strategies for retrofit design schemes",
+      "volume": "111",
+      "author": "Sueviriyapan",
+      "year": "2016",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib62",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1080/15730620600855928",
+      "article-title": "Design of water distribution networks using particle swarm optimization",
+      "volume": "3",
+      "author": "Suribabu",
+      "year": "2006",
+      "journal-title": "Urban Water J."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib63",
+      "doi-asserted-by": "crossref",
+      "first-page": "99",
+      "DOI": "10.2166/hydro.2014.116",
+      "article-title": "Neural network river forecasting with multi-objective fully informed particle swarm optimization",
+      "volume": "17",
+      "author": "Taormina",
+      "year": "2015",
+      "journal-title": "J. Hydroinf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib64",
+      "doi-asserted-by": "crossref",
+      "first-page": "5",
+      "DOI": "10.18564/jasss.2857",
+      "article-title": "Which sensitivity analysis method should I use for my agent-based model?",
+      "volume": "19",
+      "author": "Ten Broeke",
+      "year": "2016",
+      "journal-title": "J. Artif. Soc. Soc. Simulat."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib65",
+      "series-title": "An Emerging Technology Sequencing Batch Reactors: A Project Assessment",
+      "author": "U.S.EPA",
+      "year": "1983"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib66",
+      "series-title": "Wastewater Technology Fact Sheet: Oxidation Ditches",
+      "author": "U.S.EPA",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib67",
+      "series-title": "Wastewater Technology Fact Sheet: Sequencing Batch Reactors",
+      "author": "U.S.EPA",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib68",
+      "series-title": "Wastewater Management Fact Sheet: Membrane Bioreactor",
+      "author": "U.S.EPA",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib69",
+      "first-page": "6",
+      "article-title": "A new locally convergent particle swarm optimiser, Systems, Man and Cybernetics",
+      "volume": "vol. 3",
+      "author": "van den Bergh",
+      "year": "2002"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib70",
+      "doi-asserted-by": "crossref",
+      "first-page": "887",
+      "DOI": "10.1016/S1574-6526(07)03024-6",
+      "article-title": "Multi-agent systems",
+      "volume": "3",
+      "author": "Van der Hoek",
+      "year": "2008",
+      "journal-title": "Found. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib71",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "DOI": "10.1016/j.epsr.2003.12.017",
+      "article-title": "Hybrid PSO–SQP for economic dispatch with valve-point effect",
+      "volume": "71",
+      "author": "Victoire",
+      "year": "2004",
+      "journal-title": "Electr. Power Syst. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib72",
+      "doi-asserted-by": "crossref",
+      "first-page": "28",
+      "DOI": "10.1016/j.envint.2014.03.021",
+      "article-title": "Fate of diclofenac in municipal wastewater treatment plant—a review",
+      "volume": "69",
+      "author": "Vieno",
+      "year": "2014",
+      "journal-title": "Environ. Int."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib73",
+      "series-title": "IIE Annual Conference. Proceedings. Institute of Industrial and Systems Engineers (IISE)",
+      "first-page": "1",
+      "article-title": "Optimization of biogas production process in a wastewater treatment plant",
+      "author": "Wei",
+      "year": "2012"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib74",
+      "doi-asserted-by": "crossref",
+      "first-page": "136",
+      "DOI": "10.1016/j.neucom.2012.10.043",
+      "article-title": "Evolving RBF neural networks for rainfall prediction using hybrid particle swarm optimization and genetic algorithm",
+      "volume": "148",
+      "author": "Wu",
+      "year": "2015",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib75",
+      "doi-asserted-by": "crossref",
+      "first-page": "1911",
+      "DOI": "10.1016/j.eswa.2009.07.025",
+      "article-title": "Find multi-objective paths in stochastic networks via chaotic immune PSO",
+      "volume": "37",
+      "author": "Zhang",
+      "year": "2010",
+      "journal-title": "Expert Syst. Appl."
+    },
+    {
+      "key": "10.1016/j.jenvman.2019.01.023_bib76",
+      "doi-asserted-by": "crossref",
+      "first-page": "1070",
+      "DOI": "10.1109/TPWRS.2005.846064",
+      "article-title": "A multiagent-based particle swarm optimization approach for optimal reactive power dispatch",
+      "volume": "20",
+      "author": "Zhao",
+      "year": "2005",
+      "journal-title": "IEEE Trans. Power Syst."
+    }
+  ],
+  "container-title": [
+    "Journal of Environmental Management"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479719300234?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479719300234?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2025-10-04T08:56:53Z",
+    "timestamp": 1759568213000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301479719300234"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        3
+      ]
+    ]
+  },
+  "references-count": 80,
+  "alternative-id": [
+    "S0301479719300234"
+  ],
+  "URL": "https://doi.org/10.1016/j.jenvman.2019.01.023",
+  "relation": {},
+  "ISSN": [
+    "0301-4797"
+  ],
+  "issn-type": [
+    {
+      "value": "0301-4797",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        3
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Multi-agent hybrid particle swarm optimization (MAHPSO) for wastewater treatment network planning",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Environmental Management",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jenvman.2019.01.023",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2019 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

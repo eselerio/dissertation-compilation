@@ -1,0 +1,505 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        1,
+        20
+      ]
+    ],
+    "date-time": "2026-01-20T02:56:21Z",
+    "timestamp": 1768877781239,
+    "version": "3.49.0"
+  },
+  "reference-count": 23,
+  "publisher": "Elsevier BV",
+  "issue": "11",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2015-12-01T00:00:00Z",
+        "timestamp": 1448928000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2015-12-01T00:00:00Z",
+        "timestamp": 1448928000000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            29
+          ]
+        ],
+        "date-time": "2024-07-29T00:00:00Z",
+        "timestamp": 1722211200000
+      },
+      "content-version": "vor",
+      "delay-in-days": 3163,
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Desalination and Water Treatment"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        12
+      ]
+    ]
+  },
+  "DOI": "10.1080/19443994.2014.966329",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2014,
+        10,
+        15
+      ]
+    ],
+    "date-time": "2014-10-15T11:59:05Z",
+    "timestamp": 1413374345000
+  },
+  "page": "3075-3086",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 5,
+  "title": [
+    "Activated sludge with low solids production: modified ASM1 modeling and simulation"
+  ],
+  "prefix": "10.1016",
+  "volume": "56",
+  "author": [
+    {
+      "given": "C.",
+      "family": "Fall",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Jiménez-Zárate",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "C.G.",
+      "family": "Martínez-García",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "M.",
+      "family": "Esparza-Soto",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Y.",
+      "family": "Comeau",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1080/19443994.2014.966329_bb0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "1119",
+      "DOI": "10.1016/S0043-1354(98)00325-X",
+      "article-title": "Reducing production of excess biomass during wastewater treatment",
+      "volume": "33",
+      "author": "Low",
+      "year": "1999",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0015",
+      "first-page": "2",
+      "article-title": "Strategies for sludge minimization in activated sludge process",
+      "volume": "14",
+      "author": "Ramakrishna",
+      "year": "2005",
+      "journal-title": "Fresenius Environ. Bull."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0020",
+      "series-title": "Activated sludge models ASM1, ASM2, ASM2d and ASM3",
+      "author": "Henze",
+      "year": "2000"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "2380",
+      "DOI": "10.2175/106143007X183862",
+      "article-title": "Biological solids reduction using the Cannibal process",
+      "volume": "79",
+      "author": "Novak",
+      "year": "2007",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "9",
+      "DOI": "10.2166/wpt.2008.074",
+      "article-title": "The use of ASM based models for the simulation of biological sludge reduction processes",
+      "volume": "3",
+      "author": "Johnson",
+      "year": "2008",
+      "journal-title": "Water Practice Technol"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0035",
+      "series-title": "Removal of toilet paper from influent of municipal wastewater treatment by sieves",
+      "first-page": "191",
+      "author": "Ruiken",
+      "year": "2011"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0040",
+      "doi-asserted-by": "crossref",
+      "first-page": "359",
+      "DOI": "10.1016/j.mineng.2009.08.001",
+      "article-title": "Characterizing hydrocyclone performance for grit removal from wastewater treatment activated sludge plants",
+      "volume": "23",
+      "author": "Mansour-Geoffrion",
+      "year": "2010",
+      "journal-title": "Miner. Eng."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0045",
+      "doi-asserted-by": "crossref",
+      "first-page": "2837",
+      "DOI": "10.1016/j.watres.2012.01.008",
+      "article-title": "Biodegradation of the endogenous residue of activated sludge in a membrane bioreactor with continuous or on-off aeration",
+      "volume": "46",
+      "author": "Ramdani",
+      "year": "2012",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "2477",
+      "DOI": "10.2166/wst.1992.0766",
+      "article-title": "The aspect of energetic uncoupling of microbial growth in the activated sludge process—OSA system",
+      "volume": "26",
+      "author": "Chudoba",
+      "year": "1992",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "11",
+      "DOI": "10.1016/S0043-1354(02)00253-1",
+      "article-title": "Effect of low ORP in anoxic sludge zone on excess sludge production in oxic-settling-anoxic activated sludge process",
+      "volume": "37",
+      "author": "Saby",
+      "year": "2003",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0060",
+      "doi-asserted-by": "crossref",
+      "first-page": "229",
+      "DOI": "10.1016/j.biortech.2012.11.055",
+      "article-title": "Minimization of sludge production by a side-stream reactor under anoxic conditions in a pilot plant",
+      "volume": "129",
+      "author": "Coma",
+      "year": "2013",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0065",
+      "doi-asserted-by": "crossref",
+      "first-page": "6021",
+      "DOI": "10.1016/j.watres.2011.08.051",
+      "article-title": "Investigation of the sludge reduction mechanism in the anaerobic side-stream reactor process using several control biological wastewater treatment processes",
+      "volume": "45",
+      "author": "Chon",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "10352",
+      "DOI": "10.1016/j.biortech.2011.08.124",
+      "article-title": "Excess sludge reduction by biological way: From experimental experience to a real full-scale application",
+      "volume": "102",
+      "author": "Troiani",
+      "year": "2011",
+      "journal-title": "Bioresource Technol."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0075",
+      "series-title": "Modelling microbial decay in a cannibal sludge minimization process",
+      "first-page": "1751",
+      "author": "Giraldo",
+      "year": "2007"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0080",
+      "series-title": "Wastewater Engineering, Treatment and Reuse",
+      "author": "Metcalf & Eddy",
+      "year": "2003"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0085",
+      "series-title": "Wastewater Engineering, Treatment and Reuse",
+      "author": "Metcalf & Eddy",
+      "year": "1991"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0090",
+      "series-title": "A study of the biodegradable fraction of sludges in aerobic and anaerobic systems, residuals and biosolids management",
+      "first-page": "20",
+      "author": "Jones",
+      "year": "2007"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "2179",
+      "DOI": "10.1016/j.watres.2009.12.037",
+      "article-title": "Biodegradation of the endogenous residue of activated sludge",
+      "volume": "44",
+      "author": "Ramdani",
+      "year": "2010",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0100",
+      "doi-asserted-by": "crossref",
+      "first-page": "789",
+      "DOI": "10.2166/wst.2012.629",
+      "article-title": "Modelling the degradation of endogenous residue and ‘unbiodegradable’ influent organic suspended solids to predict sludge production",
+      "volume": "67",
+      "author": "Spérandio",
+      "year": "2013",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0105",
+      "series-title": "Bio Win User Manual",
+      "author": "Envirosim",
+      "year": "2013"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0110",
+      "series-title": "AQUASIM 2.0. User Manual",
+      "author": "Reichert",
+      "year": "1998"
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "893",
+      "DOI": "10.2175/106143007X176068",
+      "article-title": "Design of a tracer test experience and dynamic calibration of the hydraulic model for a full-scale wastewater treatment plant by use of AQUASIM",
+      "volume": "79",
+      "author": "Fall",
+      "year": "2007",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1080/19443994.2014.966329_bb0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "336",
+      "DOI": "10.5004/dwt.2011.2890",
+      "article-title": "Various operating conditions affecting the performance of aerobic digestion coupled with membrane filtration",
+      "volume": "34",
+      "author": "Eusebio",
+      "year": "2011",
+      "journal-title": "Desalin. Water Treat."
+    }
+  ],
+  "container-title": [
+    "Desalination and Water Treatment"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1944398624054808?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1944398624054808?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.tandfonline.com/doi/pdf/10.1080/19443994.2014.966329",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        10,
+        9
+      ]
+    ],
+    "date-time": "2024-10-09T08:56:15Z",
+    "timestamp": 1728464175000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1944398624054808"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2015,
+        12
+      ]
+    ]
+  },
+  "references-count": 23,
+  "journal-issue": {
+    "issue": "11",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S1944398624054808"
+  ],
+  "URL": "https://doi.org/10.1080/19443994.2014.966329",
+  "relation": {},
+  "ISSN": [
+    "1944-3986"
+  ],
+  "issn-type": [
+    {
+      "value": "1944-3986",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2015,
+        12
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Activated sludge with low solids production: modified ASM1 modeling and simulation",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Desalination and Water Treatment",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1080/19443994.2014.966329",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "simple-article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "Copyright © 2014 Elsevier Inc.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

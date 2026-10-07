@@ -1,0 +1,444 @@
+P a g e | 69
+
+8.5   Equipment and Software
+For this research, an NVDIA GeForce RTX 4090 graphics card is needed so that the
+manifold of computations carried our herewith are performed fast, especially during the
+model calibration and simulation phases detailed previously. Furthermore, all of the code
+in this study is developed using Python as programming language. The pyomo library is
+used for implementing all optimization models and are all saved as Mathematical
+Programming System (mps) files. On the other hand, the sklearn library is used for the
+implementation of the common ML techniques.
+The High-performance parallel linear optimization software (HiGHS) algorithm is used to
+solve all linear optimization models, while the Interior Point Optimizer (Ipopt) algorithm is
+used to solve all nonlinear model models.
+
+P a g e | 70
+
+9   References
+
+Aboagye, E. A., Burnham, S. M., Dailey, J., Zia, R., Tran, C., Desai, M., & Yenkie, K. M.
+   (2021). Systematic design, optimization, and sustainability assessment for
+   generation of efficient wastewater treatment networks. Water (Switzerland), 13(9),
+   1326. https://doi.org/10.3390/W13091326/S1
+Ahn, J. Y., Chu, K. H., Yoo, S. S., Mang, J. S., Sung, B. W., & Ko, K. B. (2014).
+    Determination of optimal operating factors via modeling for livestock wastewater
+    treatment: Comparison of simulated and experimental data. International
+    Biodeterioration          &        Biodegradation,        95(PA),         46–54.
+    https://doi.org/10.1016/J.IBIOD.2014.04.014
+Asadi, A., Verma, A., Yang, K., & Mejabi, B. (2017). Wastewater treatment aeration
+    process optimization: A data mining approach. Journal of Environmental
+    Management, 203, 630–639. https://doi.org/10.1016/J.JENVMAN.2016.07.047
+Barker, P. S., & Dold, P. L. (1997). General model for biological nutrient removal
+    activated-sludge systems: model presentation. Water Environment Research, 69(5),
+    969–984. https://doi.org/10.2175/106143097X125669
+Bazemo, U., Brannum, D., Young, M., Redmond, E., & Moss, L. (2021). Sulfur Modeling:
+   Assessing the Efficacy of Liquid Treatments for Primary Clarifier Odor Control and
+   Their Whole Plant Impacts at WRRFs. https://doi.org/10.2175/193864718825157933
+Bisschop, J. (2018). Modeling Guide — AIMMS Documentation. Advanced Interactive
+    Multidimensional                     Modeling                      System.
+    https://documentation.aimms.com/aimms_modeling.html
+Bressani-Ribeiro, T., Almeida, P. G. S., Chernicharo, C. A. L., & Volcke, E. I. P. (2021).
+    Inorganic carbon limitation during nitrogen conversions in sponge-bed trickling filters
+    for mainstream treatment of anaerobic effluent. Water Research, 201, 117337.
+    https://doi.org/10.1016/J.WATRES.2021.117337
+Calise, F., Eicker, U., Schumacher, J., & Vicidomini, M. (2020). Wastewater Treatment
+     Plant: Modelling and Validation of an Activated Sludge Process. Energies 2020, Vol.
+     13, Page 3925, 13(15), 3925. https://doi.org/10.3390/EN13153925
+Caro, F., Ferreira, J., Castelló, E., Pinto, J. C., & Santiviago, C. (2024). Bio2Py: An API
+    for integrating Python with BioWin for enhanced data acquisition in wastewater
+    treatment simulations. Journal of Water Process Engineering, 63, 105426.
+    https://doi.org/10.1016/J.JWPE.2024.105426
+Ching, P. M. L., Zou, X., Wu, D., So, R. H. Y., & Chen, G. H. (2022). Development of a
+    wide-range soft sensor for predicting wastewater BOD5 using an eXtreme gradient
+
+P a g e | 71
+
+    boosting (XGBoost) machine. Environmental                  Research,      210,    112953.
+    https://doi.org/10.1016/J.ENVRES.2022.112953
+Croll, H. C., Ikuma, K., Ong, S. K., & Sarkar, S. (2023). Reinforcement learning applied
+     to wastewater treatment process control optimization: Approaches, challenges, and
+     path forward. Critical Reviews in Environmental Science and Technology, 53(20),
+     1775–1794. https://doi.org/10.1080/10643389.2023.2183699
+Damalerio, R. G., Beltran, A. B., & Aviso, K. B. (2022). Bi-Objective Optimisation Model
+   for Phosphorous Removal in Wastewater Treatment Plants. Chemical Engineering
+   Transactions, 97, 343. https://doi.org/10.3303/CET2297058
+Damalerio, R. G., Beltran, A. B., Orbecido, A. H., Aviso, K. B., Tanhueco, R. M. T.,
+   Torneo, A. R., Ancog, R. C., & Promentilla, M. A. B. (2022). Decentralised
+   Wastewater Management Systems in Developing Countries: Key Barriers and
+   Potential Resource Recovery Applications. Chemical Engineering Transactions, 97,
+   367–372. https://doi.org/10.3303/CET2297062
+Dietl, A., Ferousi, C., Maalcke, W. J., Menzel, A., De Vries, S., Keltjens, J. T., Jetten, M.
+     S. M., Kartal, B., & Barends, T. R. M. (2015). The inner workings of the hydrazine
+     synthase multiprotein complex. Nature 2015 527:7578, 527(7578), 394–397.
+     https://doi.org/10.1038/nature15517
+Díez-Montero, R., Castrillo, M., Casao, M., & Tejero, I. (2019). Model-based evaluation
+    of a trickling filter facility upgrade to biological nutrient removal. Science of The Total
+    Environment, 661, 187–195. https://doi.org/10.1016/J.SCITOTENV.2019.01.136
+Dold, P. L., Ekama, G. A., & Marais Van, G. R. (1981). A GENERAL MODEL FOR THE
+    ACTIVATED SLUDGE PROCESS. Progress in Water Technology, 12(6), 47–77.
+    https://doi.org/10.1016/B978-1-4832-8438-5.50010-8
+Duan, S., Zhang, Y., & Zheng, S. (2022). Heterotrophic nitrifying bacteria in wastewater
+   biological nitrogen removal systems: A review. Critical Reviews in Environmental
+   Science             and         Technology,            52(13),            2302–2338.
+   https://doi.org/10.1080/10643389.2021.1877976
+Ekinci, E., Özbay, B., Omurca, S. İ., Sayın, F. E., & Özbay, İ. (2023). Application of ML
+    algorithms and feature selection methods for better prediction of sludge production
+    in a real advanced biological wastewater treatment plant. Journal of Environmental
+    Management, 348, 119448. https://doi.org/10.1016/J.JENVMAN.2023.119448
+Fall, C., Jiménez-Zárate, A., Martínez-García, C. G., Esparza-Soto, M., & Comeau, Y.
+     (2015). Activated sludge with low solids production: modified ASM1 modeling and
+     simulation.     Desalination  and   Water     Treatment,    56(11),  3075–3086.
+     https://doi.org/10.1080/19443994.2014.966329
+
+P a g e | 72
+
+Fang, F., Ni, B., Li, W., Sheng, G., & Yu, H. (2011). A simulation-based integrated
+   approach to optimize the biological nutrient removal process in a full-scale
+   wastewater treatment plant. Chemical Engineering Journal, 174(2–3), 635–643.
+   https://doi.org/10.1016/J.CEJ.2011.09.079
+Galan, B., & Grossmann, I. E. (1998). Optimal Design of Distributed Wastewater
+    Treatment Networks. Industrial and Engineering Chemistry Research, 37(10), 4036–
+    4048. https://doi.org/10.1021/IE980133H
+Galán, B., & Grossmann, I. E. (1999a). Optimization strategies for the design and
+    synthesis of distributed wastewater treatment networks. Computers & Chemical
+    Engineering,    23(SUPPL.     1),  S161–S164.     https://doi.org/10.1016/S0098-
+    1354(99)80040-4
+Galán, B., & Grossmann, I. E. (1999b). Optimization strategies for the design and
+    synthesis of distributed wastewater treatment networks. Computers & Chemical
+    Engineering,    23(SUPPL.     1),  S161–S164.     https://doi.org/10.1016/S0098-
+    1354(99)80040-4
+Gu, Y., Li, Y., Yuan, F., & Yang, Q. (2023). Optimization and control strategies of aeration
+    in WWTPs: A review. Journal of Cleaner Production, 418, 138008.
+    https://doi.org/10.1016/J.JCLEPRO.2023.138008
+Guelli Ulson De Souza, S. M. D. A., Xavier, M. F., Da Silva, A., & Ulson De Souza, A. A.
+   (2011). Water Reuse and Wastewater Minimization in Chemical Industries Using
+   Differentiated Regeneration of Contaminants. Industrial and Engineering Chemistry
+   Research, 50(12), 7428–7436. https://doi.org/10.1021/IE200305Z
+Gujer, W., Henze, M., Mino, T., & Van Loosdrecht, M. (1999). Activated sludge model No.
+    3. Water Science and Technology, 39(1), 183–193. https://doi.org/10.1016/S0273-
+    1223(98)00785-9
+Gutterres, M., Aquim, P. M., Passos, J. B., & Trierweiler, J. O. (2010). Water reuse in
+    tannery beamhouse process. Journal of Cleaner Production, 18(15), 1545–1552.
+    https://doi.org/10.1016/J.JCLEPRO.2010.06.017
+Hansen, É., Rodrigues, M. A. S., Aragão, M. E., & de Aquim, P. M. (2018). Water and
+   wastewater minimization in a petrochemical industry through mathematical
+   programming.       Journal    of   Cleaner     Production,   172,    1814–1822.
+   https://doi.org/10.1016/J.JCLEPRO.2017.12.005
+Hatamoto, M., Okubo, T., Kubota, K., & Yamaguchi, T. (2018). Characterization of
+    downflow hanging sponge reactors with regard to structure, process function, and
+    microbial community compositions. Applied Microbiology and Biotechnology 2018
+    102:24, 102(24), 10345–10352. https://doi.org/10.1007/S00253-018-9406-6
+
+P a g e | 73
+
+Hauduc, H., Rieger, L., Oehmen, A., van Loosdrecht, M. C. M., Comeau, Y., Héduit, A.,
+   Vanrolleghem, P. A., & Gillot, S. (2013). Critical review of activated sludge modeling:
+   State of process knowledge, modeling concepts, and limitations. Biotechnology and
+   Bioengineering, 110(1), 24–46. https://doi.org/10.1002/BIT.24624
+Hellal, M. S., & Abou-Elela, S. I. (2021). Simulation of a passively aerated biological filter
+    (PABF) immobilized with non-woven polyester fabric (NWPF) for wastewater
+    treatment using GPS-X. Water and Environment Journal, 35(4), 1192–1203.
+    https://doi.org/10.1111/WEJ.12709
+Henze, M., Grady, C. P. L., Gujer, W., Marais, G. V. R., & Matsuo, T. (1987). A general
+   model for single-sludge wastewater treatment systems. Water Research, 21(5), 505–
+   515. https://doi.org/10.1016/0043-1354(87)90058-3
+Henze, M., Gujer, W., Mino, T., Matsuo, T., Wentzel, M. C., Marais, G. v. R., & Van
+   Loosdrecht, M. C. M. (1999). Activated Sludge Model No.2d, ASM2D. Water Science
+   and Technology, 39(1), 165–182. https://doi.org/10.2166/WST.1999.0036
+Henze, M., Gujer, W., Mino, T., & van Loosedrecht, M. (2006). Activated Sludge Models
+   ASM1, ASM2, ASM2d and ASM3. Water Intelligence Online, 5(0), 9781780402369–
+   9781780402369. https://doi.org/10.2166/9781780402369
+Hoover, S. R., & Porges, N. (1952). Assimilation of Dairy Wastes by Activated Sludge: II.
+   The Equation of Synthesis and Rate of Oxygen Utilization. Sewage and Industrial
+   Wastes, 24(3), 306–312. https://www.jstor.org/stable/25031842
+Hu, Z. R., Wentzel, M. C., & Ekama, G. A. (2007). A general kinetic model for biological
+    nutrient removal activated sludge systems: Model development. Biotechnology and
+    Bioengineering, 98(6), 1242–1258. https://doi.org/10.1002/BIT.21508
+Jafarinejad, S. (2020). A framework for the design of the future energy-efficient, cost-
+    effective, reliable, resilient, and sustainable full-scale wastewater treatment plants.
+    Current Opinion in Environmental Science & Health, 13, 91–100.
+    https://doi.org/10.1016/J.COESH.2020.01.001
+Jain, P., & Kar, P. (2017). Non-convex Optimization for ML. Foundations and Trends® in
+     ML, 10(3–4), 142–363. https://doi.org/10.1561/2200000058
+Jana, D. K., Bhunia, P., Das Adhikary, S., & Bej, B. (2022). Optimization of Effluents Using
+    Artificial Neural Network and Support Vector Regression in Detergent Industrial
+    Wastewater       Treatment.    Cleaner     Chemical      Engineering,     3,    100039.
+    https://doi.org/10.1016/J.CLCE.2022.100039
+Jasim, N. A. (2020). The design for wastewater treatment plant (WWTP) with GPS X
+    modelling.                 Cogent               Engineering,             7(1).
+    https://doi.org/10.1080/23311916.2020.1723782
+
+P a g e | 74
+
+Kasi, M., Simsek, H., Wadhawan, T., Bye, C., Blonigen, M., & Khan, E. (2011). Modeling
+    a Two-Stage Trickling Filter Wastewater Treatment Plant to Simulate the Fate of
+    Dissolved Organic Nitrogen and Its Biodegradability. Proceedings of the Water
+    Environment               Federation,            2011(8),             6638–6654.
+    https://doi.org/10.2175/193864711802793254
+Kim, M., Rao, A. S., & Yoo, C. (2009). Dual Optimization Strategy for N and P Removal
+    in a Biological Wastewater Treatment Plant. Industrial and Engineering Chemistry
+    Research, 48(13), 6363–6371. https://doi.org/10.1021/IE801689T
+Kusiak, A., & Wei, X. (2012). Optimization of the Activated Sludge Process. Journal of
+    Energy Engineering, 139(1), 12–17. https://doi.org/10.1061/(ASCE)EY.1943-
+    7897.0000092
+Lainé, S., Phan, L., Pellarin, P., & Robert, P. (1999). Dynamic simulation of a low loaded
+    trickling filter for nitrification. Water Science and Technology, 39(4), 163–168.
+    https://doi.org/10.1016/S0273-1223(99)00073-6
+Li, B., Yue, R., Shen, L., Chen, C., Li, R., Xu, Y., Zhang, M., Hong, H., & Lin, H. (2022).
+     A novel method integrating response surface method with artificial neural network to
+     optimize membrane fabrication for wastewater treatment. Journal of Cleaner
+     Production, 376, 134236. https://doi.org/10.1016/J.JCLEPRO.2022.134236
+Li, J., An, X., Li, Q., Wang, C., Yu, H., Zhou, X., & Geng, Y. ao. (2022). Application of
+     XGBoost algorithm in the optimization of pollutant concentration. Atmospheric
+     Research, 276, 106238. https://doi.org/10.1016/J.ATMOSRES.2022.106238
+Li, M., Hu, S., Xia, J., Wang, J., Song, X., & Shen, H. (2020). Dissolved Oxygen Model
+     Predictive Control for Activated Sludge Process Model Based on the Fuzzy C-means
+     Cluster Algorithm. International Journal of Control, Automation and Systems, 18(9),
+     2435–2444. https://doi.org/10.1007/S12555-019-0438-1/METRICS
+Liang, J., Yuan, Y., Zhang, Z., You, S., & Yuan, Y. (2021). Modeling a Three-Stage
+    Biological Trickling Filter Based on the A2O Process for Sewage Treatment. Water
+    2021, Vol. 13, Page 1152, 13(9), 1152. https://doi.org/10.3390/W13091152
+Lim, J., Lee, Y., Ataei, A., & Yoo, C. (2011). Exploration of dual optimal conditions for
+    COD and nitrogen removal in an MBR. Asia-Pacific Journal of Chemical Engineering,
+    6(3), 433–440. https://doi.org/10.1002/APJ.563
+Lin, L., Yang, H., & Xu, X. (2022). Effects of Water Pollution on Human Health and
+     Disease Heterogeneity: A Review. Frontiers in Environmental Science, 10, 880246.
+     https://doi.org/10.3389/FENVS.2022.880246/BIBTEX
+
+P a g e | 75
+
+Lu, H., Chandran, K., & Stensel, D. (2014). Microbial ecology of denitrification in biological
+     wastewater         treatment.      Water         Research,         64,         237–254.
+     https://doi.org/10.1016/J.WATRES.2014.06.042
+Luan, Y. N., Yin, Y., Xu, Y., Zhang, F., Wang, X., Zhao, F., Xiao, Y., & Liu, C. (2023).
+    Simultaneous nitrification and denitrification in a novel rotating self-aerated biofilm
+    reactor for decentralized wastewater treatment. Bioresource Technology, 369,
+    128513. https://doi.org/10.1016/J.BIORTECH.2022.128513
+Maalcke, W. J., Reimann, J., De Vries, S., Butt, J. N., Dietl, A., Kip, N., Mersdorf, U.,
+   Barends, T. R. M., Jetten, M. S. M., Keltjens, J. T., & Kartal, B. (2016).
+   Characterization of anammox hydrazine dehydrogenase, a Key -producing enzyme
+   in the global nitrogen cycle. Journal of Biological Chemistry, 291(33), 17077–17092.
+   https://doi.org/10.1074/jbc.M116.735530
+Machdar, I., Harada, H., Ohashi, A., Sekiguchi, Y., Okui, H., & Ueki, K. (1997). A novel
+   and cost-effective sewage treatment system consisting of UASB pre-treatment and
+   aerobic post-treatment units for developing countries. Water Science and
+   Technology, 36(12), 189–197. https://doi.org/10.1016/S0273-1223(97)00739-7
+Madhav, S., Ahamad, A., Singh, A. K., Kushawaha, J., Chauhan, J. S., Sharma, S., &
+   Singh, P. (2020). Water Pollutants: Sources and Impact on the Environment and
+   Human Health. 43–62. https://doi.org/10.1007/978-981-15-0671-0_4
+Mahmoud, M., Ismail, S., & Tawfik, A. (2018). Post-treatment of anaerobic effluent
+   containing 1,4-dioxane and heavy metals via auto-aerated down-flow hanging luffa
+   (ADHL) system. Process Safety and Environmental Protection, 117, 22–32.
+   https://doi.org/10.1016/J.PSEP.2018.04.008
+Mahmoud, M., Tawfik, A., & El-Gohary, F. (2010). Simultaneous Organic and Nutrient
+   Removal in a Naturally Ventilated Biotower Treating Presettled Municipal
+   Wastewater. Journal of Environmental Engineering, 136(3), 301–307.
+   https://doi.org/10.1061/(ASCE)EE.1943-7870.0000148
+Mahmoud, M., Tawfik, A., & El-Gohary, F. (2011). Use of down-flow hanging sponge
+   (DHS) reactor as a promising post-treatment system for municipal wastewater.
+   Chemical            Engineering        Journal,       168(2),        535–543.
+   https://doi.org/10.1016/J.CEJ.2011.01.019
+Manav-Demir, N., Gelgor, H. B., Oz, E., Ilhan, F., Ulucan-Altuntas, K., Tiwary, A., & Debik,
+   E. (2024). Effluent parameters prediction of a biological nutrient removal (BNR)
+   process using different ML methods: A case study. Journal of Environmental
+   Management, 351, 119899. https://doi.org/10.1016/J.JENVMAN.2023.119899
+Marais, G. V. R., & Ekama, G. (1976). The activated sludge process. Part 1 - Steady state
+    behaviour. Water S.A, 2(4), 163–200. https://www.researchgate.net/profile/George-
+
+P a g e | 76
+
+    Ekama/publication/284774604_The_activated_sludge_process_Part_1_-
+    _Steady_state_behaviour/links/572f8b2a08ae744151904abd/The-activated-sludge-
+    process-Part-1-Steady-state-behaviour.pdf
+McCormick, G. P. (1976). Computability of global solutions to factorable nonconvex
+   programs: Part I - Convex underestimating problems. Mathematical Programming,
+   10(1), 147–175. https://doi.org/10.1007/BF01580665/METRICS
+Meijer, S. C. F. (2004). Theoretical and practical aspects of modelling activated sludge
+    processes.       Technische       Universiteit     Delft    (The       Netherlands).
+    https://www.elibrary.ru/item.asp?id=8860915
+Narayanan, C. M., & Narayan, V. (2019). Biological wastewater treatment and bioreactor
+    design: A review. Sustainable Environment Research, 1(1), 1–17.
+    https://doi.org/10.1186/S42834-019-0036-1/TABLES/1
+Nasr, M., Ibrahim, M. G., & Attia, M. (2022). Recent applications of downflow hanging
+    sponge technology for decentralized wastewater treatment. Cost Effective
+    Technologies for Solid Waste and Wastewater Treatment, 59–67.
+    https://doi.org/10.1016/B978-0-12-822933-0.00014-0
+Nazif, S., Forouzanmehr, F., & Khatibi, Y. (2023). Developing a practical model for the
+    optimal operation of wastewater treatment plant considering influent characteristics.
+    Environmental Science and Pollution Research, 30(14), 39764–39782.
+    https://doi.org/10.1007/S11356-022-24981-8/METRICS
+Nazlabadi, E., Niaragh, E. K., & Moghaddam, M. R. A. (2021). A systematic and critical
+    review of two decades’ application of response surface methodology in biological
+    wastewater treatment processes. Desalination and Water Treatment, 228, 92–120.
+    https://doi.org/10.5004/DWT.2021.27315
+NEDA, & DOH. (2010). Philippine Sanitation Roadmap. National Economic Development
+   Authority      (NEDA)       and       Department      of     Health     (DOH).
+   https://www.scribd.com/document/52311529/Philippine-Sanitation-roadmap
+Nelson, M. I., & Sidhu, H. S. (2009). Analysis of the activated sludge model (number 1).
+    Applied            Mathematics            Letters,           22(5),        629–635.
+    https://doi.org/10.1016/J.AML.2008.05.003
+Niu, G., Li, X., Wan, X., He, X., Zhao, Y., Yi, X., Chen, C., Xujun, L., Ying, G., & Huang,
+     M. (2022). Dynamic optimization of wastewater treatment process based on novel
+     multi-objective ant lion optimization and deep learning algorithm. Journal of Cleaner
+     Production, 345, 131140. https://doi.org/10.1016/J.JCLEPRO.2022.131140
+Padrón-Páez, J. I., Almaraz, S. D. L., & Román-Martínez, A. (2020). Sustainable
+    wastewater treatment plants design through multiobjective optimization. Computers
+
+P a g e | 77
+
+    &              Chemical         Engineering,      140,                            106850.
+    https://doi.org/10.1016/J.COMPCHEMENG.2020.106850
+Petersen, B., Gernaey, K., Henze, M., & Vanrolleghem, P. A. (2003). Calibration of
+    Activated Sludge Models: A Critical Review of Experimental Designs. 101–186.
+    https://doi.org/10.1007/978-94-017-0932-3_5
+Poch,        M.        (1993).       Water        Treatment       Plant             [Dataset].
+    https://archive.ics.uci.edu/dataset/106/water+treatment+plant
+Poh, P. E., Gouwanda, D., Mohan, Y., Gopalai, A. A., & Tan, H. M. (2016). Optimization
+    of Wastewater Anaerobic Digestion Using Mechanistic and Meta-heuristic Methods:
+    Current Limitations and Future Opportunities. Water Conservation Science and
+    Engineering, 1(1), 1–20. https://doi.org/10.1007/S41101-016-0001-3/METRICS
+Preena, P. G., Rejish Kumar, V. J., & Singh, I. S. B. (2021). Nitrification and denitrification
+    in recirculating aquaculture systems: the processes and players. Reviews in
+    Aquaculture, 13(4), 2053–2075. https://doi.org/10.1111/RAQ.12558
+Rapi, N., Jane, C., Azni, M. E., Hitam, S. M. S., Mohamad, R., & Noorain, R. (2021).
+    Biological treatment of palm oil mill effluent by using a downflow hanging sponge
+    reactor. IOP Conference Series: Earth and Environmental Science, 922(1), 012049.
+    https://doi.org/10.1088/1755-1315/922/1/012049
+Rieger, L., Koch, G., Kühni, M., Gujer, W., & Siegrist, H. (2001). The eawag bio-p module
+    for activated sludge model no. 3. Water Research, 35(16), 3887–3903.
+    https://doi.org/10.1016/S0043-1354(01)00110-5
+Rivas, A., Irizar, I., & Ayesa, E. (2008). Model-based optimisation of Wastewater
+    Treatment Plants design. Environmental Modelling & Software, 23(4), 435–450.
+    https://doi.org/10.1016/J.ENVSOFT.2007.06.009
+Rubio-Castro, E., Ponce-Ortega, J. M., Serna-González, M., El-Halwagi, M. M., & Pham,
+    V. (2013). Global optimization in property-based interplant water integration. AIChE
+    Journal, 59(3), 813–833. https://doi.org/10.1002/AIC.13874
+Sadino-Riquelme, M. C., Donoso-Bravo, A., Zorrilla, F., Valdebenito-Rolack, E., Gómez,
+    D., & Hansen, F. (2023). Computational fluid dynamics (CFD) modeling applied to
+    biological wastewater treatment systems: An overview of strategies for the kinetics
+    integration.       Chemical     Engineering        Journal,      466,       143180.
+    https://doi.org/10.1016/J.CEJ.2023.143180
+Sadri Moghaddam, S., & Pirali, M. R. (2021). Modeling and calibration of a full-scale
+    wastewater treatment plant using GPS-X model (A case study of Tehran). Numerical
+    Methods in Civil Engineering, 5(4), 67–76. https://doi.org/10.52547/NMCE.5.4.67
+
+P a g e | 78
+
+Selerio, E. F. (2022). Configuration of urban water eutrophication abatement systems
+    using a novel regression-based optimization scheme. Journal of Environmental
+    Management, 319, 115667. https://doi.org/10.1016/J.JENVMAN.2022.115667
+Shojaei, S., & Shojaei, S. (2021). Optimization of Process Conditions in Wastewater
+    Degradation Process. Soft Computing Techniques in Solid Waste and Wastewater
+    Management, 381–392. https://doi.org/10.1016/B978-0-12-824463-0.00010-0
+Simsek, H., Kasi, M., Wadhawan, T., Bye, C., Blonigen, M., & Khan, E. (2012). Fate of
+    dissolved organic nitrogen in two stage trickling filter process. Water Research,
+    46(16), 5115–5126. https://doi.org/10.1016/J.WATRES.2012.06.042
+Strous, M., Heijnen, J. J., Kuenen, J. G., & Jetten, M. S. M. (1998). The sequencing batch
+    reactor as a powerful tool for the study of slowly growing anaerobic ammonium-
+    oxidizing microorganisms. Applied Microbiology and Biotechnology, 50(5), 589–596.
+    https://doi.org/10.1007/S002530051340/METRICS
+Sundui, B., Ramirez Calderon, O. A., Abdeldayem, O. M., Lázaro-Gil, J., Rene, E. R., &
+   Sambuu, U. (2021). Applications of ML algorithms for biological wastewater
+   treatment: Updates and perspectives. Clean Technologies and Environmental
+   Policy, 23(1), 127–143. https://doi.org/10.1007/S10098-020-01993-X/METRICS
+Szeląg, B., Kiczko, A., Zaborowska, E., Mannina, G., & Mąkinia, J. (2022). Modeling
+    nutrient removal and energy consumption in an advanced activated sludge system
+    under uncertainty. Journal of Environmental Management, 323, 116040.
+    https://doi.org/10.1016/J.JENVMAN.2022.116040
+Tabios III, G. Q. (2020). Physical Features and State of Water Resources and Status of
+    Water Governance in the Philippines. In Water Resources Systems of the
+    Philippines: Modeling Studies (1st ed., pp. 9–28). Springer Cham.
+    https://doi.org/10.1007/978-3-030-25401-8_2
+Takács, I., & Vanrolleghem, P. (2006). Elemental balances in activated sludge modelling.
+    Proceedings       of   IWA        World   Water     Congress        2006,   10–14.
+    https://modeleau.fsg.ulaval.ca/fileadmin/modeleau/documents/Publications/pvr673.
+    pdf
+Tawfik, A., Ohashi, A., & Harada, H. (2006). Sewage treatment in a combined up-flow
+   anaerobic sludge blanket (UASB)–down-flow hanging sponge (DHS) system.
+   Biochemical           Engineering         Journal,       29(3),        210–219.
+   https://doi.org/10.1016/J.BEJ.2005.11.018
+Tawfik, A., Ohashi, A., & Harada, H. (2009). Effect of sponge volume on the performance
+   of down-flow hanging sponge system treating UASB reactor effluent. Bioprocess and
+   Biosystems Engineering 2009 33:7, 33(7), 779–785. https://doi.org/10.1007/S00449-
+   009-0399-5
+
+P a g e | 79
+
+Tosarkani, B. M., & Amin, S. H. (2020). A robust optimization model for designing a
+    wastewater treatment network under uncertainty: Multi-objective approach.
+    Computers           &       Industrial    Engineering,      146,       106611.
+    https://doi.org/10.1016/J.CIE.2020.106611
+Tyagi, V. K., Ali, M., Tawfik, A., Maharjan, N., Kazmi, A. A., Okubo, T., & Harada, H.
+    (2021). Future perspectives of energy saving down-flow hanging sponge (DHS)
+    technology for wastewater valorization—a review. Reviews in Environmental
+    Science        and     Bio/Technology       2021     20:2,     20(2),    389–418.
+    https://doi.org/10.1007/S11157-021-09573-1
+Ulrich, A., Reuter, S., & Gutterer, B. (2009). Decentralised wastewater treatment system
+     (DEWATS) and sanitation in developing countries: a practical guide. In Water,
+     Engineering and Development Centre (WEDC) Loughborough University of
+     Technology. Water, Engineering and Development Centre (WEDC) Loughborough
+     University of Technology.
+Van Kessel, M. A. H. J., Speth, D. R., Albertsen, M., Nielsen, P. H., Op Den Camp, H. J.
+    M., Kartal, B., Jetten, M. S. M., & Lücker, S. (2015). Complete nitrification by a single
+    microorganism.         Nature      2015       528:7583,     528(7583),         555–559.
+    https://doi.org/10.1038/nature16459
+Van Loosdrecht, M. C. M., Lopez-Vazquez, C. M., Meijer, S. C. F., Hooijmans, C. M., &
+    Brdjanovic, D. (2015). Twenty-five years of ASM1: past, present and future of
+    wastewater treatment modelling. Journal of Hydroinformatics, 17(5), 697–718.
+    https://doi.org/10.2166/HYDRO.2015.006
+Vandekerckhove, T. (2018). Technology for thermophilic nitrogen removal from
+   wastewater: Developing combined nitrification/denitrification and proving anammox
+   [Dissertation,                           Ghent                           University].
+   https://biblio.ugent.be/publication/8584187/file/8584195
+Vanrolleghem, P. A., Spanjers, H., Petersen, B., Ginestet, P., & Takacs, I. (1999).
+    Estimating (combinations of) activated sludge model no. 1 parameters and
+    components by respirometry. Water Science and Technology, 39(1), 195–214.
+    https://doi.org/10.2166/WST.1999.0042
+Wang, P., Chen, Y., Zhang, C., Shi, Y., Wang, B., Lai, C., He, H., & Huang, B. (2024).
+   Real-time prediction of the chemical oxygen demand component parameters in
+   activated sludge model using backpropagation neural network. Heliyon, 10(16),
+   e35580. https://doi.org/10.1016/j.heliyon.2024.e35580
+Waqas, S., Harun, N. Y., Sambudi, N. S., Arshad, U., Nordin, N. A. H. M., Bilad, M. R.,
+   Saeed, A. A. H., & Malik, A. A. (2022). SVM and ANN Modelling Approach for the
+   Optimization of Membrane Permeability of a Membrane Rotating Biological
+
+P a g e | 80
+
+    Contactor for Wastewater Treatment. Membranes 2022, Vol. 12, Page 821, 12(9),
+    821. https://doi.org/10.3390/MEMBRANES12090821
+Wik, T. (2003). Trickling filters and biofilm reactor modelling. Reviews in Environmental
+    Science             and            Biotechnology,           2(2–4),          193–212.
+    https://doi.org/10.1023/B:RESB.0000040470.48460.BB/METRICS
+Winkler, M. K., & Straka, L. (2019). New directions in biological nitrogen removal and
+    recovery from wastewater. Current Opinion in Biotechnology, 57, 50–55.
+    https://doi.org/10.1016/J.COPBIO.2018.12.007
+Wu, X., Yang, Y., Wu, G., Mao, J., & Zhou, T. (2016). Simulation and optimization of a
+    coking wastewater biological treatment process by activated sludge models (ASM).
+    Journal        of      Environmental      Management,         165,      235–242.
+    https://doi.org/10.1016/J.JENVMAN.2015.09.041
+Xie, Y. (2021). Bioreactor strategies for sustainable nitrogen cycling based on
+    mineralization/nitrification, partial nitritation/anammox or sulfur-based denitratation
+    [Dissertation,                  University                 of               Antwerp].
+    https://repository.uantwerpen.be/docstore/d:irua:8594%0A
+Xu, X., Lv, Z., Song, Y., & Bin, L. (2015). Water system integration and optimization in a
+    yeast enterprise. Resources, Conservation and Recycling, 101, 96–104.
+    https://doi.org/10.1016/J.RESCONREC.2015.05.019
+Yang, L., Salcedo-Diaz, R., & Grossmann, I. E. (2014). Water Network Optimization with
+   Wastewater Regeneration Models. Industrial and Engineering Chemistry Research,
+   53(45), 17680–17695. https://doi.org/10.1021/IE500978H
+Yang, T., Qiu, W., Ma, Y., Chadli, M., & Zhang, L. (2014). Fuzzy model-based predictive
+   control of dissolved oxygen in activated sludge processes. Neurocomputing, 136,
+   88–95. https://doi.org/10.1016/J.NEUCOM.2014.01.025
+Ye, X., Chen, B., Jing, L., Zhang, B., & Liu, Y. (2019). Multi-agent hybrid particle swarm
+    optimization (MAHPSO) for wastewater treatment network planning. Journal of
+    Environmental                Management,                   234,               525–536.
+    https://doi.org/10.1016/J.JENVMAN.2019.01.023
+Zhang, D., Luo, J., Lee, Z. M. P., Gersberg, R. M., Liu, Y., Tan, S. K., & Ng, W. J. (2016).
+   Characterization of microbial communities in wetland mesocosms receiving caffeine-
+   enriched wastewater. Environmental Science and Pollution Research 2016 23:14,
+   23(14), 14526–14539. https://doi.org/10.1007/S11356-016-6586-4
+Zhang, T. C., & Bishop, P. L. (1994). Density, porosity, and pore structure of biofilms.
+   Water Research, 28(11), 2267–2277. https://doi.org/10.1016/0043-1354(94)90042-
+   6
+
+P a g e | 81

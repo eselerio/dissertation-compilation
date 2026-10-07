@@ -1,0 +1,162 @@
+\chapter{Integrated Assessment and Research Boundaries}
+\label{ch:assessment}
+
+\section{A common basis for evaluating the prediction chain}
+
+The research links a mechanistic component representation, statistical approximation, physical enforcement, interpretation, and operating choice. Each part introduces a specific question about credibility. The mechanistic representation defines the reference system. The statistical predictor approximates its response. The projection restricts the returned state to the imposed feasible set. Interpretation describes selected parts of the prediction map. Optimization uses the returned response to select controls. Evidence is needed at each point where the intended claim changes.
+
+The raw benchmark and the projection benchmark share a particular prediction. This permits a paired assessment of what changes when enforcement is applied. A comparison between two independently trained models answers a different question because it also contains differences in fitting and hyperparameter selection. The structured regression adds another distinction. Its raw head, affine projection, and final constrained output are separately assessable objects. Reporting only the final output would leave the contribution of the learned structure unclear.
+
+The connected plant adds several linked outputs. Its projection must be assessed across the mixer, reactor train, clarifier outlets, and solids inventory. A change that improves one location can worsen another while preserving joint constraints. Location-specific errors therefore remain necessary alongside a plant aggregate. This follows the general principle that approximation quality must be assessed in the quantities used by the intended decision \citep{BhosekarIerapetritou2018,McBride2019}.
+
+\begin{table}[htbp]
+\centering
+\caption{Claims and the evidence required to assess them.}
+\label{tab:claim_evidence}
+\small
+\begin{tabular}{p{0.25\textwidth}p{0.34\textwidth}p{0.31\textwidth}}
+\toprule
+Claim & Assessment evidence & Limit of the inference \\
+\midrule
+Accurate approximation & Held-out component and composite errors with defined scales & Agreement concerns the selected reference model and tested domain \\
+Physical admissibility & Original equality residuals, non-negativity checks, and inventory bounds & Unimposed kinetic and dynamic relations remain unverified \\
+Sample efficiency & Common learning curves and variation across partitions & The conclusion depends on the sampling and fitting budget \\
+Transparent structure & Named blocks, physical-unit coefficients, and sensitivity calculations & Coefficients are predictive associations rather than identified causal laws \\
+Reliable operating choice & Independent mechanistic solve at selected controls & A local search does not establish a global optimum \\
+Computational benefit & Separate development, search, prediction, projection, and verification costs & Search-time savings alone do not establish a lower total cost \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Examples that separate the assessment questions}
+
+\subsection{Mass conservation and prediction error in the same calculation}
+
+Consider a hypothetical two-component prediction problem in which both components use one material basis. The first reference concentration is 6 and the second is 4 in arbitrary concentration units. Their sum is $6+4=10$. The raw prediction gives 8 for the first component and 3 for the second. Its sum is $8+3=11$, so its inventory residual is $11-10=1$. Both coordinates are non-negative, but the state is inconsistent with mass conservation under the specified equality.
+
+Suppose a hypothetical projection for mass conservation lowers the first prediction by one unit and leaves the second unchanged. The projected sum is $7+3=10$. This is one admissible projection and is not asserted to be the nearest projection under every metric. The component errors can be calculated directly,
+\[
+\begin{aligned}
+\text{raw errors}&=(8-6,\,3-4)=(2,-1),\\
+\text{projected errors}&=(7-6,\,3-4)=(1,-1),\\
+\text{raw squared distance}&=2^2+(-1)^2=5,\\
+\text{projected squared distance}&=1^2+(-1)^2=2.
+\end{aligned}
+\]
+The corresponding Euclidean distances are $\sqrt5\approx2.236$ and $\sqrt2\approx1.414$. Their values follow from comparison with the reference state. The mass conservation test instead uses the predicted sums. In compact component notation, the raw state is $(8,3)^\top$, the reference state is $(6,4)^\top$, and the chosen projected state is $(7,3)^\top$. This calculation illustrates how feasibility and error are assessed on the same prediction without treating either calculation as a measured treatment outcome.
+
+\subsection{Why the two physical requirements are simultaneous}
+
+Now let the first hypothetical concentration be 11 and the second be $-1$. Their sum is $11+(-1)=10$, so the inventory equality is satisfied. The second component fails non-negativity. Replacing it by zero changes the sum to $11+0=11$. To return to the non-negative part of the line defined by mass conservation, both coordinates can be changed. The state with first concentration 10 and second concentration zero has sum ten and passes both checks.
+
+The individual adjustments make the distinction explicit,
+\[
+\begin{aligned}
+\text{raw state}&=(11,-1)^\top,\\
+\text{clipped state}&=(11+0,-1+1)^\top=(11,0)^\top,\\
+\text{jointly feasible state}&=(11-1,-1+1)^\top=(10,0)^\top.
+\end{aligned}
+\]
+Clipping changes only the second coordinate. The joint projection also compensates in the first coordinate. An equality projection alone can retain a negative component, while clipping alone can violate an equality. The final assessment therefore checks both properties on the same returned state \citep{KircherVotsmeier2025,Haddad2010}.
+
+Figure~\ref{fig:assessment_feasible_segment} places the three states on the line defined by mass conservation and its non-negative segment. Their positions show which requirement each state satisfies.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.42cm,y=0.42cm,>=Latex]
+\draw[->] (-0.6,0)--(13,0) node[right] {$c_1$};
+\draw[->] (0,-2)--(0,11.6) node[above] {$c_2$};
+\draw[dashed] (-0.4,10.4)--(11.4,-1.4);
+\draw[very thick] (0,10)--(10,0);
+\foreach \x in {5,10} {\draw (\x,0.15)--(\x,-0.15) node[below=2pt] {\small\x};}
+\draw (0.15,10)--(-0.15,10) node[left=2pt] {\small 10};
+\fill (11,-1) circle (2pt) node[right=4pt] {\small Raw $(11,-1)$};
+\draw (11,0) circle (2pt) node[above right=3pt] {\small Clipped $(11,0)$};
+\fill (10,0) circle (2.5pt);
+\node[below left=5pt] at (10,0) {\small Feasible $(10,0)$};
+\node[fill=white,inner sep=2pt] at (4.5,6.2) {\small $c_1+c_2=10$};
+\node[align=center,text width=4cm] at (7,10) {\small Thick segment contains the states satisfying mass conservation and non-negativity};
+\end{tikzpicture}
+\caption{Hypothetical two-component geometry showing why clipping a negative concentration can violate a sum fixed by mass conservation.}
+\label{fig:assessment_feasible_segment}
+\end{figure}
+
+The raw point is on the extended line defined by mass conservation but below the concentration boundary. The clipped point reaches a non-negative second coordinate while leaving that line. The jointly projected point lies at the end of the thick feasible segment. The geometry therefore makes the two simultaneous tests visible without replacing their numerical checks.
+
+Separate marginal summaries can also be misleading. If one prediction satisfies only mass conservation and another satisfies only non-negativity, neither is jointly feasible. For a hypothetical collection of two such states, each marginal compliance frequency is one half, while the joint compliance frequency is zero. The correct denominator is the number of states checked, and both conditions are tested within each state before counting joint compliance.
+
+\subsection{Objective comparisons at selected decisions}
+
+A hypothetical decision comparison uses two operating choices with surrogate-predicted dimensionless objectives of $0.90$ and $0.95$. Smaller values are preferred, so prediction favors the first choice by $0.95-0.90=0.05$. Suppose independent mechanistic evaluation instead gives $1.10$ and $0.98$. On that common reference, the first choice has a larger objective by $1.10-0.98=0.12$. Relative to the second reference value, the difference is $100(0.12)/0.98\approx12.24\%$.
+
+Both projected surrogate states could satisfy every imposed balance while this ordering changes. The value $0.12$ compares the two tested choices. It is not a gap from a known global optimum. These hypothetical arithmetic steps explain why physical consistency and average prediction error cannot establish the ordering of selected decisions \citep{Alexandrov1998,Pedrozo2025}.
+
+\subsection{Following sensitivity through projection}
+
+Interpretation also depends on the complete map. A positive quadratic aeration coefficient in a raw driver does not imply that every final effluent quantity increases with aeration. Coupling transforms the driver into component predictions. The reporting map combines components. The active output constraints can alter local derivatives again. Physical-unit interpretation must therefore identify whether it concerns a driver coefficient, a raw prediction derivative, or a derivative of the final projected response \citep{Brunton2016,Shen2023}.
+
+A simplified calculation isolates the effect of projection. Let a dimensionless operating input be $a$, and let two hypothetical raw concentration equations be
+\[
+c_{raw,1}(a)=4+a,\qquad c_{raw,2}(a)=3+2a.
+\]
+The raw first-component slope is one and the second-component slope is two. At $a=2$, the concentrations are 6 and 7, with a total of 13. Suppose the required total is ten and the projection minimizes the sum of squared adjustments with equal weights. If the first adjustment is $d_1$ and the second is $d_2$, mass conservation requires $d_1+d_2=-3$. Substitute $d_2=-3-d_1$ into the squared-adjustment objective and differentiate,
+\[
+\begin{aligned}
+d_1^2+d_2^2&=d_1^2+(-3-d_1)^2,\\
+\frac{\mathrm d}{\mathrm d d_1}\bigl[d_1^2+(-3-d_1)^2\bigr]
+&=4d_1+6=0.
+\end{aligned}
+\]
+Both adjustments are $-1.5$, giving a state satisfying mass conservation with concentrations 4.5 and 5.5. For a general $a$, the excess total is $(4+a)+(3+2a)-10=3a-3$. Equal-weight projection subtracts one half of that excess from each coordinate,
+\[
+\begin{aligned}
+c_{aff,1}(a)&=4+a-\frac{3a-3}{2}=5.5-0.5a,\\
+c_{aff,2}(a)&=3+2a-\frac{3a-3}{2}=4.5+0.5a.
+\end{aligned}
+\]
+The projected slopes are $-0.5$ and $0.5$. The first changes sign even though its raw slope is positive. The sum of the projected slopes is zero, consistent with a total that does not depend on $a$.
+
+Non-negativity introduces another stage. The affine first component reaches zero at $a=11$. For $a>11$, the affine state lies outside the segment satisfying mass conservation and non-negativity. In this equal-weight two-component example, the nearest jointly feasible state is then $(0,10)^\top$. Both local output slopes are zero while that boundary remains active. The slope changes at the transition point. This calculation illustrates why a raw coefficient, an affine sensitivity, and a final constrained sensitivity have distinct meanings. It does not identify an aeration response of the activated sludge model.
+
+Figure~\ref{fig:assessment_branch_sensitivity} plots the hypothetical first-component equations and the slopes calculated from them. The left panel shows the concentration returned at each stage. The right panel shows the corresponding local rate of change with respect to the operating input.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{ch7_concept_branch_sensitivity.pdf}
+\caption{Hypothetical first-component response and sensitivity before and after mass conservation and non-negativity enforcement. Open circles mark the two one-sided checked slopes at the active-boundary transition.}
+\label{fig:assessment_branch_sensitivity}
+\end{figure}
+
+Before the boundary becomes active, the affine and checked curves coincide. Their negative first-component slope differs from the positive raw slope because mass conservation redistributes the operating response between the two components. After the boundary becomes active, the checked concentration stays at zero and its local slope is zero. The checked map has no single classical derivative at the transition itself. These visual relationships belong to the analytical illustration and do not represent fitted treatment behavior.
+
+\section{Data separation and the status of operating evidence}
+
+All quantities learned from data require a declared fitting reference. Input transformations, output scales, hyperparameters, regularization, overflow solids fitting, and trust calibration belong to the development information. The final assessment information is reserved for evaluating the specified procedure. This separation must remain consistent when the procedure contains a learned model followed by a constrained calculation \citep{Kaufman2012}.
+
+The standalone reactor benchmark uses nested cross-validation to separate model selection from outer assessment. Its beyond-domain samples are simulated separately and are not used to tune the fitted predictor. The structured-regression protocol uses its declared training and holdout partitions and repeated learning-curve assessment. These designs answer related questions with different units of evidence. Their scores should not be pooled into one model ranking as if they arose from a common assessment sample.
+
+The connected plant design distinguishes development, holdout prediction assessment, and operating verification. It also recognizes that engineering choices can be informed by earlier inspection of a simulated response. Where an analysis setting follows such inspection, mechanistic evaluation of the selected controls provides conditional evidence for that declared setting. It does not become a fully prospective assessment merely because another solve is performed. A later independent evaluation with frozen choices is needed for a stronger prospective claim \citep{Kaufman2012,Zhang2026}.
+
+Failure accounting is part of this evidence. A failed mechanistic solve, an infeasible projection, an operating search that fails a stopping criterion, and a control that violates the original engineering constraints are different events. Omitting them changes the apparent domain and the apparent computational cost. Acceptance rules and failure counts must therefore accompany empirical assessment when it is undertaken.
+
+\section{Limits of physical guarantees}
+
+The reactor invariant constraints follow from the stoichiometric matrix and the compatibility of the external forcing with those invariants. They apply to the declared component representation and reactor boundary. They do not establish that every feasible concentration vector is a reachable reactor steady state. The feasible set generally contains many states that satisfy inventories and non-negativity without satisfying the nonlinear rate equations.
+
+The plant constraints extend this logic to connected unit outputs. Mixing, flow-weighted clarifier balances, soluble-component continuity, and solids inventory bounds address specified physical relationships. Their satisfaction does not reconstruct the full layered clarifier or prove dynamic stability. The direct reference equations remain necessary for judging the selected operating controls.
+
+Numerical feasibility also needs a declared tolerance. Exact equalities describe the mathematical formulation. Finite arithmetic and iterative solvers return approximate numerical states. A solver termination message is insufficient without residual checks in the original units or in a clearly stated scaled form. The same principle applies to the direct mechanistic comparator \citep{Boyd2004,BuzziFerraris2013}.
+
+\section{Limits of generalization and interpretation}
+
+Simulated training data reflect the selected process model, parameter values, and input design. A wide numerical range does not guarantee coverage of every important joint condition. A steady-state input description does not encode all dynamic or historical influences. The distinct standalone and plant alkalinity ranges also prevent an automatic transfer claim between those domains. Domain checks need to refer to the actual training representation.
+
+Interpretation is conditional on the fitted predictor. Second-order blocks support transparent inspection, but correlated inputs and the coupling variables can produce nonunique coefficient combinations. Resampling can assess stability of structural patterns. It cannot turn a predictive coefficient into a causal biological constant. Sensitivity analysis should identify the input unit, the operating point, and the projection stage to which it applies \citep{Machado2014,Brunton2016}.
+
+A projected point prediction also lacks an automatic uncertainty guarantee. Model ensembles, probabilistic reconciliation, and hard-constrained probabilistic learning provide other approaches to uncertainty \citep{Lakshminarayanan2017,Hansen2024,Utkarsh2025}. Their existence does not make a deterministic projection a calibrated distribution. Uncertainty remains a separate extension requiring its own assumptions and validation.
+
+\section{Engineering interpretation of the planned assessment}
+
+The intended assessment can identify which prediction procedures are suitable for particular uses. A rapid unconstrained approximation may be useful for exploratory analysis if its limitations are visible. A projected component state can support screening that requires declared balances and non-negativity. An interpretable constrained procedure can support inspection of named response terms. A connected plant surrogate can support an operating search when selected controls are independently checked.
+
+The assessment must retain these different uses when interpreting empirical evidence. A smaller error does not settle every engineering requirement. A stronger physical guarantee does not settle every accuracy question. A faster search does not settle every cost question. The methodological contribution lies in making each requirement explicit and connecting it to evidence that can assess it. Treatment outcomes and empirical performance remain questions for the subsequent evaluation.

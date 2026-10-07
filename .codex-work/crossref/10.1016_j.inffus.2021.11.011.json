@@ -1,0 +1,633 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2026-10-05T20:07:50Z",
+    "timestamp": 1791230870045,
+    "version": "4.1.0"
+  },
+  "reference-count": 44,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2022-05-01T00:00:00Z",
+        "timestamp": 1651363200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2022-05-01T00:00:00Z",
+        "timestamp": 1651363200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2022-05-01T00:00:00Z",
+        "timestamp": 1651363200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2022-05-01T00:00:00Z",
+        "timestamp": 1651363200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2022-05-01T00:00:00Z",
+        "timestamp": 1651363200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2022-05-01T00:00:00Z",
+        "timestamp": 1651363200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2022-05-01T00:00:00Z",
+        "timestamp": 1651363200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Information Fusion"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        5
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.inffus.2021.11.011",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        26
+      ]
+    ],
+    "date-time": "2021-11-26T21:28:03Z",
+    "timestamp": 1637962083000
+  },
+  "page": "84-90",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 2088,
+  "special_numbering": "C",
+  "title": [
+    "Tabular data: Deep learning is not all you need"
+  ],
+  "prefix": "10.1016",
+  "volume": "81",
+  "author": [
+    {
+      "given": "Ravid",
+      "family": "Shwartz-Ziv",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Amitai",
+      "family": "Armon",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b1",
+      "series-title": "NAACL",
+      "article-title": "BERT: Pre-training of deep bidirectional transformers for language understanding",
+      "author": "Devlin",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b2",
+      "doi-asserted-by": "crossref",
+      "unstructured": "K. He, X. Zhang, S. Ren, J. Sun, Deep residual learning for image recognition, in: Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2016, pp. 770–778.",
+      "DOI": "10.1109/CVPR.2016.90"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b3",
+      "unstructured": "A. van den Oord, S. Dieleman, H. Zen, K. Simonyan, O. Vinyals, A. Graves, N. Kalchbrenner, A. Senior, K. Kavukcuoglu, WaveNet: A generative model for raw audio, in: Proc. 9th ISCA Workshop on Speech Synthesis Workshop (SSW 9), 2016, p. 125."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b4",
+      "doi-asserted-by": "crossref",
+      "unstructured": "T. Chen, C. Guestrin, Xgboost: A scalable tree boosting system, in: Proceedings of the 22nd Acm Sigkdd International Conference on Knowledge Discovery and Data Mining, 2016, pp. 785–794.",
+      "DOI": "10.1145/2939672.2939785"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.inffus.2021.11.011_b5",
+      "doi-asserted-by": "crossref",
+      "first-page": "67",
+      "DOI": "10.1109/4235.585893",
+      "article-title": "No free lunch theorems for optimization",
+      "volume": "1",
+      "author": "Wolpert",
+      "year": "1997",
+      "journal-title": "IEEE Trans. Evol. Comput."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b6",
+      "first-page": "1189",
+      "article-title": "Greedy function approximation: a gradient boosting machine",
+      "author": "Friedman",
+      "year": "2001",
+      "journal-title": "Ann. Statist."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b7",
+      "unstructured": "L. Prokhorenkova, G. Gusev, A. Vorobev, A.V. Dorogush, A. Gulin, CatBoost: unbiased boosting with categorical features, in: 32nd Conference on Neural Information Processing Systems (NeurIPS), 2018."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b8",
+      "series-title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "first-page": "6679",
+      "article-title": "Tabnet: Attentive interpretable tabular learning",
+      "volume": "Vol. 35",
+      "author": "Arik",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b9",
+      "series-title": "9th International Conference on Learning Representations, ICLR 2021, Virtual Event, Austria, May 3-7, 2021",
+      "article-title": "Net-DNF: Effective deep modeling of tabular data",
+      "author": "Katzir",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b10",
+      "series-title": "8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020",
+      "article-title": "Neural oblivious decision ensembles for deep learning on tabular data",
+      "author": "Popov",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b11",
+      "series-title": "2009 IEEE Conference on Computer Vision and Pattern Recognition",
+      "first-page": "248",
+      "article-title": "Imagenet: A large-scale hierarchical image database",
+      "author": "Deng",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b12",
+      "series-title": "Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP",
+      "first-page": "353",
+      "article-title": "GLUE: A multi-task benchmark and analysis platform for natural language understanding",
+      "author": "Wang",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b13",
+      "series-title": "Advances in Neural Information Processing Systems",
+      "article-title": "LightGBM: A highly efficient gradient boosting decision tree",
+      "volume": "Vol. 30",
+      "author": "Ke",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b14",
+      "series-title": "Proceedings of the 32nd International Conference on Neural Information Processing Systems",
+      "first-page": "6639",
+      "article-title": "Catboost: Unbiased boosting with categorical features",
+      "author": "Prokhorenkova",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b15",
+      "series-title": "2019 IEEE Symposium Series on Computational Intelligence (SSCI)",
+      "first-page": "1396",
+      "article-title": "Deep learning with XGBoost for real estate appraisal",
+      "author": "Zhao",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b16",
+      "first-page": "651",
+      "article-title": "Experimenting XGBoost algorithm for prediction and classification of different datasets",
+      "volume": "9",
+      "author": "Ramraj",
+      "year": "2016",
+      "journal-title": "Int. J. Control Theory Appl."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b17",
+      "series-title": "Gradient boosting neural networks: Grownet",
+      "author": "Badirli",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b18",
+      "series-title": "International Conference on Machine Learning",
+      "first-page": "4138",
+      "article-title": "The tree ensemble layer: Differentiability meets conditional computation",
+      "author": "Hazimeh",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b19",
+      "series-title": "Tabtransformer: Tabular data modeling using contextual embeddings",
+      "author": "Huang",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b20",
+      "unstructured": "G. Klambauer, T. Unterthiner, A. Mayr, S. Hochreiter, Self-normalizing neural networks, in: Proceedings of the 31st International Conference on Neural Information Processing Systems, 2017, pp. 972–981."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b21",
+      "series-title": "Baosenguo/kaggle-moa-2nd-place-solution",
+      "author": "Baosenguo",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b22",
+      "series-title": "2015 IEEE International Conference on Computer Vision (ICCV)",
+      "first-page": "1467",
+      "article-title": "Deep neural decision forests",
+      "author": "Kontschieder",
+      "year": "2015"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b23",
+      "series-title": "Saint: Improved neural networks for tabular data via row attention and contrastive pre-training",
+      "author": "Somepalli",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b24",
+      "series-title": "Regularization is all you need: Simple neural nets can excel on tabular data",
+      "author": "Kadra",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b25",
+      "unstructured": "I. Shavitt, E. Segal, Regularization learning networks: deep learning for tabular datasets, in: 32nd Conference on Neural Information Processing Systems (NeurIPS), 2018."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b26",
+      "doi-asserted-by": "crossref",
+      "unstructured": "A. Beutel, P. Covington, S. Jain, C. Xu, J. Li, V. Gatto, E.H. Chi, Latent cross: making use of context in recurrent recommender systems, in: WSDM 2018: The Eleventh ACM International Conference on Web Search and Data Mining, 2018.",
+      "DOI": "10.1145/3159652.3159727"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b27",
+      "doi-asserted-by": "crossref",
+      "unstructured": "R. Caruana, A. Niculescu-Mizil, G. Crew, A. Ksikes, Ensemble selection from libraries of models, in: Proceedings of the Twenty-First International Conference on Machine Learning, 2004, p. 18.",
+      "DOI": "10.1145/1015330.1015432"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.inffus.2021.11.011_b28",
+      "doi-asserted-by": "crossref",
+      "first-page": "5",
+      "DOI": "10.1023/A:1010933404324",
+      "article-title": "Random forests",
+      "volume": "45",
+      "author": "Breiman",
+      "year": "2001",
+      "journal-title": "Mach. Learn."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.inffus.2021.11.011_b29",
+      "doi-asserted-by": "crossref",
+      "first-page": "123",
+      "DOI": "10.1023/A:1018054314350",
+      "article-title": "Bagging predictors",
+      "volume": "24",
+      "author": "Breiman",
+      "year": "1996",
+      "journal-title": "Mach. Learn."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b30",
+      "series-title": "Icml",
+      "first-page": "148",
+      "article-title": "Experiments with a new boosting algorithm",
+      "volume": "Vol. 96",
+      "author": "Freund",
+      "year": "1996"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.inffus.2021.11.011_b31",
+      "doi-asserted-by": "crossref",
+      "first-page": "241",
+      "DOI": "10.1016/S0893-6080(05)80023-1",
+      "article-title": "Stacked generalization",
+      "volume": "5",
+      "author": "Wolpert",
+      "year": "1992",
+      "journal-title": "Neural Netw."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.inffus.2021.11.011_b32",
+      "doi-asserted-by": "crossref",
+      "first-page": "273",
+      "DOI": "10.1023/A:1022627411411",
+      "article-title": "Support-vector networks",
+      "volume": "20",
+      "author": "Cortes",
+      "year": "1995",
+      "journal-title": "Mach. Learn."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b33",
+      "series-title": "UCI machine learning repository",
+      "author": "Dua",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b34",
+      "series-title": "Rossmann store sales",
+      "author": "Kaggle",
+      "year": "2019"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.inffus.2021.11.011_b35",
+      "doi-asserted-by": "crossref",
+      "first-page": "49",
+      "DOI": "10.1145/2641190.2641198",
+      "article-title": "OpenML: networked science in machine learning",
+      "volume": "15",
+      "author": "Vanschoren",
+      "year": "2014",
+      "journal-title": "ACM SIGKDD Explor. Newsl."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b36",
+      "series-title": "Introducing LETOR 4.0 datasets",
+      "author": "Qin",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b37",
+      "series-title": "Pascal large scale learning challenge",
+      "author": "Pascal",
+      "year": "2008"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b38",
+      "series-title": "Churn modelling",
+      "author": "Kaggle",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b39",
+      "series-title": "Telco customer churn",
+      "author": "IBM",
+      "year": "2019"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.inffus.2021.11.011_b40",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1088/1749-4699/8/1/014008",
+      "article-title": "Hyperopt: a python library for model selection and hyperparameter optimization",
+      "volume": "8",
+      "author": "Bergstra",
+      "year": "2015",
+      "journal-title": "Comput. Sci. Discov."
+    },
+    {
+      "issue": "200",
+      "key": "10.1016/j.inffus.2021.11.011_b41",
+      "doi-asserted-by": "crossref",
+      "first-page": "675",
+      "DOI": "10.1080/01621459.1937.10503522",
+      "article-title": "The use of ranks to avoid the assumption of normality implicit in the analysis of variance",
+      "volume": "32",
+      "author": "Friedman",
+      "year": "1937",
+      "journal-title": "J. Amer. Statist. Assoc."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b42",
+      "unstructured": "D.P. Kingma, J. Ba, Adam: A method for stochastic optimization, in: 8th International Conference on Learning Representations, ICLR 2020, 2015."
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b43",
+      "series-title": "2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "first-page": "5479",
+      "article-title": "An experimental analysis of the power consumption of convolutional neural networks for keyword spotting",
+      "author": "Tang",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.inffus.2021.11.011_b44",
+      "series-title": "Xgboost: Scalable GPU accelerated learning",
+      "author": "Mitchell",
+      "year": "2018"
+    }
+  ],
+  "container-title": [
+    "Information Fusion"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1566253521002360?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1566253521002360?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        27
+      ]
+    ],
+    "date-time": "2025-10-27T13:04:05Z",
+    "timestamp": 1761570245000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1566253521002360"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        5
+      ]
+    ]
+  },
+  "references-count": 44,
+  "alternative-id": [
+    "S1566253521002360"
+  ],
+  "URL": "https://doi.org/10.1016/j.inffus.2021.11.011",
+  "relation": {},
+  "ISSN": [
+    "1566-2535"
+  ],
+  "issn-type": [
+    {
+      "value": "1566-2535",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        5
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Tabular data: Deep learning is not all you need",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Information Fusion",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.inffus.2021.11.011",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2021 Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

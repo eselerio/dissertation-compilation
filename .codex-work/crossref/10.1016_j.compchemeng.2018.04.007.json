@@ -1,0 +1,491 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2026-09-25T16:16:14Z",
+    "timestamp": 1790352974300,
+    "version": "4.1.0"
+  },
+  "reference-count": 25,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            7,
+            1
+          ]
+        ],
+        "date-time": "2018-07-01T00:00:00Z",
+        "timestamp": 1530403200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        7
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.compchemeng.2018.04.007",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        4,
+        6
+      ]
+    ],
+    "date-time": "2018-04-06T03:04:07Z",
+    "timestamp": 1522983847000
+  },
+  "page": "150-160",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 87,
+  "special_numbering": "C",
+  "title": [
+    "Application of neural networks for optimal-setpoint design and MPC control in biological wastewater treatment"
+  ],
+  "prefix": "10.1016",
+  "volume": "115",
+  "author": [
+    {
+      "given": "Mahsa",
+      "family": "Sadeghassadi",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Chris J.B.",
+      "family": "Macnab",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Bhushan",
+      "family": "Gopaluni",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "David",
+      "family": "Westwick",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0001",
+      "series-title": "Dept. of industrial electrical engineering and automation lund university",
+      "article-title": "Benchmark simulation model no. 1 (BSM1)",
+      "author": "Alex",
+      "year": "2008"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0002",
+      "doi-asserted-by": "crossref",
+      "first-page": "733",
+      "DOI": "10.1080/09593332708618689",
+      "article-title": "Process improvement and energy saving in a full scale wastewater treatment plant: air supply regulation by a fuzzy logic system.",
+      "volume": "27",
+      "author": "Baroni",
+      "year": "2006",
+      "journal-title": "Environ. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0003",
+      "series-title": "Computational Intelligence Techniques for Bioprocess Modelling, Supervision and Control",
+      "first-page": "163",
+      "article-title": "Multiobjective genetic algorithms for the optimisation of wastewater treatment processes",
+      "author": "Benot",
+      "year": "2009"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0004",
+      "doi-asserted-by": "crossref",
+      "first-page": "751",
+      "DOI": "10.1016/j.conengprac.2007.01.008",
+      "article-title": "Hierarchical predictive control of integrated wastewater treatment systems.",
+      "volume": "16",
+      "author": "Brdys",
+      "year": "2008",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0005",
+      "series-title": "ESCAPE18",
+      "article-title": "Model predictive control of the wastewater treatment plant based on the benchmark simulation model no.1-BSM1",
+      "author": "Cristea",
+      "year": "2008"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0006",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1016/j.jprocont.2013.12.010",
+      "article-title": "Nonlinear multiobjective model-predictive control scheme for wastewater treatment process",
+      "volume": "24",
+      "author": "Han",
+      "year": "2014",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0007",
+      "doi-asserted-by": "crossref",
+      "first-page": "465",
+      "DOI": "10.1016/j.conengprac.2012.01.001",
+      "article-title": "Model predictive control of dissolved oxygen concentration based on a self-organizing {RBF} neural network",
+      "volume": "20",
+      "author": "Han",
+      "year": "2012",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0008",
+      "doi-asserted-by": "crossref",
+      "first-page": "1270",
+      "DOI": "10.1016/j.compchemeng.2007.06.008",
+      "article-title": "Dissolved oxygen control of the activated sludge wastewater treatment process using model predictive control",
+      "volume": "32",
+      "author": "Holenda",
+      "year": "2008",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_sbref0009",
+      "series-title": "The International Federation of Automatic Control",
+      "first-page": "3527",
+      "article-title": "Disturbance rejection in neural network model predictive control",
+      "author": "Jazayeri",
+      "year": "2008"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "DOI": "10.2166/wst.2003.0588",
+      "article-title": "Fuzzy-control for improved nitrogen removal and energy saving in WWT-plants with pre-denitrification.",
+      "volume": "47",
+      "author": "Meyer",
+      "year": "2003",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0011",
+      "series-title": "Proceedings of the World Congress on Engineering and Computer Science 2011 vol II WCECS 2011, San Francisco, USA",
+      "article-title": "Operational costs reduction for the WWTP by means of substrate to dissolved oxygen correlation - a simulation study",
+      "author": "Ostace",
+      "year": "2011"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0012",
+      "series-title": "ESCAPE20",
+      "article-title": "Investigation of different control strategies for the BSM1 wastewater treatment plant with reactive secondary settler model",
+      "author": "Ostace",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0013",
+      "series-title": "Asian Control Conference, Gold Coast, Australia",
+      "first-page": "2802",
+      "article-title": "Adaptive control and setpoint optimization for the BSM1 model of wastewater treatment",
+      "author": "Sadeghassadi",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0014",
+      "series-title": "Asian Control Conference, Gold Coast, Australia",
+      "first-page": "2796",
+      "article-title": "Setpoint control for reacting to wastewater influent in BSM1",
+      "author": "Sadeghassadi",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "40",
+      "DOI": "10.1016/j.jprocont.2015.02.005",
+      "article-title": "Applying variable dissolved oxygen set point in a two level hierarchical control structure to a wastewater treatment process",
+      "volume": "28",
+      "author": "Santin",
+      "year": "2015",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0016",
+      "doi-asserted-by": "crossref",
+      "first-page": "2763",
+      "DOI": "10.1021/ie504079q",
+      "article-title": "Fuzzy control and model predictive control configurations for effluent violations removal in wastewater treatment plants",
+      "volume": "54",
+      "author": "Santin",
+      "year": "2015",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "4–5",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0017",
+      "doi-asserted-by": "crossref",
+      "first-page": "309",
+      "DOI": "10.2166/wst.2002.0612",
+      "article-title": "A supervisory control system for optimising nitrogen removal and aeration energy consumption in wastewater treatment plants.",
+      "volume": "45",
+      "author": "Serralta",
+      "year": "2002",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "12",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0018",
+      "doi-asserted-by": "crossref",
+      "first-page": "2849",
+      "DOI": "10.1016/j.compchemeng.2008.01.009",
+      "article-title": "Application of model predictive control to the {BSM1} benchmark of wastewater treatment process",
+      "volume": "32",
+      "author": "Shen",
+      "year": "2008",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "1–2",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0019",
+      "doi-asserted-by": "crossref",
+      "first-page": "161",
+      "DOI": "10.1016/j.cej.2009.07.039",
+      "article-title": "Model predictive control for wastewater treatment process with feedforward compensation",
+      "volume": "155",
+      "author": "Shen",
+      "year": "2009",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "2004",
+      "DOI": "10.1016/j.watres.2007.01.029",
+      "article-title": "Comparison of control strategies for nitrogen removal in an activated sludge process in terms of operating costs: A simulation study",
+      "volume": "41",
+      "author": "Stare",
+      "year": "2007",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "4–5",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0021",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.2166/wst.2006.098",
+      "article-title": "Improvement of ammonia removal in activated sludge process with feedforward-feedback aeration controllers",
+      "volume": "53",
+      "author": "Vrecko",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0022",
+      "doi-asserted-by": "crossref",
+      "first-page": "203",
+      "DOI": "10.2166/wst.2006.125",
+      "article-title": "Total cost minimization control scheme for biological wastewater treatment process and its evaluation based on the cost benchmark process.",
+      "volume": "l",
+      "author": "Yamanaka",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0023",
+      "doi-asserted-by": "crossref",
+      "first-page": "88",
+      "DOI": "10.1016/j.neucom.2014.01.025",
+      "article-title": "Fuzzy model-based predictive control of dissolved oxygen in activated sludge processes",
+      "volume": "136",
+      "author": "Yang",
+      "year": "2014",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0024",
+      "doi-asserted-by": "crossref",
+      "first-page": "1269",
+      "DOI": "10.1016/j.conengprac.2005.06.018",
+      "article-title": "Dynamic evaluation of integrated control strategies for enhanced nitrogen removal in activated sludge processes",
+      "volume": "14",
+      "author": "Yong",
+      "year": "2006",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2018.04.007_bib0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "821",
+      "DOI": "10.1016/j.envsoft.2005.02.009",
+      "article-title": "Intelligent control aera-tion and external carbon addition for improving nitrogen removal.",
+      "volume": "21",
+      "author": "Yong",
+      "year": "2006",
+      "journal-title": "Environ. Model. Softw."
+    }
+  ],
+  "container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135418302631?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135418302631?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2019,
+        12,
+        29
+      ]
+    ],
+    "date-time": "2019-12-29T21:29:50Z",
+    "timestamp": 1577654990000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0098135418302631"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        7
+      ]
+    ]
+  },
+  "references-count": 25,
+  "alternative-id": [
+    "S0098135418302631"
+  ],
+  "URL": "https://doi.org/10.1016/j.compchemeng.2018.04.007",
+  "relation": {},
+  "ISSN": [
+    "0098-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0098-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        7
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Application of neural networks for optimal-setpoint design and MPC control in biological wastewater treatment",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Computers & Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.compchemeng.2018.04.007",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2018 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

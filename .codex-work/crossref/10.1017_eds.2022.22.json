@@ -1,0 +1,455 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2026-09-25T00:23:12Z",
+    "timestamp": 1790295792155,
+    "version": "4.1.0"
+  },
+  "reference-count": 22,
+  "publisher": "Cambridge University Press (CUP)",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            28
+          ]
+        ],
+        "date-time": "2022-11-28T00:00:00Z",
+        "timestamp": 1669593600000
+      },
+      "content-version": "unspecified",
+      "delay-in-days": 331,
+      "URL": "http://creativecommons.org/licenses/by/4.0"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100010665",
+      "name": "H2020 Marie Skłodowska-Curie Actions",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "860100"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "860100"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100010665",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100000270",
+      "name": "Natural Environment Research Council",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "NE/P013406/1"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "NE/P013406/1"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100000270",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100000270",
+      "name": "Natural Environment Research Council",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "NE/S005390/1"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "NE/S005390/1"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100000270",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100010661",
+      "name": "Horizon 2020 Framework Programme",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "724602"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "724602"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100010661",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100010661",
+      "name": "Horizon 2020 Framework Programme",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "821205"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "821205"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100010661",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Environ. Data Science"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2022
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title>\n\t  <jats:p>Aerosol particles play an important role in the climate system by absorbing and scattering radiation and influencing cloud properties. They are also one of the biggest sources of uncertainty for climate modeling. Many climate models do not include aerosols in sufficient detail due to computational constraints. To represent key processes, aerosol microphysical properties and processes have to be accounted for. This is done in the ECHAM-HAM (European Center for Medium-Range Weather Forecast-Hamburg-Hamburg) global climate aerosol model using the M7 microphysics, but high computational costs make it very expensive to run with finer resolution or for a longer time. We aim to use machine learning to emulate the microphysics model at sufficient accuracy and reduce the computational cost by being fast at inference time. The original M7 model is used to generate data of input–output pairs to train a neural network (NN) on it. We are able to learn the variables’ tendencies achieving an average <jats:inline-formula>\n\t      <jats:alternatives>\n\t\t<jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" mime-subtype=\"png\" xlink:href=\"S263446022200022X_inline1.png\"/>\n\t\t<jats:tex-math>$ {R}^2 $</jats:tex-math>\n\t      </jats:alternatives>\n\t    </jats:inline-formula> score of 77.1%. We further explore methods to inform and constrain the NN with physical knowledge to reduce mass violation and enforce mass positivity. On a Graphics processing unit (GPU), we achieve a speed-up of up to over 64 times faster when compared to the original model.</jats:p>",
+  "DOI": "10.1017/eds.2022.22",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        28
+      ]
+    ],
+    "date-time": "2022-11-28T02:55:55Z",
+    "timestamp": 1669604155000
+  },
+  "source": "Crossref",
+  "is-referenced-by-count": 20,
+  "title": [
+    "Physics-informed learning of aerosol microphysics"
+  ],
+  "prefix": "10.1017",
+  "volume": "1",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-9500-7218",
+      "authenticated-orcid": false,
+      "given": "Paula",
+      "family": "Harder",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Duncan",
+      "family": "Watson-Parris",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Philip",
+      "family": "Stier",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Dominik",
+      "family": "Strassel",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Nicolas R.",
+      "family": "Gauger",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Janis",
+      "family": "Keuper",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "56",
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        28
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "S263446022200022X_r6",
+      "volume-title": "International Conference on Learning Representations",
+      "author": "Donti",
+      "year": "2021"
+    },
+    {
+      "key": "S263446022200022X_r15",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018MS001351"
+    },
+    {
+      "key": "S263446022200022X_r5",
+      "volume-title": "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks",
+      "volume": "1",
+      "author": "Cachay",
+      "year": "2021"
+    },
+    {
+      "key": "S263446022200022X_r16",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/gmd-13-2185-2020"
+    },
+    {
+      "key": "S263446022200022X_r19",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-5-1125-2005"
+    },
+    {
+      "key": "S263446022200022X_r11",
+      "volume-title": "Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change",
+      "year": "2013"
+    },
+    {
+      "key": "S263446022200022X_r4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1103/PhysRevLett.126.098302"
+    },
+    {
+      "key": "S263446022200022X_r21",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2003JD004485"
+    },
+    {
+      "key": "S263446022200022X_r9",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5281/zenodo.5837936"
+    },
+    {
+      "key": "S263446022200022X_r17",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1810286115"
+    },
+    {
+      "key": "S263446022200022X_r8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2020MS002268"
+    },
+    {
+      "key": "S263446022200022X_r1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.245.4923.1227"
+    },
+    {
+      "key": "S263446022200022X_r3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/IGARSS39084.2020.9324569"
+    },
+    {
+      "key": "S263446022200022X_r12",
+      "first-page": "20200093",
+      "article-title": "Physics-informed machine learning: Case studies for weather and climate modelling",
+      "volume": "379",
+      "author": "Kashinath",
+      "year": "2021",
+      "journal-title": "Philosophical Transactions. Series A, Mathematical, Physical, and Engineering Sciences"
+    },
+    {
+      "key": "S263446022200022X_r13",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-8-2469-2008"
+    },
+    {
+      "key": "S263446022200022X_r18",
+      "first-page": "1",
+      "article-title": ") Physically regularized machine learning emulators of aerosol activation",
+      "volume": "2020",
+      "author": "Silva",
+      "year": "2020",
+      "journal-title": "Geoscientific Model Development Discussions"
+    },
+    {
+      "key": "S263446022200022X_r2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2019RG000660"
+    },
+    {
+      "key": "S263446022200022X_r10",
+      "unstructured": "Harder, P , Watson-Parris, D , Strassel, D , Gauger, N , Stier, P and Keuper, J (2021) Emulating aerosol microphysics with machine learning. arXiv preprint arXiv:2109.10593."
+    },
+    {
+      "key": "S263446022200022X_r14",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/acp-20-12853-2020"
+    },
+    {
+      "key": "S263446022200022X_r7",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018GL078202"
+    },
+    {
+      "key": "S263446022200022X_r20",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0004-6981(74)90004-3"
+    },
+    {
+      "key": "S263446022200022X_r22",
+      "article-title": "ClimateBench: A benchmark dataset for data-driven climate projections",
+      "volume": "36",
+      "author": "Watson-Parris",
+      "year": "2021",
+      "journal-title": "Earth and Space Science Open Archive"
+    }
+  ],
+  "container-title": [
+    "Environmental Data Science"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S263446022200022X",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        28
+      ]
+    ],
+    "date-time": "2022-11-28T02:56:08Z",
+    "timestamp": 1669604168000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.cambridge.org/core/product/identifier/S263446022200022X/type/journal_article"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022
+      ]
+    ]
+  },
+  "references-count": 22,
+  "alternative-id": [
+    "S263446022200022X"
+  ],
+  "URL": "https://doi.org/10.1017/eds.2022.22",
+  "relation": {},
+  "ISSN": [
+    "2634-4602"
+  ],
+  "issn-type": [
+    {
+      "value": "2634-4602",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022
+      ]
+    ]
+  },
+  "article-number": "e20"
+}

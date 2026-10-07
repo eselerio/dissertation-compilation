@@ -1,0 +1,633 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        22
+      ]
+    ],
+    "date-time": "2026-09-22T19:07:40Z",
+    "timestamp": 1790104060138,
+    "version": "4.0.1"
+  },
+  "reference-count": 42,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            6
+          ]
+        ],
+        "date-time": "2025-12-06T00:00:00Z",
+        "timestamp": 1764979200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            7
+          ]
+        ],
+        "date-time": "2026-01-07T00:00:00Z",
+        "timestamp": 1767744000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 32,
+      "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000015",
+      "name": "U.S. Department of Energy",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/100000015",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "npj Clean Water"
+  ],
+  "DOI": "10.1038/s41545-025-00537-4",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        12,
+        6
+      ]
+    ],
+    "date-time": "2025-12-06T14:43:35Z",
+    "timestamp": 1765032215000
+  },
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 2,
+  "title": [
+    "An agile benchmarking framework for wastewater resource recovery technologies"
+  ],
+  "prefix": "10.1038",
+  "volume": "9",
+  "author": [
+    {
+      "given": "Xinyi",
+      "family": "Zhang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Saumitra",
+      "family": "Rai",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Zixuan",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yalin",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jeremy S.",
+      "family": "Guest",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2025,
+        12,
+        6
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "537_CR1",
+      "doi-asserted-by": "publisher",
+      "first-page": "7100",
+      "DOI": "10.1021/es2014264",
+      "volume": "45",
+      "author": "PL McCarty",
+      "year": "2011",
+      "unstructured": "McCarty, P. L., Bae, J. & Kim, J. Domestic wastewater treatment as a net energy producer–can this be achieved?. Environ. Sci. Technol. 45, 7100–7106 (2011).",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "537_CR2",
+      "doi-asserted-by": "publisher",
+      "first-page": "6126",
+      "DOI": "10.1021/es9010515",
+      "volume": "43",
+      "author": "JS Guest",
+      "year": "2009",
+      "unstructured": "Guest, J. S. et al. A new planning and design paradigm to achieve sustainable resource recovery from wastewater. Environ. Sci. Technol. 43, 6126–6130 (2009).",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "537_CR3",
+      "doi-asserted-by": "publisher",
+      "first-page": "6121",
+      "DOI": "10.1021/es803001r",
+      "volume": "43",
+      "author": "TA Larsen",
+      "year": "2009",
+      "unstructured": "Larsen, T. A., Alder, A. C., Eggen, R. I. L., Maurer, M. & Lienert, J. Source separation: will we see a paradigm shift in wastewater handling?. Environ. Sci. Technol. 43, 6121–6125 (2009).",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "537_CR4",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Henze, M., Gujer, W., Mino, T. & van Loosedrecht, M. Activated sludge models ASM1, ASM2, ASM2d and ASM3. https://doi.org/10.2166/9781780402369 (IWA Publishing, 2006).",
+      "DOI": "10.2166/9781780402369"
+    },
+    {
+      "key": "537_CR5",
+      "doi-asserted-by": "publisher",
+      "first-page": "65",
+      "DOI": "10.2166/wst.2002.0292",
+      "volume": "45",
+      "author": "DJ Batstone",
+      "year": "2002",
+      "unstructured": "Batstone, D. J. et al. The IWA anaerobic digestion model No 1 (ADM1). Water Sci. Technol. 45, 65–73 (2002).",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "537_CR6",
+      "unstructured": "Alex, J. et al. Benchmark simulation model no. 1 (BSM1). Rep. IWA Taskgroup Benchmarking Control Strateg. WWTPs 1, (2008)."
+    },
+    {
+      "key": "537_CR7",
+      "doi-asserted-by": "publisher",
+      "first-page": "67",
+      "DOI": "10.2166/wst.2007.604",
+      "volume": "56",
+      "author": "U Jeppsson",
+      "year": "2007",
+      "unstructured": "Jeppsson, U. et al. Benchmark simulation model no 2: general protocol and exploratory case studies. Water Sci. Technol. 56, 67–78 (2007).",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "537_CR8",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Gernaey, K. V., Jeppsson, U., Vanrolleghem, P. A. & Copp, J. B. Benchmarking of Control Strategies for Wastewater Treatment Plants. https://doi.org/10.2166/9781780401171 (IWA Publishing,2014).",
+      "DOI": "10.2166/9781780401171"
+    },
+    {
+      "key": "537_CR9",
+      "unstructured": "wwtmodels. wwtmodels/Benchmark-Simulation-Models. (2025)."
+    },
+    {
+      "key": "537_CR10",
+      "unstructured": "Hydromantis. GPS-X Technical Reference - v8.0. https://www.hydromantis.com/help/GPS-X/docs/8.0/Technical/index.html#CHAPTER%2012."
+    },
+    {
+      "key": "537_CR11",
+      "unstructured": "Products – EnviroSim. https://envirosim.com/products."
+    },
+    {
+      "key": "537_CR12",
+      "doi-asserted-by": "publisher",
+      "first-page": "2289",
+      "DOI": "10.1039/D2EW00455K",
+      "volume": "8",
+      "author": "Y Li",
+      "year": "2022",
+      "unstructured": "Li, Y. et al. QSDsan: an integrated platform for quantitative sustainable design of sanitation and resource recovery systems. Environ. Sci. Water Res. Technol. 8, 2289–2303 (2022).",
+      "journal-title": "Environ. Sci. Water Res. Technol."
+    },
+    {
+      "key": "537_CR13",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Tarallo, S., Shaw, A., Kohl, P. & Eschborn, R. A Guide to Net-Zero Energy Solutions for Water Resource Recovery Facilities. https://iwaponline.com/ebooks/book/293/ (2015).",
+      "DOI": "10.2166/9781780407685"
+    },
+    {
+      "key": "537_CR14",
+      "unstructured": "US EPA. Clean Watersheds Needs Survey (CWNS) – 2004 Report and Data (2015)."
+    },
+    {
+      "key": "537_CR15",
+      "unstructured": "US EPA. Clean Watersheds Needs Survey (CWNS) – 2008 Report and Data (2015)."
+    },
+    {
+      "key": "537_CR16",
+      "unstructured": "US EPA. Clean Watersheds Needs Survey (CWNS) – 2012 Report and Data (2015)."
+    },
+    {
+      "key": "537_CR17",
+      "unstructured": "US EPA. Clean Watersheds Needs Survey (CWNS) – 2022 Report and Data (2024)."
+    },
+    {
+      "key": "537_CR18",
+      "doi-asserted-by": "crossref",
+      "unstructured": "El Abbadi, S. H. et al. Benchmarking greenhouse gas emissions from U.S. wastewater treatment for targeted reduction. Nat. Water (In press) (2025).",
+      "DOI": "10.31223/X5VQ59"
+    },
+    {
+      "key": "537_CR19",
+      "unstructured": "Q. S. D. Group. werf: Benchmark Models for Water Resource Recovery Facilities (WRRF) in the US. EXPOsan https://github.com/QSD-Group/EXPOsan/tree/werf/exposan/werf (2025)."
+    },
+    {
+      "key": "537_CR20",
+      "unstructured": "QSD Group. EXPOsan—EXPOsition of sanitation and resource recovery systems."
+    },
+    {
+      "key": "537_CR21",
+      "unstructured": "Metcalf & Eddy, Inc. Wastewater Engineering: Treatment and Resource Recovery (McGraw-Hill Higher Education, 2013)."
+    },
+    {
+      "key": "537_CR22",
+      "unstructured": "US EPA. Analysis of Operations & Maintenance Costs for Municipal Wastewater Treatment Systems. (1978)."
+    },
+    {
+      "key": "537_CR23",
+      "doi-asserted-by": "publisher",
+      "first-page": "1391",
+      "DOI": "10.2166/wst.1992.0582",
+      "volume": "26",
+      "author": "R Otterpohl",
+      "year": "1992",
+      "unstructured": "Otterpohl, R. & Freund, M. Dynamic models for clarifiers of activated sludge plants with dry and wet weather flows. Water Sci. Technol. 26, 1391–1400 (1992).",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "537_CR24",
+      "doi-asserted-by": "publisher",
+      "first-page": "1263",
+      "DOI": "10.1016/0043-1354(91)90066-Y",
+      "volume": "25",
+      "author": "I Takács",
+      "year": "1991",
+      "unstructured": "Takács, I., Patry, G. G. & Nolasco, D. A dynamic model of the clarification-thickening process. Water Res. 25, 1263–1271 (1991).",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "537_CR25",
+      "doi-asserted-by": "publisher",
+      "first-page": "97",
+      "DOI": "10.1016/j.watres.2017.02.007",
+      "volume": "113",
+      "author": "K Solon",
+      "year": "2017",
+      "unstructured": "Solon, K. et al. Plant-wide modelling of phosphorus transformations in wastewater treatment systems: Impacts of control and operational strategies. Water Res. 113, 97–110 (2017).",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "537_CR26",
+      "doi-asserted-by": "publisher",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "volume": "39",
+      "author": "M Henze",
+      "year": "1999",
+      "unstructured": "Henze, M. et al. Activated sludge model No.2d, ASM2. D. Water Sci. Technol. 39, 165–182 (1999).",
+      "journal-title": "D. Water Sci. Technol."
+    },
+    {
+      "key": "537_CR27",
+      "doi-asserted-by": "publisher",
+      "first-page": "11",
+      "DOI": "10.2166/wst.2006.521",
+      "volume": "54",
+      "author": "C Rosen",
+      "year": "2006",
+      "unstructured": "Rosen, C., Vrecko, D., Gernaey, K. V., Pons, M. N. & Jeppsson, U. Implementing ADM1 for plant-wide benchmark simulations in Matlab/Simulink. Water Sci. Technol. 54, 11–19 (2006).",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "537_CR28",
+      "doi-asserted-by": "publisher",
+      "first-page": "370",
+      "DOI": "10.1016/j.watres.2016.03.012",
+      "volume": "95",
+      "author": "X Flores-Alsina",
+      "year": "2016",
+      "unstructured": "Flores-Alsina, X. et al. Modelling phosphorus (P), sulfur (S) and iron (Fe) interactions for dynamic simulations of anaerobic digestion processes. Water Res. 95, 370–382 (2016).",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "537_CR29",
+      "doi-asserted-by": "publisher",
+      "first-page": "342",
+      "DOI": "10.1016/j.watres.2014.10.011",
+      "volume": "68",
+      "author": "C Kazadi Mbamba",
+      "year": "2015",
+      "unstructured": "Kazadi Mbamba, C., Batstone, D. J., Flores-Alsina, X. & Tait, S. A generalised chemical precipitation modelling approach in wastewater treatment applied to calcite. Water Res. 68, 342–353 (2015).",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "537_CR30",
+      "doi-asserted-by": "publisher",
+      "first-page": "359",
+      "DOI": "10.1016/j.watres.2015.08.041",
+      "volume": "85",
+      "author": "C Kazadi Mbamba",
+      "year": "2015",
+      "unstructured": "Kazadi Mbamba, C., Tait, S., Flores-Alsina, X. & Batstone, D. J. A systematic study of multiple minerals precipitation modelling in wastewater treatment. Water Res 85, 359–370 (2015).",
+      "journal-title": "Water Res"
+    },
+    {
+      "key": "537_CR31",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Kazadi Mbamba, C. et al. Precipitation and dissolution. in Generalised Physicochemical Model (PCM) for Wastewater Processes (IWA Publishing, 2022).",
+      "DOI": "10.2166/9781780409832_0021"
+    },
+    {
+      "key": "537_CR32",
+      "doi-asserted-by": "publisher",
+      "first-page": "1857",
+      "DOI": "10.1016/S0043-1354(99)00334-6",
+      "volume": "34",
+      "author": "E Musvoto",
+      "year": "2000",
+      "unstructured": "Musvoto, E. Integrated chemical–physical processes modelling—I. Development of a kinetic-based model for mixed weak acid/base systems. Water Res. 34, 1857–1867 (2000).",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "537_CR33",
+      "doi-asserted-by": "publisher",
+      "first-page": "1868",
+      "DOI": "10.1016/S0043-1354(99)00335-8",
+      "volume": "34",
+      "author": "EV Musvoto",
+      "year": "2000",
+      "unstructured": "Musvoto, E. V., Wentzel, M. C. & Ekama, G. A. Integrated chemical–physical processes modelling—II. simulating aeration treatment of anaerobic digester supernatants. Water Res. 34, 1868–1880 (2000).",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "537_CR34",
+      "doi-asserted-by": "publisher",
+      "first-page": "3302",
+      "DOI": "10.1021/acssuschemeng.9b07040",
+      "volume": "8",
+      "author": "Y Cortes-Peña",
+      "year": "2020",
+      "unstructured": "Cortes-Peña, Y., Kumar, D., Singh, V. & Guest, J. S. BioSTEAM: a fast and flexible platform for the design, simulation, and techno-economic analysis of biorefineries under uncertainty. ACS Sustain. Chem. Eng. 8, 3302–3310 (2020).",
+      "journal-title": "ACS Sustain. Chem. Eng."
+    },
+    {
+      "key": "537_CR35",
+      "unstructured": "BioSTEAM Development Group. BioSTEAM: the biorefinery simulation and techno-economic analysis modules. https://github.com/BioSTEAMDevelopmentGroup/biosteam (2023)."
+    },
+    {
+      "key": "537_CR36",
+      "unstructured": "Seider, W. D. et al. Cost accounting and capital cost estimation. In Product and Process Design Principles 426–485 (Wiley, 2017)."
+    },
+    {
+      "key": "537_CR37",
+      "unstructured": "Williams, M. J., Bizier, P., Groman, J. & Tippetts, R. Alkaline stabilization. in Design of Water Resource Recovery Facilities (MOP8) (ed. The Water Environment Federation (WEF)) (McGraw-Hill Education, 2018)."
+    },
+    {
+      "key": "537_CR38",
+      "unstructured": "Beecher, N. et al. National U. S. Biosolids Data – FINAL REPORT: Advancing Understanding of Biosolids Management 30 Years after 40 CFR Part 503 and in the Early Stages of PFAS Concerns. https://www.biosolidsdata.org (2023)."
+    },
+    {
+      "key": "537_CR39",
+      "doi-asserted-by": "publisher",
+      "first-page": "455",
+      "DOI": "10.1021/acsenvironau.2c00022",
+      "volume": "2",
+      "author": "LS Rowles",
+      "year": "2022",
+      "unstructured": "Rowles, L. S. et al. Financial viability and environmental sustainability of fecal sludge treatment with pyrolysis omni processors. ACS Environ. Au 2, 455–466 (2022).",
+      "journal-title": "ACS Environ. Au"
+    },
+    {
+      "key": "537_CR40",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "DOI": "10.1021/acsenvironau.3c00001",
+      "volume": "3",
+      "author": "S Watabe",
+      "year": "2023",
+      "unstructured": "Watabe, S. et al. Advancing the economic and environmental sustainability of the newgenerator nonsewered sanitation system. ACS Environ. Au 3, 209–222 (2023).",
+      "journal-title": "ACS Environ. Au"
+    },
+    {
+      "key": "537_CR41",
+      "doi-asserted-by": "publisher",
+      "first-page": "2528",
+      "DOI": "10.1021/acs.est.3c07394",
+      "volume": "58",
+      "author": "J Feng",
+      "year": "2024",
+      "unstructured": "Feng, J., Li, Y., Strathmann, T. J. & Guest, J. S. Characterizing the opportunity space for sustainable hydrothermal valorization of wet organic wastes. Environ. Sci. Technol. 58, 2528–2541 (2024).",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "537_CR42",
+      "doi-asserted-by": "publisher",
+      "first-page": "19651",
+      "DOI": "10.1021/acs.est.4c05389",
+      "volume": "58",
+      "author": "X Zhang",
+      "year": "2024",
+      "unstructured": "Zhang, X., Arnold, W. A., Wright, N., Novak, P. J. & Guest, J. S. Prioritization of early-stage research and development of a hydrogel-encapsulated anaerobic technology for distributed treatment of high strength organic wastewater. Environ. Sci. Technol. 58, 19651–19665 (2024).",
+      "journal-title": "Environ. Sci. Technol."
+    }
+  ],
+  "container-title": [
+    "npj Clean Water"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41545-025-00537-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41545-025-00537-4",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41545-025-00537-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        1,
+        7
+      ]
+    ],
+    "date-time": "2026-01-07T14:54:42Z",
+    "timestamp": 1767797682000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41545-025-00537-4"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        12,
+        6
+      ]
+    ]
+  },
+  "references-count": 42,
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          12
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "537"
+  ],
+  "URL": "https://doi.org/10.1038/s41545-025-00537-4",
+  "relation": {
+    "has-preprint": [
+      {
+        "id-type": "doi",
+        "id": "10.21203/rs.3.rs-7874013/v1",
+        "asserted-by": "object"
+      }
+    ]
+  },
+  "ISSN": [
+    "2059-7037"
+  ],
+  "issn-type": [
+    {
+      "value": "2059-7037",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        12,
+        6
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "16 October 2025",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "18 November 2025",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "6 December 2025",
+      "order": 3,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "The authors declare no competing interests.",
+      "order": 1,
+      "name": "Ethics",
+      "group": {
+        "name": "EthicsHeading",
+        "label": "Competing interests"
+      }
+    }
+  ],
+  "article-number": "4"
+}

@@ -1,0 +1,67 @@
+\chapter{Research Problem and Purpose}
+\label{ch:introduction}
+
+\section{Activated sludge prediction as an engineering problem}
+
+Wastewater treatment protects receiving waters by removing or transforming substances carried by domestic and industrial discharges. The substances of concern include biodegradable organic matter, nutrients, and suspended particles. Their effects depend on the receiving environment and the conditions of exposure. \citet{Madhav2019} describe how pollutant sources connect to environmental and health effects. \citet{Lin2022} show why these effects cannot be reduced to a single measure of water quality. These concerns give treatment prediction a practical purpose. Engineers need to understand how operating choices affect several aspects of treated water at the same time.
+
+The activated sludge process uses microbial communities to transform wastewater constituents. Organic matter can be converted into biomass and oxidation products. Nitrogen can move through ammonium, nitrite, nitrate, biomass, and dissolved nitrogen gas. Phosphorus can move between dissolved phosphate, microbial storage, and particulate forms. A change in one pathway can affect another through competition for oxygen or available carbon. \citet{Duan2022} discuss the range of microbial pathways involved in biological nitrogen removal. \citet{Wentzel1992} explain the connections among nitrogen removal and biological phosphorus removal. The process therefore requires a component representation that distinguishes substances with different roles.
+
+The activated sludge model (ASM) family provides this representation through component balances and process rates \citep{Henze1999,Henze2006}. A model state contains more information than a few reported effluent measurements. Chemical oxygen demand (COD) measures oxygen equivalents associated with oxidizable material. Total nitrogen (TN), total phosphorus (TP), and total suspended solids (TSS) summarize other groups of constituents. These summaries are useful for treatment assessment, but several different component states can produce the same reported total. For example, two effluents can have the same TN while one contains mainly ammonium and the other mainly nitrate. Their treatment implications differ because the underlying forms differ.
+
+Operating conditions influence these transformations. Hydraulic retention time (HRT) relates reactor volume to the flow basis used in its definition. Aeration affects the availability of oxygen for biological reactions. In a connected plant, recycle and wasting also affect the material returned to the biological stages and the solids retained in the system \citep{Henze2008}. Reactor capacity, aeration, recycle, and wasting are consequently linked decisions. A prediction that represents only one effluent total cannot explain all of these connections.
+
+Mechanistic simulation supplies a way to calculate the component response from specified inputs. Its equations express known reaction structure and hydraulic relationships. Repeated simulation can require substantial effort when an analysis explores many influent compositions and operating settings. \citet{BhosekarIerapetritou2018} explain how statistical surrogates can reduce the cost of repeated process evaluation. \citet{Durkin2024} develop this use in wastewater resource recovery. A surrogate learns an input--output relationship from simulated or measured observations and then approximates the response at new inputs. Its value depends on both the speed of this approximation and the properties of the state it returns.
+
+\section{The gap between approximation and a usable process state}
+
+Predictive accuracy describes agreement with a reference response. Physical admissibility describes compliance with stated physical requirements. Interpretability describes the ability to inspect how the model forms its prediction. Decision quality describes the performance of operating choices when they are assessed against the intended engineering problem. These properties are related, but each answers a different question.
+
+A small average prediction error can hide a negative concentration in a small component. It can also hide a conservation error that is distributed across several components. Consider a hypothetical component whose reference concentration is $0.2$~g~m$^{-3}$. A prediction of $-0.1$~g~m$^{-3}$ has an absolute error of only $0.3$~g~m$^{-3}$, but it cannot describe a nonnegative concentration state. If larger components dominate an aggregate error measure, this defect can receive little attention. Conservation and nonnegativity therefore require direct assessment in the same component basis used by the mechanistic model \citep{Hansen2024,KircherVotsmeier2025}.
+
+Conservation itself depends on the chosen system boundary. A biological reactor receives influent, discharges effluent, and may exchange oxygen with its environment. A plant also contains recycle streams and sludge withdrawal. Internal recirculation redistributes material without becoming a new external source. A valid conservation equality must follow from the represented reactions, hydraulic terms, and external forcing. It cannot be inferred solely from the names of reported water quality measures \citep{Henze2006,SturmWexler2020}.
+
+Physical enforcement can be applied during learning or after prediction. A training penalty can encourage small violations, but a finite penalty does not establish exact compliance for every new input \citep{Raissi2019,Hansen2024}. An output correction can impose an equality directly, but that correction can still produce negative components unless nonnegativity is also included. \citet{KircherVotsmeier2025} address these two requirements together through a correction of mechanistic kinetics surrogates. Their approach motivates a common enforcement procedure that can be applied to different activated sludge predictors.
+
+An interpretable surrogate creates an additional opportunity. A structured regression can expose operating effects, influent effects, curvature, and interactions through named coefficient groups. Inspection becomes useful only when the meaning of those groups is clear. A coefficient in a raw regression is not automatically a causal effect or a derivative of the final corrected prediction \citep{Rudin2019,Brunton2016}. Physical correction can change the response and introduce boundaries at which the active constraints change. A useful interpretation must distinguish the learned regression from the complete prediction procedure.
+
+The difficulty becomes greater when the surrogate supports optimization. An optimizer deliberately searches for favorable predicted behavior. It can select a point at which the surrogate is inaccurate even when average prediction error is acceptable. A projected state can satisfy imposed balances while missing the actual kinetic response of the plant. Approximation management and evaluation with the original mechanistic model are therefore necessary parts of decision assessment \citep{Alexandrov1998,Pedrozo2025}. Faster evaluation alone does not establish a better operating decision.
+
+\section{Research questions and objectives}
+
+The research examines how physical enforcement can support machine learning surrogates of activated sludge treatment without obscuring the difference between model agreement and engineering usefulness. Its central question concerns the conditions under which a fast statistical prediction can remain physically admissible, understandable, and suitable for operating analysis.
+
+The first question concerns approximation of the complete reactor component response. It asks how different statistical learning methods behave when the available training data change and when predictions are requested beyond the sampled domain. The corresponding objective is to establish a common benchmark in which the prediction target, data partitions, and evaluation scales are defined independently of the model family.
+
+The second question concerns post prediction enforcement. It asks how a common correction can impose conservation and nonnegativity, and how correction affects component error, composite error, displacement, and computational cost. The objective is to evaluate raw and corrected states in paired comparisons. Feasibility is treated as a directly checked property rather than inferred from an error score.
+
+The third question concerns an interpretable regression structure. It asks how second-order influent and operating terms can be coupled with invariant-aware fitting and checked deployment. The objective is to develop a transparent component predictor, explain the limits of its fitting problem, and separate interpretation of its raw response from interpretation of its final corrected output.
+
+The fourth question concerns the connected treatment plant. It asks how a joint surrogate can preserve mixer, reactor, clarifier, and inventory relationships while supporting an operating search. The objective is to formulate common engineering priorities and compare surrogate-selected controls with direct mechanistic optimization. Both routes require independent mechanistic assessment at their selected controls.
+
+\section{Research logic and significance}
+
+The research logic begins with a mechanistic representation and a declared operating domain. Paired input and component responses provide the information needed to learn a statistical approximation. Reaction structure supplies the conservation relations. Nonnegativity defines an additional requirement on concentration states. Together, these elements permit separate assessment of approximation error and physical compliance.
+
+This logic extends to interpretation and decision support. A structured predictor makes particular terms available for inspection. A checked prediction procedure makes stated constraints available for direct verification. A connected plant formulation makes hydraulic and inventory consistency available for assessment. An operating search then selects controls, and mechanistic evaluation determines their treatment and resource consequences. Each step provides evidence for a specific claim. No step substitutes for the evidence required by another.
+
+Figure~\ref{fig:research_conceptual_logic} relates the knowledge used to construct a surrogate to the evidence used to assess its engineering value. The central sequence concerns prediction, enforcement, operating choice, and independent evaluation. The side boxes keep the different assessment questions visible.
+
+\begin{figure}[htbp]
+\centering
+\input{figures/ch1_concept_research_logic}
+\caption{Conceptual research logic linking process knowledge, component prediction, physical enforcement, interpretation, and independent assessment of operating choices.}
+\label{fig:research_conceptual_logic}
+\end{figure}
+
+The figure separates construction from assessment. Mechanistic cases supply supervised targets, while physical knowledge supplies the relations imposed on a returned state. Error assessment tests agreement with the reference. Physical audits test the specified constraints. Structural inspection tests the meaning of a transparent fitted representation. Decision assessment evaluates the selected controls with the original mechanistic model. The reactor and connected plant formulations implement this logic at different scales, with separately specified predictors and physical boundaries.
+
+The scientific significance lies in relating statistical approximation to the component space of biological wastewater treatment. The methodological significance lies in using shared data and paired diagnostics to distinguish the effect of learning from the effect of physical correction. The engineering significance lies in connecting surrogate predictions to feasible treatment states and to decisions that can be evaluated against the mechanistic reference. These purposes follow the broader use of surrogate models in process analysis and optimization \citep{McBride2019,BhosekarIerapetritou2018}.
+
+\section{Scope and limits of the claims}
+
+The study concerns simulated steady-state activated sludge responses. It covers a standalone reactor and a connected plant with a reactor train, secondary clarification, and recycle streams. The mechanistic model supplies reference responses under fixed process definitions and specified parameter values. The standalone reactor and the connected plant use different operating domains because their hydraulic and solids relationships differ. These domains are stated separately in the methods.
+
+Agreement with simulated data establishes agreement with the selected mechanistic model. It does not establish agreement with an operating treatment plant. Calibration uncertainty, sensor error, seasonal change, microbial adaptation, and unrepresented reactions can affect field performance \citep{Machado2014,Newhart2019}. The physical guarantees concern the specified balances, component bounds, and inventory relationships. They do not imply complete kinetic, thermodynamic, or dynamic feasibility.
+
+The numerical examples used to explain conservation, correction, and decision assessment are hypothetical. They illustrate the logic of the formulations and do not report experimental or simulation findings. Empirical model rankings, treatment outcomes, optimization outcomes, and computational performance are outside the present presentation.

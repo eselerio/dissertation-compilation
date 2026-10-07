@@ -1,0 +1,574 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        1
+      ]
+    ],
+    "date-time": "2026-08-01T09:35:13Z",
+    "timestamp": 1785576913498,
+    "version": "3.56.0"
+  },
+  "reference-count": 28,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2021-03-01T00:00:00Z",
+        "timestamp": 1614556800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2021-03-01T00:00:00Z",
+        "timestamp": 1614556800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100010019",
+      "name": "Doctorate Fellowship Foundation of Nanjing Forestry University",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "GXL029"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "GXL029"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100010019",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Process Safety and Environmental Protection"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        3
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.psep.2020.09.034",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2020-09-23T17:35:50Z",
+    "timestamp": 1600882550000
+  },
+  "page": "274-282",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 44,
+  "special_numbering": "C",
+  "title": [
+    "Monitoring of wastewater treatment processes using dynamic concurrent kernel partial least squares"
+  ],
+  "prefix": "10.1016",
+  "volume": "147",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-9645-686X",
+      "authenticated-orcid": false,
+      "given": "Hongbin",
+      "family": "Liu",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-8296-3665",
+      "authenticated-orcid": false,
+      "given": "Jie",
+      "family": "Yang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Yuchen",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Chong",
+      "family": "Yang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "5",
+      "DOI": "10.1016/S0169-7439(00)00083-6",
+      "article-title": "Non-linear dynamic projection to latent structures modelling",
+      "volume": "52",
+      "author": "Baffi",
+      "year": "2000",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "228",
+      "DOI": "10.1016/j.psep.2019.05.018",
+      "article-title": "Online reduced kernel PLS combined with GLRT for fault detection in chemical systems",
+      "volume": "128",
+      "author": "Fazai",
+      "year": "2019",
+      "journal-title": "Process Saf. Environ. Prot."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "3543",
+      "DOI": "10.1021/ie302069q",
+      "article-title": "Review of recent research on data-based process monitoring",
+      "volume": "52",
+      "author": "Ge",
+      "year": "2013",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "262",
+      "DOI": "10.1016/j.jhazmat.2010.09.027",
+      "article-title": "Fault detection using dynamic time warping (DTW) algorithm and discriminant analysis for swine wastewater treatment",
+      "volume": "185",
+      "author": "Jun",
+      "year": "2011",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "22",
+      "DOI": "10.1016/j.chemolab.2005.03.003",
+      "article-title": "A novel multivariate regression approach based on kernel partial least squares with orthogonal signal correction",
+      "volume": "79",
+      "author": "Kim",
+      "year": "2005",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "124",
+      "DOI": "10.1016/j.jhazmat.2014.05.098",
+      "article-title": "Evaluation of passenger health risk assessment of sustainable indoor air quality monitoring in metro systems based on a non-Gaussian dynamic sensor validation method",
+      "volume": "278",
+      "author": "Kim",
+      "year": "2014",
+      "journal-title": "J. Hazard. Mater."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0035",
+      "first-page": "223",
+      "article-title": "Nonlinear process monitoring using kernel principal component analysis",
+      "volume": "59",
+      "author": "Lee",
+      "year": "2004",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0040",
+      "doi-asserted-by": "crossref",
+      "first-page": "467",
+      "DOI": "10.1016/j.jprocont.2003.09.004",
+      "article-title": "Statistical process monitoring with independent component analysis",
+      "volume": "14",
+      "author": "Lee",
+      "year": "2004",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0045",
+      "doi-asserted-by": "crossref",
+      "first-page": "3356",
+      "DOI": "10.1021/ie201053j",
+      "article-title": "Development of interval Soft sensors using enhanced just-in-Time learning and inductive confidence predictor",
+      "volume": "51",
+      "author": "Liu",
+      "year": "2012",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "6184",
+      "DOI": "10.1080/19443994.2013.780757",
+      "article-title": "A fuzzy neural network-based soft sensor for modeling nutrient removal mechanism in a full-scale wastewater treatment system",
+      "volume": "51",
+      "author": "Liu",
+      "year": "2013",
+      "journal-title": "Desalin. Water Treat."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "3272",
+      "DOI": "10.1021/ie403788v",
+      "article-title": "Statistical monitoring of wastewater treatment plants using variational bayesian PCA",
+      "volume": "53",
+      "author": "Liu",
+      "year": "2014",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0060",
+      "doi-asserted-by": "crossref",
+      "first-page": "1206",
+      "DOI": "10.1089/ees.2017.0454",
+      "article-title": "Fault diagnosis of subway indoor air quality based on local fisher discriminant analysis",
+      "volume": "35",
+      "author": "Liu",
+      "year": "2018",
+      "journal-title": "Environ. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0065",
+      "doi-asserted-by": "crossref",
+      "first-page": "16676",
+      "DOI": "10.1021/acs.iecr.9b00701",
+      "article-title": "Dynamic nonlinear partial least squares modeling using gaussian process regression",
+      "volume": "58",
+      "author": "Liu",
+      "year": "2019",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "4159",
+      "DOI": "10.1007/s11356-019-06935-9",
+      "article-title": "Multivariate statistical monitoring of subway indoor air quality using dynamic concurrent partial least squares",
+      "volume": "27",
+      "author": "Liu",
+      "year": "2020",
+      "journal-title": "Environ. Sci. Pollut. Res."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0075",
+      "doi-asserted-by": "crossref",
+      "first-page": "8025",
+      "DOI": "10.1021/ie203043q",
+      "article-title": "Localized, adaptive recursive partial least squares regression for dynamic system modeling",
+      "volume": "51",
+      "author": "Ni",
+      "year": "2012",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0080",
+      "first-page": "480",
+      "article-title": "Statistical process monitoring: basics and beyond",
+      "volume": "17",
+      "author": "Qin",
+      "year": "2003",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0085",
+      "doi-asserted-by": "crossref",
+      "first-page": "220",
+      "DOI": "10.1016/j.arcontrol.2012.09.004",
+      "article-title": "Survey on data-driven industrial process monitoring and diagnosis",
+      "volume": "36",
+      "author": "Qin",
+      "year": "2012",
+      "journal-title": "Annu. Rev. Control"
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0090",
+      "doi-asserted-by": "crossref",
+      "first-page": "379",
+      "DOI": "10.1016/0098-1354(92)80055-E",
+      "article-title": "Nonlinear PLS modeling using neural networks",
+      "volume": "16",
+      "author": "Qin",
+      "year": "1992",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "496",
+      "DOI": "10.1002/aic.13959",
+      "article-title": "Quality-relevant and process-relevant fault monitoring with concurrent projection to latent structures",
+      "volume": "59",
+      "author": "Qin",
+      "year": "2013",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0100",
+      "doi-asserted-by": "crossref",
+      "first-page": "74",
+      "DOI": "10.1016/j.chemolab.2013.03.009",
+      "article-title": "Defining the structure of DPCA models and its impact on process monitoring and prediction activities",
+      "volume": "125",
+      "author": "Rato",
+      "year": "2013",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0105",
+      "first-page": "97",
+      "article-title": "Kernel partial least squares regression in reproducing kernel hilbert space",
+      "volume": "2",
+      "author": "Rosipal",
+      "year": "2002",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0110",
+      "doi-asserted-by": "crossref",
+      "first-page": "1129",
+      "DOI": "10.1109/TASE.2015.2477272",
+      "article-title": "Comprehensive monitoring of nonlinear processes based on concurrent kernel projection to latent structures",
+      "volume": "13",
+      "author": "Sheng",
+      "year": "2016",
+      "journal-title": "IEEE Trans. Autom. Sci. Eng."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "329",
+      "DOI": "10.1016/0959-1524(96)00009-1",
+      "article-title": "The process chemometrics approach to process monitoring and fault detection",
+      "volume": "6",
+      "author": "Wise",
+      "year": "1996",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "109",
+      "DOI": "10.1016/S0169-7439(01)00155-1",
+      "article-title": "PLS-regression: a basic tool of chemometrics",
+      "volume": "58",
+      "author": "Wold",
+      "year": "2001",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0125",
+      "doi-asserted-by": "crossref",
+      "first-page": "2078",
+      "DOI": "10.1016/j.cherd.2011.01.002",
+      "article-title": "On-line batch process monitoring using hierarchical kernel partial least squares",
+      "volume": "89",
+      "author": "Zhang",
+      "year": "2011",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0130",
+      "first-page": "64",
+      "article-title": "Fault diagnosis of nonlinear processes using multiscale KPCA and multiscale KPLS",
+      "volume": "66",
+      "author": "Zhang",
+      "year": "2011",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0135",
+      "doi-asserted-by": "crossref",
+      "first-page": "49",
+      "DOI": "10.1016/j.chemolab.2014.10.002",
+      "article-title": "Fault diagnosis of nonlinear process based on KCPLS reconstruction",
+      "volume": "140",
+      "author": "Zhang",
+      "year": "2015",
+      "journal-title": "Chemometr. Intell. Lab. Syst."
+    },
+    {
+      "key": "10.1016/j.psep.2020.09.034_bib0140",
+      "doi-asserted-by": "crossref",
+      "first-page": "168",
+      "DOI": "10.1002/aic.11977",
+      "article-title": "Total projection to latent structures for process monitoring",
+      "volume": "56",
+      "author": "Zhou",
+      "year": "2010",
+      "journal-title": "AIChE J."
+    }
+  ],
+  "container-title": [
+    "Process Safety and Environmental Protection"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0957582020317511?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0957582020317511?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        17
+      ]
+    ],
+    "date-time": "2025-10-17T07:39:22Z",
+    "timestamp": 1760686762000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0957582020317511"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        3
+      ]
+    ]
+  },
+  "references-count": 28,
+  "alternative-id": [
+    "S0957582020317511"
+  ],
+  "URL": "https://doi.org/10.1016/j.psep.2020.09.034",
+  "relation": {},
+  "ISSN": [
+    "0957-5820"
+  ],
+  "issn-type": [
+    {
+      "value": "0957-5820",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        3
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Monitoring of wastewater treatment processes using dynamic concurrent kernel partial least squares",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Process Safety and Environmental Protection",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.psep.2020.09.034",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2020 Institution of Chemical Engineers. Published by Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

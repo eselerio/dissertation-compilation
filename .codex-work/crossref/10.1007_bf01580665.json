@@ -1,0 +1,243 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2026-10-06T15:19:54Z",
+    "timestamp": 1791299994613,
+    "version": "4.1.0"
+  },
+  "reference-count": 5,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            1976,
+            12,
+            1
+          ]
+        ],
+        "date-time": "1976-12-01T00:00:00Z",
+        "timestamp": 218246400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Mathematical Programming"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        1976,
+        12
+      ]
+    ]
+  },
+  "DOI": "10.1007/bf01580665",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2005,
+        5,
+        9
+      ]
+    ],
+    "date-time": "2005-05-09T03:17:31Z",
+    "timestamp": 1115608651000
+  },
+  "page": "147-175",
+  "source": "Crossref",
+  "is-referenced-by-count": 1992,
+  "title": [
+    "Computability of global solutions to factorable nonconvex programs: Part I — Convex underestimating problems"
+  ],
+  "prefix": "10.1007",
+  "volume": "10",
+  "author": [
+    {
+      "given": "Garth P.",
+      "family": "McCormick",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        1976,
+        12,
+        1
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "BF01580665_CR1",
+      "first-page": "447",
+      "volume-title": "Proceedings of the fifth international conference on operational research",
+      "author": "E.M.L. Beale",
+      "year": "1970",
+      "unstructured": "E.M.L. Beale and J.A. Tomlin, “Special facilities in a general mathematical programming system for nonconvex problems using ordered sets of variables”, in: J. Laurence, ed.,Proceedings of the fifth international conference on operational research (Tavistock Publications, London, 1970) pp. 447–454."
+    },
+    {
+      "issue": "9",
+      "key": "BF01580665_CR2",
+      "doi-asserted-by": "publisher",
+      "first-page": "550",
+      "DOI": "10.1287/mnsc.15.9.550",
+      "volume": "15",
+      "author": "J.E. Falk",
+      "year": "1969",
+      "unstructured": "J.E. Falk and R.M. Soland, “An algorithm for separable nonconvex programming probblems”,Management Science 15(9) (1969) 550–569.",
+      "journal-title": "Management Science"
+    },
+    {
+      "key": "BF01580665_CR3",
+      "series-title": "Technical Paper Serial",
+      "volume-title": "Converting general nonlinear programming problems to separable nonlinear programming problems",
+      "author": "G.P. McCormick",
+      "year": "1972",
+      "unstructured": "G.P. McCormick, “Converting general nonlinear programming problems to separable nonlinear programming problems”, Technical Paper Serial T-267, Program in Logistics, The George Washington University, Washington, D.C. (1972)."
+    },
+    {
+      "key": "BF01580665_CR4",
+      "first-page": "209",
+      "volume-title": "Numerical methods for nonlinear optimization",
+      "author": "G.P. McCormick",
+      "year": "1972",
+      "unstructured": "G.P. McCormick, “Attempts to calculate global solutions of problems that may have local minima”, in: F.A. Lootsma, ed.,Numerical methods for nonlinear optimization (Academic Press, New York, 1972) pp. 209–221."
+    },
+    {
+      "issue": "11",
+      "key": "BF01580665_CR5",
+      "doi-asserted-by": "publisher",
+      "first-page": "759",
+      "DOI": "10.1287/mnsc.17.11.759",
+      "volume": "17",
+      "author": "R.M. Soland",
+      "year": "1971",
+      "unstructured": "R.M. Soland, “An algorithm for separable nonconvex programming problems II: nonconvex constraints”,Management Science 17(11) (1971) 759–773.",
+      "journal-title": "Management Science"
+    }
+  ],
+  "container-title": [
+    "Mathematical Programming"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/BF01580665.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1007/BF01580665/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/BF01580665",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/BF01580665.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2019,
+        5,
+        3
+      ]
+    ],
+    "date-time": "2019-05-03T11:12:10Z",
+    "timestamp": 1556881930000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "http://link.springer.com/10.1007/BF01580665"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        1976,
+        12
+      ]
+    ]
+  },
+  "references-count": 5,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          1976,
+          12
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "BF01580665"
+  ],
+  "URL": "https://doi.org/10.1007/bf01580665",
+  "relation": {},
+  "ISSN": [
+    "0025-5610",
+    "1436-4646"
+  ],
+  "issn-type": [
+    {
+      "value": "0025-5610",
+      "type": "print"
+    },
+    {
+      "value": "1436-4646",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        1976,
+        12
+      ]
+    ]
+  }
+}

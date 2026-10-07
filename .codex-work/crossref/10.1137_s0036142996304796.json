@@ -1,0 +1,340 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2026-09-29T22:11:51Z",
+    "timestamp": 1790719911014,
+    "version": "4.1.0"
+  },
+  "reference-count": 33,
+  "publisher": "Society for Industrial & Applied Mathematics (SIAM)",
+  "issue": "2",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "SIAM J. Numer. Anal."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        1998,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:p>Pseudo-transient continuation ($\\Psi$tc) is a well-known and physically motivated technique for computation of steady state solutions of time-dependent partial differential equations. Standard globalization strategies such as line search or trust region methods often stagnate at local minima. \\ptc succeeds in many of these cases by taking advantage of the underlying PDE structure of the problem. Though widely employed, the convergence of \\ptc is rarely discussed. In this paper we prove convergence for a generic form of \\ptc and illustrate it with two practical strategies.</jats:p>",
+  "DOI": "10.1137/s0036142996304796",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2003,
+        6,
+        11
+      ]
+    ],
+    "date-time": "2003-06-11T11:12:06Z",
+    "timestamp": 1055329926000
+  },
+  "page": "508-523",
+  "source": "Crossref",
+  "is-referenced-by-count": 248,
+  "title": [
+    "Convergence Analysis of Pseudo-Transient Continuation"
+  ],
+  "prefix": "10.1137",
+  "volume": "35",
+  "author": [
+    {
+      "given": "C. T.",
+      "family": "Kelley",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "David E.",
+      "family": "Keyes",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "351",
+  "published-online": {
+    "date-parts": [
+      [
+        2006,
+        7,
+        25
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "R1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "K. E. Brenan, S. L. Campbell, and L. R. Petzold,\n                      The Numerical Solution of Initial Value Problems in Differential‐Algebraic Equations\n                      , no. 14 in Classics in Applied Mathematics, SIAM, Philadelphia, 1996.",
+      "DOI": "10.1137/1.9781611971224"
+    },
+    {
+      "key": "R2",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0710031"
+    },
+    {
+      "key": "R3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0910062"
+    },
+    {
+      "key": "R4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0723039"
+    },
+    {
+      "key": "R5",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0096-3003(89)90110-0"
+    },
+    {
+      "key": "R6",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0915088"
+    },
+    {
+      "key": "R7",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/S1064827595289996"
+    },
+    {
+      "key": "R8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0911026"
+    },
+    {
+      "key": "R9",
+      "unstructured": "George Byrne, Pragmatic experiments with Krylov methods in the stiff ODE setting, Inst. Math. Appl. Conf. Ser. New Ser., Vol. 39, Oxford Univ. Press, New York, 1992, 323–3561387146"
+    },
+    {
+      "key": "R10",
+      "unstructured": "X. D. Cai, D. E. Keyes, and V. Venkatakrishnan,\n                      Newton‐Krylov‐Schwarz: an implicit solver for CFD\n                      , in Domain Decomposition Methods in Sciences and Engineering, Proceedings of the 8th International Conference on Domain Decomposition Methods, R. Glowinski, J. Periaux, Z. Shi, and O. Widlund, eds., Chichester, 1996, Wiley, pp. 387–402. to appear."
+    },
+    {
+      "key": "R11",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0719025"
+    },
+    {
+      "key": "R12",
+      "unstructured": "J. E. Dennis and R. B. Schnabel,\n                      Numerical Methods for Nonlinear Equations and Unconstrained Optimization\n                      , Prentice‐Hall, Englewood Cliffs, N.J, 1983."
+    },
+    {
+      "key": "R13",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0915044"
+    },
+    {
+      "key": "R14",
+      "unstructured": "C. W. Gear,\n                      Numerical Initial Value Problems in Ordinary Differential Equations\n                      , Prentice‐Hall, Englewood Cliffs, 1971."
+    },
+    {
+      "key": "R15",
+      "unstructured": "E. Isaacson and H. B. Keller,\n                      Analysis of numerical methods\n                      , Wiley, New York, 1966."
+    },
+    {
+      "key": "R16",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0045-7930(95)00018-8"
+    },
+    {
+      "key": "R17",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/1.9781611970944"
+    },
+    {
+      "key": "R18",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/S1064827596303582"
+    },
+    {
+      "key": "R19",
+      "doi-asserted-by": "crossref",
+      "unstructured": "David Keyes, Aerodynamic applications of Newton‐Krylov‐Schwarz solvers, Lecture Notes in Phys., Vol. 453, Springer, Berlin, 1995, 1–2096j:76098",
+      "DOI": "10.1007/3-540-59280-6_95"
+    },
+    {
+      "key": "R20",
+      "unstructured": "D. E. Keyes and M. D. Smooke,\n                      A parallelized elliptic solver for reacting flows\n                      , in Parallel Computations and Their Impact on Mechanics, A. K. Noor, ed., ASME, 1987, pp. 375–402."
+    },
+    {
+      "key": "R21",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0021-9991(85)90144-5"
+    },
+    {
+      "key": "R22",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-0348-8547-8"
+    },
+    {
+      "key": "R23",
+      "doi-asserted-by": "crossref",
+      "unstructured": "E. J. Nielsen, R. W. Walters, W. K. Anderson, and D. E. Keyes,\n                      Application of Newton‐Krylov methodology to a three‐dimensional unstructured Euler code\n                      . AIAA Paper 95‐1733, June 1995.",
+      "DOI": "10.2514/6.1995-1733"
+    },
+    {
+      "key": "R24",
+      "doi-asserted-by": "crossref",
+      "unstructured": "P. D. Orkwis and D. S. McRae,\n                      A Newton’s method solver for the Navier‐Stokes equations\n                      . AIAA Paper 90‐1524, June 1990.",
+      "DOI": "10.2514/6.1990-1524"
+    },
+    {
+      "key": "R25",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/1.9780898719468"
+    },
+    {
+      "key": "R26",
+      "unstructured": "Linda Petzold, A description of DASSL: a differential/algebraic system solver , IMACS Trans. Sci. Comput., I, IMACS, New Brunswick, NJ, 1983, 65–68751605"
+    },
+    {
+      "key": "R27",
+      "doi-asserted-by": "crossref",
+      "unstructured": "K. Radhakrishnan and A. C. Hindmarsh,\n                      Description anduse of LSODE, the Livermore solver for ordinary differential equations\n                      , Tech. Rep. URCL‐ID‐113855, Lawrence Livermore National Laboratory, December 1993.",
+      "DOI": "10.2172/15013302"
+    },
+    {
+      "key": "R28",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0021-9991(83)90129-8"
+    },
+    {
+      "key": "R29",
+      "first-page": "133",
+      "volume": "19",
+      "author": "Shamanskii V. E.",
+      "year": "1967",
+      "journal-title": "Ukran. Mat. Zh.",
+      "ISSN": "https://id.crossref.org/issn/0041-6053",
+      "issn-type": "print"
+    },
+    {
+      "key": "R30",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/0901005"
+    },
+    {
+      "key": "R31",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF00933755"
+    },
+    {
+      "key": "R32",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0309-1708(96)00008-5"
+    },
+    {
+      "key": "R33",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2514/3.10196"
+    }
+  ],
+  "container-title": [
+    "SIAM Journal on Numerical Analysis"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://epubs.siam.org/doi/pdf/10.1137/S0036142996304796",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        21
+      ]
+    ],
+    "date-time": "2026-08-21T15:44:45Z",
+    "timestamp": 1787327085000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://epubs.siam.org/doi/10.1137/S0036142996304796"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        1998,
+        1
+      ]
+    ]
+  },
+  "references-count": 33,
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          1998,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1137/S0036142996304796"
+  ],
+  "URL": "https://doi.org/10.1137/s0036142996304796",
+  "relation": {},
+  "ISSN": [
+    "0036-1429",
+    "1095-7170"
+  ],
+  "issn-type": [
+    {
+      "value": "0036-1429",
+      "type": "print"
+    },
+    {
+      "value": "1095-7170",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        1998,
+        1
+      ]
+    ]
+  }
+}

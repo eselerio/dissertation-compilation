@@ -1,0 +1,425 @@
+P a g e | 13
+
+2    Theoretical Background
+
+Central to biological wastewater treatment is the fact that continuous supply of matter and
+energy is essential to support life through the creation and upkeep of cells. The key
+elements involved in this life system include hydrogen (H), oxygen (O), carbon (C) and
+nitrogen (N). Based on this, microorganisms involved in biological wastewater treatment
+can be categorized based on the three main energy sources they derive from.
+Photosynthetic autotrophs rely on radiation as their primary energy source. Heterotrophs
+obtain energy from organic compounds. Chemical autotrophs use inorganic compounds
+as their energy source.
+
+    Bulk wastewater                                                                                                                              Predation
+                                                                                                                                                  Decay
+                                     Photosynthesized carbohydrates
+
+
+
+
+                                                                                                                                        Electron acceptors,
+                             Light                                                                          Organics
+                                                                                                                                         i.e.,  and N
+                                                                      Predation, Decay
+
+
+
+
+                                                                                                             Egestion, Decay
+
+
+
+            Photosynthesis
+                                                                                                                               Growth
+
+
+
+
+        Photosynthetic
+                                                                                                            Heterotrophs                                      Chemical autotrophs
+         autotrophs
+                                                                                    Decay, Ammonification
+
+
+
+
+                                                                                                                                            Nutrients,
+        i.e., Cyanobacteria                                                                                        i.e., Rotifers           i.e., N           i.e., Nitrosomonas species
+                                                          Decay
+                                                     Growth
+
+
+Figure 2-1 Simplistic representation of the processes carried out by microorganisms in
+biological WWTPs following ASM3. The arrows indicate material conversion. The labels
+on the arrows indicate the conversion process.
+A simplistic representation of the (bio)processes that microorganisms carry out in
+biological WWTPs is illustrated in Figure 2-1. Solar radiation is the primary energy source
+for the biosphere, and photosynthetic autotrophs capture this energy through
+photosynthesis, converting CO₂ and water into glucose and releasing O₂, which supports
+other life forms. These autotrophs also require nutrients like nitrogen and phosphorus for
+growth and metabolism, with nitrogen being essential for proteins and nucleic acids, and
+phosphorous for ATP production. However, nutrient availability, especially in aquatic
+ecosystems, can limit their growth. Heterotrophs, such as protozoa, fungi, and bacteria,
+rely on consuming other organisms or organic matter for energy, which is used to
+synthesize their cells, though some energy is lost as heat in the process. This results in
+a decrease in available organic energy as it transfers between organisms, eventually
+limiting heterotrophic life. Chemical autotrophs, which derive energy from the oxidation of
+
+P a g e | 14
+
+ammonia (NH₃/NH4+), nitrites (NO₂⁻), and nitrates (NO₃⁻), are crucial in wastewater
+treatment due to their light-independent energy generation and ability to thrive in
+environments with high carbon-to-nitrogen ratios and low light, unlike photosynthetic
+autotrophs. In wastewater treatment, autotrophs typically refer to these chemical
+autotrophs.
+2.1   Organics Degradation
+Heterotrophic energy metabolism entails the degradation of complex organic compounds
+(CxHyOz), releasing CO2, protons (H+), and energy. CO2 is liberated as a gaseous
+byproduct, while H+ is sequestered through association with a suitable acceptor in
+reduction-oxidation (redox) reactions. Aerobic wastewater treatment employs
+microorganisms that utilize O2 as the terminal electron acceptor during the oxidation of
+organic compounds, a process known as aerobic respiration. The reaction equation
+representing this process are as follows (Xie, 2021):
+Equation 2-1 Simplified reaction equation for aerobic respiration by heterotrophs in
+WWTPs (Xie, 2021)
+
+ C𝑥 H𝑦 O𝑧 + (2𝑥 − 𝑧)H2 O → 𝑥CO2 + (4𝑥 + 𝑦 − 2𝑧)H + + (4𝑥 + 𝑦 − 2𝑧)e−
+
+During aerobic respiration, CxHyOz serves as an electron donor and undergoes oxidation,
+as illustrated in Equation 2-1, while O2 functions as an electron acceptor and is reduced
+by facilitating a terminal oxidase enzyme, as shown in Equation 2-2. The electron transfer
+generates a proton-motive force across the cell membrane, facilitating ATP synthesis.
+Equation 2-2 Simplified reaction equation illustrating the electron transfer to O2
+catalyzed by a terminal oxidase enzyme in heterotrophs (Vandekerckhove, 2018)
+
+                   𝑇𝑒𝑟𝑚𝑖𝑛𝑎𝑙 𝑜𝑥𝑖𝑑𝑎𝑠𝑒
+ e− + H + + 0.25O2 →                  0.5H2 O
+
+A fraction of CxHyOz is transformed into cell mass (biomass), as depicted in Equation 2-3
+(Vandekerckhove, 2018).
+Equation 2-3 Simplified reaction equation for the conversion of C xHyOz into
+heterotrophic biomass (Vandekerckhove, 2018)
+
+ C𝑥 H𝑦 O𝑧 + 0.2NH4+
+               → 0.2C5 H7 O2 N + (𝑧 − 0.4𝑥 )H2 O + (𝑥/𝑦 + 𝑦 − 2𝑧)H + + (𝑦 − 2𝑧)e−
+
+The empirical formula C5H7O2N typically represents heterotrophic biomass (Hoover &
+Porges, 1952). Endogenous respiration transpires under starvation conditions, with the
+simplified reaction equation provided in Equation 2-4 (Takács & Vanrolleghem, 2006).
+
+P a g e | 15
+
+Equation 2-4 Simplified reaction equation for the endogenous respiration of
+heterotrophs (Takács & Vanrolleghem, 2006)
+
+ C5 H7 O2 N + 5O2 + H + → 5CO2 + NH4+ + 2H2 O
+
+The energy released in these processes is proportional to the O2 consumed, which
+permits the indirect measurement of carbonaceous energy release in aerobic biological
+systems. It is crucial to acknowledge that the precise stoichiometry of the aerobic
+respiration process and the amount of energy generated may vary depending on the
+specific organic compound involved.
+2.2   Nitrification = Nitritation + Nitratation
+Contrasting heterotrophic processes, nitrifying microorganisms (i.e., chemical autotrophs)
+derive energy through the oxidation of inorganic N compounds, such as NH4+ and NO2⁻,
+during nitrification. Unlike heterotrophs, these autotrophs do not depend on organics for
+energy. Consequently, their O2 demand is distinct from the O2 demand associated with
+the degradation of organics by heterotrophs. Although O 2 demand experiments are not
+required to measure O2 demand during nitrification, given the well-established
+stoichiometry of the nitrification process. The sequential reactions involving the oxidation
+of NH4+ to NO2⁻ and subsequently to NO3⁻ are detailed. The initial stage of nitrification,
+referred to as nitritation, involves the microbial-driven oxidation of NH4+ to NO2⁻. This
+conversion pathway is delineated in Equation 2-5 to Equation 2-8 (Preena et al., 2021;
+Van Kessel et al., 2015). Firstly, NH4+ dissociates to produce ammonia (NH3) and a
+proton, as illustrated in Equation 2-5 as follows:
+Equation 2-5 Disassociation of NH4+ into NH3 and H+ (Preena et al., 2021; Van Kessel
+et al., 2015)
+
+ NH4+ → NH3 + H +
+
+NH3 is subsequently converted into hydroxylamine (NH 2OH) through the action of the
+membrane-bound enzyme ammonia monooxygenase (amo) in NH3-oxidizing bacteria
+(AOB), as follows:
+Equation 2-6 Simplified reaction equation of the conversion of NH3 into NH2OH
+catalyzed by amo enzyme in AOB (Preena et al., 2021; Van Kessel et al., 2015)
+                         𝑎𝑚𝑜
+ NH3 + O2 + 2H + + 2e− →       NH2 OH + H2 O
+
+NH2OH is then oxidized to NO2⁻, a reaction catalyzed by the periplasmic enzyme
+hydroxylamine oxidoreductase (hao), as follows:
+
+P a g e | 16
+
+Equation 2-7 Simplified reaction equation of the oxidation of NH2OH to NO2⁻ catalyzed
+by hao enzyme in AOB (Preena et al., 2021; Van Kessel et al., 2015)
+
+                     ℎ𝑎𝑜
+ NH2 OH + H2 O → NO−     +
+                   2 + 5H + 4e
+                              −
+
+
+The electron released in this process is transferred to an electron transport chain,
+generating a proton-motive force that facilitates the synthesis of ATP. The electron
+transfer to O2 is as follows:
+Equation 2-8 Simplified reaction equation of the electron transfer to O 2 catalyzed by a
+terminal oxidase enzyme in nitrifying autotrophs (Preena et al., 2021; Van Kessel et al.,
+2015)
+
+                           𝑇𝑒𝑟𝑚𝑖𝑛𝑎𝑙 𝑜𝑥𝑖𝑑𝑎𝑠𝑒
+ 0.5O2 + 2H + + 2e− →                         H2 O
+
+By combining the left- and right-hand sides of Equation 2-5 to Equation 2-7, the total
+nitritation reaction by AOB is obtained (Van Kessel et al., 2015):
+Equation 2-9 Simplified reaction equation of nitritation in AOB (Van Kessel et al., 2015)
+
+ NH4+ + 1.5O2 → NO−     +
+                  2 + 2H + H2 O
+
+
+Nitratation represents the second step of the nitrification process wherein autotrophic
+NO2⁻-oxidizing bacteria (NOB) catalyze the oxidation of NO 2⁻ to NO3⁻ (Preena et al.,
+2021). The majority of NOB can be categorized into several genera, including Nitrobacter,
+Nitrococcus, and Nitrotoga (phylum Proteobacteria), Nitrospira (phylum Nitrospirae), and
+Nitrospina (phylum Nitrospinae) (Preena et al., 2021). The enzyme nitrite oxidoreductase
+(nxr) facilitates the conversion of NO2⁻ to NO3⁻ (Equation 2-10), and the two electrons
+generated in this reaction are transferred to a terminal oxidase for respiratory purposes.
+The reaction equation for the electron transfer follows Equation 2-8. Some of the
+electrons produced are utilized to reduce CO2 in the reductive acetyl-CoA pathway, which
+synthesizes autotrophic biomass. For brevity, the details of the reductive acetyl-CoA
+pathway are omitted here. The oxidation of NO 2⁻ to NO3⁻ is depicted as follows:
+Equation 2-10 Simplified reaction equation of the oxidation of NO 2⁻ into NO3⁻ catalyzed
+by nxr enzyme in NOB (Preena et al., 2021)
+               𝑛𝑥𝑟
+ NO−            −     +
+   2 + H2 O → NO3 + 2H + 2e
+                           −
+
+
+Combining Equation 2-8 and Equation 2-10 yields the total nitratation reaction by NOB
+(Van Kessel et al., 2015):
+Equation 2-11 Simplified reaction equation of nitratation by NOB (Van Kessel et al.,
+2015)
+
+P a g e | 17
+
+
+ NO−             −
+   2 + 0.5O2 → NO3
+
+
+The complete nitrification reaction incorporating autotrophic biomass yield is presented is
+as follows:
+Equation 2-12 Simplified reaction equation of the complete nitrification reaction by
+nitrifying autotrophs (Van Kessel et al., 2015)
+
+ NH4+ + 1.863O2 + 0.098CO2 → 0.0196C5 H7 O2 N + 0.98NO−        +
+                                                      3 + 1.98H + 0.094H2 O
+
+2.3   Denitrification
+Under anoxic conditions, heterotrophic microorganisms adapt their metabolic processes
+due to the absence of O2. Heterotrophic denitrifying bacteria utilize alternative electron
+acceptors, such as NO3⁻ or NO2⁻, in a process known as denitrification. This process
+plays a pivotal role in N removal, converting NO 3⁻ or NO2⁻ into nitrogen gas (N2), which
+is released into the atmosphere. Heterotrophic denitrifying bacteria assimilate NO 3⁻ or
+NO2⁻ from their environment and reduce them through a series of sequential steps. The
+heterotrophic denitrification process is generally contingent upon the electron donor
+involved. The common denitrification reactions occurring in biological wastewater
+treatment systems are presented in Table 2-1.
+Table 2-1 Typical heterotrophic denitrification reactions in WWTPs
+
+ Electron donor     Reaction equation
+
+ Methanol           1.08CH3OH +NO3⁻ + 0.24H2CO3 → 0.056C5H7O2N + 0.47N2+
+                    1.68H2O + HCO3⁻
+
+ Ethanol            0.69C2H5OH +NO3⁻ + H⁺ → 0.14 C5H7O2N + 0.43N2+ 2.07H2O
+                    +0.67CO2
+
+ Acetate            0.846CH3COO⁻ +NO3⁻→ 0.077 C5H7O2N + 0.462N2+ 0.077H2O
+                    +1.308CO2 +1.846OH⁻
+
+ Glucose            C6H12O6 + 2.8NO3⁻ + 0.5NH4⁺ + 2.3H⁺ → 0.5 C5H7O2N +
+                    1.4N2+ 6.4H2O + 3.5CO2
+
+2.4   Anammox
+Certain autotrophic microorganisms utilize alternative electron acceptors during
+anaerobic conditions to facilitate denitrification. Anoxic NH4+ oxidation (anammox)
+involves the anaerobic oxidation of NH4+ using NO2⁻ as an electron acceptor. Anammox
+bacteria, which are autotrophic, execute this process in three stages (Preena et al., 2021;
+
+P a g e | 18
+
+Van Kessel et al., 2015; Xie, 2021): Firstly, NO2⁻ is reduced to nitric oxide (NO) by the
+nitrite reductase (nir) enzyme, as follows:
+Equation 2-13 Simplified reaction equation of the reduction of NO 2⁻ to NO catalyzed by
+nir enzyme in anammox bacteria (Preena et al., 2021; Vandekerckhove, 2018)
+
+                 𝑛𝑖𝑟
+ NO−     +   −
+   2 + 2H + e → NO + H2 O
+
+Secondly, NO combines with NH4+ to form hydrazine (N2H4) under the action of the
+hydrazine synthase enzyme (hzs), as follows:
+Equation 2-14 Simplified reaction equation of the combination of NO with NH4+ to form
+N2H4 catalyzed by hzs enzyme in anammox bacteria (Dietl et al., 2015)
+
+                         ℎ𝑧𝑠
+ NH4+ + NO + 2H + + 3e− → N2 H4 + H2 O
+
+Third, the hydrazine dehydrogenase (hdh) enzyme catalyzes the oxidation of N2H4 to N2,
+as follows:
+Equation 2-15 Simplified reaction equation of the oxidation of N 2H4 to N2 catalyzed by
+hdh enzyme in anammox bacteria (Maalcke et al., 2016)
+
+      ℎ𝑑ℎ
+ N2 H4 → N2 + 4H + + 4e−
+
+The electrons produced in the process are transferred to an electron transport chain in
+Equation 2-13 that induces a proton-motive force on the cell wall of the anammox
+bacteria, which is used to synthesize ATP. Additionally, during anammox anabolism,
+NO2⁻ is oxidized to NO3⁻ via the nxr enzyme (Equation 2-10), providing extra electrons
+for CO2 fixation, which follows the reductive acetyl-CoA pathway (Xie, 2021). The details
+of the anabolic pathway are omitted here for brevity. The autotrophic biomass of
+anammox bacteria is represented by the empirical formula CH 2O0.5N0.15 (Strous et al.,
+1998). The complete anammox reaction incorporating autotrophic anammox biomass
+yield is presented as follows:
+Equation 2-16 Simplified reaction equation of the complete anammox reaction by
+anammox bacteria (Strous et al., 1998)
+
+ NH4+ + 1.32NO−            −
+              2 + 0.066HCO3 + 0.13H
+                                    +
+
+             → 1.02N2 + 0.26NO−                               2
+                               3 + 0.066CH2 O0.5 N0.15 + 2.03H O
+
+
+In general, microorganisms metabolize contaminants (i.e., organics and NH4+) and
+transfer their electrons to electron acceptors such as O 2, NO3⁻, or NO2⁻. In the process,
+they convert a portion of the catabolized contaminants into new biomass. This contributes
+
+P a g e | 19
+
+to the overall production of microbial biomass in the biological wastewater treatment
+system and the removal of contaminants from the wastewater. Consequently, the
+contaminant removal phenomena are subsequent to microbial growth phenomena, which
+makes the latter fundamental.
+2.5       Biokinetic Modeling
+Three things are apparent from the previous discussions. Firstly, multiple interrelated
+biochemical reactions are involved in the production and consumption of compounds in
+a biological wastewater treatment system. Secondly, these reactions are carried out by
+multiple organisms. Lastly, the production and consumption of compounds occur in fixed
+proportions. The ASM family of models were developed in the late 1990s in view of these
+facts (Barker & Dold, 1997; Dold et al., 1981; Gujer et al., 1999; Henze et al., 1987, 1999,
+2006; Hu et al., 2007; Meijer, 2004; Nelson & Sidhu, 2009; Rieger et al., 2001). The
+reaction rate terms 𝑅𝑖 (𝐂) in the ASM are interdependent and are governed by the
+stoichiometric relationships. The stoichiometric matrix 𝐒 encapsulates the fixed
+proportions of consumption and production of compounds during biochemical reactions
+(Henze et al., 2006). Specifically, the relationship between the reaction rate vector 𝐑 and
+the biokinetic process vector 𝜌(𝐂) is given by:
+                                           𝐑 = 𝐒 ∙ 𝜌(𝐂)
+where:
+          𝐑 = [𝑅1 , 𝑅2 , … , 𝑅𝑛 ] is the metabolic rate vector for 𝑛 compounds,
+          𝐒 = [𝑆𝑖,𝑗 ] is the stoichiometric matrix where 𝑆𝑖,𝑗 represents the stoichiometric
+           coefficient of compound 𝑖 in reaction 𝑗,
+          𝜌(𝐂) = [𝜌1 (𝐂), 𝜌2 (𝐂), … , 𝜌𝑚 (𝐂)] is the biokinetic process vector for 𝑚 reactions,
+Table 2-2 Sample tabular representation of the relationships of metabolic rate,
+stoichiometric coefficients, and biokinetic processes
+
+   Biokinetic                                        Compounds
+  processes ↓               𝐶1             𝐶2           …                 𝐶𝑖             …
+     𝜌1 (𝐂)                𝑆1,1           𝑆1,2          …                𝑆1,𝑖            …
+     𝜌2 (𝐂)                𝑆2,1           𝑆2,2          …                𝑆2,𝑖            …
+        ⋮                    ⋮              ⋮            ⋮                ⋮              …
+     𝜌𝑗 (𝐂)                𝑆𝑗,1           𝑆𝑗,2          …                𝑆𝑗,𝑖            …
+        ⋮                    ⋮              ⋮            ⋮                ⋮              ⋱
+ Metabolic rate            𝑅1             𝑅2            …                𝑅𝑖              …
+       →
+A tabular representation of the relationship of metabolic rates, stoichiometric coefficients,
+and biokinetic processes is presented in Table 2-2. The stoichiometric matrix 𝐒 plays a
+crucial role in linking the consumption and production rates of different compounds within
+
+P a g e | 20
+
+the system. It should be noted that the coefficients in the stoichiometric equations
+presented in the previous discussions are the elements of this matrix. Each element 𝑆𝑖,𝑗
+of the matrix ensures that the conservation of mass is maintained during biochemical
+transformations. For example, in the context of microbial growth and pollutant
+degradation, the stoichiometric matrix captures the fixed ratios in which substrates are
+consumed, and biomass is produced or maintained. The nonlinearity in ASM equations
+arises primarily from the biokinetic rates 𝜌(𝐂), which typically involve nonlinear functions
+of 𝐂. For instance, microbial growth rates often follow Monod kinetics, which are nonlinear
+with respect to substrate concentration:
+                                                  𝑚
+                                                           𝐶𝑖
+                                  𝜇𝑗 (𝐂) = 𝜇𝑚𝑎𝑥,𝑗 ∏
+                                                       𝐾𝑗,𝑖 + 𝐶𝑖
+                                                 𝑖=1
+
+where:
+        𝜇𝑗 (𝐂) is the specific growth rate of microorganisms involved in process 𝑗 and is an
+         element in 𝜌(𝐂),
+        𝜇𝑚𝑎𝑥,𝑗 is the maximum specific growth rate for process 𝑗,
+        𝐾𝑗,𝑖 is the half-saturation constant for substrate 𝑖 in process 𝑗,
+        𝑚 is the number of compounds involved in process 𝑗.
+There are ways to linearize the reaction rate vector 𝐑. The most common approach is the
+use Taylor series expansion (M. Li et al., 2020; T. Yang et al., 2014), which is fine for
+optimal control applications, but this approach greatly limits the search space for design
+optimization applications because the model is only valid around vicinity of the
+approximation point. This limitation can be addressed by taking advantage of the structure
+of the Monod function. Essentially, 𝜇𝑗 (𝐂) is a product of a constant 𝜇𝑚𝑎𝑥,𝑗 and the
+multiplication of some function of 𝐶𝑖 for all 𝑖. This implies that all compounds are correlated
+to each other by virtue of 𝐑 being a vector of compound production or consumption. There
+are a multitude of ways to elucidate these correlations, but the important aspect of this
+realization is that it allows us to lump the effects of stoichiometric coefficients to the
+production and consumption of compounds into correlation coefficients in some empirical
+model. To this end, ML models can be used, which is the premise of this study. In fact,
+several studies have deployed ML techniques to approximate nonlinearities in biological
+wastewater treatment process (Ahn et al., 2014; Asadi et al., 2017; Fang et al., 2011; Kim
+et al., 2009; Kusiak & Wei, 2012; Lim et al., 2011; Wu et al., 2016), which substantiates
+the theoretical arguments posed here, but these existing approaches are not without
+gaps, which are highlighted in the next section.
+
+P a g e | 21
+
+3     Review Related Literature
+
+3.1    Foundational Activated Sludge Models
+The Activated Sludge Model (ASM) family represents one of the most significant
+developments in modern wastewater treatment engineering, providing a standardized
+framework for simulating and designing biological treatment processes in activated
+sludge systems (Henze et al., 2006). Initially developed under the aegis of the
+International Association on Water Quality (IAWQ), which eventually became the
+International Water Association (IWA), these models consolidated diverse research
+efforts and practical experiences into a unified, mathematical representation of critical
+microbial and chemical reactions (Henze et al., 2006). The need for such standardized
+models arose due to the inherent complexity of biological wastewater treatment: multiple
+microbial populations compete and cooperate to remove carbon, nitrogen, and,
+eventually, phosphorus from the influent stream (Dold et al., 1981). By creating a common
+platform for predicting effluent quality and guiding design modifications, the ASM family
+fundamentally transformed both scientific inquiry and operational decision-making in
+wastewater engineering (citation needed).(Dold et al., 1981; Henze et al., 1999; Nelson
+& Sidhu, 2009; Vanrolleghem et al., 1999)
+ASM1 was the first model in this series, introduced in 1987 by Henze, Grady, Gujer,
+Marais, and Matsuo (Henze et al., 1987; Van Loosdrecht et al., 2015). It focused primarily
+on carbon oxidation and nitrogen removal processes, capturing the essential dynamics
+of heterotrophic and autotrophic biomass (Van Loosdrecht et al., 2015). Within ASM1,
+heterotrophs metabolize readily biodegradable substrate and oxygen under aerobic
+conditions, while they denitrify under anoxic conditions by using nitrate as an electron
+acceptor (Henze et al., 2006). Autotrophs, on the other hand, nitrify ammonia to nitrite
+and then to nitrate, representing one of the most critical steps in maintaining nitrogen
+balance in effluents (Henze et al., 1987, 2006). The ability of ASM1 to predict effluent
+quality for key parameters—such as chemical oxygen demand (COD), biochemical
+oxygen demand (BOD), ammonia, and nitrate—rendered it a powerful tool for both
+researchers and plant operators, even though the model did not explicitly address
+phosphorus removal (Henze et al., 1999). Despite its limitations, ASM1’s relatively
+straightforward approach to substrate utilization, biomass growth, and decay established
+the core framework still evident in later models (Henze et al., 2006; Van Loosdrecht et
+al., 2015).
+Building on this foundation, ASM2 emerged in the mid-1990s to address enhanced
+biological phosphorus removal (EBPR) processes by introducing phosphorus-
+accumulating organisms (PAOs) (Henze et al., 1999). This expanded scope reflected the
+growing interest among engineers and regulators in controlling eutrophication, a process
+driven by excessive nutrient discharge into natural water bodies (Selerio, 2022). Under
