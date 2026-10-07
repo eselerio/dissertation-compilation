@@ -1,0 +1,654 @@
+[
+  {
+    "chapter": 4,
+    "original": "Pairing the two states permits the effect of physical enforcement to be assessed separately from the choice of learner, data partition, and preprocessing.",
+    "revised": "Pairing the two states permits the effect of physical enforcement to be assessed separately from the choice of learner, data partition, and preprocessing \\citep{SturmSilva2024,KircherVotsmeier2025}.",
+    "references": [
+      "SturmSilva2024",
+      "KircherVotsmeier2025"
+    ],
+    "rationale": "The reviewed correction studies assess predictions before and after physical enforcement."
+  },
+  {
+    "chapter": 4,
+    "original": "The grouping identifies their globally available coefficient structures.",
+    "revised": "The grouping identifies their globally available coefficient structures \\citep{Rudin2019}.",
+    "references": [
+      "Rudin2019"
+    ],
+    "rationale": "Transparent model structure provides a basis for direct inspection."
+  },
+  {
+    "chapter": 4,
+    "original": "Relative-error projection and variance-standardized accuracy therefore assess redistribution using different scales.",
+    "revised": "Relative-error projection and variance-standardized accuracy therefore assess redistribution using different scales \\citep{KircherVotsmeier2025,SturmSilva2024}.",
+    "references": [
+      "KircherVotsmeier2025",
+      "SturmSilva2024"
+    ],
+    "rationale": "Projection weights define a component-sensitive adjustment metric."
+  },
+  {
+    "chapter": 4,
+    "original": "Near-zero provisional targets can produce very unequal weights, so solving the original weighted system avoids the extra conditioning penalty associated with forming a normal-equation inverse.",
+    "revised": "Near-zero provisional targets can produce very unequal weights, so solving the original weighted system avoids the extra conditioning penalty associated with forming a normal-equation inverse \\citep{BuzziFerraris2013}.",
+    "references": [
+      "BuzziFerraris2013"
+    ],
+    "rationale": "Numerical solution and conditioning principles support the factorization choice."
+  },
+  {
+    "chapter": 4,
+    "original": "A large displacement can reduce violations of the specified physical constraints while moving away from the true kinetic response.",
+    "revised": "A large displacement can reduce violations of the specified physical constraints while moving away from the true kinetic response \\citep{SturmSilva2024,KircherVotsmeier2025}.",
+    "references": [
+      "SturmSilva2024",
+      "KircherVotsmeier2025"
+    ],
+    "rationale": "Correction size, physical enforcement, and prediction quality are distinct quantities."
+  },
+  {
+    "chapter": 4,
+    "original": "A state can remain non-negative and consistent with mass conservation while its estimated nitrogen distribution or biomass abundance is inaccurate.",
+    "revised": "A state can remain non-negative and consistent with mass conservation while its estimated nitrogen distribution or biomass abundance is inaccurate \\citep{Henze2006,Selerio2026}.",
+    "references": [
+      "Henze2006",
+      "Selerio2026"
+    ],
+    "rationale": "Component accounting distinguishes balance satisfaction from the biological component response."
+  },
+  {
+    "chapter": 4,
+    "original": "Neither operation was designed to minimize the assessed nRMSE.",
+    "revised": "Neither operation was designed to minimize the assessed nRMSE. The species-weighted conservation correction of \\citet{SturmSilva2024} provides a related example of how the adjustment metric affects component accuracy.",
+    "references": [
+      "SturmSilva2024"
+    ],
+    "rationale": "Connect the dissertation-specific error interpretation to an existing projection example without sourcing its numerical results externally."
+  },
+  {
+    "chapter": 4,
+    "original": "COD and TSS remained sensitive to the redistribution of organic and particulate components.",
+    "revised": "COD and TSS remained sensitive to the redistribution of organic and particulate components \\citep{Henze2006}.",
+    "references": [
+      "Henze2006"
+    ],
+    "rationale": "The activated sludge component reporting map supplies the organic and particulate composition of these totals."
+  },
+  {
+    "chapter": 4,
+    "original": "A deployment choice must therefore compare complete prediction cost rather than raw inference alone.",
+    "revised": "A deployment choice must therefore compare complete prediction cost rather than raw inference alone \\citep{BhosekarIerapetritou2018,Bliek2023}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Bliek2023"
+    ],
+    "rationale": "Surrogate selection and expensive-function benchmarking include development and evaluation effort."
+  },
+  {
+    "chapter": 5,
+    "original": "Invariant-constrained second-order regression (ICSOR) combines an explicit polynomial driver, learned dependence among effluent components, and checked prediction.",
+    "revised": "Invariant-constrained second-order regression (ICSOR) combines an explicit polynomial driver, learned dependence among effluent components, and checked prediction \\citep{Selerio2026}.",
+    "references": [
+      "Selerio2026"
+    ],
+    "rationale": "The component article introduces this structured prediction procedure."
+  },
+  {
+    "chapter": 5,
+    "original": "Mass conservation and non-negativity are therefore tested before the component state is collapsed into the four reported quantities.",
+    "revised": "Mass conservation and non-negativity are therefore tested before the component state is collapsed into the four reported quantities \\citep{Henze2006,Selerio2026}.",
+    "references": [
+      "Henze2006",
+      "Selerio2026"
+    ],
+    "rationale": "Complete component prediction retains information hidden in reported composites."
+  },
+  {
+    "chapter": 5,
+    "original": "Explicit nonlinear libraries make candidate response structures available for inspection, as illustrated by \\citet{Brunton2016}.",
+    "revised": "Explicit nonlinear libraries make candidate response structures available for inspection, as illustrated by \\citet{Brunton2016}. The response-surface applications reviewed by \\citet{Nazlabadi2021} provide a wastewater treatment precedent for using polynomial operating terms and interactions.",
+    "references": [
+      "Nazlabadi2021"
+    ],
+    "rationale": "Add an already-reviewed wastewater example beside the general nonlinear-library precedent."
+  },
+  {
+    "chapter": 5,
+    "original": "Activated sludge reactions involve several components at once, and the stoichiometric matrix specifies those transformations.",
+    "revised": "Activated sludge reactions involve several components at once, and the stoichiometric matrix specifies those transformations \\citep{Henze2006}.",
+    "references": [
+      "Henze2006"
+    ],
+    "rationale": "Mechanistic reaction accounting supports the biological explanation of simultaneous component changes."
+  },
+  {
+    "chapter": 5,
+    "original": "Its entries describe fitted dependence associated with correlated transformations, loading patterns, and the allocation of effects between the driver and coupling blocks.",
+    "revised": "Its entries describe fitted dependence associated with correlated transformations, loading patterns, and the allocation of effects between the driver and coupling blocks \\citep{Selerio2026}.",
+    "references": [
+      "Selerio2026"
+    ],
+    "rationale": "The published structured surrogate supplies the interpretation of its learned coupling."
+  },
+  {
+    "chapter": 5,
+    "original": "A nearly singular matrix can amplify small driver perturbations and numerical errors.",
+    "revised": "A nearly singular matrix can amplify small driver perturbations and numerical errors \\citep{BuzziFerraris2013}.",
+    "references": [
+      "BuzziFerraris2013"
+    ],
+    "rationale": "Conditioning principles support the need to check the complete coupled system."
+  },
+  {
+    "chapter": 5,
+    "original": "Held-out test observations do not determine penalty weights or stopping choices.",
+    "revised": "Held-out test observations do not determine penalty weights or stopping choices \\citep{Kaufman2012}.",
+    "references": [
+      "Kaufman2012"
+    ],
+    "rationale": "The existing information-leakage reference supports assessment data separation."
+  },
+  {
+    "chapter": 5,
+    "original": "Interpretation therefore examines coefficient magnitude, input scale, and the contribution of the corresponding term over the declared domain.",
+    "revised": "Interpretation therefore examines coefficient magnitude, input scale, and the contribution of the corresponding term over the declared domain \\citep{Selerio2026,Nazlabadi2021}.",
+    "references": [
+      "Selerio2026",
+      "Nazlabadi2021"
+    ],
+    "rationale": "Physical-coordinate regression terms must be interpreted with their inputs and combined response."
+  },
+  {
+    "chapter": 5,
+    "original": "The complete deployment rule includes transitions between raw, affine, and linear-program branches, each with its corresponding sensitivity.",
+    "revised": "The complete deployment rule includes transitions between raw, affine, and linear-program branches, each with its corresponding sensitivity \\citep{Selerio2026}.",
+    "references": [
+      "Selerio2026"
+    ],
+    "rationale": "The existing component article distinguishes raw interpretation from projected output behavior."
+  },
+  {
+    "chapter": 5,
+    "original": "A small gap can accompany either accurate prediction or high-error underfitting, so it is interpreted with the corresponding absolute scores.",
+    "revised": "A small gap can accompany either accurate prediction or high-error underfitting, so it is interpreted with the corresponding absolute scores \\citep{Hastie2009}.",
+    "references": [
+      "Hastie2009"
+    ],
+    "rationale": "Generalization, flexibility, and underfitting are established statistical learning concepts."
+  },
+  {
+    "chapter": 5,
+    "original": "Different joint stationary solutions can predict similar component states with different coefficients.",
+    "revised": "Different joint stationary solutions can predict similar component states with different coefficients \\citep{Selerio2026}.",
+    "references": [
+      "Selerio2026"
+    ],
+    "rationale": "The component article identifies coefficient nonuniqueness and stability as interpretation questions."
+  },
+  {
+    "chapter": 5,
+    "original": "The comparison distinguishes what the regression learns from what the projection enforces.",
+    "revised": "The comparison distinguishes what the regression learns from what the projection enforces \\citep{Karniadakis2021,KircherVotsmeier2025}.",
+    "references": [
+      "Karniadakis2021",
+      "KircherVotsmeier2025"
+    ],
+    "rationale": "Physical guidance during fitting and output enforcement act at distinct stages."
+  },
+  {
+    "chapter": 5,
+    "original": "An inspectable equation, data efficiency, and checked final states provided additional engineering criteria for selecting ICSOR.",
+    "revised": "An inspectable equation, data efficiency, and checked final states provided additional engineering criteria for selecting ICSOR \\citep{Rudin2019,BhosekarIerapetritou2018}.",
+    "references": [
+      "Rudin2019",
+      "BhosekarIerapetritou2018"
+    ],
+    "rationale": "Transparent structure and intended engineering use complement an accuracy-based model choice."
+  },
+  {
+    "chapter": 5,
+    "original": "Separate fitting and deployment measurements therefore described the effort required to construct the approximation and return a checked state for engineering analysis.",
+    "revised": "Separate fitting and deployment measurements therefore described the effort required to construct the approximation and return a checked state for engineering analysis. Comparing preparation and repeated use follows the computational assessment principles discussed by \\citet{BhosekarIerapetritou2018} and \\citet{Bliek2023}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Bliek2023"
+    ],
+    "rationale": "Support the general cost interpretation while retaining this dissertation as the source of measured times."
+  },
+  {
+    "chapter": 6,
+    "original": "The actual flow through the reactor is $Q_P=Q_0q_P$, so its actual residence time is $V_i/Q_P$.",
+    "revised": "The actual flow through the reactor is $Q_P=Q_0q_P$, so its actual residence time is $V_i/Q_P$ \\citep{Henze2008,Alex2008}.",
+    "references": [
+      "Henze2008",
+      "Alex2008"
+    ],
+    "rationale": "Connected treatment hydraulics define actual passage residence time from the full recycle flow, separate from the hypothetical arithmetic."
+  },
+  {
+    "chapter": 6,
+    "original": "Otherwise, the upper-layer gravitational flux passes to the receiver.",
+    "revised": "Otherwise, the upper-layer gravitational flux passes to the receiver \\citep{Takacs1991}.",
+    "references": [
+      "Takacs1991"
+    ],
+    "rationale": "The layered clarification model supplies the nonlinear settling-flux rule."
+  },
+  {
+    "chapter": 6,
+    "original": "A square of the recycle coordinate permits local curvature.",
+    "revised": "A square of the recycle coordinate permits local curvature \\citep{Nazlabadi2021,Selerio2026}.",
+    "references": [
+      "Nazlabadi2021",
+      "Selerio2026"
+    ],
+    "rationale": "Polynomial response modeling represents operating curvature and interactions."
+  },
+  {
+    "chapter": 6,
+    "original": "This second standardization prevents squares with large variance from receiving a weaker effective ridge penalty merely because they are numerically larger.",
+    "revised": "This second standardization prevents squares with large variance from receiving a weaker effective ridge penalty merely because they are numerically larger \\citep{Hastie2009}.",
+    "references": [
+      "Hastie2009"
+    ],
+    "rationale": "Predictor scaling controls the effective ridge penalty."
+  },
+  {
+    "chapter": 6,
+    "original": "Under squared logarithmic error, direct exponentiation represents a conditional geometric center rather than an unbiased concentration-scale mean.",
+    "revised": "Under squared logarithmic error, direct exponentiation represents a conditional geometric center rather than an unbiased concentration-scale mean \\citep{Tofallis2015}.",
+    "references": [
+      "Tofallis2015"
+    ],
+    "rationale": "The existing relative-error reference explains squared logarithmic loss and geometric prediction targets."
+  },
+  {
+    "chapter": 6,
+    "original": "The projection objective cannot decrease when leaving its minimizer along that segment.",
+    "revised": "The projection objective cannot decrease when leaving its minimizer along that segment \\citep{Boyd2004}.",
+    "references": [
+      "Boyd2004"
+    ],
+    "rationale": "Convex projection optimality supplies the variational argument used in the derived error bound."
+  },
+  {
+    "chapter": 6,
+    "original": "Clarifier solids loading divides the feed solids mass rate by area.",
+    "revised": "Clarifier solids loading divides the feed solids mass rate by area \\citep{Henze2008}.",
+    "references": [
+      "Henze2008"
+    ],
+    "rationale": "Standard engineering loading measures support the clarifier assessment."
+  },
+  {
+    "chapter": 6,
+    "original": "An underflow limit should be based on accepted sludge-handling conditions.",
+    "revised": "An underflow limit should be based on accepted sludge-handling conditions \\citep{Henze2008}.",
+    "references": [
+      "Henze2008"
+    ],
+    "rationale": "Solids handling gives the process basis for plant-specific operating bounds."
+  },
+  {
+    "chapter": 6,
+    "original": "Their fixed thresholds define the accepted search region.",
+    "revised": "Their fixed thresholds define the accepted search region. The need to manage approximation error near candidate controls follows the model-management approaches of \\citet{Alexandrov1998} and \\citet{Hameed2026}.",
+    "references": [
+      "Alexandrov1998",
+      "Hameed2026"
+    ],
+    "rationale": "Connect the proposed screening procedure to existing approximation management without attributing its exact thresholds to those studies."
+  },
+  {
+    "chapter": 6,
+    "original": "The second compares independently evaluated decisions using a common objective basis.",
+    "revised": "The second compares independently evaluated decisions using a common objective basis \\citep{BhosekarIerapetritou2018,Pedrozo2025}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Pedrozo2025"
+    ],
+    "rationale": "Decision assessment needs a common engineering objective and reference response."
+  },
+  {
+    "chapter": 6,
+    "original": "Repeated use can amortize development effort, but the relevant number of later decisions depends on the full per-decision cost and on acceptable mechanistic decision quality.",
+    "revised": "Repeated use can amortize development effort, but the relevant number of later decisions depends on the full per-decision cost and on acceptable mechanistic decision quality \\citep{BhosekarIerapetritou2018,Bliek2023}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Bliek2023"
+    ],
+    "rationale": "Support the general development-versus-use cost principle, leaving hypothetical amortization arithmetic as an illustration."
+  },
+  {
+    "chapter": 6,
+    "original": "Together these assessments evaluate the connected surrogate as an operating decision aid.",
+    "revised": "Together these assessments evaluate the connected surrogate as an operating decision aid \\citep{BhosekarIerapetritou2018,Pedrozo2025}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Pedrozo2025"
+    ],
+    "rationale": "Prediction, physical checks, and operating behavior are separate parts of surrogate decision assessment."
+  },
+  {
+    "chapter": 6,
+    "original": "Recycle mixing brought concentrated material back into the biological train.",
+    "revised": "Recycle mixing brought concentrated material back into the biological train \\citep{Alex2008}.",
+    "references": [
+      "Alex2008"
+    ],
+    "rationale": "The connected benchmark provides the process explanation for return-stream mixing."
+  },
+  {
+    "chapter": 6,
+    "original": "A nearly constant composite concentration can accompany conversion among its component forms.",
+    "revised": "A nearly constant composite concentration can accompany conversion among its component forms \\citep{Henze2006,JeppssonDiehl1996}.",
+    "references": [
+      "Henze2006",
+      "JeppssonDiehl1996"
+    ],
+    "rationale": "Reaction and component-transport descriptions explain why reported totals conceal changes in material forms."
+  },
+  {
+    "chapter": 6,
+    "original": "Species concentrations, outlet solids flows, and the reactor and clarifier inventories support interpretation of nitrification, denitrification, phosphorus uptake, and solids age.",
+    "revised": "Species concentrations, outlet solids flows, and the reactor and clarifier inventories support interpretation of nitrification, denitrification, phosphorus uptake, and solids age \\citep{Henze2008,Wentzel1992}.",
+    "references": [
+      "Henze2008",
+      "Wentzel1992"
+    ],
+    "rationale": "Mechanistic nutrient-removal and solids accounting support treatment-train interpretation."
+  },
+  {
+    "chapter": 6,
+    "original": "The operating search concentrates evaluations around preferred settings, so prediction errors at selected controls have a different distribution from errors across the holdout design.",
+    "revised": "The operating search concentrates evaluations around preferred settings, so prediction errors at selected controls have a different distribution from errors across the holdout design \\citep{BhosekarIerapetritou2018,Pedrozo2025}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Pedrozo2025"
+    ],
+    "rationale": "The reviewed optimization studies distinguish global prediction assessment from behavior at selected decisions."
+  },
+  {
+    "chapter": 6,
+    "original": "Separate presentation of quality and resource terms made both choices understandable under the declared weights.",
+    "revised": "Separate presentation of quality and resource terms made both choices understandable under the declared weights \\citep{PadronPaez2020,Aboagye2021}.",
+    "references": [
+      "PadronPaez2020",
+      "Aboagye2021"
+    ],
+    "rationale": "The existing systems studies establish explicit treatment and resource priorities as decision criteria."
+  },
+  {
+    "chapter": 7,
+    "original": "The fixed reporting map then produced COD, TN, TP, and TSS.",
+    "revised": "The fixed reporting map then produced COD, TN, TP, and TSS \\citep{Henze2006}.",
+    "references": [
+      "Henze2006"
+    ],
+    "rationale": "Component-to-composite accounting follows the adopted activated sludge modeling framework."
+  },
+  {
+    "chapter": 7,
+    "original": "The result established a practical numerical connection between statistical component prediction and the physical accounting of the reactor.",
+    "revised": "The result established a practical numerical connection between statistical component prediction and the physical accounting of the reactor. The construction connects stoichiometric conservation in learned outputs, as developed by \\citet{SturmWexler2022}, with the joint balance and positivity projection of \\citet{KircherVotsmeier2025}.",
+    "references": [
+      "SturmWexler2022",
+      "KircherVotsmeier2025"
+    ],
+    "rationale": "Relate the dissertation result to established conservation and positivity methods without assigning its measured compliance counts to them."
+  },
+  {
+    "chapter": 7,
+    "original": "A single aggregate score compresses changes that have different implications for nutrient prediction, biomass, and solids.",
+    "revised": "A single aggregate score compresses changes that have different implications for nutrient prediction, biomass, and solids. A related example is the species-weighted correction of \\citet{SturmSilva2024}, where weighting protected a small radical species during conservation adjustment.",
+    "references": [
+      "SturmSilva2024"
+    ],
+    "rationale": "Use the atmospheric-chemistry example already discussed in Chapter 2 to strengthen the interpretation of component-sensitive projection."
+  },
+  {
+    "chapter": 7,
+    "original": "This separation gives engineers a clear basis for selecting a predictor for a particular data budget and operating domain.",
+    "revised": "This separation gives engineers a clear basis for selecting a predictor for a particular data budget and operating domain \\citep{VieringLoog2023,Borisov2024}.",
+    "references": [
+      "VieringLoog2023",
+      "Borisov2024"
+    ],
+    "rationale": "Learning-curve and tabular-model reviews support domain- and budget-specific model selection."
+  },
+  {
+    "chapter": 7,
+    "original": "Its second-order driver separated baseline, operating, loading, curvature, and interaction terms.",
+    "revised": "Its second-order driver separated baseline, operating, loading, curvature, and interaction terms \\citep{Selerio2026}.",
+    "references": [
+      "Selerio2026"
+    ],
+    "rationale": "Attribute the explicit regression structure to the component article already reviewed."
+  },
+  {
+    "chapter": 7,
+    "original": "Interpretation consequently follows the complete prediction calculation and the operating point at which it is examined.",
+    "revised": "Interpretation consequently follows the complete prediction calculation and the operating point at which it is examined \\citep{Selerio2026,Shen2023}.",
+    "references": [
+      "Selerio2026",
+      "Shen2023"
+    ],
+    "rationale": "The reviewed structured and differentiable modeling studies connect inspection to the full response calculation."
+  },
+  {
+    "chapter": 7,
+    "original": "The resulting formulation preserved information about both the liquid treatment path and the recycled solids that influence upstream conditions.",
+    "revised": "The resulting formulation preserved information about both the liquid treatment path and the recycled solids that influence upstream conditions \\citep{Alex2008,JeppssonDiehl1996}.",
+    "references": [
+      "Alex2008",
+      "JeppssonDiehl1996"
+    ],
+    "rationale": "Connected benchmark topology and biological component transport explain the retained plant response."
+  },
+  {
+    "chapter": 7,
+    "original": "It also showed the practical value of calculating treatment outcomes at the settings that would actually be chosen.",
+    "revised": "It also showed the practical value of calculating treatment outcomes at the settings that would actually be chosen \\citep{Alexandrov1998,Pedrozo2025}.",
+    "references": [
+      "Alexandrov1998",
+      "Pedrozo2025"
+    ],
+    "rationale": "Original-model checks at selected controls are established in approximation management and surrogate optimization."
+  },
+  {
+    "chapter": 7,
+    "original": "Presenting the objective and its contributions together explained the treatment priorities embodied in each decision.",
+    "revised": "Presenting the objective and its contributions together explained the treatment priorities embodied in each decision. The multiobjective treatment analysis of \\citet{PadronPaez2020} and the wastewater-network assessment of \\citet{Aboagye2021} provide related examples of evaluating treatment and resource priorities together.",
+    "references": [
+      "PadronPaez2020",
+      "Aboagye2021"
+    ],
+    "rationale": "Add reviewed systems examples after the original scenario results rather than using external citations as sources for those numbers."
+  },
+  {
+    "chapter": 7,
+    "original": "Their coordinated use is a direct route toward efficient process optimization with explicit treatment and resource priorities.",
+    "revised": "Their coordinated use is a direct route toward efficient process optimization with explicit treatment and resource priorities \\citep{BhosekarIerapetritou2018,Bliek2023}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Bliek2023"
+    ],
+    "rationale": "Computational efficiency is assessed alongside intended decision quality in surrogate optimization."
+  },
+  {
+    "chapter": 7,
+    "original": "Together, these measures describe different aspects of the same engineering problem.",
+    "revised": "Together, these measures describe different aspects of the same engineering problem. The underlying findings are reported in Sections~\\ref{sec:projection_results}, \\ref{sec:icsor_results}, and \\ref{sec:plant_results}.",
+    "references": [],
+    "rationale": "Attribute the synthesis table and all summarized numerical findings to the dissertation results sections."
+  },
+  {
+    "chapter": 7,
+    "original": "Reaction stoichiometry supplies invariant relations.",
+    "revised": "Reaction stoichiometry supplies invariant relations \\citep{Henze2006,SturmWexler2022}.",
+    "references": [
+      "Henze2006",
+      "SturmWexler2022"
+    ],
+    "rationale": "Mechanistic component definitions and stoichiometric learned-output mappings supply the physical foundation."
+  },
+  {
+    "chapter": 7,
+    "original": "Flow and equipment boundaries supply transport and inventory relations.",
+    "revised": "Flow and equipment boundaries supply transport and inventory relations \\citep{Alex2008,JeppssonDiehl1996}.",
+    "references": [
+      "Alex2008",
+      "JeppssonDiehl1996"
+    ],
+    "rationale": "Plant topology and component propagation define the connected physical boundary."
+  },
+  {
+    "chapter": 7,
+    "original": "For process optimization, the framework supports a sequence of screening, candidate selection, physical adjustment, and reference evaluation.",
+    "revised": "For process optimization, the framework supports a sequence of screening, candidate selection, physical adjustment, and reference evaluation \\citep{BhosekarIerapetritou2018,Alexandrov1998}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Alexandrov1998"
+    ],
+    "rationale": "Situate the integrated workflow within existing surrogate decision assessment and model management."
+  },
+  {
+    "chapter": 7,
+    "original": "Repeating fitting and operating assessment would connect the simulation budget to the decisions it is intended to support.",
+    "revised": "Repeating fitting and operating assessment would connect the simulation budget to the decisions it is intended to support. This proposal develops the reference-informed model management of \\citet{Alexandrov1998} and the gray-box approximation management discussed by \\citet{Hameed2026}.",
+    "references": [
+      "Alexandrov1998",
+      "Hameed2026"
+    ],
+    "rationale": "Identify the literature basis of the proposed adaptive decision-focused sampling loop."
+  },
+  {
+    "chapter": 7,
+    "original": "Each formulation should retain the same mass conservation and non-negativity requirements so that changes in treatment accuracy can be attributed to the adjustment metric.",
+    "revised": "Each formulation should retain the same mass conservation and non-negativity requirements so that changes in treatment accuracy can be attributed to the adjustment metric. The species-weighted correction of \\citet{SturmSilva2024} provides a precedent for choosing adjustment weights from component magnitude and uncertainty.",
+    "references": [
+      "SturmSilva2024"
+    ],
+    "rationale": "Support proposed weighting studies with the existing species-weighted correction example."
+  },
+  {
+    "chapter": 7,
+    "original": "The resulting distributions can then be evaluated for their coverage of mechanistic reference concentrations, particularly for TN, TP, and overflow TSS.",
+    "revised": "The resulting distributions can then be evaluated for their coverage of mechanistic reference concentrations, particularly for TN, TP, and overflow TSS. The conservation-aware probabilistic framework of \\citet{Hansen2024} and the differentiable probabilistic projection of \\citet{Utkarsh2025} provide starting points for this extension.",
+    "references": [
+      "Hansen2024",
+      "Utkarsh2025"
+    ],
+    "rationale": "Provide two already-reviewed probabilistic conservation examples for the uncertainty research proposal."
+  },
+  {
+    "chapter": 7,
+    "original": "Mechanistic and plant-based evaluations can test the frequency with which those safeguards are met.",
+    "revised": "Mechanistic and plant-based evaluations can test the frequency with which those safeguards are met. The effluent ammonium safeguards considered by \\citet{Ren2026} illustrate how treatment requirements can guide aeration decisions.",
+    "references": [
+      "Ren2026"
+    ],
+    "rationale": "Use an existing treatment-specific safeguard example without claiming its method already implements the proposed probabilistic TP bound."
+  },
+  {
+    "chapter": 7,
+    "original": "Separating uncertainty associated with surrogate fitting, influent measurements, and mechanistic parameters would also show which information most improves the decision.",
+    "revised": "Separating uncertainty associated with surrogate fitting, influent measurements, and mechanistic parameters would also show which information most improves the decision \\citep{Machado2014,Petersen2003}.",
+    "references": [
+      "Machado2014",
+      "Petersen2003"
+    ],
+    "rationale": "Existing activated sludge sensitivity and calibration studies motivate separating input and parameter uncertainty."
+  },
+  {
+    "chapter": 7,
+    "original": "Comparisons based on the complete predicted response can help identify different coefficient combinations that describe similar treatment behavior.",
+    "revised": "Comparisons based on the complete predicted response can help identify different coefficient combinations that describe similar treatment behavior. This work would address the coefficient-stability question identified by \\citet{Selerio2026}.",
+    "references": [
+      "Selerio2026"
+    ],
+    "rationale": "Attribute the proposed resampling study to the stability question explicitly identified in the component article."
+  },
+  {
+    "chapter": 7,
+    "original": "Comparing these projected sensitivities with mechanistic sensitivities would connect model inspection more closely to aeration, recycle, and wasting decisions.",
+    "revised": "Comparing these projected sensitivities with mechanistic sensitivities would connect model inspection more closely to aeration, recycle, and wasting decisions \\citep{Selerio2026,Shen2023}.",
+    "references": [
+      "Selerio2026",
+      "Shen2023"
+    ],
+    "rationale": "The existing complete-map interpretation and differentiable modeling literature motivate the proposed sensitivity comparison."
+  },
+  {
+    "chapter": 7,
+    "original": "The governing balances would include the time derivatives of reactor and clarifier inventories.",
+    "revised": "The governing balances would include the time derivatives of reactor and clarifier inventories \\citep{Takacs1991,Alex2008}.",
+    "references": [
+      "Takacs1991",
+      "Alex2008"
+    ],
+    "rationale": "Dynamic settler and connected benchmark balances provide the inventory foundation for a dynamic extension."
+  },
+  {
+    "chapter": 7,
+    "original": "The evaluation can include transient nutrient peaks, recovery time, inventory changes, oxygen demand, and the computation required at each control update.",
+    "revised": "The evaluation can include transient nutrient peaks, recovery time, inventory changes, oxygen demand, and the computation required at each control update. The field-tested aeration controller of \\citet{Bernardelli2020} and the wastewater control review of \\citet{Croll2023} provide examples for developing and evaluating such dynamic strategies.",
+    "references": [
+      "Bernardelli2020",
+      "Croll2023"
+    ],
+    "rationale": "Provide existing field-control and wastewater-learning examples while retaining the proposed dynamic surrogate as future work."
+  },
+  {
+    "chapter": 7,
+    "original": "Studies can combine influent fractionation, calibrated mechanistic parameters, unit concentrations, clarifier solids measurements, and recorded controls.",
+    "revised": "Studies can combine influent fractionation, calibrated mechanistic parameters, unit concentrations, clarifier solids measurements, and recorded controls \\citep{Petersen2003,Machado2014,Newhart2019}.",
+    "references": [
+      "Petersen2003",
+      "Machado2014",
+      "Newhart2019"
+    ],
+    "rationale": "Calibration and plant-data literature support the information needed for measured-plant validation."
+  },
+  {
+    "chapter": 7,
+    "original": "A prospective assessment can fix the fitting and operating procedure before collecting the final evaluation period.",
+    "revised": "A prospective assessment can fix the fitting and operating procedure before collecting the final evaluation period \\citep{Kaufman2012}.",
+    "references": [
+      "Kaufman2012"
+    ],
+    "rationale": "A frozen development procedure protects the separation between fitting and evaluation information."
+  },
+  {
+    "chapter": 7,
+    "original": "Electricity demand, chemical use, sludge handling, and operating costs can replace or supplement the engineering proxies used here.",
+    "revised": "Electricity demand, chemical use, sludge handling, and operating costs can replace or supplement the engineering proxies used here \\citep{Henze2008,Miederer2025}.",
+    "references": [
+      "Henze2008",
+      "Miederer2025"
+    ],
+    "rationale": "Biological treatment engineering and the existing energy-management example motivate facility-specific resource measures."
+  },
+  {
+    "chapter": 7,
+    "original": "Extensions to other reactor arrangements, attached-growth units, and resource-recovery connections can retain the same principle of defining component states and boundary streams before physical enforcement is imposed.",
+    "revised": "Extensions to other reactor arrangements, attached-growth units, and resource-recovery connections can retain the same principle of defining component states and boundary streams before physical enforcement is imposed \\citep{Henze2008,Aboagye2021,Durkin2024}.",
+    "references": [
+      "Henze2008",
+      "Aboagye2021",
+      "Durkin2024"
+    ],
+    "rationale": "Treatment-process and resource-recovery studies provide the systems context for proposed topology extensions."
+  },
+  {
+    "chapter": 7,
+    "original": "Recording state generation, fitting, prediction, projection, search, and verification costs would establish when surrogate development becomes worthwhile for repeated decisions.",
+    "revised": "Recording state generation, fitting, prediction, projection, search, and verification costs would establish when surrogate development becomes worthwhile for repeated decisions \\citep{BhosekarIerapetritou2018,Bliek2023}.",
+    "references": [
+      "BhosekarIerapetritou2018",
+      "Bliek2023"
+    ],
+    "rationale": "General surrogate assessment and expensive-function benchmarking support complete cost and decision-quality comparisons."
+  }
+]

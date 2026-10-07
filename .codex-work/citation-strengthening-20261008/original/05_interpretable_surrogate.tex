@@ -5,7 +5,7 @@
 
 A component prediction is useful for engineering analysis when its dependence on the inputs can be examined and its material accounting can be checked. These requirements address different questions. A transparent regression equation explains how the predicted state depends on operating conditions and influent loads. A mass conservation test determines whether that state preserves the inventories represented by the reaction network. A non-negativity test determines whether each predicted concentration is physically meaningful. An explicit equation can fail either physical test. A physically projected prediction can also remain difficult to interpret if the underlying regression is opaque.
 
-Invariant-constrained second-order regression (ICSOR) combines an explicit polynomial driver, learned dependence among effluent components, and checked prediction \citep{Selerio2026}. A polynomial driver is the fitted expression containing inputs, squares, and pairwise products before component coupling is applied. In this chapter, deployment means evaluating the fitted model at a new influent and operating setting and returning a physically checked component state. The driver retains separate terms for operating conditions, influent composition, curvature, and interactions. The coupling relation expresses how the driver contributes to the predicted component state. Deployment then checks that state and applies a constrained projection when necessary. Together, these stages provide an inspectable regression and a checked effluent state.
+Invariant-constrained second-order regression (ICSOR) combines an explicit polynomial driver, learned dependence among effluent components, and checked prediction. A polynomial driver is the fitted expression containing inputs, squares, and pairwise products before component coupling is applied. In this chapter, deployment means evaluating the fitted model at a new influent and operating setting and returning a physically checked component state. The driver retains separate terms for operating conditions, influent composition, curvature, and interactions. The coupling relation expresses how the driver contributes to the predicted component state. Deployment then checks that state and applies a constrained projection when necessary. Together, these stages provide an inspectable regression and a checked effluent state.
 
 The preference for an inspectable regression follows the argument of \citet{Rudin2019} that transparent model structures can support decisions that require scrutiny. It also follows the broader development of models that combine learned relations with physical structure discussed by \citet{Shen2023}. The fitted relations are available for examination, comparison with process knowledge, and testing across operating conditions.
 
@@ -75,7 +75,7 @@ For a new influent state, the component set used by checked deployment is
 \end{equation}
 When \(c_{in}\geq\mathbf{0}\), this set contains \(c_{in}\) and is therefore nonempty. Its members satisfy the modeled linear invariants and component non-negativity within the declared boundary.
 
-The reported composites provide another reason to work in component space. Distinct component states can have the same COD, TN, TP, and TSS values. A negative component can also be hidden by positive contributions to an aggregate. When \(I_{\mathrm{comp}}\) is entrywise non-negative, a non-negative component state produces non-negative composites. The reverse implication does not generally hold. Mass conservation and non-negativity are therefore tested before the component state is collapsed into the four reported quantities \citep{Henze2006,Selerio2026}.
+The reported composites provide another reason to work in component space. Distinct component states can have the same COD, TN, TP, and TSS values. A negative component can also be hidden by positive contributions to an aggregate. When \(I_{\mathrm{comp}}\) is entrywise non-negative, a non-negative component state produces non-negative composites. The reverse implication does not generally hold. Mass conservation and non-negativity are therefore tested before the component state is collapsed into the four reported quantities.
 
 \subsection{A partitioned second-order driver}
 
@@ -165,7 +165,7 @@ has an aeration derivative \(\partial r_f/\partial a=\beta_a+2\beta_{aa}a+\beta_
 
 The same reasoning applies to simultaneous influent loads. A carbon-ammonium interaction allows the modeled association with carbon availability to depend on nitrogen loading. A phosphorus-storage interaction allows the modeled association with dissolved phosphate to depend on a particulate storage pool. These terms provide a transparent approximation to a nonlinear response involving the microbial pathways described by \citet{Henze1999}.
 
-The second-order library represents smooth local curvature and pairwise input interactions. Explicit nonlinear libraries make candidate response structures available for inspection, as illustrated by \citet{Brunton2016}. The response-surface applications reviewed by \citet{Nazlabadi2021} provide a wastewater treatment precedent for using polynomial operating terms and interactions.
+The second-order library represents smooth local curvature and pairwise input interactions. Explicit nonlinear libraries make candidate response structures available for inspection, as illustrated by \citet{Brunton2016}.
 
 \subsubsection{Symmetry and the meaning of cross terms}
 
@@ -248,7 +248,7 @@ R=I_F-\Gamma,
 \end{equation}
 Equivalently, the equation for component \(f\) is \(c_f=r_f+\sum_{j\neq f}\Gamma_{fj}c_j\). This form separates the input-dependent driver from dependence among the predicted component channels. The diagonal of \(\Gamma\) is fixed to zero to avoid a redundant self-coupling coefficient.
 
-The sign of \(\Gamma_{fj}\) describes reinforcement or compensation within the fitted simultaneous relation. Activated sludge reactions involve several components at once, and the stoichiometric matrix specifies those transformations \citep{Henze2006}. The coupling matrix is learned from state patterns. Its entries describe fitted dependence associated with correlated transformations, loading patterns, and the allocation of effects between the driver and coupling blocks \citep{Selerio2026}.
+The sign of \(\Gamma_{fj}\) describes reinforcement or compensation within the fitted simultaneous relation. Activated sludge reactions involve several components at once, and the stoichiometric matrix specifies those transformations. The coupling matrix is learned from state patterns. Its entries describe fitted dependence associated with correlated transformations, loading patterns, and the allocation of effects between the driver and coupling blocks.
 
 When \(R\) is nonsingular, the raw component prediction is \(R^{-1}r\). Multiplication by \(R^{-1}\) redistributes or amplifies the response represented by the driver. For interpretation, the driver, coupling matrix, and complete raw mapping are examined together.
 
@@ -260,7 +260,7 @@ The adopted coupling constraints require
 \qquad |\Gamma_{fj}|\leq\gamma_{abs}\quad(f\neq j),
 \qquad \kappa_2(I_F-\Gamma)\leq\kappa_{max}.
 \end{equation}
-The condition number is the ratio of the largest to smallest singular value of the coupled-system matrix. A nearly singular matrix can amplify small driver perturbations and numerical errors \citep{BuzziFerraris2013}. The condition check controls the complete matrix separately from the bounds on individual entries.
+The condition number is the ratio of the largest to smallest singular value of the coupled-system matrix. A nearly singular matrix can amplify small driver perturbations and numerical errors. The condition check controls the complete matrix separately from the bounds on individual entries.
 
 The small symmetric matrix in Equation~\eqref{eq:icsor_small_coupling_matrices} illustrates this measure without a large singular-value calculation. In the direction \((1,1)^\top\), multiplication by \(R\) scales the vector by 0.8. In the direction \((1,-1)^\top\), it scales the vector by 1.2. These orthogonal directions give singular values 0.8 and 1.2, so the condition number is \(1.2/0.8=1.5\).
 
@@ -499,7 +499,7 @@ Objective slope tolerance & \(2.85\times10^{-7}\)\\
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:icsor_fitting_settings} specifies numerical fitting choices. The condition threshold \(\kappa_{max}\) remains an additional prescribed numerical safeguard and is checked independently of the coefficient bound. Hyperparameter assessment uses validation observations within the training pool. Held-out test observations do not determine penalty weights or stopping choices \citep{Kaufman2012}. Fitting settings remain fixed within a sample-size comparison so that changes in the learning curve reflect changing sample availability under a common model specification.
+Table~\ref{tab:icsor_fitting_settings} specifies numerical fitting choices. The condition threshold \(\kappa_{max}\) remains an additional prescribed numerical safeguard and is checked independently of the coefficient bound. Hyperparameter assessment uses validation observations within the training pool. Held-out test observations do not determine penalty weights or stopping choices. Fitting settings remain fixed within a sample-size comparison so that changes in the learning curve reflect changing sample availability under a common model specification.
 
 \subsection{Checked deployment}
 
@@ -717,7 +717,7 @@ In the two-feature example, the second driver has no direct coefficient for the 
 
 The named blocks can be displayed as coefficient maps. Operating terms are grouped separately from influent terms. Symmetric quadratic maps display both ordered cells while reporting unique cross terms consistently. Operating-load maps show which operating variables interact with which influent components. The coupling matrix is displayed separately because it has a different interpretation from the input-driver terms.
 
-A coefficient-display threshold is used only to simplify reporting after fitting. For each reported-composite raw-regression map, the threshold is \(10^{-4}\) times its largest absolute coefficient. For the coupling matrix, the threshold is \(10^{-4}\) times its largest absolute off-diagonal entry. The fitted mapping is retained in full, and the threshold determines which entries appear in the coefficient display. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still have a large contribution when multiplied by a large feature. Interpretation therefore examines coefficient magnitude, input scale, and the contribution of the corresponding term over the declared domain \citep{Selerio2026,Nazlabadi2021}.
+A coefficient-display threshold is used only to simplify reporting after fitting. For each reported-composite raw-regression map, the threshold is \(10^{-4}\) times its largest absolute coefficient. For the coupling matrix, the threshold is \(10^{-4}\) times its largest absolute off-diagonal entry. The fitted mapping is retained in full, and the threshold determines which entries appear in the coefficient display. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still have a large contribution when multiplied by a large feature. Interpretation therefore examines coefficient magnitude, input scale, and the contribution of the corresponding term over the declared domain.
 
 \subsubsection{Analytical jacobians of the raw regression}
 
@@ -829,7 +829,7 @@ The second expression includes the change in the mass conservation reference whe
 
 Multiplication by \(A\) gives \(AJ_{aff,u}=0\) and \(AJ_{aff,c}=A\). An operating perturbation changes the affine prediction only along directions that preserve its fixed influent inventories. An influent perturbation changes those inventories consistently with the influent reference. These relations provide analytical checks on the sensitivity calculation.
 
-When the affine branch is used over a neighborhood of inputs, its coefficients and Jacobians describe that branch. The complete deployment rule includes transitions between raw, affine, and linear-program branches, each with its corresponding sensitivity \citep{Selerio2026}.
+When the affine branch is used over a neighborhood of inputs, its coefficients and Jacobians describe that branch. The complete deployment rule includes transitions between raw, affine, and linear-program branches, each with its corresponding sensitivity.
 
 \subsubsection{Active constraints in the final projection}
 
@@ -1037,7 +1037,7 @@ At the largest sample size, the generalization gap is
 \label{eq:icsor_generalization_gap}
 \Delta E_{root,m}=E_{root,m}^{held\text{-}out}-E_{root,m}^{training}.
 \end{equation}
-A positive gap indicates greater held-out error. A small gap can accompany either accurate prediction or high-error underfitting, so it is interpreted with the corresponding absolute scores \citep{Hastie2009}. Training time is recorded for every repeated fit and summarized as a distribution across runs. Deployment effort is assessed separately through prediction time, projection-branch use, and constrained-solve effort. This separation makes the cost of learning distinct from the cost of returning a checked state.
+A positive gap indicates greater held-out error. A small gap can accompany either accurate prediction or high-error underfitting, so it is interpreted with the corresponding absolute scores. Training time is recorded for every repeated fit and summarized as a distribution across runs. Deployment effort is assessed separately through prediction time, projection-branch use, and constrained-solve effort. This separation makes the cost of learning distinct from the cost of returning a checked state.
 
 For a hypothetical predictor with training error 0.5 and held-out error 0.8, the gap is 0.3. Another with errors 5.0 and 5.1 has a gap of only 0.1. The second has the smaller gap but much larger absolute errors. This arithmetic shows how absolute error and the training-to-held-out gap describe different aspects of prediction.
 
@@ -1045,9 +1045,9 @@ For a hypothetical predictor with training error 0.5 and held-out error 0.8, the
 
 The interpretability assessment examines the six driver blocks, the coupling matrix, and the corresponding component and composite raw-regression maps. It compares fitted response patterns with the declared process domain. The reported coefficient summaries describe the response structure of one fitted model. \citet{Brunton2016} connect interpretable nonlinear terms to the problem of recovering structure from data, while \citet{Machado2014} show how operational and influent uncertainty complicate parameter identification in activated sludge models.
 
-The driver and coupling parameters can trade off in the relation \(Rc=B\phi\). Different joint stationary solutions can predict similar component states with different coefficients \citep{Selerio2026}. Symmetry removes the redundancy of ordered self-quadratic pairs. Coefficient signs and magnitudes are interpreted together with the complete fitted response.
+The driver and coupling parameters can trade off in the relation \(Rc=B\phi\). Different joint stationary solutions can predict similar component states with different coefficients. Symmetry removes the redundancy of ordered self-quadratic pairs. Coefficient signs and magnitudes are interpreted together with the complete fitted response.
 
-Prediction error and physical diagnostics are assessed separately for the raw regression, the affine state, and the final deployed state. The comparison distinguishes what the regression learns from what the projection enforces \citep{Karniadakis2021,KircherVotsmeier2025}. The magnitude of the projection is also examined because a feasible deployed state can lie far from its raw prediction. Computational assessment records fitting effort and deployment effort separately. These measures describe the cost of fitting the structured regression and enforcing its physical conditions.
+Prediction error and physical diagnostics are assessed separately for the raw regression, the affine state, and the final deployed state. The comparison distinguishes what the regression learns from what the projection enforces. The magnitude of the projection is also examined because a feasible deployed state can lie far from its raw prediction. Computational assessment records fitting effort and deployment effort separately. These measures describe the cost of fitting the structured regression and enforcing its physical conditions.
 
 The assessment evaluates steady-state component prediction in the stated input domain and control volume. The raw regression supplies an inspectable approximation, and checked deployment enforces the adopted numerical invariants and non-negativity on the returned state.
 
@@ -1270,7 +1270,7 @@ Figure~\ref{fig:icsor_structure_results} displays the retained counts and select
 
 ICSOR's lowest small-design error and lowest reported root-error curve area supported a data-efficiency benefit in the evaluated domain. Its explicit second-order terms defined a structured response approximation. The invariant-aware fitting objective and learned component coupling supplied additional structure. The combined design performed well when fewer simulated states were available. This interpretation is consistent with the role of model structure in hybrid learning discussed by \citet{Shen2023} and with the changing model orderings described by \citet{VieringLoog2023}.
 
-The leading predictor depended on the assessment measure. LightGBM had the best mean rank across targets, metrics, and sizes. The multilayer perceptron had the lowest full-size error. ICSOR's curve area was 6.33, close to LightGBM's 6.35. Selection based on full-size composite error favored the multilayer perceptron under this protocol. An inspectable equation, data efficiency, and checked final states provided additional engineering criteria for selecting ICSOR \citep{Rudin2019,BhosekarIerapetritou2018}.
+The leading predictor depended on the assessment measure. LightGBM had the best mean rank across targets, metrics, and sizes. The multilayer perceptron had the lowest full-size error. ICSOR's curve area was 6.33, close to LightGBM's 6.35. Selection based on full-size composite error favored the multilayer perceptron under this protocol. An inspectable equation, data efficiency, and checked final states provided additional engineering criteria for selecting ICSOR.
 
 The training-to-held-out gap and absolute error described complementary properties. Partial least squares combined a small gap with high prediction error. ICSOR combined a gap of 0.22 with substantially lower held-out error, while the leading flexible predictors achieved still lower absolute error. Reporting both measures clarified the relation between generalization and accuracy.
 
@@ -1296,9 +1296,4 @@ The polynomial supplied analytical raw sensitivities, while the affine projectio
 
 The structured model combined competitive composite prediction, favorable low-data behavior, and final states that passed the imposed numerical checks. Its second-order terms and coupling map made the fitted response available for inspection. Checked deployment then enforced the adopted material accounting and component non-negativity before reporting COD, TN, TP, and TSS.
 
-These properties involved distinct computational costs. ICSOR required more fitting time than the fastest tree and linear comparators. At 10,000 cases, it fitted faster than AdaBoost, support vector regression, and the multilayer perceptron. The constrained deployment solve was used for most fixed-split predictions. Separate fitting and deployment measurements therefore described the effort required to construct the approximation and return a checked state for engineering analysis. Comparing preparation and repeated use follows the computational assessment principles discussed by \citet{BhosekarIerapetritou2018} and \citet{Bliek2023}.
-
-\subsection{Data Availability}
-\label{sec:icsor_data_availability}
-
-All results presented in this chapter can be reproduced using the data and code scripts available in the public GitHub repository at \url{https://github.com/egbertoselerio1997/icsor}.
+These properties involved distinct computational costs. ICSOR required more fitting time than the fastest tree and linear comparators. At 10,000 cases, it fitted faster than AdaBoost, support vector regression, and the multilayer perceptron. The constrained deployment solve was used for most fixed-split predictions. Separate fitting and deployment measurements therefore described the effort required to construct the approximation and return a checked state for engineering analysis.

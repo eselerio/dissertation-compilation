@@ -24,7 +24,7 @@ A fitted surrogate is a function that takes these twenty-two numbers and returns
 c_{raw,i}^{(m)}=f_m(x_i)\in\mathbb{R}^{20}.
 \label{eq:surrogate_raw_state}
 \end{equation}
-The raw prediction is assessed in its returned physical units. A post prediction projection then produces a second prediction for the same sample. Pairing the two states permits the effect of physical enforcement to be assessed separately from the choice of learner, data partition, and preprocessing \citep{SturmSilva2024,KircherVotsmeier2025}.
+The raw prediction is assessed in its returned physical units. A post prediction projection then produces a second prediction for the same sample. Pairing the two states permits the effect of physical enforcement to be assessed separately from the choice of learner, data partition, and preprocessing.
 
 \subsection{Statistical response models}
 
@@ -79,7 +79,7 @@ Multi-task Elastic Net combines the row-group penalty with a squared Frobenius p
 \]
 For the two-output illustration only, taking $\lambda=0.2$ and $r=0.5$ gives $0.2(0.5)(5)+0.2(0.5)(25)/2=1.75$. The row-group part encourages selection and the squared part shrinks the retained coefficients. This extends the elastic-net principle of \citet{Zou2005} to a joint response structure, with multiresponse computation described by \citet{Simon2013}. Both methods use standardized inputs and targets. Their global coefficient matrices can be inspected to identify fitted associations. A nonzero row identifies an input that contributes to the fitted prediction.
 
-These two predictors and partial least squares are grouped as structurally inspectable surrogates. The grouping identifies their globally available coefficient structures \citep{Rudin2019}. Physical projection enforces the influent-specific balances and non-negativity of their returned predictions.
+These two predictors and partial least squares are grouped as structurally inspectable surrogates. The grouping identifies their globally available coefficient structures. Physical projection enforces the influent-specific balances and non-negativity of their returned predictions.
 
 \subsubsection{Neural predictors}
 
@@ -153,7 +153,7 @@ W_i^{(m)}=\operatorname{Diag}\bigl(\mathbf{1}\oslash c_{+,i}^{(m)}\bigr).
 \end{equation}
 The maximum and division are componentwise. Each entry of $\boldsymbol{\varepsilon}_c$ is $10^{-8}$ in its component's native unit. The provisional target supplies both a reference state and finite positive weights. The subsequent mass conservation and non-negativity stages determine the final physical prediction.
 
-For a component change $h_j$, the weighted discrepancy is $h_j/c_{+,ij}^{(m)}$. The geometry therefore penalizes relative movement. A hypothetical movement of 1 g m$^{-3}$ corresponds to a relative discrepancy of 0.01 at a component value of 100 g m$^{-3}$ and 10 at a component value of 0.1 g m$^{-3}$. Small coordinates receive strong protection. Large coordinates can absorb larger absolute changes at the same relative cost. Relative-error projection and variance-standardized accuracy therefore assess redistribution using different scales \citep{KircherVotsmeier2025,SturmSilva2024}.
+For a component change $h_j$, the weighted discrepancy is $h_j/c_{+,ij}^{(m)}$. The geometry therefore penalizes relative movement. A hypothetical movement of 1 g m$^{-3}$ corresponds to a relative discrepancy of 0.01 at a component value of 100 g m$^{-3}$ and 10 at a component value of 0.1 g m$^{-3}$. Small coordinates receive strong protection. Large coordinates can absorb larger absolute changes at the same relative cost. Relative-error projection and variance-standardized accuracy therefore assess redistribution using different scales.
 
 \subsubsection{Selecting a candidate that satisfies mass conservation}
 
@@ -231,7 +231,7 @@ c_{cand,i}^{(m)}=c_{in,i}+Zq_i^{*,(m)}.
 \end{equation}
 Since $AZ=0$, it satisfies $Ac_{cand,i}^{(m)}=Ac_{in,i}=b_i$ in exact arithmetic. If the provisional target is already consistent with mass conservation, its change lies in $\operatorname{null}(A)$. The least-squares residual can then be zero and the candidate reproduces that target to numerical tolerance.
 
-Equation~\eqref{eq:projection_normal_conditions} provides the derivation rather than the preferred numerical solution. The weighted design $W_i^{(m)}Z$ is solved through an orthogonal--triangular factorization. Singular-value decomposition with relative cutoff $10^{-12}$ is the fallback. No explicit inverse of the normal-equation matrix is formed. Near-zero provisional targets can produce very unequal weights, so solving the original weighted system avoids the extra conditioning penalty associated with forming a normal-equation inverse \citep{BuzziFerraris2013}.
+Equation~\eqref{eq:projection_normal_conditions} provides the derivation rather than the preferred numerical solution. The weighted design $W_i^{(m)}Z$ is solved through an orthogonal--triangular factorization. Singular-value decomposition with relative cutoff $10^{-12}$ is the fallback. No explicit inverse of the normal-equation matrix is formed. Near-zero provisional targets can produce very unequal weights, so solving the original weighted system avoids the extra conditioning penalty associated with forming a normal-equation inverse.
 
 \subsubsection{The largest feasible interpolation toward the candidate}
 
@@ -568,7 +568,7 @@ d_{c,i}^{\mathrm{std},(m)}=
 \oslash\boldsymbol{\sigma}^{(\mathcal{T})}\right\|_2.
 \label{eq:projection_standardized_displacement}
 \end{equation}
-This norm measures how far the projection moves the state relative to training variability. It measures movement rather than accuracy. A large displacement can reduce violations of the specified physical constraints while moving away from the true kinetic response \citep{SturmSilva2024,KircherVotsmeier2025}. Mean, median, and maximum displacement, componentwise physical-unit movement, the fraction requiring backtracking, and the distribution of $\alpha$ are therefore assessed together.
+This norm measures how far the projection moves the state relative to training variability. It measures movement rather than accuracy. A large displacement can reduce violations of the specified physical constraints while moving away from the true kinetic response. Mean, median, and maximum displacement, componentwise physical-unit movement, the fraction requiring backtracking, and the distribution of $\alpha$ are therefore assessed together.
 
 Learning curves retain the full error trajectory over Equation~\eqref{eq:reactor_nested_sample_sizes}. An area summary connects the errors at neighboring sample sizes by straight segments. The area under one segment is its width multiplied by the average of its two endpoint heights. For hypothetical error heights 0.8 and 0.6 at design sizes 500 and 1450, the segment area is $(1450-500)(0.8+0.6)/2=665$. If the next hypothetical height is 0.4 at size 2400, the next area is $(2400-1450)(0.6+0.4)/2=475$. The total area over those two segments is 1140. Dividing by the size interval $2400-500=1900$ gives an average height of 0.6.
 
@@ -618,7 +618,7 @@ Each severity design targets 600 accepted steady states and retains the same sol
 
 Extrapolation errors are standardized with population component standard deviations from all 10,000 in-domain targets. Composite normalization uses the corresponding full-domain composite standard deviations. The nMSE, nRMSE, nMAE, mass conservation and non-negativity diagnostics, displacement, and backtracking diagnostics are calculated on identical raw and projected cases. The coefficient of determination is secondary because the deliberately shifted response distribution changes its denominator.
 
-Each exterior metric summarizes 600 cases from one full-domain refit. Satisfaction of the projected constraints is interpreted separately from the predictive accuracy of extrapolation. A state can remain non-negative and consistent with mass conservation while its estimated nitrogen distribution or biomass abundance is inaccurate \citep{Henze2006,Selerio2026}.
+Each exterior metric summarizes 600 cases from one full-domain refit. Satisfaction of the projected constraints is interpreted separately from the predictive accuracy of extrapolation. A state can remain non-negative and consistent with mass conservation while its estimated nitrogen distribution or biomass abundance is inaccurate.
 
 \subsection{Computational cost assessment}
 
@@ -892,11 +892,11 @@ Violation frequency and magnitude also require separate interpretation. A state 
 
 \subsection{Why enforcement can increase prediction error}
 
-The projection minimized relative movement from a positive provisional target. The accuracy score measured error relative to training variability. These were different objectives. The method also shortened one complete direction when a candidate crossed a concentration boundary. Neither operation was designed to minimize the assessed nRMSE. The species-weighted conservation correction of \citet{SturmSilva2024} provides a related example of how the adjustment metric affects component accuracy.
+The projection minimized relative movement from a positive provisional target. The accuracy score measured error relative to training variability. These were different objectives. The method also shortened one complete direction when a candidate crossed a concentration boundary. Neither operation was designed to minimize the assessed nRMSE.
 
 The $S_F$ result illustrates the effect of shared interpolation. Its column in the invariant operator was numerically zero. The mass conservation solve consequently left it essentially unchanged before interpolation. When another component required a shorter direction, $S_F$ was also moved toward its much larger influent value. A safeguard needed by one component could therefore worsen an otherwise acceptable prediction of another. Random Forest's 142 affected full-size states provide a concrete example of this mechanism.
 
-The $X_H$ losses had a different explanation. Its relatively large concentrations made an absolute adjustment less costly under inverse-concentration weighting. Such an adjustment could satisfy the invariants while moving away from the mechanistic biomass target. The opposing changes in TN, TP, COD, and TSS further showed that mass conservation did not determine every reported composite. Near-alignment of the TP reporting vector with the phosphorus invariant explained its very small projected error. COD and TSS remained sensitive to the redistribution of organic and particulate components \citep{Henze2006}.
+The $X_H$ losses had a different explanation. Its relatively large concentrations made an absolute adjustment less costly under inverse-concentration weighting. Such an adjustment could satisfy the invariants while moving away from the mechanistic biomass target. The opposing changes in TN, TP, COD, and TSS further showed that mass conservation did not determine every reported composite. Near-alignment of the TP reporting vector with the phosphorus invariant explained its very small projected error. COD and TSS remained sensitive to the redistribution of organic and particulate components.
 
 Both multi-task linear models benefited consistently. The largest aggregate losses occurred in predictors with larger displacements and more interpolation activations. Paired error, displacement, and activation summaries identified this trade-off more clearly than a feasible fraction alone.
 
@@ -906,11 +906,6 @@ The strong small-data performance of boosted trees is consistent with the tabula
 
 Exterior inputs increased error even when every projected state remained feasible. The changed error under exterior inputs is consistent with the role of input-domain coverage discussed by \citet{Shen2023} and \citet{Valente2025}. The projection maintained the imposed component balances and non-negativity throughout both exterior designs.
 
-The timing results supported rapid repeated evaluation after preparation. They also showed that a very fast raw predictor could spend most of its complete prediction time on physical enforcement. A deployment choice must therefore compare complete prediction cost rather than raw inference alone \citep{BhosekarIerapetritou2018,Bliek2023}.
+The timing results supported rapid repeated evaluation after preparation. They also showed that a very fast raw predictor could spend most of its complete prediction time on physical enforcement. A deployment choice must therefore compare complete prediction cost rather than raw inference alone.
 
 The evidence establishes reliable enforcement of the specified mass conservation and non-negativity conditions for the evaluated simulated steady states. It also establishes that the statistical cost of enforcement depends on the predictor, component, and assessment domain.
-
-\subsection{Data Availability}
-\label{sec:projection_data_availability}
-
-All results presented in this chapter can be reproduced using the data and code scripts available in the public GitHub repository at \url{https://github.com/egbertoselerio1997/surrogate-projection}.
