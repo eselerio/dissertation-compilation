@@ -1,0 +1,19 @@
+route,classification,classification_type,count,denominator,fraction,route_label
+surrogate,no accepted optimization start,adjudication,0,11,0.0,Extended ICSOR
+surrogate,projection failure,adjudication,0,11,0.0,Extended ICSOR
+surrogate,reference integration failure,adjudication,0,11,0.0,Extended ICSOR
+surrogate,residual or reduced-stability failure,adjudication,0,11,0.0,Extended ICSOR
+surrogate,engineering infeasibility,adjudication,0,11,0.0,Extended ICSOR
+surrogate,smooth-branch disagreement,adjudication,0,11,0.0,Extended ICSOR
+surrogate,upper-stationarity failure,adjudication,1,11,0.09090909090909091,Extended ICSOR
+surrogate,validated result,adjudication,10,11,0.9090909090909091,Extended ICSOR
+surrogate,not yet adjudicated,pending,0,11,0.0,Extended ICSOR
+mechanistic,no accepted optimization start,adjudication,1,11,0.09090909090909091,Smooth NLP
+mechanistic,projection failure,adjudication,0,11,0.0,Smooth NLP
+mechanistic,reference integration failure,adjudication,0,11,0.0,Smooth NLP
+mechanistic,residual or reduced-stability failure,adjudication,0,11,0.0,Smooth NLP
+mechanistic,engineering infeasibility,adjudication,0,11,0.0,Smooth NLP
+mechanistic,smooth-branch disagreement,adjudication,0,11,0.0,Smooth NLP
+mechanistic,upper-stationarity failure,adjudication,10,11,0.9090909090909091,Smooth NLP
+mechanistic,validated result,adjudication,0,11,0.0,Smooth NLP
+mechanistic,not yet adjudicated,pending,0,11,0.0,Smooth NLP

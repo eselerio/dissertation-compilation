@@ -1,0 +1,17 @@
+block,rejection_reason,count,candidate_attempt_denominator,rejected_candidate_denominator,fraction_of_attempts,fraction_of_rejections,categories_are_nonexclusive
+development,solver_exception,0,8000,614,0.0,0.0,True
+development,mass_or_residual,24,8000,614,0.003,0.03908794788273615,True
+development,stability,5,8000,614,0.000625,0.008143322475570033,True
+development,nonnegativity,0,8000,614,0.0,0.0,True
+development,domain,1,8000,614,0.000125,0.0016286644951140066,True
+development,root_distance,5,8000,614,0.000625,0.008143322475570033,True
+development,branch_disagreement,607,8000,614,0.075875,0.988599348534202,True
+development,other_solver_rejection,0,8000,614,0.0,0.0,True
+holdout,solver_exception,0,2000,155,0.0,0.0,True
+holdout,mass_or_residual,6,2000,155,0.003,0.03870967741935484,True
+holdout,stability,1,2000,155,0.0005,0.0064516129032258064,True
+holdout,nonnegativity,0,2000,155,0.0,0.0,True
+holdout,domain,0,2000,155,0.0,0.0,True
+holdout,root_distance,0,2000,155,0.0,0.0,True
+holdout,branch_disagreement,154,2000,155,0.077,0.9935483870967742,True
+holdout,other_solver_rejection,0,2000,155,0.0,0.0,True

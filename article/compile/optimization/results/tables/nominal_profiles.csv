@@ -1,0 +1,302 @@
+case,decision_route,response_method,location,quantity,value,scenario_label,decision_route_label,response_label,location_label
+nominal,surrogate,raw,mixer,COD,2420.9285206183595,N,Extended ICSOR,Raw,Mixer
+nominal,surrogate,raw,mixer,TN,110.23026146456618,N,Extended ICSOR,Raw,Mixer
+nominal,surrogate,raw,mixer,TP,81.10943303065599,N,Extended ICSOR,Raw,Mixer
+nominal,surrogate,raw,mixer,TSS,1987.8898734947875,N,Extended ICSOR,Raw,Mixer
+nominal,surrogate,raw,reactor_1,DO,0.000513615552566853,N,Extended ICSOR,Raw,R1
+nominal,surrogate,raw,reactor_1,TN,106.65789763221463,N,Extended ICSOR,Raw,R1
+nominal,surrogate,raw,reactor_1,TP,81.10943303079465,N,Extended ICSOR,Raw,R1
+nominal,surrogate,raw,reactor_1,TSS,1967.0589192286366,N,Extended ICSOR,Raw,R1
+nominal,surrogate,raw,reactor_2,DO,1.3174593683309778e-06,N,Extended ICSOR,Raw,R2
+nominal,surrogate,raw,reactor_2,TN,106.52200538138405,N,Extended ICSOR,Raw,R2
+nominal,surrogate,raw,reactor_2,TP,81.10943303090087,N,Extended ICSOR,Raw,R2
+nominal,surrogate,raw,reactor_2,TSS,1938.9881978205556,N,Extended ICSOR,Raw,R2
+nominal,surrogate,raw,reactor_3,DO,0.042814456079549305,N,Extended ICSOR,Raw,R3
+nominal,surrogate,raw,reactor_3,TN,106.04802689412581,N,Extended ICSOR,Raw,R3
+nominal,surrogate,raw,reactor_3,TP,81.10943303100727,N,Extended ICSOR,Raw,R3
+nominal,surrogate,raw,reactor_3,TSS,1938.7039113962587,N,Extended ICSOR,Raw,R3
+nominal,surrogate,raw,reactor_4,DO,0.06401446993257802,N,Extended ICSOR,Raw,R4
+nominal,surrogate,raw,reactor_4,TN,105.58139449615564,N,Extended ICSOR,Raw,R4
+nominal,surrogate,raw,reactor_4,TP,81.109433031116,N,Extended ICSOR,Raw,R4
+nominal,surrogate,raw,reactor_4,TSS,1938.9986142136472,N,Extended ICSOR,Raw,R4
+nominal,surrogate,raw,reactor_5,DO,0.15626741231996527,N,Extended ICSOR,Raw,R5
+nominal,surrogate,raw,reactor_5,TN,104.99892122543777,N,Extended ICSOR,Raw,R5
+nominal,surrogate,raw,reactor_5,TP,81.10943303124405,N,Extended ICSOR,Raw,R5
+nominal,surrogate,raw,reactor_5,TSS,1939.4748169155584,N,Extended ICSOR,Raw,R5
+nominal,surrogate,raw,clarifier_overflow,COD,168.1192191528271,N,Extended ICSOR,Raw,Overflow
+nominal,surrogate,raw,clarifier_overflow,TN,26.464519121981063,N,Extended ICSOR,Raw,Overflow
+nominal,surrogate,raw,clarifier_overflow,TP,17.739369396631936,N,Extended ICSOR,Raw,Overflow
+nominal,surrogate,raw,clarifier_overflow,TSS,12.644994155223237,N,Extended ICSOR,Raw,Overflow
+nominal,surrogate,raw,clarifier_underflow,COD,11228.971134092435,N,Extended ICSOR,Raw,Underflow
+nominal,surrogate,raw,clarifier_underflow,TN,381.43991146444694,N,Extended ICSOR,Raw,Underflow
+nominal,surrogate,raw,clarifier_underflow,TP,373.4199076236081,N,Extended ICSOR,Raw,Underflow
+nominal,surrogate,raw,clarifier_underflow,TSS,9755.176587922091,N,Extended ICSOR,Raw,Underflow
+nominal,surrogate,raw,clarifier_inventory,TSS_mass,7926111.9229898155,N,Extended ICSOR,Raw,Clarifier solids inventory
+nominal,surrogate,projected,mixer,COD,2298.989860692185,N,Extended ICSOR,Projected,Mixer
+nominal,surrogate,projected,mixer,TN,108.20506461156407,N,Extended ICSOR,Projected,Mixer
+nominal,surrogate,projected,mixer,TP,58.20429454406826,N,Extended ICSOR,Projected,Mixer
+nominal,surrogate,projected,mixer,TSS,1783.6005004050241,N,Extended ICSOR,Projected,Mixer
+nominal,surrogate,projected,reactor_1,DO,0.000513615552566853,N,Extended ICSOR,Projected,R1
+nominal,surrogate,projected,reactor_1,TN,103.2446924027749,N,Extended ICSOR,Projected,R1
+nominal,surrogate,projected,reactor_1,TP,58.204294544063295,N,Extended ICSOR,Projected,R1
+nominal,surrogate,projected,reactor_1,TSS,1753.8992083271858,N,Extended ICSOR,Projected,R1
+nominal,surrogate,projected,reactor_2,DO,1.3174593683309778e-06,N,Extended ICSOR,Projected,R2
+nominal,surrogate,projected,reactor_2,TN,103.10817301159149,N,Extended ICSOR,Projected,R2
+nominal,surrogate,projected,reactor_2,TP,58.2042945440585,N,Extended ICSOR,Projected,R2
+nominal,surrogate,projected,reactor_2,TSS,1725.082503238205,N,Extended ICSOR,Projected,R2
+nominal,surrogate,projected,reactor_3,DO,0.042814456079549305,N,Extended ICSOR,Projected,R3
+nominal,surrogate,projected,reactor_3,TN,102.6366949206972,N,Extended ICSOR,Projected,R3
+nominal,surrogate,projected,reactor_3,TP,58.20429454405391,N,Extended ICSOR,Projected,R3
+nominal,surrogate,projected,reactor_3,TSS,1725.4772126331372,N,Extended ICSOR,Projected,R3
+nominal,surrogate,projected,reactor_4,DO,0.06401446993257802,N,Extended ICSOR,Projected,R4
+nominal,surrogate,projected,reactor_4,TN,102.17329742675071,N,Extended ICSOR,Projected,R4
+nominal,surrogate,projected,reactor_4,TP,58.20429454404969,N,Extended ICSOR,Projected,R4
+nominal,surrogate,projected,reactor_4,TSS,1726.592043951373,N,Extended ICSOR,Projected,R4
+nominal,surrogate,projected,reactor_5,DO,0.16207950799398885,N,Extended ICSOR,Projected,R5
+nominal,surrogate,projected,reactor_5,TN,101.77918768978265,N,Extended ICSOR,Projected,R5
+nominal,surrogate,projected,reactor_5,TP,58.20429454404582,N,Extended ICSOR,Projected,R5
+nominal,surrogate,projected,reactor_5,TSS,1833.4253588741649,N,Extended ICSOR,Projected,R5
+nominal,surrogate,projected,clarifier_overflow,COD,165.51088622033274,N,Extended ICSOR,Projected,Overflow
+nominal,surrogate,projected,clarifier_overflow,TN,23.442513363029384,N,Extended ICSOR,Projected,Overflow
+nominal,surrogate,projected,clarifier_overflow,TP,16.138279777930585,N,Extended ICSOR,Projected,Overflow
+nominal,surrogate,projected,clarifier_overflow,TSS,7.3231031422863495,N,Extended ICSOR,Projected,Overflow
+nominal,surrogate,projected,clarifier_underflow,COD,9308.949303461242,N,Extended ICSOR,Projected,Underflow
+nominal,surrogate,projected,clarifier_underflow,TN,349.84532305782733,N,Extended ICSOR,Projected,Underflow
+nominal,surrogate,projected,clarifier_underflow,TP,191.41334130345754,N,Extended ICSOR,Projected,Underflow
+nominal,surrogate,projected,clarifier_underflow,TSS,7616.082502025117,N,Extended ICSOR,Projected,Underflow
+nominal,surrogate,projected,clarifier_inventory,TSS_mass,7926111.9229898155,N,Extended ICSOR,Projected,Clarifier solids inventory
+nominal,surrogate,reference,mixer,COD,1762.8326377814137,N,Extended ICSOR,Mechanistic,Mixer
+nominal,surrogate,reference,mixer,TN,92.56401297463003,N,Extended ICSOR,Mechanistic,Mixer
+nominal,surrogate,reference,mixer,TP,50.3443101502059,N,Extended ICSOR,Mechanistic,Mixer
+nominal,surrogate,reference,mixer,TSS,1359.819485343325,N,Extended ICSOR,Mechanistic,Mixer
+nominal,surrogate,reference,reactor_1,DO,0.0005466314160833412,N,Extended ICSOR,Mechanistic,R1
+nominal,surrogate,reference,reactor_1,TN,88.35906775895063,N,Extended ICSOR,Mechanistic,R1
+nominal,surrogate,reference,reactor_1,TP,50.34431015037517,N,Extended ICSOR,Mechanistic,R1
+nominal,surrogate,reference,reactor_1,TSS,1350.5517002515414,N,Extended ICSOR,Mechanistic,R1
+nominal,surrogate,reference,reactor_2,DO,1.4323148442436267e-06,N,Extended ICSOR,Mechanistic,R2
+nominal,surrogate,reference,reactor_2,TN,88.16433878878742,N,Extended ICSOR,Mechanistic,R2
+nominal,surrogate,reference,reactor_2,TP,50.34431015054793,N,Extended ICSOR,Mechanistic,R2
+nominal,surrogate,reference,reactor_2,TSS,1327.5930230618276,N,Extended ICSOR,Mechanistic,R2
+nominal,surrogate,reference,reactor_3,DO,0.05020002496807411,N,Extended ICSOR,Mechanistic,R3
+nominal,surrogate,reference,reactor_3,TN,87.78024313737257,N,Extended ICSOR,Mechanistic,R3
+nominal,surrogate,reference,reactor_3,TP,50.34431015072417,N,Extended ICSOR,Mechanistic,R3
+nominal,surrogate,reference,reactor_3,TSS,1326.0941850630588,N,Extended ICSOR,Mechanistic,R3
+nominal,surrogate,reference,reactor_4,DO,0.04900018532135838,N,Extended ICSOR,Mechanistic,R4
+nominal,surrogate,reference,reactor_4,TN,87.40571272229981,N,Extended ICSOR,Mechanistic,R4
+nominal,surrogate,reference,reactor_4,TP,50.34431015090411,N,Extended ICSOR,Mechanistic,R4
+nominal,surrogate,reference,reactor_4,TSS,1324.9230947124865,N,Extended ICSOR,Mechanistic,R4
+nominal,surrogate,reference,reactor_5,DO,0.047819884033288185,N,Extended ICSOR,Mechanistic,R5
+nominal,surrogate,reference,reactor_5,TN,87.04296110260924,N,Extended ICSOR,Mechanistic,R5
+nominal,surrogate,reference,reactor_5,TP,50.34431015108801,N,Extended ICSOR,Mechanistic,R5
+nominal,surrogate,reference,reactor_5,TSS,1323.6210636559595,N,Extended ICSOR,Mechanistic,R5
+nominal,surrogate,reference,clarifier_overflow,COD,151.26152539716267,N,Extended ICSOR,Mechanistic,Overflow
+nominal,surrogate,reference,clarifier_overflow,TN,28.74913886114906,N,Extended ICSOR,Mechanistic,Overflow
+nominal,surrogate,reference,clarifier_overflow,TP,18.206696725874856,N,Extended ICSOR,Mechanistic,Overflow
+nominal,surrogate,reference,clarifier_overflow,TSS,5.655896415889993,N,Extended ICSOR,Mechanistic,Overflow
+nominal,surrogate,reference,clarifier_underflow,COD,6628.163188907069,N,Extended ICSOR,Mechanistic,Underflow
+nominal,surrogate,reference,clarifier_underflow,TN,271.64006487315015,N,Extended ICSOR,Mechanistic,Underflow
+nominal,surrogate,reference,clarifier_underflow,TP,152.1134193341917,N,Extended ICSOR,Mechanistic,Underflow
+nominal,surrogate,reference,clarifier_underflow,TSS,5497.177426716625,N,Extended ICSOR,Mechanistic,Underflow
+nominal,surrogate,reference,clarifier_inventory,TSS_mass,3662880.226609888,N,Extended ICSOR,Mechanistic,Clarifier solids inventory
+nominal,surrogate,reference,clarifier_layer_1,TSS,5.655896415889994,N,Extended ICSOR,Mechanistic,Clarifier layer 1
+nominal,surrogate,reference,clarifier_layer_2,TSS,8.194865136280338,N,Extended ICSOR,Mechanistic,Clarifier layer 2
+nominal,surrogate,reference,clarifier_layer_3,TSS,12.84380765955129,N,Extended ICSOR,Mechanistic,Clarifier layer 3
+nominal,surrogate,reference,clarifier_layer_4,TSS,26.868223046823196,N,Extended ICSOR,Mechanistic,Clarifier layer 4
+nominal,surrogate,reference,clarifier_layer_5,TSS,110.81203174156728,N,Extended ICSOR,Mechanistic,Clarifier layer 5
+nominal,surrogate,reference,clarifier_layer_6,TSS,110.81203174158132,N,Extended ICSOR,Mechanistic,Clarifier layer 6
+nominal,surrogate,reference,clarifier_layer_7,TSS,110.81203174159542,N,Extended ICSOR,Mechanistic,Clarifier layer 7
+nominal,surrogate,reference,clarifier_layer_8,TSS,110.8120317416095,N,Extended ICSOR,Mechanistic,Clarifier layer 8
+nominal,surrogate,reference,clarifier_layer_9,TSS,110.81203174162361,N,Extended ICSOR,Mechanistic,Clarifier layer 9
+nominal,surrogate,reference,clarifier_layer_10,TSS,5497.177426716625,N,Extended ICSOR,Mechanistic,Clarifier layer 10
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_1,TSS,5.655896415889994,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 1
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_2,TSS,8.194865136280338,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 2
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_3,TSS,12.84380765955129,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 3
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_4,TSS,26.868223046823196,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 4
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_5,TSS,110.81203174156728,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 5
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_6,TSS,110.81203174158132,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 6
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_7,TSS,110.81203174159542,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 7
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_8,TSS,110.8120317416095,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 8
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_9,TSS,110.81203174162361,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 9
+nominal,surrogate,exact_mechanistic_start_1,clarifier_layer_10,TSS,5497.177426716625,N,Extended ICSOR,exact_mechanistic_start_1,Clarifier layer 10
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_1,TSS,5.65589641505593,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 1
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_2,TSS,8.194865135364862,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 2
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_3,TSS,12.843807658242232,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 3
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_4,TSS,26.86822304351031,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 4
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_5,TSS,110.81203171867077,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 5
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_6,TSS,110.81203171865691,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 6
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_7,TSS,110.81203171864293,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 7
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_8,TSS,110.81203171862884,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 8
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_9,TSS,110.81203171861492,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 9
+nominal,surrogate,exact_mechanistic_start_2,clarifier_layer_10,TSS,5497.177424424305,N,Extended ICSOR,exact_mechanistic_start_2,Clarifier layer 10
+nominal,mechanistic,smooth,mixer,COD,1646.877978596392,N,Smooth NLP,Smooth NLP,Mixer
+nominal,mechanistic,smooth,mixer,TN,99.270973631174,N,Smooth NLP,Smooth NLP,Mixer
+nominal,mechanistic,smooth,mixer,TP,57.27284633140229,N,Smooth NLP,Smooth NLP,Mixer
+nominal,mechanistic,smooth,mixer,TSS,1322.8838006164533,N,Smooth NLP,Smooth NLP,Mixer
+nominal,mechanistic,smooth,reactor_1,DO,0.00018031224508824009,N,Smooth NLP,Smooth NLP,R1
+nominal,mechanistic,smooth,reactor_1,TN,94.71244150562534,N,Smooth NLP,Smooth NLP,R1
+nominal,mechanistic,smooth,reactor_1,TP,57.27284633140228,N,Smooth NLP,Smooth NLP,R1
+nominal,mechanistic,smooth,reactor_1,TSS,1265.2661976293707,N,Smooth NLP,Smooth NLP,R1
+nominal,mechanistic,smooth,reactor_2,DO,1.268132060809957e-07,N,Smooth NLP,Smooth NLP,R2
+nominal,mechanistic,smooth,reactor_2,TN,94.66489998609848,N,Smooth NLP,Smooth NLP,R2
+nominal,mechanistic,smooth,reactor_2,TP,57.27284633140228,N,Smooth NLP,Smooth NLP,R2
+nominal,mechanistic,smooth,reactor_2,TSS,1213.190829219728,N,Smooth NLP,Smooth NLP,R2
+nominal,mechanistic,smooth,reactor_3,DO,0.041388759969628416,N,Smooth NLP,Smooth NLP,R3
+nominal,mechanistic,smooth,reactor_3,TN,93.74812131205634,N,Smooth NLP,Smooth NLP,R3
+nominal,mechanistic,smooth,reactor_3,TP,57.27284633140228,N,Smooth NLP,Smooth NLP,R3
+nominal,mechanistic,smooth,reactor_3,TSS,1232.8832204745006,N,Smooth NLP,Smooth NLP,R3
+nominal,mechanistic,smooth,reactor_4,DO,0.04263840194156245,N,Smooth NLP,Smooth NLP,R4
+nominal,mechanistic,smooth,reactor_4,TN,92.8270819321486,N,Smooth NLP,Smooth NLP,R4
+nominal,mechanistic,smooth,reactor_4,TP,57.27284633140228,N,Smooth NLP,Smooth NLP,R4
+nominal,mechanistic,smooth,reactor_4,TSS,1259.13107127693,N,Smooth NLP,Smooth NLP,R4
+nominal,mechanistic,smooth,reactor_5,DO,0.31087620748109457,N,Smooth NLP,Smooth NLP,R5
+nominal,mechanistic,smooth,reactor_5,TN,88.86302103355244,N,Smooth NLP,Smooth NLP,R5
+nominal,mechanistic,smooth,reactor_5,TP,57.27284633140228,N,Smooth NLP,Smooth NLP,R5
+nominal,mechanistic,smooth,reactor_5,TSS,1279.242140952943,N,Smooth NLP,Smooth NLP,R5
+nominal,mechanistic,smooth,clarifier_overflow,COD,57.60124846928052,N,Smooth NLP,Smooth NLP,Overflow
+nominal,mechanistic,smooth,clarifier_overflow,TN,20.554016676425718,N,Smooth NLP,Smooth NLP,Overflow
+nominal,mechanistic,smooth,clarifier_overflow,TP,16.383397729976554,N,Smooth NLP,Smooth NLP,Overflow
+nominal,mechanistic,smooth,clarifier_overflow,TSS,5.582079248981164,N,Smooth NLP,Smooth NLP,Overflow
+nominal,mechanistic,smooth,clarifier_underflow,COD,6048.389892796027,N,Smooth NLP,Smooth NLP,Underflow
+nominal,mechanistic,smooth,clarifier_underflow,TN,305.1748681518782,N,Smooth NLP,Smooth NLP,Underflow
+nominal,mechanistic,smooth,clarifier_underflow,TP,186.7561002283894,N,Smooth NLP,Smooth NLP,Underflow
+nominal,mechanistic,smooth,clarifier_underflow,TSS,5312.49900278101,N,Smooth NLP,Smooth NLP,Underflow
+nominal,mechanistic,smooth,clarifier_inventory,TSS_mass,3545432.5692000464,N,Smooth NLP,Smooth NLP,Clarifier solids inventory
+nominal,mechanistic,raw,mixer,COD,2077.718254910987,N,Smooth NLP,Raw,Mixer
+nominal,mechanistic,raw,mixer,TN,103.8610392425214,N,Smooth NLP,Raw,Mixer
+nominal,mechanistic,raw,mixer,TP,85.1787209427798,N,Smooth NLP,Raw,Mixer
+nominal,mechanistic,raw,mixer,TSS,1782.2641231173002,N,Smooth NLP,Raw,Mixer
+nominal,mechanistic,raw,reactor_1,DO,0.0005588048076241022,N,Smooth NLP,Raw,R1
+nominal,mechanistic,raw,reactor_1,TN,100.00627503487726,N,Smooth NLP,Raw,R1
+nominal,mechanistic,raw,reactor_1,TP,85.17872094290226,N,Smooth NLP,Raw,R1
+nominal,mechanistic,raw,reactor_1,TSS,1739.8129089604154,N,Smooth NLP,Raw,R1
+nominal,mechanistic,raw,reactor_2,DO,1.4906365649445405e-06,N,Smooth NLP,Raw,R2
+nominal,mechanistic,raw,reactor_2,TN,99.9050020355929,N,Smooth NLP,Raw,R2
+nominal,mechanistic,raw,reactor_2,TP,85.17872094298912,N,Smooth NLP,Raw,R2
+nominal,mechanistic,raw,reactor_2,TSS,1694.156092291311,N,Smooth NLP,Raw,R2
+nominal,mechanistic,raw,reactor_3,DO,0.06185580826421716,N,Smooth NLP,Raw,R3
+nominal,mechanistic,raw,reactor_3,TN,99.07016053129239,N,Smooth NLP,Raw,R3
+nominal,mechanistic,raw,reactor_3,TP,85.17872094307621,N,Smooth NLP,Raw,R3
+nominal,mechanistic,raw,reactor_3,TSS,1701.8442221653602,N,Smooth NLP,Raw,R3
+nominal,mechanistic,raw,reactor_4,DO,0.10351003055030834,N,Smooth NLP,Raw,R4
+nominal,mechanistic,raw,reactor_4,TN,98.24107820091612,N,Smooth NLP,Raw,R4
+nominal,mechanistic,raw,reactor_4,TP,85.17872094316516,N,Smooth NLP,Raw,R4
+nominal,mechanistic,raw,reactor_4,TSS,1712.0266961785496,N,Smooth NLP,Raw,R4
+nominal,mechanistic,raw,reactor_5,DO,0.28635682701445675,N,Smooth NLP,Raw,R5
+nominal,mechanistic,raw,reactor_5,TN,97.25137683312634,N,Smooth NLP,Raw,R5
+nominal,mechanistic,raw,reactor_5,TP,85.17872094327359,N,Smooth NLP,Raw,R5
+nominal,mechanistic,raw,reactor_5,TSS,1723.0993343332805,N,Smooth NLP,Raw,R5
+nominal,mechanistic,raw,clarifier_overflow,COD,91.8709342164929,N,Smooth NLP,Raw,Overflow
+nominal,mechanistic,raw,clarifier_overflow,TN,22.98996361830159,N,Smooth NLP,Raw,Overflow
+nominal,mechanistic,raw,clarifier_overflow,TP,17.230793678613555,N,Smooth NLP,Raw,Overflow
+nominal,mechanistic,raw,clarifier_overflow,TSS,14.016933515872209,N,Smooth NLP,Raw,Overflow
+nominal,mechanistic,raw,clarifier_underflow,COD,9707.230673806145,N,Smooth NLP,Raw,Underflow
+nominal,mechanistic,raw,clarifier_underflow,TN,359.2200032130815,N,Smooth NLP,Raw,Underflow
+nominal,mechanistic,raw,clarifier_underflow,TP,398.68175013658754,N,Smooth NLP,Raw,Underflow
+nominal,mechanistic,raw,clarifier_underflow,TSS,8830.62037032087,N,Smooth NLP,Raw,Underflow
+nominal,mechanistic,raw,clarifier_inventory,TSS_mass,7377993.86137283,N,Smooth NLP,Raw,Clarifier solids inventory
+nominal,mechanistic,projected,mixer,COD,1988.6186016780537,N,Smooth NLP,Projected,Mixer
+nominal,mechanistic,projected,mixer,TN,103.43980142168158,N,Smooth NLP,Projected,Mixer
+nominal,mechanistic,projected,mixer,TP,63.14584075050665,N,Smooth NLP,Projected,Mixer
+nominal,mechanistic,projected,mixer,TSS,1585.871906507776,N,Smooth NLP,Projected,Mixer
+nominal,mechanistic,projected,reactor_1,DO,0.0005588048076241022,N,Smooth NLP,Projected,R1
+nominal,mechanistic,projected,reactor_1,TN,96.49559456108379,N,Smooth NLP,Projected,R1
+nominal,mechanistic,projected,reactor_1,TP,63.145840750503226,N,Smooth NLP,Projected,R1
+nominal,mechanistic,projected,reactor_1,TSS,1525.4379090346158,N,Smooth NLP,Projected,R1
+nominal,mechanistic,projected,reactor_2,DO,1.4906365649445405e-06,N,Smooth NLP,Projected,R2
+nominal,mechanistic,projected,reactor_2,TN,96.39317737923275,N,Smooth NLP,Projected,R2
+nominal,mechanistic,projected,reactor_2,TP,63.14584075049992,N,Smooth NLP,Projected,R2
+nominal,mechanistic,projected,reactor_2,TSS,1478.823530154594,N,Smooth NLP,Projected,R2
+nominal,mechanistic,projected,reactor_3,DO,0.06185580826421716,N,Smooth NLP,Projected,R3
+nominal,mechanistic,projected,reactor_3,TN,95.56071666387089,N,Smooth NLP,Projected,R3
+nominal,mechanistic,projected,reactor_3,TP,63.14584075049677,N,Smooth NLP,Projected,R3
+nominal,mechanistic,projected,reactor_3,TSS,1487.3750212894124,N,Smooth NLP,Projected,R3
+nominal,mechanistic,projected,reactor_4,DO,0.10351003055030834,N,Smooth NLP,Projected,R4
+nominal,mechanistic,projected,reactor_4,TN,94.73478250578047,N,Smooth NLP,Projected,R4
+nominal,mechanistic,projected,reactor_4,TP,63.14584075049386,N,Smooth NLP,Projected,R4
+nominal,mechanistic,projected,reactor_4,TSS,1498.5990230078853,N,Smooth NLP,Projected,R4
+nominal,mechanistic,projected,reactor_5,DO,0.31174770925316236,N,Smooth NLP,Projected,R5
+nominal,mechanistic,projected,reactor_5,TN,93.4600835968941,N,Smooth NLP,Projected,R5
+nominal,mechanistic,projected,reactor_5,TP,63.145840750491196,N,Smooth NLP,Projected,R5
+nominal,mechanistic,projected,reactor_5,TSS,1595.979646411061,N,Smooth NLP,Projected,R5
+nominal,mechanistic,projected,clarifier_overflow,COD,80.01122349690738,N,Smooth NLP,Projected,Overflow
+nominal,mechanistic,projected,clarifier_overflow,TN,20.020423538285435,N,Smooth NLP,Projected,Overflow
+nominal,mechanistic,projected,clarifier_overflow,TP,14.83787288308919,N,Smooth NLP,Projected,Overflow
+nominal,mechanistic,projected,clarifier_overflow,TSS,7.097577164594021,N,Smooth NLP,Projected,Overflow
+nominal,mechanistic,projected,clarifier_underflow,COD,7757.093007959169,N,Smooth NLP,Projected,Underflow
+nominal,mechanistic,projected,clarifier_underflow,TN,326.0190071022965,N,Smooth NLP,Projected,Underflow
+nominal,mechanistic,projected,clarifier_underflow,TP,216.12107232173895,N,Smooth NLP,Projected,Underflow
+nominal,mechanistic,projected,clarifier_underflow,TSS,6627.439532065711,N,Smooth NLP,Projected,Underflow
+nominal,mechanistic,projected,clarifier_inventory,TSS_mass,7377993.86137283,N,Smooth NLP,Projected,Clarifier solids inventory
+nominal,mechanistic,reference,mixer,COD,1646.877978089125,N,Smooth NLP,Mechanistic,Mixer
+nominal,mechanistic,reference,mixer,TN,99.27097361552887,N,Smooth NLP,Mechanistic,Mixer
+nominal,mechanistic,reference,mixer,TP,57.27284631903256,N,Smooth NLP,Mechanistic,Mixer
+nominal,mechanistic,reference,mixer,TSS,1322.8838001865643,N,Smooth NLP,Mechanistic,Mixer
+nominal,mechanistic,reference,reactor_1,DO,0.00018031224514515102,N,Smooth NLP,Mechanistic,R1
+nominal,mechanistic,reference,reactor_1,TN,94.71244148890085,N,Smooth NLP,Mechanistic,R1
+nominal,mechanistic,reference,reactor_1,TP,57.27284631863604,N,Smooth NLP,Mechanistic,R1
+nominal,mechanistic,reference,reactor_1,TSS,1265.2661971910998,N,Smooth NLP,Mechanistic,R1
+nominal,mechanistic,reference,reactor_2,DO,1.2681320614195014e-07,N,Smooth NLP,Mechanistic,R2
+nominal,mechanistic,reference,reactor_2,TN,94.66489996884782,N,Smooth NLP,Mechanistic,R2
+nominal,mechanistic,reference,reactor_2,TP,57.27284631822336,N,Smooth NLP,Mechanistic,R2
+nominal,mechanistic,reference,reactor_2,TSS,1213.190828772957,N,Smooth NLP,Mechanistic,R2
+nominal,mechanistic,reference,reactor_3,DO,0.04138875997747294,N,Smooth NLP,Mechanistic,R3
+nominal,mechanistic,reference,reactor_3,TN,93.74812129409932,N,Smooth NLP,Mechanistic,R3
+nominal,mechanistic,reference,reactor_3,TP,57.272846317797345,N,Smooth NLP,Mechanistic,R3
+nominal,mechanistic,reference,reactor_3,TSS,1232.883220017287,N,Smooth NLP,Mechanistic,R3
+nominal,mechanistic,reference,reactor_4,DO,0.04263840195468173,N,Smooth NLP,Mechanistic,R4
+nominal,mechanistic,reference,reactor_4,TN,92.82708191336106,N,Smooth NLP,Mechanistic,R4
+nominal,mechanistic,reference,reactor_4,TP,57.27284631735714,N,Smooth NLP,Mechanistic,R4
+nominal,mechanistic,reference,reactor_4,TSS,1259.131070807863,N,Smooth NLP,Mechanistic,R4
+nominal,mechanistic,reference,reactor_5,DO,0.3108762076766854,N,Smooth NLP,Mechanistic,R5
+nominal,mechanistic,reference,reactor_5,TN,88.86302101481125,N,Smooth NLP,Mechanistic,R5
+nominal,mechanistic,reference,reactor_5,TP,57.272846316897514,N,Smooth NLP,Mechanistic,R5
+nominal,mechanistic,reference,reactor_5,TSS,1279.242140462047,N,Smooth NLP,Mechanistic,R5
+nominal,mechanistic,reference,clarifier_overflow,COD,57.601248467349336,N,Smooth NLP,Mechanistic,Overflow
+nominal,mechanistic,reference,clarifier_overflow,TN,20.554016674664968,N,Smooth NLP,Mechanistic,Overflow
+nominal,mechanistic,reference,clarifier_overflow,TP,16.383397729342555,N,Smooth NLP,Mechanistic,Overflow
+nominal,mechanistic,reference,clarifier_overflow,TSS,5.582079248199277,N,Smooth NLP,Mechanistic,Overflow
+nominal,mechanistic,reference,clarifier_underflow,COD,6048.389890259692,N,Smooth NLP,Mechanistic,Underflow
+nominal,mechanistic,reference,clarifier_underflow,TN,305.17486807365253,N,Smooth NLP,Mechanistic,Underflow
+nominal,mechanistic,reference,clarifier_underflow,TP,186.75610016654076,N,Smooth NLP,Mechanistic,Underflow
+nominal,mechanistic,reference,clarifier_underflow,TSS,5312.499000631566,N,Smooth NLP,Mechanistic,Underflow
+nominal,mechanistic,reference,clarifier_inventory,TSS_mass,3545432.5678363363,N,Smooth NLP,Mechanistic,Clarifier solids inventory
+nominal,mechanistic,smooth,clarifier_layer_1,TSS,5.582079248981162,N,Smooth NLP,Smooth NLP,Clarifier layer 1
+nominal,mechanistic,smooth,clarifier_layer_2,TSS,8.113787265456,N,Smooth NLP,Smooth NLP,Clarifier layer 2
+nominal,mechanistic,smooth,clarifier_layer_3,TSS,12.726268374911534,N,Smooth NLP,Smooth NLP,Clarifier layer 3
+nominal,mechanistic,smooth,clarifier_layer_4,TSS,26.56588587448548,N,Smooth NLP,Smooth NLP,Clarifier layer 4
+nominal,mechanistic,smooth,clarifier_layer_5,TSS,108.71345169104696,N,Smooth NLP,Smooth NLP,Clarifier layer 5
+nominal,mechanistic,smooth,clarifier_layer_6,TSS,108.71345169104696,N,Smooth NLP,Smooth NLP,Clarifier layer 6
+nominal,mechanistic,smooth,clarifier_layer_7,TSS,108.71345169104696,N,Smooth NLP,Smooth NLP,Clarifier layer 7
+nominal,mechanistic,smooth,clarifier_layer_8,TSS,108.71345169104696,N,Smooth NLP,Smooth NLP,Clarifier layer 8
+nominal,mechanistic,smooth,clarifier_layer_9,TSS,108.71345169104691,N,Smooth NLP,Smooth NLP,Clarifier layer 9
+nominal,mechanistic,smooth,clarifier_layer_10,TSS,5312.499002781008,N,Smooth NLP,Smooth NLP,Clarifier layer 10
+nominal,mechanistic,reference,clarifier_layer_1,TSS,5.5820792481992765,N,Smooth NLP,Mechanistic,Clarifier layer 1
+nominal,mechanistic,reference,clarifier_layer_2,TSS,8.113787264556535,N,Smooth NLP,Mechanistic,Clarifier layer 2
+nominal,mechanistic,reference,clarifier_layer_3,TSS,12.72626837359289,N,Smooth NLP,Mechanistic,Clarifier layer 3
+nominal,mechanistic,reference,clarifier_layer_4,TSS,26.565885871097734,N,Smooth NLP,Mechanistic,Clarifier layer 4
+nominal,mechanistic,reference,clarifier_layer_5,TSS,108.713451667668,N,Smooth NLP,Mechanistic,Clarifier layer 5
+nominal,mechanistic,reference,clarifier_layer_6,TSS,108.71345166765572,N,Smooth NLP,Mechanistic,Clarifier layer 6
+nominal,mechanistic,reference,clarifier_layer_7,TSS,108.71345166764337,N,Smooth NLP,Mechanistic,Clarifier layer 7
+nominal,mechanistic,reference,clarifier_layer_8,TSS,108.71345166763108,N,Smooth NLP,Mechanistic,Clarifier layer 8
+nominal,mechanistic,reference,clarifier_layer_9,TSS,108.71345166761873,N,Smooth NLP,Mechanistic,Clarifier layer 9
+nominal,mechanistic,reference,clarifier_layer_10,TSS,5312.499000631564,N,Smooth NLP,Mechanistic,Clarifier layer 10
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_1,TSS,5.5820792481992765,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 1
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_2,TSS,8.113787264556535,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 2
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_3,TSS,12.72626837359289,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 3
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_4,TSS,26.565885871097734,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 4
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_5,TSS,108.713451667668,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 5
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_6,TSS,108.71345166765572,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 6
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_7,TSS,108.71345166764337,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 7
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_8,TSS,108.71345166763108,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 8
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_9,TSS,108.71345166761873,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 9
+nominal,mechanistic,exact_mechanistic_start_1,clarifier_layer_10,TSS,5312.499000631564,N,Smooth NLP,exact_mechanistic_start_1,Clarifier layer 10
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_1,TSS,5.582079249707498,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 1
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_2,TSS,8.113787266221415,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 2
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_3,TSS,12.726268376005736,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 3
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_4,TSS,26.56588587728076,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 4
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_5,TSS,108.71345171033312,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 5
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_6,TSS,108.71345171034335,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 6
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_7,TSS,108.7134517103535,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 7
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_8,TSS,108.71345171036363,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 8
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_9,TSS,108.71345171037387,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 9
+nominal,mechanistic,exact_mechanistic_start_2,clarifier_layer_10,TSS,5312.499004554136,N,Smooth NLP,exact_mechanistic_start_2,Clarifier layer 10

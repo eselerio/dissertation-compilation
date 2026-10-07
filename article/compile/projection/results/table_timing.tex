@@ -1,0 +1,19 @@
+\begin{tabular}{lllrrrrrrrrrrrrrr}
+\toprule
+model & model\_key & model\_category & sample\_size & setup\_seconds\_mean & setup\_seconds\_std & search\_seconds\_mean & search\_seconds\_std & raw\_latency\_ms\_per\_sample\_mean & raw\_latency\_ms\_per\_sample\_std & projection\_latency\_ms\_per\_sample\_mean & projection\_latency\_ms\_per\_sample\_std & end\_to\_end\_latency\_ms\_per\_sample\_mean & end\_to\_end\_latency\_ms\_per\_sample\_std & maximum\_repeated\_prediction\_difference\_mean & maximum\_repeated\_prediction\_difference\_std & fold\_count \\
+\midrule
+XGBoost & xgboost\_regressor & Boosting & 10000 & 12.4577 & 4.64802 & 3810.95 & 547.549 & 0.0596522 & 0.00217268 & 0.097558 & 0.014585 & 0.164865 & 0.0102648 & 0 & 0 & 5 \\
+LightGBM & lightgbm\_regressor & Boosting & 10000 & 3.95665 & 0.828455 & 1126.04 & 148.423 & 0.0971431 & 0.0190411 & 0.0840208 & 0.0122869 & 0.197353 & 0.0139149 & 0 & 0 & 5 \\
+CatBoost & catboost\_regressor & Boosting & 10000 & 33.3034 & 5.02798 & 8165.42 & 479.659 & 0.0676944 & 0.00578607 & 0.123493 & 0.0516923 & 0.199713 & 0.0518076 & 0 & 0 & 5 \\
+AdaBoost & adaboost\_regressor & Boosting & 10000 & 18.5476 & 6.04319 & 5894.14 & 590.067 & 1.03097 & 0.267244 & 0.0901241 & 0.0411035 & 1.1101 & 0.296113 & 0 & 0 & 5 \\
+Random Forest & random\_forest\_regressor & Randomized tree ensembles & 10000 & 6.88686 & 0.643289 & 1452.33 & 126.794 & 0.137557 & 0.00181035 & 0.0681493 & 0.00429696 & 0.211703 & 0.00847029 & 1.98952e-13 & 5.31721e-14 & 5 \\
+Extra Trees & extra\_trees\_regressor & Randomized tree ensembles & 10000 & 2.83217 & 0.60498 & 705.213 & 97.8419 & 0.146079 & 0.0212869 & 0.105317 & 0.0453112 & 0.248398 & 0.0666246 & 5.68434e-14 & 0 & 5 \\
+SVR & svr\_regressor & Kernel & 10000 & 56.0206 & 12.9378 & 11082.8 & 1899.83 & 1.87363 & 0.0927163 & 0.0921999 & 0.0419366 & 2.00084 & 0.2043 & 0 & 0 & 5 \\
+k-NN & knn\_regressor & Instance based & 10000 & 0.0251853 & 0.0126609 & 99.3437 & 29.6713 & 0.157437 & 0.0966865 & 0.140134 & 0.00285613 & 0.314798 & 0.107222 & 0 & 0 & 5 \\
+PLS & pls\_regressor & Interpretable models & 10000 & 0.166093 & 0.0747508 & 48.7509 & 7.1646 & 0.00101555 & 0.000257569 & 0.144167 & 0.0128529 & 0.151501 & 0.00729797 & 0 & 0 & 5 \\
+Multi-task Elastic Net & multitask\_elastic\_net\_regressor & Interpretable models & 10000 & 0.02425 & 0.00388287 & 15.5934 & 0.222689 & 0.00105514 & 0.000525737 & 0.140626 & 0.0116848 & 0.149268 & 0.0121604 & 0 & 0 & 5 \\
+Multi-task Lasso & multitask\_lasso\_regressor & Interpretable models & 10000 & 0.0272684 & 0.00632758 & 14.2124 & 0.295721 & 0.00102738 & 0.000773248 & 0.13869 & 0.0160705 & 0.14469 & 0.0105688 & 0 & 0 & 5 \\
+MLP & ann\_deep\_regressor & Neural networks & 10000 & 20.4586 & 10.8243 & 5016.24 & 1298.03 & 0.00474148 & 0.00324652 & 0.115103 & 0.0461786 & 0.107115 & 0.0468707 & 0 & 0 & 5 \\
+TabNet & tabnet\_regressor & Neural networks & 10000 & 24.7314 & 4.05896 & 5971.04 & 215.016 & 0.0234682 & 0.00510776 & 0.139816 & 0.0409943 & 0.116963 & 0.0138846 & 0 & 0 & 5 \\
+\bottomrule
+\end{tabular}
