@@ -1,6 +1,6 @@
 source,state_scope,applicability,availability,record_count,audited_record_count,unavailable_record_count,audit_coverage_fraction,layer_envelope_tolerance,layer_envelope_violation_max,layer_envelope_violation_count,layer_residual_tolerance,layer_residual_max,layer_residual_violation_count,stability_margin_d_inv,stability_agreement_tolerance_d_inv,stability_audited_record_count,largest_real_eigenvalue_max,stability_agreement_max,stability_violation_max,stability_violation_count
 raw_reduced,reduced_response_without_layers,not_applicable_no_layer_state,not_applicable,1866,0,0,,1e-10,,,1e-06,,,-1e-08,1e-06,0,,,,
 projected_reduced,reduced_response_without_layers,not_applicable_no_layer_state,not_applicable,1866,0,0,,1e-10,,,1e-06,,,-1e-08,1e-06,0,,,,
-smooth_mechanistic_native,saved_full_mechanistic_state,applicable,available,10,10,0,1.0,1e-10,0.0,0.0,1e-06,1.849524273774254e-11,0.0,-1e-08,1e-06,10,-0.0682037533760946,2.8709575605745385e-08,0.0,0.0
+smooth_direct_native,saved_full_mechanistic_state,applicable,available,10,10,0,1.0,1e-10,0.0,0.0,1e-06,1.849524273774254e-11,0.0,-1e-08,1e-06,10,-0.0682037533760946,2.8709575605745385e-08,0.0,0.0
 exact_mechanistic_generation,saved_full_mechanistic_state,applicable,available,18462,18462,0,1.0,1e-10,0.0,0.0,1e-06,2.2208812572397767e-08,0.0,-1e-08,1e-06,18462,-0.0025278716254706,9.524505196756294e-07,0.0,0.0
 exact_mechanistic_replay,saved_full_mechanistic_state,applicable,available,42,42,0,1.0,1e-10,0.0,0.0,1e-06,3.372329848594339e-11,0.0,-1e-08,1e-06,42,-0.0682037532512191,9.80874318656788e-07,0.0,0.0
