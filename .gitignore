@@ -1,2 +1,45 @@
-.codex-work/visual-env
-docs
+# Repository-specific generated files
+.codex-work/visual-env/
+docs/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytype/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+.env.*
+!.env.example
+
+# Test and coverage reports
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+pytestdebug.log
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+MANIFEST
+
+# Type-checker and tool output
+.tox/
+.nox/
+.pyre/
+.hypothesis/
+
+# Local configuration and secrets
+*.local
