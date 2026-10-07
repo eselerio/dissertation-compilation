@@ -2113,3 +2113,205 @@ n_{dec}&>\frac{T_{dev}}{T_M-T_S}\qquad\text{when }T_M>T_S.
 The illustrative threshold is $100/(6-3)=33\tfrac13$, so at least thirty-four complete decisions are needed to cross it. If the complete per-decision cost is not smaller, a positive development cost cannot be recovered by this timing argument. The calculation also assumes that the compared decisions meet the required quality and feasibility conditions. Cost arithmetic alone does not establish that condition.
 
 The resulting evaluation keeps four types of evidence separate. Statistical assessment concerns approximation of accepted mechanistic states. Projection audits concern the imposed network and inventory constraints. Search audits concern local numerical evidence for the declared optimization problem. Original-model verification concerns treatment and feasibility at the selected controls. This separation allows a connected surrogate to be studied as a decision aid while preserving the limits of its empirical closure and aggregate clarifier model.
+
+\section{Results}
+\label{sec:plant_results}
+
+The connected surrogate is termed Extended ICSOR. The direct smooth nonlinear programming (NLP) route is termed Smooth NLP. Their treatment outcomes are compared through independent evaluation with the original mechanistic equations. The nominal influent is denoted N, and the ten influent scenarios are denoted S1--S10. Optimization time is assessed separately from prediction and decision quality.
+
+\subsection{Accepted development and holdout states}
+
+The development design retained 7386 of 8000 attempted states. The holdout design retained 1845 of 2000 attempted states. Their acceptance fractions were 92.33\% and 92.25\%. Table~\ref{tab:plant_sample_results} gives the corresponding rejection counts. Rejected states were not replaced. The assessed distributions were therefore conditional on passing the declared mechanistic acceptance checks rather than complete samples of every input combination in the original designs.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Realized mechanistic samples for the connected-plant assessment. The separate development and holdout designs retained accepted states without replacing rejected candidates.}
+\label{tab:plant_sample_results}
+\begin{tabular}{lrrrr}
+\toprule
+Design & Attempted & Accepted & Rejected & Accepted (\%)\\
+\midrule
+Development & 8000 & 7386 & 614 & 92.33\\
+Holdout & 2000 & 1845 & 155 & 92.25\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The raw-response selection retained a ridge penalty of 0.1. Its mean grouped cross-validation normalized root error was 0.659. This score used the fitting response scales across the complete joint response. It was not the holdout-range-normalized composite score reported below.
+
+\subsection{Aggregate and local holdout accuracy}
+
+Projection reduced the holdout nRMSE from 0.04690 to 0.04306. The relative reduction calculated before rounding was 8.19\%. The nMAE decreased from 0.03044 to 0.02568, a reduction of 15.65\%. Mean location-level $R^2$ increased from 0.925 to 0.938. Figure~\ref{fig:plant_holdout_overview_results} separates the aggregate, location, and composite summaries. All eight location summaries and all four composite summaries had lower nRMSE after projection.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{compile/optimization/results/figures/q01_holdout_accuracy_overview.png}
+\caption{Raw and projected composite accuracy on 1845 holdout plant states. Rows show aggregate, location, and composite summaries. Columns show nRMSE, nMAE, and mean location-level $R^2$. Errors are normalized by the mechanistic holdout range of each location and composite. The $R^2$ summaries average coordinate-specific scores rather than pooling locations into one score.}
+\label{fig:plant_holdout_overview_results}
+\end{figure}
+
+The composite nRMSE values decreased from 0.04741 to 0.04586 for COD, from 0.03724 to 0.03454 for TN, from 0.04170 to 0.03349 for TP, and from 0.05852 to 0.05476 for TSS. TP showed the largest relative improvement among these composite summaries. TSS retained the largest projected error. These range-normalized scores do not give the same weighting as the training-scale joint-response score used for scientific admission.
+
+Projection reduced nRMSE in 30 of the 32 location--composite combinations. Figure~\ref{fig:plant_holdout_locations_results} identifies the two exceptions. COD error increased by 0.47\% in the final reactor and by 2.36\% in the overflow. Overflow TP error decreased from 0.02948 to 0.01795, a reduction of 39.10\%. Improvements in one quantity therefore did not establish improvement in every quantity at the same location.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{compile/optimization/results/figures/q02_holdout_accuracy_by_location.png}
+\caption{Holdout nRMSE by treatment location and composite. Raw and projected heatmaps share their color scale. The third panel shows percentage change relative to raw error. Negative values indicate improvement. The mixer, five reactors, overflow, and underflow are assessed separately.}
+\label{fig:plant_holdout_locations_results}
+\end{figure}
+
+\subsection{Parity across the connected treatment system}
+
+Figure~\ref{fig:plant_holdout_parity_results} pools the 14,760 location-observations for each composite while retaining location medians. Much of the density lay near the one-to-one line. The projected mean location-level $R^2$ values were 0.944 for COD, 0.963 for TN, 0.945 for TP, and 0.899 for TSS. These are averages of location-specific scores, not coefficients calculated from the pooled point cloud.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{compile/optimization/results/figures/q03_holdout_parity_all_locations.png}
+\caption{Projected composite parity across eight locations and 1845 holdout states. Both concentration axes are logarithmic. Hexagon color gives the number of location-observations, and labelled markers identify each location's median. The one-to-one line indicates exact agreement. Metric annotations retain location-specific normalization and average location-level $R^2$.}
+\label{fig:plant_holdout_parity_results}
+\end{figure}
+
+The overflow remained an important source of error. Its projected location-average $R^2$ was 0.876, below the reactor averages of approximately 0.947. The projected overflow TSS nRMSE was 0.07392. TSS was underpredicted in 1008 of the 1845 holdout states, or 54.6\%. The fitted positive overflow endpoint therefore did not give uniformly conservative solids predictions.
+
+\subsection{Physical audits and search qualifications}
+
+Every raw holdout response had at least one mass conservation violation in the independent physical audit. Negative entries occurred in 1765 of the 1845 raw responses. The corresponding projected summaries recorded no mass conservation, non-negativity, or network-inequality violations under their stated audit definitions. These counts concerned compliance with the imposed numerical relations. They did not establish satisfaction of every biological and settling equation.
+
+The surrogate route retained an initially feasible candidate for the nominal influent and all ten scenarios. The initial direct searches retained candidates for the nominal influent and nine scenarios. The S1 direct attempt did not retain a validated feasible candidate, and its permitted recovery did not resolve that search outcome. The two-route figures nevertheless include a separately evaluated valid direct decision for S1. This decision is included normally in the treatment and objective comparisons. It is not counted as a successful initial direct search.
+
+Table~\ref{tab:plant_search_qualification_results} distinguishes these availability results from convergence evidence. Positive first-order qualification flags were recorded for the surrogate decisions at N, S6, and S10. Seven other surrogate decisions had finite-poll qualification. S4 remained unresolved. No retained initial direct candidate had a positive first-order certificate. The independent mechanistic responses supplied treatment outcomes without establishing that any decision was globally optimal.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Qualification of the initial center-start searches. Each route was attempted in eleven cases. Finite-poll evidence concerns only the tested directions and radii. The separately evaluated S1 direct decision appears in the paired figures but does not alter these initial-search counts.}
+\label{tab:plant_search_qualification_results}
+\begin{tabular}{p{7.0cm}rr}
+\toprule
+Outcome & Extended ICSOR & Smooth NLP\\
+\midrule
+Initial searches & 11 & 11\\
+Retained feasible initial candidates & 11 & 10\\
+First-order qualification & 3 & 0\\
+Additional finite-poll qualification & 7 & 0\\
+Retained candidates with unresolved qualification & 1 & 10\\
+Cases without a retained initial candidate & 0 & 1\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Prediction fidelity at selected controls}
+
+Figure~\ref{fig:plant_selected_parity_results} compares Extended ICSOR predictions with independent mechanistic outcomes at its selected controls. Across the 44 case--composite comparisons, median absolute concentration error was 12.75\% of the mechanistic effluent value. Mean absolute error on that percentage basis was 18.43\%. Median and mean absolute removal errors were 3.26 and 5.23 percentage points. These selected-decision summaries had different denominators and a different input distribution from the holdout scores.
+
+In S6, predicted COD was 151.10 mg L$^{-1}$ and the mechanistic value was 99.21 mg L$^{-1}$. In S10, the corresponding values were 232.23 and 167.78 mg L$^{-1}$. The predictions underestimated COD removal by 8.51 and 10.44 percentage points. Concentration errors were therefore not uniformly optimistic about treatment.
+
+The nutrient errors in S4 had the opposite implication. Predicted TN was 2.67 mg L$^{-1}$ against a mechanistic value of 7.47 mg L$^{-1}$. Predicted TP was 2.08 mg L$^{-1}$ against 4.68 mg L$^{-1}$. TN and TP removals were overstated by 16.97 and 27.33 percentage points. These errors remained after projection and trust screening.
+
+TSS was overpredicted in ten of the eleven selected surrogate decisions. Predicted values ranged from 5.53 to 8.05 mg L$^{-1}$, while mechanistic values ranged from 5.28 to 6.41 mg L$^{-1}$. In S1, values of 7.78 and 5.77 mg L$^{-1}$ differed by only 0.61 percentage points in removal. A small removal error could therefore coexist with a substantial relative effluent-concentration error.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{compile/optimization/results/figures/q04_effluent_and_removal_parity.png}
+\caption{Extended ICSOR predictions at selected controls compared with independent original-model evaluation. The upper row shows effluent concentration parity in mg L$^{-1}$. The lower row shows removal parity in percent. Columns correspond to COD, TN, TP, and TSS. Teal identifies concentrations and orange identifies removals. Labels identify N and S1--S10. Dashed lines indicate exact agreement.}
+\label{fig:plant_selected_parity_results}
+\end{figure}
+
+\subsection{Treatment outcomes and operating choices}
+
+Figure~\ref{fig:plant_controls_results} compares both routes on the mechanistic reference basis. Smooth NLP produced lower COD, TN, and TP in the nominal case and nine of the ten scenarios. Nominal COD was 151.26 mg L$^{-1}$ at the surrogate decision and 57.60 mg L$^{-1}$ at the direct decision. In S9, values were 203.24 and 19.08 mg L$^{-1}$. Smooth NLP had lower TSS in six of the eleven comparisons. It did not improve every individual treatment quantity in every case.
+
+Extended ICSOR selected the 6-h HRT lower bound at N, S6, S7, S9, and S10. Smooth NLP selected the 36-h upper bound in S5 and S10 within numerical tolerance. Since fresh flow was fixed, these HRT choices changed biological reactor volume. The comparison therefore included capacity selection rather than only adjustment of an existing plant's operating settings.
+
+Both routes selected the upper aeration bound in reactor 3 for every case within numerical tolerance. Aeration in reactors 4 and 5 also reached the upper bound in many cases. Both routes selected the return-sludge lower bound of 0.25. Smooth NLP selected internal recycle ratios of 4.00 in S2 and S10 and 3.44 in S9. Its other values were effectively zero. Extended ICSOR selected ratios between zero and 0.804.
+
+The distinction between nominal HRT and residence time per passage was visible in S2. Smooth NLP selected $H=31.40$ h with $r_I=4.00$ and $r_R=0.25$. The reactor-train flow ratio was 5.25, giving a residence time per passage of approximately 5.98 h. A larger nominal HRT did not imply an equally large time for each passage through the train.
+
+Wasting frequently reached its upper bound. Its resource contribution nevertheless depended on the selected underflow concentration through $wX_U$. Neither the wasting ratio nor an aeration setting alone described the corresponding material or resource measure.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{compile/optimization/results/figures/q05_effluent_and_operating_values.png}
+\caption{Mechanistic effluent outcomes and selected controls for both optimization routes. The top row shows COD, TN, TP, and TSS in mg L$^{-1}$. The remaining panels show HRT, aeration in reactors 3--5, internal recycle, return sludge, and wasting. The unused panel is omitted. N and S1--S10 appear in every comparison. The constant aeration and return-sludge panels use plain zero-to-one axes.}
+\label{fig:plant_controls_results}
+\end{figure}
+
+\subsection{Mechanistic treatment-train profiles}
+
+Figure~\ref{fig:plant_profile_results} follows the original-model concentrations at each route's selected controls. All four composites increased from fresh influent to the mixer for both routes in all eleven cases. Recycle mixing brought concentrated material back into the biological train. This was internal circulation rather than creation of an external pollutant load.
+
+Changes across the reactors differed from the concentration decrease across the clarifier. The former reflected the combined soluble and particulate state after biological conversion. The latter reflected particulate separation under the nonreactive clarifier assumption. A nearly constant composite concentration across reactors did not establish absence of conversion among its component forms.
+
+The large TSS decrease between reactor 5 and the final effluent showed the contribution of solids separation to treated-water quality. The profile alone did not determine nitrification, denitrification, phosphorus uptake, or solids age. Those interpretations required species concentrations, outlet solids flows, and the reactor and clarifier inventories.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.77\textheight,keepaspectratio]{compile/optimization/results/figures/q06_treatment_train_profiles.png}
+\caption{Mechanistic concentration profiles at controls selected by Extended ICSOR and Smooth NLP. Rows show COD, TN, TP, and TSS from fresh influent through the mixer and reactors 1--5 to clarifier effluent. Each composite has identical logarithmic concentration limits for both routes. Colors identify N and S1--S10. Underflow is not placed in the main liquid-treatment path.}
+\label{fig:plant_profile_results}
+\end{figure}
+
+\subsection{Quality and resource trade-offs}
+
+Smooth NLP had the lower common-reference objective in the nominal case and all ten scenarios. Figure~\ref{fig:plant_objective_results} separates the total objective from quality and weighted resource contributions. Nominal objectives were 0.8647 for Extended ICSOR and 0.7862 for Smooth NLP. The surrogate value was 9.99\% higher relative to the direct value. S5 had the largest absolute difference, with values of 1.0101 and 0.7022. S8 had the smallest difference, with values of 0.9279 and 0.9234.
+
+Smooth NLP had lower normalized quality cost in ten of the eleven cases. Its weighted resource contribution was higher in every case except S8. In S10, quality cost decreased from 1.4748 to 0.3699. Its weighted contribution decreased by approximately 0.5525. Weighted resource cost increased from 0.0557 to 0.4191. The resulting total objective decreased from 0.7931 to 0.6040. Better weighted treatment was obtained while accepting a larger capacity and resource contribution.
+
+S8 illustrated the opposite trade-off. Quality cost increased from 1.5856 to 1.6110, but weighted resource cost decreased from 0.1351 to 0.1179. Smooth NLP therefore had a lower total objective even though every evaluated effluent composite was slightly higher. A lower objective did not mean that each treatment quantity improved.
+
+The development quality scales were 106.61, 13.07, 7.11, and 17.38 mg L$^{-1}$ for COD, TN, TP, and TSS. All exceeded one. The two native normalization matrices in Equation~\eqref{eq:plant_route_normalization} consequently coincided in this experiment. The unit floor did not explain the observed route differences.
+
+The volume dependence of the aeration proxy was also important. When $H=6$ h and all three aeration settings equal one, Equation~\eqref{eq:plant_aeration_proxy_example} gives $j_A=1/6$. Frequent low-HRT surrogate decisions thus received relatively small capacity and aeration contributions despite maximum aeration settings. These contributions were engineering proxies rather than monetary costs or measured energy use.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{compile/optimization/results/figures/q07_objective_quality_economic.png}
+\caption{Common-reference total objective, normalized quality cost, and weighted resource contributions. Both routes are evaluated with the original mechanistic model and common quality scales. Resource stacks show HRT, aeration, internal recycle, return sludge, and wasting. Solid bars identify Extended ICSOR, and hatched bars identify Smooth NLP. The quality panel shows $j_Q$, whose contribution to the total objective is $0.50j_Q$.}
+\label{fig:plant_objective_results}
+\end{figure}
+
+\subsection{Optimization time}
+
+Extended ICSOR had shorter recorded optimization time for N and every scenario. Figure~\ref{fig:plant_time_results} shows all eleven comparisons. Across S1--S10, times ranged from 0.758 to 2.702 s for Extended ICSOR and from 3.932 to 8.253 s for Smooth NLP. Means were 1.726 and 5.236 s. The ratio of these means was approximately 3.03. Nominal times were 0.985 and 5.062 s.
+
+Scenario-specific direct-to-surrogate time ratios ranged from 1.90 to 7.99. The largest ratio occurred in S10. The comparison included initial failed attempts, including the S1 direct attempt. A recorded duration was not evidence that its search retained a feasible decision.
+
+The measured interval excluded development-state generation, fitting, convergence certification, conditional recovery, and independent mechanistic evaluation. These exclusions prevented the plotted times from establishing a complete-workflow speed advantage or a measured amortization threshold. The faster optimization interval and the higher mechanistic objective remained separate findings.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{compile/optimization/results/figures/q08_optimization_time.png}
+\caption{Recorded optimization time for N and S1--S10 on a logarithmic seconds axis. The interval includes the initial surrogate search with projection and fallback or the initial direct smoothing sequence. It excludes generation, fitting, certification, conditional recovery, and independent mechanistic evaluation. Initial failed attempts remain in the timing account. Scenario mean times use S1--S10 only.}
+\label{fig:plant_time_results}
+\end{figure}
+
+\section{Discussion}
+\label{sec:plant_discussion}
+
+\subsection{Connected enforcement and its statistical benefit}
+
+The joint response made the mixer, reactor train, clarifier outlets, and stored solids available in one prediction. Joint projection then linked quantities that separate unit predictions could assign inconsistently. The observed reduction in holdout error supported this connected formulation within the accepted simulation domain. It did not isolate the contribution of each constraint or prove that every admissible prediction was closer to the mechanistic state.
+
+The two COD increases and the remaining overflow errors were consistent with this limit. The projection included an empirical overflow equality that the mechanistic reference need not satisfy. The stronger distance guarantee in Equation~\eqref{eq:plant_projection_error_exact} therefore required an additional feasibility premise. Average improvement in the reported composite scores was an empirical result rather than an unconditional consequence of that theorem. The distinction between physical constraints and predictive accuracy is also central to the projection analysis of \citet{SturmSilva2024} and \citet{KircherVotsmeier2025}.
+
+\subsection{Holdout accuracy and selected-decision reliability}
+
+Favorable average holdout accuracy did not establish accurate treatment prediction at the optimizer's selected controls. S4 gave a concrete example. At an illustrative TP limit of 3 mg L$^{-1}$, its predicted value of 2.08 mg L$^{-1}$ would pass, while the mechanistic value of 4.68 mg L$^{-1}$ would fail. This hypothetical limit was not imposed in the operating experiment. The example showed why an admissible prediction could still misclassify a treatment requirement.
+
+Independent mechanistic evaluation was therefore a necessary part of interpreting the selected decisions. Projection imposed the stated network relations but did not impose the full biological kinetics or nonlinear layer equations. Trust screening restricted admitted predictions without providing a calibrated accuracy probability. The approximation-management work of \citet{Hameed2026} and the treatment-safeguard setting of \citet{Ren2026} support checking the response that governs the decision rather than relying only on an average prediction score.
+
+\subsection{Decision quality under declared priorities}
+
+The lower direct objectives showed that the faster surrogate search did not attain equal decision quality in the tested comparisons. This was a comparison of retained decisions under fixed priorities. It was not a calculation of regret relative to a known global optimum. Differences could reflect response approximation, surrogate trust restrictions, or the local basins explored by the two searches. No separate experiment identified their individual contributions.
+
+The S8 outcome showed why treatment and resource measures needed separate presentation. A lower total objective could accompany slightly higher effluent concentrations when its resource contribution decreased sufficiently. Conversely, the S10 direct decision accepted larger resource contributions to obtain much lower quality cost. The objective combined these quantities according to declared preferences. It did not establish regulatory compliance or monetary savings.
+
+The free HRT coordinate also changed the engineering interpretation. At fixed influent flow, the selected HRT changed reactor capacity. For an installed plant, reactor volumes would be fixed and the applicable treatment limits would need explicit constraints. The component-resolved plant analysis of \citet{Zhang2026} and energy treatment of \citet{Miederer2025} support keeping hydraulic capacity, transfer capacity, and actual resource demand distinct.
+
+\subsection{Computational scope and convergence limits}
+
+The shorter surrogate optimization times supported reduced computation within the measured search interval. They did not include all work needed to deliver a checked operating decision. The surrogate also required development and fitting, and both routes required qualification and independent physical evaluation. A complete cost comparison would retain these tasks and an acceptable decision-quality requirement together, consistent with the benchmarking concerns of \citet{Bliek2023}.
+
+First-order flags and finite-poll qualification provided different levels of local evidence. The finite polls covered specified directions and resolutions. They did not provide the limiting argument required by the direct-search analysis of \citet{AudetDennis2006}. Unresolved direct stationarity likewise prevented a claim that the mechanistically evaluated direct decisions were certified local optima. The planned fifteen-start sensitivity design was not part of the reported baseline comparison. Global or comprehensive basin coverage was not established for either route.
+
+The evidence concerned accepted simulated steady states of one plant configuration and eleven fixed influent cases. The holdout was a descriptive post-selection assessment rather than independent field confirmation. The aggregate clarifier representation did not recover every internal species profile or transient behavior. Within these limits, the plant surrogate supplied a physically checked decision aid. The original mechanistic model remained the basis for judging the selected treatment outcomes.

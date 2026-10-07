@@ -137,7 +137,7 @@ The standalone reactor benchmark uses nested cross-validation to separate model 
 
 The connected plant design distinguishes development, holdout prediction assessment, and operating verification. It also recognizes that engineering choices can be informed by earlier inspection of a simulated response. Where an analysis setting follows such inspection, mechanistic evaluation of the selected controls provides conditional evidence for that declared setting. It does not become a fully prospective assessment merely because another solve is performed. A later independent evaluation with frozen choices is needed for a stronger prospective claim \citep{Kaufman2012,Zhang2026}.
 
-Failure accounting is part of this evidence. A failed mechanistic solve, an infeasible projection, an operating search that fails a stopping criterion, and a control that violates the original engineering constraints are different events. Omitting them changes the apparent domain and the apparent computational cost. Acceptance rules and failure counts must therefore accompany empirical assessment when it is undertaken.
+Failure accounting is part of this evidence. A failed mechanistic solve, an infeasible projection, an operating search that fails a stopping criterion, and a control that violates the original engineering constraints are different events. Omitting them changes the apparent domain and the apparent computational cost. Acceptance rules and failure counts therefore accompany the empirical assessments.
 
 \section{Limits of physical guarantees}
 
@@ -155,8 +155,46 @@ Interpretation is conditional on the fitted predictor. Second-order blocks suppo
 
 A projected point prediction also lacks an automatic uncertainty guarantee. Model ensembles, probabilistic reconciliation, and hard-constrained probabilistic learning provide other approaches to uncertainty \citep{Lakshminarayanan2017,Hansen2024,Utkarsh2025}. Their existence does not make a deterministic projection a calibrated distribution. Uncertainty remains a separate extension requiring its own assumptions and validation.
 
-\section{Engineering interpretation of the planned assessment}
+\section{Integrated findings and engineering interpretation}
+\label{sec:assessment_observed_findings}
 
-The intended assessment can identify which prediction procedures are suitable for particular uses. A rapid unconstrained approximation may be useful for exploratory analysis if its limitations are visible. A projected component state can support screening that requires declared balances and non-negativity. An interpretable constrained procedure can support inspection of named response terms. A connected plant surrogate can support an operating search when selected controls are independently checked.
+The reactor results in Section~\ref{sec:projection_results} established reliable numerical enforcement without a uniform accuracy benefit. All 766,350 projected prediction instances passed the imposed mass conservation and non-negativity checks. These instances included repeated assessment across folds and nested design sizes. Projection improved mean component nRMSE for only five of thirteen predictors at the largest design size. Severe exterior inputs increased prediction error even though every projected state remained admissible under the declared checks. Physical compliance therefore did not establish either lower error or successful extrapolation.
 
-The assessment must retain these different uses when interpreting empirical evidence. A smaller error does not settle every engineering requirement. A stronger physical guarantee does not settle every accuracy question. A faster search does not settle every cost question. The methodological contribution lies in making each requirement explicit and connecting it to evidence that can assess it. Treatment outcomes and empirical performance remain questions for the subsequent evaluation.
+The structured-regression results in Section~\ref{sec:icsor_results} showed an inspectability and data-budget trade-off. ICSOR had the lowest mean error at 500 cases and the lowest reported root-error curve area. The multilayer perceptron had the lowest full-size error, while LightGBM had the best mean rank across the broader assessment. On the fixed partition, ICSOR's pooled composite root error was 5.98, compared with 4.38 for the multilayer perceptron. These values compared complete scoring procedures with different non-negativity requirements rather than isolated unadjusted learners.
+
+The structured model also showed why fitting guidance and output enforcement needed separate assessment. No unadjusted coupled prediction passed both physical checks. Affine projection was sufficient in 21.8\% of cases, and the constrained linear projection was required in 78.2\%. The final state passed the adopted numerical checks in every case. Those balance checks used a rounded and normalized operator. Their tolerance did not establish identical compliance with the unrounded stoichiometric operator.
+
+The plant results in Section~\ref{sec:plant_results} extended the assessment from a single component state to a connected decision. Joint projection reduced holdout aggregate nRMSE by 8.19\% and improved 30 of 32 location--composite scores. Independent evaluation at selected controls nevertheless found substantial nutrient discrepancies. Smooth NLP had lower common-reference objectives in all eleven plotted cases, while Extended ICSOR had shorter recorded optimization times. The ten-scenario means of 1.726 and 5.236 s concerned the specified optimization interval rather than complete workflow cost.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Observed findings across the integrated assessments. Each row retains the scoring space and comparison scope of its own study. The results do not form one pooled model ranking.}
+\label{tab:integrated_observed_findings}
+\begin{tabular}{p{0.24\textwidth}p{0.36\textwidth}p{0.30\textwidth}}
+\toprule
+Assessment question & Observed evidence & Remaining boundary\\
+\midrule
+Reactor admissibility & All assessed projected instances passed both imposed physical checks & Compliance did not impose kinetic reachability or extrapolation accuracy\\
+Effect on prediction error & Five of thirteen predictors improved aggregate error at the largest design size & Most component improvements could coexist with a worse aggregate score\\
+Structured prediction & Lowest small-design error with inspectable terms and checked final output & Full-size error was higher than the leading flexible predictors\\
+Source of compliance & Most structured predictions needed constrained linear projection & Soft fitting guidance did not establish unadjusted feasibility\\
+Connected plant prediction & Holdout nRMSE decreased by 8.19\% & Selected nutrient responses still required mechanistic verification\\
+Operating comparison & Surrogate optimization was faster, while direct decisions had lower reference objectives & Timing exclusions and unresolved convergence limited broader claims\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The three error scales answered different questions. The reactor benchmark normalized twenty component errors by training variability. The structured benchmark pooled four native composite coordinates. The plant holdout normalized each location and composite by its observed reference range. Their numerical magnitudes were not directly comparable. The integrated finding concerned the relationship among accuracy, physical enforcement, interpretation, and decision evidence rather than one universal error ordering.
+
+The fitted coefficient display likewise established a specific form of transparency. Named terms exposed operating dependence, loading dependence, and coupling in one fitted raw mapping. They did not establish coefficient stability across resamples or global sensitivities of the final projected output. The dense coupling and active projection branches made these limits relevant to interpreting the structured model.
+
+\section{Conclusions}
+\label{sec:assessment_conclusions}
+
+The research established a common assessment of activated sludge surrogate predictions and the decisions made from them. Component-resolved reference models supplied the material-accounting basis. Statistical learners supplied approximations. Projection imposed declared output requirements. Independent mechanistic evaluation supplied treatment outcomes at selected controls. Keeping these roles separate made it possible to identify benefits without attributing properties to a stage that did not provide them.
+
+The strongest common result was numerical enforcement of specified physical relations. That result was not a guarantee of minimum prediction error. The reactor comparisons showed mixed accuracy effects after projection. The structured regression combined favorable low-data behavior and inspectable terms with a higher full-size error than the leading comparators. Its final compliance depended on the complete projection procedure and the adopted numerical operator. A visible equation and a physically checked output therefore supplied useful but distinct forms of evidence.
+
+The connected-plant study showed why operating quality required an additional assessment. Joint enforcement improved average holdout prediction, but the faster surrogate optimization selected decisions with higher mechanistic objectives in the evaluated pairs. The direct decisions were not certified global optima. Finite polling, unresolved stationarity, timing exclusions, and the limited single-start design prevented a broader superiority claim for either route. The comparison established an observed time--decision-quality trade-off under the declared priorities.
+
+Practical use follows from these distinctions. Projected surrogates can support screening and generation of candidate operating settings. Structured terms can support examination of fitted response patterns. Treatment limits, installed capacity, material balances, and full per-decision cost still govern whether a candidate is useful. Selected controls require verification when approximation error can affect the intended treatment outcome. The evidence remains conditional on simulated steady states, the adopted component model, and the tested operating domains. It does not establish field performance or transient-control reliability.

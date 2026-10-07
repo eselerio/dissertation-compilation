@@ -1,10 +1,10 @@
 %%
-%% This is file `apacite.bst',
+%% This is file `apacannx.bst',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
-%% apacite.dtx  (with options: `bibstyle')
+%% apacite.dtx  (with options: `xbibstyle,annotated')
 %% 
 %% This is a generated file.
 %% 
@@ -42,15 +42,16 @@
 %% apacite.ins. You may however distribute the apacite package without
 %% the generated files.
 %% 
-%% apacite.bst
-%%   [2013/07/21 v6.03 APA bibliography style]
-%% apacite.bst : reference list according to APA manual
+%% apacannx.bst
+%%   [2013/07/21 v6.03 APA annotated bibl. style with author index info]
+%% apacannx.bst : reference list according to APA manual
+%%                with annotations and author indexing information
 %% Written by Erik Meijer
 
 FUNCTION {identify.apacite.version}
 { % Put identifying string in the .blg file
-  "apacite.bst"
-  " [2013/07/21 v6.03 APA bibliography style]"
+  "apacannx.bst"
+" [2013/07/21 v6.03 APA annotated bibl. style with author index info]"
   * top$
 }
 ENTRY
@@ -143,7 +144,7 @@ FUNCTION {dump.stack}
   stack$
   "---- END STACK {" cite$ * "} ----" * top$
 }
-FUNCTION {make.index} { #0 }
+FUNCTION {make.index} { #1 }
 FUNCTION {unsorted} { #0 }
 MACRO {jan}    {"{\APACmonth{01}}"}
 MACRO {feb}    {"{\APACmonth{02}}"}
@@ -2341,10 +2342,6 @@ FUNCTION {make.name.cite.label}
     { numnames  'format.num.names  := }
     'skip$
   if$
-  numnames #2 >
-    { #1 'format.num.names := }
-    'skip$
-  if$
     %
     % Format first author: with or without initials
     %
@@ -4026,6 +4023,30 @@ FUNCTION {fin.entry}
     { "\vspace{\baselineskip}" write$ newline$ }
     'skip$
   if$
+    %
+    % According to TLC2, pp. 810-811, both annote and annotate fields are
+    % known, so support them both, but do not print them both, in case
+    % someone wants to make a file that is compatible with both the annotate
+    % and annotation styles and thus duplicates the information. Instead, we
+    % give annote priority.
+    %
+  annote empty$
+    {% Try annotate
+      annotate empty$
+        'skip$
+        { % add annotation
+          "\begin{APACrefannotation}" write$ newline$
+          annotate write$ newline$
+          "\end{APACrefannotation}" write$ newline$
+        }
+      if$
+    }
+    { % add annotation
+      "\begin{APACrefannotation}" write$ newline$
+      annote write$ newline$
+      "\end{APACrefannotation}" write$ newline$
+    }
+  if$
 }
 FUNCTION {fin.entry.2}
 { doi.block
@@ -4033,6 +4054,23 @@ FUNCTION {fin.entry.2}
   test
     { "\vspace{\baselineskip}" write$ newline$ }
     'skip$
+  if$
+  annote empty$
+    {% Try annotate
+      annotate empty$
+        'skip$
+        { % add annotation
+          "\begin{APACrefannotation}" write$ newline$
+          annotate write$ newline$
+          "\end{APACrefannotation}" write$ newline$
+        }
+      if$
+    }
+    { % add annotation
+      "\begin{APACrefannotation}" write$ newline$
+      annote write$ newline$
+      "\end{APACrefannotation}" write$ newline$
+    }
   if$
 }
 FUNCTION {periodical}
@@ -5084,4 +5122,4 @@ ITERATE { write.bbl.entry }
 EXECUTE { end.bib }
 
 %%
-%% End of file `apacite.bst'.
+%% End of file `apacannx.bst'.

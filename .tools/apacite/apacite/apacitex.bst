@@ -1,10 +1,10 @@
 %%
-%% This is file `apacite.bst',
+%% This is file `apacitex.bst',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
-%% apacite.dtx  (with options: `bibstyle')
+%% apacite.dtx  (with options: `xbibstyle')
 %% 
 %% This is a generated file.
 %% 
@@ -42,15 +42,16 @@
 %% apacite.ins. You may however distribute the apacite package without
 %% the generated files.
 %% 
-%% apacite.bst
-%%   [2013/07/21 v6.03 APA bibliography style]
-%% apacite.bst : reference list according to APA manual
+%% apacitex.bst
+%%   [2013/07/21 v6.03 APA bibl. style with author index info]
+%% apacitex.bst : reference list according to APA manual
+%%                with author indexing information
 %% Written by Erik Meijer
 
 FUNCTION {identify.apacite.version}
 { % Put identifying string in the .blg file
-  "apacite.bst"
-  " [2013/07/21 v6.03 APA bibliography style]"
+  "apacitex.bst"
+ " [2013/07/21 v6.03 APA bibl. style with author index info]"
   * top$
 }
 ENTRY
@@ -143,7 +144,7 @@ FUNCTION {dump.stack}
   stack$
   "---- END STACK {" cite$ * "} ----" * top$
 }
-FUNCTION {make.index} { #0 }
+FUNCTION {make.index} { #1 }
 FUNCTION {unsorted} { #0 }
 MACRO {jan}    {"{\APACmonth{01}}"}
 MACRO {feb}    {"{\APACmonth{02}}"}
@@ -2339,10 +2340,6 @@ FUNCTION {make.name.cite.label}
     %
   format.num.names  numnames  #1  -  =
     { numnames  'format.num.names  := }
-    'skip$
-  if$
-  numnames #2 >
-    { #1 'format.num.names := }
     'skip$
   if$
     %
@@ -5084,4 +5081,4 @@ ITERATE { write.bbl.entry }
 EXECUTE { end.bib }
 
 %%
-%% End of file `apacite.bst'.
+%% End of file `apacitex.bst'.

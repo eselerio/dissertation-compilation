@@ -89,19 +89,19 @@ Tree averaging can preserve non-negativity when all leaf responses are non-negat
 
 \subsection{Kernel, neighborhood, and latent-variable regression}
 
-Support vector regression fits a function with an error-insensitive region around each training response. For scalar error $e$ and positive insensitive width $\epsilon$, its error contribution is zero when $|e|\leq\epsilon$ and $|e|-\epsilon$ otherwise. This can be recorded as $\max(0,|e|-\epsilon)$. With a hypothetical width of 0.2, an error of 0.1 contributes zero and an error of $-0.5$ contributes 0.3. Predictions within that region incur no corresponding error penalty. A linear kernel gives a globally linear input mapping. A radial kernel allows a nonlinear mapping through similarity to training inputs. Its similarity has the form
+Support vector regression (SVR) fits a function with an error-insensitive region around each training response. For scalar error $e$ and positive insensitive width $\epsilon$, its error contribution is zero when $|e|\leq\epsilon$ and $|e|-\epsilon$ otherwise. This can be recorded as $\max(0,|e|-\epsilon)$. With a hypothetical width of 0.2, an error of 0.1 contributes zero and an error of $-0.5$ contributes 0.3. Predictions within that region incur no corresponding error penalty. A linear kernel gives a globally linear input mapping. A radial kernel allows a nonlinear mapping through similarity to training inputs. Its similarity has the form
 \[
 K(z,z')=\exp\!\left[-\gamma\sum_{\ell=1}^{22}(z_\ell-z'_\ell)^2\right].
 \]
 Here $z$ and $z'$ contain the standardized input coordinates used by this learner. The positive coefficient $\gamma$ controls how quickly similarity decreases with squared distance. Identical inputs give similarity one. Greater distance gives a smaller value. The penalty parameter balances fit and regularity, while the insensitive width sets the tolerated response discrepancy. \citet{SmolaScholkopf2004} explains these mechanisms and the importance of their parameterization. The benchmark fits one regressor per component with one shared setting vector.
 
-The $k$-nearest-neighbor predictor finds training observations close to a new input and combines their 20-component responses. For one component and a selected neighborhood $\mathcal N(x)$, weighted averaging means
+The $k$-nearest-neighbor ($k$-NN) predictor finds training observations close to a new input and combines their 20-component responses. For one component and a selected neighborhood $\mathcal N(x)$, weighted averaging means
 \[
 f_j(x)=\frac{\sum_{i\in\mathcal N(x)}w_i c_{out,ij}}{\sum_{i\in\mathcal N(x)}w_i}.
 \]
 The neighborhood size controls the degree of smoothing. Uniform weights give every selected neighbor equal influence, whereas distance weights give closer observations greater influence. Hypothetical neighbor values 2 and 6 give 4 under equal weights. Weights 3 and 1 instead give $[3(2)+1(6)]/(3+1)=3$. The local behavior analyzed by \citet{Mack1981} explains why input scaling and distance choice matter. An unscaled alkalinity coordinate spanning hundreds of numerical units could dominate a much smaller aeration coordinate even though both influence the reactor. Standardization avoids using native numerical range as an implicit measure of scientific importance.
 
-Partial least squares regression represents the inputs and joint response through latent directions chosen to capture their covariance. One latent score is a weighted input sum $t_h=w_{1h}z_1+\cdots+w_{22h}z_{22}$, where $z$ contains standardized inputs. An output is then a baseline plus a weighted sum of the retained scores. Substituting each score's input sum shows why ordinary partial least squares remains a linear input mapping. It can summarize strongly related input variables with a relatively small number of latent components. These weighted statistical combinations differ from the physical effluent components predicted by the model. The chemometric formulation described by \citet{Wold2001} provides an inspectable linear baseline. Its wastewater use is illustrated by \citet{Woo2009}, who employs a kernel extension for process-variable estimation, and by \citet{Yang2021}, who combines partial least squares with another predictor for adaptive effluent-quality prediction. The benchmark retains ordinary partial least squares with one to six latent components while predicting all 20 physical effluent components. The nonlinear extensions in those applications do not make the present baseline nonlinear.
+Partial least squares (PLS) regression represents the inputs and joint response through latent directions chosen to capture their covariance. One latent score is a weighted input sum $t_h=w_{1h}z_1+\cdots+w_{22h}z_{22}$, where $z$ contains standardized inputs. An output is then a baseline plus a weighted sum of the retained scores. Substituting each score's input sum shows why ordinary partial least squares remains a linear input mapping. It can summarize strongly related input variables with a relatively small number of latent components. These weighted statistical combinations differ from the physical effluent components predicted by the model. The chemometric formulation described by \citet{Wold2001} provides an inspectable linear baseline. Its wastewater use is illustrated by \citet{Woo2009}, who employs a kernel extension for process-variable estimation, and by \citet{Yang2021}, who combines partial least squares with another predictor for adaptive effluent-quality prediction. The benchmark retains ordinary partial least squares with one to six latent components while predicting all 20 physical effluent components. The nonlinear extensions in those applications do not make the present baseline nonlinear.
 
 \subsection{Shared sparse coefficient models}
 
@@ -124,7 +124,7 @@ These two predictors and partial least squares are grouped as structurally inspe
 
 \subsection{Neural predictors}
 
-The multilayer perceptron uses three fully connected hidden layers with 128, 64, and 32 units and one joint 20-output layer. One unit first forms a weighted sum, such as $b+w_1z_1+w_2z_2$, and then applies an activation. A rectified linear activation returns the larger of zero and that sum. For hypothetical values $b=0.2$, $w_1=0.5$, $w_2=-1$, $z_1=2$, and $z_2=0.3$, the sum is $0.2+0.5(2)-0.3=0.9$ and the activated value is 0.9. If the sum were $-0.9$, the activated value would be zero. Each hidden layer applies such operations to the values supplied by the preceding layer. Backpropagation updates the weights according to the prediction loss \citep{Rumelhart1986}. The approximation result of \citet{Hornik1989} motivates the expressive capacity of feedforward networks. It does not guarantee that this finite architecture learns the reactor response from a given sample size. The topology considerations discussed by \citet{Curteanu2011} likewise motivate explicit architectural and training limits rather than an unspecified neural comparator.
+The multilayer perceptron (MLP) uses three fully connected hidden layers with 128, 64, and 32 units and one joint 20-output layer. One unit first forms a weighted sum, such as $b+w_1z_1+w_2z_2$, and then applies an activation. A rectified linear activation returns the larger of zero and that sum. For hypothetical values $b=0.2$, $w_1=0.5$, $w_2=-1$, $z_1=2$, and $z_2=0.3$, the sum is $0.2+0.5(2)-0.3=0.9$ and the activated value is 0.9. If the sum were $-0.9$, the activated value would be zero. Each hidden layer applies such operations to the values supplied by the preceding layer. Backpropagation updates the weights according to the prediction loss \citep{Rumelhart1986}. The approximation result of \citet{Hornik1989} motivates the expressive capacity of feedforward networks. It does not guarantee that this finite architecture learns the reactor response from a given sample size. The topology considerations discussed by \citet{Curteanu2011} likewise motivate explicit architectural and training limits rather than an unspecified neural comparator.
 
 TabNet applies sequential attentive feature selection. At a decision step, a feature mask multiplies each input coordinate by its selected attention weight. If two hypothetical standardized inputs are $(2,1)$ and their mask weights are $(0.8,0.2)$, the masked inputs are $(1.6,0.2)$. A different step can use different weights and therefore examine a different input emphasis. The selected features then contribute to a joint output layer. \citet{ArikPfister2021} develops this approach for tabular learning. The attention masks provide information about the model's use of inputs, but they do not impose mass conservation or make the component outputs causal explanations. TabNet remains a neural comparator even though its internal masks can be inspected.
 
@@ -585,3 +585,268 @@ Inference uses a deterministic batch of 512 rows constructed by cycling through 
 Projection timing includes positive-target construction, relative weighting, the weighted solve, mass conservation and non-negativity checks, and any projection interpolation for non-negativity. Complete projected inference includes both raw prediction and projection. All physical operators, returned component states, preprocessing, and metrics use double precision. TabNet's internal tensors use single precision before its predictions return to the common physical-coordinate calculations. Pseudorandom generation and stochastic fitting use streams derived from seed 42. Deterministic coordinate-descent settings are retained for the multi-task models.
 
 These timing measures describe the declared batch protocol and computational environment. Dividing a batch duration by its row count does not establish the latency of a single isolated query. Likewise, low projection latency would not establish field readiness. A useful predictor must be assessed through its component accuracy, physical diagnostics, domain of use, preparation cost, and the behavior of downstream calculations. The post prediction projection provides a defined admissibility layer within that assessment.
+
+\section{Results}
+\label{sec:projection_results}
+
+\subsection{Mechanistic reference-state checks}
+
+The learning domain contained 10,000 accepted steady states. Each exterior design contained 600 accepted states. Every attempted candidate passed the specified steady-state balance check, and every retained concentration was strictly positive. The realized exterior designs contained 70\% one-input excursions and 30\% two-input excursions. Table~\ref{tab:projection_dataset_results} reports the invariant residual separately from solver acceptance.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Accepted mechanistic reference states and their maximum invariant residuals. The residual uses the fixed invariant-coordinate convention and is not the component-balance residual used for solver acceptance.}
+\label{tab:projection_dataset_results}
+\begin{tabular}{lrrr}
+\toprule
+Assessment domain & Attempted & Accepted & Maximum $\|Ac_{out}-Ac_{in}\|_2$\\
+\midrule
+Learning domain & 10,000 & 10,000 & $4.90\times10^{-11}$\\
+Mild exterior inputs & 600 & 600 & $5.67\times10^{-11}$\\
+Severe exterior inputs & 600 & 600 & $2.91\times10^{-10}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The largest invariant residual in the severe design exceeded the $10^{-10}$ tolerance imposed on projected predictions. Acceptance of a mechanistic reference state therefore did not mean that it passed this tighter projection check. The mechanistic acceptance rule used the maximum component-balance residual of $10^{-9}$ in the native component-unit-per-day coordinates. These two residuals have different definitions. The full-precision physical operators satisfied $\max_{h,p}|(A\nu^\top)_{hp}|=4.25\times10^{-16}$. The small invariant residuals were consistent with numerical rather than structural departures from the specified balances.
+
+\subsection{Prediction within the learning domain}
+
+At $N=10{,}000$, the multilayer perceptron had the lowest observed raw nRMSE of $0.150\pm0.012$. CatBoost followed at $0.230\pm0.006$, then LightGBM, XGBoost, and TabNet. Table~\ref{tab:projection_prediction_results} gives the paired results for all thirteen predictors. These are descriptive comparisons across the same five outer folds. They do not establish a statistically significant ranking.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Component prediction error at $N=10{,}000$. Raw and projected nRMSE values are five-fold means with sample standard deviations. The paired difference is projected minus raw and is calculated before rounding.}
+\label{tab:projection_prediction_results}
+\begin{tabular}{p{4.7cm}rrr}
+\toprule
+Surrogate & Raw nRMSE & Projected nRMSE & Difference\\
+\midrule
+XGBoost & $0.254\pm0.006$ & $0.255\pm0.006$ & $+0.0006$\\
+LightGBM & $0.249\pm0.008$ & $0.250\pm0.007$ & $+0.0007$\\
+CatBoost & $0.230\pm0.006$ & $0.229\pm0.006$ & $-0.0013$\\
+AdaBoost & $0.525\pm0.004$ & $0.581\pm0.028$ & $+0.0561$\\
+Random Forest & $0.718\pm0.005$ & $0.813\pm0.020$ & $+0.0947$\\
+Extra Trees & $0.563\pm0.005$ & $0.608\pm0.025$ & $+0.0445$\\
+Support vector regression & $0.364\pm0.011$ & $0.356\pm0.011$ & $-0.0082$\\
+$k$-nearest neighbors & $0.607\pm0.007$ & $0.621\pm0.021$ & $+0.0142$\\
+Partial least squares & $0.721\pm0.006$ & $0.745\pm0.031$ & $+0.0239$\\
+Multi-task Elastic Net & $0.536\pm0.008$ & $0.516\pm0.008$ & $-0.0200$\\
+Multi-task Lasso & $0.536\pm0.008$ & $0.516\pm0.008$ & $-0.0200$\\
+Multilayer perceptron & $0.150\pm0.012$ & $0.149\pm0.012$ & $-0.0016$\\
+TabNet & $0.272\pm0.027$ & $0.275\pm0.024$ & $+0.0032$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Projection reduced the mean nRMSE for five predictors and increased it for eight. The largest reductions were approximately 0.020 for each multi-task linear model. Random Forest had the largest increase of 0.095. The multilayer perceptron retained the lowest projected error of $0.149\pm0.012$. Its macro-average $R^2$ increased from 0.977 to 0.978. Random Forest's macro-average $R^2$ decreased from 0.484 to 0.332. However, its nMAE decreased from 0.497 to 0.467. The increase in its squared-error score therefore did not imply an increase in every measure of average error.
+
+Figure~\ref{fig:projection_accuracy_results} shows the three component-level measures together. The relative positions of raw and projected bars differ across measures. This is most apparent for the randomized tree ensembles and partial least squares.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q01_prediction_accuracy.png}
+\caption{Raw and projected component accuracy at $N=10{,}000$. Panels show nRMSE, nMAE, and the mean component $R^2$. Error bars show one sample standard deviation across five outer folds.}
+\label{fig:projection_accuracy_results}
+\end{figure}
+
+\subsection{Response to the amount of training data}
+
+Every predictor had lower raw nRMSE at $N=10{,}000$ than at $N=500$. Figure~\ref{fig:projection_learning_results} shows the complete trajectories. XGBoost and LightGBM had the lowest observed mean raw errors at $N=500$, with values of 0.435 and 0.439. The multilayer perceptron improved from 0.524 to 0.150. TabNet improved from 0.938 to 0.272 and showed the largest endpoint reduction among the predictors.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q02_learning_curves.png}
+\caption{Raw component prediction error across the eleven nested design sizes. Separate panels group the predictors by their response representation. Lines show the five-fold mean nRMSE. Shaded regions show one sample standard deviation across folds.}
+\label{fig:projection_learning_results}
+\end{figure}
+
+The learning curves did not support one model choice for every data budget. The boosted trees performed well at the smallest design size. The multilayer perceptron attained the lowest error at the largest size. TabNet still improved from 0.298 at $N=9050$ to 0.272 at $N=10{,}000$. Its final reduction was approximately 0.0266. This result did not demonstrate that its error had reached a plateau.
+
+The effect of projection also varied with design size. Both multi-task linear models benefited at all eleven sizes. Support vector regression benefited at every size from $N=5250$ onward. The projection effect for the multilayer perceptron and TabNet changed sign across the size sequence. These trajectories were obtained with the prescribed fold-specific settings selected at the largest size. They did not measure the best attainable error after separate tuning at every size.
+
+Figure~\ref{fig:projection_size_effect_results} separates this adjustment effect from the raw learning curves. A negative cell indicates lower error after projection. The persistent reductions for the multi-task models contrast with the mixed effects for the more flexible predictors.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q03_projection_effect.png}
+\caption{Projected minus raw mean component nRMSE for every predictor and design size. Negative values indicate improvement. Both prediction types use the same assessment folds and training-defined component scales.}
+\label{fig:projection_size_effect_results}
+\end{figure}
+
+\subsection{Physical enforcement and component redistribution}
+
+Every raw assessment state failed the declared mass conservation tolerance at every design size. At $N=10{,}000$, AdaBoost, Random Forest, Extra Trees, and the nearest-neighbor predictor nevertheless returned only non-negative raw concentrations. The other predictors had row-level non-negativity violation rates from 39.0\% to 76.8\%. Table~\ref{tab:projection_constraint_results} reports their rates and the size of the subsequent adjustment.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Physical diagnostics at $N=10{,}000$. Entries are five-fold means. Every raw mass conservation violation rate was 100\%. Every projected mass conservation and non-negativity violation rate was zero.}
+\label{tab:projection_constraint_results}
+\begin{tabular}{p{4.2cm}rrr}
+\toprule
+Surrogate & \begin{tabular}{r}Raw negative\\states (\%)\end{tabular} & \begin{tabular}{r}Interpolation\\activated (\%)\end{tabular} & Mean $d_c^{\mathrm{std}}$\\
+\midrule
+XGBoost & 39.72 & 0.00 & 0.300\\
+LightGBM & 38.95 & 0.00 & 0.301\\
+CatBoost & 59.06 & 0.00 & 0.242\\
+AdaBoost & 0.00 & 0.30 & 0.901\\
+Random Forest & 0.00 & 1.42 & 2.002\\
+Extra Trees & 0.00 & 0.88 & 1.528\\
+Support vector regression & 76.78 & 0.01 & 0.363\\
+$k$-nearest neighbors & 0.00 & 0.25 & 1.192\\
+Partial least squares & 54.31 & 0.93 & 1.808\\
+Multi-task Elastic Net & 71.06 & 0.00 & 0.482\\
+Multi-task Lasso & 71.05 & 0.00 & 0.482\\
+Multilayer perceptron & 58.58 & 0.00 & 0.189\\
+TabNet & 60.48 & 0.04 & 0.545\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Projection produced no mass conservation or non-negativity failures in the 750,750 prediction instances evaluated across all thirteen predictors and eleven design sizes. This count includes repeated assessment of cases across nested sizes. It does not represent 750,750 independent reactor simulations. The maximum projected invariant residual was $2.06\times10^{-13}$. Interpolation for non-negativity was activated in 2489 instances, or 0.332\%. Random Forest, partial least squares, and Extra Trees accounted for 904, 574, and 566 activations, respectively. Together they accounted for 82.1\% of the activations.
+
+Figure~\ref{fig:projection_physical_results} compares negative raw states with adjustment size and interpolation use. These are separate properties. Random Forest had no negative raw states but required the largest mean displacement and the most frequent interpolation at the largest design size.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q04_physical_compliance.png}
+\caption{Physical diagnostics at $N=10{,}000$. Panels show the fraction of raw states with negative components, mean standardized displacement, and interpolation activation. Values are five-fold means. All raw states failed the mass conservation tolerance, while every projected state passed both imposed physical checks.}
+\label{fig:projection_physical_results}
+\end{figure}
+
+At the largest design size, projection reduced component nRMSE in 188 of the 260 predictor--component comparisons. Both multi-task linear models improved eighteen of twenty components. The multilayer perceptron improved seventeen. CatBoost, partial least squares, and support vector regression each improved sixteen. In contrast, the heterotrophic biomass component $X_H$ had higher error for every predictor. Random Forest's fermentable-substrate component $S_F$ increased from nRMSE 0.887 to 1.993. Its 142 interpolated predictions accounted for that component's error increase, while the other 9858 predictions retained essentially the same squared error.
+
+Figure~\ref{fig:projection_component_results} locates the component-level changes. The larger positive changes in a few components explain why an aggregate squared-error measure can increase even when most component scores improve.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q05_component_error_change.png}
+\caption{Projected minus raw component nRMSE at $N=10{,}000$. Each cell is the difference between five-fold mean scores for one predictor and one component. Negative values indicate improvement. The same color limits apply to all cells.}
+\label{fig:projection_component_results}
+\end{figure}
+
+The composite results also differed by quantity. Every predictor had lower TN and TP normalized root error after projection. Every predictor had higher COD and TSS normalized root error. A reduction in component error for most outputs therefore did not guarantee improvement in every water-quality summary.
+
+Figure~\ref{fig:projection_composite_results} presents the corresponding root errors in physical units. TN and TP improved while COD and TSS worsened for every predictor. The component projection thus changed the accuracy of different reporting quantities in different directions.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q06_composite_error_change.png}
+\caption{Raw and projected root mean squared errors for COD, TN, TP, and TSS at $N=10{,}000$. Bars show means of five fold-specific root errors. Each panel uses the physical unit of its own reported quantity. These errors are distinct from the standardized component nRMSE.}
+\label{fig:projection_composite_results}
+\end{figure}
+
+\subsection{Prediction beyond the learning domain}
+
+Both raw and projected error increased from mild to severe exterior inputs for every predictor. The multilayer perceptron had the lowest error in both designs. Its projected nRMSE was 0.251 for mild inputs and 0.521 for severe inputs. TabNet followed at 0.333 and 0.547. Table~\ref{tab:projection_exterior_results} reports the full comparison under the common full-domain normalization.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Component nRMSE beyond the learning domain. Each entry summarizes 600 accepted mechanistic states from one full-domain refit. These results have no outer-fold standard deviation.}
+\label{tab:projection_exterior_results}
+\begin{tabular}{p{4.5cm}rrrr}
+\toprule
+& \multicolumn{2}{c}{Mild exterior inputs} & \multicolumn{2}{c}{Severe exterior inputs}\\
+Surrogate & Raw & Projected & Raw & Projected\\
+\midrule
+XGBoost & 0.424 & 0.420 & 0.861 & 0.853\\
+LightGBM & 0.419 & 0.413 & 0.848 & 0.842\\
+CatBoost & 0.393 & 0.387 & 0.836 & 0.828\\
+AdaBoost & 0.692 & 0.711 & 1.036 & 1.139\\
+Random Forest & 0.908 & 0.996 & 1.242 & 1.489\\
+Extra Trees & 0.717 & 0.679 & 1.084 & 1.222\\
+Support vector regression & 0.555 & 0.538 & 0.989 & 0.948\\
+$k$-nearest neighbors & 0.760 & 0.732 & 1.113 & 1.147\\
+Partial least squares & 0.908 & 0.841 & 1.267 & 1.190\\
+Multi-task Elastic Net & 0.750 & 0.688 & 1.146 & 1.044\\
+Multi-task Lasso & 0.751 & 0.688 & 1.146 & 1.044\\
+Multilayer perceptron & 0.255 & 0.251 & 0.531 & 0.521\\
+TabNet & 0.336 & 0.333 & 0.563 & 0.547\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Projection reduced aggregate nRMSE in eleven of thirteen mild comparisons and nine of thirteen severe comparisons. AdaBoost and Random Forest worsened in both designs. Extra Trees and the nearest-neighbor predictor also worsened in the severe design. Component error decreased in 192 of 260 mild comparisons and 193 of 260 severe comparisons. Every predictor improved a majority of its component scores in each exterior design.
+
+Figure~\ref{fig:projection_exterior_results} uses a common horizontal scale for the two severity levels. The larger severe-domain errors remain visible even for the most accurate predictors. Projection did not remove this loss of predictive accuracy.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q07_exterior_accuracy.png}
+\caption{Raw and projected component nRMSE for mild and severe exterior inputs. Each severity includes 600 independently simulated reference states. Both panels use full-domain training scales and a common error-axis range. No fold uncertainty is assigned to these single-refit results.}
+\label{fig:projection_exterior_results}
+\end{figure}
+
+All 15,600 exterior projected prediction instances passed the imposed physical checks. Their maximum invariant residual was $1.72\times10^{-13}$. Interpolation was activated in 68 instances, or 0.436\%. Combining the interior and exterior assessments gave 766,350 projected prediction instances with no failures of the declared mass conservation and non-negativity checks. The increase in severe-domain error occurred despite this complete constraint compliance.
+
+\subsection{Fitting and prediction costs}
+
+Table~\ref{tab:projection_timing_results} separates model preparation from repeated prediction. At the largest design size, mean fitting time ranged from approximately 0.024 s for Multi-task Elastic Net to 56.02 s for support vector regression. Mean search time ranged from 14.21 s for Multi-task Lasso to 11,082.77 s for support vector regression. These preparation costs were incurred before repeated use of the fitted predictor.
+
+Figure~\ref{fig:projection_cost_results} shows these differences on logarithmic axes. Projection dominated the inference cost of the fastest linear predictors. The preparation and prediction panels nevertheless describe different workloads and cannot be compared as one common latency.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q08_computational_cost.png}
+\caption{Model preparation and repeated prediction costs at $N=10{,}000$. The left panel separates search and fitting in seconds. The right panel separates raw inference, projection alone, and complete prediction in milliseconds per sample under the fixed batch protocol. Both panels show five-fold means on logarithmic axes. Complete prediction was timed separately rather than calculated by adding the other timings.}
+\label{fig:projection_cost_results}
+\end{figure}
+
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Five-fold mean computational costs at $N=10{,}000$. Search and fitting are in seconds. Prediction costs are in milliseconds per sample under the fixed 512-row batch protocol. Complete prediction includes raw inference and projection.}
+\label{tab:projection_timing_results}
+\begin{tabular}{p{3.7cm}rrrrr}
+\toprule
+Surrogate & Search & Fitting & Raw & Projection & Complete\\
+\midrule
+XGBoost & 3810.95 & 12.46 & 0.0597 & 0.0976 & 0.1649\\
+LightGBM & 1126.04 & 3.96 & 0.0971 & 0.0840 & 0.1974\\
+CatBoost & 8165.42 & 33.30 & 0.0677 & 0.1235 & 0.1997\\
+AdaBoost & 5894.14 & 18.55 & 1.0310 & 0.0901 & 1.1101\\
+Random Forest & 1452.33 & 6.89 & 0.1376 & 0.0681 & 0.2117\\
+Extra Trees & 705.21 & 2.83 & 0.1461 & 0.1053 & 0.2484\\
+Support vector regression & 11082.77 & 56.02 & 1.8736 & 0.0922 & 2.0008\\
+$k$-nearest neighbors & 99.34 & 0.03 & 0.1574 & 0.1401 & 0.3148\\
+Partial least squares & 48.75 & 0.17 & 0.0010 & 0.1442 & 0.1515\\
+Multi-task Elastic Net & 15.59 & 0.02 & 0.0011 & 0.1406 & 0.1493\\
+Multi-task Lasso & 14.21 & 0.03 & 0.0010 & 0.1387 & 0.1447\\
+Multilayer perceptron & 5016.24 & 20.46 & 0.0047 & 0.1151 & 0.1071\\
+TabNet & 5971.04 & 24.73 & 0.0235 & 0.1398 & 0.1170\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The multilayer perceptron had the lowest observed complete batch-normalized prediction cost of 0.1071 ms per sample. Support vector regression had the largest at 2.0008 ms. Projection alone ranged from 0.0681 to 0.1442 ms per sample. It dominated the cost of the fastest raw linear and neural predictions. The raw, projection-only, and complete paths were timed separately. Their reported medians and fold means are not additive. In particular, the complete multilayer-perceptron time was smaller than its separately measured projection-only time. This reflects the timing procedure and should not be interpreted as a negative inference cost.
+
+\section{Discussion}
+\label{sec:projection_discussion}
+
+\subsection{Accuracy does not establish physical admissibility}
+
+The paired assessment gave a direct counterexample to using low error as a physical acceptance rule. The multilayer perceptron had the lowest raw component error at the largest size, yet every raw state failed the mass conservation tolerance and 58.58\% contained a negative component beyond tolerance. The positive outputs of the averaging-based predictors also failed mass conservation. Their responses combined cases with different influent-specific balance targets. Positivity of the contributing states did not preserve the target of a new case.
+
+This result supports the distinction between learning a response and enforcing a constraint discussed by \citet{Kashinath2021} and \citet{Hansen2024}. The projection of \citet{KircherVotsmeier2025} addressed the second task across all thirteen predictor types. Its observed constraint compliance did not depend on the predictor having the lowest statistical error. A final physical acceptance check is therefore justified when a subsequent calculation requires the full non-negative component state and the adopted invariant balances.
+
+Violation frequency and magnitude also require separate interpretation. A state was counted as failing when any one of twenty components crossed the tolerance. For CatBoost, raw non-negativity incidence increased from 12.8\% at $N=500$ to 59.1\% at $N=10{,}000$, even as aggregate error decreased. This was not evidence that its overall fit deteriorated. The negative predictions were concentrated in small substrate and nitrogen pools. A more accurate aggregate response can still contain small departures at a zero boundary.
+
+\subsection{Why enforcement can increase prediction error}
+
+The projection minimized relative movement from a positive provisional target. The accuracy score measured error relative to training variability. These were different objectives. The method also shortened one complete direction when a candidate crossed a concentration boundary. Neither operation was designed to minimize the assessed nRMSE.
+
+The $S_F$ result illustrates the effect of shared interpolation. Its column in the invariant operator was numerically zero. The mass conservation solve consequently left it essentially unchanged before interpolation. When another component required a shorter direction, $S_F$ was also moved toward its much larger influent value. A safeguard needed by one component could therefore worsen an otherwise acceptable prediction of another. Random Forest's 142 affected full-size states provide a concrete example of this mechanism.
+
+The $X_H$ losses had a different explanation. Its relatively large concentrations made an absolute adjustment less costly under inverse-concentration weighting. Such an adjustment could satisfy the invariants while moving away from the mechanistic biomass target. The opposing changes in TN, TP, COD, and TSS further showed that mass conservation did not determine every reported composite. Near-alignment of the TP reporting vector with the phosphorus invariant explained its very small projected error. COD and TSS remained sensitive to the redistribution of organic and particulate components.
+
+For these reasons, the observed improvements in most component scores do not support a claim of universal accuracy improvement. Both multi-task linear models benefited consistently, but the largest aggregate losses occurred in predictors with larger displacements and more interpolation activations. Paired error, displacement, and activation summaries identified this trade-off more clearly than a feasible fraction alone.
+
+\subsection{Data support, extrapolation, and practical use}
+
+The strong small-data performance of boosted trees is consistent with the tabular comparisons discussed by \citet{Borisov2024} and \citet{ShwartzZiv2022}. The later advantage of the multilayer perceptron applies to the declared simulation domain, architecture, and search budget. It does not establish that a neural predictor is preferable for every activated sludge dataset. The TabNet trajectory likewise supports a conclusion about its response to the available training data rather than its ultimate achievable error. Learning-curve interpretation requires the full trajectory and its validation design \citep{VieringLoog2023}.
+
+Exterior inputs increased error even when every projected state remained feasible. This distinction is consistent with the domain-shift limitations described by \citet{Shen2023} and \citet{Valente2025}. Invariant compliance could prevent an inadmissible state from entering a later calculation. It could not recover an unlearned kinetic response or establish the correct nitrogen distribution beyond the training bounds.
+
+The timing results supported rapid repeated evaluation after preparation. They also showed that a very fast raw predictor could spend most of its complete prediction time on physical enforcement. A deployment choice must therefore compare complete prediction cost rather than raw inference alone. The batch-normalized measurements do not establish isolated-query latency or a speedup over a mechanistic solver that was not timed under the same protocol.
+
+The evidence establishes reliable enforcement of the specified mass conservation and non-negativity conditions for the evaluated simulated steady states. It also establishes that the statistical cost of enforcement depends on the predictor, component, and assessment domain. It does not establish kinetic feasibility, calibrated uncertainty, transient validity, or agreement with plant measurements. Those properties require separate assessment beyond the imposed invariant and sign checks.

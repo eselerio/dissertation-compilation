@@ -891,14 +891,16 @@ Multilayer perceptron & Hidden widths \((128,64,32)\), logistic activation, adap
 
 The scored ICSOR output is the final checked component state. For comparator accuracy assessment, the raw component prediction receives the same affine projection for mass conservation in Equation~\eqref{eq:icsor_affine_solution}. The composition map is then applied to the projected state. This comparison describes the accuracy of a checked structured prediction and comparator predictions after affine projection. The comparator projection imposes neither component non-negativity nor the weighted linear projection.
 
-Physical diagnostics use the direct raw states of the comparators. For ICSOR, diagnostics distinguish the raw coupled state, affine state, and final deployed state. This stage separation prevents affine projection for mass conservation used during scoring from being attributed to the learner. At each stage, the violation frequency for diagnostic \(v\) is
+The numerical assessment used an operator \(A_{num}\) obtained by rounding the null-space basis, setting negligible coefficients to zero, and dividing each row by its first nonzero coefficient. The fitting, affine projection, and constrained deployment calculations used this operator in place of the ideal operator \(A\). Rounding and thresholding can alter the exact null-space relation. The reported violation rates therefore establish compliance with the adopted numerical balances. They do not establish the same residual tolerance for the unrounded stoichiometric operator. The exact physical interpretation of the theoretical constraints requires an operator that satisfies the stated null-space relation.
+
+Physical diagnostics use the direct raw states of the comparators. For ICSOR, diagnostics distinguish the raw coupled state, affine state, and final deployed state. This stage separation prevents affine projection for mass conservation used during scoring from being attributed to the learner. The empirical balance diagnostic is \(v_{mc}^{num}(c)=\|A_{num}(c-c_{in})\|_2\). The non-negativity diagnostic remains \(v_{nn}\) in Equation~\eqref{eq:icsor_deployment_diagnostics}. At each stage, the violation frequency for diagnostic \(v\) is
 \begin{equation}
 \equationname{Percentage frequency of a physical-constraint violation}
 \label{eq:icsor_violation_frequency}
 f_v=\frac{100}{n}\sum_{i=1}^{n}
 \mathbf{1}\{v(c_i)>10^{-10}\},
 \end{equation}
-where \(n\) is the number of assessed observations. The diagnostics \(v_{mc}\) and \(v_{nn}\) are defined in Equation~\eqref{eq:icsor_deployment_diagnostics}. Frequencies, residual magnitudes, adjustment distances, and deployment-branch use describe different aspects of the same prediction procedure. None is treated as a substitute for predictive error.
+where \(n\) is the number of assessed observations and \(v\) is either \(v_{mc}^{num}\) or \(v_{nn}\). Frequencies, residual magnitudes, adjustment distances, and deployment-branch use describe different aspects of the same prediction procedure. None is treated as a substitute for predictive error.
 
 \subsection{Composite error measures}
 
@@ -999,10 +1001,259 @@ For a hypothetical predictor with training error 0.5 and held-out error 0.8, the
 
 \section{Interpretability assessment and modeling limits}
 
-The interpretability assessment examines the six driver blocks, the coupling matrix, and the corresponding component and composite raw-regression maps. It evaluates whether important terms remain stable across repeated training partitions and whether the associated response patterns agree with the declared process domain. Stability assessment is particularly relevant because an explicit polynomial library does not remove identifiability problems. \citet{Brunton2016} connect interpretable nonlinear terms to the problem of recovering structure from data, while \citet{Machado2014} show how operational and influent uncertainty complicate parameter identification in activated sludge models.
+The interpretability assessment examines the six driver blocks, the coupling matrix, and the corresponding component and composite raw-regression maps. It compares fitted response patterns with the declared process domain. The reported coefficient summaries describe one fit and do not quantify coefficient stability across repeated training partitions. Stability assessment remains important because an explicit polynomial library does not remove identifiability problems. \citet{Brunton2016} connect interpretable nonlinear terms to the problem of recovering structure from data, while \citet{Machado2014} show how operational and influent uncertainty complicate parameter identification in activated sludge models.
 
 The driver and coupling parameters can trade off in the relation \(Rc=B\phi\). Different joint stationary solutions can therefore predict similar component states with different coefficients. Symmetry removes the redundancy of ordered self-quadratic pairs. It does not establish uniqueness of \(B\) and \(\Gamma\) together. Coefficient signs and magnitudes are interpreted as properties of a specified fitted model. Repeated stability checks and response comparisons provide stronger evidence than an isolated coefficient value.
 
 Prediction error and physical diagnostics are assessed separately for the raw regression, the affine state, and the final deployed state. The comparison distinguishes what the regression learns from what the projection enforces. The magnitude of the projection is also examined because a feasible deployed state can lie far from its raw prediction. Computational assessment records fitting effort and deployment effort separately. These measures establish the cost of the structured regression and the cost of enforcing its physical conditions without assuming an accuracy benefit.
 
 The scope remains steady-state component prediction within the stated input domain and control volume. The projected state preserves the adopted invariants and non-negativity when the optimization and numerical checks succeed. It does not inherit the kinetic equations, dynamic behavior, or thermodynamic conditions of the full process model. The raw regression supplies an inspectable approximation. The deployment constraints supply defined material-accounting conditions. Their combined use is evaluated as an engineering surrogate under these limits.
+
+\section{Results}
+\label{sec:icsor_results}
+
+\subsection{Accuracy on the fixed held-out partition}
+
+Table~\ref{tab:icsor_fixed_results} reports the four-composite scores on the 2000 held-out cases. ICSOR used its final checked state. The other predictors used their affine-aligned states for accuracy scoring. The multilayer perceptron had the lowest pooled root mean squared error of 4.38. LightGBM followed at 5.30. Support vector regression and ICSOR were closely spaced at 5.97 and 5.98. These scores pool the native composite coordinates under Equation~\eqref{eq:icsor_aggregate_root_error}. They are not dimensionless component errors.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Fixed-split held-out composite performance. ICSOR is scored after checked deployment. Comparators are scored after affine alignment without a non-negativity constraint. Relative absolute error is a ratio rather than a percentage.}
+\label{tab:icsor_fixed_results}
+\begin{tabular}{p{4.7cm}rrrr}
+\toprule
+Predictor & $E_{root}$ & $E_1$ & Mean $R^2$ & $E_{rel}$\\
+\midrule
+Multilayer perceptron & 4.38 & 2.55 & 0.9915 & 0.0123\\
+LightGBM & 5.30 & 3.21 & 0.9806 & 0.0203\\
+Support vector regression & 5.97 & 3.49 & 0.9713 & 0.0244\\
+ICSOR & 5.98 & 3.70 & 0.9700 & 0.0256\\
+XGBoost & 6.12 & 3.81 & 0.9733 & 0.0244\\
+CatBoost & 6.45 & 4.07 & 0.9727 & 0.0250\\
+AdaBoost & 21.27 & 13.15 & 0.8643 & 0.0653\\
+$k$-nearest neighbors & 23.61 & 13.87 & 0.8535 & 0.0557\\
+Partial least squares & 28.24 & 17.05 & 0.7808 & 0.0681\\
+Random Forest & 29.00 & 16.93 & 0.7934 & 0.0632\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+ICSOR's pooled root error was 36.5\% higher than the multilayer perceptron's and 12.8\% higher than LightGBM's. It remained below XGBoost and CatBoost on this measure. The mean absolute relative error of 0.0256 corresponded to 2.56\%. The fixed-split comparison therefore showed an accuracy trade-off rather than the lowest reported-composite error for the structured model.
+
+Figure~\ref{fig:icsor_fixed_results} compares root error, absolute error, and mean composite $R^2$. ICSOR remained within the leading group, but its explicit structure did not give the lowest error on this partition.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch5/q01_fixed_split_accuracy.png}
+\caption{Fixed-split composite accuracy on 2000 held-out cases. Teal bars identify ICSOR after checked deployment. Gray bars identify comparators after affine alignment. Pooled root and absolute errors retain the native composite-coordinate convention. The right panel averages four composite-specific $R^2$ values.}
+\label{fig:icsor_fixed_results}
+\end{figure}
+
+Table~\ref{tab:icsor_target_results} separates the composite contributions. ICSOR's COD root error of 7.77 was 0.18 above LightGBM's and below that of the other non-neural predictors. Its TN and TSS errors were 3.55 and 8.36. The multilayer perceptron had the lowest COD, TN, and TSS errors. Every method had a TP error of 0.0361 after the specified alignment and reporting operations. TP therefore did not distinguish the predictors in this assessment.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Fixed-split root mean squared error for each composite. COD, TN, TP, and TSS use g COD m$^{-3}$, g N m$^{-3}$, g P m$^{-3}$, and g TSS m$^{-3}$, respectively.}
+\label{tab:icsor_target_results}
+\begin{tabular}{p{4.7cm}rrrr}
+\toprule
+Predictor & COD & TN & TP & TSS\\
+\midrule
+Multilayer perceptron & 6.48 & 1.58 & 0.0361 & 5.66\\
+LightGBM & 7.59 & 2.77 & 0.0361 & 6.85\\
+Support vector regression & 8.87 & 3.50 & 0.0361 & 7.20\\
+ICSOR & 7.77 & 3.55 & 0.0361 & 8.36\\
+XGBoost & 8.78 & 3.27 & 0.0361 & 7.88\\
+CatBoost & 9.13 & 3.23 & 0.0361 & 8.53\\
+AdaBoost & 38.30 & 5.58 & 0.0361 & 17.68\\
+$k$-nearest neighbors & 38.24 & 4.23 & 0.0361 & 27.37\\
+Partial least squares & 43.22 & 5.09 & 0.0361 & 36.00\\
+Random Forest & 45.87 & 4.00 & 0.0361 & 35.26\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:icsor_composite_results} shows why the aggregate comparison needs separate target scores. COD and TSS contributed much larger numerical errors than TP. Their different constituent units prevent the pooled score from being interpreted as one common material concentration.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch5/q02_composite_accuracy.png}
+\caption{Fixed-split root mean squared error for COD, TN, TP, and TSS. Teal identifies ICSOR and gray identifies the comparators. Each panel has its own constituent unit and horizontal scale. All methods have the same reported TP error under the specified alignment and reporting procedure.}
+\label{fig:icsor_composite_results}
+\end{figure}
+
+\subsection{Sample efficiency and generalization}
+
+ICSOR had the lowest mean held-out root error at the smallest design size of 500 cases. Its value was 10.79, compared with 11.26 for XGBoost and 11.45 for LightGBM. The multilayer perceptron ranked fifth at 13.26. At the largest design size, the repeated-split means were 4.62 for the multilayer perceptron, 5.27 for LightGBM, 5.84 for support vector regression, and 5.94 for ICSOR. The ordering therefore changed as more training cases became available.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Repeated-split composite assessment over eleven design sizes and ten runs per size. Final error and the held-out minus training gap refer to $n=10{,}000$. The learning-curve area is normalized by the design-size interval, not by target variability. Lower values indicate better performance, while a smaller gap only indicates less separation between training and held-out error.}
+\label{tab:icsor_scaling_results}
+\begin{tabular}{p{4.3cm}rrrr}
+\toprule
+Predictor & \begin{tabular}{r}Final\\$E_{root}$\end{tabular} & \begin{tabular}{r}Normalized\\curve area\end{tabular} & Mean rank & $\Delta E_{root}$\\
+\midrule
+Multilayer perceptron & 4.62 & 6.75 & 2.5 & 0.65\\
+LightGBM & 5.27 & 6.35 & 2.2 & 1.99\\
+Support vector regression & 5.84 & 6.90 & 4.0 & 1.19\\
+ICSOR & 5.94 & 6.33 & 4.3 & 0.22\\
+XGBoost & 6.10 & 7.01 & 4.3 & 1.44\\
+CatBoost & 6.26 & 7.60 & 5.0 & 0.69\\
+AdaBoost & 21.42 & 20.29 & 8.2 & 0.23\\
+$k$-nearest neighbors & 23.76 & 25.77 & 7.0 & 23.66\\
+Partial least squares & 27.96 & 30.17 & 9.4 & 0.38\\
+Random Forest & 28.78 & 30.31 & 8.2 & 18.71\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+ICSOR had the lowest reported normalized root-error curve area of 6.33. LightGBM was close at 6.35 and had the best mean dense rank of 2.2. The multilayer perceptron had the second-best mean rank of 2.5. ICSOR and XGBoost each had a reported mean rank of 4.3. A favorable average root-error trajectory therefore did not make ICSOR the leading predictor across every metric, target, and design size.
+
+ICSOR's held-out minus training root-error gap was 0.22. This was smaller than the gaps for the multilayer perceptron, LightGBM, XGBoost, and support vector regression. Partial least squares also had a relatively small gap of 0.38, but its held-out root error was 27.96. The small gap of the structured model was consequently meaningful only when considered with its much lower absolute error.
+
+Figure~\ref{fig:icsor_efficiency_results} presents the three trajectory summaries separately. ICSOR had the lowest root-error curve area, whereas LightGBM had the best mean rank. The two summaries answer different comparative questions.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch5/q03_sample_efficiency.png}
+\caption{Normalized root-error curve area, mean dense rank, and held-out minus training root-error gap. Curve areas and ranks summarize eleven design sizes with ten repeated splits per size. The gap refers to the largest design size. Teal identifies ICSOR. A smaller gap does not by itself establish lower held-out error.}
+\label{fig:icsor_efficiency_results}
+\end{figure}
+
+Figure~\ref{fig:icsor_budget_results} compares the smallest and largest design sizes for four leading predictors. ICSOR led this group at 500 cases, while the multilayer perceptron led at 10,000 cases. These endpoint comparisons do not specify the exact design size at which the ordering changed.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch5/q04_data_budget_comparison.png}
+\caption{Mean held-out pooled composite root error at design sizes 500 and 10,000 for ICSOR, XGBoost, LightGBM, and the multilayer perceptron. Values summarize ten repeated splits. The displayed endpoints are distinct from the fixed-split scores and do not reconstruct intermediate learning-curve values.}
+\label{fig:icsor_budget_results}
+\end{figure}
+
+\subsection{Physical checks and deployment branches}
+
+Table~\ref{tab:icsor_physical_results} distinguishes the final ICSOR output from the raw outputs of the comparators. The final structured predictions had no violations of the adopted numerical balances or non-negativity tolerance. Every comparator raw state violated the adopted balance tolerance. AdaBoost, Random Forest, and the nearest-neighbor model nevertheless had no negative raw states. The other raw non-negativity violation rates ranged from 46.00\% to 70.10\%.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Component-state violation frequencies on the 2000 held-out cases. ICSOR uses its final checked state. Comparators use their raw state, not the affine-aligned state used for accuracy scoring. Balance violations refer to $A_{num}$ and the declared $10^{-10}$ tolerance.}
+\label{tab:icsor_physical_results}
+\begin{tabular}{p{5.2cm}rr}
+\toprule
+Predictor & Balance violations (\%) & Negative states (\%)\\
+\midrule
+Multilayer perceptron & 100.0 & 58.20\\
+LightGBM & 100.0 & 46.00\\
+Support vector regression & 100.0 & 68.65\\
+ICSOR & 0.0 & 0.00\\
+XGBoost & 100.0 & 64.95\\
+CatBoost & 100.0 & 70.10\\
+AdaBoost & 100.0 & 0.00\\
+$k$-nearest neighbors & 100.0 & 0.00\\
+Partial least squares & 100.0 & 48.70\\
+Random Forest & 100.0 & 0.00\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+No raw coupled ICSOR prediction passed both physical checks. All failed the balance tolerance, although 21.7\% were non-negative. Affine projection restored the adopted balances for every case and also returned a non-negative state for 436 cases, or 21.8\%. Those cases required no constrained linear solve. The remaining 1564 cases, or 78.2\%, required the weighted linear projection. The solve used a mean of 23.5 iterations and a maximum of 40. Every final state passed both checks.
+
+Figure~\ref{fig:icsor_deployment_results} keeps the comparator diagnostics and ICSOR's deployment stages separate. The rise from zero raw balance compliance to complete final compliance occurred through projection. The branch counts also show that the constrained solve was a regular part of deployment rather than a rare exception.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch5/q05_physical_deployment.png}
+\caption{Physical diagnostics and ICSOR deployment on 2000 held-out cases. The left panel compares final ICSOR states with raw comparator states. The middle panel separates raw coupled, affine, and final ICSOR compliance. The right panel gives the numbers returned after affine projection and after constrained linear projection. Balance checks use the adopted numerical operator $A_{num}$.}
+\label{fig:icsor_deployment_results}
+\end{figure}
+
+These stage counts identify the source of the final compliance. The soft invariant penalty and non-negative fitted-state variable did not make the raw coupled prediction feasible on an unseen case. The affine and constrained projection stages supplied the observed final compliance. The zero violation rates therefore belonged to the complete deployment procedure rather than to the fitted polynomial alone.
+
+\subsection{Computational effort}
+
+At the smallest design size, mean ICSOR fitting time was 21.5 s. LightGBM, XGBoost, and the multilayer perceptron required 4.72, 3.16, and 4.99 s, respectively. At the largest size, ICSOR required 94.4 s. The faster tree ensembles required 4.13--8.13 s, while partial least squares and the nearest-neighbor model required 0.228 and 2.70 s. ICSOR was nevertheless faster to fit than AdaBoost at 117.7 s, support vector regression at 136.8 s, and the multilayer perceptron at 161.6 s.
+
+The recursive constrained fitting procedure was therefore more costly than the fastest comparators. It did not become the most costly option at the largest design size. Fitting time remained separate from deployment effort. The 78.2\% linear-projection activation rate showed that most fixed-split predictions required an optimization step after regression evaluation. Iteration counts described that workload but did not establish a prediction latency or a plant-control sampling rate.
+
+Figure~\ref{fig:icsor_fitting_results} separates the two design sizes on logarithmic time axes. The smaller-size panel compares four predictors, and the larger-size panel compares ICSOR with five alternatives. The comparison concerns fitting rather than hyperparameter selection or final-state projection.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch5/q06_fitting_effort.png}
+\caption{Mean fitting times for the specified predictors at design sizes 500 and 10,000. Teal identifies ICSOR. Each panel uses a logarithmic seconds axis. The values concern repeated model fits and exclude deployment calculations.}
+\label{fig:icsor_fitting_results}
+\end{figure}
+
+\subsection{Inspectable coefficient structure}
+
+Table~\ref{tab:icsor_coefficient_results} reports the COD raw-composite coefficient counts and the shared coupling entries. The polynomial summary counted 276 unique candidates. Adding the 380 off-diagonal coupling candidates gave 656 entries in this display. This was not a count of all parameters across the twenty component drivers. The display retained 469 entries, or 71.5\%, under the specified post-fitting thresholds.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Coefficients exceeding the reporting thresholds in one fitted model. Polynomial blocks describe the COD row of $B_{\mathrm{raw,comp}}$. The coupling matrix is shared across component outputs and uses its own threshold. Symmetric quadratic blocks count unique upper-triangular terms.}
+\label{tab:icsor_coefficient_results}
+\begin{tabular}{p{6.2cm}rrr}
+\toprule
+Coefficient block & Candidates & Retained & Retained (\%)\\
+\midrule
+Baseline $b$ & 1 & 1 & 100.0\\
+Operating terms $W_u$ & 2 & 2 & 100.0\\
+Influent terms $W_{in}$ & 20 & 19 & 95.0\\
+Operating curvature $\Theta_{uu}$ & 3 & 3 & 100.0\\
+Operating-load interactions $\Theta_{uc}$ & 40 & 29 & 72.5\\
+Influent curvature $\Theta_{cc}$ & 210 & 44 & 21.0\\
+Shared off-diagonal coupling $\Gamma$ & 380 & 371 & 97.6\\
+Combined display & 656 & 469 & 71.5\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The influent curvature block retained 44 of 210 unique terms. In contrast, 371 of 380 coupling entries exceeded their reporting threshold. The fitted structure therefore combined selective influent curvature with dense component coupling. It did not support a description of the complete model as uniformly sparse.
+
+The largest absolute COD influent-curvature entry was the dissolved-oxygen self term of $-5.8097$. Each mirrored dissolved-oxygen and dinitrogen cell had value $-1.7411$. Their combined unordered interaction coefficient was $-3.4822$. Other prominent terms linked dissolved oxygen with metal phosphate, ammonia-oxidizing biomass, soluble phosphate, nitrite-oxidizing biomass, and nitrite. These values described the raw composite map after coupling and reporting. They were not coefficients of the final projected state.
+
+Figure~\ref{fig:icsor_structure_results} displays the retained counts and selected oxygen-related curvature terms. Its interaction values combine the two mirrored cells. The comparison describes the fitted polynomial under its native input units, not a ranking of causal process importance.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch5/q07_coefficient_structure.png}
+\caption{Coefficient structure of one fitted ICSOR model. The left panel separates entries above and below the display thresholds for the COD polynomial blocks and shared coupling. The right panel shows selected COD influent-curvature coefficients with mirrored interaction entries combined. Coefficient units depend on the corresponding input terms. These values describe the raw composite mapping rather than final deployed sensitivities.}
+\label{fig:icsor_structure_results}
+\end{figure}
+
+\section{Discussion}
+\label{sec:icsor_discussion}
+
+\subsection{A structured approximation under limited data}
+
+ICSOR's lowest small-design error and lowest reported root-error curve area supported a data-efficiency benefit within the evaluated domain. Its explicit second-order terms restricted the response to a defined approximation class. The invariant-aware fitting objective and learned component coupling supplied additional structure. The combined design performed well when fewer simulated states were available. This interpretation is consistent with the role of model structure in hybrid learning discussed by \citet{Shen2023} and with the changing model orderings described by \citet{VieringLoog2023}.
+
+The benefit was not uniform across assessment measures. LightGBM had the best mean rank across targets, metrics, and sizes. The multilayer perceptron had the lowest full-size error. The difference between ICSOR's curve area of 6.33 and LightGBM's 6.35 was small and descriptive. It did not establish statistically superior sample efficiency. A choice based only on the lowest full-size composite error would favor the multilayer perceptron under this protocol. A choice requiring an inspectable equation and checked final state would consider a different set of requirements.
+
+The small training-to-held-out gap provided supporting evidence rather than an independent measure of usefulness. Partial least squares demonstrated why a small gap could also accompany high-error underfitting. ICSOR combined its small gap with substantially lower held-out error, but still had higher error than the leading flexible predictors. Generalization and absolute accuracy therefore remained separate comparisons.
+
+\subsection{Fitting guidance and final-state enforcement}
+
+The raw coupled results exposed the limit of physical guidance during training. A soft invariant penalty could reduce a discrepancy without forcing it below the deployment tolerance. A non-negative fitted-state variable constrained training variables but did not restrict every new polynomial prediction. The complete procedure still needed affine projection in every fixed-split case and a constrained linear projection in most cases.
+
+The staged assessment was therefore essential to interpreting the zero final violation rates. Those rates showed reliable numerical enforcement by the deployment procedure. They did not show that the raw regression learned exact feasibility. This distinction follows the separation between constrained fitting and hard output enforcement examined by \citet{Hansen2024} and \citet{KircherVotsmeier2025}.
+
+The operator convention further limited the meaning of exactness. The theoretical invariant relation used the stoichiometric null space. The empirical checks used the rounded and normalized operator $A_{num}$. A state satisfying the latter to $10^{-10}$ need not satisfy the unrounded relation to the same tolerance. The results established compliance with the declared numerical equations and non-negativity checks. A guarantee for the unrounded stoichiometric equations would require their separate numerical audit.
+
+The accuracy comparison also concerned complete prediction procedures. Comparator errors included affine alignment, whereas their physical violation rates used raw states. ICSOR errors and final physical rates used its checked deployment output. The 36.5\% root-error difference from the multilayer perceptron consequently compared these specified procedures. It was not a paired estimate of the error added by ICSOR's projection alone. The common TP error likewise reflected the shared alignment and reporting convention rather than evidence that every raw predictor independently learned the same phosphorus response.
+
+\subsection{What the coefficient structure explains}
+
+The named coefficient blocks made operating dependence, loading dependence, curvature, and component coupling available for direct inspection. This was a structural form of interpretability consistent with the preference for transparent models discussed by \citet{Rudin2019}. It did not require a claim that the coefficients were causal biological parameters.
+
+The retained counts showed where the fitted representation was selective and where it remained dense. Most unique influent-curvature terms were below the display threshold, but almost all coupling entries exceeded their separate threshold. The reporting threshold did not set those terms to zero during fitting. It therefore could not be interpreted as evidence that regularization had selected exactly 469 active parameters.
+
+The prominent oxygen-related curvature terms were consistent with oxygen-sensitive reaction pathways in the adopted process model. \citet{StenstromSong1991} provide process context for oxygen limitations in nitrification, while \citet{Wentzel1992} describe interactions among nutrient-removal pathways. Such consistency was a plausibility check. Feature units, coefficient trade-offs, and the simultaneous coupling relation prevented an individual sign from establishing a causal operating effect.
+
+The raw mapping was global and differentiable, but final deployment depended on the projection branch and active constraints. A coefficient of the raw COD map therefore did not describe a global derivative of the returned COD value. Equations~\eqref{eq:icsor_raw_jacobians} and \eqref{eq:icsor_affine_jacobians} identified two distinct sensitivity calculations. The frequent constrained branch made the final active-set dependence practically relevant. Coefficient stability across repeated fits and final-state sensitivities remained unquantified by the reported coefficient display.
+
+\subsection{Engineering implications and limits}
+
+The structured model combined competitive composite prediction, favorable low-data behavior, and a final state that passed its imposed numerical checks. These benefits came with higher fitting cost than the fastest tree and linear comparators and frequent constrained deployment solves. The fitting measurements supported its use as an offline approximation under the evaluated conditions. They did not establish that the complete prediction procedure met a real-time control deadline.
+
+The evidence remained limited to simulated steady states of one standalone reactor within the sampled influent and operating ranges. No exterior-domain assessment was reported for this structured fit. Its coefficients and final numerical feasibility therefore did not establish extrapolation accuracy, transient behavior, kinetic reachability, or field performance. The useful result was an inspectable regression with explicitly checked returned states, not a replacement for all mechanistic validation.
