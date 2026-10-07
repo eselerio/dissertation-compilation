@@ -1,0 +1,24 @@
+\begin{tikzpicture}[>=Latex,node distance=7mm,
+block/.style={draw=black!75,rounded corners,fill=cyan!6,align=center,font=\footnotesize,inner sep=4pt},
+evidence/.style={block,text width=4.1cm,minimum height=20mm,fill=white},
+flow/.style={->,thick,draw=black!75}]
+\node[block,text width=12.9cm,minimum height=12mm] (scope) at (0,0)
+{Defined process response and decision-time information};
+\node[evidence] (stat) at (-4.55,-2.25)
+{Statistical evidence\\Component accuracy\\Coverage and generalization};
+\node[evidence] (phys) at (0,-2.25)
+{Physical evidence\\Mass conservation\\Non-negativity};
+\node[evidence] (interp) at (4.55,-2.25)
+{Interpretive evidence\\Meaning of model terms\\Meaning of returned state};
+\node[block,text width=10.1cm,minimum height=18mm,below=8mm of phys] (decision)
+{Connected decision evidence\\Agreement at shared streams and stored inventories\\Credibility at selected operating conditions};
+\node[block,text width=12.9cm,minimum height=14mm,fill=black!5,below=7mm of decision] (gap)
+{Joint knowledge gap\\Evidence for all properties under the same engineering question};
+\draw[flow] (scope.south west)--(stat.north);
+\draw[flow] (scope.south)--(phys.north);
+\draw[flow] (scope.south east)--(interp.north);
+\draw[flow] (stat.south)--(decision.north west);
+\draw[flow] (phys.south)--(decision.north);
+\draw[flow] (interp.south)--(decision.north east);
+\draw[flow] (decision)--(gap);
+\end{tikzpicture}

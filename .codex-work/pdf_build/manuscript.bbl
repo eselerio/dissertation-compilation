@@ -68,11 +68,7 @@ Ahn, J\BPBI Y.%
 
 \bibitem [\protect \citeauthoryear {%
 Akiba%
-, Sano%
-, Yanase%
-, Ohta%
-\BCBL {}\ \BBA {} Koyama%
-}{%
+\ \protect \BOthers {.}}{%
 Akiba%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2019}}%
@@ -141,10 +137,7 @@ Alex, J.%
 
 \bibitem [\protect \citeauthoryear {%
 Alexandrov%
-, Dennis%
-, Lewis%
-\BCBL {}\ \BBA {} Torczon%
-}{%
+\ \protect \BOthers {.}}{%
 Alexandrov%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1998}}%
@@ -173,9 +166,7 @@ Alexandrov, N\BPBI M.%
 
 \bibitem [\protect \citeauthoryear {%
 Argyriou%
-, Evgeniou%
-\BCBL {}\ \BBA {} Pontil%
-}{%
+\ \protect \BOthers {.}}{%
 Argyriou%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2008}}%
@@ -231,10 +222,7 @@ Arik, S\BPBI {\"{O}}.%
 
 \bibitem [\protect \citeauthoryear {%
 Asadi%
-, Verma%
-, Yang%
-\BCBL {}\ \BBA {} Mejabi%
-}{%
+\ \protect \BOthers {.}}{%
 Asadi%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2017}}%
@@ -292,11 +280,7 @@ Audet, C.%
 
 \bibitem [\protect \citeauthoryear {%
 Ba-Alawi%
-, Vilela%
-, Loy-Benitez%
-, Heo%
-\BCBL {}\ \BBA {} Yoo%
-}{%
+\ \protect \BOthers {.}}{%
 Ba-Alawi%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -328,10 +312,7 @@ Ba-Alawi, A\BPBI H.%
 
 \bibitem [\protect \citeauthoryear {%
 Bagherzadeh%
-, Mehrani%
-, Basirifard%
-\BCBL {}\ \BBA {} Roostaei%
-}{%
+\ \protect \BOthers {.}}{%
 Bagherzadeh%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -361,11 +342,37 @@ Bagherzadeh, F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Belkin%
-, Hsu%
-, Ma%
-\BCBL {}\ \BBA {} Mandal%
+Barker%
+\ \BBA {} Dold%
 }{%
+Barker%
+\ \BBA {} Dold%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+Barker1997}
+\APACinsertmetastar {%
+Barker1997}%
+\begin{APACrefauthors}%
+Barker, P.%
+\BCBT {}\ \BBA {} Dold, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {General model for biological nutrient removal activated
+  sludge systems: model presentation} {General model for biological nutrient
+  removal activated sludge systems: model presentation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Environment Research}{69}{5}{969--984}.
+\newblock
+\begin{APACrefDOI} \doi{10.2175/106143097x125669} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Belkin%
+\ \protect \BOthers {.}}{%
 Belkin%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2019}}%
@@ -395,10 +402,7 @@ Belkin, M.%
 
 \bibitem [\protect \citeauthoryear {%
 Bergstra%
-, Bardenet%
-, Bengio%
-\BCBL {}\ \BBA {} K{\'e}gl%
-}{%
+\ \protect \BOthers {.}}{%
 Bergstra%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
@@ -524,11 +528,7 @@ Bhosekar, A.%
 
 \bibitem [\protect \citeauthoryear {%
 Bliek%
-, Guijt%
-, Karlsson%
-, Verwer%
-\BCBL {}\ \BBA {} de Weerdt%
-}{%
+\ \protect \BOthers {.}}{%
 Bliek%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2023}}%
@@ -639,10 +639,39 @@ Breiman, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bressani-Ribeiro%
+\ \protect \BOthers {.}}{%
+Bressani-Ribeiro%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+BressaniRibeiro2021}
+\APACinsertmetastar {%
+BressaniRibeiro2021}%
+\begin{APACrefauthors}%
+Bressani-Ribeiro, T.%
+, Almeida, P.%
+, Chernicharo, C.%
+\BCBL {}\ \BBA {} Volcke, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Inorganic carbon limitation during nitrogen conversions
+  in sponge-bed trickling filters for mainstream treatment of anaerobic
+  effluent} {Inorganic carbon limitation during nitrogen conversions in
+  sponge-bed trickling filters for mainstream treatment of anaerobic
+  effluent}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Research}{201}{}{117337}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.watres.2021.117337} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Brunton%
-, Proctor%
-\BCBL {}\ \BBA {} Kutz%
-}{%
+\ \protect \BOthers {.}}{%
 Brunton%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2016}}%
@@ -696,6 +725,66 @@ Buzzi‐Ferraris, G.%
 \APACaddressPublisher{}{Wiley}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/9783527667147} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Calise%
+\ \protect \BOthers {.}}{%
+Calise%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+Calise2020}
+\APACinsertmetastar {%
+Calise2020}%
+\begin{APACrefauthors}%
+Calise, F.%
+, Eicker, U.%
+, Schumacher, J.%
+\BCBL {}\ \BBA {} Vicidomini, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Wastewater Treatment Plant: Modelling and Validation of
+  an Activated Sludge Process} {Wastewater treatment plant: Modelling and
+  validation of an activated sludge process}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Energies}{13}{15}{3925}.
+\newblock
+\begin{APACrefDOI} \doi{10.3390/en13153925} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Caro%
+\ \protect \BOthers {.}}{%
+Caro%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Caro2024}
+\APACinsertmetastar {%
+Caro2024}%
+\begin{APACrefauthors}%
+Caro, F.%
+, Ferreira, J.%
+, Castell{\'{o}}, E.%
+, Pinto, J\BPBI C.%
+\BCBL {}\ \BBA {} Santiviago, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bio2Py: An {API} for integrating Python with BioWin for
+  enhanced data acquisition in wastewater treatment simulations} {Bio2py: An
+  {API} for integrating python with biowin for enhanced data acquisition in
+  wastewater treatment simulations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Water Process Engineering}{63}{}{105426}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jwpe.2024.105426} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -762,10 +851,39 @@ Chen, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ching%
+\ \protect \BOthers {.}}{%
+Ching%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Ching2022}
+\APACinsertmetastar {%
+Ching2022}%
+\begin{APACrefauthors}%
+Ching, P.%
+, Zou, X.%
+, Wu, D.%
+, So, R.%
+\BCBL {}\ \BBA {} Chen, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Development of a wide-range soft sensor for predicting
+  wastewater {BOD5} using an eXtreme gradient boosting ({XGBoost}) machine}
+  {Development of a wide-range soft sensor for predicting wastewater {BOD5}
+  using an extreme gradient boosting ({XGBoost}) machine}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environmental Research}{210}{}{112953}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.envres.2022.112953} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Colson%
-, Marcotte%
-\BCBL {}\ \BBA {} Savard%
-}{%
+\ \protect \BOthers {.}}{%
 Colson%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2007}}%
@@ -792,10 +910,7 @@ Colson, B.%
 
 \bibitem [\protect \citeauthoryear {%
 Croll%
-, Ikuma%
-, Ong%
-\BCBL {}\ \BBA {} Sarkar%
-}{%
+\ \protect \BOthers {.}}{%
 Croll%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2023}}%
@@ -884,11 +999,73 @@ Curtiss, C\BPBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Damalerio et al.}{%
+Damalerio et al.}{%
+{\protect \APACyear {2022}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+DamalerioRemoval2022}
+\APACinsertmetastar {%
+DamalerioRemoval2022}%
+\begin{APACrefauthors}%
+Damalerio, R\BPBI G.%
+, Beltran, A\BPBI B.%
+\BCBL {}\ \BBA {} Aviso, K\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Bi-objective optimisation model for phosphorous removal
+  in wastewater treatment plants} {Bi-objective optimisation model for
+  phosphorous removal in wastewater treatment plants}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chemical Engineering Transactions}{97}{}{343--348}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.cetjournal.it/index.php/cet/article/view/CET2297058}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3303/CET2297058} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Damalerio et al.}{%
+Damalerio et al.}{%
+{\protect \APACyear {2022}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+DamalerioBarriers2022}
+\APACinsertmetastar {%
+DamalerioBarriers2022}%
+\begin{APACrefauthors}%
+Damalerio, R\BPBI G.%
+, Beltran, A\BPBI B.%
+, Orbecido, A\BPBI H.%
+, Aviso, K\BPBI B.%
+, Tanhueco, R\BPBI M\BPBI T.%
+, Torneo, A\BPBI R.%
+\BDBL {}Promentilla, M\BPBI A\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022{\protect \BCnt {2}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Decentralised wastewater management systems in
+  developing countries: Key barriers and potential resource recovery
+  applications} {Decentralised wastewater management systems in developing
+  countries: Key barriers and potential resource recovery applications}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chemical Engineering Transactions}{97}{}{367--372}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.cetjournal.it/index.php/cet/article/view/CET2297062}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3303/CET2297062} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 de Araujo%
-, Gallani%
-, Mulas%
-\BCBL {}\ \BBA {} Skogestad%
-}{%
+\ \protect \BOthers {.}}{%
 de Araujo%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2013}}%
@@ -945,6 +1122,97 @@ Dem{\v s}ar, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dietl%
+\ \protect \BOthers {.}}{%
+Dietl%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Dietl2015}
+\APACinsertmetastar {%
+Dietl2015}%
+\begin{APACrefauthors}%
+Dietl, A.%
+, Ferousi, C.%
+, Maalcke, W\BPBI J.%
+, Menzel, A.%
+, de Vries, S.%
+, Keltjens, J\BPBI T.%
+\BDBL {}Barends, T\BPBI R\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The inner workings of the hydrazine synthase
+  multiprotein complex} {The inner workings of the hydrazine synthase
+  multiprotein complex}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{527}{7578}{394--397}.
+\newblock
+\begin{APACrefDOI} \doi{10.1038/nature15517} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+D{\'{i}}ez-Montero%
+\ \protect \BOthers {.}}{%
+D{\'{i}}ez-Montero%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+DiezMontero2019}
+\APACinsertmetastar {%
+DiezMontero2019}%
+\begin{APACrefauthors}%
+D{\'{i}}ez-Montero, R.%
+, Castrillo, M.%
+, Casao, M.%
+\BCBL {}\ \BBA {} Tejero, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Model-based evaluation of a trickling filter facility
+  upgrade to biological nutrient removal} {Model-based evaluation of a
+  trickling filter facility upgrade to biological nutrient removal}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Science of The Total Environment}{661}{}{187--195}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.scitotenv.2019.01.136} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dold%
+\ \protect \BOthers {.}}{%
+Dold%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1981}}%
+}]{%
+Dold1981}
+\APACinsertmetastar {%
+Dold1981}%
+\begin{APACrefauthors}%
+Dold, P.%
+, Ekama, G.%
+\BCBL {}\ \BBA {} Marais, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1981}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A general model for the activated sludge process} {A
+  general model for the activated sludge process}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {A general model for the activated sludge process} {A
+  general model for the activated sludge process}\ (\BPGS\ 47--77).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/b978-1-4832-8438-5.50010-8} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Drucker%
 }{%
 Drucker%
@@ -977,9 +1245,7 @@ Drucker, H.%
 
 \bibitem [\protect \citeauthoryear {%
 Duan%
-, Zhang%
-\BCBL {}\ \BBA {} Zheng%
-}{%
+\ \protect \BOthers {.}}{%
 Duan%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2022}}%
@@ -1008,9 +1274,7 @@ Duan, S.%
 
 \bibitem [\protect \citeauthoryear {%
 Durkin%
-, Otte%
-\BCBL {}\ \BBA {} Guo%
-}{%
+\ \protect \BOthers {.}}{%
 Durkin%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2024}}%
@@ -1037,12 +1301,71 @@ Durkin, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ekinci%
+\ \protect \BOthers {.}}{%
+Ekinci%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Ekinci2023}
+\APACinsertmetastar {%
+Ekinci2023}%
+\begin{APACrefauthors}%
+Ekinci, E.%
+, {\"{O}}zbay, B.%
+, Omurca, S\BPBI {\.{I}}.%
+, Say{\i}n, F\BPBI E.%
+\BCBL {}\ \BBA {} {\"{O}}zbay, {\.{I}}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Application of machine learning algorithms and feature
+  selection methods for better prediction of sludge production in a real
+  advanced biological wastewater treatment plant} {Application of machine
+  learning algorithms and feature selection methods for better prediction of
+  sludge production in a real advanced biological wastewater treatment
+  plant}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Environmental Management}{348}{}{119448}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jenvman.2023.119448} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fall%
+\ \protect \BOthers {.}}{%
+Fall%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Fall2015}
+\APACinsertmetastar {%
+Fall2015}%
+\begin{APACrefauthors}%
+Fall, C.%
+, Jim{\'{e}}nez-Z{\'{a}}rate, A.%
+, Mart{\'{i}}nez-Garc{\'{i}}a, C.%
+, Esparza-Soto, M.%
+\BCBL {}\ \BBA {} Comeau, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Activated sludge with low solids production: modified
+  {ASM1} modeling and simulation} {Activated sludge with low solids production:
+  modified {ASM1} modeling and simulation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Desalination and Water Treatment}{56}{11}{3075--3086}.
+\newblock
+\begin{APACrefDOI} \doi{10.1080/19443994.2014.966329} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Fang%
-, Ni%
-, Li%
-, Sheng%
-\BCBL {}\ \BBA {} Yu%
-}{%
+\ \protect \BOthers {.}}{%
 Fang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
@@ -1072,10 +1395,67 @@ Fang, F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Geiss%
-, Silva%
-\BCBL {}\ \BBA {} Hardin%
+Gal{\'{a}}n%
+\ \BBA {} Grossmann%
 }{%
+Gal{\'{a}}n%
+\ \BBA {} Grossmann%
+}{%
+{\protect \APACyear {1999}}%
+}]{%
+Galan1999}
+\APACinsertmetastar {%
+Galan1999}%
+\begin{APACrefauthors}%
+Gal{\'{a}}n, B.%
+\BCBT {}\ \BBA {} Grossmann, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Optimization strategies for the design and synthesis of
+  distributed wastewater treatment networks} {Optimization strategies for the
+  design and synthesis of distributed wastewater treatment networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computers \& Chemical Engineering}{23}{}{S161--S164}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/s0098-1354(99)80040-4} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Galan%
+\ \BBA {} Grossmann%
+}{%
+Galan%
+\ \BBA {} Grossmann%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+Galan1998}
+\APACinsertmetastar {%
+Galan1998}%
+\begin{APACrefauthors}%
+Galan, B.%
+\BCBT {}\ \BBA {} Grossmann, I\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Optimal Design of Distributed Wastewater Treatment
+  Networks} {Optimal design of distributed wastewater treatment
+  networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Industrial \& Engineering Chemistry
+  Research}{37}{10}{4036--4048}.
+\newblock
+\begin{APACrefDOI} \doi{10.1021/ie980133h} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Geiss%
+\ \protect \BOthers {.}}{%
 Geiss%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2022}}%
@@ -1103,9 +1483,7 @@ Geiss, A.%
 
 \bibitem [\protect \citeauthoryear {%
 Geman%
-, Bienenstock%
-\BCBL {}\ \BBA {} Doursat%
-}{%
+\ \protect \BOthers {.}}{%
 Geman%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1992}}%
@@ -1132,9 +1510,7 @@ Geman, S.%
 
 \bibitem [\protect \citeauthoryear {%
 Geurts%
-, Ernst%
-\BCBL {}\ \BBA {} Wehenkel%
-}{%
+\ \protect \BOthers {.}}{%
 Geurts%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2006}}%
@@ -1160,10 +1536,68 @@ Geurts, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Gu%
+\ \protect \BOthers {.}}{%
+Gu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Gu2023}
+\APACinsertmetastar {%
+Gu2023}%
+\begin{APACrefauthors}%
+Gu, Y.%
+, Li, Y.%
+, Yuan, F.%
+\BCBL {}\ \BBA {} Yang, Q.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Optimization and control strategies of aeration in
+  WWTPs: A review} {Optimization and control strategies of aeration in wwtps: A
+  review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Cleaner Production}{418}{}{138008}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jclepro.2023.138008} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Guelli Ulson~de Souza%
+\ \protect \BOthers {.}}{%
+Guelli Ulson~de Souza%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+GuelliSouza2011}
+\APACinsertmetastar {%
+GuelliSouza2011}%
+\begin{APACrefauthors}%
+Guelli Ulson~de Souza, S\BPBI M\BPBI d\BPBI A.%
+, Xavier, M\BPBI F.%
+, da Silva, A.%
+\BCBL {}\ \BBA {} Ulson~de Souza, A\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Water Reuse and Wastewater Minimization in Chemical
+  Industries Using Differentiated Regeneration of Contaminants} {Water reuse
+  and wastewater minimization in chemical industries using differentiated
+  regeneration of contaminants}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Industrial \& Engineering Chemistry
+  Research}{50}{12}{7428--7436}.
+\newblock
+\begin{APACrefDOI} \doi{10.1021/ie200305z} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Guerrero%
-, Guisasola%
-\BCBL {}\ \BBA {} Baeza%
-}{%
+\ \protect \BOthers {.}}{%
 Guerrero%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
@@ -1192,11 +1626,64 @@ Guerrero, J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Gujer%
+\ \protect \BOthers {.}}{%
+Gujer%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+Gujer1999}
+\APACinsertmetastar {%
+Gujer1999}%
+\begin{APACrefauthors}%
+Gujer, W.%
+, Henze, M.%
+, Mino, T.%
+\BCBL {}\ \BBA {} van Loosdrecht, M\BPBI C\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Activated Sludge Model No. 3} {Activated sludge model
+  no. 3}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Science and Technology}{39}{1}{183--193}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/s0273-1223(98)00785-9} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gutterres%
+\ \protect \BOthers {.}}{%
+Gutterres%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Gutterres2010}
+\APACinsertmetastar {%
+Gutterres2010}%
+\begin{APACrefauthors}%
+Gutterres, M.%
+, Aquim, P\BPBI M.%
+, Passos, J\BPBI B.%
+\BCBL {}\ \BBA {} Trierweiler, J\BPBI O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Water reuse in tannery beamhouse process} {Water reuse
+  in tannery beamhouse process}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Cleaner Production}{18}{15}{1545--1552}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jclepro.2010.06.017} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Guyon%
-, Cawley%
-, Dror%
-\BCBL {}\ \BBA {} Lemaire%
-}{%
+\ \protect \BOthers {.}}{%
 Guyon%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
@@ -1229,9 +1716,7 @@ Guyon, I.%
 
 \bibitem [\protect \citeauthoryear {%
 Haddad%
-, Chellaboina%
-\BCBL {}\ \BBA {} Hui%
-}{%
+\ \protect \BOthers {.}}{%
 Haddad%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2010}}%
@@ -1258,11 +1743,7 @@ Haddad, W\BPBI M.%
 
 \bibitem [\protect \citeauthoryear {%
 Hameed%
-, Chen%
-, del Rio~Chanona%
-, Biegler%
-\BCBL {}\ \BBA {} Short%
-}{%
+\ \protect \BOthers {.}}{%
 Hameed%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2026}}%
@@ -1291,13 +1772,9 @@ Hameed, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Hansen%
-, Maddix%
-, Alizadeh%
-, Gupta%
-\BCBL {}\ \BBA {} Mahoney%
-}{%
-Hansen%
+D.~Hansen%
+\ \protect \BOthers {.}}{%
+D.~Hansen%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2024}}%
 }]{%
@@ -1321,6 +1798,35 @@ Hansen, D.%
 \APACjournalVolNumPages{Physica D: Nonlinear Phenomena}{457}{}{133952}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.physd.2023.133952} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{\'{E}}.~Hansen%
+\ \protect \BOthers {.}}{%
+{\'{E}}.~Hansen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Hansen2018}
+\APACinsertmetastar {%
+Hansen2018}%
+\begin{APACrefauthors}%
+Hansen, {\'{E}}.%
+, Rodrigues, M\BPBI A\BPBI S.%
+, Arag{\~{a}}o, M\BPBI E.%
+\BCBL {}\ \BBA {} de Aquim, P\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Water and wastewater minimization in a petrochemical
+  industry through mathematical programming} {Water and wastewater minimization
+  in a petrochemical industry through mathematical programming}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Cleaner Production}{172}{}{1814--1822}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jclepro.2017.12.005} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1384,9 +1890,7 @@ H{\"{a}}rtel, L.%
 
 \bibitem [\protect \citeauthoryear {%
 Hastie%
-, Tibshirani%
-\BCBL {}\ \BBA {} Friedman%
-}{%
+\ \protect \BOthers {.}}{%
 Hastie%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2009}}%
@@ -1409,6 +1913,71 @@ Hastie, T.%
 \APACaddressPublisher{}{Springer New York}.
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-0-387-84858-7} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hatamoto%
+\ \protect \BOthers {.}}{%
+Hatamoto%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Hatamoto2018}
+\APACinsertmetastar {%
+Hatamoto2018}%
+\begin{APACrefauthors}%
+Hatamoto, M.%
+, Okubo, T.%
+, Kubota, K.%
+\BCBL {}\ \BBA {} Yamaguchi, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Characterization of downflow hanging sponge reactors
+  with regard to structure, process function, and microbial community
+  compositions} {Characterization of downflow hanging sponge reactors with
+  regard to structure, process function, and microbial community
+  compositions}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied Microbiology and
+  Biotechnology}{102}{24}{10345--10352}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s00253-018-9406-6} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hauduc%
+\ \protect \BOthers {.}}{%
+Hauduc%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Hauduc2013}
+\APACinsertmetastar {%
+Hauduc2013}%
+\begin{APACrefauthors}%
+Hauduc, H.%
+, Rieger, L.%
+, Oehmen, A.%
+, van Loosdrecht, M.%
+, Comeau, Y.%
+, H{\'{e}}duit, A.%
+\BDBL {}Gillot, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Critical review of activated sludge modeling: State of
+  process knowledge, modeling concepts, and limitations} {Critical review of
+  activated sludge modeling: State of process knowledge, modeling concepts, and
+  limitations}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biotechnology and Bioengineering}{110}{1}{24--46}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/bit.24624} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1444,6 +2013,67 @@ He, Z.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hellal%
+\ \BBA {} Abou-Elela%
+}{%
+Hellal%
+\ \BBA {} Abou-Elela%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+Hellal2021}
+\APACinsertmetastar {%
+Hellal2021}%
+\begin{APACrefauthors}%
+Hellal, M\BPBI S.%
+\BCBT {}\ \BBA {} Abou-Elela, S\BPBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Simulation of a passively aerated biological filter
+  ({PABF}) immobilized with non-woven polyester fabric ({NWPF}) for wastewater
+  treatment using {GPS}-X} {Simulation of a passively aerated biological filter
+  ({PABF}) immobilized with non-woven polyester fabric ({NWPF}) for wastewater
+  treatment using {GPS}-x}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water and Environment Journal}{35}{4}{1192--1203}.
+\newblock
+\begin{APACrefDOI} \doi{10.1111/wej.12709} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Henze%
+\ \protect \BOthers {.}}{%
+Henze%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1987}}%
+}]{%
+Henze1987}
+\APACinsertmetastar {%
+Henze1987}%
+\begin{APACrefauthors}%
+Henze, M.%
+, Grady, C., Jr%
+, Gujer, W.%
+, Marais, G.%
+\BCBL {}\ \BBA {} Matsuo, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1987}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A general model for single-sludge wastewater treatment
+  systems} {A general model for single-sludge wastewater treatment
+  systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Research}{21}{5}{505--515}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/0043-1354(87)90058-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Henze%
 \ \protect \BOthers {.}}{%
 Henze%
@@ -1476,13 +2106,10 @@ Henze, M.%
 
 \bibitem [\protect \citeauthoryear {%
 Henze%
-, Gujer%
-, Mino%
-\BCBL {}\ \BBA {} van Loosdrecht%
-}{%
+\ \protect \BOthers {.}}{%
 Henze%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
+{\protect \APACyear {2000}}%
 }]{%
 Henze2006}
 \APACinsertmetastar {%
@@ -1493,12 +2120,13 @@ Henze, M.%
 , Mino, T.%
 \BCBL {}\ \BBA {} van Loosdrecht, M\BPBI C\BPBI M.%
 \end{APACrefauthors}%
+\ (\BEDS).
 \unskip\
 \newblock
-\APACrefYear{2015}.
+\APACrefYear{2000}.
 \newblock
 \APACrefbtitle {Activated Sludge Models {ASM1}, {ASM2}, {ASM2d} and {ASM3}}
-  {Activated sludge models {ASM1}, {ASM2}, {ASM2d} and {ASM3}}.
+  {Activated sludge models {ASM1}, {ASM2}, {ASM2d} and {ASM3}}\ (\BNUM~9).
 \newblock
 \APACaddressPublisher{}{IWA Publishing}.
 \newblock
@@ -1507,10 +2135,7 @@ Henze, M.%
 
 \bibitem [\protect \citeauthoryear {%
 Henze%
-, van Loosdrecht%
-, Ekama%
-\BCBL {}\ \BBA {} Brdjanovic%
-}{%
+\ \protect \BOthers {.}}{%
 Henze%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2008}}%
@@ -1537,10 +2162,38 @@ Henze, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Hornik%
-, Stinchcombe%
-\BCBL {}\ \BBA {} White%
+Hoover%
+\ \BBA {} Porges%
 }{%
+Hoover%
+\ \BBA {} Porges%
+}{%
+{\protect \APACyear {1952}}%
+}]{%
+Hoover1952}
+\APACinsertmetastar {%
+Hoover1952}%
+\begin{APACrefauthors}%
+Hoover, S\BPBI R.%
+\BCBT {}\ \BBA {} Porges, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1952}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Assimilation of dairy wastes by activated sludge. {II}.
+  The equation of synthesis and rate of oxygen utilization} {Assimilation of
+  dairy wastes by activated sludge. {II}. the equation of synthesis and rate of
+  oxygen utilization}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Sewage and Industrial Wastes}{24}{3}{306--312}.
+\newblock
+\begin{APACrefURL} \url{https://www.jstor.org/stable/25031842} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hornik%
+\ \protect \BOthers {.}}{%
 Hornik%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1989}}%
@@ -1564,6 +2217,35 @@ Hornik, K.%
 \APACjournalVolNumPages{Neural Networks}{2}{5}{359--366}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/0893-6080(89)90020-8} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hu%
+\ \protect \BOthers {.}}{%
+Hu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Hu2007}
+\APACinsertmetastar {%
+Hu2007}%
+\begin{APACrefauthors}%
+Hu, Z\BHBI r.%
+, Wentzel, M.%
+\BCBL {}\ \BBA {} Ekama, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A general kinetic model for biological nutrient removal
+  activated sludge systems: Model development} {A general kinetic model for
+  biological nutrient removal activated sludge systems: Model
+  development}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biotechnology and Bioengineering}{98}{6}{1242--1258}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/bit.21508} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1592,6 +2274,121 @@ Huangfu, Q.%
 \APACjournalVolNumPages{Mathematical Programming Computation}{10}{1}{119--142}.
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s12532-017-0130-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jafarinejad%
+}{%
+Jafarinejad%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+Jafarinejad2020}
+\APACinsertmetastar {%
+Jafarinejad2020}%
+\begin{APACrefauthors}%
+Jafarinejad, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A framework for the design of the future
+  energy-efficient, cost-effective, reliable, resilient, and sustainable
+  full-scale wastewater treatment plants} {A framework for the design of the
+  future energy-efficient, cost-effective, reliable, resilient, and sustainable
+  full-scale wastewater treatment plants}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Current Opinion in Environmental Science \&
+  Health}{13}{}{91--100}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.coesh.2020.01.001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jain%
+\ \BBA {} Kar%
+}{%
+Jain%
+\ \BBA {} Kar%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+JainKar2017}
+\APACinsertmetastar {%
+JainKar2017}%
+\begin{APACrefauthors}%
+Jain, P.%
+\BCBT {}\ \BBA {} Kar, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Non-convex Optimization for Machine Learning}
+  {Non-convex optimization for machine learning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Foundations and Trends® in Machine
+  Learning}{10}{3-4}{142--336}.
+\newblock
+\begin{APACrefDOI} \doi{10.1561/2200000058} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jana%
+\ \protect \BOthers {.}}{%
+Jana%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Jana2022}
+\APACinsertmetastar {%
+Jana2022}%
+\begin{APACrefauthors}%
+Jana, D\BPBI K.%
+, Bhunia, P.%
+, Das~Adhikary, S.%
+\BCBL {}\ \BBA {} Bej, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Optimization of Effluents Using Artificial Neural
+  Network and Support Vector Regression in Detergent Industrial Wastewater
+  Treatment} {Optimization of effluents using artificial neural network and
+  support vector regression in detergent industrial wastewater
+  treatment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Cleaner Chemical Engineering}{3}{}{100039}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.clce.2022.100039} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jasim%
+}{%
+Jasim%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+Jasim2020}
+\APACinsertmetastar {%
+Jasim2020}%
+\begin{APACrefauthors}%
+Jasim, N\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The design for wastewater treatment plant ({WWTP}) with
+  {GPS} X modelling} {The design for wastewater treatment plant ({WWTP}) with
+  {GPS} x modelling}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Cogent Engineering}{7}{1}{1723782}.
+\newblock
+\begin{APACrefDOI} \doi{10.1080/23311916.2020.1723782} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1688,11 +2485,42 @@ Kashinath, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kasi%
+\ \protect \BOthers {.}}{%
+Kasi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Kasi2011}
+\APACinsertmetastar {%
+Kasi2011}%
+\begin{APACrefauthors}%
+Kasi, M.%
+, Simsek, H.%
+, Wadhawan, T.%
+, Bye, C.%
+, Blonigen, M.%
+\BCBL {}\ \BBA {} Khan, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modeling a Two-Stage Trickling Filter Wastewater
+  Treatment Plant to Simulate the Fate of Dissolved Organic Nitrogen and Its
+  Biodegradability} {Modeling a two-stage trickling filter wastewater treatment
+  plant to simulate the fate of dissolved organic nitrogen and its
+  biodegradability}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the Water Environment
+  Federation}{2011}{8}{6638--6654}.
+\newblock
+\begin{APACrefDOI} \doi{10.2175/193864711802793254} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kaufman%
-, Rosset%
-, Perlich%
-\BCBL {}\ \BBA {} Stitelman%
-}{%
+\ \protect \BOthers {.}}{%
 Kaufman%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2012}}%
@@ -1788,9 +2616,7 @@ Kelley, C\BPBI T.%
 
 \bibitem [\protect \citeauthoryear {%
 Khatri%
-, Gupta%
-\BCBL {}\ \BBA {} Gupta%
-}{%
+\ \protect \BOthers {.}}{%
 Khatri%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -1819,9 +2645,7 @@ Khatri, P.%
 
 \bibitem [\protect \citeauthoryear {%
 Kim%
-, Rao%
-\BCBL {}\ \BBA {} Yoo%
-}{%
+\ \protect \BOthers {.}}{%
 Kim%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2009}}%
@@ -1909,10 +2733,36 @@ Kraft, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Lakshminarayanan%
-, Pritzel%
-\BCBL {}\ \BBA {} Blundell%
+Kusiak%
+\ \BBA {} Wei%
 }{%
+Kusiak%
+\ \BBA {} Wei%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+KusiakWei2013}
+\APACinsertmetastar {%
+KusiakWei2013}%
+\begin{APACrefauthors}%
+Kusiak, A.%
+\BCBT {}\ \BBA {} Wei, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Optimization of the Activated Sludge Process}
+  {Optimization of the activated sludge process}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Energy Engineering}{139}{1}{12--17}.
+\newblock
+\begin{APACrefDOI} \doi{10.1061/(asce)ey.1943-7897.0000092} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lakshminarayanan%
+\ \protect \BOthers {.}}{%
 Lakshminarayanan%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2017}}%
@@ -1946,9 +2796,7 @@ Lakshminarayanan, B.%
 
 \bibitem [\protect \citeauthoryear {%
 Leu%
-, Chan%
-\BCBL {}\ \BBA {} Stenstrom%
-}{%
+\ \protect \BOthers {.}}{%
 Leu%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2012}}%
@@ -1976,10 +2824,42 @@ Leu, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+B.~Li%
+\ \protect \BOthers {.}}{%
+B.~Li%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Li2022}
+\APACinsertmetastar {%
+Li2022}%
+\begin{APACrefauthors}%
+Li, B.%
+, Yue, R.%
+, Shen, L.%
+, Chen, C.%
+, Li, R.%
+, Xu, Y.%
+\BDBL {}Lin, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A novel method integrating response surface method with
+  artificial neural network to optimize membrane fabrication for wastewater
+  treatment} {A novel method integrating response surface method with
+  artificial neural network to optimize membrane fabrication for wastewater
+  treatment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Cleaner Production}{376}{}{134236}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jclepro.2022.134236} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 H.~Li%
-, Spelman%
-\BCBL {}\ \BBA {} Sansalone%
-}{%
+\ \protect \BOthers {.}}{%
 H.~Li%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2024}}%
@@ -2040,11 +2920,38 @@ Li, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Liang%
+\ \protect \BOthers {.}}{%
+Liang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Liang2021}
+\APACinsertmetastar {%
+Liang2021}%
+\begin{APACrefauthors}%
+Liang, J.%
+, Yuan, Y.%
+, Zhang, Z.%
+, You, S.%
+\BCBL {}\ \BBA {} Yuan, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modeling a Three-Stage Biological Trickling Filter Based
+  on the {A2O} Process for Sewage Treatment} {Modeling a three-stage biological
+  trickling filter based on the {A2O} process for sewage treatment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water}{13}{9}{1152}.
+\newblock
+\begin{APACrefDOI} \doi{10.3390/w13091152} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lim%
-, Lee%
-, Ataei%
-\BCBL {}\ \BBA {} Yoo%
-}{%
+\ \protect \BOthers {.}}{%
 Lim%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2011}}%
@@ -2074,9 +2981,7 @@ Lim, J.%
 
 \bibitem [\protect \citeauthoryear {%
 Lin%
-, Yang%
-\BCBL {}\ \BBA {} Xu%
-}{%
+\ \protect \BOthers {.}}{%
 Lin%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2022}}%
@@ -2104,9 +3009,7 @@ Lin, L.%
 
 \bibitem [\protect \citeauthoryear {%
 Liu%
-, Palatucci%
-\BCBL {}\ \BBA {} Zhang%
-}{%
+\ \protect \BOthers {.}}{%
 Liu%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2009}}%
@@ -2139,10 +3042,7 @@ Liu, H.%
 
 \bibitem [\protect \citeauthoryear {%
 Liu%
-, Yang%
-, Zhang%
-\BCBL {}\ \BBA {} Yang%
-}{%
+\ \protect \BOthers {.}}{%
 Liu%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -2172,10 +3072,104 @@ Liu, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Lu%
+\ \protect \BOthers {.}}{%
+Lu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Lu2014}
+\APACinsertmetastar {%
+Lu2014}%
+\begin{APACrefauthors}%
+Lu, H.%
+, Chandran, K.%
+\BCBL {}\ \BBA {} Stensel, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Microbial ecology of denitrification in biological
+  wastewater treatment} {Microbial ecology of denitrification in biological
+  wastewater treatment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Research}{64}{}{237--254}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.watres.2014.06.042} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Luan%
+\ \protect \BOthers {.}}{%
+Luan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Luan2023}
+\APACinsertmetastar {%
+Luan2023}%
+\begin{APACrefauthors}%
+Luan, Y\BHBI N.%
+, Yin, Y.%
+, Xu, Y.%
+, Zhang, F.%
+, Wang, X.%
+, Zhao, F.%
+\BDBL {}Liu, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Simultaneous nitrification and denitrification in a
+  novel rotating self-aerated biofilm reactor for decentralized wastewater
+  treatment} {Simultaneous nitrification and denitrification in a novel
+  rotating self-aerated biofilm reactor for decentralized wastewater
+  treatment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioresource Technology}{369}{}{128513}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.biortech.2022.128513} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Maalcke%
+\ \protect \BOthers {.}}{%
+Maalcke%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Maalcke2016}
+\APACinsertmetastar {%
+Maalcke2016}%
+\begin{APACrefauthors}%
+Maalcke, W\BPBI J.%
+, Reimann, J.%
+, de Vries, S.%
+, Butt, J\BPBI N.%
+, Dietl, A.%
+, Kip, N.%
+\BDBL {}Kartal, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Characterization of Anammox Hydrazine Dehydrogenase, a
+  Key {N2-}producing Enzyme in the Global Nitrogen Cycle} {Characterization of
+  anammox hydrazine dehydrogenase, a key {N2-}producing enzyme in the global
+  nitrogen cycle}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Biological
+  Chemistry}{291}{33}{17077--17092}.
+\newblock
+\begin{APACrefDOI} \doi{10.1074/jbc.m116.735530} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Machado%
-, Lafuente%
-\BCBL {}\ \BBA {} Baeza%
-}{%
+\ \protect \BOthers {.}}{%
 Machado%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2014}}%
@@ -2202,6 +3196,39 @@ Machado, V\BPBI C.%
   Engineering}{37}{7}{1271--1287}.
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s00449-013-1099-8} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Machdar%
+\ \protect \BOthers {.}}{%
+Machdar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+Machdar1997}
+\APACinsertmetastar {%
+Machdar1997}%
+\begin{APACrefauthors}%
+Machdar, I.%
+, Harada, H.%
+, Ohashi, A.%
+, Sekiguchi, Y.%
+, Okui, H.%
+\BCBL {}\ \BBA {} Ueki, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A novel and cost-effective sewage treatment system
+  consisting of {UASB} pre-treatment and aerobic post-treatment units for
+  developing countries} {A novel and cost-effective sewage treatment system
+  consisting of {UASB} pre-treatment and aerobic post-treatment units for
+  developing countries}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Science and Technology}{36}{12}{189--197}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/s0273-1223(97)00739-7} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2266,6 +3293,130 @@ Madhav, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Mahmoud%
+\ \protect \BOthers {.}}{%
+Mahmoud%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Mahmoud2018}
+\APACinsertmetastar {%
+Mahmoud2018}%
+\begin{APACrefauthors}%
+Mahmoud, M.%
+, Ismail, S.%
+\BCBL {}\ \BBA {} Tawfik, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Post-treatment of anaerobic effluent containing
+  1,4-dioxane and heavy metals via auto-aerated down-flow hanging luffa
+  ({ADHL}) system} {Post-treatment of anaerobic effluent containing 1,4-dioxane
+  and heavy metals via auto-aerated down-flow hanging luffa ({ADHL})
+  system}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Process Safety and Environmental
+  Protection}{117}{}{22--32}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.psep.2018.04.008} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mahmoud%
+\ \protect \BOthers {.}}{%
+Mahmoud%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Mahmoud2010}
+\APACinsertmetastar {%
+Mahmoud2010}%
+\begin{APACrefauthors}%
+Mahmoud, M.%
+, Tawfik, A.%
+\BCBL {}\ \BBA {} El-Gohary, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Simultaneous Organic and Nutrient Removal in a Naturally
+  Ventilated Biotower Treating Presettled Municipal Wastewater} {Simultaneous
+  organic and nutrient removal in a naturally ventilated biotower treating
+  presettled municipal wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Environmental
+  Engineering}{136}{3}{301--307}.
+\newblock
+\begin{APACrefDOI} \doi{10.1061/(asce)ee.1943-7870.0000148} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mahmoud%
+\ \protect \BOthers {.}}{%
+Mahmoud%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Mahmoud2011}
+\APACinsertmetastar {%
+Mahmoud2011}%
+\begin{APACrefauthors}%
+Mahmoud, M.%
+, Tawfik, A.%
+\BCBL {}\ \BBA {} El-Gohary, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Use of down-flow hanging sponge ({DHS}) reactor as a
+  promising post-treatment system for municipal wastewater} {Use of down-flow
+  hanging sponge ({DHS}) reactor as a promising post-treatment system for
+  municipal wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chemical Engineering Journal}{168}{2}{535--543}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.cej.2011.01.019} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Manav-Demir%
+\ \protect \BOthers {.}}{%
+Manav-Demir%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+ManavDemir2024}
+\APACinsertmetastar {%
+ManavDemir2024}%
+\begin{APACrefauthors}%
+Manav-Demir, N.%
+, Gelgor, H\BPBI B.%
+, Oz, E.%
+, Ilhan, F.%
+, Ulucan-Altuntas, K.%
+, Tiwary, A.%
+\BCBL {}\ \BBA {} Debik, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effluent parameters prediction of a biological nutrient
+  removal ({BNR}) process using different machine learning methods: A case
+  study} {Effluent parameters prediction of a biological nutrient removal
+  ({BNR}) process using different machine learning methods: A case
+  study}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Environmental Management}{351}{}{119899}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jenvman.2023.119899} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Mao%
 \ \protect \BOthers {.}}{%
 Mao%
@@ -2300,6 +3451,37 @@ Mao, Z.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Marais%
+\ \BBA {} Ekama%
+}{%
+Marais%
+\ \BBA {} Ekama%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+Marais1976}
+\APACinsertmetastar {%
+Marais1976}%
+\begin{APACrefauthors}%
+Marais, G\BPBI v\BPBI R.%
+\BCBT {}\ \BBA {} Ekama, G\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1976}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The activated sludge process. Part 1. Steady state
+  behaviour} {The activated sludge process. part 1. steady state
+  behaviour}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water SA}{2}{4}{163--200}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.wrc.org.za/water-sa-issue/02-no-4-october-1976/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 McBride%
 \ \BBA {} Sundmacher%
 }{%
@@ -2329,10 +3511,35 @@ McBride, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-McKay%
-, Beckman%
-\BCBL {}\ \BBA {} Conover%
+McCormick%
 }{%
+McCormick%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+McCormick1976}
+\APACinsertmetastar {%
+McCormick1976}%
+\begin{APACrefauthors}%
+McCormick, G\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1976}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Computability of global solutions to factorable
+  nonconvex programs: Part I --- Convex underestimating problems}
+  {Computability of global solutions to factorable nonconvex programs: Part i
+  --- convex underestimating problems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Mathematical Programming}{10}{1}{147--175}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/bf01580665} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McKay%
+\ \protect \BOthers {.}}{%
 McKay%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1979}}%
@@ -2360,12 +3567,36 @@ McKay, M\BPBI D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Miederer%
-, Meier%
-, Elhaus%
-, Markthaler%
-\BCBL {}\ \BBA {} Karl%
+Meijer%
 }{%
+Meijer%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Meijer2004}
+\APACinsertmetastar {%
+Meijer2004}%
+\begin{APACrefauthors}%
+Meijer, S\BPBI C\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2004}.
+\unskip\
+\newblock
+\APACrefbtitle {Theoretical and practical aspects of modelling activated sludge
+  processes} {Theoretical and practical aspects of modelling activated sludge
+  processes}\ \APACtypeAddressSchool {\BPhD}{}{Delft University of Technology}.
+\unskip\
+\newblock
+\begin{APACrefURL}
+  \url{https://resolver.tudelft.nl/uuid:e0d5af2b-7bf6-4cd8-9a22-aac3f8d112fe}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Miederer%
+\ \protect \BOthers {.}}{%
 Miederer%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2025}}%
@@ -2394,9 +3625,7 @@ Miederer, J.%
 
 \bibitem [\protect \citeauthoryear {%
 Min%
-, Sonar%
-\BCBL {}\ \BBA {} Azizan%
-}{%
+\ \protect \BOthers {.}}{%
 Min%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2024}}%
@@ -2425,10 +3654,101 @@ Min, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Nazlabadi%
-, Niaragh%
-\BCBL {}\ \BBA {} Moghaddam%
+Narayanan%
+\ \BBA {} Narayan%
 }{%
+Narayanan%
+\ \BBA {} Narayan%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+Narayanan2019}
+\APACinsertmetastar {%
+Narayanan2019}%
+\begin{APACrefauthors}%
+Narayanan, C\BPBI M.%
+\BCBT {}\ \BBA {} Narayan, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Biological wastewater treatment and bioreactor design: a
+  review} {Biological wastewater treatment and bioreactor design: a
+  review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Sustainable Environment Research}{29}{1}{33}.
+\newblock
+\begin{APACrefDOI} \doi{10.1186/s42834-019-0036-1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nasr%
+\ \protect \BOthers {.}}{%
+Nasr%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Nasr2022}
+\APACinsertmetastar {%
+Nasr2022}%
+\begin{APACrefauthors}%
+Nasr, M.%
+, Attia, M.%
+, Ezz, H.%
+\BCBL {}\ \BBA {} Ibrahim, M\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Recent applications of downflow hanging sponge
+  technology for decentralized wastewater treatment} {Recent applications of
+  downflow hanging sponge technology for decentralized wastewater
+  treatment}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Cost Effective Technologies for Solid Waste and
+  Wastewater Treatment} {Cost effective technologies for solid waste and
+  wastewater treatment}\ (\BPGS\ 59--67).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/b978-0-12-822933-0.00014-0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nazif%
+\ \protect \BOthers {.}}{%
+Nazif%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+Nazif2023}
+\APACinsertmetastar {%
+Nazif2023}%
+\begin{APACrefauthors}%
+Nazif, S.%
+, Forouzanmehr, F.%
+\BCBL {}\ \BBA {} Khatibi, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Developing a practical model for the optimal operation
+  of wastewater treatment plant considering influent characteristics}
+  {Developing a practical model for the optimal operation of wastewater
+  treatment plant considering influent characteristics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environmental Science and Pollution
+  Research}{30}{14}{39764--39782}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s11356-022-24981-8} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nazlabadi%
+\ \protect \BOthers {.}}{%
 Nazlabadi%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -2457,11 +3777,36 @@ Nazlabadi, E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Newhart%
-, Holloway%
-, Hering%
-\BCBL {}\ \BBA {} Cath%
+Nelson%
+\ \BBA {} Sidhu%
 }{%
+Nelson%
+\ \BBA {} Sidhu%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Nelson2009}
+\APACinsertmetastar {%
+Nelson2009}%
+\begin{APACrefauthors}%
+Nelson, M.%
+\BCBT {}\ \BBA {} Sidhu, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Analysis of the activated sludge model (number 1)}
+  {Analysis of the activated sludge model (number 1)}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied Mathematics Letters}{22}{5}{629--635}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.aml.2008.05.003} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Newhart%
+\ \protect \BOthers {.}}{%
 Newhart%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2019}}%
@@ -2489,10 +3834,42 @@ Newhart, K\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Niu%
+\ \protect \BOthers {.}}{%
+Niu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Niu2022}
+\APACinsertmetastar {%
+Niu2022}%
+\begin{APACrefauthors}%
+Niu, G.%
+, Li, X.%
+, Wan, X.%
+, He, X.%
+, Zhao, Y.%
+, Yi, X.%
+\BDBL {}Huang, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Dynamic optimization of wastewater treatment process
+  based on novel multi-objective ant lion optimization and deep learning
+  algorithm} {Dynamic optimization of wastewater treatment process based on
+  novel multi-objective ant lion optimization and deep learning
+  algorithm}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Cleaner Production}{345}{}{131140}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jclepro.2022.131140} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Padr{\'{o}}n-P{\'{a}}ez%
-, Almaraz%
-\BCBL {}\ \BBA {} Rom{\'{a}}n-Mart{\'{i}}nez%
-}{%
+\ \protect \BOthers {.}}{%
 Padr{\'{o}}n-P{\'{a}}ez%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2020}}%
@@ -2550,6 +3927,38 @@ Pedrozo, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Petersen%
+\ \protect \BOthers {.}}{%
+Petersen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+Petersen2003}
+\APACinsertmetastar {%
+Petersen2003}%
+\begin{APACrefauthors}%
+Petersen, B.%
+, Gernaey, K.%
+, Henze, M.%
+\BCBL {}\ \BBA {} Vanrolleghem, P\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Calibration of Activated Sludge Models: A Critical
+  Review of Experimental Designs} {Calibration of activated sludge models: A
+  critical review of experimental designs}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Focus on Biotechnology} {Focus on biotechnology}\
+  (\BPGS\ 101--186).
+\newblock
+\APACaddressPublisher{}{Springer Netherlands}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-94-017-0932-3_5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Pinheiro%
 \ \protect \BOthers {.}}{%
 Pinheiro%
@@ -2583,12 +3992,98 @@ Pinheiro, J\BPBI M\BPBI H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Prokhorenkova%
-, Gusev%
-, Vorobev%
-, Dorogush%
-\BCBL {}\ \BBA {} Gulin%
+Poch%
 }{%
+Poch%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+Poch1993}
+\APACinsertmetastar {%
+Poch1993}%
+\begin{APACrefauthors}%
+Poch, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+\APACrefbtitle {Water Treatment Plant} {Water treatment plant}\ [Dataset].
+\newblock
+\APAChowpublished {UCI Machine Learning Repository}.
+\newblock
+\begin{APACrefURL}
+  \url{https://archive.ics.uci.edu/dataset/106/water+treatment+plant}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.24432/C5FS4C} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Poh%
+\ \protect \BOthers {.}}{%
+Poh%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Poh2016}
+\APACinsertmetastar {%
+Poh2016}%
+\begin{APACrefauthors}%
+Poh, P\BPBI E.%
+, Gouwanda, D.%
+, Mohan, Y.%
+, Gopalai, A\BPBI A.%
+\BCBL {}\ \BBA {} Tan, H\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Optimization of Wastewater Anaerobic Digestion Using
+  Mechanistic and Meta-heuristic Methods: Current Limitations and Future
+  Opportunities} {Optimization of wastewater anaerobic digestion using
+  mechanistic and meta-heuristic methods: Current limitations and future
+  opportunities}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Conservation Science and
+  Engineering}{1}{1}{1--20}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s41101-016-0001-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Preena%
+\ \protect \BOthers {.}}{%
+Preena%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Preena2021}
+\APACinsertmetastar {%
+Preena2021}%
+\begin{APACrefauthors}%
+Preena, P\BPBI G.%
+, Rejish~Kumar, V\BPBI J.%
+\BCBL {}\ \BBA {} Singh, I\BPBI S\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Nitrification and denitrification in recirculating
+  aquaculture systems: the processes and players} {Nitrification and
+  denitrification in recirculating aquaculture systems: the processes and
+  players}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Reviews in Aquaculture}{13}{4}{2053--2075}.
+\newblock
+\begin{APACrefDOI} \doi{10.1111/raq.12558} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Prokhorenkova%
+\ \protect \BOthers {.}}{%
 Prokhorenkova%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2018}}%
@@ -2650,9 +4145,7 @@ Ragonneau, T\BPBI M.%
 
 \bibitem [\protect \citeauthoryear {%
 Raissi%
-, Perdikaris%
-\BCBL {}\ \BBA {} Karniadakis%
-}{%
+\ \protect \BOthers {.}}{%
 Raissi%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2019}}%
@@ -2681,10 +4174,40 @@ Raissi, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Rapi%
+\ \protect \BOthers {.}}{%
+Rapi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Rapi2021}
+\APACinsertmetastar {%
+Rapi2021}%
+\begin{APACrefauthors}%
+Rapi, N.%
+, Jane, C.%
+, Azni, M\BPBI E.%
+, Hitam, S\BPBI M\BPBI S.%
+, Mohamad, R.%
+\BCBL {}\ \BBA {} Noorain, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Biological treatment of palm oil mill effluent by using
+  a downflow hanging sponge reactor} {Biological treatment of palm oil mill
+  effluent by using a downflow hanging sponge reactor}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IOP Conference Series: Earth and Environmental
+  Science}{922}{1}{012049}.
+\newblock
+\begin{APACrefDOI} \doi{10.1088/1755-1315/922/1/012049} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Razaviyayn%
-, Hong%
-\BCBL {}\ \BBA {} Luo%
-}{%
+\ \protect \BOthers {.}}{%
 Razaviyayn%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2013}}%
@@ -2745,10 +4268,95 @@ Ren, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Rieger%
+\ \protect \BOthers {.}}{%
+Rieger%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2001}}%
+}]{%
+Rieger2001}
+\APACinsertmetastar {%
+Rieger2001}%
+\begin{APACrefauthors}%
+Rieger, L.%
+, Koch, G.%
+, K{\"{u}}hni, M.%
+, Gujer, W.%
+\BCBL {}\ \BBA {} Siegrist, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The eawag bio-p module for activated sludge model no. 3}
+  {The eawag bio-p module for activated sludge model no. 3}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Research}{35}{16}{3887--3903}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/s0043-1354(01)00110-5} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+RIVAS%
+\ \protect \BOthers {.}}{%
+RIVAS%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+Rivas2008}
+\APACinsertmetastar {%
+Rivas2008}%
+\begin{APACrefauthors}%
+RIVAS, A.%
+, IRIZAR, I.%
+\BCBL {}\ \BBA {} AYESA, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Model-based optimisation of Wastewater Treatment Plants
+  design} {Model-based optimisation of wastewater treatment plants
+  design}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Environmental Modelling \& Software}{23}{4}{435--450}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.envsoft.2007.06.009} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rubio-Castro%
+\ \protect \BOthers {.}}{%
+Rubio-Castro%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+RubioCastro2013}
+\APACinsertmetastar {%
+RubioCastro2013}%
+\begin{APACrefauthors}%
+Rubio-Castro, E.%
+, Ponce-Ortega, J\BPBI M.%
+, Serna-Gonz{\'{a}}lez, M.%
+, El-Halwagi, M\BPBI M.%
+\BCBL {}\ \BBA {} Pham, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Global optimization in property-based interplant water
+  integration} {Global optimization in property-based interplant water
+  integration}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{AIChE Journal}{59}{3}{813--833}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/aic.13874} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Ruckstuhl%
-, Janji{\'{c}}%
-\BCBL {}\ \BBA {} Rasp%
-}{%
+\ \protect \BOthers {.}}{%
 Ruckstuhl%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -2803,9 +4411,7 @@ Rudin, C.%
 
 \bibitem [\protect \citeauthoryear {%
 Rumelhart%
-, Hinton%
-\BCBL {}\ \BBA {} Williams%
-}{%
+\ \protect \BOthers {.}}{%
 Rumelhart%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1986}}%
@@ -2832,10 +4438,7 @@ Rumelhart, D\BPBI E.%
 
 \bibitem [\protect \citeauthoryear {%
 Sadeghassadi%
-, Macnab%
-, Gopaluni%
-\BCBL {}\ \BBA {} Westwick%
-}{%
+\ \protect \BOthers {.}}{%
 Sadeghassadi%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2018}}%
@@ -2861,6 +4464,39 @@ Sadeghassadi, M.%
 \APACjournalVolNumPages{Computers \& Chemical Engineering}{115}{}{150--160}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.compchemeng.2018.04.007} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sadino-Riquelme%
+\ \protect \BOthers {.}}{%
+Sadino-Riquelme%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+SadinoRiquelme2023}
+\APACinsertmetastar {%
+SadinoRiquelme2023}%
+\begin{APACrefauthors}%
+Sadino-Riquelme, M.%
+, Donoso-Bravo, A.%
+, Zorrilla, F.%
+, Valdebenito-Rolack, E.%
+, G{\'{o}}mez, D.%
+\BCBL {}\ \BBA {} Hansen, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Computational fluid dynamics ({CFD}) modeling applied to
+  biological wastewater treatment systems: An overview of strategies for the
+  kinetics integration} {Computational fluid dynamics ({CFD}) modeling applied
+  to biological wastewater treatment systems: An overview of strategies for the
+  kinetics integration}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Chemical Engineering Journal}{466}{}{143180}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.cej.2023.143180} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2897,6 +4533,36 @@ Sadri~Moghaddam, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Sadri~Moghaddam%
+\ \BBA {} Pirali%
+}{%
+Sadri~Moghaddam%
+\ \BBA {} Pirali%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+SadriMoghaddam2021}
+\APACinsertmetastar {%
+SadriMoghaddam2021}%
+\begin{APACrefauthors}%
+Sadri~Moghaddam, S.%
+\BCBT {}\ \BBA {} Pirali, M\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modeling and calibration of a full-scale wastewater
+  treatment plant using {GPS-X} model (A case study of Tehran)} {Modeling and
+  calibration of a full-scale wastewater treatment plant using {GPS-X} model (a
+  case study of tehran)}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Numerical Methods in Civil Engineering}{5}{4}{67--76}.
+\newblock
+\begin{APACrefDOI} \doi{10.52547/nmce.5.4.67} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Sahigara%
 \ \protect \BOthers {.}}{%
 Sahigara%
@@ -2928,9 +4594,64 @@ Sahigara, F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Selerio%
+Seggelke%
+\ \protect \BOthers {.}}{%
+Seggelke%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+Seggelke1999}
+\APACinsertmetastar {%
+Seggelke1999}%
+\begin{APACrefauthors}%
+Seggelke, K.%
+, Obenaus, F.%
+\BCBL {}\ \BBA {} Rosenwinkel, K\BHBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Dynamic simulation of a low loaded trickling filter for
+  nitrification} {Dynamic simulation of a low loaded trickling filter for
+  nitrification}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Science and Technology}{39}{4}{163--168}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/s0273-1223(99)00073-6} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+E\BPBI F.~Selerio%
 }{%
-Selerio%
+E\BPBI F.~Selerio%
+}{%
+{\protect \APACyear {2022}}%
+}]{%
+Selerio2022}
+\APACinsertmetastar {%
+Selerio2022}%
+\begin{APACrefauthors}%
+Selerio, E\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Configuration of urban water eutrophication abatement
+  systems using a novel regression-based optimization scheme} {Configuration of
+  urban water eutrophication abatement systems using a novel regression-based
+  optimization scheme}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Environmental Management}{319}{}{115667}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jenvman.2022.115667} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+E\BPBI F.~Selerio Jr.%
+}{%
+E\BPBI F.~Selerio Jr.%
 }{%
 {\protect \APACyear {2026}}%
 }]{%
@@ -2956,9 +4677,7 @@ Selerio, E\BPBI F., Jr.%
 
 \bibitem [\protect \citeauthoryear {%
 Shahbazi%
-, Mohammadi%
-\BCBL {}\ \BBA {} Afsharchi%
-}{%
+\ \protect \BOthers {.}}{%
 Shahbazi%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2026}}%
@@ -3053,6 +4772,39 @@ Shevchenko, V.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Shojaei%
+\ \BBA {} Shojaei%
+}{%
+Shojaei%
+\ \BBA {} Shojaei%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+Shojaei2021}
+\APACinsertmetastar {%
+Shojaei2021}%
+\begin{APACrefauthors}%
+Shojaei, S.%
+\BCBT {}\ \BBA {} Shojaei, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Optimization of Process Conditions in Wastewater
+  Degradation Process} {Optimization of process conditions in wastewater
+  degradation process}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Soft Computing Techniques in Solid Waste and Wastewater
+  Management} {Soft computing techniques in solid waste and wastewater
+  management}\ (\BPGS\ 381--392).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/b978-0-12-824463-0.00010-0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Shwartz-Ziv%
 \ \BBA {} Armon%
 }{%
@@ -3082,9 +4834,7 @@ Shwartz-Ziv, R.%
 
 \bibitem [\protect \citeauthoryear {%
 Simon%
-, Friedman%
-\BCBL {}\ \BBA {} Hastie%
-}{%
+\ \protect \BOthers {.}}{%
 Simon%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2013}}%
@@ -3110,6 +4860,37 @@ Simon, N.%
 \begin{APACrefURL} \url{https://arxiv.org/abs/1311.6529} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.48550/arXiv.1311.6529} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Simsek%
+\ \protect \BOthers {.}}{%
+Simsek%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Simsek2012}
+\APACinsertmetastar {%
+Simsek2012}%
+\begin{APACrefauthors}%
+Simsek, H.%
+, Kasi, M.%
+, Wadhawan, T.%
+, Bye, C.%
+, Blonigen, M.%
+\BCBL {}\ \BBA {} Khan, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Fate of dissolved organic nitrogen in two stage
+  trickling filter process} {Fate of dissolved organic nitrogen in two stage
+  trickling filter process}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Research}{46}{16}{5115--5126}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.watres.2012.06.042} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -3142,11 +4923,7 @@ Smola, A\BPBI J.%
 
 \bibitem [\protect \citeauthoryear {%
 Stellato%
-, Banjac%
-, Goulart%
-, Bemporad%
-\BCBL {}\ \BBA {} Boyd%
-}{%
+\ \protect \BOthers {.}}{%
 Stellato%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2018}}%
@@ -3180,11 +4957,7 @@ Stellato, B.%
 
 \bibitem [\protect \citeauthoryear {%
 Stellato%
-, Banjac%
-, Goulart%
-, Bemporad%
-\BCBL {}\ \BBA {} Boyd%
-}{%
+\ \protect \BOthers {.}}{%
 Stellato%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2020}}%
@@ -3270,6 +5043,37 @@ Straus, J.%
 \APACjournalVolNumPages{Computers \& Chemical Engineering}{119}{}{143--151}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.compchemeng.2018.08.031} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Strous%
+\ \protect \BOthers {.}}{%
+Strous%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+Strous1998}
+\APACinsertmetastar {%
+Strous1998}%
+\begin{APACrefauthors}%
+Strous, M.%
+, Heijnen, J\BPBI J.%
+, Kuenen, J\BPBI G.%
+\BCBL {}\ \BBA {} Jetten, M\BPBI S\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The sequencing batch reactor as a powerful tool for the
+  study of slowly growing anaerobic ammonium-oxidizing microorganisms} {The
+  sequencing batch reactor as a powerful tool for the study of slowly growing
+  anaerobic ammonium-oxidizing microorganisms}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Applied Microbiology and
+  Biotechnology}{50}{5}{589--596}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s002530051340} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -3397,17 +5201,112 @@ Sturm, P\BPBI O.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-TAKACS%
+Sundui%
+\ \protect \BOthers {.}}{%
+Sundui%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Sundui2021}
+\APACinsertmetastar {%
+Sundui2021}%
+\begin{APACrefauthors}%
+Sundui, B.%
+, Ramirez~Calderon, O\BPBI A.%
+, Abdeldayem, O\BPBI M.%
+, L{\'{a}}zaro-Gil, J.%
+, Rene, E\BPBI R.%
+\BCBL {}\ \BBA {} Sambuu, U.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Applications of machine learning algorithms for
+  biological wastewater treatment: Updates and perspectives} {Applications of
+  machine learning algorithms for biological wastewater treatment: Updates and
+  perspectives}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Clean Technologies and Environmental
+  Policy}{23}{1}{127--143}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s10098-020-01993-x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Szeląg%
+\ \protect \BOthers {.}}{%
+Szeląg%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Szelag2022}
+\APACinsertmetastar {%
+Szelag2022}%
+\begin{APACrefauthors}%
+Szeląg, B.%
+, Kiczko, A.%
+, Zaborowska, E.%
+, Mannina, G.%
+\BCBL {}\ \BBA {} Mąkinia, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modeling nutrient removal and energy consumption in an
+  advanced activated sludge system under uncertainty} {Modeling nutrient
+  removal and energy consumption in an advanced activated sludge system under
+  uncertainty}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Environmental Management}{323}{}{116040}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jenvman.2022.116040} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tabios~III%
 }{%
-TAKACS%
+Tabios~III%
 }{%
+{\protect \APACyear {2020}}%
+}]{%
+Tabios2020}
+\APACinsertmetastar {%
+Tabios2020}%
+\begin{APACrefauthors}%
+Tabios~III, G\BPBI Q.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Physical Features and State of Water Resources and
+  Status of Water Governance in the Philippines} {Physical features and state
+  of water resources and status of water governance in the philippines}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {World Water Resources} {World water resources}\ (\BPGS\
+  9--28).
+\newblock
+\APACaddressPublisher{}{Springer International Publishing}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-030-25401-8_2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tak{\'a}cs%
+\ \protect \BOthers {.}}{%
+Tak{\'a}cs%
+\ \protect \BOthers {.}}{%
 {\protect \APACyear {1991}}%
 }]{%
 Takacs1991}
 \APACinsertmetastar {%
 Takacs1991}%
 \begin{APACrefauthors}%
-TAKACS, I.%
+Tak{\'a}cs, I.%
+, Patry, G\BPBI G.%
+\BCBL {}\ \BBA {} Nolasco, D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -3422,11 +5321,41 @@ TAKACS, I.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Tang%
-, Cui%
-, Zhou%
-\BCBL {}\ \BBA {} Chang%
+Tak{\'a}cs%
+\ \BBA {} Vanrolleghem%
 }{%
+Tak{\'a}cs%
+\ \BBA {} Vanrolleghem%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+TakacsVanrolleghem2006}
+\APACinsertmetastar {%
+TakacsVanrolleghem2006}%
+\begin{APACrefauthors}%
+Tak{\'a}cs, I.%
+\BCBT {}\ \BBA {} Vanrolleghem, P\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Elemental balances in activated sludge modelling}
+  {Elemental balances in activated sludge modelling}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the IWA World Water Congress.}
+  {Proceedings of the iwa world water congress.}
+\newblock
+\APACaddressPublisher{}{IWA Publishing}.
+\newblock
+\begin{APACrefURL}
+  \url{https://modeleau.fsg.ulaval.ca/fileadmin/modeleau/documents/Publications/pvr673.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tang%
+\ \protect \BOthers {.}}{%
 Tang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2026}}%
@@ -3452,6 +5381,65 @@ Tang, Y.%
 \APACjournalVolNumPages{Processes}{14}{5}{806}.
 \newblock
 \begin{APACrefDOI} \doi{10.3390/pr14050806} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tawfik%
+\ \protect \BOthers {.}}{%
+Tawfik%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Tawfik2006}
+\APACinsertmetastar {%
+Tawfik2006}%
+\begin{APACrefauthors}%
+Tawfik, A.%
+, Ohashi, A.%
+\BCBL {}\ \BBA {} Harada, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sewage treatment in a combined up-flow anaerobic sludge
+  blanket ({UASB})--down-flow hanging sponge ({DHS}) system} {Sewage treatment
+  in a combined up-flow anaerobic sludge blanket ({UASB})--down-flow hanging
+  sponge ({DHS}) system}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biochemical Engineering Journal}{29}{3}{210--219}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.bej.2005.11.018} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tawfik%
+\ \protect \BOthers {.}}{%
+Tawfik%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Tawfik2010}
+\APACinsertmetastar {%
+Tawfik2010}%
+\begin{APACrefauthors}%
+Tawfik, A.%
+, Ohashi, A.%
+\BCBL {}\ \BBA {} Harada, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effect of sponge volume on the performance of down-flow
+  hanging sponge system treating {UASB} reactor effluent} {Effect of sponge
+  volume on the performance of down-flow hanging sponge system treating {UASB}
+  reactor effluent}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioprocess and Biosystems
+  Engineering}{33}{7}{779--785}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s00449-009-0399-5} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -3483,9 +5471,7 @@ Tofallis, C.%
 
 \bibitem [\protect \citeauthoryear {%
 T{\o}ndel%
-, Johansen%
-\BCBL {}\ \BBA {} Bemporad%
-}{%
+\ \protect \BOthers {.}}{%
 T{\o}ndel%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2003}}%
@@ -3512,11 +5498,38 @@ T{\o}ndel, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Tsochatzidi%
-, Cenci%
-, Aroniada%
-\BCBL {}\ \BBA {} Papageorgiou%
+Tosarkani%
+\ \BBA {} Amin%
 }{%
+Tosarkani%
+\ \BBA {} Amin%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+Tosarkani2020}
+\APACinsertmetastar {%
+Tosarkani2020}%
+\begin{APACrefauthors}%
+Tosarkani, B\BPBI M.%
+\BCBT {}\ \BBA {} Amin, S\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A robust optimization model for designing a wastewater
+  treatment network under uncertainty: Multi-objective approach} {A robust
+  optimization model for designing a wastewater treatment network under
+  uncertainty: Multi-objective approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computers \& Industrial Engineering}{146}{}{106611}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.cie.2020.106611} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tsochatzidi%
+\ \protect \BOthers {.}}{%
 Tsochatzidi%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2025}}%
@@ -3541,6 +5554,71 @@ Tsochatzidi, A.%
 \APACjournalVolNumPages{International Journal of Pharmaceutics}{682}{}{125861}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.ijpharm.2025.125861} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tyagi%
+\ \protect \BOthers {.}}{%
+Tyagi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+Tyagi2021}
+\APACinsertmetastar {%
+Tyagi2021}%
+\begin{APACrefauthors}%
+Tyagi, V\BPBI K.%
+, Ali, M.%
+, Tawfik, A.%
+, Maharjan, N.%
+, Kazmi, A\BPBI A.%
+, Okubo, T.%
+\BCBL {}\ \BBA {} Harada, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Future perspectives of energy saving down-flow hanging
+  sponge ({DHS}) technology for wastewater valorization---a review} {Future
+  perspectives of energy saving down-flow hanging sponge ({DHS}) technology for
+  wastewater valorization---a review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Reviews in Environmental Science and
+  Bio/Technology}{20}{2}{389--418}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s11157-021-09573-1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ulrich%
+\ \protect \BOthers {.}}{%
+Ulrich%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+Ulrich2009}
+\APACinsertmetastar {%
+Ulrich2009}%
+\begin{APACrefauthors}%
+Ulrich, A.%
+, Reuter, S.%
+\BCBL {}\ \BBA {} Gutterer, B.%
+\end{APACrefauthors}%
+\ (\BEDS).
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Decentralised wastewater treatment systems and sanitation in
+  developing countries: A practical guide} {Decentralised wastewater treatment
+  systems and sanitation in developing countries: A practical guide}.
+\newblock
+\APACaddressPublisher{}{Water, Engineering and Development Centre, Loughborough
+  University}.
+\newblock
+\begin{APACrefURL} \url{https://repository.lboro.ac.uk/articles/book/9585188}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -3574,11 +5652,7 @@ USEPA2009}%
 
 \bibitem [\protect \citeauthoryear {%
 {Utkarsh}%
-, Maddix%
-, Ma%
-, Mahoney%
-\BCBL {}\ \BBA {} Wang%
-}{%
+\ \protect \BOthers {.}}{%
 {Utkarsh}%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2025}}%
@@ -3610,10 +5684,7 @@ Utkarsh2025}%
 
 \bibitem [\protect \citeauthoryear {%
 Valente%
-, Dias%
-, Guerra%
-\BCBL {}\ \BBA {} Ventura%
-}{%
+\ \protect \BOthers {.}}{%
 Valente%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2025}}%
@@ -3638,6 +5709,127 @@ Valente, M.%
 \APACjournalVolNumPages{Communications Physics}{8}{1}{433}.
 \newblock
 \begin{APACrefDOI} \doi{10.1038/s42005-025-02329-1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vandekerckhove%
+}{%
+Vandekerckhove%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Vandekerckhove2018}
+\APACinsertmetastar {%
+Vandekerckhove2018}%
+\begin{APACrefauthors}%
+Vandekerckhove, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\unskip\
+\newblock
+\APACrefbtitle {Technology for thermophilic nitrogen removal from wastewater:
+  Developing combined nitrification/denitrification and proving anammox}
+  {Technology for thermophilic nitrogen removal from wastewater: Developing
+  combined nitrification/denitrification and proving anammox}\
+  \APACtypeAddressSchool {\BPhD}{}{Ghent University}.
+\unskip\
+\newblock
+\begin{APACrefURL} \url{https://biblio.ugent.be/publication/8584187}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+van Kessel%
+\ \protect \BOthers {.}}{%
+van Kessel%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+VanKessel2015}
+\APACinsertmetastar {%
+VanKessel2015}%
+\begin{APACrefauthors}%
+van Kessel, M\BPBI A\BPBI H\BPBI J.%
+, Speth, D\BPBI R.%
+, Albertsen, M.%
+, Nielsen, P\BPBI H.%
+, Op~den Camp, H\BPBI J\BPBI M.%
+, Kartal, B.%
+\BDBL {}L{\"{u}}cker, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Complete nitrification by a single microorganism}
+  {Complete nitrification by a single microorganism}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{528}{7583}{555--559}.
+\newblock
+\begin{APACrefDOI} \doi{10.1038/nature16459} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Van~Loosdrecht%
+\ \protect \BOthers {.}}{%
+Van~Loosdrecht%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+VanLoosdrecht2015}
+\APACinsertmetastar {%
+VanLoosdrecht2015}%
+\begin{APACrefauthors}%
+Van~Loosdrecht, M\BPBI C\BPBI M.%
+, Lopez-Vazquez, C\BPBI M.%
+, Meijer, S\BPBI C\BPBI F.%
+, Hooijmans, C\BPBI M.%
+\BCBL {}\ \BBA {} Brdjanovic, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Twenty-five years of {ASM1}: past, present and future of
+  wastewater treatment modelling} {Twenty-five years of {ASM1}: past, present
+  and future of wastewater treatment modelling}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Hydroinformatics}{17}{5}{697--718}.
+\newblock
+\begin{APACrefDOI} \doi{10.2166/hydro.2015.006} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vanrolleghem%
+\ \protect \BOthers {.}}{%
+Vanrolleghem%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+Vanrolleghem1999}
+\APACinsertmetastar {%
+Vanrolleghem1999}%
+\begin{APACrefauthors}%
+Vanrolleghem, P\BPBI A.%
+, Spanjers, H.%
+, Petersen, B.%
+, Ginestet, P.%
+\BCBL {}\ \BBA {} Takacs, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Estimating (combinations of) activated sludge model no.
+  1 parameters and components by respirometry} {Estimating (combinations of)
+  activated sludge model no. 1 parameters and components by
+  respirometry}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Science and Technology}{39}{1}{195--214}.
+\newblock
+\begin{APACrefDOI} \doi{10.2166/wst.1999.0042} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -3700,13 +5892,43 @@ W{\"{a}}chter, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Wang%
-, Li%
-, Bai%
-, Yu%
-\BCBL {}\ \BBA {} Qu%
-}{%
-Wang%
+P.~Wang%
+\ \protect \BOthers {.}}{%
+P.~Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+Wang2024}
+\APACinsertmetastar {%
+Wang2024}%
+\begin{APACrefauthors}%
+Wang, P.%
+, Chen, Y.%
+, Zhang, C.%
+, Shi, Y.%
+, Wang, B.%
+, Lai, C.%
+\BDBL {}Huang, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Real-time prediction of the chemical oxygen demand
+  component parameters in activated sludge model using backpropagation neural
+  network} {Real-time prediction of the chemical oxygen demand component
+  parameters in activated sludge model using backpropagation neural
+  network}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Heliyon}{10}{16}{e35580}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.heliyon.2024.e35580} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Y.~Wang%
+\ \protect \BOthers {.}}{%
+Y.~Wang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2025}}%
 }]{%
@@ -3735,10 +5957,42 @@ Wang, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Waqas%
+\ \protect \BOthers {.}}{%
+Waqas%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+Waqas2022}
+\APACinsertmetastar {%
+Waqas2022}%
+\begin{APACrefauthors}%
+Waqas, S.%
+, Harun, N\BPBI Y.%
+, Sambudi, N\BPBI S.%
+, Arshad, U.%
+, Nordin, N\BPBI A\BPBI H\BPBI M.%
+, Bilad, M\BPBI R.%
+\BDBL {}Malik, A\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{SVM} and {ANN} Modelling Approach for the Optimization
+  of Membrane Permeability of a Membrane Rotating Biological Contactor for
+  Wastewater Treatment} {{SVM} and {ANN} modelling approach for the
+  optimization of membrane permeability of a membrane rotating biological
+  contactor for wastewater treatment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Membranes}{12}{9}{821}.
+\newblock
+\begin{APACrefDOI} \doi{10.3390/membranes12090821} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Wentzel%
-, Ekama%
-\BCBL {}\ \BBA {} Marais%
-}{%
+\ \protect \BOthers {.}}{%
 Wentzel%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {1992}}%
@@ -3766,10 +6020,63 @@ Wentzel, M\BPBI C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Wold%
-, Sj{\"{o}}str{\"{o}}m%
-\BCBL {}\ \BBA {} Eriksson%
+Wik%
 }{%
+Wik%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+Wik2003}
+\APACinsertmetastar {%
+Wik2003}%
+\begin{APACrefauthors}%
+Wik, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Trickling Filters and Biofilm Reactor Modelling}
+  {Trickling filters and biofilm reactor modelling}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Reviews in Environmental Science and
+  Biotechnology}{2}{2-4}{193--212}.
+\newblock
+\begin{APACrefDOI} \doi{10.1023/b:resb.0000040470.48460.bb} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Winkler%
+\ \BBA {} Straka%
+}{%
+Winkler%
+\ \BBA {} Straka%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+WinklerStraka2019}
+\APACinsertmetastar {%
+WinklerStraka2019}%
+\begin{APACrefauthors}%
+Winkler, M\BPBI K.%
+\BCBT {}\ \BBA {} Straka, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {New directions in biological nitrogen removal and
+  recovery from wastewater} {New directions in biological nitrogen removal and
+  recovery from wastewater}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Current Opinion in Biotechnology}{57}{}{50--55}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.copbio.2018.12.007} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wold%
+\ \protect \BOthers {.}}{%
 Wold%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2001}}%
@@ -3828,11 +6135,39 @@ Woo, S\BPBI H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Wu%
+\ \protect \BOthers {.}}{%
+Wu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Wu2016}
+\APACinsertmetastar {%
+Wu2016}%
+\begin{APACrefauthors}%
+Wu, X.%
+, Yang, Y.%
+, Wu, G.%
+, Mao, J.%
+\BCBL {}\ \BBA {} Zhou, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Simulation and optimization of a coking wastewater
+  biological treatment process by activated sludge models ({ASM})} {Simulation
+  and optimization of a coking wastewater biological treatment process by
+  activated sludge models ({ASM})}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Environmental Management}{165}{}{235--242}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jenvman.2015.09.041} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Xiao%
-, Zhao%
-, Zhang%
-\BCBL {}\ \BBA {} Yue%
-}{%
+\ \protect \BOthers {.}}{%
 Xiao%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2026}}%
@@ -3862,11 +6197,66 @@ Xiao, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-C.~Yang%
-, Zhang%
-, Huang%
-\BCBL {}\ \BBA {} Liu%
+Xie%
 }{%
+Xie%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+Xie2021}
+\APACinsertmetastar {%
+Xie2021}%
+\begin{APACrefauthors}%
+Xie, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2021}.
+\unskip\
+\newblock
+\APACrefbtitle {Bioreactor strategies for sustainable nitrogen cycling based on
+  mineralization/nitrification, partial nitritation/anammox or sulfur-based
+  denitratation} {Bioreactor strategies for sustainable nitrogen cycling based
+  on mineralization/nitrification, partial nitritation/anammox or sulfur-based
+  denitratation}\ \APACtypeAddressSchool {\BPhD}{}{University of Antwerp}.
+\unskip\
+\newblock
+\begin{APACrefURL} \url{https://repository.uantwerpen.be/link/irua/182099}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xu%
+\ \protect \BOthers {.}}{%
+Xu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Xu2015}
+\APACinsertmetastar {%
+Xu2015}%
+\begin{APACrefauthors}%
+Xu, X.%
+, Lv, Z.%
+, Song, Y.%
+\BCBL {}\ \BBA {} Bin, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Water system integration and optimization in a yeast
+  enterprise} {Water system integration and optimization in a yeast
+  enterprise}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Resources, Conservation and Recycling}{101}{}{96--104}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.resconrec.2015.05.019} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+C.~Yang%
+\ \protect \BOthers {.}}{%
 C.~Yang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2021}}%
@@ -3893,6 +6283,35 @@ Yang, C.%
 \APACjournalVolNumPages{Journal of Cleaner Production}{314}{}{128076}.
 \newblock
 \begin{APACrefDOI} \doi{10.1016/j.jclepro.2021.128076} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+L.~Yang%
+\ \protect \BOthers {.}}{%
+L.~Yang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+YangNetwork2014}
+\APACinsertmetastar {%
+YangNetwork2014}%
+\begin{APACrefauthors}%
+Yang, L.%
+, Salcedo-Diaz, R.%
+\BCBL {}\ \BBA {} Grossmann, I\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Water Network Optimization with Wastewater Regeneration
+  Models} {Water network optimization with wastewater regeneration
+  models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Industrial \& Engineering Chemistry
+  Research}{53}{45}{17680--17695}.
+\newblock
+\begin{APACrefDOI} \doi{10.1021/ie500978h} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -3929,11 +6348,7 @@ Yang, S.%
 
 \bibitem [\protect \citeauthoryear {%
 T.~Yang%
-, Qiu%
-, Ma%
-, Chadli%
-\BCBL {}\ \BBA {} Zhang%
-}{%
+\ \protect \BOthers {.}}{%
 T.~Yang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2014}}%
@@ -3962,11 +6377,39 @@ Yang, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Ye%
+\ \protect \BOthers {.}}{%
+Ye%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+Ye2019}
+\APACinsertmetastar {%
+Ye2019}%
+\begin{APACrefauthors}%
+Ye, X.%
+, Chen, B.%
+, Jing, L.%
+, Zhang, B.%
+\BCBL {}\ \BBA {} Liu, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Multi-agent hybrid particle swarm optimization
+  ({MAHPSO}) for wastewater treatment network planning} {Multi-agent hybrid
+  particle swarm optimization ({MAHPSO}) for wastewater treatment network
+  planning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Environmental Management}{234}{}{525--536}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jenvman.2019.01.023} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Yilmaz%
-, Lemaire%
-, Keller%
-\BCBL {}\ \BBA {} Yuan%
-}{%
+\ \protect \BOthers {.}}{%
 Yilmaz%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2007}}%
@@ -4026,13 +6469,37 @@ Yuan, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Zhang%
-, Rai%
-, Wang%
-, Li%
-\BCBL {}\ \BBA {} Guest%
+T\BPBI C.~Zhang%
+\ \BBA {} Bishop%
 }{%
-Zhang%
+T\BPBI C.~Zhang%
+\ \BBA {} Bishop%
+}{%
+{\protect \APACyear {1994}}%
+}]{%
+Zhang1994}
+\APACinsertmetastar {%
+Zhang1994}%
+\begin{APACrefauthors}%
+Zhang, T\BPBI C.%
+\BCBT {}\ \BBA {} Bishop, P\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Density, porosity, and pore structure of biofilms}
+  {Density, porosity, and pore structure of biofilms}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Research}{28}{11}{2267--2277}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/0043-1354(94)90042-6} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+X.~Zhang%
+\ \protect \BOthers {.}}{%
+X.~Zhang%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2026}}%
 }]{%
