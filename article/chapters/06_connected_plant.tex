@@ -111,7 +111,7 @@ Let $\vartheta$ collect only settings that vary freely. A constant setting remai
 
 \subsection{Biological conversion and non-negativity}
 
-The reaction network uses the component and process representation of Chapter~\ref{ch:foundations}. Its stoichiometric matrix is $\nu\in\mathbb R^{P\times F}$ and its process-rate vector in stage $i$ is $\rho_i\in\mathbb R_+^P$. For component $f$, the dynamic mass balance is
+The reaction network uses the component and process representation of Chapter~\ref{ch:foundations}. Its stoichiometric matrix is $\nu\in\mathbb R^{P\times F}$ and its process-rate vector in stage $i$ is $\rho_i\in\mathbb R_+^P$. For component $f$, the dynamic component equation is
 \begin{equation}
 V_i\frac{dc_{i,f}}{dt}=Q_Pc_{i-1,f}-Q_Pc_{i,f}
 +V_i\sum_{p=1}^{P}\nu_{pf}\rho_{i,p}+V_i\omega_i(e_{S_O})_f+V_i\xi_{i,f}.
@@ -234,7 +234,7 @@ The column $t_X$ maps component concentrations to TSS. Its entries are non-negat
 
 For the four-component order above, $t_X=(0,0,0.90,0.75)^\top$. If $X_H=100$ and $X_I=40$ g COD m$^{-3}$, the TSS calculation is $0.90(100)+0.75(40)=120$ g TSS m$^{-3}$. The two factors convert component COD bases to suspended-solids mass. Adding the native numerical concentrations without these conversion factors would give a different quantity.
 
-For one component, the clarifier mass balance in physical flows is
+For one component, mass conservation across the clarifier gives
 \begin{equation}
 Q_Cc_{n_r,f}=Q_Ec_{E,f}+Q_Uc_{U,f}.
 \end{equation}
@@ -1090,7 +1090,7 @@ z&\leq x_Ly+y_Ux-x_Ly_U.
 \end{equation}
 The four inequalities are linear in the variables $x$, $y$, and $z$. Every exact product within the stated bounds satisfies them. Their intersection nevertheless permits points that do not satisfy $z=xy$.
 
-For a hypothetical pair with $0\leq x,y\leq1$, the bounds become $z\geq0$, $z\geq x+y-1$, $z\leq x$, and $z\leq y$. At $x=y=0.5$, they permit $0\leq z\leq0.5$. The exact product is only $z=0.25$. A favorable objective obtained at another permitted value of $z$ is therefore not, by itself, an attainable process response. Tighter variable bounds can improve the relaxation, but they do not generally replace the exact product relation. Process-network optimization uses this distinction when constructing bounds and assessing solutions \citep{RubioCastro2010,YangNetwork2014}.
+For a hypothetical pair with $0\leq x,y\leq1$, the bounds become $z\geq0$, $z\geq x+y-1$, $z\leq x$, and $z\leq y$. At $x=y=0.5$, they permit $0\leq z\leq0.5$. The exact product is only $z=0.25$. A favorable objective obtained at another permitted value of $z$ is therefore not, by itself, an attainable process response. Tighter variable bounds can improve the relaxation, but they do not generally replace the exact product relation. Process-network optimization uses this distinction when constructing bounds and assessing solutions \citep{RubioCastro2013,YangNetwork2014}.
 
 This example separates a convex relaxation from the physical projection used here. The relaxation enlarges a nonlinear feasible set to obtain an optimization bound. The projection selects a response satisfying the declared mass conservation and non-negativity conditions near a predicted response. Neither operation alone proves that a control vector is a global optimum of the full mechanistic plant. The present fixed-configuration plant retains the surrogate-assisted and direct mechanistic searches described below. It does not substitute a mixed-integer network-design formulation for those searches.
 

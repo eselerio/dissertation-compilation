@@ -239,7 +239,7 @@ The maximum and division are componentwise. Each entry of $\boldsymbol{\varepsil
 
 For a component change $h_j$, the weighted discrepancy is $h_j/c_{+,ij}^{(m)}$. The geometry therefore penalizes relative movement. A hypothetical movement of 1 g m$^{-3}$ corresponds to a relative discrepancy of 0.01 at a component value of 100 g m$^{-3}$ and 10 at a component value of 0.1 g m$^{-3}$. Small coordinates receive strong protection. Large coordinates can absorb larger absolute changes at the same relative cost. This explains why relative-error projection and variance-standardized accuracy need not favor the same redistribution.
 
-\subsection{Selecting an consistent with mass conservation candidate}
+\subsection{Selecting a candidate that satisfies mass conservation}
 
 Changes consistent with mass conservation can first be written one component at a time. If $Z$ has fifteen change columns, coordinate $j$ of a change is $Z_{j1}q_1+\cdots+Z_{j,15}q_{15}$. Adding that change to $c_{in,ij}$ gives the candidate component. Since each column of $Z$ has zero invariant product, every such combination preserves the influent target.
 
@@ -381,7 +381,7 @@ Figure~\ref{fig:projection_acceptance_flow} brings the projection steps and thei
 \label{fig:projection_acceptance_flow}
 \end{figure}
 
-The provisional positive target supplies a reference and weights for the solve. It does not bypass the mass conservation calculation. A non-negative candidate can retain the full change satisfying mass conservation, while a candidate crossing a concentration boundary requires shortening toward the feasible influent. Both branches reach the same final checks. This arrangement prevents either Strict positivity of the provisional target or an algebraic mass conservation proof from being mistaken for an independently checked returned state.
+The provisional positive target supplies a reference and weights for the solve. It does not bypass the mass conservation calculation. A non-negative candidate can retain the full change satisfying mass conservation, while a candidate crossing a concentration boundary requires shortening toward the feasible influent. Both branches reach the same final checks. This arrangement prevents either strict positivity of the provisional target or an algebraic mass conservation proof from being mistaken for an independently checked returned state.
 
 Each raw or projected composite is obtained by multiplying the relevant component values by the coefficients already defined in Table~\ref{tab:component_basis_composites} and adding them. The coefficients do not change between the two prediction types. A paired comparison therefore changes only the component state supplied to the four scalar sums. Raw and projected composites are calculated with the same map,
 \begin{equation}

@@ -1,11 +1,41 @@
 {
   "title_preserved": true,
   "chapter_count": 7,
+  "required_chapter_titles": {
+    "1": "Introduction: Research Problem and Purpose",
+    "2": "Review of Related Literature"
+  },
+  "required_terminology": [
+    "projection",
+    "mass conservation",
+    "non-negativity"
+  ],
   "distinct_component_references": 130,
-  "distinct_cited_references": 130,
-  "citation_instances": 325,
+  "distinct_cited_references": 217,
+  "citation_instances": 447,
+  "proposal_integration": {
+    "inventoried_reference_records": 109,
+    "retained_reference_records": 104,
+    "distinct_retained_sources": 103,
+    "retained_but_uncited": 0,
+    "excluded_records": 5,
+    "controlling_scope": "The three component articles",
+    "presentation": "Engineering need, research limitations, objectives, significance, and explicit problem-contribution-evidence links",
+    "scope_limits": "Attached-growth treatment and water networks provide background, not additional evaluated cases. Global optimality, field performance, and empirical superiority are not assumed."
+  },
+  "equation_list": {
+    "numbered_entries": 327,
+    "labelled_equations": 193,
+    "missing_labelled_equations": 0,
+    "duplicate_entries": 0,
+    "pdf_links": 327,
+    "invalid_pdf_links": 0,
+    "included_in_contents": true
+  },
   "acronym_definition_counts": {
     "ASM": 1,
+    "ASM1": 1,
+    "ASM3": 1,
     "COD": 1,
     "TN": 1,
     "TP": 1,
@@ -20,10 +50,31 @@
     "LightGBM": 1,
     "AdaBoost": 1
   },
-  "pdf_pages": 140,
+  "pdf_pages": 237,
   "latex_errors_or_reference_warnings": false,
+  "undefined_citations": 0,
+  "uncited_bibliography_entries": 0,
+  "missing_crossreferences": 0,
+  "duplicate_labels": 0,
+  "missing_glyphs": 0,
+  "prohibited_prose_flags": 0,
+  "single_author_verb_issues": 0,
+  "citation_style": "Et al. for three or more authors, named authors for one or two, and matching year suffixes for the two Damalerio studies",
+  "bibliography_repairs": "Four stale citation keys resolved, LaTeX-safe character encoding restored, and the complete Takacs-Patry-Nolasco author list retained from the component bibliography",
+  "plant_assessment_limitations": "Descriptive post-selection holdout assessment remains distinct from independent mechanistic verification at selected controls",
+  "visual_review": [
+    "Equation list",
+    "Scientific and methodological significance",
+    "Problem-contribution-evidence table"
+  ],
+  "remaining_layout_warnings": {
+    "overfull_paragraphs": 2,
+    "location": "Connected plant chapter",
+    "severity": "Minor nonfatal layout warnings"
+  },
   "result_sections": false,
   "supplementary_material_created": false,
   "source_backup": ".codex-work/original",
+  "requested_revisions_completed": true,
   "pdf": "article/manuscript.pdf"
 }

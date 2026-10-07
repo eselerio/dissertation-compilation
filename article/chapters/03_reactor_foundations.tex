@@ -36,6 +36,7 @@ A row-column product gives a weighted sum. For a coefficient column $a$, the sca
 The magnitude of a vector is described by a norm. The Euclidean norm is the square root of the sum of squared coordinates. A hypothetical vector $(3,-4)^\top$ has Euclidean norm $\sqrt{3^2+(-4)^2}=5$. The sum of absolute coordinates gives its absolute-sum norm, $|3|+|-4|=7$. Squaring a norm and squaring each coordinate are therefore different steps that must be applied in the stated order. When coordinates have different physical bases, a numerical norm is meaningful only with the adopted unit convention or an explicit standardization.
 
 The 20-component state uses the same column-vector convention. Its fixed ordering is
+\equationname{Fixed ordering of the twenty component concentrations}
 \begin{equation}
 \begin{split}
 c=(&S_O,S_F,S_A,S_{NH4},S_{NO2},S_{NO3},S_{N2},S_{PO4},S_I,S_{ALK},\\
@@ -88,7 +89,7 @@ The full state preserves distinctions that aggregate quantities cannot recover. 
 
 \subsection{Electron donors, electron acceptors, and biomass}
 
-Microorganisms use part of a substrate to obtain energy and another part to form cellular material. An electron donor supplies electrons in an oxidation reaction. An electron acceptor receives them in a reduction reaction. Under aerobic conditions, organic material can serve as the donor and oxygen as the acceptor. Under anoxic conditions, some organisms use nitrate or nitrite instead of oxygen. Naming the donor and acceptor helps explain why the same organic substrate can support different treatment pathways \citep{Narayanan2021,Preena2021}.
+Microorganisms use part of a substrate to obtain energy and another part to form cellular material. An electron donor supplies electrons in an oxidation reaction. An electron acceptor receives them in a reduction reaction. Under aerobic conditions, organic material can serve as the donor and oxygen as the acceptor. Under anoxic conditions, some organisms use nitrate or nitrite instead of oxygen. Naming the donor and acceptor helps explain why the same organic substrate can support different treatment pathways \citep{Narayanan2019,Preena2021}.
 
 The carbon source and the energy source describe different properties. Heterotrophic biomass uses organic carbon to form cells. Chemolithoautotrophic nitrifying biomass obtains energy from inorganic nitrogen oxidation and uses inorganic carbon for cell synthesis. Its growth is therefore not simply another form of organic-substrate removal. The separate biomass coordinates in the adopted model retain this distinction \citep{Henze2006,Guerrero2011}. Complete ammonia oxidation can also occur within one microbial organism \citep{VanKessel2015}. That biological observation does not replace the separate ammonium- and nitrite-oxidation processes in the adopted model.
 
@@ -144,7 +145,7 @@ Anaerobic ammonium oxidation provides a different nitrogen pathway. An idealized
 \longrightarrow\mathrm{N_2}+2\mathrm{H_2O}.
 \label{eq:teaching_anammox}
 \end{equation}
-It preserves two nitrogen atoms, four hydrogen atoms, two oxygen atoms, and zero net charge. It couples ammonium and nitrite without an organic electron donor in this idealized balance. The cultivation work of \citet{Strous1999} and the pathway studies of \citet{Dietl2015,Maalcke2016} explain why it differs biologically from ordinary heterotrophic denitrification. Its application requires its own organisms and operating conditions \citep{Vandekerckhove2018,Xie2021,WinklerStraka2019}. It is included here to clarify the boundary of the nitrogen discussion. It is not an additional process in the adopted 20-component, 28-process reactor model.
+It preserves two nitrogen atoms, four hydrogen atoms, two oxygen atoms, and zero net charge. It couples ammonium and nitrite without an organic electron donor in this idealized balance. The cultivation work of \citet{Strous1998} and the pathway studies of \citet{Dietl2015,Maalcke2016} explain why it differs biologically from ordinary heterotrophic denitrification. Its application requires its own organisms and operating conditions \citep{Vandekerckhove2018,Xie2021,WinklerStraka2019}. It is included here to clarify the boundary of the nitrogen discussion. It is not an additional process in the adopted 20-component, 28-process reactor model.
 
 \subsection{From elemental accounting to the adopted state basis}
 
@@ -479,7 +480,7 @@ The reporting map and the invariant operator serve different purposes. The map p
 
 \section{Mixing and spatial transport as model boundaries}
 
-The preceding reactor balance assumes a single mixed concentration for each component in a reactor. This assumption removes spatial coordinates from that reactor state. It is a modeling decision rather than a claim that every treatment unit is uniform. Biofilms, trickling filters, and aerated vessels with incomplete mixing can have concentration gradients and transport limitations \citep{Wik2003,Zhang1994,SadinoRiquelme2020}. These effects provide useful context for interpreting the scope of a mixed-reactor surrogate.
+The preceding reactor balance assumes a single mixed concentration for each component in a reactor. This assumption removes spatial coordinates from that reactor state. It is a modeling decision rather than a claim that every treatment unit is uniform. Biofilms, trickling filters, and aerated vessels with incomplete mixing can have concentration gradients and transport limitations \citep{Wik2003,Zhang1994,SadinoRiquelme2023}. These effects provide useful context for interpreting the scope of a mixed-reactor surrogate.
 
 A small spatial control volume illustrates the additional accounting. For one component, let $V$ be its fixed volume and $\bar c$ its average concentration. Let $F_{\rm adv,in}$ and $F_{\rm adv,out}$ be advective mass flow rates. Let $F_{\rm diff,in}$ and $F_{\rm diff,out}$ be diffusive mass flow rates. The finite-volume balance is
 \begin{equation}

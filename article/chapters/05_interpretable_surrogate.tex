@@ -534,7 +534,7 @@ Taking the illustrative influent as \((6,4)^\top\), the raw-minus-influent diffe
 
 This projection is an orthogonal projection onto the affine set defined by mass conservation in the chosen numerical component coordinates. It removes the part of the prediction error normal to that set. It retains the part tangent to the set, which can still be large. The projection therefore enforces mass conservation without establishing predictive accuracy. Its distance also depends on the component unit convention. \citet{SturmSilva2024} develop related projections for mass conservation and explain why species-dependent weights matter when concentration scales differ.
 
-The affine state is checked for both residual mass conservation and non-negativity before deployment. The equality follows analytically from Equation~\eqref{eq:icsor_affine_solution}, but checking its residual catches numerical or operator inconsistency. A affine state satisfying mass conservation can still contain a negative concentration. That possibility requires a projection with inequality constraints.
+The affine state is checked for both mass conservation residuals and non-negativity before deployment. The equality follows analytically from Equation~\eqref{eq:icsor_affine_solution}, but checking its residual catches numerical or operator inconsistency. An affine state that satisfies mass conservation can still contain a negative concentration. That possibility requires a projection with inequality constraints.
 
 \subsection{Joint mass conservation and non-negativity}
 
@@ -912,7 +912,7 @@ For each measure \(j\), reported quantity \(q\), and retained size \(n_s\), pred
 \qquad
 \overline r_m=\frac{1}{5}\sum_{j=1}^{5}\overline r_{m,j}.
 \end{equation}
-These are descriptive summaries of relative ordering. They do not establish statistical significance. \citet{Demsar2006} develop broader rank-based model comparisons, while \citet{Shevchenko2024} emphasize variability in benchmarking. Their contributions support careful comparative assessment without equating a mean rank with an absolute error or a significance test.
+These are descriptive summaries of relative ordering. They do not establish statistical significance. \citet{Demsar2006} develops broader rank-based model comparisons, while \citet{Shevchenko2024} emphasize variability in benchmarking. Their contributions support careful comparative assessment without equating a mean rank with an absolute error or a significance test.
 
 At the largest sample size, the generalization gap is
 \begin{equation}

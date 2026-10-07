@@ -20,6 +20,32 @@
 \usepackage[natbibapa]{apacite}
 \makeatletter
 \NAT@longnamesfalse
+\newcommand{\listofequations}{%
+    \chapter*{List of Equations}%
+    \addcontentsline{toc}{chapter}{List of Equations}%
+    \@starttoc{loe}%
+}
+\newcommand{\l@equation}{\@dottedtocline{1}{0em}{3.3em}}
+\newcommand{\dissertationequationtitle}{}
+\newcommand{\equationname}[1]{\gdef\dissertationequationtitle{#1}}
+\newcommand{\equationlistentry}{%
+    \ifcsname dissertation@listed@\theequation\endcsname\else
+        \global\csdef{dissertation@listed@\theequation}{}%
+        \ifx\dissertationequationtitle\@empty
+            \let\dissertationlistdescription\@currentlabelname
+        \else
+            \let\dissertationlistdescription\dissertationequationtitle
+        \fi
+        \addcontentsline{loe}{equation}{\protect\numberline{\theequation}\dissertationlistdescription}%
+        \global\let\dissertationequationtitle\@empty
+    \fi
+}
+\AtEndEnvironment{equation}{\equationlistentry}
+\apptocmd{\make@display@tag}{%
+    \ifmeasuring@\else
+        \if@eqnsw\equationlistentry\fi
+    \fi
+}{}{\PackageError{dissertation}{Equation list registration failed}{Check the display tag hook.}}
 \makeatother
 \usepackage[autostyle]{csquotes}
 \MakeOuterQuote{"}
@@ -193,6 +219,9 @@ Activated sludge treatment links biological conversion, nutrient transformations
 \listoffigures
 \cleardoublepage
 \listoftables
+
+\cleardoublepage
+\listofequations
 
 \cleardoublepage
 \chapter*{Principal Symbols}
