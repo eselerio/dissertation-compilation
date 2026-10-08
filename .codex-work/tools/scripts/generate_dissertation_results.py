@@ -13,6 +13,7 @@ import matplotlib
 matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FixedLocator, NullFormatter, StrMethodFormatter
 import numpy as np
 import pandas as pd
 
@@ -322,6 +323,26 @@ def chapter_four() -> None:
     print(f"Chapter 4: eight figures verified; 188/260 component comparisons improved; outputs in {output}", flush=True)
 
 
+def plot_fitting_effort(output: Path) -> None:
+    fitting_small = pd.Series({"ICSOR": 21.5, "LightGBM": 4.72, "XGBoost": 3.16, "MLP": 4.99})
+    fitting_large = pd.Series({"ICSOR": 94.4, "MLP": 161.6, "SVR": 136.8,
+                               "AdaBoost": 117.7, "PLS": 0.228, "k-NN": 2.70})
+    figure, axes = plt.subplots(1, 2, figsize=(12, 5.5), layout="constrained")
+    for axis, series, size in zip(axes, (fitting_small, fitting_large), (500, 10000)):
+        axis.barh(np.arange(len(series)), series, color=[PROJECTED if model == "ICSOR" else REFERENCE for model in series.index])
+        axis.set_yticks(np.arange(len(series)), [MODEL_LABELS.get(model, model) for model in series.index])
+        axis.set_xscale("log")
+        # Automatic minor log labels crowd the narrow 3-22 second panel.
+        ticks = (3, 5, 10, 20) if size == 500 else (1, 10, 100)
+        axis.xaxis.set_major_locator(FixedLocator(ticks))
+        axis.xaxis.set_major_formatter(StrMethodFormatter("{x:g}"))
+        axis.xaxis.set_minor_formatter(NullFormatter())
+        axis.set_xlabel(f"Fitting time (s)\nDesign size {size:,}\n(log scale)")
+        axis.invert_yaxis()
+        axis.grid(axis="y", visible=False)
+    save(figure, output, "q06_fitting_effort")
+
+
 def chapter_five() -> None:
     output = FIGURES / "ch5"
     output.mkdir(parents=True, exist_ok=True)
@@ -420,18 +441,7 @@ def chapter_five() -> None:
     assert 436 + 1564 == 2000
     save(figure, output, "q05_physical_deployment")
 
-    fitting_small = pd.Series({"ICSOR": 21.5, "LightGBM": 4.72, "XGBoost": 3.16, "MLP": 4.99})
-    fitting_large = pd.Series({"ICSOR": 94.4, "MLP": 161.6, "SVR": 136.8,
-                               "AdaBoost": 117.7, "PLS": 0.228, "k-NN": 2.70})
-    figure, axes = plt.subplots(1, 2, figsize=(12, 5.5), layout="constrained")
-    for axis, series, size in zip(axes, (fitting_small, fitting_large), (500, 10000)):
-        axis.barh(np.arange(len(series)), series, color=[PROJECTED if model == "ICSOR" else REFERENCE for model in series.index])
-        axis.set_yticks(np.arange(len(series)), [MODEL_LABELS.get(model, model) for model in series.index])
-        axis.set_xscale("log")
-        axis.set_xlabel(f"Fitting time, design size {size:,}\n(s; log scale)")
-        axis.invert_yaxis()
-        axis.grid(axis="y", visible=False)
-    save(figure, output, "q06_fitting_effort")
+    plot_fitting_effort(output)
 
     blocks = ("Baseline", "Operating", "Influent", "Operating curvature", "Operating-load", "Influent curvature", "Shared coupling")
     candidates = np.array((1, 2, 20, 3, 40, 210, 380))

@@ -23,6 +23,7 @@ because their before/after records represent different operations.
 
 ## Contents
 
+- [2026-10-09-figure-5-10-labels/](2026-10-09-figure-5-10-labels/README.md)
 - [2026-10-08-090436-endorsement-title/](2026-10-08-090436-endorsement-title/README.md)
 - [2026-10-08-090655-endorsement-title/](2026-10-08-090655-endorsement-title/README.md)
 - [2026-10-08-chapter-restructure/](2026-10-08-chapter-restructure/README.md)
