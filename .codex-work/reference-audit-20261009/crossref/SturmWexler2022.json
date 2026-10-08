@@ -1,0 +1,476 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2026-09-23T21:13:48Z",
+    "timestamp": 1790198028557,
+    "version": "4.1.0"
+  },
+  "reference-count": 32,
+  "publisher": "Copernicus GmbH",
+  "issue": "8",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            28
+          ]
+        ],
+        "date-time": "2022-04-28T00:00:00Z",
+        "timestamp": 1651104000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100007707",
+      "name": "University of California, Davis",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "Center for Data Science and Artificial Intelligence Research: Innovative Data Science Seed Funding Program"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "Center for Data Science and Artificial Intelligence Research: Innovative Data Science Seed Funding Program"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100007707",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Geosci. Model Dev."
+  ],
+  "abstract": "<jats:p>Models of atmospheric phenomena provide insight into\nclimate, air quality, and meteorology and provide a mechanism for\nunderstanding the effect of future emissions scenarios. To accurately\nrepresent atmospheric phenomena, these models consume vast quantities of\ncomputational resources. Machine learning (ML) techniques such as neural\nnetworks have the potential to emulate computationally intensive components of these\nmodels to reduce their computational burden. However, such ML surrogate\nmodels may lead to nonphysical predictions that are difficult to uncover.\nHere we present a neural network architecture that enforces conservation\nlaws to numerical precision. Instead of simply predicting properties of\ninterest, a physically interpretable hidden layer within the network\npredicts fluxes between properties which are subsequently related to the\nproperties of interest. This approach is readily generalizable to physical\nprocesses where flux continuity is an essential governing equation. As an\nexample application, we demonstrate our approach on a neural network\nsurrogate model of photochemistry, trained to emulate a reference model that\nsimulates formation and reaction of ozone. We design a physics-constrained\nneural network surrogate model of photochemistry using this approach and\nfind that it conserves atoms as they flow between molecules while\noutperforming two other neural network architectures in terms of accuracy,\nphysical consistency, and non-negativity of concentrations.</jats:p>",
+  "DOI": "10.5194/gmd-15-3417-2022",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        28
+      ]
+    ],
+    "date-time": "2022-04-28T01:57:28Z",
+    "timestamp": 1651111048000
+  },
+  "page": "3417-3431",
+  "source": "Crossref",
+  "is-referenced-by-count": 39,
+  "title": [
+    "Conservation laws in a neural network architecture: enforcing the atom balance of a Julia-based photochemical model (v0.2.0)"
+  ],
+  "prefix": "10.5194",
+  "volume": "15",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-7361-9590",
+      "authenticated-orcid": false,
+      "given": "Patrick Obin",
+      "family": "Sturm",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        },
+        {
+          "role": "corresponding-author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Anthony S.",
+      "family": "Wexler",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        },
+        {
+          "role": "corresponding-author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "3145",
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        28
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref1",
+      "unstructured": "Abadi, M., Agarwal, A., Barham, P., Brevdo, E., Chen, Z., Citro, C., Corrado, G. S., Davis, A., Dean, J., Devin, M. Ghemawat, S., Goodfellow, I., Harp, A., Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M., Levenberg, J., Mané, D., Monga, R., Moore, S., Murray, D., Olah, C., Schuster, M., Shlens, J., Steiner, B., Sutskever, I., Talwar, K., Tucker, P., Vanhoucke, V., Vasudevan, V., Viégas, F., Vinyals, O., Warden, P., Wattenberg, M., Wicke, M., Yu, Y., and Zheng, X.: TensorFlow: Large-Scale Machine Learning on Heterogeneous Systems, https://www.tensorflow.org/ (last access: 8 June 2021), 2015.",
+      "type": "web-resource"
+    },
+    {
+      "key": "ref2",
+      "unstructured": "Beucler, T., Rasp, S., Pritchard, M., and Gentine, P.: Achieving Conservation of Energy in Neural Network Emulators for Climate Modeling, arXiv, https://arxiv.org/abs/1906.06622 (last access: 17 June 2020), 2019.",
+      "type": "web-resource"
+    },
+    {
+      "key": "ref3",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Beucler, T., Pritchard, M., Rasp, S., Ott, J., Baldi, P., and Gentine, P.: Enforcing analytic constraints in neural networks emulating physical systems, Phys. Rev. Lett., 126, 098302, 10.1103/PhysRevLett.126.098302, 2021.",
+      "DOI": "10.1103/PhysRevLett.126.098302"
+    },
+    {
+      "key": "ref4",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Brenowitz, N. D. and Bretherton, C. S.: Prognostic Validation of a Neural Network Unified Physics Parameterization, Geophys. Res. Lett., 45, 6289–6298, 10.1029/2018GL078510, 2018.",
+      "DOI": "10.1029/2018GL078510"
+    },
+    {
+      "key": "ref5",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Carter, W. P.: A detailed mechanism for the gas-phase atmospheric reactions of organic compounds, Atmos. Environ., 24, 481–518, 10.1016/0960-1686(90)90005-8, 1990.",
+      "DOI": "10.1016/0960-1686(90)90005-8"
+    },
+    {
+      "key": "ref6",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Carter, W. P. L. and Heo, G.: Development of revised SAPRC aromatics mechanisms, Atmos. Environ., 77, 404–414, 10.1016/j.atmosenv.2013.05.021, 2013.",
+      "DOI": "10.1016/j.atmosenv.2013.05.021"
+    },
+    {
+      "key": "ref7",
+      "unstructured": "Chollet, F.: Keras, https://keras.io (last access: 8 June 2021), 2015.",
+      "type": "web-resource"
+    },
+    {
+      "key": "ref8",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Gardner, M. W. and Dorling, S. R.: Artificial neural networks (the multilayer perceptron) – a review of applications in the atmospheric sciences, Atmos. Environ., 32, 2627–2636, 1998.",
+      "DOI": "10.1016/S1352-2310(97)00447-0"
+    },
+    {
+      "key": "ref9",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Gery, M. W., Whitten, G. Z., Killus, J. P., and Dodge, M. C.: A photochemical kinetics mechanism for urban and regional scale computer modeling, J. Geophys. Res.-Atmos., 94, 12925–12956, 1989.",
+      "DOI": "10.1029/JD094iD10p12925"
+    },
+    {
+      "key": "ref10",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Gettelman, A., Gagne, D. J., Chen, C.-C., Christensen, M. W., Lebo, Z. J., Morrison, H., and Gantos, G. Machine learning the warm rain process, J. Adv. Model. Earth Sy., 13, e2020MS002268. 10.1029/2020MS002268, 2021.",
+      "DOI": "10.1029/2020MS002268"
+    },
+    {
+      "key": "ref11",
+      "unstructured": "Harder, P., Watson-Parris, D., Strassel, D., Gauger, N., Stier, P., and Keuper, J.: Emulating Aerosol Microphysics with Machine Learning, arXiv preprint arXiv:2109.10593, 2021."
+    },
+    {
+      "key": "ref12",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Huang, L. and Topping, D.: JlBox v1.1: a Julia-based multi-phase atmospheric chemistry box model, Geosci. Model Dev., 14, 2187–2203, 10.5194/gmd-14-2187-2021, 2021.",
+      "DOI": "10.5194/gmd-14-2187-2021"
+    },
+    {
+      "key": "ref13",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Kashinath, K., Mustafa, M., Albert, A., Wu J. L., Jiang, C., Esmaeilzadeh, S., Azizzadenesheli, K., Wang, R., Chattopadhyay, A., Singh, A., Manepalli, A., Chirila, D., Yu, R., Walters, R., White, B., Xiao, H., Tchelepi, H. A., Marcus, P., Anandkumar, A., Hassanzadeh. P., and Prabhat: Physics-informed machine learning: case studies for weather and climate modelling, Philos. T. A. Math. Phys Eng Sci., 379, 20200093, 10.1098/rsta.2020.0093, 2021.",
+      "DOI": "10.1098/rsta.2020.0093"
+    },
+    {
+      "key": "ref14",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Keller, C. A. and Evans, M. J.: Application of random forest regression to the calculation of gas-phase chemistry within the GEOS-Chem chemistry model v10, Geosci. Model Dev., 12, 1209–1225, 10.5194/gmd-12-1209-2019, 2019.",
+      "DOI": "10.5194/gmd-12-1209-2019"
+    },
+    {
+      "key": "ref15",
+      "unstructured": "Kelp, M. M., Tessum, C. W., and Marshall, J. D.: Orders-of-magnitude speedup in atmospheric chemistry modeling through neural network-based emulation, arXiv preprint arXiv:1808.03874, 2018."
+    },
+    {
+      "key": "ref16",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Kelp, M. M., Jacob, D. J., Kutz, J. N., Marshall, J. D., and Tessum, C. W.: Toward Stable, General Machine-Learned Models of the Atmospheric Chemical System, J. Geophys. Res.-Atmos., 125, e2020JD032759, 10.1029/2020JD032759, 2020.",
+      "DOI": "10.1029/2020JD032759"
+    },
+    {
+      "key": "ref17",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Krasnopolsky, V. M., Rabinovitz, M. S., Hou, Y. T., Lord, S. J., and Belochitski, A. A.: Accurate and Fast Neural Network Emulations of Model Radiation for the NCEP Coupled Climate Forecast System: Climate Simulations and Seasonal Predictions, Mon. Weather Rev., 138, 1822–1842, 10.1175/2009MWR3149.1, 2010.",
+      "DOI": "10.1175/2009MWR3149.1"
+    },
+    {
+      "key": "ref18",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Manders, A. M. M., Builtjes, P. J. H., Curier, L., Denier van der Gon, H. A. C., Hendriks, C., Jonkers, S., Kranenburg, R., Kuenen, J. J. P., Segers, A. J., Timmermans, R. M. A., Visschedijk, A. J. H., Wichink Kruit, R. J., van Pul, W. A. J., Sauter, F. J., van der Swaluw, E., Swart, D. P. J., Douros, J., Eskes, H., van Meijgaard, E., van Ulft, B., van Velthoven, P., Banzhaf, S., Mues, A. C., Stern, R., Fu, G., Lu, S., Heemink, A., van Velzen, N., and Schaap, M.: Curriculum vitae of the LOTOS–EUROS (v2.0) chemistry transport model, Geosci. Model Dev., 10, 4145–4173, 10.5194/gmd-10-4145-2017, 2017.",
+      "DOI": "10.5194/gmd-10-4145-2017"
+    },
+    {
+      "key": "ref19",
+      "doi-asserted-by": "crossref",
+      "unstructured": "McGovern, A., Lagerquist, R., Gagne, D. J., Jergensen, G. E., Elmore, K. L., Homeyer, C. R., and Smith, T.: Making the black box more transparent: Understanding the physical implications of machine learning, B. Am. Meteorol. Soc., 100, 2175–2199, 2019.",
+      "DOI": "10.1175/BAMS-D-18-0195.1"
+    },
+    {
+      "key": "ref20",
+      "unstructured": "Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., and Vanderplas, J.: Scikit-learn: Machine learning in Python, J. Mach. Learn. Res., 12, 2825–2830, 2011."
+    },
+    {
+      "key": "ref21",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Potukuchi, S. and Wexler, A. S.: Predicting vapor pressures using neural networks, Atmos. Environ., 31, 741–753, 10.1016/S1352-2310(96)00203-8, 1997.",
+      "DOI": "10.1016/S1352-2310(96)00203-8"
+    },
+    {
+      "key": "ref22",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Raissi, M., Perdikaris, P., and Karniadakis, G. E.: Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations, J. Computat. Phys., 378, 686–707, 10.1016/j.jcp.2018.10.045, 2019.",
+      "DOI": "10.1016/j.jcp.2018.10.045"
+    },
+    {
+      "key": "ref23",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Silva, S. J., Burrows, S. M., Evans, M. J., and Halappanavar, M.: A Graph Theoretical Intercomparison of Atmospheric Chemical Mechanisms, Geophys. Res. Lett., 48, e2020GL090481, 10.1029/2020GL090481, 2021a.",
+      "DOI": "10.1029/2020GL090481"
+    },
+    {
+      "key": "ref24",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Silva, S. J., Ma, P.-L., Hardin, J. C., and Rothenberg, D.: Physically regularized machine learning emulators of aerosol activation, Geosci. Model Dev., 14, 3067–3077, 10.5194/gmd-14-3067-2021, 2021b.",
+      "DOI": "10.5194/gmd-14-3067-2021"
+    },
+    {
+      "key": "ref25",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O.: Photochemical Box Model in Julia (0.2.0), Zenodo [data set], 10.5281/zenodo.5736487, 2021.",
+      "DOI": "10.5281/zenodo.5736487",
+      "type": "dataset"
+    },
+    {
+      "key": "ref26",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O.: Python code for Sturm and Wexler (2022): Conservation laws in a neural network architecture (0.2.0), Zenodo [code], 10.5281/zenodo.6363763, 2022.",
+      "DOI": "10.5281/zenodo.6363763",
+      "type": "software"
+    },
+    {
+      "key": "ref27",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O. and Wexler, A. S.: A mass- and energy-conserving framework for using machine learning to speed computations: a photochemistry example, Geosci. Model Dev., 13, 4435–4442, 10.5194/gmd-13-4435-2020, 2020.",
+      "DOI": "10.5194/gmd-13-4435-2020"
+    },
+    {
+      "key": "ref28",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Wexler, A. S. and Seinfeld, J. H.: Second-generation inorganic aerosol model, Atmos. Environ., 25A, 2731–2748, 1991.",
+      "DOI": "10.1016/0960-1686(91)90203-J"
+    },
+    {
+      "key": "ref29",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Yuval, J., O'Gorman, P. A., and Hill, C. N.: Use of neural networks for stable, accurate and physically consistent parameterization of subgrid atmospheric processes with good performance at reduced precision, Geophys. Res. Lett., 48, e2020GL091363, 10.1029/2020gl091363, 2021.",
+      "DOI": "10.1029/2020gl091363"
+    },
+    {
+      "key": "ref30",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Zaveri, R. A. and Peters, L. K.: A new lumped structure photochemical mechanism for large-scale applications, J. Geophys. Res.-Atmos, 104, 30387–30415, 1999.",
+      "DOI": "10.1029/1999JD900876"
+    },
+    {
+      "key": "ref31",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Zaveri, R. A., Easter, R. C., Fast, J. D., and Peters, L. K.: Model for simulating aerosol interactions and chemistry (MOSAIC), J. Geophys. Res.-Atmos., 113, D13204, 2008.",
+      "DOI": "10.1029/2007JD008782"
+    },
+    {
+      "key": "ref32",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Zhao, W. L., Gentine, P., Reichstein, M., Zhang, Y., Zhou, S., Wen, Y., Lin, C., Li, X., and Qiu, G. Y.: Physics-constrained machine learning of evapotranspiration, Geophys. Res. Lett., 46, 14496–14507, 2019.",
+      "DOI": "10.1029/2019GL085291"
+    }
+  ],
+  "container-title": [
+    "Geoscientific Model Development"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://gmd.copernicus.org/articles/15/3417/2022/gmd-15-3417-2022.pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        15
+      ]
+    ],
+    "date-time": "2026-09-15T05:33:54Z",
+    "timestamp": 1789450434000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://gmd.copernicus.org/articles/15/3417/2022/"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        28
+      ]
+    ]
+  },
+  "references-count": 32,
+  "journal-issue": {
+    "issue": "8",
+    "published-online": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.5194/gmd-15-3417-2022",
+  "relation": {
+    "has-preprint": [
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402",
+        "asserted-by": "object"
+      }
+    ],
+    "has-review": [
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-CC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-CC2",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-AC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-RC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-RC2",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-AC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-CC1",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-RC1",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-CC2",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-RC2",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2021-402-AC1",
+        "asserted-by": "object"
+      }
+    ],
+    "is-part-of": [
+      {
+        "id-type": "doi",
+        "id": "10.5281/zenodo.5736487",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5281/zenodo.6363763",
+        "asserted-by": "subject"
+      }
+    ]
+  },
+  "ISSN": [
+    "1991-9603"
+  ],
+  "issn-type": [
+    {
+      "value": "1991-9603",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        28
+      ]
+    ]
+  }
+}

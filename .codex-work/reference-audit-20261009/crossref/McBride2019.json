@@ -1,0 +1,758 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2026-10-07T16:15:14Z",
+    "timestamp": 1791389714821,
+    "version": "4.3.3"
+  },
+  "reference-count": 96,
+  "publisher": "Wiley",
+  "issue": "3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            3
+          ]
+        ],
+        "date-time": "2019-01-03T00:00:00Z",
+        "timestamp": 1546473600000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100001659",
+      "name": "Deutsche Forschungsgemeinschaft",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "SFB/TRR 63"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "SFB/TRR 63"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001659",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Chemie Ingenieur Technik"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        3
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title><jats:p>The ability to accurately model and simulate chemical processes has been paramount to the growing success and efficiency in process design and operation. These improvements usually come with increasing complexity of the underlying models leading to substantial computational effort in their use. It may also occur that the structure of the model is sometimes unknown making optimization and study difficult. To circumvent these issues, mathematically simpler models, commonly known as surrogate models, have been designed and used to successfully replace these complex, underlying models with much success. This technique has seen increasing use within the chemical process engineering field and this article summarizes some popular surrogates and their recent use in this area.</jats:p>",
+  "DOI": "10.1002/cite.201800091",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        3
+      ]
+    ],
+    "date-time": "2019-01-03T13:44:47Z",
+    "timestamp": 1546523087000
+  },
+  "page": "228-239",
+  "update-policy": "https://doi.org/10.1002/crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 304,
+  "title": [
+    "Overview of Surrogate Modeling in Chemical Process Engineering"
+  ],
+  "prefix": "10.1002",
+  "volume": "91",
+  "author": [
+    {
+      "given": "Kevin",
+      "family": "McBride",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Max Planck Institute for Dynamics of Complex Technical Systems  Sandtorstraße 1 39106 Magdeburg Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Kai",
+      "family": "Sundmacher",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Max Planck Institute for Dynamics of Complex Technical Systems  Sandtorstraße 1 39106 Magdeburg Germany"
+        },
+        {
+          "name": "Otto-von-Guericke University Magdeburg Chair for Process Systems Engineering  Universitätsplatz 2 39106 Magdeburg Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        3
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_7_2_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2514/2.1234"
+    },
+    {
+      "key": "e_1_2_7_3_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/ss/1177012413"
+    },
+    {
+      "key": "e_1_2_7_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-319-18087-8"
+    },
+    {
+      "key": "e_1_2_7_5_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.paerosci.2005.02.001"
+    },
+    {
+      "key": "e_1_2_7_6_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.paerosci.2008.11.001"
+    },
+    {
+      "key": "e_1_2_7_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.paerosci.2017.11.003"
+    },
+    {
+      "key": "e_1_2_7_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2017.09.017"
+    },
+    {
+      "key": "e_1_2_7_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2017.05.010"
+    },
+    {
+      "key": "e_1_2_7_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/9780470770801"
+    },
+    {
+      "key": "e_1_2_7_11_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie102305a"
+    },
+    {
+      "key": "e_1_2_7_12_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2016.06.019"
+    },
+    {
+      "key": "e_1_2_7_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.15362"
+    },
+    {
+      "key": "e_1_2_7_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1012771025575"
+    },
+    {
+      "key": "e_1_2_7_15_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2514/1.20068"
+    },
+    {
+      "key": "e_1_2_7_16_1",
+      "unstructured": "K.Crombecq Ph.D. Thesis Ghent University Belgium2011."
+    },
+    {
+      "key": "e_1_2_7_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cherd.2018.02.032"
+    },
+    {
+      "key": "e_1_2_7_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/1268522"
+    },
+    {
+      "key": "e_1_2_7_19_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0378-3758(90)90122-B"
+    },
+    {
+      "key": "e_1_2_7_20_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1008306431147"
+    },
+    {
+      "key": "e_1_2_7_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/090761811"
+    },
+    {
+      "key": "e_1_2_7_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2016.10.006"
+    },
+    {
+      "key": "e_1_2_7_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2017.09.016"
+    },
+    {
+      "key": "e_1_2_7_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/1.9780898718768"
+    },
+    {
+      "key": "e_1_2_7_25_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.13871"
+    },
+    {
+      "key": "e_1_2_7_26_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2014.05.021"
+    },
+    {
+      "key": "e_1_2_7_27_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.14418"
+    },
+    {
+      "key": "e_1_2_7_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2014.11.010"
+    },
+    {
+      "key": "e_1_2_7_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.asoc.2017.01.039"
+    },
+    {
+      "key": "e_1_2_7_30_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1019188517934"
+    },
+    {
+      "key": "e_1_2_7_31_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/B:STCO.0000035301.49549.88"
+    },
+    {
+      "key": "e_1_2_7_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176347963"
+    },
+    {
+      "key": "e_1_2_7_33_1",
+      "volume-title": "Machine Learning A Probalistic Perspective",
+      "author": "Murphey K. P.",
+      "year": "2012"
+    },
+    {
+      "key": "e_1_2_7_34_1",
+      "volume-title": "Empirical Model‐Building and Response Surfaces",
+      "author": "Box G. E.",
+      "year": "1987"
+    },
+    {
+      "key": "e_1_2_7_35_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2005.02.018"
+    },
+    {
+      "key": "e_1_2_7_36_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/CBO9780511755453"
+    },
+    {
+      "key": "e_1_2_7_37_1",
+      "unstructured": "D. G.Krige Master's Thesis University of Witwatersrand South Africa1951."
+    },
+    {
+      "key": "e_1_2_7_38_1",
+      "volume-title": "Gaussian Processes for Machine Learning",
+      "author": "Rasmussen C.",
+      "year": "2006"
+    },
+    {
+      "key": "e_1_2_7_39_1",
+      "volume-title": "Statistics for Spatial Data",
+      "author": "Cressie N.",
+      "year": "2015"
+    },
+    {
+      "key": "e_1_2_7_40_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.14442"
+    },
+    {
+      "key": "e_1_2_7_41_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2018.07.016"
+    },
+    {
+      "key": "e_1_2_7_42_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1144/GSL.SP.2004.239.01.13"
+    },
+    {
+      "key": "e_1_2_7_43_1",
+      "volume-title": "Neural Networks and Learning Machines",
+      "author": "Haykin S. S.",
+      "year": "2009"
+    },
+    {
+      "key": "e_1_2_7_44_1",
+      "volume-title": "Deep Learning with Python",
+      "author": "Chollet F.",
+      "year": "2018"
+    },
+    {
+      "key": "e_1_2_7_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/03052150500422294"
+    },
+    {
+      "key": "e_1_2_7_46_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10479-015-2019-x"
+    },
+    {
+      "key": "e_1_2_7_47_1",
+      "volume-title": "Derivative‐free optimization in Computational optimization, methods and algorithms",
+      "author": "Kramer O.",
+      "year": "2011"
+    },
+    {
+      "key": "e_1_2_7_48_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1205/026387602320776849"
+    },
+    {
+      "key": "e_1_2_7_49_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1205/026387602320776830"
+    },
+    {
+      "key": "e_1_2_7_50_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.11228"
+    },
+    {
+      "key": "e_1_2_7_51_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.11881"
+    },
+    {
+      "key": "e_1_2_7_52_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10898-007-9217-2"
+    },
+    {
+      "key": "e_1_2_7_53_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie800028a"
+    },
+    {
+      "key": "e_1_2_7_54_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.11579"
+    },
+    {
+      "key": "e_1_2_7_55_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.14798"
+    },
+    {
+      "key": "e_1_2_7_56_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2016.04.039"
+    },
+    {
+      "key": "e_1_2_7_57_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2016.09.012"
+    },
+    {
+      "key": "e_1_2_7_58_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie301572n"
+    },
+    {
+      "key": "e_1_2_7_59_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1039/c3cp53627k"
+    },
+    {
+      "key": "e_1_2_7_60_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.14441"
+    },
+    {
+      "key": "e_1_2_7_61_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2016.11.019"
+    },
+    {
+      "key": "e_1_2_7_62_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acs.iecr.7b01939"
+    },
+    {
+      "key": "e_1_2_7_63_1",
+      "first-page": "1291",
+      "volume-title": "Proc. of Int. Joint Conference Neural Networks",
+      "author": "Nentwich C.",
+      "year": "2016"
+    },
+    {
+      "key": "e_1_2_7_64_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0098-1354(00)00587-1"
+    },
+    {
+      "key": "e_1_2_7_65_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0098-1354(98)00104-5"
+    },
+    {
+      "key": "e_1_2_7_66_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1205/cherd.05096"
+    },
+    {
+      "key": "e_1_2_7_67_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0019-0578(07)60112-8"
+    },
+    {
+      "key": "e_1_2_7_68_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/ceat.200500310"
+    },
+    {
+      "key": "e_1_2_7_69_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.12341"
+    },
+    {
+      "key": "e_1_2_7_70_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2012.06.006"
+    },
+    {
+      "key": "e_1_2_7_71_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie302478d"
+    },
+    {
+      "key": "e_1_2_7_72_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2017.02.010"
+    },
+    {
+      "key": "e_1_2_7_73_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11590-016-1028-2"
+    },
+    {
+      "key": "e_1_2_7_74_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ACC.2008.4587117"
+    },
+    {
+      "key": "e_1_2_7_75_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie1007954"
+    },
+    {
+      "key": "e_1_2_7_76_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.protcy.2014.09.092"
+    },
+    {
+      "key": "e_1_2_7_77_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.12203"
+    },
+    {
+      "key": "e_1_2_7_78_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s12247-009-9070-6"
+    },
+    {
+      "key": "e_1_2_7_79_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ces.2015.06.014"
+    },
+    {
+      "key": "e_1_2_7_80_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2008.05.015"
+    },
+    {
+      "key": "e_1_2_7_81_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2006.05.011"
+    },
+    {
+      "key": "e_1_2_7_82_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.690310412"
+    },
+    {
+      "key": "e_1_2_7_83_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2013.12.013"
+    },
+    {
+      "key": "e_1_2_7_84_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2010.02.016"
+    },
+    {
+      "key": "e_1_2_7_85_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2011.06.005"
+    },
+    {
+      "key": "e_1_2_7_86_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s12247-013-9154-1"
+    },
+    {
+      "key": "e_1_2_7_87_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10898-018-0615-4"
+    },
+    {
+      "key": "e_1_2_7_88_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ces.2015.06.026"
+    },
+    {
+      "key": "e_1_2_7_89_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.powtec.2009.09.014"
+    },
+    {
+      "key": "e_1_2_7_90_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie901230u"
+    },
+    {
+      "key": "e_1_2_7_91_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.12526"
+    },
+    {
+      "key": "e_1_2_7_92_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.combustflame.2011.10.019"
+    },
+    {
+      "key": "e_1_2_7_93_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ces.2012.11.027"
+    },
+    {
+      "key": "e_1_2_7_94_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jaerosci.2014.06.011"
+    },
+    {
+      "key": "e_1_2_7_95_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.15399"
+    },
+    {
+      "key": "e_1_2_7_96_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.14974"
+    },
+    {
+      "key": "e_1_2_7_97_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2016.01.015"
+    }
+  ],
+  "container-title": [
+    "Chemie Ingenieur Technik"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fcite.201800091",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cite.201800091",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        11
+      ]
+    ],
+    "date-time": "2023-09-11T19:19:39Z",
+    "timestamp": 1694459979000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/cite.201800091"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        3
+      ]
+    ]
+  },
+  "references-count": 96,
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          3
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1002/cite.201800091"
+  ],
+  "URL": "https://doi.org/10.1002/cite.201800091",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "0009-286X",
+    "1522-2640"
+  ],
+  "issn-type": [
+    {
+      "value": "0009-286X",
+      "type": "print"
+    },
+    {
+      "value": "1522-2640",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        3
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2018-06-26",
+      "order": 0,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2018-12-03",
+      "order": 1,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2019-01-03",
+      "order": 2,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ]
+}

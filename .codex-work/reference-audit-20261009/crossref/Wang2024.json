@@ -1,0 +1,867 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        11
+      ]
+    ],
+    "date-time": "2026-05-11T19:54:56Z",
+    "timestamp": 1778529296938,
+    "version": "3.51.4"
+  },
+  "reference-count": 50,
+  "publisher": "Elsevier BV",
+  "issue": "16",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2024-08-01T00:00:00Z",
+        "timestamp": 1722470400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            1
+          ]
+        ],
+        "date-time": "2024-08-01T00:00:00Z",
+        "timestamp": 1722470400000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            31
+          ]
+        ],
+        "date-time": "2024-07-31T00:00:00Z",
+        "timestamp": 1722384000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100019540",
+      "name": "Science Fund for Distinguished Young Scholars of Zhejiang Province",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "202101AV070006"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "202101AV070006"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100019540",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "cell.com",
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Heliyon"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        8
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.heliyon.2024.e35580",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2024-08-08T13:01:53Z",
+    "timestamp": 1723122113000
+  },
+  "page": "e35580",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 1,
+  "title": [
+    "Real-time prediction of the chemical oxygen demand component parameters in activated sludge model using backpropagation neural network"
+  ],
+  "prefix": "10.1016",
+  "volume": "10",
+  "author": [
+    {
+      "given": "Ping",
+      "family": "Wang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Yanqiong",
+      "family": "Chen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Chen",
+      "family": "Zhang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Yuzhen",
+      "family": "Shi",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Bin",
+      "family": "Wang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Chaochao",
+      "family": "Lai",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Huan",
+      "family": "He",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Bin",
+      "family": "Huang",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib1",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.apenergy.2019.113423",
+      "article-title": "Data-driven predictive energy optimization in a wastewater pumping station",
+      "volume": "252",
+      "author": "Filipe",
+      "year": "2019",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib2",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2020.115537",
+      "article-title": "Relationship between manual air valve positioning, water quality and energy usage in activated sludge processes",
+      "volume": "173",
+      "author": "Reifsnyder",
+      "year": "2020",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "330",
+      "DOI": "10.1016/j.envres.2016.04.010",
+      "article-title": "Energy saving in WWTP: daily benchmarking under uncertainty and data availability limitations",
+      "volume": "148",
+      "author": "Torregrossa",
+      "year": "2016",
+      "journal-title": "Environ. Res."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib4",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2023.162065",
+      "article-title": "Prediction of pharmaceuticals removal in activated sludge system under different operational parameters using an extended ASM-PhACs model",
+      "volume": "871",
+      "author": "Li",
+      "year": "2023",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib5",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.apenergy.2021.116680",
+      "article-title": "Energy efficiency evaluation of wastewater treatment plants (WWTPs) based on data envelopment analysis",
+      "volume": "289",
+      "author": "Yang",
+      "year": "2021",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "2467",
+      "DOI": "10.1016/j.procbio.2004.09.011",
+      "article-title": "Mathematical modelling of the activated sludge process—the Erzincan case",
+      "volume": "40",
+      "author": "Nuhoglu",
+      "year": "2005",
+      "journal-title": "Process Biochem."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "763",
+      "DOI": "10.1016/j.envsoft.2003.03.005",
+      "article-title": "Activated sludge wastewater treatment plant modelling and simulation: state of the art",
+      "volume": "19",
+      "author": "Gernaey",
+      "year": "2004",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib8",
+      "article-title": "Activated sludge models ASM1, ASM2, ASM2d and ASM3",
+      "volume": "5",
+      "author": "Henze",
+      "year": "2000",
+      "journal-title": "Water Intell. Online"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib9",
+      "doi-asserted-by": "crossref",
+      "first-page": "165",
+      "DOI": "10.2166/wst.1999.0036",
+      "article-title": "Activated sludge model No. 2d, ASM2d",
+      "volume": "39",
+      "author": "Henze",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "188",
+      "DOI": "10.1016/j.envsoft.2014.05.008",
+      "article-title": "Analysing, completing, and generating influent data for WWTP modelling: a critical review",
+      "volume": "60",
+      "author": "Martin",
+      "year": "2014",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib11",
+      "article-title": "Application of combined hydrodynamic cavitation and Fenton reagent for COD reduction of cellulosic fiber industry effluents",
+      "volume": "56",
+      "author": "Kanthale",
+      "year": "2023",
+      "journal-title": "J. Water Proc. Eng."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib12",
+      "first-page": "112",
+      "article-title": "Textile wastewater treatment in anaerobic reactor: influence of domestic wastewater as co-substrate in color and COD removal",
+      "volume": "43",
+      "author": "Bidu",
+      "year": "2023",
+      "journal-title": "S. Afr. J. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "208",
+      "DOI": "10.1016/j.apor.2015.09.001",
+      "article-title": "Forecasting of chlorophyll-a concentrations in South San Francisco Bay using five different models",
+      "volume": "53",
+      "author": "Rajaee",
+      "year": "2015",
+      "journal-title": "Appl. Ocean Res."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib14",
+      "doi-asserted-by": "crossref",
+      "first-page": "159",
+      "DOI": "10.1016/S0925-2312(01)00702-0",
+      "article-title": "Time series forecasting using a hybrid ARIMA and neural network model",
+      "volume": "50",
+      "author": "Zhang",
+      "year": "2003",
+      "journal-title": "Neurocomputing"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib15",
+      "doi-asserted-by": "crossref",
+      "first-page": "228",
+      "DOI": "10.1016/j.scitotenv.2016.03.219",
+      "article-title": "Estimating spatio-temporal dynamics of stream total phosphate concentration by soft computing techniques",
+      "volume": "562",
+      "author": "Chang",
+      "year": "2016",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib16",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.envsoft.2023.105854",
+      "article-title": "A daily streamflow prediction pipeline for dynamical deep neural network applications",
+      "volume": "170",
+      "author": "Sadeghi Tabas",
+      "year": "2023",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.envsoft.2022.105403",
+      "article-title": "Recurrent neural networks for water quality assessment in complex coastal lagoon environments: a case study on the Venice Lagoon",
+      "volume": "154",
+      "author": "Aslan",
+      "year": "2022",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib18",
+      "doi-asserted-by": "crossref",
+      "first-page": "296",
+      "DOI": "10.1016/j.envsoft.2008.07.004",
+      "article-title": "Prediction of urban stormwater quality using artificial neural networks",
+      "volume": "24",
+      "author": "May",
+      "year": "2009",
+      "journal-title": "Environ. Model. Software"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib19",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0000801",
+      "article-title": "GIS and Artificial neural network–based water quality model for a stream network in the upper green river basin, Kentucky, USA",
+      "volume": "141",
+      "author": "Anmala",
+      "year": "2015",
+      "journal-title": "J. Environ. Eng."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "446",
+      "DOI": "10.1016/j.watres.2019.07.005",
+      "article-title": "Electrochemical advanced oxidation processes using novel electrode materials for mineralization and biodegradability enhancement of nanofiltration concentrate of landfill leachates",
+      "volume": "162",
+      "author": "El Kateb",
+      "year": "2019",
+      "journal-title": "Water Reasearch"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib21",
+      "doi-asserted-by": "crossref",
+      "first-page": "806",
+      "DOI": "10.3390/w10060806",
+      "article-title": "Water quality prediction model of a water diversion project based on the Improved Artificial Bee Colony–backpropagation neural network",
+      "volume": "10",
+      "author": "Chen",
+      "year": "2018",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib22",
+      "doi-asserted-by": "crossref",
+      "first-page": "240",
+      "DOI": "10.1016/j.jes.2016.07.017",
+      "article-title": "Development of a method for comprehensive water quality forecasting and its application in Miyun reservoir of Beijing, China",
+      "volume": "56",
+      "author": "Zhang",
+      "year": "2017",
+      "journal-title": "J. Environ. Sci."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib23",
+      "doi-asserted-by": "crossref",
+      "first-page": "1482",
+      "DOI": "10.1631/jzus.2007.A1482",
+      "article-title": "Water quality forecast through application of BP neural network at Yuqiao reservoir",
+      "volume": "8",
+      "author": "Zhao",
+      "year": "2007",
+      "journal-title": "J. Zhejiang Univ. - Sci."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib24",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1088/1755-1315/267/3/032075",
+      "article-title": "Forecast of water quality along the luanhe river line based on BP neural network",
+      "volume": "267",
+      "author": "Lin",
+      "year": "2019",
+      "journal-title": "IOP Conf. Ser. Earth Environ. Sci."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib25",
+      "doi-asserted-by": "crossref",
+      "first-page": "2760",
+      "DOI": "10.3390/w15152760",
+      "article-title": "Research on a prediction model of water quality parameters in a marine ranch based on LSTM-BP",
+      "volume": "15",
+      "author": "Xu",
+      "year": "2023",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib26",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2021.117666",
+      "article-title": "Machine learning in natural and engineered water systems",
+      "volume": "205",
+      "author": "Huang",
+      "year": "2021",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "169",
+      "DOI": "10.1016/j.psep.2019.11.014",
+      "article-title": "Application of artificial intelligence to wastewater treatment: a bibliometric analysis and systematic review of technology, economy, management, and wastewater reuse",
+      "volume": "133",
+      "author": "Zhao",
+      "year": "2020",
+      "journal-title": "Process Saf. Environ. Protect."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib28",
+      "doi-asserted-by": "crossref",
+      "first-page": "108",
+      "DOI": "10.1016/j.scitotenv.2019.06.530",
+      "article-title": "Modeling the performance of single-stage nitrogen removal using anammox and partial nitritation (SNAP) process with backpropagation neural network and response surface methodology",
+      "volume": "690",
+      "author": "Antwi",
+      "year": "2019",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib29",
+      "doi-asserted-by": "crossref",
+      "first-page": "2973",
+      "DOI": "10.1039/D0EW00394H",
+      "article-title": "V. Enabling wastewater treatment process automation: leveraging innovations in real-time sensing, data analysis, and online controls",
+      "volume": "6",
+      "author": "Zhang",
+      "year": "2020",
+      "journal-title": "Environmental Science-Water Research & Technology"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib30",
+      "first-page": "250",
+      "article-title": "Prediction of chemical oxygen demand (COD) based on wavelet decomposition and neural networks",
+      "volume": "35",
+      "author": "Hanbay",
+      "year": "2007",
+      "journal-title": "Clean: Soil, Air, Water"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib31",
+      "doi-asserted-by": "crossref",
+      "first-page": "195",
+      "DOI": "10.2166/wst.1999.0042",
+      "article-title": "Estimating (combinations of) activated sludge model no. 1 parameters and components by respirometry",
+      "volume": "39",
+      "author": "Vanrolleghem",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib32",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2020.116724",
+      "article-title": "Dynamic impact of cellulose and readily biodegradable substrate on oxygen transfer efficiency in sequencing batch reactors",
+      "volume": "190",
+      "author": "Ahmed",
+      "year": "2021",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib33",
+      "doi-asserted-by": "crossref",
+      "first-page": "3987",
+      "DOI": "10.1016/S0043-1354(00)00150-0",
+      "article-title": "A general model of the activated sludge reactor with dispersive flow—I. model development and parameter estimation",
+      "volume": "34",
+      "author": "Makinia",
+      "year": "2000",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib34",
+      "first-page": "793",
+      "article-title": "Respirometry tests in wastewater treatment: why and how? A critical review",
+      "author": "Mainardis",
+      "year": "2021",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib35",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2021.148607",
+      "article-title": "Respirometry tests in wastewater treatment: why and how? A critical review",
+      "volume": "793",
+      "author": "Mainardis",
+      "year": "2021",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib36",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/w16020269",
+      "article-title": "Steady-State and dynamic simulation for wastewater treatment plant management: case study of Maghnia City, North-West Algeria",
+      "volume": "16",
+      "author": "Tiar",
+      "year": "2024",
+      "journal-title": "Water"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib37",
+      "doi-asserted-by": "crossref",
+      "first-page": "247",
+      "DOI": "10.2166/wst.2006.427",
+      "article-title": "ASM1 dynamic calibration and long-term validation for an intermittently aerated WWTP",
+      "volume": "53",
+      "author": "Racault",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib38",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2023.118643",
+      "article-title": "Respirometric tests in a combined UASB-MBR system treating wastewater containing emerging contaminants at different OLRs and temperatures: biokinetic analysis",
+      "volume": "345",
+      "author": "Moya-Llamas",
+      "year": "2023",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib39",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.apenergy.2023.121563",
+      "article-title": "A deep learning framework using multi-feature fusion recurrent neural networks for energy consumption forecasting",
+      "volume": "348",
+      "author": "Fang",
+      "year": "2023",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib40",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.enbuild.2022.112705",
+      "article-title": "Towards intelligent building energy management: AI-based framework for power consumption and generation forecasting",
+      "volume": "279",
+      "author": "Khan",
+      "year": "2023",
+      "journal-title": "Energy Build."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib41",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.aei.2021.101442",
+      "article-title": "Highly accurate energy consumption forecasting model based on parallel LSTM neural networks",
+      "volume": "51",
+      "author": "Jin",
+      "year": "2022",
+      "journal-title": "Adv. Eng. Inf."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib42",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.apenergy.2022.120281",
+      "article-title": "Short-term residential household reactive power forecasting considering active power demand via deep Transformer sequence-to-sequence networks",
+      "volume": "329",
+      "author": "Dong",
+      "year": "2023",
+      "journal-title": "Appl. Energy"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib43",
+      "doi-asserted-by": "crossref",
+      "first-page": "1507",
+      "DOI": "10.15666/aeer/1602_15071518",
+      "article-title": "Determination and analysis of kinetic parameters of heterotrophic bacteria in mathematical simulation",
+      "volume": "16",
+      "author": "Lv",
+      "year": "2018",
+      "journal-title": "Appl. Ecol. Environ. Res."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib44",
+      "doi-asserted-by": "crossref",
+      "first-page": "2800",
+      "DOI": "10.1021/acs.est.7b05611",
+      "article-title": "Model-based evaluation of N2O production pathways in the anammox-enriched granular sludge cultivated in a sequencing batch reactor",
+      "volume": "52",
+      "author": "Lu",
+      "year": "2018",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib45",
+      "doi-asserted-by": "crossref",
+      "first-page": "4586",
+      "DOI": "10.3390/ma13204586",
+      "article-title": "Review on the biological degradation of polymers in various environments",
+      "volume": "13",
+      "author": "Kliem",
+      "year": "2020",
+      "journal-title": "Materials"
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib46",
+      "doi-asserted-by": "crossref",
+      "first-page": "235",
+      "DOI": "10.1016/j.jenvman.2015.09.041",
+      "article-title": "Simulation and optimization of a coking wastewater biological treatment process by activated sludge models (ASM)",
+      "volume": "165",
+      "author": "Wu",
+      "year": "2016",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib47",
+      "doi-asserted-by": "crossref",
+      "first-page": "865",
+      "DOI": "10.1080/10643389.2022.2095844",
+      "article-title": "Sources of micro(nano)plastics and interaction with co-existing pollutants in wastewater treatment plants",
+      "volume": "53",
+      "author": "Liu",
+      "year": "2023",
+      "journal-title": "Crit. Rev. Environ. Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib48",
+      "doi-asserted-by": "crossref",
+      "first-page": "71",
+      "DOI": "10.1016/j.jenvman.2012.08.032",
+      "article-title": "COD fractionation and biological treatability of mixed industrial wastewaters",
+      "volume": "113",
+      "author": "Fall",
+      "year": "2012",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib49",
+      "doi-asserted-by": "crossref",
+      "first-page": "1709",
+      "DOI": "10.1080/02664763.2022.2037528",
+      "article-title": "Application of the skew exponential power distribution to ROC curves",
+      "volume": "50",
+      "author": "Attwood",
+      "year": "2023",
+      "journal-title": "J. Appl. Stat."
+    },
+    {
+      "key": "10.1016/j.heliyon.2024.e35580_bib50",
+      "doi-asserted-by": "crossref",
+      "first-page": "144",
+      "DOI": "10.1016/j.biortech.2009.08.034",
+      "article-title": "Respirometric analysis of activated sludge models from palm oil mill effluent",
+      "volume": "101",
+      "author": "Damayanti",
+      "year": "2010",
+      "journal-title": "Bioresour. Technol."
+    }
+  ],
+  "container-title": [
+    "Heliyon"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2405844024116118?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2405844024116118?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        10
+      ]
+    ],
+    "date-time": "2026-03-10T22:57:31Z",
+    "timestamp": 1773183451000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2405844024116118"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        8
+      ]
+    ]
+  },
+  "references-count": 50,
+  "journal-issue": {
+    "issue": "16",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          8
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S2405844024116118"
+  ],
+  "URL": "https://doi.org/10.1016/j.heliyon.2024.e35580",
+  "relation": {},
+  "ISSN": [
+    "2405-8440"
+  ],
+  "issn-type": [
+    {
+      "value": "2405-8440",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        8
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Real-time prediction of the chemical oxygen demand component parameters in activated sludge model using backpropagation neural network",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Heliyon",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.heliyon.2024.e35580",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2024 Published by Elsevier Ltd.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "e35580"
+}

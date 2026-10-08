@@ -1,0 +1,1547 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2026-10-07T22:25:25Z",
+    "timestamp": 1791411925592,
+    "version": "4.3.3"
+  },
+  "reference-count": 217,
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "issue": "6",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2024-06-01T00:00:00Z",
+        "timestamp": 1717200000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "IEEE Trans. Neural Netw. Learning Syst."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1109/tnnls.2022.3229161",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        23
+      ]
+    ],
+    "date-time": "2022-12-23T13:35:29Z",
+    "timestamp": 1671802529000
+  },
+  "page": "7499-7519",
+  "source": "Crossref",
+  "is-referenced-by-count": 857,
+  "title": [
+    "Deep Neural Networks and Tabular Data: A Survey"
+  ],
+  "prefix": "10.1109",
+  "volume": "35",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-4889-9989",
+      "authenticated-orcid": false,
+      "given": "Vadim",
+      "family": "Borisov",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Data Science and Analytics Research (DSAR) Group, University of T&#x00FC;bingen, T&#x00FC;bingen, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-9333-228X",
+      "authenticated-orcid": false,
+      "given": "Tobias",
+      "family": "Leemann",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Data Science and Analytics Research (DSAR) Group, University of T&#x00FC;bingen, T&#x00FC;bingen, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3380-4641",
+      "authenticated-orcid": false,
+      "given": "Kathrin",
+      "family": "Seßler",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Data Science and Analytics Research (DSAR) Group, University of T&#x00FC;bingen, T&#x00FC;bingen, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-1286-3551",
+      "authenticated-orcid": false,
+      "given": "Johannes",
+      "family": "Haug",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Data Science and Analytics Research (DSAR) Group, University of T&#x00FC;bingen, T&#x00FC;bingen, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-6191-4434",
+      "authenticated-orcid": false,
+      "given": "Martin",
+      "family": "Pawelczyk",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Data Science and Analytics Research (DSAR) Group, University of T&#x00FC;bingen, T&#x00FC;bingen, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-3123-7268",
+      "authenticated-orcid": false,
+      "given": "Gjergji",
+      "family": "Kasneci",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Data Science and Analytics Research (DSAR) Group, University of T&#x00FC;bingen, T&#x00FC;bingen, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "263",
+  "reference": [
+    {
+      "key": "ref1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.48550/ARXIV.1404.7828"
+    },
+    {
+      "key": "ref2",
+      "volume-title": "Deep Learning",
+      "author": "Goodfellow",
+      "year": "2016"
+    },
+    {
+      "key": "ref3",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1997.9.8.1735"
+    },
+    {
+      "key": "ref4",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2016.2582924"
+    },
+    {
+      "key": "ref5",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.48550/ARXIV.1706.03762"
+    },
+    {
+      "key": "ref6",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1609/aaai.v35i8.16826"
+    },
+    {
+      "key": "ref7",
+      "article-title": "Neural oblivious decision ensembles for deep learning on tabular data",
+      "author": "Popov",
+      "year": "2019",
+      "journal-title": "arXiv:1909.06312"
+    },
+    {
+      "key": "ref8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.inffus.2021.11.011"
+    },
+    {
+      "key": "ref9",
+      "article-title": "SAINT: Improved neural networks for tabular data via row attention and contrastive pre-training",
+      "author": "Somepalli",
+      "year": "2021",
+      "journal-title": "arXiv:2106.01342"
+    },
+    {
+      "key": "ref10",
+      "first-page": "1",
+      "article-title": "Well-tuned simple nets excel on tabular datasets",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "author": "Kadra"
+    },
+    {
+      "key": "ref11",
+      "first-page": "341",
+      "article-title": "Trust Issues: Uncertainty estimation does not enable reliable OOD detection on medical tabular data",
+      "volume-title": "Proc. Mach. Learn. Health NeurIPS Workshop",
+      "author": "Ulmer"
+    },
+    {
+      "key": "ref12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/europace/euaa377"
+    },
+    {
+      "key": "ref13",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.chbr.2021.100116"
+    },
+    {
+      "key": "ref14",
+      "article-title": "Sequential deep learning for credit risk monitoring with tabular financial data",
+      "author": "Clements",
+      "year": "2020",
+      "journal-title": "arXiv:2012.15330"
+    },
+    {
+      "key": "ref15",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.24963/ijcai.2017/239"
+    },
+    {
+      "issue": "1",
+      "key": "ref16",
+      "first-page": "1",
+      "article-title": "Deep learning based recommender system: A survey and new perspectives",
+      "volume": "52",
+      "author": "Shuai",
+      "year": "2017",
+      "journal-title": "ACM Comput. Surv."
+    },
+    {
+      "key": "ref17",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2021.3069058"
+    },
+    {
+      "key": "ref18",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1142/S2424922X17500073"
+    },
+    {
+      "key": "ref19",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/COMST.2015.2494502"
+    },
+    {
+      "key": "ref20",
+      "first-page": "1",
+      "article-title": "Adversarial attacks for tabular data: Application to fraud detection and imbalanced data",
+      "volume-title": "Proc. CEUR Workshop",
+      "volume": "2808",
+      "author": "Cartella"
+    },
+    {
+      "key": "ref21",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1037/met0000374"
+    },
+    {
+      "key": "ref22",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2022.3162123"
+    },
+    {
+      "key": "ref23",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/tnnls.2022.3184723"
+    },
+    {
+      "key": "ref24",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2021.3116269"
+    },
+    {
+      "key": "ref25",
+      "article-title": "Online deep learning: Learning deep neural networks on the fly",
+      "author": "Sahoo",
+      "year": "2017",
+      "journal-title": "arXiv:1711.03705"
+    },
+    {
+      "key": "ref26",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.knosys.2020.106622"
+    },
+    {
+      "key": "ref27",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.18653/v1/2020.acl-main.745"
+    },
+    {
+      "key": "ref28",
+      "article-title": "Generative adversarial networks in computer vision: A survey and taxonomy",
+      "author": "Wang",
+      "year": "2019",
+      "journal-title": "arXiv:1906.01529"
+    },
+    {
+      "key": "ref29",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.procir.2021.03.083"
+    },
+    {
+      "key": "ref30",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TPAMI.2018.2798607"
+    },
+    {
+      "key": "ref31",
+      "article-title": "New properties of the data distillation method when working with tabular data",
+      "author": "Medvedev",
+      "year": "2020",
+      "journal-title": "arXiv:2010.09839"
+    },
+    {
+      "key": "ref32",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.3390/e22111203"
+    },
+    {
+      "key": "ref33",
+      "article-title": "IFedAvg: Interpretable data-interoperability for federated learning",
+      "author": "Roschewitz",
+      "year": "2021",
+      "journal-title": "arXiv:2107.06580"
+    },
+    {
+      "key": "ref34",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s00521-019-04013-2"
+    },
+    {
+      "key": "ref35",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/tnnls.2021.3136385"
+    },
+    {
+      "key": "ref36",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.eswa.2021.114582"
+    },
+    {
+      "key": "ref37",
+      "article-title": "Synthesising multi-modal minority samples for tabular data",
+      "volume-title": "arXiv:2105.08204",
+      "author": "Darabi",
+      "year": "2021"
+    },
+    {
+      "key": "ref38",
+      "article-title": "Copula flows for synthetic data generation",
+      "author": "Kamthe",
+      "year": "2021",
+      "journal-title": "arXiv:2101.00598"
+    },
+    {
+      "key": "ref39",
+      "first-page": "286",
+      "article-title": "Generating multi-label discrete patient records using generative adversarial networks",
+      "volume-title": "Proc. 2nd Mach. Learn. Healthcare Conf.",
+      "author": "Choi"
+    },
+    {
+      "key": "ref40",
+      "volume-title": "California Consumer Privacy Act (CCPA)",
+      "year": "2018"
+    },
+    {
+      "key": "ref41",
+      "volume-title": "Regulation (EU) 2016/679 of the European Parliament and of the Council",
+      "year": "2016"
+    },
+    {
+      "key": "ref42",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-319-57959-7"
+    },
+    {
+      "key": "ref43",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ACCESS.2021.3116481"
+    },
+    {
+      "key": "ref44",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ins.2021.01.052"
+    },
+    {
+      "key": "ref45",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3351095.3375624"
+    },
+    {
+      "key": "ref46",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/2939672.2939785"
+    },
+    {
+      "key": "ref47",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1186/s40537-020-00305-w"
+    },
+    {
+      "key": "ref48",
+      "article-title": "Revisiting deep learning models for tabular data",
+      "author": "Gorishniy",
+      "year": "2021",
+      "journal-title": "arXiv:2106.11959"
+    },
+    {
+      "key": "ref49",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/CVPR.2016.90"
+    },
+    {
+      "key": "ref50",
+      "first-page": "1",
+      "article-title": "Net-DNF: Effective deep modeling of tabular data",
+      "volume-title": "Proc. Int. Conf. Learn. Represent.",
+      "author": "Katzir"
+    },
+    {
+      "key": "ref51",
+      "volume-title": "Introduction to Statistics",
+      "author": "David",
+      "year": "2003"
+    },
+    {
+      "key": "ref52",
+      "volume-title": "Deep Learning With Structured Data",
+      "author": "Ryan",
+      "year": "2020"
+    },
+    {
+      "key": "ref53",
+      "article-title": "Deep learning in unconventional domains",
+      "author": "Cvitkovic",
+      "year": "2020"
+    },
+    {
+      "key": "ref54",
+      "volume-title": "UCI Machine Learning Repository",
+      "author": "Dua",
+      "year": "2017"
+    },
+    {
+      "issue": "1",
+      "key": "ref55",
+      "first-page": "293",
+      "article-title": "The sunstroke epidemic of Cincinnati, Ohio, during the summer of 1881",
+      "volume-title": "Public Health Papers Rep.",
+      "volume": "7",
+      "author": "Miles",
+      "year": "1881"
+    },
+    {
+      "key": "ref56",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1111/j.1469-1809.1936.tb02137.x"
+    },
+    {
+      "key": "ref57",
+      "article-title": "Human mortality database",
+      "volume-title": "Encyclopedia Gerontology Population Aging",
+      "author": "Jdanov",
+      "year": "2020"
+    },
+    {
+      "key": "ref58",
+      "author": "Fix",
+      "year": "1951",
+      "journal-title": "Discriminatory Analysis: Nonparametric Discrimination, Consistency Properties"
+    },
+    {
+      "key": "ref59",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1992.4.3.393"
+    },
+    {
+      "key": "ref60",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/978-1-4612-4028-0",
+      "volume-title": "Statistical Disclosure Control in Practice",
+      "volume": "111",
+      "author": "Willenborg",
+      "year": "1996"
+    },
+    {
+      "key": "ref61",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/1242572.1242643"
+    },
+    {
+      "key": "ref62",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3292500.3330858"
+    },
+    {
+      "key": "ref63",
+      "first-page": "1379",
+      "article-title": "Regularization learning networks: Deep learning for tabular datasets",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "author": "Shavitt"
+    },
+    {
+      "key": "ref64",
+      "article-title": "Language models are few-shot learners",
+      "author": "Brown",
+      "year": "2020",
+      "journal-title": "arXiv:2005.14165"
+    },
+    {
+      "key": "ref65",
+      "first-page": "1",
+      "article-title": "An image is worth 16 × 16 words: Transformers for image recognition at scale",
+      "volume-title": "Proc. Int. Conf. Learn. Represent.",
+      "author": "Dosovitskiy"
+    },
+    {
+      "key": "ref66",
+      "article-title": "Transformers in vision: A survey",
+      "author": "Khan",
+      "year": "2021",
+      "journal-title": "arXiv:2101.01169"
+    },
+    {
+      "key": "ref67",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3439950"
+    },
+    {
+      "key": "ref68",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.stamet.2005.08.005"
+    },
+    {
+      "key": "ref69",
+      "article-title": "Synthesizing tabular data using generative adversarial networks",
+      "author": "Xu",
+      "year": "2018",
+      "journal-title": "arXiv:1811.11264"
+    },
+    {
+      "key": "ref70",
+      "first-page": "3146",
+      "article-title": "LightGBM: A highly efficient gradient boosting decision tree",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "author": "Ke"
+    },
+    {
+      "key": "ref71",
+      "first-page": "6638",
+      "article-title": "CatBoost: Unbiased boosting with categorical features",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "author": "Prokhorenkova"
+    },
+    {
+      "key": "ref72",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41598-021-90923-y"
+    },
+    {
+      "key": "ref73",
+      "first-page": "5301",
+      "article-title": "On the spectral bias of neural networks",
+      "volume-title": "Proc. Int. Conf. Mach. Learn.",
+      "author": "Rahaman"
+    },
+    {
+      "key": "ref74",
+      "article-title": "The spatial inductive bias of deep learning",
+      "author": "Mitchell",
+      "year": "2017"
+    },
+    {
+      "key": "ref75",
+      "article-title": "On embeddings for numerical features in tabular deep learning",
+      "author": "Gorishniy",
+      "year": "2022",
+      "journal-title": "arXiv:2203.05556"
+    },
+    {
+      "key": "ref76",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-642-32909-8_35"
+    },
+    {
+      "key": "ref77",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3097983.3098021"
+    },
+    {
+      "key": "ref78",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/CVPRW.2019.00360"
+    },
+    {
+      "key": "ref79",
+      "first-page": "1",
+      "article-title": "VIME: Extending the success of self- and semi-supervised learning to tabular domaindim",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "volume": "33",
+      "author": "Yoon"
+    },
+    {
+      "key": "ref80",
+      "article-title": "SCARF: Self-supervised contrastive learning using random feature corruption",
+      "author": "Bahri",
+      "year": "2021",
+      "journal-title": "arXiv:2106.15147"
+    },
+    {
+      "key": "ref81",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/2988450.2988454"
+    },
+    {
+      "key": "ref82",
+      "article-title": "Distilling a neural network into a soft decision tree",
+      "author": "Frosst",
+      "year": "2017",
+      "journal-title": "arXiv:1711.09784"
+    },
+    {
+      "key": "ref83",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3219819.3220023"
+    },
+    {
+      "key": "ref84",
+      "volume-title": "TabNN: A Universal Neural Network Solution for Tabular Data",
+      "author": "Ke",
+      "year": "2018"
+    },
+    {
+      "key": "ref85",
+      "article-title": "Neural additive models: Interpretable machine learning with neural nets",
+      "author": "Agarwal",
+      "year": "2020",
+      "journal-title": "arXiv:2004.13912"
+    },
+    {
+      "key": "ref86",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3397271.3401437"
+    },
+    {
+      "key": "ref87",
+      "article-title": "DNN2LR: Interpretation-inspired feature crossing for real-world tabular data",
+      "author": "Liu",
+      "year": "2020",
+      "journal-title": "arXiv:2008.09775"
+    },
+    {
+      "key": "ref88",
+      "first-page": "1",
+      "article-title": "Boost then Convolve: Gradient boosting meets graph neural networks",
+      "volume-title": "Proc. Int. Conf. Learn. Represent.",
+      "author": "Ivanov"
+    },
+    {
+      "key": "ref89",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ACCESS.2021.3070575"
+    },
+    {
+      "key": "ref90",
+      "article-title": "TabTransformer: Tabular data modeling using contextual embeddings",
+      "author": "Huang",
+      "year": "2020",
+      "journal-title": "arXiv:2012.06678"
+    },
+    {
+      "key": "ref91",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3448016.3457321"
+    },
+    {
+      "key": "ref92",
+      "first-page": "28742",
+      "article-title": "Self-attention between datapoints: Going beyond individual input-output pairs in deep learning",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "author": "Kossen"
+    },
+    {
+      "key": "ref93",
+      "first-page": "8952",
+      "article-title": "Feature selection using stochastic gates",
+      "volume-title": "Proc. Mach. Learn. Syst.",
+      "author": "Yamada"
+    },
+    {
+      "key": "ref94",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/507533.507538"
+    },
+    {
+      "key": "ref95",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0167-9473(01)00065-2"
+    },
+    {
+      "key": "ref96",
+      "first-page": "113",
+      "article-title": "Oblivious decision trees and abstract cases",
+      "volume-title": "Proc. Work. Notes AAAI Workshop Case-Based Reasoning",
+      "author": "Langley"
+    },
+    {
+      "key": "ref97",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.18653/v1/P19-1146"
+    },
+    {
+      "key": "ref98",
+      "volume-title": "MNIST Handwritten Digit Database",
+      "author": "LeCun",
+      "year": "2010"
+    },
+    {
+      "key": "ref99",
+      "article-title": "Entity embeddings of categorical variables",
+      "author": "Guo",
+      "year": "2016",
+      "journal-title": "arXiv:1604.06737"
+    },
+    {
+      "key": "ref100",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICDM.2010.127"
+    },
+    {
+      "key": "ref101",
+      "first-page": "985",
+      "article-title": "Fast discriminative visual codebooks using randomized clustering forests",
+      "volume-title": "Proc. 20th Annu. Conf. Neural Inf. Process. Syst. (NIPS)",
+      "author": "Moosmann"
+    },
+    {
+      "key": "ref102",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/2648584.2648589"
+    },
+    {
+      "key": "ref103",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2020.2978386"
+    },
+    {
+      "key": "ref104",
+      "article-title": "Language models with transformers",
+      "author": "Wang",
+      "year": "2019",
+      "journal-title": "arXiv:1904.09408"
+    },
+    {
+      "key": "ref105",
+      "article-title": "From softmax to sparsemax: A sparse model of attention and multi-label classification",
+      "author": "Martins",
+      "year": "2016",
+      "journal-title": "arXiv:1602.02068"
+    },
+    {
+      "key": "ref106",
+      "author": "Van Rossum",
+      "year": "1995",
+      "journal-title": "Python Reference Manual"
+    },
+    {
+      "key": "ref107",
+      "article-title": "PyTorch tabular: A framework for deep learning with tabular data",
+      "author": "Joseph",
+      "year": "2021",
+      "journal-title": "arXiv:2104.13638"
+    },
+    {
+      "key": "ref108",
+      "article-title": "Fairness in TabNet model by disentangled representation for the prediction of hospital no-show",
+      "author": "Boughorbel",
+      "year": "2021",
+      "journal-title": "arXiv:2103.04048"
+    },
+    {
+      "key": "ref109",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3457607"
+    },
+    {
+      "key": "ref110",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICCV.2019.00612"
+    },
+    {
+      "key": "ref111",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.48550/arxiv.1710.09412"
+    },
+    {
+      "key": "ref112",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-030-30484-3_6"
+    },
+    {
+      "key": "ref113",
+      "article-title": "Lockout: Sparse regularization of neural networks",
+      "author": "Valdes",
+      "year": "2021",
+      "journal-title": "arXiv:2107.07160"
+    },
+    {
+      "key": "ref114",
+      "article-title": "Simple modifications to improve tabular neural networks",
+      "author": "Fiedler",
+      "year": "2021",
+      "journal-title": "arXiv:2108.03214"
+    },
+    {
+      "key": "ref115",
+      "article-title": "Muddling label regularization: Deep learning for tabular datasets",
+      "author": "Lounici",
+      "year": "2021",
+      "journal-title": "arXiv:2106.04462"
+    },
+    {
+      "key": "ref116",
+      "first-page": "1",
+      "article-title": "A unified approach to interpreting model predictions",
+      "volume-title": "Proc. NeurIPS",
+      "author": "Lundberg"
+    },
+    {
+      "key": "ref117",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.24963/ijcai.2019/287"
+    },
+    {
+      "key": "ref118",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-319-93040-4_21"
+    },
+    {
+      "key": "ref119",
+      "first-page": "1",
+      "article-title": "Working with deep generative models and tabular data imputation",
+      "volume-title": "Proc. ICML Artemiss Workshop",
+      "author": "Camino"
+    },
+    {
+      "key": "ref120",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3360322.3361016"
+    },
+    {
+      "key": "ref121",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/jamia/ocaa127"
+    },
+    {
+      "key": "ref122",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.14778/3407790.3407802"
+    },
+    {
+      "key": "ref123",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/CVPR42600.2020.00813"
+    },
+    {
+      "key": "ref124",
+      "first-page": "1",
+      "article-title": "Adversarial ranking for language generation",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "author": "Lin"
+    },
+    {
+      "key": "ref125",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.18653/v1/W17-2629"
+    },
+    {
+      "key": "ref126",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/DSAA.2016.49"
+    },
+    {
+      "key": "ref127",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICDMW51313.2020.00082"
+    },
+    {
+      "key": "ref128",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3134428"
+    },
+    {
+      "key": "ref129",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TIT.1968.1054142"
+    },
+    {
+      "key": "ref130",
+      "first-page": "1",
+      "article-title": "Modeling tabular data using conditional GAN",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "volume": "33",
+      "author": "Xu"
+    },
+    {
+      "key": "ref131",
+      "first-page": "1",
+      "article-title": "Generating privacy-preserving synthetic tabular data using oblivious variational autoencoders",
+      "volume-title": "Proc. Workshop Econ. Privacy Data Labor 37th Int. Conf. Mach. Learn.",
+      "author": "Vardhan"
+    },
+    {
+      "key": "ref132",
+      "first-page": "4747",
+      "article-title": "Synthsonic: Fast, probabilistic modeling and synthesis of tabular data",
+      "volume-title": "Proc. Int. Conf. Artif. Intell. Statist.",
+      "author": "Baak"
+    },
+    {
+      "key": "ref133",
+      "article-title": "Generative adversarial networks",
+      "author": "Goodfellow",
+      "year": "2014",
+      "journal-title": "arXiv:1406.2661"
+    },
+    {
+      "key": "ref134",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.48550/arXiv.1511.06434"
+    },
+    {
+      "key": "ref135",
+      "first-page": "214",
+      "article-title": "Wasserstein generative adversarial networks",
+      "volume-title": "Proc. Int. Conf. Mach. Learn.",
+      "author": "Arjovsky"
+    },
+    {
+      "key": "ref136",
+      "first-page": "5769",
+      "article-title": "Improved training of Wasserstein GANs",
+      "volume-title": "Proc. 31st Int. Conf. Neural Inf. Process. Syst.",
+      "author": "Gulrajani"
+    },
+    {
+      "key": "ref137",
+      "article-title": "The Cramér distance as a solution to biased Wasserstein gradients",
+      "author": "Bellemare",
+      "year": "2017",
+      "journal-title": "arXiv:1705.10743"
+    },
+    {
+      "key": "ref138",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.48550/arXiv.1702.08431"
+    },
+    {
+      "key": "ref139",
+      "first-page": "3310",
+      "article-title": "VEEGAN: Reducing mode collapse in GANs using implicit variational learning",
+      "volume-title": "Proc. 31st Int. Conf. Neural Inf. Process. Syst.",
+      "author": "Srivastava"
+    },
+    {
+      "key": "ref140",
+      "first-page": "1",
+      "article-title": "Auto-encoding variational Bayes",
+      "volume-title": "Proc. 2nd Int. Conf. Learn. Represent. (ICLR), Conf. Track",
+      "author": "Kingma"
+    },
+    {
+      "key": "ref141",
+      "first-page": "1",
+      "article-title": "VAEM: A deep generative model for heterogeneous mixed type data",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "volume": "33",
+      "author": "Ma"
+    },
+    {
+      "key": "ref142",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.14778/3231751.3231757"
+    },
+    {
+      "key": "ref143",
+      "first-page": "1",
+      "article-title": "Categorical reparameterization with Gumbel-Softmax",
+      "volume-title": "Proc. Int. Conf. Learn. Represent.",
+      "author": "Jang"
+    },
+    {
+      "key": "ref144",
+      "article-title": "Causal-TGAN: Generating tabular data using causal generative adversarial networks",
+      "author": "Wen",
+      "year": "2021",
+      "journal-title": "arXiv:2104.10680"
+    },
+    {
+      "key": "ref145",
+      "first-page": "1",
+      "article-title": "PATE-GAN: Generating synthetic data with differential privacy guarantees",
+      "volume-title": "Proc. Int. Conf. Learn. Represent.",
+      "author": "Jordon"
+    },
+    {
+      "key": "ref146",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/tnnls.2022.3212627"
+    },
+    {
+      "key": "ref147",
+      "article-title": "Airline passenger name record generation using generative adversarial networks",
+      "author": "Mottini",
+      "year": "2018",
+      "journal-title": "arXiv:1807.06657"
+    },
+    {
+      "key": "ref148",
+      "first-page": "1",
+      "article-title": "Generating multi-categorical samples with generative adversarial networks",
+      "volume-title": "Proc. ICML Workshop Theor. Found. Appl. Deep Generative Models",
+      "author": "Camino"
+    },
+    {
+      "key": "ref149",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/jamia/ocy142"
+    },
+    {
+      "key": "ref150",
+      "article-title": "CTAB-GAN: Effective table data synthesizing",
+      "author": "Zhao",
+      "year": "2021",
+      "journal-title": "arXiv:2102.08369"
+    },
+    {
+      "key": "ref151",
+      "article-title": "Language models are realistic tabular data generators",
+      "author": "Borisov",
+      "year": "2022",
+      "journal-title": "arXiv:2210.06280"
+    },
+    {
+      "key": "ref152",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/01621459.1951.10500769"
+    },
+    {
+      "key": "ref153",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2020.3027314"
+    },
+    {
+      "key": "ref154",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/tnnls.2022.3185901"
+    },
+    {
+      "key": "ref155",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3236009"
+    },
+    {
+      "key": "ref156",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3292500.3332281"
+    },
+    {
+      "key": "ref157",
+      "first-page": "1",
+      "article-title": "CARLA: A Python library to benchmark algorithmic recourse and counterfactual explanation algorithms",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst. (NeurIPS) Benchmark Datasets Track",
+      "author": "Pawelczyk"
+    },
+    {
+      "key": "ref158",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/2339530.2339556"
+    },
+    {
+      "key": "ref159",
+      "first-page": "1",
+      "article-title": "Towards robust interpretability with self-explaining neural networks",
+      "volume-title": "Proc. NeurIPS",
+      "author": "Alvarez-Melis"
+    },
+    {
+      "key": "ref160",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3290605.3300831"
+    },
+    {
+      "key": "ref161",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1371/journal.pone.0130140"
+    },
+    {
+      "key": "ref162",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-030-28954-6_10"
+    },
+    {
+      "key": "ref163",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/2983323.2983746"
+    },
+    {
+      "key": "ref164",
+      "first-page": "3319",
+      "article-title": "Axiomatic attribution for deep networks",
+      "volume-title": "Proc. Int. Conf. Mach. Learn.",
+      "author": "Sundararajan"
+    },
+    {
+      "key": "ref165",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/WACV.2018.00097"
+    },
+    {
+      "key": "ref166",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.18653/v1/N16-3020"
+    },
+    {
+      "key": "ref167",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1609/aaai.v32i1.11491"
+    },
+    {
+      "key": "ref168",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s42256-019-0138-9"
+    },
+    {
+      "key": "ref169",
+      "article-title": "On baselines for local feature attributions",
+      "author": "Haug",
+      "year": "2021",
+      "journal-title": "arXiv:2101.00905"
+    },
+    {
+      "key": "ref170",
+      "first-page": "1",
+      "article-title": "Synthetic benchmarks for scientific research in explainable machine learning",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst. (NeurIPS) Benchmark Datasets Track",
+      "author": "Liu"
+    },
+    {
+      "issue": "2",
+      "key": "ref171",
+      "first-page": "841",
+      "article-title": "Counterfactual explanations without opening the black box: Automated decisions and the GDPR",
+      "volume": "31",
+      "author": "Wachter",
+      "year": "2018",
+      "journal-title": "Harvard J. Law Technol."
+    },
+    {
+      "key": "ref172",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3287560.3287566"
+    },
+    {
+      "key": "ref173",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3287560.3287569"
+    },
+    {
+      "key": "ref174",
+      "first-page": "12187",
+      "article-title": "Beyond individualized recourse: Interpretable and interactive summaries of actionable recourses",
+      "volume-title": "Proc. NeurIPS",
+      "author": "Rawal"
+    },
+    {
+      "key": "ref175",
+      "first-page": "895",
+      "article-title": "Model-agnostic counterfactual explanations for consequential decisions",
+      "volume-title": "Proc. Int. Conf. Artif. Intell. Statist.",
+      "author": "Karimi"
+    },
+    {
+      "key": "ref176",
+      "first-page": "1",
+      "article-title": "Explanations based on the missing: Towards contrastive explanations with pertinent negatives",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)",
+      "author": "Dhurandhar"
+    },
+    {
+      "key": "ref177",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3287560.3287574"
+    },
+    {
+      "key": "ref178",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3366423.3380087"
+    },
+    {
+      "key": "ref179",
+      "first-page": "1",
+      "article-title": "CRUDS: Counterfactual recourse using disentangled subspaces",
+      "volume-title": "Proc. ICML Workshop Hum. Interpretability Mach. Learn. (WHI)",
+      "author": "Downs"
+    },
+    {
+      "key": "ref180",
+      "article-title": "Towards realistic individual recourse and actionable explanations in black-box decision making systems",
+      "author": "Joshi",
+      "year": "2019",
+      "journal-title": "arXiv:1907.09615"
+    },
+    {
+      "key": "ref181",
+      "article-title": "Preserving causal constraints in counterfactual explanations for machine learning classifiers",
+      "author": "Mahajan",
+      "year": "2019",
+      "journal-title": "arXiv:1912.03277"
+    },
+    {
+      "key": "ref182",
+      "first-page": "809",
+      "article-title": "On counterfactual explanations under predictive multiplicity",
+      "volume-title": "Proc. Conf. Uncertainty Artif. Intell. (UAI)",
+      "author": "Pawelczyk"
+    },
+    {
+      "key": "ref183",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.patcog.2020.107501"
+    },
+    {
+      "key": "ref184",
+      "first-page": "16926",
+      "article-title": "Towards robust and reliable algorithmic recourse",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)",
+      "volume": "34",
+      "author": "Upadhyay"
+    },
+    {
+      "key": "ref185",
+      "first-page": "5324",
+      "article-title": "On the adversarial robustness of causal algorithmic recourse",
+      "volume-title": "Proc. Int. Conf. Mach. Learn. (ICML)",
+      "author": "Dominguez-Olmedo"
+    },
+    {
+      "key": "ref186",
+      "article-title": "Probabilistically robust recourse: Navigating the trade-offs between costs and robustness in algorithmic recourse",
+      "author": "Pawelczyk",
+      "year": "2022",
+      "journal-title": "arXiv:2203.06768"
+    },
+    {
+      "key": "ref187",
+      "article-title": "A survey of algorithmic recourse: Definitions, formulations, solutions, and prospects",
+      "author": "Karimi",
+      "year": "2020",
+      "journal-title": "arXiv:2010.04050"
+    },
+    {
+      "key": "ref188",
+      "article-title": "Counterfactual explanations for machine learning: A review",
+      "author": "Verma",
+      "year": "2020",
+      "journal-title": "arXiv:2010.10596"
+    },
+    {
+      "key": "ref189",
+      "article-title": "Learning multiple layers of features from tiny images",
+      "author": "Krizhevsky",
+      "year": "2009"
+    },
+    {
+      "key": "ref190",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/CVPR.2009.5206848"
+    },
+    {
+      "key": "ref191",
+      "volume-title": "Home Equity Line of Credit (HELOC) Dataset",
+      "year": "2019"
+    },
+    {
+      "key": "ref192",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/ncomms5308"
+    },
+    {
+      "key": "ref193",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.4135/9781412985116",
+      "volume-title": "Monte Carlo Simulation",
+      "author": "Mooney",
+      "year": "1997"
+    },
+    {
+      "key": "ref194",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0167-7152(96)00140-X"
+    },
+    {
+      "key": "ref195",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1201/9781315139470"
+    },
+    {
+      "key": "ref196",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1010933404324"
+    },
+    {
+      "key": "ref197",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.24963/ijcai.2019/281"
+    },
+    {
+      "key": "ref198",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02478259"
+    },
+    {
+      "key": "ref199",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3292500.3330701"
+    },
+    {
+      "issue": "239",
+      "key": "ref200",
+      "first-page": "2",
+      "article-title": "Docker: Lightweight Linux containers for consistent development and deployment",
+      "volume": "2014",
+      "author": "Merkel",
+      "year": "2014",
+      "journal-title": "Linux J."
+    },
+    {
+      "key": "ref201",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijforecast.2020.07.007"
+    },
+    {
+      "key": "ref202",
+      "first-page": "18770",
+      "article-title": "A consistent and efficient evaluation strategy for attribution methods",
+      "volume-title": "Proc. Int. Conf. Mach. Learn.",
+      "author": "Rong"
+    },
+    {
+      "key": "ref203",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1609/aaai.v34i04.6064"
+    },
+    {
+      "key": "ref204",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/widm.1356"
+    },
+    {
+      "key": "ref205",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/tnnls.2022.3172365"
+    },
+    {
+      "key": "ref206",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNNLS.2017.2775225"
+    },
+    {
+      "key": "ref207",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/347090.347107"
+    },
+    {
+      "key": "ref208",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3219819.3220005"
+    },
+    {
+      "key": "ref209",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2478/jaiscr-2020-0002"
+    },
+    {
+      "key": "ref210",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3394486.3403200"
+    },
+    {
+      "key": "ref211",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICPR48806.2021.9412499"
+    },
+    {
+      "key": "ref212",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-030-01424-7_27"
+    },
+    {
+      "key": "ref213",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1186/s40537-019-0197-0"
+    },
+    {
+      "key": "ref214",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1613/jair.953"
+    },
+    {
+      "key": "ref215",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TPAMI.2020.2992393"
+    },
+    {
+      "key": "ref216",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TKDE.2021.3090866"
+    },
+    {
+      "key": "ref217",
+      "first-page": "1",
+      "article-title": "SubTab: Subsetting features of tabular data for self-supervised representation learning",
+      "volume-title": "Proc. Adv. Neural Inf. Process. Syst.",
+      "volume": "34",
+      "author": "Ucar"
+    }
+  ],
+  "container-title": [
+    "IEEE Transactions on Neural Networks and Learning Systems"
+  ],
+  "original-title": [],
+  "link": [
+    {
+      "URL": "http://xplorestaging.ieee.org/ielx7/5962385/10547160/09998482.pdf?arnumber=9998482",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        9,
+        3
+      ]
+    ],
+    "date-time": "2024-09-03T01:35:22Z",
+    "timestamp": 1725327322000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://ieeexplore.ieee.org/document/9998482/"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        6
+      ]
+    ]
+  },
+  "references-count": 217,
+  "journal-issue": {
+    "issue": "6"
+  },
+  "URL": "https://doi.org/10.1109/tnnls.2022.3229161",
+  "relation": {},
+  "ISSN": [
+    "2162-237X",
+    "2162-2388"
+  ],
+  "issn-type": [
+    {
+      "value": "2162-237X",
+      "type": "print"
+    },
+    {
+      "value": "2162-2388",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        6
+      ]
+    ]
+  }
+}

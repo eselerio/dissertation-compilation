@@ -1,0 +1,807 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        30
+      ]
+    ],
+    "date-time": "2026-09-30T21:51:07Z",
+    "timestamp": 1790805067832,
+    "version": "4.1.0"
+  },
+  "publisher-location": "New York, NY, USA",
+  "reference-count": 77,
+  "publisher": "ACM",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            24
+          ]
+        ],
+        "date-time": "2024-08-24T00:00:00Z",
+        "timestamp": 1724457600000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://www.acm.org/publications/policies/copyright_policy#Background"
+    }
+  ],
+  "funder": [
+    {
+      "name": "the Analytical center under the RF Government",
+      "award": [
+        "Subsidy agreement 000000D730321P5Q0002, Grant No. 70-2021-00145 02.11.2021"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "Subsidy agreement 000000D730321P5Q0002, Grant No. 70-2021-00145 02.11.2021"
+          ]
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "dl.acm.org"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        25
+      ]
+    ]
+  },
+  "DOI": "10.1145/3637528.3671655",
+  "type": "proceedings-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        25
+      ]
+    ],
+    "date-time": "2024-08-25T00:55:12Z",
+    "timestamp": 1724547312000
+  },
+  "page": "5701-5712",
+  "update-policy": "https://doi.org/10.1145/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 14,
+  "title": [
+    "From Variability to Stability: Advancing RecSys Benchmarking Practices"
+  ],
+  "prefix": "10.1145",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-0370-7787",
+      "authenticated-orcid": false,
+      "given": "Valeriy",
+      "family": "Shevchenko",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Skoltech, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0009-8576-0677",
+      "authenticated-orcid": false,
+      "given": "Nikita",
+      "family": "Belousov",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Skoltech, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0007-1415-2004",
+      "authenticated-orcid": false,
+      "given": "Alexey",
+      "family": "Vasilev",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Sber AI Lab, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-8673-2963",
+      "authenticated-orcid": false,
+      "given": "Vladimir",
+      "family": "Zholobov",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Skoltech &amp; MIPT, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-0785-088X",
+      "authenticated-orcid": false,
+      "given": "Artyom",
+      "family": "Sosedka",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Sber AI Lab, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-4189-5739",
+      "authenticated-orcid": false,
+      "given": "Natalia",
+      "family": "Semenova",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "AIRI &amp; Sber AI Lab, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0002-7958-0097",
+      "authenticated-orcid": false,
+      "given": "Anna",
+      "family": "Volodkevich",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Sber AI Lab, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-6196-0564",
+      "authenticated-orcid": false,
+      "given": "Andrey",
+      "family": "Savchenko",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Sber AI Lab, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-1653-0204",
+      "authenticated-orcid": false,
+      "given": "Alexey",
+      "family": "Zaytsev",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Skoltech &amp; BIMSA, Moscow, Russian Federation"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "320",
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        24
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_3_2_2_1_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3292500.3330701"
+    },
+    {
+      "key": "e_1_3_2_2_2_1",
+      "volume-title": "Dietmar Jannach, and Claudio Pomo.",
+      "author": "Anelli Vito Walter",
+      "year": "2022",
+      "unstructured": "Vito Walter Anelli, Alejandro Bellogín, Tommaso Di Noia, Dietmar Jannach, and Claudio Pomo. 2022. Top-N recommendation algorithms: A quest for the state-of-the-art. In ACM UMAP. 121--131."
+    },
+    {
+      "key": "e_1_3_2_2_3_1",
+      "volume-title": "Claudio Pomo, Francesco Maria Donini, and Tommaso Di Noia.",
+      "author": "Anelli Vito Walter",
+      "year": "2021",
+      "unstructured": "Vito Walter Anelli, Alejandro Bellogín, Antonio Ferrara, Daniele Malitesta, Felice Antonio Merra, Claudio Pomo, Francesco Maria Donini, and Tommaso Di Noia. 2021. Elliot: A comprehensive and rigorous framework for reproducible recommender systems evaluation. In ACM SIGIR. 2405--2414."
+    },
+    {
+      "key": "e_1_3_2_2_4_1",
+      "volume-title": "Eugenio Di Sciascio, Claudio Pomo, and Azzurra Ragone.",
+      "author": "Anelli Vito Walter",
+      "year": "2019",
+      "unstructured": "Vito Walter Anelli, Tommaso Di Noia, Eugenio Di Sciascio, Claudio Pomo, and Azzurra Ragone. 2019. On the discriminative power of hyper-parameters in cross-validation and how to choose them. In ACM RecSys. 447--451."
+    },
+    {
+      "key": "e_1_3_2_2_5_1",
+      "unstructured": "Ankurnapa. 2020. RateBeer Dataset competition. https://www.kaggle.com/datasets/ankurnapa/rate-beer-data. Accessed: 2024--13--6."
+    },
+    {
+      "key": "e_1_3_2_2_6_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10791-017-9312-z"
+    },
+    {
+      "key": "e_1_3_2_2_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.advengsoft.2016.09.001"
+    },
+    {
+      "key": "e_1_3_2_2_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5555/2946645.2946650"
+    },
+    {
+      "key": "e_1_3_2_2_9_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "James Bennett Stan Lanning et al. 2007. The Netflix prize. In KDD cup and workshop Vol. 2007. New York 35.",
+      "DOI": "10.1145/1345448.1345459"
+    },
+    {
+      "key": "e_1_3_2_2_10_1",
+      "unstructured": "Xuheng Cai Chao Huang Lianghao Xia and Xubin Ren. 2023. LightGCL: Simple Yet Effective Graph Contrastive Learning for Recommendation. In ICLR."
+    },
+    {
+      "key": "e_1_3_2_2_11_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11257-012-9136-x"
+    },
+    {
+      "key": "e_1_3_2_2_12_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aaai.12051"
+    },
+    {
+      "key": "e_1_3_2_2_13_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Jin Yao Chin Yile Chen and Gao Cong. 2022. The datasets dilemma: How much do we really know about recommendation datasets?. In WSDM. 141--149.",
+      "DOI": "10.1145/3488560.3498519"
+    },
+    {
+      "key": "e_1_3_2_2_14_1",
+      "unstructured": "Chiranjivdas09. 2020. Ta Feng Grocery Dataset competition. https://www.kaggle.com/datasets/chiranjivdas09/ta-feng-grocery-dataset"
+    },
+    {
+      "key": "e_1_3_2_2_15_1",
+      "unstructured": "Eunjoon Cho Seth A Myers and Jure Leskovec. 2011. Friendship and mobility: user movement in location-based social networks. In ACM SIGKDD. 1082--1090."
+    },
+    {
+      "key": "e_1_3_2_2_16_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1609/aaai.v36i10.21299"
+    },
+    {
+      "key": "e_1_3_2_2_17_1",
+      "volume-title": "An efficient manifold density estimator for all recommendation systems",
+      "author": "Dkabrowski Jacek",
+      "unstructured": "Jacek Dkabrowski, Barbara Rychalska, Michał Daniluk, Dominika Basaj, Konrad Gołuchowski, Piotr Bkabel, Andrzej Michałowski, and Adam Jakubowski. 2021. An efficient manifold density estimator for all recommendation systems. In ICONIP. Springer, 323--337."
+    },
+    {
+      "key": "e_1_3_2_2_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ipm.2021.102662"
+    },
+    {
+      "key": "e_1_3_2_2_19_1",
+      "volume-title": "Eugenio Di Sciascio, and Felice Antonio Merra.",
+      "author": "Deldjoo Yashar",
+      "year": "2020",
+      "unstructured": "Yashar Deldjoo, Tommaso Di Noia, Eugenio Di Sciascio, and Felice Antonio Merra. 2020. How dataset characteristics affect the robustness of collaborative recommendation models. In SIGIR. 951--960."
+    },
+    {
+      "key": "e_1_3_2_2_20_1",
+      "first-page": "1",
+      "article-title": "Statistical comparisons of classifiers over multiple data sets",
+      "volume": "7",
+      "author": "Demvsar Janez",
+      "year": "2006",
+      "unstructured": "Janez Demvsar. 2006. Statistical comparisons of classifiers over multiple data sets. The Journal of Machine learning research, Vol. 7 (2006), 1--30.",
+      "journal-title": "The Journal of Machine learning research"
+    },
+    {
+      "key": "e_1_3_2_2_21_1",
+      "volume-title": "Benchmarking optimization software with performance profiles. Mathematical programming",
+      "author": "Dolan Elizabeth D",
+      "year": "2002",
+      "unstructured": "Elizabeth D Dolan and Jorge J Moré. 2002. Benchmarking optimization software with performance profiles. Mathematical programming, Vol. 91 (2002), 201--213."
+    },
+    {
+      "key": "e_1_3_2_2_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3434185"
+    },
+    {
+      "key": "e_1_3_2_2_23_1",
+      "volume-title": "Implicit: Fast Python Collaborative Filtering for Implicit Datasets. https://github.com/benfred/implicit. Accessed: 2024--13--6.",
+      "author": "Frederickson Ben",
+      "year": "2017",
+      "unstructured": "Ben Frederickson. 2017. Implicit: Fast Python Collaborative Filtering for Implicit Datasets. https://github.com/benfred/implicit. Accessed: 2024--13--6."
+    },
+    {
+      "key": "e_1_3_2_2_24_1",
+      "unstructured": "G0ohard. 2019. Rekko Dataset competition. https://www.kaggle.com/datasets/g0ohard/rekko-challenge Accessed: 2024--13--6."
+    },
+    {
+      "key": "e_1_3_2_2_25_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Chongming Gao Shijun Li Wenqiang Lei Jiawei Chen Biao Li Peng Jiang Xiangnan He Jiaxin Mao and Tat-Seng Chua. 2022. KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems. In ACM CIKM. 540--550.",
+      "DOI": "10.1145/3511808.3557220"
+    },
+    {
+      "key": "e_1_3_2_2_26_1",
+      "first-page": "1",
+      "article-title": "AMLB: an AutoML benchmark",
+      "volume": "25",
+      "author": "Gijsbers Pieter",
+      "year": "2024",
+      "unstructured": "Pieter Gijsbers, Marcos LP Bueno, Stefan Coors, Erin LeDell, Sébastien Poirier, Janek Thomas, Bernd Bischl, and Joaquin Vanschoren. 2024. AMLB: an AutoML benchmark. Journal of Machine Learning Research, Vol. 25, 101 (2024), 1--65.",
+      "journal-title": "Journal of Machine Learning Research"
+    },
+    {
+      "key": "e_1_3_2_2_27_1",
+      "volume-title": "Konstan",
+      "author": "Maxwell Harper F.",
+      "year": "2015",
+      "unstructured": "F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM TIIS, Vol. 5, 4, Article 19 (dec 2015), 19 pages."
+    },
+    {
+      "key": "e_1_3_2_2_28_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Xiangnan He Kuan Deng Xiang Wang Yan Li YongDong Zhang and Meng Wang. 2020. LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. In ACM SIGIR. 639--648.",
+      "DOI": "10.1145/3397271.3401063"
+    },
+    {
+      "key": "e_1_3_2_2_29_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Balázs Hidasi and Ádám Tibor Czapp. 2023. The Effect of Third Party Implementations on Reproducibility. In ACM RecSys. 272--282.",
+      "DOI": "10.1145/3604915.3609487"
+    },
+    {
+      "key": "e_1_3_2_2_30_1",
+      "volume-title": "Collaborative filtering for implicit feedback datasets",
+      "author": "Hu Yifan",
+      "unstructured": "Yifan Hu, Yehuda Koren, and Chris Volinsky. 2008. Collaborative filtering for implicit feedback datasets. In IEEE ICDM. Ieee, 263--272."
+    },
+    {
+      "key": "e_1_3_2_2_31_1",
+      "unstructured": "Yelp Inc. 2014. Yelp Dataset competition. https://www.yelp.com/dataset. Accessed: 2024--13--6."
+    },
+    {
+      "key": "e_1_3_2_2_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3569930"
+    },
+    {
+      "key": "e_1_3_2_2_33_1",
+      "first-page": "1",
+      "article-title": "Diversity, serendipity, novelty, and coverage: a survey and empirical analysis of beyond-accuracy objectives in recommender systems",
+      "volume": "7",
+      "author": "Kaminskas Marius",
+      "year": "2016",
+      "unstructured": "Marius Kaminskas and Derek Bridge. 2016. Diversity, serendipity, novelty, and coverage: a survey and empirical analysis of beyond-accuracy objectives in recommender systems. ACM TiiS, Vol. 7, 1 (2016), 1--42.",
+      "journal-title": "ACM TiiS"
+    },
+    {
+      "key": "e_1_3_2_2_34_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/MC.2009.263"
+    },
+    {
+      "key": "e_1_3_2_2_35_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Walid Krichene and Steffen Rendle. 2020. On sampled metrics for item recommendation. In ACM SIGKDD. 1748--1757.",
+      "DOI": "10.1145/3394486.3403226"
+    },
+    {
+      "key": "e_1_3_2_2_36_1",
+      "volume-title": "Proc. Workshop on New Trends on Content-Based Recommender @ RecSys 2015 (CEUR Workshop Proc.",
+      "volume": "21",
+      "author": "Kula Maciej",
+      "year": "2015",
+      "unstructured": "Maciej Kula. 2015. Metadata Embeddings for User and Item Cold-start Recommendations. In Proc. Workshop on New Trends on Content-Based Recommender @ RecSys 2015 (CEUR Workshop Proc., Vol. 1448). 14--21."
+    },
+    {
+      "key": "e_1_3_2_2_37_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3178876.3186141"
+    },
+    {
+      "key": "e_1_3_2_2_38_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Hui Li Dingming Wu Wenbin Tang and Nikos Mamoulis. 2015. Overlapping Community Regularization for Rating Prediction in Social Recommender Systems. In RecSys. 27--34.",
+      "DOI": "10.1145/2792838.2800171"
+    },
+    {
+      "key": "e_1_3_2_2_39_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3178876.3186150"
+    },
+    {
+      "key": "e_1_3_2_2_40_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Hao Ma Dengyong Zhou Chao Liu Michael R. Lyu and Irwin King. 2011. Recommender systems with social regularization. In ACM WSDM. 287--296.",
+      "DOI": "10.1145/1935826.1935877"
+    },
+    {
+      "key": "e_1_3_2_2_41_1",
+      "unstructured": "Bodhisattwa Prasad Majumder Shuyang Li Jianmo Ni and Julian McAuley. 2019. Generating Personalized Recipes from Historical User Preferences. In EMNLP-IJCNLP. 5976--5982."
+    },
+    {
+      "key": "e_1_3_2_2_42_1",
+      "volume-title": "Learning attitudes and attributes from multi-aspect reviews",
+      "author": "McAuley Julian",
+      "unstructured": "Julian McAuley, Jure Leskovec, and Dan Jurafsky. 2012. Learning attitudes and attributes from multi-aspect reviews. In IEEE ICDM. 1020--1025."
+    },
+    {
+      "key": "e_1_3_2_2_43_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Zaiqiao Meng Richard McCreadie Craig Macdonald and Iadh Ounis. 2020. Exploring data splitting strategies for the evaluation of recommendation models. In ACM RecSys. 681--686.",
+      "DOI": "10.1145/3383313.3418479"
+    },
+    {
+      "key": "e_1_3_2_2_44_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Lien Michiels Robin Verachtert and Bart Goethals. 2022. RecPack: An(other) Experimentation Toolkit for Top-N Recommendation using Implicit Feedback Data. In ACM RecSys. 648--651.",
+      "DOI": "10.1145/3523227.3551472"
+    },
+    {
+      "key": "e_1_3_2_2_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10994-021-06057-9"
+    },
+    {
+      "key": "e_1_3_2_2_46_1",
+      "unstructured": "Jianmo Ni Jiacheng Li and Julian McAuley. 2019. Justifying recommendations using distantly-labeled reviews and fine-grained aspects. In EMNLP-IJCNLP. 188--197."
+    },
+    {
+      "key": "e_1_3_2_2_47_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/widm.1441"
+    },
+    {
+      "key": "e_1_3_2_2_48_1",
+      "volume-title": "Slim: Sparse linear methods for top-n recommender systems",
+      "author": "Ning Xia",
+      "year": "2011",
+      "unstructured": "Xia Ning and George Karypis. 2011. Slim: Sparse linear methods for top-n recommender systems. In IEEE ICDM. 497--506."
+    },
+    {
+      "key": "e_1_3_2_2_49_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Friedrich Pukelsheim. 2006. Optimal design of experiments. SIAM.",
+      "DOI": "10.1137/1.9780898719109"
+    },
+    {
+      "key": "e_1_3_2_2_50_1",
+      "volume-title": "BPR: Bayesian personalized ranking from implicit feedback. In UAI. 452--461.",
+      "author": "Rendle Steffen",
+      "year": "2009",
+      "unstructured": "Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme. 2009. BPR: Bayesian personalized ranking from implicit feedback. In UAI. 452--461."
+    },
+    {
+      "key": "e_1_3_2_2_51_1",
+      "volume-title": "Trust management for the semantic web",
+      "author": "Richardson Matthew",
+      "unstructured": "Matthew Richardson, Rakesh Agrawal, and Pedro Domingos. 2003. Trust management for the semantic web. In ISWC. Springer, 351--368."
+    },
+    {
+      "key": "e_1_3_2_2_52_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Mark Rofin Vladislav Mikhailov Mikhail Florinsky Andrey Kravchenko Tatiana Shavrina Elena Tutubalina Daniel Karabekyan and Ekaterina Artemova. 2023. Vote'n'Rank: Revision of Benchmarking with Social Choice Theory. In EACL. 670--686.",
+      "DOI": "10.18653/v1/2023.eacl-main.48"
+    },
+    {
+      "key": "e_1_3_2_2_53_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Olga Russakovsky Jia Deng Hao Su Jonathan Krause Sanjeev Satheesh Sean Ma Zhiheng Huang Andrej Karpathy Aditya Khosla Michael Bernstein et al. 2015. Imagenet large scale visual recognition challenge. International journal of computer vision Vol. 115 (2015) 211--252.",
+      "DOI": "10.1007/s11263-015-0816-y"
+    },
+    {
+      "key": "e_1_3_2_2_54_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Alan Said and Alejandro Bellogín. 2014. Comparative recommender system evaluation: benchmarking recommendation frameworks. In ACM RecSys. 129--136.",
+      "DOI": "10.1145/2645710.2645746"
+    },
+    {
+      "key": "e_1_3_2_2_55_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/371920.372071"
+    },
+    {
+      "key": "e_1_3_2_2_56_1",
+      "volume-title": "Where Do We Go From Here? Guidelines For Offline Recommender Evaluation. arXiv preprint arXiv:2211.01261",
+      "author": "Schnabel Tobias",
+      "year": "2022",
+      "unstructured": "Tobias Schnabel. 2022. Where Do We Go From Here? Guidelines For Offline Recommender Evaluation. arXiv preprint arXiv:2211.01261 (2022)."
+    },
+    {
+      "key": "e_1_3_2_2_57_1",
+      "unstructured": "Sharthz23. 2020. MTS Library Dataset competition. https://www.kaggle.com/datasets/sharthz23/mts-library Accessed: 2024--13--6."
+    },
+    {
+      "key": "e_1_3_2_2_58_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3308558.3313710"
+    },
+    {
+      "key": "e_1_3_2_2_59_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Aixin Sun. 2023. Take a Fresh Look at Recommender Systems from an Evaluation Standpoint. In ACM SIGIR. 2629--2638.",
+      "DOI": "10.1145/3539618.3591931"
+    },
+    {
+      "key": "e_1_3_2_2_60_1",
+      "volume-title": "Benchmarking Recommendation for Rigorous Evaluation",
+      "author": "Sun Zhu",
+      "year": "2022",
+      "unstructured": "Zhu Sun, Hui Fang, Jie Yang, Xinghua Qu, Hongyang Liu, Di Yu, Yew-Soon Ong, and Jie Zhang. 2022. DaisyRec 2.0: Benchmarking Recommendation for Rigorous Evaluation. IEEE Transactions on Pattern Analysis and Machine Intelligence (2022)."
+    },
+    {
+      "key": "e_1_3_2_2_61_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Zhu Sun Di Yu Hui Fang Jie Yang Xinghua Qu Jie Zhang and Cong Geng. 2020. Are we evaluating rigorously? benchmarking recommendation for reproducible evaluation and fair comparison. In ACM RecSys. 23--32.",
+      "DOI": "10.1145/3383313.3412489"
+    },
+    {
+      "key": "e_1_3_2_2_62_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Yan-Martin Tamm Rinchin Damdinov and Alexey Vasilev. 2021. Quality metrics in recommender systems: Do we calculate metrics consistently?. In ACM RecSys. 708--713.",
+      "DOI": "10.1145/3460231.3478848"
+    },
+    {
+      "key": "e_1_3_2_2_63_1",
+      "unstructured": "Alexey Vasilev. 2020. RePlay: A library for building recommender system models using PySpark. https://github.com/sberbank-ai-lab/RePlay. Accessed: 2024--13--6."
+    },
+    {
+      "key": "e_1_3_2_2_64_1",
+      "volume-title": "McAuley",
+      "author": "Wan Mengting",
+      "year": "2018",
+      "unstructured": "Mengting Wan and Julian J. McAuley. 2018. Item recommendation on monotonic behavior chains. In ACM RecSys. ACM, 86--94."
+    },
+    {
+      "key": "e_1_3_2_2_65_1",
+      "volume-title": "McAuley",
+      "author": "Wan Mengting",
+      "year": "2019",
+      "unstructured": "Mengting Wan, Rishabh Misra, Ndapa Nakashole, and Julian J. McAuley. 2019. Fine-Grained Spoiler Detection from Large-Scale Review Corpora. In ACL. 2605--2610."
+    },
+    {
+      "key": "e_1_3_2_2_66_1",
+      "volume-title": "NeurIPS",
+      "volume": "32",
+      "author": "Wang Alex",
+      "year": "2019",
+      "unstructured": "Alex Wang, Yada Pruksachatkun, Nikita Nangia, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. 2019. Superglue: A stickier benchmark for general-purpose language understanding systems. NeurIPS, Vol. 32 (2019)."
+    },
+    {
+      "key": "e_1_3_2_2_67_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.18653/v1/W18-5446"
+    },
+    {
+      "key": "e_1_3_2_2_68_1",
+      "volume-title": "Breakthroughs in Statistics: Methodology and Distribution",
+      "author": "Wilcoxon Frank",
+      "unstructured": "Frank Wilcoxon. 1992. Individual comparisons by ranking methods. In Breakthroughs in Statistics: Methodology and Distribution. Springer, 196--202."
+    },
+    {
+      "key": "e_1_3_2_2_69_1",
+      "unstructured": "Bin Wu Zhongchuan Sun He Xiangnan Xiang Wang and Jonathan Staniforth. 2020. NeuRec: An Open Source Neural Recommender Library. https://github.com/wubinzzu/NeuRec. Accessed: 2024--13--6."
+    },
+    {
+      "key": "e_1_3_2_2_70_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Dingqi Yang Daqing Zhang Zhiyong Yu and Zhiwen Yu. 2013. Fine-grained preference-aware location search leveraging crowdsourced digital footprints from LBSNs. In ACM UBICOMP. 479--488.",
+      "DOI": "10.1145/2493432.2493464"
+    },
+    {
+      "key": "e_1_3_2_2_71_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Longqi Yang Yin Cui Yuan Xuan Chenyang Wang Serge Belongie and Deborah Estrin. 2018. Unbiased offline recommender evaluation for missing-not-at-random implicit feedback. In ACM RecSys. 279--287.",
+      "DOI": "10.1145/3240323.3240355"
+    },
+    {
+      "key": "e_1_3_2_2_72_1",
+      "first-page": "1",
+      "article-title": "Deep learning based recommender system: A survey and new perspectives",
+      "volume": "52",
+      "author": "Zhang Shuai",
+      "year": "2019",
+      "unstructured": "Shuai Zhang, Lina Yao, Aixin Sun, and Yi Tay. 2019. Deep learning based recommender system: A survey and new perspectives. ACM CSUR, Vol. 52, 1 (2019), 1--38.",
+      "journal-title": "ACM CSUR"
+    },
+    {
+      "key": "e_1_3_2_2_73_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ins.2018.08.039"
+    },
+    {
+      "key": "e_1_3_2_2_74_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Wayne Xin Zhao Yupeng Hou Xingyu Pan Chen Yang Zeyu Zhang Zihan Lin Jingsen Zhang Shuqing Bian Jiakai Tang Wenqi Sun et al. 2022. RecBole 2.0: towards a more up-to-date recommendation library. In ACM CIKM. 4722--4726.",
+      "DOI": "10.1145/3511808.3557680"
+    },
+    {
+      "key": "e_1_3_2_2_75_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1145/3545796",
+      "article-title": "A revisiting study of appropriate offline evaluation for top-N recommendation algorithms",
+      "volume": "41",
+      "author": "Zhao Wayne Xin",
+      "year": "2022",
+      "unstructured": "Wayne Xin Zhao, Zihan Lin, Zhichao Feng, Pengfei Wang, and Ji-Rong Wen. 2022. A revisiting study of appropriate offline evaluation for top-N recommendation algorithms. ACM Transactions on Information Systems, Vol. 41, 2 (2022), 1--41.",
+      "journal-title": "ACM Transactions on Information Systems"
+    },
+    {
+      "key": "e_1_3_2_2_76_1",
+      "volume-title": "Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms. In ACM CIKM. 4653--4664.",
+      "author": "Zhao Wayne Xin",
+      "year": "2021",
+      "unstructured": "Wayne Xin Zhao, Shanlei Mu, Yupeng Hou, Zihan Lin, Yushuo Chen, Xingyu Pan, Kaiyuan Li, Yujie Lu, Hui Wang, Changxin Tian, et al. 2021. Recbole: Towards a unified, comprehensive and efficient framework for recommendation algorithms. In ACM CIKM. 4653--4664."
+    },
+    {
+      "key": "e_1_3_2_2_77_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1145/3477495.3531723"
+    }
+  ],
+  "event": {
+    "name": "KDD '24: The 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+    "location": "Barcelona Spain",
+    "acronym": "KDD '24",
+    "sponsor": [
+      "SIGMOD ACM Special Interest Group on Management of Data",
+      "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+    ]
+  },
+  "container-title": [
+    "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+  ],
+  "original-title": [],
+  "link": [
+    {
+      "URL": "https://dl.acm.org/doi/10.1145/3637528.3671655",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://dl.acm.org/doi/pdf/10.1145/3637528.3671655",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        6,
+        18
+      ]
+    ],
+    "date-time": "2025-06-18T20:06:00Z",
+    "timestamp": 1750277160000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://dl.acm.org/doi/10.1145/3637528.3671655"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        24
+      ]
+    ]
+  },
+  "references-count": 77,
+  "alternative-id": [
+    "10.1145/3637528.3671655",
+    "10.1145/3637528"
+  ],
+  "URL": "https://doi.org/10.1145/3637528.3671655",
+  "relation": {},
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        8,
+        24
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2024-08-24",
+      "order": 3,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ]
+}

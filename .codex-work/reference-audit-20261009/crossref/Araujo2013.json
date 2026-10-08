@@ -1,0 +1,661 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        8,
+        1
+      ]
+    ],
+    "date-time": "2026-08-01T09:35:16Z",
+    "timestamp": 1785576916072,
+    "version": "3.56.0"
+  },
+  "reference-count": 46,
+  "publisher": "American Chemical Society (ACS)",
+  "issue": "29",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Ind. Eng. Chem. Res."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        24
+      ]
+    ]
+  },
+  "DOI": "10.1021/ie4006673",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        6,
+        24
+      ]
+    ],
+    "date-time": "2013-06-24T04:52:58Z",
+    "timestamp": 1372049578000
+  },
+  "page": "9908-9921",
+  "source": "Crossref",
+  "is-referenced-by-count": 21,
+  "title": [
+    "Sensitivity Analysis of Optimal Operation of an Activated Sludge Process Model for Economic Controlled Variable Selection"
+  ],
+  "prefix": "10.1021",
+  "volume": "52",
+  "author": [
+    {
+      "given": "Antonio C. B.",
+      "family": "de Araujo",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department\rof Chemical Engineering, Federal University of Campina Grande, 58429-900 Campina Grande, Paraiba, Brazil"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Simone",
+      "family": "Gallani",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department\rof Chemical Engineering, Federal University of Campina Grande, 58429-900 Campina Grande, Paraiba, Brazil"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Michela",
+      "family": "Mulas",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Civil and Environmental\rEngineering, Aalto University, P.O. Box\r15200, FI-00076 Aalto, Finland"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Sigurd",
+      "family": "Skogestad",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Chemical Engineering, Norwegian University of Science and Technology, N-7491 Trondheim, Norway"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "316",
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        10
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref1/cit1",
+      "volume-title": "Wastewater Treatment Systems - Modelling, Diagnosis and Control",
+      "author": "Olsson G.",
+      "year": "1999"
+    },
+    {
+      "key": "ref2/cit2",
+      "volume-title": "Instrumentation, Control and Automation in Wastewater Systems",
+      "author": "Olsson G.",
+      "year": "2005"
+    },
+    {
+      "issue": "6",
+      "key": "ref3/cit3",
+      "doi-asserted-by": "crossref",
+      "first-page": "1585",
+      "DOI": "10.1016/j.watres.2011.12.054",
+      "volume": "46",
+      "author": "Olsson G.",
+      "year": "2012",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref4/cit4",
+      "doi-asserted-by": "crossref",
+      "first-page": "2004",
+      "DOI": "10.1016/j.watres.2007.01.029",
+      "volume": "41",
+      "author": "Stare A.",
+      "year": "2007",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "4",
+      "key": "ref5/cit5",
+      "doi-asserted-by": "crossref",
+      "first-page": "317",
+      "DOI": "10.2166/wst.2002.0614",
+      "volume": "45",
+      "author": "Ingildsen P.",
+      "year": "2002",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref6/cit6",
+      "doi-asserted-by": "crossref",
+      "first-page": "2325",
+      "DOI": "10.1016/j.watres.2006.10.031",
+      "volume": "41",
+      "author": "Samuelsson P.",
+      "year": "2007",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "2",
+      "key": "ref7/cit7",
+      "doi-asserted-by": "crossref",
+      "first-page": "327",
+      "DOI": "10.2166/wst.1998.0558",
+      "volume": "37",
+      "author": "Ayesa E.",
+      "year": "1998",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref8/cit8",
+      "doi-asserted-by": "crossref",
+      "first-page": "435",
+      "DOI": "10.1016/j.envsoft.2007.06.009",
+      "volume": "23",
+      "author": "Rivas A.",
+      "year": "2008",
+      "journal-title": "Environ. Modell. Software"
+    },
+    {
+      "key": "ref9/cit9",
+      "doi-asserted-by": "crossref",
+      "first-page": "585",
+      "DOI": "10.1016/S0098-1354(01)00638-X",
+      "volume": "25",
+      "author": "Chachuat B.",
+      "year": "2001",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "7",
+      "key": "ref10/cit10",
+      "doi-asserted-by": "crossref",
+      "first-page": "2101",
+      "DOI": "10.1016/j.watres.2012.01.023",
+      "volume": "46",
+      "author": "Amand L.",
+      "year": "2012",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "20",
+      "key": "ref11/cit11",
+      "doi-asserted-by": "crossref",
+      "first-page": "5129",
+      "DOI": "10.1016/j.watres.2009.08.011",
+      "volume": "43",
+      "author": "Machado V. C.",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "14",
+      "key": "ref12/cit12",
+      "doi-asserted-by": "crossref",
+      "first-page": "8542",
+      "DOI": "10.1021/ie101703s",
+      "volume": "50",
+      "author": "Araujo A. C. B.",
+      "year": "2011",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref13/cit13",
+      "doi-asserted-by": "crossref",
+      "first-page": "487",
+      "DOI": "10.1016/S0959-1524(00)00023-8",
+      "volume": "10",
+      "author": "Skogestad S.",
+      "year": "2000",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "key": "ref14/cit14",
+      "doi-asserted-by": "crossref",
+      "first-page": "335",
+      "DOI": "10.1016/S0967-0661(03)00134-5",
+      "volume": "12",
+      "author": "Cadet C.",
+      "year": "2004",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "key": "ref15/cit15",
+      "unstructured": "Alex, J.; Benedetti, L.; Copp, J.; Gernaey, K. V.; Jeppsson, U.; Nopens, I.; Pons, M. N.; Rieger, L.; Rosen, C.; Steyer, J. P.; Vanrolleghem, P.; Winkler, S.Benchmark Simulation Model no. 1 (BSM1). Technical Report, Dept. of Industrial Electrical Engineering and Automation - Lund University, Sweden, 2008."
+    },
+    {
+      "issue": "2",
+      "key": "ref16/cit16",
+      "doi-asserted-by": "crossref",
+      "first-page": "388",
+      "DOI": "10.1137/S0036139994242425",
+      "volume": "56",
+      "author": "Diehl S.",
+      "year": "1996",
+      "journal-title": "SIAM J. Appl. Math."
+    },
+    {
+      "issue": "2",
+      "key": "ref17/cit17",
+      "doi-asserted-by": "crossref",
+      "first-page": "331",
+      "DOI": "10.1016/S0043-1354(97)00048-1",
+      "volume": "32",
+      "author": "Diehl S.",
+      "year": "1998",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref18/cit18",
+      "doi-asserted-by": "crossref",
+      "first-page": "117",
+      "DOI": "10.1023/A:1011959425670",
+      "volume": "41",
+      "author": "Diehl S.",
+      "year": "2001",
+      "journal-title": "J. Eng. Math."
+    },
+    {
+      "key": "ref19/cit19",
+      "doi-asserted-by": "crossref",
+      "first-page": "4976",
+      "DOI": "10.1016/j.watres.2008.09.005",
+      "volume": "42",
+      "author": "Diehl S.",
+      "year": "2008",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref20/cit20",
+      "unstructured": "Henze, M.; Grady, L. C. P.; Gujer, W.; Maris, G. V. R.; Matsuo, T.Activated sludge model no. 1 (asm1). Scientific and Technical Report no. 1, IAWQ, London, UK, 1987."
+    },
+    {
+      "issue": "10",
+      "key": "ref21/cit21",
+      "doi-asserted-by": "crossref",
+      "first-page": "1263",
+      "DOI": "10.1016/0043-1354(91)90066-Y",
+      "volume": "29",
+      "author": "Takacs I.",
+      "year": "1991",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "ref22/cit22",
+      "first-page": "59",
+      "volume-title": "Dynamic Modeling and Expert Systems in Wastewater Engineering",
+      "author": "Vitasovic Z. Z.",
+      "year": "1989"
+    },
+    {
+      "issue": "8",
+      "key": "ref23/cit23",
+      "doi-asserted-by": "crossref",
+      "first-page": "1726",
+      "DOI": "10.2166/wst.2011.412",
+      "volume": "63",
+      "author": "Plosz B. Gy.",
+      "year": "2011",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref24/cit24",
+      "doi-asserted-by": "crossref",
+      "first-page": "2247",
+      "DOI": "10.1016/j.watres.2011.01.020",
+      "volume": "45",
+      "author": "Burger R.",
+      "year": "2011",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "5",
+      "key": "ref25/cit25",
+      "doi-asserted-by": "crossref",
+      "first-page": "19",
+      "DOI": "10.2166/wst.1996.0530",
+      "volume": "34",
+      "author": "Jeppsson U.",
+      "year": "1996",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "7",
+      "key": "ref26/cit26",
+      "doi-asserted-by": "crossref",
+      "first-page": "39",
+      "DOI": "10.2166/wst.2001.0384",
+      "volume": "43",
+      "author": "Queinnec D.",
+      "year": "2001",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "ref27/cit27",
+      "first-page": "6",
+      "volume-title": "Preprints of the 15th triennial IFAC World Congress (CDROM)",
+      "author": "Verdickt L. B.",
+      "year": "2002"
+    },
+    {
+      "key": "ref28/cit28",
+      "doi-asserted-by": "crossref",
+      "first-page": "174",
+      "DOI": "10.1016/j.cej.2008.05.038",
+      "volume": "146",
+      "author": "David R.",
+      "year": "2009",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "issue": "4",
+      "key": "ref29/cit29",
+      "doi-asserted-by": "crossref",
+      "first-page": "954",
+      "DOI": "10.1137/S0036139993249524",
+      "volume": "54",
+      "author": "Chancelier J. P.",
+      "year": "1994",
+      "journal-title": "SIAM J. Appl. Math."
+    },
+    {
+      "key": "ref30/cit30",
+      "first-page": "174",
+      "volume-title": "SIAM Interdiciplinary Workshop on Object Oriented Methods for Interoperability, Yorktown Heights, New York, USA",
+      "author": "Verma A.",
+      "year": "1998"
+    },
+    {
+      "key": "ref31/cit31",
+      "doi-asserted-by": "crossref",
+      "first-page": "1222",
+      "DOI": "10.1016/j.conengprac.2006.10.014",
+      "volume": "15",
+      "author": "Araujo A. C. B.",
+      "year": "2007",
+      "journal-title": "Control Eng. Pract."
+    },
+    {
+      "key": "ref32/cit32",
+      "doi-asserted-by": "crossref",
+      "first-page": "5159",
+      "DOI": "10.1021/ie061393z",
+      "volume": "46",
+      "author": "Araujo A. C. B.",
+      "year": "2007",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "12",
+      "key": "ref33/cit33",
+      "doi-asserted-by": "crossref",
+      "first-page": "2920",
+      "DOI": "10.1016/j.compchemeng.2008.03.001",
+      "volume": "32",
+      "author": "Araujo A. C. B.",
+      "year": "2008",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "6",
+      "key": "ref34/cit34",
+      "doi-asserted-by": "crossref",
+      "first-page": "3004",
+      "DOI": "10.1021/ie800254s",
+      "volume": "48",
+      "author": "Araujo A. C. B.",
+      "year": "2009",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "ref35/cit35",
+      "doi-asserted-by": "crossref",
+      "first-page": "1512",
+      "DOI": "10.1016/j.jclepro.2009.05.014",
+      "volume": "17",
+      "author": "Araujo A. C. B.",
+      "year": "2009",
+      "journal-title": "J. Cleaner Prod."
+    },
+    {
+      "key": "ref36/cit36",
+      "doi-asserted-by": "crossref",
+      "first-page": "1830",
+      "DOI": "10.1002/aic.11470",
+      "volume": "54",
+      "author": "Baldea M.",
+      "year": "2008",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "ref37/cit37",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/9781119968962",
+      "volume-title": "Plantwide Control - Recent Developments and Applications",
+      "author": "Rangaiah G. P.",
+      "year": "2012"
+    },
+    {
+      "key": "ref38/cit38",
+      "doi-asserted-by": "crossref",
+      "first-page": "219",
+      "DOI": "10.1016/j.compchemeng.2003.08.002",
+      "volume": "28",
+      "author": "Skogestad S.",
+      "year": "2004",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "ref39/cit39",
+      "doi-asserted-by": "crossref",
+      "first-page": "138",
+      "DOI": "10.1016/j.jprocont.2008.01.002",
+      "author": "Alstad V.",
+      "year": "2009",
+      "journal-title": "J. Process Control"
+    },
+    {
+      "issue": "2",
+      "key": "ref40/cit40",
+      "doi-asserted-by": "crossref",
+      "first-page": "220",
+      "DOI": "10.1002/aic.690260205",
+      "volume": "26",
+      "author": "Morari M.",
+      "year": "1980",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "ref41/cit41",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "DOI": "10.1016/0005-1098(70)90074-9",
+      "volume": "6",
+      "author": "Maarleveld A.",
+      "year": "1970",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "ref42/cit42",
+      "doi-asserted-by": "crossref",
+      "first-page": "3273",
+      "DOI": "10.1021/ie020833t",
+      "volume": "42",
+      "author": "Halvorsen I J.",
+      "year": "2003",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "issue": "8",
+      "key": "ref43/cit43",
+      "doi-asserted-by": "crossref",
+      "first-page": "1402",
+      "DOI": "10.1016/j.compchemeng.2009.01.014",
+      "volume": "33",
+      "author": "Kariwala V.",
+      "year": "2009",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "7",
+      "key": "ref44/cit44",
+      "doi-asserted-by": "crossref",
+      "first-page": "905",
+      "DOI": "10.1016/0043-1354(86)90180-6",
+      "volume": "20",
+      "author": "Khudenko B. M.",
+      "year": "1986",
+      "journal-title": "Water Res."
+    },
+    {
+      "issue": "4",
+      "key": "ref45/cit45",
+      "first-page": "255",
+      "volume": "53",
+      "author": "Gernaey K. V.",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "1",
+      "key": "ref46/cit46",
+      "doi-asserted-by": "crossref",
+      "first-page": "159",
+      "DOI": "10.2166/wst.2006.018",
+      "volume": "53",
+      "author": "Gernaey K. V.",
+      "year": "2006",
+      "journal-title": "Water Sci. Technol."
+    }
+  ],
+  "container-title": [
+    "Industrial &amp; Engineering Chemistry Research"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://pubs.acs.org/doi/pdf/10.1021/ie4006673",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        16
+      ]
+    ],
+    "date-time": "2023-04-16T00:31:05Z",
+    "timestamp": 1681605065000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://pubs.acs.org/doi/10.1021/ie4006673"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        10
+      ]
+    ]
+  },
+  "references-count": 46,
+  "journal-issue": {
+    "issue": "29",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          7,
+          24
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1021/ie4006673"
+  ],
+  "URL": "https://doi.org/10.1021/ie4006673",
+  "relation": {},
+  "ISSN": [
+    "0888-5885",
+    "1520-5045"
+  ],
+  "issn-type": [
+    {
+      "value": "0888-5885",
+      "type": "print"
+    },
+    {
+      "value": "1520-5045",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        10
+      ]
+    ]
+  }
+}

@@ -1,0 +1,2142 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          17
+        ]
+      ],
+      "date-time": "2026-08-17T22:49:48Z",
+      "timestamp": 1787006988414,
+      "version": "build-2736575974"
+    },
+    "reference-count": 30,
+    "publisher": "Informa UK Limited",
+    "issue": "4",
+    "funder": [
+      {
+        "name": "Hong Kong Polytechnic University",
+        "award": [
+          "P0009767,P0038928,P0045598"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "P0009767,P0038928,P0045598"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001839",
+        "name": "University Grants Committee",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "PF18-24698"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PF18-24698"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001839",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100003802",
+        "name": "University Research Committee, University of Hong Kong",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "PolyU 253012/17P, PolyU 153054/20P, PolyU 153066/21P, PolyU 153086/23P"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "PolyU 253012/17P, PolyU 153054/20P, PolyU 153066/21P, PolyU 153086/23P"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100003802",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Optimization Methods and Software"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1080/10556788.2024.2330635",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          8
+        ]
+      ],
+      "date-time": "2024-04-08T03:34:00Z",
+      "timestamp": 1712547240000
+    },
+    "page": "898-910",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "title": [
+      "An optimal interpolation set for model-based derivative-free optimization methods"
+    ],
+    "prefix": "10.1080",
+    "volume": "39",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2717-2876",
+        "authenticated-orcid": false,
+        "given": "Tom M.",
+        "family": "Ragonneau",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Applied Mathematics, The Hong Kong Polytechnic University, Hong Kong, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8934-8190",
+        "authenticated-orcid": false,
+        "given": "Zaikun",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Applied Mathematics, The Hong Kong Polytechnic University, Hong Kong, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          8
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_4_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-68913-5"
+      },
+      {
+        "key": "e_1_3_4_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-012-0578-z"
+      },
+      {
+        "key": "e_1_3_4_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10556788.2015.1026968"
+      },
+      {
+        "key": "e_1_3_4_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9780898719857"
+      },
+      {
+        "key": "e_1_3_4_6_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A.R. Conn K. Scheinberg and P.L. Toint A derivative free optimization algorithm in practice in 7th AIAA/USAF/NASA/ISSMO Symposium on Multidisciplinary Analysis and Optimization AIAA St. Louis MO 1998 pp. 129–139.",
+        "DOI": "10.2514/6.1998-4718"
+      },
+      {
+        "key": "e_1_3_4_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9780898718768"
+      },
+      {
+        "key": "e_1_3_4_8_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A.L. Custódio K. Scheinberg and L.N. Vicente Methodologies and software for derivative-free optimization in Advances and Trends in Optimization with Engineering Applications MOS-SIAM Series on Optimization T. Terlaky M.F. Anjos and S. Ahmed eds. SIAM Philadelphia PA 2017 pp. 495–506.",
+        "DOI": "10.1137/1.9781611974683.ch37"
+      },
+      {
+        "key": "e_1_3_4_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1021091"
+      },
+      {
+        "key": "e_1_3_4_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11590-015-0908-1"
+      },
+      {
+        "key": "e_1_3_4_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11081-022-09733-4"
+      },
+      {
+        "key": "e_1_3_4_12_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. Gazaix F. Gallard V. Ambert D. Guénot M. Hamadi S. Grihon P. Sarouille T. Druot J. Brezillon V. Gachelin J. Plakoo N. Desfachelles N. Bartoli T. Lefebvre S. Gürol B. Pauwels C. Vanaret and R. Lafage Industrial application of an advanced bi-level MDO formulation to aircraft engine pylon optimization in AIAA Aviation 2019 Forum AIAA Dallas TX 2019.",
+        "DOI": "10.2514/6.2019-3109"
+      },
+      {
+        "key": "e_1_3_4_13_1",
+        "unstructured": "H. Ghanbari and K. Scheinberg Black-box optimization in machine learning with trust region based derivative free algorithm Tech. Rep. 17T-005 COR@L Bethlehem PA 2017."
+      },
+      {
+        "key": "e_1_3_4_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0962492919000060"
+      },
+      {
+        "key": "e_1_3_4_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/355637.355638"
+      },
+      {
+        "key": "e_1_3_4_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0962492900002841"
+      },
+      {
+        "key": "e_1_3_4_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s101070100290"
+      },
+      {
+        "key": "e_1_3_4_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-003-0490-7"
+      },
+      {
+        "key": "e_1_3_4_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-011-0510-y"
+      },
+      {
+        "key": "e_1_3_4_20_1",
+        "unstructured": "M.J.D. Powell On updating the inverse of a KKT matrix in Numerical Linear Algebra and Optimization Y. Yuan ed. Science Press Beijing 2004 pp. 56–78."
+      },
+      {
+        "key": "e_1_3_4_21_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M.J.D. Powell The NEWUOA software for unconstrained optimization without derivatives in Large-Scale Nonlinear Optimization Vol. 83 of Nonconvex Optimization and Its Applications G. Di Pillo and M. Roma eds. Springer Boston MA 2006 pp. 255–297.",
+        "DOI": "10.1007/0-387-30065-1_16"
+      },
+      {
+        "key": "e_1_3_4_22_1",
+        "unstructured": "M.J.D. Powell The BOBYQA algorithm for bound constrained optimization without derivatives Tech. Rep. DAMTP 2009/NA06 Department of Applied Mathematics and Theoretical Physics University of Cambridge Cambridge UK 2009."
+      },
+      {
+        "key": "e_1_3_4_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11704-020-0241-4"
+      },
+      {
+        "key": "e_1_3_4_24_1",
+        "unstructured": "T.M. Ragonneau and Z. Zhang COBYQA: Constrained optimization by quadratic approximations 2023. Available at https://www.cobyqa.com."
+      },
+      {
+        "key": "e_1_3_4_25_1",
+        "unstructured": "T.M. Ragonneau Model-based derivative-free optimization methods and software Ph.D. diss. Department of Applied Mathematics The Hong Kong Polytechnic University Hong Kong China 2022."
+      },
+      {
+        "key": "e_1_3_4_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10898-012-9951-y"
+      },
+      {
+        "key": "e_1_3_4_27_1",
+        "unstructured": "S.M. Wild MNH: A derivative-free optimization algorithm using minimal norm Hessians in 10th Copper Mountain Conference on Iterative Methods Copper Mountain CO 2008."
+      },
+      {
+        "key": "e_1_3_4_28_1",
+        "unstructured": "P. Xie and Y. Yuan Least H2 norm updating quadratic interpolation model function for derivative-free trust-region algorithms preprint (2023). Available at arXiv:2302.12017."
+      },
+      {
+        "key": "e_1_3_4_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-015-0893-2"
+      },
+      {
+        "key": "e_1_3_4_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-013-0679-3"
+      },
+      {
+        "key": "e_1_3_4_31_1",
+        "unstructured": "Z. Zhang On derivative-free optimization methods (in Chinese) Ph.D. diss. Chinese Academy of Sciences Beijing China 2012."
+      }
+    ],
+    "container-title": [
+      "Optimization Methods and Software"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10556788.2024.2330635",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2024-10-31T10:04:14Z",
+      "timestamp": 1730369054000
+    },
+    "score": 56.90457,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10556788.2024.2330635"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          8
+        ]
+      ]
+    },
+    "references-count": 30,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10556788.2024.2330635"
+    ],
+    "URL": "https://doi.org/10.1080/10556788.2024.2330635",
+    "ISSN": [
+      "1055-6788",
+      "1029-4937"
+    ],
+    "issn-type": [
+      {
+        "value": "1055-6788",
+        "type": "print"
+      },
+      {
+        "value": "1029-4937",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2023-02-19",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-03-06",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2024-04-08",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          27
+        ]
+      ],
+      "date-time": "2026-04-27T07:35:15Z",
+      "timestamp": 1777275315198,
+      "version": "3.51.4"
+    },
+    "reference-count": 33,
+    "publisher": "Informa UK Limited",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              4,
+              26
+            ]
+          ],
+          "date-time": "2026-04-26T00:00:00Z",
+          "timestamp": 1777161600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100007000",
+        "name": "Laboratory Directed Research and Development",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DE-AC02-05CH11231"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DE-AC02-05CH11231"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100007000",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000015",
+        "name": "U.S. Department of Energy",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100000015",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006132",
+        "name": "Office of Science",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100006132",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Office of Advanced Scientific Computing Research applied mathematics program"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Optimization Methods and Software"
+    ],
+    "DOI": "10.1080/10556788.2026.2660368",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          27
+        ]
+      ],
+      "date-time": "2026-04-27T06:37:41Z",
+      "timestamp": 1777271861000
+    },
+    "page": "1-30",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "ReMU: regional minimal updating for model-based derivative-free optimization"
+    ],
+    "prefix": "10.1080",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-5973-1535",
+        "authenticated-orcid": false,
+        "given": "Pengcheng",
+        "family": "Xie",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Lawrence Berkeley National Laboratory",
+            "place": [
+              "Berkeley, USA"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6099-2772",
+        "authenticated-orcid": false,
+        "given": "Stefan M.",
+        "family": "Wild",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Lawrence Berkeley National Laboratory",
+            "place": [
+              "Berkeley, USA"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          26
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_3_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ejco.2021.100011"
+      },
+      {
+        "key": "e_1_3_3_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-68913-5"
+      },
+      {
+        "key": "e_1_3_3_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1011584207202"
+      },
+      {
+        "key": "e_1_3_3_5_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "721",
+        "DOI": "10.1093/imanum/drn046",
+        "article-title": "Geometry of sample sets in derivative free optimization: Polynomial regression and underdetermined interpolation",
+        "volume": "28",
+        "author": "Conn A.R.",
+        "year": "2008",
+        "unstructured": "A.R. Conn, K. Scheinberg, and L.N. Vicente, Geometry of sample sets in derivative free optimization: Polynomial regression and underdetermined interpolation, IMA J. Numer. Anal. 28 (2008), pp. 721–748.",
+        "journal-title": "IMA J. Numer. Anal."
+      },
+      {
+        "key": "e_1_3_3_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9780898718768"
+      },
+      {
+        "key": "e_1_3_3_7_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1007/s10589-009-9283-0",
+        "article-title": "Incorporating minimum Frobenius norm models in direct search",
+        "volume": "46",
+        "author": "Custódio A.L.",
+        "year": "2009",
+        "unstructured": "A.L. Custódio, H. Rocha, and L.N. Vicente, Incorporating minimum Frobenius norm models in direct search, Comput. Optim. Appl. 46 (2009), pp. 265–278.",
+        "journal-title": "Comput. Optim. Appl."
+      },
+      {
+        "key": "e_1_3_3_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s101070100263"
+      },
+      {
+        "key": "e_1_3_3_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10556780802409296"
+      },
+      {
+        "key": "e_1_3_3_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9781611970920"
+      },
+      {
+        "key": "e_1_3_3_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0962492919000060"
+      },
+      {
+        "key": "e_1_3_3_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/19M125772X"
+      },
+      {
+        "key": "e_1_3_3_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/080724083"
+      },
+      {
+        "key": "e_1_3_3_14_1",
+        "unstructured": "M. Pelikan D.E. Goldberg and E. Cantú-Paz BOA: The Bayesian optimization algorithm in Proceedings of the 1st Annual Conference on Genetic and Evolutionary Computation – Volume 1 GECCO'99 Morgan Kaufmann Publishers Inc. San Francisco CA USA 1999 pp. 525–532."
+      },
+      {
+        "key": "e_1_3_3_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-003-0430-6"
+      },
+      {
+        "key": "e_1_3_3_16_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M.J.D. Powell The NEWUOA software for unconstrained optimization without derivatives in Large-Scale Nonlinear Optimization Nonconvex Optimization and its Applications Vol. 83 G. Di Pillo and M. Roma eds. Springer New York 2006 pp. 255–297.",
+        "DOI": "10.1007/0-387-30065-1_16"
+      },
+      {
+        "key": "e_1_3_3_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12532-024-00257-9"
+      },
+      {
+        "key": "e_1_3_3_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/22M1543446"
+      },
+      {
+        "key": "e_1_3_3_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/090748536"
+      },
+      {
+        "key": "e_1_3_3_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1962.10490033"
+      },
+      {
+        "key": "e_1_3_3_21_1",
+        "series-title": "Cambridge Monographs on Applied and Computational Mathematics",
+        "volume-title": "Scattered Data Approximation",
+        "author": "Wendland H.",
+        "year": "2005",
+        "unstructured": "H. Wendland, Scattered Data Approximation, Cambridge Monographs on Applied and Computational Mathematics, Cambridge University Press, 2005."
+      },
+      {
+        "key": "e_1_3_3_22_1",
+        "unstructured": "S.M. Wild MNH: A Derivative-Free Optimization Algorithm Using Minimal Norm Hessians in Tenth Copper Mountain Conference on Iterative Methods. 2008."
+      },
+      {
+        "key": "e_1_3_3_23_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S.M. Wild Solving derivative-free nonlinear least squares problems with POUNDERS in Advances and Trends in Optimization with Engineering Applications T. Terlaky M.F. Anjos and S. Ahmed eds. SIAM Philadelphia 2017 pp. 529–540.",
+        "DOI": "10.1137/1.9781611974683.ch40"
+      },
+      {
+        "key": "e_1_3_3_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/120902434"
+      },
+      {
+        "key": "e_1_3_3_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/070691814"
+      },
+      {
+        "key": "e_1_3_3_26_1",
+        "unstructured": "D.H. Winfield Function and functional optimization by interpolation in data tables Ph.D. diss. Harvard University 1969."
+      },
+      {
+        "key": "e_1_3_3_27_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "339",
+        "DOI": "10.1093/imamat/12.3.339",
+        "article-title": "Function minimization by interpolation in a data table",
+        "volume": "12",
+        "author": "Winfield D.H.",
+        "year": "1973",
+        "unstructured": "D.H. Winfield, Function minimization by interpolation in a data table, J. Inst. Math. Appl. 12 (1973), pp. 339–347.",
+        "journal-title": "J. Inst. Math. Appl."
+      },
+      {
+        "key": "e_1_3_3_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cam.2024.116146"
+      },
+      {
+        "key": "e_1_3_3_29_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "719",
+        "DOI": "10.1007/s11401-023-0040-y",
+        "article-title": "A derivative-free optimization algorithm combining line-search and trust-region techniques",
+        "volume": "44",
+        "author": "Xie P.",
+        "year": "2023",
+        "unstructured": "P. Xie and Y. Yuan, A derivative-free optimization algorithm combining line-search and trust-region techniques, Chin. Ann. Math. Ser. B 44 (2023), pp. 719–734.",
+        "journal-title": "Chin. Ann. Math. Ser. B"
+      },
+      {
+        "key": "e_1_3_3_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/23M1582023"
+      },
+      {
+        "key": "e_1_3_3_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40305-023-00532-x"
+      },
+      {
+        "key": "e_1_3_3_32_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1093/imanum/drae106",
+        "article-title": "Least H2 norm updating of quadratic interpolation models for derivative-free trust-region algorithms",
+        "volume": "46",
+        "author": "Xie P.",
+        "year": "2025",
+        "unstructured": "P. Xie and Y. Yuan, Least H2 norm updating of quadratic interpolation models for derivative-free trust-region algorithms, IMA J. Numer. Anal. 46 (2025), pp. 21–50.",
+        "journal-title": "IMA J. Numer. Anal."
+      },
+      {
+        "key": "e_1_3_3_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10556788.2025.2601670"
+      },
+      {
+        "key": "e_1_3_3_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-013-0679-3"
+      }
+    ],
+    "container-title": [
+      "Optimization Methods and Software"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10556788.2026.2660368",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          27
+        ]
+      ],
+      "date-time": "2026-04-27T06:37:45Z",
+      "timestamp": 1777271865000
+    },
+    "score": 43.912643,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10556788.2026.2660368"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          26
+        ]
+      ]
+    },
+    "references-count": 33,
+    "alternative-id": [
+      "10.1080/10556788.2026.2660368"
+    ],
+    "URL": "https://doi.org/10.1080/10556788.2026.2660368",
+    "ISSN": [
+      "1055-6788",
+      "1029-4937"
+    ],
+    "issn-type": [
+      {
+        "value": "1055-6788",
+        "type": "print"
+      },
+      {
+        "value": "1029-4937",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          26
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2025-03-31",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-04-12",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2026-04-26",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          4
+        ]
+      ],
+      "date-time": "2026-10-04T11:11:48Z",
+      "timestamp": 1791112308690,
+      "version": "4.1.0"
+    },
+    "reference-count": 0,
+    "publisher": "Informa UK Limited",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Optimization Methods and Software"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1080/10556780802409296",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          12,
+          12
+        ]
+      ],
+      "date-time": "2008-12-12T06:39:49Z",
+      "timestamp": 1229063989000
+    },
+    "page": "145-154",
+    "source": "Crossref",
+    "is-referenced-by-count": 43,
+    "title": [
+      "On the geometry phase in model-based algorithms for derivative-free optimization"
+    ],
+    "prefix": "10.1080",
+    "volume": "24",
+    "author": [
+      {
+        "given": "Giovanni",
+        "family": "Fasano",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "José Luis",
+        "family": "Morales",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jorge",
+        "family": "Nocedal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "container-title": [
+      "Optimization Methods and Software"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.tandfonline.com/doi/pdf/10.1080/10556780802409296",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          16
+        ]
+      ],
+      "date-time": "2016-12-16T17:51:14Z",
+      "timestamp": 1481910674000
+    },
+    "score": 41.057842,
+    "resource": {
+      "primary": {
+        "URL": "http://www.tandfonline.com/doi/abs/10.1080/10556780802409296"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          2
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10556780802409296"
+    ],
+    "URL": "https://doi.org/10.1080/10556780802409296",
+    "ISSN": [
+      "1055-6788",
+      "1029-4937"
+    ],
+    "issn-type": [
+      {
+        "value": "1055-6788",
+        "type": "print"
+      },
+      {
+        "value": "1029-4937",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2026-09-30T10:35:56Z",
+      "timestamp": 1790764556445,
+      "version": "4.1.0"
+    },
+    "reference-count": 50,
+    "publisher": "Informa UK Limited",
+    "issue": "2",
+    "funder": [
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DMS-1620022"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DMS-1620022"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DMS-1620022"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DMS-1620022"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100008982",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "N00014-14-1-0313 P00003"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "N00014-14-1-0313 P00003"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100008982",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100008982",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "N00014-14-1-0313 P00003"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "N00014-14-1-0313 P00003"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100008982",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100008982",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100008982",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Optimization Methods and Software"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1080/10556788.2022.2121832",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2022-09-26T18:13:50Z",
+      "timestamp": 1664216030000
+    },
+    "page": "289-311",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 27,
+    "title": [
+      "On the numerical performance of finite-difference-based methods for derivative-free optimization"
+    ],
+    "prefix": "10.1080",
+    "volume": "38",
+    "author": [
+      {
+        "given": "Hao-Jun Michael",
+        "family": "Shi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Industrial Engineering and Management Sciences, Northwestern University, Evanston, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Melody",
+        "family": "Qiming Xuan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Industrial Engineering and Management Sciences, Northwestern University, Evanston, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Figen",
+        "family": "Oztoprak",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Artelys Corporation, Paris, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jorge",
+        "family": "Nocedal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Industrial Engineering and Management Sciences, Northwestern University, Evanston, IL, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          26
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "CIT0001",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-68913-5"
+      },
+      {
+        "key": "CIT0002",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-012-0578-z"
+      },
+      {
+        "key": "CIT0003",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/18M1177718"
+      },
+      {
+        "key": "CIT0004",
+        "unstructured": "A.S. Berahas, L. Cao, K. Choromanski and K. Scheinberg, Linear interpolation gives better gradients than Gaussian smoothing in derivative-free optimization, preprint (2019). Available at arXiv:1905.13043."
+      },
+      {
+        "key": "CIT0005",
+        "first-page": "1",
+        "author": "Berahas A.S.",
+        "year": "2021",
+        "journal-title": "Found. Comput. Math."
+      },
+      {
+        "key": "CIT0006",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/S1064827595289108"
+      },
+      {
+        "key": "CIT0007",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/0-387-30065-1_4"
+      },
+      {
+        "key": "CIT0008",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3338517"
+      },
+      {
+        "key": "CIT0009",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/S1052623499354096"
+      },
+      {
+        "key": "CIT0010",
+        "unstructured": "A.R. Conn, K. Scheinberg and L. Vicente, Error estimates and poisedness in multivariate polynomial interpolation, Tech. Rep. IBM T. J. Watson Research Center, 2006."
+      },
+      {
+        "key": "CIT0011",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-006-0073-5"
+      },
+      {
+        "key": "CIT0012",
+        "first-page": "83",
+        "author": "Conn A.R.",
+        "year": "1997",
+        "journal-title": "Approx. Theor. Optim. Tributes MJD Powell"
+      },
+      {
+        "key": "CIT0013",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2514/6.1998-4718"
+      },
+      {
+        "key": "CIT0014",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9780898718768"
+      },
+      {
+        "key": "CIT0015",
+        "unstructured": "D. Eriksson, D. Bindel and C.A. Shoemaker, pySOT and POAP: An event-driven asynchronous framework for surrogate optimization, preprint (2019). Available at arXiv:1908.00420."
+      },
+      {
+        "key": "CIT0016",
+        "unstructured": "P.I. Frazier, A tutorial on Bayesian optimization, preprint (2018). Available at arXiv:1807.02811."
+      },
+      {
+        "key": "CIT0017",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/0904025"
+      },
+      {
+        "key": "CIT0018",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/962437.962438"
+      },
+      {
+        "key": "CIT0019",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10589-014-9687-3"
+      },
+      {
+        "key": "CIT0020",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1163641.1163647"
+      },
+      {
+        "key": "CIT0021",
+        "unstructured": "N. Hansen, The CMA evolution strategy: A tutorial, preprint (2016). Available at arXiv:1604.00772."
+      },
+      {
+        "key": "CIT0022",
+        "first-page": "9193",
+        "volume": "34",
+        "author": "Jin B.",
+        "year": "2021",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "CIT0023",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9781611971903"
+      },
+      {
+        "key": "CIT0024",
+        "unstructured": "M. Kimiaei, Line search in noisy unconstrained black box optimization, Tech. Rep. University of Vienna, 2020."
+      },
+      {
+        "key": "CIT0025",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0962492919000060"
+      },
+      {
+        "key": "CIT0026",
+        "unstructured": "J.N. Lyness, Has numerical differentiation a future, Proceedings Seventh Manitoba Conference on Numerical Mathematics, Utilitas Mathematica Publishing, 1977."
+      },
+      {
+        "key": "CIT0027",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0893-9659(01)00162-8"
+      },
+      {
+        "key": "CIT0028",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2172/6997568"
+      },
+      {
+        "key": "CIT0029",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/080724083"
+      },
+      {
+        "key": "CIT0030",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/100786125"
+      },
+      {
+        "key": "CIT0031",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2168773.2168777"
+      },
+      {
+        "key": "CIT0032",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/comjnl/7.4.308"
+      },
+      {
+        "key": "CIT0033",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10208-015-9296-2"
+      },
+      {
+        "key": "CIT0034",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0962492904000194"
+      },
+      {
+        "key": "CIT0035",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/b98874"
+      },
+      {
+        "key": "CIT0036",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-94-015-8330-5_4"
+      },
+      {
+        "key": "CIT0037",
+        "unstructured": "M. Powell, Linearly constrained optimization algorithm, Tech. Rep. Cambridge University, 2005. Available at https://www.zhangzk.net/software.html."
+      },
+      {
+        "key": "CIT0038",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/0-387-30065-1_16"
+      },
+      {
+        "key": "CIT0039",
+        "unstructured": "M.J. Powell, The BOBYQA algorithm for bound constrained optimization without derivatives, Tech. Rep. Cambridge NA Report NA2009/06, University of Cambridge, Cambridge 2009, pp. 26–46."
+      },
+      {
+        "key": "CIT0040",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12532-015-0084-4"
+      },
+      {
+        "key": "CIT0041",
+        "unstructured": "T.M. Ragonneau and Z. Zhang, PDFO: cross-platform interfaces for Powell's derivative-free optimization solvers (version 1.0), 2020. Available at https://www.pdfo.net."
+      },
+      {
+        "key": "CIT0042",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10898-012-9951-y"
+      },
+      {
+        "key": "CIT0043",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12532-019-00161-7"
+      },
+      {
+        "key": "CIT0044",
+        "unstructured": "N.V. Sahinidis and M. Tawarmalani, BARON 7.2.5: global optimization of mixed-integer nonlinear programs: user's manual, 2005."
+      },
+      {
+        "key": "CIT0045",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/20M1373190"
+      },
+      {
+        "key": "CIT0046",
+        "unstructured": "H.J.M. Shi, Y. Xie, M.Q. Xuan and J. Nocedal, Adaptive finite-difference interval estimation for noisy derivative-free optimization, preprint (2021). Available at arXiv:2110.06380."
+      },
+      {
+        "key": "CIT0047",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Shi, J. Nocedal, F. Oztoprak and M. Xuan, Additional numerical results for the paper: On the numerical performance of finite-difference based methods for derivative-free optimization, Tech. Rep. Northwestern University, Evanston, IL, 2022. Available at https://www.mccormick.northwestern.edu/research/optimization-machine-learning-center/documents/techexddfo.pdf.",
+        "DOI": "10.1080/10556788.2022.2121832"
+      },
+      {
+        "key": "CIT0048",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S. Sun and J. Nocedal, A trust region method for the optimization of noisy functions, preprint (2022). Available at arXiv:2201.00973.",
+        "DOI": "10.1007/s10107-023-01941-9"
+      },
+      {
+        "key": "CIT0049",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/19M1240794"
+      },
+      {
+        "key": "CIT0050",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/09075531X"
+      }
+    ],
+    "container-title": [
+      "Optimization Methods and Software"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10556788.2022.2121832",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2023-04-13T15:18:59Z",
+      "timestamp": 1681399139000
+    },
+    "score": 39.286148,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10556788.2022.2121832"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          26
+        ]
+      ]
+    },
+    "references-count": 50,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10556788.2022.2121832"
+    ],
+    "URL": "https://doi.org/10.1080/10556788.2022.2121832",
+    "ISSN": [
+      "1055-6788",
+      "1029-4937"
+    ],
+    "issn-type": [
+      {
+        "value": "1055-6788",
+        "type": "print"
+      },
+      {
+        "value": "1029-4937",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          26
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2021-02-22",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2022-09-02",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2022-09-26",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          20
+        ]
+      ],
+      "date-time": "2026-05-20T15:50:04Z",
+      "timestamp": 1779292204992,
+      "version": "3.51.4"
+    },
+    "reference-count": 37,
+    "publisher": "Informa UK Limited",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "NSF of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "12288201"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "12288201"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.tandfonline.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Optimization Methods and Software"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1080/10556788.2025.2601670",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          16
+        ]
+      ],
+      "date-time": "2025-12-16T09:22:31Z",
+      "timestamp": 1765876951000
+    },
+    "page": "118-150",
+    "update-policy": "https://doi.org/10.1080/tandf_crossmark_01",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "A new two-dimensional model-based subspace method for large-scale unconstrained derivative-free optimization:\n                    <tt>2D-MoSub</tt>"
+    ],
+    "prefix": "10.1080",
+    "volume": "41",
+    "author": [
+      {
+        "given": "Pengcheng",
+        "family": "Xie",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Lawrence Berkeley National Laboratory",
+            "place": [
+              "Berkeley, United States"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ya-xiang",
+        "family": "Yuan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Chinese Academy of Sciences",
+            "place": [
+              "Beijing, China"
+            ]
+          },
+          {
+            "name": "University of Chinese Academy of Sciences",
+            "place": [
+              "Beijing, China"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          16
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_4_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-319-68913-5"
+      },
+      {
+        "key": "e_1_3_4_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1011584207202"
+      },
+      {
+        "key": "e_1_3_4_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3338517"
+      },
+      {
+        "key": "e_1_3_4_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-022-01836-1"
+      },
+      {
+        "key": "e_1_3_4_6_1",
+        "unstructured": "C. Cartis and L. Roberts Randomized subspace derivative-free optimization with quadratic models and second-order convergence preprint (2024). Available at arXiv:2412.14431."
+      },
+      {
+        "key": "e_1_3_4_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/060673424"
+      },
+      {
+        "key": "e_1_3_4_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1.9780898718768"
+      },
+      {
+        "key": "e_1_3_4_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s101070100263"
+      },
+      {
+        "key": "e_1_3_4_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/962437.962439"
+      },
+      {
+        "key": "e_1_3_4_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10589-014-9687-3"
+      },
+      {
+        "key": "e_1_3_4_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/imanum/drx043"
+      },
+      {
+        "key": "e_1_3_4_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/106365603321828970"
+      },
+      {
+        "key": "e_1_3_4_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3618297"
+      },
+      {
+        "key": "e_1_3_4_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0962492919000060"
+      },
+      {
+        "key": "e_1_3_4_16_1",
+        "unstructured": "M. Menickelly Avoiding geometry improvement in derivative-free model-based methods via randomization preprint (2023). Available at arXiv:2305.17336."
+      },
+      {
+        "key": "e_1_3_4_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/080724083"
+      },
+      {
+        "key": "e_1_3_4_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-003-0430-6"
+      },
+      {
+        "key": "e_1_3_4_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/0-387-30065-1_16"
+      },
+      {
+        "key": "e_1_3_4_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/0720042"
+      },
+      {
+        "key": "e_1_3_4_21_1",
+        "unstructured": "P.L. Toint Towards an efficient sparsity exploiting newton method for minimization in Sparse matrices and their uses Academic Press 1981 pp. 57–88."
+      },
+      {
+        "key": "e_1_3_4_22_1",
+        "unstructured": "D. van de Berg N. Shan and A. del Rio-Chanona High-dimensional derivative-free optimization via trust region surrogates in linear subspaces in Proceedings of the 34th European Symposium on Computer Aided Process Engineering / 15th International Symposium on Process Systems Engineering (ESCAPE34/PSE24). 2024."
+      },
+      {
+        "key": "e_1_3_4_23_1",
+        "unstructured": "D. Winfield Function and functional optimization by interpolation in data tables Ph.D. diss. Harvard University 1969."
+      },
+      {
+        "key": "e_1_3_4_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1561/0400000060"
+      },
+      {
+        "key": "e_1_3_4_25_1",
+        "unstructured": "P. Xie NEWUOA-Matlab-Version-2.0 (2023). Available at https://github.com/PengchengXieLSEC/NEWUOA-Matlab-Version-2.0/releases/tag/2.0."
+      },
+      {
+        "key": "e_1_3_4_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cam.2024.116146"
+      },
+      {
+        "key": "e_1_3_4_27_1",
+        "unstructured": "P. Xie and S.M. Wild ReMU: Regional minimal updating for model-based derivative-free optimization preprint (2025). Available at arxiv:2504.03606."
+      },
+      {
+        "key": "e_1_3_4_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11401-023-0040-y"
+      },
+      {
+        "key": "e_1_3_4_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/23M1582023"
+      },
+      {
+        "key": "e_1_3_4_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s40305-023-00532-x"
+      },
+      {
+        "key": "e_1_3_4_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/imanum/drae106"
+      },
+      {
+        "key": "e_1_3_4_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11081-008-9064-0"
+      },
+      {
+        "key": "e_1_3_4_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1142/9789812709356_0012"
+      },
+      {
+        "key": "e_1_3_4_34_1",
+        "unstructured": "Y. Yuan A review on subspace methods for nonlinear optimization in Proceedings of the International Congress of Mathematics 2014 pp. 807–827."
+      },
+      {
+        "key": "e_1_3_4_35_1",
+        "unstructured": "Z. Zhang The research on derivative-free optimization methods Ph.D. diss. Graduate School of the Chinese Academy of Sciences University of Chinese Academy of Sciences 2012."
+      },
+      {
+        "key": "e_1_3_4_36_1",
+        "unstructured": "Z. Zhang Derivative-free optimization in China Discipline Development Strategy: Mathematical optimization (in Chinese) Science Press Beijing 2021 pp. 84–92."
+      },
+      {
+        "key": "e_1_3_4_37_1",
+        "unstructured": "Z. Zhang Scalable derivative-free optimization algorithms with low-dimensional subspace techniques preprint (2025). Available at arXiv:2501.04536."
+      },
+      {
+        "key": "e_1_3_4_38_1",
+        "unstructured": "C. Zhang D. Ge C. He B. Jiang Y. Jiang and Y. Ye DRSOM: A dimension reduced second-order method preprint (2023). Available at arXiv:2208.00208."
+      }
+    ],
+    "container-title": [
+      "Optimization Methods and Software"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.tandfonline.com/doi/pdf/10.1080/10556788.2025.2601670",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          5
+        ]
+      ],
+      "date-time": "2026-03-05T16:01:00Z",
+      "timestamp": 1772726460000
+    },
+    "score": 39.19106,
+    "resource": {
+      "primary": {
+        "URL": "https://www.tandfonline.com/doi/full/10.1080/10556788.2025.2601670"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          16
+        ]
+      ]
+    },
+    "references-count": 37,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/10556788.2025.2601670"
+    ],
+    "URL": "https://doi.org/10.1080/10556788.2025.2601670",
+    "ISSN": [
+      "1055-6788",
+      "1029-4937"
+    ],
+    "issn-type": [
+      {
+        "value": "1055-6788",
+        "type": "print"
+      },
+      {
+        "value": "1029-4937",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          16
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+        "order": 1,
+        "name": "peerreview_statement",
+        "label": "Peer Review Statement"
+      },
+      {
+        "value": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "URL": "http://www.tandfonline.com/action/journalInformation?show=aimsScope&journalCode=goms20",
+        "order": 2,
+        "name": "aims_and_scope_url",
+        "label": "Aim & Scope"
+      },
+      {
+        "value": "2023-12-17",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-12-02",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-12-16",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+]

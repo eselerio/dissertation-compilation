@@ -1,0 +1,1187 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2026-10-07T23:47:19Z",
+    "timestamp": 1791416839581,
+    "version": "4.3.3"
+  },
+  "reference-count": 95,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "4",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            20
+          ]
+        ],
+        "date-time": "2020-02-20T00:00:00Z",
+        "timestamp": 1582156800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            20
+          ]
+        ],
+        "date-time": "2020-02-20T00:00:00Z",
+        "timestamp": 1582156800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "link.springer.com"
+    ],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Math. Prog. Comp."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        12
+      ]
+    ]
+  },
+  "DOI": "10.1007/s12532-020-00179-2",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        20
+      ]
+    ],
+    "date-time": "2020-02-20T15:02:16Z",
+    "timestamp": 1582210936000
+  },
+  "page": "637-672",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 1119,
+  "title": [
+    "OSQP: an operator splitting solver for quadratic programs"
+  ],
+  "prefix": "10.1007",
+  "volume": "12",
+  "author": [
+    {
+      "given": "Bartolomeo",
+      "family": "Stellato",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Goran",
+      "family": "Banjac",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Paul",
+      "family": "Goulart",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Alberto",
+      "family": "Bemporad",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Stephen",
+      "family": "Boyd",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        20
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "issue": "1",
+      "key": "179_CR1",
+      "doi-asserted-by": "publisher",
+      "first-page": "42",
+      "DOI": "10.1080/23307706.2017.1397554",
+      "volume": "5",
+      "author": "A Agrawal",
+      "year": "2018",
+      "unstructured": "Agrawal, A., Verschueren, R., Diamond, S., Boyd, S.: A rewriting system for convex optimization problems. J. Control Decis. 5(1), 42–60 (2018). https://doi.org/10.1080/23307706.2017.1397554",
+      "journal-title": "J. Control Decis."
+    },
+    {
+      "key": "179_CR2",
+      "first-page": "391",
+      "volume-title": "Nonlinear Predictive Control and Moving Horizon Estimation–An Introductory Overview",
+      "author": "F Allgöwer",
+      "year": "1999",
+      "unstructured": "Allgöwer, F., Badgwell, T.A., Qin, J.S., Rawlings, J.B., Wright, S.J.: Nonlinear Predictive Control and Moving Horizon Estimation–An Introductory Overview, pp. 391–449. Springer, London (1999)"
+    },
+    {
+      "issue": "3",
+      "key": "179_CR3",
+      "doi-asserted-by": "crossref",
+      "first-page": "381",
+      "DOI": "10.1145/1024074.1024081",
+      "volume": "30",
+      "author": "PR Amestoy",
+      "year": "2004",
+      "unstructured": "Amestoy, P.R., Davis, T.A., Duff, I.S.: Algorithm 837: AMD, an approximate minimum degree ordering algorithm. ACM Trans. Math. Softw. 30(3), 381–388 (2004)",
+      "journal-title": "ACM Trans. Math. Softw."
+    },
+    {
+      "key": "179_CR4",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Balakrishnan, H., Hwang, I., Tomlin, C.J.: Polynomial approximation algorithms for belief matrix maintenance in identity management. In: IEEE Conference on Decision and Control (CDC), pp. 4874–4879 (2004)",
+      "DOI": "10.1109/CDC.2004.1429569"
+    },
+    {
+      "issue": "12",
+      "key": "179_CR5",
+      "doi-asserted-by": "publisher",
+      "first-page": "4126",
+      "DOI": "10.1109/TAC.2018.2808442",
+      "volume": "63",
+      "author": "G Banjac",
+      "year": "2018",
+      "unstructured": "Banjac, G., Goulart, P.: Tight global linear convergence rate bounds for operator splitting methods. IEEE Trans. Autom. Control 63(12), 4126–4139 (2018). https://doi.org/10.1109/TAC.2018.2808442",
+      "journal-title": "IEEE Trans. Autom. Control"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR6",
+      "doi-asserted-by": "publisher",
+      "first-page": "490",
+      "DOI": "10.1007/s10957-019-01575-y",
+      "volume": "183",
+      "author": "G Banjac",
+      "year": "2019",
+      "unstructured": "Banjac, G., Goulart, P., Stellato, B., Boyd, S.: Infeasibility detection in the alternating direction method of multipliers for convex optimization. J. Optim. Theory Appl. 183(2), 490–519 (2019). https://doi.org/10.1007/s10957-019-01575-y",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "key": "179_CR7",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Banjac, G., Stellato, B., Moehle, N., Goulart, P., Bemporad, A., Boyd, S.: Embedded code generation using the OSQP solver. In: IEEE Conference on Decision and Control (CDC) (2017)",
+      "DOI": "10.1109/CDC.2017.8263928"
+    },
+    {
+      "issue": "3",
+      "key": "179_CR8",
+      "doi-asserted-by": "crossref",
+      "first-page": "367",
+      "DOI": "10.1137/S0036144593251710",
+      "volume": "38",
+      "author": "HH Bauschke",
+      "year": "1996",
+      "unstructured": "Bauschke, H.H., Borwein, J.M.: On projection algorithms for solving convex feasibility problems. SIAM Rev. 38(3), 367–426 (1996)",
+      "journal-title": "SIAM Rev."
+    },
+    {
+      "key": "179_CR9",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/978-1-4419-9467-7",
+      "volume-title": "Convex Analysis and Monotone Operator Theory in Hilbert Spaces",
+      "author": "HH Bauschke",
+      "year": "2011",
+      "unstructured": "Bauschke, H.H., Combettes, P.L.: Convex Analysis and Monotone Operator Theory in Hilbert Spaces, 1st edn. Springer, Berlin (2011)",
+      "edition": "1"
+    },
+    {
+      "key": "179_CR10",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1017/S0962492913000032",
+      "volume": "22",
+      "author": "P Belotti",
+      "year": "2013",
+      "unstructured": "Belotti, P., Kirches, C., Leyffer, S., Linderoth, J., Luedtke, J., Mahajan, A.: Mixed-integer nonlinear optimization. Acta Numer. 22, 1–131 (2013)",
+      "journal-title": "Acta Numer."
+    },
+    {
+      "issue": "2",
+      "key": "179_CR11",
+      "doi-asserted-by": "crossref",
+      "first-page": "418",
+      "DOI": "10.1006/jcph.2002.7176",
+      "volume": "182",
+      "author": "M Benzi",
+      "year": "2002",
+      "unstructured": "Benzi, M.: Preconditioning techniques for large linear systems: a survey. J. Comput. Phys. 182(2), 418–477 (2002)",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "key": "179_CR12",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1017/9781139061759",
+      "volume-title": "Predictive Control for Linear and Hybrid Systems",
+      "author": "F Borrelli",
+      "year": "2017",
+      "unstructured": "Borrelli, F., Bemporad, A., Morari, M.: Predictive Control for Linear and Hybrid Systems. Cambridge University Press, Cambridge (2017)"
+    },
+    {
+      "issue": "1",
+      "key": "179_CR13",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "DOI": "10.1561/2400000023",
+      "volume": "3",
+      "author": "S Boyd",
+      "year": "2017",
+      "unstructured": "Boyd, S., Busseti, E., Diamond, S., Kahn, R.N., Koh, K., Nystrup, P., Speth, J.: Multi-period trading via convex optimization. Found. Trends Optim. 3(1), 1–76 (2017). https://doi.org/10.1561/2400000023",
+      "journal-title": "Found. Trends Optim."
+    },
+    {
+      "key": "179_CR14",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9781611970777",
+      "volume-title": "Linear Matrix Inequalities in System and Control Theory",
+      "author": "S Boyd",
+      "year": "1994",
+      "unstructured": "Boyd, S., El Ghaoui, L., Feron, E., Balakrishnan, V.: Linear Matrix Inequalities in System and Control Theory. Society for Industrial and Applied Mathematics, Philadelphia (1994)"
+    },
+    {
+      "issue": "1",
+      "key": "179_CR15",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1561/2400000001",
+      "volume": "1",
+      "author": "S Boyd",
+      "year": "2014",
+      "unstructured": "Boyd, S., Mueller, M.T., O’Donoghue, B., Wang, Y.: Performance bounds and suboptimal policies for multi-period investment. Found. Trends Optim. 1(1), 1–72 (2014)",
+      "journal-title": "Found. Trends Optim."
+    },
+    {
+      "issue": "1",
+      "key": "179_CR16",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1561/2200000016",
+      "volume": "3",
+      "author": "S Boyd",
+      "year": "2011",
+      "unstructured": "Boyd, S., Parikh, N., Chu, E., Peleato, B., Eckstein, J.: Distributed optimization and statistical learning via the alternating direction method of multipliers. Found. Trends Mach. Learn. 3(1), 1–122 (2011)",
+      "journal-title": "Found. Trends Mach. Learn."
+    },
+    {
+      "key": "179_CR17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1017/CBO9780511804441",
+      "volume-title": "Convex Optimization",
+      "author": "S Boyd",
+      "year": "2004",
+      "unstructured": "Boyd, S., Vandenberghe, L.: Convex Optimization. Cambridge University Press, Cambridge (2004)"
+    },
+    {
+      "key": "179_CR18",
+      "unstructured": "Bradley, A.: Algorithms for the equilibration of matrices and their application to limited-memory quasi-Newton methods. Ph.D. thesis, Stanford University (2010)"
+    },
+    {
+      "issue": "5",
+      "key": "179_CR19",
+      "doi-asserted-by": "crossref",
+      "first-page": "877",
+      "DOI": "10.1007/s00041-008-9045-x",
+      "volume": "14",
+      "author": "EJ Candés",
+      "year": "2008",
+      "unstructured": "Candés, E.J., Wakin, M.B., Boyd, S.: Enhancing sparsity by reweighted $$\\ell _1$$ minimization. J. Fourier Anal. Appl. 14(5), 877–905 (2008)",
+      "journal-title": "J. Fourier Anal. Appl."
+    },
+    {
+      "key": "179_CR20",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1017/CBO9780511753886",
+      "volume-title": "Optimization Methods in Finance. Finance and Risk",
+      "author": "G Cornuejols",
+      "year": "2006",
+      "unstructured": "Cornuejols, G., Tütüncü, R.: Optimization Methods in Finance. Finance and Risk. Cambridge University Press, Cambridge (2006)"
+    },
+    {
+      "issue": "3",
+      "key": "179_CR21",
+      "first-page": "273",
+      "volume": "20",
+      "author": "C Cortes",
+      "year": "1995",
+      "unstructured": "Cortes, C., Vapnik, V.: Support-vector networks. Mach. Learn. 20(3), 273–297 (1995)",
+      "journal-title": "Mach. Learn."
+    },
+    {
+      "key": "179_CR22",
+      "volume-title": "Linear Programming and Extensions",
+      "author": "GB Dantzig",
+      "year": "1963",
+      "unstructured": "Dantzig, G.B.: Linear Programming and Extensions. Princeton University Press, Princeton (1963)"
+    },
+    {
+      "issue": "4",
+      "key": "179_CR23",
+      "doi-asserted-by": "crossref",
+      "first-page": "587",
+      "DOI": "10.1145/1114268.1114277",
+      "volume": "31",
+      "author": "TA Davis",
+      "year": "2005",
+      "unstructured": "Davis, T.A.: Algorithm 849: a concise sparse Cholesky factorization package. ACM Trans. Math. Softw. 31(4), 587–591 (2005)",
+      "journal-title": "ACM Trans. Math. Softw."
+    },
+    {
+      "key": "179_CR24",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9780898718881",
+      "volume-title": "Direct Methods for Sparse Linear Systems",
+      "author": "TA Davis",
+      "year": "2006",
+      "unstructured": "Davis, T.A.: Direct Methods for Sparse Linear Systems. Society for Industrial and Applied Mathematics, Philadelphia (2006)"
+    },
+    {
+      "issue": "1",
+      "key": "179_CR25",
+      "doi-asserted-by": "publisher",
+      "first-page": "1:1",
+      "DOI": "10.1145/2049662.2049663",
+      "volume": "38",
+      "author": "TA Davis",
+      "year": "2011",
+      "unstructured": "Davis, T.A., Hu, Y.: The University of Florida sparse matrix collection. ACM Trans. Math. Softw. 38(1), 1:1–1:25 (2011). https://doi.org/10.1145/2049662.2049663",
+      "journal-title": "ACM Trans. Math. Softw."
+    },
+    {
+      "issue": "83",
+      "key": "179_CR26",
+      "first-page": "1",
+      "volume": "17",
+      "author": "S Diamond",
+      "year": "2016",
+      "unstructured": "Diamond, S., Boyd, S.: CVXPY: a python-embedded modeling language for convex optimization. J. Mach. Learn. Res. 17(83), 1–5 (2016)",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "issue": "2",
+      "key": "179_CR27",
+      "doi-asserted-by": "crossref",
+      "first-page": "436",
+      "DOI": "10.1007/s10957-016-0990-2",
+      "volume": "172",
+      "author": "S Diamond",
+      "year": "2017",
+      "unstructured": "Diamond, S., Boyd, S.: Stochastic matrix-free equilibration. J. Optim. Theory Appl. 172(2), 436–454 (2017)",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "key": "179_CR28",
+      "first-page": "391",
+      "volume-title": "Efficient Numerical Methods for Nonlinear MPC and Moving Horizon Estimation",
+      "author": "M Diehl",
+      "year": "2009",
+      "unstructured": "Diehl, M., Ferreau, H.J., Haverbeke, N.: Efficient Numerical Methods for Nonlinear MPC and Moving Horizon Estimation, pp. 391–417. Springer, Berlin (2009)"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR29",
+      "doi-asserted-by": "crossref",
+      "first-page": "201",
+      "DOI": "10.1007/s101070100263",
+      "volume": "91",
+      "author": "ED Dolan",
+      "year": "2002",
+      "unstructured": "Dolan, E.D., Moré, J.J.: Benchmarking optimization software with performance profiles. Math. Program. 91(2), 201–213 (2002)",
+      "journal-title": "Math. Program."
+    },
+    {
+      "key": "179_CR30",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Domahidi, A., Chu, E., Boyd, S.: ECOS: an SOCP solver for embedded systems. In: European Control Conference (ECC), pp. 3071–3076 (2013)",
+      "DOI": "10.23919/ECC.2013.6669541"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR31",
+      "doi-asserted-by": "crossref",
+      "first-page": "421",
+      "DOI": "10.1090/S0002-9947-1956-0084194-4",
+      "volume": "82",
+      "author": "J Douglas",
+      "year": "1956",
+      "unstructured": "Douglas, J., Rachford, H.H.: On the numerical solution of heat conduction problems in two and three space variables. Trans. Am. Math. Soc. 82(2), 421–439 (1956)",
+      "journal-title": "Trans. Am. Math. Soc."
+    },
+    {
+      "key": "179_CR32",
+      "volume-title": "Direct Methods for Sparse Matrices",
+      "author": "IS Duff",
+      "year": "1989",
+      "unstructured": "Duff, I.S., Erisman, A.M., Reid, J.K.: Direct Methods for Sparse Matrices. Oxford University Press, London (1989)"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR33",
+      "doi-asserted-by": "crossref",
+      "first-page": "295",
+      "DOI": "10.1137/15M1020575",
+      "volume": "59",
+      "author": "I Dunning",
+      "year": "2017",
+      "unstructured": "Dunning, I., Huchette, J., Lubin, M.: JuMP: a modeling language for mathematical optimization. SIAM Rev. 59(2), 295–320 (2017)",
+      "journal-title": "SIAM Rev."
+    },
+    {
+      "issue": "1",
+      "key": "179_CR34",
+      "doi-asserted-by": "crossref",
+      "first-page": "39",
+      "DOI": "10.1007/BF02196592",
+      "volume": "80",
+      "author": "J Eckstein",
+      "year": "1994",
+      "unstructured": "Eckstein, J.: Parallel alternating direction multiplier decomposition of convex programs. J. Optim. Theory Appl. 80(1), 39–62 (1994)",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "issue": "2",
+      "key": "179_CR35",
+      "doi-asserted-by": "crossref",
+      "first-page": "218",
+      "DOI": "10.1287/ijoc.10.2.218",
+      "volume": "10",
+      "author": "J Eckstein",
+      "year": "1998",
+      "unstructured": "Eckstein, J., Ferris, M.C.: Operator-splitting methods for monotone affine variational inequalities, with a parallel application to optimal control. INFORMS J. Comput. 10(2), 218–235 (1998)",
+      "journal-title": "INFORMS J. Comput."
+    },
+    {
+      "issue": "4",
+      "key": "179_CR36",
+      "doi-asserted-by": "crossref",
+      "first-page": "327",
+      "DOI": "10.1007/s12532-014-0071-1",
+      "volume": "6",
+      "author": "HJ Ferreau",
+      "year": "2014",
+      "unstructured": "Ferreau, H.J., Kirches, C., Potschka, A., Bock, H.G., Diehl, M.: qpOASES: a parametric active-set algorithm for quadratic programming. Math. Program. Comput. 6(4), 327–363 (2014)",
+      "journal-title": "Math. Program. Comput."
+    },
+    {
+      "issue": "2",
+      "key": "179_CR37",
+      "doi-asserted-by": "crossref",
+      "first-page": "604",
+      "DOI": "10.1137/S1052623494268455",
+      "volume": "8",
+      "author": "R Fletcher",
+      "year": "1998",
+      "unstructured": "Fletcher, R., Leyffer, S.: Numerical experience with lower bounds for MIQP branch-and-bound. SIAM J. Optim. 8(2), 604–616 (1998)",
+      "journal-title": "SIAM J. Optim."
+    },
+    {
+      "key": "179_CR38",
+      "doi-asserted-by": "publisher",
+      "first-page": "41",
+      "DOI": "10.1007/978-3-319-67068-3_4",
+      "volume-title": "Parameter Selection and Preconditioning for a Graph Form Solver",
+      "author": "C Fougner",
+      "year": "2018",
+      "unstructured": "Fougner, C., Boyd, S.: Parameter Selection and Preconditioning for a Graph Form Solver, pp. 41–61. Springer, Berlin (2018). https://doi.org/10.1007/978-3-319-67068-3_4"
+    },
+    {
+      "issue": "1–2",
+      "key": "179_CR39",
+      "doi-asserted-by": "crossref",
+      "first-page": "95",
+      "DOI": "10.1002/nav.3800030109",
+      "volume": "3",
+      "author": "M Frank",
+      "year": "1956",
+      "unstructured": "Frank, M., Wolfe, P.: An algorithm for quadratic programming. Naval Res. Log. Q. 3(1–2), 95–110 (1956)",
+      "journal-title": "Naval Res. Log. Q."
+    },
+    {
+      "key": "179_CR40",
+      "first-page": "299",
+      "volume": "15",
+      "author": "D Gabay",
+      "year": "1983",
+      "unstructured": "Gabay, D.: Chapter IX applications of the method of multipliers to variational inequalities. Stud. Math. Appl. 15, 299–331 (1983)",
+      "journal-title": "Stud. Math. Appl."
+    },
+    {
+      "issue": "1",
+      "key": "179_CR41",
+      "doi-asserted-by": "crossref",
+      "first-page": "17",
+      "DOI": "10.1016/0898-1221(76)90003-1",
+      "volume": "2",
+      "author": "D Gabay",
+      "year": "1976",
+      "unstructured": "Gabay, D., Mercier, B.: A dual algorithm for the solution of nonlinear variational problems via finite element approximation. Comput. Math. Appl. 2(1), 17–40 (1976)",
+      "journal-title": "Comput. Math. Appl."
+    },
+    {
+      "issue": "3",
+      "key": "179_CR42",
+      "doi-asserted-by": "crossref",
+      "first-page": "335",
+      "DOI": "10.1016/0005-1098(89)90002-2",
+      "volume": "25",
+      "author": "CE García",
+      "year": "1989",
+      "unstructured": "García, C.E., Prett, D.M., Morari, M.: Model predictive control: theory and practice—a survey. Automatica 25(3), 335–348 (1989)",
+      "journal-title": "Automatica"
+    },
+    {
+      "issue": "1",
+      "key": "179_CR43",
+      "doi-asserted-by": "crossref",
+      "first-page": "58",
+      "DOI": "10.1145/641876.641880",
+      "volume": "29",
+      "author": "EM Gertz",
+      "year": "2003",
+      "unstructured": "Gertz, E.M., Wright, S.J.: Object-oriented software for quadratic programming. ACM Trans. Math. Softw. 29(1), 58–81 (2003)",
+      "journal-title": "ACM Trans. Math. Softw."
+    },
+    {
+      "issue": "3",
+      "key": "179_CR44",
+      "doi-asserted-by": "crossref",
+      "first-page": "644",
+      "DOI": "10.1109/TAC.2014.2354892",
+      "volume": "60",
+      "author": "E Ghadimi",
+      "year": "2015",
+      "unstructured": "Ghadimi, E., Teixeira, A., Shames, I., Johansson, M.: Optimal parameter selection for the alternating direction method of multipliers (ADMM): quadratic problems. IEEE Trans. Autom. Control 60(3), 644–658 (2015)",
+      "journal-title": "IEEE Trans. Autom. Control"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR45",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.1007/BF02592025",
+      "volume": "36",
+      "author": "PE Gill",
+      "year": "1986",
+      "unstructured": "Gill, P.E., Murray, W., Saunders, M.A., Tomlin, J.A., Wright, M.H.: On projected Newton barrier methods for linear programming and an equivalence to Karmarkar’s projective method. Math. Program. 36(2), 183–209 (1986)",
+      "journal-title": "Math. Program."
+    },
+    {
+      "key": "179_CR46",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.automatica.2015.09.010",
+      "volume": "62",
+      "author": "P Giselsson",
+      "year": "2015",
+      "unstructured": "Giselsson, P., Boyd, S.: Metric selection in fast dual forward–backward splitting. Automatica 62, 1–10 (2015)",
+      "journal-title": "Automatica"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR47",
+      "doi-asserted-by": "crossref",
+      "first-page": "532",
+      "DOI": "10.1109/TAC.2016.2564160",
+      "volume": "62",
+      "author": "P Giselsson",
+      "year": "2017",
+      "unstructured": "Giselsson, P., Boyd, S.: Linear convergence and metric selection for Douglas–Rachford splitting and ADMM. IEEE Trans. Autom. Control 62(2), 532–544 (2017)",
+      "journal-title": "IEEE Trans. Autom. Control"
+    },
+    {
+      "issue": "R2",
+      "key": "179_CR48",
+      "first-page": "41",
+      "volume": "9",
+      "author": "R Glowinski",
+      "year": "1975",
+      "unstructured": "Glowinski, R., Marroco, A.: Sur l’approximation, par éléments finis d’ordre un, et la résolution, par pénalisation-dualité d’une classe de problèmes de dirichlet non linéaires. ESAIM: Mathematical Modelling and Numerical Analysis - Modélisation Mathématique et Analyse Numérique 9(R2), 41–76 (1975)",
+      "journal-title": "ESAIM: Mathematical Modelling and Numerical Analysis - Modélisation Mathématique et Analyse Numérique"
+    },
+    {
+      "key": "179_CR49",
+      "volume-title": "Matrix Computations",
+      "author": "GH Golub",
+      "year": "1996",
+      "unstructured": "Golub, G.H., Van Loan, C.F.: Matrix Computations, 3rd edn. Johns Hopkins University Press, Baltimore (1996)",
+      "edition": "3"
+    },
+    {
+      "key": "179_CR50",
+      "unstructured": "Goulart, P., Stellato, B., Banjac, G.: QDLDL (2018). https://github.com/oxfordcontrol/qdldl. Accessed 6 Feb 2020"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR51",
+      "doi-asserted-by": "publisher",
+      "first-page": "15:1",
+      "DOI": "10.1145/2950048",
+      "volume": "43",
+      "author": "N Gould",
+      "year": "2016",
+      "unstructured": "Gould, N., Scott, J.: A note on performance profiles for benchmarking software. ACM Trans. Math. Softw. 43(2), 15:1–15:5 (2016). https://doi.org/10.1145/2950048",
+      "journal-title": "ACM Trans. Math. Softw."
+    },
+    {
+      "key": "179_CR52",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9781611970937",
+      "volume-title": "Iterative Methods for Solving Linear Systems",
+      "author": "A Greenbaum",
+      "year": "1997",
+      "unstructured": "Greenbaum, A.: Iterative Methods for Solving Linear Systems. Society for Industrial and Applied Mathematics, Philadelphia (1997)"
+    },
+    {
+      "key": "179_CR53",
+      "unstructured": "Gurobi Optimization Inc.: Gurobi optimizer reference manual (2016). http://www.gurobi.com. Accessed 6 Feb 2020"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR54",
+      "doi-asserted-by": "crossref",
+      "first-page": "337",
+      "DOI": "10.1023/A:1004603514434",
+      "volume": "106",
+      "author": "BS He",
+      "year": "2000",
+      "unstructured": "He, B.S., Yang, H., Wang, S.L.: Alternating direction method with self-adaptive penalty parameters for monotone variational inequalities. J. Optim. Theory Appl. 106(2), 337–356 (2000)",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "issue": "1",
+      "key": "179_CR55",
+      "doi-asserted-by": "crossref",
+      "first-page": "73",
+      "DOI": "10.1214/aoms/1177703732",
+      "volume": "35",
+      "author": "PJ Huber",
+      "year": "1964",
+      "unstructured": "Huber, P.J.: Robust estimation of a location parameter. Ann. Math. Stat. 35(1), 73–101 (1964)",
+      "journal-title": "Ann. Math. Stat."
+    },
+    {
+      "key": "179_CR56",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/0471725250",
+      "volume-title": "Robust Statistics",
+      "author": "PJ Huber",
+      "year": "1981",
+      "unstructured": "Huber, P.J.: Robust Statistics. Wiley, New York (1981)"
+    },
+    {
+      "key": "179_CR57",
+      "unstructured": "Intel Corporation: Intel Math Kernel Library. User’s Guide (2017)"
+    },
+    {
+      "issue": "12",
+      "key": "179_CR58",
+      "doi-asserted-by": "crossref",
+      "first-page": "3238",
+      "DOI": "10.1109/TAC.2014.2351991",
+      "volume": "59",
+      "author": "JL Jerez",
+      "year": "2014",
+      "unstructured": "Jerez, J.L., Goulart, P.J., Richter, S., Constantinides, G.A., Kerrigan, E.C., Morari, M.: Embedded online optimization for model predictive control at megahertz rates. IEEE Trans. Autom. Control 59(12), 3238–3251 (2014)",
+      "journal-title": "IEEE Trans. Autom. Control"
+    },
+    {
+      "key": "179_CR59",
+      "unstructured": "Kantorovich, L.: Mathematical methods of organizing and planning production. Manag. Sci. 6(4), 366–422 (1960). English translation"
+    },
+    {
+      "issue": "4",
+      "key": "179_CR60",
+      "doi-asserted-by": "crossref",
+      "first-page": "373",
+      "DOI": "10.1007/BF02579150",
+      "volume": "4",
+      "author": "N Karmarkar",
+      "year": "1984",
+      "unstructured": "Karmarkar, N.: A new polynomial-time algorithm for linear programming. Combinatorica 4(4), 373–395 (1984)",
+      "journal-title": "Combinatorica"
+    },
+    {
+      "key": "179_CR61",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9781611970944",
+      "volume-title": "Iterative Methods for Linear and Nonlinear Equations",
+      "author": "C Kelley",
+      "year": "1995",
+      "unstructured": "Kelley, C.: Iterative Methods for Linear and Nonlinear Equations. Society for Industrial and Applied Mathematics, Philadelphia (1995)"
+    },
+    {
+      "key": "179_CR62",
+      "unstructured": "Klee, V., Minty, G.: How good is the simplex algorithm. Department of Mathematics, University of Washington, Technical report (1970)"
+    },
+    {
+      "issue": "3",
+      "key": "179_CR63",
+      "doi-asserted-by": "crossref",
+      "first-page": "931",
+      "DOI": "10.1137/110825753",
+      "volume": "35",
+      "author": "PA Knight",
+      "year": "2014",
+      "unstructured": "Knight, P.A., Ruiz, D., Uçar, B.: A symmetry preserving algorithm for matrix scaling. SIAM J. Matrix Anal. Appl. 35(3), 931–955 (2014)",
+      "journal-title": "SIAM J. Matrix Anal. Appl."
+    },
+    {
+      "issue": "6",
+      "key": "179_CR64",
+      "doi-asserted-by": "crossref",
+      "first-page": "964",
+      "DOI": "10.1137/0716071",
+      "volume": "16",
+      "author": "PL Lions",
+      "year": "1979",
+      "unstructured": "Lions, P.L., Mercier, B.: Splitting algorithms for the sum of two nonlinear operators. SIAM J. Numer. Anal. 16(6), 964–979 (1979)",
+      "journal-title": "SIAM J. Numer. Anal."
+    },
+    {
+      "key": "179_CR65",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Löfberg, J.: YALMIP: a toolbox for modeling and optimization in MATLAB. In: IEEE International Conference on Robotics and Automation, pp. 284–289 (2004). https://doi.org/10.1109/CACSD.2004.1393890",
+      "DOI": "10.1109/CACSD.2004.1393890"
+    },
+    {
+      "issue": "9",
+      "key": "179_CR66",
+      "doi-asserted-by": "publisher",
+      "first-page": "950",
+      "DOI": "10.1109/34.877518",
+      "volume": "22",
+      "author": "OL Mangasarian",
+      "year": "2000",
+      "unstructured": "Mangasarian, O.L., Musicant, D.R.: Robust linear and support vector regression. IEEE Trans. Pattern Anal. Mach. Intell. 22(9), 950–955 (2000). https://doi.org/10.1109/34.877518",
+      "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell."
+    },
+    {
+      "issue": "1",
+      "key": "179_CR67",
+      "first-page": "77",
+      "volume": "7",
+      "author": "H Markowitz",
+      "year": "1952",
+      "unstructured": "Markowitz, H.: Portfolio selection. J. Finance 7(1), 77–91 (1952)",
+      "journal-title": "J. Finance"
+    },
+    {
+      "issue": "1–4",
+      "key": "179_CR68",
+      "doi-asserted-by": "crossref",
+      "first-page": "671",
+      "DOI": "10.1080/10556789908805768",
+      "volume": "11",
+      "author": "I Maros",
+      "year": "1999",
+      "unstructured": "Maros, I., Mészáros, C.: A repository of convex quadratic programming problems. Optim. Methods Softw. 11(1–4), 671–681 (1999)",
+      "journal-title": "Optim. Methods Softw."
+    },
+    {
+      "issue": "3",
+      "key": "179_CR69",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "DOI": "10.1109/MSP.2010.936020",
+      "volume": "27",
+      "author": "J Mattingley",
+      "year": "2010",
+      "unstructured": "Mattingley, J., Boyd, S.: Real-time convex optimization in signal processing. IEEE Signal Process. Mag. 27(3), 50–61 (2010)",
+      "journal-title": "IEEE Signal Process. Mag."
+    },
+    {
+      "issue": "1",
+      "key": "179_CR70",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1007/s11081-011-9176-9",
+      "volume": "13",
+      "author": "J Mattingley",
+      "year": "2012",
+      "unstructured": "Mattingley, J., Boyd, S.: CVXGEN: a code generator for embedded convex optimization. Optim. Eng. 13(1), 1–27 (2012)",
+      "journal-title": "Optim. Eng."
+    },
+    {
+      "issue": "4",
+      "key": "179_CR71",
+      "doi-asserted-by": "crossref",
+      "first-page": "575",
+      "DOI": "10.1137/0802028",
+      "volume": "2",
+      "author": "S Mehrotra",
+      "year": "1992",
+      "unstructured": "Mehrotra, S.: On the implementation of a primal–dual interior point method. SIAM J. Optim. 2(4), 575–601 (1992)",
+      "journal-title": "SIAM J. Optim."
+    },
+    {
+      "key": "179_CR72",
+      "unstructured": "Mittelmann, H.: Benchmarks for optimization software. http://plato.asu.edu/bench.html. Accessed 08 Nov 2019"
+    },
+    {
+      "key": "179_CR73",
+      "unstructured": "MOSEK ApS: The MOSEK optimization toolbox for MATLAB manual. Version 8.0 (Revision 57) (2017). http://docs.mosek.com/8.0/toolbox/index.html. Accessed 6 Feb 2020"
+    },
+    {
+      "key": "179_CR74",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9781611970791",
+      "volume-title": "Interior-Point Polynomial Algorithms in Convex Programming",
+      "author": "Y Nesterov",
+      "year": "1994",
+      "unstructured": "Nesterov, Y., Nemirovskii, A.: Interior-Point Polynomial Algorithms in Convex Programming. Society for Industrial and Applied Mathematics, Philadelphia (1994)"
+    },
+    {
+      "key": "179_CR75",
+      "unstructured": "Nishihara, R., Lessard, L., Recht, B., Packard, A., Jordan, M.I.: A general analysis of the convergence of ADMM. In: International Conference on Machine Learning (ICML), pp. 343–352 (2015)"
+    },
+    {
+      "key": "179_CR76",
+      "volume-title": "Numerical Optimization. Springer Series in Operations Research and Financial Engineering",
+      "author": "J Nocedal",
+      "year": "2006",
+      "unstructured": "Nocedal, J., Wright, S.J.: Numerical Optimization. Springer Series in Operations Research and Financial Engineering. Springer, Berlin (2006)"
+    },
+    {
+      "issue": "3",
+      "key": "179_CR77",
+      "doi-asserted-by": "crossref",
+      "first-page": "1042",
+      "DOI": "10.1007/s10957-016-0892-3",
+      "volume": "169",
+      "author": "B O’Donoghue",
+      "year": "2016",
+      "unstructured": "O’Donoghue, B., Chu, E., Parikh, N., Boyd, S.: Conic optimization via operator splitting and homogeneous self-dual embedding. J. Optim. Theory Appl. 169(3), 1042–1068 (2016)",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "issue": "6",
+      "key": "179_CR78",
+      "doi-asserted-by": "crossref",
+      "first-page": "2432",
+      "DOI": "10.1109/TCST.2012.2231960",
+      "volume": "21",
+      "author": "B O’Donoghue",
+      "year": "2013",
+      "unstructured": "O’Donoghue, B., Stathopoulos, G., Boyd, S.: A splitting method for optimal control. IEEE Trans. Control Syst. Technol. 21(6), 2432–2442 (2013)",
+      "journal-title": "IEEE Trans. Control Syst. Technol."
+    },
+    {
+      "key": "179_CR79",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Pock, T., Chambolle, A.: Diagonal preconditioning for first order primal–dual algorithms in convex optimization. In: 2011 International Conference on Computer Vision, pp. 1762–1769 (2011)",
+      "DOI": "10.1109/ICCV.2011.6126441"
+    },
+    {
+      "key": "179_CR80",
+      "unstructured": "Raghunathan, A.U., Di Cairano, S.: ADMM for convex quadratic programs: Q-linear convergence and infeasibility detection (2014). arXiv:1411.7288"
+    },
+    {
+      "key": "179_CR81",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Raghunathan, A.U., Di Cairano, S.: Infeasibility detection in alternating direction method of multipliers for convex quadratic programs. In: IEEE Conference on Decision and Control (CDC), pp. 5819–5824 (2014). https://doi.org/10.1109/CDC.2014.7040300",
+      "DOI": "10.1109/CDC.2014.7040300"
+    },
+    {
+      "key": "179_CR82",
+      "volume-title": "Model Predictive Control: Theory and Design",
+      "author": "JB Rawlings",
+      "year": "2009",
+      "unstructured": "Rawlings, J.B., Mayne, D.Q.: Model Predictive Control: Theory and Design. Nob Hill Publishing, San Francisco (2009)"
+    },
+    {
+      "key": "179_CR83",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Reuther, A., Kepner, J., Byun, C., Samsi, S., Arcand, W., Bestor, D., Bergeron, B., Gadepally, V., Houle, M., Hubbell, M., Jones, M., Klein, A., Milechin, L., Mullen, J., Prout, A., Rosa, A., Yee, C., Michaleas, P.: Interactive supercomputing on 40,000 cores for machine learning and data analysis. In: 2018 IEEE High Performance extreme Computing Conference (HPEC), pp. 1–6 (2018). https://doi.org/10.1109/HPEC.2018.8547629",
+      "DOI": "10.1109/HPEC.2018.8547629"
+    },
+    {
+      "key": "179_CR84",
+      "volume-title": "Variational Analysis. Grundlehren der mathematischen Wissenschaften",
+      "author": "RT Rockafellar",
+      "year": "1998",
+      "unstructured": "Rockafellar, R.T., Wets, R.J.B.: Variational Analysis. Grundlehren der mathematischen Wissenschaften. Springer, Berlin (1998)"
+    },
+    {
+      "key": "179_CR85",
+      "unstructured": "Ruiz, D.: A scaling algorithm to equilibrate both rows and columns norms in matrices. Technical Report RAL-TR-2001-034, Rutherford Appleton Laboratory, Oxon, UL (2001)"
+    },
+    {
+      "issue": "2",
+      "key": "179_CR86",
+      "doi-asserted-by": "crossref",
+      "first-page": "343",
+      "DOI": "10.2140/pjm.1967.21.343",
+      "volume": "21",
+      "author": "R Sinkhorn",
+      "year": "1967",
+      "unstructured": "Sinkhorn, R., Knopp, P.: Concerning nonnegative matrices and doubly stochastic matrices. Pac. J. Math. 21(2), 343–348 (1967)",
+      "journal-title": "Pac. J. Math."
+    },
+    {
+      "issue": "3",
+      "key": "179_CR87",
+      "doi-asserted-by": "crossref",
+      "first-page": "249",
+      "DOI": "10.1561/2600000008",
+      "volume": "3",
+      "author": "G Stathopoulos",
+      "year": "2016",
+      "unstructured": "Stathopoulos, G., Shukla, H., Szucs, A., Pu, Y., Jones, C.N.: Operator splitting methods in control. Found. Trends Syst. Control 3(3), 249–362 (2016)",
+      "journal-title": "Found. Trends Syst. Control"
+    },
+    {
+      "key": "179_CR88",
+      "unstructured": "Stellato, B., Banjac, G.: Benchmark examples for the OSQP solver (2019). https://github.com/oxfordcontrol/osqp_benchmarks. Accessed 6 Feb 2020"
+    },
+    {
+      "key": "179_CR89",
+      "unstructured": "Takapoui, R., Javadi, H.: Preconditioning via diagonal scaling (2014). https://web.stanford.edu/~hrhakim/projects/EE364B.pdf. Accessed 6 Feb 2020"
+    },
+    {
+      "issue": "1",
+      "key": "179_CR90",
+      "doi-asserted-by": "crossref",
+      "first-page": "267",
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "volume": "58",
+      "author": "R Tibshirani",
+      "year": "1996",
+      "unstructured": "Tibshirani, R.: Regression shrinkage and selection via the lasso. J. R. Stat. Soc. Ser. B 58(1), 267–288 (1996)",
+      "journal-title": "J. R. Stat. Soc. Ser. B"
+    },
+    {
+      "issue": "1",
+      "key": "179_CR91",
+      "doi-asserted-by": "crossref",
+      "first-page": "100",
+      "DOI": "10.1137/0805005",
+      "volume": "5",
+      "author": "R Vanderbei",
+      "year": "1995",
+      "unstructured": "Vanderbei, R.: Symmetric quasi-definite matrices. SIAM J. Optim. 5(1), 100–113 (1995)",
+      "journal-title": "SIAM J. Optim."
+    },
+    {
+      "key": "179_CR92",
+      "volume-title": "Rounding Errors in Algebraic Processes",
+      "author": "JH Wilkinson",
+      "year": "1963",
+      "unstructured": "Wilkinson, J.H.: Rounding Errors in Algebraic Processes. Prentice Hall, Englewood Cliffs (1963)"
+    },
+    {
+      "key": "179_CR93",
+      "unstructured": "Wohlberg, B.: ADMM penalty parameter selection by residual balancing (2017). arXiv:1704.06209v1"
+    },
+    {
+      "issue": "3",
+      "key": "179_CR94",
+      "doi-asserted-by": "crossref",
+      "first-page": "382",
+      "DOI": "10.2307/1909468",
+      "volume": "27",
+      "author": "P Wolfe",
+      "year": "1959",
+      "unstructured": "Wolfe, P.: The simplex method for quadratic programming. Econometrica 27(3), 382–398 (1959)",
+      "journal-title": "Econometrica"
+    },
+    {
+      "key": "179_CR95",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1137/1.9781611971453",
+      "volume-title": "Primal–Dual Interior-Point Methods",
+      "author": "S Wright",
+      "year": "1997",
+      "unstructured": "Wright, S.: Primal–Dual Interior-Point Methods. Society for Industrial and Applied Mathematics, Philadelphia (1997)"
+    }
+  ],
+  "container-title": [
+    "Mathematical Programming Computation"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s12532-020-00179-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1007/s12532-020-00179-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/s12532-020-00179-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        7,
+        31
+      ]
+    ],
+    "date-time": "2024-07-31T18:03:44Z",
+    "timestamp": 1722449024000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "http://link.springer.com/10.1007/s12532-020-00179-2"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        20
+      ]
+    ]
+  },
+  "references-count": 95,
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          12
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "179"
+  ],
+  "URL": "https://doi.org/10.1007/s12532-020-00179-2",
+  "relation": {},
+  "ISSN": [
+    "1867-2949",
+    "1867-2957"
+  ],
+  "issn-type": [
+    {
+      "value": "1867-2949",
+      "type": "print"
+    },
+    {
+      "value": "1867-2957",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        20
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "7 January 2018",
+      "order": 1,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "5 February 2020",
+      "order": 2,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    },
+    {
+      "value": "20 February 2020",
+      "order": 3,
+      "name": "first_online",
+      "label": "First Online",
+      "group": {
+        "name": "ArticleHistory",
+        "label": "Article History"
+      }
+    }
+  ]
+}

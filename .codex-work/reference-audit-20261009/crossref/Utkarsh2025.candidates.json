@@ -1,0 +1,2498 @@
+[
+  {
+    "institution": [
+      {
+        "id": [
+          {
+            "id": "https://ror.org/01yvrd251",
+            "id-type": "ROR",
+            "asserted-by": "publisher"
+          }
+        ],
+        "name": "Paris 6"
+      }
+    ],
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T03:03:42Z",
+      "timestamp": 1790046222849,
+      "version": "4.0.1"
+    },
+    "reference-count": 163,
+    "publisher": "Agence Bibliographique de l'Enseignement Supérieur",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "abstract": "<jats:title>Étude probabiliste des contraintes de bout en bout dans les systèmes temps réel</jats:title>\n                <jats:p xml:lang=\"fr\">L'interaction sociale, l'éducation et la santé ne sont que quelques exemples de domaines dans lesquels l'évolution rapide de la technologie a eu un grand impact sur la qualité de vie. Les entreprises s’appuient de plus en plus sur les systèmes embarqués pour augmenter leur productivité, leur efficacité et leurs valeurs. Dans les usines, la précision des robots tend à remplacer la polyvalence humaine. Bien que les appareils connectés comme les drônes, les montres intelligentes ou les maisons intelligentes soient de plus en plus populaires ces dernières années, ce type de technologie a été utilisé depuis longtemps dans les industries concernées par la sécurité des utilisateurs. L’industrie avionique utilise des ordinateurs pour ses produits depuis 1972 avec la production du premier avion A300; elle a atteint des progrès étonnants avec le développement du premier avion Concorde en 1976 en dépassant de nombreuses années les avions de son époque, et ça a été considéré comme un miracle de la technologie. Certaines innovations et connaissances acquises pour le Concorde sont toujours utilisées dans les modèles récents comme A380 ou A350. Un système embarqué est un système à microprocesseur qui est construit pour contrôler une fonction ou une gamme de fonctions et qui n’est pas conçu pour être programmé par l'utilisateur final de la même manière qu'un ordinateur personnel. Un système temps-réel est un système de traitement de l’information qui doit répondre aux stimuli d’entrées générées de manière externe dans une période finie et spécifiée. Le comportement de ces systèmes prend en compte non seulement l'exactitude dépend non seulement du résultat logique mais aussi du temps dans lequel il a été livré. Les systèmes temps-réel peuvent être trouvés dans des industries comme l'aéronautique, l'aérospatiale, l'automobile ou l’industrie ferroviaire mais aussi dans les réseaux de capteurs, les traitements d'image, les applications multimédias, les technologies médicales, les robotiques, les communications, les jeux informatiques ou les systèmes ménagers. Dans cette thèse, nous nous concentrons sur les systèmes temps-réel embarqués et pour la facilité des notations, nous leur nommons simplement des systèmes temps réel. Nous pourrions nous référer aux systèmes cyber-physiques si tel est le cas. Le pire temps d’exécution (WCET) d'une tâche représente le temps maximum possible pour qu’elle soit exécutée. Le WCET est obtenu après une analyse de temps et souvent il ne peut pas être déterminé avec précision en déterminant toutes les exécutions possibles. C'est pourquoi, dans l'industrie, les mesures sont faites uniquement sur un sous-ensemble de scénarios possibles, celui qui générerait les temps d'exécution les plus élevés, et une limite supérieure de temps d’exécution est estimé en ajoutant une marge de sécurité au plus grand temps observé. L’analyses de temps est un concept clé qui a été utilisé dans les systèmes temps-réel pour affecter une limite supérieure aux WCET des tâches ou des fragments de programme. Cette affectation peut être obtenue soit par analyse statique, soit par analyse des mesures. Les méthodes statiques et par mesure, dans leurs approches déterministes, ont tendance à être extrêmement pessimistes. Malheureusement, ce niveau de pessimisme et le sur-provisionnement conséquent ne peut pas être accepté par tous les systèmes temps-réels, et pour ces cas, d'autres approches devraient être prises en considération.</jats:p>",
+    "DOI": "10.70675/f1894b23zae90z48dfz8ecazf8c4317a738e",
+    "type": "dissertation",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2026-04-03T02:26:22Z",
+      "timestamp": 1775183182000
+    },
+    "approved": {
+      "date-parts": [
+        [
+          2017,
+          12,
+          11
+        ]
+      ]
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Probabilistic study of end-to-end constraints in real-time systems"
+    ],
+    "prefix": "10.70675",
+    "author": [
+      {
+        "given": "Cristian",
+        "family": "Maxim",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "id": [
+              {
+                "id": "https://ror.org/01yvrd251",
+                "id-type": "ROR",
+                "asserted-by": "publisher"
+              }
+            ],
+            "name": "Paris 6"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "51494",
+    "reference": [
+      {
+        "key": "108426_187_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cazorla F., Quinones E., Vardanega T., Cucu-Grosjean L., Triquet B., Bernat G., Berger E., Abella J., Wartel F., Houston M., Santinelli L., Maxim D., Kosmidis L., Lo C., Proartis: Probabilistically analyzable real-time systems, in: ACM Trans. Embedded Comput. Syst., vol. 12, n° 2s, p. 94-114, 2013",
+        "DOI": "10.1145/2465787.2465796",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_192_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kosmidis L., Abella J., Quiñones E., Cazorla F. J., A cache design for probabilistically analysable real-time systems, in: Proceedings of the Conference on Design, Automation and Test in Europe, p. 513-518, EDA Consortium, 2013",
+        "DOI": "10.7873/DATE.2013.116",
+        "type": "book-chapter"
+      },
+      {
+        "key": "108426_188_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cucu L., Tovar E., A framework for response time analysis of fixed-priority tasks with stochastic inter-arrival times, in: ACM SIGBED Review, vol. 3, n° 1, 2006",
+        "DOI": "10.1145/1279711.1279714",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_194_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lesage B., Griffin D., Soboczenski F., Bate I., Davis R.I., A framework for the evaluation of measurement-based timing analyses, in: International Conference on Real Time and Networks Systems, p. 35-44, 2015",
+        "DOI": "10.1145/2834848.2834858",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Öztürk A., Korukogu S., A new test for the extreme value distribution., in: Communications in Statistics-Simulation and Computation, vol. 17, n° 4, p. 1375-1393, 1988",
+        "DOI": "10.1080/03610918808812730",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu Y., Nolte T., Bate I., Cucu L., A new way about using statistical analysis of worst-case execution times, in: the Euromicro Conference on Real-Time Systems, 2011",
+        "DOI": "10.1145/2038617.2038619",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_194_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Leung J.Y.-T., Merrill M., A note on pre-emptive scheduling of periodic, real-time tasks, in: Information processing letters, vol. 11, n° 3, p. 115-118, 1980",
+        "DOI": "10.1016/0020-0190(80)90123-4",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_187_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Burns A., Bernat G., Broster I., A probabilistic framework for schedulability analysis, in: Third International Embedded Software Conference (EMSOFT 2003), p. 1-15, 2003",
+        "DOI": "10.1007/978-3-540-45212-6_1",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lu Y., Nolte T., Bate I., Cucu-Grosjean L., A statistical response-time analysis of real-time embedded systems, in: Real-Time Systems Symposium (RTSS), 2012 IEEE 33rd, p. 351-362, IEEE, 2012",
+        "DOI": "10.1109/RTSS.2012.85",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_190_2",
+        "unstructured": "Galambos J., A statistical test for extreme value distributions, in: Nonparametric Statistical Inference, p. 221-230, 1982",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_186_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Belady L. A., A study of replacement algorithms for a virtual-storage computer, in: IBM Systems journal, vol. 5, n° 2, p. 78-101, 1966",
+        "DOI": "10.1147/sj.52.0078",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_191_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hasofer A. M., Wang Z., A test for extreme value domain of attraction, in: Journal of the American Statistical Association, vol. 87, n° 417, p. 171-177, 1992",
+        "DOI": "10.1080/01621459.1992.10475189",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_193_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kosmidis L., Quinones E., Abella J., Vardanega T., Cazorla F. J., Achieving timing composability with measurement-based probabilistic timing analysis., in: Object/Component/Service-Oriented Real-Time Distributed Computing (ISORC), 2013 IEEE 16th International Symposium on, p. 1-8, IEEE, 2013",
+        "DOI": "10.1109/ISORC.2013.6913193",
+        "type": "other"
+      },
+      {
+        "key": "108426_184_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Albers K., Bodmann F., Slomka F., Advanced hierachical event-stream model, in: Real-Time Systems, 2008. ECRTS'08. Euromicro Conference on, p. 211-220, IEEE, 2008",
+        "DOI": "10.1109/ECRTS.2008.19",
+        "type": "other"
+      },
+      {
+        "key": "108426_184_0",
+        "unstructured": "A400M, Airbus defence and space press release: Statement regarding accident information transmission (ait) to a400m operators as follow up to aot of 19 may, 2015",
+        "type": "other"
+      },
+      {
+        "key": "108426_189_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ferdinand C., Heckmann R., ait: Worst-case execution time prediction by static program analysis, in: Building the Information Society, p. 377-383, 2004",
+        "DOI": "10.1007/978-1-4020-8157-6_29",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Marohn F., An adaptive efficient test for gumbel domain of attraction, in: Scandinavian Journal of Statistics, vol. 25, n° 2, p. 311-324, 1998",
+        "DOI": "10.1111/1467-9469.00105",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_192_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kim K., Diaz J. L., Lo Bello L., Lopez J. M., Lee C.-G., Min S. L., An exact stochastic analysis of priority-driven periodic real-time systems and its approximations, in: IEEE Trans. Comput., vol. 54, n° 11, p. 1460-1466, 2005",
+        "DOI": "10.1109/TC.2005.174",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_188_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "COLES S., An introduction to statistical modeling of extreme values, Springer, 2001",
+        "DOI": "10.1007/978-1-4471-3675-0",
+        "type": "book"
+      },
+      {
+        "key": "108426_188_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Davis R.I., Santinelli L., Altmeyer S., Maiza C., Cucu-Grosjean L., Analysis of probabilistic cache related pre-emption delays, in: IEEE Euromicro Conference on Real-Time Systems (ECRTS13), 2013",
+        "DOI": "10.1109/ECRTS.2013.27",
+        "type": "other"
+      },
+      {
+        "key": "108426_190_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gardner M., Lui J., Analyzing stochastic fixed-priority real-time systems, in: 5th International Conference on Tools and Algorithms for the Construction and Analysis of Systems, 1999",
+        "DOI": "10.1007/3-540-49059-0_4",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_184_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Audsley N., Burns A., Richardson M., Tindell K., Wellings A. J., Applying new scheduling theory to static priority preemptive scheduling, in: Software Engineering Journal, vol. 8, n° 5, p. 284-292, 1993",
+        "DOI": "10.1049/sej.1993.0034",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_186_8",
+        "unstructured": "Broster I., Burns A., Applying random arrival models to fixed priority analysis, in: the Proceedings of the Work-In-Progress of the 25th IEEE Real-Time Systems Symposium (RTSS04), 2004",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu M., Behnam M., Nolte T., Applying the peak over thresholds method on worst-case response time analysis of complex real-time systems, in: Embedded and Real-Time Computing Systems and Applications (RTCSA), 2013 IEEE 19th International Conference on, p. 22-31, IEEE, 2013",
+        "DOI": "10.1109/RTCSA.2013.6732200",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_185_1",
+        "unstructured": "Augustine N.R., Augustine's laws, AIAA, 1997",
+        "type": "other"
+      },
+      {
+        "key": "108426_200_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wenzel I., Rieder B., Kirner R., Puschner P., Automatic timing model generation by cfg partitioning and model checking, in: Design, Automation and Test in Europe, 2005. Proceedings, p. 606-611, IEEE, 2005",
+        "DOI": "10.1109/DATE.2005.76",
+        "type": "other"
+      },
+      {
+        "key": "108426_189_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ekberg P., Yi W., Bounding and shaping the demand of generalized mixed-criticality sporadic task systems, in: Real-time systems, vol. 50, n° 1, p. 48-86, 2014",
+        "DOI": "10.1007/s11241-013-9187-z",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_192_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jalle J., Kosmidis L., Abella J., Quiñones E., Cazorla F. J., Bus designs for time-probabilistic multicore processors, in: Proceedings of the conference on Design, Automation & Test in Europe, p. 50, European Design and Automation Association, 2014",
+        "DOI": "10.7873/DATE.2014.063",
+        "type": "other"
+      },
+      {
+        "key": "108426_197_6",
+        "unstructured": "Poovey J., Characterization of the eembe benchmark suite., North Carolina State University., 2007",
+        "type": "dissertation"
+      },
+      {
+        "key": "108426_191_7",
+        "unstructured": "Hartigan J. A., Clustering algorithms, John Wiley & Sons, 1975",
+        "type": "book"
+      },
+      {
+        "key": "108426_192_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kaczynski G., Lo Bello L., Nolte T., Deriving exact stochastic response times of periodic tasks in hybrid priority-driven soft real-time systems, in: the 12th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA'07), 2007",
+        "DOI": "10.1109/EFTA.2007.4416759",
+        "type": "other"
+      },
+      {
+        "key": "108426_189_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ermedahl A., Fredriksson J., Gustafsson J., Altenbernd P., Deriving the worst-case execution time input values, in: Real-Time Systems, 2009. ECRTS'09. 21st Euromicro Conference on, p. 45-54, IEEE, 2009",
+        "DOI": "10.1109/ECRTS.2009.32",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_186_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Boniol F., Cassé H., Noulard E., Pagetti C., Deterministic execution model on cots hardware, in: Architecture of Computing Systems-ARCS 2012, p. 98-110, 2012",
+        "DOI": "10.1007/978-3-642-28293-5_9",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_199_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Stephens M. A., Edf statistics for goodness of fit and some comparisons, in: Journal of the American statistical Association, vol. 69, n° 347, p. 730-737, 1974",
+        "DOI": "10.1080/01621459.1974.10480196",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_184_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Abeni L., Manica N., Palopoli L., Efficient and robust probabilistic guarantees for real-time tasks, in: Journal of Systems and Software, vol. 85, n° 5, p. 1147-1156, 2012",
+        "DOI": "10.1016/j.jss.2011.12.042",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_193_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kosmidis L., Abella J., Quiñones E., Cazorla F. J., Efficient cache designs for probabilistically analysable real-time systems., in: IEEE Transactions on Computers, vol. 63, n° 12, p. 2998-3011, 2014",
+        "DOI": "10.1109/TC.2013.182",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_11",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Refaat K. S., Hladik P.-E., Efficient stochastic analysis of real-time systems via random sampling., in: IEEE Euromicro Conference on Real-Time Systems (ECRTS 2010), p. 175-183, 2010",
+        "DOI": "10.1109/ECRTS.2010.29",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_191_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Heath S., Embedded systems design, Newnes, 2002",
+        "DOI": "10.1016/B978-075065546-0/50002-5",
+        "type": "book"
+      },
+      {
+        "key": "108426_199_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Simalatsar A., Ramadian Y., Lampka K., Perathoner S., Passerone R., Thiele L., Enabling parametric feasibility analysis in real-time calculus driven performance evaluation, in: Proceedings of the 14th international conference on Compilers, architectures and synthesis for embedded systems, p. 155-164, ACM, 2011",
+        "DOI": "10.1145/2038698.2038723",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_192_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jean X., Faura D., Gatti M., Pautet L., Robert T., Ensuring robust partitioning in multicore platforms for ima systems, in: Digital Avionics Systems Conference (DASC), 2012 IEEE/AIAA 31st, p. 7A4-1, 2012",
+        "DOI": "10.1109/DASC.2012.6382408",
+        "type": "other"
+      },
+      {
+        "key": "108426_201_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ziccardi M., Mezzetti E., Vardanega T., Abella J., Cazorla F. J., EPC: extended path coverage for measurement-based probabilistic timing analysis, in: 2015 IEEE Real-Time Systems Symposium, RTSS, p. 338-349, 2015",
+        "DOI": "10.1109/RTSS.2015.39",
+        "type": "other"
+      },
+      {
+        "key": "108426_192_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hu X., Zhou T., Sha E.-M., Estimating probabilistic timing performance for real-time embedded systems, in: Very Large Scale Integration (VLSI) Systems, IEEE Transactions on, vol. 9, n° 6, p. 833-844, 2001",
+        "DOI": "10.1109/92.974897",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Weissman I., Estimation of parameters and large quantiles based on the k largest observations, in: Journal of the American Statistical Association, vol. 73, n° 364, p. 812-815, 1978",
+        "DOI": "10.1080/01621459.1978.10480104",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_196_1",
+        "unstructured": "Maxim C., Gogonel A., Maxim D., Cucu L., Estimation of probabilistic minimum inter-arrival times using extreme value theory, in: the 6th Junior Researcher Workshop on Real-Time Computing (JR-WRTC2012), 2012",
+        "type": "other"
+      },
+      {
+        "key": "108426_189_4",
+        "unstructured": "Edgar S. F., Estimation of worst-case execution time using statistical analysis, University of York, 2002",
+        "type": "dissertation"
+      },
+      {
+        "key": "108426_190_5",
+        "unstructured": "Gogonel A., Evt copernic pwcet estimator for real-time systems, 2014, http://inria-rscript.serveftp.com/",
+        "type": "other"
+      },
+      {
+        "key": "108426_193_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kotz S., Nadarajah S., Extreme value distributions: theory and applications., World Scientific, 2000",
+        "DOI": "10.1142/p191",
+        "type": "book"
+      },
+      {
+        "key": "108426_194_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lima G., Dias D., Barros E., Extreme value theory for estimating task execution time bounds: A careful look, in: Euromicro Conference on Real-Time Systems, p. 200-211, 2016",
+        "DOI": "10.1109/ECRTS.2016.20",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_189_7",
+        "unstructured": "Faragó T., Katz R. W., Extremes and design values in climatology, 1990",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_193_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Leadbetter M., Rootzén H., Lindgren G., Extremes and related properties of random sequences and processes., 1983",
+        "DOI": "10.1007/978-1-4612-5449-2",
+        "type": "other"
+      },
+      {
+        "key": "108426_197_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pellizzoni R., Lipari G., Feasibility analysis of real-time periodic tasks with offsets., in: Real-Time Systems, vol. 30, n° 1-2, p. 105-128, 2005",
+        "DOI": "10.1007/s11241-005-0506-x",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Yao G., Buttazzo G., Bertogna M., Feasibility analysis under fixed priority scheduling with limited preemptions, in: Real-Time Systems, vol. 47, n° 3, p. 198-223, 2011",
+        "DOI": "10.1007/s11241-010-9113-6",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_185_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Audsley N.C., Burns A., Davis R.I., Tindell K.W., Wellings A.J., Fixed priority pre-emptive scheduling: An historical perspective., in: Real-Time Systems, vol. 8, n° 2-3, p. 173-198, 1995",
+        "DOI": "10.1007/BF01094342",
+        "type": "other"
+      },
+      {
+        "key": "108426_188_0",
+        "unstructured": "Chakravarti I.M., Laha R.G., Handbook of methods of applied statistics, in: Handbook of methods of applied statistics, John Wiley & Sons, 1967",
+        "type": "book"
+      },
+      {
+        "key": "108426_188_2",
+        "unstructured": "Colin A., Heptane webpage, 2001, http://www.irisa.fr/solidor/work/heptane-demo/heptane.html",
+        "type": "other"
+      },
+      {
+        "key": "108426_199_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tindell K., Clark J., Holistic schedulability analysis for distributed hard real-time systems, in: Microprocessing and microprogramming, vol. 40, n° 2-3, p. 117-134, 1994",
+        "DOI": "10.1016/0165-6074(94)90080-9",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_190_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fuchsen R., How to address certification for multi-core based ima platforms: Current status and potential solutions, in: Digital Avionics Systems Conference (DASC), 2010, p. 5-E, IEEE, 2010",
+        "DOI": "10.1109/DASC.2010.5655461",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_188_5",
+        "unstructured": "Cucu-Grosjean L., Independence - a missunderstood property of and for real-time systems, in: the 60th anniversary of A. Burns, 2013",
+        "type": "other"
+      },
+      {
+        "key": "108426_194_0",
+        "unstructured": "Lee E.A., Seshia S.A., Introduction to embedded systems: A cyber-physical systems approach, 2011",
+        "type": "book"
+      },
+      {
+        "key": "108426_195_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Marti P., Fuertes J. M., Fohler G., Ramamritham K., Jitter compensation for real-time control systems, in: Real-Time Systems Symposium, 2001.(RTSS 2001). Proceedings. 22nd IEEE, p. 39-48, IEEE, 2001",
+        "DOI": "10.1109/REAL.2001.990594",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_185_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baldovin A., Graziano A., Mezzetti E., Vardanega T., Kernel-level time composability for avionics applications., in: Proceedings of the 28th Annual ACM Symposium on Applied Computing, p. 1552-1554, ACM, 2013",
+        "DOI": "10.1145/2480362.2480651",
+        "type": "other"
+      },
+      {
+        "key": "108426_196_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Melani A., Noulard E., Santinelli L., Learning from probabilities: Dependences within real-time systems, in: Proceedings of 2013 IEEE 18th Conference on Emerging Technologies & Factory Automation, ETFA, p. 1-8, 2013",
+        "DOI": "10.1109/ETFA.2013.6648013",
+        "type": "other"
+      },
+      {
+        "key": "108426_185_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baldovin A., Mezzetti E., Vardanega T., Limited preemptive scheduling of non-independent task sets., in: Proceedings of the Eleventh ACM International Conference on Embedded Software, p. 18, IEEE Press, 2013",
+        "DOI": "10.1109/EMSOFT.2013.6658596",
+        "type": "other"
+      },
+      {
+        "key": "108426_190_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Fisher R.A., Tippett L.H.C., Limiting forms of the frequency distribution of the largest or smallest member of a sample, in: Mathematical Proceedings of the Cambridge Philosophical Society, vol. 24, p. 180-190, Cambridge University Press, 1928",
+        "DOI": "10.1017/S0305004100015681",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_186_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Berezovskyi K., Guet F., Santinelli L., Bletsas K., Tovar E., Measurement-based probabilistic timing analysis for graphics processor units, in: Architecture of Computing Systems - ARCS 29th International Conference, p. 223-236, 2016",
+        "DOI": "10.1007/978-3-319-30695-7_17",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_188_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cucu-Grosjean L., Santinelli L., Houston M., Lo C., Vardanega T., Kosmidis L., Abella J., Mezzeti E., E. Q., Cazorla F., Measurement-based probabilistic timing analysis for multi-path programs, in: the 24th Euromicro Conference on Real-Time Systems (ECRTS12), 2012",
+        "DOI": "10.1109/ECRTS.2012.31",
+        "type": "other"
+      },
+      {
+        "key": "108426_199_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wartel F., Kosmidis L., Lo C., Triquet B., Quinones E., Abella J., Gogonel A., Baldovin A., Mezzetti E., Cucu L., Vardanega T., Cazorla F., Measurement-based probabilistic timing analysis: Lessons from an integrated-modular avionics case study, in: the 8th IEEE International Symposium on Industrial Embedded Systems (SIES), 2013",
+        "DOI": "10.1109/SIES.2013.6601497",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_1",
+        "unstructured": "Wenzel I., Measurement-based timing analysis of superscalar processors, 2006",
+        "type": "other"
+      },
+      {
+        "key": "108426_190_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Griffin D., Lesage B., Bate I., Soboczenski F., Davis R.I., Modelling fault dependencies when execution time budgets are exceeded, in: 23rd International Conference on Real Time Networks and Systems, RTNS, p. 65-74, 2015",
+        "DOI": "10.1145/2834848.2834870",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_193_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kosmidis L., Abella J., Quinones E., Cazorla F. J., Multi-level unified caches for probabilistically time analysable real-time systems., in: Real-Time Systems Symposium (RTSS), 2013 IEEE 34th, p. 360-371, IEEE, 2013",
+        "DOI": "10.1109/RTSS.2013.43",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_199_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Staschulat J., Ernst R., Multiple process execution in cache related preemption delay analysis, in: Proceedings of the 4th ACM international conference on Embedded software, p. 278-286, ACM, 2004",
+        "DOI": "10.1145/1017753.1017798",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Manica N., Palopoli L., Abeni L., Numerically efficient probabilistic guarantees for resource reservations, in: Emerging Technologies and Factory Automation (ETFA), 2012 17th IEEE International Conference on, 2012",
+        "DOI": "10.1109/ETFA.2012.6489566",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_184_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Audsley N., On priority assignment in fixed priority scheduling, in: Information Processing Letters, vol. 79, n° 1, p. 39-44, 2001",
+        "DOI": "10.1016/S0020-0190(00)00165-4",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_191_4",
+        "unstructured": "Haan L. F. M., On regular variation and its application to the weak convergence of sample extremes, 1970",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_194_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Leung J.Y.-T., Whitehead J., On the complexity of fixed-priority scheduling of periodic, real-time tasks, in: Performance evaluation, vol. 2, n° 4, p. 237-250, 1982",
+        "DOI": "10.1016/0166-5316(82)90024-4",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_191_1",
+        "unstructured": "Guet F., Santinelli L., Morio J., On the Reliability of the Probabilistic Worst-Case Execution Time Estimates, in: 8th European Congress on Embedded Real Time Software and Systems (ERTS), 2016",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_2",
+        "unstructured": "OneWeb, 2015, http://oneweb.world.",
+        "type": "other"
+      },
+      {
+        "key": "108426_184_5",
+        "unstructured": "Audsley N., Optimal priority assignment and feasibility of static priority tasks with arbitrary start times, University of York, 1991",
+        "type": "other"
+      },
+      {
+        "key": "108426_196_2",
+        "unstructured": "Maxim D., Buffet O., Santinelli L., Cucu-Grosjean L., Davis R., Optimal priority assignments for probabilistic real-time systems, in: the 19th International Conference on Real-Time and Network Systems (RTNS2011), 2011",
+        "type": "other"
+      },
+      {
+        "key": "108426_187_6",
+        "unstructured": "Cassé H., Sainrat P., Otawa, a framework for experimenting weet computations, in: 3rd European Congress on Embedded Real-Time Software, vol. 1, 2006",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_192_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hosking J. R., Wallis J. R., Parameter and quantile estimation for the generalized pareto distribution, in: Technometrics, vol. 29, n° 3, p. 339-349, 1987",
+        "DOI": "10.1080/00401706.1987.10488243",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_188_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cucu L., Pernet N., Sorel Y., Periodic real-time scheduling: from deadline-based model to latency-based model, in: Annals of Operations Research, vol. 159, n° 1, p. 41-51, 2008",
+        "DOI": "10.1007/s10479-007-0279-9",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_189_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Diaz J., Lopez J., M. G., Campos A., Kim K., Lo Bello L., Pessimism in the stochastic analysis of real-time systems: Concept and applications, in: 25th IEEE International Real-Time Systems Symposium (RTSS 2004), p. 197-207, 2004",
+        "DOI": "10.1109/REAL.2004.41",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_187_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Burns A., Edgar S., Predicting computation time for advanced processor architectures, in: Real-Time Systems, 2000. Euromicro RTS 2000. 12th Euromicro Conference on, p. 89-96, IEEE, 2000",
+        "DOI": "10.1109/EMRTS.2000.853996",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_187_1",
+        "unstructured": "Burns A., Preemptive priority based scheduling: An appropriate engineering approach, Citeseer, 1993",
+        "type": "other"
+      },
+      {
+        "key": "108426_199_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Vestal S., Preemptive scheduling of multi-criticality systems with varying degrees of execution time assurance, in: Real-Time Systems Symposium, 2007. RTSS 2007. 28th IEEE International, p. 239-243, IEEE, 2007",
+        "DOI": "10.1109/RTSS.2007.47",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_198_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sha L., Rajkumar R., Lehoczky J. P., Priority inheritance protocols: An approach to real-time synchronization, in: Computers, IEEE Transactions on, vol. 39, n° 9, p. 1175-1185, 1990",
+        "DOI": "10.1109/12.57058",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_7",
+        "unstructured": "Proartis, 2013, http://www.proartis-project.eu/.",
+        "type": "other"
+      },
+      {
+        "key": "108426_187_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Broster I., Burns A., Rodriguez-Navas G., Probabilistic analysis of can with faults, in: Real-Time Systems Symposium, 2002. RTSS 2002, p. 269-278, 2002",
+        "DOI": "10.1109/REAL.2002.1181581",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nissanke N., Leulseged A., Chillara S., Probabilistic performance analysis in multiprocessor scheduling., in: Computing Control Engineering Journal, vol. 13, n° 4, p. 171-179, 2002",
+        "DOI": "10.1049/cce:20020403",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_199_4",
+        "unstructured": "Tia T., Deng Z., Shankar M., Storch M., Sun J., Wu L., Liu J., Probabilistic performance guarantee for real-time tasks with varying computation times, in: IEEE Real-Time and Embedded Technology and Applications Symposium (ETFA), 1995",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_198_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Santinelli L., Guet F., Morio J., Probabilistic real-time guarantees: There is life beyond the i.i.d. assumption, in: the 20th IEEE Real-Time and Embedded Technology and Application Symposium, RTAS, p. 199-208, 2017",
+        "DOI": "10.1109/RTAS.2017.16",
+        "type": "other"
+      },
+      {
+        "key": "108426_193_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kosmidis L., Curtsinger C., Quiñones E., Abella J., Berger E., Cazorla F. J., Probabilistic timing analysis on conventional cache designs., in: Design, Automation & Test in Europe Conference & Exhibition (DATE), 2013, p. 603-606, IEEE, 2013",
+        "DOI": "10.7873/DATE.2013.132",
+        "type": "other"
+      },
+      {
+        "key": "108426_186_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bernat G., Burns A., Newby M., Probabilistic timing analysis: An approach using copulas, in: Journal of Embedded Computing, vol. 1, n° 2, p. 179-194, 2005",
+        "DOI": "10.3233/EMC-2005-00014",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_8",
+        "unstructured": "Proxima, 2016, http://www.proxima-project.eu/.",
+        "type": "other"
+      },
+      {
+        "key": "108426_193_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kosmidis L., Abella J., Wartel F., Quiñones E., Colin A., Cazorla F. J., PUB: path upper-bounding for measurement-based probabilistic timing analysis., in: 26th Euromicro Conference on Real-Time Systems, ECRTS, p. 276-287, 2014",
+        "DOI": "10.1109/ECRTS.2014.34",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_198_0",
+        "unstructured": "RTCA, Radio technical commission for aeronautics (rtca) and european organisation for civil aviation equipment (eurocae). do-178c: Software considerations in airborne systems and equipment certification, 2011",
+        "type": "other"
+      },
+      {
+        "key": "108426_186_9",
+        "unstructured": "Broster I., Burns A., Random arrivals in fixed priority analysis, in: 1st International Workshop on Probabilistic Analysis Techniques for Real-time and Embedded Systems (PARTES2004), 2004",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_12",
+        "unstructured": "Reineke J., Randomized caches considered harmful in hard real-time systems., in: Leibniz Transactions on Embedded Systems, vol. 1, n° 1, p. 03-1, 2014",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_196_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Maxim D., Houston M., Santinelli L., Bernat G., Davis R. I., Cucu-Grosjean L., Re-sampling for statistical timing analysis of real-time systems, in: Proceedings of the 20th International Conference on Real-Time and Network Systems, p. 111-120, ACM, 2012",
+        "DOI": "10.1145/2392987.2393001",
+        "type": "other"
+      },
+      {
+        "key": "108426_198_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Sha L., Abdelzaher T., Arzén K.-E., Cervin A., Baker T., Burns A., Buttazzo G., Caccamo M., Lehoczky J., Mok A. K., Real time scheduling theory: A historical perspective, in: Real-time systems, vol. 28, n° 2-3, p. 101-155, 2004",
+        "DOI": "10.1023/B:TIME.0000045315.61234.1e",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_199_1",
+        "unstructured": "Stankovic J. A., Real-time computing systems: The next generation, Department of Computer and Information Science, University of Massachusetts Amherst, 1988",
+        "type": "book"
+      },
+      {
+        "key": "108426_187_5",
+        "unstructured": "Buttle D., Real-time in the prime-time, in: Keynote talk at the 24th Euromicro Conference on Real-Time Systems (ECRTS), 2012",
+        "type": "other"
+      },
+      {
+        "key": "108426_194_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lehoczky J., Real-time queueing theory, in: IEEE Real-Time Systems Symposium, p. 186-195, 1996",
+        "DOI": "10.1109/REAL.1996.563715",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_187_4",
+        "unstructured": "Burns A., Wellings A. J., Real-time systems and programming languages: Ada 95, real-time Java, and real-time POSIX, Pearson Education, 2001",
+        "type": "book"
+      },
+      {
+        "key": "108426_190_8",
+        "unstructured": "Griffin D., Burns A., Realism in statistical analysis of worst case execution times, in: 10th Intl. Workshop on Worst-Case Execution Time Analysis, p. 49-57, 2010",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_189_9",
+        "unstructured": "Ferdinand C., Heckmann R., Langenbach M., Martin F., Schmidt M., Theiling H., Thesing S., Wilhelm R., Reliable and, 2001",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_196_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Maxim C., Gogonel A., Asavoae I., Asavoae M., Cucu-Grosjean L., Reproducibility and representativity-mandatory properties for the compositionality of measurement-based weet estimation approaches, in: CRTS, p. 17, 2016",
+        "DOI": "10.1145/3166227.3166230",
+        "type": "other"
+      },
+      {
+        "key": "108426_185_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Balkema A.A., De Haan L., Residual life time at great age., in: The Annals of probability, p. 792-804, 1974",
+        "DOI": "10.1214/aop/1176996548",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_196_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Maxim D., Cucu-Grosjean L., Response time analysis for fixed-priority tasks with multiple probabilistic parameters, in: the 34th IEEE Real Time Systems Symposium, 2013",
+        "DOI": "10.1109/RTSS.2013.30",
+        "type": "other"
+      },
+      {
+        "key": "108426_185_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baruah S.K., Burns A., Davis R.I., Response-time analysis for mixed criticality systems., in: Real-Time Systems Symposium (RTSS), 2011 IEEE 32nd, p. 34-43, IEEE, 2011",
+        "DOI": "10.1109/RTSS.2011.12",
+        "type": "other"
+      },
+      {
+        "key": "108426_198_2",
+        "unstructured": "SAE, Sae international. aerospace recommended practices 4754a - development of civil aircraft and systems, 2010",
+        "type": "other"
+      },
+      {
+        "key": "108426_198_1",
+        "unstructured": "SAE, Sae international. aerospace recommended practices 4761 - guidelines and methods for conducting the safety assessment process on civil airborne systems and equipment, 1996",
+        "type": "other"
+      },
+      {
+        "key": "108426_191_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Haan L. d., Sample extremes: an elementary introduction, in: Statistica Neerlandica, vol. 30, n° 4, p. 161-172, 1976",
+        "DOI": "10.1111/j.1467-9574.1976.tb00275.x",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Manolache S., Eles P., Peng Z., Schedulability analysis of applications with stochastic task execution times, in: ACM Trans. Embed. Comput. Syst., vol. 3, n° 4, p. 706-735, 2004",
+        "DOI": "10.1145/1027794.1027797",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Manolache S., Eles P., Peng Z., Schedulability analysis of multiprocessor real-time applications with stochastic task execution times, in: Proceedings of the 2002 IEEE/ACM international conference on Computer-aided design, ICCAD '02, p. 699-706, ACM, New York, NY, USA, 2002",
+        "DOI": "10.1145/774572.774675",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_186_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bini E., Buttazzo G. C., Schedulability analysis of periodic fixed priority systems, in: Computers, IEEE Transactions on, vol. 53, n° 11, p. 1462-1473, 2004",
+        "DOI": "10.1109/TC.2004.103",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_194_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liu C.L., Layland J.W., Scheduling algorithms for multiprogramming in a hard-real-time environment, in: J. ACM, vol. 20, n° 1, p. 46-61, 1973",
+        "DOI": "10.1145/321738.321743",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_190_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Goossens J., Scheduling of offset free systems, in: Real-Time Systems, vol. 24, n° 2, p. 239-258, 2003",
+        "DOI": "10.1023/A:1021782503695",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_185_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baruah S., Bonifaci V., D'Angelo G., Li H., Marchetti-Spaccamela A., Megow N., Stougie L., Scheduling real-time mixed-criticality jobs., in: Computers, IEEE Transactions on, vol. 61, n° 8, p. 1140-1152, 2012",
+        "DOI": "10.1109/TC.2011.142",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_198_5",
+        "unstructured": "Santos M., Lisper B., Lima G., Lima V., Sequential composition of execution time distributions by convolution, in: Proc. 4th Workshop on Compositional Theory and Technology for Real-Time Embedded Systems (CRTS 2011), p. 30-37, 2011",
+        "type": "other"
+      },
+      {
+        "key": "108426_185_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baker T.P., Stack-based scheduling of realtime processes., in: Real-Time Systems, vol. 3, n° 1, p. 67-99, 1991",
+        "DOI": "10.1007/BF00365393",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_188_8",
+        "unstructured": "David L., Puaut I., Static determination of probabilistic execution times, in: the Euromicro Conference on Real-Time Systems(ECRTS), 2004",
+        "type": "other"
+      },
+      {
+        "key": "108426_194_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lesage B., Griffin D., Altmeyer S., Davis R.I., Static probabilistic timing analysis for multi-path programs, in: IEEE Real-Time Systems Symposium, 2015",
+        "DOI": "10.1109/RTSS.2015.41",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_188_10",
+        "unstructured": "Davis R.I., Whitham J., Maxim D., Static probabilistic timing analysis for multicore processors with shared cache, in: the 4th International Real-Time Scheduling Open Problems Seminar (RTSOPs2013), in conjunction with ECRTS2013, 2013",
+        "type": "other"
+      },
+      {
+        "key": "108426_184_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Altmeyer S., Cucu-Grosjean L., Davis R., Static probabilistic timing analysis for real-time systems using random replacement caches, in: Real-Time Systems, vol. 51, n° 1, p. 77-123, 2015",
+        "DOI": "10.1007/s11241-014-9218-4",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_191_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Griffin D., Lesage B., Burns A., Davis R. I., Static probabilistic timing analysis of random replacement caches using lossy compression, in: 22nd International Conference on Real-Time Networks and Systems, RTNS, p. 289, 2014",
+        "DOI": "10.1145/2659787.2659809",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_191_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Hardy D., Puaut I., Static probabilistic worst case execution time estimation for architectures with faulty instruction caches, in: Proceedings of the 21st International conference on Real-Time Networks and Systems (RTNS2013), p. 35-44, ACM, 2013",
+        "DOI": "10.1145/2516821.2516842",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zeng H., Di Natale M., Giusto P., Sangiovanni-Vincentelli A., Statistical analysis of controller area network message response times, in: Industrial Embedded Systems, 2009. SIES '09. IEEE International Symposium on, p. 1-10, 2009",
+        "DOI": "10.1109/SIES.2009.5196185",
+        "type": "other"
+      },
+      {
+        "key": "108426_189_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Edgar S., Burns A., Statistical analysis of WCET for scheduling, in: 22nd IEEE International Real-Time Systems Symposium (RTSS 2001), p. 215-224, 2001",
+        "DOI": "10.1109/REAL.2001.990614",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_5",
+        "unstructured": "Pickands III J., Statistical inference using extreme order statistics., in: the Annals of Statistics, p. 119-131, 1975",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_184_4",
+        "unstructured": "Atlas A., Bestavros A., Statistical rate monotonic scheduling, in: 19th IEEE Real-Time Systems Symposium (RTSS 1998), 1998",
+        "type": "other"
+      },
+      {
+        "key": "108426_191_5",
+        "unstructured": "Hansen J., Hissam S., Moreno G., Statistical-based WCET estimation and validation, in: 9th International Workshop on Worst-Case Execution Time (WCET) Analysis, 2009",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nilsson J., Bernhardsson B., Wittenmark B., Stochastic analysis and control of real-time systems with random time delays., in: Automatica, vol. 34, n° 1, p. 57-64, 1998",
+        "DOI": "10.1016/S0005-1098(97)00170-2",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zeng H., Di Natale M., Giusto P., Sangiovanni-Vincentelli A., Stochastic analysis of can-based real-time automotive systems, in: Industrial Informatics, IEEE Transactions on, vol. 5, n° 4, p. 388-401, 2009",
+        "DOI": "10.1109/TII.2009.2032067",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_189_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Díaz J. L., García D. F., Kim K., Lee C.-G., Lo Bello L., López J. M., Min S. L., Mirabella O., Stochastic analysis of periodic real-time systems, in: Proceedings of the 23rd IEEE Real-Time Systems Symposium (RTSS 2002), p. 289, 2002",
+        "DOI": "10.1109/REAL.2002.1181583",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_195_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lopez J., Diaz J. L., E. J., Garcia D., Stochastic analysis of real-time systems under preemptive priority-driven scheduling, in: Real-time Systems, vol. 40, n° 2, p. 180-207, 2008",
+        "DOI": "10.1007/s11241-008-9053-6",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_185_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Axer P., Ernst R., Stochastic response-time guarantee for non-preemptive, fixed-priority scheduling under errors., in: Proceedings of the 50th Annual Design Automation Conference, DAC '13, p. 172:1-172:7, ACM, New York, NY, USA, 2013",
+        "DOI": "10.1145/2463209.2488946",
+        "type": "other"
+      },
+      {
+        "key": "108426_196_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Maxim D., Soboczenski F., Bate I., Tovar E., Study of the reliability of statistical timing analysis for real-time systems, in: the 23rd International Conference on Real Time and Networks Systems, RTNS, p. 55-64, 2015",
+        "DOI": "10.1145/2834848.2834878",
+        "type": "other"
+      },
+      {
+        "key": "108426_186_5",
+        "unstructured": "Bin J., Girbal S., Pérez D. G., Grasset A., Merigot A., Studying co-running avionic real-time applications on multi-core cots architectures, in: Embedded Real Time Software and Systems conference, 2014",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_190_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gnedenko B., Sur la distribution limite du terme maximum d'une seris aleatoire, in: Annals of Mathematics, vol. 44, p. 423-453, 1943",
+        "DOI": "10.2307/1968974",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_191_10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Henia R., Hamann A., Jersak M., Racu R., Richter K., Ernst R., System level performance analysis-the symta/s approach, in: IEE Proceedings-Computers and Digital Techniques, vol. 152, n° 2, p. 148-166, 2005",
+        "DOI": "10.1049/ip-cdt:20045088",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_193_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kosmidis L., Vargas R., Morales D., Quiñones E., Abella J., Cazorla F. J., Tasa: toolchain-agnostic static software randomisation for critical real-time systems., in: Computer-Aided Design (ICCAD), 2016 IEEE/ACM International Conference on, p. 1-8, IEEE, 2016",
+        "DOI": "10.1145/2966986.2967078",
+        "type": "other"
+      },
+      {
+        "key": "108426_195_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Marohn F., Testing the gumbel hypothesis via the pot-method, in: Extremes, vol. 1, n° 2, p. 191-213, 1998",
+        "DOI": "10.1023/A:1009910806693",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_199_5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Tiku M., Singh M., Testing the two parameter weibull distribution, in: Communications in Statistics-Theory and Methods, vol. 10, n° 9, p. 907-918, 1981",
+        "DOI": "10.1080/03610928108828082",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_185_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Baruah S., The limited-preemption uniprocessor scheduling of sporadic task systems., in: Real-Time Systems, 2005. (ECRTS 2005). Proceedings. 17th Euromicro Conference on, p. 137-144, IEEE, 2005",
+        "DOI": "10.1109/ECRTS.2005.32",
+        "type": "other"
+      },
+      {
+        "key": "108426_191_2",
+        "unstructured": "Gustafsson J., Betts A., Ermedahl A., Lisper B., The Mälardalen WCET benchmarks – past, present and future, in: International Workshop on Worst-case Execution-time Analysis, 2010",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_190_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Goossens J., Devillers R., The non-optimality of the monotonic priority assignments for hard real-time offset free systems, in: Real-Time Systems, vol. 13, n° 2, p. 107-126, 1997",
+        "DOI": "10.1023/A:1007980022314",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_4",
+        "unstructured": "Wong W. E., Debroy V., Restrepo A., The role of software in recent catastrophic accidents, University of Texas at Dallas, 2009",
+        "type": "other"
+      },
+      {
+        "key": "108426_187_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Castillo E., Galambos J., Sarabia J. M., The selection of the domain of attraction of an extreme value distribution from a set of data, in: Extreme Value Theory, p. 181-190, Springer, 1989",
+        "DOI": "10.1007/978-1-4612-3634-4_16",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Wilhelm R., Engblom J., Ermedahl A., Holsti N., Thesing S., Whalley D., Bernat G., Ferdinand C., Heckmann R., Mitra T., The worst-case execution-time problem, overview of methods and survey of tools, in: ACM Transactions on Embedded Computing Systems (TECS), vol. 7, n° 3, p. 36, 2008",
+        "DOI": "10.1145/1347375.1347389",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_197_10",
+        "unstructured": "RapiTime W., tool homepage., 2006",
+        "type": "other"
+      },
+      {
+        "key": "108426_198_3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Santinelli L., Cucu-Grosjean L., Toward probabilistic real-time calculus, in: ACM SIGBED Review, vol. 8, n° 1, p. 54-61, 2011",
+        "DOI": "10.1145/1967021.1967028",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_192_6",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kaczynski G. A., Bello L. L., Nolte T., Towards stochastic response-time of hierarchically scheduled real-time tasks, in: Proceedings of 11th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA 2006), p. 453-456, 2006",
+        "DOI": "10.1109/ETFA.2006.355238",
+        "type": "other"
+      },
+      {
+        "key": "108426_189_0",
+        "doi-asserted-by": "crossref",
+        "unstructured": "de Oliveira J. T., Gomes M. I., Two test statistics for choice of univariate extreme models, in: Statistical Extremes and Applications, p. 651-668, Springer, 1984",
+        "DOI": "10.1007/978-94-017-3069-3_50",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_192_0",
+        "unstructured": "Holsti N., Langbacka T., Saarinen S., Using a worst-case execution time tool for real-time verification of the debie software, in: EUROPEAN SPACE AGENCY-PUBLICATIONS-ESA SP, vol. 457, p. 307-312, 2000",
+        "type": "other"
+      },
+      {
+        "key": "108426_197_9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Quinones E., Berger E. D., Bernat G., Cazorla F. J., Using randomized caches in probabilistic real-time systems., in: Real-Time Systems, 2009. ECRTS'09. 21st Euromicro Conference on, p. 129-138, IEEE, 2009",
+        "DOI": "10.1109/ECRTS.2009.30",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_200_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Zeng H., Di Natale M., Giusto P., Sangiovanni-Vincentelli A., Using statistical methods to compute the probability distribution of message response time in controller area network, in: Industrial Informatics, IEEE Transactions on, vol. 6, n° 4, p. 678-691, 2010",
+        "DOI": "10.1109/TII.2010.2050143",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_194_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lima G., Bate I., Valid application of evt in timing analysis by randomising execution time measurements, in: IEEE Real-Time and Embedded Technology and Application Symposium, p. 187-197, 2017",
+        "DOI": "10.1109/RTAS.2017.17",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_198_8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Shapiro S., Brain C., W-test for the weibull distribution, in: Communications in statistics. Simulation and computation, vol. 16, n° 1, p. 209-219, 1987",
+        "DOI": "10.1080/03610918708812586",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_186_4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bernat G., Colin A., Petters S. M., Wcet analysis of probabilistic hard real-time systems, in: Real-Time Systems Symposium, 2002. RTSS 2002. 23rd IEEE, p. 279-288, 2002",
+        "DOI": "10.1109/REAL.2002.1181582",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_186_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Berezovskyi K., Santinelli L., Bletsas K., Tovar E., WCET measurement-based and extreme value theory characterisation of CUDA kernels, in: 22nd International Conference on Real-Time Networks and Systems, p. 279, 2014",
+        "DOI": "10.1145/2659787.2659827",
+        "type": "journal-article"
+      },
+      {
+        "key": "108426_196_7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Navet N., Song Y.-Q., Simonot F., Worst-case deadline failure probability in real-time applications distributed over controller area network, in: J. Syst. Archit., vol. 46, n° 7, p. 607-617, 2000",
+        "DOI": "10.1016/S1383-7621(99)00016-8",
+        "type": "journal-article"
+      }
+    ],
+    "contributor": [
+      {
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          null
+        ]
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T02:42:46Z",
+      "timestamp": 1790044966000
+    },
+    "score": 39.983707,
+    "degree": [
+      "Doctorat ès Informatique",
+      "PhD"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "https://theses.fr/2017PA066479"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          null
+        ]
+      ]
+    },
+    "references-count": 163,
+    "alternative-id": [
+      "2017PA066479"
+    ],
+    "URL": "https://doi.org/10.70675/f1894b23zae90z48dfz8ecazf8c4317a738e"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          4
+        ]
+      ],
+      "date-time": "2026-08-04T15:29:31Z",
+      "timestamp": 1785857371385,
+      "version": "3.56.0"
+    },
+    "reference-count": 19,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              8
+            ]
+          ],
+          "date-time": "2025-12-08T00:00:00Z",
+          "timestamp": 1765152000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              12,
+              8
+            ]
+          ],
+          "date-time": "2025-12-08T00:00:00Z",
+          "timestamp": 1765152000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100010002",
+        "name": "Ministry of Education",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100010002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100018693",
+        "name": "Horizon Europe",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100018693",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1109/gcwkshps68340.2025.11591144",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          7
+        ]
+      ],
+      "date-time": "2026-07-07T19:42:22Z",
+      "timestamp": 1783453342000
+    },
+    "page": "1520-1525",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "End-to-end Learning of Probabilistic and Geometric Constellation Shaping with Iterative Receivers"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Harindu",
+        "family": "Jayarathne",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Oulu,Center for Wireless Communications,Finland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dileepa",
+        "family": "Marasinghe",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Oulu,Center for Wireless Communications,Finland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nandana",
+        "family": "Rajatheva",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Oulu,Center for Wireless Communications,Finland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matti",
+        "family": "Latva-Aho",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Oulu,Center for Wireless Communications,Finland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIT.2005.850108"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOBECOM48099.2022.10001177"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GCWkshps45667.2019.9024567"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/18.669123"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2015.2494016"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIT.2015.2499181"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LCOMM.2005.03003"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2007.05780"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2012.070912.110533"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2020.3002915"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/GLOBECOM42002.2020.9348032"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICC51166.2024.10622763"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JLT.2023.3265308"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/18.53734"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.48550/arXiv.1406.3269"
+      },
+      {
+        "key": "ref16",
+        "first-page": "249",
+        "article-title": "Understanding the difficulty of training deep feedforward neural networks",
+        "volume-title": "Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics. JMLR Workshop and Conference Proceedings",
+        "author": "Glorot"
+      },
+      {
+        "key": "ref17",
+        "article-title": "Digital Video Broadcasting (DVB); second generation framing structure, channel coding and modulation systems for broadcasting, interactive services, news gathering and other broadband satellite applications: Part II: S2-Extensions (DVB-S2X)",
+        "year": "2014",
+        "journal-title": "ETSI EN 302 307-2 V1.1.1"
+      },
+      {
+        "key": "ref18",
+        "year": "2022",
+        "journal-title": "Multiplexing and Channel Coding (Release 17), Standard TS 38.212, 2022, V 17.4.0, 3GPP"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICC.2002.997171"
+      }
+    ],
+    "event": {
+      "name": "2025 IEEE Globecom Workshops (GC Wkshps)",
+      "location": "Taipei, Taiwan",
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            8
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            12
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2025 IEEE Globecom Workshops (GC Wkshps)"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/11589948/11590845/11591144.pdf?arnumber=11591144",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          8
+        ]
+      ],
+      "date-time": "2026-07-08T05:51:36Z",
+      "timestamp": 1783489896000
+    },
+    "score": 33.62465,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/11591144/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          8
+        ]
+      ]
+    },
+    "references-count": 19,
+    "URL": "https://doi.org/10.1109/gcwkshps68340.2025.11591144",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          8
+        ]
+      ]
+    }
+  },
+  {
+    "institution": [
+      {
+        "name": "Iowa State University",
+        "place": [
+          "Ames (Iowa)"
+        ],
+        "department": [
+          "Civil, Construction, and Environmental Engineering"
+        ]
+      }
+    ],
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          30
+        ]
+      ],
+      "date-time": "2024-03-30T01:03:45Z",
+      "timestamp": 1711760625984
+    },
+    "reference-count": 0,
+    "publisher": "Iowa State University",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.31274/td-20240329-480",
+    "type": "dissertation",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          29
+        ]
+      ],
+      "date-time": "2024-03-29T20:32:58Z",
+      "timestamp": 1711744378000
+    },
+    "approved": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Machine learning framework for end to end implementation of incident duration prediction"
+    ],
+    "prefix": "10.31274",
+    "author": [
+      {
+        "given": "Smrithi",
+        "family": "Ajit",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "13687",
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          29
+        ]
+      ],
+      "date-time": "2024-03-29T20:47:06Z",
+      "timestamp": 1711745226000
+    },
+    "score": 33.032085,
+    "degree": [
+      "Master of Science"
+    ],
+    "resource": {
+      "primary": {
+        "URL": "https://dr.lib.iastate.edu/handle/20.500.12876/PrMBy0pz"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          null
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.31274/td-20240329-480"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          21
+        ]
+      ],
+      "date-time": "2025-08-21T17:29:29Z",
+      "timestamp": 1755797369675,
+      "version": "3.44.0"
+    },
+    "posted": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "group-title": "SSRN",
+    "reference-count": 35,
+    "publisher": "Elsevier BV",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.2139/ssrn.5396307",
+    "type": "posted-content",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2025-08-18T19:37:38Z",
+      "timestamp": 1755545858000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "End-to-End Burst Signal Demodulation Via Adaptive Masked Deep Learning Framework"
+    ],
+    "prefix": "10.2139",
+    "author": [
+      {
+        "given": "MingDi",
+        "family": "Li",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Wenzhe",
+        "family": "Fan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yanbin",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Chunlei",
+        "family": "Xie",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Yanan",
+        "family": "Duan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "23",
+        "key": "ref1",
+        "doi-asserted-by": "crossref",
+        "first-page": "21129",
+        "DOI": "10.1109/JIOT.2023.3294946",
+        "article-title": "Efficient demodulation algorithms for MIMO-LoRa",
+        "volume": "10",
+        "author": "J Kang",
+        "year": "2023",
+        "journal-title": "IEEE Internet Things J"
+      },
+      {
+        "issue": "3",
+        "key": "ref2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1596",
+        "DOI": "10.1109/TWC.2020.3034610",
+        "article-title": "DeepWiPHY: Deep learning-based receiver design and dataset for IEEE 802.11ax systems",
+        "volume": "20",
+        "author": "Y Zhang",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Wireless Commun"
+      },
+      {
+        "key": "ref3",
+        "first-page": "1",
+        "article-title": "A high resolution synchronous demodulation method based on gated integrator for precision sensors",
+        "volume": "71",
+        "author": "L Wu",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Instrum. Meas"
+      },
+      {
+        "issue": "2",
+        "key": "ref4",
+        "first-page": "1",
+        "article-title": "An UAV wireless communication noise suppression method based on OFDM modulation and demodulation",
+        "volume": "55",
+        "author": "Y Jia",
+        "year": "2020",
+        "journal-title": "Radio Sci"
+      },
+      {
+        "issue": "3",
+        "key": "ref5",
+        "doi-asserted-by": "crossref",
+        "first-page": "1842",
+        "DOI": "10.1109/JSEN.2021.3135909",
+        "article-title": "Phase demodulation methods for optical fiber vibration sensing system: a review",
+        "volume": "22",
+        "author": "Y Li",
+        "year": "2022",
+        "journal-title": "IEEE Sens. J"
+      },
+      {
+        "issue": "11",
+        "key": "ref6",
+        "doi-asserted-by": "crossref",
+        "first-page": "13937",
+        "DOI": "10.1109/TVT.2020.3017778",
+        "article-title": "Adaptive turbo equalization for differential OFDM systems in underwater acoustic communications",
+        "volume": "69",
+        "author": "S Zhao",
+        "year": "2020",
+        "journal-title": "IEEE Trans. Veh. Technol"
+      },
+      {
+        "issue": "3",
+        "key": "ref7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1482",
+        "DOI": "10.1109/TCCN.2024.3480036",
+        "article-title": "Deep learning-based joint channel equalization and symbol detection for air-water optoacoustic communications",
+        "volume": "11",
+        "author": "M Mahmud",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Cognit. Commun. Networking"
+      },
+      {
+        "key": "ref8",
+        "first-page": "1",
+        "article-title": "Deep learning-based single-shot fringe projection profilometry using spatial composite pattern",
+        "volume": "73",
+        "author": "Y Jiang",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Instrum. Meas"
+      },
+      {
+        "issue": "12",
+        "key": "ref9",
+        "doi-asserted-by": "crossref",
+        "first-page": "16163",
+        "DOI": "10.1109/TVT.2020.3022043",
+        "article-title": "Intelligent and reliable deep learning LSTM neural networks-based OFDM-DCSK demodulation design",
+        "volume": "69",
+        "author": "L Zhang",
+        "year": "2020",
+        "journal-title": "IEEE Trans. Veh. Technol"
+      },
+      {
+        "issue": "12",
+        "key": "ref10",
+        "doi-asserted-by": "crossref",
+        "first-page": "8175",
+        "DOI": "10.1109/TCOMM.2021.3112216",
+        "article-title": "Deep learning-assisted TeraHertz QPSK detection relying on single-bit quantization",
+        "volume": "69",
+        "author": "D He",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Commun"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "crossref",
+        "first-page": "1579",
+        "DOI": "10.1109/OJCOMS.2024.3373711",
+        "article-title": "Deep learning-based FM demodulation in complex electromagnetic environment",
+        "volume": "5",
+        "author": "S Zheng",
+        "year": "2024",
+        "journal-title": "IEEE Open J. Commun. Soc"
+      },
+      {
+        "issue": "4",
+        "key": "ref12",
+        "doi-asserted-by": "crossref",
+        "first-page": "1294",
+        "DOI": "10.1109/TCCN.2024.3378225",
+        "article-title": "CRNN-ResNet: combined CRNN and ResNet networks for OFDM receivers",
+        "volume": "10",
+        "author": "R Mei",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Cognit. Commun. Networking"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1579",
+        "DOI": "10.1109/OJCOMS.2024.3373711",
+        "article-title": "Deep learning-based FM demodulation in complex electromagnetic environment",
+        "volume": "5",
+        "author": "S Zheng",
+        "year": "2024",
+        "journal-title": "IEEE Open J. Commun. Soc"
+      },
+      {
+        "issue": "2",
+        "key": "ref14",
+        "doi-asserted-by": "crossref",
+        "first-page": "317",
+        "DOI": "10.1109/TCCN.2022.3225790",
+        "article-title": "Deep learning for waveform level receiver design with natural redundancy",
+        "volume": "9",
+        "author": "Z Zhu",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Cognit. Commun. Networking"
+      },
+      {
+        "issue": "1",
+        "key": "ref15",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1109/JSAC.2021.3126088",
+        "article-title": "Signal processing-based deep learning for blind symbol decoding and modulation classification",
+        "volume": "40",
+        "author": "S Hanna",
+        "year": "2022",
+        "journal-title": "IEEE J. Sel. Areas Commun"
+      },
+      {
+        "issue": "12",
+        "key": "ref16",
+        "doi-asserted-by": "crossref",
+        "first-page": "9361",
+        "DOI": "10.1109/TWC.2023.3270236",
+        "article-title": "Channel estimation and symbol demodulation for OFDM systems over rapidly varying multipath channels with hybrid deep neural networks",
+        "volume": "22",
+        "author": "M G�m�?",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Wireless Commun"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "crossref",
+        "first-page": "99853",
+        "DOI": "10.1109/ACCESS.2021.3096853",
+        "article-title": "Deep learning-based packet detection and carrier frequency offset estimation in IEEE 802.11ah",
+        "volume": "9",
+        "author": "V Ninkovic",
+        "year": "2021",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "ref18",
+        "first-page": "1",
+        "article-title": "A novel generative adversarial network for the removal of noise and baseline drift in seismic signals",
+        "volume": "62",
+        "author": "Y Chen",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Geosci. Remote Sens"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "crossref",
+        "first-page": "952",
+        "DOI": "10.1016/j.engappai.2023.105838",
+        "article-title": "Contrastive blind denoising autoencoder for real time denoising of industrial IoT sensor data",
+        "volume": "120",
+        "author": "S Langarica",
+        "year": "2023",
+        "journal-title": "Eng. Appl. Artif. Intell"
+      },
+      {
+        "key": "ref20",
+        "first-page": "952",
+        "article-title": "Seismic denoising diffusion restoration model for seismic data processing",
+        "volume": "156",
+        "author": "Kewen Li",
+        "year": "2025",
+        "journal-title": "Eng. Appl. Artif. Intell"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "crossref",
+        "first-page": "1566",
+        "DOI": "10.1016/j.inffus.2025.103205",
+        "article-title": "Denoising diffusion fusion network for semantic segmentation based on degradation analysis modeling with graph networks",
+        "volume": "122",
+        "author": "A Fang",
+        "year": "2025",
+        "journal-title": "Inf. Fusion"
+      },
+      {
+        "key": "ref22",
+        "first-page": "950",
+        "article-title": "Masked region disparity-based unsafe behavior detection via campus monitoring device images",
+        "volume": "310",
+        "author": "Y Wu",
+        "year": "2025",
+        "journal-title": "Knowl.-Based Syst"
+      },
+      {
+        "key": "ref23",
+        "first-page": "893",
+        "article-title": "S-YOLO: an enhanced small object detection method based on adaptive gating strategy and dynamic multi-scale focus module",
+        "author": "Z Wang",
+        "year": "2025",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "ref24",
+        "first-page": "950",
+        "article-title": "Category relationship enhancement transformer for industrial defect segmentation",
+        "volume": "326",
+        "author": "Z Hu",
+        "year": "2025",
+        "journal-title": "Knowl.-Based Syst"
+      },
+      {
+        "issue": "5",
+        "key": "ref25",
+        "first-page": "2879",
+        "article-title": "Single-Channel radar signal separation based on instance segmentation with mask optimization",
+        "volume": "71",
+        "author": "B Yang",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Circuits Syst"
+      },
+      {
+        "issue": "5",
+        "key": "ref26",
+        "doi-asserted-by": "crossref",
+        "first-page": "1042",
+        "DOI": "10.1109/LCOMM.2020.2971216",
+        "article-title": "Detection of frequency-hopping signals with deep learning",
+        "volume": "24",
+        "author": "K Lee",
+        "year": "2020",
+        "journal-title": "IEEE Commun. Lett"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "crossref",
+        "first-page": "304",
+        "DOI": "10.1109/TNSRE.2024.3350074",
+        "article-title": "Epileptic seizure detection based on path signature and Bi-LSTM network with attention mechanism",
+        "volume": "32",
+        "author": "Y Tang",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Neural Syst. Rehabil. Eng"
+      },
+      {
+        "key": "ref28",
+        "first-page": "950",
+        "article-title": "A robust operators' cognitive workload recognition method based on denoising masked autoencoder",
+        "volume": "301",
+        "author": "X Yu",
+        "year": "2024",
+        "journal-title": "Knowl.-Based Syst"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "crossref",
+        "first-page": "860",
+        "DOI": "10.1016/j.psep.2024.05.129",
+        "article-title": "Adaptive denoising autoencoder for robust fault detection",
+        "volume": "188",
+        "author": "Z Li",
+        "year": "2024",
+        "journal-title": "Process Saf. Environ. Prot"
+      },
+      {
+        "key": "ref30",
+        "first-page": "957",
+        "article-title": "A robust approach to text similarity detection with LSTM networks based on embedding and attention synergy",
+        "author": "F Muhammad",
+        "year": "2025",
+        "journal-title": "Expert Syst. Appl"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "crossref",
+        "first-page": "950",
+        "DOI": "10.1016/j.knosys.2025.113703",
+        "article-title": "Blockchain-integrated multi-modal LSTM-CNN fusion for highprecision epileptic seizure detection from EEG signals",
+        "volume": "323",
+        "author": "M Mokhiamar",
+        "year": "2025",
+        "journal-title": "Knowl.-Based Syst"
+      },
+      {
+        "key": "ref32",
+        "first-page": "262",
+        "volume": "147",
+        "author": "M Kang",
+        "year": "2024",
+        "journal-title": "ASF-YOLO: A novel YOLO model with attentional scale sequence fusion for cell instance segmentation. Image and Vision Computing"
+      },
+      {
+        "issue": "1",
+        "key": "ref33",
+        "doi-asserted-by": "crossref",
+        "first-page": "28",
+        "DOI": "10.1109/CEEJ.1976.6830823",
+        "article-title": "Fast FSK signals and their demodulation",
+        "volume": "1",
+        "author": "R Buda",
+        "year": "1976",
+        "journal-title": "Can. Electr. Eng. J"
+      },
+      {
+        "issue": "8",
+        "key": "ref34",
+        "doi-asserted-by": "crossref",
+        "first-page": "3292",
+        "DOI": "10.1109/TCOMM.2013.061913.120304",
+        "article-title": "Monobit digital receivers for QPSK: design, performance and impact of IQ imbalances",
+        "volume": "61",
+        "author": "Z Wang",
+        "year": "2013",
+        "journal-title": "IEEE Trans. Commun"
+      },
+      {
+        "issue": "11",
+        "key": "ref35",
+        "doi-asserted-by": "crossref",
+        "first-page": "1690",
+        "DOI": "10.1109/PROC.1985.13354",
+        "article-title": "A simple method for MSK modulation and demodulation",
+        "volume": "73",
+        "author": "S Ryu",
+        "year": "1985",
+        "journal-title": "Proc. IEEE"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2025-08-18T19:38:20Z",
+      "timestamp": 1755545900000
+    },
+    "score": 32.737785,
+    "resource": {
+      "primary": {
+        "URL": "https://www.ssrn.com/abstract=5396307"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "references-count": 35,
+    "URL": "https://doi.org/10.2139/ssrn.5396307",
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "subtype": "preprint"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          12
+        ]
+      ],
+      "date-time": "2025-10-12T02:04:24Z",
+      "timestamp": 1760234664707,
+      "version": "build-2065373602"
+    },
+    "reference-count": 30,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              28
+            ]
+          ],
+          "date-time": "2025-07-28T00:00:00Z",
+          "timestamp": 1753660800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              28
+            ]
+          ],
+          "date-time": "2025-07-28T00:00:00Z",
+          "timestamp": 1753660800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          28
+        ]
+      ]
+    },
+    "DOI": "10.1109/mlmc65154.2025.11189895",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2025-10-10T17:35:16Z",
+      "timestamp": 1760117716000
+    },
+    "page": "1-6",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "FDIC: An Adaptive End-to-End Compression Framework for Medical Images"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Weilin",
+        "family": "Yang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Fuzhou University,Fuzhou,China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Guifu",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fuzhou University,Fuzhou,China"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12652-018-1016-8"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/83.855427"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ELNANO.2018.8477459"
+      },
+      {
+        "key": "ref4",
+        "article-title": "Lossy Image Compression with Compressive Autoencoders",
+        "author": "Theis",
+        "year": "2017",
+        "journal-title": "arXiv: arXiv:1703.00395."
+      },
+      {
+        "key": "ref5",
+        "article-title": "Variational image compression with a scale hyperprior",
+        "author": "Ballé",
+        "year": "2018",
+        "journal-title": "arXiv: arXiv:1802.01436."
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3581783.3612540"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR46437.2021.01039"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CVPR52688.2022.00475"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2023.3312265"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/icce50685.2021.9427749"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.measen.2022.100439"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.bspc.2022.103721"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.11591/ijece.v11i5.pp3964-3976"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICECCT52121.2021.9616748"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/jisys-2018-0180"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10586-018-1801-3"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ViTECoN.2019.8899545"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.35940/ijitee.A4526.119119"
+      },
+      {
+        "issue": "12",
+        "key": "ref19",
+        "first-page": "1765",
+        "article-title": "Region of interest based medical image compression using block-to-row bi-directional principal component analysis",
+        "volume": "11",
+        "author": "Fan",
+        "year": "2017",
+        "journal-title": "ICIC Exp. Lett."
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCPEIC.2016.7557230"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SCOPES.2016.7955634"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.procs.2015.10.037"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCIC.2014.7238321"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1049/iet-smt.2011.0152"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12046-013-0126-4"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-642-29216-3_49"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tcsvt.2024.3369073"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/tmm.2023.3338087"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3581783.3612500"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3474085.3475657"
+      }
+    ],
+    "event": {
+      "name": "2025 International Symposium on Machine Learning and Media Computing (MLMC)",
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            28
+          ]
+        ]
+      },
+      "location": "Harbin, China",
+      "end": {
+        "date-parts": [
+          [
+            2025,
+            7,
+            30
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2025 International Symposium on Machine Learning and Media Computing (MLMC)"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/11189864/11189303/11189895.pdf?arnumber=11189895",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2025-10-11T06:09:04Z",
+      "timestamp": 1760162944000
+    },
+    "score": 32.274136,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/11189895/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          28
+        ]
+      ]
+    },
+    "references-count": 30,
+    "URL": "https://doi.org/10.1109/mlmc65154.2025.11189895",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          28
+        ]
+      ]
+    }
+  }
+]

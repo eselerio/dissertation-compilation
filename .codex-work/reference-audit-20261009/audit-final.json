@@ -1,0 +1,5183 @@
+{
+  "scope": "article/manuscript.tex and every recursively included LaTeX source",
+  "skill": "audit-latex-references; adapted to BibTeX because bundled script supports manual references only",
+  "summary": {
+    "cited_references": 146,
+    "crossref_verified": 123,
+    "verified_through_other_records": 23,
+    "missing_citations": [],
+    "uncited_database_entries_removed": 72,
+    "references_corrected": 15,
+    "doi_additions": 0,
+    "doi_updates": 0,
+    "cited_references_removed_for_crossref_absence": 0,
+    "unverified_reference_identities": [],
+    "references_without_doi": [
+      "Alex2008",
+      "Bergstra2011",
+      "Cawley2011",
+      "Demsar2006",
+      "Drucker1997",
+      "Guyon2011",
+      "Hoover1952",
+      "Ke2017",
+      "Kraft1988",
+      "Marais1976",
+      "Meijer2004",
+      "Prokhorenkova2018",
+      "StenstromSong1991",
+      "TakacsVanrolleghem2006",
+      "USEPA2009",
+      "Ulrich2009",
+      "Vandekerckhove2018",
+      "Xie2021"
+    ],
+    "access_limitations": [
+      "Alex2008",
+      "Hoover1952",
+      "Marais1976",
+      "TakacsVanrolleghem2006",
+      "Xie2021"
+    ],
+    "broken_reference_url_retained": [
+      "TakacsVanrolleghem2006"
+    ]
+  },
+  "removed_uncited_keys": [
+    "Ahn2014",
+    "Asadi2017",
+    "BaAlawi2021",
+    "Bagherzadeh2021",
+    "Barker1997",
+    "BressaniRibeiro2021",
+    "Caro2024",
+    "DamalerioRemoval2022",
+    "DiezMontero2019",
+    "Fall2015",
+    "Galan1998",
+    "Galan1999",
+    "Geiss2022",
+    "GuelliSouza2011",
+    "Gutterres2010",
+    "Hansen2018",
+    "Hatamoto2018",
+    "Hellal2021",
+    "Hu2007",
+    "JainKar2017",
+    "Jana2022",
+    "Jasim2020",
+    "Kasi2011",
+    "Khatri2020",
+    "Kim2009",
+    "Laine1999",
+    "Lakshminarayanan2017",
+    "Li2020",
+    "Li2022",
+    "Liang2021",
+    "Lim2011",
+    "Liu2021",
+    "Luan2023",
+    "Machdar1997",
+    "Mahmoud2010",
+    "Mahmoud2011",
+    "Mahmoud2018",
+    "ManavDemir2024",
+    "Mao2024",
+    "Nasr2022",
+    "Nelson2009",
+    "Niu2022",
+    "Poch1993",
+    "Poh2016",
+    "Rapi2021",
+    "Rieger2001",
+    "Sadeghassadi2018",
+    "SadriMoghaddam2021",
+    "SadriMoghaddamMesghali2023",
+    "Sahigara2012",
+    "Seggelke1999",
+    "Selerio2022",
+    "Shojaei2021",
+    "Simsek2012",
+    "StrausSkogestad2018",
+    "Sturm2023",
+    "Szelag2022",
+    "Tang2026",
+    "Tawfik2006",
+    "Tawfik2010",
+    "Tosarkani2020",
+    "Tsochatzidi2025",
+    "Tyagi2021",
+    "VanLoosdrecht2015",
+    "Waqas2022",
+    "Wu2016",
+    "Xiao2026",
+    "Xu2015",
+    "Yang2014",
+    "Yang2025",
+    "Ye2019",
+    "Yilmaz2007"
+  ],
+  "changes": [
+    {
+      "key": "Dold1981",
+      "field": "booktitle",
+      "before": "A general model for the activated sludge process",
+      "after": "Water Pollution Research and Development"
+    },
+    {
+      "key": "Drucker1997",
+      "field": "url",
+      "before": "https://citeseerx.ist.psu.edu/document?doi=6d8226a52ebc70c8d97ccae10a74e1b0a3908ec1&repid=rep1&type=pdf",
+      "after": "https://mlanthology.org/icml/1997/drucker1997icml-improving/"
+    },
+    {
+      "key": "Madhav2019",
+      "field": "booktitle",
+      "before": "Advanced Functional Materials and Sensors",
+      "after": "Sensors in Water Pollutants Monitoring: Role of Material"
+    },
+    {
+      "key": "Madhav2019",
+      "field": "series",
+      "before": null,
+      "after": "Advanced Functional Materials and Sensors"
+    },
+    {
+      "key": "Madhav2019",
+      "field": "editor",
+      "before": null,
+      "after": "Pooja, D. and Kumar, Praveen and Singh, Pardeep and Patil, Sandip"
+    },
+    {
+      "key": "Meijer2004",
+      "field": "url",
+      "before": "https://resolver.tudelft.nl/uuid:e0d5af2b-7bf6-4cd8-9a22-aac3f8d112fe",
+      "after": "https://repository.tudelft.nl/record/uuid:e0d5af2b-7bf6-4cd8-9a22-aac3f8d112fe"
+    },
+    {
+      "key": "Min2024",
+      "field": "url",
+      "before": "https://arxiv.org/abs/2410.10807",
+      "after": "https://arxiv.org/abs/2410.10807v1"
+    },
+    {
+      "key": "Petersen2003",
+      "field": "booktitle",
+      "before": "Focus on Biotechnology",
+      "after": "Biotechnology for the Environment: Wastewater Treatment and Modeling, Waste Gas Handling"
+    },
+    {
+      "key": "Petersen2003",
+      "field": "series",
+      "before": null,
+      "after": "Focus on Biotechnology"
+    },
+    {
+      "key": "Petersen2003",
+      "field": "volume",
+      "before": null,
+      "after": "3C"
+    },
+    {
+      "key": "Petersen2003",
+      "field": "editor",
+      "before": null,
+      "after": "Agathos, Spiros N. and Reineke, Walter"
+    },
+    {
+      "key": "Tabios2020",
+      "field": "booktitle",
+      "before": "World Water Resources",
+      "after": "Water Resources Systems of the Philippines: Modeling Studies"
+    },
+    {
+      "key": "Tabios2020",
+      "field": "series",
+      "before": null,
+      "after": "World Water Resources"
+    },
+    {
+      "key": "Tabios2020",
+      "field": "volume",
+      "before": null,
+      "after": "4"
+    },
+    {
+      "key": "Ulrich2009",
+      "field": "title",
+      "before": "Decentralised wastewater treatment systems and sanitation in developing countries: A practical guide",
+      "after": "Decentralised wastewater treatment systems ({DEWATS}) and sanitation in developing countries: A practical guide"
+    },
+    {
+      "key": "Akiba2019",
+      "field": "booktitle",
+      "before": "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \\& Data Mining",
+      "after": "Proceedings of the 25th {ACM} {SIGKDD} International Conference on Knowledge Discovery \\& Data Mining",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "Cawley2011",
+      "field": "booktitle",
+      "before": "Active Learning and Experimental Design Workshop in Conjunction with AISTATS 2010",
+      "after": "Active Learning and Experimental Design Workshop in Conjunction with {AISTATS} 2010",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "ChenGuestrin2016",
+      "field": "booktitle",
+      "before": "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+      "after": "Proceedings of the 22nd {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "Guyon2011",
+      "field": "booktitle",
+      "before": "Active Learning and Experimental Design Workshop in Conjunction with AISTATS 2010",
+      "after": "Active Learning and Experimental Design Workshop in Conjunction with {AISTATS} 2010",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "Shevchenko2024",
+      "field": "booktitle",
+      "before": "Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "after": "Proceedings of the 30th {ACM} {SIGKDD} Conference on Knowledge Discovery and Data Mining",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "Stellato2018",
+      "field": "booktitle",
+      "before": "2018 UKACC 12th International Conference on Control (CONTROL)",
+      "after": "2018 {UKACC} 12th International Conference on Control ({CONTROL})",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "Tabios2020",
+      "field": "title",
+      "before": "Physical Features and State of Water Resources and Status of Water Governance in the Philippines",
+      "after": "Physical Features and State of Water Resources and Status of Water Governance in the {Philippines}",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "Tabios2020",
+      "field": "booktitle",
+      "before": "Water Resources Systems of the Philippines: Modeling Studies",
+      "after": "Water Resources Systems of the {Philippines}: Modeling Studies",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    },
+    {
+      "key": "TakacsVanrolleghem2006",
+      "field": "booktitle",
+      "before": "Proceedings of the IWA World Water Congress",
+      "after": "Proceedings of the {IWA} World Water Congress",
+      "reason": "Protect proper-name or acronym capitalization in APA sentence-case rendering"
+    }
+  ],
+  "references": [
+    {
+      "key": "Aboagye2021",
+      "doi": "10.3390/w13091326",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.3390/w13091326",
+      "crossref_title": "Systematic Design, Optimization, and Sustainability Assessment for Generation of Efficient Wastewater Treatment Networks",
+      "years": {
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.3390/w13091326"
+    },
+    {
+      "key": "Akiba2019",
+      "doi": "10.1145/3292500.3330701",
+      "issues": [
+        {
+          "field": "title",
+          "current": "{Optuna}: A Next-generation Hyperparameter Optimization Framework",
+          "crossref": "Optuna"
+        }
+      ],
+      "status": "doi_title_mismatch",
+      "title_similarity": 0.194,
+      "crossref_doi": "10.1145/3292500.3330701",
+      "crossref_title": "Optuna",
+      "years": {
+        "published-print": 2019,
+        "published-online": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1145/3292500.3330701",
+      "review_note": "Full title verified by combining Crossref title and subtitle. The initial title-only mismatch was a metadata-parsing false positive; retain existing title.",
+      "corrections": {
+        "booktitle": "Proceedings of the 25th {ACM} {SIGKDD} International Conference on Knowledge Discovery \\& Data Mining"
+      }
+    },
+    {
+      "key": "Alex2008",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.2166/wst.2009.871",
+      "candidate_similarity": 0.508,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://www2.iea.lth.se/publications/Reports/LTH-IEA-7229.pdf",
+      "review_note": "Lund University report indexed as TEIE-7229 (2008). Direct download encountered a certificate-chain error; indexed primary-source record confirms identity."
+    },
+    {
+      "key": "Alexandrov1998",
+      "doi": "10.1007/bf01197433",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/bf01197433",
+      "crossref_title": "A trust-region framework for managing the use of approximation models in optimization",
+      "years": {
+        "published-print": 1998,
+        "published": 1998,
+        "issued": 1998
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/bf01197433"
+    },
+    {
+      "key": "Araujo2013",
+      "doi": "10.1021/ie4006673",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1021/ie4006673",
+      "crossref_title": "Sensitivity Analysis of Optimal Operation of an Activated Sludge Process Model for Economic Controlled Variable Selection",
+      "years": {
+        "published-print": 2013,
+        "published-online": 2013,
+        "published": 2013,
+        "issued": 2013
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1021/ie4006673"
+    },
+    {
+      "key": "Argyriou2008",
+      "doi": "10.1007/s10994-007-5040-8",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s10994-007-5040-8",
+      "crossref_title": "Convex multi-task feature learning",
+      "years": {
+        "published-print": 2008,
+        "published-online": 2008,
+        "published": 2008,
+        "issued": 2008
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s10994-007-5040-8"
+    },
+    {
+      "key": "ArikPfister2021",
+      "doi": "10.1609/aaai.v35i8.16826",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1609/aaai.v35i8.16826",
+      "crossref_title": "TabNet: Attentive Interpretable Tabular Learning",
+      "years": {
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1609/aaai.v35i8.16826"
+    },
+    {
+      "key": "AudetDennis2006",
+      "doi": "10.1137/040603371",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1137/040603371",
+      "crossref_title": "Mesh Adaptive Direct Search Algorithms for Constrained Optimization",
+      "years": {
+        "published-print": 2006,
+        "published-online": 2006,
+        "published": 2006,
+        "issued": 2006
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1137/040603371"
+    },
+    {
+      "key": "Belkin2019",
+      "doi": "10.1073/pnas.1903070116",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1073/pnas.1903070116",
+      "crossref_title": "Reconciling modern machine-learning practice and the classical bias–variance trade-off",
+      "years": {
+        "published-print": 2019,
+        "published-online": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1073/pnas.1903070116"
+    },
+    {
+      "key": "Bergstra2011",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.7717/peerj-cs.2644/table-2",
+      "candidate_similarity": 0.667,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://proceedings.neurips.cc/paper/2011/hash/86e8f7ab32cfd12577bc2619bc635690-Abstract.html",
+      "review_note": "NeurIPS proceedings metadata confirms authors, title, volume and year; no reliable Crossref DOI found."
+    },
+    {
+      "key": "Bernardelli2020",
+      "doi": "10.2166/wst.2020.298",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2166/wst.2020.298",
+      "crossref_title": "Real-time model predictive control of a wastewater treatment plant based on machine learning",
+      "years": {
+        "published-print": 2020,
+        "published-online": 2020,
+        "published": 2020,
+        "issued": 2020
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2166/wst.2020.298"
+    },
+    {
+      "key": "Beucler2021",
+      "doi": "10.1103/physrevlett.126.098302",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1103/physrevlett.126.098302",
+      "crossref_title": "Enforcing Analytic Constraints in Neural Networks Emulating Physical Systems",
+      "years": {
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1103/physrevlett.126.098302"
+    },
+    {
+      "key": "BhosekarIerapetritou2018",
+      "doi": "10.1016/j.compchemeng.2017.09.017",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.compchemeng.2017.09.017",
+      "crossref_title": "Advances in surrogate based modeling, feasibility analysis, and optimization: A review",
+      "years": {
+        "published-print": 2018,
+        "published": 2018,
+        "issued": 2018
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.compchemeng.2017.09.017"
+    },
+    {
+      "key": "Bliek2023",
+      "doi": "10.1016/j.asoc.2023.110744",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.asoc.2023.110744",
+      "crossref_title": "Benchmarking surrogate-based optimisation algorithms on expensive black-box functions",
+      "years": {
+        "published-print": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.asoc.2023.110744"
+    },
+    {
+      "key": "Borisov2024",
+      "doi": "10.1109/tnnls.2022.3229161",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1109/tnnls.2022.3229161",
+      "crossref_title": "Deep Neural Networks and Tabular Data: A Survey",
+      "years": {
+        "published-print": 2024,
+        "published": 2024,
+        "issued": 2024
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1109/tnnls.2022.3229161"
+    },
+    {
+      "key": "Boyd2004",
+      "doi": "10.1017/cbo9780511804441",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1017/cbo9780511804441",
+      "crossref_title": "Convex Optimization",
+      "years": {
+        "published-print": 2004,
+        "published-online": 2013,
+        "published": 2004,
+        "issued": 2004
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1017/cbo9780511804441"
+    },
+    {
+      "key": "Breiman2001",
+      "doi": "10.1023/a:1010933404324",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1023/a:1010933404324",
+      "crossref_title": "Random Forests",
+      "years": {
+        "published-print": 2001,
+        "published": 2001,
+        "issued": 2001
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1023/a:1010933404324"
+    },
+    {
+      "key": "Brunton2016",
+      "doi": "10.1073/pnas.1517384113",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1073/pnas.1517384113",
+      "crossref_title": "Discovering governing equations from data by sparse identification of nonlinear dynamical systems",
+      "years": {
+        "published-print": 2016,
+        "published-online": 2016,
+        "published": 2016,
+        "issued": 2016
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1073/pnas.1517384113"
+    },
+    {
+      "key": "BuzziFerraris2013",
+      "doi": "10.1002/9783527667147",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1002/9783527667147",
+      "crossref_title": "Nonlinear Systems and Optimization for the Chemical Engineer",
+      "years": {
+        "published-print": 2013,
+        "published-online": 2013,
+        "published": 2013,
+        "issued": 2013
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1002/9783527667147"
+    },
+    {
+      "key": "Calise2020",
+      "doi": "10.3390/en13153925",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.3390/en13153925",
+      "crossref_title": "Wastewater Treatment Plant: Modelling and Validation of an Activated Sludge Process",
+      "years": {
+        "published-online": 2020,
+        "published": 2020,
+        "issued": 2020
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.3390/en13153925"
+    },
+    {
+      "key": "Cawley2011",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1093/oxfordhb/9780199736362.013.0001",
+      "candidate_similarity": 0.409,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://proceedings.mlr.press/v16/cawley11a.html",
+      "review_note": "PMLR metadata confirms author, title, publication year and pages; no reliable Crossref DOI found.",
+      "corrections": {
+        "booktitle": "Active Learning and Experimental Design Workshop in Conjunction with {AISTATS} 2010"
+      }
+    },
+    {
+      "key": "ChenGuestrin2016",
+      "doi": "10.1145/2939672.2939785",
+      "issues": [
+        {
+          "field": "title",
+          "current": "{XGBoost}: A Scalable Tree Boosting System",
+          "crossref": "XGBoost"
+        }
+      ],
+      "status": "doi_title_mismatch",
+      "title_similarity": 0.341,
+      "crossref_doi": "10.1145/2939672.2939785",
+      "crossref_title": "XGBoost",
+      "years": {
+        "published-print": 2016,
+        "published-online": 2016,
+        "published": 2016,
+        "issued": 2016
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1145/2939672.2939785",
+      "review_note": "Full title verified by combining Crossref title and subtitle. The initial title-only mismatch was a metadata-parsing false positive; retain existing title.",
+      "corrections": {
+        "booktitle": "Proceedings of the 22nd {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining"
+      }
+    },
+    {
+      "key": "Ching2022",
+      "doi": "10.1016/j.envres.2022.112953",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.envres.2022.112953",
+      "crossref_title": "Development of a wide-range soft sensor for predicting wastewater BOD5 using an eXtreme gradient boosting (XGBoost) machine",
+      "years": {
+        "published-print": 2022,
+        "published": 2022,
+        "issued": 2022
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.envres.2022.112953"
+    },
+    {
+      "key": "Colson2007",
+      "doi": "10.1007/s10479-007-0176-2",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s10479-007-0176-2",
+      "crossref_title": "An overview of bilevel optimization",
+      "years": {
+        "published-print": 2007,
+        "published-online": 2007,
+        "published": 2007,
+        "issued": 2007
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s10479-007-0176-2"
+    },
+    {
+      "key": "Croll2023",
+      "doi": "10.1080/10643389.2023.2183699",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1080/10643389.2023.2183699",
+      "crossref_title": "Reinforcement learning applied to wastewater treatment process control optimization: Approaches, challenges, and path forward",
+      "years": {
+        "published-print": 2023,
+        "published-online": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1080/10643389.2023.2183699"
+    },
+    {
+      "key": "Curteanu2011",
+      "doi": "10.1002/cem.1401",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1002/cem.1401",
+      "crossref_title": "Neural networks applied in chemistry. I. Determination of the optimal topology of multilayer perceptron neural networks",
+      "years": {
+        "published-print": 2011,
+        "published-online": 2011,
+        "published": 2011,
+        "issued": 2011
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1002/cem.1401"
+    },
+    {
+      "key": "CurtissHirschfelder1952",
+      "doi": "10.1073/pnas.38.3.235",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1073/pnas.38.3.235",
+      "crossref_title": "Integration of Stiff Equations",
+      "years": {
+        "published-print": 1952,
+        "published-online": 1952,
+        "published": 1952,
+        "issued": 1952
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1073/pnas.38.3.235"
+    },
+    {
+      "key": "DamalerioBarriers2022",
+      "doi": "10.3303/CET2297062",
+      "issues": [],
+      "status": "crossref_request_failed",
+      "error": "HTTP Error 404: Not Found",
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://www.cetjournal.it/index.php/cet/article/view/CET2297062",
+      "review_note": "Publisher metadata confirms all authors, year, volume, pages and DOI. Crossref DOI lookup returned HTTP 404; retain publisher-confirmed DOI."
+    },
+    {
+      "key": "Demsar2006",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1007/978-3-319-12640-1_66",
+      "candidate_similarity": 0.703,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://www.jmlr.org/papers/v7/demsar06a.html",
+      "review_note": "JMLR metadata confirms author, title, year, volume and pages; no reliable Crossref DOI found."
+    },
+    {
+      "key": "Dietl2015",
+      "doi": "10.1038/nature15517",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/nature15517",
+      "crossref_title": "The inner workings of the hydrazine synthase multiprotein complex",
+      "years": {
+        "published-print": 2015,
+        "published-online": 2015,
+        "published": 2015,
+        "issued": 2015
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/nature15517"
+    },
+    {
+      "key": "Dold1981",
+      "doi": "10.1016/b978-1-4832-8438-5.50010-8",
+      "issues": [
+        {
+          "field": "booktitle",
+          "current": "A general model for the activated sludge process",
+          "crossref": "Water Pollution Research and Development"
+        }
+      ],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/b978-1-4832-8438-5.50010-8",
+      "crossref_title": "A GENERAL MODEL FOR THE ACTIVATED SLUDGE PROCESS",
+      "years": {
+        "published-print": 1981,
+        "published": 1981,
+        "issued": 1981
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/b978-1-4832-8438-5.50010-8",
+      "corrections": {
+        "booktitle": "Water Pollution Research and Development"
+      }
+    },
+    {
+      "key": "Drucker1997",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1016/s0167-8655(97)00137-2",
+      "candidate_similarity": 0.5,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://mlanthology.org/icml/1997/drucker1997icml-improving/",
+      "review_note": "ICML anthology and indexed original paper confirm author, title, year and pages. Unreachable CiteSeer URL replaced with the conference anthology record; no reliable DOI found.",
+      "corrections": {
+        "url": "https://mlanthology.org/icml/1997/drucker1997icml-improving/"
+      }
+    },
+    {
+      "key": "Duan2022",
+      "doi": "10.1080/10643389.2021.1877976",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1080/10643389.2021.1877976",
+      "crossref_title": "Heterotrophic nitrifying bacteria in wastewater biological nitrogen removal systems: A review",
+      "years": {
+        "published-print": 2022,
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1080/10643389.2021.1877976"
+    },
+    {
+      "key": "Durkin2024",
+      "doi": "10.1016/j.compchemeng.2024.108584",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.compchemeng.2024.108584",
+      "crossref_title": "Surrogate-based optimisation of process systems to recover resources from wastewater",
+      "years": {
+        "published-print": 2024,
+        "published": 2024,
+        "issued": 2024
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.compchemeng.2024.108584"
+    },
+    {
+      "key": "Ekinci2023",
+      "doi": "10.1016/j.jenvman.2023.119448",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.jenvman.2023.119448",
+      "crossref_title": "Application of machine learning algorithms and feature selection methods for better prediction of sludge production in a real advanced biological wastewater treatment plant",
+      "years": {
+        "published-print": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.jenvman.2023.119448"
+    },
+    {
+      "key": "Fang2011",
+      "doi": "10.1016/j.cej.2011.09.079",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.cej.2011.09.079",
+      "crossref_title": "A simulation-based integrated approach to optimize the biological nutrient removal process in a full-scale wastewater treatment plant",
+      "years": {
+        "published-print": 2011,
+        "published": 2011,
+        "issued": 2011
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.cej.2011.09.079"
+    },
+    {
+      "key": "Geman1992",
+      "doi": "10.1162/neco.1992.4.1.1",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1162/neco.1992.4.1.1",
+      "crossref_title": "Neural Networks and the Bias/Variance Dilemma",
+      "years": {
+        "published-print": 1992,
+        "published": 1992,
+        "issued": 1992
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1162/neco.1992.4.1.1"
+    },
+    {
+      "key": "Geurts2006",
+      "doi": "10.1007/s10994-006-6226-1",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s10994-006-6226-1",
+      "crossref_title": "Extremely randomized trees",
+      "years": {
+        "published-print": 2006,
+        "published-online": 2006,
+        "published": 2006,
+        "issued": 2006
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s10994-006-6226-1"
+    },
+    {
+      "key": "Gu2023",
+      "doi": "10.1016/j.jclepro.2023.138008",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.jclepro.2023.138008",
+      "crossref_title": "Optimization and control strategies of aeration in WWTPs: A review",
+      "years": {
+        "published-print": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.jclepro.2023.138008"
+    },
+    {
+      "key": "Guerrero2011",
+      "doi": "10.1016/j.watres.2011.06.019",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.watres.2011.06.019",
+      "crossref_title": "The nature of the carbon source rules the competition between PAO and denitrifiers in systems for simultaneous biological nitrogen and phosphorus removal",
+      "years": {
+        "published-print": 2011,
+        "published": 2011,
+        "issued": 2011
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.watres.2011.06.019"
+    },
+    {
+      "key": "Gujer1999",
+      "doi": "10.1016/s0273-1223(98)00785-9",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/s0273-1223(98)00785-9",
+      "crossref_title": "Activated Sludge Model No. 3",
+      "years": {
+        "published-print": 1999,
+        "published": 1999,
+        "issued": 1999
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/s0273-1223(98)00785-9"
+    },
+    {
+      "key": "Guyon2011",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1007/978-3-030-21810-2_7",
+      "candidate_similarity": 0.732,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://proceedings.mlr.press/v16/guyon11a.html",
+      "review_note": "PMLR metadata confirms all authors, title, year and pages; no reliable Crossref DOI found.",
+      "corrections": {
+        "booktitle": "Active Learning and Experimental Design Workshop in Conjunction with {AISTATS} 2010"
+      }
+    },
+    {
+      "key": "Haddad2010",
+      "doi": "10.1515/9781400832248",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1515/9781400832248",
+      "crossref_title": "Nonnegative and Compartmental Dynamical Systems",
+      "years": {
+        "published-print": 2010,
+        "published-online": 2010,
+        "published": 2010,
+        "issued": 2010
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1515/9781400832248"
+    },
+    {
+      "key": "Hameed2026",
+      "doi": "10.1002/aic.70236",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1002/aic.70236",
+      "crossref_title": "Trust‐region filter algorithms utilizing Hessian information for gray‐box optimization",
+      "years": {
+        "published-print": 2026,
+        "published-online": 2026,
+        "published": 2026,
+        "issued": 2026
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1002/aic.70236"
+    },
+    {
+      "key": "Hansen2024",
+      "doi": "10.1016/j.physd.2023.133952",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.physd.2023.133952",
+      "crossref_title": "Learning physical models that can respect conservation laws",
+      "years": {
+        "published-print": 2024,
+        "published": 2024,
+        "issued": 2024
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.physd.2023.133952"
+    },
+    {
+      "key": "Harder2022",
+      "doi": "10.1017/eds.2022.22",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1017/eds.2022.22",
+      "crossref_title": "Physics-informed learning of aerosol microphysics",
+      "years": {
+        "published-print": 2022,
+        "published-online": 2022,
+        "published": 2022,
+        "issued": 2022
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1017/eds.2022.22"
+    },
+    {
+      "key": "HartelPopel1992",
+      "doi": "10.2166/wst.1992.0128",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2166/wst.1992.0128",
+      "crossref_title": "A Dynamic Secondary Clarifier Model including Processes of Sludge Thickening",
+      "years": {
+        "published-print": 1992,
+        "published": 1992,
+        "issued": 1992
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2166/wst.1992.0128"
+    },
+    {
+      "key": "Hastie2009",
+      "doi": "10.1007/978-0-387-84858-7",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/978-0-387-84858-7",
+      "crossref_title": "The Elements of Statistical Learning",
+      "years": {
+        "published-print": 2009,
+        "published": 2009,
+        "issued": 2009
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/978-0-387-84858-7"
+    },
+    {
+      "key": "Hauduc2013",
+      "doi": "10.1002/bit.24624",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1002/bit.24624",
+      "crossref_title": "Critical review of activated sludge modeling: State of process knowledge, modeling concepts, and limitations",
+      "years": {
+        "published-print": 2013,
+        "published-online": 2012,
+        "published": 2012,
+        "issued": 2012
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1002/bit.24624"
+    },
+    {
+      "key": "He2023",
+      "doi": "10.1016/j.jclepro.2023.139039",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.jclepro.2023.139039",
+      "crossref_title": "Towards low-carbon papermaking wastewater treatment process based on Kriging surrogate predictive model",
+      "years": {
+        "published-print": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.jclepro.2023.139039"
+    },
+    {
+      "key": "Henze1987",
+      "doi": "10.1016/0043-1354(87)90058-3",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/0043-1354(87)90058-3",
+      "crossref_title": "A general model for single-sludge wastewater treatment systems",
+      "years": {
+        "published-print": 1987,
+        "published": 1987,
+        "issued": 1987
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/0043-1354(87)90058-3"
+    },
+    {
+      "key": "Henze1999",
+      "doi": "10.2166/wst.1999.0036",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2166/wst.1999.0036",
+      "crossref_title": "Activated Sludge Model No.2d, ASM2D",
+      "years": {
+        "published-print": 1999,
+        "published": 1999,
+        "issued": 1999
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2166/wst.1999.0036"
+    },
+    {
+      "key": "Henze2006",
+      "doi": "10.2166/9781780402369",
+      "issues": [
+        {
+          "field": "volume",
+          "current": "",
+          "crossref": "5"
+        },
+        {
+          "field": "number",
+          "current": "9",
+          "crossref": "0"
+        },
+        {
+          "field": "pages",
+          "current": "",
+          "crossref": "9781780402369-9781780402369"
+        },
+        {
+          "field": "year",
+          "current": "2000",
+          "crossref": "2015"
+        }
+      ],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2166/9781780402369",
+      "crossref_title": "Activated Sludge Models ASM1, ASM2, ASM2d and ASM3",
+      "years": {
+        "published-print": 2015,
+        "published": 2015,
+        "issued": 2015
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2166/9781780402369",
+      "review_note": "Retain original 2000 book date, editors, report number 9 and ISBN. Crossref describes the later electronic manifestation (2015), with malformed volume/issue/page fields that must not overwrite the original edition. TU Delft chapter records and publisher material confirm the 2000 edition."
+    },
+    {
+      "key": "Henze2008",
+      "doi": "10.2166/9781780401867",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2166/9781780401867",
+      "crossref_title": "Biological Wastewater Treatment: Principles, Modelling and Design",
+      "years": {
+        "published-print": 2008,
+        "published": 2008,
+        "issued": 2008
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2166/9781780401867"
+    },
+    {
+      "key": "Hoover1952",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1016/0043-1354(92)90069-g",
+      "candidate_similarity": 0.578,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://www.jstor.org/stable/25031842",
+      "review_note": "JSTOR indexed primary-source title and bibliographic details identify the historical article; direct content retrieval encountered a client challenge. No reliable DOI found."
+    },
+    {
+      "key": "Hornik1989",
+      "doi": "10.1016/0893-6080(89)90020-8",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/0893-6080(89)90020-8",
+      "crossref_title": "Multilayer feedforward networks are universal approximators",
+      "years": {
+        "published-print": 1989,
+        "published": 1989,
+        "issued": 1989
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/0893-6080(89)90020-8"
+    },
+    {
+      "key": "HuangfuHall2018",
+      "doi": "10.1007/s12532-017-0130-5",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s12532-017-0130-5",
+      "crossref_title": "Parallelizing the dual revised simplex method",
+      "years": {
+        "published-print": 2018,
+        "published-online": 2017,
+        "published": 2017,
+        "issued": 2017
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s12532-017-0130-5"
+    },
+    {
+      "key": "Jafarinejad2020",
+      "doi": "10.1016/j.coesh.2020.01.001",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.coesh.2020.01.001",
+      "crossref_title": "A framework for the design of the future energy-efficient, cost-effective, reliable, resilient, and sustainable full-scale wastewater treatment plants",
+      "years": {
+        "published-print": 2020,
+        "published": 2020,
+        "issued": 2020
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.coesh.2020.01.001"
+    },
+    {
+      "key": "JeppssonDiehl1996",
+      "doi": "10.1016/0273-1223(96)00632-4",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/0273-1223(96)00632-4",
+      "crossref_title": "On the modelling of the dynamic propagation of biological components in the secondary clarifier",
+      "years": {
+        "published-print": 1996,
+        "published": 1996,
+        "issued": 1996
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/0273-1223(96)00632-4"
+    },
+    {
+      "key": "Karniadakis2021",
+      "doi": "10.1038/s42254-021-00314-5",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/s42254-021-00314-5",
+      "crossref_title": "Physics-informed machine learning",
+      "years": {
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/s42254-021-00314-5"
+    },
+    {
+      "key": "Kashinath2021",
+      "doi": "10.1098/rsta.2020.0093",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1098/rsta.2020.0093",
+      "crossref_title": "Physics-informed machine learning: case studies for weather and climate modelling",
+      "years": {
+        "published-print": 2021,
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1098/rsta.2020.0093"
+    },
+    {
+      "key": "Kaufman2012",
+      "doi": "10.1145/2382577.2382579",
+      "issues": [
+        {
+          "field": "title",
+          "current": "Leakage in data mining: Formulation, detection, and avoidance",
+          "crossref": "Leakage in data mining"
+        }
+      ],
+      "status": "doi_title_mismatch",
+      "title_similarity": 0.543,
+      "crossref_doi": "10.1145/2382577.2382579",
+      "crossref_title": "Leakage in data mining",
+      "years": {
+        "published-print": 2012,
+        "published-online": 2012,
+        "published": 2012,
+        "issued": 2012
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1145/2382577.2382579",
+      "review_note": "Full title verified by combining Crossref title and subtitle. The initial title-only mismatch was a metadata-parsing false positive; retain existing title."
+    },
+    {
+      "key": "Ke2017",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.2991/fmsmt-17.2017.87",
+      "candidate_similarity": 0.643,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html",
+      "review_note": "NeurIPS proceedings metadata confirms authors, title, year and volume; no reliable Crossref DOI found."
+    },
+    {
+      "key": "KelleyKeyes1998",
+      "doi": "10.1137/s0036142996304796",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1137/s0036142996304796",
+      "crossref_title": "Convergence Analysis of Pseudo-Transient Continuation",
+      "years": {
+        "published-print": 1998,
+        "published-online": 2006,
+        "published": 1998,
+        "issued": 1998
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1137/s0036142996304796"
+    },
+    {
+      "key": "KircherVotsmeier2025",
+      "doi": "10.1021/acs.jpclett.5c00602",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1021/acs.jpclett.5c00602",
+      "crossref_title": "Machine Learning Surrogate Models for Mechanistic Kinetics: Embedding Atom Balance\n                    <i>and</i>\n                    Positivity",
+      "years": {
+        "published-print": 2025,
+        "published-online": 2025,
+        "published": 2025,
+        "issued": 2025
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1021/acs.jpclett.5c00602"
+    },
+    {
+      "key": "Kraft1988",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1007/springerreference_72255",
+      "candidate_similarity": 0.725,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://degenerateconic.com/uploads/2018/03/DFVLR_FB_88_28.pdf",
+      "review_note": "Original scanned technical report retrieved. No reliable Crossref DOI found."
+    },
+    {
+      "key": "KusiakWei2013",
+      "doi": "10.1061/(asce)ey.1943-7897.0000092",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1061/(asce)ey.1943-7897.0000092",
+      "crossref_title": "Optimization of the Activated Sludge Process",
+      "years": {
+        "published-print": 2013,
+        "published": 2013,
+        "issued": 2013
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1061/(asce)ey.1943-7897.0000092"
+    },
+    {
+      "key": "Leu2012",
+      "doi": "10.2175/106143011x12989211841052",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2175/106143011x12989211841052",
+      "crossref_title": "Toward Long Solids Retention Time of Activated Sludge Processes: Benefits in Energy Saving, Effluent Quality, and Stability",
+      "years": {
+        "published-print": 2012,
+        "published-online": 2012,
+        "published": 2012,
+        "issued": 2012
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2175/106143011x12989211841052"
+    },
+    {
+      "key": "Li2024",
+      "doi": "10.1061/joeedu.eeeng-7467",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1061/joeedu.eeeng-7467",
+      "crossref_title": "Unit Operation and Process Modeling with Physics-Informed Machine Learning",
+      "years": {
+        "published-print": 2024,
+        "published": 2024,
+        "issued": 2024
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1061/joeedu.eeeng-7467"
+    },
+    {
+      "key": "Lin2022",
+      "doi": "10.3389/fenvs.2022.880246",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.3389/fenvs.2022.880246",
+      "crossref_title": "Effects of Water Pollution on Human Health and Disease Heterogeneity: A Review",
+      "years": {
+        "published-online": 2022,
+        "published": 2022,
+        "issued": 2022
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.3389/fenvs.2022.880246"
+    },
+    {
+      "key": "Liu2009",
+      "doi": "10.1145/1553374.1553458",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1145/1553374.1553458",
+      "crossref_title": "Blockwise coordinate descent procedures for the multi-task lasso, with applications to neural semantic basis discovery",
+      "years": {
+        "published-print": 2009,
+        "published-online": 2009,
+        "published": 2009,
+        "issued": 2009
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1145/1553374.1553458"
+    },
+    {
+      "key": "Lu2014",
+      "doi": "10.1016/j.watres.2014.06.042",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.watres.2014.06.042",
+      "crossref_title": "Microbial ecology of denitrification in biological wastewater treatment",
+      "years": {
+        "published-print": 2014,
+        "published": 2014,
+        "issued": 2014
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.watres.2014.06.042"
+    },
+    {
+      "key": "Maalcke2016",
+      "doi": "10.1074/jbc.m116.735530",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1074/jbc.m116.735530",
+      "crossref_title": "Characterization of Anammox Hydrazine Dehydrogenase, a Key N2-producing Enzyme in the Global Nitrogen Cycle",
+      "years": {
+        "published-print": 2016,
+        "published": 2016,
+        "issued": 2016
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1074/jbc.m116.735530"
+    },
+    {
+      "key": "Machado2014",
+      "doi": "10.1007/s00449-013-1099-8",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s00449-013-1099-8",
+      "crossref_title": "Activated sludge model 2d calibration with full-scale WWTP data: comparing model parameter identifiability with influent and operational uncertainty",
+      "years": {
+        "published-print": 2014,
+        "published-online": 2013,
+        "published": 2013,
+        "issued": 2013
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s00449-013-1099-8"
+    },
+    {
+      "key": "Mack1981",
+      "doi": "10.1137/0602035",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1137/0602035",
+      "crossref_title": "Local Properties of\n                    <i>k</i>\n                    -NN Regression Estimates",
+      "years": {
+        "published-print": 1981,
+        "published-online": 2006,
+        "published": 1981,
+        "issued": 1981
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1137/0602035"
+    },
+    {
+      "key": "Madhav2019",
+      "doi": "10.1007/978-981-15-0671-0_4",
+      "issues": [
+        {
+          "field": "booktitle",
+          "current": "Advanced Functional Materials and Sensors",
+          "crossref": "Advanced Functional Materials and Sensors Sensors in Water Pollutants Monitoring: Role of Material"
+        }
+      ],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/978-981-15-0671-0_4",
+      "crossref_title": "Water Pollutants: Sources and Impact on the Environment and Human Health",
+      "years": {
+        "published-print": 2020,
+        "published-online": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/978-981-15-0671-0_4",
+      "corrections": {
+        "booktitle": "Sensors in Water Pollutants Monitoring: Role of Material",
+        "series": "Advanced Functional Materials and Sensors",
+        "editor": "Pooja, D. and Kumar, Praveen and Singh, Pardeep and Patil, Sandip"
+      }
+    },
+    {
+      "key": "Marais1976",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1016/0043-1354(86)90035-7",
+      "candidate_similarity": 0.675,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://www.wrc.org.za/water-sa-issue/02-no-4-october-1976/",
+      "review_note": "Publisher issue archive and Water SA bibliographic index identify the article; publisher-hosted references confirm volume 2(4), 163–200 (1976). Issue-page retrieval timed out. No reliable DOI found."
+    },
+    {
+      "key": "McBride2019",
+      "doi": "10.1002/cite.201800091",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1002/cite.201800091",
+      "crossref_title": "Overview of Surrogate Modeling in Chemical Process Engineering",
+      "years": {
+        "published-print": 2019,
+        "published-online": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1002/cite.201800091"
+    },
+    {
+      "key": "McCormick1976",
+      "doi": "10.1007/bf01580665",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/bf01580665",
+      "crossref_title": "Computability of global solutions to factorable nonconvex programs: Part I — Convex underestimating problems",
+      "years": {
+        "published-print": 1976,
+        "published-online": 1976,
+        "published": 1976,
+        "issued": 1976
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/bf01580665"
+    },
+    {
+      "key": "McKay1979",
+      "doi": "10.1080/00401706.1979.10489755",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1080/00401706.1979.10489755",
+      "crossref_title": "Comparison of Three Methods for Selecting Values of Input Variables in the Analysis of Output from a Computer Code",
+      "years": {
+        "published-print": 1979,
+        "published": 1979,
+        "issued": 1979
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1080/00401706.1979.10489755"
+    },
+    {
+      "key": "Meijer2004",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.2166/9781789060362_0613",
+      "candidate_similarity": 0.673,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://repository.tudelft.nl/record/uuid:e0d5af2b-7bf6-4cd8-9a22-aac3f8d112fe",
+      "review_note": "TU Delft repository and research portal confirm author, dissertation title and 2004 date. Updated resolver URL to current repository record; no reliable DOI found.",
+      "corrections": {
+        "url": "https://repository.tudelft.nl/record/uuid:e0d5af2b-7bf6-4cd8-9a22-aac3f8d112fe"
+      }
+    },
+    {
+      "key": "Miederer2025",
+      "doi": "10.1016/j.egyr.2025.05.045",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.egyr.2025.05.045",
+      "crossref_title": "Energy Management Model for Wastewater Treatment Plants",
+      "years": {
+        "published-print": 2025,
+        "published": 2025,
+        "issued": 2025
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.egyr.2025.05.045"
+    },
+    {
+      "key": "Min2024",
+      "doi": "10.48550/arXiv.2410.10807",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.52202/079017-2307",
+      "candidate_similarity": 0.581,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://arxiv.org/abs/2410.10807v1",
+      "review_note": "Original 2024 arXiv source confirms the three cited authors and title. Later arXiv revisions change the title and author list, so the URL now points to the cited original. DOI is an arXiv/DataCite identifier, not Crossref.",
+      "corrections": {
+        "url": "https://arxiv.org/abs/2410.10807v1"
+      }
+    },
+    {
+      "key": "Narayanan2019",
+      "doi": "10.1186/s42834-019-0036-1",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1186/s42834-019-0036-1",
+      "crossref_title": "Biological wastewater treatment and bioreactor design: a review",
+      "years": {
+        "published-print": 2019,
+        "published-online": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1186/s42834-019-0036-1"
+    },
+    {
+      "key": "Nazif2023",
+      "doi": "10.1007/s11356-022-24981-8",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s11356-022-24981-8",
+      "crossref_title": "Developing a practical model for the optimal operation of wastewater treatment plant considering influent characteristics",
+      "years": {
+        "published-online": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s11356-022-24981-8"
+    },
+    {
+      "key": "Nazlabadi2021",
+      "doi": "10.5004/dwt.2021.27315",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.5004/dwt.2021.27315",
+      "crossref_title": "A systematic and critical review of two decades’ application of response surface methodology in biological wastewater treatment processes",
+      "years": {
+        "published-print": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.5004/dwt.2021.27315"
+    },
+    {
+      "key": "Newhart2019",
+      "doi": "10.1016/j.watres.2019.03.030",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.watres.2019.03.030",
+      "crossref_title": "Data-driven performance analyses of wastewater treatment plants: A review",
+      "years": {
+        "published-print": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.watres.2019.03.030"
+    },
+    {
+      "key": "PadronPaez2020",
+      "doi": "10.1016/j.compchemeng.2020.106850",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.compchemeng.2020.106850",
+      "crossref_title": "Sustainable wastewater treatment plants design through multiobjective optimization",
+      "years": {
+        "published-print": 2020,
+        "published": 2020,
+        "issued": 2020
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.compchemeng.2020.106850"
+    },
+    {
+      "key": "Pedrozo2025",
+      "doi": "10.1016/j.compchemeng.2025.109199",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.compchemeng.2025.109199",
+      "crossref_title": "Surrogate model optimization: a comparison case study with pooling problems of CO2 point sources",
+      "years": {
+        "published-print": 2025,
+        "published": 2025,
+        "issued": 2025
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.compchemeng.2025.109199"
+    },
+    {
+      "key": "Petersen2003",
+      "doi": "10.1007/978-94-017-0932-3_5",
+      "issues": [
+        {
+          "field": "booktitle",
+          "current": "Focus on Biotechnology",
+          "crossref": "Focus on Biotechnology Biotechnology for the Environment: Wastewater Treatment and Modeling, Waste Gas Handling"
+        }
+      ],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/978-94-017-0932-3_5",
+      "crossref_title": "Calibration of Activated Sludge Models: A Critical Review of Experimental Designs",
+      "years": {
+        "published-print": 2003,
+        "published": 2003,
+        "issued": 2003
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/978-94-017-0932-3_5",
+      "corrections": {
+        "booktitle": "Biotechnology for the Environment: Wastewater Treatment and Modeling, Waste Gas Handling",
+        "series": "Focus on Biotechnology",
+        "volume": "3C",
+        "editor": "Agathos, Spiros N. and Reineke, Walter"
+      }
+    },
+    {
+      "key": "Pinheiro2025",
+      "doi": "10.1109/access.2025.3635541",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1109/access.2025.3635541",
+      "crossref_title": "The Impact of Feature Scaling in Machine Learning: Effects on Regression and Classification Tasks",
+      "years": {
+        "published-print": 2025,
+        "published": 2025,
+        "issued": 2025
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1109/access.2025.3635541"
+    },
+    {
+      "key": "Preena2021",
+      "doi": "10.1111/raq.12558",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1111/raq.12558",
+      "crossref_title": "Nitrification and denitrification in recirculating aquaculture systems: the processes and players",
+      "years": {
+        "published-print": 2021,
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1111/raq.12558"
+    },
+    {
+      "key": "Prokhorenkova2018",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.7759/s44389-025-03791-2",
+      "candidate_similarity": 0.488,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+      "review_note": "NeurIPS proceedings metadata confirms authors, title, year and volume; no reliable Crossref DOI found."
+    },
+    {
+      "key": "Ragonneau2022",
+      "doi": "10.48550/arXiv.2210.12018",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1080/10556788.2024.2330635",
+      "candidate_similarity": 0.688,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://arxiv.org/abs/2210.12018",
+      "review_note": "arXiv confirms author, title, first-submission year and doctoral-thesis status. The title-similar Crossref search candidate concerns different software work and was rejected. DOI is arXiv/DataCite."
+    },
+    {
+      "key": "Raissi2019",
+      "doi": "10.1016/j.jcp.2018.10.045",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.jcp.2018.10.045",
+      "crossref_title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+      "years": {
+        "published-print": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.jcp.2018.10.045"
+    },
+    {
+      "key": "Razaviyayn2013",
+      "doi": "10.1137/120891009",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1137/120891009",
+      "crossref_title": "A Unified Convergence Analysis of Block Successive Minimization Methods for Nonsmooth Optimization",
+      "years": {
+        "published-print": 2013,
+        "published-online": 2013,
+        "published": 2013,
+        "issued": 2013
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1137/120891009"
+    },
+    {
+      "key": "Ren2026",
+      "doi": "10.1002/wer.70520",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1002/wer.70520",
+      "crossref_title": "XGBoost‐Assisted Effluent Ammonium Buffer‐First Aeration Scheduling for Wastewater Treatment Under Influent Disturbances: A BSM2 Study",
+      "years": {
+        "published-print": 2026,
+        "published-online": 2026,
+        "published": 2026,
+        "issued": 2026
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1002/wer.70520"
+    },
+    {
+      "key": "Rivas2008",
+      "doi": "10.1016/j.envsoft.2007.06.009",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.envsoft.2007.06.009",
+      "crossref_title": "Model-based optimisation of Wastewater Treatment Plants design",
+      "years": {
+        "published-print": 2008,
+        "published": 2008,
+        "issued": 2008
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.envsoft.2007.06.009"
+    },
+    {
+      "key": "RubioCastro2013",
+      "doi": "10.1002/aic.13874",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1002/aic.13874",
+      "crossref_title": "Global optimization in property‐based interplant water integration",
+      "years": {
+        "published-print": 2013,
+        "published-online": 2012,
+        "published": 2012,
+        "issued": 2012
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1002/aic.13874"
+    },
+    {
+      "key": "Ruckstuhl2021",
+      "doi": "10.5194/npg-28-111-2021",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.5194/npg-28-111-2021",
+      "crossref_title": "Training a convolutional neural network to conserve mass in data assimilation",
+      "years": {
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.5194/npg-28-111-2021"
+    },
+    {
+      "key": "Rudin2019",
+      "doi": "10.1038/s42256-019-0048-x",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/s42256-019-0048-x",
+      "crossref_title": "Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead",
+      "years": {
+        "published-online": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/s42256-019-0048-x"
+    },
+    {
+      "key": "Rumelhart1986",
+      "doi": "10.1038/323533a0",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/323533a0",
+      "crossref_title": "Learning representations by back-propagating errors",
+      "years": {
+        "published-print": 1986,
+        "published": 1986,
+        "issued": 1986
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/323533a0"
+    },
+    {
+      "key": "SadinoRiquelme2023",
+      "doi": "10.1016/j.cej.2023.143180",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.cej.2023.143180",
+      "crossref_title": "Computational fluid dynamics (CFD) modeling applied to biological wastewater treatment systems: An overview of strategies for the kinetics integration",
+      "years": {
+        "published-print": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.cej.2023.143180"
+    },
+    {
+      "key": "Selerio2026",
+      "doi": "10.1016/j.dche.2026.100329",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.dche.2026.100329",
+      "crossref_title": "An interpretable statistical surrogate of activated sludge systems that preserves mass conservation and component non-negativity",
+      "years": {
+        "published-print": 2026,
+        "published": 2026,
+        "issued": 2026
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.dche.2026.100329"
+    },
+    {
+      "key": "Shahbazi2026",
+      "doi": "10.1016/j.eswa.2026.131908",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.eswa.2026.131908",
+      "crossref_title": "Hybrid imbalanced regression through unified data-level and algorithm-level balancing",
+      "years": {
+        "published-print": 2026,
+        "published": 2026,
+        "issued": 2026
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.eswa.2026.131908"
+    },
+    {
+      "key": "Shen2023",
+      "doi": "10.1038/s43017-023-00450-9",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/s43017-023-00450-9",
+      "crossref_title": "Differentiable modelling to unify machine learning and physical models for geosciences",
+      "years": {
+        "published-online": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/s43017-023-00450-9"
+    },
+    {
+      "key": "Shevchenko2024",
+      "doi": "10.1145/3637528.3671655",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1145/3637528.3671655",
+      "crossref_title": "From Variability to Stability: Advancing RecSys Benchmarking Practices",
+      "years": {
+        "published-print": 2024,
+        "published-online": 2024,
+        "published": 2024,
+        "issued": 2024
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1145/3637528.3671655",
+      "corrections": {
+        "booktitle": "Proceedings of the 30th {ACM} {SIGKDD} Conference on Knowledge Discovery and Data Mining"
+      }
+    },
+    {
+      "key": "ShwartzZiv2022",
+      "doi": "10.1016/j.inffus.2021.11.011",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.inffus.2021.11.011",
+      "crossref_title": "Tabular data: Deep learning is not all you need",
+      "years": {
+        "published-print": 2022,
+        "published": 2022,
+        "issued": 2022
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.inffus.2021.11.011"
+    },
+    {
+      "key": "Simon2013",
+      "doi": "10.48550/arXiv.1311.6529",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.29220/csam.2020.27.1.129",
+      "candidate_similarity": 0.641,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://arxiv.org/abs/1311.6529",
+      "review_note": "arXiv confirms title, three authors and 2013 date; DOI is arXiv/DataCite."
+    },
+    {
+      "key": "SmolaScholkopf2004",
+      "doi": "10.1023/b:stco.0000035301.49549.88",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1023/b:stco.0000035301.49549.88",
+      "crossref_title": "A tutorial on support vector regression",
+      "years": {
+        "published-print": 2004,
+        "published": 2004,
+        "issued": 2004
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1023/b:stco.0000035301.49549.88"
+    },
+    {
+      "key": "Stellato2018",
+      "doi": "10.1109/control.2018.8516834",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1109/control.2018.8516834",
+      "crossref_title": "OSQP: An Operator Splitting Solver for Quadratic Programs",
+      "years": {
+        "published-print": 2018,
+        "published": 2018,
+        "issued": 2018
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1109/control.2018.8516834",
+      "corrections": {
+        "booktitle": "2018 {UKACC} 12th International Conference on Control ({CONTROL})"
+      }
+    },
+    {
+      "key": "Stellato2020",
+      "doi": "10.1007/s12532-020-00179-2",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s12532-020-00179-2",
+      "crossref_title": "OSQP: an operator splitting solver for quadratic programs",
+      "years": {
+        "published-print": 2020,
+        "published-online": 2020,
+        "published": 2020,
+        "issued": 2020
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s12532-020-00179-2"
+    },
+    {
+      "key": "StenstromSong1991",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1061/(asce)0733-9372(1994)120:1(87)",
+      "candidate_similarity": 0.706,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "http://seas.ucla.edu/stenstro/referreed.html",
+      "review_note": "Author-hosted UCLA publication list confirms authors, journal, volume 63(3), pages 208–219 and 1991 date. The list shortens/paraphrases the title; indexed original paper uses the existing oxygen-transport title. No reliable DOI found."
+    },
+    {
+      "key": "Strous1998",
+      "doi": "10.1007/s002530051340",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s002530051340",
+      "crossref_title": "The sequencing batch reactor as a powerful tool for the study of slowly growing anaerobic ammonium-oxidizing microorganisms",
+      "years": {
+        "published-print": 1998,
+        "published": 1998,
+        "issued": 1998
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s002530051340"
+    },
+    {
+      "key": "SturmSilva2024",
+      "doi": "10.1021/acsestair.4c00220",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1021/acsestair.4c00220",
+      "crossref_title": "A Nudge to the Truth: Atom Conservation as a Hard Constraint in Models of Atmospheric Composition Using a Species-Weighted Correction",
+      "years": {
+        "published-print": 2025,
+        "published-online": 2024,
+        "published": 2024,
+        "issued": 2024
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1021/acsestair.4c00220"
+    },
+    {
+      "key": "SturmWexler2020",
+      "doi": "10.5194/gmd-13-4435-2020",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.5194/gmd-13-4435-2020",
+      "crossref_title": "A mass- and energy-conserving framework for using machine learning to speed computations: a photochemistry example",
+      "years": {
+        "published-online": 2020,
+        "published": 2020,
+        "issued": 2020
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.5194/gmd-13-4435-2020"
+    },
+    {
+      "key": "SturmWexler2022",
+      "doi": "10.5194/gmd-15-3417-2022",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.5194/gmd-15-3417-2022",
+      "crossref_title": "Conservation laws in a neural network architecture: enforcing the atom balance of a Julia-based photochemical model (v0.2.0)",
+      "years": {
+        "published-online": 2022,
+        "published": 2022,
+        "issued": 2022
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.5194/gmd-15-3417-2022"
+    },
+    {
+      "key": "Sundui2021",
+      "doi": "10.1007/s10098-020-01993-x",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s10098-020-01993-x",
+      "crossref_title": "Applications of machine learning algorithms for biological wastewater treatment: Updates and perspectives",
+      "years": {
+        "published-print": 2021,
+        "published-online": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s10098-020-01993-x"
+    },
+    {
+      "key": "Tabios2020",
+      "doi": "10.1007/978-3-030-25401-8_2",
+      "issues": [
+        {
+          "field": "booktitle",
+          "current": "World Water Resources",
+          "crossref": "World Water Resources Water Resources Systems of the Philippines: Modeling Studies"
+        }
+      ],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/978-3-030-25401-8_2",
+      "crossref_title": "Physical Features and State of Water Resources and Status of Water Governance in the Philippines",
+      "years": {
+        "published-print": 2020,
+        "published-online": 2020,
+        "published": 2020,
+        "issued": 2020
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/978-3-030-25401-8_2",
+      "corrections": {
+        "booktitle": "Water Resources Systems of the {Philippines}: Modeling Studies",
+        "series": "World Water Resources",
+        "volume": "4",
+        "title": "Physical Features and State of Water Resources and Status of Water Governance in the {Philippines}"
+      }
+    },
+    {
+      "key": "Takacs1991",
+      "doi": "10.1016/0043-1354(91)90066-y",
+      "issues": [
+        {
+          "field": "author",
+          "current": [
+            "Tak{\\'a}cs",
+            "Patry",
+            "Nolasco"
+          ],
+          "crossref": [
+            "TAKACS"
+          ]
+        }
+      ],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/0043-1354(91)90066-y",
+      "crossref_title": "A dynamic model of the clarification-thickening process",
+      "years": {
+        "published-print": 1991,
+        "published": 1991,
+        "issued": 1991
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/0043-1354(91)90066-y",
+      "review_note": "Retain all three authors. Crossref incorrectly lists only TAKACS; original article and component-source bibliography identify Takacs, Patry and Nolasco."
+    },
+    {
+      "key": "TakacsVanrolleghem2006",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1002/9783527609604.ch11",
+      "candidate_similarity": 0.557,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://modeleau.fsg.ulaval.ca/fileadmin/modeleau/documents/Publications/pvr673.pdf",
+      "review_note": "Indexed original author-hosted paper confirms title, two authors and IWA copyright 2006. URL currently returns HTTP 404; retained pending a verified replacement. No reliable DOI found.",
+      "corrections": {
+        "booktitle": "Proceedings of the {IWA} World Water Congress"
+      }
+    },
+    {
+      "key": "Tofallis2015",
+      "doi": "10.1057/jors.2014.103",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1057/jors.2014.103",
+      "crossref_title": "A better measure of relative prediction accuracy for model selection and model estimation",
+      "years": {
+        "published-print": 2015,
+        "published-online": 2017,
+        "published": 2015,
+        "issued": 2015
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1057/jors.2014.103"
+    },
+    {
+      "key": "Tondel2003",
+      "doi": "10.1016/s0005-1098(02)00250-9",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/s0005-1098(02)00250-9",
+      "crossref_title": "An algorithm for multi-parametric quadratic programming and explicit MPC solutions",
+      "years": {
+        "published-print": 2003,
+        "published": 2003,
+        "issued": 2003
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/s0005-1098(02)00250-9"
+    },
+    {
+      "key": "USEPA2009",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.2172/768040",
+      "candidate_similarity": 0.525,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://www.epa.gov/sites/default/files/2019-02/documents/nutrient-control-design-manual-state-tech.pdf",
+      "review_note": "Original EPA PDF confirms report title, EPA/600/R-09/012 and January 2009. No reliable DOI found."
+    },
+    {
+      "key": "Ulrich2009",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.3362/9781788532860",
+      "candidate_similarity": 0.614,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://repository.lboro.ac.uk/articles/book/9585188",
+      "review_note": "Repository API and original book preliminaries confirm editors, publication year, publisher and ISBN. The book explicitly recommends the editors as the citation heading. Added omitted DEWATS wording to the title; no assigned DOI found.",
+      "corrections": {
+        "title": "Decentralised wastewater treatment systems ({DEWATS}) and sanitation in developing countries: A practical guide"
+      }
+    },
+    {
+      "key": "Utkarsh2025",
+      "doi": "10.48550/arXiv.2506.07003",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1109/gcwkshps68340.2025.11591144",
+      "candidate_similarity": 0.538,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://arxiv.org/abs/2506.07003",
+      "review_note": "arXiv confirms title, authors and 2025 date. DOI is arXiv/DataCite."
+    },
+    {
+      "key": "Valente2025",
+      "doi": "10.1038/s42005-025-02329-1",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/s42005-025-02329-1",
+      "crossref_title": "Physics-consistent machine learning with output projection onto physical manifolds",
+      "years": {
+        "published-online": 2025,
+        "published": 2025,
+        "issued": 2025
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/s42005-025-02329-1"
+    },
+    {
+      "key": "VanKessel2015",
+      "doi": "10.1038/nature16459",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/nature16459",
+      "crossref_title": "Complete nitrification by a single microorganism",
+      "years": {
+        "published-print": 2015,
+        "published-online": 2015,
+        "published": 2015,
+        "issued": 2015
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/nature16459"
+    },
+    {
+      "key": "Vandekerckhove2018",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1016/j.biortech.2023.129227",
+      "candidate_similarity": 0.573,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://biblio.ugent.be/publication/8584187",
+      "review_note": "Ghent University repository confirms author, dissertation title, year and awarding institution; no reliable DOI found."
+    },
+    {
+      "key": "Vanrolleghem1999",
+      "doi": "10.2166/wst.1999.0042",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2166/wst.1999.0042",
+      "crossref_title": "Estimating (combinations of) activated sludge model no. 1 parameters and components by respirometry",
+      "years": {
+        "published-print": 1999,
+        "published": 1999,
+        "issued": 1999
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2166/wst.1999.0042"
+    },
+    {
+      "key": "VieringLoog2023",
+      "doi": "10.1109/tpami.2022.3220744",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1109/tpami.2022.3220744",
+      "crossref_title": "The Shape of Learning Curves: A Review",
+      "years": {
+        "published-print": 2023,
+        "published": 2023,
+        "issued": 2023
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1109/tpami.2022.3220744"
+    },
+    {
+      "key": "WachterBiegler2006",
+      "doi": "10.1007/s10107-004-0559-y",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1007/s10107-004-0559-y",
+      "crossref_title": "On the implementation of an interior-point filter line-search algorithm for large-scale nonlinear programming",
+      "years": {
+        "published-print": 2006,
+        "published-online": 2005,
+        "published": 2005,
+        "issued": 2005
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1007/s10107-004-0559-y"
+    },
+    {
+      "key": "Wang2024",
+      "doi": "10.1016/j.heliyon.2024.e35580",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.heliyon.2024.e35580",
+      "crossref_title": "Real-time prediction of the chemical oxygen demand component parameters in activated sludge model using backpropagation neural network",
+      "years": {
+        "published-print": 2024,
+        "published": 2024,
+        "issued": 2024
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.heliyon.2024.e35580"
+    },
+    {
+      "key": "Wang2025",
+      "doi": "10.1016/j.jwpe.2025.108344",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.jwpe.2025.108344",
+      "crossref_title": "Comparison of interpretable machine learning models and mechanistic model for predicting effluent nitrogen in WWTP",
+      "years": {
+        "published-print": 2025,
+        "published": 2025,
+        "issued": 2025
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.jwpe.2025.108344"
+    },
+    {
+      "key": "Wentzel1992",
+      "doi": "10.2166/wst.1992.0114",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.2166/wst.1992.0114",
+      "crossref_title": "Processes and Modelling of Nitrification Denitrification Biological Excess Phosphorus Removal Systems – A Review",
+      "years": {
+        "published-print": 1992,
+        "published": 1992,
+        "issued": 1992
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.2166/wst.1992.0114"
+    },
+    {
+      "key": "Wik2003",
+      "doi": "10.1023/b:resb.0000040470.48460.bb",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1023/b:resb.0000040470.48460.bb",
+      "crossref_title": "Trickling Filters and Biofilm Reactor Modelling",
+      "years": {
+        "published-print": 2003,
+        "published": 2003,
+        "issued": 2003
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1023/b:resb.0000040470.48460.bb"
+    },
+    {
+      "key": "WinklerStraka2019",
+      "doi": "10.1016/j.copbio.2018.12.007",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.copbio.2018.12.007",
+      "crossref_title": "New directions in biological nitrogen removal and recovery from wastewater",
+      "years": {
+        "published-print": 2019,
+        "published": 2019,
+        "issued": 2019
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.copbio.2018.12.007"
+    },
+    {
+      "key": "Wold2001",
+      "doi": "10.1016/s0169-7439(01)00155-1",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/s0169-7439(01)00155-1",
+      "crossref_title": "PLS-regression: a basic tool of chemometrics",
+      "years": {
+        "published-print": 2001,
+        "published": 2001,
+        "issued": 2001
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/s0169-7439(01)00155-1"
+    },
+    {
+      "key": "Woo2009",
+      "doi": "10.1016/j.jhazmat.2008.04.004",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.jhazmat.2008.04.004",
+      "crossref_title": "On-line estimation of key process variables based on kernel partial least squares in an industrial cokes wastewater treatment plant",
+      "years": {
+        "published-print": 2009,
+        "published": 2009,
+        "issued": 2009
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.jhazmat.2008.04.004"
+    },
+    {
+      "key": "Xie2021",
+      "doi": "",
+      "issues": [],
+      "status": "not_verified_by_crossref",
+      "best_candidate": "10.1021/acs.est.3c00491.s001",
+      "candidate_similarity": 0.5,
+      "review_status": "verified_by_primary_or_authoritative_record",
+      "evidence_url": "https://repository.uantwerpen.be/link/irua/182099",
+      "review_note": "Indexed Antwerp repository record and university-hosted dissertation confirm author, title and 2021 date. Live repository endpoint returned an empty application shell. No reliable DOI found."
+    },
+    {
+      "key": "Yang2021",
+      "doi": "10.1016/j.jclepro.2021.128076",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/j.jclepro.2021.128076",
+      "crossref_title": "Adaptive dynamic prediction of effluent quality in wastewater treatment processes using partial least squares embedded with relevance vector machine",
+      "years": {
+        "published-print": 2021,
+        "published": 2021,
+        "issued": 2021
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/j.jclepro.2021.128076"
+    },
+    {
+      "key": "YangNetwork2014",
+      "doi": "10.1021/ie500978h",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1021/ie500978h",
+      "crossref_title": "Water Network Optimization with Wastewater Regeneration Models",
+      "years": {
+        "published-print": 2014,
+        "published-online": 2014,
+        "published": 2014,
+        "issued": 2014
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1021/ie500978h"
+    },
+    {
+      "key": "Yuan2006",
+      "doi": "10.1111/j.1467-9868.2005.00532.x",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1111/j.1467-9868.2005.00532.x",
+      "crossref_title": "Model Selection and Estimation in Regression with Grouped Variables",
+      "years": {
+        "published-print": 2006,
+        "published-online": 2005,
+        "published": 2005,
+        "issued": 2005
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1111/j.1467-9868.2005.00532.x"
+    },
+    {
+      "key": "Zhang1994",
+      "doi": "10.1016/0043-1354(94)90042-6",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1016/0043-1354(94)90042-6",
+      "crossref_title": "Density, porosity, and pore structure of biofilms",
+      "years": {
+        "published-print": 1994,
+        "published": 1994,
+        "issued": 1994
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1016/0043-1354(94)90042-6"
+    },
+    {
+      "key": "Zhang2026",
+      "doi": "10.1038/s41545-025-00537-4",
+      "issues": [
+        {
+          "field": "year",
+          "current": "2026",
+          "crossref": "2025"
+        }
+      ],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1038/s41545-025-00537-4",
+      "crossref_title": "An agile benchmarking framework for wastewater resource recovery technologies",
+      "years": {
+        "published-online": 2025,
+        "published": 2025,
+        "issued": 2025
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1038/s41545-025-00537-4",
+      "review_note": "Retain 2026. The publisher recommends npj Clean Water 9, 4 (2026), with the final article dated 7 January 2026; Crossref still uses the early-online date of 6 December 2025. https://www.nature.com/articles/s41545-025-00537-4"
+    },
+    {
+      "key": "Zou2005",
+      "doi": "10.1111/j.1467-9868.2005.00503.x",
+      "issues": [],
+      "status": "verified",
+      "title_similarity": 1.0,
+      "crossref_doi": "10.1111/j.1467-9868.2005.00503.x",
+      "crossref_title": "Regularization and Variable Selection Via the Elastic Net",
+      "years": {
+        "published-print": 2005,
+        "published-online": 2005,
+        "published": 2005,
+        "issued": 2005
+      },
+      "review_status": "verified_by_crossref",
+      "evidence_url": "https://api.crossref.org/works/10.1111/j.1467-9868.2005.00503.x"
+    }
+  ],
+  "citation_locations": {
+    "Madhav2019": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 8
+      }
+    ],
+    "Lin2022": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 8
+      }
+    ],
+    "Tabios2020": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 10
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 121
+      }
+    ],
+    "DamalerioBarriers2022": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 10
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 121
+      }
+    ],
+    "Ulrich2009": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 121
+      }
+    ],
+    "Jafarinejad2020": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 12
+      }
+    ],
+    "Henze2008": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 20
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 22
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 117
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 6
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 121
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1164
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1182
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2238
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 79
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 133
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 133
+      }
+    ],
+    "Takacs1991": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 125
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 32
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 258
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 353
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 125
+      }
+    ],
+    "Duan2022": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 174
+      }
+    ],
+    "Wentzel1992": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 20
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 10
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1324
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2238
+      }
+    ],
+    "Henze1987": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 12
+      }
+    ],
+    "Henze1999": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 176
+      }
+    ],
+    "Henze2006": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 20
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 40
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 72
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 105
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 159
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 6
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 87
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 100
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 140
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 172
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 248
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 858
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1217
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 6
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 86
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 263
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 155
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2236
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 9
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 70
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 89
+      }
+    ],
+    "Marais1976": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 26
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 10
+      }
+    ],
+    "Hauduc2013": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 26
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 16
+      }
+    ],
+    "Calise2020": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 28
+      }
+    ],
+    "Rivas2008": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 28
+      }
+    ],
+    "BhosekarIerapetritou2018": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 30
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 58
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 196
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 608
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 22
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1237
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1302
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1334
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1987
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2035
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2094
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2108
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2296
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 23
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 95
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 135
+      }
+    ],
+    "McBride2019": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 30
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 196
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 608
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 14
+      }
+    ],
+    "Araujo2013": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 30
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 32
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 176
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 295
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 92
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 18
+      }
+    ],
+    "BuzziFerraris2013": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 30
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 630
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 345
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 275
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1305
+      }
+    ],
+    "Gu2023": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 32
+      }
+    ],
+    "Fang2011": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 34
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 60
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 77
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 178
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 225
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 14
+      }
+    ],
+    "Selerio2026": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 34
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 44
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 44
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 50
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 52
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 60
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 64
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 72
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 76
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 80
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 84
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 111
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 113
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 133
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 159
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 178
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 64
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 78
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 91
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 125
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 162
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 166
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 192
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 212
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 222
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 223
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 224
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 232
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 10
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 858
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 20
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 86
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 263
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 731
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 851
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1075
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 544
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 586
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 757
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1664
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 27
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 31
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 48
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 119
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 121
+      }
+    ],
+    "Durkin2024": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 34
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 58
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 188
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 190
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 212
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 225
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 133
+      }
+    ],
+    "Sundui2021": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 34
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 44
+      }
+    ],
+    "Hansen2024": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 38
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 76
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 142
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 328
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1195
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1312
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 113
+      }
+    ],
+    "KircherVotsmeier2025": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 38
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 42
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 44
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 44
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 58
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 64
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 76
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 84
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 131
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 159
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 123
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 212
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 223
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 504
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 14
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 50
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 173
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 205
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 229
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 781
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1195
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 637
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1077
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1312
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 159
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2292
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 19
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 46
+      }
+    ],
+    "SturmWexler2020": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 40
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 111
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 328
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 73
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 757
+      }
+    ],
+    "SturmWexler2022": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 40
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 159
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 111
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 223
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 328
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 73
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 190
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 46
+      }
+    ],
+    "TakacsVanrolleghem2006": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 40
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 105
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 178
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 168
+      }
+    ],
+    "Harder2022": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 42
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 115
+      }
+    ],
+    "SturmSilva2024": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 44
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 111
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 119
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 121
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 20
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 50
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 229
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 781
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 596
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 755
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 964
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2292
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 21
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 107
+      }
+    ],
+    "Hastie2009": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 46
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1067
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 546
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 569
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1725
+      }
+    ],
+    "Kaufman2012": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 46
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 48
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 80
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 109
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 93
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 610
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 513
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1715
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1802
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 131
+      }
+    ],
+    "Machado2014": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 46
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 180
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 26
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 92
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1073
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 115
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 131
+      }
+    ],
+    "Newhart2019": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 46
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 48
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 180
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 44
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 131
+      }
+    ],
+    "Rudin2019": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 50
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 152
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 138
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1302
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1320
+      }
+    ],
+    "Brunton2016": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 50
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 113
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 156
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 178
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 881
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1073
+      }
+    ],
+    "Alexandrov1998": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 54
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 84
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 119
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 198
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1186
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1240
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 37
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 87
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 101
+      }
+    ],
+    "Pedrozo2025": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 54
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 84
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 119
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 200
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2035
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2108
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2296
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 37
+      }
+    ],
+    "Alex2008": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 60
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 84
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 117
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 125
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 36
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 192
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 225
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 10
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 121
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 391
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1153
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2234
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 35
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 70
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 89
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 125
+      }
+    ],
+    "JeppssonDiehl1996": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 60
+      },
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 84
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 34
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 10
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 258
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 375
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2236
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 35
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 89
+      }
+    ],
+    "VieringLoog2023": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 72
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 91
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 534
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 796
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1225
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1028
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1300
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 13
+      }
+    ],
+    "Li2024": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 72
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 103
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 105
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 757
+      }
+    ],
+    "Raissi2019": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 76
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 101
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 352
+      }
+    ],
+    "Petersen2003": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 180
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 24
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 115
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 131
+      }
+    ],
+    "Meijer2004": [
+      {
+        "file": "chapters\\01_research_problem.tex",
+        "line": 180
+      }
+    ],
+    "Dold1981": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 10
+      }
+    ],
+    "Gujer1999": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 12
+      }
+    ],
+    "Guerrero2011": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 20
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 100
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 140
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 172
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 248
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 10
+      }
+    ],
+    "Vanrolleghem1999": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 24
+      }
+    ],
+    "HartelPopel1992": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 32
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 6
+      }
+    ],
+    "Ching2022": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 46
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 74
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 10
+      }
+    ],
+    "Wang2025": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 48
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 75
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 154
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 222
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 224
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 10
+      }
+    ],
+    "Ekinci2023": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 50
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 154
+      }
+    ],
+    "Wang2024": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 56
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 58
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 76
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 222
+      }
+    ],
+    "He2023": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 62
+      }
+    ],
+    "Breiman2001": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 85
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 78
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 925
+      }
+    ],
+    "ChenGuestrin2016": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 85
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 64
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 925
+      }
+    ],
+    "Ke2017": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 85
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 66
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 925
+      }
+    ],
+    "SmolaScholkopf2004": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 85
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 94
+      }
+    ],
+    "Wold2001": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 87
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 112
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 925
+      }
+    ],
+    "Woo2009": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 87
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 112
+      }
+    ],
+    "ShwartzZiv2022": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 89
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1225
+      }
+    ],
+    "Borisov2024": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 89
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 12
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1225
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 13
+      }
+    ],
+    "Karniadakis2021": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 101
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 815
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1077
+      }
+    ],
+    "Beucler2021": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 109
+      },
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 223
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 757
+      }
+    ],
+    "Utkarsh2025": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 142
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 113
+      }
+    ],
+    "Min2024": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 144
+      }
+    ],
+    "Valente2025": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 144
+      },
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 504
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1229
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 757
+      }
+    ],
+    "Nazlabadi2021": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 156
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 178
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 731
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 544
+      }
+    ],
+    "Shen2023": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 168
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 815
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1229
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 8
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 881
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1300
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 31
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 121
+      }
+    ],
+    "Nazif2023": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 176
+      }
+    ],
+    "KusiakWei2013": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 178
+      }
+    ],
+    "Bernardelli2020": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 180
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 127
+      }
+    ],
+    "Croll2023": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 180
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 127
+      }
+    ],
+    "PadronPaez2020": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 186
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2308
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 77
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 81
+      }
+    ],
+    "Aboagye2021": [
+      {
+        "file": "chapters\\02_integrated_literature.tex",
+        "line": 186
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 18
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2308
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 77
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 133
+      }
+    ],
+    "Narayanan2019": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 98
+      }
+    ],
+    "Preena2021": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 98
+      }
+    ],
+    "VanKessel2015": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 100
+      }
+    ],
+    "Hoover1952": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 110
+      }
+    ],
+    "Lu2014": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 153
+      }
+    ],
+    "Strous1998": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 162
+      }
+    ],
+    "Dietl2015": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 162
+      }
+    ],
+    "Maalcke2016": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 162
+      }
+    ],
+    "Vandekerckhove2018": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 162
+      }
+    ],
+    "Xie2021": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 162
+      }
+    ],
+    "WinklerStraka2019": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 162
+      }
+    ],
+    "Wik2003": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 567
+      }
+    ],
+    "Zhang1994": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 567
+      }
+    ],
+    "SadinoRiquelme2023": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 567
+      }
+    ],
+    "Boyd2004": [
+      {
+        "file": "chapters\\03_reactor_foundations.tex",
+        "line": 630
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 755
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 872
+      }
+    ],
+    "Kashinath2021": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1195
+      }
+    ],
+    "Prokhorenkova2018": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 68
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 925
+      }
+    ],
+    "Drucker1997": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 70
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 925
+      }
+    ],
+    "Geurts2006": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 78
+      }
+    ],
+    "Mack1981": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 104
+      }
+    ],
+    "Yang2021": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 112
+      }
+    ],
+    "Argyriou2008": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 125
+      }
+    ],
+    "Liu2009": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 125
+      }
+    ],
+    "Yuan2006": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 125
+      }
+    ],
+    "Zou2005": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 136
+      }
+    ],
+    "Simon2013": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 136
+      }
+    ],
+    "Rumelhart1986": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 150
+      }
+    ],
+    "Hornik1989": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 150
+      }
+    ],
+    "Curteanu2011": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 150
+      }
+    ],
+    "ArikPfister2021": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 152
+      }
+    ],
+    "Haddad2010": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 173
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 157
+      }
+    ],
+    "McKay1979": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 471
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1590
+      }
+    ],
+    "Belkin2019": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 534
+      }
+    ],
+    "Akiba2019": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 586
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 933
+      }
+    ],
+    "Bliek2023": [
+      {
+        "file": "chapters\\04_prediction_projection.tex",
+        "line": 1237
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1334
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1840
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2092
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2094
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2320
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 95
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 135
+      }
+    ],
+    "Pinheiro2025": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 354
+      }
+    ],
+    "Stellato2018": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 470
+      }
+    ],
+    "Razaviyayn2013": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 474
+      }
+    ],
+    "HuangfuHall2018": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 631
+      }
+    ],
+    "StenstromSong1991": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 812
+      },
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1324
+      }
+    ],
+    "Bergstra2011": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 933
+      }
+    ],
+    "Geman1992": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1028
+      }
+    ],
+    "Cawley2011": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1047
+      }
+    ],
+    "Guyon2011": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1047
+      }
+    ],
+    "Demsar2006": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1059
+      }
+    ],
+    "Shevchenko2024": [
+      {
+        "file": "chapters\\05_interpretable_surrogate.tex",
+        "line": 1059
+      }
+    ],
+    "Hameed2026": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 16
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1186
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2302
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 87
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 101
+      }
+    ],
+    "Zhang2026": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 110
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1064
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1080
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2312
+      }
+    ],
+    "USEPA2009": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 210
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1064
+      }
+    ],
+    "Tofallis2015": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 590
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 620
+      }
+    ],
+    "Ruckstuhl2021": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 757
+      }
+    ],
+    "Stellato2020": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 887
+      }
+    ],
+    "Tondel2003": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 970
+      }
+    ],
+    "Miederer2025": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1080
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2312
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 79
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 81
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 133
+      }
+    ],
+    "Leu2012": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1112
+      }
+    ],
+    "Colson2007": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1240
+      }
+    ],
+    "McCormick1976": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1249
+      }
+    ],
+    "RubioCastro2013": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1262
+      }
+    ],
+    "YangNetwork2014": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1262
+      }
+    ],
+    "WachterBiegler2006": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1402
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1901
+      }
+    ],
+    "CurtissHirschfelder1952": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1664
+      }
+    ],
+    "KelleyKeyes1998": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1664
+      }
+    ],
+    "Shahbazi2026": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1731
+      }
+    ],
+    "Kraft1988": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1844
+      }
+    ],
+    "Ragonneau2022": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1846
+      }
+    ],
+    "AudetDennis2006": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1897
+      }
+    ],
+    "Ren2026": [
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 1993
+      },
+      {
+        "file": "chapters\\06_connected_plant.tex",
+        "line": 2302
+      },
+      {
+        "file": "chapters\\07_conclusion_outlook.tex",
+        "line": 115
+      }
+    ]
+  },
+  "cross_reference_corrections": [
+    {
+      "file": "article/chapters/04_prediction_projection.tex",
+      "old": "ch:theory",
+      "new": "ch:foundations",
+      "occurrences": 2
+    }
+  ],
+  "publication_list_checks": {
+    "Selerio2026": "Crossref DOI 10.1016/j.dche.2026.100329 verified",
+    "SelerioSSRN2026": "Crossref DOI 10.2139/ssrn.7567818 verified; publication-list entries remain separate from cited References"
+  },
+  "build": {
+    "engine": "tectonic",
+    "archive_folder": "docs/latex_pdfs/20261009_001133",
+    "archived_pdf": "docs/latex_pdfs/20261009_001133/manuscript.pdf",
+    "current_pdf": "article/manuscript.pdf",
+    "bibtex_warnings": 0,
+    "unresolved_citations_or_cross_references": 0,
+    "rendered_reference_titles_verified": 146
+  },
+  "validation": {
+    "included_source_files": 16,
+    "cited_keys": 146,
+    "bibliography_entries": 146,
+    "missing_citation_keys": [],
+    "uncited_entries": [],
+    "missing_cross_reference_labels": [],
+    "references_with_doi": 128,
+    "citation_keys_preserved": true,
+    "rendered_reference_titles_not_found": [],
+    "rendered_unresolved_markers": 0,
+    "pdf": "docs/latex_pdfs/20261009_001133/manuscript.pdf",
+    "rendered_reference_titles_checked": 146
+  }
+}

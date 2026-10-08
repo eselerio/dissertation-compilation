@@ -1,0 +1,518 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        2,
+        12
+      ]
+    ],
+    "date-time": "2026-02-12T15:02:58Z",
+    "timestamp": 1770908578658,
+    "version": "3.50.1"
+  },
+  "reference-count": 49,
+  "publisher": "Wiley",
+  "issue": "3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            7,
+            3
+          ]
+        ],
+        "date-time": "2012-07-03T00:00:00Z",
+        "timestamp": 1341273600000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "AIChE Journal"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        3
+      ]
+    ]
+  },
+  "abstract": "<jats:p>This article presents a new global optimization method for the interplant water integration based on properties to characterize streams with numerous components. The problem is formulated as an mixed‐integer non‐linear programming (MINLP) model based on a superstructure that involves all possible options of interest (i.e., reuse and recycle in the same and to other plants and a set of shared treatment units). This formulation exhibits multiple local minima, and to overcome this problem, this article proposes effective branching rules in addition to two new reformulations for the upper bound (integer feasible solution) and the lower limit (relaxed solution), which are incorporated into a spatial branch and bound procedure to handle the bilinear terms in the model. The objective consists in finding the configuration with the minimum total annual cost. Results show that the global optimal solution (involving significant reductions in the fresh water consumption) is reached in few iterations and short central processing unit (CPU) time. © 2012 American Institute of Chemical Engineers AIChE J, 59: 813–833, 2013</jats:p>",
+  "DOI": "10.1002/aic.13874",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        6,
+        14
+      ]
+    ],
+    "date-time": "2012-06-14T14:55:19Z",
+    "timestamp": 1339685719000
+  },
+  "page": "813-833",
+  "source": "Crossref",
+  "is-referenced-by-count": 58,
+  "title": [
+    "Global optimization in property‐based interplant water integration"
+  ],
+  "prefix": "10.1002",
+  "volume": "59",
+  "author": [
+    {
+      "given": "Eusiel",
+      "family": "Rubio‐Castro",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Dept. of Chemical Engineering Universidad Michoacana de San Nicolás de Hidalgo Morelia Michoacán 58060 México"
+        },
+        {
+          "name": "Dept. of Chemical and Biological Sciences Universidad Autónoma de Sinaloa Culiacán Sinaloa 80000 México"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "José María",
+      "family": "Ponce‐Ortega",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Dept. of Chemical Engineering Universidad Michoacana de San Nicolás de Hidalgo Morelia Michoacán 58060 México"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Medardo",
+      "family": "Serna‐González",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Dept. of Chemical Engineering Universidad Michoacana de San Nicolás de Hidalgo Morelia Michoacán 58060 México"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Mahmoud M.",
+      "family": "El‐Halwagi",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Dept. of Chemical Engineering Texas A&amp;M University College Station TX 77843"
+        },
+        {
+          "name": "Dept. of Chemical and Materials Engineering King Abdulaziz University Jeddah Saudi Arabia"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Viet",
+      "family": "Pham",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Dept. of Chemical Engineering Texas A&amp;M University College Station TX 77843"
+        }
+      ],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        7,
+        3
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_9_2_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0098-1354(00)00579-2"
+    },
+    {
+      "key": "e_1_2_9_3_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/jctb.738"
+    },
+    {
+      "key": "e_1_2_9_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie801264c"
+    },
+    {
+      "key": "e_1_2_9_5_1",
+      "first-page": "273",
+      "article-title": "Dealing with plant geography and piping constraints in water network design",
+      "volume": "74",
+      "author": "Olesen SG",
+      "year": "1996",
+      "journal-title": "Trans Inst Chem Eng."
+    },
+    {
+      "key": "e_1_2_9_6_1",
+      "unstructured": "SpriggsD LoweE WatzJ El‐HalwagiMM LoveladyEM. Design and development of eco‐industrial parks. In: AIChE Spring Meeting New Orleans LA 2004."
+    },
+    {
+      "key": "e_1_2_9_7_1",
+      "volume-title": "Joint Symposium for Chemical and Metallurgical Engineering",
+      "author": "Chew IML",
+      "year": "2007"
+    },
+    {
+      "key": "e_1_2_9_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jenvman.2007.02.007"
+    },
+    {
+      "key": "e_1_2_9_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.12050"
+    },
+    {
+      "key": "e_1_2_9_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie901802m"
+    },
+    {
+      "key": "e_1_2_9_11_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie901804z"
+    },
+    {
+      "key": "e_1_2_9_12_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1504/IJEP.2007.012807"
+    },
+    {
+      "key": "e_1_2_9_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie061299i"
+    },
+    {
+      "key": "e_1_2_9_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie800072r"
+    },
+    {
+      "key": "e_1_2_9_15_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cej.2009.05.026"
+    },
+    {
+      "key": "e_1_2_9_16_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/ep.10326"
+    },
+    {
+      "key": "e_1_2_9_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie9014233"
+    },
+    {
+      "key": "e_1_2_9_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2010.02.024"
+    },
+    {
+      "key": "e_1_2_9_19_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10098-009-0252-1"
+    },
+    {
+      "key": "e_1_2_9_20_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.psep.2009.11.003"
+    },
+    {
+      "key": "e_1_2_9_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie100762u"
+    },
+    {
+      "key": "e_1_2_9_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2011.03.010"
+    },
+    {
+      "key": "e_1_2_9_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.psep.2010.11.004"
+    },
+    {
+      "key": "e_1_2_9_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.resconrec.2011.03.001"
+    },
+    {
+      "key": "e_1_2_9_25_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1201/9781439809136-c51"
+    },
+    {
+      "key": "e_1_2_9_26_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.11578"
+    },
+    {
+      "key": "e_1_2_9_27_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.11828"
+    },
+    {
+      "key": "e_1_2_9_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2009.10.005"
+    },
+    {
+      "key": "e_1_2_9_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ces.2010.03.051"
+    },
+    {
+      "key": "e_1_2_9_30_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0098-1354(00)00578-0"
+    },
+    {
+      "key": "e_1_2_9_31_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0098-1354(90)87085-4"
+    },
+    {
+      "key": "e_1_2_9_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0098-1354(94)00123-5"
+    },
+    {
+      "key": "e_1_2_9_33_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie8003573"
+    },
+    {
+      "key": "e_1_2_9_34_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/ie030318a"
+    },
+    {
+      "key": "e_1_2_9_35_1",
+      "first-page": "238",
+      "article-title": "Automated design of discontinuous water systems",
+      "volume": "82",
+      "author": "Kim JK",
+      "year": "2004",
+      "journal-title": "Trans Inst Chem Eng."
+    },
+    {
+      "key": "e_1_2_9_36_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/9781118627372"
+    },
+    {
+      "key": "e_1_2_9_37_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2012.02.018"
+    },
+    {
+      "key": "e_1_2_9_38_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.11425"
+    },
+    {
+      "key": "e_1_2_9_39_1",
+      "volume-title": "Global Optimization in Engineering Design",
+      "author": "Visweswaran V",
+      "year": "1995"
+    },
+    {
+      "key": "e_1_2_9_40_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1287/moor.8.2.273"
+    },
+    {
+      "key": "e_1_2_9_41_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1063/1.467236"
+    },
+    {
+      "key": "e_1_2_9_42_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01096720"
+    },
+    {
+      "key": "e_1_2_9_43_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01099647"
+    },
+    {
+      "key": "e_1_2_9_44_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01096418"
+    },
+    {
+      "key": "e_1_2_9_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0098-1354(96)00080-4"
+    },
+    {
+      "key": "e_1_2_9_46_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2005.11.005"
+    },
+    {
+      "key": "e_1_2_9_47_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0098-1354(93)E0010-7"
+    },
+    {
+      "key": "e_1_2_9_48_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF00122429"
+    },
+    {
+      "key": "e_1_2_9_49_1",
+      "volume-title": "GAMS User's Guide",
+      "author": "Brooke A",
+      "year": "2010"
+    },
+    {
+      "key": "e_1_2_9_50_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/aic.690421109"
+    }
+  ],
+  "container-title": [
+    "AIChE Journal"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Faic.13874",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.13874",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2025-10-07T22:35:08Z",
+    "timestamp": 1759876508000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://aiche.onlinelibrary.wiley.com/doi/10.1002/aic.13874"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        7,
+        3
+      ]
+    ]
+  },
+  "references-count": 49,
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          3
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1002/aic.13874"
+  ],
+  "URL": "https://doi.org/10.1002/aic.13874",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "0001-1541",
+    "1547-5905"
+  ],
+  "issn-type": [
+    {
+      "value": "0001-1541",
+      "type": "print"
+    },
+    {
+      "value": "1547-5905",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        7,
+        3
+      ]
+    ]
+  }
+}

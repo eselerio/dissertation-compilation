@@ -1,0 +1,630 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        11
+      ]
+    ],
+    "date-time": "2026-09-11T03:28:04Z",
+    "timestamp": 1789097284396,
+    "version": "build-2803163510"
+  },
+  "reference-count": 80,
+  "publisher": "American Society of Civil Engineers (ASCE)",
+  "issue": "4",
+  "content-domain": {
+    "domain": [
+      "ascelibrary.org"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "J. Environ. Eng."
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        4
+      ]
+    ]
+  },
+  "DOI": "10.1061/joeedu.eeeng-7467",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        25
+      ]
+    ],
+    "date-time": "2024-01-25T08:50:55Z",
+    "timestamp": 1706172655000
+  },
+  "update-policy": "https://doi.org/10.1061/do.news.20190416.0001",
+  "source": "Crossref",
+  "is-referenced-by-count": 21,
+  "title": [
+    "Unit Operation and Process Modeling with Physics-Informed Machine Learning"
+  ],
+  "prefix": "10.1061",
+  "volume": "150",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-2343-2813",
+      "authenticated-orcid": true,
+      "given": "Haochen",
+      "family": "Li",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Assistant Professor, Dept. of Civil and Environmental Engineering, Univ. of Tennessee, Knoxville, TN 37996 (corresponding author). ORCID: ."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-5214-3092",
+      "authenticated-orcid": true,
+      "given": "David",
+      "family": "Spelman",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Associate Professor, Dept. of Civil Engineering and Construction, Bradley Univ., Peoria, IL 61625. ORCID: ."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "John",
+      "family": "Sansalone",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Professor, Engineering School of Sustainable Infrastructure and Environment, Univ. of Florida, Gainesville, FL 32611."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "30",
+  "reference": [
+    {
+      "key": "e_1_3_5_2_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.5194/hess-25-5917-2021"
+    },
+    {
+      "key": "e_1_3_5_3_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.scitotenv.2021.149834"
+    },
+    {
+      "key": "e_1_3_5_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es00004a025"
+    },
+    {
+      "key": "e_1_3_5_6_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11356-013-1876-6"
+    },
+    {
+      "key": "e_1_3_5_7_1",
+      "volume-title": "Dynamics of fluids in porous media",
+      "author": "Bear J.",
+      "year": "1972",
+      "unstructured": "Bear, J. 1972. Dynamics of fluids in porous media. New York: Dover."
+    },
+    {
+      "key": "e_1_3_5_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/hyp.13805"
+    },
+    {
+      "key": "e_1_3_5_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-319-29854-2"
+    },
+    {
+      "key": "e_1_3_5_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/9781108380690"
+    },
+    {
+      "key": "e_1_3_5_11_1",
+      "unstructured": "Chen R. T. Q. Y. Rubanova J. Bettencourt and D. Duvenaud. 2018. “Neural ordinary differential equations.” In Proc. Advances in Neural Information Processing Systems 31 (NeurIPS) 31–60. Ithaca NY: Cornell Univ."
+    },
+    {
+      "key": "e_1_3_5_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11783-020-1262-9"
+    },
+    {
+      "key": "e_1_3_5_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0022-1694(92)90046-X"
+    },
+    {
+      "key": "e_1_3_5_15_1",
+      "volume-title": "Hands-on machine learning with Scikit-Learn and TensorFlow",
+      "author": "Géron A.",
+      "year": "2019",
+      "unstructured": "Géron, A. 2019. Hands-on machine learning with Scikit-Learn and TensorFlow. Newton, MA: O’Reilly Media."
+    },
+    {
+      "key": "e_1_3_5_16_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/S0962492921000064"
+    },
+    {
+      "key": "e_1_3_5_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijforecast.2019.04.016"
+    },
+    {
+      "key": "e_1_3_5_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.psep.2019.03.017"
+    },
+    {
+      "key": "e_1_3_5_19_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1201/b13775"
+    },
+    {
+      "key": "e_1_3_5_20_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0000439"
+    },
+    {
+      "key": "e_1_3_5_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jes.2015.01.007"
+    },
+    {
+      "key": "e_1_3_5_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2011.09.003"
+    },
+    {
+      "key": "e_1_3_5_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(87)90058-3"
+    },
+    {
+      "key": "e_1_3_5_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1997.9.8.1735"
+    },
+    {
+      "key": "e_1_3_5_25_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cpc.2014.10.005"
+    },
+    {
+      "key": "e_1_3_5_26_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2021.117666"
+    },
+    {
+      "key": "e_1_3_5_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/WM013"
+    },
+    {
+      "key": "e_1_3_5_29_1",
+      "unstructured": "IWA (International Water Association). 2023. “Modelling & integrated assessment.” Accessed January 9 2023. https://iwa-mia.org/benchmarking/."
+    },
+    {
+      "key": "e_1_3_5_30_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2021.117419"
+    },
+    {
+      "key": "e_1_3_5_31_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.21105/joss.03994"
+    },
+    {
+      "key": "e_1_3_5_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s42254-021-00314-5"
+    },
+    {
+      "key": "e_1_3_5_33_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0001258"
+    },
+    {
+      "key": "e_1_3_5_34_1",
+      "unstructured": "Krishnapriyan A. S. A. Gholami S. Zhe R. M. Kirby and M. W. Mahoney. 2021. “Characterizing possible failure modes in physics-informed neural networks.” Preprint submitted September 2 2021. https://arxiv.org/abs/2109.01050."
+    },
+    {
+      "key": "e_1_3_5_35_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Lai G. W. C. Chang Y. Yang and H. Liu. 2017. “Modeling long- and short-term temporal patterns with deep neural networks.” In Proc. 41st Int. ACM SIGIR Conf. on Research and Development in Information Retrieval SIGIR 2018 95–104. New York: Association for Computing Machinery.",
+      "DOI": "10.1145/3209978.3210006"
+    },
+    {
+      "key": "e_1_3_5_36_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1142/S0129065721300011"
+    },
+    {
+      "key": "e_1_3_5_37_1",
+      "unstructured": "Lawrence Livermore National Laboratory. 2023. “ODEPACK | Computing.” Accessed March 14 2023. https://computing.llnl.gov/projects/odepack."
+    },
+    {
+      "key": "e_1_3_5_38_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2022.048"
+    },
+    {
+      "key": "e_1_3_5_39_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0001803"
+    },
+    {
+      "key": "e_1_3_5_40_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2021.117965"
+    },
+    {
+      "key": "e_1_3_5_41_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2022.118685"
+    },
+    {
+      "key": "e_1_3_5_42_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0002027"
+    },
+    {
+      "key": "e_1_3_5_43_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acs.est.1c05020"
+    },
+    {
+      "key": "e_1_3_5_44_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cej.2020.126673"
+    },
+    {
+      "key": "e_1_3_5_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acsestengg.1c00179"
+    },
+    {
+      "key": "e_1_3_5_46_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1061/(ASCE)0733-9372(2005)131:8(1178)"
+    },
+    {
+      "key": "e_1_3_5_47_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.combustflame.2023.113094"
+    },
+    {
+      "key": "e_1_3_5_48_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.scitotenv.2022.154902"
+    },
+    {
+      "key": "e_1_3_5_49_1",
+      "volume-title": "Computational fluid dynamics: Applications in water, wastewater, and stormwater treatment",
+      "author": "Liu X.",
+      "year": "2019",
+      "unstructured": "Liu, X., and J. Zhang. 2019. Computational fluid dynamics: Applications in water, wastewater, and stormwater treatment. Reston, VA: ASCE."
+    },
+    {
+      "key": "e_1_3_5_50_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0001815"
+    },
+    {
+      "key": "e_1_3_5_51_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1137/19M1274067"
+    },
+    {
+      "key": "e_1_3_5_52_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.scitotenv.2022.154930"
+    },
+    {
+      "key": "e_1_3_5_53_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijforecast.2019.04.014"
+    },
+    {
+      "issue": "2065",
+      "key": "e_1_3_5_54_1",
+      "first-page": "20150203",
+      "article-title": "Understanding deep convolutional networks",
+      "volume": "374",
+      "author": "Mallat S.",
+      "year": "2016",
+      "unstructured": "Mallat, S. 2016. “Understanding deep convolutional networks.” Philos. Trans. R. Soc. London, Ser. A 374 (2065): 20150203. https://doi.org/10.1098/RSTA.2015.0203.",
+      "journal-title": "Philos. Trans. R. Soc. London, Ser. A"
+    },
+    {
+      "key": "e_1_3_5_55_1",
+      "unstructured": "National Stormwater Testing and Evaluation of Products and Practices Workgroup. 2014. “Investigation into the feasibility of a national testing and evaluation program for stormwater products and practices.” Accessed May 20 2020. https://www.wef.org/globalassets/assets-wef/2-resources/topics/o-z/stormwater/stormwater-institute/wef-stepp-white-paper_final_02-06-14.pdf."
+    },
+    {
+      "key": "e_1_3_5_56_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acsestwater.0c00095"
+    },
+    {
+      "key": "e_1_3_5_57_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2019.03.030"
+    },
+    {
+      "key": "e_1_3_5_58_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jwpe.2020.101389"
+    },
+    {
+      "key": "e_1_3_5_59_1",
+      "unstructured": "Ng A. 2018. “Machine learning yearning.” Accessed February 16 2020. https://www.deeplearning.ai/machine-learning-yearning/."
+    },
+    {
+      "key": "e_1_3_5_60_1",
+      "unstructured": "OpenAI. 2023. “GPT-4 technical report.” Preprint submitted March 15 2023. https://arxiv.org/abs/2303.08774."
+    },
+    {
+      "key": "e_1_3_5_61_1",
+      "unstructured": "Paszke A. et al. 2019. “PyTorch: An imperative style high-performance deep learning library.” In Proc. Advances in Neural Information Processing Systems 32. Cambridge MA: The MIT Press."
+    },
+    {
+      "key": "e_1_3_5_62_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ACCESS.2019.2950852"
+    },
+    {
+      "key": "e_1_3_5_63_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2020.116349"
+    },
+    {
+      "key": "e_1_3_5_64_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2022.118166"
+    },
+    {
+      "key": "e_1_3_5_65_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Rackauckas C. Y. Ma J. Martensen C. Warner K. Zubov R. Supekar D. Skinner A. Ramadhan and A. Edelman. 2020. “Universal differential equations for scientific machine learning.” Preprint submitted January 13 2020. https://arxiv.org/abs/2001.04385.",
+      "DOI": "10.21203/rs.3.rs-55125/v1"
+    },
+    {
+      "key": "e_1_3_5_66_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jcp.2018.10.045"
+    },
+    {
+      "key": "e_1_3_5_67_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0304-3800(96)00049-X"
+    },
+    {
+      "key": "e_1_3_5_68_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1061/(ASCE)EE.1943-7870.0000304"
+    },
+    {
+      "key": "e_1_3_5_69_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.eti.2020.101214"
+    },
+    {
+      "key": "e_1_3_5_70_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.eng.2018.11.030"
+    },
+    {
+      "key": "e_1_3_5_71_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s10098-020-01993-x"
+    },
+    {
+      "key": "e_1_3_5_72_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.scitotenv.2021.150554"
+    },
+    {
+      "key": "e_1_3_5_73_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2021.117556"
+    },
+    {
+      "key": "e_1_3_5_74_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acsestengg.2c00194"
+    },
+    {
+      "key": "e_1_3_5_75_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.scitotenv.2021.145423"
+    },
+    {
+      "key": "e_1_3_5_76_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jclepro.2023.136023"
+    },
+    {
+      "key": "e_1_3_5_77_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.scitotenv.2021.147138"
+    },
+    {
+      "key": "e_1_3_5_78_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.engappai.2008.03.015"
+    },
+    {
+      "key": "e_1_3_5_79_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1371/journal.pcbi.1007575"
+    },
+    {
+      "key": "e_1_3_5_80_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acs.est.2c08116"
+    },
+    {
+      "key": "e_1_3_5_81_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2020.116657"
+    },
+    {
+      "key": "e_1_3_5_82_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2019.114888"
+    },
+    {
+      "key": "e_1_3_5_83_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/acs.est.0c06783"
+    },
+    {
+      "key": "e_1_3_5_84_1",
+      "unstructured": "Zubov K. et al. 2021. “NeuralPDE: Automating physics-informed neural networks (PINNs) with error approximations.” Preprint submitted July 19 2021. https://arxiv.org/abs/2107.09443."
+    }
+  ],
+  "container-title": [
+    "Journal of Environmental Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://ascelibrary.org/doi/pdf/10.1061/JOEEDU.EEENG-7467",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        25
+      ]
+    ],
+    "date-time": "2024-01-25T08:51:04Z",
+    "timestamp": 1706172664000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://ascelibrary.org/doi/10.1061/JOEEDU.EEENG-7467"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4
+      ]
+    ]
+  },
+  "references-count": 80,
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1061/JOEEDU.EEENG-7467"
+  ],
+  "URL": "https://doi.org/10.1061/joeedu.eeeng-7467",
+  "relation": {},
+  "ISSN": [
+    "0733-9372",
+    "1943-7870"
+  ],
+  "issn-type": [
+    {
+      "value": "0733-9372",
+      "type": "print"
+    },
+    {
+      "value": "1943-7870",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2023-06-08",
+      "order": 0,
+      "name": "received",
+      "label": "Received",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2023-10-31",
+      "order": 1,
+      "name": "accepted",
+      "label": "Accepted",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    },
+    {
+      "value": "2024-01-25",
+      "order": 2,
+      "name": "published",
+      "label": "Published",
+      "group": {
+        "name": "publication_history",
+        "label": "Publication History"
+      }
+    }
+  ],
+  "article-number": "04024002"
+}

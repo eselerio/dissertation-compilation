@@ -1,0 +1,1405 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        1
+      ]
+    ],
+    "date-time": "2026-10-01T17:34:10Z",
+    "timestamp": 1790876050091,
+    "version": "4.1.0"
+  },
+  "reference-count": 111,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2024-03-01T00:00:00Z",
+        "timestamp": 1709251200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2024-03-01T00:00:00Z",
+        "timestamp": 1709251200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            3
+          ]
+        ],
+        "date-time": "2024-01-03T00:00:00Z",
+        "timestamp": 1704240000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100000266",
+      "name": "Engineering and Physical Sciences Research Council",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2194316"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2194316"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100000266",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        3
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.compchemeng.2024.108584",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        9
+      ]
+    ],
+    "date-time": "2024-01-09T12:08:45Z",
+    "timestamp": 1704802125000
+  },
+  "page": "108584",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 19,
+  "special_numbering": "C",
+  "title": [
+    "Surrogate-based optimisation of process systems to recover resources from wastewater"
+  ],
+  "prefix": "10.1016",
+  "volume": "182",
+  "author": [
+    {
+      "given": "Alex",
+      "family": "Durkin",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0009-0004-0397-7930",
+      "authenticated-orcid": false,
+      "given": "Lennart",
+      "family": "Otte",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Miao",
+      "family": "Guo",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b1",
+      "doi-asserted-by": "crossref",
+      "first-page": "434",
+      "DOI": "10.1002/aic.12276",
+      "article-title": "Global superstructure optimization for the design of integrated process water networks",
+      "volume": "57",
+      "author": "Ahmetović",
+      "year": "2011",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b2",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2020.107118",
+      "article-title": "Stochastic simulation-based superstructure optimization framework for process synthesis and design under uncertainty",
+      "volume": "143",
+      "author": "Al",
+      "year": "2020",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b3",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ejco.2021.100011",
+      "article-title": "Two decades of blackbox optimization applications",
+      "volume": "9",
+      "author": "Alarie",
+      "year": "2021",
+      "journal-title": "EURO J. Comput. Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b4",
+      "doi-asserted-by": "crossref",
+      "first-page": "274",
+      "DOI": "10.1016/j.wasman.2020.07.010",
+      "article-title": "Organic waste biorefineries: Looking towards implementation",
+      "volume": "114",
+      "author": "Alibardi",
+      "year": "2020",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b5",
+      "doi-asserted-by": "crossref",
+      "first-page": "S741",
+      "DOI": "10.1016/S0098-1354(98)00138-0",
+      "article-title": "Wastewater minimisation of industrial systems using an integrated approach",
+      "volume": "22",
+      "author": "Alva-Argáez",
+      "year": "1998",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b6",
+      "doi-asserted-by": "crossref",
+      "first-page": "351",
+      "DOI": "10.1007/s10479-015-2019-x",
+      "article-title": "Simulation optimization: a review of algorithms and applications",
+      "volume": "240",
+      "author": "Amaran",
+      "year": "2016",
+      "journal-title": "Ann. Oper. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b7",
+      "doi-asserted-by": "crossref",
+      "first-page": "82",
+      "DOI": "10.1016/j.inffus.2019.12.012",
+      "article-title": "Explainable artificial intelligence (xai): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+      "volume": "58",
+      "author": "Arrieta",
+      "year": "2020",
+      "journal-title": "Inf. Fusion"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2024.108584_b8",
+      "doi-asserted-by": "crossref",
+      "first-page": "925",
+      "DOI": "10.1007/s10957-018-1396-0",
+      "article-title": "Schweidtmann and Alexander Mitsos, deterministic global optimization with artificial neural networks embedded",
+      "volume": "180",
+      "author": "Artur",
+      "year": "2019",
+      "journal-title": "J. Optim. Theory Appl."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2024.108584_b9",
+      "doi-asserted-by": "crossref",
+      "first-page": "4779",
+      "DOI": "10.1111/1541-4337.12782",
+      "article-title": "Comprehensive review of water management and wastewater treatment in food processing industries in the framework of water-food-environment nexus",
+      "volume": "20",
+      "author": "Asgharnejad",
+      "year": "2021",
+      "journal-title": "Comprehens. Rev. Food Sci. Food Saf."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b10",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jece.2018.102861",
+      "article-title": "Optimising nutrient removal of a hybrid five-stage Bardenpho and moving bed biofilm reactor process using response surface methodology",
+      "volume": "7",
+      "author": "Ashrafi",
+      "year": "2019",
+      "journal-title": "J. Environ. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b11",
+      "series-title": "NOMAD version 4: Nonlinear optimization with the MADS algorithm",
+      "author": "Audet",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b12",
+      "series-title": "Derivative-Free and Blackbox Optimization",
+      "author": "Audet",
+      "year": "2017"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.compchemeng.2024.108584_b13",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "DOI": "10.2166/wst.2002.0292",
+      "article-title": "The IWA anaerobic digestion model no 1 (ADM1)",
+      "volume": "45",
+      "author": "Batstone",
+      "year": "2002",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2024.108584_b14",
+      "doi-asserted-by": "crossref",
+      "first-page": "331",
+      "DOI": "10.1007/s10898-015-0384-2",
+      "article-title": "Delaunay-based derivative-free optimization via global surrogates, Part I: linear constraints",
+      "volume": "66",
+      "author": "Beyhaghi",
+      "year": "2016",
+      "journal-title": "J. Glob. Optim."
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.compchemeng.2024.108584_b15",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/aic.16657",
+      "article-title": "A data-driven optimization algorithm for differential algebraic equations with numerical infeasibilities",
+      "volume": "66",
+      "author": "Beykal",
+      "year": "2020",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b16",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1016/j.compchemeng.2017.09.017",
+      "article-title": "Advances in surrogate based modeling, feasibility analysis, and optimization: A review",
+      "volume": "108",
+      "author": "Bhosekar",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b17",
+      "series-title": "Information Science and Statistics",
+      "article-title": "Pattern recognition and machine learning",
+      "author": "Bishop",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b18",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.advengsoft.2019.03.005",
+      "article-title": "A Python surrogate modeling framework with derivatives",
+      "volume": "135",
+      "author": "Bouhlel",
+      "year": "2019",
+      "journal-title": "Adv. Eng. Softw."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b19",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1007/s10898-015-0376-2",
+      "article-title": "Global optimization of general constrained grey-box models: new method and its application to constrained PDEs for pressure swing adsorption",
+      "volume": "67",
+      "author": "Boukouvala",
+      "year": "2017",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2024.108584_b20",
+      "doi-asserted-by": "crossref",
+      "first-page": "895",
+      "DOI": "10.1007/s11590-016-1028-2",
+      "article-title": "ARGONAUT: Algorithms for global optimization of constrained grey-box computational problems",
+      "volume": "11",
+      "author": "Boukouvala",
+      "year": "2017",
+      "journal-title": "Optim. Lett."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b21",
+      "doi-asserted-by": "crossref",
+      "first-page": "131",
+      "DOI": "10.1007/s12247-013-9154-1",
+      "article-title": "Surrogate-based optimization of expensive flowsheet modeling for continuous pharmaceutical manufacturing",
+      "volume": "8",
+      "author": "Boukouvala",
+      "year": "2013",
+      "journal-title": "J. Pharmaceut. Innovat."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.compchemeng.2024.108584_b22",
+      "doi-asserted-by": "crossref",
+      "first-page": "2462",
+      "DOI": "10.1002/aic.14442",
+      "article-title": "Derivative-free optimization for expensive constrained problems using a novel expected improvement objective function",
+      "volume": "60",
+      "author": "Boukouvala",
+      "year": "2014",
+      "journal-title": "AIChE J."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2024.108584_b23",
+      "doi-asserted-by": "crossref",
+      "first-page": "701",
+      "DOI": "10.1016/j.ejor.2015.12.018",
+      "article-title": "Global optimization advances in Mixed-Integer nonlinear programming, MINLP, and constrained derivative-free optimization, CDFO",
+      "volume": "252",
+      "author": "Boukouvala",
+      "year": "2016",
+      "journal-title": "Eur. J. Oper. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b24",
+      "doi-asserted-by": "crossref",
+      "first-page": "447",
+      "DOI": "10.1016/j.cej.2015.10.088",
+      "article-title": "Optimal WWTP process selection for treatment of domestic wastewater – A realistic full-scale retrofitting study",
+      "volume": "286",
+      "author": "Bozkurt",
+      "year": "2016",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b25",
+      "doi-asserted-by": "crossref",
+      "first-page": "164",
+      "DOI": "10.1016/j.envsoft.2014.11.023",
+      "article-title": "A mathematical programming framework for early stage design of wastewater treatment plants",
+      "volume": "64",
+      "author": "Bozkurt",
+      "year": "2015",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b26",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2022.107898",
+      "article-title": "Perspectives on the integration between first-principles and data-driven modeling",
+      "volume": "166",
+      "author": "Bradley",
+      "year": "2022",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b27",
+      "series-title": "Modeling Languages in Mathematical Optimization, Applied Optimization",
+      "first-page": "137",
+      "article-title": "General algebraic modeling system (GAMS)",
+      "author": "Bussieck",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b28",
+      "series-title": "Pyomo — Optimization Modeling in Python. Vol. 67",
+      "author": "Bynum",
+      "year": "2021"
+    },
+    {
+      "issue": "10",
+      "key": "10.1016/j.compchemeng.2024.108584_b29",
+      "doi-asserted-by": "crossref",
+      "first-page": "2633",
+      "DOI": "10.1002/aic.11579",
+      "article-title": "An algorithm for the use of surrogate models in modular flowsheet optimization",
+      "volume": "54",
+      "author": "Caballero",
+      "year": "2008",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b30",
+      "doi-asserted-by": "crossref",
+      "first-page": "177",
+      "DOI": "10.1016/j.envsoft.2016.06.019",
+      "article-title": "An integrated knowledge-based and optimization tool for the sustainable selection of wastewater treatment process concepts",
+      "volume": "84",
+      "author": "Castillo",
+      "year": "2016",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b31",
+      "series-title": "OMLT: Optimization & machine learning toolkit",
+      "author": "Ceccon",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b32",
+      "doi-asserted-by": "crossref",
+      "first-page": "249",
+      "DOI": "10.1146/annurev-chembioeng-080615-033546",
+      "article-title": "Recent Developments and challenges in optimization-based process synthesis",
+      "volume": "8",
+      "author": "Chen",
+      "year": "2017",
+      "journal-title": "Annu. Rev. Chem. Biomol. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b33",
+      "doi-asserted-by": "crossref",
+      "first-page": "101",
+      "DOI": "10.1016/j.copbio.2017.11.017",
+      "article-title": "Waste biorefineries — integrating anaerobic digestion and microalgae cultivation for bioenergy production",
+      "volume": "50",
+      "author": "Chen",
+      "year": "2018",
+      "journal-title": "Curr. Opin. Biotechnol."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2024.108584_b34",
+      "doi-asserted-by": "crossref",
+      "first-page": "534",
+      "DOI": "10.1002/bbb.172",
+      "article-title": "Toward a common classification approach for biorefinery systems",
+      "volume": "3",
+      "author": "Cherubini",
+      "year": "2009",
+      "journal-title": "Biofuels, Bioprod. Biorefin."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b35",
+      "series-title": "Introduction to Derivative-Free Optimization",
+      "author": "Conn",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b36",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "DOI": "10.1016/j.envsoft.2017.11.023",
+      "article-title": "Transforming data into knowledge for improved wastewater treatment operation: A critical review of techniques",
+      "volume": "106",
+      "author": "Corominas",
+      "year": "2018",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2024.108584_b37",
+      "doi-asserted-by": "crossref",
+      "first-page": "2211",
+      "DOI": "10.1002/aic.14418",
+      "article-title": "Learning surrogate models for simulation-based optimization",
+      "volume": "60",
+      "author": "Cozad",
+      "year": "2014",
+      "journal-title": "AIChE J."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b38",
+      "doi-asserted-by": "crossref",
+      "first-page": "220",
+      "DOI": "10.1002/aic.11881",
+      "article-title": "A centroid-based sampling strategy for kriging global modeling and optimization",
+      "volume": "56",
+      "author": "Davis",
+      "year": "2010",
+      "journal-title": "AIChE J."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2024.108584_b39",
+      "first-page": "793",
+      "article-title": "Sur la sphère vide. Bulletin de l’Académie des Sciences de l’URSS",
+      "volume": "1934",
+      "author": "Delaunay",
+      "year": "1934",
+      "journal-title": "Classe Des Sciences Mathématiques Et Na"
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2024.108584_b40",
+      "first-page": "1235",
+      "article-title": "Comparison of performances of biological nutrient removal systems for municipal wastewater treatment",
+      "volume": "38",
+      "author": "Demir",
+      "year": "2021",
+      "journal-title": "Sigma J. Eng. Nat. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b41",
+      "series-title": "An effective algorithm for hyperparameter optimization of neural networks",
+      "author": "Diaz",
+      "year": "2017"
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.compchemeng.2024.108584_b42",
+      "doi-asserted-by": "crossref",
+      "first-page": "1201",
+      "DOI": "10.1016/j.eng.2021.03.019",
+      "article-title": "Machine learning in chemical engineering: strengths, weaknesses, opportunities, and threats",
+      "volume": "7",
+      "author": "Dobbelaere",
+      "year": "2021",
+      "journal-title": "Engineering"
+    },
+    {
+      "issue": "8",
+      "key": "10.1016/j.compchemeng.2024.108584_b43",
+      "doi-asserted-by": "crossref",
+      "first-page": "1109",
+      "DOI": "10.1002/open.201900189",
+      "article-title": "Wastewater to resource: Design of a sustainable phosphorus recovery system",
+      "volume": "8",
+      "author": "Duan",
+      "year": "2019",
+      "journal-title": "ChemistryOpen"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b44",
+      "series-title": "Object-orientated derivative-free optimisation",
+      "author": "Durkin",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b45",
+      "unstructured": "Durkin, Alex, Finnigan, Tim, Johnson, Rob, Kazer, John, Yu, Jianfeng, Stuckey, David, Guo, Miao, Can closed-loop microbial protein provide sustainable protein security against the hunger pandemic?. Curr. Res. Biotechnol.."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b46",
+      "series-title": "A User’s Guide to Principal Components",
+      "author": "Edward Jackson",
+      "year": "1991"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b47",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "DOI": "10.1016/j.paerosci.2008.11.001",
+      "article-title": "Recent advances in surrogate-based optimization",
+      "volume": "45",
+      "author": "Forrester",
+      "year": "2009",
+      "journal-title": "Prog. Aerosp. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b48",
+      "series-title": "A Tutorial on Bayesian Optimization",
+      "author": "Frazier",
+      "year": "2018"
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.compchemeng.2024.108584_b49",
+      "doi-asserted-by": "crossref",
+      "first-page": "2131",
+      "DOI": "10.1016/j.biortech.2006.08.011",
+      "article-title": "pH regulation of alkaline wastewater with carbon dioxide: A case study of treatment of brewery wastewater in UASB reactor coupled with absorber",
+      "volume": "98",
+      "author": "Gangagni Rao",
+      "year": "2007",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b50",
+      "series-title": "Computational Geometry Lecture Notes HS 2013",
+      "author": "Gärtner",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b51",
+      "doi-asserted-by": "crossref",
+      "first-page": "71",
+      "DOI": "10.1016/j.compchemeng.2017.05.010",
+      "article-title": "Design of computer experiments: A review",
+      "volume": "106",
+      "author": "Garud",
+      "year": "2017",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b52",
+      "doi-asserted-by": "crossref",
+      "first-page": "103",
+      "DOI": "10.1016/j.compchemeng.2016.10.006",
+      "article-title": "Smart sampling algorithm for surrogate model development",
+      "volume": "96",
+      "author": "Garud",
+      "year": "2017",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b53",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2019.106567",
+      "article-title": "Surrogate-based black-box optimisation via domain exploration and smart placement",
+      "volume": "130",
+      "author": "Garud",
+      "year": "2019",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2024.108584_b54",
+      "doi-asserted-by": "crossref",
+      "first-page": "979",
+      "DOI": "10.1137/S1052623499350013",
+      "article-title": "SNOPT: An SQP algorithm for large-scale constrained optimization",
+      "volume": "12",
+      "author": "Gill",
+      "year": "2002",
+      "journal-title": "SIAM J. Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b55",
+      "doi-asserted-by": "crossref",
+      "first-page": "77",
+      "DOI": "10.1016/j.coche.2015.09.001",
+      "article-title": "Sustainable design and synthesis of energy systems",
+      "volume": "10",
+      "author": "Gong",
+      "year": "2015",
+      "journal-title": "Curr. Opin. Chem. Eng."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b56",
+      "doi-asserted-by": "crossref",
+      "first-page": "82",
+      "DOI": "10.1021/sc500683w",
+      "article-title": "Value-added chemicals from microalgae: Greener, more economical, or both?",
+      "volume": "3",
+      "author": "Gong",
+      "year": "2015",
+      "journal-title": "ACS Sustain. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b57",
+      "doi-asserted-by": "crossref",
+      "first-page": "246",
+      "DOI": "10.1016/j.cherd.2018.07.009",
+      "article-title": "SUSCAPE: A framework for the optimal design of SUStainable ChemicAl ProcEsses incorporating data envelopment analysis",
+      "volume": "137",
+      "author": "Gonzalez-Garay",
+      "year": "2018",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b58",
+      "first-page": "2051",
+      "article-title": "A surrogate modeling and adaptive sampling toolbox for computer based design",
+      "volume": "11",
+      "author": "Gorissen",
+      "year": "2010",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b59",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2019.106580",
+      "article-title": "ReLU networks as surrogate models in mixed-integer linear programs",
+      "volume": "131",
+      "author": "Grimstad",
+      "year": "2019",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b60",
+      "series-title": "GAMS/DICOPT: A Discrete Continuous Optimization Package",
+      "author": "Grossmann",
+      "year": "2002"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2024.108584_b61",
+      "doi-asserted-by": "crossref",
+      "first-page": "747",
+      "DOI": "10.3233/AIC-160714",
+      "article-title": "Do machine learning methods used in data mining enhance the potential of decision support systems? A review for the urban water sector",
+      "volume": "29",
+      "author": "Hadjimichael",
+      "year": "2016",
+      "journal-title": "AI Commun."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b62",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.chemosphere.2021.130328",
+      "article-title": "Recent technologies for nutrient removal and recovery from wastewaters: A review",
+      "volume": "277",
+      "author": "Hasan",
+      "year": "2021",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.compchemeng.2024.108584_b63",
+      "doi-asserted-by": "crossref",
+      "first-page": "1216",
+      "DOI": "10.1002/aic.12341",
+      "article-title": "Surrogate-based superstructure optimization framework",
+      "volume": "57",
+      "author": "Henao",
+      "year": "2011",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b64",
+      "series-title": "Activated Sludge Models ASM1, ASM2, ASM2d and ASM3",
+      "author": "Henze",
+      "year": "2006"
+    },
+    {
+      "issue": "16",
+      "key": "10.1016/j.compchemeng.2024.108584_b65",
+      "doi-asserted-by": "crossref",
+      "first-page": "5782",
+      "DOI": "10.1021/ie800076s",
+      "article-title": "Accounts of experiences in the application of artificial neural networks in chemical engineering",
+      "volume": "47",
+      "author": "Himmelblau",
+      "year": "2008",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b66",
+      "series-title": "Modeling Languages in Mathematical Optimization, Applied Optimization",
+      "first-page": "369",
+      "article-title": "The TOMLAB optimization environment",
+      "author": "Holmström",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b67",
+      "doi-asserted-by": "crossref",
+      "first-page": "212",
+      "DOI": "10.1016/j.cherd.2018.03.006",
+      "article-title": "Optimization-based design of crude oil distillation units using surrogate column models and a support vector machine",
+      "volume": "134",
+      "author": "Ibrahim",
+      "year": "2018",
+      "journal-title": "Chem. Eng. Res. Des."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b68",
+      "series-title": "2021 8th International Conference on Soft Computing & Machine Intelligence",
+      "first-page": "191",
+      "article-title": "Local and global interpretability using mutual information in explainable artificial intelligence",
+      "author": "Islam",
+      "year": "2021"
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2024.108584_b69",
+      "doi-asserted-by": "crossref",
+      "first-page": "1644",
+      "DOI": "10.1007/s10489-017-1031-z",
+      "article-title": "An adaptive sampling strategy for Kriging metamodel based on Delaunay triangulation and TOPSIS",
+      "volume": "48",
+      "author": "Jiang",
+      "year": "2018",
+      "journal-title": "Appl. Intell."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b70",
+      "doi-asserted-by": "crossref",
+      "first-page": "131",
+      "DOI": "10.1016/0378-3758(90)90122-B",
+      "article-title": "Minimax and maximin distance designs",
+      "volume": "26",
+      "author": "Johnson",
+      "year": "1990",
+      "journal-title": "J. Statist. Plann. Inference"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2024.108584_b71",
+      "doi-asserted-by": "crossref",
+      "first-page": "455",
+      "DOI": "10.1023/A:1008306431147",
+      "article-title": "Efficient global optimization of expensive black-box functions",
+      "volume": "13",
+      "author": "Jones",
+      "year": "1998",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b72",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jclepro.2022.132873",
+      "article-title": "Smart-Plant Decision Support System (SP-DSS): Defining a multi-criteria decision-making framework for the selection of WWTP configurations with resource recovery",
+      "volume": "367",
+      "author": "Južnič-Zonta",
+      "year": "2022",
+      "journal-title": "J. Clean. Prod."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2024.108584_b73",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1080/00401706.1997.10485122",
+      "article-title": "An efficient sampling technique for off-line quality control",
+      "volume": "39",
+      "author": "Kalagnanam",
+      "year": "1997",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b74",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2020.106847",
+      "article-title": "Surrogate-based optimization for mixed-integer nonlinear problems",
+      "volume": "140",
+      "author": "Kim",
+      "year": "2020",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b75",
+      "doi-asserted-by": "crossref",
+      "first-page": "407",
+      "DOI": "10.1016/j.wasman.2017.08.046",
+      "article-title": "A review on technological options of waste to energy for effective management of municipal solid waste",
+      "volume": "69",
+      "author": "Kumar",
+      "year": "2017",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b76",
+      "doi-asserted-by": "crossref",
+      "first-page": "87",
+      "DOI": "10.1186/s13068-021-01939-5",
+      "article-title": "Waste biorefinery towards a sustainable circular bioeconomy: a solution to global issues",
+      "volume": "14",
+      "author": "Leong",
+      "year": "2021",
+      "journal-title": "Biotechnol. Biofuels"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b77",
+      "doi-asserted-by": "crossref",
+      "first-page": "97",
+      "DOI": "10.1016/j.wasman.2019.10.028",
+      "article-title": "UASB-modified Bardenpho process for enhancing bio-treatment efficiency of leachate from a municipal solid waste incineration plant",
+      "volume": "102",
+      "author": "Li",
+      "year": "2020",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b78",
+      "doi-asserted-by": "crossref",
+      "first-page": "227",
+      "DOI": "10.1016/j.biortech.2016.03.064",
+      "article-title": "Economic and environmental evaluation of nitrogen removal and recovery methods from wastewater",
+      "volume": "215",
+      "author": "Lin",
+      "year": "2016",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b79",
+      "series-title": "Mixed-integer optimization with constraint learning",
+      "author": "Maragno",
+      "year": "2021"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b80",
+      "article-title": "A comparison of three methods for selecting values of input variables in the analysis of output from a computer code",
+      "volume": "21",
+      "author": "McKay",
+      "year": "1979",
+      "journal-title": "Technometrics"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b81",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2023.108411",
+      "article-title": "Formulating data-driven surrogate models for process optimization",
+      "volume": "179",
+      "author": "Misener",
+      "year": "2023",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b82",
+      "doi-asserted-by": "crossref",
+      "first-page": "503",
+      "DOI": "10.1007/s10898-014-0166-2",
+      "article-title": "ANTIGONE: Algorithms for continuous / integer global optimization of nonlinear equations",
+      "volume": "59",
+      "author": "Misener",
+      "year": "2014",
+      "journal-title": "J. Glob. Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b83",
+      "doi-asserted-by": "crossref",
+      "first-page": "498",
+      "DOI": "10.1016/j.watres.2019.03.030",
+      "article-title": "Data-driven performance analyses of wastewater treatment plants: A review",
+      "volume": "157",
+      "author": "Newhart",
+      "year": "2019",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b84",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2020.106850",
+      "article-title": "Sustainable wastewater treatment plants design through multiobjective optimization",
+      "volume": "140",
+      "author": "Padrón-Páez",
+      "year": "2020",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b85",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2022.155070",
+      "article-title": "Interpretation of ensemble learning to predict water quality using explainable artificial intelligence",
+      "volume": "832",
+      "author": "Park",
+      "year": "2022",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b86",
+      "series-title": "Advances in Neural Information Processing Systems. Vol. 32",
+      "article-title": "PyTorch: An imperative style, high-performance deep learning library",
+      "author": "Paszke",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b87",
+      "first-page": "2825",
+      "article-title": "Scikit-learn: Machine learning in Python",
+      "volume": "12",
+      "author": "Pedregosa",
+      "year": "2011",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b88",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2021.107252",
+      "article-title": "Process systems engineering – The generation next?",
+      "volume": "147",
+      "author": "Pistikopoulos",
+      "year": "2021",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b89",
+      "series-title": "The Nexus: Energy, Environment and Climate Change, Green Energy and Technology",
+      "first-page": "289",
+      "article-title": "Wastewater Biorefineries: Integrating water treatment and value recovery",
+      "author": "Pott",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b90",
+      "doi-asserted-by": "crossref",
+      "first-page": "150",
+      "DOI": "10.1016/j.chemosphere.2014.08.061",
+      "article-title": "Optimization-based methodology for the development of wastewater facilities for energy and nutrient recovery",
+      "volume": "140",
+      "author": "Puchongkawarin",
+      "year": "2015",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b91",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2019.122378",
+      "article-title": "Industrial wastewater to biohydrogen: Possibilities towards successful biorefinery route",
+      "volume": "298",
+      "author": "Rajesh Banu",
+      "year": "2020",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/j.compchemeng.2024.108584_b92",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1029/2011WR011527",
+      "article-title": "Review of surrogate modeling in water resources",
+      "volume": "48",
+      "author": "Razavi",
+      "year": "2012",
+      "journal-title": "Water Resour. Res."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.compchemeng.2024.108584_b93",
+      "doi-asserted-by": "crossref",
+      "first-page": "1247",
+      "DOI": "10.1007/s10898-012-9951-y",
+      "article-title": "Derivative-free optimization: a review of algorithms and comparison of software implementations",
+      "volume": "56",
+      "author": "Rios",
+      "year": "2013",
+      "journal-title": "J. Glob. Optim."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2024.108584_b94",
+      "first-page": "409",
+      "article-title": "Design and analysis of computer experiments",
+      "volume": "4",
+      "author": "Sacks",
+      "year": "1989",
+      "journal-title": "Statist. Sci."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b95",
+      "doi-asserted-by": "crossref",
+      "first-page": "201",
+      "DOI": "10.1007/BF00138693",
+      "article-title": "BARON: A general purpose global optimization software package",
+      "volume": "8",
+      "author": "Sahinidis",
+      "year": "1996",
+      "journal-title": "J. Global Optim."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.compchemeng.2024.108584_b96",
+      "doi-asserted-by": "crossref",
+      "first-page": "2503",
+      "DOI": "10.2166/wst.2022.115",
+      "article-title": "Hybrid modelling of water resource recovery facilities: status and opportunities",
+      "volume": "85",
+      "author": "Schneider",
+      "year": "2022",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b97",
+      "series-title": "Screening: Methods for Experimentation in Industry, Drug Discovery, and Genetics",
+      "first-page": "308",
+      "article-title": "Screening the input variables to a computer model via analysis of variance and visualization",
+      "author": "Schonlau",
+      "year": "2006"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b98",
+      "doi-asserted-by": "crossref",
+      "first-page": "235",
+      "DOI": "10.1016/j.desal.2011.02.035",
+      "article-title": "The treatment of brewery wastewater for reuse: State of the art",
+      "volume": "273",
+      "author": "Simate",
+      "year": "2011",
+      "journal-title": "Desalination"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2024.108584_b99",
+      "doi-asserted-by": "crossref",
+      "first-page": "86",
+      "DOI": "10.1016/0041-5553(67)90144-9",
+      "article-title": "On the distribution of points in a cube and the approximate evaluation of integrals",
+      "volume": "7",
+      "author": "Sobol’",
+      "year": "1967",
+      "journal-title": "USSR Comput. Math. Math. Phys."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b100",
+      "doi-asserted-by": "crossref",
+      "first-page": "271",
+      "DOI": "10.1016/S0378-4754(00)00270-6",
+      "article-title": "Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates",
+      "volume": "55",
+      "author": "Sobol",
+      "year": "2001",
+      "journal-title": "Math. Comput. Simulation"
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.compchemeng.2024.108584_b101",
+      "doi-asserted-by": "crossref",
+      "first-page": "631",
+      "DOI": "10.1039/C8EW00765A",
+      "article-title": "Resource recovery and wastewater treatment modelling",
+      "volume": "5",
+      "author": "Solon",
+      "year": "2019",
+      "journal-title": "Environ. Sci. Water Res. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b102",
+      "doi-asserted-by": "crossref",
+      "first-page": "103364",
+      "DOI": "10.1109/ACCESS.2022.3210175",
+      "article-title": "A comparison of global sensitivity analysis methods for explainable AI with an application in genomic prediction",
+      "volume": "10",
+      "author": "Stein",
+      "year": "2022",
+      "journal-title": "IEEE Access"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b103",
+      "series-title": "Evaluating Robustness of Neural Networks with Mixed Integer Programming",
+      "author": "Tjeng",
+      "year": "2019"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b104",
+      "doi-asserted-by": "crossref",
+      "first-page": "575",
+      "DOI": "10.3390/su12020575",
+      "article-title": "Holistic approach to phosphorus recovery from urban Wastewater: Enhanced biological removal combined with precipitation",
+      "volume": "12",
+      "author": "Tomei",
+      "year": "2020",
+      "journal-title": "Sustainability"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b105",
+      "doi-asserted-by": "crossref",
+      "first-page": "261",
+      "DOI": "10.1038/s41592-019-0686-2",
+      "article-title": "SciPy 1.0: Fundamental algorithms for scientific computing in Python",
+      "volume": "17",
+      "author": "Virtanen",
+      "year": "2020",
+      "journal-title": "Nature Methods"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b106",
+      "series-title": "Modeling and Optimization of Wastewater Treatment Process with a Data-Driven Approach",
+      "author": "Wei",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b107",
+      "series-title": "Compost and Digestate in Agriculture: Good Practice Guide",
+      "author": "WRAP",
+      "year": "2016"
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.compchemeng.2024.108584_b108",
+      "doi-asserted-by": "crossref",
+      "first-page": "35",
+      "DOI": "10.1016/j.cam.2004.08.005",
+      "article-title": "TRIOPT: a triangulation-based partitioning algorithm for global optimization",
+      "volume": "177",
+      "author": "Wu",
+      "year": "2005",
+      "journal-title": "J. Comput. Appl. Math."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.compchemeng.2024.108584_b109",
+      "doi-asserted-by": "crossref",
+      "first-page": "709",
+      "DOI": "10.1016/S0098-1354(99)00003-4",
+      "article-title": "A systematic modeling framework of superstructure optimization in process synthesis",
+      "volume": "23",
+      "author": "Yeomans",
+      "year": "1999",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2024.108584_b110",
+      "doi-asserted-by": "crossref",
+      "first-page": "23",
+      "DOI": "10.1016/j.paerosci.2017.11.003",
+      "article-title": "A review on design of experiments and surrogate models in aircraft real-time and many-query aerodynamic analyses",
+      "volume": "96",
+      "author": "Yondo",
+      "year": "2018",
+      "journal-title": "Prog. Aerosp. Sci."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.compchemeng.2024.108584_b111",
+      "doi-asserted-by": "crossref",
+      "first-page": "107",
+      "DOI": "10.1016/j.eehl.2022.06.001",
+      "article-title": "A review of the application of machine learning in water quality evaluation",
+      "volume": "1",
+      "author": "Zhu",
+      "year": "2022",
+      "journal-title": "Eco-Environ. Health"
+    }
+  ],
+  "container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135424000024?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135424000024?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2025-09-25T18:07:20Z",
+    "timestamp": 1758823640000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0098135424000024"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        3
+      ]
+    ]
+  },
+  "references-count": 111,
+  "alternative-id": [
+    "S0098135424000024"
+  ],
+  "URL": "https://doi.org/10.1016/j.compchemeng.2024.108584",
+  "relation": {},
+  "ISSN": [
+    "0098-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0098-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        3
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Surrogate-based optimisation of process systems to recover resources from wastewater",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Computers & Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.compchemeng.2024.108584",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2024 The Authors. Published by Elsevier Ltd.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "108584"
+}

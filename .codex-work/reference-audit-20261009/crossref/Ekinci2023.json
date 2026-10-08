@@ -1,0 +1,750 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2026-10-07T01:22:08Z",
+    "timestamp": 1791336128329,
+    "version": "4.3.1"
+  },
+  "reference-count": 42,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2023-12-01T00:00:00Z",
+        "timestamp": 1701388800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2023-12-01T00:00:00Z",
+        "timestamp": 1701388800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2023-12-01T00:00:00Z",
+        "timestamp": 1701388800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2023-12-01T00:00:00Z",
+        "timestamp": 1701388800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2023-12-01T00:00:00Z",
+        "timestamp": 1701388800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2023-12-01T00:00:00Z",
+        "timestamp": 1701388800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2023-12-01T00:00:00Z",
+        "timestamp": 1701388800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Environmental Management"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        12
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jenvman.2023.119448",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        6
+      ]
+    ],
+    "date-time": "2023-11-06T07:08:33Z",
+    "timestamp": 1699254513000
+  },
+  "page": "119448",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 46,
+  "special_numbering": "C",
+  "title": [
+    "Application of machine learning algorithms and feature selection methods for better prediction of sludge production in a real advanced biological wastewater treatment plant"
+  ],
+  "prefix": "10.1016",
+  "volume": "348",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0003-0658-592X",
+      "authenticated-orcid": false,
+      "given": "Ekin",
+      "family": "Ekinci",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Bilge",
+      "family": "Özbay",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Sevinç İlhan",
+      "family": "Omurca",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0003-3927-1863",
+      "authenticated-orcid": false,
+      "given": "Fatma Ece",
+      "family": "Sayın",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "İsmail",
+      "family": "Özbay",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib1",
+      "doi-asserted-by": "crossref",
+      "first-page": "473",
+      "DOI": "10.1108/PRT-12-2019-0111",
+      "article-title": "New water-based flexographic ink based on new ter-polymer nano-particles as eco-friendly binders – Part II",
+      "volume": "49",
+      "author": "Abd El-Wahab",
+      "year": "2020",
+      "journal-title": "Pigment Resin Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib2",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.bspc.2022.104534",
+      "article-title": "Traditional machine learning algorithms for breast cancer image classification with optimized deep features",
+      "volume": "81",
+      "author": "Atban",
+      "year": "2023",
+      "journal-title": "Biomed. Signal Process Control"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib3",
+      "doi-asserted-by": "crossref",
+      "first-page": "11797",
+      "DOI": "10.1007/s11227-023-05132-3",
+      "article-title": "A comparative analysis of meta-heuristic optimization algorithms for feature selection on ML-based classification of heart-related diseases",
+      "volume": "79",
+      "author": "Ay",
+      "year": "2023",
+      "journal-title": "J. Supercomput."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib4",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2023.103661",
+      "article-title": "Development of transparent high-frequency soft sensor of total nitrogen and total phosphorus concentrations in rivers using stacked convolutional auto-encoder and explainable AI",
+      "volume": "53",
+      "author": "Ba-Alawi",
+      "year": "2023",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib5",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102033",
+      "article-title": "Comparative study on total nitrogen prediction in wastewater treatment plant and effect of various feature selection methods on machine learning algorithms performance",
+      "volume": "41",
+      "author": "Bagherzadeh",
+      "year": "2021",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib6",
+      "doi-asserted-by": "crossref",
+      "first-page": "537",
+      "DOI": "10.1109/72.298224",
+      "article-title": "Using mutual ınformation for selecting features in supervised neural net learning",
+      "volume": "5",
+      "author": "Battiti",
+      "year": "1994",
+      "journal-title": "IEEE Trans. Neural Network."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib7",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1186/1753-6561-3-S7-S25",
+      "article-title": "Elastic-net regularization approaches for genome-wide association studies of rheumatoid arthritis",
+      "volume": "3",
+      "author": "Cho",
+      "year": "2009",
+      "journal-title": "BMC Proc."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib8",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/bioengineering9080350",
+      "article-title": "A machine learning method with filter-based feature selection for ımproved prediction of chronic kidney disease",
+      "volume": "9",
+      "author": "Ebiaredoh-Mienye",
+      "year": "2022",
+      "journal-title": "Bioengineering"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib9",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2021.102380",
+      "article-title": "Forecasting effluent and performance of wastewater treatment plant using different machine learning techniques",
+      "volume": "44",
+      "author": "El-Rawy",
+      "year": "2021",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib10",
+      "doi-asserted-by": "crossref",
+      "first-page": "1075",
+      "DOI": "10.28991/ESJ-2022-06-05-011",
+      "article-title": "Comparison of machine learning approach for waste bottle classification",
+      "volume": "6",
+      "author": "Fadlil",
+      "year": "2022",
+      "journal-title": "Emerg. Sci. J."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib11",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/s12517-021-07792-y",
+      "article-title": "Well logging curve reconstruction based on kernel ridge regression",
+      "volume": "14",
+      "author": "Fan",
+      "year": "2021",
+      "journal-title": "Arabian J. Geosci."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib12",
+      "doi-asserted-by": "crossref",
+      "first-page": "1189",
+      "DOI": "10.1214/aos/1013203451",
+      "article-title": "Greedy function approximation : a gradient boosting machine",
+      "volume": "29",
+      "author": "Friedman",
+      "year": "2001",
+      "journal-title": "Ann. Stat."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib13",
+      "doi-asserted-by": "crossref",
+      "first-page": "116",
+      "DOI": "10.1016/j.rser.2006.05.014",
+      "article-title": "Utilization of sewage sludge in EU application of old and new methods-A review",
+      "volume": "12",
+      "author": "Fytili",
+      "year": "2008",
+      "journal-title": "Renew. Sustain. Energy Rev."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib14",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jwpe.2023.103788",
+      "article-title": "A state-of-the-art review and guidelines for enhancing nitrate removal in bio-electrochemical systems (BES)",
+      "volume": "53",
+      "author": "Gadegaonkar",
+      "year": "2023",
+      "journal-title": "J. Water Process Eng."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib15",
+      "first-page": "572",
+      "article-title": "Performance of CatBoost and XGBoost in Medicare Fraud detection",
+      "author": "Hancock",
+      "year": "2020",
+      "journal-title": "Proc. - 19th IEEE Int. Conf. Mach. Learn. Appl. ICMLA"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib16",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1186/s40537-020-00369-8",
+      "article-title": "CatBoost for big data: an interdisciplinary review",
+      "volume": "7",
+      "author": "Hancock",
+      "year": "2020",
+      "journal-title": "J. Big Data"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib17",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jhazmat.2022.130031",
+      "article-title": "Machine learning approaches to predict the photocatalytic performance of bismuth ferrite-based materials in the removal of malachite green",
+      "volume": "442",
+      "author": "Jaffari",
+      "year": "2023",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib18",
+      "article-title": "Machine-learning-based prediction and optimization of emerging contaminants' adsorption capacity on biochar materials",
+      "volume": "466",
+      "author": "Jaffari",
+      "year": "2023",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib19",
+      "doi-asserted-by": "crossref",
+      "first-page": "9009",
+      "DOI": "10.1039/D3TA00019B",
+      "article-title": "Crystal graph convolution neural networks for fast and accurate prediction of adsorption ability of Nb2CTx towards Pb(ii) and Cd(ii) ions",
+      "volume": "11",
+      "author": "Jaffari",
+      "year": "2023",
+      "journal-title": "J. Mater. Chem. A"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib20",
+      "doi-asserted-by": "crossref",
+      "first-page": "10617",
+      "DOI": "10.1109/TPEL.2023.3291464",
+      "article-title": "Gradient boosting decision tree for rotor temperature estimation in permanent magnet synchronous motors",
+      "volume": "38",
+      "author": "Jing",
+      "year": "2023",
+      "journal-title": "IEEE Trans. Power Electron."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib21",
+      "first-page": "30",
+      "article-title": "LightGBM: a highly efficient gradient boosting decision tree",
+      "volume": "30",
+      "author": "Ke",
+      "year": "2017",
+      "journal-title": "Adv. Neural Inf. Process. Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib22",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ecoinf.2023.102122",
+      "article-title": "Metaheuristic approaches for prediction of water quality indices with relief algorithm-based feature selection",
+      "volume": "75",
+      "author": "Kushwaha",
+      "year": "2023",
+      "journal-title": "Ecol. Inf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib23",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ecoinf.2023.101991",
+      "article-title": "Predicting Water Quality Index (WQI) by feature selection and machine learning: a case study of an Kim Hai irrigation system",
+      "volume": "74",
+      "author": "Lap",
+      "year": "2023",
+      "journal-title": "Ecol. Inf."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib24",
+      "article-title": "Failure mode and effects analysis of RC members based on machinelearning-based SHapley Additive exPlanations (SHAP) approach",
+      "volume": "219",
+      "author": "Mangalathua",
+      "year": "2020",
+      "journal-title": "Eng. Struct."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib25",
+      "series-title": "Wastewater Engineering: Treatment, Disposal, and Reuse",
+      "author": "Metcalf",
+      "year": "2014"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib26",
+      "article-title": "Environmental and demographic factors affecting childhood academic performance in Los Angeles county: a generalized linear elastic net regression model",
+      "volume": "30",
+      "author": "Minaravesh",
+      "year": "2023",
+      "journal-title": "Remote Sens. Appl. Soc. Environ."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib27",
+      "doi-asserted-by": "crossref",
+      "first-page": "22931",
+      "DOI": "10.1007/s11356-018-1975-5",
+      "article-title": "Derivation of optimal equations for prediction of sewage sludge quantity using wavelet conjunction models: an environmental assessment",
+      "volume": "25",
+      "author": "Najafzadeh",
+      "year": "2018",
+      "journal-title": "Environ. Sci. Pollut. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib28",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.apt.2023.104113",
+      "article-title": "Analyzing process parameters for industrial grinding circuit based on machine learning method",
+      "volume": "34",
+      "author": "Peng",
+      "year": "2023",
+      "journal-title": "Adv. Powder Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib29",
+      "first-page": "1",
+      "article-title": "CatBoost: unbiased boosting with categorical features",
+      "volume": "31",
+      "author": "Prokhorenkova",
+      "year": "2018",
+      "journal-title": "Adv. Neural Inf. Process. Syst."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib30",
+      "doi-asserted-by": "crossref",
+      "first-page": "905",
+      "DOI": "10.28991/ESJ-2022-06-04-017",
+      "article-title": "Application of machine learning methods for asset management on power distribution networks",
+      "volume": "6",
+      "author": "Rajora",
+      "year": "2022",
+      "journal-title": "Emerg. Sci. J."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib31",
+      "series-title": "Unit Operations and Processes in Environmental Engineering",
+      "author": "Reynolds",
+      "year": "1996"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib32",
+      "series-title": "Appears in Proceedings of the 15th International Conference on Machine Learning",
+      "article-title": "Ridge regression learning algorithm in dual variables",
+      "author": "Saunders",
+      "year": "1998"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib33",
+      "first-page": "2319",
+      "article-title": "Estimation of biomass composition and biological sludge production in SBR plants of India",
+      "author": "Srivastava",
+      "year": "2021",
+      "journal-title": "Int. Journal of Sci. and Res. ISSN"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib34",
+      "series-title": "Official Gazette No.26047. Republic of Turkiye Ministry of Environment, Urbanization and Climate Change",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib35",
+      "doi-asserted-by": "crossref",
+      "first-page": "224",
+      "DOI": "10.1016/j.wasman.2019.04.016",
+      "article-title": "Pyrolysis of wood sawdust: effects of process parameters on products yield and characterization of products",
+      "volume": "89",
+      "author": "Varma",
+      "year": "2019",
+      "journal-title": "Waste Manag."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib36",
+      "doi-asserted-by": "crossref",
+      "first-page": "100",
+      "DOI": "10.1007/s10489-011-0315-y",
+      "article-title": "A novel feature selection method based on normalized mutual information",
+      "volume": "37",
+      "author": "Vinh",
+      "year": "2012",
+      "journal-title": "Appl. Intell."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib37",
+      "doi-asserted-by": "crossref",
+      "first-page": "609",
+      "DOI": "10.1177/0734242X211033716",
+      "article-title": "Application of machine learning algorithms in municipal solid waste management: a mini review",
+      "volume": "40",
+      "author": "Xia",
+      "year": "2022",
+      "journal-title": "Waste Manag. Res."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib38",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/s10661-019-7196-7",
+      "article-title": "Comparative study of different wavelet-based neural network models to predict sewage sludge quantity in wastewater treatment plant",
+      "volume": "191",
+      "author": "Zeinolabedini",
+      "year": "2019",
+      "journal-title": "Environ. Monit. Assess."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib39",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.energy.2022.126125",
+      "article-title": "Prediction of fluctuation loads based on GARCH family-CatBoost-CNNLSTM",
+      "volume": "263",
+      "author": "Zeng",
+      "year": "2023",
+      "journal-title": "Energy"
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib40",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jhazmat.2021.127060",
+      "article-title": "Insights into the adsorption of pharmaceuticals and personal care products (PPCPs) on biochar and activated carbon with the aid of machine learning",
+      "volume": "423",
+      "author": "Zhu",
+      "year": "2022",
+      "journal-title": "J. Hazard Mater."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib41",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2022.128454",
+      "article-title": "Machine learning-assisted exploration for carbon neutrality potential of municipal sludge recycling via hydrothermal carbonization",
+      "volume": "369",
+      "author": "Zhu",
+      "year": "2023",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.jenvman.2023.119448_bib42",
+      "doi-asserted-by": "crossref",
+      "first-page": "301",
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "article-title": "Regularization and variable selection via the elastic net",
+      "volume": "67",
+      "author": "Zou",
+      "year": "2005",
+      "journal-title": "J. R. Stat. Soc. Ser. B Stat. Methodol."
+    }
+  ],
+  "container-title": [
+    "Journal of Environmental Management"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479723022363?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0301479723022363?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2025-10-04T11:13:01Z",
+    "timestamp": 1759576381000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0301479723022363"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        12
+      ]
+    ]
+  },
+  "references-count": 42,
+  "alternative-id": [
+    "S0301479723022363"
+  ],
+  "URL": "https://doi.org/10.1016/j.jenvman.2023.119448",
+  "relation": {},
+  "ISSN": [
+    "0301-4797"
+  ],
+  "issn-type": [
+    {
+      "value": "0301-4797",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        12
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Application of machine learning algorithms and feature selection methods for better prediction of sludge production in a real advanced biological wastewater treatment plant",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Environmental Management",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jenvman.2023.119448",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2023 Elsevier Ltd. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "119448"
+}

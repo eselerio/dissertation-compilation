@@ -1,0 +1,1597 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          29
+        ]
+      ],
+      "date-time": "2026-09-29T12:35:53Z",
+      "timestamp": 1790685353291,
+      "version": "4.1.0"
+    },
+    "reference-count": 37,
+    "publisher": "IEEE",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              7,
+              18
+            ]
+          ],
+          "date-time": "2022-07-18T00:00:00Z",
+          "timestamp": 1658102400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              7,
+              18
+            ]
+          ],
+          "date-time": "2022-07-18T00:00:00Z",
+          "timestamp": 1658102400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          18
+        ]
+      ]
+    },
+    "DOI": "10.1109/ijcnn55064.2022.9892534",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2022-09-30T19:56:04Z",
+      "timestamp": 1664567764000
+    },
+    "page": "1-8",
+    "source": "Crossref",
+    "is-referenced-by-count": 4,
+    "title": [
+      "Meta-learning from Learning Curves: Challenge Design and Baseline Results"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-7342-6430",
+        "authenticated-orcid": false,
+        "given": "Manh Hung",
+        "family": "Nguyen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Chalearn,California,USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5335-1547",
+        "authenticated-orcid": false,
+        "given": "Lisheng",
+        "family": "Sun-Hosoya",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Chalearn,California,USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6817-5972",
+        "authenticated-orcid": false,
+        "given": "Nathan",
+        "family": "Grinsztajn",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ. Lille,Inria, CNRS,Lille,France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9266-1783",
+        "authenticated-orcid": false,
+        "given": "Isabelle",
+        "family": "Guyon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Univ. Paris-Saclay, Paris, France, and ChaLearn,California,USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref33",
+        "author": "vanschoren",
+        "year": "2018",
+        "journal-title": "Meta-Learning A Survey"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3219819.3220058"
+      },
+      {
+        "key": "ref31",
+        "author": "swersky",
+        "year": "2014",
+        "journal-title": "Freeze-thaw Bayesian optimization"
+      },
+      {
+        "key": "ref30",
+        "article-title": "Activmetal: Algorithm recommendation with active meta learning",
+        "author": "sun-hosoya",
+        "year": "2018",
+        "journal-title": "IAL PKDD/ECML"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2020.3004555"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3292500.3330909"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ADPRL.2011.5967363"
+      },
+      {
+        "key": "ref34",
+        "first-page": "1",
+        "article-title": "Generalizing from a few examples: A survey on few-shot learning",
+        "volume": "53",
+        "author": "wang",
+        "year": "2020",
+        "journal-title": "ACM Computing Surveys"
+      },
+      {
+        "key": "ref10",
+        "article-title": "Probabilistic matrix factorization for automated machine learning",
+        "volume": "31",
+        "author": "fusi",
+        "year": "2018",
+        "journal-title": "Advances in neural information processing systems"
+      },
+      {
+        "key": "ref11",
+        "first-page": "177",
+        "author": "guyon",
+        "year": "2019",
+        "journal-title": "Analysis of the automl challenge series 2015&#x2013;2018"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1609/aaai.v30i1.10295"
+      },
+      {
+        "key": "ref13",
+        "author": "kirk",
+        "year": "2022",
+        "journal-title": "A survey of generalisation in deep reinforcement learning"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1102351.1102414"
+      },
+      {
+        "key": "ref15",
+        "first-page": "87",
+        "article-title": "An iterative process for building learning curves and predicting relative performance of classifiers",
+        "year": "2007",
+        "journal-title": "Proceedings of the Aritficial Intelligence 13th Portuguese Conference on Progress in Artificial Intelligence ser EPIA'07"
+      },
+      {
+        "key": "ref16",
+        "first-page": "309",
+        "article-title": "Active testing strategy to predict the best classification algorithm via sampling and metalearning",
+        "year": "2010",
+        "journal-title": "IOS Press"
+      },
+      {
+        "key": "ref17",
+        "first-page": "117",
+        "volume": "7376",
+        "author": "leite",
+        "year": "2012",
+        "journal-title": "Selecting classification algorithms with active testing"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/wics.111"
+      },
+      {
+        "key": "ref19",
+        "first-page": "17",
+        "article-title": "Winning solutions and post-challenge analyses of the ChaLearn AutoDL challenge 2019",
+        "author": "liu",
+        "year": "2020",
+        "journal-title": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      },
+      {
+        "key": "ref28",
+        "volume": "1",
+        "author": "stern",
+        "year": "2010",
+        "journal-title": "Collaborative expert portfolio management"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/3-540-45164-1_8"
+      },
+      {
+        "key": "ref27",
+        "first-page": "3",
+        "article-title": "Fast subsampling performance estimates for classification algorithm selection",
+        "author": "petrak",
+        "year": "0",
+        "journal-title": "Proceedings of the ECML-OO Workshop on Meta-Learning Building Automatic Advice Strategies for Model Selection and Method Combination"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2013.50"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-01581-6"
+      },
+      {
+        "key": "ref29",
+        "author": "sun-hosoya",
+        "year": "2019",
+        "journal-title": "Meta-Learning as a Markov Decision Process"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1010933404324"
+      },
+      {
+        "key": "ref8",
+        "article-title": "Speeding up automatic hyperparameter optimization of deep neural networks by extrapolation of learning curves",
+        "author": "domhan",
+        "year": "2015",
+        "journal-title": "IJCAI"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2021.3057446"
+      },
+      {
+        "key": "ref2",
+        "article-title": "Advances in metadl: Aaai 2021 challenge and workshop",
+        "author": "baz",
+        "year": "0",
+        "journal-title": "ArXiv Preprint"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aos/1013203451"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10994-017-5687-8"
+      },
+      {
+        "key": "ref20",
+        "first-page": "242",
+        "article-title": "Towards automated deep learning: Analysis of the autodl challenge series 2019",
+        "volume": "123",
+        "author": "liu",
+        "year": "0",
+        "journal-title": "Proceedings of the NeurIPS 2019 Competition and Demonstration Track ser Proceedings of Machine Learning Research"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.artint.2016.12.001"
+      },
+      {
+        "key": "ref21",
+        "author": "misir",
+        "year": "2013",
+        "journal-title": "Algorithm selection as a collaborative filtering problem"
+      },
+      {
+        "key": "ref24",
+        "year": "2022",
+        "journal-title": "Learning curves for decision making in supervised machine learning - a survey"
+      },
+      {
+        "key": "ref23",
+        "author": "mohr",
+        "year": "2021",
+        "journal-title": "Fast and informative model selection using learning curve cross-validation"
+      },
+      {
+        "key": "ref26",
+        "first-page": "2825",
+        "article-title": "Scikit-learn: Machine learning in Python",
+        "volume": "12",
+        "author": "pedregosa",
+        "year": "2011",
+        "journal-title": "Journal of Machine Learning Research"
+      },
+      {
+        "key": "ref25",
+        "article-title": "Metareveal: Rl-based meta-learning from learning curves",
+        "author": "nguyen",
+        "year": "2021",
+        "journal-title": "Workshop on Interactive Adaptive Learning co-located with European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2021)"
+      }
+    ],
+    "event": {
+      "name": "2022 International Joint Conference on Neural Networks (IJCNN)",
+      "location": "Padua, Italy",
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            18
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            23
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2022 International Joint Conference on Neural Networks (IJCNN)"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/9891857/9889787/09892534.pdf?arnumber=9892534",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          3
+        ]
+      ],
+      "date-time": "2022-11-03T23:00:25Z",
+      "timestamp": 1667516425000
+    },
+    "score": 29.172707,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/9892534/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          18
+        ]
+      ]
+    },
+    "references-count": 37,
+    "URL": "https://doi.org/10.1109/ijcnn55064.2022.9892534",
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          18
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          5
+        ]
+      ],
+      "date-time": "2026-10-05T16:51:16Z",
+      "timestamp": 1791219076476,
+      "version": "4.1.0"
+    },
+    "reference-count": 27,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1109/ijcnn.2011.6033302",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          10,
+          6
+        ]
+      ],
+      "date-time": "2011-10-06T13:24:17Z",
+      "timestamp": 1317907457000
+    },
+    "page": "793-800",
+    "source": "Crossref",
+    "is-referenced-by-count": 25,
+    "title": [
+      "Unsupervised and transfer learning challenge"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Isabelle",
+        "family": "Guyon",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gideon",
+        "family": "Dror",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vincent",
+        "family": "Lemaire",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Graham",
+        "family": "Taylor",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David W.",
+        "family": "Aha",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref10",
+        "first-page": "27",
+        "article-title": "Learning the kernel matrix with semi-definite programming",
+        "volume": "5",
+        "author": "lanckriet",
+        "year": "2004",
+        "journal-title": "Journal of Machine Learning Research"
+      },
+      {
+        "key": "ref11",
+        "first-page": "207",
+        "article-title": "Distance metric learning for large margin nearest neighbor classification",
+        "volume": "10",
+        "author": "weinberger",
+        "year": "2009",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "ref12",
+        "article-title": "Distance metric learning: A comprehensive sur-vey",
+        "author": "yang",
+        "year": "2006",
+        "journal-title": "Tech Rep"
+      },
+      {
+        "key": "ref13",
+        "article-title": "An overview of distance metric learning",
+        "author": "yang",
+        "year": "2007",
+        "journal-title": "Tech Rep"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4615-5529-2"
+      },
+      {
+        "key": "ref15",
+        "first-page": "179",
+        "article-title": "Regularized principal manifolds",
+        "volume": "1",
+        "author": "smola",
+        "year": "2001",
+        "journal-title": "JMLR"
+      },
+      {
+        "key": "ref16",
+        "article-title": "Out-of-sample extensions for lIe, isomap, mds, eigenmaps, and spectral clustering",
+        "author": "bengio",
+        "year": "2003",
+        "journal-title": "NIPS03"
+      },
+      {
+        "key": "ref17",
+        "first-page": "1307",
+        "article-title": "Sufficient dimensionality reduction",
+        "volume": "3",
+        "author": "globerson",
+        "year": "2003",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "ref18",
+        "first-page": "72",
+        "volume": "3176",
+        "author": "ghahramani",
+        "year": "2004",
+        "journal-title": "Unsupervised Learning"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11222-007-9033-z"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1561/2200000006"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1010933404324"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1390156.1390177"
+      },
+      {
+        "key": "ref6",
+        "first-page": "625",
+        "article-title": "Why does unsupervised pre-training help deep learning?",
+        "volume": "11",
+        "author": "erhan",
+        "year": "2010",
+        "journal-title": "JMLR"
+      },
+      {
+        "key": "ref5",
+        "article-title": "Transfer learning techniques for deep neural nets",
+        "author": "gutstein",
+        "year": "2010",
+        "journal-title": "Ph D Dissertation"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1273496.1273592"
+      },
+      {
+        "key": "ref7",
+        "first-page": "801",
+        "article-title": "Efficient sparse coding algorithms",
+        "author": "lee",
+        "year": "2007",
+        "journal-title": "Advances in Neural Information Processing Systems 19"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TKDE.2009.191"
+      },
+      {
+        "key": "ref9",
+        "article-title": "Signature verification using a &#x201C;siamese&#x201D; time delay neural network",
+        "author": "bromley",
+        "year": "1994",
+        "journal-title": "Proc NIPS"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1007379606734"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/331499.331504"
+      },
+      {
+        "key": "ref22",
+        "article-title": "Learning multiple layers of features from tiny images",
+        "author": "krizhevsky",
+        "year": "2009"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11263-005-1838-7"
+      },
+      {
+        "key": "ref24",
+        "article-title": "Challenges in machine learning",
+        "year": "0"
+      },
+      {
+        "key": "ref23",
+        "first-page": "361",
+        "article-title": "Rev 1: A new benchmark collection for text categorization research",
+        "volume": "5",
+        "author": "lewis",
+        "year": "2004",
+        "journal-title": "Journal of Machine Learning Research"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511809682"
+      },
+      {
+        "key": "ref25",
+        "article-title": "Performance prediction challenge",
+        "author": "guyon",
+        "year": "2006",
+        "journal-title": "IEEE/INNS conference IJCNN 2006"
+      }
+    ],
+    "event": {
+      "name": "2011 International Joint Conference on Neural Networks (IJCNN 2011 - San Jose)",
+      "location": "San Jose, CA, USA",
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            7,
+            31
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2011,
+            8,
+            5
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "The 2011 International Joint Conference on Neural Networks"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/6022827/6033131/06033302.pdf?arnumber=6033302",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          21
+        ]
+      ],
+      "date-time": "2017-03-21T00:09:00Z",
+      "timestamp": 1490054940000
+    },
+    "score": 28.619629,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/6033302/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          7
+        ]
+      ]
+    },
+    "references-count": 27,
+    "URL": "https://doi.org/10.1109/ijcnn.2011.6033302",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          7
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          22
+        ]
+      ],
+      "date-time": "2024-10-22T23:38:20Z",
+      "timestamp": 1729640300336,
+      "version": "3.28.0"
+    },
+    "reference-count": 23,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1109/ijcnn.2010.5596506",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          10,
+          19
+        ]
+      ],
+      "date-time": "2010-10-19T18:58:15Z",
+      "timestamp": 1287514695000
+    },
+    "page": "1-8",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Design and analysis of the WCCI 2010 active learning challenge"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Isabelle",
+        "family": "Guyon",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Gavin",
+        "family": "Cawley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Gideon",
+        "family": "Dror",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Vincent",
+        "family": "Lemaire",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref10",
+        "first-page": "16",
+        "article-title": "Performance prediction challenge",
+        "author": "guyon",
+        "year": "2006",
+        "journal-title": "IEEE/INNS conference IJCNN 2006"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.neunet.2007.12.024"
+      },
+      {
+        "key": "ref12",
+        "first-page": "3",
+        "article-title": "Design and analysis of the causation and prediction challenge",
+        "volume": "3",
+        "author": "guyon",
+        "year": "2008",
+        "journal-title": "JMLR W&CP"
+      },
+      {
+        "key": "ref13",
+        "article-title": "Analysis of the kdd cup 2009: Fast scoring on a large orange customer database",
+        "author": "guyon",
+        "year": "2009",
+        "journal-title": "JMLR W&CP"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/34.655649"
+      },
+      {
+        "article-title": "Datasets of the active learning challenge",
+        "year": "2010",
+        "author": "guyon",
+        "key": "ref15"
+      },
+      {
+        "year": "0",
+        "key": "ref16",
+        "article-title": "Challenges in machine learning"
+      },
+      {
+        "key": "ref17",
+        "article-title": "Results of the active learning challenge",
+        "author": "guyon",
+        "year": "2010",
+        "journal-title": "JMLR W&CP"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1007330508534"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-540-35488-8_16"
+      },
+      {
+        "key": "ref4",
+        "first-page": "647",
+        "article-title": "Active learning for parameter estimation in bayesian networks",
+        "author": "tong",
+        "year": "2000",
+        "journal-title": "Advances in Neural Information Processing Systems (NIPS)"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/130385.130417"
+      },
+      {
+        "key": "ref6",
+        "first-page": "441",
+        "article-title": "Toward optimal active learning through sampling estimation of error reduction",
+        "author": "roy",
+        "year": "2001",
+        "journal-title": "International Conference on Machine Learning (ICML)"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "crossref",
+        "first-page": "129",
+        "DOI": "10.1613/jair.295",
+        "article-title": "Active learning with statistical models",
+        "volume": "4",
+        "author": "cohn",
+        "year": "1996",
+        "journal-title": "Journal of Artificial Intelligence Research"
+      },
+      {
+        "key": "ref8",
+        "article-title": "Active learning literature survey",
+        "author": "settles",
+        "year": "2009",
+        "journal-title": "Computer Sciences Technical Report"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3115/1613715.1613855"
+      },
+      {
+        "key": "ref2",
+        "first-page": "1289",
+        "article-title": "Multiple-instance active learning",
+        "volume": "20",
+        "author": "settles",
+        "year": "2008",
+        "journal-title": "Advances in Neural Information Processing Systems (NIPS)"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4471-2099-5_1"
+      },
+      {
+        "key": "ref9",
+        "article-title": "Feature Extraction, Foundations and Applications",
+        "author": "guyon",
+        "year": "2006",
+        "journal-title": "Studies in Fuzziness and Soft Computing With data results and sample code for the NIPS 2003 feature selection challenge"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/130385.130401"
+      },
+      {
+        "journal-title": "Newton Methods for Fast Solution of Semi-supervised Linear SVMs",
+        "year": "2005",
+        "author": "sindhwani",
+        "key": "ref22"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1017924227920"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1148170.1148253"
+      }
+    ],
+    "event": {
+      "name": "2010 International Joint Conference on Neural Networks (IJCNN)",
+      "start": {
+        "date-parts": [
+          [
+            2010,
+            7,
+            18
+          ]
+        ]
+      },
+      "location": "Barcelona, Spain",
+      "end": {
+        "date-parts": [
+          [
+            2010,
+            7,
+            23
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "The 2010 International Joint Conference on Neural Networks (IJCNN)"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/5581822/5595732/05596506.pdf?arnumber=5596506",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          6,
+          5
+        ]
+      ],
+      "date-time": "2019-06-05T16:26:05Z",
+      "timestamp": 1559751965000
+    },
+    "score": 28.19246,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/5596506/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          7
+        ]
+      ]
+    },
+    "references-count": 23,
+    "URL": "https://doi.org/10.1109/ijcnn.2010.5596506",
+    "published": {
+      "date-parts": [
+        [
+          2010,
+          7
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          2,
+          21
+        ]
+      ],
+      "date-time": "2025-02-21T00:59:35Z",
+      "timestamp": 1740099575564,
+      "version": "3.37.3"
+    },
+    "publisher-location": "Cham",
+    "reference-count": 22,
+    "publisher": "Springer International Publishing",
+    "isbn-type": [
+      {
+        "type": "print",
+        "value": "9783030218096"
+      },
+      {
+        "type": "electronic",
+        "value": "9783030218102"
+      }
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2019-01-01T00:00:00Z",
+          "timestamp": 1546300800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "DOI": "10.1007/978-3-030-21810-2_7",
+    "type": "book-chapter",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          23
+        ]
+      ],
+      "date-time": "2019-10-23T00:26:46Z",
+      "timestamp": 1571790406000
+    },
+    "page": "237-256",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Results of the Cause-Effect Pair Challenge"
+    ],
+    "prefix": "10.1007",
+    "author": [
+      {
+        "given": "Isabelle",
+        "family": "Guyon",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Alexander",
+        "family": "Statnikov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "7_CR1",
+        "unstructured": "Leo Breiman. Arcing the edge. Technical report, Technical Report 486, Statistics Department, University of California at Berkeley, 1997."
+      },
+      {
+        "key": "7_CR2",
+        "unstructured": "Diogo Moitinho de Almeida. Automated feature engineering applied to causality. In Proc. NIPS 2013 workshop on causality, \n                    http://clopinet.com/isabelle/Projects/NIPS2013/\n                    \n                  , December 2013."
+      },
+      {
+        "key": "7_CR3",
+        "unstructured": "José A. R. Fonollosa. Conditional distribution variability measure for causality detection. In Proc. NIPS 2013 workshop on causality, \n                    http://clopinet.com/isabelle/Projects/NIPS2013/\n                    \n                  , December 2013."
+      },
+      {
+        "key": "7_CR4",
+        "unstructured": "José AR Fonollosa. Conditional distribution variability measures for causality detection. arXiv preprint arXiv:1601.06680, 2016."
+      },
+      {
+        "key": "7_CR5",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Jerome H Friedman. Greedy function approximation: a gradient boosting machine. Annals of statistics, pages 1189–1232, 2001.",
+        "DOI": "10.1214/aos/1013203451"
+      },
+      {
+        "issue": "4",
+        "key": "7_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "367",
+        "DOI": "10.1016/S0167-9473(01)00065-2",
+        "volume": "38",
+        "author": "Jerome H. Friedman",
+        "year": "2002",
+        "unstructured": "Jerome H Friedman. Stochastic gradient boosting. Computational Statistics & Data Analysis, 38 (4): 367–378, 2002.",
+        "journal-title": "Computational Statistics & Data Analysis"
+      },
+      {
+        "key": "7_CR7",
+        "unstructured": "Todd R Golub, Donna K Slonim, Pablo Tamayo, Christine Huard, Michelle Gaasenbeek, Jill P Mesirov, Hilary Coller, Mignon L Loh, James R Downing, Mark A Caligiuri, et al. Molecular classification of cancer: class discovery and class prediction by gene expression monitoring. science, 286 (5439): 531–537, 1999."
+      },
+      {
+        "key": "7_CR8",
+        "unstructured": "Isabelle Guyon. Chalearn cause effect pairs challenge, 2013. URL \n                    http://www.causality.inf.ethz.ch/cause-effect.php\n                    \n                  ."
+      },
+      {
+        "key": "7_CR9",
+        "unstructured": "Isabelle Guyon. Chalearn fast causation coefficient challenge. 2014."
+      },
+      {
+        "key": "7_CR10",
+        "unstructured": "Isabelle Guyon, Hans-Marcus Bitter, Zulfikar Ahmed, Michael Brown, and Jonathan Heller. Multivariate non-linear feature selection with kernel multiplicative updates and gram-schmidt relief. In BISC Flint-CIBI 2003 Workshop. Berkeley, pages 1–11, 2003."
+      },
+      {
+        "key": "7_CR11",
+        "unstructured": "Tin Kam Ho. Random decision forests. In Proceedings of the Third International Conference on Document Analysis and Recognition (Volume 1) - Volume 1, ICDAR ‘95, pages 278–, Washington, DC, USA, 1995. IEEE Computer Society. ISBN 0-8186-7128-9. URL \n                    http://dl.acm.org/citation.cfm?id=844379.844681\n                    \n                  ."
+      },
+      {
+        "key": "7_CR12",
+        "unstructured": "Patrik O Hoyer, Dominik Janzing, Joris M Mooij, Jonas Peters, and Bernhard Schölkopf. Nonlinear causal discovery with additive noise models. In Neural Information Processing Systems (NIPS), pages 689–696, 2009."
+      },
+      {
+        "key": "7_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/j.artint.2012.01.002",
+        "volume": "182-183",
+        "author": "Dominik Janzing",
+        "year": "2012",
+        "unstructured": "Dominik Janzing, Joris Mooij, Kun Zhang, Jan Lemeire, Jakob Zscheischler, Povilas Daniušis, Bastian Steudel, and Bernhard Schölkopf. Information-geometric approach to inferring causal directions. Artif. Intell., 182–183: 1–31, May 2012. ISSN 0004-3702. \n                    https://doi.org/10.1016/j.artint.2012.01.002\n                    \n                  . URL \n                    http://dx.doi.org/10.1016/j.artint.2012.01.002\n                    \n                  .",
+        "journal-title": "Artificial Intelligence"
+      },
+      {
+        "key": "7_CR14",
+        "unstructured": "David Lopez-Paz, Krikamol Muandet, and Benjamin Recht. The randomized causation coefficient. J. Mach. Learn. Res., 16 (1): 2901–2907, January 2015. ISSN 1532-4435. URL \n                    http://dl.acm.org/citation.cfm?id=2789272.2912092\n                    \n                  ."
+      },
+      {
+        "key": "7_CR15",
+        "unstructured": "Joris M Mooij, Jonas Peters, Dominik Janzing, Jakob Zscheischler, and Bernhard Schölkopf. Distinguishing cause from effect using observational data: methods and benchmarks. Journal of Machine Learning Research, 17 (32): 1–102, 2016."
+      },
+      {
+        "issue": "12",
+        "key": "7_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "2436",
+        "DOI": "10.1109/TPAMI.2011.71",
+        "volume": "33",
+        "author": "Jonas Peters",
+        "year": "2011",
+        "unstructured": "Jonas Peters, Dominik Janzing, and Bernhard Scholkopf. Causal inference on discrete data using additive noise models. IEEE Transactions on Pattern Analysis and Machine Intelligence, 33 (12): 2436–2450, 2011.",
+        "journal-title": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      },
+      {
+        "key": "7_CR17",
+        "unstructured": "Ali Rahimi and Benjamin Recht. Random features for large-scale kernel machines. In Advances in neural information processing systems, pages 1177–1184, 2008."
+      },
+      {
+        "key": "7_CR18",
+        "unstructured": "Spyridon Samothrakis, Diego Perez, and Simon Lucas. Training gradient boosting machines using curve fitting and information-theoretic features for causal direction detection. In Proc. NIPS 2013 workshop on causality, \n                    http://clopinet.com/isabelle/Projects/NIPS2013/\n                    \n                  , December 2013."
+      },
+      {
+        "key": "7_CR19",
+        "unstructured": "Thomas Schaffter, Daniel Marbach, and Dario Floreano. Genenetweaver: In silico benchmark generation and performance profiling of network inference methods. Bioinformatics, 27 (16): 2263–2270, 2011. wingx."
+      },
+      {
+        "key": "7_CR20",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Alex Smola, Arthur Gretton, Le Song, and Bernhard Schölkopf. A hilbert space embedding for distributions. In International Conference on Algorithmic Learning Theory, pages 13–31. Springer, 2007.",
+        "DOI": "10.1007/978-3-540-75225-7_5"
+      },
+      {
+        "issue": "Suppl 8",
+        "key": "7_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "S22",
+        "DOI": "10.1186/1471-2164-13-S8-S22",
+        "volume": "13",
+        "author": "Alexander Statnikov",
+        "year": "2012",
+        "unstructured": "Alexander Statnikov, Mikael Henaff, Nikita I Lytkin, and Constantin F Aliferis. New methods for separating causes from effects in genomics data. BMC genomics, 13 (8): S22, 2012.",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "key": "7_CR22",
+        "unstructured": "Alexander Statnikov, Sisi Ma, Mikael Henaff, Nikita Lytkin, Efstratios Efstathiadis, Eric R. Peskin, and Constantin F. Aliferis. Ultra-scalable and efficient methods for hybrid observational and experimental local causal pathway discovery. J. Mach. Learn. Res., 16 (1): 3219–3267, January 2015. ISSN 1532-4435. URL \n                    http://dl.acm.org/citation.cfm?id=2789272.2912102\n                    \n                  ."
+      }
+    ],
+    "container-title": [
+      "The Springer Series on Challenges in Machine Learning",
+      "Cause Effect Pairs in Machine Learning"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/978-3-030-21810-2_7",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          23
+        ]
+      ],
+      "date-time": "2019-10-23T00:39:27Z",
+      "timestamp": 1571791167000
+    },
+    "score": 27.827883,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/978-3-030-21810-2_7"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "ISBN": [
+      "9783030218096",
+      "9783030218102"
+    ],
+    "references-count": 22,
+    "URL": "https://doi.org/10.1007/978-3-030-21810-2_7",
+    "ISSN": [
+      "2520-131X",
+      "2520-1328"
+    ],
+    "issn-type": [
+      {
+        "type": "print",
+        "value": "2520-131X"
+      },
+      {
+        "type": "electronic",
+        "value": "2520-1328"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "23 October 2019",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ChapterHistory",
+          "label": "Chapter History"
+        }
+      }
+    ]
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2024-09-04T21:38:25Z",
+      "timestamp": 1725485905481
+    },
+    "reference-count": 0,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          11
+        ]
+      ]
+    },
+    "DOI": "10.1109/iccvw.2011.6130277",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          1,
+          19
+        ]
+      ],
+      "date-time": "2012-01-19T01:02:42Z",
+      "timestamp": 1326934962000
+    },
+    "page": "461-462",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Demonstrations and live evaluation for the gesture recognition challenge"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "Isabelle",
+        "family": "Guyon",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Vassilis",
+        "family": "Athitsos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "event": {
+      "name": "2011 IEEE International Conference on Computer Vision Workshops (ICCV Workshops)",
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            11,
+            6
+          ]
+        ]
+      },
+      "location": "Barcelona, Spain",
+      "end": {
+        "date-parts": [
+          [
+            2011,
+            11,
+            13
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "2011 IEEE International Conference on Computer Vision Workshops (ICCV Workshops)"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/6114268/6130192/06130277.pdf?arnumber=6130277",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          21
+        ]
+      ],
+      "date-time": "2017-03-21T16:52:08Z",
+      "timestamp": 1490115128000
+    },
+    "score": 24.485744,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/6130277/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          11
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1109/iccvw.2011.6130277",
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          11
+        ]
+      ]
+    }
+  }
+]

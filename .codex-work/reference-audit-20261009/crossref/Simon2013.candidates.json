@@ -1,0 +1,2009 @@
+[
+  {
+    "institution": [
+      {
+        "name": "Comprehensive R Archive Network",
+        "acronym": [
+          "CRAN"
+        ]
+      }
+    ],
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          13
+        ]
+      ],
+      "date-time": "2024-06-13T00:27:54Z",
+      "timestamp": 1718238474009
+    },
+    "description": "Fit multinomial logistic regression with a penalty on the nuclear norm of the estimated regression coefficient matrix, using proximal gradient descent.",
+    "reference-count": 0,
+    "publisher": "The R Foundation",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "content-updated": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          11
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.32614/cran.package.npmr",
+    "type": "dataset",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2024-06-12T14:18:49Z",
+      "timestamp": 1718201929000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "npmr: Nuclear Penalized Multinomial Regression"
+    ],
+    "prefix": "10.32614",
+    "author": [
+      {
+        "name": "Scott Powers, Trevor Hastie, Robert Tibshirani",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "17266",
+    "content-created": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          10
+        ]
+      ]
+    },
+    "container-title": [
+      "CRAN: Contributed Packages"
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          12
+        ]
+      ],
+      "date-time": "2024-06-12T14:51:32Z",
+      "timestamp": 1718203892000
+    },
+    "score": 35.72397,
+    "resource": {
+      "primary": {
+        "URL": "https://CRAN.R-project.org/package=npmr"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          10
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.32614/cran.package.npmr",
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          2,
+          10
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          6
+        ]
+      ],
+      "date-time": "2026-10-06T06:30:29Z",
+      "timestamp": 1791268229587,
+      "version": "4.1.0"
+    },
+    "reference-count": 30,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              11,
+              5
+            ]
+          ],
+          "date-time": "2013-11-05T00:00:00Z",
+          "timestamp": 1383609600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Stat Comput"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1007/s11222-013-9424-2",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          11,
+          4
+        ]
+      ],
+      "date-time": "2013-11-04T09:59:32Z",
+      "timestamp": 1383559172000
+    },
+    "page": "173-187",
+    "source": "Crossref",
+    "is-referenced-by-count": 278,
+    "title": [
+      "Group descent algorithms for nonconvex penalized linear and logistic regression models with grouped predictors"
+    ],
+    "prefix": "10.1007",
+    "volume": "25",
+    "author": [
+      {
+        "given": "Patrick",
+        "family": "Breheny",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jian",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          11,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "9424_CR1",
+        "unstructured": "Bakin, S.: Adaptive regression and model selection in data mining problems. Ph.D. thesis, Australian National University (1999)"
+      },
+      {
+        "key": "9424_CR2",
+        "volume-title": "Nonlinear Programming",
+        "author": "D. Bertsekas",
+        "year": "1999",
+        "unstructured": "Bertsekas, D.: Nonlinear Programming, 2nd edn. Athena Scientific, Nashua (1999)",
+        "edition": "2"
+      },
+      {
+        "key": "9424_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "232",
+        "DOI": "10.1214/10-AOAS388",
+        "volume": "5",
+        "author": "P. Breheny",
+        "year": "2011",
+        "unstructured": "Breheny, P., Huang, J.: Coordinate descent algorithms for nonconvex penalized regression, with applications to biological feature selection. Ann. Appl. Stat. 5, 232–253 (2011)",
+        "journal-title": "Ann. Appl. Stat."
+      },
+      {
+        "key": "9424_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "6287",
+        "DOI": "10.1073/pnas.0600158103",
+        "volume": "103",
+        "author": "A. Chiang",
+        "year": "2006",
+        "unstructured": "Chiang, A., Beck, J., Yen, H., Tayeh, M., Scheetz, T., Swiderski, R., Nishimura, D., Braun, T., Kim, K., Huang, J., et al.: Homozygosity mapping with SNP arrays identifies TRIM32, an E3 ubiquitin ligase, as a Bardet–Biedl syndrome gene (BBS11). Proc. Natl. Acad. Sci. 103, 6287–6292 (2006)",
+        "journal-title": "Proc. Natl. Acad. Sci."
+      },
+      {
+        "key": "9424_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "425",
+        "DOI": "10.1093/biomet/81.3.425",
+        "volume": "81",
+        "author": "D. Donoho",
+        "year": "1994",
+        "unstructured": "Donoho, D., Johnstone, J.: Ideal spatial adaptation by wavelet shrinkage. Biometrika 81, 425–455 (1994)",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "9424_CR6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1348",
+        "DOI": "10.1198/016214501753382273",
+        "volume": "96",
+        "author": "J. Fan",
+        "year": "2001",
+        "unstructured": "Fan, J., Li, R.: Variable selection via nonconcave penalized likelihood and its oracle properties. J. Am. Stat. Assoc. 96, 1348–1360 (2001)",
+        "journal-title": "J. Am. Stat. Assoc."
+      },
+      {
+        "key": "9424_CR7",
+        "unstructured": "Foygel, R., Drton, M.: Exact block-wise optimization in group lasso and sparse group lasso for linear regression (2010). Arxiv preprint arXiv:1010.3320"
+      },
+      {
+        "key": "9424_CR8",
+        "doi-asserted-by": "crossref",
+        "first-page": "302",
+        "DOI": "10.1214/07-AOAS131",
+        "volume": "1",
+        "author": "J. Friedman",
+        "year": "2007",
+        "unstructured": "Friedman, J., Hastie, T., Höfling, H., Tibshirani, R.: Pathwise coordinate optimization. Ann. Appl. Stat. 1, 302–332 (2007)",
+        "journal-title": "Ann. Appl. Stat."
+      },
+      {
+        "key": "9424_CR9",
+        "unstructured": "Friedman, J., Hastie, T., Tibshirani, R.: A note on the group lasso and a sparse group lasso (2010a). Arxiv preprint arXiv:1001.0736"
+      },
+      {
+        "key": "9424_CR10",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.18637/jss.v033.i01",
+        "volume": "33",
+        "author": "J.H. Friedman",
+        "year": "2010",
+        "unstructured": "Friedman, J.H., Hastie, T., Tibshirani, R.: Regularization paths for generalized linear models via coordinate descent. J. Stat. Softw. 33, 1–22 (2010b)",
+        "journal-title": "J. Stat. Softw."
+      },
+      {
+        "key": "9424_CR11",
+        "doi-asserted-by": "crossref",
+        "first-page": "397",
+        "DOI": "10.1080/10618600.1998.10474784",
+        "volume": "7",
+        "author": "W. Fu",
+        "year": "1998",
+        "unstructured": "Fu, W.: Penalized regressions: the bridge versus the lasso. J. Comput. Graph. Stat. 7, 397–416 (1998)",
+        "journal-title": "J. Comput. Graph. Stat."
+      },
+      {
+        "key": "9424_CR12",
+        "first-page": "855",
+        "volume": "7",
+        "author": "H. Gao",
+        "year": "1997",
+        "unstructured": "Gao, H., Bruce, A.: Waveshrink with firm shrinkage. Stat. Sin. 7, 855–874 (1997)",
+        "journal-title": "Stat. Sin."
+      },
+      {
+        "key": "9424_CR13",
+        "doi-asserted-by": "crossref",
+        "first-page": "481",
+        "DOI": "10.1214/12-STS392",
+        "volume": "27",
+        "author": "J. Huang",
+        "year": "2012",
+        "unstructured": "Huang, J., Breheny, P., Ma, S.: A selective review of group selection in high-dimensional models. Stat. Sci. 27, 481–499 (2012)",
+        "journal-title": "Stat. Sci."
+      },
+      {
+        "key": "9424_CR14",
+        "doi-asserted-by": "crossref",
+        "first-page": "30",
+        "DOI": "10.1198/0003130042836",
+        "volume": "58",
+        "author": "D. Hunter",
+        "year": "2004",
+        "unstructured": "Hunter, D., Lange, K.: A tutorial on MM algorithms. Am. Stat. 58, 30–38 (2004)",
+        "journal-title": "Am. Stat."
+      },
+      {
+        "key": "9424_CR15",
+        "doi-asserted-by": "crossref",
+        "first-page": "957",
+        "DOI": "10.1109/TPAMI.2005.127",
+        "volume": "27",
+        "author": "B. Krishnapuram",
+        "year": "2005",
+        "unstructured": "Krishnapuram, B., Carin, L., Figueiredo, M., Hartemink, A.: Sparse multinomial logistic regression: fast algorithms and generalization bounds. IEEE Trans. Pattern Anal. Mach. Intell. 27, 957–968 (2005)",
+        "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell."
+      },
+      {
+        "key": "9424_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1080/10618600.2000.10474858",
+        "volume": "9",
+        "author": "K. Lange",
+        "year": "2000",
+        "unstructured": "Lange, K., Hunter, D., Yang, I.: Optimization transfer using surrogate objective functions. J. Comput. Graph. Stat. 9, 1–20 (2000)",
+        "journal-title": "J. Comput. Graph. Stat."
+      },
+      {
+        "key": "9424_CR17",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1111/j.1467-9868.2007.00627.x",
+        "volume": "70",
+        "author": "L. Meier",
+        "year": "2008",
+        "unstructured": "Meier, L., van de Geer, S., Buhlmann, P.: The group lasso for logistic regression. J. R. Stat. Soc. B 70, 53 (2008)",
+        "journal-title": "J. R. Stat. Soc. B"
+      },
+      {
+        "key": "9424_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1109/LSP.2011.2139204",
+        "volume": "18",
+        "author": "A. Puig",
+        "year": "2011",
+        "unstructured": "Puig, A., Wiesel, A., Fleury, G., Hero, A.: Multidimensional shrinkage-thresholding operator and group lasso penalties. IEEE Signal Process. Lett. 18, 363–366 (2011)",
+        "journal-title": "IEEE Signal Process. Lett."
+      },
+      {
+        "key": "9424_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "1009",
+        "DOI": "10.1111/j.1467-9868.2009.00718.x",
+        "volume": "71",
+        "author": "P. Ravikumar",
+        "year": "2009",
+        "unstructured": "Ravikumar, P., Lafferty, J., Liu, H., Wasserman, L.: Sparse additive models. J. R. Stat. Soc. B 71, 1009–1030 (2009)",
+        "journal-title": "J. R. Stat. Soc. B"
+      },
+      {
+        "key": "9424_CR20",
+        "doi-asserted-by": "crossref",
+        "first-page": "14429",
+        "DOI": "10.1073/pnas.0602562103",
+        "volume": "103",
+        "author": "T. Scheetz",
+        "year": "2006",
+        "unstructured": "Scheetz, T., Kim, K., Swiderski, R., Philp, A., Braun, T., Knudtson, K., Dorrance, A., DiBona, G., Huang, J., Casavant, T., et al.: Regulation of gene expression in the mammalian eye and its relevance to eye disease. Proc. Natl. Acad. Sci. 103, 14429–14434 (2006)",
+        "journal-title": "Proc. Natl. Acad. Sci."
+      },
+      {
+        "key": "9424_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "2976",
+        "DOI": "10.1016/j.csda.2011.11.013",
+        "volume": "56",
+        "author": "Y. She",
+        "year": "2012",
+        "unstructured": "She, Y.: An iterative algorithm for fitting nonconvex penalized generalized linear models with grouped predictors. Comput. Stat. Data Anal. 56, 2976–2990 (2012)",
+        "journal-title": "Comput. Stat. Data Anal."
+      },
+      {
+        "key": "9424_CR22",
+        "first-page": "983",
+        "volume": "22",
+        "author": "N. Simon",
+        "year": "2011",
+        "unstructured": "Simon, N., Tibshirani, R.: Standardization and the group lasso penalty. Stat. Sin. 22, 983–1001 (2011)",
+        "journal-title": "Stat. Sin."
+      },
+      {
+        "key": "9424_CR23",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+        "volume": "58",
+        "author": "R. Tibshirani",
+        "year": "1996",
+        "unstructured": "Tibshirani, R.: Regression shrinkage and selection via the lasso. J. R. Stat. Soc. B 58, 267–288 (1996)",
+        "journal-title": "J. R. Stat. Soc. B"
+      },
+      {
+        "key": "9424_CR24",
+        "doi-asserted-by": "crossref",
+        "first-page": "475",
+        "DOI": "10.1023/A:1017501703105",
+        "volume": "109",
+        "author": "P. Tseng",
+        "year": "2001",
+        "unstructured": "Tseng, P.: Convergence of a block coordinate descent method for nondifferentiable minimization. J. Optim. Theory Appl. 109, 475–494 (2001)",
+        "journal-title": "J. Optim. Theory Appl."
+      },
+      {
+        "key": "9424_CR25",
+        "doi-asserted-by": "crossref",
+        "first-page": "1486",
+        "DOI": "10.1093/bioinformatics/btm125",
+        "volume": "23",
+        "author": "L. Wang",
+        "year": "2007",
+        "unstructured": "Wang, L., Chen, G., Li, H.: Group SCAD regression analysis for microarray time course gene expression data. Bioinformatics 23, 1486 (2007)",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "9424_CR26",
+        "doi-asserted-by": "crossref",
+        "first-page": "1556",
+        "DOI": "10.1198/016214508000000788",
+        "volume": "103",
+        "author": "L. Wang",
+        "year": "2008",
+        "unstructured": "Wang, L., Li, H., Huang, J.Z.: Variable selection in nonparametric varying-coefficient models for analysis of repeated measurements. J. Am. Stat. Assoc. 103, 1556–1569 (2008)",
+        "journal-title": "J. Am. Stat. Assoc."
+      },
+      {
+        "key": "9424_CR27",
+        "doi-asserted-by": "crossref",
+        "first-page": "224",
+        "DOI": "10.1214/07-AOAS147",
+        "volume": "2",
+        "author": "T. Wu",
+        "year": "2008",
+        "unstructured": "Wu, T., Lange, K.: Coordinate descent algorithms for lasso penalized regression. Ann. Appl. Stat. 2, 224–244 (2008)",
+        "journal-title": "Ann. Appl. Stat."
+      },
+      {
+        "key": "9424_CR28",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1111/j.1467-9868.2005.00532.x",
+        "volume": "68",
+        "author": "M. Yuan",
+        "year": "2006",
+        "unstructured": "Yuan, M., Lin, Y.: Model selection and estimation in regression with grouped variables. J. R. Stat. Soc. B 68, 49–67 (2006)",
+        "journal-title": "J. R. Stat. Soc. B"
+      },
+      {
+        "key": "9424_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "894",
+        "DOI": "10.1214/09-AOS729",
+        "volume": "38",
+        "author": "C. Zhang",
+        "year": "2010",
+        "unstructured": "Zhang, C.: Nearly unbiased variable selection under minimax concave penalty. Ann. Stat. 38, 894–942 (2010)",
+        "journal-title": "Ann. Stat."
+      },
+      {
+        "key": "9424_CR30",
+        "doi-asserted-by": "crossref",
+        "first-page": "1509",
+        "DOI": "10.1214/009053607000000802",
+        "volume": "36",
+        "author": "H. Zou",
+        "year": "2008",
+        "unstructured": "Zou, H., Li, R.: One-step sparse estimates in nonconcave penalized likelihood models. Ann. Stat. 36, 1509–1533 (2008)",
+        "journal-title": "Ann. Stat."
+      }
+    ],
+    "container-title": [
+      "Statistics and Computing"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11222-013-9424-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s11222-013-9424-2/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11222-013-9424-2",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          19
+        ]
+      ],
+      "date-time": "2024-05-19T02:22:36Z",
+      "timestamp": 1716085356000
+    },
+    "score": 35.44129,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/s11222-013-9424-2"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          11,
+          5
+        ]
+      ]
+    },
+    "references-count": 30,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "9424"
+    ],
+    "URL": "https://doi.org/10.1007/s11222-013-9424-2",
+    "ISSN": [
+      "0960-3174",
+      "1573-1375"
+    ],
+    "issn-type": [
+      {
+        "value": "0960-3174",
+        "type": "print"
+      },
+      {
+        "value": "1573-1375",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          11,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          18
+        ]
+      ],
+      "date-time": "2026-08-18T03:58:38Z",
+      "timestamp": 1787025518768,
+      "version": "build-2736575974"
+    },
+    "reference-count": 37,
+    "publisher": "The Korean Statistical Society",
+    "issue": "1",
+    "funder": [
+      {
+        "DOI": "10.13039/501100002641",
+        "name": "Konkuk University",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100002641",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100002462",
+        "name": "Chungnam National University",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100002462",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.csam.or.kr"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "CSAM"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          31
+        ]
+      ]
+    },
+    "DOI": "10.29220/csam.2020.27.1.129",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          10
+        ]
+      ],
+      "date-time": "2020-02-10T03:46:43Z",
+      "timestamp": 1581306403000
+    },
+    "page": "129-140",
+    "update-policy": "https://doi.org/10.5351/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "An efficient algorithm for the non-convex penalized multinomial logistic regression"
+    ],
+    "prefix": "10.29220",
+    "volume": "27",
+    "author": [
+      {
+        "given": "Sunghoon",
+        "family": "Kwon",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Applied Statistics, Konkuk University, Korea"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dongshin",
+        "family": "Kim",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Graziadio School of Business and Management, Pepperdine University, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sangin",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Information and Statistics, Chungnam National University, Korea"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "11772",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF00048682"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1541-0420.2010.01391.x"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cawley GC, Talbot NL, and Girolami M (2007). Sparse multinomial logistic regression via Bayesian l1 regularisation. In &lt;italic&gt;Advances in Neural Information Processing Systems&lt;/italic&gt;, 209-216.",
+        "DOI": "10.7551/mitpress/7503.003.0031"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Chen L, Yang J, Li J, and Wang X (2014). Multinomial regression with elastic net penalty and its grouping effect in gene selection. In &lt;italic&gt;Abstract and Applied Analysis&lt;/italic&gt;, &lt;bold&gt;2014&lt;/bold&gt;, Hindawi.",
+        "DOI": "10.1155/2014/569501"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/016214501753382273"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TIT.2011.2158486"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/009053604000000256"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.18637/jss.v033.i01"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00401706.1970.10488634"
+      },
+      {
+        "key": "ref10",
+        "unstructured": "Huang J, Breheny P, Lee S, Ma S, and Zhang CH (2016). The Mnet method for variable selection, &lt;italic&gt;Statistica Sinica&lt;/italic&gt;, &lt;bold&gt;26&lt;/bold&gt;, 903-923."
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/009053607000000875"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/09-AOS781"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/IVS.2016.7535529"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1198/106186008X386210"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csda.2006.06.007"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPAMI.2005.127"
+      },
+      {
+        "key": "ref17",
+        "unstructured": "Kwon S and Kim Y (2012). Large sample properties of the SCAD-penalized maximum likelihood estimation on high dimensions, &lt;italic&gt;Statistica Sinica&lt;/italic&gt;, &lt;bold&gt;12&lt;/bold&gt;, 629-653."
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4310/SII.2013.v6.n2.a7"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csda.2015.07.001"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csda.2016.05.016"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csda.2015.08.019"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jmva.2013.11.016"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2011.645783"
+      },
+      {
+        "key": "ref24",
+        "unstructured": "Simon N, Friedman J, and Hastie T (2013). A blockwise descent algorithm for group-penalized multiresponse and multinomial regression, arXiv preprint arXiv:1311.6529."
+      },
+      {
+        "key": "ref25",
+        "unstructured": "Tibshirani R (1996). Regression shrinkage and selection via the lasso, &lt;italic&gt;Journal of the Royal Statistical Society: Series B (Methodological)&lt;/italic&gt;, &lt;bold&gt;58&lt;/bold&gt;, 267-288."
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511842061"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.csda.2014.09.009"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Um S, Kim D, Lee S, and Kwon S (2019). On the strong oracle property of concave penalized estimators with infinite penalty derivative at the origin, &lt;italic&gt;The Korean Journal of Statistics&lt;/italic&gt;, Under review.",
+        "DOI": "10.1007/s42952-019-00024-w"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/07-AOS580"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-9868.2005.00532.x"
+      },
+      {
+        "key": "ref31",
+        "unstructured": "Yuille AL and Rangarajan A (2002). The concave-convex procedure (CCCP). In &lt;italic&gt;Advances in Neural Information Processing Systems&lt;/italic&gt;, 1033-1040."
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/09-AOS729"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/12-STS399"
+      },
+      {
+        "key": "ref34",
+        "unstructured": "Zhao P and Yu B (2006). On model selection consistency of lasso, &lt;italic&gt;Journal of Machine Learning Research&lt;/italic&gt;, &lt;bold&gt;7&lt;/bold&gt;, 2541-2563."
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biostatistics/kxg046"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1467-9868.2005.00503.x"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/009053607000000802"
+      }
+    ],
+    "container-title": [
+      "Communications for Statistical Applications and Methods"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://pdf.medrang.co.kr/CSAM/2020/027/CSAM027-01-09.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2023-09-26T11:24:18Z",
+      "timestamp": 1695727458000
+    },
+    "score": 33.736023,
+    "resource": {
+      "primary": {
+        "URL": "http://www.csam.or.kr/journal/view.html?doi=10.29220/CSAM.2020.27.1.129"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          31
+        ]
+      ]
+    },
+    "references-count": 37,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            31
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.29220/CSAM.2020.27.1.129"
+    ],
+    "URL": "https://doi.org/10.29220/csam.2020.27.1.129",
+    "ISSN": [
+      "2383-4757"
+    ],
+    "issn-type": [
+      {
+        "value": "2383-4757",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          31
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "http://www.csam.or.kr/journal/view.html?doi=10.29220/CSAM.2020.27.1.129",
+        "URL": "http://www.csam.or.kr/journal/view.html?doi=10.29220/CSAM.2020.27.1.129",
+        "name": "the_journal",
+        "label": "Communications for Statistical Applications and Methods",
+        "group": {
+          "name": "multiple_resolution",
+          "label": "Full text available at:"
+        }
+      },
+      {
+        "value": "2019-10-17",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2019-11-26",
+        "order": 1,
+        "name": "revised",
+        "label": "Revised",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2019-11-26",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2020-01-31",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "© 2020 The Korean Statistical Society",
+        "name": "copyright",
+        "label": "Copyright",
+        "group": {
+          "name": "Copyright_and_licensing",
+          "label": "Copyright and Licensing"
+        }
+      }
+    ]
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          6
+        ]
+      ],
+      "date-time": "2026-10-06T04:36:43Z",
+      "timestamp": 1791261403761,
+      "version": "4.1.0"
+    },
+    "reference-count": 19,
+    "publisher": "Elsevier BV",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2012,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2012-02-01T00:00:00Z",
+          "timestamp": 1328054400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Computational Statistics &amp; Data Analysis"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.csda.2011.08.007",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          25
+        ]
+      ],
+      "date-time": "2011-08-25T21:43:48Z",
+      "timestamp": 1314308628000
+    },
+    "page": "316-326",
+    "source": "Crossref",
+    "is-referenced-by-count": 28,
+    "title": [
+      "Group coordinate descent algorithms for nonconvex penalized regression"
+    ],
+    "prefix": "10.1016",
+    "volume": "56",
+    "author": [
+      {
+        "given": "Fengrong",
+        "family": "Wei",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hongxiao",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000005",
+        "doi-asserted-by": "crossref",
+        "first-page": "2350",
+        "DOI": "10.1214/aos/1032181158",
+        "article-title": "Heuristics of instability and stabilization in model selection",
+        "volume": "24",
+        "author": "Breiman",
+        "year": "1996",
+        "journal-title": "Ann. Statist."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.csda.2011.08.007_br000010",
+        "doi-asserted-by": "crossref",
+        "first-page": "727",
+        "DOI": "10.1093/biomet/83.4.727",
+        "article-title": "Understanding waveshrink: Variance and bias estimation",
+        "volume": "83",
+        "author": "Bruce",
+        "year": "1996",
+        "journal-title": "Biometrika"
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000015",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1137/S1064827596304010",
+        "article-title": "Atomic decomposition by Basis Pursuit",
+        "volume": "20",
+        "author": "Chen",
+        "year": "1998",
+        "journal-title": "SIAM J. Sci. Comput."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000020",
+        "doi-asserted-by": "crossref",
+        "first-page": "407",
+        "DOI": "10.1214/009053604000000067",
+        "article-title": "Least angle regression",
+        "volume": "32",
+        "author": "Efron",
+        "year": "2004",
+        "journal-title": "Ann. Statist."
+      },
+      {
+        "issue": "456",
+        "key": "10.1016/j.csda.2011.08.007_br000025",
+        "doi-asserted-by": "crossref",
+        "first-page": "1348",
+        "DOI": "10.1198/016214501753382273",
+        "article-title": "Variable selection via nonconcave penalized likelihood and its oracle properties",
+        "volume": "96",
+        "author": "Fan",
+        "year": "2001",
+        "journal-title": "J. Amer. Statist. Assoc."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000030",
+        "doi-asserted-by": "crossref",
+        "first-page": "302",
+        "DOI": "10.1214/07-AOAS131",
+        "article-title": "Pathwise coordinate optimization",
+        "volume": "1",
+        "author": "Friedman",
+        "year": "2007",
+        "journal-title": "Ann. Appl. Stat."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000035",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.18637/jss.v033.i01",
+        "article-title": "Regularization paths for generalized linear models via coordinate descent",
+        "volume": "33",
+        "author": "Friedman",
+        "year": "2010",
+        "journal-title": "J. Stat. Softw."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000040",
+        "first-page": "855",
+        "article-title": "Waveshrink with firm shrinkage",
+        "volume": "7",
+        "author": "Gao",
+        "year": "1997",
+        "journal-title": "Statist. Sinica"
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000045",
+        "doi-asserted-by": "crossref",
+        "first-page": "2282",
+        "DOI": "10.1214/09-AOS781",
+        "article-title": "Variable selection in nonparametric models",
+        "volume": "38",
+        "author": "Huang",
+        "year": "2010",
+        "journal-title": "Ann. Statist."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000050",
+        "doi-asserted-by": "crossref",
+        "first-page": "53",
+        "DOI": "10.1111/j.1467-9868.2007.00627.x",
+        "article-title": "The group Lasso for logistic regression",
+        "volume": "70, Part 1",
+        "author": "Meier",
+        "year": "2008",
+        "journal-title": "J. Roy. Statist. Soc. B"
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000055",
+        "doi-asserted-by": "crossref",
+        "first-page": "92",
+        "DOI": "10.1006/pmed.1996.9988",
+        "article-title": "A trial of church-based smoking cessation interventions for rural African Americans",
+        "volume": "26",
+        "author": "Schorling",
+        "year": "1997",
+        "journal-title": "Prev. Med."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000060",
+        "doi-asserted-by": "crossref",
+        "first-page": "461",
+        "DOI": "10.1214/aos/1176344136",
+        "article-title": "Estimating the dimension of a model",
+        "volume": "6",
+        "author": "Schwarz",
+        "year": "1978",
+        "journal-title": "Ann. Statist."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000065",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+        "article-title": "Regression shrinkage and selection via the Lasso",
+        "volume": "58",
+        "author": "Tibshirani",
+        "year": "1996",
+        "journal-title": "J. Roy. Statist. Soc. Ser. B"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.csda.2011.08.007_br000070",
+        "doi-asserted-by": "crossref",
+        "first-page": "1369",
+        "DOI": "10.3150/10-BEJ252",
+        "article-title": "Consistent group selection in high-dimensional linear regression",
+        "volume": "16",
+        "author": "Wei",
+        "year": "2010",
+        "journal-title": "Bernoulli"
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000075",
+        "doi-asserted-by": "crossref",
+        "first-page": "224",
+        "DOI": "10.1214/07-AOAS147",
+        "article-title": "Coordinate descent algorithms for Lasso penalized regression",
+        "volume": "2",
+        "author": "Wu",
+        "year": "2008",
+        "journal-title": "Ann. Appl. Stat."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000080",
+        "doi-asserted-by": "crossref",
+        "first-page": "49",
+        "DOI": "10.1111/j.1467-9868.2005.00532.x",
+        "article-title": "Model selection and estimation in regression with grouped variables",
+        "volume": "68",
+        "author": "Yuan",
+        "year": "2006",
+        "journal-title": "J. Roy. Statist. Soc. Ser. B"
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000085",
+        "doi-asserted-by": "crossref",
+        "first-page": "894",
+        "DOI": "10.1214/09-AOS729",
+        "article-title": "Nearly unbiased variable selection under minimax concave penalty",
+        "volume": "38",
+        "author": "Zhang",
+        "year": "2010",
+        "journal-title": "Ann. Statist."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000090",
+        "doi-asserted-by": "crossref",
+        "first-page": "1567",
+        "DOI": "10.1214/07-AOS520",
+        "article-title": "Model selection consistency of the Lasso in high-dimensional linear regression",
+        "volume": "36",
+        "author": "Zhang",
+        "year": "2008",
+        "journal-title": "Ann. Statist."
+      },
+      {
+        "key": "10.1016/j.csda.2011.08.007_br000095",
+        "doi-asserted-by": "crossref",
+        "first-page": "1509",
+        "DOI": "10.1214/009053607000000802",
+        "article-title": "One-step sparse estimates in nonconcave penalized likelihood models",
+        "volume": "36",
+        "author": "Zou",
+        "year": "2008",
+        "journal-title": "Ann. Statist."
+      }
+    ],
+    "container-title": [
+      "Computational Statistics &amp; Data Analysis"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0167947311003069?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0167947311003069?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          9
+        ]
+      ],
+      "date-time": "2025-03-09T09:08:14Z",
+      "timestamp": 1741511294000
+    },
+    "score": 33.189587,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167947311003069"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          2
+        ]
+      ]
+    },
+    "references-count": 19,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2012,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0167947311003069"
+    ],
+    "URL": "https://doi.org/10.1016/j.csda.2011.08.007",
+    "ISSN": [
+      "0167-9473"
+    ],
+    "issn-type": [
+      {
+        "value": "0167-9473",
+        "type": "print"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          6
+        ]
+      ],
+      "date-time": "2026-03-06T13:09:56Z",
+      "timestamp": 1772802596964,
+      "version": "3.50.1"
+    },
+    "reference-count": 31,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              5,
+              10
+            ]
+          ],
+          "date-time": "2016-05-10T00:00:00Z",
+          "timestamp": 1462838400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Stat Comput"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          7
+        ]
+      ]
+    },
+    "DOI": "10.1007/s11222-016-9659-9",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          10
+        ]
+      ],
+      "date-time": "2016-05-10T07:00:54Z",
+      "timestamp": 1462863654000
+    },
+    "page": "865-883",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 15,
+    "title": [
+      "A coordinate descent algorithm for computing penalized smooth quantile regression"
+    ],
+    "prefix": "10.1007",
+    "volume": "27",
+    "author": [
+      {
+        "given": "Abdallah",
+        "family": "Mkhadri",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Mohamed",
+        "family": "Ouhourane",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Karim",
+        "family": "Oualkacha",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          10
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "9659_CR1",
+        "unstructured": "Aravkin, A., Kambadur, A., Lozano, A. C., Luss, R.: Sparse Quantile Huber Regression for Efficient and Robust Estimation (2014) ArXiv:1402.4624v1"
+      },
+      {
+        "key": "9659_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1214/10-AOS827",
+        "volume": "39",
+        "author": "A Belloni",
+        "year": "2011",
+        "unstructured": "Belloni, A., Chernozhukov, V.: L $$_1$$ 1 -Penalized quantile regression in high-dimensional sparse models. Ann. Stat. 39, 82–130 (2011)",
+        "journal-title": "Ann. Stat."
+      },
+      {
+        "issue": "1",
+        "key": "9659_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "232",
+        "DOI": "10.1214/10-AOAS388",
+        "volume": "5",
+        "author": "P Breheny",
+        "year": "2011",
+        "unstructured": "Breheny, P., Huang, J.: Coordinate descent algorithms for non nonconvex penalized regression, with applications to biological feature selection. Ann. Appl. Stat. 5(1), 232 (2011)",
+        "journal-title": "Ann. Appl. Stat."
+      },
+      {
+        "key": "9659_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "951",
+        "DOI": "10.1007/s00439-014-1440-6",
+        "volume": "133",
+        "author": "L Briollais",
+        "year": "2014",
+        "unstructured": "Briollais, L., Durrieu, G.: Application of quantile regression to recent genetic and -omic studies. Hum. Genet. 133, 951–966 (2014)",
+        "journal-title": "Hum. Genet."
+      },
+      {
+        "key": "9659_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "407",
+        "DOI": "10.1214/009053604000000067",
+        "volume": "32",
+        "author": "B Efron",
+        "year": "2004",
+        "unstructured": "Efron, B., Hastie, T., Johnstone, I., Tibshirani, R.: Least angle regression. Ann. Stat. 32, 407–499 (2004)",
+        "journal-title": "Ann. Stat."
+      },
+      {
+        "issue": "1",
+        "key": "9659_CR6",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1007/s13571-013-0065-4",
+        "volume": "76",
+        "author": "M Anbari El",
+        "year": "2014",
+        "unstructured": "El Anbari, M., Mkhadri, A.: Penalized regression combing the L1 norm and a correlation based penalty. Sankhya B 76(1), 82–102 (2014)",
+        "journal-title": "Sankhya B"
+      },
+      {
+        "key": "9659_CR7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1348",
+        "DOI": "10.1198/016214501753382273",
+        "volume": "96",
+        "author": "J Fan",
+        "year": "2001",
+        "unstructured": "Fan, J., Li, R.: Variable selection via nonconcave penalized likelihood and its oracle properties. J. Am. Stat. Assoc. 96, 1348–1360 (2001)",
+        "journal-title": "J. Am. Stat. Assoc."
+      },
+      {
+        "key": "9659_CR8",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.18637/jss.v033.i01",
+        "volume": "33",
+        "author": "J Friedman",
+        "year": "2010",
+        "unstructured": "Friedman, J., Hastie, T., Tibshirani, R.: Regularization paths for generalized linear models via coordinate descent. J. Stat. Softw. 33, 1–22 (2010)",
+        "journal-title": "J. Stat. Softw."
+      },
+      {
+        "key": "9659_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1184",
+        "DOI": "10.1214/11-EJS638",
+        "volume": "5",
+        "author": "M Hebiri",
+        "year": "2011",
+        "unstructured": "Hebiri, M., van de Geer, S.: The Smooth-Lasso and other $$l_1 + l_2$$ l 1 + l 2 -penalized methods. Electron. J. Stat. 5, 1184–1226 (2011)",
+        "journal-title": "Electron. J. Stat."
+      },
+      {
+        "key": "9659_CR10",
+        "unstructured": "Huang, P., Breheny, S., Zhang, C.H.: The Mnet method for variable selection. Technical Report N 402, Department of Statistics, Iowa University (2010)"
+      },
+      {
+        "key": "9659_CR11",
+        "doi-asserted-by": "crossref",
+        "first-page": "60",
+        "DOI": "10.1080/10618600.2000.10474866",
+        "volume": "19",
+        "author": "DR Hunter",
+        "year": "2000",
+        "unstructured": "Hunter, D.R., Lange, K.: Quantile regression via an MM algorithm. J. Comput. Graph. Stat. 19, 60–77 (2000)",
+        "journal-title": "J. Comput. Graph. Stat."
+      },
+      {
+        "key": "9659_CR12",
+        "doi-asserted-by": "crossref",
+        "first-page": "182",
+        "DOI": "10.1017/S0334270000000576",
+        "volume": "38",
+        "author": "LS Jennings",
+        "year": "1996",
+        "unstructured": "Jennings, L.S., Wong, K.H., Teo, K.L.: Optimal control computation to account for electric movement. J. Aust. Math. Soc. B 38, 182–193 (1996)",
+        "journal-title": "J. Aust. Math. Soc. B"
+      },
+      {
+        "key": "9659_CR13",
+        "unstructured": "Jiang, D., Huang, J.: Majorization minimization by coordinate descent for concave penalized generalized linear models. Department of Biostatistics, University of Iowa, Report No 412 (2012)"
+      },
+      {
+        "key": "9659_CR14",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9780511754098",
+        "volume-title": "Quantile Regression",
+        "author": "R Koenker",
+        "year": "2005",
+        "unstructured": "Koenker, R.: Quantile Regression. Cambridge University Press, Cambridge (2005)"
+      },
+      {
+        "key": "9659_CR15",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.2307/1913643",
+        "volume": "46",
+        "author": "R Koenker",
+        "year": "1970",
+        "unstructured": "Koenker, R., Basset, G.: Regression quantiles. Econometrica 46, 33–50 (1970)",
+        "journal-title": "Econometrica"
+      },
+      {
+        "issue": "1",
+        "key": "9659_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "242",
+        "DOI": "10.1111/j.1541-0420.2010.01436.x",
+        "volume": "67",
+        "author": "C Li",
+        "year": "2011",
+        "unstructured": "Li, C., Wei, Y., Chappell, R., He, X.: Best line quantile regression with application to an allometric study of land mam-mals? speed and mass. Biometrics 67(1), 242–249 (2011)",
+        "journal-title": "Biometrics"
+      },
+      {
+        "key": "9659_CR17",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1198/106186008X289155",
+        "volume": "17",
+        "author": "Y Li",
+        "year": "2008",
+        "unstructured": "Li, Y., Zhu, J.: $$L_{1}$$ L 1 -norm quantile regression. J. Compu. Graph. Stat. 17, 163–185 (2008)",
+        "journal-title": "J. Compu. Graph. Stat."
+      },
+      {
+        "key": "9659_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "1125",
+        "DOI": "10.1198/jasa.2011.tm09738",
+        "volume": "106",
+        "author": "R Mazumder",
+        "year": "2011",
+        "unstructured": "Mazumder, R., Friedman, J.H., Hastie, T.: SparseNet: coordinate descent with nonconvex penal- ties. J. Am. Stat. Assoc. 106, 1125–1138 (2011)",
+        "journal-title": "J. Am. Stat. Assoc."
+      },
+      {
+        "key": "9659_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "510",
+        "DOI": "10.1198/jcgs.2010.10063",
+        "volume": "20",
+        "author": "S-K Oh",
+        "year": "2011",
+        "unstructured": "Oh, S.-K., Lee, T.C.M., Nychka, D.W.: Fast nonparametric quantile regression with arbitrary smoothing methods. J. Compu. Graph. Stat. 20, 510–526 (2011)",
+        "journal-title": "J. Compu. Graph. Stat."
+      },
+      {
+        "key": "9659_CR20",
+        "doi-asserted-by": "crossref",
+        "first-page": "676",
+        "DOI": "10.1080/10618600.2014.913516",
+        "volume": "24",
+        "author": "B Peng",
+        "year": "2015",
+        "unstructured": "Peng, B., Wang, L.: An iterative coordinate descent algorithm for high-dimensional nonconvex penalized quantile regression. J. Compu. Graph. Stat. 24, 676–694 (2015)",
+        "journal-title": "J. Compu. Graph. Stat."
+      },
+      {
+        "issue": "39",
+        "key": "9659_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "14429",
+        "DOI": "10.1073/pnas.0602562103",
+        "volume": "103",
+        "author": "T Scheetz",
+        "year": "2006",
+        "unstructured": "Scheetz, T., Kim, K., Swiderski, R., Philp, A., Braun, T., Knudtson, K., Dorrance, A., DiBona, G., Huang, J., Casavant, T., Sheffield, V., Stone, E.: Regulation of gene expression in the mammalian eye and its relevance to eye disease. Proc. Natl. Acad. Sci. USA 103(39), 14429–14434 (2006)",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "9659_CR22",
+        "doi-asserted-by": "crossref",
+        "first-page": "231",
+        "DOI": "10.1080/10618600.2012.681250",
+        "volume": "22",
+        "author": "N Simon",
+        "year": "2013",
+        "unstructured": "Simon, N., Friedman, J., Hastie, T., Tibshirani, R.: A sparse group lasso. J. Comput. Graph. Stat. 22, 231–245 (2013)",
+        "journal-title": "J. Comput. Graph. Stat."
+      },
+      {
+        "issue": "1",
+        "key": "9659_CR23",
+        "doi-asserted-by": "crossref",
+        "first-page": "153",
+        "DOI": "10.1007/s11222-010-9214-z",
+        "volume": "22",
+        "author": "M Slawski",
+        "year": "2012",
+        "unstructured": "Slawski, M.: The structured elastic net for quantile regression and support vector classification. Stat. Comput. 22(1), 153–168 (2012)",
+        "journal-title": "Stat. Comput."
+      },
+      {
+        "key": "9659_CR24",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+        "volume": "58",
+        "author": "R Tibshirani",
+        "year": "1996",
+        "unstructured": "Tibshirani, R.: Regression shrinkage and selection via the Lasso. J. R. Stat. Soc. B 58, 267–288 (1996)",
+        "journal-title": "J. R. Stat. Soc. B"
+      },
+      {
+        "key": "9659_CR25",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1111/j.1467-9868.2005.00490.x",
+        "volume": "67",
+        "author": "R Tibshirani",
+        "year": "2005",
+        "unstructured": "Tibshirani, R., Saunders, M., Rosset, S., Zhu, J., Knight, K.: Sparsity and smoothness via the fused lasso. J. R. Stat. Assoc B 67, 91–108 (2005)",
+        "journal-title": "J. R. Stat. Assoc B"
+      },
+      {
+        "key": "9659_CR26",
+        "first-page": "801",
+        "volume": "19",
+        "author": "Y Wu",
+        "year": "2009",
+        "unstructured": "Wu, Y., Liu, Y.: Variable selection in quantile regression. Stati. Sin. 19, 801–817 (2009)",
+        "journal-title": "Stati. Sin."
+      },
+      {
+        "issue": "2",
+        "key": "9659_CR27",
+        "doi-asserted-by": "crossref",
+        "first-page": "396",
+        "DOI": "10.1080/10618600.2012.680324",
+        "volume": "22",
+        "author": "Y Yang",
+        "year": "2013",
+        "unstructured": "Yang, Y., Zou, H.: An efficient algorithm for computing The HHSVM and its generalizations. J. Comput. Graph. Stat. 22(2), 396–415 (2013)",
+        "journal-title": "J. Comput. Graph. Stat."
+      },
+      {
+        "key": "9659_CR28",
+        "doi-asserted-by": "crossref",
+        "first-page": "894",
+        "DOI": "10.1214/09-AOS729",
+        "volume": "38",
+        "author": "CH Zhang",
+        "year": "2010",
+        "unstructured": "Zhang, C.H.: Nearly unbiased variable selection under minimax concave penalty. Ann. Stat. 38, 894–942 (2010)",
+        "journal-title": "Ann. Stat."
+      },
+      {
+        "key": "9659_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1007/s11222-005-4785-9",
+        "volume": "15",
+        "author": "GH Zhao",
+        "year": "2005",
+        "unstructured": "Zhao, G.H., Teo, K.L., Chan, K.S.: Estimation of conditional quantiles by a new smoothing approximation of asymmetric loss function. Stat. Comput. 15, 5–11 (2005)",
+        "journal-title": "Stat. Comput."
+      },
+      {
+        "key": "9659_CR30",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1007/s13042-011-0031-2",
+        "volume": "2",
+        "author": "S Zheng",
+        "year": "2011",
+        "unstructured": "Zheng, S.: Gradient descent algorithms for quantile regression with smooth approximation. Int. J. Mach. Learn. Cybern. 2, 191–207 (2011)",
+        "journal-title": "Int. J. Mach. Learn. Cybern."
+      },
+      {
+        "key": "9659_CR31",
+        "doi-asserted-by": "crossref",
+        "first-page": "301",
+        "DOI": "10.1111/j.1467-9868.2005.00503.x",
+        "volume": "67",
+        "author": "H Zou",
+        "year": "2005",
+        "unstructured": "Zou, H., Hastie, T.: Regularization and variable selection via the elastic-net. J. R. Stat. Soc. Ser. B 67, 301–320 (2005)",
+        "journal-title": "J. R. Stat. Soc. Ser. B"
+      }
+    ],
+    "container-title": [
+      "Statistics and Computing"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11222-016-9659-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s11222-016-9659-9/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11222-016-9659-9",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11222-016-9659-9.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          16
+        ]
+      ],
+      "date-time": "2024-06-16T08:57:10Z",
+      "timestamp": 1718528230000
+    },
+    "score": 32.932583,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/s11222-016-9659-9"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          10
+        ]
+      ]
+    },
+    "references-count": 31,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            7
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "9659"
+    ],
+    "URL": "https://doi.org/10.1007/s11222-016-9659-9",
+    "ISSN": [
+      "0960-3174",
+      "1573-1375"
+    ],
+    "issn-type": [
+      {
+        "value": "0960-3174",
+        "type": "print"
+      },
+      {
+        "value": "1573-1375",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          10
+        ]
+      ]
+    }
+  }
+]

@@ -1,0 +1,697 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2026-10-07T15:05:55Z",
+    "timestamp": 1791385555542,
+    "version": "4.3.3"
+  },
+  "reference-count": 32,
+  "publisher": "American Physical Society (APS)",
+  "issue": "9",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            4
+          ]
+        ],
+        "date-time": "2021-03-04T00:00:00Z",
+        "timestamp": 1614816000000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://link.aps.org/licenses/aps-default-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            4
+          ]
+        ],
+        "date-time": "2022-03-04T00:00:00Z",
+        "timestamp": 1646352000000
+      },
+      "content-version": "am",
+      "delay-in-days": 365,
+      "URL": "https://link.aps.org/licenses/aps-default-accepted-manuscript-license"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "OAC-1835769"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "OAC-1835769"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "OAC-1835863"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "OAC-1835863"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "AGS-1734164"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "AGS-1734164"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "1839429"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "1839429"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "1633631"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "1633631"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "ACI-1548562"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "ACI-1548562"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/100010663",
+      "name": "H2020 European Research Council",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/100010663",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "journals.aps.org"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Phys. Rev. Lett."
+  ],
+  "accepted": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1103/physrevlett.126.098302",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        4
+      ]
+    ],
+    "date-time": "2021-03-04T10:41:54Z",
+    "timestamp": 1614854514000
+  },
+  "update-policy": "https://doi.org/10.1103/crossmark-policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 325,
+  "title": [
+    "Enforcing Analytic Constraints in Neural Networks Emulating Physical Systems"
+  ],
+  "prefix": "10.1103",
+  "volume": "126",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-5731-1040",
+      "authenticated-orcid": true,
+      "given": "Tom",
+      "family": "Beucler",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Earth System Science, University of California, Irvine, California 92697-3100, USA"
+        },
+        {
+          "name": "Department of Earth and Environmental Engineering, Columbia University, New York, New York 10027, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-0340-6327",
+      "authenticated-orcid": true,
+      "given": "Michael",
+      "family": "Pritchard",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Earth System Science, University of California, Irvine, California 92697-3100, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-8676-2687",
+      "authenticated-orcid": true,
+      "given": "Stephan",
+      "family": "Rasp",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Technical University of Munich, Boltzmannstr. 3 85748 Garching, Munich, Germany"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Jordan",
+      "family": "Ott",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Computer Science, University of California, Irvine, California 92697, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-8752-4664",
+      "authenticated-orcid": true,
+      "given": "Pierre",
+      "family": "Baldi",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Computer Science, University of California, Irvine, California 92697, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-0845-8345",
+      "authenticated-orcid": true,
+      "given": "Pierre",
+      "family": "Gentine",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Department of Earth and Environmental Engineering, Columbia University, New York, New York 10027, USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "16",
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        4
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "PhysRevLett.126.098302Cc1R1",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1017/9781108955652",
+      "type": "book",
+      "volume-title": "Deep Learning in Science: Theory, Algorithms, and Applications",
+      "author": "P. Baldi",
+      "year": "2021"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc2R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41586-019-0912-1",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc3R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.aau0323",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc4R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TKDE.2017.2720168",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc8R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1814058116",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc10R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/jfm.2016.615",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc11R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1103/PhysRevFluids.3.074602",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc12R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.cma.2019.112732",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc13R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018MS001472",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc15R1",
+      "volume-title": "SIAM International Conference on Data Mining, SDM 2019",
+      "author": "X. Jia",
+      "year": "2019",
+      "type": "conference-proceedings"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc16R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.aaw4741",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc18R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/2.485891",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc19R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S1352-2310(97)00447-0",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc21R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018GL078202",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc22R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/1520-0469(2003)060&lt;0607:CRMOTA&gt;2.0.CO;2",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc23R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/JCLI3760.1",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc24R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/s41467-020-17142-3",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc25R1",
+      "type": "journal-article",
+      "volume": "7",
+      "author": "A. Krizhevsky",
+      "year": "2009",
+      "journal-title": "Cs. Toronto. Edu"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc26R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s11263-015-0816-y",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc27R1",
+      "volume-title": "Conference on Neural Information Processing Systems (NIPS)",
+      "author": "L. Hertel",
+      "year": "2018",
+      "type": "conference-proceedings"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc28R1",
+      "first-page": "281",
+      "type": "journal-article",
+      "volume": "13",
+      "author": "J. Bergstra",
+      "year": "2012",
+      "journal-title": "J. Mach. Learn. Res.",
+      "ISSN": "https://id.crossref.org/issn/1532-4435",
+      "issn-type": "print"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc29R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1146/annurev.earth.33.092203.122552",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc30R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/nclimate3190",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc31R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1155/2013/485913",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc32R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1073/pnas.1810286115",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc33R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1029/2018GL078510",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc35R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/JAS3453.1",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc36R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/2014MS000340",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc37R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1175/JCLI-D-11-00168.1",
+      "type": "journal-article"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc39R1",
+      "volume-title": "Deep learning with Python",
+      "author": "F. Chollet",
+      "year": "2018",
+      "type": "book"
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc40R1",
+      "first-page": "26",
+      "type": "journal-article",
+      "volume": "4",
+      "author": "T. Tieleman",
+      "year": "2012",
+      "journal-title": "COURSERA: Neural Networks Mach. Learn."
+    },
+    {
+      "key": "PhysRevLett.126.098302Cc42R1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.softx.2020.100591",
+      "type": "journal-article"
+    }
+  ],
+  "container-title": [
+    "Physical Review Letters"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://link.aps.org/accepted/10.1103/PhysRevLett.126.098302",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "unspecified"
+    },
+    {
+      "URL": "https://link.aps.org/article/10.1103/PhysRevLett.126.098302",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.126.098302/fulltext",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        7,
+        31
+      ]
+    ],
+    "date-time": "2025-07-31T23:54:32Z",
+    "timestamp": 1754006072000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://link.aps.org/doi/10.1103/PhysRevLett.126.098302"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        4
+      ]
+    ]
+  },
+  "references-count": 32,
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.1103/physrevlett.126.098302",
+  "relation": {},
+  "ISSN": [
+    "0031-9007",
+    "1079-7114"
+  ],
+  "issn-type": [
+    {
+      "value": "0031-9007",
+      "type": "print"
+    },
+    {
+      "value": "1079-7114",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        4
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "2019-09-17",
+      "name": "date_received",
+      "label": "Date Received",
+      "group": {
+        "name": "publication_dates",
+        "label": "Publication dates"
+      }
+    },
+    {
+      "value": "© 2021 American Physical Society",
+      "name": "copyright_statement",
+      "label": "Copyright statement",
+      "group": {
+        "name": "copyright",
+        "label": "copyright"
+      }
+    },
+    {
+      "value": "2021",
+      "name": "copyright_year",
+      "label": "Copyright year",
+      "group": {
+        "name": "copyright",
+        "label": "copyright"
+      }
+    },
+    {
+      "value": "American Physical Society",
+      "name": "copyright_holder",
+      "label": "Copyright holder",
+      "group": {
+        "name": "copyright",
+        "label": "copyright"
+      }
+    }
+  ],
+  "article-number": "098302"
+}

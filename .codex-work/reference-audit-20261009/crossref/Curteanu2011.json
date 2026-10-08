@@ -1,0 +1,1561 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        2
+      ]
+    ],
+    "date-time": "2026-10-02T10:14:55Z",
+    "timestamp": 1790936095390,
+    "version": "4.1.0"
+  },
+  "reference-count": 248,
+  "publisher": "Wiley",
+  "issue": "10",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            9,
+            15
+          ]
+        ],
+        "date-time": "2011-09-15T00:00:00Z",
+        "timestamp": 1316044800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Journal of Chemometrics"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2011,
+        10
+      ]
+    ]
+  },
+  "abstract": "<jats:p>Artificial neural networks (ANNs) are comparatively straightforward to understand and use in the analysis of scientific data. However, this relative transparency may encourage their use in an uncritical, and therefore possibly unproductive, fashion. The geometry of a network is among the most crucial factors in the successful deployment of network tools; in this review, we cover methods that can be used to determine optimum or near‐optimum geometries. These methods of determining neural network architecture include the following: (i) <jats:italic>trial and error</jats:italic>, in which architectures chosen semirandomly are tested and modified by the user; (ii) <jats:italic>empirical or statistical methods</jats:italic>, in which an ANN's internal parameters are adjusted based on the model's performance; (iii) <jats:italic>hybrid methods</jats:italic>, such as fuzzy inference; (iv) <jats:italic>constructive and/or pruning algorithms</jats:italic>, that add and/or remove neurons or weights from an initial architecture, respectively, based on a predefined link between architecture and ANN performance; (v) <jats:italic>evolutionary strategies</jats:italic>, which search the topology space using genetic operators to vary the neural network parameters. Several case studies illustrate the development of neural network models for applications in chemistry and chemical engineering. Copyright © 2011 John Wiley &amp; Sons, Ltd.</jats:p>",
+  "DOI": "10.1002/cem.1401",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2011,
+        9,
+        16
+      ]
+    ],
+    "date-time": "2011-09-16T06:12:57Z",
+    "timestamp": 1316153577000
+  },
+  "page": "527-549",
+  "source": "Crossref",
+  "is-referenced-by-count": 85,
+  "title": [
+    "Neural networks applied in chemistry. I. Determination of the optimal topology of multilayer perceptron neural networks"
+  ],
+  "prefix": "10.1002",
+  "volume": "25",
+  "author": [
+    {
+      "given": "Silvia",
+      "family": "Curteanu",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Chemical Engineering ‘Gheorghe Asachi’ Technical University Iasi  Bd. D. Mangeron, No. 71A 700050 Iasi Romania"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Hugh",
+      "family": "Cartwright",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "Physical and Theoretical Chemistry Laboratory Oxford University  South Parks Road Oxford UK OX1 3QZ"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "published-online": {
+    "date-parts": [
+      [
+        2011,
+        9,
+        15
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_9_2_1",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/3527601643",
+      "volume-title": "Chemoinformatics. A Textbook",
+      "author": "Gasteiger J",
+      "year": "2003"
+    },
+    {
+      "key": "e_1_2_9_3_1",
+      "volume-title": "Neural Networks in Chemistry and Drug Design",
+      "author": "Zupan J",
+      "year": "1999"
+    },
+    {
+      "key": "e_1_2_9_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/9780470189078.ch8"
+    },
+    {
+      "key": "e_1_2_9_5_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neunet.2004.02.002"
+    },
+    {
+      "key": "e_1_2_9_6_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(89)90020-8"
+    },
+    {
+      "key": "e_1_2_9_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/oso/9780198538493.001.0001"
+    },
+    {
+      "key": "e_1_2_9_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/CBO9780511812651"
+    },
+    {
+      "key": "e_1_2_9_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(09)80018-X"
+    },
+    {
+      "key": "e_1_2_9_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/comjnl/bxp032"
+    },
+    {
+      "key": "e_1_2_9_11_1",
+      "first-page": "163",
+      "article-title": "Optimization and global minimization methods suitable for neural networks",
+      "volume": "2",
+      "author": "Duch W",
+      "year": "1999",
+      "journal-title": "Neural Comput. Surv."
+    },
+    {
+      "key": "e_1_2_9_12_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1590/S0104-66322005000300009"
+    },
+    {
+      "key": "e_1_2_9_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0925-2312(94)00013-I"
+    },
+    {
+      "key": "e_1_2_9_14_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S1364-8152(98)00020-6"
+    },
+    {
+      "key": "e_1_2_9_15_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s00521-005-0470-3"
+    },
+    {
+      "key": "e_1_2_9_16_1",
+      "unstructured": "AlpaydinE.GAL: networks that grow when they learn and shrink when they forget.Technical Report TR‐91‐032 ICSI Berkley CA 1991."
+    },
+    {
+      "key": "e_1_2_9_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.572102"
+    },
+    {
+      "key": "e_1_2_9_18_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.623214"
+    },
+    {
+      "key": "e_1_2_9_19_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.839013"
+    },
+    {
+      "key": "e_1_2_9_20_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0925-2312(97)00050-7"
+    },
+    {
+      "key": "e_1_2_9_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0096-3003(97)10005-4"
+    },
+    {
+      "key": "e_1_2_9_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0925-2312(00)00302-7"
+    },
+    {
+      "key": "e_1_2_9_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1009684907680"
+    },
+    {
+      "key": "e_1_2_9_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.amc.2006.07.024"
+    },
+    {
+      "key": "e_1_2_9_25_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.compchemeng.2005.12.001"
+    },
+    {
+      "key": "e_1_2_9_26_1",
+      "first-page": "53",
+      "article-title": "Neural network topology optimization",
+      "volume": "2",
+      "author": "Attik M",
+      "year": "2005",
+      "journal-title": "ICANN"
+    },
+    {
+      "key": "e_1_2_9_27_1",
+      "volume-title": "Applications of Artificial Intelligence in Chemistry",
+      "author": "Cartwright HM",
+      "year": "1993"
+    },
+    {
+      "key": "e_1_2_9_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1201/9780849384141"
+    },
+    {
+      "key": "e_1_2_9_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-1-60327-101-1_1"
+    },
+    {
+      "key": "e_1_2_9_30_1",
+      "unstructured": "AranO AlpaydinE.An incremental neural network construction algorithm for training multilayer perceptrons.ICANN'03 Istanbul June2003."
+    },
+    {
+      "key": "e_1_2_9_31_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.80336"
+    },
+    {
+      "key": "e_1_2_9_32_1",
+      "volume-title": "Introduction to Artificial Neural Systems",
+      "author": "Zurada JM",
+      "year": "1994"
+    },
+    {
+      "key": "e_1_2_9_33_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "318",
+      "DOI": "10.7551/mitpress/5236.001.0001",
+      "volume-title": "Parallel Distributed Processing Explorations in the Microstructure of Cognition",
+      "author": "Rumelhart DE",
+      "year": "1986"
+    },
+    {
+      "key": "e_1_2_9_34_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(96)00052-4"
+    },
+    {
+      "key": "e_1_2_9_35_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(97)00053-1"
+    },
+    {
+      "key": "e_1_2_9_36_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-1-4471-0953-2"
+    },
+    {
+      "key": "e_1_2_9_37_1",
+      "first-page": "11",
+      "article-title": "Evolution, learning and culture: computational metaphors for adaptive search",
+      "volume": "4",
+      "author": "Belew RK",
+      "year": "1990",
+      "journal-title": "Complex Syst."
+    },
+    {
+      "key": "e_1_2_9_38_1",
+      "volume-title": "Genetic Algorithms in Search, Optimization and Machine Learning",
+      "author": "Goldberg DE",
+      "year": "1989"
+    },
+    {
+      "key": "e_1_2_9_39_1",
+      "volume-title": "Evolutionary Computation",
+      "author": "De Jong KA",
+      "year": "2006"
+    },
+    {
+      "key": "e_1_2_9_40_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0167-2789(90)90078-4"
+    },
+    {
+      "key": "e_1_2_9_41_1",
+      "volume-title": "Neural and Adaptive Systems: Fundamentals through Simulations",
+      "author": "Principe J",
+      "year": "2000"
+    },
+    {
+      "key": "e_1_2_9_42_1",
+      "first-page": "123",
+      "volume-title": "Intelligent Data Analysis",
+      "author": "Goodacre R",
+      "year": "2000"
+    },
+    {
+      "key": "e_1_2_9_43_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.engappai.2006.06.005"
+    },
+    {
+      "key": "e_1_2_9_44_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2478/BF02476187"
+    },
+    {
+      "key": "e_1_2_9_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/qua.20902"
+    },
+    {
+      "key": "e_1_2_9_46_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/03602550600726285"
+    },
+    {
+      "key": "e_1_2_9_47_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/03602550802355750"
+    },
+    {
+      "key": "e_1_2_9_48_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jpowsour.2009.01.079"
+    },
+    {
+      "key": "e_1_2_9_49_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.envsoft.2009.07.012"
+    },
+    {
+      "key": "e_1_2_9_50_1",
+      "first-page": "3382",
+      "article-title": "Prediction of the liquid crystalline property for polyazometines using modular neural networks",
+      "volume": "10",
+      "author": "Curteanu S",
+      "year": "2008",
+      "journal-title": "J. Optoelectron. Adv. Mater."
+    },
+    {
+      "key": "e_1_2_9_51_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "368",
+      "DOI": "10.1080/10601320902727753",
+      "article-title": "The synthesis of polyacrylamide‐based multicomponent hydrogels. A neural network modeling",
+      "volume": "46",
+      "author": "Curteanu S",
+      "year": "2008",
+      "journal-title": "J. Macromol. Sci. Part A Pure Appl. Chem."
+    },
+    {
+      "key": "e_1_2_9_52_1",
+      "first-page": "316",
+      "article-title": "Neural networks and genetic algorithms optimization of the photocatalytic degradation of Alcian Blue 8GX",
+      "volume": "11",
+      "author": "Caliman F",
+      "year": "2008",
+      "journal-title": "J. Adv. Oxid. Technol."
+    },
+    {
+      "key": "e_1_2_9_53_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/qua.22423"
+    },
+    {
+      "key": "e_1_2_9_54_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.trc.2005.04.007"
+    },
+    {
+      "key": "e_1_2_9_55_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.engappai.2003.12.005"
+    },
+    {
+      "key": "e_1_2_9_56_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/1099-1638(200011/12)16:6<461::AID-QRE341>3.0.CO;2-G"
+    },
+    {
+      "key": "e_1_2_9_57_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/00207540050176021"
+    },
+    {
+      "key": "e_1_2_9_58_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neucom.2008.02.002"
+    },
+    {
+      "key": "e_1_2_9_59_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0736-5845(02)00005-4"
+    },
+    {
+      "key": "e_1_2_9_60_1",
+      "unstructured": "HaeckerJ RudolphS.On neural network topology design for nonlinear control. Proceedings SPIE Aerosense 2001 Conference on Applications and Science of Computational Intelligence IV Orlando Florida 2001."
+    },
+    {
+      "key": "e_1_2_9_61_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/11539087_18"
+    },
+    {
+      "key": "e_1_2_9_62_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1115/1.2802515"
+    },
+    {
+      "key": "e_1_2_9_63_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0098-1354(02)00263-6"
+    },
+    {
+      "key": "e_1_2_9_64_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.392257"
+    },
+    {
+      "key": "e_1_2_9_65_1",
+      "volume-title": "Taguchi Techniques for Quality Engineering",
+      "author": "Ross JP",
+      "year": "1996"
+    },
+    {
+      "key": "e_1_2_9_66_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1006534203575"
+    },
+    {
+      "key": "e_1_2_9_67_1",
+      "first-page": "103",
+      "article-title": "Training neural networks using Taguchi methods: overcoming interaction problems",
+      "volume": "2",
+      "author": "Viswanathan A",
+      "year": "2005",
+      "journal-title": "ICANN"
+    },
+    {
+      "key": "e_1_2_9_68_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S1364-8152(98)00019-X"
+    },
+    {
+      "key": "e_1_2_9_69_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ins.2007.02.021"
+    },
+    {
+      "key": "e_1_2_9_70_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.248452"
+    },
+    {
+      "key": "e_1_2_9_71_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0167-8191(90)90086-O"
+    },
+    {
+      "key": "e_1_2_9_72_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0098-1354(92)80047-D"
+    },
+    {
+      "key": "e_1_2_9_73_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.80236"
+    },
+    {
+      "key": "e_1_2_9_74_1",
+      "first-page": "598",
+      "volume-title": "Advances in Neural Information Processing",
+      "author": "LeCun YL",
+      "year": "1990"
+    },
+    {
+      "key": "e_1_2_9_75_1",
+      "volume-title": "Advances in Neural Information Processing (1)",
+      "author": "Mozer MC",
+      "year": "1989"
+    },
+    {
+      "key": "e_1_2_9_76_1",
+      "first-page": "519",
+      "volume-title": "Advances in Neural Information Processing Systems",
+      "author": "Chauvin Y",
+      "year": "1989"
+    },
+    {
+      "key": "e_1_2_9_77_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1990.2.2.188"
+    },
+    {
+      "key": "e_1_2_9_78_1",
+      "first-page": "875",
+      "volume-title": "Advances in Neural Information Processing Systems 3",
+      "author": "Weigend AS",
+      "year": "1991"
+    },
+    {
+      "key": "e_1_2_9_79_1",
+      "first-page": "950",
+      "article-title": "A simple weight decay can improve generalization",
+      "volume": "4",
+      "author": "Krogh A",
+      "year": "1992",
+      "journal-title": "Adv. Neural Inform. Process Systems"
+    },
+    {
+      "key": "e_1_2_9_80_1",
+      "first-page": "177",
+      "volume-title": "Adv. Neural Inform. Processing Systems",
+      "author": "Hanson S",
+      "year": "1989"
+    },
+    {
+      "key": "e_1_2_9_81_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TPAMI.2009.81"
+    },
+    {
+      "key": "e_1_2_9_82_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(91)90033-2"
+    },
+    {
+      "key": "e_1_2_9_83_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1063/1.2810360"
+    },
+    {
+      "key": "e_1_2_9_84_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.572092"
+    },
+    {
+      "key": "e_1_2_9_85_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/ietisy/e89-d.3.1257"
+    },
+    {
+      "key": "e_1_2_9_86_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNN.2008.2005604"
+    },
+    {
+      "key": "e_1_2_9_87_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Le BourgeoisF EmptozH.Skeletonization by gradient diffusion and regularization. IEEE Int. Conf. on Image Processing ICIP 2007 Sept. 16–Oct. 19 San Antonio TX.2007;1161–1164.",
+      "DOI": "10.1109/ICIP.2007.4379239"
+    },
+    {
+      "key": "e_1_2_9_88_1",
+      "unstructured": "IshikawaM.A structural learning algorithm with forgetting of link weights.Technical Report TR‐90‐7. Electrotechnical Lab. Tsukuba‐City Japan 1990."
+    },
+    {
+      "key": "e_1_2_9_89_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.asoc.2008.01.013"
+    },
+    {
+      "key": "e_1_2_9_90_1",
+      "first-page": "263",
+      "article-title": "Optimal brain surgeon: extensions and performance comparisons",
+      "author": "Hassibi B",
+      "year": "1994",
+      "journal-title": "NIPS6"
+    },
+    {
+      "key": "e_1_2_9_91_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1989.1.4.541"
+    },
+    {
+      "key": "e_1_2_9_92_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1992.4.4.473"
+    },
+    {
+      "key": "e_1_2_9_93_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1093/ietisy/e88-d.10.2399"
+    },
+    {
+      "key": "e_1_2_9_94_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-1-4471-2097-1_189"
+    },
+    {
+      "key": "e_1_2_9_95_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/3-540-61510-5_95"
+    },
+    {
+      "key": "e_1_2_9_96_1",
+      "first-page": "603",
+      "article-title": "Bayesian backpropagation",
+      "volume": "5",
+      "author": "Buntine WL",
+      "year": "1991",
+      "journal-title": "Complex Systems"
+    },
+    {
+      "key": "e_1_2_9_97_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1992.4.3.415"
+    },
+    {
+      "key": "e_1_2_9_98_1",
+      "unstructured": "NealRM.Bayesian learning for neural networks PhD thesis Department of Computer Science University of Toronto 1995."
+    },
+    {
+      "key": "e_1_2_9_99_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.478392"
+    },
+    {
+      "key": "e_1_2_9_100_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(94)90023-X"
+    },
+    {
+      "key": "e_1_2_9_101_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1088/0305-4470/31/45/002"
+    },
+    {
+      "key": "e_1_2_9_102_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF00387211"
+    },
+    {
+      "key": "e_1_2_9_103_1",
+      "first-page": "97103",
+      "article-title": "A hardware neural network for target tracking",
+      "volume": "6971",
+      "author": "Deck WC",
+      "year": "2008",
+      "journal-title": "Proc. Roy. Soc. Photo‐optical Instrumentation Engrs."
+    },
+    {
+      "key": "e_1_2_9_104_1",
+      "unstructured": "DiederichJ.Connectionist recruitment learning. Proc. 8th European Conf. on Artificial Intelligence London UK 1988."
+    },
+    {
+      "key": "e_1_2_9_105_1",
+      "volume-title": "Proceeding of the 1988 Connectionist Summer School",
+      "author": "Honavar V",
+      "year": "1988"
+    },
+    {
+      "key": "e_1_2_9_106_1",
+      "volume-title": "Neurocomputing: Algorithms, Architectures, and Applications",
+      "author": "Knerr S",
+      "year": "1989"
+    },
+    {
+      "key": "e_1_2_9_107_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1088/0305-4470/22/12/019"
+    },
+    {
+      "key": "e_1_2_9_108_1",
+      "first-page": "524",
+      "volume-title": "Advances in neural information processing systems 2",
+      "author": "Fahlman SE",
+      "year": "1990"
+    },
+    {
+      "key": "e_1_2_9_109_1",
+      "first-page": "253",
+      "volume-title": "Proc. Int. Conf. on Artificial Neural Networks",
+      "author": "Littmann E",
+      "year": "1992"
+    },
+    {
+      "key": "e_1_2_9_110_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/IJCNN.1992.226955"
+    },
+    {
+      "key": "e_1_2_9_111_1",
+      "first-page": "455",
+      "volume-title": "Proceedings of the Fifth International Conference on Neural Networks and their Applications",
+      "author": "Simon N",
+      "year": "1992"
+    },
+    {
+      "key": "e_1_2_9_112_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/NNSP.1992.253707"
+    },
+    {
+      "key": "e_1_2_9_113_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(94)00103-S"
+    },
+    {
+      "key": "e_1_2_9_114_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(96)00115-3"
+    },
+    {
+      "key": "e_1_2_9_115_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.jhydrol.2010.01.005"
+    },
+    {
+      "key": "e_1_2_9_116_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.329690"
+    },
+    {
+      "key": "e_1_2_9_117_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.80209"
+    },
+    {
+      "key": "e_1_2_9_118_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICASSP.1992.226386"
+    },
+    {
+      "key": "e_1_2_9_119_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.asoc.2005.06.006"
+    },
+    {
+      "key": "e_1_2_9_120_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/09540098908915647"
+    },
+    {
+      "key": "e_1_2_9_121_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.207612"
+    },
+    {
+      "key": "e_1_2_9_122_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(94)90061-2"
+    },
+    {
+      "key": "e_1_2_9_123_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICNN.1994.374491"
+    },
+    {
+      "key": "e_1_2_9_124_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICNN.1994.374165"
+    },
+    {
+      "key": "e_1_2_9_125_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1049/ip-cta:19951969"
+    },
+    {
+      "key": "e_1_2_9_126_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.363426"
+    },
+    {
+      "key": "e_1_2_9_127_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-642-97239-3"
+    },
+    {
+      "key": "e_1_2_9_128_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(91)90032-Z"
+    },
+    {
+      "key": "e_1_2_9_129_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.728361"
+    },
+    {
+      "key": "e_1_2_9_130_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/01621459.1981.10477729"
+    },
+    {
+      "key": "e_1_2_9_131_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0031-3203(90)90083-W"
+    },
+    {
+      "key": "e_1_2_9_132_1",
+      "first-page": "936",
+      "volume-title": "Advances in Neural Information Processing Systems",
+      "author": "Zhao Y",
+      "year": "1992"
+    },
+    {
+      "key": "e_1_2_9_133_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/12.257708"
+    },
+    {
+      "key": "e_1_2_9_134_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.286906"
+    },
+    {
+      "key": "e_1_2_9_135_1",
+      "first-page": "1325",
+      "volume-title": "Proc. IEEE Int. Conf. on Neural Networks",
+      "author": "Lay S",
+      "year": "1994"
+    },
+    {
+      "key": "e_1_2_9_136_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/1390909"
+    },
+    {
+      "key": "e_1_2_9_137_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01299776"
+    },
+    {
+      "key": "e_1_2_9_138_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.377967"
+    },
+    {
+      "key": "e_1_2_9_139_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.chemolab.2007.12.005"
+    },
+    {
+      "key": "e_1_2_9_140_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/qsar.200710073"
+    },
+    {
+      "key": "e_1_2_9_141_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/089976601317098565"
+    },
+    {
+      "key": "e_1_2_9_142_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(91)90005-P"
+    },
+    {
+      "key": "e_1_2_9_143_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1991.3.2.213"
+    },
+    {
+      "key": "e_1_2_9_144_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1993.5.1.105"
+    },
+    {
+      "key": "e_1_2_9_145_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(94)90091-4"
+    },
+    {
+      "key": "e_1_2_9_146_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.80230"
+    },
+    {
+      "key": "e_1_2_9_147_1",
+      "first-page": "198",
+      "article-title": "The upstart algorithm: a method for constructing and training feedforward neural networks",
+      "volume": "2",
+      "author": "Frean MR",
+      "year": "1990",
+      "journal-title": "IEEE Trans. Neural Netw."
+    },
+    {
+      "key": "e_1_2_9_148_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.377991"
+    },
+    {
+      "key": "e_1_2_9_149_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1209/0295-5075/11/6/001"
+    },
+    {
+      "key": "e_1_2_9_150_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S1088-467X(99)00005-0"
+    },
+    {
+      "key": "e_1_2_9_151_1",
+      "first-page": "229",
+      "article-title": "Learning by minimizing resources in neural networks",
+      "volume": "3",
+      "author": "Rujan P",
+      "year": "1989",
+      "journal-title": "Complex Syst."
+    },
+    {
+      "key": "e_1_2_9_152_1",
+      "unstructured": "BennettK MangasarianO.Neural‐network training via linear programming. Dept. Comput. Sci. Univ. Wisconsin Madison Tech. Rep. 948 1990."
+    },
+    {
+      "key": "e_1_2_9_153_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.248455"
+    },
+    {
+      "key": "e_1_2_9_154_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neunet.2007.07.009"
+    },
+    {
+      "key": "e_1_2_9_155_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "MaL KhorasaniK.Input side training in constructive neural networks based on error scaling and pruning.Proc. IJCNN 20002000;455–460.",
+      "DOI": "10.1109/IJCNN.2000.859437"
+    },
+    {
+      "key": "e_1_2_9_156_1",
+      "first-page": "366",
+      "volume-title": "Proceedings of the International Conference on Artificial Neural Networks",
+      "author": "Fang W",
+      "year": "1994"
+    },
+    {
+      "key": "e_1_2_9_157_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(94)90058-2"
+    },
+    {
+      "key": "e_1_2_9_158_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/106365602320169811"
+    },
+    {
+      "key": "e_1_2_9_159_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-1-4615-3954-4"
+    },
+    {
+      "key": "e_1_2_9_160_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(96)00032-9"
+    },
+    {
+      "key": "e_1_2_9_161_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0925-2312(02)00597-0"
+    },
+    {
+      "key": "e_1_2_9_162_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neucom.2007.02.006"
+    },
+    {
+      "key": "e_1_2_9_163_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "KimJH ParkSK ChungHS.A training algorithm for discrete multilayer perceptrons. In: Proceedings of the International Symposium on Circuit and Systems Singapore June1991.",
+      "DOI": "10.1109/ISCAS.1991.176658"
+    },
+    {
+      "key": "e_1_2_9_164_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.363432"
+    },
+    {
+      "key": "e_1_2_9_165_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICNN.1994.374163"
+    },
+    {
+      "key": "e_1_2_9_166_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.80290"
+    },
+    {
+      "key": "e_1_2_9_167_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.88168"
+    },
+    {
+      "key": "e_1_2_9_168_1",
+      "unstructured": "BobrovskyL BoldakC.Dipolar designing of neural layers for image segmentation. In: Proceedings of the International Conference on Engineering Applications of Neural Networks (EANN2000) Kingston University England July2000."
+    },
+    {
+      "key": "e_1_2_9_169_1",
+      "unstructured": "MartinelliG MascioliFMF.A self‐pruning algorithm based on linear‐programming. In: World Congress on Neural Networks vol. III San Diego CA 5–9 June1994."
+    },
+    {
+      "key": "e_1_2_9_170_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.846753"
+    },
+    {
+      "key": "e_1_2_9_171_1",
+      "volume-title": "Statistical Learning Theory",
+      "author": "Vapnik VN",
+      "year": "1998"
+    },
+    {
+      "key": "e_1_2_9_172_1",
+      "unstructured": "SmotroffIG FriedmanDH ConnellyD.Self organizing modular neural networks. In Proceedings of the International Joint Conference on Neural Networks Seattle WA USA 1991."
+    },
+    {
+      "key": "e_1_2_9_173_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(01)00075-2"
+    },
+    {
+      "key": "e_1_2_9_174_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-540-88906-9_6"
+    },
+    {
+      "key": "e_1_2_9_175_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0165-0114(97)00314-X"
+    },
+    {
+      "key": "e_1_2_9_176_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/3-540-58483-8_12"
+    },
+    {
+      "key": "e_1_2_9_177_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/artl.1995.2.4.355"
+    },
+    {
+      "key": "e_1_2_9_178_1",
+      "volume-title": "Modern Heuristic Search Methods",
+      "author": "Cartwright HM",
+      "year": "1996"
+    },
+    {
+      "key": "e_1_2_9_179_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/b13931"
+    },
+    {
+      "key": "e_1_2_9_180_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neucom.2005.12.041"
+    },
+    {
+      "key": "e_1_2_9_181_1",
+      "first-page": "379",
+      "volume-title": "Proceedings of the Third International Conference on Genetic Algorithms",
+      "author": "Miller GF",
+      "year": "1989"
+    },
+    {
+      "key": "e_1_2_9_182_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-662-05094-1"
+    },
+    {
+      "key": "e_1_2_9_183_1",
+      "volume-title": "Evolutionary Algorithms for Solving Multi‐Objective Problems (Genetic and Evolutionary Computation)",
+      "author": "Coelho CAC",
+      "year": "2006"
+    },
+    {
+      "key": "e_1_2_9_184_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.220.4598.671"
+    },
+    {
+      "key": "e_1_2_9_185_1",
+      "first-page": "736",
+      "volume-title": "Proc. IEEE Int. Conf. on Artificial Life and Robotics, AROBIII 98",
+      "author": "Liu Y",
+      "year": "1998"
+    },
+    {
+      "key": "e_1_2_9_186_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.572107"
+    },
+    {
+      "key": "e_1_2_9_187_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/11494669_8"
+    },
+    {
+      "key": "e_1_2_9_188_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-642-04516-5_7"
+    },
+    {
+      "key": "e_1_2_9_189_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-642-04514-1_7"
+    },
+    {
+      "key": "e_1_2_9_190_1",
+      "unstructured": "GruauF.Neural network synthesis using cellular encoding and the genetic algorithm. PhD thesis Ecole Normale de Lyon France 1994."
+    },
+    {
+      "key": "e_1_2_9_191_1",
+      "first-page": "185",
+      "volume-title": "Optimization of a Competitive Learning Neural Network by Genetic Algorithms. Lect. Notes Comput. Sci",
+      "author": "Merelo JJ",
+      "year": "1993"
+    },
+    {
+      "key": "e_1_2_9_192_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNN.2002.804317"
+    },
+    {
+      "key": "e_1_2_9_193_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BFb0098224"
+    },
+    {
+      "key": "e_1_2_9_194_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0020-0255(01)00080-9"
+    },
+    {
+      "key": "e_1_2_9_195_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/106365600568086"
+    },
+    {
+      "key": "e_1_2_9_196_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.biosystems.2005.06.010"
+    },
+    {
+      "key": "e_1_2_9_197_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/IJCNN.2003.1223393"
+    },
+    {
+      "key": "e_1_2_9_198_1",
+      "first-page": "223",
+      "volume-title": "Proceedings of the Genetic and Evolutionary Computation Conference",
+      "author": "Palmes P",
+      "year": "2003"
+    },
+    {
+      "key": "e_1_2_9_199_1",
+      "unstructured": "PalmesPP UsuiS.Strategies for function optimization by evolutionary computation. In: Proceedings of the 12th International Conference on Neural Information Processing (ICONIPO05) 30 October–2 November2005b Taipei Taiwan."
+    },
+    {
+      "key": "e_1_2_9_200_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TNN.2005.844858"
+    },
+    {
+      "key": "e_1_2_9_201_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BFb0056901"
+    },
+    {
+      "key": "e_1_2_9_202_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/3-540-56798-4_167"
+    },
+    {
+      "key": "e_1_2_9_203_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF00993252"
+    },
+    {
+      "key": "e_1_2_9_204_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0925-2312(94)90008-6"
+    },
+    {
+      "key": "e_1_2_9_205_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1009617113191"
+    },
+    {
+      "key": "e_1_2_9_206_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/B978-0-444-89488-5.50027-0"
+    },
+    {
+      "key": "e_1_2_9_207_1",
+      "unstructured": "AnnunziatoM BertiniI LucchettiM PizzutiS.Evolving weights and transfer functions in feed forward neural networks.Proc. EUNITE 2003 Oulu Finland 2003."
+    },
+    {
+      "key": "e_1_2_9_208_1",
+      "first-page": "202",
+      "volume-title": "Proceedings of International Conference on Joint Neural Networks VI",
+      "author": "Stork DG",
+      "year": "1990"
+    },
+    {
+      "key": "e_1_2_9_209_1",
+      "unstructured": "HussainTS BrowseRA.Genetic encoding of neural networks using attribute grammars.http://www.cs.queensu.ca/RPL/Publications/Talib_Br. [1998]."
+    },
+    {
+      "key": "e_1_2_9_210_1",
+      "volume-title": "Proceedings of the Third International Conference on Genetic Algorithms",
+      "author": "Harp SA",
+      "year": "1989"
+    },
+    {
+      "key": "e_1_2_9_211_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "DoddN MacfarlaneD MarlandC.Optimisation of artificial neural networks structure using genetic techniques implemented on multiple transputers.Proceedings of Transputing 91 1991.",
+      "DOI": "10.1007/978-94-011-3648-8_62"
+    },
+    {
+      "key": "e_1_2_9_212_1",
+      "unstructured": "GruauFC.Cellular encoding of genetic neural networks.Technical Report LIP‐IMAG Ecole Normale Superieure de Lyon 46 Allee d'Italie 69007 Lyon France 1992."
+    },
+    {
+      "key": "e_1_2_9_213_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0960-1686(93)90284-6"
+    },
+    {
+      "key": "e_1_2_9_214_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/int.4550080406"
+    },
+    {
+      "key": "e_1_2_9_215_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neunet.2005.03.010"
+    },
+    {
+      "key": "e_1_2_9_216_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0167-2789(94)90285-2"
+    },
+    {
+      "key": "e_1_2_9_217_1",
+      "first-page": "461",
+      "article-title": "Designing neural networks using genetic algorithms with graph generation system",
+      "volume": "4",
+      "author": "Kitano H",
+      "year": "1990",
+      "journal-title": "Complex Systems"
+    },
+    {
+      "key": "e_1_2_9_218_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0098-1354(01)00680-9"
+    },
+    {
+      "key": "e_1_2_9_219_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/qua.21376"
+    },
+    {
+      "key": "e_1_2_9_220_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.265960"
+    },
+    {
+      "key": "e_1_2_9_221_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-7091-7533-0_5"
+    },
+    {
+      "key": "e_1_2_9_222_1",
+      "first-page": "194",
+      "volume-title": "Proceedings of the Australian Conference on Neural Networks",
+      "author": "Krishnan R",
+      "year": "1994"
+    },
+    {
+      "key": "e_1_2_9_223_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/ICEC.1996.542680"
+    },
+    {
+      "key": "e_1_2_9_224_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1613/jair.368"
+    },
+    {
+      "key": "e_1_2_9_225_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1008272615525"
+    },
+    {
+      "key": "e_1_2_9_226_1",
+      "first-page": "318",
+      "volume-title": "Proceedings of the Fifth International Conference on Genetic Algorithms",
+      "author": "Gruau F",
+      "year": "1993"
+    },
+    {
+      "key": "e_1_2_9_227_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/978-3-7091-7533-0_93"
+    },
+    {
+      "key": "e_1_2_9_228_1",
+      "first-page": "805",
+      "article-title": "Evolution and learning in neural networks: the number and distribution of learning trials affect the rate of evolution",
+      "volume": "3",
+      "author": "Keesing R",
+      "year": "1991",
+      "journal-title": "Adv. Neural Inform. Process Systems"
+    },
+    {
+      "key": "e_1_2_9_229_1",
+      "first-page": "625",
+      "volume-title": "Advances in Neural Information Processing Systems (NIPS)",
+      "author": "Fritzke B",
+      "year": "1995"
+    },
+    {
+      "key": "e_1_2_9_230_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1995.7.4.845"
+    },
+    {
+      "key": "e_1_2_9_231_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(01)00018-1"
+    },
+    {
+      "key": "e_1_2_9_232_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BFb0020222"
+    },
+    {
+      "key": "e_1_2_9_233_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(96)00123-2"
+    },
+    {
+      "key": "e_1_2_9_234_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neunet.2005.04.006"
+    },
+    {
+      "key": "e_1_2_9_235_1",
+      "volume-title": "Neural Networks: a Comprehensive Foundation",
+      "author": "Haykin S",
+      "year": "1994"
+    },
+    {
+      "key": "e_1_2_9_236_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0925-2312(03)00385-0"
+    },
+    {
+      "key": "e_1_2_9_237_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0925-2312(97)00054-4"
+    },
+    {
+      "key": "e_1_2_9_238_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(99)00018-0"
+    },
+    {
+      "key": "e_1_2_9_239_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.712155"
+    },
+    {
+      "key": "e_1_2_9_240_1",
+      "first-page": "6065",
+      "volume-title": "Advances in Intelligent Data Analysis IX",
+      "author": "Priest AC",
+      "year": "2010"
+    },
+    {
+      "key": "e_1_2_9_241_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.701174"
+    },
+    {
+      "key": "e_1_2_9_242_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0893-6080(05)80038-3"
+    },
+    {
+      "key": "e_1_2_9_243_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/IJCNN.1992.287095"
+    },
+    {
+      "key": "e_1_2_9_244_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0031-3203(02)00087-0"
+    },
+    {
+      "key": "e_1_2_9_245_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.neucom.2005.12.070"
+    },
+    {
+      "key": "e_1_2_9_246_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.485631"
+    },
+    {
+      "key": "e_1_2_9_247_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.ijplas.2005.09.002"
+    },
+    {
+      "key": "e_1_2_9_248_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.engappai.2011.02.004"
+    },
+    {
+      "key": "e_1_2_9_249_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/15421400701431232"
+    }
+  ],
+  "container-title": [
+    "Journal of Chemometrics"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fcem.1401",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/cem.1401",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        12
+      ]
+    ],
+    "date-time": "2025-10-12T11:08:03Z",
+    "timestamp": 1760267283000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/cem.1401"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2011,
+        9,
+        15
+      ]
+    ]
+  },
+  "references-count": 248,
+  "journal-issue": {
+    "issue": "10",
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          10
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1002/cem.1401"
+  ],
+  "URL": "https://doi.org/10.1002/cem.1401",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "0886-9383",
+    "1099-128X"
+  ],
+  "issn-type": [
+    {
+      "value": "0886-9383",
+      "type": "print"
+    },
+    {
+      "value": "1099-128X",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2011,
+        9,
+        15
+      ]
+    ]
+  }
+}

@@ -1,0 +1,777 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        30
+      ]
+    ],
+    "date-time": "2026-09-30T10:11:01Z",
+    "timestamp": 1790763061552,
+    "version": "4.1.0"
+  },
+  "reference-count": 50,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2024-01-01T00:00:00Z",
+        "timestamp": 1704067200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2024-01-01T00:00:00Z",
+        "timestamp": 1704067200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            21
+          ]
+        ],
+        "date-time": "2024-10-21T00:00:00Z",
+        "timestamp": 1729468800000
+      },
+      "content-version": "am",
+      "delay-in-days": 294,
+      "URL": "http://www.elsevier.com/open-access/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2024-01-01T00:00:00Z",
+        "timestamp": 1704067200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2024-01-01T00:00:00Z",
+        "timestamp": 1704067200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2024-01-01T00:00:00Z",
+        "timestamp": 1704067200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2024-01-01T00:00:00Z",
+        "timestamp": 1704067200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            1
+          ]
+        ],
+        "date-time": "2024-01-01T00:00:00Z",
+        "timestamp": 1704067200000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "name": "National Science Foundation",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "1256260"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "1256260"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/100000001",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Physica D: Nonlinear Phenomena"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        1
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.physd.2023.133952",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        21
+      ]
+    ],
+    "date-time": "2023-10-21T19:15:34Z",
+    "timestamp": 1697915734000
+  },
+  "page": "133952",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 18,
+  "special_numbering": "C",
+  "title": [
+    "Learning physical models that can respect conservation laws"
+  ],
+  "prefix": "10.1016",
+  "volume": "457",
+  "author": [
+    {
+      "given": "Derek",
+      "family": "Hansen",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-2317-4068",
+      "authenticated-orcid": false,
+      "given": "Danielle C.",
+      "family": "Maddix",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Shima",
+      "family": "Alizadeh",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Gaurav",
+      "family": "Gupta",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Michael W.",
+      "family": "Mahoney",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.physd.2023.133952_b1",
+      "series-title": "Lectures in Mathematics ETH Zürich",
+      "article-title": "Numerical Methods for Conservation Laws",
+      "author": "LeVeque",
+      "year": "1990"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b2",
+      "series-title": "Finite Volume Methods for Hyperbolic Problems",
+      "author": "LeVeque",
+      "year": "2002"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b3",
+      "series-title": "Finite Difference Methods for Ordinary and Partial Differential Equations: Steady-State and Time-Dependent Problems",
+      "author": "LeVeque",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b4",
+      "doi-asserted-by": "crossref",
+      "first-page": "686",
+      "DOI": "10.1016/j.jcp.2018.10.045",
+      "article-title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations",
+      "volume": "378",
+      "author": "Raissi",
+      "year": "2019",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b5",
+      "doi-asserted-by": "crossref",
+      "first-page": "218",
+      "DOI": "10.1038/s42256-021-00302-5",
+      "article-title": "Learning nonlinear operators via deeponet based on the universal approximation theorem of operators",
+      "volume": "3",
+      "author": "Lu",
+      "year": "2021",
+      "journal-title": "Nat. Mach. Intell."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b6",
+      "unstructured": "Z. Li, N. Kovachki, K. Azizzadenesheli, B. Liu, K. Bhattacharya, A. Stuart, A. Anandkumar, Fourier neural operator for parametric partial differential equations, in: International Conference on Learning Representations, 2021."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b7",
+      "article-title": "Multiwavelet-based operator learning for differential equations",
+      "volume": "vol. 34",
+      "author": "Gupta",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b8",
+      "series-title": "Physics-informed neural operator for learning partial differential equations",
+      "author": "Li",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b9",
+      "series-title": "Physics-informed deep neural operator networks",
+      "author": "Goswami",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b10",
+      "first-page": "26548",
+      "article-title": "Characterizing possible failure modes in physics-informed neural networks",
+      "volume": "vol. 34",
+      "author": "Krishnapriyan",
+      "year": "2021"
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.physd.2023.133952_b11",
+      "doi-asserted-by": "crossref",
+      "first-page": "27",
+      "DOI": "10.1145/3524015",
+      "article-title": "Neural networks learn to speed up simulations",
+      "volume": "65",
+      "author": "Edwards",
+      "year": "2022",
+      "journal-title": "Commun. ACM"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b12",
+      "series-title": "Gaussian Processes for Machine Learning",
+      "author": "Rasmussen",
+      "year": "2006"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b13",
+      "series-title": "Attentive neural processes",
+      "author": "Kim",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b14",
+      "series-title": "The Porous Medium Equation: Mathematical Theory",
+      "author": "Vázquez",
+      "year": "2007"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b15",
+      "doi-asserted-by": "crossref",
+      "first-page": "280",
+      "DOI": "10.1016/j.jcp.2018.02.010",
+      "article-title": "Numerical artifacts in the generalized porous medium equation: Why harmonic averaging itself is not to blame",
+      "volume": "361",
+      "author": "Maddix",
+      "year": "2018",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b16",
+      "doi-asserted-by": "crossref",
+      "first-page": "277",
+      "DOI": "10.1016/j.jcp.2018.04.045",
+      "article-title": "Numerical artifacts in the discontinuous generalized porous medium equation: How to avoid spurious temporal oscillations",
+      "volume": "368",
+      "author": "Maddix",
+      "year": "2018",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b17",
+      "unstructured": "G. Négiar, M.W. Mahoney, A.S. Krishnapriyan, Learning differentiable solvers for systems with hard constraints, in: International Conference on Learning Representations, 2023."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b18",
+      "unstructured": "N. Saad, G. Gupta, S. Alizadeh, D.C. Maddix, Guiding continuous operator learning through physics-based boundary constraints, in: International Conference on Learning Representations, 2023."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b19",
+      "doi-asserted-by": "crossref",
+      "unstructured": "I.K. Tezaur, J.A. Fike, K.T. Carlberg, M.F. Barone, D. Maddix, E.E. Mussoni, M. Balajewicz, Advanced Fluid Reduced Order Models for Compressible Flow, Sandia National Laboratories Report, Sand No. 2017-10335, 2017.",
+      "DOI": "10.2172/1395816"
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.physd.2023.133952_b20",
+      "doi-asserted-by": "crossref",
+      "first-page": "471",
+      "DOI": "10.1006/jcph.2002.7092",
+      "article-title": "Numerical simulation of dendritic solidification with convection: Two-dimensional geometry",
+      "volume": "180",
+      "author": "Al-Rawahi",
+      "year": "2002",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.physd.2023.133952_b21",
+      "doi-asserted-by": "crossref",
+      "first-page": "117",
+      "DOI": "10.1080/713836172",
+      "article-title": "Fixed-grid front-tracking algorithm for solidification problems, Part I: Method and validation",
+      "volume": "43",
+      "author": "Li",
+      "year": "2003",
+      "journal-title": "Numer. Heat Transfer, Part B: Fundam."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b22",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "DOI": "10.1016/0021-9991(88)90002-2",
+      "article-title": "Fronts propagating with curvature-dependent speed: Algorithms based on Hamilton-Jacobi formulations",
+      "volume": "79",
+      "author": "Osher",
+      "year": "1988",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "issue": "2",
+      "key": "10.1016/j.physd.2023.133952_b23",
+      "doi-asserted-by": "crossref",
+      "first-page": "231",
+      "DOI": "10.1016/0021-9991(92)90140-T",
+      "article-title": "Crystal growth and dendritic solidification",
+      "volume": "98",
+      "author": "Sethian",
+      "year": "1992",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.physd.2023.133952_b24",
+      "doi-asserted-by": "crossref",
+      "first-page": "8",
+      "DOI": "10.1006/jcph.1997.5721",
+      "article-title": "A simple level set method for solving stefan problems",
+      "volume": "135",
+      "author": "Chen",
+      "year": "1997",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b25",
+      "series-title": "Dimensionality Hyper-Reduction and Machine Learning for Dynamical Systems with Varying Parameters",
+      "author": "Sargsyan",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b26",
+      "series-title": "Neural operator: Graph kernel network for partial differential equations",
+      "author": "Li",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b27",
+      "series-title": "Adaptive self-supervision algorithms for physics-informed neural networks",
+      "author": "Subramanian",
+      "year": "2022"
+    },
+    {
+      "issue": "110768",
+      "key": "10.1016/j.physd.2023.133952_b28",
+      "article-title": "When and why pinns fail to train: A neural tangent kernel perspective",
+      "volume": "449",
+      "author": "Wang",
+      "year": "2022",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b29",
+      "article-title": "Neural tangent kernel: Convergence and generalization in neural networks",
+      "volume": "vol. 31",
+      "author": "Jacot",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b30",
+      "series-title": "Using conservation laws to infer deep learning model accuracy of Richtmyer-Meshkov instabilities",
+      "author": "Jekel",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b31",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cma.2019.112789",
+      "article-title": "Physics-informed neural networks for high-speed flows",
+      "volume": "360",
+      "author": "Mao",
+      "year": "2020",
+      "journal-title": "Comput. Methods Appl. Mech. Engrg."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b32",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.cma.2020.113028",
+      "article-title": "Conservative physics-informed neural networks on discrete domains for conservation laws: Applications to forward and inverse problems",
+      "volume": "365",
+      "author": "Jagtap",
+      "year": "2020",
+      "journal-title": "Comput. Methods Appl. Mech. Engrg."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.physd.2023.133952_b33",
+      "doi-asserted-by": "crossref",
+      "first-page": "376",
+      "DOI": "10.1029/2018MS001472",
+      "article-title": "Applications of deep learning to ocean data inference and subgrid parameterization",
+      "volume": "11",
+      "author": "Bolton",
+      "year": "2019",
+      "journal-title": "J. Adv. Modelling Earth Syst."
+    },
+    {
+      "issue": "17",
+      "key": "10.1016/j.physd.2023.133952_b34",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1029/2020GL088376",
+      "article-title": "Data-driven equation discovery of ocean mesoscale closures",
+      "volume": "47",
+      "author": "Zanna",
+      "year": "2020",
+      "journal-title": "Geophys. Res. Lett."
+    },
+    {
+      "issue": "9",
+      "key": "10.1016/j.physd.2023.133952_b35",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1103/PhysRevLett.126.098302",
+      "article-title": "Enforcing analytic constraints in neural-networks emulating physical systems",
+      "volume": "126",
+      "author": "Beucler",
+      "year": "2021",
+      "journal-title": "Phys. Rev. Lett."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b36",
+      "doi-asserted-by": "crossref",
+      "first-page": "3417",
+      "DOI": "10.5194/gmd-15-3417-2022",
+      "article-title": "Conservation laws in a neural network architecture: Enforcing the atom balance of a Julia-based photochemical model (v0.2.0)",
+      "volume": "15",
+      "author": "Sturm",
+      "year": "2022",
+      "journal-title": "Geosci. Model Dev."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b37",
+      "series-title": "Exact conservation laws for neural network integrators of dynamical systems",
+      "author": "Müller",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b38",
+      "series-title": "Neural conservation laws: A divergence-free perspective",
+      "author": "Richter-Powell",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b39",
+      "article-title": "Neural ordinary differential equations",
+      "volume": "vol. 31",
+      "author": "Chen",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b40",
+      "series-title": "Learning continuous models for continuous physics",
+      "author": "Krishnapriyan",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b41",
+      "unstructured": "K. Ott, P. Katiyar, P. Hennig, M. Tiemann, ResNet after all: Neural ODEs and their numerical solution, in: International Conference on Learning Representations, 2021."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b42",
+      "series-title": "Discretize-optimize vs. optimize-discretize for time-series regression and continuous normalizing flows",
+      "author": "Onken",
+      "year": "2020"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b43",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1016/j.jcp.2015.10.031",
+      "article-title": "The mimetic finite difference method for elliptic and parabolic problems with a staggered discretization of diffusion coefficient",
+      "volume": "305",
+      "author": "Lipnikov",
+      "year": "2016",
+      "journal-title": "J. Comput. Phys."
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b44",
+      "doi-asserted-by": "crossref",
+      "unstructured": "J. van der Meer, J. Kraaijevanger, M. Möller, J. Jansen, Temporal oscillations in the simulation of foam enhanced oil recovery, in: ECMOR XV - 15th European Conference on the Mathematics of Oil Recovery, 2016, pp. 1–20.",
+      "DOI": "10.3997/2214-4609.201601850"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b45",
+      "series-title": "Partial Differential Equations",
+      "volume": "vol. 19",
+      "author": "Evans",
+      "year": "2010"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b46",
+      "series-title": "Numerical Analysis",
+      "author": "Burden",
+      "year": "2016"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b47",
+      "series-title": "The Elements of Statistical Learning: Data Mining, Inference, and Prediction",
+      "author": "Hastie",
+      "year": "2013"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b48",
+      "series-title": "Bayesian Data Analysis",
+      "author": "Gelman",
+      "year": "2015"
+    },
+    {
+      "issue": "15",
+      "key": "10.1016/j.physd.2023.133952_b49",
+      "first-page": "510",
+      "article-title": "The matrix cookbook",
+      "volume": "7",
+      "author": "Petersen",
+      "year": "2008",
+      "journal-title": "Tech. Univ. Denmark"
+    },
+    {
+      "key": "10.1016/j.physd.2023.133952_b50",
+      "article-title": "Attention is all you need",
+      "volume": "vol. 30",
+      "author": "Vaswani",
+      "year": "2017"
+    }
+  ],
+  "container-title": [
+    "Physica D: Nonlinear Phenomena"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0167278923003068?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0167278923003068?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2025-09-28T18:06:21Z",
+    "timestamp": 1759082781000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0167278923003068"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        1
+      ]
+    ]
+  },
+  "references-count": 50,
+  "alternative-id": [
+    "S0167278923003068"
+  ],
+  "URL": "https://doi.org/10.1016/j.physd.2023.133952",
+  "relation": {},
+  "ISSN": [
+    "0167-2789"
+  ],
+  "issn-type": [
+    {
+      "value": "0167-2789",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        1
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Learning physical models that can respect conservation laws",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Physica D: Nonlinear Phenomena",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.physd.2023.133952",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2023 Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "133952"
+}

@@ -1,0 +1,851 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2026-10-04T23:50:17Z",
+    "timestamp": 1791157817357,
+    "version": "4.1.0"
+  },
+  "reference-count": 94,
+  "publisher": "Wiley",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            9,
+            5
+          ]
+        ],
+        "date-time": "2012-09-05T00:00:00Z",
+        "timestamp": 1346803200000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Biotech &amp;amp; Bioengineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:title>Abstract</jats:title><jats:p>This work critically reviews modeling concepts for standard activated sludge wastewater treatment processes (e.g., hydrolysis, growth and decay of organisms, etc.) for some of the most commonly used models. Based on a short overview on the theoretical biochemistry knowledge this review should help model users to better understand (i) the model concepts used; (ii) the differences between models, and (iii) the limits of the models. The seven analyzed models are: (1) ASM1; (2) ASM2d; (3) ASM3; (4) ASM3 + BioP; (5) ASM2d + TUD; (6) Barker &amp; Dold model; and (7) UCTPHO+. Nine standard processes are distinguished and discussed in the present work: hydrolysis; fermentation; ordinary heterotrophic organisms (OHO) growth; autotrophic nitrifying organisms (ANO) growth; OHO &amp; ANO decay; poly‐hydroxyalkanoates (PHA) storage; polyphosphate (polyP) storage; phosphorus accumulating organisms PAO) growth; and PAO decay. For a structured comparison, a new schematic representation of these processes is proposed. Each process is represented as a reaction with consumed components on the left of the figure and produced components on the right. Standardized icons, based on shapes and color codes, enable the representation of the stoichiometric modeling concepts and kinetics. This representation allows highlighting the conceptual differences of the models, and the level of simplification between the concepts and the theoretical knowledge. The model selection depending on their theoretical limitations and the main research needs to increase the model quality are finally discussed. Biotechnol. Bioeng. 2013; 110: 24–46. © 2012 Wiley Periodicals, Inc.</jats:p>",
+  "DOI": "10.1002/bit.24624",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        8,
+        7
+      ]
+    ],
+    "date-time": "2012-08-07T09:29:09Z",
+    "timestamp": 1344331749000
+  },
+  "page": "24-46",
+  "source": "Crossref",
+  "is-referenced-by-count": 120,
+  "title": [
+    "Critical review of activated sludge modeling: State of process knowledge, modeling concepts, and limitations"
+  ],
+  "prefix": "10.1002",
+  "volume": "110",
+  "author": [
+    {
+      "given": "H.",
+      "family": "Hauduc",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "L.",
+      "family": "Rieger",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Oehmen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "M.C.M.",
+      "family": "van Loosdrecht",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Y.",
+      "family": "Comeau",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Héduit",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "P.A.",
+      "family": "Vanrolleghem",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "S.",
+      "family": "Gillot",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "311",
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        5
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "e_1_2_8_2_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2011.04.028"
+    },
+    {
+      "key": "e_1_2_8_3_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(94)00155-Z"
+    },
+    {
+      "key": "e_1_2_8_4_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(95)00217-0"
+    },
+    {
+      "key": "e_1_2_8_5_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2175/106143097X125669"
+    },
+    {
+      "issue": "6",
+      "key": "e_1_2_8_6_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "157",
+      "DOI": "10.2166/wst.2002.0103",
+      "article-title": "Effect of different carbon sources on aerobic storage by activated sludge",
+      "volume": "45",
+      "author": "Beccari M",
+      "year": "2002",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_7_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(01)00317-7"
+    },
+    {
+      "key": "e_1_2_8_8_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(97)00183-8"
+    },
+    {
+      "key": "e_1_2_8_9_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/(SICI)1097-0290(19981105)60:3<326::AID-BIT8>3.0.CO;2-J"
+    },
+    {
+      "key": "e_1_2_8_10_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00157-7"
+    },
+    {
+      "issue": "3",
+      "key": "e_1_2_8_11_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "87",
+      "DOI": "10.2166/wst.1983.0109",
+      "article-title": "Possible biological mechanism of phosphorus removal",
+      "volume": "15",
+      "author": "Buchan L",
+      "year": "1983",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_12_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "ComeauY TakácsI.Schematic representation of activated sludge models; Water Environment Federation 81st Annual Technical Exhibition & Conference October 18–22 2008; Chicago IL USA.",
+      "DOI": "10.2175/193864708788733224"
+    },
+    {
+      "key": "e_1_2_8_13_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(86)90115-6"
+    },
+    {
+      "issue": "7",
+      "key": "e_1_2_8_14_1",
+      "first-page": "707",
+      "article-title": "Phosphate release and uptake in enhanced biological phosphorus removal from waste‐water",
+      "volume": "59",
+      "author": "Comeau Y",
+      "year": "1987",
+      "journal-title": "J Water Pollut Control Fed"
+    },
+    {
+      "key": "e_1_2_8_15_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2010.912"
+    },
+    {
+      "key": "e_1_2_8_16_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(71)90038-8"
+    },
+    {
+      "key": "e_1_2_8_17_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2010.07.033"
+    },
+    {
+      "issue": "6",
+      "key": "e_1_2_8_18_1",
+      "first-page": "47",
+      "article-title": "A general model for the activated sludge process",
+      "volume": "12",
+      "author": "Dold PL",
+      "year": "1980",
+      "journal-title": "Prog Water Technol"
+    },
+    {
+      "issue": "2",
+      "key": "e_1_2_8_19_1",
+      "first-page": "130",
+      "article-title": "Nitrification in the activated‐sludge process",
+      "volume": "64",
+      "author": "Downing AA",
+      "year": "1964",
+      "journal-title": "J Inst Sewage Purif"
+    },
+    {
+      "issue": "3",
+      "key": "e_1_2_8_20_1",
+      "first-page": "534",
+      "article-title": "Dynamic behavior of the activated sludge process",
+      "volume": "51",
+      "author": "Ekama GA",
+      "year": "1979",
+      "journal-title": "J Water Pollut Control Fed"
+    },
+    {
+      "key": "e_1_2_8_21_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(99)00117-1"
+    },
+    {
+      "key": "e_1_2_8_22_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.4314/wsa.v30i2.5060"
+    },
+    {
+      "key": "e_1_2_8_23_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.envsoft.2003.03.005"
+    },
+    {
+      "key": "e_1_2_8_24_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00779-3"
+    },
+    {
+      "issue": "6",
+      "key": "e_1_2_8_25_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.2166/wst.1986.0060",
+      "article-title": "A model for single‐sludge wastewater treatment systems",
+      "volume": "18",
+      "author": "Grady CPL",
+      "year": "1986",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "issue": "10",
+      "key": "e_1_2_8_26_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "DOI": "10.2166/wst.2005.0680",
+      "article-title": "Limitations of ASM1 and ASM S3: A comparison based on batch oxygen uptake rate profiles from different full‐scale wastewater treatment plants",
+      "volume": "52",
+      "author": "Guisasola A",
+      "year": "2005",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_27_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2009.08.038"
+    },
+    {
+      "key": "e_1_2_8_28_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0273-1223(95)00198-V"
+    },
+    {
+      "key": "e_1_2_8_29_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00785-9"
+    },
+    {
+      "key": "e_1_2_8_30_1",
+      "volume-title": "Activated sludge models ASM1, ASM2, ASM2d and ASM3",
+      "author": "Gujer W",
+      "year": "2000"
+    },
+    {
+      "key": "e_1_2_8_31_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2009.05.019"
+    },
+    {
+      "key": "e_1_2_8_32_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/10643380802278901"
+    },
+    {
+      "key": "e_1_2_8_33_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2009.223"
+    },
+    {
+      "key": "e_1_2_8_34_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2010.898"
+    },
+    {
+      "key": "e_1_2_8_35_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2011.368"
+    },
+    {
+      "key": "e_1_2_8_36_1",
+      "volume-title": "Activated sludge model no. 1",
+      "author": "Henze M",
+      "year": "1987"
+    },
+    {
+      "key": "e_1_2_8_37_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00829-4"
+    },
+    {
+      "key": "e_1_2_8_38_1",
+      "volume-title": "Activated sludge models ASM1, ASM2, ASM2d and ASM3",
+      "author": "Henze M",
+      "year": "2000"
+    },
+    {
+      "key": "e_1_2_8_39_1",
+      "volume-title": "Activated sludge models ASM1, ASM2, ASM2d and ASM3",
+      "author": "Henze M",
+      "year": "2000"
+    },
+    {
+      "key": "e_1_2_8_40_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2175/106143008X304776"
+    },
+    {
+      "key": "e_1_2_8_41_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/bit.21508"
+    },
+    {
+      "key": "e_1_2_8_42_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(91)90177-R"
+    },
+    {
+      "key": "e_1_2_8_43_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2008.12.039"
+    },
+    {
+      "key": "e_1_2_8_44_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(94)90268-2"
+    },
+    {
+      "key": "e_1_2_8_45_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(94)90084-1"
+    },
+    {
+      "issue": "11",
+      "key": "e_1_2_8_46_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "219",
+      "DOI": "10.2166/wst.2003.0608",
+      "article-title": "Modification of activated sludge model no. 3 considering direct growth on primary substrate",
+      "volume": "47",
+      "author": "Karahan‐Gul O",
+      "year": "2003",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_47_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(95)00232-4"
+    },
+    {
+      "key": "e_1_2_8_48_1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "KraemerJ ConstantineT CrawfordG ErdalZ KatehisD JohnsonB DaiggerG. Process design implications due to differences in anaerobic COD stabilisation models;81st Annual Water Environment Federation Technical Exhibition and Conference October 18‐22 2008; Chicago Illinois USA. Water Environment Federation.",
+      "DOI": "10.2175/193864708790893008"
+    },
+    {
+      "key": "e_1_2_8_49_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(99)00031-7"
+    },
+    {
+      "issue": "6",
+      "key": "e_1_2_8_50_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.2166/wst.2002.0107",
+      "article-title": "Improving the predictions of ASM2d through modelling in practice",
+      "volume": "45",
+      "author": "Larrea L",
+      "year": "2002",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_51_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es60077a002"
+    },
+    {
+      "key": "e_1_2_8_52_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2006.01.040"
+    },
+    {
+      "key": "e_1_2_8_53_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2008.10.032"
+    },
+    {
+      "key": "e_1_2_8_54_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2007.06.046"
+    },
+    {
+      "key": "e_1_2_8_55_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1021/es049659l"
+    },
+    {
+      "key": "e_1_2_8_56_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.1999.0033"
+    },
+    {
+      "key": "e_1_2_8_57_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00405-3"
+    },
+    {
+      "key": "e_1_2_8_58_1",
+      "first-page": "218",
+      "volume-title": "Theoretical and practical aspects of modelling activated sludge processes",
+      "author": "Meijer SCF",
+      "year": "2004"
+    },
+    {
+      "issue": "2",
+      "key": "e_1_2_8_59_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "93",
+      "DOI": "10.2166/wst.1985.0122",
+      "article-title": "Location of phosphorus in activated sludge and function of intracellular polyphosphates in biological phosphorus removal process",
+      "volume": "17",
+      "author": "Mino T",
+      "year": "1985",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_60_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(98)00129-8"
+    },
+    {
+      "issue": "6",
+      "key": "e_1_2_8_61_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "25",
+      "DOI": "10.2166/wst.2002.0091",
+      "article-title": "Processes and modeling of hydrolysis of particulate organic matter in aerobic wastewater treatment—A review",
+      "volume": "45",
+      "author": "Morgenroth E",
+      "year": "2002",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_62_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2005.09.038"
+    },
+    {
+      "key": "e_1_2_8_63_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(03)00015-0"
+    },
+    {
+      "key": "e_1_2_8_64_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2010.09.022"
+    },
+    {
+      "key": "e_1_2_8_65_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(99)00334-6"
+    },
+    {
+      "key": "e_1_2_8_66_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/bit.22632"
+    },
+    {
+      "key": "e_1_2_8_67_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0273-1223(95)00185-P"
+    },
+    {
+      "key": "e_1_2_8_68_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00781-1"
+    },
+    {
+      "key": "e_1_2_8_69_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2007.02.030"
+    },
+    {
+      "key": "e_1_2_8_70_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2010.06.017"
+    },
+    {
+      "key": "e_1_2_8_71_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0273-1223(96)00630-0"
+    },
+    {
+      "key": "e_1_2_8_72_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1023/A:1008860517183"
+    },
+    {
+      "key": "e_1_2_8_73_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.envsoft.2007.02.004"
+    },
+    {
+      "key": "e_1_2_8_74_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(01)00110-5"
+    },
+    {
+      "key": "e_1_2_8_75_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/j.watres.2004.07.009"
+    },
+    {
+      "key": "e_1_2_8_76_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00782-3"
+    },
+    {
+      "key": "e_1_2_8_77_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/bit.20741"
+    },
+    {
+      "key": "e_1_2_8_78_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2008.485"
+    },
+    {
+      "key": "e_1_2_8_79_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/bit.260440709"
+    },
+    {
+      "key": "e_1_2_8_80_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/bit.260430605"
+    },
+    {
+      "key": "e_1_2_8_81_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0043-1354(97)00210-8"
+    },
+    {
+      "key": "e_1_2_8_82_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(99)00141-9"
+    },
+    {
+      "key": "e_1_2_8_83_1",
+      "article-title": "The Petersen/Petersen a.k.a. Gujer matrix—Revisiting tha activated sludge model",
+      "author": "Takács I",
+      "year": "2005",
+      "journal-title": "Water"
+    },
+    {
+      "key": "e_1_2_8_84_1",
+      "first-page": "356",
+      "volume-title": "Nutrient removal—Manual of practice no. 34",
+      "author": "Takács I",
+      "year": "2011"
+    },
+    {
+      "key": "e_1_2_8_85_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1002/(SICI)1097-0290(19970905)55:5<773::AID-BIT7>3.0.CO;2-8"
+    },
+    {
+      "issue": "6",
+      "key": "e_1_2_8_86_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "DOI": "10.2166/wst.2002.0090",
+      "article-title": "Modelling of activated sludge processes with structured biomass",
+      "volume": "45",
+      "author": "van Loosdrecht MCM",
+      "year": "2002",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_87_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(98)00780-X"
+    },
+    {
+      "key": "e_1_2_8_88_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/s002530051052"
+    },
+    {
+      "key": "e_1_2_8_89_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0273-1223(96)00877-3"
+    },
+    {
+      "key": "e_1_2_8_90_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0273-1223(96)00198-9"
+    },
+    {
+      "key": "e_1_2_8_91_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0043-1354(86)90035-7"
+    },
+    {
+      "issue": "2",
+      "key": "e_1_2_8_92_1",
+      "first-page": "71",
+      "article-title": "Enhanced polyphosphate organism cultures in activated sludge systems. Part II: Experimental behaviour",
+      "volume": "15",
+      "author": "Wentzel MC",
+      "year": "1989",
+      "journal-title": "Water SA"
+    },
+    {
+      "issue": "6",
+      "key": "e_1_2_8_93_1",
+      "doi-asserted-by": "crossref",
+      "first-page": "59",
+      "DOI": "10.2166/wst.1992.0114",
+      "article-title": "Processes and modelling of nitrification denitrification biological excess phosphorus removal systems—A review",
+      "volume": "25",
+      "author": "Wentzel MC",
+      "year": "1992",
+      "journal-title": "Water Sci Technol"
+    },
+    {
+      "key": "e_1_2_8_94_1",
+      "volume-title": "Enhanced biological phosphorus removal” in biological wastewater treatment ‐ principles, modelling and design",
+      "author": "Wentzel MC",
+      "year": "2008"
+    },
+    {
+      "key": "e_1_2_8_95_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2166/wst.2010.983"
+    }
+  ],
+  "container-title": [
+    "Biotechnology and Bioengineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fbit.24624",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/bit.24624",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        8
+      ]
+    ],
+    "date-time": "2025-10-08T17:17:05Z",
+    "timestamp": 1759943825000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/bit.24624"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        5
+      ]
+    ]
+  },
+  "references-count": 94,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1002/bit.24624"
+  ],
+  "URL": "https://doi.org/10.1002/bit.24624",
+  "archive": [
+    "Portico"
+  ],
+  "relation": {},
+  "ISSN": [
+    "0006-3592",
+    "1097-0290"
+  ],
+  "issn-type": [
+    {
+      "value": "0006-3592",
+      "type": "print"
+    },
+    {
+      "value": "1097-0290",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        5
+      ]
+    ]
+  }
+}

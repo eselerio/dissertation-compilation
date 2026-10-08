@@ -1,0 +1,981 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        10
+      ]
+    ],
+    "date-time": "2026-05-10T05:08:55Z",
+    "timestamp": 1778389735215,
+    "version": "3.51.4"
+  },
+  "reference-count": 73,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            5,
+            23
+          ]
+        ],
+        "date-time": "2025-05-23T00:00:00Z",
+        "timestamp": 1747958400000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/100008047",
+      "name": "Carnegie Mellon University",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/100008047",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "name": "Center for Advanced Process Decision-making (CAPD) at Carnegie Mellon University"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.compchemeng.2025.109199",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        5,
+        18
+      ]
+    ],
+    "date-time": "2025-05-18T17:52:23Z",
+    "timestamp": 1747590743000
+  },
+  "page": "109199",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 3,
+  "special_numbering": "C",
+  "title": [
+    "Surrogate model optimization: a comparison case study with pooling problems of CO2 point sources"
+  ],
+  "prefix": "10.1016",
+  "volume": "200",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0002-5732-8985",
+      "authenticated-orcid": false,
+      "given": "H.A.",
+      "family": "Pedrozo",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "M.A.",
+      "family": "Zamarripa",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Uribe-Rodríguez",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "G.",
+      "family": "Panagakos",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "M.S.",
+      "family": "Diaz",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "L.T.",
+      "family": "Biegler",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0001",
+      "doi-asserted-by": "crossref",
+      "first-page": "16",
+      "DOI": "10.1007/BF01197433",
+      "article-title": "A trust-region framework for managing the use of approximation models in optimization",
+      "volume": "15",
+      "author": "Alexandrov",
+      "year": "1998",
+      "journal-title": "Struct. Optim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0002",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2023.108347",
+      "article-title": "Linear model decision trees as surrogates in optimization of engineering applications",
+      "volume": "178",
+      "author": "Ammari",
+      "year": "2023",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0003",
+      "series-title": "Cost-optimal Selection of pH Control For Mineral Scaling Prevention in High Recovery Reverse Osmosis Desalination",
+      "author": "Amusat",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0004",
+      "series-title": "Proc. 27. Workshop Computational Intelligence",
+      "first-page": "243",
+      "article-title": "Comparing kriging and radial basis function surrogates",
+      "author": "Bagheri",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "6391",
+      "DOI": "10.1007/s10462-021-09975-1",
+      "article-title": "A systematic review on overfitting control in shallow and deep neural networks",
+      "volume": "54",
+      "author": "Bejani",
+      "year": "2021",
+      "journal-title": "Artif. Intell. Rev."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0006",
+      "doi-asserted-by": "crossref",
+      "first-page": "250",
+      "DOI": "10.1016/j.compchemeng.2017.09.017",
+      "article-title": "Advances in surrogate based modeling, feasibility analysis, and optimization: a review",
+      "author": "Bhosekar",
+      "year": "2018",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0007",
+      "article-title": "The trust region filter strategy: survey of a rigorous approach for optimization with surrogate models",
+      "volume": "13",
+      "author": "Biegler",
+      "year": "2024",
+      "journal-title": "Digit. Chem. Eng"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0008",
+      "doi-asserted-by": "crossref",
+      "first-page": "17",
+      "DOI": "10.1016/j.compchemeng.2013.07.009",
+      "article-title": "Multi-scale optimization for process systems engineering",
+      "volume": "60",
+      "author": "Biegler",
+      "year": "2014",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0009",
+      "series-title": "Chapter 2 - Don’t Search—Solve! Process Optimization Modeling With IDAES",
+      "first-page": "33",
+      "author": "Biegler",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "895",
+      "DOI": "10.1007/s11590-016-1028-2",
+      "article-title": "ARGONAUT: algoRithms for Global optimization of coNstrAined grey-box compUTational problems",
+      "volume": "11",
+      "author": "Boukouvala",
+      "year": "2017",
+      "journal-title": "Optim. Lett."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0011",
+      "series-title": "Empirical Model-Building and Response Surfaces",
+      "author": "Box",
+      "year": "1987"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0012",
+      "unstructured": "Bugosen, S., Laird, C., Parker, R., 2023. Chemical process flowsheet optimization with full space, surrogate, and implicit formulations of a Gibbs reactor. arXiv Prepr. arXiv2310.09307."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0013",
+      "series-title": "Pyomo-Optimization Modeling in Python",
+      "author": "Bynum",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0014",
+      "doi-asserted-by": "crossref",
+      "first-page": "2633",
+      "DOI": "10.1002/aic.11579",
+      "article-title": "An algorithm for the use of surrogate models in modular flowsheet optimization",
+      "volume": "54",
+      "author": "Caballero",
+      "year": "2008",
+      "journal-title": "AIChe J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0015",
+      "first-page": "15829",
+      "article-title": "OMLT: optimization & machine learning toolkit",
+      "volume": "23",
+      "author": "Ceccon",
+      "year": "2022",
+      "journal-title": "J. Mach. Learn. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0016",
+      "series-title": "Introduction to Derivative-Free Optimization",
+      "author": "Conn",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0017",
+      "series-title": "A Comparison Between Kriging and Radial Basis Function Networks For Nonlinear Prediction",
+      "first-page": "726",
+      "author": "Costa",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0018",
+      "doi-asserted-by": "crossref",
+      "first-page": "2211",
+      "DOI": "10.1002/aic.14418",
+      "article-title": "Learning surrogate models for simulation-based optimization",
+      "volume": "60",
+      "author": "Cozad",
+      "year": "2014",
+      "journal-title": "AIChe J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0019",
+      "doi-asserted-by": "crossref",
+      "first-page": "10073",
+      "DOI": "10.1021/acs.chemrev.1c00022",
+      "article-title": "Gaussian process regression for materials and molecules",
+      "volume": "121",
+      "author": "Deringer",
+      "year": "2021",
+      "journal-title": "Chem. Rev."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0021",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/app11188456",
+      "article-title": "Pyrolysis of mixed plastic waste: II. Artificial neural networks prediction and sensitivity analysis",
+      "author": "Dubdub",
+      "year": "2021",
+      "journal-title": "Appl. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0022",
+      "first-page": "36",
+      "article-title": "A brief history of filter methods. Prepr. ANL/MCS-P1372-0906",
+      "author": "Fletcher",
+      "year": "2006",
+      "journal-title": "Argonne Natl. Lab. Math. Comput. Sci. Div."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0023",
+      "series-title": "Engineering Design Via Surrogate Modelling: a Practical Guide",
+      "author": "Forrester",
+      "year": "2008"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0024",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.paerosci.2008.11.001",
+      "article-title": "Recent advances in surrogate-based optimization",
+      "author": "Forrester",
+      "year": "2009",
+      "journal-title": "Prog. Aerosp. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0025",
+      "series-title": "Carbon Capture Simulation For Industry Impact (CCSI2) Project Updates CO2 Capture Pilot Improvements",
+      "author": "Fout",
+      "year": "2019"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0026",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2023.108513",
+      "article-title": "Predicting the performance of an industrial furnace using gaussian process and linear regression: a comparison",
+      "volume": "181",
+      "author": "Galeazzi",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0027",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/aic.17705",
+      "article-title": "Multilevel surrogate modeling of an amine scrubbing process for CO2capture",
+      "volume": "68",
+      "author": "Goldstein",
+      "year": "2022",
+      "journal-title": "AIChe J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0028",
+      "doi-asserted-by": "crossref",
+      "first-page": "151",
+      "DOI": "10.1186/s40537-024-01006-4",
+      "article-title": "A review on adversarial–based deep transfer learning mechanical fault diagnosis",
+      "volume": "11",
+      "author": "Guo",
+      "year": "2024",
+      "journal-title": "J. Big. Data"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0029",
+      "doi-asserted-by": "crossref",
+      "first-page": "1216",
+      "DOI": "10.1002/aic.12341",
+      "article-title": "Surrogate-based superstructure optimization framework",
+      "volume": "57",
+      "author": "Henao",
+      "year": "2011",
+      "journal-title": "AIChe J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0030",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3389/frai.2024.1441934",
+      "article-title": "Comparative study of machine learning techniques for post-combustion carbon capture systems",
+      "volume": "7",
+      "author": "Hu",
+      "year": "2024",
+      "journal-title": "Front. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0031",
+      "doi-asserted-by": "crossref",
+      "first-page": "451",
+      "DOI": "10.1007/s10973-019-08232-6",
+      "article-title": "Artificial neural network model for the evaluation of chemical kinetics in thermally induced solid-state reaction",
+      "volume": "138",
+      "author": "Huang",
+      "year": "2019",
+      "journal-title": "J. Therm. Anal. Calorim."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0032",
+      "unstructured": "IDAES, 2024. PySMO: python-based surrogate modelling objects [WWW Document]. URL https://idaes-pse.readthedocs.io/en/1.5.1/surrogate/pysmo/index.html#pysmo-python-based-surrogate-modelling-objects."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0033",
+      "doi-asserted-by": "crossref",
+      "first-page": "41",
+      "DOI": "10.17977/um018v2i12019p41-46",
+      "article-title": "Adam optimization algorithm for wide and deep neural network",
+      "volume": "2",
+      "author": "Jais",
+      "year": "2019",
+      "journal-title": "Knowl. Eng. Data Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0034",
+      "doi-asserted-by": "crossref",
+      "first-page": "200",
+      "DOI": "10.1002/ghg.2131",
+      "article-title": "A review of technologies for carbon capture, sequestration, and utilization: cost, capacity, and technology readiness",
+      "volume": "12",
+      "author": "Kazemifar",
+      "year": "2022",
+      "journal-title": "Greenh. Gases Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0035",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Ketkar, N., 2017. Introduction to Keras BT - Deep Learning with Python: a hands-on Introduction, in: Ketkar, N. (Ed.), . Apress, Berkeley, CA, pp. 97–111. https://doi.org/10.1007/978-1-4842-2766-4_7.",
+      "DOI": "10.1007/978-1-4842-2766-4_7"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0036",
+      "doi-asserted-by": "crossref",
+      "first-page": "128",
+      "DOI": "10.1002/wics.73",
+      "article-title": "Response surface methodology",
+      "volume": "2",
+      "author": "Khuri",
+      "year": "2010",
+      "journal-title": "WIREs Comput. Stat."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0037",
+      "series-title": "Journal of the Chemical, Metallurgical and MiningSociety of South Africa",
+      "first-page": "119",
+      "article-title": "A Statistical Approaches to Some Basic Mine Valuation Problems on the Witwatersrand",
+      "volume": "52",
+      "author": "Krige",
+      "year": "1951"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0038",
+      "doi-asserted-by": "crossref",
+      "first-page": "9509",
+      "DOI": "10.1039/D4EE02394C",
+      "article-title": "Market optimization and technoeconomic analysis of hydrogen-electricity coproduction systems",
+      "volume": "17",
+      "author": "Laky",
+      "year": "2024",
+      "journal-title": "Energy Env. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0039",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/amp2.10095",
+      "article-title": "The IDAES process modeling framework and model library—Flexibility for process simulation and optimization",
+      "volume": "3",
+      "author": "Lee",
+      "year": "2021",
+      "journal-title": "J. Adv. Manuf. Process."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0040",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2024.108816",
+      "article-title": "Efficient trust region filter modeling strategies for computationally expensive black-box optimization",
+      "volume": "189",
+      "author": "Liang",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0041",
+      "doi-asserted-by": "crossref",
+      "first-page": "13966",
+      "DOI": "10.1021/acs.iecr.4c00632",
+      "article-title": "Process systems engineering tools for optimization of trained machine learning models: comparative and perspective",
+      "volume": "63",
+      "author": "López-Flores",
+      "year": "2024",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0042",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.istruc.2023.104964",
+      "article-title": "Structural optimization design of metal rubber isolator based on an ensemble surrogate model",
+      "volume": "56",
+      "author": "Ma",
+      "year": "2023",
+      "journal-title": "Structures"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0043",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2022.107961",
+      "article-title": "Data-driven strategies for optimization of integrated chemical plants",
+      "volume": "166",
+      "author": "Ma",
+      "year": "2022",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0044",
+      "unstructured": "Majdisova, Z., Skala, V., 2018. A radial basis function approximation for large datasets. arXiv Prepr. arXiv1806.04243."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0045",
+      "doi-asserted-by": "crossref",
+      "first-page": "728",
+      "DOI": "10.1016/j.apm.2017.07.033",
+      "article-title": "Radial basis function approximations: comparison and applications",
+      "volume": "51",
+      "author": "Majdisova",
+      "year": "2017",
+      "journal-title": "Appl. Math. Model."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0046",
+      "doi-asserted-by": "crossref",
+      "first-page": "301",
+      "DOI": "10.1146/annurev-chembioeng-060713-040321",
+      "article-title": "Carbon capture simulation initiative: a case study in multiscale modeling and new challenges",
+      "volume": "5",
+      "author": "Miller",
+      "year": "2014",
+      "journal-title": "Annu Rev. Chem. Biomol. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0047",
+      "doi-asserted-by": "crossref",
+      "first-page": "44",
+      "DOI": "10.1016/j.ces.2015.09.030",
+      "article-title": "Comparative study of surrogate approaches while optimizing computationally expensive reaction networks",
+      "volume": "140",
+      "author": "Miriyala",
+      "year": "2016",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0048",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2023.108411",
+      "article-title": "Formulating data-driven surrogate models for process optimization",
+      "volume": "179",
+      "author": "Misener",
+      "year": "2023",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0049",
+      "first-page": "3",
+      "article-title": "Advances for the pooling problem: modeling, global optimization, and computational studies",
+      "volume": "8",
+      "author": "Misener",
+      "year": "2009",
+      "journal-title": "Appl. Comput. Math."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "309",
+      "DOI": "10.1016/j.ces.2017.04.049",
+      "article-title": "Thermodynamic modeling and uncertainty quantification of CO2-loaded aqueous MEA solutions",
+      "volume": "168",
+      "author": "Morgan",
+      "year": "2017",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0051",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2024.108738",
+      "article-title": "Optimization strategies for produced water networks with integrated desalination facilities",
+      "volume": "187",
+      "author": "Naik",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0052",
+      "unstructured": "Parker, R.B., Dowson, O., LoGiudice, N., Garcia, M., Bent, R., 2024. Formulations and scalability of neural network surrogates in nonlinear optimization problems. arXiv Prepr. arXiv2412.11403."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0053",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ces.2023.119646",
+      "article-title": "Including CFD rigorous models in the optimal design of carbon capture plants through trust-region methods",
+      "volume": "286",
+      "author": "Pedrozo",
+      "year": "2024",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0054",
+      "series-title": "34 European Symposium on Computer Aided Process Engineering /15 International Symposium on Process Systems Engineering",
+      "first-page": "175",
+      "article-title": "Computational fluid dynamics and trust-region methods to optimize carbon capture plants with membrane contactors",
+      "author": "Pedrozo",
+      "year": "2024"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0055",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2020.107015",
+      "article-title": "Surrogate-model based MILP for the optimal design of ethylene production from shale gas",
+      "volume": "141",
+      "author": "Pedrozo",
+      "year": "2020",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0056",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2021.107295",
+      "article-title": "Optimal design of ethylene and propylene coproduction plants with generalized disjunctive programming and State equipment network models",
+      "author": "Pedrozo",
+      "year": "2021",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0057",
+      "doi-asserted-by": "crossref",
+      "first-page": "7539",
+      "DOI": "10.1021/acs.iecr.2c04668",
+      "article-title": "Equation-oriented optimization applied to the optimal design of carbon capture plants using rigorous models",
+      "volume": "62",
+      "author": "Pedrozo",
+      "year": "2023",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0058",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.compchemeng.2024.108709",
+      "article-title": "Optimization of CO2 capture plants with surrogate model uncertainties",
+      "volume": "186",
+      "author": "Pedrozo",
+      "year": "2024",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0059",
+      "doi-asserted-by": "crossref",
+      "first-page": "546",
+      "DOI": "10.69997/sct.193976",
+      "article-title": "Impact of surrogate modeling in the formulation of pooling optimization problems for the CO2 point sources",
+      "volume": "3",
+      "author": "Pedrozo",
+      "year": "2024",
+      "journal-title": "Syst. Control Trans."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0060",
+      "series-title": "Gaussian Processes in Machine Learning BT - Advanced Lectures On Machine Learning: ML Summer Schools 2003, Canberra, Australia, February 2 - 14, 2003, Tübingen, Germany, August 4 - 16, 2003, Revised Lectures",
+      "first-page": "63",
+      "author": "Rasmussen",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0061",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.eswa.2023.123070",
+      "article-title": "Surrogate indirect adaptive controller tuning based on polynomial response surface method and bioinspired optimization: application to the brushless direct current motor controller",
+      "volume": "245",
+      "author": "Rojas-López",
+      "year": "2024",
+      "journal-title": "Expert. Syst. Appl."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0062",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ces.2023.118915",
+      "article-title": "Membrane gas-solvent contactor process for efficient carbon capture from multiple emission sources within an industrial complex",
+      "volume": "278",
+      "author": "Scholes",
+      "year": "2023",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0063",
+      "doi-asserted-by": "crossref",
+      "first-page": "925",
+      "DOI": "10.1007/s10957-018-1396-0",
+      "article-title": "Deterministic global optimization with artificial neural networks embedded",
+      "volume": "180",
+      "author": "Schweidtmann",
+      "year": "2019",
+      "journal-title": "J. Optim. Theory. Appl."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0064",
+      "series-title": "Linear Regression Analysis",
+      "author": "Seber",
+      "year": "2003"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0065",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.rser.2023.113246",
+      "article-title": "The role of carbon capture and storage to achieve net-zero energy systems: trade-offs between economics and the environment",
+      "volume": "178",
+      "author": "Shu",
+      "year": "2023",
+      "journal-title": "Renew. Sustain. Energy Rev."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "5205",
+      "DOI": "10.1007/s00170-022-09072-9",
+      "article-title": "Metamodeling-based simulation optimization in manufacturing problems: a comparative study",
+      "volume": "120",
+      "author": "Soares do Amaral",
+      "year": "2022",
+      "journal-title": "Int. J. Adv. Manuf. Technol."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0066",
+      "article-title": "Metamodel-based simulation optimization: a systematic literature review",
+      "volume": "114",
+      "author": "Soares do Amaral",
+      "year": "2022",
+      "journal-title": "Simul. Model. Pr. Theory"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0067",
+      "doi-asserted-by": "crossref",
+      "first-page": "449",
+      "DOI": "10.1007/s40314-024-02970-6",
+      "article-title": "Adaptive selection of shape parameters for MQRBF in arbitrary scattered data: enhancing finite difference solutions for complex PDEs",
+      "volume": "43",
+      "author": "Sun",
+      "year": "2024",
+      "journal-title": "Comput. Appl. Math."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0068",
+      "doi-asserted-by": "crossref",
+      "first-page": "25",
+      "DOI": "10.1007/s10107-004-0559-y",
+      "article-title": "On the implementation of an interior-point filter line-search algorithm for large-scale nonlinear programming",
+      "volume": "106",
+      "author": "Wächter",
+      "year": "2006",
+      "journal-title": "Math. Program."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0069",
+      "doi-asserted-by": "crossref",
+      "first-page": "12712",
+      "DOI": "10.1021/acs.iecr.9b01772",
+      "article-title": "Robust optimization for the pooling problem",
+      "volume": "58",
+      "author": "Wiebe",
+      "year": "2019",
+      "journal-title": "Ind. Eng. Chem. Res."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "2654",
+      "DOI": "10.1016/j.egypro.2011.02.165",
+      "article-title": "Assessment of opportunities for CO2 capture at iron and steel mills: an Australian perspective",
+      "volume": "4",
+      "author": "Wiley",
+      "year": "2011",
+      "journal-title": "Energ. Procedia"
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0071",
+      "doi-asserted-by": "crossref",
+      "first-page": "785",
+      "DOI": "10.1016/j.compchemeng.2017.02.010",
+      "article-title": "The ALAMO approach to machine learning",
+      "volume": "106",
+      "author": "Wilson",
+      "year": "2017",
+      "journal-title": "Comput. Chem. Eng."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0072",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1002/aic.17054",
+      "article-title": "Demand-based optimization of a chlorobenzene process with high-fidelity and surrogate reactor models under trust region strategies",
+      "volume": "67",
+      "author": "Yoshio",
+      "year": "2021",
+      "journal-title": "AIChe J."
+    },
+    {
+      "key": "10.1016/j.compchemeng.2025.109199_bib0073",
+      "series-title": "2019 1st International Conference on Smart Systems and Data Science (ICSSD)",
+      "first-page": "1",
+      "article-title": "Thin-plate spline RBF surrogate model for global optimization algorithms",
+      "author": "Zineb",
+      "year": "2019"
+    }
+  ],
+  "container-title": [
+    "Computers &amp; Chemical Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135425002030?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0098135425002030?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        5,
+        10
+      ]
+    ],
+    "date-time": "2026-05-10T04:15:59Z",
+    "timestamp": 1778386559000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0098135425002030"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "references-count": 73,
+  "alternative-id": [
+    "S0098135425002030"
+  ],
+  "URL": "https://doi.org/10.1016/j.compchemeng.2025.109199",
+  "relation": {},
+  "ISSN": [
+    "0098-1354"
+  ],
+  "issn-type": [
+    {
+      "value": "0098-1354",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Surrogate model optimization: a comparison case study with pooling problems of CO2 point sources",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Computers & Chemical Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.compchemeng.2025.109199",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2025 The Authors. Published by Elsevier Ltd.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "109199"
+}

@@ -27,7 +27,7 @@ Accordingly, this chapter addresses the first and second research questions in S
 
 \subsection{Reactor inputs and raw predictions}
 
-Each surrogate receives the operating conditions and influent component concentrations that define one reactor case. For sample $i$, the two operating values are listed first, followed by the twenty influent concentrations in the component order established in Chapter~\ref{ch:foundations}. The input therefore begins with $(\mathrm{HRT}_i,u_{\mathrm{air},i},S_{O,in,i},S_{F,in,i})$ and continues through the remaining influent coordinates to $X_{MeOH,in,i}$. The component definitions and units are fixed before any statistical learner is fitted.
+Each surrogate receives the operating conditions and influent component concentrations that define one reactor case. For sample $i$, the two operating values are listed first, followed by the twenty influent concentrations in the component order established in Chapter~\ref{ch:theory}. The input therefore begins with $(\mathrm{HRT}_i,u_{\mathrm{air},i},S_{O,in,i},S_{F,in,i})$ and continues through the remaining influent coordinates to $X_{MeOH,in,i}$. The component definitions and units are fixed before any statistical learner is fitted.
 
 Writing the operating vector and influent vector as columns gives the complete surrogate input
 \begin{equation}
@@ -230,7 +230,7 @@ A movement of 1 g m$^{-3}$ therefore has relative size 0.01 when the provisional
 
 \subsubsection{Selecting a candidate that satisfies mass conservation}
 
-The invariant structure from Chapter~\ref{ch:foundations} provides a convenient parameterization of every state that preserves the influent mass-conservation target. If $Z$ contains fifteen basis vectors spanning the allowable component changes, then any mass-conserving state can be written as
+The invariant structure from Chapter~\ref{ch:theory} provides a convenient parameterization of every state that preserves the influent mass-conservation target. If $Z$ contains fifteen basis vectors spanning the allowable component changes, then any mass-conserving state can be written as
 \begin{equation}
 \equationname{Null-space parameterization of states satisfying mass conservation}
 c=c_{in,i}+Zq,\qquad q\in\mathbb{R}^{15}.

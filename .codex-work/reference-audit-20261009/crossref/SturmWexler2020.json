@@ -1,0 +1,386 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        14
+      ]
+    ],
+    "date-time": "2026-09-14T20:07:08Z",
+    "timestamp": 1789416428481,
+    "version": "build-2803163510"
+  },
+  "reference-count": 25,
+  "publisher": "Copernicus GmbH",
+  "issue": "9",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            22
+          ]
+        ],
+        "date-time": "2020-09-22T00:00:00Z",
+        "timestamp": 1600732800000
+      },
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "URL": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Geosci. Model Dev."
+  ],
+  "abstract": "<jats:p>Large air quality models and large climate models simulate the\nphysical and chemical properties of the ocean, land surface, and/or\natmosphere to predict atmospheric composition, energy balance and the\nfuture of our planet. All of these models employ some form of operator\nsplitting, also called the method of fractional steps, in their structure,\nwhich enables each physical or chemical process to be simulated in a\nseparate operator or module within the overall model. In this structure,\neach of the modules calculates property changes for a fixed period of time;\nthat is, property values are passed into the module, which calculates how\nthey change for a period of time and then returns the new property values,\nall in round-robin between the various modules of the model. Some of these\nmodules require the vast majority of the computer resources consumed by the\nentire model, so increasing their computational efficiency can either improve\nthe model's computational performance, enable more realistic physical or\nchemical representations in the module, or a combination of these two.\nRecent efforts have attempted to replace these modules with ones that use\nmachine learning tools to memorize the input–output relationships of the\nmost time-consuming modules. One shortcoming of some of the original modules\nand their machine-learned replacements is lack of adherence to conservation\nprinciples that are essential to model performance. In this work, we derive\na mathematical framework for machine-learned replacements that conserves\nproperties – say mass, atoms, or energy – to machine precision. This framework\ncan be used to develop machine-learned operator replacements in\nenvironmental models.</jats:p>",
+  "DOI": "10.5194/gmd-13-4435-2020",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        22
+      ]
+    ],
+    "date-time": "2020-09-22T03:37:12Z",
+    "timestamp": 1600745832000
+  },
+  "page": "4435-4442",
+  "source": "Crossref",
+  "is-referenced-by-count": 16,
+  "title": [
+    "A mass- and energy-conserving framework for using machine learning to speed computations: a photochemistry example"
+  ],
+  "prefix": "10.5194",
+  "volume": "13",
+  "author": [
+    {
+      "ORCID": "https://orcid.org/0000-0001-7361-9590",
+      "authenticated-orcid": false,
+      "given": "Patrick Obin",
+      "family": "Sturm",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        },
+        {
+          "role": "corresponding-author",
+          "vocabulary": "crossref"
+        }
+      ]
+    },
+    {
+      "given": "Anthony S.",
+      "family": "Wexler",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "3145",
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        22
+      ]
+    ]
+  },
+  "reference": [
+    {
+      "key": "ref1",
+      "unstructured": "Ben-Israel, A. and Greville, T. N.: Generalized inverses: theory and applications, Springer Science & Business Media, 2003."
+    },
+    {
+      "key": "ref2",
+      "unstructured": "Beucler, T., Rasp, S., Pritchard, M., and Gentine, P.: Achieving Conservation of Energy in Neural Network Emulators for Climate Modeling, arXiv, available at: https://arxiv.org/abs/1906.06622 (last access: 17 June 2020), 2019.",
+      "type": "web-resource"
+    },
+    {
+      "key": "ref3",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Delworth, T. L., Rosati, A., Anderson, W., Adcroft, A. J., Balaji, V., Benson, R., Dixon, K., Griffies, S. M., Lee, H.-C., and Pacanowski, R. C.: Simulated climate and climate change in the GFDL CM2. 5 high-resolution coupled climate model, J. Climate 25, 2755–2781, 10.1175/JCLI-D-11-00316.1, 2012.",
+      "DOI": "10.1175/JCLI-D-11-00316.1"
+    },
+    {
+      "key": "ref4",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Eastham, S. D., Weisenstein, D. K., and Barrett, S. R.: Development and evaluation of the unified tropospheric–stratospheric chemistry extension (UCX) for the global chemistry-transport model GEOS-Chem, Atmos. Environ. 89, 52–63, 10.1016/j.atmosenv.2014.02.001, 2014.",
+      "DOI": "10.1016/j.atmosenv.2014.02.001"
+    },
+    {
+      "key": "ref5",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Foley, K. M., Roselle, S. J., Appel, K. W., Bhave, P. V., Pleim, J. E., Otte, T. L., Mathur, R., Sarwar, G., Young, J. O., Gilliam, R. C., Nolte, C. G., Kelly, J. T., Gilliland, A. B., and Bash, J. O.: Incremental testing of the Community Multiscale Air Quality (CMAQ) modeling system version 4.7, Geosci. Model Dev., 3, 205–226, 10.5194/gmd-3-205-2010, 2010.",
+      "DOI": "10.5194/gmd-3-205-2010"
+    },
+    {
+      "key": "ref6",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Golaz, J. C., Caldwell, P. M., Van Roekel, L. P., Petersen, M. R., Tang, Q., Wolfe, J. D., Abeshu, G., Anantharaj, V., Asay-Davis, X. S., and Bader, D. C.: The DOE E3SM coupled model version 1: Overview and evaluation at standard resolution, J. Adv. Model Earth. Sy., 11, 2089–2129, 10.1029/2018MS001603, 2019.",
+      "DOI": "10.1029/2018MS001603"
+    },
+    {
+      "key": "ref7",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Grell, G. A., Peckham, S. E., Schmitz, R., McKeen, S. A., Frost, G., Skamarock, W. C., and Eder, B.: Fully coupled “online” chemistry within the WRF model, Atmos. Environ., 39, 6957–6975, 10.1016/j.atmosenv.2005.04.027, 2005.",
+      "DOI": "10.1016/j.atmosenv.2005.04.027"
+    },
+    {
+      "key": "ref8",
+      "unstructured": "He, X. and Niyogi, P.: Locality preserving projections, Advances in neural information processing systems 16, MIT Press, 153–160, 2004."
+    },
+    {
+      "key": "ref9",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Hsieh, W. W.: Machine learning methods in the environmental sciences: Neural networks and kernels, Cambridge university press, 2009.",
+      "DOI": "10.1017/CBO9780511627217"
+    },
+    {
+      "key": "ref10",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Janenko, N. N.: The method of fractional steps, Springer, 1971.",
+      "DOI": "10.1007/978-3-642-65108-3"
+    },
+    {
+      "key": "ref11",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Jones, C., Gregory, J., Thorpe, R., Cox, P., Murphy, J., Sexton, D., and Valdes, P.: Systematic optimisation and climate simulation of FAMOUS, a fast version of HadCM3, Clim. Dynam., 25, 189–204, 2005.",
+      "DOI": "10.1007/s00382-005-0027-2"
+    },
+    {
+      "key": "ref12",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Kay, J. E., Deser, C., A. Phillips, A., Mai, A., Hannay, C., Strand, G., Arblaster, J. M., Bates, S., Danabasoglu, G., and Edwards, J.: The Community Earth System Model (CESM) large ensemble project: A community resource for studying climate change in the presence of internal climate variability, B. Am. Meteorol. Soc., 96, 1333–1349, 10.1175/BAMS-D-13-00255.1, 2015.",
+      "DOI": "10.1175/BAMS-D-13-00255.1"
+    },
+    {
+      "key": "ref13",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Keller, C. A. and Evans, M. J.: Application of random forest regression to the calculation of gas-phase chemistry within the GEOS-Chem chemistry model v10, Geosci. Model Dev., 12, 1209–1225, 10.5194/gmd-12-1209-2019, 2019.",
+      "DOI": "10.5194/gmd-12-1209-2019"
+    },
+    {
+      "key": "ref14",
+      "unstructured": "Kelp, M. M., Tessum, C. W., and Marshall, J. D.: Orders-of-magnitude speedup in atmospheric chemistry modeling through neural network-based emulation, arXiv preprint arXiv:1808.03874, 2018."
+    },
+    {
+      "key": "ref15",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Krasnopolsky, V. M., Rabinovitz, M. S., Hou, Y. T., Lord, S. J., and Belochitski, A. A.: Accurate and Fast Neural Network Emulations of Model Radiation for the NCEP Coupled Climate Forecast System: Climate Simulations and Seasonal Predictions, Mon. Weather Rev., 138, 1822–1842, 10.1175/2009MWR3149.1, 2010.",
+      "DOI": "10.1175/2009MWR3149.1"
+    },
+    {
+      "key": "ref16",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Mukhopadhyay, N.: Quick Constructions of Non-Trivial Real Symmetric Idempotent Matrices, Sri Lankan Journal of Applied Statistics 15, 57–70, 10.4038/sljastats.v15i1.6794, 2014.",
+      "DOI": "10.4038/sljastats.v15i1.6794"
+    },
+    {
+      "key": "ref17",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Pal, A., Mahajan, S., and Norman, M. R.: Using Deep Neural Networks as Cost-Effective Surrogate Models for Super-Parameterized E3SM Radiative Transfer, Geophys. Res. Lett., 46, 6069–6079, 10.1029/2018GL081646, 2019.",
+      "DOI": "10.1029/2018GL081646"
+    },
+    {
+      "key": "ref18",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Potukuchi, S. and Wexler, A. S.: Predicting vapor pressures using neural networks, Atmos. Environ., 31, 741–753, 10.1016/S1352-2310(96)00203-8, 1997.",
+      "DOI": "10.1016/S1352-2310(96)00203-8"
+    },
+    {
+      "key": "ref19",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Rasp, S., Pritchard, M. S., and Gentine, P.: Deep learning to represent subgrid processes in climate models, P. Natl. Acad. Sci. USA, 115, 9684–9689, 10.1073/pnas.1810286115, 2018.",
+      "DOI": "10.1073/pnas.1810286115"
+    },
+    {
+      "key": "ref20",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Somot, S., Sevault, F., Déqué, M., and Crépon, M.: 21st century climate change scenario for the Mediterranean using a coupled atmosphere–ocean regional climate model, Global Planet. Change, 63, 112–126, 10.1016/j.gloplacha.2007.10.003 2008.",
+      "DOI": "10.1016/j.gloplacha.2007.10.003"
+    },
+    {
+      "key": "ref21",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O.: A MATLAB Script to Generate a Restricted Inverse, Zenodo, 10.5281/zenodo.3712457, 2020a.",
+      "DOI": "10.5281/zenodo.3712457"
+    },
+    {
+      "key": "ref22",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O.: Photochemical Box Model in Julia, Zenodo, 10.5281/zenodo.3733502, 2020b.",
+      "DOI": "10.5281/zenodo.3733502"
+    },
+    {
+      "key": "ref23",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O.: Photochemical Box Model in Julia, v0.1.0, Zenodo, 10.5281/zenodo.3733503, 2020c.",
+      "DOI": "10.5281/zenodo.3733503"
+    },
+    {
+      "key": "ref24",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Sturm, P. O. and Wexler, A. S.: A MATLAB Script to Generate a Restricted Inverse, v0.2.0, Zenodo, 10.5281/zenodo.3733594, 2020.",
+      "DOI": "10.5281/zenodo.3733594"
+    },
+    {
+      "key": "ref25",
+      "doi-asserted-by": "publisher",
+      "unstructured": "Yarwood, G., Morris, R. E., and Wilson, G. M.: Particulate matter source apportionment technology (PSAT) in the CAMx photochemical grid model, Air Pollution Modeling and Its Application XVII, Springer, 478–492, 10.1007/978-0-387-68854-1_52, 2007.",
+      "DOI": "10.1007/978-0-387-68854-1_52"
+    }
+  ],
+  "container-title": [
+    "Geoscientific Model Development"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://gmd.copernicus.org/articles/13/4435/2020/gmd-13-4435-2020.pdf",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        14
+      ]
+    ],
+    "date-time": "2026-09-14T19:37:33Z",
+    "timestamp": 1789414653000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://gmd.copernicus.org/articles/13/4435/2020/"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        22
+      ]
+    ]
+  },
+  "references-count": 25,
+  "journal-issue": {
+    "issue": "9",
+    "published-online": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    }
+  },
+  "URL": "https://doi.org/10.5194/gmd-13-4435-2020",
+  "relation": {
+    "has-preprint": [
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83",
+        "asserted-by": "object"
+      }
+    ],
+    "has-review": [
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83-RC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83-RC2",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83-AC1",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83-RC1",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83-RC2",
+        "asserted-by": "object"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5194/gmd-2020-83-AC1",
+        "asserted-by": "object"
+      }
+    ],
+    "is-part-of": [
+      {
+        "id-type": "doi",
+        "id": "10.5281/zenodo.3733594",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5281/zenodo.3733503",
+        "asserted-by": "subject"
+      },
+      {
+        "id-type": "doi",
+        "id": "10.5281/zenodo.3712457",
+        "asserted-by": "subject"
+      }
+    ]
+  },
+  "ISSN": [
+    "1991-9603"
+  ],
+  "issn-type": [
+    {
+      "value": "1991-9603",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        22
+      ]
+    ]
+  }
+}

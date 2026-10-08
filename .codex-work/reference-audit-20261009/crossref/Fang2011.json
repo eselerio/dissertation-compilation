@@ -1,0 +1,623 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2026-10-03T14:22:34Z",
+    "timestamp": 1791037354949,
+    "version": "4.1.0"
+  },
+  "reference-count": 36,
+  "publisher": "Elsevier BV",
+  "issue": "2-3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2011-11-01T00:00:00Z",
+        "timestamp": 1320105600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2011-11-01T00:00:00Z",
+        "timestamp": 1320105600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Chemical Engineering Journal"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2011,
+        11
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.cej.2011.09.079",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2011,
+        9,
+        22
+      ]
+    ],
+    "date-time": "2011-09-22T17:29:02Z",
+    "timestamp": 1316712542000
+  },
+  "page": "635-643",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 55,
+  "title": [
+    "A simulation-based integrated approach to optimize the biological nutrient removal process in a full-scale wastewater treatment plant"
+  ],
+  "prefix": "10.1016",
+  "volume": "174",
+  "author": [
+    {
+      "given": "Fang",
+      "family": "Fang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Bingjie",
+      "family": "Ni",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Wenwei",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Guoping",
+      "family": "Sheng",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Hanqing",
+      "family": "Yu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "261",
+      "DOI": "10.1002/(SICI)1097-4660(200004)75:4<261::AID-JCTB213>3.0.CO;2-X",
+      "article-title": "Evaluation of the parameters affecting nitrogen and phosphorus removal in anaerobic/anoxic/oxic(A/A/O) biological nutrient removal systems",
+      "volume": "75",
+      "author": "Mulkerrins",
+      "year": "2000",
+      "journal-title": "J. Chem. Technol. Biotechnol."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0010",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "DOI": "10.1016/j.bej.2006.11.017",
+      "article-title": "Influence of industrial discharges on the performance and population of a biological nutrient removal process",
+      "volume": "34",
+      "author": "De Lucas",
+      "year": "2007",
+      "journal-title": "Biochem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "1651",
+      "DOI": "10.1016/j.watres.2007.10.022",
+      "article-title": "Comparison of recirculation configurations for biological nutrient removal in a membrane bioreactor",
+      "volume": "42",
+      "author": "Ersu",
+      "year": "2008",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0020",
+      "doi-asserted-by": "crossref",
+      "first-page": "11",
+      "DOI": "10.1016/j.cej.2007.07.070",
+      "article-title": "Optimization of biological nutrient removal in a SBR using simulation-based iterative dynamic programming",
+      "volume": "139",
+      "author": "Kim",
+      "year": "2008",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "31",
+      "DOI": "10.1139/s06-027",
+      "article-title": "Optimization of municipal wastewater biological nutrient removal using ASM2d",
+      "volume": "6",
+      "author": "Kennedy",
+      "year": "2007",
+      "journal-title": "J. Environ. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0030",
+      "doi-asserted-by": "crossref",
+      "first-page": "978",
+      "DOI": "10.1016/j.procbio.2007.03.006",
+      "article-title": "Modeling nitrite and nitrate variations in A2O process under different return oxic mixed liquid using an extended model",
+      "volume": "42",
+      "author": "Pai",
+      "year": "2007",
+      "journal-title": "Process Biochem."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0035",
+      "doi-asserted-by": "crossref",
+      "first-page": "1489",
+      "DOI": "10.1016/j.watres.2005.01.023",
+      "article-title": "Long-term simulation of the activated sludge process at the Hanover-Gummerwald pilot WWTP",
+      "volume": "39",
+      "author": "Makinia",
+      "year": "2005",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0040",
+      "series-title": "IWA Scientific and Technical Report No. 9",
+      "article-title": "Activated sludge models ASM1, ASM2, ASM2d, and ASM3",
+      "author": "Henze",
+      "year": "2000"
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0045",
+      "doi-asserted-by": "crossref",
+      "first-page": "546",
+      "DOI": "10.1002/aic.11888",
+      "article-title": "Modeling and simulation of the formation and utilization of microbial products in aerobic granular sludge",
+      "volume": "56",
+      "author": "Ni",
+      "year": "2010",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "2737",
+      "DOI": "10.1002/aic.11875",
+      "article-title": "A thermodynamic analysis of the activated sludge process: application to soybean wastewater treatment in a sequencing batch reactor",
+      "volume": "55",
+      "author": "Ni",
+      "year": "2009",
+      "journal-title": "AIChE J."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "616",
+      "DOI": "10.1016/j.envsoft.2009.06.003",
+      "article-title": "Multi-criteria analysis of wastewater treatment plant design and control scenarios under uncertainty",
+      "volume": "25",
+      "author": "Benedetti",
+      "year": "2010",
+      "journal-title": "Environ. Modell. Softw."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0060",
+      "doi-asserted-by": "crossref",
+      "first-page": "4485",
+      "DOI": "10.1016/j.watres.2008.05.029",
+      "article-title": "Multi-criteria evaluation of wastewater treatment plant control strategies under uncertainty",
+      "volume": "42",
+      "author": "Flores-Alsina",
+      "year": "2008",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0065",
+      "doi-asserted-by": "crossref",
+      "first-page": "1953",
+      "DOI": "10.2166/wst.2009.221",
+      "article-title": "Optimisation potential for a SBR plant based upon integrated modeling for dry and wet weather conditions",
+      "volume": "60",
+      "author": "Holm-Ronner",
+      "year": "2009",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0070",
+      "doi-asserted-by": "crossref",
+      "first-page": "3984",
+      "DOI": "10.1016/j.biortech.2010.01.038",
+      "article-title": "Biological nutrient removal in an MBR treating municipal wastewater with special focus on biological phosphorus removal",
+      "volume": "101",
+      "author": "Monclus",
+      "year": "2010",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0075",
+      "doi-asserted-by": "crossref",
+      "first-page": "435",
+      "DOI": "10.1016/j.envsoft.2007.06.009",
+      "article-title": "Model-based optimization of wastewater treatment plants design",
+      "volume": "23",
+      "author": "Rivas",
+      "year": "2008",
+      "journal-title": "Environ. Modell. Softw."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0080",
+      "doi-asserted-by": "crossref",
+      "first-page": "1208",
+      "DOI": "10.1016/j.envsoft.2006.07.003",
+      "article-title": "Artificial neural networks for rapid WWTP performance evaluation: methodology and case study",
+      "volume": "22",
+      "author": "Raduly",
+      "year": "2007",
+      "journal-title": "Environ. Model. Softw."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0085",
+      "series-title": "Statistical Learning Theory",
+      "author": "Vapnik",
+      "year": "1998"
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0090",
+      "doi-asserted-by": "crossref",
+      "first-page": "704",
+      "DOI": "10.1016/j.jhydrol.2006.01.021",
+      "article-title": "Support vector regression for real-time flood stage forecasting",
+      "volume": "328",
+      "author": "Yu",
+      "year": "2006",
+      "journal-title": "J. Hydrol."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "4131",
+      "DOI": "10.1016/j.ces.2009.06.017",
+      "article-title": "Modeling pressure drop coefficient for cyclone separators. A support vector machine approach",
+      "volume": "64",
+      "author": "Zhao",
+      "year": "2009",
+      "journal-title": "Chem. Eng. Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0100",
+      "doi-asserted-by": "crossref",
+      "first-page": "199",
+      "DOI": "10.1061/(ASCE)1084-0699(2006)11:3(199)",
+      "article-title": "Application of support vector machine in lake water level prediction",
+      "volume": "11",
+      "author": "Khan",
+      "year": "2006",
+      "journal-title": "J. Hydro. Eng."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0105",
+      "doi-asserted-by": "crossref",
+      "first-page": "161",
+      "DOI": "10.1016/j.cej.2008.06.030",
+      "article-title": "Prediction of cell voltage and current efficient in a lab scale chlor-alkali membrane cell based on support vector machines",
+      "volume": "41",
+      "author": "Shojai",
+      "year": "2009",
+      "journal-title": "Chem. Eng. J."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0110",
+      "doi-asserted-by": "crossref",
+      "first-page": "2595",
+      "DOI": "10.1016/j.watres.2009.01.002",
+      "article-title": "Estimating the kinetic parameters of activated sludge storage using weighted nonlinear least-squares and accelerating genetic algorithm",
+      "volume": "43",
+      "author": "Fang",
+      "year": "2009",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "183",
+      "DOI": "10.2166/wst.1999.0039",
+      "article-title": "Activated sludge Model No. 3",
+      "volume": "39",
+      "author": "Gujer",
+      "year": "1999",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0120",
+      "doi-asserted-by": "crossref",
+      "first-page": "3887",
+      "DOI": "10.1016/S0043-1354(01)00110-5",
+      "article-title": "The EAWAG Bio-P module for activated sludge Model No. 3",
+      "volume": "35",
+      "author": "Rieger",
+      "year": "2001",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0125",
+      "series-title": "Self-organizing Maps",
+      "author": "Kohonen",
+      "year": "2001"
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0130",
+      "doi-asserted-by": "crossref",
+      "first-page": "77",
+      "DOI": "10.2166/wst.2002.0095",
+      "article-title": "Experience with guidelines for wastewater characterisation in the Netherlands",
+      "volume": "45",
+      "author": "Roeleveld",
+      "year": "2002",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0135",
+      "series-title": "Biological Wastewater Treatment",
+      "author": "Grady",
+      "year": "1999"
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0140",
+      "unstructured": "Standard Methods for the Examination of Water and Wastewater, 20th ed. American Public Health Association: Washington, DC, 1998."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0145",
+      "unstructured": "P. Reichert, Aquasim 2.0-User Manual, Computer Program for the Identification and Simulation of Aquatic Systems; EAWAG: Dübendorf, Switzerland, 1998."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0150",
+      "unstructured": "C.C. Chang, C.J. Lin, LIBSVM: a library for support vector machines. http://www.csie.ntu.edu.tw/∼cjlin/libsvm, 2001."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0155",
+      "first-page": "327",
+      "article-title": "Batch test for characterization of the carbonaceous materials in municipal wastewaters",
+      "volume": "25",
+      "author": "Wentzel",
+      "year": "1999",
+      "journal-title": "Water SA"
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0160",
+      "doi-asserted-by": "crossref",
+      "first-page": "801",
+      "DOI": "10.1002/bit.21196",
+      "article-title": "Kinetic model of a granular sludge SBR: influences on nutrient removal",
+      "volume": "97",
+      "author": "de Kreuk",
+      "year": "2007",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0165",
+      "doi-asserted-by": "crossref",
+      "first-page": "1242",
+      "DOI": "10.1002/bit.21508",
+      "article-title": "A general model for biological nutrient removal activated sludge systems: model development",
+      "volume": "98",
+      "author": "Hu",
+      "year": "2007",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0170",
+      "doi-asserted-by": "crossref",
+      "first-page": "1259",
+      "DOI": "10.1002/bit.21507",
+      "article-title": "A general model for biological nutrient removal activated sludge systems: model evaluation",
+      "volume": "98",
+      "author": "Hu",
+      "year": "2007",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0175",
+      "doi-asserted-by": "crossref",
+      "first-page": "1615",
+      "DOI": "10.1016/S0032-9592(03)00300-5",
+      "article-title": "Effect of internal recycle on the nitrogen removal efficiency of an anaerobic/anoxic/oxic (A2/O) wastewater treatment plant (WWTP)",
+      "volume": "39",
+      "author": "Baeza",
+      "year": "2004",
+      "journal-title": "Process Biochem."
+    },
+    {
+      "key": "10.1016/j.cej.2011.09.079_bib0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "545",
+      "DOI": "10.1016/j.enbuild.2004.09.009",
+      "article-title": "Applying support vector machines to predict building energy consumption in tropical region",
+      "volume": "37",
+      "author": "Dong",
+      "year": "2005",
+      "journal-title": "Energy Build."
+    }
+  ],
+  "container-title": [
+    "Chemical Engineering Journal"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1385894711011521?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1385894711011521?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        24
+      ]
+    ],
+    "date-time": "2025-10-24T14:48:59Z",
+    "timestamp": 1761317339000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1385894711011521"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2011,
+        11
+      ]
+    ]
+  },
+  "references-count": 36,
+  "journal-issue": {
+    "issue": "2-3",
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          11
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S1385894711011521"
+  ],
+  "URL": "https://doi.org/10.1016/j.cej.2011.09.079",
+  "relation": {},
+  "ISSN": [
+    "1385-8947"
+  ],
+  "issn-type": [
+    {
+      "value": "1385-8947",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2011,
+        11
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "A simulation-based integrated approach to optimize the biological nutrient removal process in a full-scale wastewater treatment plant",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Chemical Engineering Journal",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.cej.2011.09.079",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "Copyright © 2011 Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ]
+}

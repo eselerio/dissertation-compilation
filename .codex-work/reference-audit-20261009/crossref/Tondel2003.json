@@ -1,0 +1,328 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2026-10-06T05:28:33Z",
+    "timestamp": 1791264513796,
+    "version": "4.1.0"
+  },
+  "reference-count": 20,
+  "publisher": "Elsevier BV",
+  "issue": "3",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2003,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2003-03-01T00:00:00Z",
+        "timestamp": 1046476800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Automatica"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2003,
+        3
+      ]
+    ]
+  },
+  "DOI": "10.1016/s0005-1098(02)00250-9",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2003,
+        2,
+        4
+      ]
+    ],
+    "date-time": "2003-02-04T14:54:18Z",
+    "timestamp": 1044370458000
+  },
+  "page": "489-497",
+  "source": "Crossref",
+  "is-referenced-by-count": 500,
+  "title": [
+    "An algorithm for multi-parametric quadratic programming and explicit MPC solutions"
+  ],
+  "prefix": "10.1016",
+  "volume": "39",
+  "author": [
+    {
+      "given": "Petter",
+      "family": "Tøndel",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tor Arne",
+      "family": "Johansen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Alberto",
+      "family": "Bemporad",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB1",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Bemporad, A., Borrelli, F., & Morari, M. (2000a). Piecewise linear optimal controllers for hybrid systems. In Proceedings of the American Contr. Conference (pp. 1190–1194). Chicago, IL.",
+      "DOI": "10.1109/ACC.2000.876688"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB2",
+      "unstructured": "Bemporad, A., Borrelli, F., & Morari, M. (2003). Model predictive control based on linear programming—the explicit solution. IEEE Transactions on Automatic Control."
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB3",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Bemporad, A., & Filippi, C. (2003). Suboptimal explicit RHC via approximate multiparametric quadratic programming. Journal of Optimization Theory and Applications, 117(1).",
+      "DOI": "10.1023/A:1023696221899"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB4",
+      "unstructured": "Bemporad, A., Morari, M., Dua, V., & Pistikopoulos, E. N.(2000b). The explicit linear quadratic regulator for constrained systems. In Proceedings of the American Contr. Conference (pp. 872–876). Chicago, IL."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/S0005-1098(02)00250-9_BIB5",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "DOI": "10.1016/S0005-1098(01)00174-1",
+      "article-title": "The explicit linear quadratic regulator for constrained systems",
+      "volume": "38",
+      "author": "Bemporad",
+      "year": "2002",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB6",
+      "unstructured": "Berkelaar, A. B., Roos, K., & Terlaky, T. (1997). The optimal set and optimal partition approach. In: T. Gal and H.J. Greenberg (eds.), Chapter 6. Advances in sensitivity analysis and parametric programming, Kluwer Academic Publishers, pp. 6-1–6-45."
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB7",
+      "unstructured": "Borrelli, F., Baotic, M., Bemporad, A., & Morari, M. (2001). Efficient on-line computation of explicit model predictive control. In Proceedings of 40th IEEE Conference on Decision and Control. Orlando, FL, pp. 1187–1192."
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB8",
+      "unstructured": "Borrelli, F., Bemporad, A., & Morari, M. (in press). A geometric algorithm for multi-parametric linear programming. Journal of Optimization Theory and Applications."
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB9",
+      "doi-asserted-by": "crossref",
+      "first-page": "121",
+      "DOI": "10.1016/S0167-6911(96)00057-6",
+      "article-title": "On constrained infinite-time linear quadratic optimal control",
+      "volume": "29",
+      "author": "Chmielewski",
+      "year": "1996",
+      "journal-title": "Systems and Control Letters"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB10",
+      "doi-asserted-by": "crossref",
+      "first-page": "123",
+      "DOI": "10.1023/A:1019241000636",
+      "article-title": "An algorithm for the solution of multiparametric mixed integer linear programming problems",
+      "volume": "99",
+      "author": "Dua",
+      "year": "2000",
+      "journal-title": "Annals of Operations Research"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB11",
+      "series-title": "Introduction to sensitivity and stability analysis in nonlinear programming",
+      "author": "Fiacco",
+      "year": "1983"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB12",
+      "series-title": "Postoptimal Analyses, Parametric Programming, and Related Topics",
+      "author": "Gal",
+      "year": "1995"
+    },
+    {
+      "issue": "7",
+      "key": "10.1016/S0005-1098(02)00250-9_BIB13",
+      "doi-asserted-by": "crossref",
+      "first-page": "1099",
+      "DOI": "10.1016/S0005-1098(02)00004-3",
+      "article-title": "Explicit suboptimal linear quadratic regulation with input and state constraints",
+      "volume": "38",
+      "author": "Johansen",
+      "year": "2002",
+      "journal-title": "Automatica"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB14",
+      "doi-asserted-by": "crossref",
+      "first-page": "1163",
+      "DOI": "10.1109/9.704994",
+      "article-title": "Constrained linear quadratic regulation",
+      "volume": "43",
+      "author": "Scokaert",
+      "year": "1998",
+      "journal-title": "IEEE Transactions on Automatic Control"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB15",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Seron, M. M., De Dona, J. A., & Goodwin, G. C. (2000). Global analytical model predictive control with input constraints. In Proceedings of the 39th IEEE conference on Decision and Control. Sydney, pp. 154–159.",
+      "DOI": "10.1109/CDC.2000.912749"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB16",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Sznaier, M., & Damborg, M. J. (1987). Suboptimal control of linear systems with state and control inequality constraints. In Proceedings of the 26th Conference on Decision and Control, Sznaier and Damburg, Los Angeles, pp. 761–762.",
+      "DOI": "10.1109/CDC.1987.272491"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB17",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Tøndel, P., & Johansen, T. A. (2002). Complexity reduction in explicit linear model predictive control. In Preprints XV IFAC World Congress. Barcelona.",
+      "DOI": "10.3182/20020721-6-ES-1901.00600"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB18",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Tøndel, P., Johansen, T. A., & Bemporad, A. (2001a). An algorithm for multi-parametric quadratic programming and explicit MPC solutions. In Proceedings of the 40th IEEE Conference on Decision and Control. Orlando, FL, pp. 1199–1204.",
+      "DOI": "10.1109/CDC.2001.981048"
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB19",
+      "unstructured": "Tøndel, P., Johansen, T. A., & Bemporad, A. (2001b). An algorithm for multi-parametric quandratic programming and explicit MPC solutions. Tech. report 2001-7-W. Available at http://www.itk.ntnu.no/ansatte/Johansen_Tor.Arne/mpQPAlg.pdf."
+    },
+    {
+      "key": "10.1016/S0005-1098(02)00250-9_BIB20",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Tøndel, P., Johansen, T. A., & Bemporad, A. 2003. Computation of piecewise affine control via binary search tree. Automatica.",
+      "DOI": "10.1016/S0005-1098(02)00308-4"
+    }
+  ],
+  "container-title": [
+    "Automatica"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0005109802002509?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0005109802002509?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2019,
+        3,
+        30
+      ]
+    ],
+    "date-time": "2019-03-30T11:23:37Z",
+    "timestamp": 1553945017000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0005109802002509"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2003,
+        3
+      ]
+    ]
+  },
+  "references-count": 20,
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          3
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "S0005109802002509"
+  ],
+  "URL": "https://doi.org/10.1016/s0005-1098(02)00250-9",
+  "relation": {},
+  "ISSN": [
+    "0005-1098"
+  ],
+  "issn-type": [
+    {
+      "value": "0005-1098",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2003,
+        3
+      ]
+    ]
+  }
+}

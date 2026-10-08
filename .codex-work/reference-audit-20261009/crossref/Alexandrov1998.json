@@ -1,0 +1,477 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        8
+      ]
+    ],
+    "date-time": "2026-10-08T04:35:59Z",
+    "timestamp": 1791434159013,
+    "version": "4.3.3"
+  },
+  "reference-count": 30,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "1",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            1998,
+            2,
+            1
+          ]
+        ],
+        "date-time": "1998-02-01T00:00:00Z",
+        "timestamp": 886291200000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "http://www.springer.com/tdm"
+    }
+  ],
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Structural Optimization"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        1998,
+        2
+      ]
+    ]
+  },
+  "DOI": "10.1007/bf01197433",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2005,
+        2,
+        18
+      ]
+    ],
+    "date-time": "2005-02-18T10:24:17Z",
+    "timestamp": 1108722257000
+  },
+  "page": "16-23",
+  "source": "Crossref",
+  "is-referenced-by-count": 464,
+  "title": [
+    "A trust-region framework for managing the use of approximation models in optimization"
+  ],
+  "prefix": "10.1007",
+  "volume": "15",
+  "author": [
+    {
+      "given": "N. M.",
+      "family": "Alexandrov",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "suffix": "Jr.",
+      "given": "J. E.",
+      "family": "Dennis",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "R. M.",
+      "family": "Lewis",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "V.",
+      "family": "Torczon",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "297",
+  "reference": [
+    {
+      "key": "CR1",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "DOI": "10.1137/0119011",
+      "volume": "19",
+      "author": "M. Avriel",
+      "year": "1970",
+      "unstructured": "Avriel, M.; Williams, A.C. 1970: Complementary geometric programming.SIAM J. Appl. Math. 19, 125?141",
+      "journal-title": "SIAM J. Appl. Math."
+    },
+    {
+      "key": "CR2",
+      "doi-asserted-by": "crossref",
+      "first-page": "129",
+      "DOI": "10.1007/BF01743349",
+      "volume": "5",
+      "author": "J.-F.M. Barthelemy",
+      "year": "1993",
+      "unstructured": "Barthelemy, J.-F.M.; Haftka, R.T. 1993: Approximation concepts for optimum structural design ? a review.Struct. Optim. 5, 129?144",
+      "journal-title": "Struct. Optim."
+    },
+    {
+      "key": "CR3",
+      "doi-asserted-by": "crossref",
+      "first-page": "119",
+      "DOI": "10.1016/0045-7825(85)90002-7",
+      "volume": "53",
+      "author": "V. Braibant",
+      "year": "1985",
+      "unstructured": "Braibant, V.; Fleury, C. 1985: An approximation-concepts approach to shape optimal design.Comp. Meth. Appl. Mech. & Eng. 53, 119?148",
+      "journal-title": "Comp. Meth. Appl. Mech. & Eng."
+    },
+    {
+      "key": "CR4",
+      "volume-title": "Multi-model algorithms for optimization",
+      "author": "R.G. Carter",
+      "year": "1986",
+      "unstructured": "Carter, R.G. 1986:Multi-model algorithms for optimization. Ph.D. Thesis, Rice University, Houston, TX, USA"
+    },
+    {
+      "key": "CR5",
+      "doi-asserted-by": "crossref",
+      "first-page": "251",
+      "DOI": "10.1137/0728014",
+      "volume": "28",
+      "author": "R.G. Carter",
+      "year": "1991",
+      "unstructured": "Carter, R.G. 1991: On the global convergence of trust region algorithms using inexact gradient information.SIAM J. Num. Analysis 28, 251?265",
+      "journal-title": "SIAM J. Num. Analysis"
+    },
+    {
+      "key": "CR6",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "DOI": "10.2514/3.48278",
+      "volume": "30",
+      "author": "K.J. Chang",
+      "year": "1993",
+      "unstructured": "Chang, K.J.; Haftka, R.T.; Giles, G.L.; Kao, P.-J. 1993: Sensitivity-based scaling for approximating structural response.J. Aircraft 30, 283?288",
+      "journal-title": "J. Aircraft"
+    },
+    {
+      "key": "CR7",
+      "volume-title": "Numerical methods for unconstrained optimization and nonlinear equations",
+      "author": "J.E. Dennis Jr.",
+      "year": "1983",
+      "unstructured": "Dennis, Jr., J.E.; Schnabel, R.B. 1983:Numerical methods for unconstrained optimization and nonlinear equations. Englewood Cliffs, N.J.: Prentice Hall"
+    },
+    {
+      "key": "CR8",
+      "first-page": "330",
+      "volume-title": "Multidisciplinary design optimization state of the art",
+      "author": "J.E. Dennis",
+      "year": "1997",
+      "unstructured": "Dennis, J.E.; Torezon, V. 1997: Managing approximation models in optimization. In: Alexandrov, N.; Hussanini, M.Y. (eds.)Multidisciplinary design optimization state of the art, pp. 330?347. Philadelphia: SIAM"
+    },
+    {
+      "key": "CR9",
+      "volume-title": "Geometric programming",
+      "author": "R.J. Duffin",
+      "year": "1967",
+      "unstructured": "Duffin, R.J.; Peterson, E.L.; Zener, C.M. 1967:Geometric programming, New York: John Wiley & Sons"
+    },
+    {
+      "key": "CR10",
+      "doi-asserted-by": "crossref",
+      "first-page": "409",
+      "DOI": "10.1002/nme.1620230307",
+      "volume": "23",
+      "author": "C. Fleury",
+      "year": "1986",
+      "unstructured": "Fleury, C.; Braibant, V. 1986: Structural optimization a new dual method using mixed variables.Int. J. Num. Meth. Eng. 23, 409?428",
+      "journal-title": "Int. J. Num. Meth. Eng."
+    },
+    {
+      "key": "CR11",
+      "series-title": "Tech. Report",
+      "volume-title": "A new trust region algorithm for bound constrained minimization",
+      "author": "A. Friedlander",
+      "year": "1996",
+      "unstructured": "Friedlander, A.; Martínez, J.M.; Santos, S.A. 1996: A new trust region algorithm for bound constrained minimization.Tech. Report, Dept. Appl. Math., University of Campinas, Brazil"
+    },
+    {
+      "key": "CR12",
+      "unstructured": "Gay, D.M. 1982: On convergence testing in model/trust-region algorithms for unconstrained optimization.Computing Science Tech. Report No. 104, Bell Laboratories"
+    },
+    {
+      "key": "CR13",
+      "volume-title": "Practical optimization",
+      "author": "P.E. Gill",
+      "year": "1981",
+      "unstructured": "Gill, P.E.; Murray, W.; Wright, M.H. 1981:Practical optimization. London: Academic Press"
+    },
+    {
+      "key": "CR14",
+      "unstructured": "Haftka, R.T.; Shore, C.P. 1979: Approximation methods for combined thermal/structural design.Tech. Report 1428, NASA"
+    },
+    {
+      "key": "CR15",
+      "doi-asserted-by": "crossref",
+      "first-page": "1173",
+      "DOI": "10.2514/3.9410",
+      "volume": "24",
+      "author": "P. Hajela",
+      "year": "1986",
+      "unstructured": "Hajela, P. 1986: Geometric programming strategles in large-scale structural synthesis.AIAA J. 24, 1173?1178",
+      "journal-title": "AIAA J."
+    },
+    {
+      "key": "CR16",
+      "doi-asserted-by": "crossref",
+      "first-page": "249",
+      "DOI": "10.1007/BF01582576",
+      "volume": "64",
+      "author": "M. Heinkenschloss",
+      "year": "1994",
+      "unstructured": "Heinkenschloss, M. 1994: On the solution of a two ball trust region subproblem.Math. Prog. 64, 249?276",
+      "journal-title": "Math. Prog."
+    },
+    {
+      "key": "CR17",
+      "first-page": "258",
+      "volume-title": "Mathematical programming. The state of the the art",
+      "author": "J.J. Moré",
+      "year": "1983",
+      "unstructured": "Moré, J.J. 1983: Recent developments in algorithms and software for trust region methods. In: Bachem, A.; Grötschel, M.; Korte, B. (eds.)Mathematical programming. The state of the the art, pp. 258?287. Berlin, Heidelberg, New York: Springer"
+    },
+    {
+      "key": "CR18",
+      "doi-asserted-by": "crossref",
+      "first-page": "527",
+      "DOI": "10.1137/0123056",
+      "volume": "23",
+      "author": "A.J. Morris",
+      "year": "1972",
+      "unstructured": "Morris, A.J. 1972a: Approximation and complementary geometric programming.SIAM J. Appl. Math. 23, 527?531",
+      "journal-title": "SIAM J. Appl. Math."
+    },
+    {
+      "key": "CR19",
+      "doi-asserted-by": "crossref",
+      "first-page": "847",
+      "DOI": "10.1016/0020-7683(72)90001-7",
+      "volume": "8",
+      "author": "A.J. Morris",
+      "year": "1972",
+      "unstructured": "Morris, A.J. 1972b: Structural optimization by geometric programming.Int. J. Solids & Struct. 8, 847?864",
+      "journal-title": "Int. J. Solids & Struct."
+    },
+    {
+      "key": "CR20",
+      "unstructured": "Morris, A.J. 1974: The optimisation of statically indeterminate structures by means of approximate geometric programming. In:Advisory Group for Aerospace Research and Development, Proc. No. 123, 2nd Symp. on Structural Optimization, pp. 6-1-6-15"
+    },
+    {
+      "key": "CR21",
+      "first-page": "1",
+      "volume-title": "Nonlinear programming 2",
+      "author": "M.J.D. Powell",
+      "year": "1975",
+      "unstructured": "Powell, M.J.D. 1975: Convergence properties of a class of minimization algorithms. In: Mangasarian, O.L.; Meyer, R.R.; Robinson, S.M. (eds.)Nonlinear programming 2, pp. 1?27. New York: Academic Press"
+    },
+    {
+      "key": "CR22",
+      "doi-asserted-by": "crossref",
+      "first-page": "692",
+      "DOI": "10.2514/3.49321",
+      "volume": "12",
+      "author": "L.A. Schmit Jr.",
+      "year": "1974",
+      "unstructured": "Schmit, L.A., Jr.; Farshi, B. 1974: Some approximation concepts for structural synthesis.AIAA J. 12, 692?699",
+      "journal-title": "AIAA J."
+    },
+    {
+      "key": "CR23",
+      "doi-asserted-by": "crossref",
+      "first-page": "1252",
+      "DOI": "10.2514/3.50877",
+      "volume": "18",
+      "author": "L.A. Schmit Jr.",
+      "year": "1980",
+      "unstructured": "Schmit, L.A., Jr.; Fleury, C. 1980: Structural synthesis by combining approximation concepts and dual methods.AIAA J. 18, 1252?1260",
+      "journal-title": "AIAA J."
+    },
+    {
+      "key": "CR24",
+      "unstructured": "Schmit, L.A., Jr.; Miura, H. 1976: Approximation concepts for efficient structural synthesis.Tech. Report CR-2552, NASA"
+    },
+    {
+      "key": "CR25",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1137/0722003",
+      "volume": "22",
+      "author": "G.A. Schultz",
+      "year": "1985",
+      "unstructured": "Schultz, G.A.; Schnabel, B.; Byrd, R.H. 1985: A family of trust region based algorithms for unconstrained minimization with strong global convergence properties.SIAM J. Num. Analysis 22, 47?67",
+      "journal-title": "SIAM J. Num. Analysis"
+    },
+    {
+      "key": "CR26",
+      "doi-asserted-by": "crossref",
+      "first-page": "409",
+      "DOI": "10.1137/0719026",
+      "volume": "19",
+      "author": "D.C. Sorensen",
+      "year": "1982",
+      "unstructured": "Sorensen, D.C. 1982: Newton's method with a model trust region modification.SIAM J. Num. Analysis 19, 409?426",
+      "journal-title": "SIAM J. Num. Analysis"
+    },
+    {
+      "key": "CR27",
+      "doi-asserted-by": "crossref",
+      "first-page": "564",
+      "DOI": "10.2514/3.58565",
+      "volume": "16",
+      "author": "J.H. Starnes Jr.",
+      "year": "1979",
+      "unstructured": "Starnes, J.H., Jr.; Haftka, R.T. 1979: Preliminary design of composite wings for buckling, strength, and displacement constraints.J. Aircraft 16, 564?570",
+      "journal-title": "J. Aircraft"
+    },
+    {
+      "key": "CR28",
+      "doi-asserted-by": "crossref",
+      "first-page": "231",
+      "DOI": "10.2514/3.49201",
+      "volume": "12",
+      "author": "O.O. Storaasli",
+      "year": "1974",
+      "unstructured": "Storaasli, O.O.; Sobieszczanski-Sobieski, J. 1974: On the accuracy of Taylor approximation for structure resizing.AIAA J. 12, 231?233",
+      "journal-title": "AIAA J."
+    },
+    {
+      "key": "CR29",
+      "unstructured": "Templeman, A.B.; Winterbottom, S.K. 1974: Structural design applications of geometric programming. In:Advisory Group for Aerospace Research and Development, Proc. No. 123, 2nd Symp. on Structural Optimization, pp. 5-1-5-15"
+    },
+    {
+      "key": "CR30",
+      "unstructured": "Vanderplaats, G.N. 1984:Numerical optimization techniques for engineering design. McGraw-Hill"
+    }
+  ],
+  "container-title": [
+    "Structural Optimization"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/BF01197433.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1007/BF01197433/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1007/BF01197433",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2019,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2019-05-01T12:49:30Z",
+    "timestamp": 1556714970000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "http://link.springer.com/10.1007/BF01197433"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        1998,
+        2
+      ]
+    ]
+  },
+  "references-count": 30,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          1998,
+          2
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "BF01197433"
+  ],
+  "URL": "https://doi.org/10.1007/bf01197433",
+  "relation": {},
+  "ISSN": [
+    "0934-4373",
+    "1615-1488"
+  ],
+  "issn-type": [
+    {
+      "value": "0934-4373",
+      "type": "print"
+    },
+    {
+      "value": "1615-1488",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        1998,
+        2
+      ]
+    ]
+  }
+}

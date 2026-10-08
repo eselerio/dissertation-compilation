@@ -1,0 +1,960 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        6
+      ]
+    ],
+    "date-time": "2026-09-06T05:26:47Z",
+    "timestamp": 1788672407465,
+    "version": "build-2803163510"
+  },
+  "reference-count": 59,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2023-06-01T00:00:00Z",
+        "timestamp": 1685577600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2023-06-01T00:00:00Z",
+        "timestamp": 1685577600000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2023-06-01T00:00:00Z",
+        "timestamp": 1685577600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2023-06-01T00:00:00Z",
+        "timestamp": 1685577600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2023-06-01T00:00:00Z",
+        "timestamp": 1685577600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2023-06-01T00:00:00Z",
+        "timestamp": 1685577600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ],
+        "date-time": "2023-06-01T00:00:00Z",
+        "timestamp": 1685577600000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Chemical Engineering Journal"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        6
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.cej.2023.143180",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        26
+      ]
+    ],
+    "date-time": "2023-04-26T21:12:04Z",
+    "timestamp": 1682543524000
+  },
+  "page": "143180",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 52,
+  "special_numbering": "C",
+  "title": [
+    "Computational fluid dynamics (CFD) modeling applied to biological wastewater treatment systems: An overview of strategies for the kinetics integration"
+  ],
+  "prefix": "10.1016",
+  "volume": "466",
+  "author": [
+    {
+      "given": "M.C.",
+      "family": "Sadino-Riquelme",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "A.",
+      "family": "Donoso-Bravo",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-5442-6021",
+      "authenticated-orcid": false,
+      "given": "F.",
+      "family": "Zorrilla",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0002-8875-3829",
+      "authenticated-orcid": false,
+      "given": "E.",
+      "family": "Valdebenito-Rolack",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "D.",
+      "family": "Gómez",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "ORCID": "https://orcid.org/0000-0001-7059-4121",
+      "authenticated-orcid": false,
+      "given": "F.",
+      "family": "Hansen",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.cej.2023.143180_b0005",
+      "series-title": "Removal of Emerging Contaminants Through Microbial Processes",
+      "first-page": "133",
+      "article-title": "Facing Lethal Impacts of Industrialization via Green and Sustainable Microbial Removal of Hazardous Pollutants and Nanobioremediation",
+      "author": "Omran",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0010",
+      "series-title": "Removal of Emerging Contaminants Through Microbial Processes",
+      "first-page": "161",
+      "article-title": "Wastewater Treatment Techniques: An Introduction",
+      "author": "Meena",
+      "year": "2021"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0015",
+      "doi-asserted-by": "crossref",
+      "unstructured": "R. Jadeja Niti B. and Ganorkar, Mathematical Modelling for Understanding and Improving the Anaerobic Digestion Process Efficiency, in: A.K. Meghvansi Mukesh Kumar and Goel (Ed.), Anaerobic Biodigesters for Human Waste Treatment, Springer Nature Singapore, Singapore, 2022: pp. 39–56. https://doi.org/10.1007/978-981-19-4921-0_3.",
+      "DOI": "10.1007/978-981-19-4921-0_3"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0020",
+      "doi-asserted-by": "crossref",
+      "unstructured": "A. Bernardelli, S. Marsili-Libelli, A. Manzini, S. Stancari, G. Tardini, D. Montanari, G. Anceschi, P. Gelli, S. Venier, Real-time model predictive control of a wastewater treatment plant based on machine learning, Water Science and Technology. 81 (2020) 2391–2400. https://doi.org/10.2166/wst.2020.298.",
+      "DOI": "10.2166/wst.2020.298"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0025",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1080/09593330.2016.1181674",
+      "article-title": "Modelling effluent quality based on a real-time optical monitoring of the wastewater treatment process",
+      "volume": "38",
+      "author": "Tomperi",
+      "year": "2017",
+      "journal-title": "Environ Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0030",
+      "first-page": "1310",
+      "article-title": "Dark fermentative biohydrogen production from synthetic cheese whey in an anaerobic structured-bed reactor: Performance evaluation and kinetic modeling, Renew",
+      "volume": "139",
+      "author": "Blanco",
+      "year": "2019",
+      "journal-title": "Energy."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0035",
+      "first-page": "208",
+      "article-title": "Emerging investigator series: modeling of wastewater treatment bioprocesses: current development and future opportunities, Environ. Sci.: Water Res",
+      "volume": "8",
+      "author": "Yao",
+      "year": "2022",
+      "journal-title": "Technol."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cej.2023.143180_b0040",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.3390/polym14030375",
+      "article-title": "Biotechnological Aspects and Mathematical Modeling of the Biodegradation of Plastics under Controlled Conditions",
+      "volume": "14",
+      "author": "Baldera-Moreno",
+      "year": "2022",
+      "journal-title": "Polymers (Basel)."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0045",
+      "doi-asserted-by": "crossref",
+      "unstructured": "V. Alcaraz-Gonzalez, Modelling and Control of Wastewater Treatment Processes: An Overview and Recent Trends, in: A. Bahadir Müfit and Haarstrick (Ed.), Water and Wastewater Management: Global Problems and Measures, Springer International Publishing, Cham, 2022: pp. 143–150. https://doi.org/10.1007/978-3-030-95288-4_12.",
+      "DOI": "10.1007/978-3-030-95288-4_12"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0050",
+      "series-title": "Computational methods for fluid dynamics",
+      "author": "Ferziger",
+      "year": "2002"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0055",
+      "doi-asserted-by": "crossref",
+      "first-page": "549",
+      "DOI": "10.2166/wst.2016.249",
+      "article-title": "CFD for wastewater treatment: an overview",
+      "volume": "74",
+      "author": "Samstag",
+      "year": "2016",
+      "journal-title": "Water Science and Technology."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0060",
+      "doi-asserted-by": "crossref",
+      "first-page": "39",
+      "DOI": "10.1080/10643389.2018.1440853",
+      "article-title": "Computational fluid dynamic (CFD) modelling in anaerobic digestion: General application and recent advances",
+      "volume": "48",
+      "author": "Sadino-Riquelme",
+      "year": "2018",
+      "journal-title": "Crit Rev Environ Sci Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0065",
+      "first-page": "537",
+      "article-title": "Mixing assessment of an industrial anaerobic digestion reactor using CFD, Renew",
+      "volume": "192",
+      "author": "Zamani Abyaneh",
+      "year": "2022",
+      "journal-title": "Energy."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0070",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.bej.2021.108088",
+      "article-title": "On the effect of biogas bubbles in anaerobic digester mixing",
+      "volume": "173",
+      "author": "Dabiri",
+      "year": "2021",
+      "journal-title": "Biochem Eng J."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0075",
+      "doi-asserted-by": "crossref",
+      "first-page": "371",
+      "DOI": "10.1080/19942060.2017.1307282",
+      "article-title": "Towards a robust CFD model for aeration tanks for sewage treatment - A lab-scale study",
+      "volume": "11",
+      "author": "Karpinska Portela",
+      "year": "2017",
+      "journal-title": "Engineering Applications of Computational Fluid Mechanics."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0080",
+      "doi-asserted-by": "crossref",
+      "first-page": "71",
+      "DOI": "10.1016/j.cej.2014.06.041",
+      "article-title": "Importance of scale and hydrodynamics for modeling anaerobic digester performance",
+      "volume": "255",
+      "author": "Van Hulle",
+      "year": "2014",
+      "journal-title": "Chemical Engineering Journal."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0085",
+      "doi-asserted-by": "crossref",
+      "first-page": "1030",
+      "DOI": "10.1016/j.rser.2014.07.182",
+      "article-title": "Effects of mixing on the result of anaerobic digestion: Review",
+      "volume": "40",
+      "author": "Lindmark",
+      "year": "2014",
+      "journal-title": "Renewable and Sustainable Energy Reviews."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0090",
+      "first-page": "95",
+      "article-title": "Modelling of an anaerobic plug-flow reactor",
+      "volume": "260",
+      "author": "Donoso-Bravo",
+      "year": "2018",
+      "journal-title": "Process analysis and evaluation approaches with non-ideal mixing considerations, Bioresour Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "595",
+      "DOI": "10.1007/s11157-015-9376-4",
+      "article-title": "Mathematical modelling of anaerobic digestion processes: applications and future needs",
+      "volume": "14",
+      "author": "Batstone",
+      "year": "2015",
+      "journal-title": "Rev Environ Sci Biotechnol."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0100",
+      "doi-asserted-by": "crossref",
+      "first-page": "299",
+      "DOI": "10.1016/j.cherd.2022.09.021",
+      "article-title": "The future of computational fluid dynamics (CFD) simulation in the chemical process industries",
+      "volume": "187",
+      "author": "Fletcher",
+      "year": "2022",
+      "journal-title": "Chemical Engineering Research and Design."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0105",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.compchemeng.2016.12.020",
+      "article-title": "Integrating hydrodynamics and biokinetics in wastewater treatment modelling by using smoothed particle hydrodynamics",
+      "volume": "99",
+      "author": "Meister",
+      "year": "2017",
+      "journal-title": "Comput Chem Eng."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0110",
+      "doi-asserted-by": "crossref",
+      "first-page": "224",
+      "DOI": "10.1016/j.compfluid.2019.01.024",
+      "article-title": "A fully Lagrangian computational model for the integration of mixing and biochemical reactions in anaerobic digestion",
+      "volume": "181",
+      "author": "Rezavand",
+      "year": "2019",
+      "journal-title": "Comput Fluids."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0115",
+      "doi-asserted-by": "crossref",
+      "first-page": "1305",
+      "DOI": "10.1002/aic.12072",
+      "article-title": "Integration of on-the-fly kinetic reduction with multidimensional CFD",
+      "volume": "56",
+      "author": "He",
+      "year": "2010",
+      "journal-title": "AIChE Journal."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0120",
+      "doi-asserted-by": "crossref",
+      "unstructured": "B. Wu, E.L. Bibeau, K.G. Gebremedhin, Three-dimensional numerical simulation model of biogas production for anaerobic digesters, in: 2006 ASAE Annual Meeting, 2006: p. 1.",
+      "DOI": "10.13031/2013.21157"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0125",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.cej.2010.02.006",
+      "article-title": "Transient modeling of toluene waste gas biotreatment in a gas-liquid airlift loop reactor",
+      "volume": "159",
+      "author": "Wang",
+      "year": "2010",
+      "journal-title": "Chemical Engineering Journal."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0130",
+      "doi-asserted-by": "crossref",
+      "first-page": "485",
+      "DOI": "10.1007/s00449-018-2052-7",
+      "article-title": "Experimentation and CFD modeling of continuous degradation of formaldehyde by immobilized Ralstonia eutropha in a semi-pilot-scale plug flow bioreactor",
+      "volume": "42",
+      "author": "Habibi",
+      "year": "2019",
+      "journal-title": "Bioprocess Biosyst Eng."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0135",
+      "doi-asserted-by": "crossref",
+      "first-page": "326",
+      "DOI": "10.1080/10406638.2017.1420668",
+      "article-title": "Coupled Transient CFD-Inhibition Kinetics Modeling of Naphthalene Biodegradation in an Airlift Reactor with Net Draft Tube",
+      "volume": "40",
+      "author": "Nalband",
+      "year": "2020",
+      "journal-title": "Polycycl Aromat Compd."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0140",
+      "doi-asserted-by": "crossref",
+      "first-page": "9749",
+      "DOI": "10.1016/j.biortech.2010.07.115",
+      "article-title": "A hydrodynamics-reaction kinetics coupled model for evaluating bioreactors derived from CFD simulation",
+      "volume": "101",
+      "author": "Wang",
+      "year": "2010",
+      "journal-title": "Bioresour Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0145",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "DOI": "10.1016/j.cherd.2018.09.040",
+      "article-title": "Investigation of the effect of uncertain growth kinetics on a CFD based model for the growth of S. cerevisiae in an industrial bioreactor",
+      "volume": "140",
+      "author": "Wright",
+      "year": "2018",
+      "journal-title": "Chemical Engineering Research and Design."
+    },
+    {
+      "issue": "1",
+      "key": "10.1016/j.cej.2023.143180_b0150",
+      "first-page": "012109",
+      "article-title": "Simulating of Microbial Growth Scale up in a Stirred Tank Bioreactor for Aerobic Processes using Computational Fluid Dynamics",
+      "volume": "1655",
+      "author": "Hernandez",
+      "year": "2020",
+      "journal-title": "J. Phys.: Conf. Ser."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0155",
+      "doi-asserted-by": "crossref",
+      "first-page": "130402",
+      "DOI": "10.1016/j.cej.2021.130402",
+      "article-title": "Development of dynamic compartment models for industrial aerobic fed-batch fermentation processes",
+      "volume": "420",
+      "author": "Nadal-Rey",
+      "year": "2021",
+      "journal-title": "Chemical Engineering Journal."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0160",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1061/(ASCE)GM.1943-5622.0001192",
+      "article-title": "CFD Modeling of Anaerobic-Aerobic Hybrid Bioreactor Landfills",
+      "volume": "18",
+      "author": "Cao",
+      "year": "2018",
+      "journal-title": "International Journal of Geomechanics."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0165",
+      "doi-asserted-by": "crossref",
+      "first-page": "2864",
+      "DOI": "10.1002/bit.24551",
+      "article-title": "Integration of Mixing, Heat Transfer, and Biochemical Reaction Kinetics in Anaerobic Methane Fermentation",
+      "volume": "109",
+      "author": "Wu",
+      "year": "2012",
+      "journal-title": "Biotechnol. Bioeng."
+    },
+    {
+      "issue": "4",
+      "key": "10.1016/j.cej.2023.143180_b0170",
+      "doi-asserted-by": "crossref",
+      "first-page": "769",
+      "DOI": "10.1002/bit.26868",
+      "article-title": "CFD predicted pH gradients in lactic acid bacteria cultivations",
+      "volume": "116",
+      "author": "Spann",
+      "year": "2019",
+      "journal-title": "Biotechnol Bioeng."
+    },
+    {
+      "issue": "5",
+      "key": "10.1016/j.cej.2023.143180_b0175",
+      "doi-asserted-by": "crossref",
+      "first-page": "923",
+      "DOI": "10.1002/bit.25509",
+      "article-title": "Integration of biological kinetics and computational fluid dynamics to model the growth of Nannochloropsis salina in an open channel raceway",
+      "volume": "112",
+      "author": "Park",
+      "year": "2015",
+      "journal-title": "Biotechnol Bioeng."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1016/j.cej.2018.04.058",
+      "article-title": "Biological reactor retrofitting using CFD-ASM modelling",
+      "volume": "348",
+      "author": "Climent",
+      "year": "2018",
+      "journal-title": "Chemical Engineering Journal."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0185",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "DOI": "10.1016/j.watres.2018.03.067",
+      "article-title": "CFD simulation of fluid dynamic and biokinetic processes within activated sludge reactors under intermittent aeration regime",
+      "volume": "139",
+      "author": "Sánchez",
+      "year": "2018",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0190",
+      "doi-asserted-by": "crossref",
+      "first-page": "342",
+      "DOI": "10.1016/j.psep.2018.09.020",
+      "article-title": "Modelling of biohydrogen production in stirred fermenters by Computational Fluid Dynamics",
+      "author": "Maluta",
+      "year": "2019",
+      "journal-title": "Process Safety and Environmental Protection."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0195",
+      "doi-asserted-by": "crossref",
+      "first-page": "1658",
+      "DOI": "10.2166/wst.2020.076",
+      "article-title": "Partial integration of ADM1 into CFD: understanding the impact of diffusion on anaerobic digestion mixing",
+      "volume": "81",
+      "author": "Tobo",
+      "year": "2020",
+      "journal-title": "Water Science and Technology."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0200",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2023.128728",
+      "article-title": "Integrating biokinetics with computational fluid dynamics for energy performance analysis in anaerobic digestion",
+      "volume": "373",
+      "author": "Dabiri",
+      "year": "2023",
+      "journal-title": "Bioresour Technol."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0205",
+      "doi-asserted-by": "crossref",
+      "first-page": "116033",
+      "DOI": "10.1016/j.ces.2020.116033",
+      "article-title": "Scale-up of aerated bioreactors: CFD validation and application to the enzyme production by Trichoderma reesei",
+      "volume": "229",
+      "author": "Cappello",
+      "year": "2021",
+      "journal-title": "Chem Eng Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0210",
+      "first-page": "461",
+      "article-title": "Three-dimensional CFD simulation of anaerobic reactions in a continuous packed-bed bioreactor, Renew",
+      "volume": "169",
+      "author": "Zarei",
+      "year": "2021",
+      "journal-title": "Energy."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0215",
+      "doi-asserted-by": "crossref",
+      "first-page": "348",
+      "DOI": "10.1016/j.ces.2019.05.025",
+      "article-title": "Coupled CFD and chemical-kinetics simulations of cellulosic-biomass enzymatic hydrolysis: Mathematical-model development and validation",
+      "volume": "206",
+      "author": "Sitaraman",
+      "year": "2019",
+      "journal-title": "Chem Eng Sci."
+    },
+    {
+      "issue": "6",
+      "key": "10.1016/j.cej.2023.143180_b0220",
+      "doi-asserted-by": "crossref",
+      "first-page": "703",
+      "DOI": "10.3390/pr8060703",
+      "article-title": "Linking CFD and kinetic models in anaerobic digestion using a compartmental model approach",
+      "volume": "8",
+      "author": "Tobo",
+      "year": "2020",
+      "journal-title": "Processes."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0225",
+      "doi-asserted-by": "crossref",
+      "first-page": "159",
+      "DOI": "10.1016/j.ces.2016.07.031",
+      "article-title": "Lagrangian modeling of hydrodynamic–kinetic interactions in (bio)chemical reactors: Practical implementation and setup guidelines",
+      "volume": "157",
+      "author": "Haringa",
+      "year": "2017",
+      "journal-title": "Chem Eng Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0230",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "DOI": "10.1016/j.ces.2017.09.020",
+      "article-title": "Computational fluid dynamics simulation of an industrial P. chrysogenum fermentation with a coupled 9-pool metabolic model: Towards rational scale-down and design optimization",
+      "volume": "175",
+      "author": "Haringa",
+      "year": "2018",
+      "journal-title": "Chem Eng Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0235",
+      "doi-asserted-by": "crossref",
+      "first-page": "27",
+      "DOI": "10.3390/bioengineering4020027",
+      "article-title": "Lagrangian Trajectories to Predict the Formation of Population Heterogeneity in Large-Scale Bioreactors",
+      "volume": "4",
+      "author": "Kuschel",
+      "year": "2017",
+      "journal-title": "Bioengineering."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0240",
+      "doi-asserted-by": "crossref",
+      "first-page": "343",
+      "DOI": "10.1016/j.ces.2009.06.035",
+      "article-title": "Comparison of systemic, compartmental and CFD modelling approaches: application to the simulation of a biological reactor of wastewater treatment",
+      "volume": "65",
+      "author": "Le Moullec",
+      "year": "2010",
+      "journal-title": "Chem Eng Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0245",
+      "series-title": "Predictive Modeling of Dynamic Processes: A Tribute to Professor Klaus Thoma",
+      "first-page": "367",
+      "author": "Vignjevic",
+      "year": "2009"
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0250",
+      "doi-asserted-by": "crossref",
+      "first-page": "1073",
+      "DOI": "10.1007/s40571-022-00474-w",
+      "article-title": "2D SPH simulation of an anaerobic digester",
+      "volume": "9",
+      "author": "Kumar",
+      "year": "2022",
+      "journal-title": "Comput Part Mech."
+    },
+    {
+      "issue": "3",
+      "key": "10.1016/j.cej.2023.143180_b0255",
+      "doi-asserted-by": "crossref",
+      "first-page": "375",
+      "DOI": "10.1093/mnras/181.3.375",
+      "article-title": "Smoothed particle hydrodynamics: theory and application to non-spherical stars",
+      "volume": "181",
+      "author": "Gingold",
+      "year": "1977",
+      "journal-title": "Mon Not R Astron Soc."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0260",
+      "doi-asserted-by": "crossref",
+      "first-page": "25",
+      "DOI": "10.1007/s11831-010-9040-7",
+      "article-title": "Smoothed particle hydrodynamics (SPH): an overview and recent developments",
+      "volume": "17",
+      "author": "Liu",
+      "year": "2010",
+      "journal-title": "Archives of Computational Methods in Engineering."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0265",
+      "doi-asserted-by": "crossref",
+      "first-page": "365",
+      "DOI": "10.1051/jcp/1994910365",
+      "article-title": "Derivation of a global chemical kinetic mechanism for methane ignition and combustion",
+      "volume": "91",
+      "author": "Revel",
+      "year": "1994",
+      "journal-title": "Journal de Chimie Physique."
+    },
+    {
+      "issue": "11",
+      "key": "10.1016/j.cej.2023.143180_b0270",
+      "doi-asserted-by": "crossref",
+      "first-page": "2956",
+      "DOI": "10.1002/aic.10263",
+      "article-title": "Time-integrated pointers for enabling the analysis of detailed reaction mechanisms",
+      "volume": "50",
+      "author": "Androulakis",
+      "year": "2004",
+      "journal-title": "AIChE Journal."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0275",
+      "doi-asserted-by": "crossref",
+      "first-page": "969",
+      "DOI": "10.2166/wst.2015.565",
+      "article-title": "Good modelling practice in applying computational fluid dynamics for WWTP modelling",
+      "volume": "73",
+      "author": "Wicklein",
+      "year": "2016",
+      "journal-title": "Water Science and Technology."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0280",
+      "doi-asserted-by": "crossref",
+      "first-page": "121247",
+      "DOI": "10.1016/j.fuel.2021.121247",
+      "article-title": "A fully automatic procedure for the analytical reduction of chemical kinetics mechanisms for Computational Fluid Dynamics applications",
+      "volume": "303",
+      "author": "Cazères",
+      "year": "2021",
+      "journal-title": "Fuel."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0285",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.ces.2019.115196",
+      "article-title": "Compartmental Modelling in chemical engineering: A critical review",
+      "volume": "210",
+      "author": "Jourdan",
+      "year": "2019",
+      "journal-title": "Chem Eng Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0290",
+      "doi-asserted-by": "crossref",
+      "first-page": "76",
+      "DOI": "10.1016/j.ces.2013.11.033",
+      "article-title": "CFD-based compartment model for description of mixing in bioreactors",
+      "volume": "106",
+      "author": "Delafosse",
+      "year": "2014",
+      "journal-title": "Chem Eng Sci."
+    },
+    {
+      "key": "10.1016/j.cej.2023.143180_b0295",
+      "doi-asserted-by": "crossref",
+      "first-page": "236",
+      "DOI": "10.1016/j.compchemeng.2018.12.015",
+      "article-title": "A CFD based automatic method for compartment model development",
+      "volume": "123",
+      "author": "Tajsoleiman",
+      "year": "2019",
+      "journal-title": "Comput Chem Eng."
+    }
+  ],
+  "container-title": [
+    "Chemical Engineering Journal"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1385894723019113?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S1385894723019113?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        10,
+        24
+      ]
+    ],
+    "date-time": "2025-10-24T23:20:00Z",
+    "timestamp": 1761348000000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1385894723019113"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6
+      ]
+    ]
+  },
+  "references-count": 59,
+  "alternative-id": [
+    "S1385894723019113"
+  ],
+  "URL": "https://doi.org/10.1016/j.cej.2023.143180",
+  "relation": {},
+  "ISSN": [
+    "1385-8947"
+  ],
+  "issn-type": [
+    {
+      "value": "1385-8947",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Computational fluid dynamics (CFD) modeling applied to biological wastewater treatment systems: An overview of strategies for the kinetics integration",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Chemical Engineering Journal",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.cej.2023.143180",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2023 Elsevier B.V. All rights reserved.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "143180"
+}

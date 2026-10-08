@@ -1,0 +1,498 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        10,
+        8
+      ]
+    ],
+    "date-time": "2026-10-08T14:56:50Z",
+    "timestamp": 1791471410402,
+    "version": "4.3.4"
+  },
+  "reference-count": 57,
+  "publisher": "MIT Press",
+  "issue": "1",
+  "content-domain": {
+    "domain": [],
+    "crossmark-restriction": false
+  },
+  "short-container-title": [
+    "Neural Computation"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        1992,
+        1
+      ]
+    ]
+  },
+  "abstract": "<jats:p>Feedforward neural networks trained by error backpropagation are examples of nonparametric regression estimators. We present a tutorial on nonparametric inference and its relation to neural networks, and we use the statistical viewpoint to highlight strengths and weaknesses of neural models. We illustrate the main points with some recognition experiments involving artificial data as well as handwritten numerals. In way of conclusion, we suggest that current-generation feedforward neural networks are largely inadequate for difficult problems in machine perception and machine learning, regardless of parallel-versus-serial hardware or other implementation issues. Furthermore, we suggest that the fundamental challenges in neural modeling are about representation rather than learning per se. This last point is supported by additional experiments with handwritten numerals.</jats:p>",
+  "DOI": "10.1162/neco.1992.4.1.1",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2008,
+        3,
+        13
+      ]
+    ],
+    "date-time": "2008-03-13T12:46:42Z",
+    "timestamp": 1205412402000
+  },
+  "page": "1-58",
+  "source": "Crossref",
+  "is-referenced-by-count": 2723,
+  "title": [
+    "Neural Networks and the Bias/Variance Dilemma"
+  ],
+  "prefix": "10.1162",
+  "volume": "4",
+  "author": [
+    {
+      "given": "Stuart",
+      "family": "Geman",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Division of Applied Mathematics, Brown University, Providence, RI 02912 USA"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Elie",
+      "family": "Bienenstock",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "ESPCI, 10 rue Vauquelin, 75005 Paris, France"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "René",
+      "family": "Doursat",
+      "sequence": "additional",
+      "affiliation": [
+        {
+          "name": "ESPCI, 10 rue Vauquelin, 75005 Paris, France"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "281",
+  "reference": [
+    {
+      "key": "p_1",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0364-0213(85)80012-4"
+    },
+    {
+      "key": "p_6",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2290581"
+    },
+    {
+      "key": "p_8",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1037/0033-295X.84.5.413"
+    },
+    {
+      "key": "p_11",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/S0734-189X(89)80014-3"
+    },
+    {
+      "key": "p_12",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(89)90014-2"
+    },
+    {
+      "key": "p_13",
+      "first-page": "280",
+      "author": "Barron A. R.",
+      "year": "1989",
+      "journal-title": "Florida"
+    },
+    {
+      "key": "p_16",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1990.2.2.248"
+    },
+    {
+      "key": "p_18",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1989.1.1.151"
+    },
+    {
+      "key": "p_19",
+      "first-page": "1",
+      "volume": "3",
+      "author": "Baum L. E.",
+      "year": "1972",
+      "journal-title": "Inequalities"
+    },
+    {
+      "key": "p_23",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF00332918"
+    },
+    {
+      "key": "p_24",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/34.62605"
+    },
+    {
+      "key": "p_25",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2288473"
+    },
+    {
+      "key": "p_28",
+      "first-page": "708",
+      "volume": "6",
+      "author": "Burr D. J.",
+      "year": "1980",
+      "journal-title": "IEEE Transact. Pattern Anal. Machine Intell. PAMI-3"
+    },
+    {
+      "key": "p_29",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1209/0295-5075/4/10/020"
+    },
+    {
+      "key": "p_30",
+      "first-page": "642",
+      "author": "Chauvin Y.",
+      "year": "1990",
+      "journal-title": "Neural Information Processing Systems 11, D. S. Touretzky, ed."
+    },
+    {
+      "key": "p_33",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/337129a0"
+    },
+    {
+      "key": "p_34",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02551274"
+    },
+    {
+      "key": "p_35",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "DOI": "10.1111/j.2517-6161.1977.tb01600.x",
+      "volume": "39",
+      "author": "Dempster A.",
+      "year": "1976",
+      "journal-title": "J. R. Statist. SOC. B"
+    },
+    {
+      "key": "p_36",
+      "first-page": "877",
+      "volume": "1",
+      "author": "Denker J.",
+      "year": "1987",
+      "journal-title": "Complex Syst."
+    },
+    {
+      "key": "p_37",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176349830"
+    },
+    {
+      "key": "p_39",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aop/1176991978"
+    },
+    {
+      "key": "p_40",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2289609"
+    },
+    {
+      "key": "p_41",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/T-C.1973.223602"
+    },
+    {
+      "key": "p_42",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0010-0277(88)90031-5"
+    },
+    {
+      "key": "p_43",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176347963"
+    },
+    {
+      "key": "p_44",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2287576"
+    },
+    {
+      "key": "p_45",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(89)90003-8"
+    },
+    {
+      "key": "p_47",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176345782"
+    },
+    {
+      "key": "p_48",
+      "first-page": "588",
+      "volume": "307",
+      "author": "Goldman L.",
+      "year": "1982",
+      "journal-title": "J. Med."
+    },
+    {
+      "key": "p_49",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF02591360"
+    },
+    {
+      "key": "p_53",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/34.58871"
+    },
+    {
+      "key": "p_55",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2288922"
+    },
+    {
+      "key": "p_56",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1990.2.2.210"
+    },
+    {
+      "key": "p_59",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1990.2.3.355"
+    },
+    {
+      "key": "p_61",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(89)90020-8"
+    },
+    {
+      "key": "p_62",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176349519"
+    },
+    {
+      "key": "p_64",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/72.80236"
+    },
+    {
+      "key": "p_66",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1989.1.4.541"
+    },
+    {
+      "key": "p_68",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1989.1.1.1"
+    },
+    {
+      "key": "p_71",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BF01972448"
+    },
+    {
+      "key": "p_72",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1991.3.2.258"
+    },
+    {
+      "key": "p_75",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0021-9991(85)90121-4"
+    },
+    {
+      "key": "p_76",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1126/science.247.4945.978"
+    },
+    {
+      "key": "p_81",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1038/323533a0"
+    },
+    {
+      "key": "p_83",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1990.2.3.374"
+    },
+    {
+      "key": "p_84",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2289391"
+    },
+    {
+      "key": "p_86",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1017/S0140525X00052432"
+    },
+    {
+      "key": "p_88",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "DOI": "10.1111/j.2517-6161.1974.tb00994.x",
+      "volume": "36",
+      "author": "Stone M.",
+      "year": "1974",
+      "journal-title": "J. R. Statist. SOC."
+    },
+    {
+      "key": "p_91",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.2307/2288030"
+    },
+    {
+      "key": "p_92",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1109/TMI.1987.4307849"
+    },
+    {
+      "key": "p_96",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1007/BFb0098499"
+    },
+    {
+      "key": "p_99",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1214/aos/1176349743"
+    },
+    {
+      "key": "p_100",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1080/03610927508827223"
+    },
+    {
+      "key": "p_103",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1989.1.4.425"
+    },
+    {
+      "key": "p_104",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0893-6080(90)90004-5"
+    },
+    {
+      "key": "p_105",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1016/0031-3203(73)90042-3"
+    },
+    {
+      "key": "p_106",
+      "doi-asserted-by": "publisher",
+      "DOI": "10.1162/neco.1990.2.1.1"
+    }
+  ],
+  "container-title": [
+    "Neural Computation"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://www.mitpressjournals.org/doi/pdf/10.1162/neco.1992.4.1.1",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2025,
+        1,
+        28
+      ]
+    ],
+    "date-time": "2025-01-28T21:59:42Z",
+    "timestamp": 1738101582000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://direct.mit.edu/neco/article/4/1/1-58/5624"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        1992,
+        1
+      ]
+    ]
+  },
+  "references-count": 57,
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          1992,
+          1
+        ]
+      ]
+    }
+  },
+  "alternative-id": [
+    "10.1162/neco.1992.4.1.1"
+  ],
+  "URL": "https://doi.org/10.1162/neco.1992.4.1.1",
+  "relation": {},
+  "ISSN": [
+    "0899-7667",
+    "1530-888X"
+  ],
+  "issn-type": [
+    {
+      "value": "0899-7667",
+      "type": "print"
+    },
+    {
+      "value": "1530-888X",
+      "type": "electronic"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        1992,
+        1
+      ]
+    ]
+  }
+}

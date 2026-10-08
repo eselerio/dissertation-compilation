@@ -1,0 +1,812 @@
+{
+  "indexed": {
+    "date-parts": [
+      [
+        2026,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2026-09-25T21:42:17Z",
+    "timestamp": 1790372537060,
+    "version": "4.1.0"
+  },
+  "reference-count": 39,
+  "publisher": "Elsevier BV",
+  "license": [
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "URL": "https://www.elsevier.com/legal/tdmrep-license"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-017"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-037"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-012"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-029"
+    },
+    {
+      "start": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2025-09-01T00:00:00Z",
+        "timestamp": 1756684800000
+      },
+      "content-version": "stm-asf",
+      "delay-in-days": 0,
+      "URL": "https://doi.org/10.15223/policy-004"
+    }
+  ],
+  "funder": [
+    {
+      "DOI": "10.13039/501100021171",
+      "name": "Basic and Applied Basic Research Foundation of Guangdong Province",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2025B1515020014"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2025B1515020014"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100021171",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100021171",
+      "name": "Basic and Applied Basic Research Foundation of Guangdong Province",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "2023A1515011177"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "2023A1515011177"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100021171",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "52470068"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "52470068"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "name": "National Natural Science Foundation of China",
+      "doi-asserted-by": "publisher",
+      "award": [
+        "52270030"
+      ],
+      "award-info": [
+        {
+          "award-number": [
+            "52270030"
+          ]
+        }
+      ],
+      "id": [
+        {
+          "id": "10.13039/501100001809",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100003472",
+      "name": "Harbin Institute of Technology",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100003472",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    },
+    {
+      "DOI": "10.13039/501100011382",
+      "name": "State Key Laboratory of Urban Water Resource and Environment",
+      "doi-asserted-by": "publisher",
+      "id": [
+        {
+          "id": "10.13039/501100011382",
+          "id-type": "DOI",
+          "asserted-by": "publisher"
+        }
+      ]
+    }
+  ],
+  "content-domain": {
+    "domain": [
+      "elsevier.com",
+      "sciencedirect.com"
+    ],
+    "crossmark-restriction": true
+  },
+  "short-container-title": [
+    "Journal of Water Process Engineering"
+  ],
+  "published-print": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "DOI": "10.1016/j.jwpe.2025.108344",
+  "type": "journal-article",
+  "created": {
+    "date-parts": [
+      [
+        2025,
+        7,
+        17
+      ]
+    ],
+    "date-time": "2025-07-17T07:14:48Z",
+    "timestamp": 1752736488000
+  },
+  "page": "108344",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 9,
+  "special_numbering": "C",
+  "title": [
+    "Comparison of interpretable machine learning models and mechanistic model for predicting effluent nitrogen in WWTP"
+  ],
+  "prefix": "10.1016",
+  "volume": "77",
+  "author": [
+    {
+      "given": "Yue",
+      "family": "Wang",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Tan",
+      "family": "Li",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Langming",
+      "family": "Bai",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Huarong",
+      "family": "Yu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "given": "Fangshu",
+      "family": "Qu",
+      "sequence": "additional",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  ],
+  "member": "78",
+  "reference": [
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0005",
+      "doi-asserted-by": "crossref",
+      "first-page": "841",
+      "DOI": "10.2166/wst.2010.912",
+      "article-title": "New framework for standardized notation in wastewater treatment modelling",
+      "volume": "61",
+      "author": "Corominas",
+      "year": "2010",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0010",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1007/s11270-021-05154-8",
+      "article-title": "Wastewater treatment and reuse: a review of its applications and health implications",
+      "volume": "232",
+      "author": "Kesari",
+      "year": "2021",
+      "journal-title": "Water Air Soil Pollut."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0015",
+      "doi-asserted-by": "crossref",
+      "first-page": "90",
+      "DOI": "10.1016/j.jes.2015.01.007",
+      "article-title": "Prediction of effluent concentration in a wastewater treatment plant using machine learning models",
+      "volume": "32",
+      "author": "Guo",
+      "year": "2015",
+      "journal-title": "J. Environ. Sci. (China)"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0020",
+      "article-title": "Activated sludge model no 1",
+      "volume": "29",
+      "author": "Henze",
+      "year": "1987",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0025",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.biortech.2021.126276",
+      "article-title": "Integrating mechanistic and deep learning models for accurately predicting the enrichment of polyhydroxyalkanoates accumulating bacteria in mixed microbial cultures",
+      "volume": "344",
+      "author": "Xu",
+      "year": "2022",
+      "journal-title": "Bioresour. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0030",
+      "article-title": "A review of computational modeling in wastewater treatment processes",
+      "author": "Duarte",
+      "year": "2023",
+      "journal-title": "ACS EST Water"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0035",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2022.118410",
+      "article-title": "A comprehensive evaluation of process kinetics: a plant-wide approach for nutrient removal and biogas production",
+      "volume": "217",
+      "author": "Insel",
+      "year": "2022",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0040",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2022.118961",
+      "article-title": "The trade-off between N2O emission and energy saving through aeration control based on dynamic simulation of full-scale WWTP",
+      "volume": "223",
+      "author": "Abulimiti",
+      "year": "2022",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0045",
+      "article-title": "Limited simultaneous nitrification-denitrification (SND) in aerobic granular sludge systems treating municipal wastewater: mechanisms and practical implications",
+      "volume": "7",
+      "author": "Layer",
+      "year": "2020",
+      "journal-title": "Water Res. X"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0050",
+      "doi-asserted-by": "crossref",
+      "first-page": "515",
+      "DOI": "10.1016/j.psep.2021.12.034",
+      "article-title": "Prediction of effluent quality in a wastewater treatment plant by dynamic neural network modeling",
+      "volume": "158",
+      "author": "Yang",
+      "year": "2022",
+      "journal-title": "Process. Saf. Environ. Prot."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0055",
+      "article-title": "A review on applications of artificial intelligence in wastewater treatment",
+      "volume": "15",
+      "author": "Wang",
+      "year": "2023",
+      "journal-title": "Sustainability"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0060",
+      "article-title": "Machine learning: new ideas and tools in environmental science and engineering",
+      "author": "Zhong",
+      "year": "2021",
+      "journal-title": "Environ. Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0065",
+      "article-title": "Energy consumption optimization in wastewater treatment plants: machine learning for monitoring incineration of sewage sludge",
+      "volume": "56",
+      "author": "Adibimanesh",
+      "year": "2023",
+      "journal-title": "Sustain Energy Technol Assess"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0070",
+      "article-title": "Comparative performance of three machine learning models in predicting influent flow rates and nutrient loads at wastewater treatment plants",
+      "author": "Wei",
+      "year": "2023",
+      "journal-title": "ACS EST Water"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0075",
+      "series-title": "A unified approach to interpreting model predictions",
+      "author": "Lundberg",
+      "year": "2017"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0080",
+      "doi-asserted-by": "crossref",
+      "first-page": "848",
+      "DOI": "10.2166/wpt.2017.091",
+      "article-title": "Full-scale wastewater treatment plant simulation for real-time optimization",
+      "volume": "12",
+      "author": "Gazsó",
+      "year": "2017",
+      "journal-title": "Water Pract.Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0085",
+      "article-title": "An online intelligent management method for wastewater treatment supported by coupling data-driven and mechanism models",
+      "volume": "53",
+      "author": "Wang",
+      "year": "2023",
+      "journal-title": "J Water Process Eng"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0090",
+      "doi-asserted-by": "crossref",
+      "first-page": "317",
+      "DOI": "10.1080/10934529.2015.981122",
+      "article-title": "Sensitivity analyses and simulations of a full-scale experimental membrane bioreactor system using the activated sludge model no. 3 (ASM3)",
+      "volume": "50",
+      "author": "Ruiz",
+      "year": "2015",
+      "journal-title": "J. Environ. Sci. Health A"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0095",
+      "doi-asserted-by": "crossref",
+      "first-page": "3777",
+      "DOI": "10.1016/j.jmrt.2022.10.153",
+      "article-title": "Data-driven compressive strength prediction of steel fiber reinforced concrete (SFRC) subjected to elevated temperatures using stacked machine learning algorithms",
+      "volume": "21",
+      "author": "Shafighfard",
+      "year": "2022",
+      "journal-title": "J. Mater. Res. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0100",
+      "article-title": "Grey wolf optimizer integrated within boosting algorithm: application in mechanical properties prediction of ultra high-performance concrete including carbon nanotubes",
+      "volume": "42",
+      "author": "Ӧzyüksel Çiftçioğlu",
+      "year": "2025",
+      "journal-title": "Appl. Mater. Today"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0105",
+      "first-page": "111",
+      "article-title": "Data preprocessing for supervised learning",
+      "volume": "1",
+      "author": "Kotsiantis",
+      "year": "2006",
+      "journal-title": "Int. J. Comput. Sci."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0110",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scs.2023.104541",
+      "article-title": "Predicting the ammonia nitrogen of wastewater treatment plant influent via integrated model based on rolling decomposition method and deep learning algorithm",
+      "volume": "94",
+      "author": "Yan",
+      "year": "2023",
+      "journal-title": "Sustain. Cities Soc."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0115",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2022.154930",
+      "article-title": "Exploring potential machine learning application based on big data for prediction of wastewater quality from different full-scale wastewater treatment plants",
+      "volume": "832",
+      "author": "Ly",
+      "year": "2022",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0120",
+      "series-title": "Performance Metrics (Error Measures) in Machine Learning Regression, Forecasting and Prognostics: Properties and Typology",
+      "author": "Botchkarev",
+      "year": "2018"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0125",
+      "doi-asserted-by": "crossref",
+      "unstructured": "Li, J., n.d. Assessing the accuracy of predictive models for numerical data: not r nor r2, why not? Then what? doi:https://doi.org/10.1371/journal.pone.0183250.",
+      "DOI": "10.1371/journal.pone.0183250"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0130",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.scitotenv.2024.170102",
+      "article-title": "Modelling of high-rate activated sludge process: assessment of model parameters by sensitivity and uncertainty analyses",
+      "volume": "915",
+      "author": "Gulhan",
+      "year": "2024",
+      "journal-title": "Sci. Total Environ."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0135",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.jenvman.2023.118116",
+      "article-title": "Coupling process-based modeling with machine learning for long-term simulation of wastewater treatment plant operations",
+      "volume": "341",
+      "author": "Wu",
+      "year": "2023",
+      "journal-title": "J. Environ. Manag."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0140",
+      "author": "Henze"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0145",
+      "doi-asserted-by": "crossref",
+      "first-page": "3580",
+      "DOI": "10.1016/S0043-1354(00)00105-6",
+      "article-title": "Calibration and validation of activated sludge model no. 3 for Swiss municipal wastewater",
+      "volume": "34",
+      "author": "Koch",
+      "year": "2000",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0150",
+      "doi-asserted-by": "crossref",
+      "first-page": "355",
+      "DOI": "10.2175/106143007X221436",
+      "article-title": "Estimation of autotrophic maximum specific growth rate constant—experience from the long-term operation of a laboratory-scale sequencing batch reactor system",
+      "volume": "80",
+      "author": "Su",
+      "year": "2008",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0155",
+      "doi-asserted-by": "crossref",
+      "first-page": "211",
+      "DOI": "10.2166/wst.2003.0607",
+      "article-title": "Efficiency of the activated sludge model no. 3 for German wastewater on six different WWTPs",
+      "volume": "47",
+      "author": "Wichern",
+      "year": "2003",
+      "journal-title": "Water Sci. Technol."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0160",
+      "doi-asserted-by": "crossref",
+      "first-page": "969",
+      "DOI": "10.2175/106143097X125669",
+      "article-title": "General model for biological nutrient removal activated-sludge systems: model presentation",
+      "volume": "69",
+      "author": "Barker",
+      "year": "1997",
+      "journal-title": "Water Environ. Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0165",
+      "series-title": "Methods for Wastewater Characterization in Activated Sludge Modelling",
+      "author": "Melcer",
+      "year": "2004"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0170",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.chemosphere.2024.142939",
+      "article-title": "Optimization of biological nitrogen removal in full-scale municipal WWTPs using activated sludge model simulation",
+      "volume": "362",
+      "author": "Cheng",
+      "year": "2024",
+      "journal-title": "Chemosphere"
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0175",
+      "doi-asserted-by": "crossref",
+      "first-page": "659",
+      "DOI": "10.1007/s00449-011-0515-1",
+      "article-title": "Calibration of a complex activated sludge model for the full-scale wastewater treatment plant",
+      "volume": "34",
+      "author": "Liwarska-Bizukojc",
+      "year": "2011",
+      "journal-title": "Bioprocess Biosyst. Eng."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0180",
+      "doi-asserted-by": "crossref",
+      "first-page": "2235",
+      "DOI": "10.1016/S0043-1354(00)00514-5",
+      "article-title": "Calibration and validation of an ASM3-based steady-state model for activated sludge systems—Part I:: prediction of nitrogen removal and sludge production",
+      "volume": "35",
+      "author": "Koch",
+      "year": "2001",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0185",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.watres.2021.117384",
+      "article-title": "Predicting antibiotic resistance gene abundance in activated sludge using shotgun metagenomics and machine learning",
+      "volume": "202",
+      "author": "Sun",
+      "year": "2021",
+      "journal-title": "Water Res."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0190",
+      "doi-asserted-by": "crossref",
+      "DOI": "10.1016/j.engappai.2024.109053",
+      "article-title": "Machine-learning methods for estimating compressive strength of high-performance alkali-activated concrete",
+      "volume": "136",
+      "author": "Shafighfard",
+      "year": "2024",
+      "journal-title": "Eng. Appl. Artif. Intell."
+    },
+    {
+      "key": "10.1016/j.jwpe.2025.108344_bb0195",
+      "doi-asserted-by": "crossref",
+      "first-page": "3573",
+      "DOI": "10.1111/mice.13164",
+      "article-title": "Chained machine learning model for predicting load capacity and ductility of steel fiber–reinforced concrete beams",
+      "volume": "39",
+      "author": "Shafighfard",
+      "year": "2024",
+      "journal-title": "Computer aided Civil Eng."
+    }
+  ],
+  "container-title": [
+    "Journal of Water Process Engineering"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2214714425014163?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S2214714425014163?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "deposited": {
+    "date-parts": [
+      [
+        2026,
+        3,
+        6
+      ]
+    ],
+    "date-time": "2026-03-06T01:43:16Z",
+    "timestamp": 1772761396000
+  },
+  "score": 1,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2214714425014163"
+    }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "references-count": 39,
+  "alternative-id": [
+    "S2214714425014163"
+  ],
+  "URL": "https://doi.org/10.1016/j.jwpe.2025.108344",
+  "relation": {},
+  "ISSN": [
+    "2214-7144"
+  ],
+  "issn-type": [
+    {
+      "value": "2214-7144",
+      "type": "print"
+    }
+  ],
+  "subject": [],
+  "published": {
+    "date-parts": [
+      [
+        2025,
+        9
+      ]
+    ]
+  },
+  "assertion": [
+    {
+      "value": "Elsevier",
+      "name": "publisher",
+      "label": "This article is maintained by"
+    },
+    {
+      "value": "Comparison of interpretable machine learning models and mechanistic model for predicting effluent nitrogen in WWTP",
+      "name": "articletitle",
+      "label": "Article Title"
+    },
+    {
+      "value": "Journal of Water Process Engineering",
+      "name": "journaltitle",
+      "label": "Journal Title"
+    },
+    {
+      "value": "https://doi.org/10.1016/j.jwpe.2025.108344",
+      "name": "articlelink",
+      "label": "CrossRef DOI link to publisher maintained version"
+    },
+    {
+      "value": "article",
+      "name": "content_type",
+      "label": "Content Type"
+    },
+    {
+      "value": "© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+      "name": "copyright",
+      "label": "Copyright"
+    }
+  ],
+  "article-number": "108344"
+}

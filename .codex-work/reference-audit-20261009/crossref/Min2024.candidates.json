@@ -1,0 +1,2501 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2026-06-04T19:51:08Z",
+      "timestamp": 1780602668061,
+      "version": "3.54.1"
+    },
+    "reference-count": 29,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Neural Networks"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.neunet.2024.106181",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2024-02-15T16:35:57Z",
+      "timestamp": 1708014957000
+    },
+    "page": "106181",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "special_numbering": "C",
+    "title": [
+      "Noncompact uniform universal approximation"
+    ],
+    "prefix": "10.1016",
+    "volume": "173",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7086-2947",
+        "authenticated-orcid": false,
+        "given": "Teun D.H.",
+        "family": "van Nuland",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "3",
+        "key": "10.1016/j.neunet.2024.106181_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "930",
+        "DOI": "10.1109/18.256500",
+        "article-title": "Universal approximation bounds for superpositions of a sigmoidal function",
+        "volume": "39",
+        "author": "Barron",
+        "year": "1993",
+        "journal-title": "IEEE Transactions on Information Theory"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b2",
+        "first-page": "195",
+        "article-title": "Resolvent algebra in Fock-Bargmann representation",
+        "volume": "vol. 436",
+        "author": "Bauer",
+        "year": "2023"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.neunet.2024.106181_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "699",
+        "DOI": "10.1007/s00220-006-0177-z",
+        "article-title": "Algebraic supersymmetry: A case study",
+        "volume": "272",
+        "author": "Buchholz",
+        "year": "2007",
+        "journal-title": "Communications in Mathematical Physics"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.neunet.2024.106181_b4",
+        "doi-asserted-by": "crossref",
+        "first-page": "2725",
+        "DOI": "10.1016/j.jfa.2008.02.011",
+        "article-title": "The resolvent algebra: A new approach to canonical quantum systems",
+        "volume": "254",
+        "author": "Buchholz",
+        "year": "2008",
+        "journal-title": "Journal of Functional Analysis"
+      },
+      {
+        "issue": "119",
+        "key": "10.1016/j.neunet.2024.106181_b5",
+        "article-title": "The basic resolvents of position and momentum operators form a total set in the resolvent algebra",
+        "volume": "113",
+        "author": "Buchholz",
+        "year": "2023",
+        "journal-title": "Letters in Mathematical Physics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b6",
+        "series-title": "Global universal approximation of functional input maps on weighted spaces",
+        "author": "Cuchiero",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1007/BF02551274",
+        "article-title": "Approximation by superpositions of a sigmoidal function",
+        "volume": "2",
+        "author": "Cybenko",
+        "year": "1989",
+        "journal-title": "Mathematics of Control, Signals, and Systems"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106181_b8",
+        "doi-asserted-by": "crossref",
+        "first-page": "260",
+        "DOI": "10.1016/S0021-9045(03)00078-9",
+        "article-title": "Approximation by neural networks with a bounded number of nodes at each level",
+        "volume": "122",
+        "author": "Gripenberg",
+        "year": "2003",
+        "journal-title": "J. Approx. Theory"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106181_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "210",
+        "DOI": "10.1162/neco.1990.2.2.210",
+        "article-title": "Layered neural networks with Gaussian hidden units as universal approximations",
+        "volume": "2",
+        "author": "Hartman",
+        "year": "1990",
+        "journal-title": "Neural Computation"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b10",
+        "first-page": "8523",
+        "article-title": "C*-algebra net: A new approach generalizing neural network parameters to C*-algebra",
+        "volume": "vol. 162",
+        "author": "Hashimoto",
+        "year": "2022"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106181_b11",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1016/0893-6080(91)90009-T",
+        "article-title": "Approximation capabilities of multilayer feedforward networks",
+        "volume": "4",
+        "author": "Hornik",
+        "year": "1991",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.neunet.2024.106181_b12",
+        "doi-asserted-by": "crossref",
+        "first-page": "359",
+        "DOI": "10.1016/0893-6080(89)90020-8",
+        "article-title": "Multilayer feedforward networks are universal approximators",
+        "volume": "2",
+        "author": "Hornik",
+        "year": "1989",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b13",
+        "series-title": "Ridge functions and applications in neural networks",
+        "author": "Ismailov",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b14",
+        "series-title": "C*-algebras and operator theory",
+        "author": "J.",
+        "year": "1990"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b15",
+        "first-page": "2306",
+        "article-title": "Universal approximation with deep narrow networks",
+        "volume": "vol. 125",
+        "author": "Kidger",
+        "year": "2020"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.neunet.2024.106181_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "861",
+        "DOI": "10.1016/S0893-6080(05)80131-5",
+        "article-title": "Multilayer feedforward networks with a nonpolynomial activation function can approximate any function",
+        "volume": "6",
+        "author": "Leshno",
+        "year": "1993",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "issue": "1–4",
+        "key": "10.1016/j.neunet.2024.106181_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1016/S0925-2312(99)00130-7",
+        "article-title": "A sum-of-product neural network (SOPNN)",
+        "volume": "30",
+        "author": "Lin",
+        "year": "2000",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b18",
+        "series-title": "International symposium on neural networks",
+        "first-page": "1110",
+        "article-title": "Uniform approximation capabilities of sum-of-product and sigma-pi-sigma neural networks",
+        "author": "Long",
+        "year": "2007"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.neunet.2024.106181_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "728",
+        "DOI": "10.1109/JPROC.2021.3065238",
+        "article-title": "Tropical geometry and machine learning",
+        "volume": "109",
+        "author": "Maragos",
+        "year": "2021",
+        "journal-title": "Proceedings of the IEEE"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b20",
+        "first-page": "2924",
+        "article-title": "On the number of linear regions of deep neural networks",
+        "volume": "vol. 27",
+        "author": "Montufar",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1017/S0962492900002919",
+        "article-title": "Approximation theory of the MLP model in neural networks",
+        "volume": "8",
+        "author": "Pinkus",
+        "year": "1999",
+        "journal-title": "Acta Numerica"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "2567",
+        "DOI": "10.1007/s11128-014-0809-8",
+        "article-title": "The quest for a quantum neural network",
+        "volume": "13",
+        "author": "Schuld",
+        "year": "2014",
+        "journal-title": "Quantum Information Processing"
+      },
+      {
+        "issue": "2021",
+        "key": "10.1016/j.neunet.2024.106181_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "160",
+        "DOI": "10.1016/j.neunet.2021.04.011",
+        "article-title": "Neural network approximation: Three hidden layers are enough",
+        "volume": "141",
+        "author": "Shen",
+        "year": "2021",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.neunet.2024.106181_b24",
+        "first-page": "12653",
+        "article-title": "Deep network approximation: Achieving arbitrary accuracy with fixed number of neurons",
+        "volume": "23",
+        "author": "Shen",
+        "year": "2022",
+        "journal-title": "The Journal of Machine Learning Research"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.neunet.2024.106181_b25",
+        "doi-asserted-by": "crossref",
+        "first-page": "2815",
+        "DOI": "10.1016/j.jfa.2019.02.022",
+        "article-title": "Quantization and the resolvent algebra",
+        "volume": "277",
+        "author": "van Nuland",
+        "year": "2019",
+        "journal-title": "Journal of Functional Analysis"
+      },
+      {
+        "issue": "34",
+        "key": "10.1016/j.neunet.2024.106181_b26",
+        "first-page": "1",
+        "article-title": "Strict deformation quantization of Abelian lattice gauge fields",
+        "volume": "112",
+        "author": "van Nuland",
+        "year": "2022",
+        "journal-title": "Letters in Mathematical Physics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b27",
+        "series-title": "Classical and quantised resolvent algebras for the cylinder",
+        "author": "van Nuland",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b28",
+        "series-title": "International conference on machine learning",
+        "first-page": "11932",
+        "article-title": "Elementary superexpressive activations",
+        "author": "Yarotsky",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106181_b29",
+        "first-page": "5824",
+        "article-title": "Tropical geometry of deep neural networks",
+        "volume": "vol. 80",
+        "author": "Zhang",
+        "year": "2018"
+      }
+    ],
+    "container-title": [
+      "Neural Networks"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0893608024001059?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0893608024001059?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          13
+        ]
+      ],
+      "date-time": "2024-07-13T13:09:44Z",
+      "timestamp": 1720876184000
+    },
+    "score": 38.11245,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0893608024001059"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "references-count": 29,
+    "alternative-id": [
+      "S0893608024001059"
+    ],
+    "URL": "https://doi.org/10.1016/j.neunet.2024.106181",
+    "ISSN": [
+      "0893-6080"
+    ],
+    "issn-type": [
+      {
+        "value": "0893-6080",
+        "type": "print"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Noncompact uniform universal approximation",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Neural Networks",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.neunet.2024.106181",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "106181"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T14:38:34Z",
+      "timestamp": 1791383914980,
+      "version": "4.3.3"
+    },
+    "reference-count": 63,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2024-12-01T00:00:00Z",
+          "timestamp": 1733011200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Neural Networks"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.neunet.2024.106632",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          13
+        ]
+      ],
+      "date-time": "2024-08-13T12:23:25Z",
+      "timestamp": 1723551805000
+    },
+    "page": "106632",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 22,
+    "special_numbering": "C",
+    "title": [
+      "Universal approximation theorem for vector- and hypercomplex-valued neural networks"
+    ],
+    "prefix": "10.1016",
+    "volume": "180",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4026-5110",
+        "authenticated-orcid": false,
+        "given": "Marcos Eduardo",
+        "family": "Valle",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1634-4441",
+        "authenticated-orcid": false,
+        "given": "Wington L.",
+        "family": "Vital",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3361-6154",
+        "authenticated-orcid": false,
+        "given": "Guilherme",
+        "family": "Vieira",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.neunet.2024.106632_b1",
+        "series-title": "Studies in computational intelligence",
+        "article-title": "Complex-valued neural networks with multi-valued neurons",
+        "author": "Aizenberg",
+        "year": "2011"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.neunet.2024.106632_b2",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jmaa.2020.124584",
+        "article-title": "Negative results for approximation using single layer and multilayer feedforward neural networks",
+        "volume": "494",
+        "author": "Almira",
+        "year": "2021",
+        "journal-title": "Journal of Mathematical Analysis and Applications"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106632_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "335",
+        "DOI": "10.1016/S0893-6080(96)00048-2",
+        "article-title": "Multilayer perceptrons to approximate quaternion valued functions",
+        "volume": "10",
+        "author": "Arena",
+        "year": "1997",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b4",
+        "series-title": "Neural networks in multidimensional domains: Fundamentals and new trends in modeling and control",
+        "author": "Arena",
+        "year": "1998"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b5",
+        "doi-asserted-by": "crossref",
+        "first-page": "145",
+        "DOI": "10.1090/S0273-0979-01-00934-X",
+        "article-title": "The octonions",
+        "volume": "39",
+        "author": "Baez",
+        "year": "2002",
+        "journal-title": "American Mathematical Society. Bulletin"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b6",
+        "first-page": "1",
+        "article-title": "Efficient sound event localization and detection in the quaternion domain",
+        "author": "Brignone",
+        "year": "2022",
+        "journal-title": "IEEE Transactions on Circuits and Systems II: Express Briefs"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b7",
+        "first-page": "129",
+        "article-title": "A hyperbolic multilayer perceptron",
+        "volume": "vol. 2",
+        "author": "Buchholz",
+        "year": "2000"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b8",
+        "series-title": "Geometric computing with Clifford algebras: Theoretical foundations and applications in computer vision and robotics",
+        "first-page": "315",
+        "article-title": "Clifford algebra multilayer perceptrons",
+        "author": "Buchholz",
+        "year": "2001"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.neunet.2024.106632_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "925",
+        "DOI": "10.1016/j.neunet.2008.03.004",
+        "article-title": "On Clifford neurons and Clifford multi-layer perceptrons",
+        "volume": "21",
+        "author": "Buchholz",
+        "year": "2008",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b10",
+        "doi-asserted-by": "crossref",
+        "first-page": "233",
+        "DOI": "10.5753/eniac.2021.18256",
+        "article-title": "Universal approximation theorem for tessarine-valued neural networks",
+        "author": "Carniello",
+        "year": "2021",
+        "journal-title": "Anais do Encontro Nacional de Inteligência Artificial e Computacional (ENIAC)"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b11",
+        "series-title": "The mathematics of Minkowski space-time",
+        "author": "Catoni",
+        "year": "2008"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.neunet.2024.106632_b12",
+        "doi-asserted-by": "crossref",
+        "first-page": "232",
+        "DOI": "10.1016/j.hm.2017.03.001",
+        "article-title": "From the theory of congeneric surd equations to Segre’s bicomplex numbers",
+        "volume": "44",
+        "author": "Cerroni",
+        "year": "2017",
+        "journal-title": "Historia Mathematica"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.neunet.2024.106632_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "911",
+        "DOI": "10.1109/72.392253",
+        "article-title": "Universal approximation to nonlinear operators by neural networks with arbitrary activation functions and its application to dynamical systems",
+        "volume": "6",
+        "author": "Chen",
+        "year": "1995",
+        "journal-title": "IEEE Transactions on Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b14",
+        "series-title": "Computing science and statistics",
+        "first-page": "163",
+        "article-title": "A constructive proof and an extension of cybenko’s approximation theorem",
+        "author": "Chen",
+        "year": "1992"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b15",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/MSP.2024.3401622",
+        "article-title": "Demystifying the hypercomplex: Inductive biases in hypercomplex deep learning",
+        "author": "Comminiello",
+        "year": "2024",
+        "journal-title": "IEEE Signal Processing Magazine"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.neunet.2024.106632_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "303",
+        "DOI": "10.1007/BF02551274",
+        "article-title": "Approximation by superpositions of a sigmoidal function",
+        "volume": "2",
+        "author": "Cybenko",
+        "year": "1989",
+        "journal-title": "Mathematics of Control, Signals and Systems 1989 2:4"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b17",
+        "doi-asserted-by": "crossref",
+        "unstructured": "De Castro, F. Z., & Valle, M. E. (2018). Continuous-valued octonionic hopfield neural network. In Proceedings series of the Brazilian society of computational and applied mathematics: vol. 6, (pp. 1–7). São José dos Campos – Brazil.",
+        "DOI": "10.5540/03.2018.006.01.0344"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "143706",
+        "DOI": "10.1109/ACCESS.2020.3013940",
+        "article-title": "Online regularization of complex-valued neural networks for structure optimization in wireless-communication channel prediction",
+        "volume": "8",
+        "author": "Ding",
+        "year": "2020",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1109/TNNLS.2019.2933882",
+        "article-title": "Backpropagation With N-D vector-valued neurons using arbitrary bilinear products",
+        "author": "Fan",
+        "year": "2020",
+        "journal-title": "IEEE Transactions on Neural Networks and Learning Systems"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.neunet.2024.106632_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.1016/0893-6080(89)90003-8",
+        "article-title": "On the approximate realization of continuous mappings by neural networks",
+        "volume": "2",
+        "author": "Funahashi",
+        "year": "1989",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "24",
+        "DOI": "10.1016/j.patrec.2022.12.006",
+        "article-title": "Dual quaternion ambisonics array for six-degree-of-freedom acoustic representation",
+        "volume": "166",
+        "author": "Grassucci",
+        "year": "2023",
+        "journal-title": "Pattern Recognition Letters"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b22",
+        "first-page": "1",
+        "article-title": "PHNNs: Lightweight neural networks via parameterized hypercomplex convolutions",
+        "author": "Grassucci",
+        "year": "2022",
+        "journal-title": "IEEE Transactions on Neural Networks and Learning Systems"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "1200",
+        "DOI": "10.1109/TASLP.2023.3250840",
+        "article-title": "Learning speech emotion representations in the quaternion domain",
+        "volume": "31",
+        "author": "Guizzo",
+        "year": "2023",
+        "journal-title": "IEEE/ACM Transactions on Audio, Speech, and Language Processing"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "296",
+        "DOI": "10.1016/j.neunet.2017.12.007",
+        "article-title": "On the approximation by single hidden layer feedforward neural networks with fixed weights",
+        "volume": "98",
+        "author": "Guliyev",
+        "year": "2018",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b25",
+        "series-title": "Studies in computational intelligence",
+        "article-title": "Complex-valued neural networks",
+        "author": "Hirose",
+        "year": "2012"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106632_b26",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1016/0893-6080(91)90009-T",
+        "article-title": "Approximation capabilities of multilayer feedforward networks",
+        "volume": "4",
+        "author": "Hornik",
+        "year": "1991",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.neunet.2024.106632_b27",
+        "doi-asserted-by": "crossref",
+        "first-page": "359",
+        "DOI": "10.1016/0893-6080(89)90020-8",
+        "article-title": "Multilayer feedforward networks are universal approximators",
+        "volume": "2",
+        "author": "Hornik",
+        "year": "1989",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106632_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "397",
+        "DOI": "10.2140/pjm.2013.262.397",
+        "article-title": "Klein four-subgroups of Lie algebra automorphisms",
+        "volume": "262",
+        "author": "Huang",
+        "year": "2013",
+        "journal-title": "Pacific Journal of Mathematics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b29",
+        "series-title": "Ridge functions and applications in neural networks",
+        "author": "Ismailov",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b30",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ipl.2023.106467",
+        "article-title": "Approximation error of single hidden layer neural networks with fixed weights",
+        "volume": "185",
+        "author": "Ismailov",
+        "year": "2024",
+        "journal-title": "Information Processing Letters"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b31",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.neunet.2024.106333",
+        "article-title": "On the Kolmogorov neural networks",
+        "volume": "176",
+        "author": "Ismayilova",
+        "year": "2024",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.neunet.2024.106632_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "3627",
+        "DOI": "10.3390/en16093627",
+        "article-title": "Power quality analysis based on machine learning methods for low-voltage electrical distribution lines",
+        "volume": "16",
+        "author": "Iturrino Garcia",
+        "year": "2023",
+        "journal-title": "Energies"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b33",
+        "series-title": "Hypercomplex numbers: An elementary introduction to algebras",
+        "author": "Kantor",
+        "year": "1989"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b34",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1016/j.neucom.2019.12.127",
+        "article-title": "Hopfield neural networks using Klein four-group",
+        "volume": "387",
+        "author": "Kobayashi",
+        "year": "2020",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b35",
+        "series-title": "Tauberian theory",
+        "author": "Korevaar",
+        "year": "2004"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b36",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kuroe, Y., & Iima, H. (2016). A model of Hopfield-type octonion neural networks and existing conditions of energy functions. In 2016 international joint conference on neural networks (pp. 4426–4430).",
+        "DOI": "10.1109/IJCNN.2016.7727778"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.neunet.2024.106632_b37",
+        "doi-asserted-by": "crossref",
+        "first-page": "861",
+        "DOI": "10.1016/S0893-6080(05)80131-5",
+        "article-title": "Multilayer feedforward networks with a nonpolynomial activation function can approximate any function",
+        "volume": "6",
+        "author": "Leshno",
+        "year": "1993",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b38",
+        "article-title": "ResNet with one-neuron hidden layers is a universal approximator",
+        "volume": "vol. 31",
+        "author": "Lin",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "2914",
+        "DOI": "10.1109/JSTARS.2022.3164431",
+        "article-title": "Full-learning rotational quaternion convolutional neural networks and confluence of differently represented data for polsar land classification",
+        "volume": "15",
+        "author": "Matsumoto",
+        "year": "2022",
+        "journal-title": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.1007/BF02478259",
+        "article-title": "A logical calculus of the ideas immanent in nervous activity",
+        "volume": "5",
+        "author": "McCulloch",
+        "year": "1943",
+        "journal-title": "The Bulletin of Mathematical Biophysics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b41",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jfranklin.2020.08.002",
+        "article-title": "Tessarine signal processing under the T-properness condition",
+        "author": "Navarro-Moreno",
+        "year": "2020",
+        "journal-title": "Journal of the Franklin Institute"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.neunet.2024.106632_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1083",
+        "DOI": "10.3390/math10071083",
+        "article-title": "Proper ARMA modeling and forecasting in the generalized Segre&rsquo;s quaternions domain",
+        "volume": "10",
+        "author": "Navarro-Moreno",
+        "year": "2022",
+        "journal-title": "Mathematics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b43",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Nitta, T., & Buchholz, S. (2008). On the decision boundaries of hyperbolic neurons. In 2008 IEEE international joint conference on neural networks (IEEE world congress on computational intelligence) (pp. 2974–2980).",
+        "DOI": "10.1109/IJCNN.2008.4634216"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.neunet.2024.106632_b44",
+        "doi-asserted-by": "crossref",
+        "first-page": "1689",
+        "DOI": "10.1109/TNNLS.2017.2677446",
+        "article-title": "Hyperbolic gradient operator and hyperbolic back-propagation learning algorithms",
+        "volume": "29",
+        "author": "Nitta",
+        "year": "2018",
+        "journal-title": "IEEE Transactions on Neural Networks and Learning Systems"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b45",
+        "doi-asserted-by": "crossref",
+        "first-page": "131",
+        "DOI": "10.1007/978-3-319-95098-3_12",
+        "article-title": "On 4-dimensional hypercomplex algebras in adaptive signal processing",
+        "volume": "102",
+        "author": "Ortolani",
+        "year": "2017",
+        "journal-title": "Smart Innovation, Systems and Technologies"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.neunet.2024.106632_b46",
+        "doi-asserted-by": "crossref",
+        "first-page": "2957",
+        "DOI": "10.1007/s10462-019-09752-1",
+        "article-title": "A survey of quaternion neural networks",
+        "volume": "53",
+        "author": "Parcollet",
+        "year": "2020",
+        "journal-title": "Artificial Intelligence Review"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1017/S0962492900002919",
+        "article-title": "Approximation theory of the MLP model in neural networks",
+        "volume": "8",
+        "author": "Pinkus",
+        "year": "1999",
+        "journal-title": "Acta Numerica"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b48",
+        "series-title": "International conference on artificial neural networks",
+        "first-page": "435",
+        "article-title": "Octonion-valued neural networks",
+        "author": "Popa",
+        "year": "2016"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.neunet.2024.106632_b49",
+        "doi-asserted-by": "crossref",
+        "first-page": "386",
+        "DOI": "10.1037/h0042519",
+        "article-title": "The perceptron: A probabilistic model for information storage and organization in the brain",
+        "volume": "65",
+        "author": "Rosenblatt",
+        "year": "1958",
+        "journal-title": "Psychological Review"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106632_b50",
+        "doi-asserted-by": "crossref",
+        "first-page": "539",
+        "DOI": "10.1109/TNNLS.2019.2905643",
+        "article-title": "Metacognitive Octonion-Valued Neural Networks as They Relate to Time Series Analysis",
+        "volume": "31",
+        "author": "Saoud",
+        "year": "2020",
+        "journal-title": "IEEE Transactions on Neural Networks and Learning Systems"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2024.106632_b51",
+        "doi-asserted-by": "crossref",
+        "first-page": "435",
+        "DOI": "10.2307/2372583",
+        "article-title": "On the algebras formed by the Cayley-Dickson process",
+        "volume": "76",
+        "author": "Schafer",
+        "year": "1954",
+        "journal-title": "American Journal of Mathematics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b52",
+        "series-title": "An Introduction to Nonassociative Algebras",
+        "author": "Schafer",
+        "year": "1961"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b53",
+        "doi-asserted-by": "crossref",
+        "first-page": "350",
+        "DOI": "10.5753/eniac.2021.18266",
+        "article-title": "Tessarine and Quaternion-Valued Deep Neural Networks for Image Classification",
+        "author": "Senna",
+        "year": "2021",
+        "journal-title": "Anais do Encontro Nacional de Inteligência Artificial e Computacional (ENIAC)"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b54",
+        "doi-asserted-by": "crossref",
+        "first-page": "5693",
+        "DOI": "10.1109/TGRS.2013.2291940",
+        "article-title": "Quaternion Neural-Network-Based PolSAR Land Classification in Poincare-Sphere-Parameter Space",
+        "volume": "52",
+        "author": "Shang",
+        "year": "2014",
+        "journal-title": "IEEE Transactions on Geoscience and Remote Sensing"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.neunet.2024.106632_b55",
+        "doi-asserted-by": "crossref",
+        "first-page": "367",
+        "DOI": "10.1007/s10015-021-00687-x",
+        "article-title": "Comparison of high-dimensional neural networks using hypercomplex numbers in a robot manipulator control",
+        "volume": "26",
+        "author": "Takahashi",
+        "year": "2021",
+        "journal-title": "Artificial Life and Robotics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b56",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/MSP.2024.3401621",
+        "article-title": "Understanding vector-valued neural networks and their relationship with real and hypercomplex-valued neural networks",
+        "author": "Valle",
+        "year": "2024",
+        "journal-title": "IEEE Signal Processing Magazine"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b57",
+        "series-title": "An introduction to Clifford algebras and spinors",
+        "author": "Vaz",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b58",
+        "series-title": "2022 international joint conference on neural networks",
+        "first-page": "1",
+        "article-title": "Acute lymphoblastic leukemia detection using hypercomplex-valued convolutional neural networks",
+        "author": "Vieira",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b59",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jcmds.2022.100032",
+        "article-title": "A general framework for hypercomplex-valued extreme learning machines",
+        "volume": "3",
+        "author": "Vieira",
+        "year": "2022",
+        "journal-title": "Journal of Computational Mathematics and Data Science"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b60",
+        "doi-asserted-by": "crossref",
+        "first-page": "646",
+        "DOI": "10.1007/978-3-031-21689-3_45",
+        "article-title": "Extending the universal approximation theorem for a broad class of hypercomplex-valued neural networks",
+        "volume": "13654 LNAI",
+        "author": "Vital",
+        "year": "2022",
+        "journal-title": "Lecture Notes in Computer Science"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b61",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1016/j.acha.2022.12.002",
+        "article-title": "The universal approximation theorem for complex-valued neural networks",
+        "volume": "64",
+        "author": "Voigtlaender",
+        "year": "2023",
+        "journal-title": "Applied and Computational Harmonic Analysis"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.neunet.2024.106632_b62",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.2307/1968102",
+        "article-title": "Tauberian theorems",
+        "volume": "33",
+        "author": "Wiener",
+        "year": "1932",
+        "journal-title": "Annals of Mathematics"
+      },
+      {
+        "key": "10.1016/j.neunet.2024.106632_b63",
+        "doi-asserted-by": "crossref",
+        "first-page": "179",
+        "DOI": "10.1016/j.neucom.2020.02.053",
+        "article-title": "Deep octonion networks",
+        "volume": "397",
+        "author": "Wu",
+        "year": "2020",
+        "journal-title": "Neurocomputing"
+      }
+    ],
+    "container-title": [
+      "Neural Networks"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0893608024005562?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0893608024005562?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          8
+        ]
+      ],
+      "date-time": "2024-11-08T15:08:46Z",
+      "timestamp": 1731078526000
+    },
+    "score": 36.036903,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0893608024005562"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "references-count": 63,
+    "alternative-id": [
+      "S0893608024005562"
+    ],
+    "URL": "https://doi.org/10.1016/j.neunet.2024.106632",
+    "ISSN": [
+      "0893-6080"
+    ],
+    "issn-type": [
+      {
+        "value": "0893-6080",
+        "type": "print"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Universal approximation theorem for vector- and hypercomplex-valued neural networks",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Neural Networks",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.neunet.2024.106632",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "106632"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          18
+        ]
+      ],
+      "date-time": "2026-07-18T05:29:51Z",
+      "timestamp": 1784352591713,
+      "version": "3.55.0"
+    },
+    "publisher-location": "San Diego, California, USA",
+    "reference-count": 0,
+    "publisher": "Neural Information Processing Systems Foundation, Inc. (NeurIPS)",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "DOI": "10.52202/079017-2307",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          3
+        ]
+      ],
+      "date-time": "2025-11-03T11:20:56Z",
+      "timestamp": 1762168856000
+    },
+    "page": "72274-72409",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Physics-informed Neural Networks for Functional Differential Equations: Cylindrical Approximation and Its Convergence Guarantees"
+    ],
+    "prefix": "10.52202",
+    "author": [
+      {
+        "given": "Taiki",
+        "family": "Miyagawa",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Takeru",
+        "family": "Yokota",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "29733",
+    "event": {
+      "name": "Advances in Neural Information Processing Systems 37",
+      "theme": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+      "location": "Vancouver, BC, Canada",
+      "acronym": "NeurIPS 2024",
+      "number": "37",
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            10
+          ]
+        ]
+      },
+      "end": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            15
+          ]
+        ]
+      }
+    },
+    "container-title": [
+      "Advances in Neural Information Processing Systems 37"
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2026-06-19T15:40:36Z",
+      "timestamp": 1781883636000
+    },
+    "score": 34.175827,
+    "resource": {
+      "primary": {
+        "URL": "http://www.proceedings.com/079017-2307.html"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.52202/079017-2307",
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          30
+        ]
+      ],
+      "date-time": "2024-10-30T01:32:54Z",
+      "timestamp": 1730251974081,
+      "version": "3.28.0"
+    },
+    "reference-count": 15,
+    "publisher": "IEEE",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1109/icnn.1993.298858",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          12,
+          30
+        ]
+      ],
+      "date-time": "2002-12-30T22:49:31Z",
+      "timestamp": 1041288571000
+    },
+    "page": "1967-1972",
+    "source": "Crossref",
+    "is-referenced-by-count": 10,
+    "title": [
+      "Fuzzy min-max neural networks for function approximation"
+    ],
+    "prefix": "10.1109",
+    "author": [
+      {
+        "given": "P.K.",
+        "family": "Simpson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "G.",
+        "family": "Jahns",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/72.159066"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TFUZZ.1993.390282"
+      },
+      {
+        "year": "0",
+        "key": "ref12"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/FUZZY.1992.258721"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0019-9958(65)90241-X"
+      },
+      {
+        "journal-title": "Self-Organization and Associative Memory",
+        "year": "1990",
+        "author": "kohonen",
+        "key": "ref4"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0893-6080(91)90044-6"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0019-9958(69)90591-9"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/5.58326"
+      },
+      {
+        "journal-title": "Artificial Neural Systems Foundations Paradigms Applications and Implementations",
+        "year": "1990",
+        "author": "simpson",
+        "key": "ref8"
+      },
+      {
+        "key": "ref2",
+        "volume": "g14",
+        "author": "bezdek",
+        "year": "1987",
+        "journal-title": "Developments in Numerical Ecology"
+      },
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4757-0450-1"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICNN.1991.163365"
+      },
+      {
+        "key": "ref7a",
+        "article-title": "Fuzzy adaptive resonance theory",
+        "author": "simpson",
+        "year": "1990",
+        "journal-title": "SIUC Neuroengineering Workshop"
+      },
+      {
+        "journal-title": "Technical Report",
+        "year": "0",
+        "key": "ref7b"
+      }
+    ],
+    "event": {
+      "name": "IEEE International Conference on Neural Networks",
+      "location": "San Francisco, CA, USA"
+    },
+    "container-title": [
+      "IEEE International Conference on Neural Networks"
+    ],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx3/1059/7404/00298858.pdf?arnumber=298858",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          9
+        ]
+      ],
+      "date-time": "2017-03-09T10:39:50Z",
+      "timestamp": 1489055990000
+    },
+    "score": 32.63771,
+    "resource": {
+      "primary": {
+        "URL": "http://ieeexplore.ieee.org/document/298858/"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          null
+        ]
+      ]
+    },
+    "references-count": 15,
+    "URL": "https://doi.org/10.1109/icnn.1993.298858"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T08:12:00Z",
+      "timestamp": 1790064720070,
+      "version": "4.0.1"
+    },
+    "reference-count": 49,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2020-04-01T00:00:00Z",
+          "timestamp": 1585699200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2020-04-01T00:00:00Z",
+          "timestamp": 1585699200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000002",
+        "name": "National Institutes of Health",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100000002",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Neural Networks"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.neunet.2020.01.007",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          18
+        ]
+      ],
+      "date-time": "2020-01-18T11:25:39Z",
+      "timestamp": 1579346739000
+    },
+    "page": "383-392",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 75,
+    "special_numbering": "C",
+    "title": [
+      "Universal approximation with quadratic deep networks"
+    ],
+    "prefix": "10.1016",
+    "volume": "124",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3691-5141",
+        "authenticated-orcid": false,
+        "given": "Fenglei",
+        "family": "Fan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jinjun",
+        "family": "Xiong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ge",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b1",
+        "series-title": "ICML",
+        "article-title": "Learning polynomials with neural networks",
+        "author": "Andoni",
+        "year": "2014"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.neunet.2020.01.007_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "930",
+        "DOI": "10.1109/18.256500",
+        "article-title": "Universal approximation bounds for superpositions of a sigmoidal function",
+        "volume": "39",
+        "author": "Barron",
+        "year": "1993",
+        "journal-title": "IEEE Transactions on Information Theory"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "1553",
+        "DOI": "10.1109/TNNLS.2013.2293637",
+        "article-title": "On the complexity of neural network classifiers: A comparison between shallow and deep architectures",
+        "volume": "25",
+        "author": "Bianchini",
+        "year": "2014",
+        "journal-title": "IEEE Transactions on Neural Networks and Learning Systems"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b4",
+        "series-title": "NIPS",
+        "article-title": "Higher-order factorization machines",
+        "author": "Blondel",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b5",
+        "series-title": "COLT",
+        "article-title": "On the expressive power of deep learning: A tensor analysis",
+        "author": "Cohen",
+        "year": "2016"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.neunet.2020.01.007_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "30",
+        "DOI": "10.1109/TASL.2011.2134090",
+        "article-title": "Context-dependent pre-trained deep neural networks for large-vocabulary speech recognition",
+        "volume": "20",
+        "author": "Dahl",
+        "year": "2012",
+        "journal-title": "IEEE Transactions on Audio, Speech, and Language Processing"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b7",
+        "series-title": "ICLR",
+        "article-title": "On the universal approximability and complexity bounds of quantized ReLU neural networks",
+        "author": "Ding",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b8",
+        "series-title": "On the power of over-parametrization in neural networks with quadratic activation",
+        "author": "Du",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b9",
+        "series-title": "COLT",
+        "article-title": "The power of depth for feedforward neural networks",
+        "author": "Eldan",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b10",
+        "article-title": "Generalized back propagation algorithm for training second-order neural networks",
+        "author": "Fan",
+        "year": "2017",
+        "journal-title": "International Journal for Numerical Methods in Biomedical Engineering"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2020.01.007_b11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/cnm.2920",
+        "article-title": "A new type of neurons for machinelearning",
+        "volume": "34",
+        "author": "Fan",
+        "year": "2018",
+        "journal-title": "International Journal for Numerical Methods in Biomedical Engineering"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b12",
+        "series-title": "Quadratic autoencoder for low-dose CT denoising",
+        "author": "Fan",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b13",
+        "series-title": "Fuzzy logic interpretation of artificial neural networks",
+        "author": "Fan",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "4972",
+        "DOI": "10.1364/AO.26.004972",
+        "article-title": "Learning, invariance, and generalization in high-order neural networks",
+        "volume": "26",
+        "author": "Giles",
+        "year": "1987",
+        "journal-title": "Applied Optics"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b15",
+        "series-title": "Deep learning",
+        "author": "Goodfellow",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b16",
+        "series-title": "NIPS",
+        "article-title": "Generative adversarial nets",
+        "author": "Goodfellow",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b17",
+        "series-title": "ICLR",
+        "article-title": "Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding",
+        "author": "Han",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b18",
+        "series-title": "CVPR",
+        "article-title": "Deep residual learning for image recognition",
+        "author": "He",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b19",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/TMI.2019.2911203",
+        "article-title": "Longitudinal prediction of infant diffusion MRI data via graph convolutional adversarial networks",
+        "author": "Hong",
+        "year": "2019",
+        "journal-title": "IEEE Transactions on Medical Imaging"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.neunet.2020.01.007_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "359",
+        "DOI": "10.1016/0893-6080(89)90020-8",
+        "article-title": "Multilayer feedforward networks are universal approximators",
+        "volume": "2",
+        "author": "Hornik",
+        "year": "1989",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b21",
+        "series-title": "CVPR",
+        "article-title": "Densely connected convolutional networks",
+        "author": "Huang",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b22",
+        "series-title": "Methods of mathematical physics",
+        "article-title": "Weierstrass’s theorem on approximation by polynomials and extension of Weierstrass’s approximation theory",
+        "author": "Jeffreys",
+        "year": "1988"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2020.01.007_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "1203",
+        "DOI": "10.1109/TIT.2011.2169531",
+        "article-title": "Dependence of computational models on input dimension: Tractability of approximation and optimization tasks",
+        "volume": "58",
+        "author": "Kainen",
+        "year": "2012",
+        "journal-title": "IEEE Transactions on Information Theory"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.neunet.2020.01.007_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1016/S0893-6080(00)00015-0",
+        "article-title": "Information complexity of neural networks",
+        "volume": "13",
+        "author": "Kon",
+        "year": "2000",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b25",
+        "series-title": "NIPS",
+        "article-title": "Imagenet classification with deep convolutional neural networks",
+        "author": "Krizhevsky",
+        "year": "2012"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.neunet.2020.01.007_b26",
+        "doi-asserted-by": "crossref",
+        "first-page": "3151",
+        "DOI": "10.1162/neco_a_01143",
+        "article-title": "Dense associative memory is robust to adversarial inputs",
+        "volume": "30",
+        "author": "Krotov",
+        "year": "2018",
+        "journal-title": "Neural Computation"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b27",
+        "series-title": "ICML",
+        "article-title": "Ask me anything: Dynamic memory networks for natural language processing",
+        "author": "Kumar",
+        "year": "2016"
+      },
+      {
+        "issue": "2017",
+        "key": "10.1016/j.neunet.2020.01.007_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "34",
+        "DOI": "10.1016/j.neunet.2017.04.003",
+        "article-title": "Probabilistic lower bounds for approximation by shallow perceptron networks",
+        "volume": "91",
+        "author": "Kurkova",
+        "year": "2017",
+        "journal-title": "Neural Networks"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b29",
+        "series-title": "ICLR",
+        "article-title": "Why deep neural networks for function approximation?",
+        "author": "Liang",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b30",
+        "series-title": "Approximation theory in tensor product spaces",
+        "author": "Light",
+        "year": "1985"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b31",
+        "series-title": "ResNet with one-neuron hidden layers is a universal approximator",
+        "author": "Lin",
+        "year": "2018"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.neunet.2020.01.007_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "1223",
+        "DOI": "10.1007/s10955-017-1836-5",
+        "article-title": "Why does deep and cheap learning work so well?",
+        "volume": "168",
+        "author": "Lin",
+        "year": "2017",
+        "journal-title": "Journal of Statistical Physics"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b33",
+        "series-title": "NIPS",
+        "article-title": "On the computational efficiency of training neural networks",
+        "author": "Livni",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b34",
+        "series-title": "NIPS",
+        "article-title": "The expressive power of neural networks: a view from the width",
+        "author": "Lu",
+        "year": "2017"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.neunet.2020.01.007_b35",
+        "doi-asserted-by": "crossref",
+        "first-page": "829",
+        "DOI": "10.1142/S0219530516400042",
+        "article-title": "Deep vs. shallow networks: An approximation theory perspective",
+        "volume": "14",
+        "author": "Mhaskar",
+        "year": "2016",
+        "journal-title": "Analysis and Applications"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b36",
+        "series-title": "Perceptrons",
+        "author": "Minsky",
+        "year": "1969"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2020.01.007_b37",
+        "doi-asserted-by": "crossref",
+        "first-page": "246",
+        "DOI": "10.1162/neco.1991.3.2.246",
+        "article-title": "Universal approximation using radial-basis-function networks",
+        "volume": "3",
+        "author": "Park",
+        "year": "1991",
+        "journal-title": "Neural Computation"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b38",
+        "series-title": "Numbers",
+        "first-page": "97",
+        "article-title": "The fundamental theorem of algebra",
+        "author": "Remmert",
+        "year": "1991"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b39",
+        "series-title": "NIPS",
+        "article-title": "Lower bounds on the complexity of approximating continuous functions by sigmoidal neural networks",
+        "author": "Schmitt",
+        "year": "2000"
+      },
+      {
+        "issue": "7676",
+        "key": "10.1016/j.neunet.2020.01.007_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "354",
+        "DOI": "10.1038/nature24270",
+        "article-title": "Mastering the game of go without human knowledge",
+        "volume": "550",
+        "author": "Silver",
+        "year": "2017",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b41",
+        "series-title": "Very deep convolutional networks for large-scale image recognition",
+        "author": "Simonyan",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b42",
+        "series-title": "CVPR",
+        "article-title": "Rethinking the inception architecture for computer vision",
+        "author": "Szegedy",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b43",
+        "series-title": "CVPR",
+        "article-title": "Going deeper with convolutions",
+        "author": "Szegedy",
+        "year": "2015"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.neunet.2020.01.007_b44",
+        "doi-asserted-by": "crossref",
+        "first-page": "1816",
+        "DOI": "10.1109/TNNLS.2013.2296046",
+        "article-title": "Deep networks are effective encoders of periodicity",
+        "volume": "25",
+        "author": "Szymanski",
+        "year": "2014",
+        "journal-title": "IEEE Transactions on Neural Networks and Learning Systems"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b45",
+        "series-title": "COLT",
+        "article-title": "Benefits of depth in neural networks",
+        "author": "Telgarsky",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b46",
+        "unstructured": "Tsapanos, N., Tefas, A., Nikolaidis, N., & Pitas, I. Neurons with paraboloid decision boundaries for improved neural network classification performance. IEEE Transactions on Neural Networks and Learning Systems, 99, 1–11."
+      },
+      {
+        "key": "10.1016/j.neunet.2020.01.007_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "8914",
+        "DOI": "10.1109/ACCESS.2016.2624938",
+        "article-title": "A perspective on deep imaging",
+        "volume": "4",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "IEEE Access"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.neunet.2020.01.007_b48",
+        "doi-asserted-by": "crossref",
+        "first-page": "991",
+        "DOI": "10.1137/17M1141771",
+        "article-title": "Deep convolutional framelets: A general deep learning framework for inverse problems",
+        "volume": "11",
+        "author": "Ye",
+        "year": "2018",
+        "journal-title": "SIAM Journal on Imaging Sciences"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.neunet.2020.01.007_b49",
+        "doi-asserted-by": "crossref",
+        "first-page": "1370",
+        "DOI": "10.1109/TMI.2018.2823083",
+        "article-title": "Convolutional neural network based metal artifact reduction in X-ray computed tomography",
+        "volume": "37",
+        "author": "Zhang",
+        "year": "2018",
+        "journal-title": "IEEE Transactions on Medical Imaging"
+      }
+    ],
+    "container-title": [
+      "Neural Networks"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0893608020300095?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0893608020300095?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          12
+        ]
+      ],
+      "date-time": "2025-10-12T01:38:57Z",
+      "timestamp": 1760233137000
+    },
+    "score": 32.543526,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0893608020300095"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          4
+        ]
+      ]
+    },
+    "references-count": 49,
+    "alternative-id": [
+      "S0893608020300095"
+    ],
+    "URL": "https://doi.org/10.1016/j.neunet.2020.01.007",
+    "ISSN": [
+      "0893-6080"
+    ],
+    "issn-type": [
+      {
+        "value": "0893-6080",
+        "type": "print"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          4
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Universal approximation with quadratic deep networks",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Neural Networks",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.neunet.2020.01.007",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 Elsevier Ltd. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+]

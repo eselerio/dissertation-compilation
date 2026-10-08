@@ -1,0 +1,1299 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2025,
+          3,
+          25
+        ]
+      ],
+      "date-time": "2025-03-25T14:37:09Z",
+      "timestamp": 1742913429650,
+      "version": "3.40.3"
+    },
+    "publisher-location": "Boston, MA",
+    "reference-count": 16,
+    "publisher": "Springer US",
+    "isbn-type": [
+      {
+        "type": "print",
+        "value": "9780792369325"
+      },
+      {
+        "type": "electronic",
+        "value": "9780306483325"
+      }
+    ],
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2001,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2001-01-01T00:00:00Z",
+          "timestamp": 978307200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2001,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2001-01-01T00:00:00Z",
+          "timestamp": 978307200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "DOI": "10.1007/0-306-48332-7_134",
+    "type": "book-chapter",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          6,
+          18
+        ]
+      ],
+      "date-time": "2006-06-18T19:11:46Z",
+      "timestamp": 1150657906000
+    },
+    "page": "631-634",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Optimization with equilibrium constraints: A piecewise SQP approach; Sequential quadratic programming: Interior point methods for distributed optimal control problems; Successive quadratic programming; Successive quadratic programming: Applications in distillation systems; Successive quadratic programming: Applications in the process industry; Successive quadratic programming: Decomposition methods; Successive quadratic programming: Full space methods; Successive quadratic programming: Solution by active sets and interior point methodsOptimization with equilibrium constraints: A piecewise SQP approach; Sequential quadratic programming: Interior point methods for distributed optimal control problems; Successive quadratic programming; Successive quadratic programming: Applications in distillation systems; Successive quadratic programming: Applications in the process industry; Successive quadratic programming: Decomposition methods; Successive quadratic programming: Full space methods; Successive quadratic programming: Solution by active sets and interior point methodsFEASIBLE SEQUENTIAL QUADRATIC PROGRAMMING"
+    ],
+    "prefix": "10.1007",
+    "author": [
+      {
+        "given": "L. Tits",
+        "family": "André",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "reference": [
+      {
+        "key": "134_CR1_0-306-48332-7_134",
+        "doi-asserted-by": "publisher",
+        "first-page": "309",
+        "DOI": "10.1007/s002459911015",
+        "volume": "41",
+        "author": "J. Birge",
+        "year": "2000",
+        "unstructured": "Birge, J., Qi, L., and Wei, Z.: ‘A variant of the Topkis–Veinott method for solving inequality constrained optimization problems’, J. Appl. Math. Optim. 41 (2000), 309–330.",
+        "journal-title": "J. Appl. Math. Optim."
+      },
+      {
+        "issue": "4",
+        "key": "134_CR2_0-306-48332-7_134",
+        "doi-asserted-by": "publisher",
+        "first-page": "1187",
+        "DOI": "10.1137/0729072",
+        "volume": "29",
+        "author": "J.F. Bonnans",
+        "year": "1992",
+        "unstructured": "Bonnans, J.F., Panier, E.R., Tits, A.L., and Zhou, J.L.: ‘Avoiding the Maratos effect by means of a nonmonotone line search II. Inequality constrained problems–feasible iterates’, SIAM J. Numer. Anal. 29, no. 4 (Aug. 1992), 1187–1202.",
+        "journal-title": "SIAM J. Numer. Anal."
+      },
+      {
+        "key": "134_CR3_0-306-48332-7_134",
+        "doi-asserted-by": "publisher",
+        "first-page": "507",
+        "DOI": "10.1007/BF02275347",
+        "volume": "89",
+        "author": "A.S. El-Bakry",
+        "year": "1996",
+        "unstructured": "El-Bakry, A.S., Tapia, R.A., Tsuchiya, T., and Zhang, Y.: ‘On the formulation and theory of the Newton interior-point method for nonlinear programming’, J. Optim. Th. Appl. 89 (1996), 507–541.",
+        "journal-title": "J. Optim. Th. Appl."
+      },
+      {
+        "key": "134_CR4_0-306-48332-7_134",
+        "volume-title": "Nonlinear programming: Sequential unconstrained minimization techniques",
+        "author": "A.V. Fiacco",
+        "year": "1968",
+        "unstructured": "Fiacco, A.V., and McCormick, G.P.: Nonlinear programming: Sequential unconstrained minimization techniques, Wiley New York, 1968."
+      },
+      {
+        "key": "134_CR5_0-306-48332-7_134",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Herskovits, J.N., and Carvalho, L.A.V.: ‘A successive quadratic programming based feasible directions algorithm’, in A. Bensoussan, and J.L. Lions (eds.): Proc. Seventh Internat. Conf. Analysis and Optimization of Systems–Antibes, June 25-27, 1986, Vol. 83 of Lecture Notes Control Inform. Sci., Springer (1986), pp. 93–101.",
+        "DOI": "10.1007/BFb0007550"
+      },
+      {
+        "key": "134_CR6_0-306-48332-7_134",
+        "doi-asserted-by": "crossref",
+        "first-page": "265",
+        "DOI": "10.1080/10556789608805638",
+        "volume": "6",
+        "author": "C.T. Lawrence",
+        "year": "1996",
+        "unstructured": "Lawrence, C.T., and Tits, A.L.: ‘Nonlinear equality constraints in feasible sequential quadratic programming’, Optim. Methods and Software 6 (1996), 265–282.",
+        "journal-title": "Optim. Methods and Software"
+      },
+      {
+        "key": "134_CR7_0-306-48332-7_134",
+        "unstructured": "Lawrence, C.T., and Tits, A.L.: ‘A computationally efficient feasible sequential quadratic programming algorithm’, Techn. Report Inst. Systems Res., Univ. Maryland, no. TR 98-46 (1998), submitted for publication in SIAM J. Optim."
+      },
+      {
+        "key": "134_CR8_0-306-48332-7_134",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lawrence, C.T., and Tits, A.L.: ‘Feasible sequential quadratic programming for finely discretized problems from SIP’, in R. Reemtsen, and J.-J Rückmann (eds.): Semi-infinite programming, Nonconvex Optim. Appl., Kluwer Acad. Publ., 1998, pp. 159–193.",
+        "DOI": "10.1007/978-1-4757-2868-2_6"
+      },
+      {
+        "issue": "4",
+        "key": "134_CR9_0-306-48332-7_134",
+        "doi-asserted-by": "publisher",
+        "first-page": "934",
+        "DOI": "10.1137/0325051",
+        "volume": "25",
+        "author": "E.R. Panier",
+        "year": "1987",
+        "unstructured": "Panier, E.R., and Tits, A.L.: ‘A superlinearly convergent feasible method for the solution of inequality constrained optimization problems’, SIAM J. Control Optim. 25, no. 4 (1987), 934–950.",
+        "journal-title": "SIAM J. Control Optim."
+      },
+      {
+        "key": "134_CR10_0-306-48332-7_134",
+        "doi-asserted-by": "publisher",
+        "first-page": "261",
+        "DOI": "10.1007/BF01581247",
+        "volume": "59",
+        "author": "E.R. Panier",
+        "year": "1993",
+        "unstructured": "Panier, E.R., and Tits, A.L.: ‘On combining feasibility, descent and superlinear convergence in inequality constrained optimization’, Math. Program. 59 (1993), 261–276.",
+        "journal-title": "Math. Program."
+      },
+      {
+        "issue": "4",
+        "key": "134_CR11_0-306-48332-7_134",
+        "doi-asserted-by": "publisher",
+        "first-page": "788",
+        "DOI": "10.1137/0326046",
+        "volume": "26",
+        "author": "E.R. Panier",
+        "year": "1988",
+        "unstructured": "Panier, E.R., Tits, A.L., and Herskovits, J.N.: ‘A QP-free, globally convergent, locally superlinearly convergent algorithm for inequality constrained optimization’, SIAM J. Control Optim. 26, no. 4 (July 1988), 788–811.",
+        "journal-title": "SIAM J. Control Optim."
+      },
+      {
+        "key": "134_CR12_0-306-48332-7_134",
+        "unstructured": "Polak, E.: Computational methods in optimization, Acad. Press, 1971."
+      },
+      {
+        "key": "134_CR13_0-306-48332-7_134",
+        "doi-asserted-by": "publisher",
+        "first-page": "963",
+        "DOI": "10.1137/S1052623497326629",
+        "volume": "10",
+        "author": "L. Qi",
+        "year": "2000",
+        "unstructured": "Qi, L., and Wei, Z.: ‘On the constant positive linear independence condition and its application to SQP methods’, SIAM J. Optim. 10 (2000), 963–981.",
+        "journal-title": "SIAM J. Optim."
+      },
+      {
+        "key": "134_CR14_0-306-48332-7_134",
+        "unstructured": "Urban, T., Tits, A.L., and Lawrence, C.T.: ‘A primal-dual interior-point method for nonconvex optimization with multiple logarithmic barrier parameters and with strong convergence properties’, Techn. Report Inst. Systems Res. Univ. Maryland no. TR 98-27 (1998)."
+      },
+      {
+        "key": "134_CR15_0-306-48332-7_134",
+        "unstructured": "WEB: ‘www.isr.umd.edu/Labs/CACSE/FSQP/ fsqp.html’."
+      },
+      {
+        "key": "134_CR16_0-306-48332-7_134",
+        "unstructured": "Zoutendijk, G.: Methods of feasible directions, Elsevier, 1960."
+      }
+    ],
+    "container-title": [
+      "Encyclopedia of Optimization"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://link.springer.com/content/pdf/10.1007/0-306-48332-7_134",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          2
+        ]
+      ],
+      "date-time": "2022-09-02T16:56:11Z",
+      "timestamp": 1662137771000
+    },
+    "score": 33.02514,
+    "resource": {
+      "primary": {
+        "URL": "https://link.springer.com/10.1007/0-306-48332-7_134"
+      }
+    },
+    "subtitle": [
+      "FSQP"
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "ISBN": [
+      "9780792369325",
+      "9780306483325"
+    ],
+    "references-count": 16,
+    "URL": "https://doi.org/10.1007/0-306-48332-7_134",
+    "published": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          6
+        ]
+      ],
+      "date-time": "2024-09-06T02:58:44Z",
+      "timestamp": 1725591524680
+    },
+    "publisher-location": "Berlin/Heidelberg",
+    "reference-count": 0,
+    "publisher": "Springer-Verlag",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1007/springerreference_72255",
+    "type": "reference-entry",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          1,
+          20
+        ]
+      ],
+      "date-time": "2012-01-20T08:14:36Z",
+      "timestamp": 1327047276000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Feasible Sequential Quadratic Programming, FSQP"
+    ],
+    "prefix": "10.1007",
+    "member": "297",
+    "container-title": [
+      "SpringerReference"
+    ],
+    "language": "en",
+    "deposited": {
+      "date-parts": [
+        [
+          2012,
+          1,
+          20
+        ]
+      ],
+      "date-time": "2012-01-20T08:19:03Z",
+      "timestamp": 1327047543000
+    },
+    "score": 33.021423,
+    "resource": {
+      "primary": {
+        "URL": "http://www.springerreference.com/index/doi/10.1007/SpringerReference_72255"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          null
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1007/springerreference_72255"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2023-10-27T02:58:22Z",
+      "timestamp": 1698375502352
+    },
+    "reference-count": 8,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1-3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1991,
+              5,
+              1
+            ]
+          ],
+          "date-time": "1991-05-01T00:00:00Z",
+          "timestamp": 673056000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Mathematical Programming"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1991,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1007/bf01582877",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2005,
+          4,
+          28
+        ]
+      ],
+      "date-time": "2005-04-28T08:35:11Z",
+      "timestamp": 1114677311000
+    },
+    "page": "19-27",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Application of sequential quadratic programming software program to an actual problem"
+    ],
+    "prefix": "10.1007",
+    "volume": "52",
+    "author": [
+      {
+        "given": "M.",
+        "family": "Tamura",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Y.",
+        "family": "Kobayashi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "reference": [
+      {
+        "key": "CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1007/BF02591962",
+        "volume": "27",
+        "author": "D. Goldfarb",
+        "year": "1983",
+        "unstructured": "D. Goldfarb and A. Idnani, “A numerically stable dual method for solving strictly convex quadratic programs,”Mathematical Programming 27 (1983) 1–33.",
+        "journal-title": "Mathematical Programming"
+      },
+      {
+        "key": "CR2",
+        "volume-title": "Test Examples for Nonlinear Programming Codes",
+        "author": "W. Hock",
+        "year": "1980",
+        "unstructured": "W. Hock and K. Schittkowski,Test Examples for Nonlinear Programming Codes (Springer, Berlin, 1980)."
+      },
+      {
+        "key": "CR3",
+        "unstructured": "Y. Kobayashi, M. Tamura and Y. Shigematsu, “Performance evaluation of quadratic programming solvers for constrained nonlinear optimization,”13th International Symposium on Mathematical Programming (Proceedings) (1988) 91."
+      },
+      {
+        "key": "CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "83",
+        "DOI": "10.1007/BF01395810",
+        "volume": "38",
+        "author": "K. Schittkowski",
+        "year": "1981",
+        "unstructured": "K. Schittkowski, “The nonlinear programming method of Wilson, Han, and Powell with an augmented Lagrangian type line search function — part 1: convergence analysis,”Numerical Mathematics 38 (1981) 83–114.",
+        "journal-title": "Numerical Mathematics"
+      },
+      {
+        "key": "CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.1007/BF01395811",
+        "volume": "38",
+        "author": "K. Schittkowski",
+        "year": "1981",
+        "unstructured": "K. Schittkowski, “The nonlinear programming method of Wilson, Han, and Powell with an augmented Lagrangian type line search function — part 2: an efficient implementation with linear least squares subproblems,”Numerical Mathematics 38 (1981) 115–127.",
+        "journal-title": "Numerical Mathematics"
+      },
+      {
+        "key": "CR6",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-642-61582-5",
+        "volume-title": "More Test Examples for Nonlinear Programming Codes",
+        "author": "K. Schittkowski",
+        "year": "1987",
+        "unstructured": "K. Schittkowski,More Test Examples for Nonlinear Programming Codes (Springer, Berlin, 1987)."
+      },
+      {
+        "key": "CR7",
+        "doi-asserted-by": "crossref",
+        "unstructured": "L. Sha and R. W. Dutton, “An analytical algorithm for placement of arbitrary sized rectangular blocks,”22nd Design Automation Conference, IEEE (1984) 602–608.",
+        "DOI": "10.1109/DAC.1985.1586005"
+      },
+      {
+        "key": "CR8",
+        "unstructured": "M. Tamura and Y. Kobayashi, “Application of sequential quadratic programming to actual problem,”13th International Symposium on Mathematical Programming (Proceedings) (1988) 92."
+      }
+    ],
+    "container-title": [
+      "Mathematical Programming"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/BF01582877.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/BF01582877/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/BF01582877",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          4,
+          7
+        ]
+      ],
+      "date-time": "2020-04-07T03:46:33Z",
+      "timestamp": 1586231193000
+    },
+    "score": 32.665314,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/BF01582877"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          1991,
+          5
+        ]
+      ]
+    },
+    "references-count": 8,
+    "journal-issue": {
+      "issue": "1-3",
+      "published-print": {
+        "date-parts": [
+          [
+            1991,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "BF01582877"
+    ],
+    "URL": "https://doi.org/10.1007/bf01582877",
+    "ISSN": [
+      "0025-5610",
+      "1436-4646"
+    ],
+    "issn-type": [
+      {
+        "value": "0025-5610",
+        "type": "print"
+      },
+      {
+        "value": "1436-4646",
+        "type": "electronic"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          1991,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2024-09-04T21:52:51Z",
+      "timestamp": 1725486771989
+    },
+    "publisher-location": "Boston, MA",
+    "reference-count": 39,
+    "publisher": "Springer US",
+    "isbn-type": [
+      {
+        "type": "print",
+        "value": "9780792398622"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1007/978-0-585-26778-4_8",
+    "type": "book-chapter",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          6,
+          14
+        ]
+      ],
+      "date-time": "2007-06-14T00:44:37Z",
+      "timestamp": 1181781877000
+    },
+    "page": "127-142",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Sequential Quadratic Programming Methods for Large-Scale Problems"
+    ],
+    "prefix": "10.1007",
+    "author": [
+      {
+        "given": "Walter",
+        "family": "Murray",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "reference": [
+      {
+        "key": "8_CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.2514/3.11428",
+        "volume": "16",
+        "author": "J.T. Betts",
+        "year": "1993",
+        "unstructured": "J.T. Betts and W.P. Huffman, “Path constrained trajectory optimization using sparse sequential quadratic programming,” J. of Guidance, Control, and Dynamics, vol. 16, no. 1, pp. 59–68, 1993.",
+        "journal-title": "J. of Guidance, Control, and Dynamics"
+      },
+      {
+        "key": "8_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "519",
+        "DOI": "10.1007/BF02192216",
+        "volume": "82",
+        "author": "J.T. Betts",
+        "year": "1994",
+        "unstructured": "J.T. Betts and P.D. Frank, “A sparse nonlinear optimization algorithm,” J. Optim. Theory and Applies., vol. 82, pp. 519–541, 1994.",
+        "journal-title": "J. Optim. Theory and Applies."
+      },
+      {
+        "key": "8_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "314",
+        "DOI": "10.1137/0805017",
+        "volume": "5",
+        "author": "L.T. Biegler",
+        "year": "1995",
+        "unstructured": "L.T. Biegler, J. Nocedal, and C. Schmid, “A reduced Hessian method for large-scale constrained optimization,” S1AM J. on Optimization, vol. 5, pp. 314–347, 1995.",
+        "journal-title": "S1AM J. on Optimization"
+      },
+      {
+        "key": "8_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "67",
+        "DOI": "10.1093/imamat/21.1.67",
+        "volume": "21",
+        "author": "M.C. Biggs",
+        "year": "1978",
+        "unstructured": "M.C. Biggs, “On the convergence of some constrained minimization algorithms based on recursive quadratic programming,” JIMA, vol. 21, pp. 67–81, 1978.",
+        "journal-title": "JIMA"
+      },
+      {
+        "key": "8_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "155",
+        "DOI": "10.1007/BF02591943",
+        "volume": "27",
+        "author": "A. Buckley",
+        "year": "1983",
+        "unstructured": "A. Buckley and A. LeNir, “QN-like variable storage conjugate gradients,” Mathematical Programming, vol. 27, pp. 155–175, 1983.",
+        "journal-title": "Mathematical Programming"
+      },
+      {
+        "key": "8_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "103",
+        "DOI": "10.1145/214392.214395",
+        "volume": "11",
+        "author": "A. Buckley",
+        "year": "1985",
+        "unstructured": "A. Buckley and A. LeNir, “BBVSCG—A variable storage algorithm for function minimization,“ ACM Transactions on Mathematical Software, vol. 11, pp. 103–119, 1985.",
+        "journal-title": "ACM Transactions on Mathematical Software"
+      },
+      {
+        "key": "8_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "3267",
+        "DOI": "10.1109/TPAS.1984.318568",
+        "volume": "PAS-103",
+        "author": "R.C. Burchett",
+        "year": "1984",
+        "unstructured": "R.C. Burchett, H.H. Happ, and D.R. Vierath, “Quadratically convergent optimal power flow,” IEEE Transactions on Power Apparatus and Systems, vol. PAS-103, pp. 3267–3275, 1984.",
+        "journal-title": "IEEE Transactions on Power Apparatus and Systems"
+      },
+      {
+        "key": "8_CR8",
+        "unstructured": "R.H. Byrd, P. Lu, and J. Nocedal, “A limited memory algorithm for bound constrained optimization,” Report NAM 07, EECS Department, Northwestern University, 1993."
+      },
+      {
+        "key": "8_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "129",
+        "DOI": "10.1007/BF01582063",
+        "volume": "63",
+        "author": "R.H. Byrd",
+        "year": "1994",
+        "unstructured": "R.H. Byrd, J. Nocedal, and R.B. Schnabel, “Representations of quasi-Newton matrices and their use in limited memory methods,” Mathematical Programming, vol. 63, pp. 129–156, 1994.",
+        "journal-title": "Mathematical Programming"
+      },
+      {
+        "key": "8_CR10",
+        "first-page": "42",
+        "volume-title": "Computing Methods in Applied Sciences and Engineering",
+        "author": "A.R. Conn",
+        "year": "1990",
+        "unstructured": "A.R. Conn, N.I.M. Gould, and Ph.L. Toint, “An introduction to the structure of large-scale nonlinear optimization problems and the LANCELOT project,” in Computing Methods in Applied Sciences and Engineering, R. Glowinski and A. Lichnewsky (Eds.), SIAM, Philadelphia, pp. 42–54, 1990."
+      },
+      {
+        "key": "8_CR11",
+        "unstructured": "A.R. Conn, N.I.M. Gould, and Ph.L. Toint, “An introduction to the standard data input format (SDIF) for nonlinear mathematical programming problems,” Département de Mathématique, Facultés Universitaires de Namur, Technical Report 91/8, 1991."
+      },
+      {
+        "key": "8_CR12",
+        "series-title": "Lecture Notes in Computation Mathematics",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/978-3-662-12211-2",
+        "volume-title": "LANCELOT: A fortran package for large-scale nonlinear optimization (Release A)",
+        "author": "A.R. Conn",
+        "year": "1992",
+        "unstructured": "A.R. Conn, N.I.M. Gould, and Ph.L. Toint, “LANCELOT: A fortran package for large-scale nonlinear optimization (Release A),” Lecture Notes in Computation Mathematics 17, Springer Verlag: Berlin, Heidelberg, New York, London, Paris and Tokyo, 1992."
+      },
+      {
+        "key": "8_CR13",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A.R. Conn, N.I.M. Gould, and Ph.L. Toint, “Large-scale nonlinear constrained optimization: A current survey,” Technical Report 94/1, Departement de Mathématique, Facultés Universitaires de Namur, 1994.",
+        "DOI": "10.1007/978-94-009-0369-2_10"
+      },
+      {
+        "key": "8_CR14",
+        "doi-asserted-by": "crossref",
+        "unstructured": "G. Di Pillo. F. Facchinei, and L. Grippo, “An (RQP) algorithm using a differentiable exact penalty function for inequality constrained problems,” Mathematical Programming, pp. 49–68, 1992.",
+        "DOI": "10.1007/BF01581190"
+      },
+      {
+        "key": "8_CR15",
+        "doi-asserted-by": "crossref",
+        "unstructured": "S.K. Eldersveld, “Large-scale sequential quadratic programming algorithms,” Stanford, Report SOL 92-4, Department of Operations Research, Stanford University, 1992.",
+        "DOI": "10.2172/10102731"
+      },
+      {
+        "key": "8_CR16",
+        "unstructured": "M.C. Fenelon, “Preconditioned conjugate-gradient-type methods for large-scale unconstrained optimization,” Ph.D. Thesis, Department of Operations Research, Stanford University, 1981."
+      },
+      {
+        "key": "8_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "192",
+        "DOI": "10.1137/0805010",
+        "volume": "5",
+        "author": "R. Fletcher",
+        "year": "1995",
+        "unstructured": "R. Fletcher, “An optimal positive definite update for sparse Hessian matrices,” SIAM J. on Optimization, vol. 5, pp. 192–218, 1995.",
+        "journal-title": "SIAM J. on Optimization"
+      },
+      {
+        "key": "8_CR18",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J.Ch. Gilbert and C. Lemaréchal, “Some numerical experiments with variable-storage quasi-Newton algorithms,” Mathematical Programming, pp. 407–435, 1989.",
+        "DOI": "10.1007/BF01589113"
+      },
+      {
+        "key": "8_CR19",
+        "volume-title": "Report SOL 79-15",
+        "author": "P.E. Gill",
+        "year": "1979",
+        "unstructured": "P.E. Gill and W. Murray, “Conjugate-gradient methods for large-scale nonlinear optimization,” CA, Report SOL 79-15. Department of Operations Research, Stanford University, Palo Alto, 1979."
+      },
+      {
+        "key": "8_CR20",
+        "first-page": "29",
+        "volume-title": "Control Applications of Optimization, International Series of Numerical Mathematics",
+        "author": "P.E. Gill",
+        "year": "1994",
+        "unstructured": "P.E. Gill, W. Murray, and M.A. Saunders, “Large-scale SQP methods and their application in trajectory optimization,” Control Applications of Optimization, International Series of Numerical Mathematics, R. Bulirsch and D. Kraft (Eds.), Birkhäuser Basel, vol. 115, pp. 29–42, 1994."
+      },
+      {
+        "key": "8_CR21",
+        "unstructured": "P.E. Gill, W. Murray, and M.A. Saunders, “An SQP algorithm of large-scale optimization,” Report SOL 95-x, Department of Operations Research, Stanford University (to appear)."
+      },
+      {
+        "key": "8_CR22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P.E. Gill, W. Murray, M.A. Saunders, and M.H. Wright, “User’s guide for NPSOL (version 4.0): A fortran package for nonlinear programming,” Report SOL 86-2, Department of Operations Research, Stanford University, 1986.",
+        "DOI": "10.21236/ADA169115"
+      },
+      {
+        "key": "8_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1137/1033001",
+        "volume": "33",
+        "author": "P.E. Gill",
+        "year": "1988",
+        "unstructured": "P.E. Gill, W. Murray, M.A. Saunders, and M.H. Wright, “Inertia-controlling methods for quadratic programming,” SIAM Review, vol. 33, pp. 1–33, 1988.",
+        "journal-title": "SIAM Review"
+      },
+      {
+        "key": "8_CR24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P.E. Gill, W. Murray, M.A. Saunders, and M.H. Wright, “Constrained nonlinear programming,” in Optimization, Handbooks in Operations Research and Management Science, G.L. Nemhauser and A.H.G. Rinnooy Kan (Eds.), Elsevier, vol. 1, Ch. III, pp. 171–210, 1989.",
+        "DOI": "10.1016/S0927-0507(89)01004-2"
+      },
+      {
+        "key": "8_CR25",
+        "unstructured": "P.E. Gill, W. Murray, M.A. Saunders, and M.H. Wright, “A Schur-complement method for sparse quadratic programming,” in Reliable Numerical Computation, M.G. Cox and S. Hammarling (Eds), Oxford University Press, pp. 113–138, 1990."
+      },
+      {
+        "key": "8_CR26",
+        "unstructured": "P.E. Gill, W. Murray, M.A. Saunders, and M.H. Wright, “Some theoretical properties of an augmented Lagrangian merit function.” in Advances in Optimization and Parallel Computing, P.M. Pardalos (Ed.), North-Holland, pp. 101–128, 1992."
+      },
+      {
+        "key": "8_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "263",
+        "DOI": "10.1007/BF01580395",
+        "volume": "11",
+        "author": "S.P. Han",
+        "year": "1976",
+        "unstructured": "S.P. Han, “Superlinearly convergent variable metrix algorithms for general nonlinear programming problems,” Math. Prog., vol. 11, pp. 263–282, 1976.",
+        "journal-title": "Math. Prog."
+      },
+      {
+        "key": "8_CR28",
+        "volume-title": "Ph.D. Thesis",
+        "author": "M.W. Leonard",
+        "year": "1995",
+        "unstructured": "M.W. Leonard, “Improved quasi-Newton methods for optimization,” Ph.D. Thesis, Department of Mathematics, University of California, San Diego, 1995."
+      },
+      {
+        "key": "8_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "111",
+        "DOI": "10.1007/BF01584328",
+        "volume": "13",
+        "author": "G. McCormick",
+        "year": "1977",
+        "unstructured": "G. McCormick, “A modification of Armijo’s step-size rule for negative curvature,” Mathematical Programming, vol. 13, pp. 111–115, 1977.",
+        "journal-title": "Mathematical Programming"
+      },
+      {
+        "key": "8_CR30",
+        "unstructured": "J.J. Moré and D.C. Sorensen, “Newton’s method,“ in Studies in Numerical Analysis, G.H. Golub (Ed.) (Mathematical Association of America), pp. 29–82, 1984."
+      },
+      {
+        "key": "8_CR31",
+        "first-page": "247",
+        "volume-title": "Optimization",
+        "author": "W. Murray",
+        "year": "1969",
+        "unstructured": "W. Murray, “An algorithm for constrained minimization,” in Optimization, R. Fletcher (Ed.), Academic Press: London and New York, pp. 247–258, 1969."
+      },
+      {
+        "key": "8_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "589",
+        "DOI": "10.1137/0805030",
+        "volume": "5",
+        "author": "W. Murray",
+        "year": "1995",
+        "unstructured": "W. Murray and F.J. Prieto, “A sequential quadratic programming algorithm using an incomplete solution of the subproblem,” in SIAM J. on Optimization, vol. 5, pp. 589–639, 1995.",
+        "journal-title": "SIAM J. on Optimization"
+      },
+      {
+        "key": "8_CR33",
+        "volume-title": "Technical Report Report SOL 95-3",
+        "author": "W. Murray",
+        "year": "1995",
+        "unstructured": "W. Murray and F.J. Prieto, “A second-derivative method for nonlinearly constrained optimization,” Technical Report Report SOL 95-3, Department of Operations Research, Stanford University, Stanford, 1995."
+      },
+      {
+        "key": "8_CR34",
+        "doi-asserted-by": "crossref",
+        "first-page": "84",
+        "DOI": "10.1007/BFb0120949",
+        "volume": "16",
+        "author": "B.A. Murtagh",
+        "year": "1982",
+        "unstructured": "B.A. Murtagh and M.A. Saunders, “A projected Lagrangian algorithm and its implementation for sparse nonlinear constraints,” Mathematical Programming Study, vol. 16, pp. 84–117, 1982.",
+        "journal-title": "Mathematical Programming Study"
+      },
+      {
+        "key": "8_CR35",
+        "unstructured": "B.A. Murtagh and M.A. Saunders, MINOS 5.4 user’s guide, Report SOL 83-20R, Department of Operations Research, Stanford University, 1993."
+      },
+      {
+        "key": "8_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "773",
+        "DOI": "10.2307/2006193",
+        "volume": "35",
+        "author": "J. Nocedal",
+        "year": "1980",
+        "unstructured": "J. Nocedal, “Updating quasi-Newton matrices with limited storage,” Mathematics of Computation, vol. 35, pp. 773–782, 1980.",
+        "journal-title": "Mathematics of Computation"
+      },
+      {
+        "key": "8_CR37",
+        "volume-title": "Report SOL 91-2",
+        "author": "D.B. Ponceleón",
+        "year": "1991",
+        "unstructured": "D.B. Ponceleón, “Barrier methods for large-scale quadratic programming,” Report SOL 91-2, Stanford University, Stanford, 1991."
+      },
+      {
+        "key": "8_CR38",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M.J.D. Powell, “A fast algorithm for nonlinearly constrained optimization calculations,” in Numerical Analysis, Dundee 1977, Lecture Notes in Mathematics 630, G.A. Watson (Ed.), Springer-Verlag, pp. 144–157, 1978.",
+        "DOI": "10.1007/BFb0067703"
+      },
+      {
+        "key": "8_CR39",
+        "volume-title": "Report No. 88-24",
+        "author": "U.T. Ringertz",
+        "year": "1988",
+        "unstructured": "U.T. Ringertz, “A mathematical programming approach to structural optimization,” Report No. 88-24, Dept. of Aeronautical Structures and Materials, The Royal Institute of Technology, Stockholm, 1988."
+      }
+    ],
+    "container-title": [
+      "Computational Issues in High Performance Software for Nonlinear Optimization"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/978-0-585-26778-4_8.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2021-04-29T00:06:39Z",
+      "timestamp": 1619654799000
+    },
+    "score": 32.277134,
+    "resource": {
+      "primary": {
+        "URL": "http://link.springer.com/10.1007/978-0-585-26778-4_8"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          null
+        ]
+      ]
+    },
+    "ISBN": [
+      "9780792398622"
+    ],
+    "references-count": 39,
+    "URL": "https://doi.org/10.1007/978-0-585-26778-4_8"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          3
+        ]
+      ],
+      "date-time": "2022-04-03T09:00:16Z",
+      "timestamp": 1648976416374
+    },
+    "reference-count": 14,
+    "publisher": "Elsevier BV",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1988,
+              5,
+              1
+            ]
+          ],
+          "date-time": "1988-05-01T00:00:00Z",
+          "timestamp": 578448000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Information and Software Technology"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1988,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/0950-5849(88)90086-9",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          7
+        ]
+      ],
+      "date-time": "2003-08-07T22:13:29Z",
+      "timestamp": 1060294409000
+    },
+    "page": "250-255",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "Mental gymnastics of sequential programming"
+    ],
+    "prefix": "10.1016",
+    "volume": "30",
+    "author": [
+      {
+        "given": "AG",
+        "family": "Middleton",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB1",
+        "unstructured": "‘The Munsters’ popular US TV show"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB2",
+        "series-title": "Functional Programming and its Applications",
+        "first-page": "192",
+        "article-title": "Program transformation",
+        "author": "Darlington",
+        "year": "1982"
+      },
+      {
+        "issue": "No 1",
+        "key": "10.1016/0950-5849(88)90086-9_BIB3",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1093/comjnl/30.1.37",
+        "article-title": "Some transformations of relevance to report generation",
+        "volume": "Vol 30",
+        "author": "Middleton",
+        "year": "1987",
+        "journal-title": "The Comput. J."
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB4",
+        "article-title": "On the use of sequence descriptors to detect the need for data buffering",
+        "author": "Middleton",
+        "year": "1986"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB5",
+        "series-title": "Principles of Program Design",
+        "author": "Jackson",
+        "year": "1975"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB6",
+        "doi-asserted-by": "crossref",
+        "first-page": "446",
+        "DOI": "10.1145/358557.358577",
+        "article-title": "Programmers use slices when debugging",
+        "volume": "Vol 25",
+        "author": "Weiser",
+        "year": "1982",
+        "journal-title": "Commun. ACM"
+      },
+      {
+        "issue": "No 1–2",
+        "key": "10.1016/0950-5849(88)90086-9_BIB7",
+        "doi-asserted-by": "crossref",
+        "first-page": "119",
+        "DOI": "10.1016/0306-4573(84)90043-8",
+        "article-title": "Chunks: a basis for complexity measurement",
+        "volume": "Vol 20",
+        "author": "Davis",
+        "year": "1984",
+        "journal-title": "Inf. Process. & Manage."
+      },
+      {
+        "issue": "No 2",
+        "key": "10.1016/0950-5849(88)90086-9_BIB8",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1207/s15327051hci0102_4",
+        "article-title": "A goal/plan analysis of buggy Pascal programs",
+        "volume": "Vol 1",
+        "author": "Spohrer",
+        "year": "1985",
+        "journal-title": "Hum. Comput. Interaction"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB9",
+        "series-title": "System Development",
+        "author": "Jackson",
+        "year": "1983"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB10",
+        "series-title": "Data Flow Computing",
+        "author": "Sharp",
+        "year": "1985"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB11",
+        "series-title": "Equational Logic as a Programming Language",
+        "author": "O'Donnell",
+        "year": "1985"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB12",
+        "series-title": "Functional Programming Languages and Computer Architecture",
+        "article-title": "Miranda: a non-strict functional language with polymorphic types",
+        "author": "Turner",
+        "year": "1985"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB13",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1145/321992.321996",
+        "article-title": "A transformation system for developing recursive programs",
+        "author": "Burstall",
+        "year": "1977",
+        "journal-title": "J. ACM"
+      },
+      {
+        "key": "10.1016/0950-5849(88)90086-9_BIB14",
+        "article-title": "ZAP program transformation system, primer and user's manual",
+        "author": "Feather",
+        "year": "1979"
+      }
+    ],
+    "container-title": [
+      "Information and Software Technology"
+    ],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:0950584988900869?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:0950584988900869?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          3,
+          15
+        ]
+      ],
+      "date-time": "2019-03-15T00:50:47Z",
+      "timestamp": 1552611047000
+    },
+    "score": 32.26275,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/0950584988900869"
+      }
+    },
+    "issued": {
+      "date-parts": [
+        [
+          1988,
+          5
+        ]
+      ]
+    },
+    "references-count": 14,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            1988,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "0950584988900869"
+    ],
+    "URL": "https://doi.org/10.1016/0950-5849(88)90086-9",
+    "ISSN": [
+      "0950-5849"
+    ],
+    "issn-type": [
+      {
+        "value": "0950-5849",
+        "type": "print"
+      }
+    ],
+    "published": {
+      "date-parts": [
+        [
+          1988,
+          5
+        ]
+      ]
+    }
+  }
+]
