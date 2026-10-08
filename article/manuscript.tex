@@ -209,7 +209,13 @@ physically and emotionally throughout his doctoral journey.
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 
-Activated sludge process optimization requires rapid predictions that preserve material balances and non-negative concentrations. This dissertation integrates a comparison of thirteen reactor predictors, an interpretable second-order regression, and a connected plant optimization study. Mechanistic simulations provide component-resolved reference states. Projection adjusts predicted concentrations to satisfy the specified physical constraints. All 766,350 assessed reactor projection instances passed the mass conservation and non-negativity checks. At the largest design size, projection reduced aggregate component error for five of the thirteen predictors. The structured regression had the lowest mean composite error at the smallest design size of 500 cases, while the multilayer perceptron had the lowest error at the largest size. The structured regression's named operating, loading, interaction, and coupling terms supported direct examination of the fitted response. The complete projection procedure returned physically checked states in all 2000 fixed-partition cases. In the connected plant, joint projection linked the mixer, reactor train, clarifier outlets, and solids inventory. It reduced aggregate holdout normalized root mean squared error by 8.19\% across 1845 accepted states and improved 30 of 32 location--composite scores. Across ten influent scenarios, mean initial-search times were 1.726 s for the connected surrogate and 5.236 s for the direct mechanistic route. These times exclude development, fitting, certification, recovery, and independent mechanistic evaluation. Independent evaluation gave lower objectives for the direct decisions in the nominal case and all ten scenarios. Together, these findings establish physical enforcement, predictive agreement, model interpretation, and operating quality as complementary parts of surrogate assessment. The integrated framework supports rapid candidate generation and component-resolved verification for the simulated steady-state problem. It does not establish equal decision quality or complete-workflow speed from search time alone. Future research can develop adaptive sampling, uncertainty-aware prediction, dynamic treatment models, and validation with plant measurements.
+Activated sludge process models can support wastewater treatment analysis and optimization, but repeated mechanistic simulations can be computationally demanding. Machine learning surrogates offer a faster alternative, yet prediction accuracy alone does not make a surrogate suitable for engineering decisions. A model may reproduce overall water-quality indicators while misrepresenting the individual components that produce them; statistically fitted predictions may violate mass conservation or return negative concentrations; an apparently interpretable regression may become difficult to explain after component coupling and physical correction; and a surrogate that predicts a connected treatment plant well on average may still lead an optimizer to a poor operating decision. This dissertation addresses these linked problems by developing a unified framework that connects complete component prediction, physical enforcement, model interpretation, and independent verification of operating decisions.
+
+The study begins with mechanistic steady-state activated sludge simulations that provide reference component states over defined influent and operating conditions. Several statistical learning methods are compared using the complete reactor response rather than only aggregate treatment indicators, while changes in data availability and predictions beyond the sampled domain are also examined. Their raw predictions are then projected onto a physically admissible state so that the returned concentrations satisfy the specified mass-conservation and non-negativity requirements. The study next develops invariant-constrained second-order regression (ICSOR), an interpretable surrogate that represents operating effects, influent loading, nonlinear relationships, interactions, and learned coupling among treatment components. Because physical enforcement can alter the response produced by the regression, interpretation follows the complete prediction process from the fitted equation through component coupling and projection. Finally, the framework is extended from a single reactor to a connected activated sludge plant containing mixing, multiple biological reactors, secondary clarification, recycle streams, and stored solids. The resulting connected surrogate predicts the plant as a linked system, reconciles its predicted streams and inventories through joint projection, and is used to search for operating settings. These settings are then independently evaluated using the original mechanistic model and compared with decisions obtained through direct mechanistic optimization.
+
+The results show that no single learning method is best under all data and operating conditions. Flexible learners become especially effective when more simulation data are available, whereas the structured regression provides useful predictive performance when data are more limited while retaining a response that can be directly inspected. Physical projection consistently enforces the specified balances and concentration bounds, but it does not necessarily improve every prediction; instead, it can redistribute error among treatment components. This demonstrates that physical consistency and predictive accuracy are related but distinct properties. At the plant scale, joint projection generally improves agreement with the mechanistic reference and provides a coherent representation of the connected treatment system. The surrogate also enables faster initial exploration of operating alternatives. However, independent mechanistic evaluation shows that the faster surrogate searches do not necessarily produce decisions as good as those obtained through direct mechanistic optimization. Thus, computational speed, physical validity, predictive accuracy, interpretability, and decision quality cannot be treated as interchangeable evidence.
+
+The main contribution of this work is therefore not simply a faster activated sludge model, but a transparent and physically checked workflow for using surrogate models in process analysis and optimization. The framework allows rapid generation and screening of candidate operating conditions while preserving component-level information, enforcing declared physical requirements, exposing the structure of an interpretable prediction, and retaining the mechanistic model as the final reference for important operating decisions. In doing so, the study provides a clearer basis for determining what a surrogate predicts well, what physical properties it guarantees, how its response can be interpreted, and whether the decisions made with it remain acceptable when evaluated with the original process model. The findings establish this framework for simulated steady-state activated sludge systems and provide a basis for future extensions to uncertainty-aware prediction, dynamic operation, adaptive sampling, and validation with measured plant data.
 
 \paragraph*{Keywords.} activated sludge process, machine learning, statistical surrogate, physics enforcement, wastewater treatment, mass conservation, non-negativity, interpretable regression, process optimization.
 
@@ -276,4 +282,39 @@ Symbols specific to a formulation are defined with their equations. A numerical 
 \backmatter
 \bibliographystyle{bibstyles/apacite_dissertation}
 \bibliography{references}
+
+\chapter*{About the Author}
+\addcontentsline{toc}{chapter}{About the Author}
+\markboth{About the Author}{About the Author}
+
+\begin{center}
+\includegraphics[width=0.32\textwidth]{eselerio_photo.jpg}
+\end{center}
+
+Egberto F. Selerio Jr. obtained his Bachelor of Science degree in Industrial Engineering from the University
+of San Jose-Recoletos, Philippines. He obtained his Master of Science degree in Industrial Engineering from
+the University of San Carlos--Talamban, Philippines. He has published 28 journal articles in applied
+operations research, data science, and environmental engineering, with an H-index of 18. He is presently a
+senior data scientist at Arch, an S\&P 500 insurance company, and a student in the Doctor of Engineering
+program at the University of San Carlos--Talamban, Philippines.
+
+\cleardoublepage
+\chapter*{List of Publications and Presentations}
+\addcontentsline{toc}{chapter}{List of Publications and Presentations}
+\markboth{List of Publications and Presentations}{List of Publications and Presentations}
+
+\section*{Publication}
+
+Selerio, E. F. (2026). An interpretable statistical surrogate of activated sludge systems that preserves mass
+conservation and component non-negativity. \textit{Digital Chemical Engineering, 20}, Article 100329.
+doi: 10.1016/j.dche.2026.100329
+
+Selerio, E. (2026, October 5). Plant-wide optimization of activated sludge systems using a physically constrained statistical surrogate. \textit{SSRN}. doi: 10.2139/ssrn.7567818
+
+\section*{Presentation}
+
+Selerio, E. F. (2023, April 21--22). \textit{Mass transport, biofilm accumulation, and biotransformation in
+recycling down-flow hanging sponge systems} [Poster presentation]. 4th International Conference on Sustainable
+Energy Ecosystems (SEECON 2023), University of San Carlos--Talamban Campus, Cebu City, Philippines.
+
 \end{document}
