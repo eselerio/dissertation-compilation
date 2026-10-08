@@ -560,7 +560,8 @@ def verify_dissertation(pdf_path: Path) -> None:
     log = (archive / "manuscript.log").read_text(encoding="utf-8", errors="replace")
     assert not re.search(r"^!|Overfull|undefined citations|undefined references|multiply defined|(?:Error|Warning)[^\n]*not found", log, re.MULTILINE)
     bibliography_log = (archive / "manuscript.blg").read_text(encoding="utf-8", errors="replace")
-    assert "The style file: apacite_dissertation.bst" in bibliography_log
+    style_entry = re.search(r"^The style file:\s*(.+)$", bibliography_log, re.MULTILINE)
+    assert style_entry is not None and Path(style_entry.group(1).strip()).name == "apacite_dissertation.bst"
     assert "error message" not in bibliography_log and "Warning--" not in bibliography_log
     audit = runpy.run_path(str(ROOT / ".codex-work" / "audit_manuscript.py"))["out"]
     assert not audit["undefined_citations"] and not audit["missing_crossreferences"] and not audit["duplicate_labels"]

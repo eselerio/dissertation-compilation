@@ -7,8 +7,8 @@
     "projection": 53,
     "icsor": 71
   },
-  "citation_instances": 418,
-  "unique_cited": 148,
+  "citation_instances": 550,
+  "unique_cited": 147,
   "undefined_citations": [],
   "uncited_component_references": [
     "Ahn2014",
@@ -18,6 +18,7 @@
     "Geiss2022",
     "Khatri2020",
     "Kim2009",
+    "Lakshminarayanan2017",
     "Li2020",
     "Lim2011",
     "Liu2021",
@@ -60,6 +61,7 @@
     "Khatri2020",
     "Kim2009",
     "Laine1999",
+    "Lakshminarayanan2017",
     "Li2020",
     "Li2022",
     "Liang2021",
@@ -110,19 +112,19 @@
   "hygiene_flags": {
     "article\\chapters\\04_prediction_projection.tex": [
       {
-        "line": 589,
+        "line": 645,
         "text": "\\section{Results}"
       }
     ],
     "article\\chapters\\05_interpretable_surrogate.tex": [
       {
-        "line": 1012,
+        "line": 1062,
         "text": "\\section{Results}"
       }
     ],
     "article\\chapters\\06_connected_plant.tex": [
       {
-        "line": 2117,
+        "line": 2127,
         "text": "\\section{Results}"
       }
     ]
@@ -135,18 +137,30 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 10
+        "line": 18
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2317
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 77
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 141
       }
     ],
     "Ahn2014": [],
     "Akiba2019": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 188
+        "line": 430
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 864
+        "line": 914
       }
     ],
     "Alex2008": [
@@ -160,11 +174,11 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 116
+        "line": 117
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 124
+        "line": 125
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -180,11 +194,43 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 383
+        "line": 8
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1143
+        "line": 10
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 121
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 391
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1151
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2251
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 35
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 70
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 89
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 133
       }
     ],
     "Alexandrov1998": [
@@ -198,7 +244,7 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 118
+        "line": 119
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -206,11 +252,27 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1236
+        "line": 1184
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 92
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1244
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2038
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 37
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 87
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 109
       }
     ],
     "Araujo2013": [
@@ -232,34 +294,34 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 82
+        "line": 92
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 10
+        "line": 18
       }
     ],
     "Argyriou2008": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 114
+        "line": 85
       }
     ],
     "ArikPfister2021": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 129
+        "line": 100
       }
     ],
     "Asadi2017": [],
     "AudetDennis2006": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1901
+        "line": 1911
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2315
+        "line": 2325
       }
     ],
     "BaAlawi2021": [],
@@ -267,13 +329,13 @@
     "Belkin2019": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 147
+        "line": 389
       }
     ],
     "Bergstra2011": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 864
+        "line": 914
       }
     ],
     "Bernardelli2020": [
@@ -282,8 +344,8 @@
         "line": 178
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 12
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 135
       }
     ],
     "Beucler2021": [
@@ -297,7 +359,7 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 750
+        "line": 758
       }
     ],
     "BhosekarIerapetritou2018": [
@@ -314,34 +376,98 @@
         "line": 194
       },
       {
+        "path": "article\\chapters\\03_reactor_foundations.tex",
+        "line": 547
+      },
+      {
         "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 18
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 921
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1281
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1307
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 14
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1804
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2001
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2051
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2111
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2125
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2309
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
         "line": 23
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 12
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 93
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1991
-      },
-      {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 10
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 143
       }
     ],
     "Bliek2023": [
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1844
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 921
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1307
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2099
+        "line": 1854
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2313
+        "line": 2109
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2111
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2323
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 93
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 143
       }
     ],
     "Borisov2024": [
@@ -351,25 +477,33 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 23
+        "line": 10
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 846
+        "line": 917
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 13
       }
     ],
     "Boyd2004": [
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 748
+        "path": "article\\chapters\\03_reactor_foundations.tex",
+        "line": 569
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 864
+        "line": 756
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 148
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 872
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 899
       }
     ],
     "Breiman2001": [
@@ -379,11 +513,11 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 86
+        "line": 57
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 856
+        "line": 906
       }
     ],
     "Brunton2016": [
@@ -393,7 +527,7 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 112
+        "line": 113
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -401,19 +535,19 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 166
+        "line": 8
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1004
+        "line": 176
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 96
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 864
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 154
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1054
       }
     ],
     "BuzziFerraris2013": [
@@ -422,18 +556,26 @@
         "line": 30
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1302
+        "path": "article\\chapters\\03_reactor_foundations.tex",
+        "line": 569
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 148
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 246
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 271
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1310
       }
     ],
     "Cawley2011": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 978
+        "line": 1028
       }
     ],
     "ChenGuestrin2016": [
@@ -443,51 +585,55 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 78
+        "line": 49
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 856
+        "line": 906
       }
     ],
     "Colson2007": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1236
+        "line": 1244
       }
     ],
     "Croll2023": [
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
         "line": 178
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 135
       }
     ],
     "Curteanu2011": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 127
+        "line": 98
       }
     ],
     "CurtissHirschfelder1952": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1654
+        "line": 1664
       }
     ],
     "Demsar2006": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 990
+        "line": 1040
       }
     ],
     "Drucker1997": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 84
+        "line": 55
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 856
+        "line": 906
       }
     ],
     "Duan2022": [
@@ -527,7 +673,11 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 12
+        "line": 14
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 141
       }
     ],
     "Fang2011": [
@@ -550,19 +700,23 @@
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
         "line": 223
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 14
       }
     ],
     "Geiss2022": [],
     "Geman1992": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 959
+        "line": 1009
       }
     ],
     "Geurts2006": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 86
+        "line": 57
       }
     ],
     "Guerrero2011": [
@@ -592,23 +746,23 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 12
+        "line": 10
       }
     ],
     "Guyon2011": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 978
+        "line": 1028
       }
     ],
     "Haddad2010": [
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 149
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 118
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 60
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 157
       }
     ],
     "Hameed2026": [
@@ -618,7 +772,19 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2301
+        "line": 1184
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2311
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 87
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 109
       }
     ],
     "Hansen2024": [
@@ -640,19 +806,23 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 6
+        "line": 14
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 830
+        "line": 901
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1239
+        "line": 16
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 156
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1289
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 121
       }
     ],
     "Harder2022": [
@@ -672,7 +842,7 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 8
+        "line": 6
       }
     ],
     "Hastie2009": [
@@ -681,22 +851,26 @@
         "line": 46
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 560
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1048
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1723
+        "line": 545
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 568
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1733
       }
     ],
     "He2023": [
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
         "line": 62
-      },
-      {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 12
       }
     ],
     "Henze1999": [
@@ -710,7 +884,7 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 164
+        "line": 174
       }
     ],
     "Henze2006": [
@@ -736,11 +910,11 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 104
+        "line": 105
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 158
+        "line": 159
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -775,8 +949,48 @@
         "line": 237
       },
       {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 6
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 633
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 911
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 6
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 86
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 259
+      },
+      {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 147
+        "line": 155
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2253
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 9
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 70
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 89
       }
     ],
     "Henze2008": [
@@ -794,23 +1008,51 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 116
+        "line": 117
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 8
+        "line": 6
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 121
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1162
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1180
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2255
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 79
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 141
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 141
       }
     ],
     "Hornik1989": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 127
+        "line": 98
       }
     ],
     "HuangfuHall2018": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 616
+        "line": 628
       }
     ],
     "JeppssonDiehl1996": [
@@ -828,11 +1070,31 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 250
+        "line": 8
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 367
+        "line": 10
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 258
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 375
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2253
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 35
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 89
       }
     ],
     "Karniadakis2021": [
@@ -842,17 +1104,21 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 546
+        "line": 602
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1058
       }
     ],
     "Kashinath2021": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 6
+        "line": 14
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 830
+        "line": 901
       }
     ],
     "Kaufman2012": [
@@ -870,27 +1136,31 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 108
+        "line": 109
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
         "line": 93
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1713
+        "path": "article\\chapters\\03_reactor_foundations.tex",
+        "line": 549
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 510
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1804
+        "line": 1723
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 134
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1814
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 138
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 139
       }
     ],
     "Ke2017": [
@@ -900,17 +1170,17 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 80
+        "line": 51
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 856
+        "line": 906
       }
     ],
     "KelleyKeyes1998": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1660
+        "line": 1670
       }
     ],
     "Khatri2020": [],
@@ -950,11 +1220,11 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 130
+        "line": 131
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 158
+        "line": 159
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -974,53 +1244,84 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 231
+        "line": 12
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 830
+        "line": 14
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 39
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 118
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 150
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 168
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 583
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 901
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 622
+        "line": 16
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1239
+        "line": 634
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1058
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1289
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 151
+        "line": 12
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2295
+        "line": 159
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 60
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2305
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 19
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 46
       }
     ],
     "Kraft1988": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1848
+        "line": 1858
       }
     ],
-    "Lakshminarayanan2017": [
-      {
-        "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 542
-      },
-      {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 156
-      }
-    ],
+    "Lakshminarayanan2017": [],
     "Leu2012": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1102
+        "line": 1110
       }
     ],
     "Li2020": [],
@@ -1039,7 +1340,7 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 750
+        "line": 758
       }
     ],
     "Lim2011": [],
@@ -1052,7 +1353,7 @@
     "Liu2009": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 114
+        "line": 85
       }
     ],
     "Liu2021": [],
@@ -1063,7 +1364,7 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 179
+        "line": 180
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -1071,21 +1372,29 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 82
+        "line": 92
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1004
+        "line": 1054
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 154
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 103
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 123
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 139
       }
     ],
     "Mack1981": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 102
+        "line": 73
       }
     ],
     "Madhav2019": [
@@ -1105,32 +1414,44 @@
         "line": 194
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 12
+        "path": "article\\chapters\\03_reactor_foundations.tex",
+        "line": 547
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 10
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 14
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1804
       }
     ],
     "McKay1979": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 27
+        "line": 334
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1583
+        "line": 1593
       }
     ],
     "Miederer2025": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1070
+        "line": 1078
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2309
+        "line": 2319
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 79
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 141
       }
     ],
     "Min2024": [
@@ -1143,6 +1464,22 @@
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
         "line": 156
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 8
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 176
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 728
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 543
       }
     ],
     "Newhart2019": [
@@ -1156,11 +1493,19 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 179
+        "line": 180
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
         "line": 44
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 103
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 139
       }
     ],
     "PadronPaez2020": [
@@ -1170,7 +1515,15 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 10
+        "line": 18
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2317
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 77
       }
     ],
     "Pedrozo2025": [
@@ -1184,7 +1537,7 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 118
+        "line": 119
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -1195,30 +1548,46 @@
         "line": 16
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 92
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2038
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2051
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2125
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2309
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 37
       }
     ],
     "Pinheiro2025": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 338
+        "line": 350
       }
     ],
     "Prokhorenkova2018": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 82
+        "line": 53
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 856
+        "line": 906
       }
     ],
     "Ragonneau2022": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1850
+        "line": 1860
       }
     ],
     "Raissi2019": [
@@ -1232,29 +1601,33 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 336
+        "line": 348
       }
     ],
     "Razaviyayn2013": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 459
+        "line": 471
       }
     ],
     "Ren2026": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1997
+        "line": 2007
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2301
+        "line": 2311
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 123
       }
     ],
     "Ruckstuhl2021": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 750
+        "line": 758
       }
     ],
     "Rudin2019": [
@@ -1267,18 +1640,26 @@
         "line": 152
       },
       {
-        "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 10
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 94
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1247
+        "line": 8
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1281
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1295
       }
     ],
     "Rumelhart1986": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 127
+        "line": 98
       }
     ],
     "Sadeghassadi2018": [],
@@ -1286,7 +1667,7 @@
     "Sahigara2012": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1207
+        "line": 1215
       }
     ],
     "Selerio2026": [
@@ -1336,23 +1717,23 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 110
+        "line": 111
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 112
+        "line": 113
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 132
+        "line": 133
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 158
+        "line": 159
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 177
+        "line": 178
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -1399,26 +1780,98 @@
         "line": 222
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 8
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 12
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 633
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 12
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
         "line": 14
       },
       {
-        "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 577
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 20
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 86
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 259
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 728
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 840
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1056
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 750
+        "line": 8
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1660
+        "line": 12
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 543
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 585
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 758
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 1670
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 27
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 31
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 48
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 127
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 129
       }
     ],
     "Shahbazi2026": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1729
+        "line": 1739
       }
     ],
     "Shen2023": [
@@ -1428,33 +1881,37 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 391
+        "line": 602
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 546
-      },
-      {
-        "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 848
+        "line": 919
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 10
+        "line": 8
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1229
+        "line": 864
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 96
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1279
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 31
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 129
       }
     ],
     "Shevchenko2024": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 990
+        "line": 1040
       }
     ],
     "ShwartzZiv2022": [
@@ -1464,17 +1921,17 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 23
+        "line": 10
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 846
+        "line": 917
       }
     ],
     "Simon2013": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 121
+        "line": 92
       }
     ],
     "SmolaScholkopf2004": [
@@ -1484,29 +1941,29 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 96
+        "line": 67
       }
     ],
     "Stellato2018": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 455
+        "line": 467
       }
     ],
     "Stellato2020": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 879
+        "line": 887
       }
     ],
     "StenstromSong1991": [
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 791
+        "line": 803
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1251
+        "line": 1299
       }
     ],
     "StrausSkogestad2018": [],
@@ -1518,7 +1975,7 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 110
+        "line": 111
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -1529,20 +1986,48 @@
         "line": 121
       },
       {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 16
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 39
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 168
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 583
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 907
+      },
+      {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 581
+        "line": 593
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 748
+        "line": 756
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 956
+        "line": 964
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2295
+        "line": 2305
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 21
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 115
       }
     ],
     "SturmWexler2020": [
@@ -1560,11 +2045,11 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 63
+        "line": 73
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 750
+        "line": 758
       }
     ],
     "SturmWexler2022": [
@@ -1574,7 +2059,7 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 158
+        "line": 159
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -1590,11 +2075,15 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 63
+        "line": 73
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 182
+        "line": 190
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 46
       }
     ],
     "Takacs1991": [
@@ -1604,7 +2093,7 @@
       },
       {
         "path": "article\\chapters\\01_research_problem.tex",
-        "line": 124
+        "line": 125
       },
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
@@ -1612,31 +2101,43 @@
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 250
+        "line": 258
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 353
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 133
       }
     ],
     "Tang2026": [],
     "Tofallis2015": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 581
+        "line": 589
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 619
       }
     ],
     "Tondel2003": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 962
+        "line": 970
       }
     ],
     "Tsochatzidi2025": [],
     "USEPA2009": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 202
+        "line": 210
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1054
+        "line": 1062
       }
     ],
     "Utkarsh2025": [
@@ -1645,8 +2146,8 @@
         "line": 142
       },
       {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 156
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 121
       }
     ],
     "Valente2025": [
@@ -1660,15 +2161,11 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 391
-      },
-      {
-        "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 848
+        "line": 919
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 750
+        "line": 758
       }
     ],
     "VieringLoog2023": [
@@ -1682,33 +2179,45 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 147
+        "line": 10
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 540
+        "line": 389
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 846
+        "line": 596
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 917
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 959
+        "line": 18
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1229
+        "line": 1009
+      },
+      {
+        "path": "article\\chapters\\05_interpretable_surrogate.tex",
+        "line": 1279
+      },
+      {
+        "path": "article\\chapters\\07_conclusion_outlook.tex",
+        "line": 13
       }
     ],
     "WachterBiegler2006": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1397
+        "line": 1405
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1905
+        "line": 1915
       }
     ],
     "Wang2025": [
@@ -1731,6 +2240,10 @@
       {
         "path": "article\\chapters\\02_integrated_literature.tex",
         "line": 222
+      },
+      {
+        "path": "article\\chapters\\04_prediction_projection.tex",
+        "line": 8
       }
     ],
     "Wentzel1992": [
@@ -1744,11 +2257,15 @@
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 12
+        "line": 10
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 1251
+        "line": 1299
+      },
+      {
+        "path": "article\\chapters\\06_connected_plant.tex",
+        "line": 2255
       }
     ],
     "Wold2001": [
@@ -1758,11 +2275,11 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 104
+        "line": 75
       },
       {
         "path": "article\\chapters\\05_interpretable_surrogate.tex",
-        "line": 856
+        "line": 906
       }
     ],
     "Woo2009": [
@@ -1772,7 +2289,7 @@
       },
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 104
+        "line": 75
       }
     ],
     "Xiao2026": [],
@@ -1780,7 +2297,7 @@
     "Yang2021": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 104
+        "line": 75
       }
     ],
     "Yang2025": [],
@@ -1788,35 +2305,31 @@
     "Yuan2006": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 114
+        "line": 85
       }
     ],
     "Zhang2026": [
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 102
+        "line": 110
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1054
+        "line": 1062
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 1070
+        "line": 1078
       },
       {
         "path": "article\\chapters\\06_connected_plant.tex",
-        "line": 2309
-      },
-      {
-        "path": "article\\chapters\\07_assessment_framework.tex",
-        "line": 138
+        "line": 2319
       }
     ],
     "Zou2005": [
       {
         "path": "article\\chapters\\04_prediction_projection.tex",
-        "line": 121
+        "line": 92
       }
     ]
   },
@@ -2040,5 +2553,5 @@
     "Zou2005": "10.1111/j.1467-9868.2005.00503.x",
     "Seggelke1999": "10.1016/s0273-1223(99)00073-6"
   },
-  "total_source_characters": 606587
+  "total_source_characters": 622237
 }

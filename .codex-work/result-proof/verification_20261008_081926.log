@@ -1,0 +1,160 @@
+﻿Chapter 6: eight figures and 11 selected scenarios verified; holdout nRMSE 0.04690 -> 0.04306; 30/32 location-composite errors improve
+{
+  "chapters": 7,
+  "bibliography_entries": 218,
+  "component_reference_count": 130,
+  "source_counts": {
+    "optimization": 50,
+    "projection": 53,
+    "icsor": 71
+  },
+  "citation_instances": 550,
+  "unique_cited": 147,
+  "undefined_citations": [],
+  "uncited_component_references": [
+    "Ahn2014",
+    "Asadi2017",
+    "BaAlawi2021",
+    "Bagherzadeh2021",
+    "Geiss2022",
+    "Khatri2020",
+    "Kim2009",
+    "Lakshminarayanan2017",
+    "Li2020",
+    "Lim2011",
+    "Liu2021",
+    "Mao2024",
+    "Sadeghassadi2018",
+    "SadriMoghaddamMesghali2023",
+    "StrausSkogestad2018",
+    "Sturm2023",
+    "Tang2026",
+    "Tsochatzidi2025",
+    "Xiao2026",
+    "Yang2014",
+    "Yang2025",
+    "Yilmaz2007"
+  ],
+  "uncited_bibliography_entries": [
+    "Ahn2014",
+    "Asadi2017",
+    "BaAlawi2021",
+    "Bagherzadeh2021",
+    "Barker1997",
+    "BressaniRibeiro2021",
+    "Caro2024",
+    "DamalerioRemoval2022",
+    "DiezMontero2019",
+    "Fall2015",
+    "Galan1998",
+    "Galan1999",
+    "Geiss2022",
+    "GuelliSouza2011",
+    "Gutterres2010",
+    "Hansen2018",
+    "Hatamoto2018",
+    "Hellal2021",
+    "Hu2007",
+    "JainKar2017",
+    "Jana2022",
+    "Jasim2020",
+    "Kasi2011",
+    "Khatri2020",
+    "Kim2009",
+    "Laine1999",
+    "Lakshminarayanan2017",
+    "Li2020",
+    "Li2022",
+    "Liang2021",
+    "Lim2011",
+    "Liu2021",
+    "Luan2023",
+    "Machdar1997",
+    "Mahmoud2010",
+    "Mahmoud2011",
+    "Mahmoud2018",
+    "ManavDemir2024",
+    "Mao2024",
+    "Nasr2022",
+    "Nelson2009",
+    "Niu2022",
+    "Poch1993",
+    "Poh2016",
+    "Rapi2021",
+    "Rieger2001",
+    "Sadeghassadi2018",
+    "SadriMoghaddam2021",
+    "SadriMoghaddamMesghali2023",
+    "Seggelke1999",
+    "Selerio2022",
+    "Shojaei2021",
+    "Simsek2012",
+    "StrausSkogestad2018",
+    "Sturm2023",
+    "Szelag2022",
+    "Tang2026",
+    "Tawfik2006",
+    "Tawfik2010",
+    "Tosarkani2020",
+    "Tsochatzidi2025",
+    "Tyagi2021",
+    "VanLoosdrecht2015",
+    "Waqas2022",
+    "Wu2016",
+    "Xiao2026",
+    "Xu2015",
+    "Yang2014",
+    "Yang2025",
+    "Ye2019",
+    "Yilmaz2007"
+  ],
+  "missing_crossreferences": [],
+  "duplicate_labels": [],
+  "hygiene_flags": {
+    "article\\chapters\\04_prediction_projection.tex": [
+      {
+        "line": 645,
+        "text": "\\section{Results}"
+      }
+    ],
+    "article\\chapters\\05_interpretable_surrogate.tex": [
+      {
+        "line": 1062,
+        "text": "\\section{Results}"
+      }
+    ],
+    "article\\chapters\\06_connected_plant.tex": [
+      {
+        "line": 2127,
+        "text": "\\section{Results}"
+      }
+    ]
+  },
+  "total_source_characters": 622237
+}
+python.exe : Traceback (most recent call last):
+At line:1 char:42
++ ... 'Continue'; & "c:/Users/eselerio/Music/dissertation-compilation/.venv ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last) 
+   ::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\eselerio\Music\dissertation-compilation\.codex-work\generate_d
+issertation_results.py", line 661, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\eselerio\Music\dissertation-compilation\.codex-work\generate_d
+issertation_results.py", line 649, in main
+    verify_dissertation(arguments.verify_pdf)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eselerio\Music\dissertation-compilation\.codex-work\generate_d
+issertation_results.py", line 631, in verify_dissertation
+    report = {"pdf": str(pdf_path.relative_to(ROOT)), "pdf_pages": 
+len(document),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\eselerio\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64
+-none\Lib\pathlib\__init__.py", line 490, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'docs\\latex_pdfs\\20261008_081926\\manuscript.pdf' is not in the 
+subpath of 'C:\\Users\\eselerio\\Music\\dissertation-compilation'
