@@ -1,0 +1,232 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Abstract}{vii}{chapter*.1}%
+\contentsline {chapter}{List of Equations}{xxv}{chapter*.6}%
+\contentsline {chapter}{Principal Symbols}{xxxv}{chapter*.7}%
+\contentsline {chapter}{\numberline {1}Introduction and Research Purpose}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background and rationale}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Wastewater treatment as an engineering need}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}From process modeling to repeated operating calculations}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Why accurate prediction is insufficient}{4}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Rationale for the research}{6}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Statement of the problem}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Uncertain agreement with the complete component response}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Mass conservation and non-negativity are not established by training alone}{7}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}A visible regression structure can still be difficult to interpret}{7}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Unit predictions do not establish the quality of plant decisions}{8}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Research questions and objectives}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Significance of the study}{9}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Scientific significance}{9}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Methodological significance}{9}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Engineering and practical significance}{10}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Significance for further research}{11}{subsection.1.4.4}%
+\contentsline {section}{\numberline {1.5}Contributions of the research}{11}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Research framework}{12}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Scope and limitations}{14}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Review of Related Literature}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Mechanistic foundations of activated sludge modeling}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Development of component and nutrient models}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Biological dependence and calibration uncertainty}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Clarification and connected plant balances}{17}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Data-driven prediction of wastewater treatment responses}{18}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Soft sensors and reported treatment quantities}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Component estimation and simulation-based surrogates}{19}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Model comparison, data availability, and extrapolation}{21}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Methods for imposing physical constraints on predictions}{23}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Physical guidance during fitting}{23}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Conservation through model construction}{23}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Projection after statistical prediction}{24}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Constraint scope and recent extensions}{25}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Interpretable modeling of treatment responses}{27}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Inspection of inputs and fitted relationships}{27}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Structured regression and the final projected state}{28}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Surrogate modeling for operating decisions}{29}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Mechanistic and learned routes to operating optimization}{29}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Integrated resource recovery and connected responses}{30}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Approximation error at selected operating conditions}{31}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Synthesis of established contributions and remaining gaps}{32}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}What the reviewed studies have addressed}{32}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}The four linked questions of the dissertation}{32}{subsection.2.6.2}%
+\contentsline {chapter}{\numberline {3}Mechanistic Foundations of Physically Admissible Prediction}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The component state as the object of prediction}{37}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Reading component vectors and matrix operations}{38}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Biological meaning of the component transformations}{40}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Electron donors, electron acceptors, and biomass}{41}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Nitrogen transformations and their oxygen requirements}{42}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}From elemental accounting to the adopted state basis}{43}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Process transformations and their rates}{43}{section.3.3}%
+\contentsline {section}{\numberline {3.4}The steady-state reactor boundary}{46}{section.3.4}%
+\contentsline {section}{\numberline {3.5}From stoichiometry to mass conservation invariants}{48}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Reaction progress and the feasible state geometry}{52}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Reported water quality quantities and hidden component errors}{55}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Mixing and spatial transport as model boundaries}{57}{section.3.8}%
+\contentsline {section}{\numberline {3.9}A common basis for assessing surrogate responses}{58}{section.3.9}%
+\contentsline {chapter}{\numberline {4}Learning the Reactor Response and Enforcing Physical Admissibility}{61}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Rationale}{61}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Theory}{63}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Reactor inputs and raw predictions}{63}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Statistical response models}{64}{subsection.4.2.2}%
+\contentsline {subsubsection}{Boosting and randomized tree ensembles}{64}{section*.18}%
+\contentsline {subsubsection}{Kernel, neighborhood, and latent-variable regression}{66}{section*.19}%
+\contentsline {subsubsection}{Shared sparse coefficient models}{67}{section*.20}%
+\contentsline {subsubsection}{Neural predictors}{68}{section*.21}%
+\contentsline {subsection}{\numberline {4.2.3}Simultaneous physical requirements}{69}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}The Kircher--Votsmeier projection for mass conservation and non-negativity}{70}{subsection.4.2.4}%
+\contentsline {subsubsection}{A positive provisional target and relative-error geometry}{70}{section*.23}%
+\contentsline {subsubsection}{Selecting a candidate that satisfies mass conservation}{71}{section*.24}%
+\contentsline {subsubsection}{The largest feasible interpolation toward the candidate}{74}{section*.26}%
+\contentsline {subsubsection}{Numerical acceptance and returned predictions}{75}{section*.27}%
+\contentsline {section}{\numberline {4.3}Methodology}{76}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Constructing a mechanistic learning domain}{76}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Preprocessing and validation without response leakage}{79}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Hyperparameter selection}{82}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Evaluation of error, feasibility, and projection size}{84}{subsection.4.3.4}%
+\contentsline {subsubsection}{Component errors on a training-defined scale}{84}{section*.33}%
+\contentsline {subsubsection}{Violation frequencies and their magnitudes}{85}{section*.34}%
+\contentsline {subsubsection}{Paired accuracy effects and displacement}{87}{section*.35}%
+\contentsline {subsection}{\numberline {4.3.5}Testing inputs beyond the learning domain}{88}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Computational cost assessment}{89}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Results}{90}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Mechanistic reference-state checks}{90}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Prediction within the learning domain}{91}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Response to the amount of training data}{93}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Physical enforcement and component redistribution}{95}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Prediction beyond the learning domain}{97}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Fitting and prediction costs}{100}{subsection.4.4.6}%
+\contentsline {section}{\numberline {4.5}Discussion}{101}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Mass conservation and prediction error}{101}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Statistical accuracy and physical admissibility}{102}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Why enforcement can increase prediction error}{103}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Data support, extrapolation, and practical use}{104}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Data Availability}{105}{subsection.4.5.5}%
+\contentsline {chapter}{\numberline {5}Interpretable Regression with Checked Physical Predictions}{107}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Rationale}{107}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Theory}{109}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Mass conservation in the adopted state space}{109}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}A partitioned second-order driver}{110}{subsection.5.2.2}%
+\contentsline {subsubsection}{Separating operation from loading}{110}{section*.50}%
+\contentsline {subsubsection}{Illustrative operating and loading effects}{113}{section*.51}%
+\contentsline {subsubsection}{Symmetry and the meaning of cross terms}{113}{section*.52}%
+\contentsline {subsection}{\numberline {5.2.3}Learned coupling among effluent components}{114}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Methodology}{116}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Fitting in prediction space}{116}{subsection.5.3.1}%
+\contentsline {subsubsection}{The coupled training objective}{116}{section*.53}%
+\contentsline {subsubsection}{Deterministic block updates}{118}{section*.54}%
+\contentsline {subsubsection}{Descent, stopping, and numerical safeguards}{121}{section*.55}%
+\contentsline {subsection}{\numberline {5.3.2}Checked deployment}{123}{subsection.5.3.2}%
+\contentsline {subsubsection}{The raw coupled state}{123}{section*.58}%
+\contentsline {subsubsection}{Affine projection for mass conservation}{124}{section*.59}%
+\contentsline {subsubsection}{Joint mass conservation and non-negativity}{125}{section*.60}%
+\contentsline {subsubsection}{Illustrative projection and the failure of clipping}{127}{section*.61}%
+\contentsline {subsection}{\numberline {5.3.3}Interpreting the complete prediction map}{127}{subsection.5.3.3}%
+\contentsline {subsubsection}{Driver coefficients and back projection}{127}{section*.63}%
+\contentsline {subsubsection}{Analytical jacobians of the raw regression}{130}{section*.65}%
+\contentsline {subsubsection}{Sensitivity after the affine projection}{132}{section*.66}%
+\contentsline {subsubsection}{Active constraints in the final projection}{133}{section*.67}%
+\contentsline {subsubsection}{Following sensitivity through projection}{134}{section*.68}%
+\contentsline {subsection}{\numberline {5.3.4}Assessment design for the structured regression}{135}{subsection.5.3.4}%
+\contentsline {subsubsection}{Common inputs and comparator models}{135}{section*.70}%
+\contentsline {subsubsection}{Training partitions and hyperparameter selection}{136}{section*.71}%
+\contentsline {subsubsection}{Scoring states and physical diagnostics}{137}{section*.73}%
+\contentsline {subsubsection}{Composite error measures}{138}{section*.74}%
+\contentsline {subsubsection}{Repeated sample-size assessment}{139}{section*.75}%
+\contentsline {subsection}{\numberline {5.3.5}Interpretability assessment}{141}{subsection.5.3.5}%
+\contentsline {section}{\numberline {5.4}Results}{142}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Accuracy on the fixed held-out partition}{142}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Sample efficiency and generalization}{143}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Physical checks and deployment branches}{145}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Computational effort}{147}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Inspectable coefficient structure}{148}{subsection.5.4.5}%
+\contentsline {section}{\numberline {5.5}Discussion}{150}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}A structured approximation under limited data}{150}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Fitting guidance and final-state enforcement}{151}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}What the coefficient structure explains}{151}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Engineering implications}{152}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.5}Data Availability}{152}{subsection.5.5.5}%
+\contentsline {chapter}{\numberline {6}Connected plant surrogates and operating optimization}{153}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Rationale}{153}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Theory}{155}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Hydraulic connections and reactor inventories}{155}{subsection.6.2.1}%
+\contentsline {subsubsection}{Flow through the treatment train}{155}{section*.88}%
+\contentsline {subsubsection}{Biological conversion and non-negativity}{158}{section*.90}%
+\contentsline {subsubsection}{Stage invariants and the external plant balance}{158}{section*.91}%
+\contentsline {subsection}{\numberline {6.2.2}Clarification and solids storage}{161}{subsection.6.2.2}%
+\contentsline {subsubsection}{A nonreactive separator with two outlet flows}{161}{section*.92}%
+\contentsline {subsubsection}{The layer-resolved mechanistic model}{163}{section*.93}%
+\contentsline {subsubsection}{An exact interval for aggregate inventory under the endpoint envelope}{164}{section*.94}%
+\contentsline {subsection}{\numberline {6.2.3}Statistical prediction of the connected response}{166}{subsection.6.2.3}%
+\contentsline {subsubsection}{A response that preserves network and storage information}{166}{section*.96}%
+\contentsline {subsubsection}{Complete second-order features and ridge estimation}{167}{section*.98}%
+\contentsline {subsubsection}{A separate positive model for overflow solids}{170}{section*.99}%
+\contentsline {subsection}{\numberline {6.2.4}Joint projection onto the declared plant constraints}{171}{subsection.6.2.4}%
+\contentsline {subsubsection}{Equalities and inequalities at fixed controls}{171}{section*.100}%
+\contentsline {subsubsection}{The scaled nearest-response problem}{173}{section*.101}%
+\contentsline {subsubsection}{An independently auditable optimality certificate}{174}{section*.103}%
+\contentsline {subsubsection}{Error bounds in the projection metric}{177}{section*.104}%
+\contentsline {subsubsection}{Control-dependent sensitivities}{179}{section*.105}%
+\contentsline {subsection}{\numberline {6.2.5}Treatment priorities, resource measures, and operating safeguards}{181}{subsection.6.2.5}%
+\contentsline {subsubsection}{A common engineering objective}{181}{section*.106}%
+\contentsline {subsubsection}{Solids retention time and clarifier loading}{183}{section*.108}%
+\contentsline {subsubsection}{Trust diagnostics for operating search}{184}{section*.109}%
+\contentsline {subsection}{\numberline {6.2.6}Bounded products and convex relaxation}{187}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.7}A direct mechanistic comparator}{188}{subsection.6.2.7}%
+\contentsline {subsubsection}{The full-state constrained optimization problem}{188}{section*.110}%
+\contentsline {subsubsection}{Smooth switches and continuation}{189}{section*.111}%
+\contentsline {subsubsection}{Jacobian structure and globalization}{190}{section*.112}%
+\contentsline {section}{\numberline {6.3}Methodology}{192}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Case-study domain and fixed parameters}{192}{subsection.6.3.1}%
+\contentsline {subsubsection}{Topology and free controls}{192}{section*.113}%
+\contentsline {subsubsection}{Fresh-influent intervals}{193}{section*.115}%
+\contentsline {subsubsection}{Stoichiometric, kinetic, and settling parameters}{194}{section*.117}%
+\contentsline {subsection}{\numberline {6.3.2}Mechanistic sampling, fitting, and prediction assessment}{194}{subsection.6.3.2}%
+\contentsline {subsubsection}{Simulation groups and accepted cases}{194}{section*.122}%
+\contentsline {subsubsection}{Two initial states and the nonsmoothed steady solve}{197}{section*.124}%
+\contentsline {subsubsection}{Fold-local fitting and two separately selected penalties}{200}{section*.126}%
+\contentsline {subsubsection}{Scientific admission and projection audits}{201}{section*.127}%
+\contentsline {subsubsection}{Prediction metrics and their denominators}{202}{section*.129}%
+\contentsline {subsection}{\numberline {6.3.3}Operating searches and convergence evidence}{204}{subsection.6.3.3}%
+\contentsline {subsubsection}{A common baseline and an explicit basin-sensitivity experiment}{204}{section*.130}%
+\contentsline {subsubsection}{Surrogate search and derivative fallback}{205}{section*.131}%
+\contentsline {subsubsection}{First-order evidence and finite-resolution polling}{205}{section*.133}%
+\contentsline {subsubsection}{Direct continuation, recovery, and endpoint checks}{207}{section*.134}%
+\contentsline {subsection}{\numberline {6.3.4}Independent mechanistic verification and fair comparison}{208}{subsection.6.3.4}%
+\contentsline {subsubsection}{Evaluation at fixed selected controls}{208}{section*.137}%
+\contentsline {subsubsection}{Native and common-reference objectives}{210}{section*.138}%
+\contentsline {subsubsection}{Validity, engineering eligibility, and failures}{212}{section*.139}%
+\contentsline {subsubsection}{Influent scenarios and time accounting}{213}{section*.141}%
+\contentsline {section}{\numberline {6.4}Results}{214}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Accepted development and holdout states}{215}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Aggregate and local holdout accuracy}{215}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Parity across the connected treatment system}{217}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Physical audits and search qualifications}{218}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {6.4.5}Prediction fidelity at selected controls}{218}{subsection.6.4.5}%
+\contentsline {subsection}{\numberline {6.4.6}Treatment outcomes and operating choices}{219}{subsection.6.4.6}%
+\contentsline {subsection}{\numberline {6.4.7}Mechanistic treatment-train profiles}{220}{subsection.6.4.7}%
+\contentsline {subsection}{\numberline {6.4.8}Quality and resource trade-offs}{220}{subsection.6.4.8}%
+\contentsline {subsection}{\numberline {6.4.9}Optimization time}{224}{subsection.6.4.9}%
+\contentsline {section}{\numberline {6.5}Discussion}{224}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Connected enforcement and its statistical benefit}{224}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Holdout accuracy and selected-decision fidelity}{225}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Decision quality under declared priorities}{225}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Computational performance and operating assessment}{226}{subsection.6.5.4}%
+\contentsline {subsection}{\numberline {6.5.5}Data Availability}{226}{subsection.6.5.5}%
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{227}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Synthesis of the research findings}{227}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Complete reactor prediction and data availability}{227}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Physical enforcement and its consequences}{228}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Interpretation of the complete regression response}{229}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Connected prediction and operating decisions}{229}{subsection.7.1.4}%
+\contentsline {section}{\numberline {7.2}Contributions and gaps addressed}{230}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Practical implications}{232}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Treatment and resource priorities}{232}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}A verified decision workflow}{233}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Computational value}{233}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Directions for future research}{234}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Adaptive sampling around operating decisions}{234}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Projection aligned with treatment priorities}{234}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Uncertainty-aware prediction and operating safeguards}{235}{subsection.7.4.3}%
+\contentsline {subsection}{\numberline {7.4.4}Stable interpretation of the complete response}{235}{subsection.7.4.4}%
+\contentsline {subsection}{\numberline {7.4.5}Dynamic prediction and control}{235}{subsection.7.4.5}%
+\contentsline {subsection}{\numberline {7.4.6}Plant validation, topology, and resource models}{236}{subsection.7.4.6}%
+\contentsline {section}{\numberline {7.5}Concluding perspective}{237}{section.7.5}%
+\contentsline {chapter}{About the Author}{253}{chapter*.154}%
+\contentsline {chapter}{List of Publications and Presentations}{255}{chapter*.155}%
