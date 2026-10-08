@@ -17,6 +17,8 @@ systems for process optimization.
 - `article/guidelines/` — outline, writing guidance, and style references.
 - `docs/latex_pdfs/` — timestamped build archives created by the PDF build
   workflow. This directory is intentionally ignored by Git.
+- [.codex-work/README.md](.codex-work/README.md) — working-artifact navigation,
+  folder purposes, naming rules, and maintenance instructions for Codex.
 - `article/compile/optimization/results/figures/README.md` — documentation for
   the optimization-results figure package and its source-data mapping.
 
@@ -57,7 +59,9 @@ PDF after bibliography changes.
 ## Generated and working files
 
 Temporary validation runs and intermediate working material belong in
-`.codex-work/`. Do not commit LaTeX auxiliary files (`.aux`, `.log`, `.toc`,
+`.codex-work/`, following its [workspace guide](.codex-work/README.md).
+Do not commit newly generated LaTeX auxiliary files (`.aux`, `.log`, `.toc`,
 and similar) or local build environments. The root `.gitignore` already
 excludes the main documentation-build output directory and the local visual
-environment.
+environment and runtime caches. Existing workspace build records are retained
+as historical evidence.

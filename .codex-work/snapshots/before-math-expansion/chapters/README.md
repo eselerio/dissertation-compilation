@@ -1,0 +1,17 @@
+# chapters
+
+Preserved baseline chapters files from the parent snapshot. Keep original contents and filenames.
+
+[Parent guide](../README.md) | [Workspace guide](../../../README.md)
+
+## Contents
+
+- [01_research_problem.tex](01_research_problem.tex)
+- [02_integrated_literature.tex](02_integrated_literature.tex)
+- [03_reactor_foundations.tex](03_reactor_foundations.tex)
+- [04_prediction_projection.tex](04_prediction_projection.tex)
+- [05_interpretable_surrogate.tex](05_interpretable_surrogate.tex)
+- [06_connected_plant.tex](06_connected_plant.tex)
+- [07_assessment_framework.tex](07_assessment_framework.tex)
+
+These artifacts are historical evidence. Check `article/` for maintained manuscript sources.

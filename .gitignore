@@ -1,5 +1,11 @@
 # Repository-specific generated files
-.codex-work/visual-env/
+.codex-work/visual-env/*
+!.codex-work/visual-env/README.md
+.codex-work/runtime/*
+!.codex-work/runtime/README.md
+!.codex-work/runtime/python-cache/
+.codex-work/runtime/python-cache/*
+!.codex-work/runtime/python-cache/README.md
 docs/
 
 # Python bytecode and caches
