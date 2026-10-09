@@ -15,7 +15,7 @@ The second gap concerns the operating decision obtained from this connected resp
 
 Independent evaluation of selected controls is therefore a separate requirement. The surrogate comparisons of \citet{Pedrozo2025} distinguish predictive accuracy from optimization behavior, while the approximation-management methods of \citet{Hameed2026} retain checks against the original model. These contributions motivate evaluating the mechanistic plant response at the controls selected by each optimization route. The relevant evidence includes the resulting effluent concentrations, the objective calculated on a common reference basis, and satisfaction of the original engineering requirements. The availability of a candidate decision and the numerical certification of the search are also different outcomes. Failed searches must remain visible when the practical usefulness of a route is assessed.
 
-The meaning of an operating comparison also depends on the priorities embedded in its objective. \citet{Araujo2013} examine constrained economic operation, while \citet{PadronPaez2020} and \citet{Aboagye2021} connect treatment performance with resource use. Two optimization routes can therefore prefer different controls because one accepts greater resource demand to obtain better treatment. A meaningful comparison must use common priorities, common control bounds, and common mechanistic evaluation. It should also separate treatment-quality and resource contributions so that the source of a lower objective remains visible. A lower objective is a result under the declared preferences. It does not imply that every effluent quantity or every resource demand is lower.
+The meaning of an operating comparison also depends on the priorities embedded in its objective. \citet{Araujo2013} examine constrained economic operation, while \citet{PadronPaez2020} and \citet{Aboagye2021} connect treatment performance with resource use. Two optimization routes can therefore prefer different controls because one accepts greater resource demand to obtain better treatment. A meaningful comparison must use common priorities, common control bounds, and common mechanistic evaluation. It should also separate treatment-quality and resource contributions so that the source of a lower objective remains visible. A lower objective is a result under the declared preferences; it does not imply that every effluent quantity or every resource demand is lower.
 
 Capacity selection is particularly important in the present study. At fixed fresh-influent flow, changing HRT changes the biological reactor volume. The resulting problem therefore combines capacity selection with aeration, recycle, and wasting decisions. It is not equivalent to adjusting the operation of an installed plant whose tanks are already fixed. The resource terms used below are engineering proxies for comparing the declared alternatives rather than measured electricity bills or full facility costs. These boundaries define the practical meaning of the optimization results and prevent a numerical objective from being interpreted as a demonstrated field saving.
 
@@ -92,7 +92,7 @@ node[below,lab,text=plantorange] {Waste sludge: $wQ_0,c_U$};
 \draw[->,thick,draw=plantorange] (underflow)--(0,-1.62)--(mix.south)
 node[pos=.48,below,lab,text=plantorange] {Return sludge: $r_RQ_0,c_U$};
 \end{tikzpicture}}
-\caption{Connected plant boundary with $n_r$ biological reactors and $L$ clarifier layers. Blue arrows show the treatment path, purple the mixed-liquor recycle, and orange the clarifier underflow split into return and waste sludge. Intermediate reactors and layers are omitted for clarity. All flow ratios use fresh-influent flow as their basis. The operating case study uses five reactors and ten layers. Its aeration duties are specified in Methodology.}
+\caption{Connected plant boundary with $n_r$ biological reactors and $L$ clarifier layers. Blue arrows show the treatment path, purple the mixed-liquor recycle, and orange the clarifier underflow split into return and waste sludge. Intermediate reactors and layers are omitted for clarity. All flow ratios use fresh-influent flow as their basis. The operating case study uses five reactors and ten layers; its aeration duties are specified in Methodology.}
 \label{fig:plant_configuration}
 \end{figure}
 
@@ -470,7 +470,7 @@ M_{\rm cl}^{-}&=600(9X_E+X_U),\\
 \equationname{Upper inventory bound for the illustrative ten-layer clarifier}
 M_{\rm cl}^{+}&=600(X_E+9X_U).
 \end{align}
-At the lower endpoint, nine layers are at $X_E$ and one is at $X_U$. At the upper endpoint, one layer is at $X_E$ and nine are at $X_U$. This makes the coefficients in the compact interval physically transparent rather than treating them as fitted constants.
+At the lower endpoint, nine layers are at $X_E$ and one is at $X_U$; at the upper endpoint, one layer is at $X_E$ and nine are at $X_U$. This makes the coefficients in the compact interval physically transparent rather than treating them as fitted constants.
 
 \subsection{Statistical prediction of the connected response}
 
@@ -630,7 +630,7 @@ A small example clarifies the interpretation of the logarithmic fit. For hypothe
 \equationname{Illustrative logarithmic average and geometric concentration mean}
 \frac{\log2+\log8}{2}=\log4.
 \end{equation}
-Back-transformation gives 4 mg L$^{-1}$, the geometric rather than arithmetic mean. A fitted log value of $-2$ gives 0.1353 mg L$^{-1}$, which is still positive even though it lies below $X_\star$. The reference concentration supplies units. It does not impose a lower concentration bound.
+Back-transformation gives 4 mg L$^{-1}$, the geometric rather than arithmetic mean. A fitted log value of $-2$ gives 0.1353 mg L$^{-1}$, which is still positive even though it lies below $X_\star$. The reference concentration supplies units; it does not impose a lower concentration bound.
 
 Under squared logarithmic error, direct exponentiation represents a conditional geometric center rather than an unbiased concentration-scale mean \citep{Tofallis2015}. No concentration-scale bias adjustment is therefore applied. The separate model also avoids imposing a constant solids-removal fraction across all influents and controls, which would ignore variation in feed composition, hydraulics, recycle, and biological state. Instead, the fitted endpoint supplies the empirical closure introduced in Chapter~\ref{ch:literature}. The physical balances determine the total solids entering and leaving the clarifier, but they do not determine how those solids divide between overflow and underflow. The fitted overflow solids concentration supplies that missing relation. It remains an empirical estimate rather than a mass-conservation identity.
 
@@ -716,7 +716,7 @@ In the same response ordering, the three inequalities are
 0&0&0&0&0&-60&0&-180&0.54
 \end{array}\right]\chi_{\rm toy}\le0.
 \end{equation}
-Non-negativity would add one row $-\chi_{{\rm toy},k}\le0$ for each response coordinate. Because the equality and inequality matrices act on the same vector, their coordinate ordering must remain identical. Otherwise, the wrong physical quantities would be constrained.
+Non-negativity would add one row $-\chi_{{\rm toy},k}\le0$ for each response coordinate. Because the equality and inequality matrices act on the same vector, their coordinate ordering must remain identical; otherwise, the wrong physical quantities would be constrained.
 
 For a plant of arbitrary size, the same row patterns give
 \begin{equation}
@@ -819,7 +819,7 @@ The returned response is therefore the nearest admissible state under the stated
 
 Figure~\ref{fig:plant_projection_geometry} gives a geometric interpretation of Equation~\eqref{eq:plant_joint_projection}. Define the scaled response coordinates $\eta=D_\chi^{-1}\chi$ and the corresponding raw point $\eta_{\rm raw}=D_\chi^{-1}\chi_{\rm raw}$. These coordinates describe the response itself, whereas $u=\eta-\eta_{\rm raw}$ is the standardized displacement used above. Consequently, minimizing $\tfrac12u^\top u$ selects the point in the complete feasible set nearest to the raw response in this scaled geometry. Positive diagonal scaling retains the meaning of non-negativity while expressing concentrations, component flows and inventory in comparable scale units.
 
-The analytical illustration uses the equality $\eta_1+\eta_2=1$, non-negativity $\eta_1,\eta_2\ge0$, and an additional inequality $\eta_1\ge0.20$. The equality defines a line. Non-negativity reduces it to the segment between $(0,1)$ and $(1,0)$, and the additional inequality restricts it further to the green segment between $(0.20,0.80)$ and $(1,0)$. The last inequality stands in for a separator or inventory restriction. Its numerical value is chosen only to make the geometry visible. It is not a case-study operating limit or a new plant-model assumption.
+The analytical illustration uses the equality $\eta_1+\eta_2=1$, non-negativity $\eta_1,\eta_2\ge0$, and an additional inequality $\eta_1\ge0.20$. The equality defines a line. Non-negativity reduces it to the segment between $(0,1)$ and $(1,0)$, and the additional inequality restricts it further to the green segment between $(0.20,0.80)$ and $(1,0)$. The last inequality stands in for a separator or inventory restriction. Its numerical value is chosen only to make the geometry visible; it is not a case-study operating limit or a new plant-model assumption.
 
 \begin{figure}[htbp]
 \centering
@@ -949,12 +949,12 @@ d&=-2.125-3(-0.25)-[-2(1.75)]=2.125.
 \end{align}
 The primal and dual values agree. The stationarity residual is zero coordinate by coordinate, and the complementarity sum is $1.75(0)+0(10)=0$. A multiplier with the wrong sign would fail dual feasibility even if another residual were small.
 
-Figure~\ref{fig:plant_geometry_certificate}a gives a geometric reading of this certificate. In scaled response coordinates $\eta=(c_1,c_2/2)$, the checked state is $q=(0,5)$ and the raw state is $a=(-2,4.5)$. The vector from $q$ back to $a$ is the sum of an equality-normal contribution and a non-negative multiple of the outward normal to the active concentration bound. Consequently, every feasible direction from $q$ makes a non-positive inner product with $a-q$. Movement into the feasible segment cannot move closer to the raw prediction. This direction test explains why feasibility and correctly signed multipliers together certify a nearest point. The coordinates in the plot describe the response itself. The standardized correction remains $u=q-a=(2,0.5)$.
+Figure~\ref{fig:plant_geometry_certificate}a gives a geometric reading of this certificate. In scaled response coordinates $\eta=(c_1,c_2/2)$, the checked state is $q=(0,5)$ and the raw state is $a=(-2,4.5)$. The vector from $q$ back to $a$ is the sum of an equality-normal contribution and a non-negative multiple of the outward normal to the active concentration bound. Consequently, every feasible direction from $q$ makes a non-positive inner product with $a-q$. Movement into the feasible segment cannot move closer to the raw prediction. This direction test explains why feasibility and correctly signed multipliers together certify a nearest point. The coordinates in the plot describe the response itself; the standardized correction remains $u=q-a=(2,0.5)$.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch6_geometry_projection_certificate.png}
-\caption{Hypothetical geometric interpretation of the projection certificate and its error bound, with coordinate scales $(1,2)$. The solid teal line shows the visible portion of the non-negative segment of $\eta_1+2\eta_2=10$. The dotted extension satisfies only the equality. (a) Equality and active-bound normal contributions, drawn head to tail, sum to the displacement from the checked state to the raw prediction. (b) The triangle compares squared distances to the feasible reference $(3,7)$ in physical coordinates. All displayed distances use scaled coordinates. The error guarantee applies to this complete feasible set and this metric.}
+\caption{Hypothetical geometric interpretation of the projection certificate and its error bound, with coordinate scales $(1,2)$. The solid teal line shows the visible portion of the non-negative segment of $\eta_1+2\eta_2=10$; the dotted extension satisfies only the equality. (a) Equality and active-bound normal contributions, drawn head to tail, sum to the displacement from the checked state to the raw prediction. (b) The triangle compares squared distances to the feasible reference $(3,7)$ in physical coordinates. All displayed distances use scaled coordinates. The error guarantee applies to this complete feasible set and this metric.}
 \label{fig:plant_geometry_certificate}
 \end{figure}
 
@@ -1168,7 +1168,7 @@ J(\vartheta,\chi,\varpi)=\varpi^\top
 \varpi\ge0,\quad\mathbf1^\top\varpi=1.
 \label{eq:plant_engineering_objective}
 \end{equation}
-The vector $\varpi$ determines the trade-off between quality, capacity, and resource use, while $\varpi_Q$ determines the relative importance of COD, TN, TP, and TSS within the quality term. These coefficients encode preferences. They are not percentages of the realized objective.
+The vector $\varpi$ determines the trade-off between quality, capacity, and resource use, while $\varpi_Q$ determines the relative importance of COD, TN, TP, and TSS within the quality term. These coefficients encode preferences; they are not percentages of the realized objective.
 
 For equal-volume reactors,
 \begin{equation}
@@ -1207,7 +1207,7 @@ $j_W$ & $(0.02)(6{,}000)/[(0.05)(15{,}000)]$ & 0.16 & 0.008\\
 \end{tabular}
 \end{table}
 
-The overall quality weight of 0.50 multiplies $j_Q$ only after its four internal quality weights have been applied. An internal quality weight of one-quarter is therefore not an overall objective weight of one-quarter. Likewise, an objective reference value is not necessarily a feasibility limit. In particular, $j_W$ may exceed one if its numerator exceeds the declared reference. Normalization changes scale. It does not impose a hard bound.
+The overall quality weight of 0.50 multiplies $j_Q$ only after its four internal quality weights have been applied. An internal quality weight of one-quarter is therefore not an overall objective weight of one-quarter. Likewise, an objective reference value is not necessarily a feasibility limit. In particular, $j_W$ may exceed one if its numerator exceeds the declared reference. Normalization changes scale; it does not impose a hard bound.
 
 \subsubsection{Solids retention time and clarifier loading}
 
@@ -1237,7 +1237,7 @@ Q_0wX_U&=10{,}000(0.02)(6{,}000)=1{,}200{,}000\ \mathrm{g\,d^{-1}}.
 \end{align}
 Their total is 1{,}298{,}000 g d$^{-1}$. If the biological reactors contain 22{,}500{,}000 g of solids and the clarifier stores 7{,}500{,}000 g, total inventory is 30{,}000{,}000 g. The corresponding illustrative solids retention time is $30{,}000{,}000/1{,}298{,}000=23.11$ d.
 
-Clarifier surface loading and solids loading describe different physical burdens on the separator. Surface loading divides overflow volume rate by clarifier area, while solids loading divides the feed solids mass rate by area \citep{Henze2008}. Because solids are represented in grams, conversion to kilograms requires the factor $10^{-3}$ in
+Clarifier surface loading and solids loading describe different physical burdens on the separator. Surface loading divides overflow volume rate by clarifier area, while solids loading divides the feed solids mass rate by area \citep{Henze2008}. Because solids are represented in grams, a factor of $10^{-3}$ converts to kilograms:
 \begin{equation}
 \equationname{Clarifier surface and solids loading measures}
 \ell_{\rm surface}=\frac{Q_0q_E}{A_{\rm cl}},\qquad
@@ -1269,7 +1269,7 @@ Feature leverage measures input support in the fitted quadratic feature space. I
 \Phi^\top\Phi+3\gamma R_\phi=
 \begin{bmatrix}3&0\\0&6\end{bmatrix}.
 \end{equation}
-Its inverse is $\operatorname{diag}(1/3,1/6)$. At query feature $(1,z)$, leverage is $1/3+z^2/6$, giving $1/3$ at the center, $1/2$ at $z=1$, and $11/6$ at $z=3$. The maximum development leverage in this example is $7/12$. The calculation shows how joint feature support weakens as a query moves away from the fitted design, even when individual controls remain inside their coordinate bounds.
+Its inverse is $\operatorname{diag}(1/3,1/6)$. At query feature $(1,z)$, leverage is $1/3+z^2/6$: it equals $1/3$ at the center, $1/2$ at $z=1$, and $11/6$ at $z=3$. The maximum development leverage in this example is $7/12$. The calculation shows how joint feature support weakens as a query moves away from the fitted design, even when individual controls remain inside their coordinate bounds.
 
 The particulate split diagnostic asks whether all particulate components follow the common recovery relation used by Equation~\eqref{eq:plant_outlet_reconstruction}. Suppose two particulate components have unit TSS weights and feed concentrations $(40,60)$, so $X_N=100$. An underflow component-flow vector $(20,30)$ has total flow 50 and yields numerators $100(20)-50(40)=0$ and $100(30)-50(60)=0$. Reallocating the same total underflow solids to $(25,25)$ preserves aggregate solids but gives numerators 500 and $-500$. With fixed split scales of 500, the standardized residuals are 1 and $-1$, producing an RMS diagnostic of one. Aggregate solids consistency therefore does not establish composition consistency.
 
@@ -1299,7 +1299,7 @@ d_b=\max\left\{1,\left[\frac1{n_{\rm dev}p}
 \end{equation}
 The same rule defines inequality and split scales. The overflow-closure scale uses the mechanistic overflow flow and the out-of-fold fitted endpoint flow as its two terms. The floor of one is expressed in the numerical units of the row and is not a concentration floor.
 
-Projection, split, and reactor thresholds are set at the nearest-rank 95th percentile of grouped out-of-fold development diagnostics. If the sorted values are $v_{(1)},\ldots,v_{(n_{\rm dev})}$, the threshold is $v_{(\lceil0.95n_{\rm dev}\rceil)}$. The leverage threshold is the maximum development leverage under the final fitted feature map. These values are fixed before optimization. A diagnostic whose empirical threshold is zero remains constrained to zero. The value one is used only as a numerical row-scale floor.
+Projection, split, and reactor thresholds are set at the nearest-rank 95th percentile of grouped out-of-fold development diagnostics. If the sorted values are $v_{(1)},\ldots,v_{(n_{\rm dev})}$, the threshold is $v_{(\lceil0.95n_{\rm dev}\rceil)}$. The leverage threshold is the maximum development leverage under the final fitted feature map. These values are fixed before optimization. A diagnostic whose empirical threshold is zero remains constrained to zero; the value one is used only as a numerical row-scale floor.
 
 The surrogate decision problem is therefore
 \begin{equation}
@@ -1431,7 +1431,7 @@ The receiver switch is smoothed over a finite band around $X_t$. Subtracting the
 \end{equation}
 inside the band. The quintic matches values and first two derivatives at both endpoints, producing a smooth transition between gravitational-flux rules.
 
-For $X_t=3{,}000$ and $h=10$ g m$^{-3}$, concentrations 2{,}990, 3{,}000, and 3{,}010 correspond to $\zeta=0,0.5,1$ and switch values 0, 0.5, and 1. At 2{,}995, the switch is 0.10352. At 3{,}005, it is 0.89648. If $J_1$ denotes unrestricted gravitational flux and $J_2$ the receiver-limited flux, the smoothed interface uses $(1-\sigma)J_1+\sigma J_2$. The transition therefore modifies the flux law itself rather than merely smoothing a reported concentration.
+For $X_t=3{,}000$ and $h=10$ g m$^{-3}$, concentrations 2{,}990, 3{,}000, and 3{,}010 correspond to $\zeta=0,0.5,1$ and switch values 0, 0.5, and 1. At 2{,}995, the switch is 0.10352; at 3{,}005, it is 0.89648. If $J_1$ denotes unrestricted gravitational flux and $J_2$ the receiver-limited flux, the smoothed interface uses $(1-\sigma)J_1+\sigma J_2$. The transition therefore modifies the flux law itself rather than merely smoothing a reported concentration.
 
 Each smoothing scale $S$ is the development-set root mean square of the corresponding argument with a floor of one. Reactor scales are pooled across stages and include total oxidized nitrogen, fermentable substrate plus acetate, the hydrolysis denominator, polyphosphate and stored-carbon denominators, and remaining storage capacity. Clarifier scales include $s-f_{\rm ns}X_N$ and gravitational solids flux. The velocity scale is 250 m d$^{-1}$. These scales remain fixed during continuation.
 
@@ -1443,12 +1443,12 @@ The direct route uses three continuation stages,
 \end{equation}
 with $h$ in g TSS m$^{-3}$. Each stage initializes from the preceding solution. The sequence progressively sharpens the approximations while preserving a usable starting point. The final smooth candidate is still treated as a search output rather than as the final physical reference.
 
-Figure~\ref{fig:plant_geometry_smoothing} illustrates how these approximations change the mathematical response near a branch transition. In panel (a), the positive-part corner is replaced by a differentiable curve. The approximation is strictly positive at zero, where its excess is $\delta/2$, and its difference from the exact positive part decreases as the illustrative width is reduced. Panel (b) uses the receiver widths in Equation~\eqref{eq:plant_continuation_sequence} to show how narrowing $h$ concentrates the transition around $X_t$. At the threshold itself, all smooth curves retain the value 0.5. Away from the threshold, they recover the appropriate branch as the band narrows. The curves explain the purpose of continuation, while also showing why a smooth solution still requires evaluation with the original branch rules.
+Figure~\ref{fig:plant_geometry_smoothing} illustrates how these approximations change the mathematical response near a branch transition. In panel (a), the positive-part corner is replaced by a differentiable curve. The approximation is strictly positive at zero, where its excess is $\delta/2$, and its difference from the exact positive part decreases as the illustrative width is reduced. Panel (b) uses the receiver widths in Equation~\eqref{eq:plant_continuation_sequence}: narrowing $h$ concentrates the transition around $X_t$. At the threshold itself, all smooth curves retain the value 0.5; away from the threshold, they recover the appropriate branch as the band narrows. The curves explain the purpose of continuation, while also showing why a smooth solution still requires evaluation with the original branch rules.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch6_geometry_smoothing.png}
-\caption{Analytical illustration of smoothing near process switches. (a) The positive-part approximation in Equation~\eqref{eq:plant_smooth_operations} for illustrative widths $\delta=0.4,0.1,0.02$, which are chosen for visibility and are not the numerical continuation settings. (b) The quintic receiver switch in Equation~\eqref{eq:plant_receiver_switch} at the illustrative threshold $X_t=3000$ g m$^{-3}$, using the continuation half-widths $h=10,3,1$ g m$^{-3}$. Dashed curves show the original branch mappings. The vertical receiver-switch line represents its jump rather than an intermediate physical branch value.}
+\caption{Analytical illustration of smoothing near process switches. (a) The positive-part approximation in Equation~\eqref{eq:plant_smooth_operations} for illustrative widths $\delta=0.4,0.1,0.02$, which are chosen for visibility and are not the numerical continuation settings. (b) The quintic receiver switch in Equation~\eqref{eq:plant_receiver_switch} at the illustrative threshold $X_t=3000$ g m$^{-3}$, using the continuation half-widths $h=10,3,1$ g m$^{-3}$. Dashed curves show the original branch mappings; the vertical receiver-switch line represents its jump rather than an intermediate physical branch value.}
 \label{fig:plant_geometry_smoothing}
 \end{figure}
 
@@ -1468,7 +1468,7 @@ The soluble residuals are $f_{1,S}=d_1(m_S-c_{1,S})-kc_{1,S}$ and $f_{2,S}=d_2(c
 d_2&-(d_2+k)
 \end{bmatrix}.
 \end{equation}
-The upper-right entry arises entirely from the recycle dependence of the mixer. Changing the final-reactor concentration changes the mixer and therefore the first-reactor residual. Ignoring this term would incorrectly treat the mixer as independent of the downstream state. With $d_1=d_2=2$, $k=1$, $r_I=1$, $r_R=0.5$, and $q_P=2.5$, the block is $\begin{bmatrix}-3&1.2\\2&-3\end{bmatrix}$.
+The upper-right entry arises entirely from recycle: changing the final-reactor concentration changes the mixer and therefore changes the first-reactor residual. Ignoring this term would incorrectly treat the mixer as independent of the downstream state. With $d_1=d_2=2$, $k=1$, $r_I=1$, $r_R=0.5$, and $q_P=2.5$, the block is $\begin{bmatrix}-3&1.2\\2&-3\end{bmatrix}$.
 
 Finite differences provide an independent check on such derivatives. Increasing $c_{1,S}$ by 0.01 g m$^{-3}$ changes $f_{1,S}$ by $-0.03$ g m$^{-3}$ d$^{-1}$, giving derivative $-3$. Increasing $c_{2,S}$ by the same amount changes $m_S$ by 0.006 and $f_{1,S}$ by 0.012, giving 1.2. For a nonlinear residual, the corresponding central difference is
 \begin{equation}
@@ -1507,7 +1507,7 @@ The case study contains five equal-volume biological reactors and ten clarifier 
 \vartheta=(H,a_3,a_4,a_5,r_I,r_R,w)^\top\in\mathbb R^7.
 \label{eq:plant_case_controls}
 \end{equation}
-For all five stages, $h_i=H/5$. The unaerated controls are fixed at $a_1=a_2=0$, the aerated-stage transfer coefficients are $k_La_i=47a_i$ d$^{-1}$, and $\xi_i=0$. These choices define the present case study. They are not structural requirements of the connected formulation.
+For all five stages, $h_i=H/5$. The unaerated controls are fixed at $a_1=a_2=0$, the aerated-stage transfer coefficients are $k_La_i=47a_i$ d$^{-1}$, and $\xi_i=0$. These choices define the present case study; they are not structural requirements of the connected formulation.
 
 \begin{table}[htbp]
 \centering\small
@@ -1533,7 +1533,7 @@ Wasted-solids reference $X_U^{\rm ref}$ & 15{,}000 g TSS m$^{-3}$\\
 \end{tabular}
 \end{table}
 
-The equal-volume reactors provide a compact unaerated-to-aerated treatment train. Each clarifier layer has depth 0.4 m. The operating bounds preserve positive overflow and underflow flow ratios throughout the domain. Together with the 20 fresh-influent components, the seven free controls produce 27 statistical inputs, 406 quadratic features, and 161 reduced-response coordinates. The mechanistic state contains 110 coordinates. The connected projection contains 76 equality rows and 12 physical inequality rows. After response non-negativity is included, the total number of inequality rows is 173.
+The equal-volume reactors provide a compact unaerated-to-aerated treatment train. Each clarifier layer has depth 0.4 m. The operating bounds preserve positive overflow and underflow flow ratios throughout the domain. Together with the 20 fresh-influent components, the seven free controls produce 27 statistical inputs, 406 quadratic features, and 161 reduced-response coordinates. The mechanistic state contains 110 coordinates. The connected projection contains 76 equality rows and 12 physical inequality rows; after response non-negativity is included, the total number of inequality rows is 173.
 
 Changing the number of reactors or free controls changes the statistical input and response dimensions. Changing the clarifier-layer count changes the mechanistic state and inventory mapping but does not add coordinates to the aggregate surrogate response. In either case, the fitted models, physical constraints, and predictive validation would need to be re-established. The layer discretization affects the mechanistic targets and the admissible inventory bounds even though the surrogate stores only aggregate clarifier inventory.
 
@@ -1743,7 +1743,7 @@ For example, if a concentration is 2 native units and its balance rate is $-0.4$
 \eta_{new}=\log2+0.5(-0.2),\qquad
 y_{new}=\exp(\eta_{new})=2\exp(-0.1)\approx1.8097.
 \]
-The actual integration uses the backward differentiation method with the numerical tolerances specified below. This arithmetic is only intended to show the effect of the positive-state transformation.
+The actual integration uses the backward differentiation method with the numerical tolerances specified below; this arithmetic is only intended to show the effect of the positive-state transformation.
 
 Before the logarithmic transformation, any initial coordinate below $10^{-8}$ is raised to $10^{-8}$ in its native physical unit. This safeguard applies only to initialization and is distinct from clipping a final solution or prediction.
 
@@ -1753,7 +1753,7 @@ The integration horizon depends on wasting because low wasting can lead to long 
 T=\max\{400,50/\max(w,0.001)\}\ \mathrm{d}.
 \label{eq:plant_integration_horizon}
 \end{equation}
-At $w=0.01$, this gives 5{,}000 d. At $w=0.20$, it gives the 400-d minimum. At $w=0$, the internal floor gives 50{,}000 d. The values zero and 0.20 are used only to illustrate the branches of the rule and lie outside the admitted case-study wasting interval.
+At $w=0.01$, this gives 5{,}000 d; at $w=0.20$, it gives the 400-d minimum; and at $w=0$, the internal floor gives 50{,}000 d. The values zero and 0.20 are used only to illustrate the branches of the rule and lie outside the admitted case-study wasting interval.
 
 Dynamic relaxation uses the backward differentiation method for stiff systems \citep{CurtissHirschfelder1952}. The integration may stop before $T$ when the scaled residual falls below $10^{-9}$. Its purpose is to produce a physically informed initial state for the algebraic steady calculation, consistent with the continuation rationale of \citet{KelleyKeyes1998} and the activated-sludge procedure of \citet{Selerio2026}. A bounded least-squares polishing calculation is attempted only if the integrated endpoint fails the physical audit. Solver convergence and scientific acceptance are therefore kept separate.
 
@@ -1806,7 +1806,7 @@ Both initial states must produce finite solutions, satisfy concentration and rat
 
 \subsubsection{Fold-local fitting and two separately selected penalties}
 
-Accepted states are partitioned by complete plant case so that every component and location belonging to one simulated state remains in the same fold. This grouping prevents any part of one mechanistic plant response from appearing simultaneously in fitting and fold assessment. Fold sizes differ by at most one. Input centers, input scales, quadratic-feature scales, and response scales are recomputed within each fitting fold. The holdout set contributes to none of these quantities. This separation follows the leakage concerns described by \citet{Kaufman2012}.
+Accepted states are partitioned by complete plant case: every component and location belonging to one simulated state remains in the same fold. This grouping prevents any part of one mechanistic plant response from appearing simultaneously in fitting and fold assessment. Fold sizes differ by at most one. Input centers, input scales, quadratic-feature scales, and response scales are recomputed within each fitting fold. The holdout set contributes to none of these quantities. This separation follows the leakage concerns described by \citet{Kaufman2012}.
 
 The one-standard-error rule can be illustrated with five hypothetical fold scores $0.40$, $0.42$, $0.38$, $0.41$, and $0.39$. Their mean is 0.40. The sum of squared deviations is
 \[
@@ -1830,7 +1830,7 @@ Scientific admission determines whether the fitted connected surrogate is accept
 
 Admission requires finite and independently audited out-of-fold projections for every accepted development state. The complete raw-response normalized root mean square error and the raw clarifier-inventory normalized error must each be below one. Because both metrics use development response scales, the threshold requires aggregate prediction error below one fitted scale unit. This condition is specific to the case-study admission rule.
 
-Every projected state is checked for equality feasibility, physical inequalities, non-negativity, dual feasibility, stationarity, and complementarity. The overflow-closure residual is reported separately. Failure of an admission criterion remains a failure. It does not trigger an unreported change to the fit, the selected penalty, or the projection formulation.
+Every projected state is checked for equality feasibility, physical inequalities, non-negativity, dual feasibility, stationarity, and complementarity. The overflow-closure residual is reported separately. Failure of an admission criterion remains a failure; it does not trigger an unreported change to the fit, the selected penalty, or the projection formulation.
 
 \begin{table}[htbp]
 \centering\small
@@ -1881,7 +1881,7 @@ R_f^2=1-\frac{\sum_i(p_{if}-t_{if})^2}{\sum_i(t_{if}-\bar t_f)^2}.
 \end{equation}
 If the assessment target is constant, the denominator is zero and the score is recorded as undefined. Averaging coordinatewise $R^2$ values is not equivalent to computing one $R^2$ after pooling coordinates.
 
-Normalization also changes the numerical magnitude of an error summary. In the preceding example, if the training response scale is two native units, the residuals become 0.5 and $-1$, giving standardized RMSE $\sqrt{0.625}\approx0.7906$. If a descriptive holdout report instead divides by the observed range $6-2=4$, the residuals become 0.25 and $-0.5$, giving RMSE approximately 0.3953. The predictions remain unchanged between these summaries, while the denominator changes. Training-scale admission scores and holdout-range reporting scores must therefore be identified separately.
+Normalization also changes the numerical magnitude of an error summary. In the preceding example, if the training response scale is two native units, the residuals become 0.5 and $-1$, giving standardized RMSE $\sqrt{0.625}\approx0.7906$. If a descriptive holdout report instead divides by the observed range $6-2=4$, the residuals become 0.25 and $-0.5$, giving RMSE approximately 0.3953. The predictions have not changed; only the denominator has. Training-scale admission scores and holdout-range reporting scores must therefore be identified separately.
 
 Location-quality summaries retain the mixer, five reactors, overflow, and underflow because joint constraints couple their errors across the treatment train. Outlet-flow coordinates are first divided by their positive flow ratios to recover concentrations, after which the quality map is applied. For location $\ell$ and composite $j$, define
 \begin{equation}
@@ -1889,7 +1889,7 @@ Location-quality summaries retain the mixer, five reactors, overflow, and underf
 r_{\ell j}=\max_it_{i\ell j}-\min_it_{i\ell j},\qquad
 e_{i\ell j}=\frac{p_{i\ell j}-t_{i\ell j}}{r_{\ell j}}.
 \end{equation}
-For positive ranges, the aggregate error pools the $8\times4$ location-composite coordinates. A location score pools the four composites, while a composite score pools the eight locations. Displayed $R^2$ summaries average the corresponding coordinatewise values. These holdout ranges are used only for reporting. They do not enter fitting, admission, objective normalization, or trust calibration.
+For positive ranges, the aggregate error pools the $8\times4$ location-composite coordinates. A location score pools the four composites, while a composite score pools the eight locations. Displayed $R^2$ summaries average the corresponding coordinatewise values. These holdout ranges are used only for reporting; they do not enter fitting, admission, objective normalization, or trust calibration.
 
 The separate overflow model is assessed both on the concentration and logarithmic scales. Concentration-scale reporting includes root mean square error, mean absolute error, bias, normalized error, and $R^2$, while logarithmic reporting includes root mean square error and bias. Positivity from Equation~\eqref{eq:plant_log_prediction} is a structural property of the model, not a substitute for accuracy assessment.
 
@@ -1903,7 +1903,7 @@ The operating controls are normalized to the unit interval before search so that
 \[
 \vartheta_j=\vartheta_j^L+(\vartheta_j^U-\vartheta_j^L)\eta_j.
 \]
-This normalization changes only the numerical search coordinates. It does not give all controls equal importance in the engineering objective.
+This normalization changes only the numerical search coordinates; it does not give all controls equal importance in the engineering objective.
 
 The baseline search for both routes begins at the center of the normalized operating box,
 \begin{equation}
@@ -1929,7 +1929,7 @@ Repeating this displacement for each coordinate and both signs gives 14 displace
 \qquad j=1,\ldots,7.
 \label{eq:plant_multistart_design}
 \end{equation}
-Each start receives the same route-specific budget and audit procedure. A direct start obtains its mechanistic initial state from an independently accepted solve at the fixed starting controls. Failed initial states remain failures. The best independently validated feasible candidate is retained, while all starting-point outcomes and total search work remain part of the record. The single-center result remains the reported baseline. The 15-start design is a distinct sensitivity analysis.
+Each start receives the same route-specific budget and audit procedure. A direct start obtains its mechanistic initial state from an independently accepted solve at the fixed starting controls. Failed initial states remain failures. The best independently validated feasible candidate is retained, while all starting-point outcomes and total search work remain part of the record. The single-center result remains the reported baseline; the 15-start design is a distinct sensitivity analysis.
 
 This distinction matters when interpreting computation time. A method that explores fewer basins may finish sooner while missing a better candidate. The expensive-function benchmarking study of \citet{Bliek2023} therefore motivates reporting objective quality, evaluation work, and elapsed time as separate dimensions.
 
@@ -1937,7 +1937,7 @@ This distinction matters when interpreting computation time. A method that explo
 
 The initial surrogate outer search uses sequential least squares programming, following the constrained optimization framework of \citet{Kraft1988}. Every trial point receives a fully audited joint projection. The active-set derivative chain is used only when the projection active set satisfies the prescribed rank, conditioning, multiplier, and independent derivative checks. If the active set changes, the projection and its derivatives are reconstructed for the new trial.
 
-If the derivative chain cannot be validated, a deterministic value-only quadratic-approximation method continues the search within the same normalized control bounds \citep{Ragonneau2022}. The fallback still uses the exact audited projection at every trial. It does not replace the lower problem with an approximate projection. Finite differences are reserved for independent derivative audits rather than used automatically as unqualified gradient substitutes. Before a candidate is retained, its best feasible visited point is projected again from an independent initialization.
+If the derivative chain cannot be validated, a deterministic value-only quadratic-approximation method continues the search within the same normalized control bounds \citep{Ragonneau2022}. The fallback still uses the exact audited projection at every trial; it does not replace the lower problem with an approximate projection. Finite differences are reserved for independent derivative audits rather than used automatically as unqualified gradient substitutes. Before a candidate is retained, its best feasible visited point is projected again from an independent initialization.
 
 \begin{table}[htbp]
 \centering\small
@@ -2019,7 +2019,7 @@ A validated feasible candidate may still be retained when its search budget is e
 
 \subsection{Independent mechanistic verification and fair comparison}
 
-The surrogate and direct searches use different internal response calculations, but their selected decisions must ultimately be compared on one common physical basis. Figure~\ref{fig:plant_route_verification} separates route-specific search, native candidate audit, independent original-model evaluation, and final comparison eligibility into four stages. Each stage retains its own status rather than being collapsed into one success indicator.
+The surrogate and direct searches use different internal response calculations, but their selected decisions must ultimately be compared on one common physical basis. Figure~\ref{fig:plant_route_verification} separates four stages: route-specific search, native candidate audit, independent original-model evaluation, and final comparison eligibility. Each stage retains its own status rather than being collapsed into one success indicator.
 
 \begin{figure}[htbp]
 \centering
@@ -2082,7 +2082,7 @@ Every available selected decision is reevaluated with its controls and influent 
 
 Exact evaluation uses the physical checks in Table~\ref{tab:plant_generation_settings}. Agreement between the two starts is tested under both the generation scales and fixed development-derived state scales. The fixed scales are coordinatewise development-set median absolute deviations with a floor of one. A valid evaluation must pass mass conservation, non-negativity, layer residuals, the operating domain, the endpoint envelope, and the reduced-state local stability test.
 
-Branch tuples must agree unless one evaluation start lies inside a prescribed ambiguity band. These bands cover the clarifier receiver threshold, zero storage capacity, zero settling offset, zero or maximum settling velocity, and equality of adjacent gravitational fluxes. An ambiguity flag qualifies the state-level branch comparison. It does not automatically prove that every differing branch is physically equivalent. State agreement and all other audits must still pass. Smooth stationarity or smooth-reference equivalence near such a branch boundary therefore remains explicitly qualified.
+Branch tuples must agree unless one evaluation start lies inside a prescribed ambiguity band. These bands cover the clarifier receiver threshold, zero storage capacity, zero settling offset, zero or maximum settling velocity, and equality of adjacent gravitational fluxes. An ambiguity flag qualifies the state-level branch comparison; it does not automatically prove that every differing branch is physically equivalent. State agreement and all other audits must still pass. Smooth stationarity or smooth-reference equivalence near such a branch boundary therefore remains explicitly qualified.
 
 This verification is particularly important when a selected prediction lies close to a treatment requirement. The aeration-scheduling framework of \citet{Ren2026} similarly emphasizes influent disturbances and effluent ammonium safeguards. The relevant engineering question is the value of the particular effluent quantity at the selected controls, not only the model's average error elsewhere.
 
@@ -2128,9 +2128,9 @@ J_{{\rm nat},k}(\vartheta_k,\chi_{{\rm nat},k})
 \end{align}
 The first quantity can reflect both response approximation and route-specific normalization. The second compares the retained decisions on one shared physical and numerical basis \citep{BhosekarIerapetritou2018,Pedrozo2025}.
 
-Relative objective differences also depend on their denominator. If the common-reference difference is 0.12 and the direct objective is 0.98, the direct-relative percentage is approximately 12.24\%. A symmetric scaled difference using $\max(1,1.10,0.98)=1.10$ gives approximately 0.1091. The first uses one route as a reference. The second uses a symmetric magnitude scale.
+Relative objective differences also depend on their denominator. If the common-reference difference is 0.12 and the direct objective is 0.98, the direct-relative percentage is approximately 12.24\%. A symmetric scaled difference using $\max(1,1.10,0.98)=1.10$ gives approximately 0.1091. The first uses one route as a reference; the second uses a symmetric magnitude scale.
 
-Control differences require a different normalization. On an illustrative interval from 10 to 30, two selected controls 25 and 20 differ by five physical units, corresponding to normalized difference 0.25. If this is the only differing coordinate among seven controls, the RMS normalized difference is $\sqrt{0.25^2/7}\approx0.0945$, while the maximum difference remains 0.25. The RMS summarizes overall separation. The maximum keeps the largest coordinate change visible.
+Control differences require a different normalization. On an illustrative interval from 10 to 30, two selected controls 25 and 20 differ by five physical units, corresponding to normalized difference 0.25. If this is the only differing coordinate among seven controls, the RMS normalized difference is $\sqrt{0.25^2/7}\approx0.0945$, while the maximum difference remains 0.25. The RMS summarizes overall separation; the maximum keeps the largest coordinate change visible.
 
 The normalized control differences are
 \begin{equation}
@@ -2228,7 +2228,7 @@ The raw-response model selected a ridge penalty of 0.1. Its mean grouped cross-v
 
 \subsection{Aggregate and local holdout accuracy}
 
-Joint projection improved the aggregate holdout prediction. The pooled nRMSE decreased from 0.04690 for the raw response to 0.04306 after projection, corresponding to an 8.19\% reduction before rounding. The nMAE decreased from 0.03044 to 0.02568, a 15.65\% reduction, while mean location-level $R^2$ increased from 0.925 to 0.938. Figure~\ref{fig:plant_holdout_overview_results} shows lower nRMSE after projection in all eight treatment-location summaries and all four composite summaries. The improvement therefore extended beyond the aggregate score.
+Joint projection improved the aggregate holdout prediction. The pooled nRMSE decreased from 0.04690 for the raw response to 0.04306 after projection, corresponding to an 8.19\% reduction before rounding. The nMAE decreased from 0.03044 to 0.02568, a 15.65\% reduction, while mean location-level $R^2$ increased from 0.925 to 0.938. Figure~\ref{fig:plant_holdout_overview_results} shows that this improvement was not confined to the aggregate score: all eight treatment-location summaries and all four composite summaries had lower nRMSE after projection.
 
 \begin{figure}[htbp]
 \centering
@@ -2239,7 +2239,7 @@ Joint projection improved the aggregate holdout prediction. The pooled nRMSE dec
 
 The composite-level changes were also consistent with this general improvement. COD nRMSE decreased from 0.04741 to 0.04586, TN from 0.03724 to 0.03454, TP from 0.04170 to 0.03349, and TSS from 0.05852 to 0.05476. TP showed the largest relative improvement among the four composites, whereas TSS retained the largest projected error. Because these values use location-specific holdout ranges, they describe relative agreement within each reported treatment quantity rather than one common physical-unit error scale.
 
-The location-level assessment shows where the projection helped and where it did not. Of the 32 location--composite combinations, projection reduced nRMSE in 30. Figure~\ref{fig:plant_holdout_locations_results} shows the two exceptions, with COD error increasing by 0.47\% in the final reactor and by 2.36\% in the overflow. By contrast, overflow TP nRMSE decreased from 0.02948 to 0.01795, a reduction of 39.10\%. The connected projection therefore produced a broad statistical benefit, but the adjustment was not uniformly beneficial for every reported quantity at every treatment location.
+The location-level assessment shows where the projection helped and where it did not. Of the 32 location--composite combinations, projection reduced nRMSE in 30. Figure~\ref{fig:plant_holdout_locations_results} identifies the two exceptions: COD error increased by 0.47\% in the final reactor and by 2.36\% in the overflow. By contrast, overflow TP nRMSE decreased from 0.02948 to 0.01795, a reduction of 39.10\%. The connected projection therefore produced a broad statistical benefit, but the adjustment was not uniformly beneficial for every reported quantity at every treatment location.
 
 \begin{figure}[htbp]
 \centering
@@ -2267,7 +2267,7 @@ The physical audit showed a sharp distinction between the raw and projected resp
 
 The optimization searches produced a different type of evidence. Extended ICSOR retained an initially feasible candidate for the nominal influent and all ten scenarios. Smooth NLP retained candidates for the nominal influent and nine of the ten scenarios. The initial S1 direct search did not produce a validated feasible candidate, and the permitted recovery did not resolve that outcome. A separately evaluated valid direct decision for S1 is nevertheless included in the treatment and objective figures so that the paired engineering comparison remains available. It is not counted as a successful initial direct search.
 
-Table~\ref{tab:plant_search_qualification_results} separates candidate availability from convergence qualification. Extended ICSOR received positive first-order qualification in N, S6, and S10. Seven additional surrogate decisions were qualified by the finite-poll procedure, while S4 remained unresolved. None of the retained initial Smooth NLP candidates received a positive first-order certificate. These qualification results concern numerical evidence for the corresponding search problems. The independently solved mechanistic responses provide the reference treatment outcomes used in the engineering comparison.
+Table~\ref{tab:plant_search_qualification_results} separates candidate availability from convergence qualification. Extended ICSOR received positive first-order qualification in N, S6, and S10. Seven additional surrogate decisions were qualified by the finite-poll procedure, while S4 remained unresolved. None of the retained initial Smooth NLP candidates received a positive first-order certificate. These qualification results concern numerical evidence for the corresponding search problems; the independently solved mechanistic responses provide the reference treatment outcomes used in the engineering comparison.
 
 \begin{table}[htbp]
 \centering\small
@@ -2306,11 +2306,11 @@ Overflow TSS showed a different pattern. The surrogate overpredicted TSS in ten 
 
 \subsection{Treatment outcomes and operating choices}
 
-Figure~\ref{fig:plant_controls_results} compares the two optimization routes after both selected decisions are evaluated with the original mechanistic model. Smooth NLP produced lower COD, TN, and TP in the nominal case and in nine of the ten scenarios. For the nominal influent, COD was 151.26 mg L$^{-1}$ at the Extended ICSOR decision and 57.60 mg L$^{-1}$ at the Smooth NLP decision. In S9, the corresponding values were 203.24 and 19.08 mg L$^{-1}$. TSS did not follow the same ordering consistently, as Smooth NLP produced lower TSS in six of the eleven paired comparisons.
+Figure~\ref{fig:plant_controls_results} compares the two optimization routes after both selected decisions are evaluated with the original mechanistic model. Smooth NLP produced lower COD, TN, and TP in the nominal case and in nine of the ten scenarios. For the nominal influent, COD was 151.26 mg L$^{-1}$ at the Extended ICSOR decision and 57.60 mg L$^{-1}$ at the Smooth NLP decision. In S9, the corresponding values were 203.24 and 19.08 mg L$^{-1}$. TSS did not follow the same ordering consistently: Smooth NLP produced lower TSS in six of the eleven paired comparisons.
 
 The selected HRT values show that the two routes also differed in their capacity choices. Extended ICSOR selected the 6-h lower bound in N, S6, S7, S9, and S10. Smooth NLP selected the 36-h upper bound in S5 and S10 within numerical tolerance. Because fresh flow was fixed, these HRT choices changed total biological reactor volume. The optimization therefore compared different combinations of installed biological capacity and operating controls.
 
-Aeration and recycle patterns reveal additional structure. Both routes selected the upper aeration bound in reactor 3 for every case within numerical tolerance, and aeration in reactors 4 and 5 frequently reached the upper bound as well. Both routes selected the return-sludge lower bound of 0.25. Smooth NLP selected internal recycle $r_I=4.00$ in S2 and S10 and 3.44 in S9. In its other cases, the selected ratio was effectively zero. Extended ICSOR selected internal recycle values between zero and 0.804.
+Aeration and recycle patterns reveal additional structure. Both routes selected the upper aeration bound in reactor 3 for every case within numerical tolerance, and aeration in reactors 4 and 5 frequently reached the upper bound as well. Both routes selected the return-sludge lower bound of 0.25. Smooth NLP selected internal recycle $r_I=4.00$ in S2 and S10 and 3.44 in S9; in its other cases, the selected ratio was effectively zero. Extended ICSOR selected internal recycle values between zero and 0.804.
 
 S2 illustrates why nominal HRT and residence time per passage must be distinguished. Smooth NLP selected $H=31.40$ h with $r_I=4.00$ and $r_R=0.25$. The resulting reactor-train flow ratio was 5.25, so the actual residence time per passage through the train was only about 5.98 h. High recycle therefore reduced the time associated with each passage despite the large nominal fresh-flow HRT.
 
@@ -2381,7 +2381,7 @@ The connected surrogate was designed to predict the plant as one material system
 
 This result is important because projection was not introduced merely as a numerical feasibility repair. The connected constraints couple locations that are physically related, so correcting one part of the response redistributes information across the treatment system. In this case, the redistribution generally moved the predictions closer to the mechanistic holdout states. The especially large reduction in overflow TP error illustrates how a network-level correction can improve a reported quantity at a downstream location even though the projection acts on the complete component response.
 
-The improvement was nevertheless not uniform. COD error increased slightly in the final reactor and overflow, and the overflow remained the least accurate treatment location overall. The separate logarithmic model supplied a positive overflow-solids endpoint, while the joint projection reconciled that endpoint with component balances, soluble continuity, particulate densification, and inventory limits. The resulting response therefore reflected both physical equalities and an empirical closure. Equations~\eqref{eq:plant_projection_error_exact} and \eqref{eq:plant_projection_error_general} explain why error reduction depends on the projection metric and on whether the mechanistic reference lies in the complete projection set. The two local COD increases are consistent with the possibility that enforcing network consistency can improve the response in aggregate while worsening an individual reported coordinate.
+The improvement was nevertheless not uniform. COD error increased slightly in the final reactor and overflow, and the overflow remained the least accurate treatment location overall. The separate logarithmic model supplied a positive overflow-solids endpoint, while the joint projection reconciled that endpoint with component balances, soluble continuity, particulate densification, and inventory limits. The resulting response therefore reflected both physical equalities and an empirical closure. Equations~\eqref{eq:plant_projection_error_exact} and \eqref{eq:plant_projection_error_general} explain why error reduction depends on the projection metric and on whether the mechanistic reference lies in the complete projection set. The two local COD increases are consistent with that limitation: enforcing network consistency can improve the response in aggregate while worsening an individual reported coordinate.
 
 The practical implication is that physical consistency and statistical accuracy should be assessed together but not conflated. The projection succeeded completely in its declared physical role, while its statistical effect was broad but not universal. This distinction is consistent with the projection analyses of \citet{SturmSilva2024} and \citet{KircherVotsmeier2025}. For connected treatment models, the relevant question is therefore not simply whether projection enforces the constraints, but also how the resulting adjustment redistributes predictive error across the locations and quantities that matter for engineering use.
 

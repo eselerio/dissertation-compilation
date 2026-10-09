@@ -1,0 +1,968 @@
+[
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 16,
+    "before": "The comparison of seven activated sludge models by \\citet{Hauduc2013} further shows why the mechanistic reference must be specified before statistical models are compared. Their review examined how the models represent hydrolysis, fermentation, microbial growth and decay, and biological storage. The differences were not merely mathematical; they reflected different assumptions about treatment processes and available process knowledge. Model selection therefore depends on the treatment system and the question being studied. For a surrogate comparison, this means that all candidate predictors must approximate the same selected process model. Otherwise, differences in prediction may reflect different biological assumptions rather than differences among statistical learners.",
+    "after": "The comparison of seven activated sludge models by \\citet{Hauduc2013} further shows why the mechanistic reference must be specified before statistical models are compared. Their review examined how the models represent hydrolysis, fermentation, microbial growth and decay, and biological storage. The differences were not merely mathematical. They reflected different assumptions about treatment processes and available process knowledge. Model selection therefore depends on the treatment system and the question being studied. For a surrogate comparison, this means that all candidate predictors must approximate the same selected process model. Otherwise, differences in prediction may reflect different biological assumptions rather than differences among statistical learners."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 24,
+    "before": "Calibration research addresses a related problem: even a mechanistically detailed model requires evidence that its parameters and internal quantities represent the treatment system of interest. \\citet{Petersen2003} reviewed experimental designs for estimating activated sludge parameters, while \\citet{Vanrolleghem1999} examined the use of respirometry, which measures oxygen consumption, to estimate model parameters and component combinations. These methods show that the information supplied by an experiment must correspond to the parameter or internal quantity being estimated.",
+    "after": "Calibration research addresses the need to establish whether the parameters and internal quantities of a mechanistically detailed model represent the treatment system of interest. \\citet{Petersen2003} reviewed experimental designs for estimating activated sludge parameters, while \\citet{Vanrolleghem1999} examined the use of respirometry, which measures oxygen consumption, to estimate model parameters and component combinations. These methods show that the information supplied by an experiment must correspond to the parameter or internal quantity being estimated."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 28,
+    "before": "The mechanistic literature therefore establishes the component definitions, reaction relationships, and calibration practices needed to give a surrogate prediction physical meaning. The unresolved question for this dissertation is not how to replace that mechanistic foundation, but how to approximate its defined treatment responses efficiently while retaining their material accounting. The surrogate is evaluated against an adopted mechanistic reference; calibration of that reference to a particular operating plant remains a separate task.",
+    "after": "The mechanistic literature therefore establishes the component definitions, reaction relationships, and calibration practices needed to give a surrogate prediction physical meaning. The unresolved question for this dissertation is not how to replace that mechanistic foundation, but how to approximate its defined treatment responses efficiently while retaining their material accounting. The surrogate is evaluated against an adopted mechanistic reference. Calibration of that reference to a particular operating plant remains a separate task."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 46,
+    "before": "Soft sensors are one example. A soft sensor estimates a quantity that is difficult or slow to measure from other observations that are easier to obtain. \\citet{Ching2022} developed a soft sensor for five-day biochemical oxygen demand using extreme gradient boosting (XGBoost). They evaluated influent and effluent estimates at two treatment plants and used supporting measurements selected from variables such as COD, solids, nutrients, and simpler sensor readings. The model covered a wide range of oxygen-demand values and could accommodate missing supporting observations. Its contribution is therefore practical and specific: it provides a faster estimate of an otherwise slow water-quality measurement.",
+    "after": "Soft sensors are one example. A soft sensor estimates a quantity that is difficult or slow to measure from other observations that are easier to obtain. \\citet{Ching2022} developed a soft sensor for five-day biochemical oxygen demand using extreme gradient boosting (XGBoost). They evaluated influent and effluent estimates at two treatment plants and used supporting measurements selected from variables such as COD, solids, nutrients, and simpler sensor readings. The model covered a wide range of oxygen-demand values and could accommodate missing supporting observations. Its practical contribution is to provide a faster estimate of an otherwise slow water-quality measurement."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 56,
+    "before": "Component-estimation studies move closer to the information used by mechanistic activated sludge models. \\citet{Wang2024} used a backpropagation neural network to estimate five COD-related component quantities from measured influent COD. They first characterized those components in an operating plant and then evaluated the neural estimates against the measurements. Their reported prediction accuracy exceeded 80\\% for the five assessed components. The study addresses a practical difficulty in mechanistic modeling: repeated experimental fractionation of influent COD components is demanding, yet those fractions are needed as model inputs.",
+    "after": "Component-estimation studies move closer to the information used by mechanistic activated sludge models. \\citet{Wang2024} used a backpropagation neural network to estimate five COD-related component quantities from measured influent COD. They first characterized those components in an operating plant and then evaluated the neural estimates against the measurements. Their reported prediction accuracy exceeded 80\\% for the five assessed components. The study addresses the demanding task of repeatedly fractionating influent COD experimentally to obtain the component fractions required as mechanistic model inputs."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 58,
+    "before": "That contribution differs from predicting the effluent component state produced by treatment. Influent fractionation estimates how incoming organic material is distributed among model categories. An effluent surrogate instead estimates how a defined influent changes under specified biological and operating conditions. The two tasks can complement one another, but they have different targets and therefore require different evidence. The component estimates of \\citet{Wang2024} improve characterization of the material entering the model; they do not by themselves establish the complete treatment mapping investigated in this dissertation.",
+    "after": "That contribution differs from predicting the effluent component state produced by treatment. Influent fractionation estimates how incoming organic material is distributed among model categories. An effluent surrogate instead estimates how a defined influent changes under specified biological and operating conditions. The two tasks can complement one another, but they have different targets and therefore require different evidence. The component estimates of \\citet{Wang2024} improve characterization of the material entering the model. They do not by themselves establish the complete treatment mapping investigated in this dissertation."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 93,
+    "before": "Such comparisons also depend on strict separation between model development and assessment information. \\citet{Kaufman2012} defined information leakage and described how information unavailable at the intended prediction time can inadvertently enter model construction. In wastewater applications, this distinction is particularly important because downstream measurements may be available for monitoring but not for predicting a proposed operating condition before the treatment response has occurred. Scaling, preprocessing, and model tuning must likewise exclude observations reserved for final assessment. These requirements determine what an error score means; they do not imply that downstream measurements are inappropriate in studies whose stated purpose is monitoring.",
+    "after": "Such comparisons also depend on strict separation between model development and assessment information. \\citet{Kaufman2012} defined information leakage and described how information unavailable at the intended prediction time can inadvertently enter model construction. In wastewater applications, this distinction is particularly important because downstream measurements may be available for monitoring but not for predicting a proposed operating condition before the treatment response has occurred. Scaling, preprocessing, and model tuning must likewise exclude observations reserved for final assessment. These requirements determine what an error score means. They do not imply that downstream measurements are inappropriate in studies whose stated purpose is monitoring."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 95,
+    "before": "The remaining comparative question therefore combines three issues: learner choice, training support, and operating domain. Existing indicator and component studies demonstrate that useful prediction is possible within their assessed conditions. What is still needed here is a common complete-state comparison in which several learners use the same inputs, outputs, data partitions, and error definitions. That assessment must also distinguish interpolation within the sampled domain from prediction beyond it. Only then can component error and physical validity be evaluated together as influent and operating conditions change.",
+    "after": "The remaining comparative question therefore concerns learner choice, training support, and operating domain together. Existing indicator and component studies demonstrate that useful prediction is possible within their assessed conditions. What is still needed here is a common complete-state comparison in which several learners use the same inputs, outputs, data partitions, and error definitions. That assessment must also distinguish interpolation within the sampled domain from prediction beyond it. Only then can component error and physical validity be evaluated together as influent and operating conditions change."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 115,
+    "before": "\\citet{Harder2022} illustrated this broader requirement in an aerosol microphysics surrogate by examining both physical penalties and constrained output completion. Their assessment treated mass conservation and positive mass as separate but simultaneous concerns. The lesson for activated sludge prediction is direct: the complete returned state must be assessed for both balance satisfaction and concentration bounds after every stage of prediction has been applied.",
+    "after": "\\citet{Harder2022} illustrated this broader requirement in an aerosol microphysics surrogate by examining both physical penalties and constrained output completion. Their assessment treated mass conservation and positive mass as separate but simultaneous concerns. For activated sludge prediction, this assessment shows why balance satisfaction and concentration bounds must both be checked on the complete returned state after every prediction stage has been applied."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 119,
+    "before": "Projection provides another route to physical enforcement. Instead of changing the fitted learner, a prediction is first produced and then adjusted to satisfy specified constraints. \\citet{SturmSilva2024} developed a species-weighted least-squares correction for atom conservation in an atmospheric chemistry surrogate. Their weights accounted for the magnitude and uncertainty of individual species changes. In the reported assessment, an unweighted correction could damage prediction of a small radical, whereas weighting retained its accuracy and slightly improved overall agreement. The enforced conservation relation was unchanged; what changed was the way the required adjustment was distributed among species.",
+    "after": "Projection provides another route to physical enforcement. Instead of changing the fitted learner, a prediction is first produced and then adjusted to satisfy specified constraints. \\citet{SturmSilva2024} developed a species-weighted least-squares correction for atom conservation in an atmospheric chemistry surrogate. Their weights accounted for the magnitude and uncertainty of individual species changes. In the reported assessment, an unweighted correction could damage prediction of a small radical, whereas weighting retained its accuracy and slightly improved overall agreement. The enforced conservation relation was unchanged. What changed was the way the required adjustment was distributed among species."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 125,
+    "before": "A direct activated sludge example is provided by \\citet{Selerio2026}. The structured regression in that study used physical penalties during fitting, then checked each raw prediction and projected it onto the mass conservation equalities. If non-negativity still failed, a linear program---an optimization problem with a linear objective and linear constraints---was used to complete the correction. The published assessment reported no final mass conservation or non-negativity violations. Because the raw regression itself did not satisfy both requirements, the final enforcement procedure was the stage responsible for the physical guarantee.",
+    "after": "A direct activated sludge example is provided by \\citet{Selerio2026}. The structured regression in that study used physical penalties during fitting, then checked each raw prediction and projected it onto the mass conservation equalities. If non-negativity still failed, a linear program was used to complete the correction. This optimization problem has a linear objective and linear constraints. The published assessment reported no final mass conservation or non-negativity violations. Because the raw regression itself did not satisfy both requirements, the final enforcement procedure was the stage responsible for the physical guarantee."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 127,
+    "before": "That result also illustrates why physical validity and predictive accuracy must be evaluated separately. The structured surrogate was not the most accurate method under every reported score, even though its final states satisfied the declared constraints. Physical enforcement therefore establishes that the returned state belongs to the specified feasible set; it does not establish that the state is the closest possible approximation to the mechanistic reference. The next comparative question is consequently a paired one: when the same raw predictions are held fixed, how does projection change error, adjustment size, and computational cost across several activated sludge learners?",
+    "after": "That result also illustrates why physical validity and predictive accuracy must be evaluated separately. The structured surrogate was not the most accurate method under every reported score, even though its final states satisfied the declared constraints. Physical enforcement therefore establishes that the returned state belongs to the specified feasible set. It does not establish that the state is the closest possible approximation to the mechanistic reference. A paired comparison is consequently needed to determine how projection changes error, adjustment size, and computational cost across several activated sludge learners when the same raw predictions are held fixed."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 180,
+    "before": "Dynamic control studies provide related evidence at a different time scale. \\citet{Bernardelli2020} developed a neuro-fuzzy predictive controller for aeration and field-tested it at a large municipal plant, reporting improved effluent quality and energy savings in that application. \\citet{Croll2023} reviewed reinforcement learning for wastewater control and discussed the methods and challenges involved in changing operation over time. These contributions show that learned models can participate directly in treatment control. The present dissertation addresses a different question: fixed-input steady-state operating assessment. Dynamic control results therefore provide important context without replacing the need for a separate evaluation of the steady-state decision problem.",
+    "after": "Dynamic control studies provide related evidence at a different time scale. \\citet{Bernardelli2020} developed a neuro-fuzzy predictive controller for aeration and field-tested it at a large municipal plant, reporting improved effluent quality and energy savings in that application. \\citet{Croll2023} reviewed reinforcement learning for wastewater control and discussed the methods and challenges involved in changing operation over time. These contributions show that learned models can participate directly in treatment control. The present dissertation instead examines operating decisions at fixed inputs under steady-state conditions. Dynamic control results therefore provide important context without replacing the need for a separate evaluation of the steady-state decision problem."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 192,
+    "before": "The single-reactor work of \\citet{Selerio2026} supplies a precedent for physical enforcement at one biological unit, while the benchmark of \\citet{Alex2008} provides a mechanistic precedent for comparing connected plant responses and controls. Bringing these lines of research together leads to a specific remaining question: can a statistical plant response preserve the declared unit connections and solids inventories while still supporting useful operating decisions? Answering that question requires evidence beyond single-reactor feasibility and beyond the accuracy of one aggregate operating objective.",
+    "after": "The single-reactor work of \\citet{Selerio2026} supplies a precedent for physical enforcement at one biological unit, while the benchmark of \\citet{Alex2008} provides a mechanistic precedent for comparing connected plant responses and controls. Bringing these lines of research together raises the question of whether a statistical plant response can preserve the declared unit connections and solids inventories while still supporting useful operating decisions. Answering that question requires evidence beyond single-reactor feasibility and beyond the accuracy of one aggregate operating objective."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 196,
+    "before": "A surrogate can have good average predictive accuracy and still be inaccurate where the optimizer ultimately chooses to operate. Surrogate-optimization research addresses this distinction directly. \\citet{BhosekarIerapetritou2018} reviewed surrogate modeling for feasibility analysis and optimization, while \\citet{McBride2019} reviewed surrogate construction from experiments and simulations for process-system decisions. Both place prediction within a larger decision workflow: the surrogate must approximate the quantities and the operating region that matter to the optimization, not merely reproduce an average response over the original training design.",
+    "after": "A surrogate can have good average predictive accuracy and still be inaccurate where the optimizer ultimately chooses to operate. Surrogate-optimization research addresses this distinction directly. \\citet{BhosekarIerapetritou2018} reviewed surrogate modeling for feasibility analysis and optimization, while \\citet{McBride2019} reviewed surrogate construction from experiments and simulations for process-system decisions. Both place prediction within a larger decision workflow that requires the surrogate to approximate the quantities and operating region relevant to optimization. Reproducing an average response over the original training design is insufficient for this purpose."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 200,
+    "before": "The distinction between predictive quality and optimization quality was examined explicitly by \\citet{Pedrozo2025}. They compared five surrogate approaches for a carbon-dioxide-stream pooling problem and assessed predictive accuracy, computational effort, and optimization behavior separately. Their comparison of one-shot optimization with a trust-region filter strategy showed that models with favorable fitting performance could still differ in convergence and reliability during search. Although the application concerns carbon capture rather than wastewater treatment, the methodological lesson is directly relevant: a good surrogate fit and a good engineering decision are separate outcomes.",
+    "after": "The distinction between predictive quality and optimization quality was examined explicitly by \\citet{Pedrozo2025}. They compared five surrogate approaches for a carbon-dioxide-stream pooling problem and assessed predictive accuracy, computational effort, and optimization behavior separately. Their comparison of one-shot optimization with a trust-region filter strategy showed that models with favorable fitting performance could still differ in convergence and reliability during search. Although the application concerns carbon capture rather than wastewater treatment, it demonstrates a directly relevant distinction between the quality of a surrogate fit and the quality of the engineering decision obtained with it."
+  },
+  {
+    "file": "02_integrated_literature.tex",
+    "line": 202,
+    "before": "Physical feasibility does not eliminate this distinction. Mass conservation and non-negativity remove certain impossible component states, but many different physically admissible states can still have different nitrogen distributions, biomass concentrations, and treatment performance. An optimizer can therefore select a prediction that satisfies the declared physical constraints yet remains inaccurate relative to the mechanistic reference. Physical-enforcement studies establish how to exclude impossible states; approximation-management studies establish why the response used by the optimizer still needs to be checked.",
+    "after": "Physical feasibility does not eliminate this distinction. Mass conservation and non-negativity remove certain impossible component states, but many different physically admissible states can still have different nitrogen distributions, biomass concentrations, and treatment performance. An optimizer can therefore select a prediction that satisfies the declared physical constraints yet remains inaccurate relative to the mechanistic reference. Physical-enforcement studies establish how to exclude impossible states. Approximation-management studies establish why the response used by the optimizer still needs to be checked."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 6,
+    "before": "An activated sludge reactor does not simply remove material; it changes its form and distribution. Organic substrate can become biomass, ammonium can become nitrite and nitrate, and soluble phosphate can enter biological storage or a precipitate. Describing these transformations therefore requires more than a small set of aggregate effluent concentrations. The ASM framework addresses this need by separating wastewater material into components and linking their changes through biological and chemical processes \\citep{Henze2006}. In this dissertation, that component representation also defines the physical meaning of a surrogate prediction: the surrogate estimates a complete component state from the influent state and operating conditions.",
+    "after": "An activated sludge reactor does not simply remove material. It changes its form and distribution. Organic substrate can become biomass, ammonium can become nitrite and nitrate, and soluble phosphate can enter biological storage or a precipitate. Describing these transformations therefore requires more than a small set of aggregate effluent concentrations. The ASM framework addresses this need by separating wastewater material into components and linking their changes through biological and chemical processes \\citep{Henze2006}. In this dissertation, that component representation also defines the physical meaning of a surrogate prediction by making the complete component state the quantity estimated from the influent state and operating conditions."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 14,
+    "before": "The component formulation uses vectors and matrices to record many concentration and balance equations at once. Their meaning remains scalar, however: each coordinate still represents one physical quantity with a specified unit. For example, a concentration of 5 g N m$^{-3}$ is numerically equal to 5 mg N L$^{-1}$ because both the mass and volume units change by a factor of one thousand. Oxygen, COD, nitrogen, phosphorus, solids, and alkalinity nevertheless use different reporting bases. A quantity expressed as g COD m$^{-3}$, for instance, represents oxygen-demand equivalents rather than grams of one named organic molecule. These distinctions determine which coefficients are needed before quantities can be combined.",
+    "after": "The component formulation uses vectors and matrices to record many concentration and balance equations at once. Each coordinate nevertheless retains its scalar meaning as one physical quantity with a specified unit. For example, a concentration of 5 g N m$^{-3}$ is numerically equal to 5 mg N L$^{-1}$ because both the mass and volume units change by a factor of one thousand. Oxygen, COD, nitrogen, phosphorus, solids, and alkalinity nevertheless use different reporting bases. A quantity expressed as g COD m$^{-3}$, for instance, represents oxygen-demand equivalents rather than grams of one named organic molecule. These distinctions determine which coefficients are needed before quantities can be combined."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 21,
+    "before": "The superscript $\\top$ denotes transpose. It changes a column into a row, or interchanges the rows and columns of a matrix, without changing the underlying component values. The notation $c\\in\\mathbb{R}^3$ states that the vector contains three real-valued coordinates. The notation $c\\geq0$ states that every coordinate is non-negative: $c_1\\geq0$, $c_2\\geq0$, and $c_3\\geq0$. It does not merely require their sum to be non-negative.",
+    "after": "The superscript $\\top$ denotes transpose. It changes a column into a row, or interchanges the rows and columns of a matrix, without changing the underlying component values. The notation $c\\in\\mathbb{R}^3$ states that the vector contains three real-valued coordinates. The notation $c\\geq0$ requires every coordinate to be non-negative, so that $c_1\\geq0$, $c_2\\geq0$, and $c_3\\geq0$. It does not merely require their sum to be non-negative."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 162,
+    "before": "The equation preserves two nitrogen atoms, four hydrogen atoms, two oxygen atoms, and zero net charge. In this simplified balance, ammonium and nitrite are coupled without an organic electron donor. The cultivation work of \\citet{Strous1998} and the pathway studies of \\citet{Dietl2015} and \\citet{Maalcke2016} explain why this process differs biologically from ordinary heterotrophic denitrification. Its application also requires its own organisms and operating conditions \\citep{Vandekerckhove2018,Xie2021,WinklerStraka2019}. It is included here only to clarify the boundary of the nitrogen discussion; it is not an additional process in the adopted 20-component, 28-process reactor model.",
+    "after": "The equation preserves two nitrogen atoms, four hydrogen atoms, two oxygen atoms, and zero net charge. In this simplified balance, ammonium and nitrite are coupled without an organic electron donor. The cultivation work of \\citet{Strous1998} and the pathway studies of \\citet{Dietl2015} and \\citet{Maalcke2016} explain why this process differs biologically from ordinary heterotrophic denitrification. Its application also requires its own organisms and operating conditions \\citep{Vandekerckhove2018,Xie2021,WinklerStraka2019}. It is included here only to clarify the boundary of the nitrogen discussion. It is not an additional process in the adopted 20-component, 28-process reactor model."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 174,
+    "before": "Two-step nitrification represents ammonium oxidation to nitrite separately from nitrite oxidation to nitrate, and therefore retains separate ammonia-oxidizing and nitrite-oxidizing biomass. A one-step description may reproduce the overall conversion from ammonium to nitrate while hiding the nitrite intermediate. By retaining that intermediate, the state can distinguish a low-ammonium effluent that still contains nitrite from one in which nitrite has been oxidized further. This distinction belongs to the adopted reaction model; it does not imply that every nitrogen pathway occurring in a real treatment plant is represented. The broader diversity of microbial nitrogen-removal pathways reviewed by \\citet{Duan2022} provides that context.",
+    "after": "Two-step nitrification represents ammonium oxidation to nitrite separately from nitrite oxidation to nitrate, and therefore retains separate ammonia-oxidizing and nitrite-oxidizing biomass. A one-step description may reproduce the overall conversion from ammonium to nitrate while hiding the nitrite intermediate. By retaining that intermediate, the state can distinguish a low-ammonium effluent that still contains nitrite from one in which nitrite has been oxidized further. This distinction belongs to the adopted reaction model. It does not imply that every nitrogen pathway occurring in a real treatment plant is represented. The broader diversity of microbial nitrogen-removal pathways reviewed by \\citet{Duan2022} provides that context."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 189,
+    "before": "Two units of $A$ contain the same tracked inventory as one unit of $B$, and one unit of $B$ contains the same inventory as two units of $C$. Pool $B$ therefore acts as an intermediate: the first process produces it and the second consumes it. Its net concentration change depends on the difference between the two process rates even though each process individually preserves the weighted inventory.",
+    "after": "Two units of $A$ contain the same tracked inventory as one unit of $B$, and one unit of $B$ contains the same inventory as two units of $C$. Pool $B$ therefore acts as an intermediate that the first process produces and the second consumes. Its net concentration change depends on the difference between the two process rates even though each process individually preserves the weighted inventory."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 199,
+    "before": "The dot denotes a time derivative. These expressions describe reaction contributions only; hydraulic transport is not yet included. The same equations can be collected into a process-by-component matrix and a rate column,",
+    "after": "The dot denotes a time derivative. These expressions describe reaction contributions only. Hydraulic transport is not yet included. The same equations can be collected into a process-by-component matrix and a rate column,"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 204,
+    "before": "Transposing the stoichiometric matrix places the coefficients for each component in one row. Multiplication then reconstructs all three scalar rates at once:",
+    "after": "Transposing the stoichiometric matrix places the coefficients for each component in one row. The three scalar rates can then be reconstructed together by multiplication as"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 211,
+    "before": "For hypothetical rates of 3 and 1 in compatible amount-per-time units, the resulting contributions are $-6$, 2, and 2. Pool $B$ increases because its production exceeds its consumption. The positive changes in $B$ and $C$ do not mean that material has been created; they are accompanied by a corresponding loss from $A$.",
+    "after": "For hypothetical rates of 3 and 1 in compatible amount-per-time units, the resulting contributions are $-6$, 2, and 2. Pool $B$ increases because its production exceeds its consumption. The positive changes in $B$ and $C$ do not mean that material has been created. They are accompanied by a corresponding loss from $A$."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 229,
+    "before": "This formulation separates two different roles. Stoichiometry specifies the proportions in which components are consumed and produced; kinetics specifies how quickly those transformations proceed at a particular state. Increasing a biomass concentration can therefore change a process rate without changing the corresponding stoichiometric row. Likewise, changing aeration can alter oxygen limitation and thus process kinetics without changing the material accounting of the reaction itself.",
+    "after": "This formulation separates two different roles. Stoichiometry specifies the proportions in which components are consumed and produced. Kinetics specifies how quickly those transformations proceed at a particular state. Increasing a biomass concentration can therefore change a process rate without changing the corresponding stoichiometric row. Likewise, changing aeration can alter oxygen limitation and thus process kinetics without changing the material accounting of the reaction itself."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 239,
+    "before": "A representative growth expression combines a maximum specific growth rate, biomass abundance, and multiple limitation factors:",
+    "after": "A representative growth expression combines a maximum specific growth rate, biomass abundance, and multiple limitation factors in the form"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 252,
+    "before": "The stoichiometric and kinetic relations describe transformation within the reactor. A reactor model also requires a boundary that accounts for material entering, leaving, and crossing that boundary through external transfer. The standalone prediction problem considers a completely mixed reactor at steady state. Perfect mixing makes the reactor concentration equal to the effluent concentration. The boundary includes hydraulic inflow and outflow, the 28 modeled reaction processes, and dissolved-oxygen transfer. It excludes a clarifier, solids return, and other external additions. These exclusions define the specific balance enforced in the reactor study; they do not imply that such processes are absent from wastewater treatment plants.",
+    "after": "The stoichiometric and kinetic relations describe transformation within the reactor. A reactor model also requires a boundary that accounts for material entering, leaving, and crossing that boundary through external transfer. The standalone prediction problem considers a completely mixed reactor at steady state. Perfect mixing makes the reactor concentration equal to the effluent concentration. The boundary includes hydraulic inflow and outflow, the 28 modeled reaction processes, and dissolved-oxygen transfer. It excludes a clarifier, solids return, and other external additions. These exclusions define the specific balance enforced in the reactor study. They do not imply that such processes are absent from wastewater treatment plants."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 293,
+    "before": "For a hypothetical HRT of 12 h, Equation~\\eqref{eq:reactor_dilution} gives $D=2$ d$^{-1}$. A component difference of 5 g m$^{-3}$ then corresponds to a net transformation or transfer of 10 g m$^{-3}$ d$^{-1}$ in that coordinate. For a hypothetical aeration setting of 1, the transfer coefficient is 20 d$^{-1}$. If dissolved oxygen is 2 g O$_2$ m$^{-3}$, the oxygen-transfer rate is 130 g O$_2$ m$^{-3}$ d$^{-1}$. These calculations illustrate the accounting implied by the equations; they are not simulated treatment outcomes.",
+    "after": "For a hypothetical HRT of 12 h, Equation~\\eqref{eq:reactor_dilution} gives $D=2$ d$^{-1}$. A component difference of 5 g m$^{-3}$ then corresponds to a net transformation or transfer of 10 g m$^{-3}$ d$^{-1}$ in that coordinate. For a hypothetical aeration setting of 1, the transfer coefficient is 20 d$^{-1}$. If dissolved oxygen is 2 g O$_2$ m$^{-3}$, the oxygen-transfer rate is 130 g O$_2$ m$^{-3}$ d$^{-1}$. These calculations illustrate the accounting implied by the equations. They are not simulated treatment outcomes."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 320,
+    "before": "The first equation gives $a_B=2a_A$, and the second gives $a_C=a_A$. Choosing $a_A=1$ yields $(1,2,1)^\\top$. Choosing $a_A=3$ yields $(3,6,3)^\\top$, which represents the same conservation law multiplied by three. These columns lie in the null space of $\\nu_{\\rm toy}$: they are component-space directions that the stoichiometric matrix sends to zero.",
+    "after": "The first equation gives $a_B=2a_A$, and the second gives $a_C=a_A$. Choosing $a_A=1$ yields $(1,2,1)^\\top$. Choosing $a_A=3$ yields $(3,6,3)^\\top$, which represents the same conservation law multiplied by three. These columns lie in the null space of $\\nu_{\\rm toy}$ because the stoichiometric matrix sends these component-space directions to zero."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 345,
+    "before": "For the full matrix, $U$ has dimension $28\\times28$, $\\Sigma$ has dimension $28\\times20$, and $V$ has dimension $20\\times20$. The rectangular matrix $\\Sigma$ contains the singular values on its diagonal and zeros elsewhere. Their product reconstructs the original $28\\times20$ stoichiometric matrix:",
+    "after": "For the full matrix, $U$ has dimension $28\\times28$, $\\Sigma$ has dimension $28\\times20$, and $V$ has dimension $20\\times20$. The rectangular matrix $\\Sigma$ contains the singular values on its diagonal and zeros elsewhere. Their product reconstructs the original $28\\times20$ stoichiometric matrix as"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 364,
+    "before": "Its scalar product with each stoichiometric row is zero:",
+    "after": "Taking its scalar product with each stoichiometric row gives"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 382,
+    "before": "Reaction conservation alone, however, is not enough to establish conservation across an open reactor boundary. The inflow, outflow, and external transfer terms must also be considered. For invariant row $h$, multiply the component balance by $A_{hj}$ and sum over the twenty components:",
+    "after": "Reaction conservation alone, however, is not enough to establish conservation across an open reactor boundary. The inflow, outflow, and external transfer terms must also be considered. For invariant row $h$, multiplying the component balance by $A_{hj}$ and summing over the twenty components gives"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 391,
+    "before": "The reaction contribution vanishes because of the invariant construction. The oxygen-transfer selector leaves only the oxygen-column coefficient. Premultiplying Equation~\\eqref{eq:reactor_steady_difference} by $A$ gives the same result in vector form:",
+    "after": "The reaction contribution vanishes because of the invariant construction. The oxygen-transfer selector leaves only the oxygen-column coefficient. Premultiplying Equation~\\eqref{eq:reactor_steady_difference} by $A$ gives the same result in the vector form"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 425,
+    "before": "A phosphate addition with a nonzero phosphorus-inventory contribution would therefore change the right-hand side. Imposing the original influent equality in such a system would incorrectly remove a real external contribution. This example illustrates a general principle used throughout the dissertation: a physical constraint must be derived from the actual model boundary, not selected merely because it produces a convenient statistical result.",
+    "after": "A phosphate addition with a nonzero phosphorus-inventory contribution would therefore change the right-hand side. Imposing the original influent equality in such a system would incorrectly remove a real external contribution. This example illustrates why physical constraints throughout the dissertation are derived from the actual model boundary. A convenient statistical result alone does not justify selecting a constraint."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 441,
+    "before": "Their weighted sum is $-2+2(0.5)+1=0$. Starting from the hypothetical state $(8,1,1)^\\top$ gives $(6,1.5,2)^\\top$, and both states have weighted inventory 11. The accumulated progress is conceptually different from an instantaneous process rate: multiplying a rate by an appropriate time scale produces a concentration-equivalent state change.",
+    "after": "Their weighted sum is $-2+2(0.5)+1=0$. Starting from the hypothetical state $(8,1,1)^\\top$ gives $(6,1.5,2)^\\top$, and both states have weighted inventory 11. The accumulated progress represents a concentration-equivalent state change obtained by multiplying a rate by an appropriate time scale. It therefore differs conceptually from an instantaneous process rate."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 474,
+    "before": "$b_i=Ac_{in,i}$. A physically admissible effluent must satisfy the five invariant equalities and the twenty non-negativity bounds:",
+    "after": "$b_i=Ac_{in,i}$. A physically admissible effluent must satisfy the five invariant equalities and the twenty non-negativity bounds given by"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 480,
+    "before": "The equality $Ac=b_i$ defines a 15-dimensional affine space before the concentration bounds are applied. An affine space is a linear change space translated by a fixed reference state; the influent provides one such reference here. Intersecting that affine space with the non-negative orthant retains only states whose component concentrations are all non-negative.",
+    "after": "The equality $Ac=b_i$ defines a 15-dimensional affine space before the concentration bounds are applied. An affine space is a linear change space translated by a fixed reference state. The influent provides one such reference here. Intersecting that affine space with the non-negative orthant retains only states whose component concentrations are all non-negative."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 487,
+    "before": "$(11,0,0)^\\top$, $(0,5.5,0)^\\top$, and $(0,0,11)^\\top$. The feasible region is the triangle connecting these states within the inventory plane. The state $(6,1.5,2)^\\top$ lies inside this triangle. The state $(12,-0.5,0)^\\top$ lies in the same inventory plane because $12-1=11$, but it is not physically admissible because one coordinate is negative. Mass conservation selects the plane; non-negativity selects the admissible portion of that plane.",
+    "after": "$(11,0,0)^\\top$, $(0,5.5,0)^\\top$, and $(0,0,11)^\\top$. The feasible region is the triangle connecting these states within the inventory plane. The state $(6,1.5,2)^\\top$ lies inside this triangle. The state $(12,-0.5,0)^\\top$ lies in the same inventory plane because $12-1=11$, but it is not physically admissible because one coordinate is negative. Mass conservation selects the plane. Non-negativity selects the admissible portion of that plane."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 502,
+    "before": "$c_1+c_2=10$. The equality alone permits states such as $(-1,11)$, $(4,6)$, and $(12,-2)$. Non-negativity reduces this infinite line to the segment between $(0,10)$ and $(10,0)$. Simply clipping $(-1,11)$ to $(0,11)$ removes the negative concentration but changes the conserved sum from 10 to 11. Enforcing the equality and enforcing non-negativity are therefore not interchangeable operations; simultaneous enforcement requires their intersection.",
+    "after": "$c_1+c_2=10$. The equality alone permits states such as $(-1,11)$, $(4,6)$, and $(12,-2)$. Non-negativity reduces this infinite line to the segment between $(0,10)$ and $(10,0)$. Simply clipping $(-1,11)$ to $(0,11)$ removes the negative concentration but changes the conserved sum from 10 to 11. Enforcing the equality and enforcing non-negativity are therefore not interchangeable operations. Simultaneous enforcement requires their intersection."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 535,
+    "before": "Each result has its own constituent unit. The example illustrates how reporting coefficients combine different state components; it is not intended to represent a reactor steady state.",
+    "after": "Each result has its own constituent unit. The example illustrates how reporting coefficients combine different state components. It is not intended to represent a reactor steady state."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 537,
+    "before": "The same four sums can be written compactly using a fixed reporting matrix:",
+    "after": "A fixed reporting matrix gives the compact representation of the same four sums as"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 568,
+    "before": "\\caption{Hypothetical geometry of hidden component error under the fixed reporting map. (a) The reference, a pair with different nitrogen components, and a pair with a negative component all give TN of 10 g N m$^{-3}$. Pale parallel lines show other TN level sets. (b) Along $(6+t,4-t)^\\top$, reported TN error remains zero while component error grows. Teal shading marks the interval where both concentrations are non-negative; orange shading marks a negative component. All unshown components are zero, and no state is asserted to satisfy the reactor kinetics.}",
+    "after": "\\caption{Hypothetical geometry of hidden component error under the fixed reporting map. (a) The reference, a pair with different nitrogen components, and a pair with a negative component all give TN of 10 g N m$^{-3}$. Pale parallel lines show other TN level sets. (b) Along $(6+t,4-t)^\\top$, reported TN error remains zero while component error grows. Teal shading marks the interval where both concentrations are non-negative. Orange shading marks a negative component. All unshown components are zero, and no state is asserted to satisfy the reactor kinetics.}"
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 572,
+    "before": "The purple point $(9,1)^\\top$ therefore has exactly correct reported TN but a component error of $3\\sqrt{2}$ g N m$^{-3}$. The orange point $(-1,11)^\\top$ reports the same total while also violating non-negativity. Because ammonium and nitrate have zero coefficients in the other three reporting rows, this redistribution is invisible to all four reported quantities in the example. The many-to-one map loses the distinction between the nitrogen forms; adding further composite accuracy scores cannot recover it. Component-level error and sign checks are therefore necessary even when every reported treatment quantity agrees with its reference.",
+    "after": "The purple point $(9,1)^\\top$ therefore has exactly correct reported TN but a component error of $3\\sqrt{2}$ g N m$^{-3}$. The orange point $(-1,11)^\\top$ reports the same total while also violating non-negativity. Because ammonium and nitrate have zero coefficients in the other three reporting rows, this redistribution is invisible to all four reported quantities in the example. The many-to-one map loses the distinction between the nitrogen forms. Adding further composite accuracy scores cannot recover it. Component-level error and sign checks are therefore necessary even when every reported treatment quantity agrees with its reference."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 594,
+    "before": "$\\mathrm d\\bar c/\\mathrm dt=0.5$ g m$^{-3}$ d$^{-1}$. The example shows why a local concentration change cannot be inferred from the reaction term alone: transport can be equally important.",
+    "after": "$\\mathrm d\\bar c/\\mathrm dt=0.5$ g m$^{-3}$ d$^{-1}$. The example shows that transport can be as important as reaction in determining a local concentration change. That change therefore cannot be inferred from the reaction term alone."
+  },
+  {
+    "file": "03_reactor_foundations.tex",
+    "line": 641,
+    "before": "The numerical checks are reported using explicit tolerances and residual definitions. The equalities define the mathematical constraints; the residuals quantify how closely the returned numerical state satisfies them. Reporting these quantities in their original units or under a clearly defined scaling makes the physical calculation open to inspection \\citep{Boyd2004,BuzziFerraris2013}. Chapters~\\ref{ch:projection}--\\ref{ch:plant} apply this common basis to the standalone reactor benchmark, the structured regression, and the connected-plant optimization study.",
+    "after": "The numerical checks are reported using explicit tolerances and residual definitions. The equalities define the mathematical constraints. The residuals quantify how closely the returned numerical state satisfies them. Reporting these quantities in their original units or under a clearly defined scaling makes the physical calculation open to inspection \\citep{Boyd2004,BuzziFerraris2013}. Chapters~\\ref{ch:projection}--\\ref{ch:plant} apply this common basis to the standalone reactor benchmark, the structured regression, and the connected-plant optimization study."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 112,
+    "before": "The latent variables are statistical combinations of the predictors; they are not the same as the physical components of the activated sludge state. Their value is dimensional reduction and covariance representation. The chemometric formulation of \\citet{Wold2001} motivates the use of PLS as an inspectable linear comparator. Wastewater applications include the kernel extension used by \\citet{Woo2009} for process-variable estimation and the adaptive effluent-quality prediction framework of \\citet{Yang2021}. The present benchmark retains ordinary PLS with one to six latent components while predicting all twenty physical effluent components jointly.",
+    "after": "The latent variables are statistical combinations of the predictors. They are not the same as the physical components of the activated sludge state. Their value is dimensional reduction and covariance representation. The chemometric formulation of \\citet{Wold2001} motivates the use of PLS as an inspectable linear comparator. Wastewater applications include the kernel extension used by \\citet{Woo2009} for process-variable estimation and the adaptive effluent-quality prediction framework of \\citet{Yang2021}. The present benchmark retains ordinary PLS with one to six latent components while predicting all twenty physical effluent components jointly."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 118,
+    "before": "Consider two hypothetical inputs and two outputs with coefficient rows $(3,4)$ and $(0,0)$. The first input contributes to both outputs; the second contributes to neither. The Euclidean norm of the first row is",
+    "after": "Consider two hypothetical inputs and two outputs with coefficient rows $(3,4)$ and $(0,0)$. The first input contributes to both outputs. The second contributes to neither. The Euclidean norm of the first row is"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 227,
+    "before": "The provisional target serves two purposes: it gives the mass-conservation solve a strictly positive reference state, and it defines the relative-error weights. For a component change $h_j$, the weighted discrepancy is",
+    "after": "The provisional target gives the mass-conservation solve a strictly positive reference state and defines the relative-error weights. For a component change $h_j$, the weighted discrepancy is"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 278,
+    "before": "The relative-weighted ellipse is elongated because movement in the second component is divided by two. A larger absolute change in that component can therefore have the same weighted cost as a smaller change in the first. An equal-absolute-weight geometry would instead produce circular contours. Both candidate points satisfy the same mass-conservation equality; the difference lies in the metric used to choose among them. The influent state supplies the feasible anchor from which all mass-conserving changes are constructed, but it need not be the closest point to the provisional target.",
+    "after": "The relative-weighted ellipse is elongated because movement in the second component is divided by two. A larger absolute change in that component can therefore have the same weighted cost as a smaller change in the first. An equal-absolute-weight geometry would instead produce circular contours. Both candidate points satisfy the same mass-conservation equality. The difference lies in the metric used to choose among them. The influent state supplies the feasible anchor from which all mass-conserving changes are constructed, but it need not be the closest point to the provisional target."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 407,
+    "before": "and increasing coordinates remain non-negative automatically. Mass conservation is also retained:",
+    "after": "and increasing coordinates remain non-negative automatically. The interpolation also retains mass conservation because"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 423,
+    "before": "Figure~\\ref{fig:largest_feasible_interpolation_geometry} shows how the smallest coordinate bound in Equation~\\eqref{eq:projection_coordinate_bound} selects this endpoint. The left panel is a local view of the plane $c_1+c_2+c_3=10$, with $c_3$ supplied by $10-c_1-c_2$. The candidate ray stays within that plane, but its continuation crosses $c_2=0$. The right panel tracks all three coordinates against the same interpolation fraction: the second coordinate reaches zero at $\\alpha_*=2/3$, while the first and third remain positive. Here $\\alpha_*$ denotes the exact largest feasible fraction, before the small safety margin in Equation~\\eqref{eq:projection_positivity_backtracking}.",
+    "after": "Figure~\\ref{fig:largest_feasible_interpolation_geometry} shows how the smallest coordinate bound in Equation~\\eqref{eq:projection_coordinate_bound} selects this endpoint. The left panel is a local view of the plane $c_1+c_2+c_3=10$, with $c_3$ supplied by $10-c_1-c_2$. The candidate ray stays within that plane, but its continuation crosses $c_2=0$. The right panel tracks all three coordinates against the same interpolation fraction and shows the second coordinate reaching zero at $\\alpha_*=2/3$ while the first and third remain positive. Here $\\alpha_*$ denotes the exact largest feasible fraction, before the small safety margin in Equation~\\eqref{eq:projection_positivity_backtracking}."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 428,
+    "before": "\\caption{Hypothetical largest-feasible-interpolation geometry for the anchor $(8,1,1)^\\top$ and mass-conserving candidate $(4,-0.5,6.5)^\\top$. (a) The blue ray stops at the first concentration boundary, returning $(16/3,0,14/3)^\\top$; the dashed continuation reaches the negative candidate. Shading shows a local portion of the non-negative set in the inventory plane. (b) Every coordinate uses the same fraction, and the inventory remains 10 throughout. The common illustrative concentration basis permits this simple sum; the numerical safety margin is omitted for visibility.}",
+    "after": "\\caption{Hypothetical largest-feasible-interpolation geometry for the anchor $(8,1,1)^\\top$ and mass-conserving candidate $(4,-0.5,6.5)^\\top$. (a) The blue ray stops at the first concentration boundary, returning $(16/3,0,14/3)^\\top$. The dashed continuation reaches the negative candidate. Shading shows a local portion of the non-negative set in the inventory plane. (b) Every coordinate uses the same fraction, and the inventory remains 10 throughout. The common illustrative concentration basis permits this simple sum. The numerical safety margin is omitted for visibility.}"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 432,
+    "before": "The plot makes the coupling introduced by the safeguard explicit. Although $c_2$ determines the stopping fraction, $c_1$ also moves from its candidate value of 4 to $16/3$, and $c_3$ moves from 6.5 to $14/3$. These changes preserve the direction ratios and hence the invariant equality in Equation~\\eqref{eq:projection_final_conservation}. They need not improve the component prediction errors because the stopping rule uses the feasible anchor and concentration bounds rather than the unknown reference effluent. This stage selects a point on the chosen ray; it does not repeat the weighted minimization over the entire non-negative feasible set.",
+    "after": "The plot makes the coupling introduced by the safeguard explicit. Although $c_2$ determines the stopping fraction, $c_1$ also moves from its candidate value of 4 to $16/3$, and $c_3$ moves from 6.5 to $14/3$. These changes preserve the direction ratios and hence the invariant equality in Equation~\\eqref{eq:projection_final_conservation}. They need not improve the component prediction errors because the stopping rule uses the feasible anchor and concentration bounds rather than the unknown reference effluent. This stage selects a point on the chosen ray. It does not repeat the weighted minimization over the entire non-negative feasible set."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 467,
+    "before": "COD, TN, TP, and TSS are calculated only after the component state has been produced. The same reporting map is used for raw and projected predictions:",
+    "after": "COD, TN, TP, and TSS are calculated only after the component state has been produced. Raw and projected predictions use the same reporting map, expressed as"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 480,
+    "before": "The reactor benchmark was designed around 10,000 accepted steady-state cases. Each candidate varies all twenty-two surrogate inputs: HRT, aeration, and the twenty influent component concentrations.",
+    "after": "The reactor benchmark was designed around 10,000 accepted steady-state cases. Each candidate varies all twenty-two surrogate inputs, comprising HRT, aeration, and the twenty influent component concentrations."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 527,
+    "before": "Several diagnostics were retained separately: solver acceptance, invariant residual, and minimum concentration. This separation is important because one numerical success does not guarantee the others. A bounded least-squares solve can terminate without meeting the required steady-state residual. A strictly positive state can still violate a mass-conservation invariant. Conversely, a state can have a small invariant residual without satisfying the component-balance acceptance criterion used for mechanistic generation. The surrogate inputs therefore contain only the sampled operating and influent coordinates; initialization choices and solver history are not supplied as predictive features.",
+    "after": "Solver acceptance, invariant residual, and minimum concentration were retained as separate diagnostics. This separation is important because one numerical success does not guarantee the others. A bounded least-squares solve can terminate without meeting the required steady-state residual. A strictly positive state can still violate a mass-conservation invariant. Conversely, a state can have a small invariant residual without satisfying the component-balance acceptance criterion used for mechanistic generation. The surrogate inputs therefore contain only the sampled operating and influent coordinates. Initialization choices and solver history are not supplied as predictive features."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 738,
+    "before": "The minimum is componentwise. The negative magnitude uses training standard deviations only to make violations across differently scaled component coordinates comparable; it does not replace the componentwise native-unit sign check used for acceptance.",
+    "after": "The minimum is componentwise. The negative magnitude uses training standard deviations only to make violations across differently scaled component coordinates comparable. It does not replace the componentwise native-unit sign check used for acceptance."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 751,
+    "before": "A state is jointly feasible only when both requirements pass in that same observation:",
+    "after": "Joint feasibility requires both conditions to pass in the same observation, as expressed by"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 776,
+    "before": "A negative value means that projection reduced the assessed error; a positive value means that it increased it. For example, raw and projected nRMSE values of 0.40 and 0.35 give a difference of $-0.05$, whereas a projected value of 0.45 gives $+0.05$. Differences are calculated within the paired folds before being summarized. Component-level and composite-level differences are also retained because aggregate improvement can coexist with deterioration in specific outputs.",
+    "after": "A negative value means that projection reduced the assessed error. A positive value means that it increased it. For example, raw and projected nRMSE values of 0.40 and 0.35 give a difference of $-0.05$, whereas a projected value of 0.45 gives $+0.05$. Differences are calculated within the paired folds before being summarized. Component-level and composite-level differences are also retained because aggregate improvement can coexist with deterioration in specific outputs."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 778,
+    "before": "Projection displacement measures something different: how far the returned projected state moves from its own raw prediction. For sample $i$,",
+    "after": "Projection displacement measures how far the returned projected state moves from its own raw prediction. For sample $i$,"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 790,
+    "before": "The training scale used here differs deliberately from the provisional concentration scale used inside the projection. The former measures movement relative to observed response variability; the latter defines the optimization geometry of the physical adjustment.",
+    "after": "The training scale used here differs deliberately from the provisional concentration scale used inside the projection. The former measures movement relative to observed response variability. The latter defines the optimization geometry of the physical adjustment."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 828,
+    "before": "Four inputs are allowed to exceed their upper learning-domain bounds: HRT, aeration, influent ammonium, and influent slowly biodegradable substrate. Exceedance is expressed relative to the width of the original training interval,",
+    "after": "HRT, aeration, influent ammonium, and influent slowly biodegradable substrate are allowed to exceed their upper learning-domain bounds. Exceedance is expressed relative to the width of the original training interval,"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 877,
+    "before": "Repeated inference is timed on a deterministic 512-row batch constructed by cycling through the relevant validation inputs. The timing batch remains fixed at 512 rows even when fewer than 512 unique validation cases are available. Repetition is used only to create an equal-sized timing workload; prediction-error calculations continue to use the original assessment counts.",
+    "after": "Repeated inference is timed on a deterministic 512-row batch constructed by cycling through the relevant validation inputs. The timing batch remains fixed at 512 rows even when fewer than 512 unique validation cases are available. Repetition is used only to create an equal-sized timing workload. Prediction-error calculations continue to use the original assessment counts."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 894,
+    "before": "The mechanistic generation procedure produced the complete target datasets required for the assessment: 10,000 accepted learning-domain states and 600 accepted states in each exterior design. Every attempted candidate satisfied the specified steady-state component-balance acceptance criterion, and every retained concentration was strictly positive. The realized exterior samples also matched the intended mixture of 70\\% one-input excursions and 30\\% two-input excursions.",
+    "after": "The mechanistic generation procedure produced the complete target datasets required for the assessment, with 10,000 accepted learning-domain states and 600 accepted states in each exterior design. Every attempted candidate satisfied the specified steady-state component-balance acceptance criterion, and every retained concentration was strictly positive. The realized exterior samples also matched the intended mixture of 70\\% one-input excursions and 30\\% two-input excursions."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 957,
+    "before": "Its macro-average $R^2$ increased slightly from 0.977 to 0.978. Random Forest showed the opposite pattern: its macro-average $R^2$ declined from 0.484 to 0.332. Yet its nMAE decreased from 0.497 to 0.467. The same projection therefore worsened its squared-error measure while improving its average absolute deviation. This divergence already shows why one accuracy metric cannot fully describe the effect of enforcement.",
+    "after": "Its macro-average $R^2$ increased slightly from 0.977 to 0.978. Random Forest showed the opposite pattern, with its macro-average $R^2$ declining from 0.484 to 0.332. Yet its nMAE decreased from 0.497 to 0.467. The same projection therefore worsened its squared-error measure while improving its average absolute deviation. This divergence already shows why one accuracy metric cannot fully describe the effect of enforcement."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1047,
+    "before": "These widespread local improvements did not guarantee an aggregate improvement. The heterotrophic biomass component $X_H$ had higher error after projection for every predictor. Random Forest showed the most pronounced single-component deterioration: its $S_F$ nRMSE increased from 0.887 to 1.993. The 142 predictions for which interpolation was activated accounted for this increase, while the remaining 9858 cases retained essentially the same squared error.",
+    "after": "These widespread local improvements did not guarantee an aggregate improvement. The heterotrophic biomass component $X_H$ had higher error after projection for every predictor. Random Forest showed the most pronounced single-component deterioration when its $S_F$ nRMSE increased from 0.887 to 1.993. The 142 predictions for which interpolation was activated accounted for this increase, while the remaining 9858 cases retained essentially the same squared error."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1071,
+    "before": "Taken together, the physical and statistical results show two distinct effects of projection. The first is deterministic within the declared formulation: it closes the observed gap in mass conservation and non-negativity. The second is statistical and depends on the raw prediction: it redistributes error across components and reported treatment quantities.",
+    "after": "Taken together, the physical and statistical results show two distinct effects of projection. The first deterministically closes the observed gap in mass conservation and non-negativity within the declared formulation. The second redistributes error across components and reported treatment quantities through a statistical effect that depends on the raw prediction."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1107,
+    "before": "At the component level, projection reduced error in 192 of the 260 mild predictor--component comparisons and 193 of the 260 severe comparisons. Thus, every predictor improved a majority of its component scores at both severity levels, even though the aggregate result did not always improve. The same pattern observed inside the learning domain therefore remained visible outside it: broad component-level improvement could coexist with a worse pooled error when a smaller number of components deteriorated more strongly.",
+    "after": "At the component level, projection reduced error in 192 of the 260 mild predictor--component comparisons and 193 of the 260 severe comparisons. Thus, every predictor improved a majority of its component scores at both severity levels, even though the aggregate result did not always improve. The broad component-level improvement observed inside the learning domain could also coexist with a worse pooled error outside it when a smaller number of components deteriorated more strongly."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1182,
+    "before": "Now suppose a mass-conserving projection changes the state to $(7,3)^\\top$. The balance is restored because the total becomes 10. At the same time, the prediction error also decreases:",
+    "after": "Now suppose a mass-conserving projection changes the state to $(7,3)^\\top$. The balance is restored because the total becomes 10. At the same time, the decrease in prediction error can be written as"
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1208,
+    "before": "The value of this enforcement should not be interpreted as proof of statistical correctness. Rather, it establishes a narrower guarantee: the returned state satisfies the declared physical constraints to the specified numerical tolerances. This guarantee is useful whenever a downstream calculation requires a complete, non-negative component vector with the adopted invariant balances.",
+    "after": "The value of this enforcement should not be interpreted as proof of statistical correctness. Rather, it guarantees that the returned state satisfies the declared physical constraints to the specified numerical tolerances. This guarantee is useful whenever a downstream calculation requires a complete, non-negative component vector with the adopted invariant balances."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1224,
+    "before": "This behavior is not a failure of the interpolation logic. The interpolation did what it was designed to do: preserve mass conservation while preventing a negative concentration. The statistical deterioration arose because the coordinate that triggered the boundary and the coordinate whose error increased were not the same. The shared direction couples their adjustments.",
+    "after": "This behavior is not a failure of the interpolation logic. The interpolation preserved mass conservation while preventing a negative concentration, as intended. The statistical deterioration arose because the coordinate that triggered the boundary and the coordinate whose error increased were not the same. The shared direction couples their adjustments."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1236,
+    "before": "At the smallest design size, XGBoost and LightGBM had the lowest observed component errors. This behavior is consistent with the strong performance of boosted trees on moderate-sized tabular datasets reported by \\citet{Borisov2024} and \\citet{ShwartzZiv2022}. As the dataset increased, however, the multilayer perceptron improved more strongly and reached the lowest error at $N=10{,}000$. TabNet also continued to improve at the largest evaluated sizes. These trajectories support the learning-curve perspective of \\citet{VieringLoog2023}: model selection should be tied to the data budget under which the model will actually be used.",
+    "after": "At the smallest design size, XGBoost and LightGBM had the lowest observed component errors. This behavior is consistent with the strong performance of boosted trees on moderate-sized tabular datasets reported by \\citet{Borisov2024} and \\citet{ShwartzZiv2022}. As the dataset increased, however, the multilayer perceptron improved more strongly and reached the lowest error at $N=10{,}000$. TabNet also continued to improve at the largest evaluated sizes. These trajectories support the learning-curve perspective of \\citet{VieringLoog2023} by showing why model selection should reflect the data budget under which the model will actually be used."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1242,
+    "before": "Physical projection did not remove this limitation. Every exterior projected state satisfied mass conservation and non-negativity, yet the prediction errors increased substantially with excursion severity. The severe-domain result is especially important because it demonstrates that physical admissibility and predictive agreement can diverge completely: the returned state can satisfy every imposed constraint and still give an inaccurate treatment response.",
+    "after": "Physical projection did not remove this limitation. Every exterior projected state satisfied mass conservation and non-negativity, yet the prediction errors increased substantially with excursion severity. The severe-domain result demonstrates that a returned state can satisfy every imposed constraint and still give an inaccurate treatment response. Physical admissibility and predictive agreement can therefore diverge completely."
+  },
+  {
+    "file": "04_prediction_projection.tex",
+    "line": 1250,
+    "before": "Taken together, the results answer the first two research questions without treating one capability as evidence for another. Learner performance depended on the available training data and on whether the input remained inside the sampled domain. Projection reliably enforced the specified mass-conservation and non-negativity requirements across every assessed prediction, but its statistical effect depended on the learner, component, reported treatment quantity, and input condition. The practical consequence is a two-part assessment: choose the surrogate for the available data and intended input range, and evaluate physical enforcement separately for the state that will actually be used in engineering calculations.",
+    "after": "Taken together, the results answer the first two research questions without treating one capability as evidence for another. Learner performance depended on the available training data and on whether the input remained inside the sampled domain. Projection reliably enforced the specified mass-conservation and non-negativity requirements across every assessed prediction, but its statistical effect depended on the learner, component, reported treatment quantity, and input condition. A practical assessment should choose the surrogate for the available data and intended input range while evaluating physical enforcement separately on the state that will actually be used in engineering calculations."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 153,
+    "before": "The same driver can be partitioned into interpretable feature groups:",
+    "after": "The same driver can be partitioned into interpretable feature groups as"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 168,
+    "before": "Consider an illustrative driver for one component with aeration level \\(a\\) and influent ammonium concentration \\(n\\):",
+    "after": "An illustrative driver for one component with aeration level \\(a\\) and influent ammonium concentration \\(n\\) can be written as"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 178,
+    "before": "At the marked condition \\((a,n)=(2,3)\\), the driver is 1.3 and its aeration slope is \\(-0.1\\). At the same aeration setting with loading increased to 5, that slope becomes 0.5. A negative linear aeration coefficient can therefore coexist with a positive local aeration response because the curvature and interaction contributions also enter the derivative. These illustrative coefficients describe an intermediate statistical driver; they are not estimates of biological kinetics or a claim about the measured aeration response of the plant. The geometric reading identifies which combination of fitted terms determines the local operating effect.",
+    "after": "At the marked condition \\((a,n)=(2,3)\\), the driver is 1.3 and its aeration slope is \\(-0.1\\). At the same aeration setting with loading increased to 5, that slope becomes 0.5. A negative linear aeration coefficient can therefore coexist with a positive local aeration response because the curvature and interaction contributions also enter the derivative. These illustrative coefficients describe an intermediate statistical driver. They are not estimates of biological kinetics or a claim about the measured aeration response of the plant. The geometric reading identifies which combination of fitted terms determines the local operating effect."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 183,
+    "before": "\\caption{Hypothetical geometric interpretation of the second-order driver in Equation~\\eqref{eq:icsor_example_driver}, with coefficients \\((1,-2,0.5,0.25,0.3)\\) in its stated coefficient order. Inputs and driver values use illustrative units. (a) Contours of equal driver response; the teal curve passes through \\((a,n)=(2,3)\\), where \\(r_f=1.3\\). (b) The conditional aeration slope \\(-2+0.5a+0.3n\\); orange and teal indicate negative and positive slopes, respectively, and the purple line marks zero slope. The figure illustrates a statistical driver before component coupling and physical enforcement.}",
+    "after": "\\caption{Hypothetical geometric interpretation of the second-order driver in Equation~\\eqref{eq:icsor_example_driver}, with coefficients \\((1,-2,0.5,0.25,0.3)\\) in its stated coefficient order. Inputs and driver values use illustrative units. (a) The contours show equal driver response. The teal curve passes through \\((a,n)=(2,3)\\), where \\(r_f=1.3\\). (b) The conditional aeration slope is \\(-2+0.5a+0.3n\\). Orange and teal indicate negative and positive slopes, respectively, and the purple line marks zero slope. The figure illustrates a statistical driver before component coupling and physical enforcement.}"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 219,
+    "before": "\\caption{Hypothetical coefficient-space geometry of the quadratic matrices in Equation~\\eqref{eq:icsor_symmetry_numbers}. The diagonal entries remain \\(q_{11}=0.1\\) and \\(q_{22}=0\\). (a) The purple line contains all coefficient pairs with the same unordered interaction coefficient 0.2. Blue contours show \\(\\|Q\\|_F^2=0.01+q_{12}^2+q_{21}^2\\); the original orange point and symmetric teal point have squared norms 0.11 and 0.03. (b) Restricting this norm to the equal-response line gives a quadratic minimum at \\(q_{12}=q_{21}=0.1\\). This construction illustrates the norm decomposition in Equation~\\eqref{eq:icsor_quadratic_norm}.}",
+    "after": "\\caption{Hypothetical coefficient-space geometry of the quadratic matrices in Equation~\\eqref{eq:icsor_symmetry_numbers}. The diagonal entries remain \\(q_{11}=0.1\\) and \\(q_{22}=0\\). (a) The purple line contains all coefficient pairs with the same unordered interaction coefficient 0.2. Blue contours show \\(\\|Q\\|_F^2=0.01+q_{12}^2+q_{21}^2\\). The original orange point and symmetric teal point have squared norms 0.11 and 0.03. (b) Restricting this norm to the equal-response line gives a quadratic minimum at \\(q_{12}=q_{21}=0.1\\). This construction illustrates the norm decomposition in Equation~\\eqref{eq:icsor_quadratic_norm}.}"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 247,
+    "before": "The driver does not predict each effluent component independently. Instead, the model allows the component channels to interact through a learned simultaneous relation. Consider two hypothetical component equations with coupling coefficient 0.2 in both directions:",
+    "after": "The driver does not predict each effluent component independently. Instead, the model allows the component channels to interact through a learned simultaneous relation. Two hypothetical component equations with coupling coefficient 0.2 in both directions are"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 254,
+    "before": "Substituting the second equation into the first gives \\(c_1=4+0.2(2+0.2c_1)\\), or \\(0.96c_1=4.4\\). Thus \\(c_1=55/12\\) and \\(c_2=35/12\\), approximately \\((4.5833,2.9167)^\\top\\). These values illustrate the arithmetic of a simultaneous statistical relation: each predicted component depends on both the driver and the other component.",
+    "after": "Substituting the second equation into the first gives \\(c_1=4+0.2(2+0.2c_1)\\), or \\(0.96c_1=4.4\\). Thus \\(c_1=55/12\\) and \\(c_2=35/12\\), approximately \\((4.5833,2.9167)^\\top\\). These values illustrate how each predicted component in a simultaneous statistical relation depends on both the driver and the other component."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 297,
+    "before": "The small symmetric matrix in Equation~\\eqref{eq:icsor_small_coupling_matrices} makes this distinction visible. Along the direction \\((1,1)^\\top\\), multiplication by \\(R\\) scales the vector by 0.8; along \\((1,-1)^\\top\\), it scales the vector by 1.2. These orthogonal directions give singular values 0.8 and 1.2, so the condition number is \\(1.2/0.8=1.5\\).",
+    "after": "The small symmetric matrix in Equation~\\eqref{eq:icsor_small_coupling_matrices} makes this distinction visible. Along the direction \\((1,1)^\\top\\), multiplication by \\(R\\) scales the vector by 0.8. Along \\((1,-1)^\\top\\), it scales the vector by 1.2. These orthogonal directions give singular values 0.8 and 1.2, so the condition number is \\(1.2/0.8=1.5\\)."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 301,
+    "before": "Figure~\\ref{fig:ch5_geometry_coupling_conditioning} connects the simultaneous relation with this sensitivity calculation. The first panel represents the two component equations as lines. Their intersection is the raw coupled state, so evaluating the drivers independently at \\((4,2)\\) would omit the shifts induced by the simultaneous relation. In the remaining panels, a unit circle of possible driver perturbations is mapped through \\(R^{-1}\\) into an ellipse of component-state perturbations. The ellipse semiaxis lengths are the inverse singular values of \\(R\\). For coupling 0.2, the largest gain is 1.25; for coupling 0.99, it is 100. The latter ellipse becomes long and narrow because perturbations along \\((1,1)^\\top\\) are strongly amplified while the orthogonal direction remains comparatively insensitive.",
+    "after": "Figure~\\ref{fig:ch5_geometry_coupling_conditioning} connects the simultaneous relation with this sensitivity calculation. The first panel represents the two component equations as lines. Their intersection is the raw coupled state, so evaluating the drivers independently at \\((4,2)\\) would omit the shifts induced by the simultaneous relation. In the remaining panels, a unit circle of possible driver perturbations is mapped through \\(R^{-1}\\) into an ellipse of component-state perturbations. The ellipse semiaxis lengths are the inverse singular values of \\(R\\). For coupling 0.2, the largest gain is 1.25. For coupling 0.99, it is 100. The latter ellipse becomes long and narrow because perturbations along \\((1,1)^\\top\\) are strongly amplified while the orthogonal direction remains comparatively insensitive."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 303,
+    "before": "The axis lengths distinguish two numerical properties. The largest inverse singular value measures the maximum absolute error amplification in these coordinates, whereas the condition number measures the ratio between the largest and smallest directional gains. Inspecting individual coupling entries alone reveals neither property of the assembled system. The geometric interpretation therefore explains why the complete matrix is screened before a fitted coupled model is accepted. These perturbation ellipses concern the raw regression solve; subsequent physical projection is a separate operation.",
+    "after": "The axis lengths distinguish two numerical properties. The largest inverse singular value measures the maximum absolute error amplification in these coordinates, whereas the condition number measures the ratio between the largest and smallest directional gains. Inspecting individual coupling entries alone reveals neither property of the assembled system. The geometric interpretation therefore explains why the complete matrix is screened before a fitted coupled model is accepted. These perturbation ellipses concern the raw regression solve. Subsequent physical projection is a separate operation."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 308,
+    "before": "\\caption{Hypothetical geometric interpretation of simultaneous component coupling and numerical conditioning. (a) The lines in Equation~\\eqref{eq:icsor_scalar_coupling_example} intersect at \\((55/12,35/12)\\); the orange square marks the driver \\((4,2)\\). (b,c) For symmetric two-component coupling 0.2 and 0.99, respectively, the blue ellipse is \\(\\delta c=R^{-1}\\delta r\\) with \\(\\|\\delta r\\|_2=1\\); the dashed orange unit circle supplies the unamplified reference. Purple arrows show the direction of maximum gain. The two perturbation panels use different axis ranges to show gains of 1.25 and 100, with condition numbers 1.5 and 199; the unit circle consequently appears tiny in panel (c). The nearly singular example illustrates a numerical failure mode and does not satisfy the adopted entry bound in Equation~\\eqref{eq:icsor_coupling_safeguards}.}",
+    "after": "\\caption{Hypothetical geometric interpretation of simultaneous component coupling and numerical conditioning. (a) The lines in Equation~\\eqref{eq:icsor_scalar_coupling_example} intersect at \\((55/12,35/12)\\). The orange square marks the driver \\((4,2)\\). (b,c) For symmetric two-component coupling 0.2 and 0.99, respectively, the blue ellipse is \\(\\delta c=R^{-1}\\delta r\\) with \\(\\|\\delta r\\|_2=1\\). The dashed orange unit circle supplies the unamplified reference. Purple arrows show the direction of maximum gain. The two perturbation panels use different axis ranges to show gains of 1.25 and 100, with condition numbers 1.5 and 199. The unit circle consequently appears tiny in panel (c). The nearly singular example illustrates a numerical failure mode and does not satisfy the adopted entry bound in Equation~\\eqref{eq:icsor_coupling_safeguards}.}"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 391,
+    "before": "The source of the nonconvexity can be seen from the reduced residual \\((1-\\gamma z)^2\\), where \\(\\gamma\\) is a coupling coefficient and \\(z\\) a fitted component. With \\(z\\) fixed, the expression is quadratic in \\(\\gamma\\); with \\(\\gamma\\) fixed, it is quadratic in \\(z\\). Jointly, however, it is not convex. At \\((\\gamma,z)=(0.2,5)\\) and \\((0.1,10)\\), the residual is zero, while at the midpoint \\((0.15,7.5)\\) it becomes \\((1-1.125)^2=1/64\\). A convex function could not exceed the average of two zero endpoint values at their midpoint. The coupling between a fitted state and a learned coefficient therefore creates the nonconvex joint problem.",
+    "after": "The source of the nonconvexity can be seen from the reduced residual \\((1-\\gamma z)^2\\), where \\(\\gamma\\) is a coupling coefficient and \\(z\\) a fitted component. With \\(z\\) fixed, the expression is quadratic in \\(\\gamma\\). With \\(\\gamma\\) fixed, it is quadratic in \\(z\\). Jointly, however, it is not convex. At \\((\\gamma,z)=(0.2,5)\\) and \\((0.1,10)\\), the residual is zero, while at the midpoint \\((0.15,7.5)\\) it becomes \\((1-1.125)^2=1/64\\). A convex function could not exceed the average of two zero endpoint values at their midpoint. The coupling between a fitted state and a learned coefficient therefore creates the nonconvex joint problem."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 487,
+    "before": "At \\((0,2/3)^\\top\\), the derivative in the first coordinate is \\(2(c_2+1)=10/3\\), so increasing the component away from its zero boundary would increase the objective. The objective value is \\(-4/3\\) at this constrained solution and \\(-77/64\\) at the clipped state, confirming that clipping is not optimal. These negative values arise because constant terms were omitted during the quadratic expansion; the complete residual-based training criterion remains non-negative.",
+    "after": "At \\((0,2/3)^\\top\\), the derivative in the first coordinate is \\(2(c_2+1)=10/3\\), so increasing the component away from its zero boundary would increase the objective. The objective value is \\(-4/3\\) at this constrained solution and \\(-77/64\\) at the clipped state, confirming that clipping is not optimal. These negative values arise because constant terms were omitted during the quadratic expansion. The complete residual-based training criterion remains non-negative."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 560,
+    "before": "The two diagnostics measure different departures from physical admissibility. For a vector, the Euclidean norm is the square root of the sum of squared entries, so an invariant-residual vector \\((3,4)^\\top\\) has norm 5. For an illustrative concentration vector \\((-0.3,0.1,-0.4)^\\top\\), retaining only the negative entries gives \\((-0.3,0,-0.4)^\\top\\), whose absolute norm is 0.7. The first quantity measures the size of a mass conservation discrepancy; the second measures the total negative concentration in the adopted numerical coordinates.",
+    "after": "The two diagnostics measure different departures from physical admissibility. For a vector, the Euclidean norm is the square root of the sum of squared entries, so an invariant-residual vector \\((3,4)^\\top\\) has norm 5. For an illustrative concentration vector \\((-0.3,0.1,-0.4)^\\top\\), retaining only the negative entries gives \\((-0.3,0,-0.4)^\\top\\), whose absolute norm is 0.7. The first quantity measures the size of a mass conservation discrepancy. The second measures the total negative concentration in the adopted numerical coordinates."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 570,
+    "before": "The minimum is evaluated componentwise. The numerical diagnostic tolerance is \\(10^{-10}\\). The mathematical requirements are exact equality and non-negativity; the residual tolerance defines their computational assessment under the stated scaling of \\(A\\).",
+    "after": "The minimum is evaluated componentwise. The numerical diagnostic tolerance is \\(10^{-10}\\). The mathematical requirements are exact equality and non-negativity. The residual tolerance defines their computational assessment under the stated scaling of \\(A\\)."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 616,
+    "before": "The two-component example makes the same matrix operation explicit:",
+    "after": "The same matrix operation can be evaluated explicitly for the two-component example as"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 660,
+    "before": "For strictly positive weights \\(w_c\\), the optimal auxiliary variable satisfies \\(\\rho_f=|c_f-c_{aff,f}|\\). The objective is therefore the weighted absolute adjustment \\(\\sum_f w_{c,f}|c_f-c_{aff,f}|\\). The fitted regression itself remains unchanged; only the returned state is corrected.",
+    "after": "For strictly positive weights \\(w_c\\), the optimal auxiliary variable satisfies \\(\\rho_f=|c_f-c_{aff,f}|\\). The objective is therefore the weighted absolute adjustment \\(\\sum_f w_{c,f}|c_f-c_{aff,f}|\\). The fitted regression itself remains unchanged. Only the returned state is corrected."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 666,
+    "before": "A three-component illustration shows how this choice matters. Let the invariant row be \\([1\\ \\ 1\\ \\ 1]\\), and let the affine reference be \\((-1,4,7)^\\top\\), whose total is 10. Restoring the first component to zero requires one unit to be removed elsewhere. Two feasible candidates are \\((0,3,7)^\\top\\) and \\((0,4,6)^\\top\\). With weights \\((1,10,1)^\\top\\), their costs are 11 and 2, respectively, so the second candidate is preferred because changing the second component is expensive. With weights \\((1,1,10)^\\top\\), the costs reverse to 2 and 11. Both candidates conserve the same total inventory; the weights determine which admissible redistribution is preferred.",
+    "after": "A three-component illustration shows how this choice matters. Let the invariant row be \\([1\\ \\ 1\\ \\ 1]\\), and let the affine reference be \\((-1,4,7)^\\top\\), whose total is 10. Restoring the first component to zero requires one unit to be removed elsewhere. Two feasible candidates are \\((0,3,7)^\\top\\) and \\((0,4,6)^\\top\\). With weights \\((1,10,1)^\\top\\), their costs are 11 and 2, respectively, so the second candidate is preferred because changing the second component is expensive. With weights \\((1,1,10)^\\top\\), the costs reverse to 2 and 11. Both candidates conserve the same total inventory. The weights determine which admissible redistribution is preferred."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 762,
+    "before": "A post-fitting display threshold is used only to simplify presentation. For each reported-composite raw-regression map, the threshold is \\(10^{-4}\\) times the largest absolute coefficient. For the coupling matrix, it is \\(10^{-4}\\) times the largest absolute off-diagonal entry. The fitted model itself remains unchanged; the threshold controls only which entries are shown. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still contribute substantially when multiplied by a large feature, so interpretation considers coefficient magnitude together with the scale of the corresponding input and its contribution over the declared domain \\citep{Selerio2026,Nazlabadi2021}.",
+    "after": "A post-fitting display threshold is used only to simplify presentation. For each reported-composite raw-regression map, the threshold is \\(10^{-4}\\) times the largest absolute coefficient. For the coupling matrix, it is \\(10^{-4}\\) times the largest absolute off-diagonal entry. The fitted model itself remains unchanged. The threshold controls only which entries are shown. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still contribute substantially when multiplied by a large feature, so interpretation considers coefficient magnitude together with the scale of the corresponding input and its contribution over the declared domain \\citep{Selerio2026,Nazlabadi2021}."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 766,
+    "before": "A fitted coefficient and a local response derivative are not the same quantity. The scalar driver in Equation~\\eqref{eq:icsor_scalar_driver_example} makes this distinction explicit:",
+    "after": "A fitted coefficient and a local response derivative are not the same quantity. The derivatives of the scalar driver in Equation~\\eqref{eq:icsor_scalar_driver_example} make this distinction explicit through"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 785,
+    "before": "The same inverse used for prediction therefore propagates the derivative:",
+    "after": "The same inverse used for prediction therefore propagates the derivative according to"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 928,
+    "before": "For general \\(a\\), the excess total is \\((4+a)+(3+2a)-10=3a-3\\). Equal-weight affine projection subtracts half of that excess from each coordinate:",
+    "after": "For general \\(a\\), the excess total is \\((4+a)+(3+2a)-10=3a-3\\). Equal-weight affine projection subtracts half of that excess from each coordinate to give"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 937,
+    "before": "Non-negativity introduces a further change. The first affine component reaches zero at \\(a=11\\). For \\(a>11\\), the affine state lies outside the non-negative conservation segment, and the nearest jointly feasible state is \\((0,10)^\\top\\). Both local slopes are then zero while that boundary remains active. A single operating input can therefore produce three different local responses: the raw polynomial slope, the affine mass-conserving slope, and the final boundary-constrained slope.",
+    "after": "Non-negativity introduces a further change. The first affine component reaches zero at \\(a=11\\). For \\(a>11\\), the affine state lies outside the non-negative conservation segment, and the nearest jointly feasible state is \\((0,10)^\\top\\). Both local slopes are then zero while that boundary remains active. A single operating input can therefore produce different local responses at the raw polynomial, affine mass-conserving, and final boundary-constrained stages."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1025,
+    "before": "The quantity is reported as a ratio; multiplying by 100 gives a percentage. A zero reference value makes the expression undefined, while a very small reference can make the relative error disproportionately large. Any convention for zero-reference cases must therefore be defined before predictors are compared.",
+    "after": "The quantity is reported as a ratio. Multiplying by 100 gives a percentage. A zero reference value makes the expression undefined, while a very small reference can make the relative error disproportionately large. Any convention for zero-reference cases must therefore be defined before predictors are compared."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1037,
+    "before": "The aggregate root error pools residuals across the four reported quantities:",
+    "after": "The aggregate root error is obtained by pooling residuals across the four reported quantities as"
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1047,
+    "before": "The primary ordering measure is aggregate root mean squared error. The remaining measures provide complementary perspectives: squared error emphasizes large residuals, absolute error describes average deviation, relative error scales that deviation to the reference magnitude, and \\(R^2\\) relates squared error to target variation. Predictor rankings are therefore examined separately under each measure.",
+    "after": "The primary ordering measure is aggregate root mean squared error. The remaining measures provide complementary perspectives. Squared error emphasizes large residuals, absolute error describes average deviation, relative error scales that deviation to the reference magnitude, and \\(R^2\\) relates squared error to target variation. Predictor rankings are therefore examined separately under each measure."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1098,
+    "before": "A positive value indicates greater held-out error. The gap does not by itself measure predictive quality: a model can have a small gap because it performs similarly well on training and held-out data, or because it performs similarly poorly on both. For example, training and held-out errors of 0.5 and 0.8 give a gap of 0.3, while errors of 5.0 and 5.1 give a smaller gap of 0.1 despite much worse prediction. The gap is therefore interpreted together with the absolute error \\citep{Hastie2009}.",
+    "after": "A positive value indicates greater held-out error. The gap does not by itself measure predictive quality because a small gap can occur when a model performs similarly well on training and held-out data or similarly poorly on both. For example, training and held-out errors of 0.5 and 0.8 give a gap of 0.3, while errors of 5.0 and 5.1 give a smaller gap of 0.1 despite much worse prediction. The gap is therefore interpreted together with the absolute error \\citep{Hastie2009}."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1187,
+    "before": "The repeated sample-size assessment produced a different picture from the fixed large-data comparison. At the smallest design size of 500 cases, ICSOR had the lowest mean held-out root error at 10.79. XGBoost and LightGBM followed at 11.26 and 11.45, while the multilayer perceptron ranked fifth at 13.26. At the largest design size, however, the ordering changed: the multilayer perceptron reached 4.62, LightGBM 5.27, support vector regression 5.84, and ICSOR 5.94. The leading model therefore depended on the available simulation budget rather than remaining fixed across the learning curve.",
+    "after": "The repeated sample-size assessment produced a different picture from the fixed large-data comparison. At the smallest design size of 500 cases, ICSOR had the lowest mean held-out root error at 10.79. XGBoost and LightGBM followed at 11.26 and 11.45, while the multilayer perceptron ranked fifth at 13.26. At the largest design size, however, the multilayer perceptron reached 4.62, LightGBM 5.27, support vector regression 5.84, and ICSOR 5.94, changing the ordering of the models. The leading model therefore depended on the available simulation budget rather than remaining fixed across the learning curve."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1211,
+    "before": "Across the complete range of design sizes, ICSOR had the lowest normalized root-error curve area at 6.33. LightGBM was nearly identical at 6.35 and achieved the best mean dense rank of 2.2. The multilayer perceptron had the second-best mean rank at 2.5, while ICSOR and XGBoost both had a mean rank of 4.3. These summaries emphasize different aspects of performance: the curve area favors sustained low root error across the data range, whereas the rank aggregates relative ordering across targets, metrics, and sizes. ICSOR therefore led one trajectory summary without leading all comparative summaries.",
+    "after": "Across the complete range of design sizes, ICSOR had the lowest normalized root-error curve area at 6.33. LightGBM was nearly identical at 6.35 and achieved the best mean dense rank of 2.2. The multilayer perceptron had the second-best mean rank at 2.5, while ICSOR and XGBoost both had a mean rank of 4.3. The curve area favors sustained low root error across the data range, whereas the rank aggregates relative ordering across targets, metrics, and sizes. These summaries therefore emphasize different aspects of performance. ICSOR therefore led one trajectory summary without leading all comparative summaries."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1215,
+    "before": "Figure~\\ref{fig:icsor_efficiency_results} separates the normalized curve area, mean dense rank, and final generalization gap. The figure reinforces that no single summary dominates the interpretation: ICSOR led the root-error area, LightGBM led the mean-rank comparison, and the absolute held-out error remained necessary for interpreting the generalization gap.",
+    "after": "Figure~\\ref{fig:icsor_efficiency_results} separates the normalized curve area, mean dense rank, and final generalization gap. ICSOR led the root-error area shown in the figure, while LightGBM led the mean-rank comparison. Absolute held-out error remained necessary for interpreting the generalization gap, reinforcing the need to consider the summaries together."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1224,
+    "before": "The change in model ordering is especially clear at the two endpoints shown in Figure~\\ref{fig:icsor_budget_results}. ICSOR led the four selected predictors when only 500 cases were available, whereas the multilayer perceptron had the lowest error at 10,000 cases. The result therefore supports a conditional interpretation of the structured model: its advantage is strongest when simulation data are limited, while flexible nonlinear learners benefit more from the larger design.",
+    "after": "The change in model ordering is especially clear at the two endpoints shown in Figure~\\ref{fig:icsor_budget_results}. ICSOR led the four selected predictors when only 500 cases were available, whereas the multilayer perceptron had the lowest error at 10,000 cases. The result therefore indicates that the structured model has its strongest advantage when simulation data are limited, while flexible nonlinear learners benefit more from the larger design."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1235,
+    "before": "The physical diagnostics distinguish statistical prediction from the properties of the returned component state. Table~\\ref{tab:icsor_physical_results} compares the final ICSOR output with the raw outputs of the nine comparators. Every final ICSOR state satisfied both the adopted numerical balances and non-negativity tolerance. By contrast, every raw comparator state violated the adopted balance tolerance. Several comparators---AdaBoost, random forest, and \\(k\\)-nearest neighbors---produced no negative raw states, but this did not make them mass conserving. For the remaining comparators, raw non-negativity violation rates ranged from 46.00\\% to 70.10\\%.",
+    "after": "The physical diagnostics distinguish statistical prediction from the properties of the returned component state. Table~\\ref{tab:icsor_physical_results} compares the final ICSOR output with the raw outputs of the nine comparators. Every final ICSOR state satisfied both the adopted numerical balances and non-negativity tolerance. By contrast, every raw comparator state violated the adopted balance tolerance. AdaBoost, random forest, and \\(k\\)-nearest neighbors produced no negative raw states, but this did not make them mass conserving. For the remaining comparators, raw non-negativity violation rates ranged from 46.00\\% to 70.10\\%."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1278,
+    "before": "Fitting time is only one part of the computational requirement. Most fixed-split ICSOR predictions also required constrained deployment: the linear projection branch was activated in 78.2\\% of cases. The reported iteration counts therefore represent additional repeated-use effort beyond the raw regression evaluation. Separating fitting from deployment makes clear that model preparation and physically checked prediction impose different computational costs.",
+    "after": "Fitting time is only one part of the computational requirement. Most fixed-split ICSOR predictions also required constrained deployment, with the linear projection branch activated in 78.2\\% of cases. The reported iteration counts therefore represent additional repeated-use effort beyond the raw regression evaluation. Separating fitting from deployment makes clear that model preparation and physically checked prediction impose different computational costs."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1280,
+    "before": "Figure~\\ref{fig:icsor_fitting_results} shows the fitting-time comparison on logarithmic axes. The smaller-design panel focuses on four leading predictors, while the larger-design panel includes additional alternatives. The figure therefore describes model-construction effort only; projection and checked deployment are accounted for separately.",
+    "after": "Figure~\\ref{fig:icsor_fitting_results} shows the fitting-time comparison on logarithmic axes. The smaller-design panel focuses on four leading predictors, while the larger-design panel includes additional alternatives. The figure therefore describes model-construction effort only. Projection and checked deployment are accounted for separately."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1333,
+    "before": "That advantage did not persist as a universal ranking. At the largest design size, the multilayer perceptron produced the lowest composite error, while LightGBM achieved the best mean dense rank across targets, metrics, and sample sizes. ICSOR's normalized curve area of 6.33 was only slightly lower than LightGBM's 6.35, but its final full-data error remained higher than that of the strongest flexible learners. The result therefore does not support choosing ICSOR simply because it is interpretable. Instead, it identifies a specific trade-off: ICSOR offers an explicit equation, favorable performance when simulations are limited, and checked component states, while more flexible learners can achieve lower prediction error when a larger training design is available \\citep{Rudin2019,BhosekarIerapetritou2018}.",
+    "after": "That advantage did not persist as a universal ranking. At the largest design size, the multilayer perceptron produced the lowest composite error, while LightGBM achieved the best mean dense rank across targets, metrics, and sample sizes. ICSOR's normalized curve area of 6.33 was only slightly lower than LightGBM's 6.35, but its final full-data error remained higher than that of the strongest flexible learners. The result therefore does not support choosing ICSOR simply because it is interpretable. The trade-off arises because ICSOR offers an explicit equation, favorable performance when simulations are limited, and checked component states, while more flexible learners can achieve lower prediction error when a larger training design is available \\citep{Rudin2019,BhosekarIerapetritou2018}."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1335,
+    "before": "The generalization results reinforce the same point. ICSOR's training-to-held-out root-error gap was small, but a small gap is useful only when the underlying prediction error is also acceptable. Partial least squares demonstrated the opposite case: it also had a relatively small gap, yet its held-out error remained high. The leading flexible learners achieved lower absolute error despite larger training-to-held-out differences. Generalization gap and predictive accuracy therefore describe complementary properties and should not be interpreted as substitutes for one another.",
+    "after": "The generalization results reinforce the same point. ICSOR's training-to-held-out root-error gap was small, but a small gap is useful only when the underlying prediction error is also acceptable. Partial least squares also had a relatively small gap, yet its held-out error remained high, demonstrating why the gap alone is insufficient. The leading flexible learners achieved lower absolute error despite larger training-to-held-out differences. Generalization gap and predictive accuracy therefore describe complementary properties and should not be interpreted as substitutes for one another."
+  },
+  {
+    "file": "05_interpretable_surrogate.tex",
+    "line": 1347,
+    "before": "The result also shows why physical diagnostics need to identify the stage being assessed. A raw prediction, an affine mass-conserving state, and a jointly constrained final state are different mathematical objects. Reporting only the final zero-violation rate would hide how much correction was required to obtain it. Conversely, reporting only raw violations would ignore the state that the model actually returns to the engineer. The stage-wise analysis makes both facts visible: the statistical model frequently required correction, and the complete deployed procedure successfully supplied that correction.",
+    "after": "The result also shows why physical diagnostics need to identify the stage being assessed. A raw prediction, an affine mass-conserving state, and a jointly constrained final state are different mathematical objects. Reporting only the final zero-violation rate would hide how much correction was required to obtain it. Conversely, reporting only raw violations would ignore the state that the model actually returns to the engineer. The stage-wise analysis shows both how frequently the statistical model required correction and how successfully the complete deployed procedure supplied it."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 18,
+    "before": "The meaning of an operating comparison also depends on the priorities embedded in its objective. \\citet{Araujo2013} examine constrained economic operation, while \\citet{PadronPaez2020} and \\citet{Aboagye2021} connect treatment performance with resource use. Two optimization routes can therefore prefer different controls because one accepts greater resource demand to obtain better treatment. A meaningful comparison must use common priorities, common control bounds, and common mechanistic evaluation. It should also separate treatment-quality and resource contributions so that the source of a lower objective remains visible. A lower objective is a result under the declared preferences; it does not imply that every effluent quantity or every resource demand is lower.",
+    "after": "The meaning of an operating comparison also depends on the priorities embedded in its objective. \\citet{Araujo2013} examine constrained economic operation, while \\citet{PadronPaez2020} and \\citet{Aboagye2021} connect treatment performance with resource use. Two optimization routes can therefore prefer different controls because one accepts greater resource demand to obtain better treatment. A meaningful comparison must use common priorities, common control bounds, and common mechanistic evaluation. It should also separate treatment-quality and resource contributions so that the source of a lower objective remains visible. A lower objective is a result under the declared preferences. It does not imply that every effluent quantity or every resource demand is lower."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 95,
+    "before": "\\caption{Connected plant boundary with $n_r$ biological reactors and $L$ clarifier layers. Blue arrows show the treatment path, purple the mixed-liquor recycle, and orange the clarifier underflow split into return and waste sludge. Intermediate reactors and layers are omitted for clarity. All flow ratios use fresh-influent flow as their basis. The operating case study uses five reactors and ten layers; its aeration duties are specified in Methodology.}",
+    "after": "\\caption{Connected plant boundary with $n_r$ biological reactors and $L$ clarifier layers. Blue arrows show the treatment path, purple the mixed-liquor recycle, and orange the clarifier underflow split into return and waste sludge. Intermediate reactors and layers are omitted for clarity. All flow ratios use fresh-influent flow as their basis. The operating case study uses five reactors and ten layers. Its aeration duties are specified in Methodology.}"
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 473,
+    "before": "At the lower endpoint, nine layers are at $X_E$ and one is at $X_U$; at the upper endpoint, one layer is at $X_E$ and nine are at $X_U$. This makes the coefficients in the compact interval physically transparent rather than treating them as fitted constants.",
+    "after": "At the lower endpoint, nine layers are at $X_E$ and one is at $X_U$. At the upper endpoint, one layer is at $X_E$ and nine are at $X_U$. This makes the coefficients in the compact interval physically transparent rather than treating them as fitted constants."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 633,
+    "before": "Back-transformation gives 4 mg L$^{-1}$, the geometric rather than arithmetic mean. A fitted log value of $-2$ gives 0.1353 mg L$^{-1}$, which is still positive even though it lies below $X_\\star$. The reference concentration supplies units; it does not impose a lower concentration bound.",
+    "after": "Back-transformation gives 4 mg L$^{-1}$, the geometric rather than arithmetic mean. A fitted log value of $-2$ gives 0.1353 mg L$^{-1}$, which is still positive even though it lies below $X_\\star$. The reference concentration supplies units. It does not impose a lower concentration bound."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 719,
+    "before": "Non-negativity would add one row $-\\chi_{{\\rm toy},k}\\le0$ for each response coordinate. Because the equality and inequality matrices act on the same vector, their coordinate ordering must remain identical; otherwise, the wrong physical quantities would be constrained.",
+    "after": "Non-negativity would add one row $-\\chi_{{\\rm toy},k}\\le0$ for each response coordinate. Because the equality and inequality matrices act on the same vector, their coordinate ordering must remain identical. Otherwise, the wrong physical quantities would be constrained."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 822,
+    "before": "The analytical illustration uses the equality $\\eta_1+\\eta_2=1$, non-negativity $\\eta_1,\\eta_2\\ge0$, and an additional inequality $\\eta_1\\ge0.20$. The equality defines a line. Non-negativity reduces it to the segment between $(0,1)$ and $(1,0)$, and the additional inequality restricts it further to the green segment between $(0.20,0.80)$ and $(1,0)$. The last inequality stands in for a separator or inventory restriction. Its numerical value is chosen only to make the geometry visible; it is not a case-study operating limit or a new plant-model assumption.",
+    "after": "The analytical illustration uses the equality $\\eta_1+\\eta_2=1$, non-negativity $\\eta_1,\\eta_2\\ge0$, and an additional inequality $\\eta_1\\ge0.20$. The equality defines a line. Non-negativity reduces it to the segment between $(0,1)$ and $(1,0)$, and the additional inequality restricts it further to the green segment between $(0.20,0.80)$ and $(1,0)$. The last inequality stands in for a separator or inventory restriction. Its numerical value is chosen only to make the geometry visible. It is not a case-study operating limit or a new plant-model assumption."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 952,
+    "before": "Figure~\\ref{fig:plant_geometry_certificate}a gives a geometric reading of this certificate. In scaled response coordinates $\\eta=(c_1,c_2/2)$, the checked state is $q=(0,5)$ and the raw state is $a=(-2,4.5)$. The vector from $q$ back to $a$ is the sum of an equality-normal contribution and a non-negative multiple of the outward normal to the active concentration bound. Consequently, every feasible direction from $q$ makes a non-positive inner product with $a-q$. Movement into the feasible segment cannot move closer to the raw prediction. This direction test explains why feasibility and correctly signed multipliers together certify a nearest point. The coordinates in the plot describe the response itself; the standardized correction remains $u=q-a=(2,0.5)$.",
+    "after": "Figure~\\ref{fig:plant_geometry_certificate}a gives a geometric reading of this certificate. In scaled response coordinates $\\eta=(c_1,c_2/2)$, the checked state is $q=(0,5)$ and the raw state is $a=(-2,4.5)$. The vector from $q$ back to $a$ is the sum of an equality-normal contribution and a non-negative multiple of the outward normal to the active concentration bound. Consequently, every feasible direction from $q$ makes a non-positive inner product with $a-q$. Movement into the feasible segment cannot move closer to the raw prediction. This direction test explains why feasibility and correctly signed multipliers together certify a nearest point. The coordinates in the plot describe the response itself. The standardized correction remains $u=q-a=(2,0.5)$."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 957,
+    "before": "\\caption{Hypothetical geometric interpretation of the projection certificate and its error bound, with coordinate scales $(1,2)$. The solid teal line shows the visible portion of the non-negative segment of $\\eta_1+2\\eta_2=10$; the dotted extension satisfies only the equality. (a) Equality and active-bound normal contributions, drawn head to tail, sum to the displacement from the checked state to the raw prediction. (b) The triangle compares squared distances to the feasible reference $(3,7)$ in physical coordinates. All displayed distances use scaled coordinates. The error guarantee applies to this complete feasible set and this metric.}",
+    "after": "\\caption{Hypothetical geometric interpretation of the projection certificate and its error bound, with coordinate scales $(1,2)$. The solid teal line shows the visible portion of the non-negative segment of $\\eta_1+2\\eta_2=10$. The dotted extension satisfies only the equality. (a) Equality and active-bound normal contributions, drawn head to tail, sum to the displacement from the checked state to the raw prediction. (b) The triangle compares squared distances to the feasible reference $(3,7)$ in physical coordinates. All displayed distances use scaled coordinates. The error guarantee applies to this complete feasible set and this metric.}"
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1171,
+    "before": "The vector $\\varpi$ determines the trade-off between quality, capacity, and resource use, while $\\varpi_Q$ determines the relative importance of COD, TN, TP, and TSS within the quality term. These coefficients encode preferences; they are not percentages of the realized objective.",
+    "after": "The vector $\\varpi$ determines the trade-off between quality, capacity, and resource use, while $\\varpi_Q$ determines the relative importance of COD, TN, TP, and TSS within the quality term. These coefficients encode preferences. They are not percentages of the realized objective."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1210,
+    "before": "The overall quality weight of 0.50 multiplies $j_Q$ only after its four internal quality weights have been applied. An internal quality weight of one-quarter is therefore not an overall objective weight of one-quarter. Likewise, an objective reference value is not necessarily a feasibility limit. In particular, $j_W$ may exceed one if its numerator exceeds the declared reference. Normalization changes scale; it does not impose a hard bound.",
+    "after": "The overall quality weight of 0.50 multiplies $j_Q$ only after its four internal quality weights have been applied. An internal quality weight of one-quarter is therefore not an overall objective weight of one-quarter. Likewise, an objective reference value is not necessarily a feasibility limit. In particular, $j_W$ may exceed one if its numerator exceeds the declared reference. Normalization changes scale. It does not impose a hard bound."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1240,
+    "before": "Clarifier surface loading and solids loading describe different physical burdens on the separator. Surface loading divides overflow volume rate by clarifier area, while solids loading divides the feed solids mass rate by area \\citep{Henze2008}. Because solids are represented in grams, a factor of $10^{-3}$ converts to kilograms:",
+    "after": "Clarifier surface loading and solids loading describe different physical burdens on the separator. Surface loading divides overflow volume rate by clarifier area, while solids loading divides the feed solids mass rate by area \\citep{Henze2008}. Because solids are represented in grams, conversion to kilograms requires the factor $10^{-3}$ in"
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1272,
+    "before": "Its inverse is $\\operatorname{diag}(1/3,1/6)$. At query feature $(1,z)$, leverage is $1/3+z^2/6$: it equals $1/3$ at the center, $1/2$ at $z=1$, and $11/6$ at $z=3$. The maximum development leverage in this example is $7/12$. The calculation shows how joint feature support weakens as a query moves away from the fitted design, even when individual controls remain inside their coordinate bounds.",
+    "after": "Its inverse is $\\operatorname{diag}(1/3,1/6)$. At query feature $(1,z)$, leverage is $1/3+z^2/6$, giving $1/3$ at the center, $1/2$ at $z=1$, and $11/6$ at $z=3$. The maximum development leverage in this example is $7/12$. The calculation shows how joint feature support weakens as a query moves away from the fitted design, even when individual controls remain inside their coordinate bounds."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1302,
+    "before": "Projection, split, and reactor thresholds are set at the nearest-rank 95th percentile of grouped out-of-fold development diagnostics. If the sorted values are $v_{(1)},\\ldots,v_{(n_{\\rm dev})}$, the threshold is $v_{(\\lceil0.95n_{\\rm dev}\\rceil)}$. The leverage threshold is the maximum development leverage under the final fitted feature map. These values are fixed before optimization. A diagnostic whose empirical threshold is zero remains constrained to zero; the value one is used only as a numerical row-scale floor.",
+    "after": "Projection, split, and reactor thresholds are set at the nearest-rank 95th percentile of grouped out-of-fold development diagnostics. If the sorted values are $v_{(1)},\\ldots,v_{(n_{\\rm dev})}$, the threshold is $v_{(\\lceil0.95n_{\\rm dev}\\rceil)}$. The leverage threshold is the maximum development leverage under the final fitted feature map. These values are fixed before optimization. A diagnostic whose empirical threshold is zero remains constrained to zero. The value one is used only as a numerical row-scale floor."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1434,
+    "before": "For $X_t=3{,}000$ and $h=10$ g m$^{-3}$, concentrations 2{,}990, 3{,}000, and 3{,}010 correspond to $\\zeta=0,0.5,1$ and switch values 0, 0.5, and 1. At 2{,}995, the switch is 0.10352; at 3{,}005, it is 0.89648. If $J_1$ denotes unrestricted gravitational flux and $J_2$ the receiver-limited flux, the smoothed interface uses $(1-\\sigma)J_1+\\sigma J_2$. The transition therefore modifies the flux law itself rather than merely smoothing a reported concentration.",
+    "after": "For $X_t=3{,}000$ and $h=10$ g m$^{-3}$, concentrations 2{,}990, 3{,}000, and 3{,}010 correspond to $\\zeta=0,0.5,1$ and switch values 0, 0.5, and 1. At 2{,}995, the switch is 0.10352. At 3{,}005, it is 0.89648. If $J_1$ denotes unrestricted gravitational flux and $J_2$ the receiver-limited flux, the smoothed interface uses $(1-\\sigma)J_1+\\sigma J_2$. The transition therefore modifies the flux law itself rather than merely smoothing a reported concentration."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1446,
+    "before": "Figure~\\ref{fig:plant_geometry_smoothing} illustrates how these approximations change the mathematical response near a branch transition. In panel (a), the positive-part corner is replaced by a differentiable curve. The approximation is strictly positive at zero, where its excess is $\\delta/2$, and its difference from the exact positive part decreases as the illustrative width is reduced. Panel (b) uses the receiver widths in Equation~\\eqref{eq:plant_continuation_sequence}: narrowing $h$ concentrates the transition around $X_t$. At the threshold itself, all smooth curves retain the value 0.5; away from the threshold, they recover the appropriate branch as the band narrows. The curves explain the purpose of continuation, while also showing why a smooth solution still requires evaluation with the original branch rules.",
+    "after": "Figure~\\ref{fig:plant_geometry_smoothing} illustrates how these approximations change the mathematical response near a branch transition. In panel (a), the positive-part corner is replaced by a differentiable curve. The approximation is strictly positive at zero, where its excess is $\\delta/2$, and its difference from the exact positive part decreases as the illustrative width is reduced. Panel (b) uses the receiver widths in Equation~\\eqref{eq:plant_continuation_sequence} to show how narrowing $h$ concentrates the transition around $X_t$. At the threshold itself, all smooth curves retain the value 0.5. Away from the threshold, they recover the appropriate branch as the band narrows. The curves explain the purpose of continuation, while also showing why a smooth solution still requires evaluation with the original branch rules."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1451,
+    "before": "\\caption{Analytical illustration of smoothing near process switches. (a) The positive-part approximation in Equation~\\eqref{eq:plant_smooth_operations} for illustrative widths $\\delta=0.4,0.1,0.02$, which are chosen for visibility and are not the numerical continuation settings. (b) The quintic receiver switch in Equation~\\eqref{eq:plant_receiver_switch} at the illustrative threshold $X_t=3000$ g m$^{-3}$, using the continuation half-widths $h=10,3,1$ g m$^{-3}$. Dashed curves show the original branch mappings; the vertical receiver-switch line represents its jump rather than an intermediate physical branch value.}",
+    "after": "\\caption{Analytical illustration of smoothing near process switches. (a) The positive-part approximation in Equation~\\eqref{eq:plant_smooth_operations} for illustrative widths $\\delta=0.4,0.1,0.02$, which are chosen for visibility and are not the numerical continuation settings. (b) The quintic receiver switch in Equation~\\eqref{eq:plant_receiver_switch} at the illustrative threshold $X_t=3000$ g m$^{-3}$, using the continuation half-widths $h=10,3,1$ g m$^{-3}$. Dashed curves show the original branch mappings. The vertical receiver-switch line represents its jump rather than an intermediate physical branch value.}"
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1471,
+    "before": "The upper-right entry arises entirely from recycle: changing the final-reactor concentration changes the mixer and therefore changes the first-reactor residual. Ignoring this term would incorrectly treat the mixer as independent of the downstream state. With $d_1=d_2=2$, $k=1$, $r_I=1$, $r_R=0.5$, and $q_P=2.5$, the block is $\\begin{bmatrix}-3&1.2\\\\2&-3\\end{bmatrix}$.",
+    "after": "The upper-right entry arises entirely from the recycle dependence of the mixer. Changing the final-reactor concentration changes the mixer and therefore the first-reactor residual. Ignoring this term would incorrectly treat the mixer as independent of the downstream state. With $d_1=d_2=2$, $k=1$, $r_I=1$, $r_R=0.5$, and $q_P=2.5$, the block is $\\begin{bmatrix}-3&1.2\\\\2&-3\\end{bmatrix}$."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1510,
+    "before": "For all five stages, $h_i=H/5$. The unaerated controls are fixed at $a_1=a_2=0$, the aerated-stage transfer coefficients are $k_La_i=47a_i$ d$^{-1}$, and $\\xi_i=0$. These choices define the present case study; they are not structural requirements of the connected formulation.",
+    "after": "For all five stages, $h_i=H/5$. The unaerated controls are fixed at $a_1=a_2=0$, the aerated-stage transfer coefficients are $k_La_i=47a_i$ d$^{-1}$, and $\\xi_i=0$. These choices define the present case study. They are not structural requirements of the connected formulation."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1536,
+    "before": "The equal-volume reactors provide a compact unaerated-to-aerated treatment train. Each clarifier layer has depth 0.4 m. The operating bounds preserve positive overflow and underflow flow ratios throughout the domain. Together with the 20 fresh-influent components, the seven free controls produce 27 statistical inputs, 406 quadratic features, and 161 reduced-response coordinates. The mechanistic state contains 110 coordinates. The connected projection contains 76 equality rows and 12 physical inequality rows; after response non-negativity is included, the total number of inequality rows is 173.",
+    "after": "The equal-volume reactors provide a compact unaerated-to-aerated treatment train. Each clarifier layer has depth 0.4 m. The operating bounds preserve positive overflow and underflow flow ratios throughout the domain. Together with the 20 fresh-influent components, the seven free controls produce 27 statistical inputs, 406 quadratic features, and 161 reduced-response coordinates. The mechanistic state contains 110 coordinates. The connected projection contains 76 equality rows and 12 physical inequality rows. After response non-negativity is included, the total number of inequality rows is 173."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1746,
+    "before": "The actual integration uses the backward differentiation method with the numerical tolerances specified below; this arithmetic is only intended to show the effect of the positive-state transformation.",
+    "after": "The actual integration uses the backward differentiation method with the numerical tolerances specified below. This arithmetic is only intended to show the effect of the positive-state transformation."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1756,
+    "before": "At $w=0.01$, this gives 5{,}000 d; at $w=0.20$, it gives the 400-d minimum; and at $w=0$, the internal floor gives 50{,}000 d. The values zero and 0.20 are used only to illustrate the branches of the rule and lie outside the admitted case-study wasting interval.",
+    "after": "At $w=0.01$, this gives 5{,}000 d. At $w=0.20$, it gives the 400-d minimum. At $w=0$, the internal floor gives 50{,}000 d. The values zero and 0.20 are used only to illustrate the branches of the rule and lie outside the admitted case-study wasting interval."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1809,
+    "before": "Accepted states are partitioned by complete plant case: every component and location belonging to one simulated state remains in the same fold. This grouping prevents any part of one mechanistic plant response from appearing simultaneously in fitting and fold assessment. Fold sizes differ by at most one. Input centers, input scales, quadratic-feature scales, and response scales are recomputed within each fitting fold. The holdout set contributes to none of these quantities. This separation follows the leakage concerns described by \\citet{Kaufman2012}.",
+    "after": "Accepted states are partitioned by complete plant case so that every component and location belonging to one simulated state remains in the same fold. This grouping prevents any part of one mechanistic plant response from appearing simultaneously in fitting and fold assessment. Fold sizes differ by at most one. Input centers, input scales, quadratic-feature scales, and response scales are recomputed within each fitting fold. The holdout set contributes to none of these quantities. This separation follows the leakage concerns described by \\citet{Kaufman2012}."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1833,
+    "before": "Every projected state is checked for equality feasibility, physical inequalities, non-negativity, dual feasibility, stationarity, and complementarity. The overflow-closure residual is reported separately. Failure of an admission criterion remains a failure; it does not trigger an unreported change to the fit, the selected penalty, or the projection formulation.",
+    "after": "Every projected state is checked for equality feasibility, physical inequalities, non-negativity, dual feasibility, stationarity, and complementarity. The overflow-closure residual is reported separately. Failure of an admission criterion remains a failure. It does not trigger an unreported change to the fit, the selected penalty, or the projection formulation."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1884,
+    "before": "Normalization also changes the numerical magnitude of an error summary. In the preceding example, if the training response scale is two native units, the residuals become 0.5 and $-1$, giving standardized RMSE $\\sqrt{0.625}\\approx0.7906$. If a descriptive holdout report instead divides by the observed range $6-2=4$, the residuals become 0.25 and $-0.5$, giving RMSE approximately 0.3953. The predictions have not changed; only the denominator has. Training-scale admission scores and holdout-range reporting scores must therefore be identified separately.",
+    "after": "Normalization also changes the numerical magnitude of an error summary. In the preceding example, if the training response scale is two native units, the residuals become 0.5 and $-1$, giving standardized RMSE $\\sqrt{0.625}\\approx0.7906$. If a descriptive holdout report instead divides by the observed range $6-2=4$, the residuals become 0.25 and $-0.5$, giving RMSE approximately 0.3953. The predictions remain unchanged between these summaries, while the denominator changes. Training-scale admission scores and holdout-range reporting scores must therefore be identified separately."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1892,
+    "before": "For positive ranges, the aggregate error pools the $8\\times4$ location-composite coordinates. A location score pools the four composites, while a composite score pools the eight locations. Displayed $R^2$ summaries average the corresponding coordinatewise values. These holdout ranges are used only for reporting; they do not enter fitting, admission, objective normalization, or trust calibration.",
+    "after": "For positive ranges, the aggregate error pools the $8\\times4$ location-composite coordinates. A location score pools the four composites, while a composite score pools the eight locations. Displayed $R^2$ summaries average the corresponding coordinatewise values. These holdout ranges are used only for reporting. They do not enter fitting, admission, objective normalization, or trust calibration."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1906,
+    "before": "This normalization changes only the numerical search coordinates; it does not give all controls equal importance in the engineering objective.",
+    "after": "This normalization changes only the numerical search coordinates. It does not give all controls equal importance in the engineering objective."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1932,
+    "before": "Each start receives the same route-specific budget and audit procedure. A direct start obtains its mechanistic initial state from an independently accepted solve at the fixed starting controls. Failed initial states remain failures. The best independently validated feasible candidate is retained, while all starting-point outcomes and total search work remain part of the record. The single-center result remains the reported baseline; the 15-start design is a distinct sensitivity analysis.",
+    "after": "Each start receives the same route-specific budget and audit procedure. A direct start obtains its mechanistic initial state from an independently accepted solve at the fixed starting controls. Failed initial states remain failures. The best independently validated feasible candidate is retained, while all starting-point outcomes and total search work remain part of the record. The single-center result remains the reported baseline. The 15-start design is a distinct sensitivity analysis."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 1940,
+    "before": "If the derivative chain cannot be validated, a deterministic value-only quadratic-approximation method continues the search within the same normalized control bounds \\citep{Ragonneau2022}. The fallback still uses the exact audited projection at every trial; it does not replace the lower problem with an approximate projection. Finite differences are reserved for independent derivative audits rather than used automatically as unqualified gradient substitutes. Before a candidate is retained, its best feasible visited point is projected again from an independent initialization.",
+    "after": "If the derivative chain cannot be validated, a deterministic value-only quadratic-approximation method continues the search within the same normalized control bounds \\citep{Ragonneau2022}. The fallback still uses the exact audited projection at every trial. It does not replace the lower problem with an approximate projection. Finite differences are reserved for independent derivative audits rather than used automatically as unqualified gradient substitutes. Before a candidate is retained, its best feasible visited point is projected again from an independent initialization."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2022,
+    "before": "The surrogate and direct searches use different internal response calculations, but their selected decisions must ultimately be compared on one common physical basis. Figure~\\ref{fig:plant_route_verification} separates four stages: route-specific search, native candidate audit, independent original-model evaluation, and final comparison eligibility. Each stage retains its own status rather than being collapsed into one success indicator.",
+    "after": "The surrogate and direct searches use different internal response calculations, but their selected decisions must ultimately be compared on one common physical basis. Figure~\\ref{fig:plant_route_verification} separates route-specific search, native candidate audit, independent original-model evaluation, and final comparison eligibility into four stages. Each stage retains its own status rather than being collapsed into one success indicator."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2085,
+    "before": "Branch tuples must agree unless one evaluation start lies inside a prescribed ambiguity band. These bands cover the clarifier receiver threshold, zero storage capacity, zero settling offset, zero or maximum settling velocity, and equality of adjacent gravitational fluxes. An ambiguity flag qualifies the state-level branch comparison; it does not automatically prove that every differing branch is physically equivalent. State agreement and all other audits must still pass. Smooth stationarity or smooth-reference equivalence near such a branch boundary therefore remains explicitly qualified.",
+    "after": "Branch tuples must agree unless one evaluation start lies inside a prescribed ambiguity band. These bands cover the clarifier receiver threshold, zero storage capacity, zero settling offset, zero or maximum settling velocity, and equality of adjacent gravitational fluxes. An ambiguity flag qualifies the state-level branch comparison. It does not automatically prove that every differing branch is physically equivalent. State agreement and all other audits must still pass. Smooth stationarity or smooth-reference equivalence near such a branch boundary therefore remains explicitly qualified."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2131,
+    "before": "Relative objective differences also depend on their denominator. If the common-reference difference is 0.12 and the direct objective is 0.98, the direct-relative percentage is approximately 12.24\\%. A symmetric scaled difference using $\\max(1,1.10,0.98)=1.10$ gives approximately 0.1091. The first uses one route as a reference; the second uses a symmetric magnitude scale.",
+    "after": "Relative objective differences also depend on their denominator. If the common-reference difference is 0.12 and the direct objective is 0.98, the direct-relative percentage is approximately 12.24\\%. A symmetric scaled difference using $\\max(1,1.10,0.98)=1.10$ gives approximately 0.1091. The first uses one route as a reference. The second uses a symmetric magnitude scale."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2133,
+    "before": "Control differences require a different normalization. On an illustrative interval from 10 to 30, two selected controls 25 and 20 differ by five physical units, corresponding to normalized difference 0.25. If this is the only differing coordinate among seven controls, the RMS normalized difference is $\\sqrt{0.25^2/7}\\approx0.0945$, while the maximum difference remains 0.25. The RMS summarizes overall separation; the maximum keeps the largest coordinate change visible.",
+    "after": "Control differences require a different normalization. On an illustrative interval from 10 to 30, two selected controls 25 and 20 differ by five physical units, corresponding to normalized difference 0.25. If this is the only differing coordinate among seven controls, the RMS normalized difference is $\\sqrt{0.25^2/7}\\approx0.0945$, while the maximum difference remains 0.25. The RMS summarizes overall separation. The maximum keeps the largest coordinate change visible."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2231,
+    "before": "Joint projection improved the aggregate holdout prediction. The pooled nRMSE decreased from 0.04690 for the raw response to 0.04306 after projection, corresponding to an 8.19\\% reduction before rounding. The nMAE decreased from 0.03044 to 0.02568, a 15.65\\% reduction, while mean location-level $R^2$ increased from 0.925 to 0.938. Figure~\\ref{fig:plant_holdout_overview_results} shows that this improvement was not confined to the aggregate score: all eight treatment-location summaries and all four composite summaries had lower nRMSE after projection.",
+    "after": "Joint projection improved the aggregate holdout prediction. The pooled nRMSE decreased from 0.04690 for the raw response to 0.04306 after projection, corresponding to an 8.19\\% reduction before rounding. The nMAE decreased from 0.03044 to 0.02568, a 15.65\\% reduction, while mean location-level $R^2$ increased from 0.925 to 0.938. Figure~\\ref{fig:plant_holdout_overview_results} shows lower nRMSE after projection in all eight treatment-location summaries and all four composite summaries. The improvement therefore extended beyond the aggregate score."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2242,
+    "before": "The location-level assessment shows where the projection helped and where it did not. Of the 32 location--composite combinations, projection reduced nRMSE in 30. Figure~\\ref{fig:plant_holdout_locations_results} identifies the two exceptions: COD error increased by 0.47\\% in the final reactor and by 2.36\\% in the overflow. By contrast, overflow TP nRMSE decreased from 0.02948 to 0.01795, a reduction of 39.10\\%. The connected projection therefore produced a broad statistical benefit, but the adjustment was not uniformly beneficial for every reported quantity at every treatment location.",
+    "after": "The location-level assessment shows where the projection helped and where it did not. Of the 32 location--composite combinations, projection reduced nRMSE in 30. Figure~\\ref{fig:plant_holdout_locations_results} shows the two exceptions, with COD error increasing by 0.47\\% in the final reactor and by 2.36\\% in the overflow. By contrast, overflow TP nRMSE decreased from 0.02948 to 0.01795, a reduction of 39.10\\%. The connected projection therefore produced a broad statistical benefit, but the adjustment was not uniformly beneficial for every reported quantity at every treatment location."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2270,
+    "before": "Table~\\ref{tab:plant_search_qualification_results} separates candidate availability from convergence qualification. Extended ICSOR received positive first-order qualification in N, S6, and S10. Seven additional surrogate decisions were qualified by the finite-poll procedure, while S4 remained unresolved. None of the retained initial Smooth NLP candidates received a positive first-order certificate. These qualification results concern numerical evidence for the corresponding search problems; the independently solved mechanistic responses provide the reference treatment outcomes used in the engineering comparison.",
+    "after": "Table~\\ref{tab:plant_search_qualification_results} separates candidate availability from convergence qualification. Extended ICSOR received positive first-order qualification in N, S6, and S10. Seven additional surrogate decisions were qualified by the finite-poll procedure, while S4 remained unresolved. None of the retained initial Smooth NLP candidates received a positive first-order certificate. These qualification results concern numerical evidence for the corresponding search problems. The independently solved mechanistic responses provide the reference treatment outcomes used in the engineering comparison."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2309,
+    "before": "Figure~\\ref{fig:plant_controls_results} compares the two optimization routes after both selected decisions are evaluated with the original mechanistic model. Smooth NLP produced lower COD, TN, and TP in the nominal case and in nine of the ten scenarios. For the nominal influent, COD was 151.26 mg L$^{-1}$ at the Extended ICSOR decision and 57.60 mg L$^{-1}$ at the Smooth NLP decision. In S9, the corresponding values were 203.24 and 19.08 mg L$^{-1}$. TSS did not follow the same ordering consistently: Smooth NLP produced lower TSS in six of the eleven paired comparisons.",
+    "after": "Figure~\\ref{fig:plant_controls_results} compares the two optimization routes after both selected decisions are evaluated with the original mechanistic model. Smooth NLP produced lower COD, TN, and TP in the nominal case and in nine of the ten scenarios. For the nominal influent, COD was 151.26 mg L$^{-1}$ at the Extended ICSOR decision and 57.60 mg L$^{-1}$ at the Smooth NLP decision. In S9, the corresponding values were 203.24 and 19.08 mg L$^{-1}$. TSS did not follow the same ordering consistently, as Smooth NLP produced lower TSS in six of the eleven paired comparisons."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2313,
+    "before": "Aeration and recycle patterns reveal additional structure. Both routes selected the upper aeration bound in reactor 3 for every case within numerical tolerance, and aeration in reactors 4 and 5 frequently reached the upper bound as well. Both routes selected the return-sludge lower bound of 0.25. Smooth NLP selected internal recycle $r_I=4.00$ in S2 and S10 and 3.44 in S9; in its other cases, the selected ratio was effectively zero. Extended ICSOR selected internal recycle values between zero and 0.804.",
+    "after": "Aeration and recycle patterns reveal additional structure. Both routes selected the upper aeration bound in reactor 3 for every case within numerical tolerance, and aeration in reactors 4 and 5 frequently reached the upper bound as well. Both routes selected the return-sludge lower bound of 0.25. Smooth NLP selected internal recycle $r_I=4.00$ in S2 and S10 and 3.44 in S9. In its other cases, the selected ratio was effectively zero. Extended ICSOR selected internal recycle values between zero and 0.804."
+  },
+  {
+    "file": "06_connected_plant.tex",
+    "line": 2384,
+    "before": "The improvement was nevertheless not uniform. COD error increased slightly in the final reactor and overflow, and the overflow remained the least accurate treatment location overall. The separate logarithmic model supplied a positive overflow-solids endpoint, while the joint projection reconciled that endpoint with component balances, soluble continuity, particulate densification, and inventory limits. The resulting response therefore reflected both physical equalities and an empirical closure. Equations~\\eqref{eq:plant_projection_error_exact} and \\eqref{eq:plant_projection_error_general} explain why error reduction depends on the projection metric and on whether the mechanistic reference lies in the complete projection set. The two local COD increases are consistent with that limitation: enforcing network consistency can improve the response in aggregate while worsening an individual reported coordinate.",
+    "after": "The improvement was nevertheless not uniform. COD error increased slightly in the final reactor and overflow, and the overflow remained the least accurate treatment location overall. The separate logarithmic model supplied a positive overflow-solids endpoint, while the joint projection reconciled that endpoint with component balances, soluble continuity, particulate densification, and inventory limits. The resulting response therefore reflected both physical equalities and an empirical closure. Equations~\\eqref{eq:plant_projection_error_exact} and \\eqref{eq:plant_projection_error_general} explain why error reduction depends on the projection metric and on whether the mechanistic reference lies in the complete projection set. The two local COD increases are consistent with the possibility that enforcing network consistency can improve the response in aggregate while worsening an individual reported coordinate."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 7,
+    "before": "The central research problem of this dissertation was how rapid activated sludge predictions can be used for engineering analysis when prediction accuracy alone does not establish either a usable treatment state or a good operating decision. The work addressed this problem by connecting four capabilities: complete component prediction, physical enforcement, explicit regression, and independent assessment of selected controls. Together, these capabilities form a common component-state framework, but the results show that each still requires its own evidence. A prediction can be physically consistent yet inaccurate, an inspectable regression can have higher error than a more flexible learner, and a faster operating search can select a worse decision when that decision is evaluated with the original mechanistic model.",
+    "after": "The central research problem of this dissertation was how rapid activated sludge predictions can be used for engineering analysis when prediction accuracy alone does not establish either a usable treatment state or a good operating decision. The work addressed this problem by connecting complete component prediction, physical enforcement, explicit regression, and independent assessment of selected controls. Together, these capabilities form a common component-state framework, but the results show that each still requires its own evidence. A prediction can be physically consistent yet inaccurate, an inspectable regression can have higher error than a more flexible learner, and a faster operating search can select a worse decision when that decision is evaluated with the original mechanistic model."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 15,
+    "before": "The exterior assessment added a second dimension to this conclusion by examining the usable input range. The multilayer perceptron again had the lowest error, but its projected nRMSE increased to 0.251 under mild exterior inputs and 0.521 under severe exterior inputs. Every projected exterior state nevertheless continued to satisfy the physical checks. The deterioration in severe-domain accuracy therefore arose despite, rather than because of a failure in, physical enforcement. For practical use, this means that a prediction at an unfamiliar loading or operating condition still requires an accuracy assessment even when projection returns a physically admissible state. The benchmark therefore supports model selection within declared data and domain conditions; it does not support unrestricted extrapolation or a single learner ranking that applies everywhere.",
+    "after": "The exterior assessment added a second dimension to this conclusion by examining the usable input range. The multilayer perceptron again had the lowest error, but its projected nRMSE increased to 0.251 under mild exterior inputs and 0.521 under severe exterior inputs. Every projected exterior state nevertheless continued to satisfy the physical checks. The deterioration in severe-domain accuracy therefore arose despite, rather than because of a failure in, physical enforcement. For practical use, this means that a prediction at an unfamiliar loading or operating condition still requires an accuracy assessment even when projection returns a physically admissible state. The benchmark therefore supports model selection within declared data and domain conditions. It does not support unrestricted extrapolation or a single learner ranking that applies everywhere."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 21,
+    "before": "Physical compliance, however, did not translate into uniform statistical improvement. At the largest design size, projection improved 188 of 260 predictor--component comparisons, yet aggregate component nRMSE decreased for only five of the thirteen predictors. Across all predictors, TN and TP root errors decreased, whereas COD and TSS root errors increased. Projection therefore closed the physical-compliance gap without eliminating the approximation gap. Its effect also depended on which treatment quantities were of interest: an analysis centered on nutrients could judge the adjustment differently from one centered on organic matter, biomass, or solids. These results support separate reporting of component and composite performance and reinforce the importance of the adjustment metric discussed by \\citet{SturmSilva2024}.",
+    "after": "Physical compliance, however, did not translate into uniform statistical improvement. At the largest design size, projection improved 188 of 260 predictor--component comparisons, yet aggregate component nRMSE decreased for only five of the thirteen predictors. Across all predictors, TN and TP root errors decreased, whereas COD and TSS root errors increased. Projection therefore closed the physical-compliance gap without eliminating the approximation gap. Its effect also depended on which treatment quantities were of interest, so that an analysis centered on nutrients could judge the adjustment differently from one centered on organic matter, biomass, or solids. These results support separate reporting of component and composite performance and reinforce the importance of the adjustment metric discussed by \\citet{SturmSilva2024}."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 37,
+    "before": "The operating assessment then revealed an important limitation that average holdout improvement could not resolve. In S4, Extended ICSOR predicted TN and TP concentrations of 2.67 and 2.08 mg L$^{-1}$, whereas independent mechanistic evaluation gave 7.47 and 4.68 mg L$^{-1}$. These discrepancies remained after projection and trust screening. A nutrient requirement lying between the predicted and mechanistically evaluated concentrations would therefore lead to different judgments about whether the selected setting was acceptable. This result directly addresses the decision-quality gap: treatment outcomes must be evaluated at the controls actually selected by the optimization procedure rather than inferred from average holdout performance \\citep{Alexandrov1998,Pedrozo2025}.",
+    "after": "The operating assessment then revealed an important limitation that average holdout improvement could not resolve. In S4, Extended ICSOR predicted TN and TP concentrations of 2.67 and 2.08 mg L$^{-1}$, whereas independent mechanistic evaluation gave 7.47 and 4.68 mg L$^{-1}$. These discrepancies remained after projection and trust screening. A nutrient requirement lying between the predicted and mechanistically evaluated concentrations would therefore lead to different judgments about whether the selected setting was acceptable. This result directly addresses the decision-quality gap by demonstrating why treatment outcomes must be evaluated at the controls actually selected by the optimization procedure rather than inferred from average holdout performance \\citep{Alexandrov1998,Pedrozo2025}."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 39,
+    "before": "The common-reference comparison reinforced this conclusion. Smooth NLP produced a lower objective in the nominal case and in all ten influent scenarios. In the nominal case, the objective values were 0.8647 for Extended ICSOR and 0.7862 for Smooth NLP. Extended ICSOR required shorter recorded search times, but those faster searches did not match the objective values of the direct mechanistic route. The answer to the fourth research question is therefore necessarily qualified. Joint prediction and projection can support rapid exploration while maintaining a consistent material account, but they do not remove the need for mechanistic evaluation of the resulting decisions. The comparisons concern available local decisions under the declared treatment and resource priorities; they do not establish a global optimum or universal superiority of either route.",
+    "after": "The common-reference comparison reinforced this conclusion. Smooth NLP produced a lower objective in the nominal case and in all ten influent scenarios. In the nominal case, the objective values were 0.8647 for Extended ICSOR and 0.7862 for Smooth NLP. Extended ICSOR required shorter recorded search times, but those faster searches did not match the objective values of the direct mechanistic route. The answer to the fourth research question is therefore necessarily qualified. Joint prediction and projection can support rapid exploration while maintaining a consistent material account, but they do not remove the need for mechanistic evaluation of the resulting decisions. The comparisons concern available local decisions under the declared treatment and resource priorities. They do not establish a global optimum or universal superiority of either route."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 46,
+    "before": "The second contribution is a paired assessment of a common physical projection across different learners. This assessment makes the distinction between physical enforcement and statistical improvement directly measurable. The projection and stoichiometric foundations themselves come from existing work \\citep{SturmWexler2022,KircherVotsmeier2025}; the contribution of this dissertation lies in applying them to complete activated sludge predictions and examining compliance, error redistribution, projection displacement, and computational cost together. In doing so, the study also establishes an important interpretive limit: a physically feasible component state should not be treated as if it were automatically an accurate mechanistic response.",
+    "after": "The second contribution is a paired assessment of a common physical projection across different learners. This assessment makes the distinction between physical enforcement and statistical improvement directly measurable. The projection and stoichiometric foundations themselves come from existing work \\citep{SturmWexler2022,KircherVotsmeier2025}. The contribution of this dissertation lies in applying them to complete activated sludge predictions and examining compliance, error redistribution, projection displacement, and computational cost together. The study also establishes that a physically feasible component state should not automatically be treated as an accurate mechanistic response."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 77,
+    "before": "The operating results illustrate how treatment gains can be considered together with the resources required to obtain them. In S10, the direct decision reduced normalized quality cost from 1.4748 to 0.3699 while increasing the weighted resource contribution from 0.0557 to 0.4191. The total objective consequently decreased from 0.7931 to 0.6040. The selected decision therefore accepted greater capacity and resource contributions in exchange for substantially better weighted treatment. S8 illustrated a different trade-off: a lower resource contribution produced a slightly lower total objective even though all four effluent composites were slightly higher. Presenting the quality and resource contributions separately makes these choices easier to interpret and relate to the treatment priorities represented by the objective \\citep{PadronPaez2020,Aboagye2021}.",
+    "after": "The operating results illustrate how treatment gains can be considered together with the resources required to obtain them. In S10, the direct decision reduced normalized quality cost from 1.4748 to 0.3699 while increasing the weighted resource contribution from 0.0557 to 0.4191. The total objective consequently decreased from 0.7931 to 0.6040. The selected decision therefore accepted greater capacity and resource contributions in exchange for substantially better weighted treatment. S8 illustrated a different trade-off, with a lower resource contribution producing a slightly lower total objective even though all four effluent composites were slightly higher. Presenting the quality and resource contributions separately makes these choices easier to interpret and relate to the treatment priorities represented by the objective \\citep{PadronPaez2020,Aboagye2021}."
+  },
+  {
+    "file": "07_conclusion_outlook.tex",
+    "line": 133,
+    "before": "The operating objectives can also be adapted to individual facilities. An installed plant has fixed reactor volumes, aeration capacity, recycle capacity, and discharge requirements. Electricity demand, chemical consumption, sludge handling, and operating costs could therefore replace or supplement the engineering proxies used in the present study \\citep{Henze2008,Miederer2025}. Multiobjective studies could present the attainable combinations of treatment performance and resource demand before a specific preference is imposed. Extensions to other reactor arrangements, attached-growth systems, and resource-recovery connections could retain the same underlying principle: define the relevant component states and boundary streams before imposing physical enforcement \\citep{Henze2008,Aboagye2021,Durkin2024}.",
+    "after": "The operating objectives can also be adapted to individual facilities. An installed plant has fixed reactor volumes, aeration capacity, recycle capacity, and discharge requirements. Electricity demand, chemical consumption, sludge handling, and operating costs could therefore replace or supplement the engineering proxies used in the present study \\citep{Henze2008,Miederer2025}. Multiobjective studies could present the attainable combinations of treatment performance and resource demand before a specific preference is imposed. Extensions to other reactor arrangements, attached-growth systems, and resource-recovery connections could likewise define the relevant component states and boundary streams before imposing physical enforcement \\citep{Henze2008,Aboagye2021,Durkin2024}."
+  },
+  {
+    "file": "manuscript.tex",
+    "line": 216,
+    "before": "Activated sludge process models can support wastewater treatment analysis and optimization, but repeated mechanistic simulations can be computationally demanding. Machine learning surrogates offer a faster alternative, yet prediction accuracy alone does not make a surrogate suitable for engineering decisions. A model may reproduce overall water-quality indicators while misrepresenting the individual components that produce them; statistically fitted predictions may violate mass conservation or return negative concentrations; an apparently interpretable regression may become difficult to explain after component coupling and physical correction; and a surrogate that predicts a connected treatment plant well on average may still lead an optimizer to a poor operating decision. This dissertation addresses these linked problems by developing a unified framework that connects complete component prediction, physical enforcement, model interpretation, and independent verification of operating decisions.",
+    "after": "Activated sludge process models can support wastewater treatment analysis and optimization, but repeated mechanistic simulations can be computationally demanding. Machine learning surrogates offer a faster alternative, yet prediction accuracy alone does not make a surrogate suitable for engineering decisions. A model may reproduce overall water-quality indicators while misrepresenting the individual components that produce them. Statistically fitted predictions may also violate mass conservation or return negative concentrations. Even an apparently interpretable regression may become difficult to explain after component coupling and physical correction. At the plant scale, a surrogate that predicts a connected treatment plant well on average may still lead an optimizer to a poor operating decision. This dissertation addresses these linked problems by developing a unified framework that connects complete component prediction, physical enforcement, model interpretation, and independent verification of operating decisions."
+  },
+  {
+    "file": "manuscript.tex",
+    "line": 220,
+    "before": "The results show that no single learning method is best under all data and operating conditions. Flexible learners become especially effective when more simulation data are available, whereas the structured regression provides useful predictive performance when data are more limited while retaining a response that can be directly inspected. Physical projection consistently enforces the specified balances and concentration bounds, but it does not necessarily improve every prediction; instead, it can redistribute error among treatment components. This demonstrates that physical consistency and predictive accuracy are related but distinct properties. At the plant scale, joint projection generally improves agreement with the mechanistic reference and provides a coherent representation of the connected treatment system. The surrogate also enables faster initial exploration of operating alternatives. However, independent mechanistic evaluation shows that the faster surrogate searches do not necessarily produce decisions as good as those obtained through direct mechanistic optimization. Thus, computational speed, physical validity, predictive accuracy, interpretability, and decision quality cannot be treated as interchangeable evidence.",
+    "after": "The results show that no single learning method is best under all data and operating conditions. Flexible learners become especially effective when more simulation data are available, whereas the structured regression provides useful predictive performance when data are more limited while retaining a response that can be directly inspected. Physical projection consistently enforces the specified balances and concentration bounds, but it does not necessarily improve every prediction. Instead, it can redistribute error among treatment components. This demonstrates that physical consistency and predictive accuracy are related but distinct properties. At the plant scale, joint projection generally improves agreement with the mechanistic reference and provides a coherent representation of the connected treatment system. The surrogate also enables faster initial exploration of operating alternatives. However, independent mechanistic evaluation shows that the faster surrogate searches do not necessarily produce decisions as good as those obtained through direct mechanistic optimization. Thus, computational speed, physical validity, predictive accuracy, interpretability, and decision quality cannot be treated as interchangeable evidence."
+  }
+]

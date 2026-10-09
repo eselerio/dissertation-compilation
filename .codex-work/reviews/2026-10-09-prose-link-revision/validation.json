@@ -1,0 +1,74 @@
+{
+  "files": [
+    {
+      "file": "01_research_problem.tex",
+      "changed": false,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    },
+    {
+      "file": "02_integrated_literature.tex",
+      "changed": true,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    },
+    {
+      "file": "03_reactor_foundations.tex",
+      "changed": true,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    },
+    {
+      "file": "04_prediction_projection.tex",
+      "changed": true,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    },
+    {
+      "file": "05_interpretable_surrogate.tex",
+      "changed": true,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    },
+    {
+      "file": "06_connected_plant.tex",
+      "changed": true,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    },
+    {
+      "file": "07_conclusion_outlook.tex",
+      "changed": true,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    },
+    {
+      "file": "manuscript.tex",
+      "changed": true,
+      "protected_math_citations_labels_inputs_preserved": true,
+      "all_numeric_tokens_preserved_in_order": true,
+      "table_content_preserved": true
+    }
+  ],
+  "remaining_prose_punctuation": [
+    {
+      "file": "manuscript.tex",
+      "line": 315,
+      "reason": "DOI identifier convention"
+    },
+    {
+      "file": "manuscript.tex",
+      "line": 317,
+      "reason": "DOI identifier convention"
+    }
+  ],
+  "explanatory_colons_and_semicolon_links_remaining": 0,
+  "all_checks_pass": true
+}

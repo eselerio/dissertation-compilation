@@ -150,7 +150,7 @@ r(u,c_{in})=B\phi(u,c_{in}),
 \end{equation}
 The driver is an intermediate statistical quantity supplied to the coupled component relation. Its coefficients are unrestricted in sign because the fitted response may increase or decrease with an input. Non-negativity is imposed later on the component state, where that requirement has a physical meaning.
 
-The same driver can be partitioned into interpretable feature groups as
+The same driver can be partitioned into interpretable feature groups:
 \begin{equation}
 \equationname{Driver decomposition into operating, influent, and interaction blocks}
 \label{eq:icsor_driver_blocks}
@@ -165,7 +165,7 @@ Here \(b\in\mathbb{R}^{F}\) is the baseline term. The matrices \(W_u\in\mathbb{R
 
 \subsubsection{Illustrative operating and loading effects}
 
-An illustrative driver for one component with aeration level \(a\) and influent ammonium concentration \(n\) can be written as
+Consider an illustrative driver for one component with aeration level \(a\) and influent ammonium concentration \(n\):
 \begin{equation}
 \equationname{Illustrative driver with aeration, nitrogen, and interaction effects}
 \label{eq:icsor_example_driver}
@@ -175,12 +175,12 @@ Its derivative with respect to aeration is \(\partial r_f/\partial a=\beta_a+2\b
 
 Figure~\ref{fig:ch5_geometry_conditional_response} gives this calculation a geometric interpretation using hypothetical coefficients \((\beta_0,\beta_a,\beta_n,\beta_{aa},\beta_{an})=(1,-2,0.5,0.25,0.3)\). The curves in the left panel connect operating and loading combinations with the same driver value. Their curvature shows why equal increments of an input need not produce equal changes in the response. The right panel then maps the aeration derivative over the same input plane. Its zero-slope boundary separates conditions where additional aeration lowers the driver from conditions where it raises the driver.
 
-At the marked condition \((a,n)=(2,3)\), the driver is 1.3 and its aeration slope is \(-0.1\). At the same aeration setting with loading increased to 5, that slope becomes 0.5. A negative linear aeration coefficient can therefore coexist with a positive local aeration response because the curvature and interaction contributions also enter the derivative. These illustrative coefficients describe an intermediate statistical driver. They are not estimates of biological kinetics or a claim about the measured aeration response of the plant. The geometric reading identifies which combination of fitted terms determines the local operating effect.
+At the marked condition \((a,n)=(2,3)\), the driver is 1.3 and its aeration slope is \(-0.1\). At the same aeration setting with loading increased to 5, that slope becomes 0.5. A negative linear aeration coefficient can therefore coexist with a positive local aeration response because the curvature and interaction contributions also enter the derivative. These illustrative coefficients describe an intermediate statistical driver; they are not estimates of biological kinetics or a claim about the measured aeration response of the plant. The geometric reading identifies which combination of fitted terms determines the local operating effect.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch5_geometry_conditional_response.png}
-\caption{Hypothetical geometric interpretation of the second-order driver in Equation~\eqref{eq:icsor_example_driver}, with coefficients \((1,-2,0.5,0.25,0.3)\) in its stated coefficient order. Inputs and driver values use illustrative units. (a) The contours show equal driver response. The teal curve passes through \((a,n)=(2,3)\), where \(r_f=1.3\). (b) The conditional aeration slope is \(-2+0.5a+0.3n\). Orange and teal indicate negative and positive slopes, respectively, and the purple line marks zero slope. The figure illustrates a statistical driver before component coupling and physical enforcement.}
+\caption{Hypothetical geometric interpretation of the second-order driver in Equation~\eqref{eq:icsor_example_driver}, with coefficients \((1,-2,0.5,0.25,0.3)\) in its stated coefficient order. Inputs and driver values use illustrative units. (a) Contours of equal driver response; the teal curve passes through \((a,n)=(2,3)\), where \(r_f=1.3\). (b) The conditional aeration slope \(-2+0.5a+0.3n\); orange and teal indicate negative and positive slopes, respectively, and the purple line marks zero slope. The figure illustrates a statistical driver before component coupling and physical enforcement.}
 \label{fig:ch5_geometry_conditional_response}
 \end{figure}
 
@@ -216,7 +216,7 @@ The coefficient plane in Figure~\ref{fig:ch5_geometry_quadratic_symmetry} shows 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch5_geometry_quadratic_symmetry.png}
-\caption{Hypothetical coefficient-space geometry of the quadratic matrices in Equation~\eqref{eq:icsor_symmetry_numbers}. The diagonal entries remain \(q_{11}=0.1\) and \(q_{22}=0\). (a) The purple line contains all coefficient pairs with the same unordered interaction coefficient 0.2. Blue contours show \(\|Q\|_F^2=0.01+q_{12}^2+q_{21}^2\). The original orange point and symmetric teal point have squared norms 0.11 and 0.03. (b) Restricting this norm to the equal-response line gives a quadratic minimum at \(q_{12}=q_{21}=0.1\). This construction illustrates the norm decomposition in Equation~\eqref{eq:icsor_quadratic_norm}.}
+\caption{Hypothetical coefficient-space geometry of the quadratic matrices in Equation~\eqref{eq:icsor_symmetry_numbers}. The diagonal entries remain \(q_{11}=0.1\) and \(q_{22}=0\). (a) The purple line contains all coefficient pairs with the same unordered interaction coefficient 0.2. Blue contours show \(\|Q\|_F^2=0.01+q_{12}^2+q_{21}^2\); the original orange point and symmetric teal point have squared norms 0.11 and 0.03. (b) Restricting this norm to the equal-response line gives a quadratic minimum at \(q_{12}=q_{21}=0.1\). This construction illustrates the norm decomposition in Equation~\eqref{eq:icsor_quadratic_norm}.}
 \label{fig:ch5_geometry_quadratic_symmetry}
 \end{figure}
 
@@ -244,14 +244,14 @@ Each component therefore has \(M_{op}(M_{op}+1)/2=3\) distinct operating quadrat
 
 \subsection{Learned coupling among effluent components}
 
-The driver does not predict each effluent component independently. Instead, the model allows the component channels to interact through a learned simultaneous relation. Two hypothetical component equations with coupling coefficient 0.2 in both directions are
+The driver does not predict each effluent component independently. Instead, the model allows the component channels to interact through a learned simultaneous relation. Consider two hypothetical component equations with coupling coefficient 0.2 in both directions:
 \begin{equation}
 \equationname{Illustrative coupled equations for two effluent components}
 \label{eq:icsor_scalar_coupling_example}
 c_1=4+0.2c_2,
 \qquad c_2=2+0.2c_1.
 \end{equation}
-Substituting the second equation into the first gives \(c_1=4+0.2(2+0.2c_1)\), or \(0.96c_1=4.4\). Thus \(c_1=55/12\) and \(c_2=35/12\), approximately \((4.5833,2.9167)^\top\). These values illustrate how each predicted component in a simultaneous statistical relation depends on both the driver and the other component.
+Substituting the second equation into the first gives \(c_1=4+0.2(2+0.2c_1)\), or \(0.96c_1=4.4\). Thus \(c_1=55/12\) and \(c_2=35/12\), approximately \((4.5833,2.9167)^\top\). These values illustrate the arithmetic of a simultaneous statistical relation: each predicted component depends on both the driver and the other component.
 
 Moving the coupled terms to the left gives the equivalent matrix system
 \begin{equation}
@@ -294,18 +294,18 @@ The coupling matrix is subject to
 \end{equation}
 The condition number is the ratio of the largest to the smallest singular value of the coupled-system matrix. A nearly singular system can amplify small errors in the driver or in numerical computation \citep{BuzziFerraris2013}. The condition-number check therefore controls the behavior of the complete coupling system independently of the bounds imposed on individual entries.
 
-The small symmetric matrix in Equation~\eqref{eq:icsor_small_coupling_matrices} makes this distinction visible. Along the direction \((1,1)^\top\), multiplication by \(R\) scales the vector by 0.8. Along \((1,-1)^\top\), it scales the vector by 1.2. These orthogonal directions give singular values 0.8 and 1.2, so the condition number is \(1.2/0.8=1.5\).
+The small symmetric matrix in Equation~\eqref{eq:icsor_small_coupling_matrices} makes this distinction visible. Along the direction \((1,1)^\top\), multiplication by \(R\) scales the vector by 0.8; along \((1,-1)^\top\), it scales the vector by 1.2. These orthogonal directions give singular values 0.8 and 1.2, so the condition number is \(1.2/0.8=1.5\).
 
 If the two illustrative coupling coefficients were instead 0.99, the same directions would have scales 0.01 and 1.99, giving a condition number of 199. A driver error of magnitude \(\epsilon\) in each component along the first direction would then produce a state error of \(100\epsilon\) in each component. This hypothetical example shows how strong coupling can greatly amplify a small perturbation.
 
-Figure~\ref{fig:ch5_geometry_coupling_conditioning} connects the simultaneous relation with this sensitivity calculation. The first panel represents the two component equations as lines. Their intersection is the raw coupled state, so evaluating the drivers independently at \((4,2)\) would omit the shifts induced by the simultaneous relation. In the remaining panels, a unit circle of possible driver perturbations is mapped through \(R^{-1}\) into an ellipse of component-state perturbations. The ellipse semiaxis lengths are the inverse singular values of \(R\). For coupling 0.2, the largest gain is 1.25. For coupling 0.99, it is 100. The latter ellipse becomes long and narrow because perturbations along \((1,1)^\top\) are strongly amplified while the orthogonal direction remains comparatively insensitive.
+Figure~\ref{fig:ch5_geometry_coupling_conditioning} connects the simultaneous relation with this sensitivity calculation. The first panel represents the two component equations as lines. Their intersection is the raw coupled state, so evaluating the drivers independently at \((4,2)\) would omit the shifts induced by the simultaneous relation. In the remaining panels, a unit circle of possible driver perturbations is mapped through \(R^{-1}\) into an ellipse of component-state perturbations. The ellipse semiaxis lengths are the inverse singular values of \(R\). For coupling 0.2, the largest gain is 1.25; for coupling 0.99, it is 100. The latter ellipse becomes long and narrow because perturbations along \((1,1)^\top\) are strongly amplified while the orthogonal direction remains comparatively insensitive.
 
-The axis lengths distinguish two numerical properties. The largest inverse singular value measures the maximum absolute error amplification in these coordinates, whereas the condition number measures the ratio between the largest and smallest directional gains. Inspecting individual coupling entries alone reveals neither property of the assembled system. The geometric interpretation therefore explains why the complete matrix is screened before a fitted coupled model is accepted. These perturbation ellipses concern the raw regression solve. Subsequent physical projection is a separate operation.
+The axis lengths distinguish two numerical properties. The largest inverse singular value measures the maximum absolute error amplification in these coordinates, whereas the condition number measures the ratio between the largest and smallest directional gains. Inspecting individual coupling entries alone reveals neither property of the assembled system. The geometric interpretation therefore explains why the complete matrix is screened before a fitted coupled model is accepted. These perturbation ellipses concern the raw regression solve; subsequent physical projection is a separate operation.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{figures/ch5_geometry_coupling_conditioning.png}
-\caption{Hypothetical geometric interpretation of simultaneous component coupling and numerical conditioning. (a) The lines in Equation~\eqref{eq:icsor_scalar_coupling_example} intersect at \((55/12,35/12)\). The orange square marks the driver \((4,2)\). (b,c) For symmetric two-component coupling 0.2 and 0.99, respectively, the blue ellipse is \(\delta c=R^{-1}\delta r\) with \(\|\delta r\|_2=1\). The dashed orange unit circle supplies the unamplified reference. Purple arrows show the direction of maximum gain. The two perturbation panels use different axis ranges to show gains of 1.25 and 100, with condition numbers 1.5 and 199. The unit circle consequently appears tiny in panel (c). The nearly singular example illustrates a numerical failure mode and does not satisfy the adopted entry bound in Equation~\eqref{eq:icsor_coupling_safeguards}.}
+\caption{Hypothetical geometric interpretation of simultaneous component coupling and numerical conditioning. (a) The lines in Equation~\eqref{eq:icsor_scalar_coupling_example} intersect at \((55/12,35/12)\); the orange square marks the driver \((4,2)\). (b,c) For symmetric two-component coupling 0.2 and 0.99, respectively, the blue ellipse is \(\delta c=R^{-1}\delta r\) with \(\|\delta r\|_2=1\); the dashed orange unit circle supplies the unamplified reference. Purple arrows show the direction of maximum gain. The two perturbation panels use different axis ranges to show gains of 1.25 and 100, with condition numbers 1.5 and 199; the unit circle consequently appears tiny in panel (c). The nearly singular example illustrates a numerical failure mode and does not satisfy the adopted entry bound in Equation~\eqref{eq:icsor_coupling_safeguards}.}
 \label{fig:ch5_geometry_coupling_conditioning}
 \end{figure}
 
@@ -388,7 +388,7 @@ The objective is formulated in physical component coordinates. Because the compo
 
 The product \(\widehat C\Gamma^\top\) makes the complete objective nonconvex. However, fixing two variable blocks at a time leaves a simpler problem in the remaining block. The fitting procedure therefore updates the driver coefficients, the coupling matrix, and the fitted states sequentially within each cycle.
 
-The source of the nonconvexity can be seen from the reduced residual \((1-\gamma z)^2\), where \(\gamma\) is a coupling coefficient and \(z\) a fitted component. With \(z\) fixed, the expression is quadratic in \(\gamma\). With \(\gamma\) fixed, it is quadratic in \(z\). Jointly, however, it is not convex. At \((\gamma,z)=(0.2,5)\) and \((0.1,10)\), the residual is zero, while at the midpoint \((0.15,7.5)\) it becomes \((1-1.125)^2=1/64\). A convex function could not exceed the average of two zero endpoint values at their midpoint. The coupling between a fitted state and a learned coefficient therefore creates the nonconvex joint problem.
+The source of the nonconvexity can be seen from the reduced residual \((1-\gamma z)^2\), where \(\gamma\) is a coupling coefficient and \(z\) a fitted component. With \(z\) fixed, the expression is quadratic in \(\gamma\); with \(\gamma\) fixed, it is quadratic in \(z\). Jointly, however, it is not convex. At \((\gamma,z)=(0.2,5)\) and \((0.1,10)\), the residual is zero, while at the midpoint \((0.15,7.5)\) it becomes \((1-1.125)^2=1/64\). A convex function could not exceed the average of two zero endpoint values at their midpoint. The coupling between a fitted state and a learned coefficient therefore creates the nonconvex joint problem.
 
 For fixed \(\Gamma\) and \(\widehat C\), the driver update is a ridge-regularized linear least-squares problem. Define \(T=\widehat C R^\top\). For one output row, let its coefficient vector be \(\beta\) and the corresponding target column of \(T\) be \(t\). The relevant part of the objective is
 \begin{equation}
@@ -484,7 +484,7 @@ The unrestricted minimizer is \(c_0\). If one or more entries are negative, the 
 For example, take
 \(H_C=\begin{bmatrix}3&1\\1&3\end{bmatrix}\) and \(h_i=(-1,2)^\top\). These coefficients can arise from unit data, invariant, and system weights with \(A=[1\ \ 1]\) and \(R=I\). The unrestricted solution is \(c_0=(-5/8,7/8)^\top\). Componentwise clipping gives \((0,7/8)^\top\). If the first component is instead fixed at zero and the remaining quadratic \(3c_2^2-4c_2\) is minimized, the optimum is \(c_2=2/3\).
 
-At \((0,2/3)^\top\), the derivative in the first coordinate is \(2(c_2+1)=10/3\), so increasing the component away from its zero boundary would increase the objective. The objective value is \(-4/3\) at this constrained solution and \(-77/64\) at the clipped state, confirming that clipping is not optimal. These negative values arise because constant terms were omitted during the quadratic expansion. The complete residual-based training criterion remains non-negative.
+At \((0,2/3)^\top\), the derivative in the first coordinate is \(2(c_2+1)=10/3\), so increasing the component away from its zero boundary would increase the objective. The objective value is \(-4/3\) at this constrained solution and \(-77/64\) at the clipped state, confirming that clipping is not optimal. These negative values arise because constant terms were omitted during the quadratic expansion; the complete residual-based training criterion remains non-negative.
 
 The general fitted-state coefficients are
 \begin{equation}
@@ -557,7 +557,7 @@ For a new input pair \((u_*,c_{in,*})\), the fitted parameters define
 \end{equation}
 The notation \(c_{raw}=\widehat R^{-1}d_*\) describes the mapping mathematically, although the prediction is evaluated numerically by solving the linear system. The adopted conditioning bound limits the sensitivity of that solve. The raw state can be returned directly only if it satisfies both the invariant and non-negativity checks.
 
-The two diagnostics measure different departures from physical admissibility. For a vector, the Euclidean norm is the square root of the sum of squared entries, so an invariant-residual vector \((3,4)^\top\) has norm 5. For an illustrative concentration vector \((-0.3,0.1,-0.4)^\top\), retaining only the negative entries gives \((-0.3,0,-0.4)^\top\), whose absolute norm is 0.7. The first quantity measures the size of a mass conservation discrepancy. The second measures the total negative concentration in the adopted numerical coordinates.
+The two diagnostics measure different departures from physical admissibility. For a vector, the Euclidean norm is the square root of the sum of squared entries, so an invariant-residual vector \((3,4)^\top\) has norm 5. For an illustrative concentration vector \((-0.3,0.1,-0.4)^\top\), retaining only the negative entries gives \((-0.3,0,-0.4)^\top\), whose absolute norm is 0.7. The first quantity measures the size of a mass conservation discrepancy; the second measures the total negative concentration in the adopted numerical coordinates.
 
 For a candidate state \(c\), define
 \begin{equation}
@@ -567,7 +567,7 @@ v_{mc}(c)=\|A(c-c_{in,*})\|_2,
 \qquad
 v_{nn}(c)=\|\min(c,\mathbf{0})\|_1.
 \end{equation}
-The minimum is evaluated componentwise. The numerical diagnostic tolerance is \(10^{-10}\). The mathematical requirements are exact equality and non-negativity. The residual tolerance defines their computational assessment under the stated scaling of \(A\).
+The minimum is evaluated componentwise. The numerical diagnostic tolerance is \(10^{-10}\). The mathematical requirements are exact equality and non-negativity; the residual tolerance defines their computational assessment under the stated scaling of \(A\).
 
 \subsubsection{Affine projection for mass conservation}
 
@@ -613,7 +613,7 @@ c_{aff}=c_{raw}-A^\top(AA^\top)^{-1}A(c_{raw}-c_{in,*}).
 \end{equation}
 Because \(A\) is fixed, the matrix \(A^\top(AA^\top)^{-1}A\) can be prepared once and reused for every new prediction.
 
-The same matrix operation can be evaluated explicitly for the two-component example as
+The two-component example makes the same matrix operation explicit:
 \begin{equation}
 \equationname{Illustrative matrix of the mass conservation projection}
 \label{eq:icsor_small_affine_matrix}
@@ -657,13 +657,13 @@ For the full component state, the final projection is
 & \rho\geq\mathbf{0}.
 \end{aligned}
 \end{equation}
-For strictly positive weights \(w_c\), the optimal auxiliary variable satisfies \(\rho_f=|c_f-c_{aff,f}|\). The objective is therefore the weighted absolute adjustment \(\sum_f w_{c,f}|c_f-c_{aff,f}|\). The fitted regression itself remains unchanged. Only the returned state is corrected.
+For strictly positive weights \(w_c\), the optimal auxiliary variable satisfies \(\rho_f=|c_f-c_{aff,f}|\). The objective is therefore the weighted absolute adjustment \(\sum_f w_{c,f}|c_f-c_{aff,f}|\). The fitted regression itself remains unchanged; only the returned state is corrected.
 
 The problem is linear because the absolute values are represented by auxiliary variables and linear inequalities. The revised-simplex method described by \citet{HuangfuHall2018} provides an algorithmic basis for this type of projection. The mathematical feasible set is nonempty whenever the supplied influent state is non-negative and satisfies the adopted boundary relation. Positive weights make the objective bounded below and discourage unnecessary movement in every component. A minimizer therefore exists, although several minimizing states can occur if the weighted absolute-distance objective contains a flat face.
 
 The weights determine how the required adjustment is distributed. A large weight makes a component expensive to change, whereas a smaller weight allows more movement if that helps satisfy the constraints. The weights are fixed before deployment according to the intended component scaling and scientific priorities. Equal numerical weights are themselves a modeling choice because the components differ in units and typical magnitudes.
 
-A three-component illustration shows how this choice matters. Let the invariant row be \([1\ \ 1\ \ 1]\), and let the affine reference be \((-1,4,7)^\top\), whose total is 10. Restoring the first component to zero requires one unit to be removed elsewhere. Two feasible candidates are \((0,3,7)^\top\) and \((0,4,6)^\top\). With weights \((1,10,1)^\top\), their costs are 11 and 2, respectively, so the second candidate is preferred because changing the second component is expensive. With weights \((1,1,10)^\top\), the costs reverse to 2 and 11. Both candidates conserve the same total inventory. The weights determine which admissible redistribution is preferred.
+A three-component illustration shows how this choice matters. Let the invariant row be \([1\ \ 1\ \ 1]\), and let the affine reference be \((-1,4,7)^\top\), whose total is 10. Restoring the first component to zero requires one unit to be removed elsewhere. Two feasible candidates are \((0,3,7)^\top\) and \((0,4,6)^\top\). With weights \((1,10,1)^\top\), their costs are 11 and 2, respectively, so the second candidate is preferred because changing the second component is expensive. With weights \((1,1,10)^\top\), the costs reverse to 2 and 11. Both candidates conserve the same total inventory; the weights determine which admissible redistribution is preferred.
 
 \citet{KircherVotsmeier2025} show why mass-conservation projection in reaction-kinetics surrogates must be combined with non-negativity enforcement. Their scaled-space formulation protects low-concentration species during correction. Equation~\eqref{eq:icsor_weighted_correction} addresses the same joint requirement for activated sludge components through a weighted absolute-distance formulation. It enforces the adopted linear invariants and non-negativity on the final returned state.
 
@@ -759,11 +759,11 @@ In the two-feature illustration, the second driver has no direct coefficient for
 
 The fitted coefficients are displayed according to the same logical structure. Operating terms are separated from influent terms, symmetric quadratic maps display the mirrored cells consistently, and operating-load maps show which operating variables interact with which influent components. The coupling matrix is displayed separately because its meaning differs from that of the driver coefficients.
 
-A post-fitting display threshold is used only to simplify presentation. For each reported-composite raw-regression map, the threshold is \(10^{-4}\) times the largest absolute coefficient. For the coupling matrix, it is \(10^{-4}\) times the largest absolute off-diagonal entry. The fitted model itself remains unchanged. The threshold controls only which entries are shown. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still contribute substantially when multiplied by a large feature, so interpretation considers coefficient magnitude together with the scale of the corresponding input and its contribution over the declared domain \citep{Selerio2026,Nazlabadi2021}.
+A post-fitting display threshold is used only to simplify presentation. For each reported-composite raw-regression map, the threshold is \(10^{-4}\) times the largest absolute coefficient. For the coupling matrix, it is \(10^{-4}\) times the largest absolute off-diagonal entry. The fitted model itself remains unchanged; the threshold controls only which entries are shown. Symmetric quadratic summaries count unique upper-triangular terms. A small coefficient can still contribute substantially when multiplied by a large feature, so interpretation considers coefficient magnitude together with the scale of the corresponding input and its contribution over the declared domain \citep{Selerio2026,Nazlabadi2021}.
 
 \subsubsection{Analytical jacobians of the raw regression}
 
-A fitted coefficient and a local response derivative are not the same quantity. The derivatives of the scalar driver in Equation~\eqref{eq:icsor_scalar_driver_example} make this distinction explicit through
+A fitted coefficient and a local response derivative are not the same quantity. The scalar driver in Equation~\eqref{eq:icsor_scalar_driver_example} makes this distinction explicit:
 \begin{equation}
 \equationname{Gradients of the illustrative scalar regression driver}
 \label{eq:icsor_scalar_driver_derivatives}
@@ -782,7 +782,7 @@ The second illustrative driver \(r_2=-u_1+u_2+0.2c_2\) has derivative \(-1\) wit
 \qquad
 -0.2\frac{\partial c_1}{\partial u_1}+\frac{\partial c_2}{\partial u_1}=-1.
 \]
-The same inverse used for prediction therefore propagates the derivative according to
+The same inverse used for prediction therefore propagates the derivative:
 \begin{equation}
 \equationname{Illustrative propagation of an operating derivative through coupling}
 \label{eq:icsor_small_chain_derivative}
@@ -925,7 +925,7 @@ d_1^2+d_2^2&=d_1^2+(-3-d_1)^2,\\
 \]
 Thus \(d_1=d_2=-1.5\), giving the mass-conserving state \((4.5,5.5)^\top\).
 
-For general \(a\), the excess total is \((4+a)+(3+2a)-10=3a-3\). Equal-weight affine projection subtracts half of that excess from each coordinate to give
+For general \(a\), the excess total is \((4+a)+(3+2a)-10=3a-3\). Equal-weight affine projection subtracts half of that excess from each coordinate:
 \[
 \begin{aligned}
 c_{aff,1}(a)&=4+a-\frac{3a-3}{2}=5.5-0.5a,\\
@@ -934,7 +934,7 @@ c_{aff,2}(a)&=3+2a-\frac{3a-3}{2}=4.5+0.5a.
 \]
 The projected slopes are therefore \(-0.5\) and \(0.5\). The first component changes from a positive raw slope to a negative affine slope, while the two projected slopes sum to zero as required by the fixed total inventory.
 
-Non-negativity introduces a further change. The first affine component reaches zero at \(a=11\). For \(a>11\), the affine state lies outside the non-negative conservation segment, and the nearest jointly feasible state is \((0,10)^\top\). Both local slopes are then zero while that boundary remains active. A single operating input can therefore produce different local responses at the raw polynomial, affine mass-conserving, and final boundary-constrained stages.
+Non-negativity introduces a further change. The first affine component reaches zero at \(a=11\). For \(a>11\), the affine state lies outside the non-negative conservation segment, and the nearest jointly feasible state is \((0,10)^\top\). Both local slopes are then zero while that boundary remains active. A single operating input can therefore produce three different local responses: the raw polynomial slope, the affine mass-conserving slope, and the final boundary-constrained slope.
 
 Figure~\ref{fig:assessment_branch_sensitivity} shows this progression for the first component.
 
@@ -1022,7 +1022,7 @@ For strictly nonzero reference values,
 \label{eq:icsor_relative_error}
 E_{rel,q}=\frac{1}{n}\sum_i\frac{|e_{iq}|}{|y_{iq}|}.
 \end{equation}
-The quantity is reported as a ratio. Multiplying by 100 gives a percentage. A zero reference value makes the expression undefined, while a very small reference can make the relative error disproportionately large. Any convention for zero-reference cases must therefore be defined before predictors are compared.
+The quantity is reported as a ratio; multiplying by 100 gives a percentage. A zero reference value makes the expression undefined, while a very small reference can make the relative error disproportionately large. Any convention for zero-reference cases must therefore be defined before predictors are compared.
 
 The target-specific coefficient of determination is
 \begin{equation}
@@ -1034,7 +1034,7 @@ R_q^2=1-
 \end{equation}
 A target with no reference variation makes the expression undefined. Negative values are possible when the prediction error exceeds that of the reference-mean predictor.
 
-The aggregate root error is obtained by pooling residuals across the four reported quantities as
+The aggregate root error pools residuals across the four reported quantities:
 \begin{equation}
 \equationname{Root mean squared error pooled across four reported composites}
 \label{eq:icsor_aggregate_root_error}
@@ -1044,7 +1044,7 @@ Aggregate absolute and relative errors use the corresponding means across observ
 
 Pooling before taking the square root is also distinct from averaging target-specific root errors. If four hypothetical target mean squared errors are 1, 9, 1, and 9, the pooled mean squared error is 5 and the pooled root error is \(\sqrt5\approx2.2361\). The average of the four target root errors is instead \((1+3+1+3)/4=2\). Equation~\eqref{eq:icsor_aggregate_root_error} defines the first of these two summaries.
 
-The primary ordering measure is aggregate root mean squared error. The remaining measures provide complementary perspectives. Squared error emphasizes large residuals, absolute error describes average deviation, relative error scales that deviation to the reference magnitude, and \(R^2\) relates squared error to target variation. Predictor rankings are therefore examined separately under each measure.
+The primary ordering measure is aggregate root mean squared error. The remaining measures provide complementary perspectives: squared error emphasizes large residuals, absolute error describes average deviation, relative error scales that deviation to the reference magnitude, and \(R^2\) relates squared error to target variation. Predictor rankings are therefore examined separately under each measure.
 
 \subsubsection{Repeated sample-size assessment}
 
@@ -1095,7 +1095,7 @@ At the largest sample size, the generalization gap is
 \label{eq:icsor_generalization_gap}
 \Delta E_{root,m}=E_{root,m}^{held\text{-}out}-E_{root,m}^{training}.
 \end{equation}
-A positive value indicates greater held-out error. The gap does not by itself measure predictive quality because a small gap can occur when a model performs similarly well on training and held-out data or similarly poorly on both. For example, training and held-out errors of 0.5 and 0.8 give a gap of 0.3, while errors of 5.0 and 5.1 give a smaller gap of 0.1 despite much worse prediction. The gap is therefore interpreted together with the absolute error \citep{Hastie2009}.
+A positive value indicates greater held-out error. The gap does not by itself measure predictive quality: a model can have a small gap because it performs similarly well on training and held-out data, or because it performs similarly poorly on both. For example, training and held-out errors of 0.5 and 0.8 give a gap of 0.3, while errors of 5.0 and 5.1 give a smaller gap of 0.1 despite much worse prediction. The gap is therefore interpreted together with the absolute error \citep{Hastie2009}.
 
 Training time is recorded for every repeated fit and summarized across runs. Deployment effort is assessed separately through prediction time, branch use, and constrained-solve effort. This separation distinguishes the cost of constructing the approximation from the cost of returning a physically checked state.
 
@@ -1184,7 +1184,7 @@ Figure~\ref{fig:icsor_composite_results} makes the scale difference among these 
 
 \subsection{Sample efficiency and generalization}
 
-The repeated sample-size assessment produced a different picture from the fixed large-data comparison. At the smallest design size of 500 cases, ICSOR had the lowest mean held-out root error at 10.79. XGBoost and LightGBM followed at 11.26 and 11.45, while the multilayer perceptron ranked fifth at 13.26. At the largest design size, however, the multilayer perceptron reached 4.62, LightGBM 5.27, support vector regression 5.84, and ICSOR 5.94, changing the ordering of the models. The leading model therefore depended on the available simulation budget rather than remaining fixed across the learning curve.
+The repeated sample-size assessment produced a different picture from the fixed large-data comparison. At the smallest design size of 500 cases, ICSOR had the lowest mean held-out root error at 10.79. XGBoost and LightGBM followed at 11.26 and 11.45, while the multilayer perceptron ranked fifth at 13.26. At the largest design size, however, the ordering changed: the multilayer perceptron reached 4.62, LightGBM 5.27, support vector regression 5.84, and ICSOR 5.94. The leading model therefore depended on the available simulation budget rather than remaining fixed across the learning curve.
 
 \begin{table}[htbp]
 \centering\small
@@ -1208,11 +1208,11 @@ Random Forest & 28.78 & 30.31 & 8.2 & 18.71\\
 \end{tabular}
 \end{table}
 
-Across the complete range of design sizes, ICSOR had the lowest normalized root-error curve area at 6.33. LightGBM was nearly identical at 6.35 and achieved the best mean dense rank of 2.2. The multilayer perceptron had the second-best mean rank at 2.5, while ICSOR and XGBoost both had a mean rank of 4.3. The curve area favors sustained low root error across the data range, whereas the rank aggregates relative ordering across targets, metrics, and sizes. These summaries therefore emphasize different aspects of performance. ICSOR therefore led one trajectory summary without leading all comparative summaries.
+Across the complete range of design sizes, ICSOR had the lowest normalized root-error curve area at 6.33. LightGBM was nearly identical at 6.35 and achieved the best mean dense rank of 2.2. The multilayer perceptron had the second-best mean rank at 2.5, while ICSOR and XGBoost both had a mean rank of 4.3. These summaries emphasize different aspects of performance: the curve area favors sustained low root error across the data range, whereas the rank aggregates relative ordering across targets, metrics, and sizes. ICSOR therefore led one trajectory summary without leading all comparative summaries.
 
 Its training-to-held-out behavior also differed from that of the more flexible learners. At the largest design size, ICSOR's held-out minus training root-error gap was 0.22, smaller than the corresponding gaps for the multilayer perceptron, LightGBM, XGBoost, and support vector regression. Partial least squares also had a small gap of 0.38, but its held-out root error was 27.96. A small gap alone therefore did not imply useful prediction. ICSOR combined a small gap with substantially lower absolute error than partial least squares, while the most accurate flexible learners still achieved lower final prediction error.
 
-Figure~\ref{fig:icsor_efficiency_results} separates the normalized curve area, mean dense rank, and final generalization gap. ICSOR led the root-error area shown in the figure, while LightGBM led the mean-rank comparison. Absolute held-out error remained necessary for interpreting the generalization gap, reinforcing the need to consider the summaries together.
+Figure~\ref{fig:icsor_efficiency_results} separates the normalized curve area, mean dense rank, and final generalization gap. The figure reinforces that no single summary dominates the interpretation: ICSOR led the root-error area, LightGBM led the mean-rank comparison, and the absolute held-out error remained necessary for interpreting the generalization gap.
 
 \begin{figure}[htbp]
 \centering
@@ -1221,7 +1221,7 @@ Figure~\ref{fig:icsor_efficiency_results} separates the normalized curve area, m
 \label{fig:icsor_efficiency_results}
 \end{figure}
 
-The change in model ordering is especially clear at the two endpoints shown in Figure~\ref{fig:icsor_budget_results}. ICSOR led the four selected predictors when only 500 cases were available, whereas the multilayer perceptron had the lowest error at 10,000 cases. The result therefore indicates that the structured model has its strongest advantage when simulation data are limited, while flexible nonlinear learners benefit more from the larger design.
+The change in model ordering is especially clear at the two endpoints shown in Figure~\ref{fig:icsor_budget_results}. ICSOR led the four selected predictors when only 500 cases were available, whereas the multilayer perceptron had the lowest error at 10,000 cases. The result therefore supports a conditional interpretation of the structured model: its advantage is strongest when simulation data are limited, while flexible nonlinear learners benefit more from the larger design.
 
 \begin{figure}[htbp]
 \centering
@@ -1232,7 +1232,7 @@ The change in model ordering is especially clear at the two endpoints shown in F
 
 \subsection{Physical checks and deployment branches}
 
-The physical diagnostics distinguish statistical prediction from the properties of the returned component state. Table~\ref{tab:icsor_physical_results} compares the final ICSOR output with the raw outputs of the nine comparators. Every final ICSOR state satisfied both the adopted numerical balances and non-negativity tolerance. By contrast, every raw comparator state violated the adopted balance tolerance. AdaBoost, random forest, and \(k\)-nearest neighbors produced no negative raw states, but this did not make them mass conserving. For the remaining comparators, raw non-negativity violation rates ranged from 46.00\% to 70.10\%.
+The physical diagnostics distinguish statistical prediction from the properties of the returned component state. Table~\ref{tab:icsor_physical_results} compares the final ICSOR output with the raw outputs of the nine comparators. Every final ICSOR state satisfied both the adopted numerical balances and non-negativity tolerance. By contrast, every raw comparator state violated the adopted balance tolerance. Several comparators---AdaBoost, random forest, and \(k\)-nearest neighbors---produced no negative raw states, but this did not make them mass conserving. For the remaining comparators, raw non-negativity violation rates ranged from 46.00\% to 70.10\%.
 
 \begin{table}[htbp]
 \centering\small
@@ -1275,9 +1275,9 @@ The structured fitting procedure required more computation than the fastest comp
 
 ICSOR was nevertheless not the slowest model at the largest design size. Its mean fitting time remained below AdaBoost at 117.7 s, support vector regression at 136.8 s, and the multilayer perceptron at 161.6 s. The result places the structured fit between the fastest conventional regressors and several computationally heavier nonlinear alternatives.
 
-Fitting time is only one part of the computational requirement. Most fixed-split ICSOR predictions also required constrained deployment, with the linear projection branch activated in 78.2\% of cases. The reported iteration counts therefore represent additional repeated-use effort beyond the raw regression evaluation. Separating fitting from deployment makes clear that model preparation and physically checked prediction impose different computational costs.
+Fitting time is only one part of the computational requirement. Most fixed-split ICSOR predictions also required constrained deployment: the linear projection branch was activated in 78.2\% of cases. The reported iteration counts therefore represent additional repeated-use effort beyond the raw regression evaluation. Separating fitting from deployment makes clear that model preparation and physically checked prediction impose different computational costs.
 
-Figure~\ref{fig:icsor_fitting_results} shows the fitting-time comparison on logarithmic axes. The smaller-design panel focuses on four leading predictors, while the larger-design panel includes additional alternatives. The figure therefore describes model-construction effort only. Projection and checked deployment are accounted for separately.
+Figure~\ref{fig:icsor_fitting_results} shows the fitting-time comparison on logarithmic axes. The smaller-design panel focuses on four leading predictors, while the larger-design panel includes additional alternatives. The figure therefore describes model-construction effort only; projection and checked deployment are accounted for separately.
 
 \begin{figure}[htbp]
 \centering
@@ -1330,9 +1330,9 @@ Figure~\ref{fig:icsor_structure_results} shows the retained counts and selected 
 
 The results show that the value of the structured model depends strongly on the available data budget. ICSOR produced the lowest mean held-out root error at the smallest design size and the lowest normalized root-error curve area across the full sample-size range. Its explicit second-order driver, invariant-aware fitting objective, and learned component coupling therefore provided a useful approximation when fewer mechanistic simulations were available. This behavior is consistent with the broader role of model structure in hybrid learning discussed by \citet{Shen2023} and with the changing learner orderings across data budgets reviewed by \citet{VieringLoog2023}.
 
-That advantage did not persist as a universal ranking. At the largest design size, the multilayer perceptron produced the lowest composite error, while LightGBM achieved the best mean dense rank across targets, metrics, and sample sizes. ICSOR's normalized curve area of 6.33 was only slightly lower than LightGBM's 6.35, but its final full-data error remained higher than that of the strongest flexible learners. The result therefore does not support choosing ICSOR simply because it is interpretable. The trade-off arises because ICSOR offers an explicit equation, favorable performance when simulations are limited, and checked component states, while more flexible learners can achieve lower prediction error when a larger training design is available \citep{Rudin2019,BhosekarIerapetritou2018}.
+That advantage did not persist as a universal ranking. At the largest design size, the multilayer perceptron produced the lowest composite error, while LightGBM achieved the best mean dense rank across targets, metrics, and sample sizes. ICSOR's normalized curve area of 6.33 was only slightly lower than LightGBM's 6.35, but its final full-data error remained higher than that of the strongest flexible learners. The result therefore does not support choosing ICSOR simply because it is interpretable. Instead, it identifies a specific trade-off: ICSOR offers an explicit equation, favorable performance when simulations are limited, and checked component states, while more flexible learners can achieve lower prediction error when a larger training design is available \citep{Rudin2019,BhosekarIerapetritou2018}.
 
-The generalization results reinforce the same point. ICSOR's training-to-held-out root-error gap was small, but a small gap is useful only when the underlying prediction error is also acceptable. Partial least squares also had a relatively small gap, yet its held-out error remained high, demonstrating why the gap alone is insufficient. The leading flexible learners achieved lower absolute error despite larger training-to-held-out differences. Generalization gap and predictive accuracy therefore describe complementary properties and should not be interpreted as substitutes for one another.
+The generalization results reinforce the same point. ICSOR's training-to-held-out root-error gap was small, but a small gap is useful only when the underlying prediction error is also acceptable. Partial least squares demonstrated the opposite case: it also had a relatively small gap, yet its held-out error remained high. The leading flexible learners achieved lower absolute error despite larger training-to-held-out differences. Generalization gap and predictive accuracy therefore describe complementary properties and should not be interpreted as substitutes for one another.
 
 From an engineering perspective, the sample-size results provide a practical model-selection rule rather than a universal ranking. When generating mechanistic training cases is costly and only a modest design can be afforded, the structured response can make efficient use of those cases while retaining direct inspectability. When simulation data are abundant and minimum predictive error is the dominant requirement, the results favor the more flexible learners evaluated here. The usefulness of an interpretable surrogate therefore depends on the data available and on whether transparency and physical checking are themselves required properties of the engineering workflow.
 
@@ -1344,7 +1344,7 @@ Projection then supplied the guarantees that fitting alone did not provide. The 
 
 This distinction is important because a physically checked output is not the same as a statistically superior output. The same deployment procedure that guarantees the adopted balances can alter concentrations and therefore alter prediction error. The numerical comparison used checked ICSOR states and affine-aligned comparator states for accuracy scoring, while the physical comparator diagnostics intentionally used the raw comparator states. Under this convention, ICSOR had a 36.5\% larger pooled root error than the multilayer perceptron, and all methods shared the same TP error of 0.0361 after alignment and reporting. These outcomes should therefore be read together with the deployment rules that produced them.
 
-The result also shows why physical diagnostics need to identify the stage being assessed. A raw prediction, an affine mass-conserving state, and a jointly constrained final state are different mathematical objects. Reporting only the final zero-violation rate would hide how much correction was required to obtain it. Conversely, reporting only raw violations would ignore the state that the model actually returns to the engineer. The stage-wise analysis shows both how frequently the statistical model required correction and how successfully the complete deployed procedure supplied it.
+The result also shows why physical diagnostics need to identify the stage being assessed. A raw prediction, an affine mass-conserving state, and a jointly constrained final state are different mathematical objects. Reporting only the final zero-violation rate would hide how much correction was required to obtain it. Conversely, reporting only raw violations would ignore the state that the model actually returns to the engineer. The stage-wise analysis makes both facts visible: the statistical model frequently required correction, and the complete deployed procedure successfully supplied that correction.
 
 \subsection{What the coefficient structure explains}
 
