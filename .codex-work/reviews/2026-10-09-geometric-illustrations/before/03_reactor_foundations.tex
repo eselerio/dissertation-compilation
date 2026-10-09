@@ -560,17 +560,6 @@ These values arise from fixed reporting assumptions rather than from the surroga
 
 The main consequence of aggregation is that different component errors can cancel. Equal and opposite errors in ammonium and nitrate disappear in reported TN because both have unit nitrogen weights. A negative ammonium prediction can even be obscured by a sufficiently large nitrate prediction. Likewise, biomass and substrate errors can compensate in COD while remaining visible in TSS because their solids conversion factors differ. Accurate COD, TN, TP, and TSS values therefore do not establish either an accurate or a physically admissible 20-component state.
 
-Figure~\ref{fig:reporting_null_space_geometry} gives this cancellation a geometric interpretation. In a hypothetical state with all other components set to zero, let the reference ammonium--nitrate pair be $(6,4)^\top$ in g N m$^{-3}$. Every pair $(6+t,4-t)^\top$ has the same reported TN of 10 g N m$^{-3}$ under Equation~\eqref{eq:component_composite_map}. These pairs form a line in component space, and their error direction $(t,-t)^\top$ is invisible to the nitrogen reporting row because its entries sum to zero. The component error nevertheless has Euclidean magnitude $\sqrt{2}|t|$. All other component errors are zero in this deliberately sparse example, so the same magnitude applies to the full state in the fixed numerical unit convention.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{ch3_geometry_reporting_null_space.png}
-\caption{Hypothetical geometry of hidden component error under the fixed reporting map. (a) The reference, a pair with different nitrogen components, and a pair with a negative component all give TN of 10 g N m$^{-3}$. Pale parallel lines show other TN level sets. (b) Along $(6+t,4-t)^\top$, reported TN error remains zero while component error grows. Teal shading marks the interval where both concentrations are non-negative; orange shading marks a negative component. All unshown components are zero, and no state is asserted to satisfy the reactor kinetics.}
-\label{fig:reporting_null_space_geometry}
-\end{figure}
-
-The purple point $(9,1)^\top$ therefore has exactly correct reported TN but a component error of $3\sqrt{2}$ g N m$^{-3}$. The orange point $(-1,11)^\top$ reports the same total while also violating non-negativity. Because ammonium and nitrate have zero coefficients in the other three reporting rows, this redistribution is invisible to all four reported quantities in the example. The many-to-one map loses the distinction between the nitrogen forms; adding further composite accuracy scores cannot recover it. Component-level error and sign checks are therefore necessary even when every reported treatment quantity agrees with its reference.
-
 The reporting map and the invariant operator consequently answer different questions. The reporting map summarizes treatment performance in familiar engineering quantities. The invariant operator tests whether the component state satisfies the declared material accounting. Neither one reconstructs the detailed component distribution lost through aggregation. Component prediction, composite reporting, mass conservation, and non-negativity must therefore remain separate objects of assessment.
 
 \section{Mixing and spatial transport as model boundaries}

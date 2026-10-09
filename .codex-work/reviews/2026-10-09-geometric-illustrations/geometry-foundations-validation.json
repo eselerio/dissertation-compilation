@@ -1,0 +1,61 @@
+{
+  "reporting_null_space": {
+    "reference": [
+      6.0,
+      4.0
+    ],
+    "different_components": [
+      9.0,
+      1.0
+    ],
+    "negative_component": [
+      -1.0,
+      11.0
+    ],
+    "reported_TN_each": 10,
+    "reporting_null_direction": [
+      1.0,
+      -1.0
+    ],
+    "nonnegative_shift_interval": [
+      -6,
+      4
+    ],
+    "component_norm_at_t_3": 4.242640687119286
+  },
+  "largest_feasible_interpolation": {
+    "anchor": [
+      8.0,
+      1.0,
+      1.0
+    ],
+    "candidate": [
+      4.0,
+      -0.5,
+      6.5
+    ],
+    "direction": [
+      -4.0,
+      -1.5,
+      5.5
+    ],
+    "decreasing_coordinate_bounds": [
+      2.0,
+      0.6666666666666666
+    ],
+    "largest_feasible_alpha": 0.6666666666666666,
+    "boundary_state": [
+      5.333333333333334,
+      0.0,
+      4.666666666666666
+    ],
+    "inventory_along_ray": 10,
+    "safe_margin_state": [
+      5.333333333336,
+      1.000088900582341e-12,
+      4.666666666663
+    ]
+  },
+  "assertions_passed": true,
+  "data_kind": "hypothetical analytical examples, not empirical results"
+}

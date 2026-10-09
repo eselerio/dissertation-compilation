@@ -173,17 +173,6 @@ r_f=\beta_0+\beta_a a+\beta_n n+\beta_{aa}a^2+\beta_{an}an.
 \end{equation}
 Its derivative with respect to aeration is \(\partial r_f/\partial a=\beta_a+2\beta_{aa}a+\beta_{an}n\). The modeled aeration response therefore depends not only on the linear aeration coefficient, but also on the current aeration setting and the ammonium loading. The interaction term makes the local aeration effect conditional on the influent condition.
 
-Figure~\ref{fig:ch5_geometry_conditional_response} gives this calculation a geometric interpretation using hypothetical coefficients \((\beta_0,\beta_a,\beta_n,\beta_{aa},\beta_{an})=(1,-2,0.5,0.25,0.3)\). The curves in the left panel connect operating and loading combinations with the same driver value. Their curvature shows why equal increments of an input need not produce equal changes in the response. The right panel then maps the aeration derivative over the same input plane. Its zero-slope boundary separates conditions where additional aeration lowers the driver from conditions where it raises the driver.
-
-At the marked condition \((a,n)=(2,3)\), the driver is 1.3 and its aeration slope is \(-0.1\). At the same aeration setting with loading increased to 5, that slope becomes 0.5. A negative linear aeration coefficient can therefore coexist with a positive local aeration response because the curvature and interaction contributions also enter the derivative. These illustrative coefficients describe an intermediate statistical driver; they are not estimates of biological kinetics or a claim about the measured aeration response of the plant. The geometric reading identifies which combination of fitted terms determines the local operating effect.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figures/ch5_geometry_conditional_response.png}
-\caption{Hypothetical geometric interpretation of the second-order driver in Equation~\eqref{eq:icsor_example_driver}, with coefficients \((1,-2,0.5,0.25,0.3)\) in its stated coefficient order. Inputs and driver values use illustrative units. (a) Contours of equal driver response; the teal curve passes through \((a,n)=(2,3)\), where \(r_f=1.3\). (b) The conditional aeration slope \(-2+0.5a+0.3n\); orange and teal indicate negative and positive slopes, respectively, and the purple line marks zero slope. The figure illustrates a statistical driver before component coupling and physical enforcement.}
-\label{fig:ch5_geometry_conditional_response}
-\end{figure}
-
 The same reasoning extends to other simultaneous loads. A carbon-ammonium interaction allows the fitted association with carbon availability to depend on nitrogen loading. A phosphorus-storage interaction allows the fitted response to dissolved phosphate to depend on a particulate storage pool. These terms provide a transparent statistical approximation of nonlinear treatment behavior involving the interconnected microbial pathways described by \citet{Henze1999}.
 
 The second-order library therefore represents smooth local curvature and pairwise interactions while keeping those terms directly inspectable. Explicit nonlinear libraries provide a general basis for examining such structures \citep{Brunton2016}, while the response-surface applications reviewed by \citet{Nazlabadi2021} provide a wastewater-treatment precedent for using polynomial operating terms and interactions.
@@ -210,15 +199,6 @@ Q=\begin{bmatrix}0.1&0.3\\-0.1&0\end{bmatrix},
 At \(x=(2,3)^\top\), the first matrix gives \(0.4+1.8-0.6=1.6\), while the symmetric matrix gives \(0.4+0.6+0.6=1.6\). The two matrices therefore make the same prediction even though their individual off-diagonal coefficients differ.
 
 Their squared coefficient sums are not the same. The original matrix has squared sum \(0.01+0.09+0.01=0.11\), while the symmetric part has squared sum \(0.01+0.01+0.01=0.03\). The removed skew-symmetric part contributes 0.08 to the coefficient norm without contributing anything to the prediction. A positive coefficient penalty therefore favors the symmetric representation.
-
-The coefficient plane in Figure~\ref{fig:ch5_geometry_quadratic_symmetry} shows the source of this ambiguity. With the diagonal entries fixed, every point on the line \(q_{12}+q_{21}=0.2\) gives the same quadratic response for every input pair. The blue circles are contours of the squared coefficient norm. The smallest circle touching that line meets it at \((0.1,0.1)\), where the two mirrored coefficients are equal. Moving from the original point \((0.3,-0.1)\) to this symmetric point preserves the interaction while removing coefficient magnitude that contributes no response. The right panel shows the same operation as minimization of the norm along the equally predictive line. Symmetrization therefore resolves a representation ambiguity rather than removing an identified interaction from the model.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figures/ch5_geometry_quadratic_symmetry.png}
-\caption{Hypothetical coefficient-space geometry of the quadratic matrices in Equation~\eqref{eq:icsor_symmetry_numbers}. The diagonal entries remain \(q_{11}=0.1\) and \(q_{22}=0\). (a) The purple line contains all coefficient pairs with the same unordered interaction coefficient 0.2. Blue contours show \(\|Q\|_F^2=0.01+q_{12}^2+q_{21}^2\); the original orange point and symmetric teal point have squared norms 0.11 and 0.03. (b) Restricting this norm to the equal-response line gives a quadratic minimum at \(q_{12}=q_{21}=0.1\). This construction illustrates the norm decomposition in Equation~\eqref{eq:icsor_quadratic_norm}.}
-\label{fig:ch5_geometry_quadratic_symmetry}
-\end{figure}
 
 For component \(f\), the corresponding rows of \(\Theta_{uu}\) and \(\Theta_{cc}\) can be reshaped into square matrices \(Q_{uu}^{(f)}\) and \(Q_{cc}^{(f)}\). Any quadratic term can then be written as \(x^\top Qx\), and for any real square matrix,
 \begin{equation}
@@ -297,17 +277,6 @@ The condition number is the ratio of the largest to the smallest singular value 
 The small symmetric matrix in Equation~\eqref{eq:icsor_small_coupling_matrices} makes this distinction visible. Along the direction \((1,1)^\top\), multiplication by \(R\) scales the vector by 0.8; along \((1,-1)^\top\), it scales the vector by 1.2. These orthogonal directions give singular values 0.8 and 1.2, so the condition number is \(1.2/0.8=1.5\).
 
 If the two illustrative coupling coefficients were instead 0.99, the same directions would have scales 0.01 and 1.99, giving a condition number of 199. A driver error of magnitude \(\epsilon\) in each component along the first direction would then produce a state error of \(100\epsilon\) in each component. This hypothetical example shows how strong coupling can greatly amplify a small perturbation.
-
-Figure~\ref{fig:ch5_geometry_coupling_conditioning} connects the simultaneous relation with this sensitivity calculation. The first panel represents the two component equations as lines. Their intersection is the raw coupled state, so evaluating the drivers independently at \((4,2)\) would omit the shifts induced by the simultaneous relation. In the remaining panels, a unit circle of possible driver perturbations is mapped through \(R^{-1}\) into an ellipse of component-state perturbations. The ellipse semiaxis lengths are the inverse singular values of \(R\). For coupling 0.2, the largest gain is 1.25; for coupling 0.99, it is 100. The latter ellipse becomes long and narrow because perturbations along \((1,1)^\top\) are strongly amplified while the orthogonal direction remains comparatively insensitive.
-
-The axis lengths distinguish two numerical properties. The largest inverse singular value measures the maximum absolute error amplification in these coordinates, whereas the condition number measures the ratio between the largest and smallest directional gains. Inspecting individual coupling entries alone reveals neither property of the assembled system. The geometric interpretation therefore explains why the complete matrix is screened before a fitted coupled model is accepted. These perturbation ellipses concern the raw regression solve; subsequent physical projection is a separate operation.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figures/ch5_geometry_coupling_conditioning.png}
-\caption{Hypothetical geometric interpretation of simultaneous component coupling and numerical conditioning. (a) The lines in Equation~\eqref{eq:icsor_scalar_coupling_example} intersect at \((55/12,35/12)\); the orange square marks the driver \((4,2)\). (b,c) For symmetric two-component coupling 0.2 and 0.99, respectively, the blue ellipse is \(\delta c=R^{-1}\delta r\) with \(\|\delta r\|_2=1\); the dashed orange unit circle supplies the unamplified reference. Purple arrows show the direction of maximum gain. The two perturbation panels use different axis ranges to show gains of 1.25 and 100, with condition numbers 1.5 and 199; the unit circle consequently appears tiny in panel (c). The nearly singular example illustrates a numerical failure mode and does not satisfy the adopted entry bound in Equation~\eqref{eq:icsor_coupling_safeguards}.}
-\label{fig:ch5_geometry_coupling_conditioning}
-\end{figure}
 
 Conversely, small individual entries do not guarantee that the complete matrix is well conditioned. In a hypothetical four-component system with every off-diagonal coupling equal to \(1/3\), each row sum of \(\Gamma\) equals one. Thus \(\Gamma\mathbf{1}=\mathbf{1}\) and \((I-\Gamma)\mathbf{1}=0\). Every coupling entry is smaller than the adopted bound of 0.368, yet the resulting system matrix is singular. The entry bound and condition-number check therefore protect against different failure modes.
 

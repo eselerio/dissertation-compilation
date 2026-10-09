@@ -949,15 +949,6 @@ d&=-2.125-3(-0.25)-[-2(1.75)]=2.125.
 \end{align}
 The primal and dual values agree. The stationarity residual is zero coordinate by coordinate, and the complementarity sum is $1.75(0)+0(10)=0$. A multiplier with the wrong sign would fail dual feasibility even if another residual were small.
 
-Figure~\ref{fig:plant_geometry_certificate}a gives a geometric reading of this certificate. In scaled response coordinates $\eta=(c_1,c_2/2)$, the checked state is $q=(0,5)$ and the raw state is $a=(-2,4.5)$. The vector from $q$ back to $a$ is the sum of an equality-normal contribution and a non-negative multiple of the outward normal to the active concentration bound. Consequently, every feasible direction from $q$ makes a non-positive inner product with $a-q$. Movement into the feasible segment cannot move closer to the raw prediction. This direction test explains why feasibility and correctly signed multipliers together certify a nearest point. The coordinates in the plot describe the response itself; the standardized correction remains $u=q-a=(2,0.5)$.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figures/ch6_geometry_projection_certificate.png}
-\caption{Hypothetical geometric interpretation of the projection certificate and its error bound, with coordinate scales $(1,2)$. The solid teal line shows the visible portion of the non-negative segment of $\eta_1+2\eta_2=10$; the dotted extension satisfies only the equality. (a) Equality and active-bound normal contributions, drawn head to tail, sum to the displacement from the checked state to the raw prediction. (b) The triangle compares squared distances to the feasible reference $(3,7)$ in physical coordinates. All displayed distances use scaled coordinates. The error guarantee applies to this complete feasible set and this metric.}
-\label{fig:plant_geometry_certificate}
-\end{figure}
-
 Every distinct trial therefore receives an independently initialized projection solve. An operator-splitting quadratic solver of the type studied by \citet{Stellato2020} supplies the numerical candidate, while the audit reconstructs multipliers independently through bounded-variable least squares. Numerical retries may alter solver settings, but they do not alter the mathematical projection problem.
 
 \subsubsection{Error bounds in the projection metric}
@@ -998,8 +989,6 @@ The final sum is exactly the squared standardized projection distance. Returning
 Projection therefore cannot increase aggregate squared error in this particular weighted metric to an exactly feasible reference. This result does not imply improvement in every component, every physical-unit score, or every operating objective, which are evaluated separately.
 
 The earlier two-component problem illustrates this distinction. Let the feasible reference be $(3,7)$. Raw squared weighted error is $(-2-3)^2+(9-7)^2/4=26$, projected squared error is $(0-3)^2+(10-7)^2/4=11.25$, and projection-size squared is $2^2+0.5^2=4.25$. The bound gives $11.25\le26-4.25=21.75$. Yet the second component's absolute error increases from 2 to 3. Aggregate weighted improvement therefore does not require every component error to decrease.
-
-The error triangle in Figure~\ref{fig:plant_geometry_certificate}b makes the condition behind Equation~\eqref{eq:plant_projection_error_exact} visible. Its angle at $q$ between the direction back to the raw prediction and the direction toward a feasible reference is obtuse. Expanding the triangle therefore gives $26=4.25+11.25+10.5$, with a non-negative cross term. Removing the correction distance from the raw squared error leaves an upper bound on checked squared error. The angle need not be a right angle when a concentration boundary is active, so equality in a Pythagorean relation is not generally expected. The argument changes when an empirical closure excludes the reference, as the following calculation shows.
 
 The fitted overflow equality generally differs from the mechanistic endpoint, so the mechanistic reference need not lie in $\mathcal C$. Define its distance from the complete projection set by
 \begin{equation}
@@ -1337,15 +1326,6 @@ These inequalities are linear in $x$, $y$, and $z$, and every exact product sati
 
 For example, if $0\leq x,y\leq1$, the inequalities reduce to $z\geq0$, $z\geq x+y-1$, $z\leq x$, and $z\leq y$. At $x=y=0.5$, they allow any $0\leq z\leq0.5$, while the exact product is only $z=0.25$. An objective value obtained at another permitted value of $z$ may therefore be a relaxation artifact rather than an attainable physical response. Tighter variable bounds can tighten the relaxation, but they do not generally recover the exact product relation. Process-network optimization uses this distinction when constructing bounds and interpreting solutions \citep{RubioCastro2013,YangNetwork2014}.
 
-Figure~\ref{fig:plant_geometry_mccormick} shows the distinction geometrically. The exact bilinear response is a curved surface, whereas the four inequalities in Equation~\eqref{eq:teaching_mccormick_relaxation} form a polyhedral enclosure. At fixed $y=0.5$, the enclosure becomes a band around the exact line $z=0.5x$. Its vertical width vanishes at the two ends of the slice but reaches 0.5 at the midpoint. A relaxed optimizer may exploit that freedom in $z$ even though the chosen $x$ and $y$ determine only one physical product. Checking the original product equality is therefore necessary before interpreting a relaxed solution as an attainable plant state.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figures/ch6_geometry_mccormick.png}
-\caption{Analytical illustration of a McCormick relaxation for the hypothetical unit box $0\leq x,y\leq1$. (a) The exact surface $z=xy$ lies between the lower envelope $\max(0,x+y-1)$ and upper envelope $\min(x,y)$. (b) A slice at $y=0.5$ shows the interval admitted by the relaxation. At $x=0.5$, only $z=0.25$ is the exact product, although the relaxed inequalities admit the entire interval $[0,0.5]$.}
-\label{fig:plant_geometry_mccormick}
-\end{figure}
-
 This example clarifies how convex relaxation differs from the projection used in this chapter. A relaxation enlarges a nonlinear feasible set to obtain a tractable optimization bound. The physical projection instead takes a statistical prediction and finds a nearby response satisfying the declared mass-conservation, non-negativity, separator, and inventory relations. The fixed plant topology is retained throughout both the surrogate-assisted and direct mechanistic searches.
 
 \subsection{A direct mechanistic comparator}
@@ -1442,15 +1422,6 @@ The direct route uses three continuation stages,
 \label{eq:plant_continuation_sequence}
 \end{equation}
 with $h$ in g TSS m$^{-3}$. Each stage initializes from the preceding solution. The sequence progressively sharpens the approximations while preserving a usable starting point. The final smooth candidate is still treated as a search output rather than as the final physical reference.
-
-Figure~\ref{fig:plant_geometry_smoothing} illustrates how these approximations change the mathematical response near a branch transition. In panel (a), the positive-part corner is replaced by a differentiable curve. The approximation is strictly positive at zero, where its excess is $\delta/2$, and its difference from the exact positive part decreases as the illustrative width is reduced. Panel (b) uses the receiver widths in Equation~\eqref{eq:plant_continuation_sequence}: narrowing $h$ concentrates the transition around $X_t$. At the threshold itself, all smooth curves retain the value 0.5; away from the threshold, they recover the appropriate branch as the band narrows. The curves explain the purpose of continuation, while also showing why a smooth solution still requires evaluation with the original branch rules.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{figures/ch6_geometry_smoothing.png}
-\caption{Analytical illustration of smoothing near process switches. (a) The positive-part approximation in Equation~\eqref{eq:plant_smooth_operations} for illustrative widths $\delta=0.4,0.1,0.02$, which are chosen for visibility and are not the numerical continuation settings. (b) The quintic receiver switch in Equation~\eqref{eq:plant_receiver_switch} at the illustrative threshold $X_t=3000$ g m$^{-3}$, using the continuation half-widths $h=10,3,1$ g m$^{-3}$. Dashed curves show the original branch mappings; the vertical receiver-switch line represents its jump rather than an intermediate physical branch value.}
-\label{fig:plant_geometry_smoothing}
-\end{figure}
 
 \subsubsection{Jacobian structure and globalization}
 

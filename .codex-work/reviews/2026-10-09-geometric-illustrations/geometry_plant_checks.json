@@ -1,0 +1,27 @@
+{
+  "projection": {
+    "raw_error_squared": 26.0,
+    "checked_error_squared": 11.25,
+    "correction_squared": 4.25,
+    "cross_term": 10.5
+  },
+  "mccormick": {
+    "unit_square_envelope_verified": true,
+    "midpoint_exact": 0.25,
+    "midpoint_relaxed_interval": [
+      0.0,
+      0.5
+    ]
+  },
+  "smoothing": {
+    "positive_part_error_at_zero": "delta/2",
+    "widths": [
+      10,
+      3,
+      1
+    ],
+    "switch_at_2995_h10": 0.103515625,
+    "switch_at_3005_h10": 0.896484375,
+    "smoothed_positive_part_minus_02_delta_01": 0.0118033988749895
+  }
+}

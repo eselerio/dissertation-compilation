@@ -420,17 +420,6 @@ Returning to the three-component example, the decreasing-coordinate bounds are 2
 \]
 The total remains 10 and all components are non-negative. The first component changes even though the second component is the one that reaches the boundary. This is an important consequence of shortening the complete direction rather than clipping a single coordinate.
 
-Figure~\ref{fig:largest_feasible_interpolation_geometry} shows how the smallest coordinate bound in Equation~\eqref{eq:projection_coordinate_bound} selects this endpoint. The left panel is a local view of the plane $c_1+c_2+c_3=10$, with $c_3$ supplied by $10-c_1-c_2$. The candidate ray stays within that plane, but its continuation crosses $c_2=0$. The right panel tracks all three coordinates against the same interpolation fraction: the second coordinate reaches zero at $\alpha_*=2/3$, while the first and third remain positive. Here $\alpha_*$ denotes the exact largest feasible fraction, before the small safety margin in Equation~\eqref{eq:projection_positivity_backtracking}.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{ch4_geometry_feasible_interpolation.png}
-\caption{Hypothetical largest-feasible-interpolation geometry for the anchor $(8,1,1)^\top$ and mass-conserving candidate $(4,-0.5,6.5)^\top$. (a) The blue ray stops at the first concentration boundary, returning $(16/3,0,14/3)^\top$; the dashed continuation reaches the negative candidate. Shading shows a local portion of the non-negative set in the inventory plane. (b) Every coordinate uses the same fraction, and the inventory remains 10 throughout. The common illustrative concentration basis permits this simple sum; the numerical safety margin is omitted for visibility.}
-\label{fig:largest_feasible_interpolation_geometry}
-\end{figure}
-
-The plot makes the coupling introduced by the safeguard explicit. Although $c_2$ determines the stopping fraction, $c_1$ also moves from its candidate value of 4 to $16/3$, and $c_3$ moves from 6.5 to $14/3$. These changes preserve the direction ratios and hence the invariant equality in Equation~\eqref{eq:projection_final_conservation}. They need not improve the component prediction errors because the stopping rule uses the feasible anchor and concentration bounds rather than the unknown reference effluent. This stage selects a point on the chosen ray; it does not repeat the weighted minimization over the entire non-negative feasible set.
-
 If an influent component is zero and the candidate direction decreases that same coordinate, its bound is zero and the final state returns to the influent anchor. This is still feasible. Similarly, a component absent from the invariant rows can nevertheless move when the entire direction is shortened. For that reason, the interpolation factor and its activation frequency are retained as projection diagnostics.
 
 \subsubsection{Numerical acceptance and returned predictions}

@@ -1,0 +1,83 @@
+{
+  "01_research_problem.tex": {
+    "existing_display_equations_unchanged": true,
+    "display_equations": 0,
+    "all_original_text_preserved_in_order": true
+  },
+  "02_integrated_literature.tex": {
+    "existing_display_equations_unchanged": true,
+    "display_equations": 0,
+    "all_original_text_preserved_in_order": true
+  },
+  "03_reactor_foundations.tex": {
+    "existing_display_equations_unchanged": true,
+    "display_equations": 29,
+    "all_original_text_preserved_in_order": true
+  },
+  "04_prediction_projection.tex": {
+    "existing_display_equations_unchanged": true,
+    "display_equations": 25,
+    "all_original_text_preserved_in_order": true
+  },
+  "05_interpretable_surrogate.tex": {
+    "existing_display_equations_unchanged": true,
+    "display_equations": 72,
+    "all_original_text_preserved_in_order": true
+  },
+  "06_connected_plant.tex": {
+    "existing_display_equations_unchanged": true,
+    "display_equations": 144,
+    "all_original_text_preserved_in_order": true
+  },
+  "07_conclusion_outlook.tex": {
+    "existing_display_equations_unchanged": true,
+    "display_equations": 0,
+    "all_original_text_preserved_in_order": true
+  },
+  "unique_chapter_labels": true,
+  "unresolved_references_static": [],
+  "new_geometric_figures": [
+    {
+      "chapter": "03_reactor_foundations.tex",
+      "asset": "article\\figures\\ch3_geometry_reporting_null_space.png",
+      "sha256": "617334a738d3057862626aad88473ea8f887dda2a910b7d2dd192e2693a80312"
+    },
+    {
+      "chapter": "04_prediction_projection.tex",
+      "asset": "article\\figures\\ch4_geometry_feasible_interpolation.png",
+      "sha256": "201f8049a084a8d1c7768cdf769921528b28af7e8c578e206d6e47a02534a85e"
+    },
+    {
+      "chapter": "05_interpretable_surrogate.tex",
+      "asset": "article\\figures\\ch5_geometry_conditional_response.png",
+      "sha256": "7d7a4bf22bdedae402202b37e6b20b7f2bb46ce13a1fbe36df2fbd2fa8d274c0"
+    },
+    {
+      "chapter": "05_interpretable_surrogate.tex",
+      "asset": "article\\figures\\ch5_geometry_quadratic_symmetry.png",
+      "sha256": "afa757b96117c856a90f02617005d01430cd3cbf9a23534b0a02410194f557b1"
+    },
+    {
+      "chapter": "05_interpretable_surrogate.tex",
+      "asset": "article\\figures\\ch5_geometry_coupling_conditioning.png",
+      "sha256": "c3f96a42c55e7e241b35a1ad1d10ff6daa98ebb8bf69dee13f77935bfb12fef4"
+    },
+    {
+      "chapter": "06_connected_plant.tex",
+      "asset": "article\\figures\\ch6_geometry_projection_certificate.png",
+      "sha256": "ec165afebe46d8179982b862b5c24de18149d0cddf5131ddc495cacb5036482e"
+    },
+    {
+      "chapter": "06_connected_plant.tex",
+      "asset": "article\\figures\\ch6_geometry_mccormick.png",
+      "sha256": "f1a916969f69a1b2ece59f2ffa5739ca838661cd9079cf6adfdf7cd14d8eacc7"
+    },
+    {
+      "chapter": "06_connected_plant.tex",
+      "asset": "article\\figures\\ch6_geometry_smoothing.png",
+      "sha256": "a34fdfb88603f36937eb01645198173a5014c596cfeb68b940eab4b4f754e239"
+    }
+  ],
+  "new_geometric_figure_count": 8,
+  "preservation_checks_pass": true
+}

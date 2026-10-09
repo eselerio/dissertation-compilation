@@ -41,3 +41,5 @@ These artifacts are historical evidence. Check `article/` for maintained manuscr
 - [2026-10-09-084651-plant-figure-integration/](2026-10-09-084651-plant-figure-integration/README.md) ? Colored plant schematic and analytical joint-projection geometry integration.
 
 - [2026-10-09-085900-concept-color-improvements/](2026-10-09-085900-concept-color-improvements/README.md) - Palette improvements across analytical teaching plots and concept diagrams.
+
+- [2026-10-09-geometric-illustrations/](2026-10-09-geometric-illustrations/README.md) - New analytical geometric interpretations and manuscript integration.

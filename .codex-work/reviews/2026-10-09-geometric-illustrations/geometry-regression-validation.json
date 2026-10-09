@@ -1,0 +1,21 @@
+{
+  "figures": [
+    "ch5_geometry_conditional_response",
+    "ch5_geometry_quadratic_symmetry",
+    "ch5_geometry_coupling_conditioning"
+  ],
+  "all_examples_hypothetical": true,
+  "numerical_assertions": "passed",
+  "coupling_checks": [
+    {
+      "gamma": 0.2,
+      "condition_number": 1.4999999999999998,
+      "maximum_gain": 1.25
+    },
+    {
+      "gamma": 0.99,
+      "condition_number": 198.99999999999983,
+      "maximum_gain": 99.99999999999991
+    }
+  ]
+}
