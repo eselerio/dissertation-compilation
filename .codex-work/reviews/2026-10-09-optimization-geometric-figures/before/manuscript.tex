@@ -220,16 +220,6 @@ A(c_i-c_{i-1})=d_i^{-1}A\xi_i(\vartheta),\qquad i=1,\ldots,N.
 \end{equation}
 When $\xi_i=0$, the quantity $Ac_i$ is constant across the stage. Reactions can redistribute a conserved inventory among components but cannot create or remove it. These relations prevent the surrogate from improving a predicted treatment response by violating an inventory balance. If a stage dose adds a conserved quantity, Equation~\eqref{eq:rails} accounts for that addition. Its right-hand side can remain zero only when $A\xi_i=0$.
 
-Figure~\ref{fig:concept-balances} distinguishes the geometric roles of the mixer and reactor balances. The mixer concentration is a convex combination of its incoming compositions. In a reactor without external additions, conversion preserves the affine set defined by $Ac_i=Ac_{i-1}$. Reaction directions are tangent to this set, while the invariant rows are normal to it. The kinetic equations determine which points on the set represent steady operation.
-
-\begin{figure}[pos=htbp]
-\centering
-\includegraphics[width=\linewidth]{concept_balance_geometry.pdf}
-\caption{Dimensionless two-component illustration of network balances. (a) For $r_I=2$ and $r_R=1$, Equation~\eqref{eq:mixer} gives $m=0.25x+0.50c_N+0.25c_U$, inside the convex hull of the incoming compositions. (b) With no external addition and invariant normal $a=(1,1)^\top/\sqrt{2}$, the illustrated reactor responses remain on $\zeta_1+\zeta_2=1.2$. The reaction direction is orthogonal to $a$. The points illustrate conservation geometry rather than solutions of the reaction-rate equations.}
-\label{fig:concept-balances}
-\end{figure}
-
-
 \subsection{Clarifier outlet balances and aggregate inventory}
 
 The final reactor supplies the clarifier feed. The clarifier outlet balances complete the recycle connection to the mixer and determine the component flows leaving the plant. Since $q_U$ may be small, these balances are written in outlet component flows rather than outlet concentrations. Define
@@ -276,18 +266,6 @@ Only this scalar inventory is retained in the statistical response. Eliminating 
 \label{eq:inventoryenvelope}
 \end{align}
 For the ordered endpoints $X_E\le X_U$, the interval is necessary and sufficient for the existence of at least one profile satisfying the endpoint envelope and having inventory $M_{\rm cl}$. The lower bound is attained when every internal layer is assigned $X_E$, and the upper bound is attained when every internal layer is assigned $X_U$. Assigning all internal layers a common value between these endpoints changes the inventory continuously between the two bounds. These bounds prevent the predicted stored mass from contradicting the predicted outlet concentrations. They retain useful storage information without requiring a statistical prediction for every layer. An admissible inventory does not establish that any corresponding profile satisfies the nonlinear settling-flux equations. That check remains with the mechanistic model.
-
-The geometric reduction in Figure~\ref{fig:concept-inventory} maps many admissible layer profiles to one inventory interval. The extremal profiles attain its endpoints, and profiles inside the envelope can have nonmonotone layer concentrations. The width of the interval decreases to zero as the two outlet concentrations approach one another.
-
-\begin{figure}[pos=htbp]
-\centering
-\includegraphics[width=\linewidth]{concept_clarifier_inventory.pdf}
-\caption{Clarifier inventory geometry for ten equal-volume layers and an arbitrary positive concentration scale $X_{\rm ref}$. (a) At $X_E/X_{\rm ref}=0.2$ and $X_U/X_{\rm ref}=2$, a nonmonotone example satisfies the endpoint envelope. Assigning every internal layer to either endpoint gives the lower and upper inventory extremizers; connecting segments only guide the eye between discrete layers. (b) At fixed $X_E/X_{\rm ref}=0.2$, the shaded band contains exactly the normalized mean inventories allowed by Equation~\eqref{eq:inventoryenvelope}. The two bounds coincide when $X_U=X_E$. Envelope-admissible profiles need not satisfy the nonlinear settling-flux equations.}
-\label{fig:concept-inventory}
-\end{figure}
-
-
-\FloatBarrier
 
 \subsection{Raw plant-response regression and overflow solids model}
 
@@ -389,16 +367,6 @@ $D_b$ and $D_g$ rescale the constraint rows without changing the feasible set. T
 
 Enforcing constraints does not by itself establish greater prediction accuracy \citep{SturmSilva2025}. Euclidean projection onto a nonempty closed convex set cannot increase the distance to a reference in that set \citep{Boyd2004}. Here, the distance is measured in the standardized response coordinates used in Equation~\eqref{eq:projection}. However, the mechanistic overflow TSS generally differs from the fitted value in Equation~\eqref{eq:overflowclosure}, so that guarantee is not presumed here. The error audit therefore accounts for the reference's distance to the set, as detailed in the Supplementary Material, Section~S4.2. The projection does not reconstruct a clarifier profile or enforce all kinetic and nonlinear settling equations. Those equations are checked separately by evaluation with the complete mechanistic model.
 
-In coordinates $\zeta=D_\chi^{-1}\chi$, Equation~\eqref{eq:projection} minimizes the Euclidean distance from the standardized raw response to the feasible set. Figure~\ref{fig:concept-projection} shows this nearest-point geometry and the effect of an additional closure equality. Positivity of a closure target alone does not ensure that its equality intersects the remaining constraints.
-
-\begin{figure}[pos=htbp]
-\centering
-\includegraphics[width=\linewidth]{concept_joint_projection.pdf}
-\caption{Projection and closure compatibility in an illustrative standardized response space. The constraint set is $\mathcal C_0=\{\zeta\in\mathbb R_+^2:\zeta_1+\zeta_2=1\}$. (a) The raw response $\zeta_{\rm raw}=(1.20,0.55)$ projects to $\zeta^\star=(0.825,0.175)$; circles denote equal distance from $\zeta_{\rm raw}$. The dashed line extends the affine balance beyond its nonnegative segment. (b) Adding $\zeta_1=0.35$ gives the feasible point $(0.35,0.65)$. Adding $\zeta_1=1.20$ instead requires $\zeta_2=-0.20$, so the intersection is empty despite a positive closure target.}
-\label{fig:concept-projection}
-\end{figure}
-
-
 \subsection{Constraint ablations and alternative predictors}
 
 At a fixed input, the mixer and invariant balances and the nonreactive clarifier identities are affine relations derived from the declared process assumptions. They are not linearizations of the complete nonlinear kinetics or settling fluxes. The densification and inventory restrictions add separation assumptions, and the fitted overflow equality adds an empirical closure. These distinct roles motivate controlled removal of constraint groups. The full model retains every group. Removing densification deletes the componentwise particulate inequalities; removing inventory deletes the two storage bounds; removing the closure deletes only its equality. A basic conservation projection retains mixer, stage-invariant, and clarifier component balances and non-negativity while omitting soluble pass-through and the three additional groups. Response coordinates, raw predictions, and the projection metric are held fixed so that a comparison concerns the retained constraints.
@@ -461,16 +429,6 @@ The extended-ICSOR operational problem combines these requirements as
 \end{equation}
 Here $\mathcal V$ contains the declared bounds and any stage-allocation equalities. The projected response is unique whenever the lower problem is feasible. The upper problem is generally nonconvex and piecewise smooth because the projection QP can change its active set \citep{Tondel2003,Colson2007}. Accordingly, $\vartheta_S$ denotes the best feasible candidate retained by the search, together with its reported convergence tier. It is not a certified global minimizer.
 
-Figure~\ref{fig:concept-active-set} illustrates how a projected response can remain continuous while its derivative changes at an active-set transition. For a fixed polyhedron and an affine raw-response path, the projection is piecewise affine. In the plant model, the constraint operators and right-hand side also depend on the controls; local differentiability therefore requires regularity of the active constraints and verification of the derivative calculation.
-
-\begin{figure}[pos=htbp]
-\centering
-\includegraphics[width=\linewidth]{concept_active_set.pdf}
-\caption{Active-set geometry of an analytical parametric projection. The response minimizes $\tfrac12\|\zeta-\zeta_{\rm raw}(t)\|_2^2$ over $\{\zeta\in\mathbb R_+^2:\zeta_1+\zeta_2=1\}$, with $\zeta_{\rm raw}(t)=(t,1-t)$. (a) The solution is $\zeta_1^\star(t)=\min\{1,\max\{0,t\}\}$ and $\zeta_2^\star=1-\zeta_1^\star$. (b) Its derivative is zero, one, and zero on the three open active-set intervals. At $t=0$ and $t=1$, the active bound has zero multiplier and unequal one-sided derivatives; open markers denote the undefined derivative.}
-\label{fig:concept-active-set}
-\end{figure}
-
-
 \subsection{Direct smooth mechanistic comparator}
 
 The surrogate route can now be compared with an optimization model that imposes the mechanistic balances directly. Route $M$ uses the same operating controls and objective components, but replaces regression and projection with reactor and clarifier equations. The methodology distinguishes native normalization and the engineering rules applied to the retained decisions. Its state contains the concentrations that accumulate in the reduced mechanistic model as
@@ -498,8 +456,6 @@ Its selected feasible incumbent, when one exists, is denoted $(\vartheta_M,y_M,\
 Derivative-based NLP methods use derivatives of the objective and constraint functions \citep{BuzziFerraris2013}. Here, smooth approximations make the kinetic and settling equations differentiable for optimization. They are used only for minimum, maximum, positive-part, zero-denominator, and receiver-switch operations. A nonzero smoothing width changes the equations near a switch. The smooth endpoint must therefore be checked on the original nonsmooth model before its performance is compared with the surrogate-selected decision. Both routes use that same reference model for evaluation.
 
 The reference model evaluates a selected decision by holding its controls and influent fixed and solving the original reactor and clarifier equations to steady state. This calculation checks the resulting treatment performance independently of the surrogate prediction or the smoothed optimization equations. The reference model also has a defined physical scope. Its scalar-layer clarifier tracks aggregate solids, and particulate outlet components are reconstructed with the steady feed composition. Time integration uses a backward differentiation formula (BDF) for stiff equations \citep{CurtissHirschfelder1952}. In this study, integration provides a numerical route to the nonsmooth steady equations. The model does not track the transient inventory of every particulate species in every layer. The reference response is an independently converged solution of those nonsmoothed equations. Stability refers only to this reduced numerical state model. The methodology below specifies how data from this model are used to fit the surrogate and how both routes are evaluated on the common reference.
-
-\FloatBarrier
 
 \section{Methodology}
 

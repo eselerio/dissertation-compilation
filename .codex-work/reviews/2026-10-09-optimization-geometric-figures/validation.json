@@ -1,0 +1,68 @@
+{
+  "results_discussion_unchanged": true,
+  "dissertation_source_unchanged": true,
+  "source_sha256": "dab0c9a131b0194f2389bb01b9128e72fa15ee029048a8d3c58cd280b28b284b",
+  "missing_references": [],
+  "missing_citations": [],
+  "duplicate_labels": [],
+  "undefined_build_warnings": [],
+  "build_directory": "docs\\latex_pdfs\\20261009_173740",
+  "figure_pages": {
+    "balances": 6,
+    "inventory": 8,
+    "projection": 11,
+    "active_set": 14
+  },
+  "compiled_page_count": 31,
+  "figures": {
+    "concept_balance_geometry": {
+      "pdf": {
+        "path": "article\\compile\\optimization\\concept_balance_geometry.pdf",
+        "sha256": "74ea630d8b3f3c58d4e4d767c8fc73ef4210d6ae46b11a668b9e4021e129d573",
+        "same_directory_as_manuscript": true
+      },
+      "png": {
+        "path": "article\\compile\\optimization\\concept_balance_geometry.png",
+        "sha256": "f04ed841438d52654de573da56cab44f66424612829e1e17da94a77d053ada32",
+        "same_directory_as_manuscript": true
+      }
+    },
+    "concept_clarifier_inventory": {
+      "pdf": {
+        "path": "article\\compile\\optimization\\concept_clarifier_inventory.pdf",
+        "sha256": "76ddc8846443963f652009d8e721bede74af764cf86a3ab5e7d3fa94af0e0d44",
+        "same_directory_as_manuscript": true
+      },
+      "png": {
+        "path": "article\\compile\\optimization\\concept_clarifier_inventory.png",
+        "sha256": "86d7db9cb52a4a7c8e4cb6622a94a68f2a5d5387544f4b8b3545f3ea7283be25",
+        "same_directory_as_manuscript": true
+      }
+    },
+    "concept_joint_projection": {
+      "pdf": {
+        "path": "article\\compile\\optimization\\concept_joint_projection.pdf",
+        "sha256": "c0991543377565f589d3457d4799b6d62f9d73f6d8d5d23d525368359eb3165f",
+        "same_directory_as_manuscript": true
+      },
+      "png": {
+        "path": "article\\compile\\optimization\\concept_joint_projection.png",
+        "sha256": "effa60d1a41d0bf9c7a0bb77576d43e82d072ce4af6d6cfad0b5dde33ae4bfe6",
+        "same_directory_as_manuscript": true
+      }
+    },
+    "concept_active_set": {
+      "pdf": {
+        "path": "article\\compile\\optimization\\concept_active_set.pdf",
+        "sha256": "d202beac95f998ea49899c7954dd1244439d1aab3580342b9beaa912aa5a15df",
+        "same_directory_as_manuscript": true
+      },
+      "png": {
+        "path": "article\\compile\\optimization\\concept_active_set.png",
+        "sha256": "966e5b6f0729539986e96cf44312a089531bce970e813b3b388301aa1e629402",
+        "same_directory_as_manuscript": true
+      }
+    }
+  },
+  "empirical_data_used_for_new_figures": false
+}

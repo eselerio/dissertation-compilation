@@ -2,6 +2,16 @@
 
 Task-specific review records. Each run keeps its scripts, reports, before-files, logs, and previews together.
 
+The [optimization component engineering review](2026-10-09-optimization-component-review/README.md)
+records the component-only methods revision, fixed-dataset experiment code,
+validation, and archived component PDFs.
+
+The [reader-facing refinement](2026-10-09-optimization-reader-facing-refinement/README.md)
+removes revision-process language from the component article and supplement.
+
+The [optimization mathematical illustrations](2026-10-09-optimization-geometric-figures/README.md)
+record analytical figures integrated into the component theory and methods.
+
 [Parent guide](../README.md) | [Workspace guide](../README.md)
 
 ## Useful entry points
