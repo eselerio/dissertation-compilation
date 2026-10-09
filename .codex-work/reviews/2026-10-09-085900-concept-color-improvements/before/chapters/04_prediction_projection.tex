@@ -1,0 +1,1244 @@
+\chapter{Learning the Reactor Response and Enforcing Physical Admissibility}
+\label{ch:projection}
+
+\section{Rationale}
+
+Repeated activated sludge calculations are needed when influent conditions or operating settings must be compared. A statistical surrogate can reduce the cost of these calculations by learning the reactor response from simulated cases and then approximating that response at new inputs. Its engineering usefulness, however, depends on more than prediction speed. It also depends on what the surrogate predicts, how closely those predictions reproduce the complete treatment state, and whether the returned state satisfies the physical requirements imposed by the reactor model.
+
+The activated sludge response considered here is inherently multicomponent. Organic substrate, nitrogen species, phosphorus, biomass, and solids all contribute to treatment performance and to the material accounting of the reactor \citep{Henze2006}. Reported quantities such as COD, TN, TP, and TSS summarize parts of this response, but they do not uniquely determine the underlying component state. Two effluents can, for example, have the same TN while containing different proportions of ammonium, nitrite, nitrate, and biomass-bound nitrogen. A model can therefore predict a reported total accurately while misrepresenting the component distribution that produced it. For this reason, the complete component state is retained as the primary prediction target throughout this chapter.
+
+The first research gap concerns comparative evidence for this complete activated sludge response. Existing studies support useful but different prediction tasks. The soft sensor of \citet{Ching2022} estimates oxygen demand from available measurements, while \citet{Wang2025} compare methods for effluent TN prediction. The structured reactor study of \citet{Selerio2026} instead retains the complete effluent component state. These contributions establish the value of data-driven activated sludge prediction, but their results cannot by themselves determine which learning method best approximates the same full reactor response. Such a comparison requires a common prediction target, identical influent and operating inputs, the same assessment cases, and the same error scales. Without this common basis, differences in the task can be mistaken for differences in learner performance.
+
+The amount of available training data is part of the same problem. Mechanistic simulation is required to generate the learning cases, and this simulation budget may itself be limited. A flexible learner can become highly accurate when many cases are available without necessarily being the best choice at a smaller design size. The learning-curve review of \citet{VieringLoog2023} shows why performance should be examined across data budgets rather than at only one training size. The broader tabular comparisons of \citet{Borisov2024} and \citet{ShwartzZiv2022} likewise support evaluating several learning families rather than assuming that one class is consistently preferable. In the present setting, this comparison must preserve the substrate, nutrient, biomass, and solids coordinates that matter to subsequent reactor analysis.
+
+Prediction outside the sampled influent and operating ranges introduces a further distinction. A held-out case drawn from the same input ranges tests interpolation within the declared learning domain. An unfamiliar loading or operating condition tests a different use of the surrogate. This distinction becomes important when a fitted model is used to explore alternatives rather than only reproduce familiar conditions. The present study therefore evaluates learning-domain and exterior inputs separately. A low held-out error within the sampled range does not establish accurate extrapolation, and a physically admissible prediction outside that range does not establish that its component distribution is correct \citep{KircherVotsmeier2025,Selerio2026}.
+
+The second research gap concerns physical enforcement on these same reactor predictions. Ordinary regression is designed to approximate the statistical response. It does not necessarily preserve the sample-specific material inventories or prevent negative concentrations at a new input. Physical guidance during fitting and explicit constraints on the final returned state address different parts of this problem \citep{Kashinath2021,Hansen2024}. A prediction can satisfy the adopted balance equations while containing a negative component. Conversely, replacing a negative value by zero can destroy a balance that the original prediction happened to satisfy. Mass conservation and non-negativity must therefore be checked together on the same returned component state.
+
+The projection developed by \citet{KircherVotsmeier2025} provides a way to enforce these two requirements simultaneously. The remaining question for the present study is not whether such a projection can be written, but how a common projection behaves when applied to a broad set of activated sludge learners. Different predictors may produce different raw error structures, different negative-component patterns, and different departures from the invariant balances. Applying one projection across them therefore makes it possible to separate the behavior of the statistical learner from the behavior of the enforcement procedure.
+
+Physical compliance is only one part of this assessment. Projection changes the predicted component vector, and that adjustment can redistribute error among its entries. The same redistribution also changes COD, TN, TP, and TSS, because those reported quantities are calculated from the projected components rather than from an independent prediction. The species-weighted correction of \citet{SturmSilva2024} illustrates why the metric used to define an adjustment matters. A correction that improves one nutrient quantity can worsen another constituent or solids measure. A feasible-state count alone therefore cannot establish whether the adjustment improves treatment prediction. Component errors, composite treatment errors, and physical diagnostics must be examined together.
+
+The complete prediction procedure also has a computational cost. A surrogate intended for repeated operating calculations should be timed not only at the raw statistical inference stage, but also after the physical enforcement needed to produce its final returned state. Large adjustments can indicate substantial disagreement between the raw prediction and the imposed physical relations, whereas small adjustments indicate only proximity to those relations and do not establish accurate reaction behavior. By pairing each raw prediction with its projected counterpart, the study can examine statistical error, physical compliance, displacement, and prediction cost without changing the fitted learner. This distinction follows the broader need to evaluate approximation quality and computational usefulness together in surrogate modeling \citep{BhosekarIerapetritou2018}.
+
+Accordingly, this chapter addresses the first and second research questions in Section~\ref{sec:research_questions}. It first compares complete reactor predictions across learning methods, simulation budgets, and input-domain conditions. It then applies a common projection to those same predictions and measures what the enforcement changes. The contribution is an activated sludge benchmark that separates learner performance from physical enforcement while showing how the two interact in practice. The study does not introduce a new projection principle, and it does not assume that physical enforcement improves every error measure. Its purpose is to provide a defensible basis for selecting a learner and a projection procedure under specified data availability, treatment priorities, and operating ranges.
+
+\section{Theory}
+
+\subsection{Reactor inputs and raw predictions}
+
+Each surrogate receives the operating conditions and influent component concentrations that define one reactor case. For sample $i$, the two operating values are listed first, followed by the twenty influent concentrations in the component order established in Chapter~\ref{ch:foundations}. The input therefore begins with $(\mathrm{HRT}_i,u_{\mathrm{air},i},S_{O,in,i},S_{F,in,i})$ and continues through the remaining influent coordinates to $X_{MeOH,in,i}$. The component definitions and units are fixed before any statistical learner is fitted.
+
+Writing the operating vector and influent vector as columns gives the complete surrogate input
+\begin{equation}
+\equationname{Reactor surrogate inputs from operation and influent concentrations}
+x_i=(u_i^\top,c_{in,i}^\top)^\top\in\mathbb{R}^{22},\qquad
+u_i=(\mathrm{HRT}_i,u_{\mathrm{air},i})^\top.
+\label{eq:surrogate_input_vector}
+\end{equation}
+Thus, every fitted learner receives the same twenty-two quantities for each case.
+
+A fitted surrogate is represented by $f_m$, where the subscript $m$ identifies the learning method. It maps the twenty-two inputs to the twenty effluent component concentrations. For component $j$, the scalar prediction can be written as
+$c_{raw,ij}^{(m)}=f_{m,j}(x_{i1},\ldots,x_{i22})$.
+The superscript $(m)$ identifies the model and is not an exponent. Collecting the twenty scalar outputs gives the raw component prediction
+\begin{equation}
+\equationname{Raw component-state prediction from a fitted surrogate}
+c_{raw,i}^{(m)}=f_m(x_i)\in\mathbb{R}^{20}.
+\label{eq:surrogate_raw_state}
+\end{equation}
+
+This raw state is assessed in the physical units returned by the surrogate. A post-prediction projection then produces a second state for the same sample. The raw and projected predictions therefore correspond to the same fitted learner, the same input, the same preprocessing, and the same assessment case. Their paired comparison isolates the effect of physical enforcement from differences in model training or data partitioning \citep{SturmSilva2024,KircherVotsmeier2025}.
+
+\subsection{Statistical response models}
+
+\subsubsection{Boosting and randomized tree ensembles}
+
+XGBoost represents a response as an additive sequence of regression trees. Each tree partitions the input space through a sequence of comparisons and assigns the value associated with the terminal region reached by the input. For one effluent component, an additive tree model can be written as
+\[
+f_j(x)=b_j+\beta_1h_{1j}(x)+\beta_2h_{2j}(x)+\cdots+\beta_Th_{Tj}(x),
+\]
+where $b_j$ is a baseline, $h_{tj}(x)$ is the response of tree $t$, and $\beta_t$ controls that tree's contribution. The equivalent summation form is
+$b_j+\sum_{t=1}^T\beta_th_{tj}(x)$.
+For example, a baseline of 10 with tree contributions of $-2$ and 1 gives a final prediction of 9.
+
+Successive trees are fitted to reduce error remaining from the current ensemble, while regularization discourages unnecessarily complex fits. Because tree splits divide the input domain into regions, the resulting model can represent nonlinearities and interactions without requiring those relationships to be specified in advance. The regularized boosting framework of \citet{ChenGuestrin2016} motivates the inclusion of XGBoost as a flexible tabular comparator.
+
+LightGBM is also a gradient-boosted tree method, but it grows trees through leaf-wise expansion. The algorithm preferentially expands a leaf when doing so produces a larger loss reduction, allowing additional model detail to concentrate in regions where the current fit remains poor. Its learning rate, leaf count, and minimum leaf support control how closely the ensemble follows the training response. The efficiency-oriented design of \citet{Ke2017} makes this method particularly relevant when model fitting must be repeated across several nested validation partitions.
+
+CatBoost uses symmetric boosted trees together with a Bayesian bootstrap in the present regression setting. At each depth, the same splitting condition is applied across all nodes of a symmetric tree. This restriction gives CatBoost a different approximation structure from the leaf-wise trees of LightGBM. Although the work of \citet{Prokhorenkova2018} emphasizes categorical-feature handling and boosting bias, the present reactor benchmark evaluates the method using continuous inputs only.
+
+Adaptive boosting regression combines shallow trees while placing greater emphasis on observations that remain difficult to predict. The base learners used here are depth-three trees. The number of estimators, learning rate, and loss function determine how strongly the ensemble responds to poorly fitted cases. The regression extension developed by \citet{Drucker1997} provides the basis for this comparator.
+
+These four boosting methods are fitted separately for each effluent component. Within a given method, all twenty component regressors use one shared selected hyperparameter vector. This preserves a common model setting across the complete response while allowing each component to have its own fitted tree ensemble.
+
+Random Forest follows a different ensemble strategy. Rather than fitting trees sequentially to correct previous errors, it averages randomized regression trees. For component $j$,
+\[
+f_j(x)=\frac{h_{1j}(x)+\cdots+h_{Tj}(x)}{T}.
+\]
+If three hypothetical trees return values of 2, 3, and 4, their ensemble prediction is 3. Randomization in observations and candidate split features reduces dependence among individual trees, making the average less sensitive to any one fitted tree \citep{Breiman2001}. Extra Trees introduces additional randomization by selecting split thresholds more randomly \citep{Geurts2006}.
+
+Random Forest and Extra Trees are fitted as native multiresponse ensembles. The same tree partition can therefore support several effluent components simultaneously. This joint response structure can capture common input partitions across outputs, but it does not itself enforce the stoichiometric relationships among the twenty returned concentrations. Those relationships are handled later by projection.
+
+The distinction can be seen from a simple averaging example. Suppose two training responses in a hypothetical two-component system have component sums of 10 and 20. Their equal-weight average has sum 15. If a new influent requires a total of 12, the averaged prediction can remain non-negative while still violating the sample-specific mass conservation target. Positivity of the tree outputs is therefore not enough. The required balance depends on the new influent through $b_i$, not merely on whether the predicted components were formed from positive training responses.
+
+\subsubsection{Kernel, neighborhood, and latent-variable regression}
+
+Support vector regression (SVR) fits a response while ignoring errors that fall within a prescribed insensitive region. For scalar error $e$ and positive width $\epsilon$, the error contribution is
+$\max(0,|e|-\epsilon)$.
+With $\epsilon=0.2$, an error of 0.1 contributes nothing, whereas an error of $-0.5$ contributes 0.3. The penalty parameter controls the balance between fitting error and model regularity.
+
+A linear kernel gives a globally linear relationship in the standardized input space. A radial kernel allows nonlinear behavior through similarity between inputs,
+\[
+K(z,z')=\exp\!\left[-\gamma\sum_{\ell=1}^{22}(z_\ell-z'_\ell)^2\right],
+\]
+where $z$ and $z'$ are standardized input vectors and $\gamma>0$ controls how quickly similarity decreases with squared distance. Identical inputs give $K=1$, and increasingly separated inputs give progressively smaller similarity. The formulation and parameter roles described by \citet{SmolaScholkopf2004} motivate the present implementation. As with the boosting methods, one SVR is fitted per component and all twenty regressors use one shared setting vector.
+
+The $k$-nearest-neighbor ($k$-NN) predictor instead estimates the response from nearby training cases. For one component and a selected neighborhood $\mathcal N(x)$,
+\[
+f_j(x)=\frac{\sum_{i\in\mathcal N(x)}w_i c_{out,ij}}
+{\sum_{i\in\mathcal N(x)}w_i}.
+\]
+The neighborhood size controls smoothing. Uniform weighting gives each selected neighbor the same influence, whereas distance weighting gives greater importance to closer cases. Two neighbor values of 2 and 6, for example, give a prediction of 4 under equal weights. If their weights are 3 and 1, the prediction becomes
+$[3(2)+1(6)]/(3+1)=3$.
+
+Because neighborhood selection depends directly on distance, input scaling matters. The local-regression behavior analyzed by \citet{Mack1981} illustrates why. Without standardization, an alkalinity coordinate spanning hundreds of numerical units could dominate an aeration coordinate whose numerical range is much smaller, even though both are scientifically relevant to the reactor. Standardization prevents raw numerical range from becoming an unintended measure of importance.
+
+Partial least squares (PLS) regression represents the inputs and responses through latent directions selected to capture their covariance. One latent score has the form
+\[
+t_h=w_{1h}z_1+\cdots+w_{22h}z_{22},
+\]
+where $z$ contains standardized inputs. Each output is then represented as a baseline plus a weighted combination of the retained latent scores. Substituting the input expressions for the scores shows that ordinary PLS remains linear in the original standardized inputs.
+
+The latent variables are statistical combinations of the predictors; they are not the same as the physical components of the activated sludge state. Their value is dimensional reduction and covariance representation. The chemometric formulation of \citet{Wold2001} motivates the use of PLS as an inspectable linear comparator. Wastewater applications include the kernel extension used by \citet{Woo2009} for process-variable estimation and the adaptive effluent-quality prediction framework of \citet{Yang2021}. The present benchmark retains ordinary PLS with one to six latent components while predicting all twenty physical effluent components jointly.
+
+\subsubsection{Shared sparse coefficient models}
+
+Multi-task Lasso fits one coefficient matrix for the complete multiresponse problem. Each output is represented as a baseline plus a weighted sum of inputs, but the penalty is applied across output coefficients belonging to the same input.
+
+Consider two hypothetical inputs and two outputs with coefficient rows $(3,4)$ and $(0,0)$. The first input contributes to both outputs; the second contributes to neither. The Euclidean norm of the first row is
+$\sqrt{3^2+4^2}=5$, while the second has norm zero. Summing the row norms gives the penalty
+\begin{equation}
+\equationname{Row-group penalty for multiresponse regression coefficients}
+\|B\|_{2,1}=\sum_j\|B_{j,\cdot}\|_2.
+\label{eq:multiresponse_row_penalty}
+\end{equation}
+Because the penalty acts on complete input rows, it can shrink an input's coefficients to zero across all outputs simultaneously. It therefore promotes shared input selection rather than twenty unrelated sparse models. The feature-sharing principle of \citet{Argyriou2008}, the multi-task Lasso algorithm of \citet{Liu2009}, and the grouped-variable framework of \citet{Yuan2006} provide the relevant foundations.
+
+Multi-task Elastic Net combines this row-group penalty with a squared Frobenius penalty. The squared Frobenius norm is the sum of the squared entries of the coefficient matrix. For the same hypothetical rows, it is
+$3^2+4^2+0^2+0^2=25$.
+With penalty strength $\lambda>0$ and mixing ratio $r\in(0,1)$, the combined penalty is
+\[
+\lambda r\sum_j\sqrt{\sum_{f=1}^{20}B_{jf}^2}
++\frac{\lambda(1-r)}2\sum_j\sum_{f=1}^{20}B_{jf}^2.
+\]
+For the two-output illustration, $\lambda=0.2$ and $r=0.5$ give
+$0.2(0.5)(5)+0.2(0.5)(25)/2=1.75$.
+The row-group term encourages shared selection, while the squared term shrinks the retained coefficients. This extends the elastic-net principle of \citet{Zou2005} to a joint response setting, with the corresponding multiresponse computation described by \citet{Simon2013}.
+
+Both multi-task models use standardized inputs and targets. Their coefficient matrices remain globally inspectable, so a nonzero row identifies an input associated with the fitted response. Together with PLS, these two models are grouped here as structurally inspectable surrogates \citep{Rudin2019}. Their fitted structures describe statistical associations, while the subsequent projection enforces the influent-specific mass balances and non-negativity of the returned component state.
+
+\subsubsection{Neural predictors}
+
+The multilayer perceptron (MLP) uses three fully connected hidden layers with 128, 64, and 32 units, followed by one joint twenty-output layer. Each hidden unit forms a weighted sum of the values supplied by the preceding layer and applies an activation function. For example, a unit with
+$b=0.2$, $w_1=0.5$, $w_2=-1$, $z_1=2$, and $z_2=0.3$
+forms
+\[
+0.2+0.5(2)-0.3=0.9.
+\]
+A rectified linear activation returns 0.9 because the value is positive. If the weighted sum were $-0.9$, the activation would return zero.
+
+Successive hidden layers repeatedly apply these transformations, allowing the model to represent nonlinear and interacting relationships among the inputs. Backpropagation adjusts the weights according to the prediction loss \citep{Rumelhart1986}. The approximation result of \citet{Hornik1989} motivates the expressive capacity of feedforward networks, while the topology considerations discussed by \citet{Curteanu2011} motivate the stated architecture and training controls.
+
+TabNet uses a different neural strategy. Rather than processing all features identically at every stage, it performs sequential attentive feature selection. At each decision step, a mask weights the input coordinates. If two hypothetical standardized inputs are $(2,1)$ and their mask weights are $(0.8,0.2)$, the masked values become $(1.6,0.2)$. A later step can use a different mask and therefore focus on a different subset of inputs. The selected representations contribute to a joint output layer. \citet{ArikPfister2021} develop this architecture for tabular learning. Although the internal attention masks can be inspected, TabNet remains a neural comparator rather than an explicit global regression equation.
+
+An epoch denotes one complete pass through the training data. Patience specifies how many successive epochs without the required improvement are allowed before fitting stops. These quantities therefore describe how the neural models use the simulated reactor cases.
+
+Both neural predictors begin from random initialization and use only the training partition assigned to the fit. The MLP uses all available training rows and stops when its training-loss convergence criterion is reached or after 250 epochs. Validation-based early stopping is disabled, and the training-loss patience is 15 epochs. TabNet's epoch count is selected during the inner search from 20 to 50. Its patience is zero, so the final refit uses the selected number of epochs without reserving an additional response-based stopping partition.
+
+\subsection{Simultaneous physical requirements}
+
+Mass conservation and non-negativity impose different restrictions on the returned component state. Either condition can hold while the other fails.
+
+Consider a two-component example in which the first concentration is 11 and the second is $-1$. Their sum is
+$11+(-1)=10$, so the inventory equality is satisfied. The second component, however, violates non-negativity. If that negative value is clipped to zero, the state becomes $(11,0)^\top$ and its sum becomes 11. The sign violation is removed, but the mass balance is lost.
+
+A jointly feasible correction must satisfy both conditions. One such state is $(10,0)^\top$. The sequence can be written explicitly as
+\[
+\begin{aligned}
+\text{raw state}&=(11,-1)^\top,\\
+\text{clipped state}&=(11+0,-1+1)^\top=(11,0)^\top,\\
+\text{jointly feasible state}&=(11-1,-1+1)^\top=(10,0)^\top.
+\end{aligned}
+\]
+Clipping changes only the negative coordinate. The jointly feasible correction must also compensate elsewhere so that the equality is preserved. Likewise, projecting only onto an equality does not prevent a negative component. The final state must therefore be checked for both requirements simultaneously \citep{KircherVotsmeier2025,Haddad2010}.
+
+Figure~\ref{fig:assessment_feasible_segment} places these states on the mass-conservation line and shows the portion of that line lying in the non-negative orthant.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=0.42cm,y=0.42cm,>=Latex]
+\draw[->] (-0.6,0)--(13,0) node[right] {$c_1$};
+\draw[->] (0,-2)--(0,11.6) node[above] {$c_2$};
+\draw[dashed] (-0.4,10.4)--(11.4,-1.4);
+\draw[very thick] (0,10)--(10,0);
+\foreach \x in {5,10} {\draw (\x,0.15)--(\x,-0.15) node[below=2pt] {\small\x};}
+\draw (0.15,10)--(-0.15,10) node[left=2pt] {\small 10};
+\fill (11,-1) circle (2pt) node[right=4pt] {\small Raw $(11,-1)$};
+\draw (11,0) circle (2pt) node[above right=3pt] {\small Clipped $(11,0)$};
+\fill (10,0) circle (2.5pt);
+\node[below left=14pt] at (10,0) {\small Feasible $(10,0)$};
+\node[fill=white,inner sep=2pt] at (4.5,6.2) {\small $c_1+c_2=10$};
+\node[align=center,text width=4cm] at (7,10) {\small Thick segment contains the states satisfying mass conservation and non-negativity};
+\end{tikzpicture}
+\caption{Hypothetical two-component geometry showing why clipping a negative concentration can violate a sum fixed by mass conservation.}
+\label{fig:assessment_feasible_segment}
+\end{figure}
+
+The raw point lies on the extended mass-conservation line but below the concentration boundary. The clipped point enters the non-negative region but leaves the conservation line. The jointly feasible point lies on the thick segment satisfying both conditions. The geometry therefore makes clear why the two requirements must be evaluated on the same returned state.
+
+Marginal compliance summaries can also conceal joint failure. Suppose one prediction satisfies mass conservation but violates non-negativity, while another satisfies non-negativity but violates mass conservation. The marginal compliance frequency of each condition is one half, yet neither state is jointly feasible. The joint feasible frequency is therefore zero. This distinction motivates the use of a state-level indicator that checks both requirements before counting a prediction as physically admissible.
+
+\subsection{The Kircher--Votsmeier projection for mass conservation and non-negativity}
+
+\subsubsection{A positive provisional target and relative-error geometry}
+
+\citet{KircherVotsmeier2025} develop a projection that combines mass conservation and non-negativity for mechanistic-kinetics surrogates. Its application here uses the invariant operator $A$, the null-space basis $Z$, and the feasible influent state as an anchor. Importantly, the procedure operates on the completed component prediction rather than on the internal architecture of the learner. The same projection can therefore be applied to every comparator without altering how that comparator is trained.
+
+The first step replaces any raw component at or below a small positive floor by that floor. For component $j$,
+\[
+c_{+,ij}^{(m)}=\max(c_{raw,ij}^{(m)},\varepsilon_{c,j}).
+\]
+For example, a hypothetical raw pair $(-0.2,3)$ becomes $(10^{-8},3)$ when both component floors equal $10^{-8}$ in their native units. The positive floor ensures that every component can be used as a denominator in the weighting that follows.
+
+A diagonal weight matrix then places the reciprocal of each provisional concentration on its diagonal. For a hypothetical positive pair $(1,2)^\top$,
+\[
+W=\begin{bmatrix}1&0\\0&1/2\end{bmatrix},\qquad
+Wh=\begin{bmatrix}h_1\\h_2/2\end{bmatrix}.
+\]
+The operation does not mix components. Instead, it divides each discrepancy by that component's own provisional concentration. The projection therefore measures movement in relative rather than absolute terms. In compact form,
+\begin{equation}
+\equationname{Positive provisional target and relative projection weights}
+c_{+,i}^{(m)}=\max(c_{raw,i}^{(m)},\boldsymbol{\varepsilon}_c),\qquad
+W_i^{(m)}=\operatorname{Diag}\bigl(\mathbf{1}\oslash c_{+,i}^{(m)}\bigr).
+\label{eq:projection_positive_target}
+\end{equation}
+The maximum and division are componentwise, and every entry of $\boldsymbol{\varepsilon}_c$ is $10^{-8}$ in the native unit of that component.
+
+The provisional target serves two purposes: it gives the mass-conservation solve a strictly positive reference state, and it defines the relative-error weights. For a component change $h_j$, the weighted discrepancy is
+$h_j/c_{+,ij}^{(m)}$.
+A movement of 1 g m$^{-3}$ therefore has relative size 0.01 when the provisional concentration is 100 g m$^{-3}$, but relative size 10 when the provisional concentration is 0.1 g m$^{-3}$. Small component values are consequently protected more strongly against absolute movement, while large components can absorb larger absolute adjustments at the same relative cost. This geometry differs from the training-standardized error metric used later for accuracy assessment \citep{KircherVotsmeier2025,SturmSilva2024}.
+
+\subsubsection{Selecting a candidate that satisfies mass conservation}
+
+The invariant structure from Chapter~\ref{ch:foundations} provides a convenient parameterization of every state that preserves the influent mass-conservation target. If $Z$ contains fifteen basis vectors spanning the allowable component changes, then any mass-conserving state can be written as
+\begin{equation}
+\equationname{Null-space parameterization of states satisfying mass conservation}
+c=c_{in,i}+Zq,\qquad q\in\mathbb{R}^{15}.
+\label{eq:projection_affine_parameterization}
+\end{equation}
+Because $AZ=0$, any vector $Zq$ changes the component state without changing the invariant inventory.
+
+A two-component example shows how the projection coordinates are chosen. Suppose the required sum is four, the feasible influent anchor is $(2,2)^\top$, and the provisional target is $(1,2)^\top$. The provisional target sums to three and therefore violates the required equality. Define
+\[
+A_{\rm ex}=\frac1{\sqrt2}\begin{bmatrix}1&1\end{bmatrix},\qquad
+Z_{\rm ex}=\frac1{\sqrt2}\begin{bmatrix}1\\-1\end{bmatrix}.
+\]
+These satisfy $A_{\rm ex}Z_{\rm ex}=0$. A scalar movement $t$ produces the candidate
+$(2+t,2-t)^\top$, whose sum remains four for every $t$. In the normalized basis, the corresponding null-space coordinate is $q=\sqrt2t$.
+
+The provisional change from the anchor is $(-1,0)^\top$. The difference between an allowable change and this target is therefore $(t+1,-t)^\top$. The inverse provisional concentrations are 1 and $1/2$, so the weighted discrepancy becomes $(t+1,-t/2)^\top$. Its squared norm is
+\[
+E(t)=(t+1)^2+\frac{t^2}{4}.
+\]
+The first term penalizes movement away from the provisional value of the first component, and the second penalizes movement in the second component relative to its larger provisional concentration.
+
+Differentiating gives
+\[
+\frac{dE}{dt}=2(t+1)+\frac t2=\frac52t+2.
+\]
+Setting the derivative to zero gives $t=-4/5$. Since the second derivative is $5/2>0$, this point is the unique minimum. The resulting candidate is
+\[
+(2-4/5,2+4/5)^\top=(6/5,14/5)^\top=(1.2,2.8)^\top.
+\]
+Its relative discrepancies from the provisional target are 0.2 and 0.4, giving squared objective
+$0.2^2+0.4^2=0.20$.
+By comparison, the mass-conserving candidate $(1.5,2.5)^\top$ gives
+$0.5^2+0.25^2=0.3125$.
+The relative weighting therefore favors the first candidate because the smaller provisional component is penalized more strongly for a given absolute movement.
+
+Figure~\ref{fig:relative_projection_geometry} visualizes the same calculation. The ellipses represent equal values of the relative-error objective, while the mass-conservation line restricts the allowable candidate states.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.79\textwidth]{ch4_concept_weighted_projection.pdf}
+\caption{Hypothetical projection for mass conservation with relative and equal absolute weights. The highlighted ellipse first touches the line defined by mass conservation at the relative-weighted candidate. The dotted circle touches it at the equal-absolute-weight candidate.}
+\label{fig:relative_projection_geometry}
+\end{figure}
+
+The relative-weighted ellipse is elongated because movement in the second component is divided by two. A larger absolute change in that component can therefore have the same weighted cost as a smaller change in the first. An equal-absolute-weight geometry would instead produce circular contours. Both candidate points satisfy the same mass-conservation equality; the difference lies in the metric used to choose among them. The influent state supplies the feasible anchor from which all mass-conserving changes are constructed, but it need not be the closest point to the provisional target.
+
+For the full twenty-component problem, define
+$d_j=c_{+,ij}^{(m)}-c_{in,ij}$ and
+$w_j=1/c_{+,ij}^{(m)}$.
+The projection objective becomes
+\[
+E(q)=\sum_{j=1}^{20}
+w_j^2\left(\sum_{k=1}^{15}Z_{jk}q_k-d_j\right)^2.
+\]
+For each component, the inner sum forms the allowable mass-conserving change, subtracting $d_j$ gives the discrepancy from the provisional target change, and multiplication by $w_j^2$ converts that discrepancy to the adopted relative scale. Summation over the twenty components gives the complete objective.
+
+The selected coordinates are therefore
+\begin{equation}
+\equationname{Weighted least-squares problem for projection coordinates}
+q_i^{*,(m)}=\underset{q\in\mathbb{R}^{15}}{\operatorname{argmin}}
+\left\|W_i^{(m)}\bigl[Zq-(c_{+,i}^{(m)}-c_{in,i})\bigr]\right\|_2^2.
+\label{eq:projection_weighted_least_squares}
+\end{equation}
+The notation $\operatorname{argmin}$ identifies the coordinate vector that minimizes the objective rather than the minimum objective value itself.
+
+Because the objective is quadratic, its stationary conditions are obtained by differentiating with respect to each coordinate $q_\ell$. The derivative is
+\[
+\frac{\partial E}{\partial q_\ell}
+=2\sum_{j=1}^{20}w_j^2 Z_{j\ell}
+\left(\sum_{k=1}^{15}Z_{jk}q_k-d_j\right).
+\]
+Setting these derivatives to zero gives
+\[
+\sum_{k=1}^{15}\left(\sum_{j=1}^{20}w_j^2Z_{j\ell}Z_{jk}\right)q_k
+=\sum_{j=1}^{20}w_j^2Z_{j\ell}d_j,
+\]
+which collects into the normal equations
+\begin{equation}
+\equationname{Normal equations for weighted projection coordinates}
+Z^\top(W_i^{(m)})^2Zq_i^{*,(m)}
+=Z^\top(W_i^{(m)})^2(c_{+,i}^{(m)}-c_{in,i}).
+\label{eq:projection_normal_conditions}
+\end{equation}
+
+For the hypothetical two-component example,
+$Z_{\rm ex}^\top W^2Z_{\rm ex}=(1+1/4)/2=5/8$,
+while the right-hand side is $-1/\sqrt2$. Solving gives
+$q^*=-8/(5\sqrt2)=-4\sqrt2/5$, which is exactly $\sqrt2t$ for the scalar optimum derived above. The scalar and matrix calculations therefore describe the same projection.
+
+The minimizer is unique. For any nonzero vector $v$,
+\[
+v^\top Z^\top(W_i^{(m)})^2Zv
+=
+\|W_i^{(m)}Zv\|_2^2.
+\]
+Because $Z$ has independent columns and $W_i^{(m)}$ has strictly positive diagonal entries, this quantity is positive whenever $v\neq0$. The coefficient matrix is therefore positive definite.
+
+The selected coordinates define the mass-conserving candidate
+\begin{equation}
+\equationname{Component candidate satisfying mass conservation}
+c_{cand,i}^{(m)}=c_{in,i}+Zq_i^{*,(m)}.
+\label{eq:projection_conservative_candidate}
+\end{equation}
+In the two-component example,
+$(2,2)^\top+(-0.8,0.8)^\top=(1.2,2.8)^\top$.
+The candidate is non-negative and satisfies the same invariant value as the anchor. Because $AZ=0$,
+\[
+Ac_{cand,i}^{(m)}=Ac_{in,i}=b_i
+\]
+in exact arithmetic. If the provisional target is already mass-conserving, its change lies in the null space of $A$ and the least-squares residual can be zero, so the candidate reproduces the provisional target to numerical tolerance.
+
+Equation~\eqref{eq:projection_normal_conditions} provides the analytical stationary condition but is not used through an explicit matrix inverse. Numerically, the weighted design $W_i^{(m)}Z$ is solved using an orthogonal--triangular factorization, with singular-value decomposition and relative cutoff $10^{-12}$ as a fallback. Near-zero provisional concentrations can produce highly unequal weights. Solving the original weighted system avoids the additional conditioning penalty associated with forming and explicitly inverting the normal-equation matrix \citep{BuzziFerraris2013}.
+
+\subsubsection{The largest feasible interpolation toward the candidate}
+
+The mass-conserving candidate can still contain a negative component. When this occurs, the projection does not alter individual coordinates independently. Instead, it shortens the complete mass-conserving direction from the feasible influent anchor toward the candidate.
+
+Consider a three-component example with total inventory fixed at 10. Let the feasible influent be
+$(8,1,1)^\top$
+and let the mass-conserving candidate be
+$(4,-0.5,6.5)^\top$.
+Their difference is
+$(-4,-1.5,5.5)^\top$.
+A fraction $\alpha$ of this direction gives
+\[
+c_1(\alpha)=8-4\alpha,\qquad
+c_2(\alpha)=1-1.5\alpha,\qquad
+c_3(\alpha)=1+5.5\alpha.
+\]
+The first component requires $\alpha\leq2$, the second requires $\alpha\leq2/3$, and the third imposes no upper bound for $\alpha\geq0$. Because the interpolation is restricted to $0\leq\alpha\leq1$, the second component reaches the non-negative boundary first at $\alpha=2/3$.
+
+For the general problem, define the candidate direction
+\begin{equation}
+\equationname{Candidate direction from the feasible influent anchor}
+\delta_i^{(m)}=c_{cand,i}^{(m)}-c_{in,i}=Zq_i^{*,(m)}.
+\label{eq:projection_candidate_direction}
+\end{equation}
+Every point
+$c_{in,i}+\alpha\delta_i^{(m)}$
+with $0\leq\alpha\leq1$ remains mass-conserving because
+$A\delta_i^{(m)}=0$.
+
+For a decreasing coordinate,
+\[
+c_{in,ij}+\alpha\delta_{ij}^{(m)}\geq0.
+\]
+When $\delta_{ij}^{(m)}<0$, rearrangement gives
+\begin{equation}
+\equationname{Interpolation bound for a decreasing concentration}
+\alpha\leq\frac{c_{in,ij}}{-\delta_{ij}^{(m)}}
+\qquad\text{when }\delta_{ij}^{(m)}<0.
+\label{eq:projection_coordinate_bound}
+\end{equation}
+The smallest of these ratios identifies the first non-negativity boundary encountered along the segment.
+
+If the candidate is already non-negative, the full direction is retained and $\alpha=1$. Otherwise, the smallest admissible ratio is reduced slightly by a numerical safety factor $1-\eta$, with $\eta=10^{-12}$, to limit sign changes from finite-precision arithmetic. The interpolation factor and returned state are
+\begin{equation}
+\equationname{Interpolation factor and final state satisfying non-negativity}
+\begin{split}
+\alpha_i^{(m)}&=
+\begin{cases}
+1, & c_{cand,i}^{(m)}\geq0,\\
+(1-\eta)\displaystyle\min_{j\,\mid\,\delta_{ij}^{(m)}<0}
+\frac{c_{in,ij}}{-\delta_{ij}^{(m)}}, & \text{otherwise},
+\end{cases}\\
+\tilde c_i^{(m)}&=c_{in,i}+\alpha_i^{(m)}\delta_i^{(m)}.
+\end{split}
+\label{eq:projection_positivity_backtracking}
+\end{equation}
+The factor is restricted to $[0,1]$ against roundoff.
+
+Because the influent state is non-negative, the interpolation remains in the non-negative orthant. Decreasing coordinates satisfy
+$\tilde c_{ij}^{(m)}\geq\eta c_{in,ij}\geq0$,
+and increasing coordinates remain non-negative automatically. Mass conservation is also retained:
+\begin{equation}
+\equationname{Mass conservation identity for the final projected state}
+A\tilde c_i^{(m)}=Ac_{in,i}+\alpha_i^{(m)}AZq_i^{*,(m)}=b_i.
+\label{eq:projection_final_conservation}
+\end{equation}
+Thus one scalar interpolation preserves the complete mass-conserving direction while moving the state back to the non-negative region.
+
+Returning to the three-component example, the decreasing-coordinate bounds are 2 and $2/3$, so the largest feasible factor is $2/3$. Ignoring the numerical safety margin for illustration,
+\[
+(8,1,1)^\top+\frac23(-4,-1.5,5.5)^\top
+=
+(16/3,0,14/3)^\top.
+\]
+The total remains 10 and all components are non-negative. The first component changes even though the second component is the one that reaches the boundary. This is an important consequence of shortening the complete direction rather than clipping a single coordinate.
+
+If an influent component is zero and the candidate direction decreases that same coordinate, its bound is zero and the final state returns to the influent anchor. This is still feasible. Similarly, a component absent from the invariant rows can nevertheless move when the entire direction is shortened. For that reason, the interpolation factor and its activation frequency are retained as projection diagnostics.
+
+\subsubsection{Numerical acceptance and returned predictions}
+
+The algebra above establishes the desired properties in exact arithmetic. The numerical implementation still requires explicit checks on the returned state.
+
+For invariant row $h$, define
+\[
+r_h=\sum_jA_{hj}\tilde c_{ij}^{(m)}-b_{ih}.
+\]
+The five residuals are combined through their Euclidean norm. Non-negativity is assessed separately against a component-specific numerical tolerance. For example, a concentration of $-5\times10^{-11}$ passes a tolerance of $10^{-10}$, whereas $-2\times10^{-10}$ does not. A projected state is accepted only when
+\begin{equation}
+\equationname{Numerical mass conservation and non-negativity acceptance checks}
+\|A\tilde c_i^{(m)}-b_i\|_2\leq\tau_{mc},\qquad
+\tilde c_{ij}^{(m)}\geq-\tau_{nn,j}\quad\text{for every }j,
+\label{eq:projection_numerical_acceptance}
+\end{equation}
+with $\tau_{mc}=10^{-10}$ in the fixed invariant-coordinate convention and
+$\tau_{nn,j}=10^{-10}$ in the native unit of component $j$. A finite raw prediction is required before projection begins.
+
+The final state therefore satisfies the declared invariant and sign requirements to the stated numerical tolerances. The least-squares stage minimizes relative movement within the affine mass-conservation set. The interpolation stage, when needed, selects a point on the line segment between the feasible influent and the mass-conserving candidate. These operations have a different objective from the later prediction-error calculation, which is standardized using training-response variability.
+
+Figure~\ref{fig:projection_acceptance_flow} summarizes the complete procedure.
+
+\begin{figure}[htbp]
+\centering
+\input{figures/ch4_concept_projection_flow.tex}
+\caption{Post prediction mass conservation and non-negativity procedure. Positive-target construction, projection for mass conservation, and final-state acceptance have separate roles. The diagram shows the sequence used for each prediction.}
+\label{fig:projection_acceptance_flow}
+\end{figure}
+
+The provisional positive target defines the relative weights used by the mass-conservation solve. If the resulting candidate is non-negative, the complete mass-conserving change is retained. If the candidate crosses a concentration boundary, the direction is shortened from the feasible influent anchor. Both branches end in the same numerical audit, so every returned projected state is judged by identical mass-conservation and non-negativity criteria.
+
+COD, TN, TP, and TSS are calculated only after the component state has been produced. The same reporting map is used for raw and projected predictions:
+\begin{equation}
+\equationname{Raw and projected water-quality composites}
+y_{raw,i}^{(m)}=I_{comp}c_{raw,i}^{(m)},\qquad
+\tilde y_i^{(m)}=I_{comp}\tilde c_i^{(m)}.
+\label{eq:projection_paired_composites}
+\end{equation}
+A paired composite comparison therefore changes only the component state supplied to the fixed reporting map. Physical feasibility is assessed before this aggregation, on the complete twenty-component state itself.
+
+\section{Methodology}
+
+\subsection{Constructing a mechanistic learning domain}
+
+The reactor benchmark was designed around 10,000 accepted steady-state cases. Each candidate varies all twenty-two surrogate inputs: HRT, aeration, and the twenty influent component concentrations.
+
+A randomized, scrambled, strength-one Latin hypercube was generated with seed 42. For each input coordinate, the method places one sample in each marginal stratum before the unit-hypercube design is linearly mapped to the physical bounds in Table~\ref{tab:reactor_sampling_domain}. No subsequent design optimization was applied. This sampling strategy distributes cases across each declared marginal range without requiring the exponential number of combinations that would arise from a full Cartesian grid \citep{McKay1979}.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Design bounds for the standalone reactor learning domain. The intervals define the sampled input ranges.}\label{tab:reactor_sampling_domain}
+\begin{tabular}{lp{5.7cm}ll}
+\toprule
+Input & Meaning & Interval & Unit\\
+\midrule
+HRT & Hydraulic operating input & $[6,36]$ & h\\
+$u_{\mathrm{air}}$ & Dimensionless aeration input & $[0.5,2.5]$ & 1\\
+$S_O$ & Influent dissolved oxygen & $[0,0.5]$ & g O$_2$ m$^{-3}$\\
+$S_F$ & Influent fermentable substrate & $[20,180]$ & g COD m$^{-3}$\\
+$S_A$ & Influent acetate & $[5,80]$ & g COD m$^{-3}$\\
+$S_{NH4}$ & Influent ammonium nitrogen & $[12,55]$ & g N m$^{-3}$\\
+$S_{NO2}$ & Influent nitrite nitrogen & $[0,3]$ & g N m$^{-3}$\\
+$S_{NO3}$ & Influent nitrate nitrogen & $[0,8]$ & g N m$^{-3}$\\
+$S_{N2}$ & Influent dissolved dinitrogen & $[0,2]$ & g N m$^{-3}$\\
+$S_{PO4}$ & Influent soluble phosphate & $[2,18]$ & g P m$^{-3}$\\
+$S_I$ & Influent soluble inert organic matter & $[10,90]$ & g COD m$^{-3}$\\
+$S_{ALK}$ & Influent alkalinity & $[80,260]$ & mol m$^{-3}$\\
+$X_I$ & Influent particulate inert matter & $[20,120]$ & g COD m$^{-3}$\\
+$X_S$ & Influent slowly biodegradable substrate & $[60,280]$ & g COD m$^{-3}$\\
+$X_H$ & Influent heterotrophic biomass & $[15,100]$ & g COD m$^{-3}$\\
+$X_{PAO}$ & Influent phosphate-accumulating biomass & $[5,60]$ & g COD m$^{-3}$\\
+$X_{PP}$ & Influent stored polyphosphate & $[2,20]$ & g P m$^{-3}$\\
+$X_{PHA}$ & Influent stored polyhydroxyalkanoates & $[1,30]$ & g COD m$^{-3}$\\
+$X_{AOB}$ & Influent ammonia-oxidizing biomass & $[0.5,8]$ & g COD m$^{-3}$\\
+$X_{NOB}$ & Influent nitrite-oxidizing biomass & $[0.5,8]$ & g COD m$^{-3}$\\
+$X_{MeP}$ & Influent precipitated metal phosphate & $[0,12]$ & g TSS m$^{-3}$\\
+$X_{MeOH}$ & Influent metal hydroxide & $[0,12]$ & g TSS m$^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The standalone reactor domain uses only the operating and influent bounds declared in this table. Its alkalinity interval remains in the native coordinate used by the mechanistic model. The connected plant study in Chapter~\ref{ch:plant} uses a separate operating domain and separate influent bounds.
+
+For every candidate input, Equation~\eqref{eq:reactor_steady_balance} was solved by nonlinear least squares. Each component concentration was bounded numerically to $[10^{-8},1500]$ in its native unit. The cost-change, step-size, and gradient convergence tolerances were all $10^{-9}$, with at most 1200 function evaluations per steady-state solve. The overall generation procedure allowed up to 25 attempted candidates for every target retained state.
+
+A candidate was retained only when the numerical solver converged and the maximum absolute component-balance residual was no greater than $10^{-9}$ in the fixed native component-unit-per-day coordinates. The acceptance criterion therefore refers directly to the steady-state balance equations rather than to the later invariant residual.
+
+Two physically informed initial states were attempted before dynamic relaxation. The first blended the sampled influent with the preceding accepted effluent when such a state was available. It reduced readily consumed substrate concentrations, retained biomass pools, and estimated dissolved oxygen from dilution and transfer. The second imposed stronger substrate depletion and biomass enrichment. Both initial-state vectors were restricted to $[10^{-6},1500]$.
+
+If both steady-state solves failed, the dynamic balance was integrated for 20 days with a stiff backward differentiation formula, and the resulting state was used as a new initial condition for the steady solve. The concentration bounds and initial-state restrictions applied to the state variables only. The 28 kinetic process rates were evaluated without artificial clipping or an imposed rate ceiling.
+
+Several diagnostics were retained separately: solver acceptance, invariant residual, and minimum concentration. This separation is important because one numerical success does not guarantee the others. A bounded least-squares solve can terminate without meeting the required steady-state residual. A strictly positive state can still violate a mass-conservation invariant. Conversely, a state can have a small invariant residual without satisfying the component-balance acceptance criterion used for mechanistic generation. The surrogate inputs therefore contain only the sampled operating and influent coordinates; initialization choices and solver history are not supplied as predictive features.
+
+\subsection{Preprocessing and validation without response leakage}
+
+The model comparison uses nested cross-validation so that hyperparameter selection and final assessment remain separated. A fold is one reserved subset of cases. In the outer loop, each fold is withheld in turn for model assessment. Within the corresponding outer-training pool, an inner cross-validation loop is used for hyperparameter selection.
+
+Learning behavior is evaluated at eleven nested design sizes,
+\begin{equation}
+\equationname{Observation counts for nested reactor assessment}
+N\in\{500,1450,2400,3350,4300,5250,6200,7150,8100,9050,10000\}.
+\label{eq:reactor_nested_sample_sizes}
+\end{equation}
+A seed-42 permutation fixes the row order and the master outer-fold identifiers before any subset is formed. Smaller datasets are therefore true subsets of the larger ones, and each row retains the same outer-fold assignment whenever it appears. This design allows the learning curves to reflect changing data availability without simultaneously changing the underlying fold structure.
+
+Five outer folds are used. At each design size, four folds provide $0.8N$ training cases and the remaining fold provides $0.2N$ assessment cases. Thus, $N=500$ gives 400 training cases and 100 scored cases per outer iteration, while $N=10{,}000$ gives 8000 training cases and 2000 scored cases. Across the five outer iterations, every row is scored exactly once by a model whose fit excluded that row. All thirteen surrogates use the same rows and fold identities, and raw and projected predictions are compared on those same observations.
+
+Hyperparameter selection occurs only inside the outer-training data. Four inner folds are constructed within the largest outer-training partition. For an 8000-row outer-training pool, an inner iteration therefore fits on 6000 rows and validates on the remaining 2000 rows from that pool. These inner-validation cases are distinct from the 2000 cases reserved for the outer assessment. After the best setting is selected, the model is refitted on the applicable outer-training subset and scored on the withheld outer fold.
+
+For each outer fold, the setting selected at the largest design size is retained when that same fold is evaluated at the smaller nested sizes. The resulting learning curve therefore measures the response to sample size under a fixed fold-specific setting rather than repeatedly retuning the model at every point. This distinction is relevant because prediction error need not change monotonically with either model capacity or data availability \citep{Belkin2019}. The learning-curve framework of \citet{VieringLoog2023} further motivates interpreting the complete trajectory rather than only its endpoint.
+
+Every transformation is estimated from the training partition applicable to the fit. During inner selection, this is the inner-training split. During outer assessment, it is the outer-training subset at the current size. During extrapolation assessment, it is the complete 10,000-case in-domain training pool.
+
+For a training coordinate with values $v_1,\ldots,v_M$, the mean and population standard deviation are
+\[
+\mu=\frac{v_1+\cdots+v_M}{M},\qquad
+\sigma^2=\frac{(v_1-\mu)^2+\cdots+(v_M-\mu)^2}{M},\qquad
+\sigma=\sqrt{\sigma^2}.
+\]
+The population variance divides by the training count $M$. A standardized value is then
+$z=(v-\mu)/\sigma$, requiring $\sigma>0$.
+
+For example, training values 2, 2, 6, and 6 have mean 4 and population standard deviation 2. A validation value of 6 is therefore transformed to
+$(6-4)/2=1$.
+The validation value does not contribute to the training mean or variance. If the standardized coordinate is a target and a model predicts 0.5, the inverse transformation gives
+$4+2(0.5)=5$
+in the target's physical unit.
+
+Each target component has its own training mean and standard deviation. Consequently, target-scaled predictions are transformed back component by component before projection or physical diagnostics. Using one common inverse scale across components would be incorrect because the component concentrations differ in both units and variability.
+
+\begin{table}[htbp]
+\centering
+\caption{Output handling and preprocessing for the statistical comparators. Scaling uses only the training partition applicable to each fit.}
+\label{tab:surrogate_preprocessing}
+\small
+\begin{tabular}{p{5.1cm}p{3.2cm}p{3.3cm}}
+\toprule
+Surrogates & Output handling & Scaling\\
+\midrule
+XGBoost, LightGBM, CatBoost & Separate component regressors & None\\
+AdaBoost & Separate component regressors & Targets only\\
+Random Forest & Joint tree response & None\\
+Extra Trees & Joint tree response & Targets only\\
+Support vector regression & Separate component regressors & Inputs and targets\\
+$k$-nearest neighbors & Joint neighborhood response & Inputs and targets\\
+Partial least squares, Multi-task Lasso, Multi-task Elastic Net & Joint coefficient structure & Inputs and targets\\
+Multilayer perceptron, TabNet & Joint neural output & Inputs and targets\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The preprocessing choices reflect the numerical structure of each learner. Positive affine rescaling of a single input coordinate preserves the ordering used by tree threshold partitions. Distance-based, covariance-based, and coefficient-regularized methods are more sensitive to coordinate magnitude because their objectives directly combine numerical differences across inputs. Separate-output tree regressors likewise do not combine differently scaled target components in one joint fitting loss.
+
+The target-only scaling retained for Extra Trees and AdaBoost is a specified benchmark choice. Regardless of these training decisions, all final component errors are placed on a common assessment scale defined from the applicable training response. Training-time scaling and evaluation-time normalization therefore serve different purposes.
+
+No missing-value imputation, response-based outlier removal, or target filtering was applied. Validation and extrapolation responses were never used to estimate a preprocessing quantity. Standardizing a validation target using the variance of the validation fold itself would alter the scoring reference using information unavailable during training. The present procedure instead asks how large a prediction error is relative to the response variability that the fitted learner was permitted to observe.
+
+\subsection{Hyperparameter selection}
+
+Hyperparameters were selected using a seeded tree-structured Parzen estimator search. Each study used 100 trials, with no pruning and no timeout. A trial proposed one complete parameter setting, fitted that setting within the prescribed inner-training partitions, and evaluated the resulting validation objective. The objective was the mean squared standardized component error and was minimized. It is therefore distinct from any individual hyperparameter such as tree depth, learning rate, or penalty strength.
+
+The search procedure follows the optimization framework of \citet{Akiba2019}. Five independent studies selected settings for the five largest-scale outer-training partitions. A sixth four-fold study selected the setting used for the final full-domain refit. Thus, each surrogate required
+$6(100)=600$
+trials, and all thirteen surrogates required
+$13(600)=7800$
+trials under the declared protocol.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Search domains and fixed controls for tree ensemble surrogates. Integer limits are inclusive. ``Log'' denotes a log-uniform search.}\label{tab:surrogate_search_domains}
+\begin{tabular}{p{2.65cm}p{9.2cm}}
+\toprule
+Surrogate & Search domain and fixed controls\\
+\midrule
+XGBoost & 80--320 trees. Learning rate 0.01--0.2 (log). Depth 3--8. Minimum child weight 0.5--8 (log). Row and feature fractions 0.6--1. Absolute-value penalty $10^{-6}$--1 (log). Squared penalty $10^{-3}$--10 (log). Histogram or approximate trees. Squared-error objective.\\
+LightGBM & 80--320 trees. Learning rate 0.01--0.2 (log). 15--63 leaves. Depth unbounded or in $\{4,6,8,10\}$. Minimum child rows 5--40. Row and feature fractions 0.6--1 with subsampling frequency 1. Absolute-value penalty $10^{-6}$--1 (log). Squared penalty $10^{-6}$--10 (log). Regression objective.\\
+CatBoost & 80--320 iterations. Learning rate 0.01--0.2 (log). Depth 4--8. Squared penalty 0.01--20 (log). Bagging temperature 0--5. Random strength $10^{-3}$--5 (log). Root mean squared error loss and Bayesian bootstrap.\\
+AdaBoost & 50--250 depth-three trees. Learning rate 0.01--1 (log). Linear, squared, or exponential regression loss.\\
+Random Forest & 100--400 trees. Depth unbounded or in $\{6,10,14,18\}$. Minimum split size 2--10. Minimum leaf size 1--4. Feature fraction 0.5--1. Bootstrap enabled or disabled.\\
+Extra Trees & 100--400 trees. Depth unbounded or in $\{6,10,14,18\}$. Minimum split size 2--10. Minimum leaf size 1--4. Feature fraction 0.5--1. Bootstrap enabled or disabled.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\caption{Search domains and fixed controls for kernel, neighbor, multiresponse, and neural surrogates. Integer limits are inclusive. ``Log'' denotes a log-uniform search.}\label{tab:surrogate_search_domains_other}
+\begin{tabular}{p{2.65cm}p{9.2cm}}
+\toprule
+Surrogate & Search domain and fixed controls\\
+\midrule
+Support vector regression & Penalty 0.1--10 (log). Error-insensitive width 0.01--0.5 (log). Linear or radial kernel. Radial coefficient set from standardized input variance or inverse input dimension. Tolerance $10^{-3}$--$10^{-2}$ (log). Shrinking enabled. At most 20,000 iterations. Kernel cache of 256 megabytes per output regressor.\\
+$k$-nearest neighbors & 1--15 neighbors. Uniform or distance weights. Automatic, ball-tree, $k$-dimensional tree, or brute-force search. Leaf size 15--60. Minkowski, Euclidean, or Manhattan distance. Minkowski order in $\{1,2,3\}$.\\
+Partial least squares & 1--6 latent components. 200--1000 maximum iterations. Tolerance $10^{-8}$--$10^{-4}$ (log). Internal scaling disabled because external training-partition scaling is applied.\\
+Multi-task Elastic Net & Penalty strength $10^{-6}$--10 (log). Row-group mixing ratio 0.05--0.95. Cyclic coordinate descent. At most 20,000 iterations and tolerance $10^{-6}$.\\
+Multi-task Lasso & Penalty strength $10^{-6}$--10 (log). Cyclic coordinate descent. At most 20,000 iterations and tolerance $10^{-6}$.\\
+Multilayer perceptron & Hidden widths $(128,64,32)$. Rectified linear, hyperbolic tangent, or logistic activation. Adaptive moment optimization. Squared-weight penalty $10^{-6}$--$10^{-2}$ (log). Batch size in $\{64,128,256\}$. Learning rate $5\times10^{-4}$--$10^{-2}$ (log). Training-loss tolerance $10^{-4}$--$10^{-3}$ (log). Shuffling enabled. Training-loss patience 15 epochs. At most 250 epochs.\\
+TabNet & Equal decision and attention widths in $\{8,16,24\}$. Three or four attention steps. Relaxation coefficient 1--2. Sparsity coefficient $10^{-6}$--$10^{-2}$ (log). Adaptive moment learning rate 0.003--0.03 (log). Sparsemax or entmax-1.5 masks. 20--50 selected epochs. Batch size in $\{512,1024\}$. Virtual batch size 128. Patience zero.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Together, the declared search ranges, fixed controls, and equal trial allocation provide a common fitting protocol for all thirteen predictors.
+
+\subsection{Evaluation of error, feasibility, and projection size}
+
+\subsubsection{Component errors on a training-defined scale}
+
+The primary prediction target is the twenty-component effluent state. Because these coordinates differ in units and variability, the assessment first standardizes each component error using variability estimated only from the applicable training reference.
+
+Let $\mathcal{T}$ denote that training reference, and let
+$\sigma_j^{(\mathcal{T})}$
+be the population standard deviation of component $j$ within it. For prediction type $t$, either raw or projected, the standardized error is
+\begin{equation}
+\equationname{Component error standardized by the training response scale}
+\xi_{ij}^{(m,t)}=
+\frac{c_{ij}^{(m,t)}-c_{out,ij}}{\sigma_j^{(\mathcal{T})}}.
+\label{eq:projection_standardized_error}
+\end{equation}
+A prediction of 3 g N m$^{-3}$ against a reference value of 2 g N m$^{-3}$ has physical error 1 g N m$^{-3}$. If the corresponding training standard deviation is 2 g N m$^{-3}$, the standardized error is 0.5.
+
+The aggregate error metrics are built from these standardized component errors. Consider two observations and two components with training standard deviations 2 and 4. Suppose the reference and predicted values are
+\[
+\begin{array}{c|cc|cc}
+&\multicolumn{2}{c|}{\text{Reference}}&\multicolumn{2}{c}{\text{Prediction}}\\
+\text{Observation}&\text{Component 1}&\text{Component 2}&\text{Component 1}&\text{Component 2}\\\hline
+1&2&4&3&2\\
+2&4&8&2&12
+\end{array}
+\]
+The physical errors are 1, $-2$, $-2$, and 4. Dividing each by the corresponding training standard deviation gives
+\[
+\xi=\begin{bmatrix}1/2&-2/4\\-2/2&4/4\end{bmatrix}
+=
+\begin{bmatrix}0.5&-0.5\\-1&1\end{bmatrix}.
+\]
+The four squared standardized errors sum to 2.5, giving a mean squared standardized error of
+$2.5/4=0.625$
+and a root mean squared value of approximately 0.7906. Their absolute values sum to 3, giving a mean absolute standardized error of 0.75.
+
+For the complete twenty-component assessment,
+\begin{align}
+\equationname{Normalized mean squared component error}
+\mathrm{nMSE}_{m,t}&=\frac{1}{20n}\sum_{i=1}^{n}\sum_{j=1}^{20}(\xi_{ij}^{(m,t)})^2,\label{eq:projection_nmse}\\
+\equationname{Normalized root mean squared component error}
+\mathrm{nRMSE}_{m,t}&=\sqrt{\mathrm{nMSE}_{m,t}},\label{eq:projection_nrmse}\\
+\equationname{Normalized mean absolute component error}
+\mathrm{nMAE}_{m,t}&=\frac{1}{20n}\sum_{i=1}^{n}\sum_{j=1}^{20}|\xi_{ij}^{(m,t)}|.
+\label{eq:projection_nmae}
+\end{align}
+After standardization, each component--observation pair receives equal numerical weight. nRMSE gives greater emphasis to larger standardized errors, while nMAE provides a complementary measure of average deviation. Both require a positive training standard deviation for every component.
+
+This scaling has an important interpretation. A physical error of 1 g m$^{-3}$ corresponds to standardized magnitude 0.1 when the training standard deviation is 10 g m$^{-3}$, but magnitude 10 when the training standard deviation is 0.1 g m$^{-3}$. The assessment therefore measures error relative to the variability the model was exposed to during training rather than treating the same absolute error as equally important for all components.
+
+The coefficient of determination provides a second view of accuracy. For each component, it compares the model's squared error with the squared error obtained by predicting the scored-partition mean for every observation. For component 1 in the hypothetical example, the scored mean is 3. The constant prediction therefore gives a baseline squared error of
+$(2-3)^2+(4-3)^2=2$.
+The model gives
+$(3-2)^2+(2-4)^2=5$,
+so
+$R^2=1-5/2=-1.5$.
+The negative value indicates that the prediction is worse than the constant baseline on that scored partition.
+
+For component $j$,
+\begin{equation}
+\equationname{Component and macro-average coefficients of determination}
+R_{j,m,t}^2=1-
+\frac{\sum_i(c_{ij}^{(m,t)}-c_{out,ij})^2}
+{\sum_i(c_{out,ij}-\bar c_{out,j})^2},\qquad
+\bar R_{m,t}^2=\frac{1}{20}\sum_{j=1}^{20}R_{j,m,t}^2.
+\label{eq:projection_r_squared}
+\end{equation}
+Here
+$\bar c_{out,j}$
+is the true mean of component $j$ within the scored partition. This mean is used only for scoring and does not enter model fitting. Consequently, the denominator of $R^2$ uses scored-partition variability, whereas nMSE and nRMSE use a training-defined scale. The two measures are therefore complementary rather than interchangeable.
+
+Aggregation must also be interpreted carefully. Pooled nRMSE is the square root of the mean of all squared standardized component errors. It is not the arithmetic mean of the twenty component-level root errors. If two components have mean squared standardized errors of 1 and 9, for example, their pooled root error is
+$\sqrt{(1+9)/2}=\sqrt5$,
+whereas the mean of their separate roots is
+$(1+3)/2=2$.
+
+Physical-unit errors are retained for the individual components. COD, TN, TP, and TSS are evaluated separately as secondary reported quantities. For each composite, the physical-unit RMSE is calculated across observations and then divided by the training standard deviation of that composite. A physical root error of 5 g COD m$^{-3}$ with a training composite standard deviation of 10 g COD m$^{-3}$ therefore gives a normalized composite root error of 0.5. The composite standard deviations are calculated only after the fixed reporting map has been applied to the training target states.
+
+\subsubsection{Violation frequencies and their magnitudes}
+
+Physical diagnostics distinguish how often a state fails from how severely it fails.
+
+The mass-conservation residual is the Euclidean norm of the five invariant discrepancies,
+\[
+r_h=\sum_jA_{hj}c_j-b_{ih}.
+\]
+For example, a two-row residual vector of $(3,4)^\top$ has norm 5. This quantity is evaluated in the fixed invariant-coordinate convention.
+
+Negative concentrations require a different summary because the twenty component coordinates have different physical scales. Each concentration is first divided by its training standard deviation. Positive entries are then replaced by zero, and the absolute values of the remaining negative entries are summed. Thus, standardized values $(-2,1.5,-2)$ become $(-2,0,-2)$ and have total negative magnitude 4. Positive components cannot cancel negative components in this diagnostic.
+
+The two violation magnitudes are
+\begin{equation}
+\equationname{Mass conservation residual and standardized negative concentration}
+v_{mc,i}(c)=\|Ac-b_i\|_2,\qquad
+v_{nn,i}^{\mathrm{std}}(c)=
+\left\|\min(c\oslash\boldsymbol{\sigma}^{(\mathcal{T})},0)\right\|_1.
+\label{eq:projection_violation_magnitudes}
+\end{equation}
+The minimum is componentwise. The negative magnitude uses training standard deviations only to make violations across differently scaled component coordinates comparable; it does not replace the componentwise native-unit sign check used for acceptance.
+
+Violation frequencies are row-level proportions. The indicator $\mathbb{1}[\cdot]$ equals one when its condition is true and zero otherwise. Suppose four hypothetical states have mass-conservation failure indicators $(1,0,1,0)$ and non-negativity failure indicators $(0,1,1,0)$. Each marginal violation frequency is therefore 0.5. A state with several negative components still contributes only one failure to the non-negativity frequency.
+
+The two marginal frequencies are
+\begin{equation}
+\equationname{Mass conservation and non-negativity violation frequencies}
+\pi_{mc}=
+\frac{1}{n}\sum_i\mathbb{1}[v_{mc,i}(c_i)>\tau_{mc}],\qquad
+\pi_{nn}=
+\frac{1}{n}\sum_i\mathbb{1}[\min_j(c_{ij}+\tau_{nn,j})<0].
+\label{eq:projection_violation_rates}
+\end{equation}
+A state is jointly feasible only when both requirements pass in that same observation:
+\begin{equation}
+\equationname{Jointly feasible fraction of assessed component states}
+\pi_{\mathrm{feasible}}=
+\frac{1}{n}\sum_i\mathbb{1}
+[v_{mc,i}(c_i)\leq\tau_{mc}\ \text{and}\ 
+\min_j(c_{ij}+\tau_{nn,j})\geq0].
+\label{eq:projection_feasible_fraction}
+\end{equation}
+The two marginal violation frequencies are not added, because one state can fail both conditions and would otherwise be counted twice. In the four-state example above, only the fourth state passes both tests, so the joint feasible fraction is one quarter.
+
+Mean, median, and maximum violation magnitudes are retained in addition to the frequencies. This distinction separates incidence from severity. Many states can lie only slightly below zero, producing a high violation frequency but small negative magnitudes. A single strongly negative prediction can instead produce a low frequency but a large maximum magnitude. Physical-unit negative magnitudes are also retained separately for each component.
+
+\subsubsection{Paired accuracy effects and displacement}
+
+Because raw and projected predictions are generated from the same fitted model and scored on the same cases, the effect of projection can be measured directly.
+
+For each outer fold,
+\begin{equation}
+\equationname{Paired difference in projected and raw prediction error}
+\Delta\mathrm{nRMSE}_{m,N,g}=
+\mathrm{nRMSE}_{m,\mathrm{projected},N,g}
+-\mathrm{nRMSE}_{m,\mathrm{raw},N,g}.
+\label{eq:projection_paired_error_difference}
+\end{equation}
+A negative value means that projection reduced the assessed error; a positive value means that it increased it. For example, raw and projected nRMSE values of 0.40 and 0.35 give a difference of $-0.05$, whereas a projected value of 0.45 gives $+0.05$. Differences are calculated within the paired folds before being summarized. Component-level and composite-level differences are also retained because aggregate improvement can coexist with deterioration in specific outputs.
+
+Projection displacement measures something different: how far the returned projected state moves from its own raw prediction. For sample $i$,
+\begin{equation}
+\equationname{Standardized component displacement caused by projection}
+d_{c,i}^{\mathrm{std},(m)}=
+\left\|(\tilde c_i^{(m)}-c_{raw,i}^{(m)})
+\oslash\boldsymbol{\sigma}^{(\mathcal{T})}\right\|_2.
+\label{eq:projection_standardized_displacement}
+\end{equation}
+The difference is standardized using the training component standard deviations and then combined through a Euclidean norm.
+
+For the earlier two-component weighted-projection example, the raw state $(1,2)$ becomes $(1.2,2.8)$, giving changes of 0.2 and 0.8. If the illustrative training standard deviations are 0.1 and 0.4, the standardized movements are both 2 and the displacement is
+$2\sqrt2$.
+The training scale used here differs deliberately from the provisional concentration scale used inside the projection. The former measures movement relative to observed response variability; the latter defines the optimization geometry of the physical adjustment.
+
+A large displacement can remove physical violations while moving the state farther from the mechanistic reference \citep{SturmSilva2024,KircherVotsmeier2025}. Displacement is therefore a measure of adjustment, not accuracy. Mean, median, and maximum displacement are reported together with componentwise physical movement, the fraction of cases requiring interpolation, and the distribution of $\alpha$.
+
+Learning curves summarize error across the eleven design sizes in Equation~\eqref{eq:reactor_nested_sample_sizes}. In addition to the individual points, a normalized trapezoidal area describes average performance across the complete size interval. For neighboring design sizes, the area of one segment is the interval width multiplied by the average of the two endpoint errors. As an illustration, errors of 0.8 and 0.6 at $N=500$ and $N=1450$ give an area of
+$(1450-500)(0.8+0.6)/2=665$.
+If the next error is 0.4 at $N=2400$, the next segment contributes 475. Their total area of 1140 divided by the interval length $2400-500=1900$ gives an average error height of 0.6.
+
+For the full design,
+\begin{equation}
+\equationname{Normalized trapezoidal area under a learning curve}
+\mathcal{A}_{m,t}=
+\frac{1}{N_{11}-N_1}
+\sum_{\ell=1}^{10}\frac{E_{m,t}(N_\ell)+E_{m,t}(N_{\ell+1})}{2}
+(N_{\ell+1}-N_\ell),
+\label{eq:projection_learning_curve_area}
+\end{equation}
+where $E_{m,t}(N)$ is the mean held-out error at design size $N$. Dividing by $N_{11}-N_1=9500$ converts the trapezoidal area to the same scale as the selected error measure. This summary complements, rather than replaces, the full learning curve \citep{VieringLoog2023}. Training and validation error at the largest design size provide a separate descriptive generalization gap.
+
+Every in-domain metric is summarized as the arithmetic mean and sample standard deviation of the five outer-fold values. For values $v_1,\ldots,v_5$,
+\[
+\bar v=\frac{v_1+\cdots+v_5}{5},
+\]
+and
+\[
+s=
+\sqrt{
+\frac{
+(v_1-\bar v)^2+\cdots+(v_5-\bar v)^2
+}{4}
+}.
+\]
+The denominator is four because these five fold values are summarized using the sample standard deviation. This is distinct from the population standard deviation used when standardizing training coordinates.
+
+\subsection{Testing inputs beyond the learning domain}
+
+The exterior assessment evaluates each final surrogate at inputs lying beyond the declared training hyperrectangle. For this assessment, a final hyperparameter setting is selected by four-fold cross-validation on all 10,000 in-domain cases. The corresponding preprocessing and predictor are then refitted on the complete in-domain pool. No exterior response is used during model selection, fitting, scaling, or calibration. This separation follows the broader concern with domain shift in scientific machine learning \citep{Karniadakis2021,Shen2023}.
+
+Four inputs are allowed to exceed their upper learning-domain bounds: HRT, aeration, influent ammonium, and influent slowly biodegradable substrate. Exceedance is expressed relative to the width of the original training interval,
+\begin{equation}
+\equationname{Input exceedance beyond an upper training-domain bound}
+e_{i\ell}=\frac{x_{i\ell}-U_\ell}{U_\ell-L_\ell}.
+\label{eq:projection_domain_exceedance}
+\end{equation}
+This normalization allows excursion severity to be compared across inputs with different physical units.
+
+For HRT, the training interval is 6--36 h and therefore has width 30 h. An input of 39 h gives
+$(39-36)/30=0.10$.
+The mild design uses
+$e_{i\ell}\in[0.10,0.25]$,
+while the severe design uses
+$e_{i\ell}\in[0.35,0.60]$.
+Equivalently,
+$x_{i\ell}=U_\ell+e_{i\ell}(U_\ell-L_\ell)$.
+For HRT, this gives mild bounds of 39--43.5 h and severe bounds of 46.5--54 h.
+
+The exterior generator targets 70\% one-input excursions and 30\% two-input excursions. All other coordinates remain within their original learning bounds. Every generated exterior candidate therefore violates at least one coordinate interval of the original hyperrectangle. Since any convex combination of training points remains within every training-coordinate bound, such a case also lies outside the convex hull of the training points.
+
+\begin{table}[htbp]
+\centering
+\caption{Fixed exterior intervals for the two extrapolation designs. The intervals define the exterior input conditions.}
+\label{tab:reactor_extrapolation_domain}
+\small
+\begin{tabular}{lllll}
+\toprule
+Input & Learning interval & Mild interval & Severe interval & Unit\\
+\midrule
+HRT & $[6,36]$ & $[39,43.5]$ & $[46.5,54]$ & h\\
+$u_{\mathrm{air}}$ & $[0.5,2.5]$ & $[2.7,3.0]$ & $[3.2,3.7]$ & 1\\
+$S_{NH4}$ & $[12,55]$ & $[59.3,65.8]$ & $[70.1,80.8]$ & g N m$^{-3}$\\
+$X_S$ & $[60,280]$ & $[302,335]$ & $[357,412]$ & g COD m$^{-3}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Each exterior severity targets 600 accepted steady states. The same mechanistic solver, initialization sequence, and component-balance acceptance rule used for the in-domain dataset are retained. Candidate, accepted, failed, valid-but-unselected, and retained counts are distinguished, as are the realized one-input and two-input proportions. This accounting separates the intended design from the cases actually retained after mechanistic simulation.
+
+Exterior errors use normalization defined entirely from the in-domain data. Component errors are standardized with population standard deviations from all 10,000 in-domain target states. Composite errors use the corresponding full-domain composite standard deviations. The same nMSE, nRMSE, nMAE, physical diagnostics, displacement summaries, and interpolation diagnostics are then calculated for the raw and projected exterior predictions. The coefficient of determination is treated as secondary because the deliberately shifted response distribution changes its denominator.
+
+Each exterior metric therefore summarizes 600 mechanistically simulated cases evaluated by one full-domain surrogate refit. Physical compliance and predictive accuracy are interpreted separately. A projected state can remain non-negative and mass-conserving while its nitrogen distribution, biomass concentrations, or other treatment quantities are inaccurate \citep{Henze2006,Selerio2026}.
+
+\subsection{Computational cost assessment}
+
+Computational cost is separated into hyperparameter search, preprocessing and fitting, raw inference, projection, and complete projected inference. This separation distinguishes one-time preparation from the repeated calculations that motivate surrogate use.
+
+Hyperparameter-search time is reported once for each distinct search study. Because the largest-scale outer setting is reused over the eleven nested design sizes, assigning that same search duration to every size would repeatedly count the same selection cost. Fitting time excludes search and measures the preparation needed for the specified training partition after a setting has been chosen.
+
+Repeated inference is timed on a deterministic 512-row batch constructed by cycling through the relevant validation inputs. The timing batch remains fixed at 512 rows even when fewer than 512 unique validation cases are available. Repetition is used only to create an equal-sized timing workload; prediction-error calculations continue to use the original assessment counts.
+
+Five warm-up calls precede 30 timed repetitions for each path. The 30 batch durations are sorted, and the median is calculated from the fifteenth and sixteenth values. Dividing this median batch latency by 512 gives the reported milliseconds per sample. A hypothetical median batch time of 102.4 ms therefore corresponds to
+$102.4/512=0.2$
+ms per sample. For the in-domain assessment, the five fold-specific median times are summarized by their arithmetic mean and sample standard deviation. Exterior timing uses the same procedure for the single final refit.
+
+Projection timing includes positive-target construction, relative weighting, the weighted solve, mass-conservation and non-negativity checks, and any interpolation required to maintain non-negativity. Complete projected inference includes both raw prediction and projection.
+
+All common physical calculations, returned states, preprocessing operations, and evaluation metrics use double precision. TabNet uses single-precision tensors internally before its predictions are returned to the common physical-coordinate calculations. Pseudorandom generation and stochastic fitting use streams derived from seed 42. The multi-task coefficient models retain deterministic coordinate-descent settings.
+
+The reported timing values therefore describe the declared batch protocol. In particular, complete prediction time includes the physical projection required to convert a statistical output into the final checked component state.
+
+\section{Results}
+\label{sec:projection_results}
+
+\subsection{Mechanistic reference-state checks}
+
+The mechanistic generation procedure produced the complete target datasets required for the assessment: 10,000 accepted learning-domain states and 600 accepted states in each exterior design. Every attempted candidate satisfied the specified steady-state component-balance acceptance criterion, and every retained concentration was strictly positive. The realized exterior samples also matched the intended mixture of 70\% one-input excursions and 30\% two-input excursions.
+
+Table~\ref{tab:projection_dataset_results} reports the invariant residual separately from the mechanistic solver criterion. This distinction is important because the steady-state acceptance rule and the invariant diagnostic are based on different residual definitions.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Accepted mechanistic reference states and their maximum invariant residuals. The residual uses the fixed invariant-coordinate convention. Solver acceptance uses the component-balance residual.}
+\label{tab:projection_dataset_results}
+\begin{tabular}{lrrr}
+\toprule
+Assessment domain & Attempted & Accepted & Maximum $\|Ac_{out}-Ac_{in}\|_2$\\
+\midrule
+Learning domain & 10,000 & 10,000 & $4.90\times10^{-11}$\\
+Mild exterior inputs & 600 & 600 & $5.67\times10^{-11}$\\
+Severe exterior inputs & 600 & 600 & $2.91\times10^{-10}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The largest invariant residual occurred in the severe exterior design and was
+$2.91\times10^{-10}$. This value is larger than the $10^{-10}$ tolerance later imposed on projected surrogate predictions, but it does not indicate failure of the mechanistic acceptance rule. Mechanistic generation used the maximum component-balance residual of $10^{-9}$ in native component-unit-per-day coordinates, whereas the invariant diagnostic uses the fixed invariant-coordinate convention.
+
+The physical operators themselves satisfied
+$\max_{h,p}|(A\nu^\top)_{hp}|=4.25\times10^{-16}$.
+The observed invariant residuals were therefore consistent with finite-precision solution of the mechanistic steady states rather than a structural inconsistency in the conservation operator.
+
+\subsection{Prediction within the learning domain}
+
+The learner comparison at the largest design size showed a clear spread in complete-state prediction accuracy. At $N=10{,}000$, the multilayer perceptron had the lowest observed raw nRMSE,
+$0.150\pm0.012$.
+CatBoost followed at
+$0.230\pm0.006$,
+with LightGBM, XGBoost, and TabNet forming the next group. Table~\ref{tab:projection_prediction_results} reports the paired raw and projected results for all thirteen predictors using the same five outer folds.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Component prediction error at $N=10{,}000$. Raw and projected nRMSE values are five-fold means with sample standard deviations. The paired difference is projected minus raw and is calculated before rounding.}
+\label{tab:projection_prediction_results}
+\begin{tabular}{p{4.7cm}rrr}
+\toprule
+Surrogate & Raw nRMSE & Projected nRMSE & Difference\\
+\midrule
+XGBoost & $0.254\pm0.006$ & $0.255\pm0.006$ & $+0.0006$\\
+LightGBM & $0.249\pm0.008$ & $0.250\pm0.007$ & $+0.0007$\\
+CatBoost & $0.230\pm0.006$ & $0.229\pm0.006$ & $-0.0013$\\
+AdaBoost & $0.525\pm0.004$ & $0.581\pm0.028$ & $+0.0561$\\
+Random Forest & $0.718\pm0.005$ & $0.813\pm0.020$ & $+0.0947$\\
+Extra Trees & $0.563\pm0.005$ & $0.608\pm0.025$ & $+0.0445$\\
+Support vector regression & $0.364\pm0.011$ & $0.356\pm0.011$ & $-0.0082$\\
+$k$-nearest neighbors & $0.607\pm0.007$ & $0.621\pm0.021$ & $+0.0142$\\
+Partial least squares & $0.721\pm0.006$ & $0.745\pm0.031$ & $+0.0239$\\
+Multi-task Elastic Net & $0.536\pm0.008$ & $0.516\pm0.008$ & $-0.0200$\\
+Multi-task Lasso & $0.536\pm0.008$ & $0.516\pm0.008$ & $-0.0200$\\
+Multilayer perceptron & $0.150\pm0.012$ & $0.149\pm0.012$ & $-0.0016$\\
+TabNet & $0.272\pm0.027$ & $0.275\pm0.024$ & $+0.0032$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Projection did not move all learners in the same statistical direction. Mean nRMSE decreased for five predictors and increased for eight. The largest reductions occurred for the two multi-task linear models, each improving by approximately 0.020. Random Forest showed the largest deterioration, with an increase of approximately 0.095.
+
+The multilayer perceptron remained the most accurate predictor after projection, with mean nRMSE
+$0.149\pm0.012$.
+Its macro-average $R^2$ increased slightly from 0.977 to 0.978. Random Forest showed the opposite pattern: its macro-average $R^2$ declined from 0.484 to 0.332. Yet its nMAE decreased from 0.497 to 0.467. The same projection therefore worsened its squared-error measure while improving its average absolute deviation. This divergence already shows why one accuracy metric cannot fully describe the effect of enforcement.
+
+Figure~\ref{fig:projection_accuracy_results} compares nRMSE, nMAE, and the mean component $R^2$ for the raw and projected states. The relative positions of the paired bars change across metrics, most visibly for the randomized tree ensembles and partial least squares.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q01_prediction_accuracy.png}
+\caption{Raw and projected component accuracy at $N=10{,}000$. Panels show nRMSE, nMAE, and the mean component $R^2$. Error bars show one sample standard deviation across five outer folds.}
+\label{fig:projection_accuracy_results}
+\end{figure}
+
+The result is therefore not that projection uniformly improves or degrades the fitted response. Rather, the same physical correction can alter different error summaries in different ways, depending on the structure of the raw predictions.
+
+\subsection{Response to the amount of training data}
+
+All thirteen predictors improved as the available simulation design increased from $N=500$ to $N=10{,}000$. Figure~\ref{fig:projection_learning_results} shows the complete raw learning curves. At the smallest design size, XGBoost and LightGBM had the lowest observed mean raw nRMSE values, 0.435 and 0.439, respectively. At the largest design size, the multilayer perceptron had the lowest error.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q02_learning_curves.png}
+\caption{Raw component prediction error across the eleven nested design sizes. Separate panels group the predictors by their response representation. Lines show the five-fold mean nRMSE. Shaded regions show one sample standard deviation across folds.}
+\label{fig:projection_learning_results}
+\end{figure}
+
+The changing ranking is itself an important result. The boosted tree models were strongest when only 500 simulated cases were available, whereas the multilayer perceptron benefited more strongly from the larger data budget. Its mean raw nRMSE declined from 0.524 at $N=500$ to 0.150 at $N=10{,}000$. TabNet showed the largest endpoint reduction, falling from 0.938 to 0.272. It also continued to improve at the upper end of the tested range, decreasing from 0.298 at $N=9050$ to 0.272 at $N=10{,}000$, a final reduction of approximately 0.0266.
+
+The benchmark therefore does not support a single learner ranking independent of data availability. The predictor favored at a small simulation budget was not the predictor with the lowest error at the largest design.
+
+The effect of projection changed with data availability as well. Multi-task Lasso and Multi-task Elastic Net benefited at all eleven design sizes. Support vector regression showed lower projected error at every size from $N=5250$ onward. By contrast, the projection effect for the multilayer perceptron and TabNet changed sign across the size sequence. These patterns occurred even though the same fold-specific settings selected at the largest size were retained along each nested learning curve.
+
+Figure~\ref{fig:projection_size_effect_results} isolates this physical-adjustment effect from the underlying raw learning curves. Negative cells indicate lower nRMSE after projection.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q03_projection_effect.png}
+\caption{Projected minus raw mean component nRMSE for every predictor and design size. Negative values indicate improvement. Both prediction types use the same assessment folds and training-defined component scales.}
+\label{fig:projection_size_effect_results}
+\end{figure}
+
+The persistent improvements of the two multi-task linear models contrast with the mixed behavior of the more flexible predictors. Thus, the statistical consequence of projection depends not only on the adjustment procedure, but also on the error structure produced by the fitted learner at the available data budget.
+
+\subsection{Physical enforcement and component redistribution}
+
+The physical diagnostics reveal a much sharper contrast than the accuracy metrics. Every raw assessment state from every predictor violated the declared mass-conservation tolerance at every design size. Non-negativity behaved differently. At $N=10{,}000$, AdaBoost, Random Forest, Extra Trees, and $k$-nearest neighbors returned only non-negative raw concentrations, whereas the other predictors produced row-level non-negativity violation rates ranging from 39.0\% to 76.8\%.
+
+Table~\ref{tab:projection_constraint_results} reports these raw sign violations together with the size and frequency of the subsequent projection adjustment.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Physical diagnostics at $N=10{,}000$. Entries are five-fold means. Every raw mass conservation violation rate was 100\%. Every projected mass conservation and non-negativity violation rate was zero.}
+\label{tab:projection_constraint_results}
+\begin{tabular}{p{4.2cm}rrr}
+\toprule
+Surrogate & \begin{tabular}{r}Raw negative\\states (\%)\end{tabular} & \begin{tabular}{r}Interpolation\\activated (\%)\end{tabular} & Mean $d_c^{\mathrm{std}}$\\
+\midrule
+XGBoost & 39.72 & 0.00 & 0.300\\
+LightGBM & 38.95 & 0.00 & 0.301\\
+CatBoost & 59.06 & 0.00 & 0.242\\
+AdaBoost & 0.00 & 0.30 & 0.901\\
+Random Forest & 0.00 & 1.42 & 2.002\\
+Extra Trees & 0.00 & 0.88 & 1.528\\
+Support vector regression & 76.78 & 0.01 & 0.363\\
+$k$-nearest neighbors & 0.00 & 0.25 & 1.192\\
+Partial least squares & 54.31 & 0.93 & 1.808\\
+Multi-task Elastic Net & 71.06 & 0.00 & 0.482\\
+Multi-task Lasso & 71.05 & 0.00 & 0.482\\
+Multilayer perceptron & 58.58 & 0.00 & 0.189\\
+TabNet & 60.48 & 0.04 & 0.545\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+After projection, no assessed state failed either imposed physical requirement. Across the thirteen predictors and eleven nested design sizes, all 750,750 projected prediction instances satisfied both the mass-conservation and non-negativity checks. These instances include repeated assessment of cases appearing at several nested sizes. The largest projected invariant residual was
+$2.06\times10^{-13}$.
+
+Interpolation for non-negativity was needed much less frequently than the raw sign-violation rates might suggest. It was activated in 2489 prediction instances, or 0.332\% of the interior projected assessments. Random Forest, partial least squares, and Extra Trees accounted for 904, 574, and 566 activations, respectively, together representing 82.1\% of all interpolation events.
+
+Figure~\ref{fig:projection_physical_results} shows why raw non-negativity, projection displacement, and interpolation frequency should be interpreted separately.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q04_physical_compliance.png}
+\caption{Physical diagnostics at $N=10{,}000$. Panels show the fraction of raw states with negative components, mean standardized displacement, and interpolation activation. Values are five-fold means. All raw states failed the mass conservation tolerance, while every projected state passed both imposed physical checks.}
+\label{fig:projection_physical_results}
+\end{figure}
+
+Random Forest provides the clearest example. None of its raw states contained a negative component, yet it had the largest mean projection displacement and the highest interpolation frequency at the largest design size. Non-negativity of the raw state therefore did not imply proximity to the complete feasible set. The dominant correction was instead associated with restoring the sample-specific balances.
+
+The error redistribution is visible at the component level. At $N=10{,}000$, projection reduced nRMSE in 188 of the 260 predictor--component comparisons. Each multi-task linear model improved eighteen of the twenty components. The multilayer perceptron improved seventeen, while CatBoost, partial least squares, and support vector regression each improved sixteen.
+
+These widespread local improvements did not guarantee an aggregate improvement. The heterotrophic biomass component $X_H$ had higher error after projection for every predictor. Random Forest showed the most pronounced single-component deterioration: its $S_F$ nRMSE increased from 0.887 to 1.993. The 142 predictions for which interpolation was activated accounted for this increase, while the remaining 9858 cases retained essentially the same squared error.
+
+Figure~\ref{fig:projection_component_results} shows the complete component-by-predictor pattern.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q05_component_error_change.png}
+\caption{Projected minus raw component nRMSE at $N=10{,}000$. Each cell is the difference between five-fold mean scores for one predictor and one component. Negative values indicate improvement. The same color limits apply to all cells.}
+\label{fig:projection_component_results}
+\end{figure}
+
+The heatmap explains why an aggregate squared-error measure can worsen even when most individual component scores improve. A small number of sufficiently large positive changes can dominate many smaller reductions.
+
+The same redistribution appears in the reported treatment quantities. For every predictor, projection reduced TN and TP root error while increasing COD and TSS root error. The physical adjustment therefore did not move all engineering summaries in a common direction.
+
+Figure~\ref{fig:projection_composite_results} presents these changes in the native units of the four composites.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q06_composite_error_change.png}
+\caption{Raw and projected root mean squared errors for COD, TN, TP, and TSS at $N=10{,}000$. Bars show means of five fold-specific root errors. Each panel uses the physical unit of its own reported quantity. These errors are distinct from the standardized component nRMSE.}
+\label{fig:projection_composite_results}
+\end{figure}
+
+Taken together, the physical and statistical results show two distinct effects of projection. The first is deterministic within the declared formulation: it closes the observed gap in mass conservation and non-negativity. The second is statistical and depends on the raw prediction: it redistributes error across components and reported treatment quantities.
+
+\subsection{Prediction beyond the learning domain}
+
+The exterior assessment tested whether the learner rankings and projection behavior persisted when selected inputs exceeded the training ranges. All predictors became less accurate as the excursions moved from mild to severe.
+
+The multilayer perceptron remained the lowest-error predictor in both exterior designs. Its projected nRMSE increased from 0.251 under mild exterior inputs to 0.521 under severe inputs. TabNet followed with projected values of 0.333 and 0.547. Table~\ref{tab:projection_exterior_results} gives the complete comparison under the common full-domain normalization.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Component nRMSE beyond the learning domain. Each entry summarizes 600 accepted mechanistic states from one full-domain refit. }
+\label{tab:projection_exterior_results}
+\begin{tabular}{p{4.5cm}rrrr}
+\toprule
+& \multicolumn{2}{c}{Mild exterior inputs} & \multicolumn{2}{c}{Severe exterior inputs}\\
+Surrogate & Raw & Projected & Raw & Projected\\
+\midrule
+XGBoost & 0.424 & 0.420 & 0.861 & 0.853\\
+LightGBM & 0.419 & 0.413 & 0.848 & 0.842\\
+CatBoost & 0.393 & 0.387 & 0.836 & 0.828\\
+AdaBoost & 0.692 & 0.711 & 1.036 & 1.139\\
+Random Forest & 0.908 & 0.996 & 1.242 & 1.489\\
+Extra Trees & 0.717 & 0.679 & 1.084 & 1.222\\
+Support vector regression & 0.555 & 0.538 & 0.989 & 0.948\\
+$k$-nearest neighbors & 0.760 & 0.732 & 1.113 & 1.147\\
+Partial least squares & 0.908 & 0.841 & 1.267 & 1.190\\
+Multi-task Elastic Net & 0.750 & 0.688 & 1.146 & 1.044\\
+Multi-task Lasso & 0.751 & 0.688 & 1.146 & 1.044\\
+Multilayer perceptron & 0.255 & 0.251 & 0.531 & 0.521\\
+TabNet & 0.336 & 0.333 & 0.563 & 0.547\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Projection reduced aggregate nRMSE for eleven of the thirteen predictors in the mild design and nine of thirteen in the severe design. AdaBoost and Random Forest worsened at both severities. Extra Trees and $k$-nearest neighbors also worsened under the severe exterior inputs.
+
+At the component level, projection reduced error in 192 of the 260 mild predictor--component comparisons and 193 of the 260 severe comparisons. Thus, every predictor improved a majority of its component scores at both severity levels, even though the aggregate result did not always improve. The same pattern observed inside the learning domain therefore remained visible outside it: broad component-level improvement could coexist with a worse pooled error when a smaller number of components deteriorated more strongly.
+
+Figure~\ref{fig:projection_exterior_results} places the mild and severe results on a common error scale.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q07_exterior_accuracy.png}
+\caption{Raw and projected component nRMSE for mild and severe exterior inputs. Each severity includes 600 independently simulated reference states. Both panels use full-domain training scales and a common error-axis range. }
+\label{fig:projection_exterior_results}
+\end{figure}
+
+The separation between the two panels is substantial even for the strongest predictors. The increase therefore reflects deterioration in predictive agreement as the input moves farther from the sampled domain.
+
+Physical compliance, in contrast, remained complete. All 15,600 exterior projected prediction instances passed the mass-conservation and non-negativity checks, with a maximum invariant residual of
+$1.72\times10^{-13}$.
+Interpolation was activated in 68 cases, or 0.436\%.
+
+Combining the interior and exterior assessments gives 766,350 projected prediction instances with no failures of the declared physical checks. Yet severe-domain prediction error still increased markedly. Physical admissibility therefore remained robust under the tested excursions, while statistical accuracy did not. The two properties must be assessed separately.
+
+\subsection{Fitting and prediction costs}
+
+The computational results distinguish the cost of constructing a surrogate from the cost of repeatedly using it.
+
+At $N=10{,}000$, mean fitting time ranged from approximately 0.024 s for Multi-task Elastic Net to 56.02 s for support vector regression. Hyperparameter-search time varied much more widely, from 14.21 s for Multi-task Lasso to 11,082.77 s for support vector regression. These costs were incurred before the fitted model was used for repeated prediction.
+
+Figure~\ref{fig:projection_cost_results} shows the preparation and repeated-inference costs on logarithmic axes.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{results/ch4/q08_computational_cost.png}
+\caption{Model preparation and repeated prediction costs at $N=10{,}000$. The left panel separates search and fitting in seconds. The right panel separates raw inference, projection alone, and complete prediction in milliseconds per sample under the fixed batch protocol. Both panels show five-fold means on logarithmic axes. Complete prediction was timed separately.}
+\label{fig:projection_cost_results}
+\end{figure}
+
+\begin{table}[htbp]
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Five-fold mean computational costs at $N=10{,}000$. Search and fitting are in seconds. Prediction costs are in milliseconds per sample under the fixed 512-row batch protocol. Complete prediction includes raw inference and projection.}
+\label{tab:projection_timing_results}
+\begin{tabular}{p{3.7cm}rrrrr}
+\toprule
+Surrogate & Search & Fitting & Raw & Projection & Complete\\
+\midrule
+XGBoost & 3810.95 & 12.46 & 0.0597 & 0.0976 & 0.1649\\
+LightGBM & 1126.04 & 3.96 & 0.0971 & 0.0840 & 0.1974\\
+CatBoost & 8165.42 & 33.30 & 0.0677 & 0.1235 & 0.1997\\
+AdaBoost & 5894.14 & 18.55 & 1.0310 & 0.0901 & 1.1101\\
+Random Forest & 1452.33 & 6.89 & 0.1376 & 0.0681 & 0.2117\\
+Extra Trees & 705.21 & 2.83 & 0.1461 & 0.1053 & 0.2484\\
+Support vector regression & 11082.77 & 56.02 & 1.8736 & 0.0922 & 2.0008\\
+$k$-nearest neighbors & 99.34 & 0.03 & 0.1574 & 0.1401 & 0.3148\\
+Partial least squares & 48.75 & 0.17 & 0.0010 & 0.1442 & 0.1515\\
+Multi-task Elastic Net & 15.59 & 0.02 & 0.0011 & 0.1406 & 0.1493\\
+Multi-task Lasso & 14.21 & 0.03 & 0.0010 & 0.1387 & 0.1447\\
+Multilayer perceptron & 5016.24 & 20.46 & 0.0047 & 0.1151 & 0.1071\\
+TabNet & 5971.04 & 24.73 & 0.0235 & 0.1398 & 0.1170\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Raw inference was extremely fast for several linear and neural predictors. Once projection was included, however, physical enforcement became the dominant repeated cost for the fastest raw models. Projection alone ranged from 0.0681 to 0.1442 ms per sample under the fixed batch protocol.
+
+The multilayer perceptron had the lowest directly measured complete prediction time at 0.1071 ms per sample, while support vector regression had the largest at 2.0008 ms per sample. The complete multilayer perceptron path was measured at a lower mean time than the separately timed projection-only path, 0.1071 versus 0.1151 ms per sample. These quantities come from separate repeated timing measurements rather than from algebraic addition of independently timed components.
+
+The computational result therefore reinforces the distinction between raw inference and usable prediction. For the fastest statistical models, evaluating the regression itself was almost negligible compared with the cost of returning a physically checked component state.
+
+\section{Discussion}
+\label{sec:projection_discussion}
+
+\subsection{Mass conservation and prediction error}
+
+Mass conservation and prediction accuracy answer different questions, even when they are evaluated on the same component state.
+
+Consider a two-component problem in which both coordinates use the same material basis. Let the mechanistic reference be $(6,4)^\top$, whose total is 10. Suppose the raw surrogate predicts $(8,3)^\top$. Both components are non-negative, but their total is 11, giving a mass-conservation residual of one unit.
+
+Now suppose a mass-conserving projection changes the state to $(7,3)^\top$. The balance is restored because the total becomes 10. At the same time, the prediction error also decreases:
+\[
+\begin{aligned}
+\text{raw errors}&=(8-6,\,3-4)=(2,-1),\\
+\text{projected errors}&=(7-6,\,3-4)=(1,-1),\\
+\text{raw squared distance}&=2^2+(-1)^2=5,\\
+\text{projected squared distance}&=1^2+(-1)^2=2.
+\end{aligned}
+\]
+The Euclidean prediction error therefore changes from
+$\sqrt5\approx2.236$
+to
+$\sqrt2\approx1.414$.
+
+In this example, the same adjustment improves both feasibility and accuracy. That coincidence should not be generalized. The conservation test compares the predicted inventory with the influent-specific equality, whereas the prediction error compares the component state with the mechanistic reference. A projection is constructed to satisfy the first requirement. Whether it improves the second depends on the direction of the raw prediction error.
+
+This distinction is central to the results of the chapter. Physical enforcement can close a known feasibility gap without necessarily moving the prediction toward the mechanistic state in every component.
+
+\subsection{Statistical accuracy and physical admissibility}
+
+The largest-design results provide a direct counterexample to treating low statistical error as evidence of physical admissibility. The multilayer perceptron had the lowest raw component nRMSE at $N=10{,}000$, yet every one of its raw states violated the adopted mass-conservation tolerance and 58.58\% contained at least one negative component beyond tolerance. The model that best approximated the complete response statistically therefore did not, by itself, return physically admissible component states.
+
+The averaging-based predictors show the complementary point. AdaBoost, Random Forest, Extra Trees, and $k$-nearest neighbors produced only non-negative raw concentrations at the largest design size, but every raw state still failed the mass-conservation test. Their positivity is understandable because their outputs are constructed from non-negative training responses. The required balance, however, is specific to the new influent. Averaging states associated with different influent inventories does not preserve the target inventory of the case being predicted.
+
+These results support the distinction between learning a response and enforcing a physical requirement \citep{Kashinath2021,Hansen2024}. The statistical model approximates the input--output map. The projection of \citet{KircherVotsmeier2025} performs a separate operation on the returned state. In the present benchmark, that second operation eliminated every observed mass-conservation and non-negativity failure across all thirteen learner types and all assessed domains.
+
+The value of this enforcement should not be interpreted as proof of statistical correctness. Rather, it establishes a narrower guarantee: the returned state satisfies the declared physical constraints to the specified numerical tolerances. This guarantee is useful whenever a downstream calculation requires a complete, non-negative component vector with the adopted invariant balances.
+
+The non-negativity results also show why violation frequency must be interpreted together with magnitude and overall prediction error. CatBoost provides an instructive example. Its raw non-negativity violation rate increased from 12.8\% at $N=500$ to 59.1\% at $N=10{,}000$, even though its aggregate component error decreased over the same range. The additional negative predictions were concentrated in small substrate and nitrogen pools near zero. The model was becoming more accurate overall while crossing physical boundaries more frequently in low-magnitude coordinates.
+
+A better statistical fit can therefore coexist with a higher boundary-violation frequency. Physical admissibility cannot be inferred reliably from aggregate predictive accuracy, and predictive accuracy cannot be inferred from physical admissibility.
+
+\subsection{Why enforcement can increase prediction error}
+
+The mixed accuracy effect of projection follows directly from the fact that the projection objective and the prediction-error objective are different.
+
+The projection minimizes relative movement from a positive provisional target while satisfying the adopted mass-conservation relations. The evaluation metric instead measures error relative to training-response variability and the mechanistic reference state. When the mass-conserving direction happens to move the raw prediction toward the mechanistic state, error decreases. When it moves the prediction away from that state, error increases. The projection has no information about the true held-out effluent and therefore cannot be expected to minimize nRMSE.
+
+The interpolation stage introduces an additional source of error redistribution. When one candidate component becomes negative, the entire mass-conserving direction is shortened from the feasible influent anchor. A safeguard triggered by one component can therefore alter other coordinates that were already predicted well.
+
+The Random Forest $S_F$ result illustrates this mechanism particularly clearly. The $S_F$ column of the invariant operator was numerically zero, so the mass-conservation solve itself left that coordinate essentially unchanged. However, when another component forced interpolation, the same scalar $\alpha$ shortened the complete direction, moving $S_F$ back toward its considerably larger influent concentration. Only 142 of the 10,000 full-size predictions followed this interpolated branch, yet those cases were sufficient to raise the $S_F$ nRMSE from 0.887 to 1.993. The remaining 9858 predictions retained essentially the same squared error.
+
+This behavior is not a failure of the interpolation logic. The interpolation did what it was designed to do: preserve mass conservation while preventing a negative concentration. The statistical deterioration arose because the coordinate that triggered the boundary and the coordinate whose error increased were not the same. The shared direction couples their adjustments.
+
+The $X_H$ results reflect a different aspect of the relative weighting. Heterotrophic biomass often has a comparatively large concentration. Under inverse-concentration weighting, a given absolute movement in such a component is less costly than the same movement in a small component. The projection can therefore use a relatively large biomass adjustment to satisfy the invariant relations. That adjustment can be physically consistent while moving the prediction farther from the mechanistic $X_H$ target. Consistent deterioration of $X_H$ across all predictors is therefore compatible with the adopted relative-error geometry.
+
+The four reported composites reveal the same redistribution at a more familiar engineering level. TN and TP improved for every predictor, whereas COD and TSS worsened for every predictor. Mass conservation alone does not prescribe equal improvement across these quantities. TP is closely aligned with the phosphorus accounting embedded in the adopted invariant structure, which helps explain its very small projected error. COD and TSS depend on redistributions among organic and particulate pools that are not uniquely determined by the invariant equalities \citep{Henze2006}.
+
+The result is therefore more informative than a simple statement that projection helps or hurts accuracy. It shows which kinds of error are redistributed by the chosen enforcement geometry. Both multi-task linear models benefited consistently at the aggregate level, while the largest degradations occurred in learners with larger projection displacements and more frequent interpolation. Paired error, displacement, component-level change, and activation frequency together provide a much clearer picture of the adjustment than the feasible fraction alone.
+
+\subsection{Data support, extrapolation, and practical use}
+
+The learning curves answer the first research question in a way that a single endpoint comparison could not. The best-performing learner depended on the available simulation budget.
+
+At the smallest design size, XGBoost and LightGBM had the lowest observed component errors. This behavior is consistent with the strong performance of boosted trees on moderate-sized tabular datasets reported by \citet{Borisov2024} and \citet{ShwartzZiv2022}. As the dataset increased, however, the multilayer perceptron improved more strongly and reached the lowest error at $N=10{,}000$. TabNet also continued to improve at the largest evaluated sizes. These trajectories support the learning-curve perspective of \citet{VieringLoog2023}: model selection should be tied to the data budget under which the model will actually be used.
+
+The exterior assessment adds a second qualification. A learner that performs well within the sampled domain can still lose accuracy as operating conditions or influent loads move farther beyond the ranges represented in training. This occurred for every predictor. Even the multilayer perceptron, which remained the most accurate learner in both exterior designs, approximately doubled its projected nRMSE from the mild to the severe excursions.
+
+The deterioration is consistent with the role of input-domain support emphasized by \citet{Shen2023} and \citet{Valente2025}. The surrogate has learned an approximation over the sampled reactor domain. Moving beyond that domain weakens the empirical support for the fitted response. The benchmark therefore supports conditional statements about learner performance within specified data and domain conditions rather than unrestricted extrapolation claims.
+
+Physical projection did not remove this limitation. Every exterior projected state satisfied mass conservation and non-negativity, yet the prediction errors increased substantially with excursion severity. The severe-domain result is especially important because it demonstrates that physical admissibility and predictive agreement can diverge completely: the returned state can satisfy every imposed constraint and still give an inaccurate treatment response.
+
+This distinction has a direct practical implication. Projection can be used to prevent certain physically invalid outputs from entering a downstream analysis, but it cannot certify that an unfamiliar operating or loading condition has been predicted accurately. Domain support must therefore be assessed separately from feasibility.
+
+The timing results add the computational part of the same decision. Once a model has been prepared, all evaluated surrogates support rapid repeated prediction. For the fastest raw predictors, however, physical enforcement accounts for most of the complete prediction time. A method that appears nearly costless when only its statistical regression is timed can have a noticeably different profile once the projection required for deployment is included.
+
+The relevant comparison is therefore the complete prediction path rather than raw inference alone \citep{BhosekarIerapetritou2018,Bliek2023}. Search and fitting determine the cost of constructing the surrogate. Raw inference determines the cost of the statistical approximation. Projection determines the cost of imposing the declared physical requirements. Their combined value depends on how often the fitted surrogate will be reused and on whether the resulting prediction quality is adequate for the intended analysis.
+
+Taken together, the results answer the first two research questions without treating one capability as evidence for another. Learner performance depended on the available training data and on whether the input remained inside the sampled domain. Projection reliably enforced the specified mass-conservation and non-negativity requirements across every assessed prediction, but its statistical effect depended on the learner, component, reported treatment quantity, and input condition. The practical consequence is a two-part assessment: choose the surrogate for the available data and intended input range, and evaluate physical enforcement separately for the state that will actually be used in engineering calculations.
+
+\subsection{Data Availability}
+\label{sec:projection_data_availability}
+
+The simulation data and numerical results supporting this study are publicly available at \url{https://github.com/egbertoselerio1997/surrogate-projection}.

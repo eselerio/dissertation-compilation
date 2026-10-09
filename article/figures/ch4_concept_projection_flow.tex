@@ -2,31 +2,31 @@
 \linespread{1}\selectfont
 \begin{tikzpicture}[
     >=Latex,
-    block/.style={draw=black!75,fill=white,rounded corners=2pt,
+    block/.style={draw=plantblue!85!black,fill=white,rounded corners=2pt,
         text width=4.2cm,minimum height=1cm,align=center,font=\small},
-    branch/.style={draw=black!75,fill=white,rounded corners=2pt,
+    branch/.style={draw=plantblue!85!black,fill=white,rounded corners=2pt,
         text width=4.1cm,minimum height=1.3cm,align=center,font=\small},
-    test/.style={diamond,draw=blue!65!black,fill=blue!4,aspect=2.5,
+    test/.style={diamond,draw=plantblue!85!black,fill=plantteal!9,aspect=2.5,
         text width=2.7cm,align=center,inner sep=2pt,font=\small},
-    flow/.style={->,line width=.9pt,draw=black!75},
+    flow/.style={->,line width=.9pt,draw=plantblue!85!black},
     tag/.style={font=\small,fill=white,inner sep=2pt}]
-\node[block] (raw) at (0,0) {Raw prediction\\Physical units};
-\node[block] (positive) at (0,-1.65) {Positive target\\Relative weights};
-\node[block] (candidate) at (0,-3.3) {Candidate satisfying mass conservation\\Weighted solve};
-\node[test] (non-negative) at (0,-5.2) {Candidate\\non-negative?};
-\node[branch] (full) at (-3.0,-7.3) {Retain full change\\$\alpha=1$};
-\node[branch] (shorten) at (3.0,-7.3) {Shorten toward influent\\Boundary ratio};
+\node[block,draw=plantorange!85!black,fill=plantorange!10] (raw) at (0,0) {Raw prediction\\Physical units};
+\node[block,draw=plantblue!85!black,fill=plantblue!10] (positive) at (0,-1.65) {Positive target\\Relative weights};
+\node[block,draw=plantpurple!85!black,fill=plantpurple!10] (candidate) at (0,-3.3) {Candidate satisfying mass conservation\\Weighted solve};
+\node[test,draw=plantteal!85!black,fill=plantteal!10] (non-negative) at (0,-5.2) {Candidate\\non-negative?};
+\node[branch,draw=plantteal!85!black,fill=plantteal!10] (full) at (-3.0,-7.3) {Retain full change\\$\alpha=1$};
+\node[branch,draw=plantpurple!85!black,fill=plantpurple!10] (shorten) at (3.0,-7.3) {Shorten toward influent\\Boundary ratio};
 \coordinate (join) at (0,-8.4);
-\node[test] (audit) at (0,-9.9) {Final numerical\\checks passed?};
-\node[branch] (return) at (-3.0,-12.1) {Checked state\\Reported quantities};
-\node[branch] (failure) at (3.0,-12.1) {Projection failure\\No unchecked output};
+\node[test,draw=plantteal!85!black,fill=plantteal!10] (audit) at (0,-9.9) {Final numerical\\checks passed?};
+\node[branch,draw=plantteal!85!black,fill=plantteal!10] (return) at (-3.0,-12.1) {Checked state\\Reported quantities};
+\node[branch,draw=plantorange!85!black,fill=plantorange!10] (failure) at (3.0,-12.1) {Projection failure\\No unchecked output};
 \draw[flow] (raw)--(positive);
 \draw[flow] (positive)--(candidate);
 \draw[flow] (candidate)--(non-negative);
 \draw[flow] (non-negative.west)-|(full.north) node[pos=.25,tag] {Yes};
 \draw[flow] (non-negative.east)-|(shorten.north) node[pos=.25,tag] {No};
-\draw[draw=black!75,line width=.9pt] (full.south)|-(join);
-\draw[draw=black!75,line width=.9pt] (shorten.south)|-(join);
+\draw[draw=plantblue!85!black,line width=.9pt] (full.south)|-(join);
+\draw[draw=plantblue!85!black,line width=.9pt] (shorten.south)|-(join);
 \draw[flow] (join)--(audit.north);
 \draw[flow] (audit.west)-|(return.north) node[pos=.25,tag] {Yes};
 \draw[flow] (audit.east)-|(failure.north) node[pos=.25,tag] {No};

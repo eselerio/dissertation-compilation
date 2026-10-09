@@ -1,18 +1,18 @@
 \begin{tikzpicture}[>=Latex,node distance=7mm,
-block/.style={draw=black!75,rounded corners,fill=cyan!6,align=center,font=\footnotesize,inner sep=4pt},
+block/.style={draw=plantblue!85!black,rounded corners,fill=plantblue!8,align=center,font=\footnotesize,inner sep=4pt},
 evidence/.style={block,text width=4.1cm,minimum height=20mm,fill=white},
-flow/.style={->,thick,draw=black!75}]
-\node[block,text width=12.9cm,minimum height=12mm] (scope) at (0,0)
+flow/.style={->,thick,draw=plantblue!85!black}]
+\node[block,text width=12.9cm,minimum height=12mm,draw=plantblue!85!black,fill=plantblue!10] (scope) at (0,0)
 {Defined process response and decision-time information};
-\node[evidence] (stat) at (-4.55,-2.25)
+\node[evidence,draw=plantpurple!85!black,fill=plantpurple!10] (stat) at (-4.55,-2.25)
 {Component comparison\\Prediction accuracy\\Training size\\Extrapolation};
-\node[evidence] (phys) at (0,-2.25)
+\node[evidence,draw=plantteal!85!black,fill=plantteal!10] (phys) at (0,-2.25)
 {Physical assessment\\Mass conservation\\Non-negativity\\Accuracy and cost};
-\node[evidence] (interp) at (4.55,-2.25)
+\node[evidence,draw=plantorange!85!black,fill=plantorange!10] (interp) at (4.55,-2.25)
 {Final prediction analysis\\Coupling and projection\\Local sensitivity\\Coefficient stability};
-\node[block,text width=10.1cm,minimum height=18mm,below=8mm of phys] (decision)
+\node[block,text width=10.1cm,minimum height=18mm,below=8mm of phys,draw=plantblue!85!black,fill=plantblue!10] (decision)
 {Connected operating assessment\\Shared streams and stored solids\\Mechanistic evaluation at selected controls};
-\node[block,text width=12.9cm,minimum height=14mm,fill=black!5,below=7mm of decision] (gap)
+\node[block,text width=12.9cm,minimum height=14mm,fill=plantteal!9,below=7mm of decision,draw=plantteal!85!black,fill=plantteal!10] (gap)
 {Common research focus\\Assessment of the same learned and projected treatment responses};
 \draw[flow] (scope.south west)--(stat.north);
 \draw[flow] (scope.south)--(phys.north);

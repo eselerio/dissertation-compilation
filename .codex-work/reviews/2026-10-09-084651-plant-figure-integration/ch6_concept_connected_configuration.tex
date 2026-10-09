@@ -1,0 +1,48 @@
+\documentclass[12pt,border=3mm]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\definecolor{plantblue}{HTML}{247BA0}
+\definecolor{plantteal}{HTML}{16856B}
+\definecolor{plantorange}{HTML}{D97425}
+\definecolor{plantpurple}{HTML}{7954A1}
+\begin{document}
+\begin{tikzpicture}[>=Latex,
+unit/.style={draw=plantblue,fill=plantblue!9,rounded corners,minimum width=13mm,minimum height=12mm,align=center,font=\small,thick},
+flow/.style={->,thick,draw=plantblue},lab/.style={font=\scriptsize,fill=white,inner sep=2pt}]
+\node[draw=plantteal,fill=plantteal!12,circle,minimum size=13mm,thick,font=\small] (mix) at (0,0) {Mixer};
+\node[unit] (r1) at (2.1,0) {$1$\\$c_1$};
+\node[unit] (ri) at (4.0,0) {$i$\\$c_i$};
+\node[unit] (rn) at (5.9,0) {$n_r$\\$c_{n_r}$};
+\node[font=\large,text=plantblue] at (3.05,0) {$\cdots$};
+\node[font=\large,text=plantblue] at (4.95,0) {$\cdots$};
+\coordinate (split) at (7.0,0);
+\draw[draw=plantteal,fill=plantteal!8,rounded corners,thick] (8.5,-1.0) rectangle (10.8,1.0);
+\node[font=\small,text=plantteal!70!black] at (9.65,1.28) {$L$-layer clarifier};
+\draw[draw=plantteal!55] (8.5,.45)--(10.8,.45);
+\draw[draw=plantteal!55] (8.5,-.4)--(10.8,-.4);
+\node[font=\scriptsize] at (9.65,.72) {Layer $1$: $s_1=X_E$};
+\node[font=\small,text=plantteal] at (9.65,.05) {$\vdots\quad s_\ell\quad\vdots$};
+\node[font=\scriptsize] at (9.65,-.70) {Layer $L$: $s_L=X_U$};
+\draw[flow] (-1.65,0)--(mix.west) node[midway,above,lab] {$Q_0,c_{\rm in}$};
+\draw[flow] (mix.east)--(r1.west) node[midway,above,lab] {$q_PQ_0,m$};
+\draw[flow] (r1.east)--(2.80,0);
+\draw[flow] (3.30,0)--(ri.west);
+\draw[flow] (ri.east)--(4.70,0);
+\draw[flow] (5.20,0)--(rn.west);
+\draw[thick,draw=plantblue] (rn.east)--(split);
+\draw[flow] (split)--(8.5,0) node[midway,above,lab] {$q_CQ_0,c_{n_r}$};
+\fill[plantpurple] (split) circle (1.5pt);
+\draw[->,thick,draw=plantpurple] (split)--(7.0,2.1)--(0,2.1)--(mix.north)
+node[pos=.58,above,lab,text=plantpurple] {Mixed-liquor recycle: $r_IQ_0,c_{n_r}$};
+\draw[flow] (10.8,.72)--(12.75,.72) node[midway,above,lab] {$q_EQ_0,c_E$};
+\node[font=\scriptsize,text=plantblue] at (11.60,.32) {Treated-water outlet};
+\coordinate (underflow) at (9.65,-1.62);
+\draw[thick,draw=plantorange] (9.65,-1.0)--(underflow) node[midway,right,lab] {$q_UQ_0,c_U$};
+\fill[plantorange] (underflow) circle (1.5pt);
+\draw[->,thick,draw=plantorange] (underflow)--(9.65,-2.7)
+node[below,lab,text=plantorange] {Waste sludge: $wQ_0,c_U$};
+\draw[->,thick,draw=plantorange] (underflow)--(0,-1.62)--(mix.south)
+node[pos=.48,below,lab,text=plantorange] {Return sludge: $r_RQ_0,c_U$};
+\end{tikzpicture}
+\end{document}

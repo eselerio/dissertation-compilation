@@ -1,36 +1,36 @@
 \begingroup\linespread{1}\selectfont
 \begin{tikzpicture}[
   >=Latex,
-  knowledge/.style={draw=black!65,rounded corners=2pt,fill=gray!7,
+  knowledge/.style={draw=plantblue!85!black,rounded corners=2pt,fill=plantblue!8,
     text width=3.8cm,minimum height=1.25cm,align=center,font=\small},
-  stage/.style={draw=black!75,rounded corners=2pt,fill=white,
+  stage/.style={draw=plantblue!85!black,rounded corners=2pt,fill=white,
     text width=3.8cm,minimum height=1.25cm,align=center,font=\small},
-  evidence/.style={draw=black!50,rounded corners=2pt,fill=gray!12,
+  evidence/.style={draw=plantblue!70!black,rounded corners=2pt,fill=plantteal!9,
     text width=3.8cm,minimum height=1.25cm,align=center,font=\small},
   construction/.style={->,thick},
   assessment/.style={->,dashed,thick}
 ]
-\node[knowledge] (mechanism) at (0,0)
+\node[knowledge,draw=plantblue!85!black,fill=plantblue!10] (mechanism) at (0,0)
   {Process model\\Reactions and boundaries};
-\node[knowledge] (data) at (5.0,0)
+\node[knowledge,draw=plantblue!85!black,fill=plantblue!10] (data) at (5.0,0)
   {Training cases\\Inputs and responses};
-\node[knowledge] (physics) at (10.0,0)
+\node[knowledge,draw=plantteal!85!black,fill=plantteal!10] (physics) at (10.0,0)
   {Physical knowledge\\Balances and bounds};
-\node[stage] (prediction) at (5.0,-2.2)
+\node[stage,draw=plantpurple!85!black,fill=plantpurple!10] (prediction) at (5.0,-2.2)
   {Component prediction\\Statistical surrogate};
-\node[evidence] (accuracy) at (0,-2.2)
+\node[evidence,draw=plantorange!85!black,fill=plantorange!10] (accuracy) at (0,-2.2)
   {Prediction error\\Domain assessment};
-\node[evidence] (inspection) at (10.0,-2.2)
+\node[evidence,draw=plantpurple!85!black,fill=plantpurple!10] (inspection) at (10.0,-2.2)
   {Interpretation\\Terms and sensitivities};
-\node[stage] (enforced) at (5.0,-4.4)
+\node[stage,draw=plantteal!85!black,fill=plantteal!10] (enforced) at (5.0,-4.4)
   {Enforced response\\Reactor or plant state};
-\node[evidence] (audit) at (0,-4.4)
+\node[evidence,draw=plantteal!85!black,fill=plantteal!10] (audit) at (0,-4.4)
   {Physical audit\\Residuals and bounds};
-\node[stage] (choice) at (5.0,-6.6)
+\node[stage,draw=plantorange!85!black,fill=plantorange!10] (choice) at (5.0,-6.6)
   {Operating choices\\Engineering priorities};
-\node[stage] (reference) at (5.0,-8.8)
+\node[stage,draw=plantblue!85!black,fill=plantblue!10] (reference) at (5.0,-8.8)
   {Reference evaluation\\Controls held fixed};
-\node[evidence] (decision) at (10.0,-8.8)
+\node[evidence,draw=plantteal!85!black,fill=plantteal!10] (decision) at (10.0,-8.8)
   {Decision assessment\\Objective and limits};
 \draw[construction] (mechanism)--(data);
 \draw[construction] (mechanism.north)--++(0,0.55)-|(physics.north);

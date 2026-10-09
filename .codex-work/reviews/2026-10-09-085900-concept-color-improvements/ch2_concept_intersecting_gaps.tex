@@ -1,0 +1,39 @@
+\documentclass[12pt,border=5pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,fit,matrix}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\diag}{diag}
+\definecolor{plantblue}{HTML}{247BA0}
+\definecolor{plantteal}{HTML}{16856B}
+\definecolor{plantorange}{HTML}{D97425}
+\definecolor{plantpurple}{HTML}{7954A1}
+\begin{document}
+\begin{tikzpicture}[>=Latex,node distance=7mm,
+block/.style={draw=plantblue!85!black,rounded corners,fill=plantblue!8,align=center,font=\footnotesize,inner sep=4pt},
+evidence/.style={block,text width=4.1cm,minimum height=20mm,fill=white},
+flow/.style={->,thick,draw=plantblue!85!black}]
+\node[block,text width=12.9cm,minimum height=12mm,draw=plantblue!85!black,fill=plantblue!10] (scope) at (0,0)
+{Defined process response and decision-time information};
+\node[evidence,draw=plantpurple!85!black,fill=plantpurple!10] (stat) at (-4.55,-2.25)
+{Component comparison\\Prediction accuracy\\Training size\\Extrapolation};
+\node[evidence,draw=plantteal!85!black,fill=plantteal!10] (phys) at (0,-2.25)
+{Physical assessment\\Mass conservation\\Non-negativity\\Accuracy and cost};
+\node[evidence,draw=plantorange!85!black,fill=plantorange!10] (interp) at (4.55,-2.25)
+{Final prediction analysis\\Coupling and projection\\Local sensitivity\\Coefficient stability};
+\node[block,text width=10.1cm,minimum height=18mm,below=8mm of phys,draw=plantblue!85!black,fill=plantblue!10] (decision)
+{Connected operating assessment\\Shared streams and stored solids\\Mechanistic evaluation at selected controls};
+\node[block,text width=12.9cm,minimum height=14mm,fill=plantteal!9,below=7mm of decision,draw=plantteal!85!black,fill=plantteal!10] (gap)
+{Common research focus\\Assessment of the same learned and projected treatment responses};
+\draw[flow] (scope.south west)--(stat.north);
+\draw[flow] (scope.south)--(phys.north);
+\draw[flow] (scope.south east)--(interp.north);
+\draw[flow] (stat.south)--(decision.north west);
+\draw[flow] (phys.south)--(decision.north);
+\draw[flow] (interp.south)--(decision.north east);
+\draw[flow] (decision)--(gap);
+\end{tikzpicture}
+
+\end{document}

@@ -179,13 +179,13 @@ Figure~\ref{fig:assessment_feasible_segment} places these states on the mass-con
 \begin{tikzpicture}[x=0.42cm,y=0.42cm,>=Latex]
 \draw[->] (-0.6,0)--(13,0) node[right] {$c_1$};
 \draw[->] (0,-2)--(0,11.6) node[above] {$c_2$};
-\draw[dashed] (-0.4,10.4)--(11.4,-1.4);
-\draw[very thick] (0,10)--(10,0);
+\draw[dashed,draw=plantblue] (-0.4,10.4)--(11.4,-1.4);
+\draw[very thick,draw=plantteal] (0,10)--(10,0);
 \foreach \x in {5,10} {\draw (\x,0.15)--(\x,-0.15) node[below=2pt] {\small\x};}
 \draw (0.15,10)--(-0.15,10) node[left=2pt] {\small 10};
-\fill (11,-1) circle (2pt) node[right=4pt] {\small Raw $(11,-1)$};
-\draw (11,0) circle (2pt) node[above right=3pt] {\small Clipped $(11,0)$};
-\fill (10,0) circle (2.5pt);
+\fill[plantorange] (11,-1) circle (2pt) node[right=4pt] {\small Raw $(11,-1)$};
+\draw[plantpurple] (11,0) circle (2pt) node[above right=3pt] {\small Clipped $(11,0)$};
+\fill[plantteal] (10,0) circle (2.5pt);
 \node[below left=14pt] at (10,0) {\small Feasible $(10,0)$};
 \node[fill=white,inner sep=2pt] at (4.5,6.2) {\small $c_1+c_2=10$};
 \node[align=center,text width=4cm] at (7,10) {\small Thick segment contains the states satisfying mass conservation and non-negativity};

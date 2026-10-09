@@ -1,0 +1,630 @@
+\chapter{Mechanistic Foundations of Physically Admissible Prediction}
+\label{ch:foundations}
+
+\section{The component state as the object of prediction}
+
+An activated sludge reactor does not simply remove material; it changes its form and distribution. Organic substrate can become biomass, ammonium can become nitrite and nitrate, and soluble phosphate can enter biological storage or a precipitate. Describing these transformations therefore requires more than a small set of aggregate effluent concentrations. The ASM framework addresses this need by separating wastewater material into components and linking their changes through biological and chemical processes \citep{Henze2006}. In this dissertation, that component representation also defines the physical meaning of a surrogate prediction: the surrogate estimates a complete component state from the influent state and operating conditions.
+
+The mechanistic reference is Activated Sludge Model No.\ 2d with two-step nitrification (ASM2d-TSN). It combines the phosphorus-removal framework of \citet{Henze2006} with the nitrogen-transformation formulation used by \citet{Guerrero2011}. The model contains 20 components and 28 processes, with ten dissolved and ten particulate components. Stoichiometry specifies the relative amounts of material consumed and produced by each process, while kinetics specifies how rapidly those processes proceed as functions of the reactor state and fixed parameters. The surrogate approximates the resulting steady-state concentrations. Projection then imposes selected physical accounting constraints on those predictions.
+
+This chapter develops the mechanistic basis for that procedure. It first defines how the component state is represented and manipulated mathematically, then connects the components to the biological transformations of the activated sludge model. It subsequently derives the reactor balances, the mass conservation invariants used for physical enforcement, the geometry of physically admissible states, and the reporting map from component concentrations to familiar water quality quantities. These ideas provide the common foundation for the surrogate models and optimization studies developed in Chapters~\ref{ch:projection}--\ref{ch:plant}.
+
+\subsection{Reading component vectors and matrix operations}
+
+The component formulation uses vectors and matrices to record many concentration and balance equations at once. Their meaning remains scalar, however: each coordinate still represents one physical quantity with a specified unit. For example, a concentration of 5 g N m$^{-3}$ is numerically equal to 5 mg N L$^{-1}$ because both the mass and volume units change by a factor of one thousand. Oxygen, COD, nitrogen, phosphorus, solids, and alkalinity nevertheless use different reporting bases. A quantity expressed as g COD m$^{-3}$, for instance, represents oxygen-demand equivalents rather than grams of one named organic molecule. These distinctions determine which coefficients are needed before quantities can be combined.
+
+A vector collects related scalar values in a fixed order. A three-component column vector and its transpose can be written as
+\[
+c=\begin{bmatrix}c_1\\c_2\\c_3\end{bmatrix},\qquad
+c^\top=\begin{bmatrix}c_1&c_2&c_3\end{bmatrix}.
+\]
+The superscript $\top$ denotes transpose. It changes a column into a row, or interchanges the rows and columns of a matrix, without changing the underlying component values. The notation $c\in\mathbb{R}^3$ states that the vector contains three real-valued coordinates. The notation $c\geq0$ states that every coordinate is non-negative: $c_1\geq0$, $c_2\geq0$, and $c_3\geq0$. It does not merely require their sum to be non-negative.
+
+A strictly positive coordinate satisfies $c_j>0$, whereas non-negativity permits $c_j=0$. This distinction becomes important when a logarithm, reciprocal, or other operation requires a strictly positive argument even though a physical concentration may legitimately be zero.
+
+Subscripts identify particular coordinates or observations. The symbol $c_j$ denotes component $j$. When several observations are involved, $c_{ij}$ denotes component $j$ in observation $i$. The labels $in$ and $out$ identify the two sides of the reactor boundary. Thus $c_{out,ij}$ is the effluent concentration of component $j$ in observation $i$. Parenthetical superscripts used to identify a surrogate or prediction type are labels rather than powers.
+
+Matrices collect coefficients in rows and columns. A matrix with two rows and three columns has dimension $2\times3$. Matrix multiplication is defined when the number of columns of the first factor equals the number of rows of the second. Each output coordinate is obtained by multiplying corresponding entries from a matrix row and a vector column and then summing those products. For hypothetical numerical values,
+\[
+\begin{bmatrix}1&2&0\\0&1&1\end{bmatrix}
+\begin{bmatrix}3\\4\\5\end{bmatrix}
+=\begin{bmatrix}1(3)+2(4)+0(5)\\0(3)+1(4)+1(5)\end{bmatrix}
+=\begin{bmatrix}11\\9\end{bmatrix}.
+\]
+The result has two coordinates because the matrix has two rows. In a physical calculation, the coefficients also carry the conversions needed to express the result on the intended output basis. The numerical example illustrates the operation itself without assigning the coefficients to an activated sludge process.
+
+A row-column product is therefore a weighted sum. For a coefficient column $a$, the scalar product $a^\top c$ means
+$a_1c_1+a_2c_2+a_3c_3$. The summation
+$\sum_{j=1}^3a_jc_j$ expresses the same operation by explicitly identifying the indexed terms. An identity matrix, denoted $I$, leaves a vector unchanged, while a zero matrix contains only zero entries. These simple operations allow many component equations to be written compactly without losing the scalar accounting that gives them physical meaning.
+
+Vector magnitude is described by a norm. The Euclidean norm is the square root of the sum of squared coordinates. A hypothetical vector $(3,-4)^\top$ therefore has Euclidean norm $\sqrt{3^2+(-4)^2}=5$. The sum of absolute coordinates gives its absolute-sum norm, $|3|+|-4|=7$. Squaring a norm and squaring individual coordinates are consequently different operations and must be applied in the stated order. When vector coordinates use different physical bases, the numerical value of a norm is meaningful only under the adopted unit convention or after an explicit standardization.
+
+The same column-vector convention is used for the 20-component activated sludge state. Its fixed ordering is
+\begin{equation}
+\equationname{Fixed ordering of the twenty component concentrations}
+\begin{split}
+c=(&S_O,S_F,S_A,S_{NH4},S_{NO2},S_{NO3},S_{N2},S_{PO4},S_I,S_{ALK},\\
+&X_I,X_S,X_H,X_{PAO},X_{PP},X_{PHA},X_{AOB},X_{NOB},X_{MeP},X_{MeOH})^\top.
+\end{split}
+\label{eq:component_order}
+\end{equation}
+Each coordinate is represented numerically in its native component unit. The vector therefore combines several constituent bases. An organic component expressed as g COD m$^{-3}$ is not on the same material basis as ammonium expressed as g N m$^{-3}$. Any physical operator applied to the state must account for these differences through its coefficients.
+
+\begin{table}[htbp]
+\centering
+\caption{Component meanings, native units, and fixed coefficients for the four reported water quality quantities. Each coefficient converts the native component basis to the corresponding reported basis.}
+\label{tab:component_basis_composites}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lp{4.15cm}lrrrr}
+\toprule
+Component & Meaning & Native unit & COD & TN & TP & TSS\\
+\midrule
+$S_O$ & Dissolved oxygen & g O$_2$ m$^{-3}$ & 0 & 0 & 0 & 0\\
+$S_F$ & Fermentable substrate & g COD m$^{-3}$ & 1 & 0 & 0 & 0\\
+$S_A$ & Acetate and fermentation products & g COD m$^{-3}$ & 1 & 0 & 0 & 0\\
+$S_{NH4}$ & Ammonium nitrogen & g N m$^{-3}$ & 0 & 1 & 0 & 0\\
+$S_{NO2}$ & Nitrite nitrogen & g N m$^{-3}$ & 0 & 1 & 0 & 0\\
+$S_{NO3}$ & Nitrate nitrogen & g N m$^{-3}$ & 0 & 1 & 0 & 0\\
+$S_{N2}$ & Dissolved dinitrogen & g N m$^{-3}$ & 0 & 0 & 0 & 0\\
+$S_{PO4}$ & Soluble phosphate & g P m$^{-3}$ & 0 & 0 & 1 & 0\\
+$S_I$ & Soluble inert organic matter & g COD m$^{-3}$ & 1 & 0.01 & 0 & 0\\
+$S_{ALK}$ & Alkalinity & mol m$^{-3}$ & 0 & 0 & 0 & 0\\
+$X_I$ & Particulate inert organic matter & g COD m$^{-3}$ & 1 & 0.02 & 0.01 & 0.75\\
+$X_S$ & Slowly biodegradable substrate & g COD m$^{-3}$ & 1 & 0 & 0 & 0.75\\
+$X_H$ & Heterotrophic biomass & g COD m$^{-3}$ & 1 & 0.07 & 0.02 & 0.90\\
+$X_{PAO}$ & Phosphate-accumulating biomass & g COD m$^{-3}$ & 1 & 0.07 & 0.02 & 0.90\\
+$X_{PP}$ & Stored polyphosphate & g P m$^{-3}$ & 0 & 0 & 1 & 3.23\\
+$X_{PHA}$ & Stored polyhydroxyalkanoates & g COD m$^{-3}$ & 1 & 0 & 0 & 0.60\\
+$X_{AOB}$ & Ammonia-oxidizing biomass & g COD m$^{-3}$ & 1 & 0.07 & 0.02 & 0.90\\
+$X_{NOB}$ & Nitrite-oxidizing biomass & g COD m$^{-3}$ & 1 & 0.07 & 0.02 & 0.90\\
+$X_{MeP}$ & Precipitated metal phosphate & g TSS m$^{-3}$ & 0 & 0 & $1/4.87$ & 1\\
+$X_{MeOH}$ & Metal hydroxide & g TSS m$^{-3}$ & 0 & 0 & 0 & 1\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The symbols in Table~\ref{tab:component_basis_composites} are state variables rather than additional process abbreviations. For example, $X_{AOB}$ is the concentration coordinate assigned to ammonia-oxidizing biomass. The numerical constituent contents and solids conversion factors belong to the fixed reporting map. They are not learned from the surrogate data, and their interpretation follows the component accounting of activated sludge modeling \citep{Henze2006}.
+
+Retaining the complete state preserves distinctions that aggregate water quality quantities cannot recover. Ammonium, nitrite, and nitrate all contribute to reported nitrogen, yet their transformations involve different microbial populations and oxygen requirements. Dissolved dinitrogen remains part of the modeled nitrogen inventory even though it has zero weight in reported TN. Likewise, soluble phosphate, stored polyphosphate, and metal phosphate play different process roles even when they all contribute to TP. These distinctions become important when a predicted state is used not only to report treatment performance, but also to interpret why an operating condition produces that performance.
+
+
+\section{Biological meaning of the component transformations}
+
+The component vector becomes useful only when its coordinates are connected to the transformations they represent. Activated sludge treatment redistributes carbon, nitrogen, phosphorus, oxygen demand, biomass, and solids through coupled biological and chemical pathways. The following discussion does not replace the full ASM2d-TSN stoichiometric formulation. Instead, it uses simplified reactions to show the material accounting that underlies the component model and the physical constraints later imposed on surrogate predictions.
+
+\subsection{Electron donors, electron acceptors, and biomass}
+
+Microorganisms use part of a substrate to obtain energy and another part to form cellular material. In an oxidation-reduction reaction, an electron donor supplies electrons and an electron acceptor receives them. Under aerobic conditions, organic material can serve as the donor and oxygen as the acceptor. Under anoxic conditions, some organisms can instead use nitrate or nitrite. Identifying the donor and acceptor therefore helps explain why the same organic substrate can support different treatment pathways \citep{Narayanan2019,Preena2021}.
+
+The carbon source and the energy source describe different properties of microbial growth. Heterotrophic biomass uses organic carbon to form cells. Chemolithoautotrophic nitrifying biomass obtains energy from inorganic nitrogen oxidation while using inorganic carbon for cell synthesis. Nitrification is therefore not simply another form of organic-substrate removal. The separate biomass coordinates in the adopted model preserve this distinction \citep{Henze2006,Guerrero2011}. Complete ammonia oxidation can also occur within a single microbial organism \citep{VanKessel2015}, but that biological observation does not replace the separate ammonium- and nitrite-oxidation processes used in the present model.
+
+A simple organic unit, $\mathrm{CH_2O}$, can illustrate oxidation without assigning one chemical formula to all wastewater organic matter. Its complete aerobic oxidation is
+\begin{equation}
+\equationname{Idealized aerobic oxidation of an organic unit}
+\mathrm{CH_2O}+\mathrm{O_2}\longrightarrow\mathrm{CO_2}+\mathrm{H_2O}.
+\label{eq:teaching_carbon_oxidation}
+\end{equation}
+Both sides contain one carbon atom, two hydrogen atoms, and three oxygen atoms. Using approximate molar masses of 30 g mol$^{-1}$ for the organic unit and 32 g mol$^{-1}$ for oxygen gives an oxygen requirement of $32/30=1.067$ g oxygen per g of this idealized material. Thus, a hypothetical 30 g quantity would require 32 g oxygen for complete oxidation. The purpose of the calculation is to explain the oxygen-demand basis of organic components, not to prescribe the oxygen demand of an arbitrary wastewater mixture.
+
+Cell synthesis changes this accounting because part of the available carbon and nitrogen becomes biomass rather than being completely oxidized. The empirical formula $\mathrm{C_5H_7O_2N}$ provides a simplified representation of biomass composition, as discussed in the assimilation study of \citet{Hoover1952}. It represents an average composition rather than one molecular species. An idealized complete oxidation of this biomass with nitrogen released as ammonium can be written as
+\begin{equation}
+\equationname{Idealized oxidation of biomass with ammonium release}
+\mathrm{C_5H_7O_2N}+5\mathrm{O_2}+\mathrm{H^+}
+\longrightarrow5\mathrm{CO_2}+\mathrm{NH_4^+}+2\mathrm{H_2O}.
+\label{eq:teaching_biomass_oxidation}
+\end{equation}
+The carbon, hydrogen, oxygen, and nitrogen counts are 5, 8, 12, and 1 on both sides, and the net charge is $+1$ on both sides. Five moles of oxygen correspond to 160 g, while the empirical biomass unit has an approximate mass of 113 g. The resulting ratio is about 1.416 g oxygen per g of this idealized biomass. This distinction is useful because dry biomass mass and biomass COD are not interchangeable quantities. The adopted model nevertheless uses its specified yields, constituent contents, and lysis processes rather than replacing its stoichiometric entries with these teaching reactions.
+
+\subsection{Nitrogen transformations and their oxygen requirements}
+
+Nitrogen transformations provide a particularly clear example of why a component-resolved state is useful. Separating nitrification into two steps makes both the oxygen requirement and the nitrite intermediate explicit. Ignoring cell synthesis for this teaching calculation, ammonium oxidation and nitrite oxidation can be written as
+\begin{align}
+\equationname{Idealized ammonium oxidation to nitrite}
+\mathrm{NH_4^+}+\tfrac32\mathrm{O_2}
+&\longrightarrow\mathrm{NO_2^-}+2\mathrm{H^+}+\mathrm{H_2O},
+\label{eq:teaching_ammonium_oxidation}\\
+\equationname{Idealized nitrite oxidation to nitrate}
+\mathrm{NO_2^-}+\tfrac12\mathrm{O_2}
+&\longrightarrow\mathrm{NO_3^-}.
+\label{eq:teaching_nitrite_oxidation}
+\end{align}
+The first reaction preserves one nitrogen atom, four hydrogen atoms, and three oxygen atoms. Its right-hand charge is $-1+2=+1$, equal to the left-hand charge. The second reaction preserves one nitrogen atom, three oxygen atoms, and a net charge of $-1$. Adding the two reactions and cancelling the nitrite intermediate gives the overall reaction
+\begin{equation}
+\equationname{Idealized overall nitrification reaction}
+\mathrm{NH_4^+}+2\mathrm{O_2}
+\longrightarrow\mathrm{NO_3^-}+2\mathrm{H^+}+\mathrm{H_2O}.
+\label{eq:teaching_overall_nitrification}
+\end{equation}
+
+One mole of nitrogen has an approximate mass of 14 g. The first step therefore requires $1.5(32)/14=3.43$ g oxygen per g nitrogen, while the second requires $0.5(32)/14=1.14$ g oxygen per g nitrogen. Together, the idealized overall requirement is 4.57 g oxygen per g nitrogen. A hypothetical conversion of 10 g ammonium nitrogen to nitrate would therefore require about 45.7 g oxygen under these assumptions. Actual process demand also depends on biomass synthesis and the adopted yields. The hydrogen ions produced in the first step further show why nitrification draws on the buffering capacity represented by alkalinity \citep{Guerrero2011,Henze2006}.
+
+Denitrification follows a different pathway. Instead of oxygen, heterotrophic organisms can use oxidized nitrogen as an electron acceptor and convert it to dinitrogen. Using $\mathrm{CH_2O}$ as an illustrative electron donor and omitting cell synthesis, two balanced net reactions are
+\begin{align}
+\equationname{Idealized nitrate denitrification with an organic donor}
+4\mathrm{NO_3^-}+5\mathrm{CH_2O}+4\mathrm{H^+}
+&\longrightarrow2\mathrm{N_2}+5\mathrm{CO_2}+7\mathrm{H_2O},
+\label{eq:teaching_nitrate_denitrification}\\
+\equationname{Idealized nitrite denitrification with an organic donor}
+4\mathrm{NO_2^-}+3\mathrm{CH_2O}+4\mathrm{H^+}
+&\longrightarrow2\mathrm{N_2}+3\mathrm{CO_2}+5\mathrm{H_2O}.
+\label{eq:teaching_nitrite_denitrification}
+\end{align}
+For the nitrate reaction, both sides contain four nitrogen atoms, five carbon atoms, fourteen hydrogen atoms, and seventeen oxygen atoms. The left-hand charge is $-4+4=0$, matching the uncharged products. The nitrite reaction can be checked in the same manner. Their illustrative donor requirements are $5/4$ and $3/4$ moles of organic unit per mole of nitrogen, respectively. The comparison shows why a pathway through nitrite can require less organic donor than a pathway through nitrate under the same simplified assumptions. It does not determine the reaction rate, which also depends on carbon supply, donor identity, biomass, and process conditions \citep{Lu2014}.
+
+Anaerobic ammonium oxidation provides another nitrogen pathway. An idealized net reaction that omits biomass synthesis and minor products is
+\begin{equation}
+\equationname{Idealized anaerobic ammonium oxidation reaction}
+\mathrm{NH_4^+}+\mathrm{NO_2^-}
+\longrightarrow\mathrm{N_2}+2\mathrm{H_2O}.
+\label{eq:teaching_anammox}
+\end{equation}
+The equation preserves two nitrogen atoms, four hydrogen atoms, two oxygen atoms, and zero net charge. In this simplified balance, ammonium and nitrite are coupled without an organic electron donor. The cultivation work of \citet{Strous1998} and the pathway studies of \citet{Dietl2015} and \citet{Maalcke2016} explain why this process differs biologically from ordinary heterotrophic denitrification. Its application also requires its own organisms and operating conditions \citep{Vandekerckhove2018,Xie2021,WinklerStraka2019}. It is included here only to clarify the boundary of the nitrogen discussion; it is not an additional process in the adopted 20-component, 28-process reactor model.
+
+\subsection{From elemental accounting to the adopted state basis}
+
+The preceding teaching reactions can be checked directly by counting atoms and charge because each displayed species has a chemical formula. The activated sludge state is different. Its coordinates combine oxygen-demand equivalents, nitrogen mass, phosphorus mass, solids mass, and alkalinity. A biomass coordinate expressed in g COD m$^{-3}$ therefore cannot simply be added to an ammonium coordinate expressed in g N m$^{-3}$ to obtain a meaningful material total. The biomass contribution must first be converted to the nitrogen basis through its nitrogen-content coefficient.
+
+This distinction determines what ``mass conservation'' means in the present work. \citet{TakacsVanrolleghem2006} distinguish balances on lumped wastewater components from complete elemental accounting. A full elemental balance may require water, carbon dioxide, gas exchange, and other species that lie outside a particular activated sludge state. The conservation conditions used in this dissertation are therefore derived from the adopted stoichiometric matrix and the declared flow and transfer boundary. They certify the quantities represented by that model. They do not imply that every unrepresented chemical species or external flux has been measured or balanced. The following sections derive exactly which combinations of the component state can be imposed without introducing a physical requirement unsupported by the model.
+
+\section{Process transformations and their rates}
+
+The mechanistic model combines many transformations of the component state. Hydrolysis moves slowly biodegradable material toward forms that microorganisms can use more readily. Heterotrophic metabolism links substrate consumption with biomass growth and electron-acceptor use. Oxygen serves as the electron acceptor under aerobic conditions, whereas nitrate or nitrite can support the corresponding modeled transformations under anoxic conditions. Fermentation produces acetate from suitable organic material. Biomass lysis redistributes material from active populations to substrate and inert pools. Biological phosphorus removal introduces storage, growth, phosphate uptake, and release, while chemical precipitation and redissolution redistribute phosphorus between soluble and particulate forms \citep{Henze2006,Guerrero2011}.
+
+Two-step nitrification represents ammonium oxidation to nitrite separately from nitrite oxidation to nitrate, and therefore retains separate ammonia-oxidizing and nitrite-oxidizing biomass. A one-step description may reproduce the overall conversion from ammonium to nitrate while hiding the nitrite intermediate. By retaining that intermediate, the state can distinguish a low-ammonium effluent that still contains nitrite from one in which nitrite has been oxidized further. This distinction belongs to the adopted reaction model; it does not imply that every nitrogen pathway occurring in a real treatment plant is represented. The broader diversity of microbial nitrogen-removal pathways reviewed by \citet{Duan2022} provides that context.
+
+The stoichiometric matrix, also called the Petersen matrix, records how each modeled process consumes and produces the state components. A small hypothetical network illustrates the logic before the full matrix is introduced. Let three material pools be denoted by $A$, $B$, and $C$, and suppose that one unit of $B$ contains twice the tracked inventory of one unit of $A$ or $C$. Consider
+\[
+2A\longrightarrow B,\qquad B\longrightarrow2C.
+\]
+Figure~\ref{fig:reactor_reaction_accounting} connects these transformations to their component changes. The coefficients below each arrow describe how the three pools change, while the inventory weights show why both processes preserve the same underlying material quantity.
+
+\begin{figure}[htbp]
+\centering
+\input{figures/ch3_concept_reaction_accounting.tex}
+\caption{Hypothetical reaction accounting for three pools with inventory weights 1, 2, and 1. Each process redistributes the tracked inventory without creating or removing it.}
+\label{fig:reactor_reaction_accounting}
+\end{figure}
+
+Two units of $A$ contain the same tracked inventory as one unit of $B$, and one unit of $B$ contains the same inventory as two units of $C$. Pool $B$ therefore acts as an intermediate: the first process produces it and the second consumes it. Its net concentration change depends on the difference between the two process rates even though each process individually preserves the weighted inventory.
+
+If the process rates are $\rho_1$ and $\rho_2$, the scalar reaction contributions are
+\[
+\begin{aligned}
+\dot c_A\big|_{\rm reaction}&=-2\rho_1,\\
+\dot c_B\big|_{\rm reaction}&=\rho_1-\rho_2,\\
+\dot c_C\big|_{\rm reaction}&=2\rho_2.
+\end{aligned}
+\]
+The dot denotes a time derivative. These expressions describe reaction contributions only; hydraulic transport is not yet included. The same equations can be collected into a process-by-component matrix and a rate column,
+\[
+\nu_{\rm toy}=\begin{bmatrix}-2&1&0\\0&-1&2\end{bmatrix},\qquad
+\rho_{\rm toy}=\begin{bmatrix}\rho_1\\\rho_2\end{bmatrix}.
+\]
+Transposing the stoichiometric matrix places the coefficients for each component in one row. Multiplication then reconstructs all three scalar rates at once:
+\[
+\nu_{\rm toy}^\top\rho_{\rm toy}
+=\begin{bmatrix}-2&0\\1&-1\\0&2\end{bmatrix}
+\begin{bmatrix}\rho_1\\\rho_2\end{bmatrix}
+=\begin{bmatrix}-2\rho_1\\\rho_1-\rho_2\\2\rho_2\end{bmatrix}.
+\]
+For hypothetical rates of 3 and 1 in compatible amount-per-time units, the resulting contributions are $-6$, 2, and 2. Pool $B$ increases because its production exceeds its consumption. The positive changes in $B$ and $C$ do not mean that material has been created; they are accompanied by a corresponding loss from $A$.
+
+The full activated sludge model uses the same convention. Its matrix orientation is fixed as
+\begin{equation}
+\equationname{Dimensions and orientation of the stoichiometric matrix}
+\nu\in\mathbb{R}^{P\times F},\qquad P=28,\qquad F=20.
+\label{eq:petersen_orientation}
+\end{equation}
+Row $p$ represents process $p$, and column $j$ represents component $j$. A negative entry $\nu_{pj}$ denotes consumption, a positive entry denotes production, and a zero entry means that the process has no direct stoichiometric contribution to that component. The coefficients also include the yields and constituent conversions required by the native component units.
+
+For component $j$, the individual process contributions are $\nu_{1j}\rho_1$, $\nu_{2j}\rho_2$, and so on through $\nu_{28j}\rho_{28}$. Their sum gives the net reaction rate of that component. Writing the rate vector as $\rho(c,u)$ emphasizes that these rates depend on the current component state and operating inputs. For $\rho(c,u)\in\mathbb{R}^{28}$,
+\begin{equation}
+\equationname{Vector and scalar reaction contributions to component rates}
+r_{\mathrm{reaction}}(c,u)=\nu^\top\rho(c,u),\qquad
+r_{\mathrm{reaction},j}(c,u)=\sum_{p=1}^{28}\nu_{pj}\rho_p(c,u).
+\label{eq:reaction_contribution}
+\end{equation}
+
+This formulation separates two different roles. Stoichiometry specifies the proportions in which components are consumed and produced; kinetics specifies how quickly those transformations proceed at a particular state. Increasing a biomass concentration can therefore change a process rate without changing the corresponding stoichiometric row. Likewise, changing aeration can alter oxygen limitation and thus process kinetics without changing the material accounting of the reaction itself.
+
+A simple saturation factor makes this distinction concrete. If a limiting dissolved substrate has concentration $S$ and saturation constant $K_S>0$, then
+\begin{equation}
+\equationname{Monod substrate saturation factor}
+\frac{S}{K_S+S}
+\label{eq:saturation_example}
+\end{equation}
+equals one half when $S=K_S$, approaches zero as $S$ approaches zero, and approaches one as $S$ becomes large. For illustration, if both $S$ and $K_S$ equal 4 g COD m$^{-3}$, the factor is $4/(4+4)=0.5$. The concentration unit cancels because the numerator and denominator use the same constituent basis.
+
+A representative growth expression combines a maximum specific growth rate, biomass abundance, and multiple limitation factors:
+\begin{equation}
+\equationname{Representative growth rate with substrate and oxygen limitation}
+\rho_{\mathrm{growth}}=
+\mu X\frac{S}{K_S+S}\frac{S_O}{K_O+S_O}.
+\label{eq:representative_growth}
+\end{equation}
+Here $\mu$ is a maximum specific growth rate, $X$ is the associated biomass coordinate, and $K_O$ is an oxygen saturation constant. With hypothetical values $\mu=2$ d$^{-1}$, $X=10$ g biomass COD m$^{-3}$, a substrate factor of 0.5, and an oxygen factor of 0.25, the growth contribution is $2(10)(0.5)(0.25)=2.5$ g biomass COD m$^{-3}$ d$^{-1}$. The dimensionless limitation factors reduce the unrestricted contribution $\mu X=20$ to 2.5.
+
+Equation~\eqref{eq:representative_growth} is illustrative rather than a replacement for the complete 28-process formulation. The actual model contains process-specific yields, inhibition terms, and storage dependencies from \citet{Henze2006} and \citet{Guerrero2011}. Its purpose here is to show why nonlinear interactions arise naturally. A hypothetical substrate concentration of $K_S/9$ gives a substrate factor of 0.1, whereas $9K_S$ gives a factor of 0.9. The substrate concentration changes by a factor of 81, but the saturation factor changes only by a factor of nine. Several such limitation terms and competing populations can act simultaneously. For this reason, a linear relationship between influent loading and effluent state is generally insufficient, and a surrogate may need to represent interactions without treating them as new stoichiometric laws.
+
+\section{The steady-state reactor boundary}
+
+The stoichiometric and kinetic relations describe transformation within the reactor. A reactor model also requires a boundary that accounts for material entering, leaving, and crossing that boundary through external transfer. The standalone prediction problem considers a completely mixed reactor at steady state. Perfect mixing makes the reactor concentration equal to the effluent concentration. The boundary includes hydraulic inflow and outflow, the 28 modeled reaction processes, and dissolved-oxygen transfer. It excludes a clarifier, solids return, and other external additions. These exclusions define the specific balance enforced in the reactor study; they do not imply that such processes are absent from wastewater treatment plants.
+
+Let $c_{in}$ and $c_{out}$ denote the influent and effluent component vectors, and let $D>0$ denote the hydraulic dilution rate. For component $j$, hydraulic inflow contributes $Dc_{in,j}$ and hydraulic outflow contributes $-Dc_{out,j}$. Reaction contributes the sum of the 28 stoichiometric-rate products. Oxygen transfer contributes only to the dissolved-oxygen coordinate. The scalar steady-state balance is therefore
+\[
+0=Dc_{in,j}-Dc_{out,j}
++\sum_{p=1}^{28}\nu_{pj}\rho_p+\omega(e_{S_O})_j.
+\]
+
+Because $S_O$ is the first component in Equation~\eqref{eq:component_order}, the selector $e_{S_O}$ has a first coordinate equal to one and nineteen remaining coordinates equal to zero. The oxygen balance consequently contains the direct transfer term $+\omega$, while, for example, the ammonium balance does not. Written separately, the dissolved-oxygen equation is
+\[
+0=D(S_{O,in}-S_{O,out})+\sum_{p=1}^{28}\nu_{p,S_O}\rho_p+\omega.
+\]
+Every term in this equation is expressed as a numerical rate on the oxygen basis. The native basis changes with the component row. Collecting all twenty scalar balances gives
+\begin{equation}
+\equationname{Steady-state reactor component equation}
+0=D(c_{in}-c_{out})+\nu^\top\rho(c_{out},u)+\omega e_{S_O}.
+\label{eq:reactor_steady_balance}
+\end{equation}
+Equivalently, moving the hydraulic difference to the opposite side gives
+\begin{equation}
+\equationname{Effluent change expressed through reaction and oxygen transfer}
+D(c_{out}-c_{in})=\nu^\top\rho(c_{out},u)+\omega e_{S_O}.
+\label{eq:reactor_steady_difference}
+\end{equation}
+For an individual component,
+$D(c_{out,j}-c_{in,j})=\sum_p\nu_{pj}\rho_p+\omega(e_{S_O})_j$.
+The hydraulic term therefore has the same native component-unit-per-day basis as the corresponding reaction and transfer terms. A consistent numerical unit convention is required when the complete balance is treated as a vector equation.
+
+The two operating inputs are HRT and the dimensionless aeration coordinate $u_{\mathrm{air}}$. HRT specifies how long the influent flow would require to replace one reactor volume. A 12-hour HRT corresponds to two reactor-volume replacements per day because $24/12=2$, so the associated dilution rate has units of inverse time. Oxygen transfer uses a different inverse-time coefficient, which becomes a concentration-per-time rate when multiplied by the oxygen concentration deficit. The adopted parameterization is
+\begin{align}
+\equationname{Hydraulic dilution rate from retention time}
+D&=\frac{24\ \mathrm{h\,d}^{-1}}{\mathrm{HRT}},\label{eq:reactor_dilution}\\
+\equationname{Oxygen-transfer coefficient from the aeration setting}
+k_{La}&=(2+18u_{\mathrm{air}})\ \mathrm{d}^{-1},\label{eq:reactor_transfer_coefficient}\\
+\equationname{Net oxygen-transfer rate and saturation concentration}
+\omega&=k_{La}(S_{O,\mathrm{sat}}-S_{O,out}),\qquad
+S_{O,\mathrm{sat}}=8.5\ \mathrm{g\ O_2\,m}^{-3}.
+\label{eq:reactor_oxygen_transfer}
+\end{align}
+The dilution rate places hydraulic replacement on the same time basis as the biological process rates. The oxygen-transfer term depends on both the selected aeration setting and the difference between saturation and the actual reactor oxygen concentration.
+
+For a hypothetical HRT of 12 h, Equation~\eqref{eq:reactor_dilution} gives $D=2$ d$^{-1}$. A component difference of 5 g m$^{-3}$ then corresponds to a net transformation or transfer of 10 g m$^{-3}$ d$^{-1}$ in that coordinate. For a hypothetical aeration setting of 1, the transfer coefficient is 20 d$^{-1}$. If dissolved oxygen is 2 g O$_2$ m$^{-3}$, the oxygen-transfer rate is 130 g O$_2$ m$^{-3}$ d$^{-1}$. These calculations illustrate the accounting implied by the equations; they are not simulated treatment outcomes.
+
+Steady state means that the modeled inventories have zero time derivative under the stated equations and boundary. It does not establish that the steady state is unique, dynamically stable, or representative of a field-calibrated treatment plant. Sensitivity of operating choices to the process model therefore remains relevant even when the numerical balance closes \citep{Araujo2013}. A small residual can certify agreement with the specified equations at a returned state. It cannot certify that those equations completely describe a real wastewater system.
+
+\section{From stoichiometry to mass conservation invariants}
+
+The next step is to identify combinations of the component state that the modeled reactions cannot change. These combinations provide the mass conservation relations used later for physically constrained prediction. An invariant should not be interpreted as a concentration that remains unchanged throughout the plant. Ammonium, for example, can decrease while nitrate increases. What remains unchanged is an appropriate weighted combination of the included nitrogen pools, provided that the corresponding boundary flows and external sources are accounted for.
+
+A stoichiometric invariant is therefore a linear combination of component concentrations whose reaction contribution is always zero. The hypothetical three-pool network provides the simplest example. Adding $A$, $B$, and $C$ without weights would incorrectly treat one unit of $B$ as if it contained the same inventory as one unit of $A$. The correct tracked inventory is
+\[
+I_{\rm toy}=c_A+2c_B+c_C.
+\]
+Substituting the scalar reaction rates gives
+\[
+\frac{d I_{\rm toy}}{dt}
+=(-2\rho_1)+2(\rho_1-\rho_2)+(2\rho_2)=0.
+\]
+The $\rho_1$ and $\rho_2$ terms cancel independently. The equality therefore holds for every combination of process rates. For the hypothetical component change $(-6,2,2)^\top$, the weighted change is likewise $-6+2(2)+2=0$.
+
+The invariant weights can also be derived rather than guessed. Let
+$a=(a_A,a_B,a_C)^\top$ be an unknown coefficient column. Requiring each process to make zero weighted contribution gives
+\[
+\begin{aligned}
+-2a_A+a_B&=0,\\
+-a_B+2a_C&=0.
+\end{aligned}
+\]
+The first equation gives $a_B=2a_A$, and the second gives $a_C=a_A$. Choosing $a_A=1$ yields $(1,2,1)^\top$. Choosing $a_A=3$ yields $(3,6,3)^\top$, which represents the same conservation law multiplied by three. These columns lie in the null space of $\nu_{\rm toy}$: they are component-space directions that the stoichiometric matrix sends to zero.
+
+The full activated sludge model follows the same principle. If $a\in\mathbb{R}^{20}$ satisfies $\nu a=0$, then
+\begin{equation}
+\equationname{Zero reaction contribution to a stoichiometric invariant}
+a^\top\nu^\top\rho=(\nu a)^\top\rho=0
+\label{eq:individual_invariant}
+\end{equation}
+for every possible process-rate vector. Importantly, this identity does not depend on estimating the rates correctly or on choosing a particular operating condition. It follows from the stoichiometric accounting itself. Mass conservation-aware surrogate methods exploit this separation by preserving balances without reproducing all original kinetic calculations during prediction \citep{SturmWexler2020,SturmWexler2022,Hansen2024}.
+
+The number of independent conservation relations depends on the number of independent reaction directions. In the toy system, neither stoichiometric row is a multiple of the other. If
+$s(-2,1,0)+t(0,-1,2)=(0,0,0)$, the first coordinate requires $s=0$ and the third requires $t=0$. The two rows are therefore independent, so the matrix has rank two. With three component coordinates and two independent reaction directions, one independent invariant remains. This is the rank--nullity relation,
+\[
+\text{number of component coordinates}
+=\text{rank}+\text{null-space dimension}.
+\]
+The free coefficient in the toy derivation is the arbitrary scale assigned to $a_A$. A basis is a set of independent vectors from which every vector in the space can be formed by weighted addition. Because the toy invariant space is one-dimensional, one basis column is sufficient.
+
+For the full model, singular-value decomposition provides a numerically stable way to identify these directions. It factors a matrix into orthonormal directions and non-negative singular values. Orthonormal columns have unit Euclidean norm and zero scalar product with one another. A zero singular value marks a direction that the matrix sends to zero. For the toy matrix,
+\[
+\nu_{\rm toy}\nu_{\rm toy}^\top
+=\begin{bmatrix}5&-1\\-1&5\end{bmatrix}.
+\]
+This square matrix has eigenvalues 4 and 6, giving two nonzero singular values, 2 and $\sqrt6$. The remaining component-space direction is the invariant direction. An eigenvalue describes the factor by which a square matrix stretches a corresponding direction, while singular values provide the analogous non-negative stretching magnitudes for matrices that may be rectangular.
+
+For the full matrix, $U$ has dimension $28\times28$, $\Sigma$ has dimension $28\times20$, and $V$ has dimension $20\times20$. The rectangular matrix $\Sigma$ contains the singular values on its diagonal and zeros elsewhere. Their product reconstructs the original $28\times20$ stoichiometric matrix:
+\begin{equation}
+\equationname{Singular-value decomposition of the stoichiometric matrix}
+\nu=U\Sigma V^\top.
+\label{eq:stoichiometric_svd}
+\end{equation}
+
+Finite arithmetic requires a numerical definition of rank. A mathematically zero singular value may appear as a very small nonzero number after floating-point calculations. Rank is therefore determined using
+\begin{equation}
+\equationname{Numerical threshold for stoichiometric rank}
+\tau_{\mathrm{rank}}=\max(P,F)\epsilon_{\mathrm{mach}}\|\nu\|_2.
+\label{eq:stoichiometric_rank_threshold}
+\end{equation}
+Here $\epsilon_{\mathrm{mach}}$ is machine precision and $\|\nu\|_2$ is the largest singular value. The largest singular value establishes the scale of the matrix, while the dimension factor accounts for the size of the calculation. Under this criterion, the adopted stoichiometric model has rank 15. With 20 component coordinates, rank--nullity therefore gives five independent invariants.
+
+The toy invariant $(1,2,1)^\top$ illustrates how the basis is normalized. Its Euclidean length is $\sqrt{1^2+2^2+1^2}=\sqrt6$, so its unit-length form is
+\[
+V_{0,\rm toy}=\frac1{\sqrt6}\begin{bmatrix}1\\2\\1\end{bmatrix}.
+\]
+Its scalar product with each stoichiometric row is zero:
+$(-2+2+0)/\sqrt6=0$ and $(0-2+2)/\sqrt6=0$.
+For the full model, five orthonormal right singular vectors perform the same role. Let $V_0\in\mathbb{R}^{20\times5}$ contain the right singular vectors spanning $\operatorname{null}(\nu)$, and define
+\begin{equation}
+\equationname{Orthonormal mass conservation operator from the null space}
+A=V_0^\top\in\mathbb{R}^{5\times20}.
+\label{eq:invariant_basis_definition}
+\end{equation}
+The operator then satisfies
+\begin{equation}
+\equationname{Null-space and orthonormality identities of the invariant operator}
+A\nu^\top=0,\qquad AA^\top=I_5.
+\label{eq:invariant_basis_properties}
+\end{equation}
+The first identity states that every invariant row has zero contribution from every reaction direction. The second states that the invariant rows have unit length and are mutually orthogonal. These rows need not correspond one-to-one with named elemental inventories. Their purpose is to provide a fixed, numerically scaled basis for the same conservation space.
+
+The matrix orientation is important. Because the processes are rows of $\nu$, the component combinations that define conservation lie in the right null space of $\nu$. By contrast, the right null space of $\nu^\top$ lies in process coordinates and describes dependencies among process contributions. These are different objects. Checking matrix dimensions prevents the two interpretations from being confused.
+
+Reaction conservation alone, however, is not enough to establish conservation across an open reactor boundary. The inflow, outflow, and external transfer terms must also be considered. For invariant row $h$, multiply the component balance by $A_{hj}$ and sum over the twenty components:
+\[
+\begin{aligned}
+D\sum_{j=1}^{20}A_{hj}(c_{out,j}-c_{in,j})
+&=\sum_{p=1}^{28}\rho_p\sum_{j=1}^{20}A_{hj}\nu_{pj}
++\omega\sum_{j=1}^{20}A_{hj}(e_{S_O})_j\\
+&=0+\omega A_{h1}.
+\end{aligned}
+\]
+The reaction contribution vanishes because of the invariant construction. The oxygen-transfer selector leaves only the oxygen-column coefficient. Premultiplying Equation~\eqref{eq:reactor_steady_difference} by $A$ gives the same result in vector form:
+\begin{equation}
+\equationname{Reactor invariant equation including oxygen transfer}
+D A(c_{out}-c_{in})=\omega A e_{S_O}.
+\label{eq:invariant_boundary_balance}
+\end{equation}
+Reaction cancellation and external-forcing compatibility are therefore separate requirements.
+
+The distinction can again be seen in the toy system. Adding one unit directly to pool $A$ corresponds to a forcing column $(1,0,0)^\top$. Its invariant product is $1/\sqrt6$, so the forcing changes the tracked inventory. A forcing column $(-2,1,0)^\top$, in contrast, has invariant product $(-2+2)/\sqrt6=0$ and lies within the reaction-change space. This abstract example illustrates why an external forcing must be checked against the conservation space rather than assumed to preserve it.
+
+The range of a matrix is the set of vectors that it can produce by multiplication with all possible coordinate columns. Any forcing in $\operatorname{range}(\nu^\top)$ can be written as a combination of reaction-change directions and is therefore annihilated by every invariant row. For the adopted stoichiometric matrix, the dissolved-oxygen selector satisfies this condition. There exists a process-coordinate vector $\lambda_O\in\mathbb{R}^{28}$ such that
+\begin{equation}
+\equationname{Compatibility of oxygen forcing with mass conservation}
+e_{S_O}=\nu^\top\lambda_O,\qquad
+Ae_{S_O}=A\nu^\top\lambda_O=0.
+\label{eq:oxygen_forcing_compatibility}
+\end{equation}
+The coordinates in $\lambda_O$ establish a subspace relation only. They do not mean that aeration is itself a biological process or that the entries of $\lambda_O$ are non-negative process rates.
+
+Because $Ae_{S_O}=0$, Equation~\eqref{eq:invariant_boundary_balance} reduces to
+$D A(c_{out}-c_{in})=0$. Since $D>0$,
+\begin{equation}
+\equationname{Equality of influent and effluent invariant inventories}
+Ac_{out}=Ac_{in}.
+\label{eq:reactor_invariant_equality}
+\end{equation}
+This equality follows jointly from the stoichiometric model, the direction of the oxygen forcing, and the stated reactor boundary. It should not be transferred unchanged to a system with an unaccounted phosphorus dose, sludge withdrawal, or another external source that changes the conserved inventories.
+
+More generally, let $g$ denote an additional component source expressed on a concentration-per-time basis. Its contribution to invariant row $h$ is $\sum_jA_{hj}g_j$. Dividing by the positive dilution rate converts that contribution to a concentration-equivalent invariant change. When aeration remains compatible,
+\begin{equation}
+\equationname{Invariant inventory change with an external source}
+A(c_{out}-c_{in})=D^{-1}Ag.
+\label{eq:general_invariant_source}
+\end{equation}
+A phosphate addition with a nonzero phosphorus-inventory contribution would therefore change the right-hand side. Imposing the original influent equality in such a system would incorrectly remove a real external contribution. This example illustrates a general principle used throughout the dissertation: a physical constraint must be derived from the actual model boundary, not selected merely because it produces a convenient statistical result.
+
+All numerical calculations use the full-precision operator. Its construction is checked through $A\nu^\top$, $AA^\top-I_5$, and $Ae_{S_O}$. Rounded coefficients displayed for interpretation cannot replace the original operator in computation. Any nonsingular row transformation $T$ produces $A'=TA$ and defines the same equality set, but an arbitrary transformation changes the numerical scale of residuals. The orthonormal construction therefore fixes both the invariant space and the scaling used for mass conservation diagnostics.
+
+\section{Reaction progress and the feasible state geometry}
+
+The invariant relation describes what cannot change. A complementary view describes the directions along which the component state can change while preserving those invariants. This reaction-progress view is useful because it connects the mechanistic stoichiometric model to the geometry of the feasible states later used for projection.
+
+Consider again the hypothetical three-pool system. Suppose the first process advances by one unit and the second by one half-unit on a compatible concentration-equivalent basis. The accumulated component changes are
+\[
+\begin{aligned}
+\Delta c_A&=-2(1)+0(0.5)=-2,\\
+\Delta c_B&=1(1)-1(0.5)=0.5,\\
+\Delta c_C&=0(1)+2(0.5)=1.
+\end{aligned}
+\]
+Their weighted sum is $-2+2(0.5)+1=0$. Starting from the hypothetical state $(8,1,1)^\top$ gives $(6,1.5,2)^\top$, and both states have weighted inventory 11. The accumulated progress is conceptually different from an instantaneous process rate: multiplying a rate by an appropriate time scale produces a concentration-equivalent state change.
+
+For the steady reactor, that natural time scale is $D^{-1}$. Using
+$\omega e_{S_O}=\nu^\top(\omega\lambda_O)$ allows reaction and compatible oxygen transfer to be represented in the same component-change space. Rearranging the steady-state balance gives
+\begin{equation}
+\equationname{Reaction-progress coordinates for the effluent change}
+c_{out}-c_{in}=\nu^\top r,\qquad
+r=D^{-1}(\rho+\omega\lambda_O).
+\label{eq:reaction_progress_coordinates}
+\end{equation}
+The vector $r$ provides one set of process-space coordinates for the total component change. It should not be interpreted as a unique reconstruction of the biological reaction rates. The matrix $\nu^\top$ has rank 15 but 28 columns, so multiple process-coordinate vectors can produce the same component change. Moreover, $r$ contains the algebraic representation of oxygen transfer. Its entries are therefore not independently measured reaction extents or microbial activities.
+
+A mass-conserving component change also need not be represented using the original process coordinates. In the toy system, every admissible change $v$ satisfies
+$v_A+2v_B+v_C=0$. Two independent unit-length directions satisfying this condition are
+\[
+z_1=\frac1{\sqrt5}\begin{bmatrix}-2\\1\\0\end{bmatrix},\qquad
+z_2=\frac1{\sqrt{30}}\begin{bmatrix}1\\2\\-5\end{bmatrix}.
+\]
+Their invariant products are zero, their mutual scalar product is zero, and both have unit length. Thus
+$Z_{\rm toy}=[z_1\ z_2]$ is an orthonormal basis of the two-dimensional change space. Any toy-state change that preserves the weighted inventory can be written as
+$v=z_1q_1+z_2q_2$.
+
+The change basis and the invariant basis answer complementary questions. The invariant rows identify combinations that cannot change. The columns of $Z$ identify directions along which the state can move without changing those combinations. In the full model, five independent invariant rows leave fifteen independent change directions. Let
+$Z\in\mathbb{R}^{20\times15}$ contain orthonormal columns spanning $\operatorname{null}(A)$. The corresponding subspace relation is
+\begin{equation}
+\equationname{Equivalent reaction and invariant-null spaces}
+\operatorname{range}(\nu^\top)=\operatorname{null}(A),\qquad
+AZ=0,\qquad Z^\top Z=I_{15}.
+\label{eq:reaction_invariant_subspaces}
+\end{equation}
+Every component change satisfying the conservation equalities can therefore be written uniquely as $Zq$ for some $q\in\mathbb{R}^{15}$ in the selected orthonormal basis. These coordinates describe admissible material redistribution. They do not identify a unique sequence of the 28 kinetic processes responsible for that redistribution.
+
+The same relation defines the feasible component states used in prediction. For sample $i$, the invariant target is
+$b_i=Ac_{in,i}$. A physically admissible effluent must satisfy the five invariant equalities and the twenty non-negativity bounds:
+\begin{equation}
+\equationname{Component-state set satisfying mass conservation and non-negativity}
+\mathcal{F}_i=\{c\in\mathbb{R}^{20}\mid Ac=b_i,\ c\geq0\}.
+\label{eq:reactor_feasible_set}
+\end{equation}
+The equality $Ac=b_i$ defines a 15-dimensional affine space before the concentration bounds are applied. An affine space is a linear change space translated by a fixed reference state; the influent provides one such reference here. Intersecting that affine space with the non-negative orthant retains only states whose component concentrations are all non-negative.
+
+The resulting set has several useful properties. It is closed because the equalities and inequalities include their boundary points. It is convex because any weighted average of two feasible states, using weights between zero and one, preserves both the invariant target and component non-negativity. It is also nonempty whenever the influent is non-negative, because the influent itself satisfies $Ac_{in,i}=b_i$ and provides a feasible anchor.
+
+The toy example makes this geometry visible. For the hypothetical influent $(8,1,1)^\top$, the conservation condition is
+$c_A+2c_B+c_C=11$, together with
+$c_A,c_B,c_C\geq0$. If only one pool is nonzero, the three boundary states are
+$(11,0,0)^\top$, $(0,5.5,0)^\top$, and $(0,0,11)^\top$. The feasible region is the triangle connecting these states within the inventory plane. The state $(6,1.5,2)^\top$ lies inside this triangle. The state $(12,-0.5,0)^\top$ lies in the same inventory plane because $12-1=11$, but it is not physically admissible because one coordinate is negative. Mass conservation selects the plane; non-negativity selects the admissible portion of that plane.
+
+Figure~\ref{fig:reactor_feasible_triangle} shows the same region using $c_A$ and $c_B$ as plotting axes. The conservation equation supplies the third coordinate through
+$c_C=11-c_A-2c_B$, so every plotted point still represents a complete three-component state.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.93\textwidth]{ch3_concept_feasible_triangle.pdf}
+\caption{Hypothetical non-negative states for the weighted inventory $c_A+2c_B+c_C=11$. The shaded triangle includes its boundary. Full state labels retain the third component even though only two coordinates are plotted.}
+\label{fig:reactor_feasible_triangle}
+\end{figure}
+
+The sloping edge corresponds to $c_C=0$, while the two coordinate edges correspond to $c_A=0$ or $c_B=0$. All three components are positive in the interior, allowing the same conserved inventory to be distributed among them in many different proportions. The cross-marked point preserves the weighted inventory but has a negative $B$ concentration. The figure therefore shows that conservation and concentration bounds define different requirements.
+
+A two-component example makes the same point even more directly. Suppose conservation fixes
+$c_1+c_2=10$. The equality alone permits states such as $(-1,11)$, $(4,6)$, and $(12,-2)$. Non-negativity reduces this infinite line to the segment between $(0,10)$ and $(10,0)$. Simply clipping $(-1,11)$ to $(0,11)$ removes the negative concentration but changes the conserved sum from 10 to 11. Enforcing the equality and enforcing non-negativity are therefore not interchangeable operations; simultaneous enforcement requires their intersection.
+
+The geometry also clarifies the limitation of a physically admissible prediction. Many non-negative component states can share the same five invariant values. A state with an incorrect distribution between ammonium and nitrate may still satisfy all conservation equalities. The same can occur for an implausible biomass concentration. The feasible set therefore establishes the declared material accounting and sign restrictions, but it does not establish that the complete 28-process kinetics balance hydraulics and aeration at that state. This distinction is central to the constraint methods of \citet{KircherVotsmeier2025} and to the broader physical-consistency perspective of \citet{Valente2025}.
+
+\section{Reported water quality quantities and hidden component errors}
+
+Engineering decisions are often communicated through aggregate quantities such as COD, TN, TP, and TSS rather than through the complete 20-component state. These quantities are important summaries, but they are calculated from the component state after prediction. The distinction matters because aggregation can hide component-level errors and because a reporting total is not necessarily a conserved inventory.
+
+Using the coefficients in Table~\ref{tab:component_basis_composites}, the four reported quantities are
+\[
+\begin{aligned}
+\mathrm{COD}={}&S_F+S_A+S_I+X_I+X_S+X_H+X_{PAO}\\
+&+X_{PHA}+X_{AOB}+X_{NOB},\\[2pt]
+\mathrm{TN}={}&S_{NH4}+S_{NO2}+S_{NO3}+0.01S_I+0.02X_I\\
+&+0.07(X_H+X_{PAO}+X_{AOB}+X_{NOB}),\\[2pt]
+\mathrm{TP}={}&S_{PO4}+0.01X_I+0.02(X_H+X_{PAO}+X_{AOB}+X_{NOB})\\
+&+X_{PP}+X_{MeP}/4.87,\\[2pt]
+\mathrm{TSS}={}&0.75(X_I+X_S)+0.90(X_H+X_{PAO}+X_{AOB}+X_{NOB})\\
+&+3.23X_{PP}+0.60X_{PHA}+X_{MeP}+X_{MeOH}.
+\end{aligned}
+\]
+Each coefficient converts a component from its native basis to the output basis of the corresponding reported quantity. For example, the factor 0.07 has units of g nitrogen per g biomass COD. Multiplying it by $X_H$ therefore gives a nitrogen concentration. Likewise, the factor 3.23 converts stored phosphorus to its suspended-solids contribution. Every term within one reported quantity is consequently expressed on a common basis before being summed.
+
+A sparse hypothetical state containing only
+$X_H=100$ g COD m$^{-3}$ and
+$X_{PP}=2$ g P m$^{-3}$ gives
+\[
+\begin{aligned}
+\mathrm{COD}&=100, &\mathrm{TN}&=0.07(100)=7,\\
+\mathrm{TP}&=0.02(100)+2=4,
+&\mathrm{TSS}&=0.90(100)+3.23(2)=96.46.
+\end{aligned}
+\]
+Each result has its own constituent unit. The example illustrates how reporting coefficients combine different state components; it is not intended to represent a reactor steady state.
+
+The same four sums can be written compactly using a fixed reporting matrix:
+\begin{equation}
+\equationname{Component-to-water-quality reporting map}
+y=I_{comp}c,\qquad
+y=(\mathrm{COD},\mathrm{TN},\mathrm{TP},\mathrm{TSS})^\top,\qquad
+I_{comp}\in\mathbb{R}^{4\times20}.
+\label{eq:component_composite_map}
+\end{equation}
+The first row contains the COD coefficients, the second the TN coefficients, and so forth. The rows convert the component state to g COD m$^{-3}$, g N m$^{-3}$, g P m$^{-3}$, and g TSS m$^{-3}$. Because all reporting coefficients are non-negative, a non-negative component state necessarily gives non-negative reported quantities.
+
+A reported total should not, however, be confused with a conserved inventory. Dissolved dinitrogen has zero weight in the adopted TN reporting map. A hypothetical transfer of 3 g N m$^{-3}$ from nitrate to dissolved dinitrogen therefore reduces reported TN by 3 g N m$^{-3}$ even though the complete modeled nitrogen inventory can remain unchanged. A phosphorus reporting row may coincide more closely with a modeled phosphorus inventory, but that relationship must still be checked from the coefficients. The word ``total'' alone does not establish conservation.
+
+The reporting coefficients also make the constituent conversions transparent. Under the adopted map, a hypothetical
+$X_H=100$ g COD m$^{-3}$ contributes
+100 g COD m$^{-3}$ to COD,
+7 g N m$^{-3}$ to TN,
+2 g P m$^{-3}$ to TP, and
+90 g TSS m$^{-3}$ to TSS.
+A hypothetical
+$X_{PP}=2$ g P m$^{-3}$ contributes
+2 g P m$^{-3}$ to TP and
+6.46 g TSS m$^{-3}$ to TSS.
+These values arise from fixed reporting assumptions rather than from the surrogate model or from an observed treatment outcome.
+
+The main consequence of aggregation is that different component errors can cancel. Equal and opposite errors in ammonium and nitrate disappear in reported TN because both have unit nitrogen weights. A negative ammonium prediction can even be obscured by a sufficiently large nitrate prediction. Likewise, biomass and substrate errors can compensate in COD while remaining visible in TSS because their solids conversion factors differ. Accurate COD, TN, TP, and TSS values therefore do not establish either an accurate or a physically admissible 20-component state.
+
+The reporting map and the invariant operator consequently answer different questions. The reporting map summarizes treatment performance in familiar engineering quantities. The invariant operator tests whether the component state satisfies the declared material accounting. Neither one reconstructs the detailed component distribution lost through aggregation. Component prediction, composite reporting, mass conservation, and non-negativity must therefore remain separate objects of assessment.
+
+\section{Mixing and spatial transport as model boundaries}
+
+The standalone reactor model assumes one completely mixed concentration for each component. This removes spatial coordinates from the reactor state and allows the treatment response to be represented by one component vector. The assumption is a modeling boundary rather than a statement that every biological treatment unit is spatially uniform. Biofilms, trickling filters, and incompletely mixed aerated vessels can exhibit concentration gradients and transport limitations \citep{Wik2003,Zhang1994,SadinoRiquelme2023}. Recognizing these effects helps define what the mixed-reactor surrogate does and does not represent.
+
+A small spatial control volume illustrates the additional accounting required when concentrations vary in space. For one component, let $V$ denote the fixed control-volume size and $\bar c$ its average concentration. Let
+$F_{\rm adv,in}$ and $F_{\rm adv,out}$ denote advective mass flow rates, and let
+$F_{\rm diff,in}$ and $F_{\rm diff,out}$ denote diffusive mass flow rates. The finite-volume balance is
+\begin{equation}
+\equationname{Control-volume component equation with transport and reaction}
+V\frac{\mathrm d\bar c}{\mathrm dt}
+=F_{\rm adv,in}-F_{\rm adv,out}
++F_{\rm diff,in}-F_{\rm diff,out}+Vr.
+\label{eq:teaching_spatial_control_volume}
+\end{equation}
+The quantity $r$ is the net reaction production rate per unit volume and becomes negative when the component is consumed. Every term on the right-hand side has units of component mass per time.
+
+For a hypothetical volume of 2 m$^3$, advective inflow and outflow of 5 and 3 g d$^{-1}$, diffusive inflow and outflow of 2 and 0 g d$^{-1}$, and total reaction consumption of 3 g d$^{-1}$, the net accumulation is
+$5-3+2-0-3=1$ g d$^{-1}$. Dividing by the control-volume size gives
+$\mathrm d\bar c/\mathrm dt=0.5$ g m$^{-3}$ d$^{-1}$. The example shows why a local concentration change cannot be inferred from the reaction term alone: transport can be equally important.
+
+In a one-dimensional domain with coordinate $z$, the advective flux is $vc$ and the diffusive flux is
+$-D_z\partial c/\partial z$, where $v$ is velocity and $D_z$ is a dispersion or diffusion coefficient. Dividing the balance of a thin slice by its volume and taking the limit as its thickness approaches zero gives
+\begin{equation}
+\equationname{One-dimensional advection-diffusion-reaction component equation}
+\frac{\partial c_j}{\partial t}
+=-\frac{\partial(v c_j)}{\partial z}
++\frac{\partial}{\partial z}
+\left(D_z\frac{\partial c_j}{\partial z}\right)
++\sum_{p=1}^{n_p}\nu_{pj}\rho_p+s_j.
+\label{eq:teaching_spatial_balance}
+\end{equation}
+The first two terms describe spatial transport, the summation retains the same component-wise reaction accounting used in the mixed reactor, and $s_j$ represents a specified external source per unit volume. Boundary conditions then determine how material enters and leaves the spatial domain. Applying an invariant weighted sum can cancel compatible reaction terms, but transport and external-source contributions remain in the overall balance.
+
+This formulation shows how the same theoretical ideas can extend beyond a completely mixed reactor without implying that a spatial reactor is added to the present study. Chapter~\ref{ch:plant} instead uses a sequence of mixed biological reactors and a layered clarifier. The reactor stages represent distinct treatment conditions, while the clarifier layers represent solids transport and storage. Their boundaries are different, and those differences must be respected when the connected plant constraints are derived.
+
+\section{A common basis for assessing surrogate responses}
+
+The preceding sections establish a common component representation for the rest of the dissertation. The mechanistic model supplies the reference treatment state. A statistical surrogate approximates that state from the influent and operating controls. Projection adjusts the prediction so that it lies within the specified physical set. Interpretation examines how the prediction is produced, and optimization uses the returned response to select operating conditions. The same component state therefore connects prediction, physical enforcement, interpretation, and decision assessment.
+
+This connection is useful because these questions require different evidence. Prediction error measures agreement with the mechanistic reference. Physical admissibility concerns the imposed equalities, bounds, and inventories. Interpretability concerns the structure of the fitted response and how that structure changes through subsequent transformations. Operating quality concerns the treatment outcome obtained at the selected controls. One type of evidence cannot substitute for another.
+
+The same distinction applies when raw and projected states are compared. A paired raw--projected assessment keeps the fitted learner fixed and isolates the effect of physical enforcement. Comparing separately trained predictors also includes differences in model structure, hyperparameter selection, and fitting. The structured regression developed later introduces additional intermediate states, including coupled and affine predictions, so that the origin of a change can be traced through the complete prediction procedure.
+
+At plant scale, the accounting extends across locations. The mixer, reactor stages, clarifier outlets, and stored solids each contribute part of the connected response. Location-specific errors show where joint projection changes the predicted state, while plant-level summaries describe the overall approximation. The quantities used in the intended operating decision then determine which parts of that response require the closest scrutiny \citep{BhosekarIerapetritou2018,McBride2019}.
+
+Table~\ref{tab:claim_evidence} summarizes this assessment logic. Input transformations, learned scales, regularization, and hyperparameter selection use development information. Reserved responses supply the final prediction assessment. This separation applies to the complete procedure, including both the fitted statistical model and the constrained calculation that follows it \citep{Kaufman2012}.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Assessment questions and the evidence used to connect surrogate responses to engineering decisions.}
+\label{tab:claim_evidence}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}>{\raggedright\arraybackslash}p{0.27\textwidth}}
+\toprule
+Assessment question & Evidence & Engineering quantity\\
+\midrule
+Predictive agreement & Held-out component and composite errors with defined scales & Substrate, nutrients, biomass, and solids concentrations\\
+Physical admissibility & Equality residuals, non-negativity checks, and inventory bounds & Conserved inventories and feasible component states\\
+Sample efficiency & Common learning curves and variation across partitions & Error at the available simulation budget\\
+Inspectable structure & Named coefficient blocks, physical units, and complete-response sensitivities & Dependence on influent and operating inputs\\
+Operating quality & Independent mechanistic evaluation at selected controls & Treatment outcomes, engineering requirements, and objective values\\
+Computational effort & Development, search, prediction, projection, and verification times & Time required to deliver an evaluated decision\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The numerical checks are reported using explicit tolerances and residual definitions. The equalities define the mathematical constraints; the residuals quantify how closely the returned numerical state satisfies them. Reporting these quantities in their original units or under a clearly defined scaling makes the physical calculation open to inspection \citep{Boyd2004,BuzziFerraris2013}. Chapters~\ref{ch:projection}--\ref{ch:plant} apply this common basis to the standalone reactor benchmark, the structured regression, and the connected-plant optimization study.

@@ -1,0 +1,51 @@
+\documentclass[12pt,border=5pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,fit,matrix}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\diag}{diag}
+\definecolor{plantblue}{HTML}{247BA0}
+\definecolor{plantteal}{HTML}{16856B}
+\definecolor{plantorange}{HTML}{D97425}
+\definecolor{plantpurple}{HTML}{7954A1}
+\begin{document}
+\begingroup\linespread{1}\selectfont
+\begin{tikzpicture}[
+    c5box/.style={draw=plantblue!85!black,fill=plantblue!8,rounded corners=2pt,
+        line width=0.7pt,align=center,font=\small,inner sep=7pt},
+    c5feature/.style={c5box,text width=4.8cm,align=left},
+    c5arrow/.style={-{Latex[length=2.2mm]},draw=plantblue!85!black,line width=0.8pt},
+    c5label/.style={font=\small,fill=white,inner sep=2pt}
+]
+\node[c5box,text width=4.8cm,draw=plantblue!85!black,fill=plantblue!10] (inputs) at (0,0)
+    {Operating conditions \(u\)\\Influent components \(c_{in}\)};
+\node[c5feature,below=7mm of inputs,draw=plantblue!85!black,fill=plantblue!10] (features)
+    {\textbf{Feature vector \(\phi\)}\\[3pt]
+     Baseline \(1\)\\
+     Operating \(u\)\\
+     Influent \(c_{in}\)\\
+     Operating pairs \(u\otimes u\)\\
+     Influent pairs \(c_{in}\otimes c_{in}\)\\
+     Operating-load pairs \(u\otimes c_{in}\)};
+\node[c5box,text width=3.3cm,draw=plantpurple!85!black,fill=plantpurple!10] (driver) at ($(features.north east)+(2.5cm,-0.65cm)$)
+    {\textbf{Component driver}\\\(r=B\phi\)};
+\node[c5box,text width=3.3cm,below=7mm of driver,draw=plantpurple!85!black,fill=plantpurple!10] (solve)
+    {\textbf{Coupled solve}\\\(Rc_{raw}=r\)};
+\node[c5box,text width=3.3cm,fill=plantteal!9,below=7mm of solve,draw=plantpurple!85!black,fill=plantpurple!10] (coupling)
+    {Learned coupling\\\(R=I_F-\Gamma\)};
+\node[c5box,text width=3.2cm,right=15mm of solve,draw=plantorange!85!black,fill=plantorange!10] (components)
+    {\textbf{Raw component}\\\textbf{state}\\\(c_{raw}\)};
+\node[c5box,text width=3.2cm,above=10mm of components,draw=plantteal!85!black,fill=plantteal!10] (reported)
+    {\textbf{Reporting map}\\\(I_{\mathrm{comp}}c_{raw}\)};
+\draw[c5arrow] (inputs.south)--(features.north);
+\draw[c5arrow] (features.east)--node[c5label,above,sloped] {\(\phi\)}(driver.west);
+\draw[c5arrow] (driver.south)--(solve.north);
+\draw[c5arrow] (coupling.north)--(solve.south);
+\draw[c5arrow] (solve.east)--node[c5label,above] {\(c_{raw}\)}(components.west);
+\draw[c5arrow] (components.north)--(reported.south);
+\end{tikzpicture}
+\endgroup
+
+\end{document}

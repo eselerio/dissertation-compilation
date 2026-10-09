@@ -1,33 +1,33 @@
 \begingroup\linespread{1}\selectfont
 \begin{tikzpicture}[
-    c5box/.style={draw=blue!50!black,fill=blue!5,rounded corners=2pt,
+    c5box/.style={draw=plantblue!85!black,fill=plantblue!8,rounded corners=2pt,
         line width=0.7pt,align=center,font=\small,inner sep=6pt},
-    c5decision/.style={diamond,aspect=2.2,draw=blue!50!black,fill=black!4,
+    c5decision/.style={diamond,aspect=2.2,draw=plantblue!85!black,fill=plantteal!9,
         line width=0.7pt,align=center,font=\small,text width=2.1cm,inner sep=2pt},
-    c5arrow/.style={-{Latex[length=2.2mm]},draw=blue!65!black,line width=0.8pt},
+    c5arrow/.style={-{Latex[length=2.2mm]},draw=plantblue!85!black,line width=0.8pt},
     c5label/.style={font=\small,fill=white,inner sep=2pt}
 ]
-\node[c5box,text width=4.5cm] (initialize) at (0,0)
+\node[c5box,text width=4.5cm,draw=plantblue!85!black,fill=plantblue!10] (initialize) at (0,0)
     {\textbf{Start a restart}\\Admissible \(\Gamma\) and \(\widehat C\geq0\)};
-\node[c5box,text width=4.5cm,below=6mm of initialize] (driver)
+\node[c5box,text width=4.5cm,below=6mm of initialize,draw=plantpurple!85!black,fill=plantpurple!10] (driver)
     {\textbf{Driver ridge update}\\Fit \(B\) with \(\Gamma,\widehat C\) fixed};
-\node[c5box,text width=4.5cm,below=6mm of driver] (symmetry)
+\node[c5box,text width=4.5cm,below=6mm of driver,draw=plantpurple!85!black,fill=plantpurple!10] (symmetry)
     {\textbf{Symmetric quadratic slices}\\Keep predictions and reduce the ridge norm};
-\node[c5box,text width=4.5cm,below=6mm of symmetry] (proposal)
+\node[c5box,text width=4.5cm,below=6mm of symmetry,draw=plantpurple!85!black,fill=plantpurple!10] (proposal)
     {\textbf{Coupling proposal}\\Zero diagonal and box bounds};
-\node[c5box,text width=4.0cm,right=12mm of proposal] (screen)
+\node[c5box,text width=4.0cm,right=12mm of proposal,draw=plantteal!85!black,fill=plantteal!10] (screen)
     {\textbf{Screen the proposal}\\Check conditioning\\and objective\\Shrink or retain \(\Gamma\)};
-\node[c5box,text width=4.0cm,above=6mm of screen] (states)
+\node[c5box,text width=4.0cm,above=6mm of screen,draw=plantteal!85!black,fill=plantteal!10] (states)
     {\textbf{Non-negative fitted states}\\Update \(\widehat C\) with \(B,\Gamma\) fixed};
-\node[c5box,text width=4.0cm,above=6mm of states] (record)
+\node[c5box,text width=4.0cm,above=6mm of states,draw=plantorange!85!black,fill=plantorange!10] (record)
     {\textbf{Evaluate the objective}\\Record the best\\admissible objective};
-\node[c5decision,above=6mm of record] (stop)
+\node[c5decision,above=6mm of record,draw=plantteal!85!black,fill=plantteal!10] (stop)
     {Small slope\\or limit?};
-\node[c5box,text width=4.0cm,above=6mm of stop] (retain)
+\node[c5box,text width=4.0cm,above=6mm of stop,draw=plantteal!85!black,fill=plantteal!10] (retain)
     {\textbf{Complete the restart}\\Retain its best state};
-\node[c5decision] (restart) at (initialize.center |- retain.center)
+\node[c5decision,draw=plantblue!85!black,fill=plantblue!10] (restart) at (initialize.center |- retain.center)
     {More planned\\restarts?};
-\node[c5box,text width=2.25cm,left=7mm of restart] (finish)
+\node[c5box,text width=2.25cm,left=7mm of restart,draw=plantteal!85!black,fill=plantteal!10] (finish)
     {\textbf{Best fit}\\Smallest admissible objective};
 \coordinate (loopcorner) at ($(initialize.east)+(5mm,0)$);
 \draw[c5arrow] (initialize.south)--(driver.north);

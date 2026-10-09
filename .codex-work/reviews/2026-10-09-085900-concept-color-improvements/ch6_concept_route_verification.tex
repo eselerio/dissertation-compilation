@@ -1,0 +1,62 @@
+\documentclass[12pt,border=5pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,fit,matrix}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\diag}{diag}
+\definecolor{plantblue}{HTML}{247BA0}
+\definecolor{plantteal}{HTML}{16856B}
+\definecolor{plantorange}{HTML}{D97425}
+\definecolor{plantpurple}{HTML}{7954A1}
+\begin{document}
+\begin{tikzpicture}[>=Latex,
+block/.style={draw=plantblue!85!black,rounded corners,fill=plantblue!8,align=center,font=\footnotesize,inner sep=4pt},
+audit/.style={block,fill=plantteal!9},
+failure/.style={block,dashed,fill=white},
+flow/.style={->,thick,draw=plantblue!85!black},
+failflow/.style={->,dashed,draw=plantorange!85!black},
+lab/.style={font=\scriptsize,fill=white,inner sep=2pt}]
+\node[block,text width=12.9cm,draw=plantblue!85!black,fill=plantblue!10] (common) at (0,0)
+{Common influent and control domain\\Fixed priorities and engineering safeguards};
+\node[block,text width=6.0cm,draw=plantpurple!85!black,fill=plantpurple!10] (surrogate) at (-3.7,-1.85)
+{Surrogate search\\Prediction and joint projection\\Trust screening};
+\node[block,text width=6.0cm,draw=plantblue!85!black,fill=plantblue!10] (direct) at (3.7,-1.85)
+{Direct mechanistic search\\Full mechanistic states\\Smoothing continuation};
+\node[audit,text width=6.0cm,draw=plantteal!85!black,fill=plantteal!10] (snative) at (-3.7,-3.85)
+{Surrogate candidate audit\\Native feasibility\\Convergence status retained};
+\node[audit,text width=6.0cm,draw=plantteal!85!black,fill=plantteal!10] (mnative) at (3.7,-3.85)
+{Direct candidate audit\\Native feasibility\\Convergence status retained};
+\node[failure,text width=4.0cm,draw=plantorange!85!black,fill=plantorange!10] (sfail) at (-5.0,-6.3)
+{No feasible candidate\\Retain route failure};
+\node[failure,text width=4.0cm,draw=plantorange!85!black,fill=plantorange!10] (mfail) at (5.0,-6.3)
+{No feasible candidate\\Retain route failure};
+\node[block,text width=4.5cm,draw=plantblue!85!black,fill=plantblue!10] (evaluate) at (0,-6.3)
+{Independent evaluation\\of each retained decision\\Fixed selected controls\\Two initial states\\Original nonsmooth model};
+\node[audit,text width=6.6cm,draw=plantteal!85!black,fill=plantteal!10] (valid) at (0,-9.05)
+{Original-model validity\\Balances and non-negativity\\Layer equations and branches\\Reduced-state stability};
+\node[failure,text width=3.0cm,draw=plantorange!85!black,fill=plantorange!10] (invalid) at (5.7,-9.05)
+{Invalid state\\Retain failure};
+\node[audit,text width=6.6cm,draw=plantteal!85!black,fill=plantteal!10] (engineering) at (0,-11.4)
+{Engineering eligibility\\Underflow solids limit\\Feed-solids and external-loss floors};
+\node[failure,text width=3.0cm,draw=plantorange!85!black,fill=plantorange!10] (engfail) at (5.7,-11.4)
+{Valid state\\Safeguard fails\\Retain diagnostic};
+\node[block,text width=9.3cm,draw=plantteal!85!black,fill=plantteal!10] (comparison) at (0,-13.5)
+{Common objective comparison\\Both decisions valid and engineering eligible};
+\draw[flow] (common.south west)--(surrogate.north);
+\draw[flow] (common.south east)--(direct.north);
+\draw[flow] (surrogate)--(snative);
+\draw[flow] (direct)--(mnative);
+\draw[flow] (snative.south east)--(evaluate.north west) node[midway,right,lab] {Retain};
+\draw[flow] (mnative.south west)--(evaluate.north east) node[midway,left,lab] {Retain};
+\draw[failflow] (snative.south west)--(sfail.north) node[midway,left,lab] {Fail};
+\draw[failflow] (mnative.south east)--(mfail.north) node[midway,right,lab] {Fail};
+\draw[flow] (evaluate)--(valid);
+\draw[flow] (valid)--(engineering) node[midway,left,lab] {Valid};
+\draw[failflow] (valid)--(invalid) node[midway,above,lab] {Fail};
+\draw[flow] (engineering)--(comparison) node[midway,left,lab] {Eligible};
+\draw[failflow] (engineering)--(engfail) node[midway,above,lab] {Fail};
+\end{tikzpicture}
+
+\end{document}

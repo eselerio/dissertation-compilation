@@ -1,0 +1,24 @@
+\begin{tikzpicture}[>=Latex,node distance=5mm,
+unit/.style={draw,rounded corners,minimum width=12mm,minimum height=8mm,align=center,font=\small},
+mix/.style={draw,circle,minimum size=9mm,font=\small},
+flow/.style={->,thick},lab/.style={font=\scriptsize,fill=white,inner sep=1pt}]
+\node[mix] (m) {Mix};
+\node[unit,right=of m] (r1) {1};
+\node[unit,right=of r1] (r2) {2};
+\node[unit,right=of r2] (r3) {3};
+\node[unit,right=of r3] (r4) {4};
+\node[unit,right=of r4] (r5) {5};
+\coordinate[right=4mm of r5] (split);
+\node[unit,right=7mm of split,minimum height=15mm] (cl) {Ten-layer\\clarifier};
+\draw[flow] ([xshift=-13mm]m.west)--(m.west) node[midway,above,lab] {$Q_0,c_{\rm in}$};
+\draw[flow] (m)--(r1) node[midway,above,lab] {$q_PQ_0$};
+\draw[flow] (r1)--(r2); \draw[flow] (r2)--(r3);
+\draw[flow] (r3)--(r4); \draw[flow] (r4)--(r5);
+\draw[thick] (r5)--(split);
+\draw[flow] (split)--(cl) node[midway,above,lab] {$q_CQ_0$};
+\draw[flow] (split)--++(0,13mm)-|(m.north) node[pos=.45,above,lab] {Mixed-liquor recycle $r_IQ_0$};
+\draw[flow] (cl.east)--++(15mm,0) node[midway,above,lab] {$q_EQ_0,c_E$};
+\draw[thick] (cl.south)--++(0,-8mm) coordinate (u);
+\draw[flow] (u)--++(0,-9mm) node[below,lab] {Waste sludge $wQ_0,c_U$};
+\draw[flow] (u)--++(-9mm,0)-|(m.south) node[pos=.35,below,lab] {Return sludge $r_RQ_0,c_U$};
+\end{tikzpicture}

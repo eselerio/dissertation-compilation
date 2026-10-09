@@ -1,0 +1,64 @@
+\documentclass[12pt,border=5pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,bm,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric,fit,matrix}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator{\col}{col}
+\DeclareMathOperator{\diag}{diag}
+\definecolor{plantblue}{HTML}{247BA0}
+\definecolor{plantteal}{HTML}{16856B}
+\definecolor{plantorange}{HTML}{D97425}
+\definecolor{plantpurple}{HTML}{7954A1}
+\begin{document}
+\begingroup\linespread{1}\selectfont
+\begin{tikzpicture}[
+    c5box/.style={draw=plantblue!85!black,fill=plantblue!8,rounded corners=2pt,
+        line width=0.7pt,align=center,font=\small,inner sep=6pt},
+    c5decision/.style={diamond,aspect=2.3,draw=plantblue!85!black,fill=plantteal!9,
+        line width=0.7pt,align=center,font=\small,text width=2.3cm,inner sep=2pt},
+    c5arrow/.style={-{Latex[length=2.2mm]},draw=plantblue!85!black,line width=0.8pt},
+    c5label/.style={font=\small,fill=white,inner sep=2pt}
+]
+\node[c5box,text width=4.8cm,draw=plantorange!85!black,fill=plantorange!10] (raw) at (0,0)
+    {\textbf{Raw coupled prediction}\\\(c_{raw}=\widehat R^{-1}d_*\)};
+\node[c5decision,below=6mm of raw,draw=plantteal!85!black,fill=plantteal!10] (rawcheck)
+    {Both checks\\pass?};
+\node[c5box,text width=3.3cm,draw=plantteal!85!black,fill=plantteal!10] (rawaccept) at (6,0 |- rawcheck.center)
+    {Set \(\widehat c=c_{raw}\)};
+\node[c5box,text width=4.8cm,below=6mm of rawcheck,draw=plantblue!85!black,fill=plantblue!10] (affine)
+    {\textbf{Project for mass conservation}\\Compute \(c_{aff}\)};
+\node[c5decision,below=6mm of affine,draw=plantteal!85!black,fill=plantteal!10] (affcheck)
+    {Both checks\\pass?};
+\node[c5box,text width=3.3cm,draw=plantteal!85!black,fill=plantteal!10] (affaccept) at (6,0 |- affcheck.center)
+    {Set \(\widehat c=c_{aff}\)};
+\node[c5box,text width=4.8cm,below=6mm of affcheck,draw=plantpurple!85!black,fill=plantpurple!10] (projection)
+    {\textbf{Weighted projection}\\Minimize \(w_c^\top\rho\)\\\(Ac=Ac_{in,*},\quad c\geq0\)\\\(\rho\geq|c-c_{aff}|\)};
+\node[c5decision,below=6mm of projection,draw=plantteal!85!black,fill=plantteal!10] (audit)
+    {Solve and\\audit pass?};
+\node[c5box,text width=3.3cm,draw=plantteal!85!black,fill=plantteal!10] (lpaccept) at (6,0 |- audit.center)
+    {Use optimized \(\widehat c\)};
+\node[c5box,text width=4.8cm,fill=plantteal!9,draw=plantblue!85!black,below=6mm of audit,draw=plantorange!85!black,fill=plantorange!10] (failed)
+    {\textbf{Prediction failure}\\Admissibility not verified};
+\node[c5box,text width=3.7cm,draw=plantteal!85!black,fill=plantteal!10] (return) at (6,0 |- failed.center)
+    {\textbf{Checked output}\\\(\widehat c,\quad I_{\mathrm{comp}}\widehat c\)};
+\coordinate (merge) at (8.5,0);
+\draw[c5arrow] (raw.south)--(rawcheck.north);
+\draw[c5arrow] (rawcheck.east)--node[c5label,above] {Yes}(rawaccept.west);
+\draw[c5arrow] (rawcheck.south)--node[c5label,right] {No}(affine.north);
+\draw[c5arrow] (affine.south)--(affcheck.north);
+\draw[c5arrow] (affcheck.east)--node[c5label,above] {Yes}(affaccept.west);
+\draw[c5arrow] (affcheck.south)--node[c5label,right] {No}(projection.north);
+\draw[c5arrow] (projection.south)--(audit.north);
+\draw[c5arrow] (audit.east)--node[c5label,above] {Yes}(lpaccept.west);
+\draw[c5arrow] (audit.south)--node[c5label,right] {No}(failed.north);
+\draw[c5arrow] (rawaccept.east)--(merge |- rawaccept.east)
+    --(merge |- return.east)--(return.east);
+\draw[draw=plantblue!85!black,line width=0.8pt] (affaccept.east)--(merge |- affaccept.east);
+\draw[draw=plantblue!85!black,line width=0.8pt] (lpaccept.east)--(merge |- lpaccept.east);
+\fill[blue!65!black] (merge |- affaccept.east) circle (1.2pt);
+\fill[blue!65!black] (merge |- lpaccept.east) circle (1.2pt);
+\end{tikzpicture}
+\endgroup
+
+\end{document}

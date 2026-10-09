@@ -49,35 +49,50 @@ q_U=r_R+w,\qquad q_E=1-w.
 \end{equation}
 Here $q_P$ is the reactor-train flow ratio and $q_C$ is the clarifier-feed flow ratio. The identity $q_C=q_E+q_U$ confirms the clarifier water balance. The adopted domain requires $r_I\ge0$, $r_R\ge0$, $0\le w<1$, and $q_U>0$, which ensures that the outlet concentrations are defined by positive outlet flows.
 
-Figure~\ref{fig:plant_configuration} places these balances on the physical connections of the five-reactor plant. The two recycle streams return material to the mixer, whereas treated water and waste sludge cross the external plant boundary.
+Figure~\ref{fig:plant_configuration} places these balances on the physical connections of a plant with $n_r$ reactors and $L$ clarifier layers. The case-study counts and aeration assignments are introduced in Methodology. The two recycle streams return material to the mixer, whereas treated water and waste sludge cross the external plant boundary.
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[>=Latex,node distance=5mm,
-unit/.style={draw,rounded corners,minimum width=12mm,minimum height=8mm,align=center,font=\small},
-mix/.style={draw,circle,minimum size=9mm,font=\small},
-flow/.style={->,thick},lab/.style={font=\scriptsize,fill=white,inner sep=1pt}]
-\node[mix] (m) {Mix};
-\node[unit,right=of m] (r1) {1};
-\node[unit,right=of r1] (r2) {2};
-\node[unit,right=of r2] (r3) {3};
-\node[unit,right=of r3] (r4) {4};
-\node[unit,right=of r4] (r5) {5};
-\coordinate[right=4mm of r5] (split);
-\node[unit,right=7mm of split,minimum height=15mm] (cl) {Ten-layer\\clarifier};
-\draw[flow] ([xshift=-13mm]m.west)--(m.west) node[midway,above,lab] {$Q_0,c_{\rm in}$};
-\draw[flow] (m)--(r1) node[midway,above,lab] {$q_PQ_0$};
-\draw[flow] (r1)--(r2); \draw[flow] (r2)--(r3);
-\draw[flow] (r3)--(r4); \draw[flow] (r4)--(r5);
-\draw[thick] (r5)--(split);
-\draw[flow] (split)--(cl) node[midway,above,lab] {$q_CQ_0$};
-\draw[flow] (split)--++(0,13mm)-|(m.north) node[pos=.45,above,lab] {Mixed-liquor recycle $r_IQ_0$};
-\draw[flow] (cl.east)--++(15mm,0) node[midway,above,lab] {$q_EQ_0,c_E$};
-\draw[thick] (cl.south)--++(0,-8mm) coordinate (u);
-\draw[flow] (u)--++(0,-9mm) node[below,lab] {Waste sludge $wQ_0,c_U$};
-\draw[flow] (u)--++(-9mm,0)-|(m.south) node[pos=.35,below,lab] {Return sludge $r_RQ_0,c_U$};
-\end{tikzpicture}
-\caption{Connected plant configuration used for the operating study. Reactors 1 and 2 are unaerated. Reactors 3--5 have independent aeration controls.}
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[>=Latex,
+unit/.style={draw=plantblue,fill=plantblue!9,rounded corners,minimum width=13mm,minimum height=12mm,align=center,font=\small,thick},
+flow/.style={->,thick,draw=plantblue},lab/.style={font=\scriptsize,fill=white,inner sep=2pt}]
+\node[draw=plantteal,fill=plantteal!12,circle,minimum size=13mm,thick,font=\small] (mix) at (0,0) {Mixer};
+\node[unit] (r1) at (2.1,0) {$1$\\$c_1$};
+\node[unit] (ri) at (4.0,0) {$i$\\$c_i$};
+\node[unit] (rn) at (5.9,0) {$n_r$\\$c_{n_r}$};
+\node[font=\large,text=plantblue] at (3.05,0) {$\cdots$};
+\node[font=\large,text=plantblue] at (4.95,0) {$\cdots$};
+\coordinate (split) at (7.0,0);
+\draw[draw=plantteal,fill=plantteal!8,rounded corners,thick] (8.5,-1.0) rectangle (10.8,1.0);
+\node[font=\small,text=plantteal!70!black] at (9.65,1.28) {$L$-layer clarifier};
+\draw[draw=plantteal!55] (8.5,.45)--(10.8,.45);
+\draw[draw=plantteal!55] (8.5,-.4)--(10.8,-.4);
+\node[font=\scriptsize] at (9.65,.72) {Layer $1$: $s_1=X_E$};
+\node[font=\small,text=plantteal] at (9.65,.05) {$\vdots\quad s_\ell\quad\vdots$};
+\node[font=\scriptsize] at (9.65,-.70) {Layer $L$: $s_L=X_U$};
+\draw[flow] (-1.65,0)--(mix.west) node[midway,above,lab] {$Q_0,c_{\rm in}$};
+\draw[flow] (mix.east)--(r1.west) node[midway,above,lab] {$q_PQ_0,m$};
+\draw[flow] (r1.east)--(2.80,0);
+\draw[flow] (3.30,0)--(ri.west);
+\draw[flow] (ri.east)--(4.70,0);
+\draw[flow] (5.20,0)--(rn.west);
+\draw[thick,draw=plantblue] (rn.east)--(split);
+\draw[flow] (split)--(8.5,0) node[midway,above,lab] {$q_CQ_0,c_{n_r}$};
+\fill[plantpurple] (split) circle (1.5pt);
+\draw[->,thick,draw=plantpurple] (split)--(7.0,2.1)--(0,2.1)--(mix.north)
+node[pos=.58,above,lab,text=plantpurple] {Mixed-liquor recycle: $r_IQ_0,c_{n_r}$};
+\draw[flow] (10.8,.72)--(12.75,.72) node[midway,above,lab] {$q_EQ_0,c_E$};
+\node[font=\scriptsize,text=plantblue] at (11.60,.32) {Treated-water outlet};
+\coordinate (underflow) at (9.65,-1.62);
+\draw[thick,draw=plantorange] (9.65,-1.0)--(underflow) node[midway,right,lab] {$q_UQ_0,c_U$};
+\fill[plantorange] (underflow) circle (1.5pt);
+\draw[->,thick,draw=plantorange] (underflow)--(9.65,-2.7)
+node[below,lab,text=plantorange] {Waste sludge: $wQ_0,c_U$};
+\draw[->,thick,draw=plantorange] (underflow)--(0,-1.62)--(mix.south)
+node[pos=.48,below,lab,text=plantorange] {Return sludge: $r_RQ_0,c_U$};
+\end{tikzpicture}}
+\caption{Connected plant boundary with $n_r$ biological reactors and $L$ clarifier layers. Blue arrows show the treatment path, purple the mixed-liquor recycle, and orange the clarifier underflow split into return and waste sludge. Intermediate reactors and layers are omitted for clarity. All flow ratios use fresh-influent flow as their basis. The operating case study uses five reactors and ten layers; its aeration duties are specified in Methodology.}
 \label{fig:plant_configuration}
 \end{figure}
 
@@ -763,26 +778,26 @@ Figure~\ref{fig:plant_projection_architecture} separates the three inputs to the
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[>=Latex,
-block/.style={draw=black!75,rounded corners,fill=cyan!6,align=center,font=\footnotesize,inner sep=4pt},
-physical/.style={block,fill=black!5},
+block/.style={draw=plantblue!85!black,rounded corners,fill=plantblue!8,align=center,font=\footnotesize,inner sep=4pt},
+physical/.style={block,fill=plantteal!9},
 empirical/.style={block,dashed,fill=white},
-flow/.style={->,thick,draw=black!80},
-failflow/.style={->,dashed,draw=black!70},
+flow/.style={->,thick,draw=plantblue!85!black},
+failflow/.style={->,dashed,draw=plantorange!85!black},
 lab/.style={font=\scriptsize,fill=white,inner sep=2pt}]
-\node[block,text width=8.6cm] (inputs) at (0,0) {Declared controls and fresh-influent components};
-\node[block,text width=4.0cm,minimum height=3.4cm] (raw) at (-4.65,-2.35)
+\node[block,text width=8.6cm,draw=plantblue!85!black,fill=plantblue!10] (inputs) at (0,0) {Declared controls and fresh-influent components};
+\node[block,text width=4.0cm,minimum height=3.4cm,draw=plantorange!85!black,fill=plantorange!10] (raw) at (-4.65,-2.35)
 {Raw connected response\\$\chi_{\rm raw}$\\$m,c_1,\ldots,c_5$\\$g_E,g_U,M_{\rm cl}$};
-\node[physical,text width=4.0cm,minimum height=3.4cm] (phys) at (0,-2.35)
+\node[physical,text width=4.0cm,minimum height=3.4cm,draw=plantteal!85!black,fill=plantteal!10] (phys) at (0,-2.35)
 {Physical relations\\Mixer and inventories\\Clarifier balances\\Separation bounds\\Inventory bounds\\non-negativity};
-\node[empirical,text width=4.0cm,minimum height=3.4cm] (closure) at (4.65,-2.35)
+\node[empirical,text width=4.0cm,minimum height=3.4cm,draw=plantpurple!85!black,fill=plantpurple!10] (closure) at (4.65,-2.35)
 {Empirical closure\\Logarithmic model\\Positive overflow solids\\$t_X^\top g_E=q_E\widehat X_{E,\log}$};
-\node[block,text width=8.6cm] (projection) at (0,-5.45)
+\node[block,text width=8.6cm,draw=plantpurple!85!black,fill=plantpurple!10] (projection) at (0,-5.45)
 {Joint nearest-response projection\\Minimum standardized projection\\Physical relations and fitted closure imposed together};
-\node[physical,text width=8.6cm] (audit) at (0,-7.45)
+\node[physical,text width=8.6cm,draw=plantteal!85!black,fill=plantteal!10] (audit) at (0,-7.45)
 {Independent projection audit\\Feasibility, non-negativity, and optimality residuals};
-\node[block,text width=7.7cm] (output) at (-2.2,-9.45)
+\node[block,text width=7.7cm,draw=plantteal!85!black,fill=plantteal!10] (output) at (-2.2,-9.45)
 {Audited projected response $\widehat\chi$\\Used for the objective and trust screening};
-\node[empirical,text width=3.1cm] (failure) at (4.5,-9.45)
+\node[empirical,text width=3.1cm,draw=plantorange!85!black,fill=plantorange!10] (failure) at (4.5,-9.45)
 {Projection fails\\or audit fails\\Retain status};
 \draw[flow] (inputs.south)--(phys.north);
 \draw[flow] (inputs.west)-|(raw.north);
@@ -799,6 +814,56 @@ lab/.style={font=\scriptsize,fill=white,inner sep=2pt}]
 \end{figure}
 
 The returned response is therefore the nearest admissible state under the stated response scales and constraint set. Both the physical rows and the empirical endpoint determine that set.
+
+\subsubsection{Geometry of simultaneous physical enforcement}
+
+Figure~\ref{fig:plant_projection_geometry} gives a geometric interpretation of Equation~\eqref{eq:plant_joint_projection}. Define the scaled response coordinates $\eta=D_\chi^{-1}\chi$ and the corresponding raw point $\eta_{\rm raw}=D_\chi^{-1}\chi_{\rm raw}$. These coordinates describe the response itself, whereas $u=\eta-\eta_{\rm raw}$ is the standardized displacement used above. Consequently, minimizing $\tfrac12u^\top u$ selects the point in the complete feasible set nearest to the raw response in this scaled geometry. Positive diagonal scaling retains the meaning of non-negativity while expressing concentrations, component flows and inventory in comparable scale units.
+
+The analytical illustration uses the equality $\eta_1+\eta_2=1$, non-negativity $\eta_1,\eta_2\ge0$, and an additional inequality $\eta_1\ge0.20$. The equality defines a line. Non-negativity reduces it to the segment between $(0,1)$ and $(1,0)$, and the additional inequality restricts it further to the green segment between $(0.20,0.80)$ and $(1,0)$. The last inequality stands in for a separator or inventory restriction. Its numerical value is chosen only to make the geometry visible; it is not a case-study operating limit or a new plant-model assumption.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=Latex,x=3.5cm,y=3.5cm,font=\small,
+annotation/.style={fill=white,inner sep=2pt,align=center,font=\small}]
+\fill[plantblue!4] (0,0) rectangle (1.30,1.85);
+\begin{scope}
+\clip (-.91,-.22) rectangle (1.31,1.91);
+\draw[plantorange!45,densely dotted] (-.60,1.30) circle (.40);
+\draw[plantorange!55,densely dotted] (-.60,1.30) circle (.70);
+\draw[plantorange!75,dashed] (-.60,1.30) circle (.9433981);
+\draw[plantblue!80!black,dashed,thick] (-.85,1.85)--(1.20,-.20);
+\end{scope}
+\draw[plantblue!55,line width=3pt] (0,1)--(1,0);
+\draw[plantteal,line width=4pt] (.20,.80)--(1,0);
+\draw[plantpurple,dash dot,thick] (.20,-.12)--(.20,1.65);
+\draw[->,black!70] (-.87,0)--(1.37,0) node[right] {$\eta_1$};
+\draw[->,black!70] (0,-.16)--(0,1.96) node[above] {$\eta_2$};
+\foreach \tick in {0.2,1.0}{\draw (\tick,.025)--(\tick,-.025) node[below,font=\scriptsize] {$\tick$};}
+\draw (.025,1)--(-.025,1);
+\draw[plantorange,->,line width=1.2pt] (-.60,1.30)--(.20,.80);
+\draw[plantpurple,->,densely dashed] (-.60,1.30)--(-.45,1.45);
+\fill[plantorange] (-.60,1.30) circle (2.4pt);
+\node[annotation,anchor=north east,text=plantorange!80!black] at (-.61,1.26) {Raw prediction\\$(-0.60,1.30)$};
+\draw[red!70!black,thick] (-.477,1.423)--(-.423,1.477);
+\draw[red!70!black,thick] (-.477,1.477)--(-.423,1.423);
+\node[annotation,anchor=south,text=red!70!black] at (-.45,1.49) {Equalities only\\$(-0.45,1.45)$};
+\draw[plantblue,fill=white,thick] (0,1) circle (2.0pt);
+\fill[plantteal] (.20,.80) circle (2.6pt);
+\node[annotation,anchor=north west,text=plantteal!75!black] at (.25,.77) {Joint projection\\$(0.20,0.80)$};
+\fill[plantteal] (1,0) circle (1.8pt);
+\node[annotation,anchor=west,text=plantblue!80!black] at (.49,1.48) {$\eta_1+\eta_2=1$};
+\node[annotation,anchor=west,text=plantpurple] at (.49,1.27) {$\eta_1\ge0.20$};
+\draw[plantteal,line width=4pt] (.53,1.05)--(.71,1.05);
+\node[font=\small,anchor=west,text=plantteal!75!black] at (.75,1.05) {Joint feasible set};
+\node[annotation,anchor=west,font=\scriptsize,align=left] at (.49,1.76) {Dotted/dashed circles:\\equal displacement from the raw state};
+\end{tikzpicture}
+\caption{Analytical illustration of joint plant-response projection in two scaled coordinates. The equality line, non-negativity and an additional inequality intersect to form the green feasible segment. The orange arrow gives the shortest admissible correction from the raw point, while the red cross shows an equality-only projection that remains negative. Circles denote equal standardized displacement from the raw point. The illustration explains the projection criterion and is not a simulated plant result.}
+\label{fig:plant_projection_geometry}
+\end{figure}
+
+For the raw point $(-0.60,1.30)$, the nearest point on the equality line alone is $(-0.45,1.45)$. Its first coordinate is negative, so conservation alone does not make it admissible. The point $(0,1)$ satisfies the equality and non-negativity but still violates the additional inequality. The complete projection is instead $(0.20,0.80)$, where the smallest displacement circle that reaches the feasible segment meets its active boundary. Clipping the negative raw coordinate would give $(0,1.30)$ and violate the equality. A sequence of separate corrections therefore cannot be assumed to retain every previously satisfied relation.
+
+In the connected plant, the same criterion acts on all mixer, reactor, outlet-flow and inventory coordinates together. A correction to one stream can require compensating changes at another location, and the fixed response scales determine the cost assigned to those movements. The diagram makes this simultaneous enforcement visible, but it does not prove agreement with the nonlinear kinetic or settling equations, nor does it establish predictive improvement relative to a reference outside the complete constraint set. The following weighted two-component example complements this geometric explanation by checking feasibility, multiplier signs, stationarity and complementarity explicitly.
 
 \subsubsection{An independently auditable optimality certificate}
 
@@ -1930,37 +1995,37 @@ The surrogate and direct searches use different internal response calculations, 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[>=Latex,
-block/.style={draw=black!75,rounded corners,fill=cyan!6,align=center,font=\footnotesize,inner sep=4pt},
-audit/.style={block,fill=black!5},
+block/.style={draw=plantblue!85!black,rounded corners,fill=plantblue!8,align=center,font=\footnotesize,inner sep=4pt},
+audit/.style={block,fill=plantteal!9},
 failure/.style={block,dashed,fill=white},
-flow/.style={->,thick,draw=black!80},
-failflow/.style={->,dashed,draw=black!70},
+flow/.style={->,thick,draw=plantblue!85!black},
+failflow/.style={->,dashed,draw=plantorange!85!black},
 lab/.style={font=\scriptsize,fill=white,inner sep=2pt}]
-\node[block,text width=12.9cm] (common) at (0,0)
+\node[block,text width=12.9cm,draw=plantblue!85!black,fill=plantblue!10] (common) at (0,0)
 {Common influent and control domain\\Fixed priorities and engineering safeguards};
-\node[block,text width=6.0cm] (surrogate) at (-3.7,-1.85)
+\node[block,text width=6.0cm,draw=plantpurple!85!black,fill=plantpurple!10] (surrogate) at (-3.7,-1.85)
 {Surrogate search\\Prediction and joint projection\\Trust screening};
-\node[block,text width=6.0cm] (direct) at (3.7,-1.85)
+\node[block,text width=6.0cm,draw=plantblue!85!black,fill=plantblue!10] (direct) at (3.7,-1.85)
 {Direct mechanistic search\\Full mechanistic states\\Smoothing continuation};
-\node[audit,text width=6.0cm] (snative) at (-3.7,-3.85)
+\node[audit,text width=6.0cm,draw=plantteal!85!black,fill=plantteal!10] (snative) at (-3.7,-3.85)
 {Surrogate candidate audit\\Native feasibility\\Convergence status retained};
-\node[audit,text width=6.0cm] (mnative) at (3.7,-3.85)
+\node[audit,text width=6.0cm,draw=plantteal!85!black,fill=plantteal!10] (mnative) at (3.7,-3.85)
 {Direct candidate audit\\Native feasibility\\Convergence status retained};
-\node[failure,text width=4.0cm] (sfail) at (-5.0,-6.3)
+\node[failure,text width=4.0cm,draw=plantorange!85!black,fill=plantorange!10] (sfail) at (-5.0,-6.3)
 {No feasible candidate\\Retain route failure};
-\node[failure,text width=4.0cm] (mfail) at (5.0,-6.3)
+\node[failure,text width=4.0cm,draw=plantorange!85!black,fill=plantorange!10] (mfail) at (5.0,-6.3)
 {No feasible candidate\\Retain route failure};
-\node[block,text width=4.5cm] (evaluate) at (0,-6.3)
+\node[block,text width=4.5cm,draw=plantblue!85!black,fill=plantblue!10] (evaluate) at (0,-6.3)
 {Independent evaluation\\of each retained decision\\Fixed selected controls\\Two initial states\\Original nonsmooth model};
-\node[audit,text width=6.6cm] (valid) at (0,-9.05)
+\node[audit,text width=6.6cm,draw=plantteal!85!black,fill=plantteal!10] (valid) at (0,-9.05)
 {Original-model validity\\Balances and non-negativity\\Layer equations and branches\\Reduced-state stability};
-\node[failure,text width=3.0cm] (invalid) at (5.7,-9.05)
+\node[failure,text width=3.0cm,draw=plantorange!85!black,fill=plantorange!10] (invalid) at (5.7,-9.05)
 {Invalid state\\Retain failure};
-\node[audit,text width=6.6cm] (engineering) at (0,-11.4)
+\node[audit,text width=6.6cm,draw=plantteal!85!black,fill=plantteal!10] (engineering) at (0,-11.4)
 {Engineering eligibility\\Underflow solids limit\\Feed-solids and external-loss floors};
-\node[failure,text width=3.0cm] (engfail) at (5.7,-11.4)
+\node[failure,text width=3.0cm,draw=plantorange!85!black,fill=plantorange!10] (engfail) at (5.7,-11.4)
 {Valid state\\Safeguard fails\\Retain diagnostic};
-\node[block,text width=9.3cm] (comparison) at (0,-13.5)
+\node[block,text width=9.3cm,draw=plantteal!85!black,fill=plantteal!10] (comparison) at (0,-13.5)
 {Common objective comparison\\Both decisions valid and engineering eligible};
 \draw[flow] (common.south west)--(surrogate.north);
 \draw[flow] (common.south east)--(direct.north);
